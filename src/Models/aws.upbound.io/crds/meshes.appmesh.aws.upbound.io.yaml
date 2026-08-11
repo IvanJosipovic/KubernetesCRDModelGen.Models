@@ -352,6 +352,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -427,17 +434,17 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   spec:
-                    description: Service mesh specification to apply.
+                    description: Service mesh specification to apply. See spec Block for details.
                     properties:
                       egressFilter:
-                        description: Egress filter rules for the service mesh.
+                        description: Egress filter rules for the service mesh. See egress_filter Block for details.
                         properties:
                           type:
                             description: Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.
                             type: string
                         type: object
                       serviceDiscovery:
-                        description: The service discovery information for the service mesh.
+                        description: The service discovery information for the service mesh. See service_discovery Block for details.
                         properties:
                           ipPreference:
                             description: The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.
@@ -467,17 +474,17 @@ spec:
                   autoscaler.
                 properties:
                   spec:
-                    description: Service mesh specification to apply.
+                    description: Service mesh specification to apply. See spec Block for details.
                     properties:
                       egressFilter:
-                        description: Egress filter rules for the service mesh.
+                        description: Egress filter rules for the service mesh. See egress_filter Block for details.
                         properties:
                           type:
                             description: Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.
                             type: string
                         type: object
                       serviceDiscovery:
-                        description: The service discovery information for the service mesh.
+                        description: The service discovery information for the service mesh. See service_discovery Block for details.
                         properties:
                           ipPreference:
                             description: The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.
@@ -606,17 +613,17 @@ spec:
                     description: Resource owner's AWS account ID.
                     type: string
                   spec:
-                    description: Service mesh specification to apply.
+                    description: Service mesh specification to apply. See spec Block for details.
                     properties:
                       egressFilter:
-                        description: Egress filter rules for the service mesh.
+                        description: Egress filter rules for the service mesh. See egress_filter Block for details.
                         properties:
                           type:
                             description: Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.
                             type: string
                         type: object
                       serviceDiscovery:
-                        description: The service discovery information for the service mesh.
+                        description: The service discovery information for the service mesh. See service_discovery Block for details.
                         properties:
                           ipPreference:
                             description: The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.
@@ -680,6 +687,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

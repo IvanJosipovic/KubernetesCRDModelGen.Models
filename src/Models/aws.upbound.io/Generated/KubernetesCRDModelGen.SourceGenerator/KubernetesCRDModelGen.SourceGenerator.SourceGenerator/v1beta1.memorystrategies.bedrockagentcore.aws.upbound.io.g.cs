@@ -96,7 +96,7 @@ public partial class V1beta1MemoryStrategySpecForProviderConfiguration
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategySpecForProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -445,7 +445,7 @@ public partial class V1beta1MemoryStrategySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE) can exist per memory.</summary>
+    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC) can exist per memory.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -491,7 +491,7 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfiguration
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -845,7 +845,7 @@ public partial class V1beta1MemoryStrategySpecInitProvider
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
-    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE) can exist per memory.</summary>
+    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC) can exist per memory.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1074,7 +1074,7 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfiguration
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1120,7 +1120,7 @@ public partial class V1beta1MemoryStrategyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE) can exist per memory.</summary>
+    /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC) can exist per memory.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1179,6 +1179,15 @@ public partial class V1beta1MemoryStrategyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MemoryStrategyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

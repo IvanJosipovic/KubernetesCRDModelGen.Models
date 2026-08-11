@@ -688,7 +688,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("azMode")]
     public string? AzMode { get; set; }
 
-    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.</summary>
+    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -731,7 +731,7 @@ public partial class V1beta1ClusterSpecForProvider
 
     /// <summary>
     /// The instance class used.
-    /// See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+    /// See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
     /// See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
     /// For Memcached, changing this value will re-create the resource.
     /// </summary>
@@ -837,7 +837,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }
@@ -1487,7 +1487,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("azMode")]
     public string? AzMode { get; set; }
 
-    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.</summary>
+    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -1530,7 +1530,7 @@ public partial class V1beta1ClusterSpecInitProvider
 
     /// <summary>
     /// The instance class used.
-    /// See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+    /// See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
     /// See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
     /// For Memcached, changing this value will re-create the resource.
     /// </summary>
@@ -1629,7 +1629,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }
@@ -1901,7 +1901,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("configurationEndpoint")]
     public string? ConfigurationEndpoint { get; set; }
 
-    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.</summary>
+    /// <summary>Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
@@ -1951,7 +1951,7 @@ public partial class V1beta1ClusterStatusAtProvider
 
     /// <summary>
     /// The instance class used.
-    /// See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+    /// See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
     /// See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
     /// For Memcached, changing this value will re-create the resource.
     /// </summary>
@@ -2029,7 +2029,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }
@@ -2088,6 +2088,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -160,6 +160,19 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        destinationDataSharing:
+                          description: |-
+                            Enables destination data sharing.
+                            See destination_data_sharing below.
+                          items:
+                            properties:
+                              destinationDataSharingType:
+                                description: |-
+                                  Data sharing type.
+                                  Only Organization is supported.
+                                type: string
+                            type: object
+                          type: array
                         kmsKeyArn:
                           description: ARN of an encryption key for a destination in Amazon S3.
                           type: string
@@ -343,6 +356,19 @@ spec:
                                   type: string
                               type: object
                           type: object
+                        destinationDataSharing:
+                          description: |-
+                            Enables destination data sharing.
+                            See destination_data_sharing below.
+                          items:
+                            properties:
+                              destinationDataSharingType:
+                                description: |-
+                                  Data sharing type.
+                                  Only Organization is supported.
+                                type: string
+                            type: object
+                          type: array
                         kmsKeyArn:
                           description: ARN of an encryption key for a destination in Amazon S3.
                           type: string
@@ -463,6 +489,19 @@ spec:
                         bucketName:
                           description: Name of S3 bucket where the aggregated data is stored.
                           type: string
+                        destinationDataSharing:
+                          description: |-
+                            Enables destination data sharing.
+                            See destination_data_sharing below.
+                          items:
+                            properties:
+                              destinationDataSharingType:
+                                description: |-
+                                  Data sharing type.
+                                  Only Organization is supported.
+                                type: string
+                            type: object
+                          type: array
                         kmsKeyArn:
                           description: ARN of an encryption key for a destination in Amazon S3.
                           type: string
@@ -522,6 +561,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -674,6 +720,17 @@ spec:
                                 - IfNotPresent
                                 type: string
                             type: object
+                        type: object
+                      destinationDataSharing:
+                        description: |-
+                          Enables destination data sharing.
+                          See destination_data_sharing below.
+                        properties:
+                          destinationDataSharingType:
+                            description: |-
+                              Data sharing type.
+                              Only Organization is supported.
+                            type: string
                         type: object
                       kmsKeyArn:
                         description: ARN of an encryption key for a destination in Amazon S3.
@@ -856,6 +913,17 @@ spec:
                                 type: string
                             type: object
                         type: object
+                      destinationDataSharing:
+                        description: |-
+                          Enables destination data sharing.
+                          See destination_data_sharing below.
+                        properties:
+                          destinationDataSharingType:
+                            description: |-
+                              Data sharing type.
+                              Only Organization is supported.
+                            type: string
+                        type: object
                       kmsKeyArn:
                         description: ARN of an encryption key for a destination in Amazon S3.
                         type: string
@@ -974,6 +1042,17 @@ spec:
                       bucketName:
                         description: Name of S3 bucket where the aggregated data is stored.
                         type: string
+                      destinationDataSharing:
+                        description: |-
+                          Enables destination data sharing.
+                          See destination_data_sharing below.
+                        properties:
+                          destinationDataSharingType:
+                            description: |-
+                              Data sharing type.
+                              Only Organization is supported.
+                            type: string
+                        type: object
                       kmsKeyArn:
                         description: ARN of an encryption key for a destination in Amazon S3.
                         type: string
@@ -1032,6 +1111,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

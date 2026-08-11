@@ -36,7 +36,7 @@ public partial class V1beta1GatewayRouteList : IKubernetesObject<V1ListMeta>, II
     public required IList<V1beta1GatewayRoute> Items { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTargetVirtualService
@@ -46,7 +46,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
@@ -55,22 +55,22 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTarget
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteAction
 {
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecForProviderSpecGrpcRouteActionTarget? Target { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteMatch
@@ -84,21 +84,21 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRouteMatch
     public string? ServiceName { get; set; }
 }
 
-/// <summary>Specification of a gRPC gateway route.</summary>
+/// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecForProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecGrpcRouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewriteHostname
@@ -108,7 +108,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePath
@@ -118,7 +118,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePrefix
@@ -132,25 +132,25 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewri
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewritePrefix? Prefix { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTargetVirtualService
@@ -160,7 +160,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTarge
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTarget
@@ -169,21 +169,21 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTarge
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteActionTarget? Target { get; set; }
 }
@@ -197,12 +197,12 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
@@ -211,7 +211,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -219,7 +219,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -236,7 +236,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -245,7 +245,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHostname
@@ -259,7 +259,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHostna
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchPath
@@ -268,12 +268,12 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -287,7 +287,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -296,20 +296,20 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryP
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
@@ -317,30 +317,30 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP/2 gateway route.</summary>
+/// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2RouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewriteHostname
@@ -350,7 +350,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewritePath
@@ -360,7 +360,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewritePrefix
@@ -374,20 +374,20 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewrit
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewritePrefix? Prefix { get; set; }
 }
@@ -547,7 +547,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTarget
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualService
@@ -565,7 +565,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTarget
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelector? VirtualServiceNameSelector { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTarget
@@ -574,21 +574,21 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTarget
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteActionTarget? Target { get; set; }
 }
@@ -602,12 +602,12 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderM
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderMatch
@@ -616,7 +616,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderM
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -624,7 +624,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderM
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -641,7 +641,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -650,7 +650,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHostname
@@ -664,7 +664,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHostnam
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchPath
@@ -673,12 +673,12 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch
@@ -692,7 +692,7 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryPa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -701,20 +701,20 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryPa
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchPath? Path { get; set; }
 
@@ -722,25 +722,25 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP gateway route.</summary>
+/// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRouteMatch? Match { get; set; }
 }
@@ -750,15 +750,15 @@ public partial class V1beta1GatewayRouteSpecForProviderSpecHttpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecForProviderSpec
 {
-    /// <summary>Specification of a gRPC gateway route.</summary>
+    /// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta1GatewayRouteSpecForProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>Specification of an HTTP/2 gateway route.</summary>
+    /// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta1GatewayRouteSpecForProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>Specification of an HTTP gateway route.</summary>
+    /// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta1GatewayRouteSpecForProviderSpecHttpRoute? HttpRoute { get; set; }
 
@@ -966,7 +966,7 @@ public partial class V1beta1GatewayRouteSpecForProvider
     public V1beta1GatewayRouteSpecForProviderVirtualGatewayNameSelector? VirtualGatewayNameSelector { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTargetVirtualService
@@ -976,7 +976,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTarge
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTarget
@@ -985,22 +985,22 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTarge
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteAction
 {
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteActionTarget? Target { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteMatch
@@ -1014,21 +1014,21 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteMatch
     public string? ServiceName { get; set; }
 }
 
-/// <summary>Specification of a gRPC gateway route.</summary>
+/// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecGrpcRouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewriteHostname
@@ -1038,7 +1038,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePath
@@ -1048,7 +1048,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePrefix
@@ -1062,25 +1062,25 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewr
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewritePrefix? Prefix { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTargetVirtualService
@@ -1090,7 +1090,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTarg
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTarget
@@ -1099,21 +1099,21 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTarg
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteActionTarget? Target { get; set; }
 }
@@ -1127,12 +1127,12 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
@@ -1141,7 +1141,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -1149,7 +1149,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -1166,7 +1166,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -1175,7 +1175,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeade
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHostname
@@ -1189,7 +1189,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHostn
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchPath
@@ -1198,12 +1198,12 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -1217,7 +1217,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQuery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -1226,20 +1226,20 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQuery
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
@@ -1247,30 +1247,30 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP/2 gateway route.</summary>
+/// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2RouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewriteHostname
@@ -1280,7 +1280,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePath
@@ -1290,7 +1290,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePrefix
@@ -1304,20 +1304,20 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewri
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewritePrefix? Prefix { get; set; }
 }
@@ -1477,7 +1477,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualService
@@ -1495,7 +1495,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualServiceVirtualServiceNameSelector? VirtualServiceNameSelector { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTarget
@@ -1504,21 +1504,21 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTarge
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteActionTarget? Target { get; set; }
 }
@@ -1532,12 +1532,12 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
@@ -1546,7 +1546,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -1554,7 +1554,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -1571,7 +1571,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -1580,7 +1580,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHostname
@@ -1594,7 +1594,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHostna
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchPath
@@ -1603,12 +1603,12 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch
@@ -1622,7 +1622,7 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -1631,20 +1631,20 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryP
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchPath? Path { get; set; }
 
@@ -1652,25 +1652,25 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP gateway route.</summary>
+/// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRouteMatch? Match { get; set; }
 }
@@ -1680,15 +1680,15 @@ public partial class V1beta1GatewayRouteSpecInitProviderSpecHttpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteSpecInitProviderSpec
 {
-    /// <summary>Specification of a gRPC gateway route.</summary>
+    /// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta1GatewayRouteSpecInitProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>Specification of an HTTP/2 gateway route.</summary>
+    /// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>Specification of an HTTP gateway route.</summary>
+    /// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta1GatewayRouteSpecInitProviderSpecHttpRoute? HttpRoute { get; set; }
 
@@ -2008,7 +2008,7 @@ public partial class V1beta1GatewayRouteSpec
     public V1beta1GatewayRouteSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTargetVirtualService
@@ -2018,7 +2018,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTarge
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTarget
@@ -2027,22 +2027,22 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTarge
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteAction
 {
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteActionTarget? Target { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteMatch
@@ -2056,21 +2056,21 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteMatch
     public string? ServiceName { get; set; }
 }
 
-/// <summary>Specification of a gRPC gateway route.</summary>
+/// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecGrpcRouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewriteHostname
@@ -2080,7 +2080,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePath
@@ -2090,7 +2090,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePrefix
@@ -2104,25 +2104,25 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewr
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewritePrefix? Prefix { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTargetVirtualService
@@ -2132,7 +2132,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTarg
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTarget
@@ -2141,21 +2141,21 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTarg
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteActionTarget? Target { get; set; }
 }
@@ -2169,12 +2169,12 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
@@ -2183,7 +2183,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -2191,7 +2191,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -2208,7 +2208,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -2217,7 +2217,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeade
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHostname
@@ -2231,7 +2231,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHostn
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchPath
@@ -2240,12 +2240,12 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -2259,7 +2259,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQuery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -2268,20 +2268,20 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQuery
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
@@ -2289,30 +2289,30 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP/2 gateway route.</summary>
+/// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2RouteMatch? Match { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewriteHostname
@@ -2322,7 +2322,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
     public string? DefaultTargetHostname { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePath
@@ -2332,7 +2332,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
     public string? Exact { get; set; }
 }
 
-/// <summary>Specified beginning characters to rewrite.</summary>
+/// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePrefix
@@ -2346,25 +2346,25 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewri
     public string? Value { get; set; }
 }
 
-/// <summary>Gateway route action to rewrite.</summary>
+/// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewrite
 {
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewriteHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePath? Path { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewritePrefix? Prefix { get; set; }
 }
 
-/// <summary>Virtual service gateway route target.</summary>
+/// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTargetVirtualService
@@ -2374,7 +2374,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTarge
     public string? VirtualServiceName { get; set; }
 }
 
-/// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+/// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTarget
@@ -2383,21 +2383,21 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTarge
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Virtual service gateway route target.</summary>
+    /// <summary>Virtual service gateway route target. See virtual_service Block for details.</summary>
     [JsonPropertyName("virtualService")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTargetVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteAction
 {
-    /// <summary>Gateway route action to rewrite.</summary>
+    /// <summary>Gateway route action to rewrite. See rewrite Block for details.</summary>
     [JsonPropertyName("rewrite")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionRewrite? Rewrite { get; set; }
 
-    /// <summary>Target that traffic is routed to when a request matches the gateway route.</summary>
+    /// <summary>Target that traffic is routed to when a request matches the gateway route. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteActionTarget? Target { get; set; }
 }
@@ -2411,12 +2411,12 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
@@ -2425,7 +2425,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -2433,7 +2433,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("range")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -2450,7 +2450,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -2459,7 +2459,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Host name to rewrite.</summary>
+/// <summary>Host name to match on. See hostname Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHostname
@@ -2473,7 +2473,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHostna
     public string? Suffix { get; set; }
 }
 
-/// <summary>Exact path to rewrite.</summary>
+/// <summary>Exact path to rewrite. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchPath
@@ -2482,12 +2482,12 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Header value sent by the client must include the specified characters.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch
@@ -2501,7 +2501,7 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -2510,20 +2510,20 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryP
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining a request match.</summary>
+/// <summary>Criteria for determining a request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
-    /// <summary>Host name to rewrite.</summary>
+    /// <summary>Host name to match on. See hostname Block for details.</summary>
     [JsonPropertyName("hostname")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchHostname? Hostname { get; set; }
 
-    /// <summary>Exact path to rewrite.</summary>
+    /// <summary>Exact path to rewrite. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchPath? Path { get; set; }
 
@@ -2531,25 +2531,25 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatch
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>Specified beginning characters to rewrite.</summary>
+    /// <summary>Specified beginning characters to rewrite. See prefix Block for details.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 }
 
-/// <summary>Specification of an HTTP gateway route.</summary>
+/// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining a request match.</summary>
+    /// <summary>Criteria for determining a request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRouteMatch? Match { get; set; }
 }
@@ -2559,15 +2559,15 @@ public partial class V1beta1GatewayRouteStatusAtProviderSpecHttpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GatewayRouteStatusAtProviderSpec
 {
-    /// <summary>Specification of a gRPC gateway route.</summary>
+    /// <summary>Specification of a gRPC gateway route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta1GatewayRouteStatusAtProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>Specification of an HTTP/2 gateway route.</summary>
+    /// <summary>Specification of an HTTP/2 gateway route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>Specification of an HTTP gateway route.</summary>
+    /// <summary>Specification of an HTTP gateway route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta1GatewayRouteStatusAtProviderSpecHttpRoute? HttpRoute { get; set; }
 
@@ -2690,6 +2690,15 @@ public partial class V1beta1GatewayRouteStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GatewayRouteStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

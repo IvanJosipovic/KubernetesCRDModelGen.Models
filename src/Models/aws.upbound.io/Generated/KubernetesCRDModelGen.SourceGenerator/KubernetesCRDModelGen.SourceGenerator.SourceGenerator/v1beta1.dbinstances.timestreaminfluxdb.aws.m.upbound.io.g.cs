@@ -239,6 +239,23 @@ public partial class V1beta1DBInstanceSpecForProviderLogDeliveryConfiguration
 }
 
 /// <summary>
+/// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+/// The maintenance schedule for the DB instance.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBInstanceSpecForProviderMaintenanceSchedule
+{
+    /// <summary>Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.</summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>
 /// Password of the initial admin user created in InfluxDB. This password will allow you to access the InfluxDB UI to perform various administrative tasks and also use the InfluxDB CLI to create an operator token. Along with bucket, username, and organization, this argument will be stored in the secret referred to by the influx_auth_parameters_secret_arn attribute.
 /// The password of the initial admin user created in InfluxDB. This password will
 /// allow you to access the InfluxDB UI to perform various administrative tasks and
@@ -627,6 +644,13 @@ public partial class V1beta1DBInstanceSpecForProvider
     public V1beta1DBInstanceSpecForProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
 
     /// <summary>
+    /// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+    /// The maintenance schedule for the DB instance.
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBInstanceSpecForProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
+
+    /// <summary>
     /// Name that uniquely identifies the DB instance when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. DB instance names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
     /// The name that uniquely identifies the DB instance when interacting with the
     /// Amazon Timestream for InfluxDB API and CLI commands. This name will also be a
@@ -933,6 +957,23 @@ public partial class V1beta1DBInstanceSpecInitProviderLogDeliveryConfiguration
     /// </summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DBInstanceSpecInitProviderLogDeliveryConfigurationS3Configuration? S3Configuration { get; set; }
+}
+
+/// <summary>
+/// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+/// The maintenance schedule for the DB instance.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBInstanceSpecInitProviderMaintenanceSchedule
+{
+    /// <summary>Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.</summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
 }
 
 /// <summary>
@@ -1336,6 +1377,13 @@ public partial class V1beta1DBInstanceSpecInitProvider
     public V1beta1DBInstanceSpecInitProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
 
     /// <summary>
+    /// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+    /// The maintenance schedule for the DB instance.
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBInstanceSpecInitProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
+
+    /// <summary>
     /// Name that uniquely identifies the DB instance when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. DB instance names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
     /// The name that uniquely identifies the DB instance when interacting with the
     /// Amazon Timestream for InfluxDB API and CLI commands. This name will also be a
@@ -1581,6 +1629,23 @@ public partial class V1beta1DBInstanceStatusAtProviderLogDeliveryConfiguration
     public V1beta1DBInstanceStatusAtProviderLogDeliveryConfigurationS3Configuration? S3Configuration { get; set; }
 }
 
+/// <summary>
+/// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+/// The maintenance schedule for the DB instance.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBInstanceStatusAtProviderMaintenanceSchedule
+{
+    /// <summary>Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.</summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.</summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceStatusAtProvider
@@ -1671,6 +1736,13 @@ public partial class V1beta1DBInstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("logDeliveryConfiguration")]
     public V1beta1DBInstanceStatusAtProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
+
+    /// <summary>
+    /// Maintenance schedule for the DB instance, including the preferred maintenance window and timezone. This argument is updatable.
+    /// The maintenance schedule for the DB instance.
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBInstanceStatusAtProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
 
     /// <summary>
     /// Name that uniquely identifies the DB instance when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. DB instance names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
@@ -1819,6 +1891,15 @@ public partial class V1beta1DBInstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DBInstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -148,6 +148,15 @@ public partial class V1beta2ApplicationSpecForProviderInteractiveConfiguration
     public bool? StudioEnabled { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationSpecForProviderJobLevelCostAllocationConfiguration
+{
+    /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -334,6 +343,9 @@ public partial class V1beta2ApplicationSpecForProvider
     [JsonPropertyName("interactiveConfiguration")]
     public V1beta2ApplicationSpecForProviderInteractiveConfiguration? InteractiveConfiguration { get; set; }
 
+    [JsonPropertyName("jobLevelCostAllocationConfiguration")]
+    public V1beta2ApplicationSpecForProviderJobLevelCostAllocationConfiguration? JobLevelCostAllocationConfiguration { get; set; }
+
     /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
     [JsonPropertyName("maximumCapacity")]
     public V1beta2ApplicationSpecForProviderMaximumCapacity? MaximumCapacity { get; set; }
@@ -469,6 +481,15 @@ public partial class V1beta2ApplicationSpecInitProviderInteractiveConfiguration
     /// <summary>Enables you to connect an application to Amazon EMR Studio to run interactive workloads in a notebook.</summary>
     [JsonPropertyName("studioEnabled")]
     public bool? StudioEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationSpecInitProviderJobLevelCostAllocationConfiguration
+{
+    /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
 }
 
 /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
@@ -668,6 +689,9 @@ public partial class V1beta2ApplicationSpecInitProvider
     /// <summary>Enables the interactive use cases to use when running an application.</summary>
     [JsonPropertyName("interactiveConfiguration")]
     public V1beta2ApplicationSpecInitProviderInteractiveConfiguration? InteractiveConfiguration { get; set; }
+
+    [JsonPropertyName("jobLevelCostAllocationConfiguration")]
+    public V1beta2ApplicationSpecInitProviderJobLevelCostAllocationConfiguration? JobLevelCostAllocationConfiguration { get; set; }
 
     /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
     [JsonPropertyName("maximumCapacity")]
@@ -982,6 +1006,15 @@ public partial class V1beta2ApplicationStatusAtProviderInteractiveConfiguration
     public bool? StudioEnabled { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ApplicationStatusAtProviderJobLevelCostAllocationConfiguration
+{
+    /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1176,6 +1209,9 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("interactiveConfiguration")]
     public V1beta2ApplicationStatusAtProviderInteractiveConfiguration? InteractiveConfiguration { get; set; }
 
+    [JsonPropertyName("jobLevelCostAllocationConfiguration")]
+    public V1beta2ApplicationStatusAtProviderJobLevelCostAllocationConfiguration? JobLevelCostAllocationConfiguration { get; set; }
+
     /// <summary>The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.</summary>
     [JsonPropertyName("maximumCapacity")]
     public V1beta2ApplicationStatusAtProviderMaximumCapacity? MaximumCapacity { get; set; }
@@ -1278,6 +1314,15 @@ public partial class V1beta2ApplicationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ApplicationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

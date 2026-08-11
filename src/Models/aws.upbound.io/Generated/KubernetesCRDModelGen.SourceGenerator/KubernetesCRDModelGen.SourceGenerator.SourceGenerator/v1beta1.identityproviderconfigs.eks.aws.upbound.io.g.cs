@@ -750,6 +750,10 @@ public partial class V1beta1IdentityProviderConfigStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>(String) Name of the identity provider config.</summary>
+    [JsonPropertyName("identityProviderConfigName")]
+    public string? IdentityProviderConfigName { get; set; }
+
     /// <summary>Nested attribute containing OpenID Connect identity provider information for the cluster. Detailed below.</summary>
     [JsonPropertyName("oidc")]
     public IList<V1beta1IdentityProviderConfigStatusAtProviderOidc>? Oidc { get; set; }
@@ -830,6 +834,15 @@ public partial class V1beta1IdentityProviderConfigStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1IdentityProviderConfigStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

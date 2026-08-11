@@ -55,6 +55,16 @@ public enum V1beta2DistributionSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionSpecForProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>A connection function association configuration block (maximum one).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -752,6 +762,16 @@ public partial class V1beta2DistributionSpecForProviderOriginCustomHeader
     public string? Value { get; set; }
 }
 
+/// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -772,6 +792,10 @@ public partial class V1beta2DistributionSpecForProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public V1beta2DistributionSpecForProviderOriginCustomOriginConfigOriginMtlsConfig? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -1323,6 +1347,10 @@ public partial class V1beta2DistributionSpecForProvider
     [JsonPropertyName("anycastIpListId")]
     public string? AnycastIpListId { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public V1beta2DistributionSpecForProviderCacheTagConfig? CacheTagConfig { get; set; }
+
     /// <summary>Any comments you want to include about the distribution.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
@@ -1410,6 +1438,16 @@ public partial class V1beta2DistributionSpecForProvider
     /// <summary>Unique identifier that specifies the AWS WAF web ACL, if any, to associate with this distribution. To specify a web ACL created using the latest version of AWS WAF (WAFv2), use the ACL ARN, for example aws_wafv2_web_acl.example.arn. To specify a web ACL created using AWS WAF Classic, use the ACL ID, for example aws_waf_web_acl.example.id. The WAF Web ACL must exist in the WAF Global (CloudFront) region and the credentials configuring this argument must have waf:GetWebACL permissions assigned.</summary>
     [JsonPropertyName("webAclId")]
     public string? WebAclId { get; set; }
+}
+
+/// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionSpecInitProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
 }
 
 /// <summary>A connection function association configuration block (maximum one).</summary>
@@ -2109,6 +2147,16 @@ public partial class V1beta2DistributionSpecInitProviderOriginCustomHeader
     public string? Value { get; set; }
 }
 
+/// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2129,6 +2177,10 @@ public partial class V1beta2DistributionSpecInitProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public V1beta2DistributionSpecInitProviderOriginCustomOriginConfigOriginMtlsConfig? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -2692,6 +2744,10 @@ public partial class V1beta2DistributionSpecInitProvider
     [JsonPropertyName("anycastIpListId")]
     public string? AnycastIpListId { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public V1beta2DistributionSpecInitProviderCacheTagConfig? CacheTagConfig { get; set; }
+
     /// <summary>Any comments you want to include about the distribution.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
@@ -2962,6 +3018,16 @@ public partial class V1beta2DistributionSpec
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
     public V1beta2DistributionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+/// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionStatusAtProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
 }
 
 /// <summary>A connection function association configuration block (maximum one).</summary>
@@ -3351,6 +3417,16 @@ public partial class V1beta2DistributionStatusAtProviderOriginCustomHeader
     public string? Value { get; set; }
 }
 
+/// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
 /// <summary>The CloudFront custom origin configuration information. If an S3 origin is required, use origin_access_control_id or s3_origin_config instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3371,6 +3447,10 @@ public partial class V1beta2DistributionStatusAtProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public V1beta2DistributionStatusAtProviderOriginCustomOriginConfigOriginMtlsConfig? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -3668,6 +3748,10 @@ public partial class V1beta2DistributionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public V1beta2DistributionStatusAtProviderCacheTagConfig? CacheTagConfig { get; set; }
+
     /// <summary>Internal value used by CloudFront to allow future updates to the distribution configuration.</summary>
     [JsonPropertyName("callerReference")]
     public string? CallerReference { get; set; }
@@ -3859,6 +3943,15 @@ public partial class V1beta2DistributionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DistributionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

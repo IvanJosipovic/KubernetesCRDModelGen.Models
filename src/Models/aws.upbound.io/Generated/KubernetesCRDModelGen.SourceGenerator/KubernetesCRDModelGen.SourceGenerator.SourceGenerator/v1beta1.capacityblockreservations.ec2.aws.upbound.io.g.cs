@@ -327,7 +327,11 @@ public partial class V1beta1CapacityBlockReservationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The number of instances for which to reserve capacity.</summary>
+    /// <summary>
+    /// The number of instances for which to reserve capacity.
+    /// This value will not be set until the Capacity Block Reservation is active.
+    /// The requested instance count is set in the tag aws:ec2capacityreservation:incrementalRequestedQuantity.
+    /// </summary>
     [JsonPropertyName("instanceCount")]
     public double? InstanceCount { get; set; }
 
@@ -429,6 +433,15 @@ public partial class V1beta1CapacityBlockReservationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CapacityBlockReservationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

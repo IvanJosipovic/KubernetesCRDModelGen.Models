@@ -200,6 +200,12 @@ spec:
                     - name
                     - namespace
                     type: object
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -373,6 +379,12 @@ spec:
                     - name
                     - namespace
                     type: object
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   subjectAlternativeNames:
                     description: Set of domains that should be SANs in the issued certificate.
                     items:
@@ -563,6 +575,12 @@ spec:
                   pendingRenewal:
                     description: true if a Private certificate eligible for managed renewal is within the early_renewal_duration period.
                     type: boolean
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -674,6 +692,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -850,7 +875,7 @@ spec:
                         type: string
                     type: object
                   privateKeySecretRef:
-                    description: Certificate's PEM-formatted private key
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key_wo.
                     properties:
                       key:
                         description: The key to select.
@@ -866,6 +891,12 @@ spec:
                     - name
                     - namespace
                     type: object
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -1021,7 +1052,7 @@ spec:
                         type: string
                     type: object
                   privateKeySecretRef:
-                    description: Certificate's PEM-formatted private key
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key_wo.
                     properties:
                       key:
                         description: The key to select.
@@ -1037,6 +1068,12 @@ spec:
                     - name
                     - namespace
                     type: object
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   subjectAlternativeNames:
                     description: Set of domains that should be SANs in the issued certificate.
                     items:
@@ -1225,6 +1262,12 @@ spec:
                   pendingRenewal:
                     description: true if a Private certificate eligible for managed renewal is within the early_renewal_duration period.
                     type: boolean
+                  privateKeyWo:
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    type: string
+                  privateKeyWoVersion:
+                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    type: number
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -1336,6 +1379,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

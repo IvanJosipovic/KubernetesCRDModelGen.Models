@@ -250,6 +250,34 @@ public partial class V1beta1DBClusterSpecForProviderLogDeliveryConfiguration
 }
 
 /// <summary>
+/// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+/// Specifies the maintenance schedule for the DB cluster, including the preferred
+/// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+/// (when using an InfluxDB V3 db parameter group).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBClusterSpecForProviderMaintenanceSchedule
+{
+    /// <summary>
+    /// Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.
+    /// The preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM.
+    /// Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty
+    /// string to let the system choose a window.
+    /// </summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>
+    /// IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.
+    /// The IANA timezone identifier for the maintenance window. For
+    /// example, America/New_York or UTC.
+    /// </summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
+/// <summary>
 /// Password of the initial admin user created in InfluxDB. This password will allow you to access the InfluxDB UI to perform various administrative tasks and also use the InfluxDB CLI to create an operator token. Along with bucket, username, and organization, this argument will be stored in the secret referred to by the influx_auth_parameters_secret_arn attribute. This field is forbidden for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group) as the AWS API rejects it.
 /// Password of the initial admin user created in InfluxDB. This password will
 /// allow you to access the InfluxDB UI to perform various administrative tasks and
@@ -643,6 +671,15 @@ public partial class V1beta1DBClusterSpecForProvider
     public V1beta1DBClusterSpecForProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
 
     /// <summary>
+    /// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+    /// Specifies the maintenance schedule for the DB cluster, including the preferred
+    /// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+    /// (when using an InfluxDB V3 db parameter group).
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBClusterSpecForProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
+
+    /// <summary>
     /// Name that uniquely identifies the DB cluster when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. Cluster names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
     /// The name that uniquely identifies the DB cluster when interacting with the
     /// Amazon Timestream for InfluxDB API and CLI commands. This name will also be a
@@ -945,6 +982,34 @@ public partial class V1beta1DBClusterSpecInitProviderLogDeliveryConfiguration
     /// </summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1DBClusterSpecInitProviderLogDeliveryConfigurationS3Configuration? S3Configuration { get; set; }
+}
+
+/// <summary>
+/// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+/// Specifies the maintenance schedule for the DB cluster, including the preferred
+/// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+/// (when using an InfluxDB V3 db parameter group).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBClusterSpecInitProviderMaintenanceSchedule
+{
+    /// <summary>
+    /// Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.
+    /// The preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM.
+    /// Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty
+    /// string to let the system choose a window.
+    /// </summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>
+    /// IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.
+    /// The IANA timezone identifier for the maintenance window. For
+    /// example, America/New_York or UTC.
+    /// </summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
 }
 
 /// <summary>
@@ -1353,6 +1418,15 @@ public partial class V1beta1DBClusterSpecInitProvider
     public V1beta1DBClusterSpecInitProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
 
     /// <summary>
+    /// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+    /// Specifies the maintenance schedule for the DB cluster, including the preferred
+    /// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+    /// (when using an InfluxDB V3 db parameter group).
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBClusterSpecInitProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
+
+    /// <summary>
     /// Name that uniquely identifies the DB cluster when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. Cluster names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
     /// The name that uniquely identifies the DB cluster when interacting with the
     /// Amazon Timestream for InfluxDB API and CLI commands. This name will also be a
@@ -1678,6 +1752,34 @@ public partial class V1beta1DBClusterStatusAtProviderLogDeliveryConfiguration
     public V1beta1DBClusterStatusAtProviderLogDeliveryConfigurationS3Configuration? S3Configuration { get; set; }
 }
 
+/// <summary>
+/// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+/// Specifies the maintenance schedule for the DB cluster, including the preferred
+/// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+/// (when using an InfluxDB V3 db parameter group).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DBClusterStatusAtProviderMaintenanceSchedule
+{
+    /// <summary>
+    /// Preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM. Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty string to let the system choose a window.
+    /// The preferred maintenance window in the format ddd:HH:MM-ddd:HH:MM.
+    /// Day must be one of Mon, Tue, Wed, Thu, Fri, Sat, or Sun. Provide an empty
+    /// string to let the system choose a window.
+    /// </summary>
+    [JsonPropertyName("preferredMaintenanceWindow")]
+    public string? PreferredMaintenanceWindow { get; set; }
+
+    /// <summary>
+    /// IANA timezone identifier for the maintenance window. For example, America/New_York or UTC.
+    /// The IANA timezone identifier for the maintenance window. For
+    /// example, America/New_York or UTC.
+    /// </summary>
+    [JsonPropertyName("timezone")]
+    public string? Timezone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBClusterStatusAtProvider
@@ -1782,6 +1884,15 @@ public partial class V1beta1DBClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("logDeliveryConfiguration")]
     public V1beta1DBClusterStatusAtProviderLogDeliveryConfiguration? LogDeliveryConfiguration { get; set; }
+
+    /// <summary>
+    /// Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone. This argument is updatable. This field is only supported for InfluxDB V3 clusters (when using an InfluxDB V3 db parameter group).
+    /// Specifies the maintenance schedule for the DB cluster, including the preferred
+    /// maintenance window and timezone. This field is only supported for InfluxDB V3 clusters
+    /// (when using an InfluxDB V3 db parameter group).
+    /// </summary>
+    [JsonPropertyName("maintenanceSchedule")]
+    public V1beta1DBClusterStatusAtProviderMaintenanceSchedule? MaintenanceSchedule { get; set; }
 
     /// <summary>
     /// Name that uniquely identifies the DB cluster when interacting with the Amazon Timestream for InfluxDB API and CLI commands. This name will also be a prefix included in the endpoint. Cluster names must be unique per customer and per region. The argument must start with a letter, cannot contain consecutive hyphens (-) and cannot end with a hyphen.
@@ -1932,6 +2043,15 @@ public partial class V1beta1DBClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DBClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

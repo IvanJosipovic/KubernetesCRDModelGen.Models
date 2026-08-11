@@ -45,7 +45,11 @@ public partial class V1beta1DomainSpecForProviderAdvancedSecurityOptionsJwtOptio
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
+
+    /// <summary>PEM-encoded public key used to verify JWT signatures. At least one of jwks_url or public_key must be specified when enabled is set to true. If both jwks_url and public_key are specified, public_key is ignored.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -345,6 +349,16 @@ public partial class V1beta1DomainSpecForProviderCognitoOptions
     /// <summary>ID of the Cognito User Pool to use.</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
+}
+
+/// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DomainSpecForProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
 }
 
 /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
@@ -1212,6 +1226,10 @@ public partial class V1beta1DomainSpecForProvider
     [JsonPropertyName("cognitoOptions")]
     public V1beta1DomainSpecForProviderCognitoOptions? CognitoOptions { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public V1beta1DomainSpecForProviderDeploymentStrategyOptions? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public V1beta1DomainSpecForProviderDomainEndpointOptions? DomainEndpointOptions { get; set; }
@@ -1228,7 +1246,11 @@ public partial class V1beta1DomainSpecForProvider
     [JsonPropertyName("encryptAtRest")]
     public V1beta1DomainSpecForProviderEncryptAtRest? EncryptAtRest { get; set; }
 
-    /// <summary>while Elasticsearch has elasticsearch_version</summary>
+    /// <summary>
+    /// Either Elasticsearch_X.Y or OpenSearch_X.Y to specify the engine version for the Amazon OpenSearch Service domain. For example, OpenSearch_1.0 or Elasticsearch_7.9.
+    /// See Creating and managing Amazon OpenSearch Service domains.
+    /// Defaults to the lastest version of OpenSearch.
+    /// </summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -1285,7 +1307,11 @@ public partial class V1beta1DomainSpecInitProviderAdvancedSecurityOptionsJwtOpti
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
+
+    /// <summary>PEM-encoded public key used to verify JWT signatures. At least one of jwks_url or public_key must be specified when enabled is set to true. If both jwks_url and public_key are specified, public_key is ignored.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -1585,6 +1611,16 @@ public partial class V1beta1DomainSpecInitProviderCognitoOptions
     /// <summary>ID of the Cognito User Pool to use.</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
+}
+
+/// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DomainSpecInitProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
 }
 
 /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
@@ -2464,6 +2500,10 @@ public partial class V1beta1DomainSpecInitProvider
     [JsonPropertyName("cognitoOptions")]
     public V1beta1DomainSpecInitProviderCognitoOptions? CognitoOptions { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public V1beta1DomainSpecInitProviderDeploymentStrategyOptions? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public V1beta1DomainSpecInitProviderDomainEndpointOptions? DomainEndpointOptions { get; set; }
@@ -2480,7 +2520,11 @@ public partial class V1beta1DomainSpecInitProvider
     [JsonPropertyName("encryptAtRest")]
     public V1beta1DomainSpecInitProviderEncryptAtRest? EncryptAtRest { get; set; }
 
-    /// <summary>while Elasticsearch has elasticsearch_version</summary>
+    /// <summary>
+    /// Either Elasticsearch_X.Y or OpenSearch_X.Y to specify the engine version for the Amazon OpenSearch Service domain. For example, OpenSearch_1.0 or Elasticsearch_7.9.
+    /// See Creating and managing Amazon OpenSearch Service domains.
+    /// Defaults to the lastest version of OpenSearch.
+    /// </summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -2637,7 +2681,11 @@ public partial class V1beta1DomainStatusAtProviderAdvancedSecurityOptionsJwtOpti
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
+
+    /// <summary>PEM-encoded public key used to verify JWT signatures. At least one of jwks_url or public_key must be specified when enabled is set to true. If both jwks_url and public_key are specified, public_key is ignored.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
 
@@ -2922,6 +2970,16 @@ public partial class V1beta1DomainStatusAtProviderCognitoOptions
     public string? UserPoolId { get; set; }
 }
 
+/// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DomainStatusAtProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
+}
+
 /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3119,7 +3177,7 @@ public partial class V1beta1DomainStatusAtProviderVpcOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainStatusAtProvider
 {
-    /// <summary>, are prefaced with es: for both.</summary>
+    /// <summary>IAM policy document specifying the access policies for the domain.</summary>
     [JsonPropertyName("accessPolicies")]
     public string? AccessPolicies { get; set; }
 
@@ -3159,6 +3217,10 @@ public partial class V1beta1DomainStatusAtProvider
     [JsonPropertyName("dashboardEndpointV2")]
     public string? DashboardEndpointV2 { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public V1beta1DomainStatusAtProviderDeploymentStrategyOptions? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public V1beta1DomainStatusAtProviderDomainEndpointOptions? DomainEndpointOptions { get; set; }
@@ -3191,7 +3253,11 @@ public partial class V1beta1DomainStatusAtProvider
     [JsonPropertyName("endpointV2")]
     public string? EndpointV2 { get; set; }
 
-    /// <summary>while Elasticsearch has elasticsearch_version</summary>
+    /// <summary>
+    /// Either Elasticsearch_X.Y or OpenSearch_X.Y to specify the engine version for the Amazon OpenSearch Service domain. For example, OpenSearch_1.0 or Elasticsearch_7.9.
+    /// See Creating and managing Amazon OpenSearch Service domains.
+    /// Defaults to the lastest version of OpenSearch.
+    /// </summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -3300,6 +3366,15 @@ public partial class V1beta1DomainStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DomainStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

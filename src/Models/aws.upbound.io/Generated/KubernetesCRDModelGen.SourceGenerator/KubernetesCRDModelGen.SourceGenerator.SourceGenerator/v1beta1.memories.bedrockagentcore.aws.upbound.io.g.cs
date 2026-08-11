@@ -202,6 +202,19 @@ public partial class V1beta1MemorySpecForProviderEncryptionKeyArnSelector
     public V1beta1MemorySpecForProviderEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderIndexedKey
+{
+    /// <summary>Metadata key name to index.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Data type of the indexed key. Valid values are STRING, STRINGLIST, and NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -349,6 +362,209 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelector
     public V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
+{
+    /// <summary>Level of detail for streamed content. Valid values are METADATA_ONLY and FULL_CONTENT. Defaults to METADATA_ONLY.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Type of content to stream. Valid value is MEMORY_RECORDS.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum>))]
+public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum>))]
+public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum>))]
+public enum V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesis
+{
+    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    [JsonPropertyName("contentConfiguration")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
+
+    /// <summary>ARN of the Kinesis Data Stream.</summary>
+    [JsonPropertyName("dataStreamArn")]
+    public string? DataStreamArn { get; set; }
+
+    /// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
+    [JsonPropertyName("dataStreamArnRef")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef? DataStreamArnRef { get; set; }
+
+    /// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
+    [JsonPropertyName("dataStreamArnSelector")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector? DataStreamArnSelector { get; set; }
+}
+
+/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
+{
+    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    [JsonPropertyName("kinesis")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
+}
+
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecForProviderStreamDeliveryResources
+{
+    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    [JsonPropertyName("resource")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResourcesResource? Resource { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProvider
@@ -373,6 +589,10 @@ public partial class V1beta1MemorySpecForProvider
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    [JsonPropertyName("indexedKey")]
+    public IList<V1beta1MemorySpecForProviderIndexedKey>? IndexedKey { get; set; }
+
     /// <summary>ARN of the IAM role that the memory service assumes to perform operations. Required when using custom memory strategies with model processing.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
@@ -395,6 +615,10 @@ public partial class V1beta1MemorySpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    [JsonPropertyName("streamDeliveryResources")]
+    public V1beta1MemorySpecForProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -548,6 +772,19 @@ public partial class V1beta1MemorySpecInitProviderEncryptionKeyArnSelector
     public V1beta1MemorySpecInitProviderEncryptionKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderIndexedKey
+{
+    /// <summary>Metadata key name to index.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Data type of the indexed key. Valid values are STRING, STRINGLIST, and NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -695,6 +932,209 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelector
     public V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
+{
+    /// <summary>Level of detail for streamed content. Valid values are METADATA_ONLY and FULL_CONTENT. Defaults to METADATA_ONLY.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Type of content to stream. Valid value is MEMORY_RECORDS.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum>))]
+public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum>))]
+public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum>))]
+public enum V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesis
+{
+    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    [JsonPropertyName("contentConfiguration")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
+
+    /// <summary>ARN of the Kinesis Data Stream.</summary>
+    [JsonPropertyName("dataStreamArn")]
+    public string? DataStreamArn { get; set; }
+
+    /// <summary>Reference to a Stream in kinesis to populate dataStreamArn.</summary>
+    [JsonPropertyName("dataStreamArnRef")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnRef? DataStreamArnRef { get; set; }
+
+    /// <summary>Selector for a Stream in kinesis to populate dataStreamArn.</summary>
+    [JsonPropertyName("dataStreamArnSelector")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector? DataStreamArnSelector { get; set; }
+}
+
+/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResource
+{
+    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    [JsonPropertyName("kinesis")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
+}
+
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemorySpecInitProviderStreamDeliveryResources
+{
+    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    [JsonPropertyName("resource")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResource? Resource { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -731,6 +1171,10 @@ public partial class V1beta1MemorySpecInitProvider
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    [JsonPropertyName("indexedKey")]
+    public IList<V1beta1MemorySpecInitProviderIndexedKey>? IndexedKey { get; set; }
+
     /// <summary>ARN of the IAM role that the memory service assumes to perform operations. Required when using custom memory strategies with model processing.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
@@ -746,6 +1190,10 @@ public partial class V1beta1MemorySpecInitProvider
     /// <summary>Name of the memory.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    [JsonPropertyName("streamDeliveryResources")]
+    public V1beta1MemorySpecInitProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -937,6 +1385,67 @@ public partial class V1beta1MemorySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStatusAtProviderIndexedKey
+{
+    /// <summary>Metadata key name to index.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Data type of the indexed key. Valid values are STRING, STRINGLIST, and NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
+{
+    /// <summary>Level of detail for streamed content. Valid values are METADATA_ONLY and FULL_CONTENT. Defaults to METADATA_ONLY.</summary>
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    /// <summary>Type of content to stream. Valid value is MEMORY_RECORDS.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesis
+{
+    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    [JsonPropertyName("contentConfiguration")]
+    public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
+
+    /// <summary>ARN of the Kinesis Data Stream.</summary>
+    [JsonPropertyName("dataStreamArn")]
+    public string? DataStreamArn { get; set; }
+}
+
+/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource
+{
+    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    [JsonPropertyName("kinesis")]
+    public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
+}
+
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResources
+{
+    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    [JsonPropertyName("resource")]
+    public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource? Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProvider
 {
     /// <summary>ARN of the Memory.</summary>
@@ -959,6 +1468,10 @@ public partial class V1beta1MemoryStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    [JsonPropertyName("indexedKey")]
+    public IList<V1beta1MemoryStatusAtProviderIndexedKey>? IndexedKey { get; set; }
+
     /// <summary>ARN of the IAM role that the memory service assumes to perform operations. Required when using custom memory strategies with model processing.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
@@ -973,6 +1486,10 @@ public partial class V1beta1MemoryStatusAtProvider
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    [JsonPropertyName("streamDeliveryResources")]
+    public V1beta1MemoryStatusAtProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -1037,6 +1554,15 @@ public partial class V1beta1MemoryStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MemoryStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

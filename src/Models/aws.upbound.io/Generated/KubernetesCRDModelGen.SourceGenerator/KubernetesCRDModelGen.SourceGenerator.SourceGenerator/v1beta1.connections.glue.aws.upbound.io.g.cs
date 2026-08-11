@@ -75,6 +75,437 @@ public partial class V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef
     public required string Namespace { get; set; }
 }
 
+/// <summary>Password for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationBasicAuthenticationCredentialsPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationBasicAuthenticationCredentials
+{
+    /// <summary>Password for authentication.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationBasicAuthenticationCredentialsPasswordSecretRef? PasswordSecretRef { get; set; }
+
+    /// <summary>Username for authentication.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>Map of custom authentication credentials.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationCustomAuthenticationCredentialsSecretRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Authorization code.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesAuthorizationCodeSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties
+{
+    /// <summary>Authorization code.</summary>
+    [JsonPropertyName("authorizationCodeSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesAuthorizationCodeSecretRef? AuthorizationCodeSecretRef { get; set; }
+
+    /// <summary>Redirect URI for OAuth2 flow.</summary>
+    [JsonPropertyName("redirectUri")]
+    public string? RedirectUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication
+{
+    /// <summary>Reference to an AWS-managed client application.</summary>
+    [JsonPropertyName("awsManagedClientApplicationReference")]
+    public string? AwsManagedClientApplicationReference { get; set; }
+
+    /// <summary>Client ID for a user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientId")]
+    public string? UserManagedClientApplicationClientId { get; set; }
+}
+
+/// <summary>OAuth2 access token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>JWT token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>OAuth2 refresh token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Client secret for user-managed client application.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials
+{
+    /// <summary>OAuth2 access token.</summary>
+    [JsonPropertyName("accessTokenSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef? AccessTokenSecretRef { get; set; }
+
+    /// <summary>JWT token.</summary>
+    [JsonPropertyName("jwtTokenSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef? JwtTokenSecretRef { get; set; }
+
+    /// <summary>OAuth2 refresh token.</summary>
+    [JsonPropertyName("refreshTokenSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef? RefreshTokenSecretRef { get; set; }
+
+    /// <summary>Client secret for user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientSecretSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef? UserManagedClientApplicationClientSecretSecretRef { get; set; }
+}
+
+/// <summary>Map of additional parameters for the token URL.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesTokenUrlParametersMapSecretRef
+{
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2Properties
+{
+    /// <summary>Authorization code properties. See authorization_code_properties below.</summary>
+    [JsonPropertyName("authorizationCodeProperties")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties>? AuthorizationCodeProperties { get; set; }
+
+    /// <summary>OAuth2 client application details. See oauth2_client_application below.</summary>
+    [JsonPropertyName("oauth2ClientApplication")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication>? Oauth2ClientApplication { get; set; }
+
+    /// <summary>OAuth2 credentials. See oauth2_credentials below.</summary>
+    [JsonPropertyName("oauth2Credentials")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials>? Oauth2Credentials { get; set; }
+
+    /// <summary>OAuth2 grant type. Valid values: AUTHORIZATION_CODE, CLIENT_CREDENTIALS, JWT_BEARER.</summary>
+    [JsonPropertyName("oauth2GrantType")]
+    public string? Oauth2GrantType { get; set; }
+
+    /// <summary>Token URL for OAuth2 authentication.</summary>
+    [JsonPropertyName("tokenUrl")]
+    public string? TokenUrl { get; set; }
+
+    /// <summary>Map of additional parameters for the token URL.</summary>
+    [JsonPropertyName("tokenUrlParametersMapSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2PropertiesTokenUrlParametersMapSecretRef? TokenUrlParametersMapSecretRef { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecForProviderAuthenticationConfiguration
+{
+    /// <summary>Type of authentication. Valid values: BASIC, CUSTOM, IAM, OAUTH2.</summary>
+    [JsonPropertyName("authenticationType")]
+    public string? AuthenticationType { get; set; }
+
+    /// <summary>Basic authentication credentials. See basic_authentication_credentials below.</summary>
+    [JsonPropertyName("basicAuthenticationCredentials")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfigurationBasicAuthenticationCredentials>? BasicAuthenticationCredentials { get; set; }
+
+    /// <summary>Map of custom authentication credentials.</summary>
+    [JsonPropertyName("customAuthenticationCredentialsSecretRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationCustomAuthenticationCredentialsSecretRef? CustomAuthenticationCredentialsSecretRef { get; set; }
+
+    /// <summary>ARN of the KMS key used for encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>OAuth2 properties. See oauth2_properties below.</summary>
+    [JsonPropertyName("oauth2Properties")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfigurationOauth2Properties>? Oauth2Properties { get; set; }
+
+    /// <summary>ARN of the Secrets Manager secret containing credentials.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ConnectionSpecForProviderAuthenticationConfigurationSecretArnSelector? SecretArnSelector { get; set; }
+}
+
 /// <summary>Map of key-value pairs used as parameters for this connection. For more information, see the AWS Documentation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -606,6 +1037,10 @@ public partial class V1beta1ConnectionSpecForProvider
     [JsonPropertyName("athenaPropertiesSecretRef")]
     public V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef? AthenaPropertiesSecretRef { get; set; }
 
+    /// <summary>Configuration block for authentication options. See authentication_configuration below.</summary>
+    [JsonPropertyName("authenticationConfiguration")]
+    public IList<V1beta1ConnectionSpecForProviderAuthenticationConfiguration>? AuthenticationConfiguration { get; set; }
+
     /// <summary>ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
     public required string CatalogId { get; set; }
@@ -640,6 +1075,405 @@ public partial class V1beta1ConnectionSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>Password for authentication.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationBasicAuthenticationCredentialsPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationBasicAuthenticationCredentials
+{
+    /// <summary>Password for authentication.</summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1ConnectionSpecInitProviderAuthenticationConfigurationBasicAuthenticationCredentialsPasswordSecretRef PasswordSecretRef { get; set; }
+
+    /// <summary>Username for authentication.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>Authorization code.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesAuthorizationCodeSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties
+{
+    /// <summary>Authorization code.</summary>
+    [JsonPropertyName("authorizationCodeSecretRef")]
+    public required V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesAuthorizationCodeSecretRef AuthorizationCodeSecretRef { get; set; }
+
+    /// <summary>Redirect URI for OAuth2 flow.</summary>
+    [JsonPropertyName("redirectUri")]
+    public string? RedirectUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication
+{
+    /// <summary>Reference to an AWS-managed client application.</summary>
+    [JsonPropertyName("awsManagedClientApplicationReference")]
+    public string? AwsManagedClientApplicationReference { get; set; }
+
+    /// <summary>Client ID for a user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientId")]
+    public string? UserManagedClientApplicationClientId { get; set; }
+}
+
+/// <summary>OAuth2 access token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>JWT token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>OAuth2 refresh token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Client secret for user-managed client application.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials
+{
+    /// <summary>OAuth2 access token.</summary>
+    [JsonPropertyName("accessTokenSecretRef")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef? AccessTokenSecretRef { get; set; }
+
+    /// <summary>JWT token.</summary>
+    [JsonPropertyName("jwtTokenSecretRef")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef? JwtTokenSecretRef { get; set; }
+
+    /// <summary>OAuth2 refresh token.</summary>
+    [JsonPropertyName("refreshTokenSecretRef")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef? RefreshTokenSecretRef { get; set; }
+
+    /// <summary>Client secret for user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientSecretSecretRef")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef? UserManagedClientApplicationClientSecretSecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2Properties
+{
+    /// <summary>Authorization code properties. See authorization_code_properties below.</summary>
+    [JsonPropertyName("authorizationCodeProperties")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties>? AuthorizationCodeProperties { get; set; }
+
+    /// <summary>OAuth2 client application details. See oauth2_client_application below.</summary>
+    [JsonPropertyName("oauth2ClientApplication")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication>? Oauth2ClientApplication { get; set; }
+
+    /// <summary>OAuth2 credentials. See oauth2_credentials below.</summary>
+    [JsonPropertyName("oauth2Credentials")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials>? Oauth2Credentials { get; set; }
+
+    /// <summary>OAuth2 grant type. Valid values: AUTHORIZATION_CODE, CLIENT_CREDENTIALS, JWT_BEARER.</summary>
+    [JsonPropertyName("oauth2GrantType")]
+    public string? Oauth2GrantType { get; set; }
+
+    /// <summary>Token URL for OAuth2 authentication.</summary>
+    [JsonPropertyName("tokenUrl")]
+    public string? TokenUrl { get; set; }
+
+    [JsonPropertyName("tokenUrlParametersMapSecretRef")]
+    public IDictionary<string, string>? TokenUrlParametersMapSecretRef { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionSpecInitProviderAuthenticationConfiguration
+{
+    /// <summary>Type of authentication. Valid values: BASIC, CUSTOM, IAM, OAUTH2.</summary>
+    [JsonPropertyName("authenticationType")]
+    public string? AuthenticationType { get; set; }
+
+    /// <summary>Basic authentication credentials. See basic_authentication_credentials below.</summary>
+    [JsonPropertyName("basicAuthenticationCredentials")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationBasicAuthenticationCredentials>? BasicAuthenticationCredentials { get; set; }
+
+    [JsonPropertyName("customAuthenticationCredentialsSecretRef")]
+    public IDictionary<string, string>? CustomAuthenticationCredentialsSecretRef { get; set; }
+
+    /// <summary>ARN of the KMS key used for encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>OAuth2 properties. See oauth2_properties below.</summary>
+    [JsonPropertyName("oauth2Properties")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfigurationOauth2Properties>? Oauth2Properties { get; set; }
+
+    /// <summary>ARN of the Secrets Manager secret containing credentials.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ConnectionSpecInitProviderAuthenticationConfigurationSecretArnSelector? SecretArnSelector { get; set; }
 }
 
 /// <summary>
@@ -1169,6 +2003,10 @@ public partial class V1beta1ConnectionSpecInitProvider
     [JsonPropertyName("athenaPropertiesSecretRef")]
     public IDictionary<string, string>? AthenaPropertiesSecretRef { get; set; }
 
+    /// <summary>Configuration block for authentication options. See authentication_configuration below.</summary>
+    [JsonPropertyName("authenticationConfiguration")]
+    public IList<V1beta1ConnectionSpecInitProviderAuthenticationConfiguration>? AuthenticationConfiguration { get; set; }
+
     [JsonPropertyName("connectionPropertiesSecretRef")]
     public IDictionary<string, string>? ConnectionPropertiesSecretRef { get; set; }
 
@@ -1386,6 +2224,190 @@ public partial class V1beta1ConnectionSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationBasicAuthenticationCredentials
+{
+    /// <summary>Username for authentication.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties
+{
+    /// <summary>Redirect URI for OAuth2 flow.</summary>
+    [JsonPropertyName("redirectUri")]
+    public string? RedirectUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication
+{
+    /// <summary>Reference to an AWS-managed client application.</summary>
+    [JsonPropertyName("awsManagedClientApplicationReference")]
+    public string? AwsManagedClientApplicationReference { get; set; }
+
+    /// <summary>Client ID for a user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientId")]
+    public string? UserManagedClientApplicationClientId { get; set; }
+}
+
+/// <summary>OAuth2 access token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>JWT token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>OAuth2 refresh token.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Client secret for user-managed client application.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials
+{
+    /// <summary>OAuth2 access token.</summary>
+    [JsonPropertyName("accessTokenSecretRef")]
+    public V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsAccessTokenSecretRef? AccessTokenSecretRef { get; set; }
+
+    /// <summary>JWT token.</summary>
+    [JsonPropertyName("jwtTokenSecretRef")]
+    public V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsJwtTokenSecretRef? JwtTokenSecretRef { get; set; }
+
+    /// <summary>OAuth2 refresh token.</summary>
+    [JsonPropertyName("refreshTokenSecretRef")]
+    public V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsRefreshTokenSecretRef? RefreshTokenSecretRef { get; set; }
+
+    /// <summary>Client secret for user-managed client application.</summary>
+    [JsonPropertyName("userManagedClientApplicationClientSecretSecretRef")]
+    public V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2CredentialsUserManagedClientApplicationClientSecretSecretRef? UserManagedClientApplicationClientSecretSecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2Properties
+{
+    /// <summary>Authorization code properties. See authorization_code_properties below.</summary>
+    [JsonPropertyName("authorizationCodeProperties")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties>? AuthorizationCodeProperties { get; set; }
+
+    /// <summary>OAuth2 client application details. See oauth2_client_application below.</summary>
+    [JsonPropertyName("oauth2ClientApplication")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication>? Oauth2ClientApplication { get; set; }
+
+    /// <summary>OAuth2 credentials. See oauth2_credentials below.</summary>
+    [JsonPropertyName("oauth2Credentials")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2PropertiesOauth2Credentials>? Oauth2Credentials { get; set; }
+
+    /// <summary>OAuth2 grant type. Valid values: AUTHORIZATION_CODE, CLIENT_CREDENTIALS, JWT_BEARER.</summary>
+    [JsonPropertyName("oauth2GrantType")]
+    public string? Oauth2GrantType { get; set; }
+
+    /// <summary>Token URL for OAuth2 authentication.</summary>
+    [JsonPropertyName("tokenUrl")]
+    public string? TokenUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ConnectionStatusAtProviderAuthenticationConfiguration
+{
+    /// <summary>Type of authentication. Valid values: BASIC, CUSTOM, IAM, OAUTH2.</summary>
+    [JsonPropertyName("authenticationType")]
+    public string? AuthenticationType { get; set; }
+
+    /// <summary>Basic authentication credentials. See basic_authentication_credentials below.</summary>
+    [JsonPropertyName("basicAuthenticationCredentials")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfigurationBasicAuthenticationCredentials>? BasicAuthenticationCredentials { get; set; }
+
+    /// <summary>ARN of the KMS key used for encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>OAuth2 properties. See oauth2_properties below.</summary>
+    [JsonPropertyName("oauth2Properties")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfigurationOauth2Properties>? Oauth2Properties { get; set; }
+
+    /// <summary>ARN of the Secrets Manager secret containing credentials.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderPhysicalConnectionRequirements
 {
     /// <summary>The availability zone of the connection. This field is redundant and implied by subnet_id, but is currently an api requirement.</summary>
@@ -1409,6 +2431,10 @@ public partial class V1beta1ConnectionStatusAtProvider
     /// <summary>ARN of the Glue Connection.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
+
+    /// <summary>Configuration block for authentication options. See authentication_configuration below.</summary>
+    [JsonPropertyName("authenticationConfiguration")]
+    public IList<V1beta1ConnectionStatusAtProviderAuthenticationConfiguration>? AuthenticationConfiguration { get; set; }
 
     /// <summary>ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.</summary>
     [JsonPropertyName("catalogId")]
@@ -1506,6 +2532,15 @@ public partial class V1beta1ConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

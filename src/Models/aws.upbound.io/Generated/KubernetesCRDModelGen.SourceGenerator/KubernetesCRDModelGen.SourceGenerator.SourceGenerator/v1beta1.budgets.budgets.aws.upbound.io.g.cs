@@ -1221,6 +1221,10 @@ public partial class V1beta1BudgetSpecForProvider
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
 
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
     public IList<V1beta1BudgetSpecForProviderNotification>? Notification { get; set; }
@@ -2418,6 +2422,10 @@ public partial class V1beta1BudgetSpecInitProvider
     /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
+
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
 
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
@@ -3811,6 +3819,10 @@ public partial class V1beta1BudgetStatusAtProvider
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
 
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
     public IList<V1beta1BudgetStatusAtProviderNotification>? Notification { get; set; }
@@ -3896,6 +3908,15 @@ public partial class V1beta1BudgetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BudgetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

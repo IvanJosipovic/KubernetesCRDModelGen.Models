@@ -125,6 +125,195 @@ public partial class V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeSpecForProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -138,9 +327,29 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCu
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
@@ -151,6 +360,371 @@ public partial class V1beta1AgentRuntimeSpecForProviderAuthorizerConfiguration
     /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1AgentRuntimeSpecForProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnRef")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef? AccessPointArnRef { get; set; }
+
+    /// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnSelector")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnRef")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef? AccessPointArnRef { get; set; }
+
+    /// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnSelector")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationSessionStorage
+{
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecForProviderFilesystemConfiguration
+{
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    [JsonPropertyName("efsAccessPoint")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationEfsAccessPoint? EfsAccessPoint { get; set; }
+
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    [JsonPropertyName("s3FilesAccessPoint")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationS3FilesAccessPoint? S3FilesAccessPoint { get; set; }
+
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    [JsonPropertyName("sessionStorage")]
+    public V1beta1AgentRuntimeSpecForProviderFilesystemConfigurationSessionStorage? SessionStorage { get; set; }
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
@@ -200,7 +774,7 @@ public partial class V1beta1AgentRuntimeSpecForProviderNetworkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecForProviderProtocolConfiguration
 {
-    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A.</summary>
+    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A, AGUI.</summary>
     [JsonPropertyName("serverProtocol")]
     public string? ServerProtocol { get; set; }
 }
@@ -386,6 +960,10 @@ public partial class V1beta1AgentRuntimeSpecForProvider
     [JsonPropertyName("environmentVariables")]
     public IDictionary<string, string>? EnvironmentVariables { get; set; }
 
+    /// <summary>List of filesystems to mount into the agent runtime. Up to 5 entries are supported. Each entry is one of session storage, Amazon S3 Files access point, or Amazon EFS access point. See filesystem_configuration below.</summary>
+    [JsonPropertyName("filesystemConfiguration")]
+    public IList<V1beta1AgentRuntimeSpecForProviderFilesystemConfiguration>? FilesystemConfiguration { get; set; }
+
     /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public V1beta1AgentRuntimeSpecForProviderLifecycleConfiguration? LifecycleConfiguration { get; set; }
@@ -496,6 +1074,195 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeSpecInitProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -509,9 +1276,29 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationC
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
@@ -522,6 +1309,371 @@ public partial class V1beta1AgentRuntimeSpecInitProviderAuthorizerConfiguration
     /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1AgentRuntimeSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Reference to a AccessPoint in efs to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnRef")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnRef? AccessPointArnRef { get; set; }
+
+    /// <summary>Selector for a AccessPoint in efs to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnSelector")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Reference to a AccessPoint in s3control to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnRef")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnRef? AccessPointArnRef { get; set; }
+
+    /// <summary>Selector for a AccessPoint in s3control to populate accessPointArn.</summary>
+    [JsonPropertyName("accessPointArnSelector")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPointAccessPointArnSelector? AccessPointArnSelector { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationSessionStorage
+{
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeSpecInitProviderFilesystemConfiguration
+{
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    [JsonPropertyName("efsAccessPoint")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationEfsAccessPoint? EfsAccessPoint { get; set; }
+
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    [JsonPropertyName("s3FilesAccessPoint")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationS3FilesAccessPoint? S3FilesAccessPoint { get; set; }
+
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    [JsonPropertyName("sessionStorage")]
+    public V1beta1AgentRuntimeSpecInitProviderFilesystemConfigurationSessionStorage? SessionStorage { get; set; }
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
@@ -571,7 +1723,7 @@ public partial class V1beta1AgentRuntimeSpecInitProviderNetworkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeSpecInitProviderProtocolConfiguration
 {
-    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A.</summary>
+    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A, AGUI.</summary>
     [JsonPropertyName("serverProtocol")]
     public string? ServerProtocol { get; set; }
 }
@@ -768,6 +1920,10 @@ public partial class V1beta1AgentRuntimeSpecInitProvider
     /// <summary>Map of environment variables to pass to the container.</summary>
     [JsonPropertyName("environmentVariables")]
     public IDictionary<string, string>? EnvironmentVariables { get; set; }
+
+    /// <summary>List of filesystems to mount into the agent runtime. Up to 5 entries are supported. Each entry is one of session storage, Amazon S3 Files access point, or Amazon EFS access point. See filesystem_configuration below.</summary>
+    [JsonPropertyName("filesystemConfiguration")]
+    public IList<V1beta1AgentRuntimeSpecInitProviderFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
     /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
@@ -1055,6 +2211,195 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifact
     public V1beta1AgentRuntimeStatusAtProviderAgentRuntimeArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1068,9 +2413,29 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationC
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Authorization configuration for authenticating incoming requests. See authorizer_configuration below.</summary>
@@ -1081,6 +2446,61 @@ public partial class V1beta1AgentRuntimeStatusAtProviderAuthorizerConfiguration
     /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1AgentRuntimeStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
+}
+
+/// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationEfsAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationS3FilesAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+/// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationSessionStorage
+{
+    /// <summary>Mount path for the session storage filesystem inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AgentRuntimeStatusAtProviderFilesystemConfiguration
+{
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    [JsonPropertyName("efsAccessPoint")]
+    public V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationEfsAccessPoint? EfsAccessPoint { get; set; }
+
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    [JsonPropertyName("s3FilesAccessPoint")]
+    public V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationS3FilesAccessPoint? S3FilesAccessPoint { get; set; }
+
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    [JsonPropertyName("sessionStorage")]
+    public V1beta1AgentRuntimeStatusAtProviderFilesystemConfigurationSessionStorage? SessionStorage { get; set; }
 }
 
 /// <summary>Runtime session and resource lifecycle configuration for the agent runtime. See lifecycle_configuration below.</summary>
@@ -1102,6 +2522,10 @@ public partial class V1beta1AgentRuntimeStatusAtProviderLifecycleConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfigurationNetworkModeConfig
 {
+    /// <summary>(Read-only) Whether a service-managed Amazon S3 gateway endpoint is provisioned in the VPC for the agent runtime. This value is managed by the service and cannot be set: it is rejected on both create and update. Agent runtimes created on or after the May 5, 2026 rollout do not include a service-managed Amazon S3 gateway.</summary>
+    [JsonPropertyName("requireServiceS3Endpoint")]
+    public bool? RequireServiceS3Endpoint { get; set; }
+
     /// <summary>Security groups associated with the VPC configuration.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
@@ -1130,7 +2554,7 @@ public partial class V1beta1AgentRuntimeStatusAtProviderNetworkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentRuntimeStatusAtProviderProtocolConfiguration
 {
-    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A.</summary>
+    /// <summary>Server protocol for the agent runtime. Valid values: HTTP, MCP, A2A, AGUI.</summary>
     [JsonPropertyName("serverProtocol")]
     public string? ServerProtocol { get; set; }
 }
@@ -1189,6 +2613,10 @@ public partial class V1beta1AgentRuntimeStatusAtProvider
     /// <summary>Map of environment variables to pass to the container.</summary>
     [JsonPropertyName("environmentVariables")]
     public IDictionary<string, string>? EnvironmentVariables { get; set; }
+
+    /// <summary>List of filesystems to mount into the agent runtime. Up to 5 entries are supported. Each entry is one of session storage, Amazon S3 Files access point, or Amazon EFS access point. See filesystem_configuration below.</summary>
+    [JsonPropertyName("filesystemConfiguration")]
+    public IList<V1beta1AgentRuntimeStatusAtProviderFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -1287,6 +2715,15 @@ public partial class V1beta1AgentRuntimeStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AgentRuntimeStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

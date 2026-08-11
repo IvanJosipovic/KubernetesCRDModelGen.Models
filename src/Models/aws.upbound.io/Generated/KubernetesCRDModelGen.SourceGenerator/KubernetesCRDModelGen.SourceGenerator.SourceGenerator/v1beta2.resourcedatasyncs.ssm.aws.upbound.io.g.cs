@@ -203,6 +203,22 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNa
 }
 
 /// <summary>
+/// Enables destination data sharing.
+/// See destination_data_sharing below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ResourceDataSyncSpecForProviderS3DestinationDestinationDataSharing
+{
+    /// <summary>
+    /// Data sharing type.
+    /// Only Organization is supported.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharingType")]
+    public string? DestinationDataSharingType { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -365,6 +381,13 @@ public partial class V1beta2ResourceDataSyncSpecForProviderS3Destination
     /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
     [JsonPropertyName("bucketNameSelector")]
     public V1beta2ResourceDataSyncSpecForProviderS3DestinationBucketNameSelector? BucketNameSelector { get; set; }
+
+    /// <summary>
+    /// Enables destination data sharing.
+    /// See destination_data_sharing below.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharing")]
+    public V1beta2ResourceDataSyncSpecForProviderS3DestinationDestinationDataSharing? DestinationDataSharing { get; set; }
 
     /// <summary>ARN of an encryption key for a destination in Amazon S3.</summary>
     [JsonPropertyName("kmsKeyArn")]
@@ -554,6 +577,22 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketN
     public V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Enables destination data sharing.
+/// See destination_data_sharing below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ResourceDataSyncSpecInitProviderS3DestinationDestinationDataSharing
+{
+    /// <summary>
+    /// Data sharing type.
+    /// Only Organization is supported.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharingType")]
+    public string? DestinationDataSharingType { get; set; }
+}
+
 /// <summary>Amazon S3 configuration details for the sync.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -570,6 +609,13 @@ public partial class V1beta2ResourceDataSyncSpecInitProviderS3Destination
     /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
     [JsonPropertyName("bucketNameSelector")]
     public V1beta2ResourceDataSyncSpecInitProviderS3DestinationBucketNameSelector? BucketNameSelector { get; set; }
+
+    /// <summary>
+    /// Enables destination data sharing.
+    /// See destination_data_sharing below.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharing")]
+    public V1beta2ResourceDataSyncSpecInitProviderS3DestinationDestinationDataSharing? DestinationDataSharing { get; set; }
 
     /// <summary>ARN of an encryption key for a destination in Amazon S3.</summary>
     [JsonPropertyName("kmsKeyArn")]
@@ -788,6 +834,22 @@ public partial class V1beta2ResourceDataSyncSpec
     public V1beta2ResourceDataSyncSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>
+/// Enables destination data sharing.
+/// See destination_data_sharing below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ResourceDataSyncStatusAtProviderS3DestinationDestinationDataSharing
+{
+    /// <summary>
+    /// Data sharing type.
+    /// Only Organization is supported.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharingType")]
+    public string? DestinationDataSharingType { get; set; }
+}
+
 /// <summary>Amazon S3 configuration details for the sync.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -796,6 +858,13 @@ public partial class V1beta2ResourceDataSyncStatusAtProviderS3Destination
     /// <summary>Name of S3 bucket where the aggregated data is stored.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
+
+    /// <summary>
+    /// Enables destination data sharing.
+    /// See destination_data_sharing below.
+    /// </summary>
+    [JsonPropertyName("destinationDataSharing")]
+    public V1beta2ResourceDataSyncStatusAtProviderS3DestinationDestinationDataSharing? DestinationDataSharing { get; set; }
 
     /// <summary>ARN of an encryption key for a destination in Amazon S3.</summary>
     [JsonPropertyName("kmsKeyArn")]
@@ -887,6 +956,15 @@ public partial class V1beta2ResourceDataSyncStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ResourceDataSyncStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

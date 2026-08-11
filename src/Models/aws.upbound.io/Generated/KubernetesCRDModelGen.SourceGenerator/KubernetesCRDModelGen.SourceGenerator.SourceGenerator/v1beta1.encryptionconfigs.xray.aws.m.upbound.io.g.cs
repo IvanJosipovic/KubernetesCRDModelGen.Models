@@ -195,7 +195,7 @@ public partial class V1beta1EncryptionConfigSpecForProviderKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EncryptionConfigSpecForProvider
 {
-    /// <summary>An AWS KMS customer master key (CMK) ARN.</summary>
+    /// <summary>AWS KMS customer master key (CMK) ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
@@ -214,7 +214,7 @@ public partial class V1beta1EncryptionConfigSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
+    /// <summary>Type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -390,7 +390,7 @@ public partial class V1beta1EncryptionConfigSpecInitProviderKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EncryptionConfigSpecInitProvider
 {
-    /// <summary>An AWS KMS customer master key (CMK) ARN.</summary>
+    /// <summary>AWS KMS customer master key (CMK) ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
@@ -402,7 +402,7 @@ public partial class V1beta1EncryptionConfigSpecInitProvider
     [JsonPropertyName("keyIdSelector")]
     public V1beta1EncryptionConfigSpecInitProviderKeyIdSelector? KeyIdSelector { get; set; }
 
-    /// <summary>The type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
+    /// <summary>Type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -522,7 +522,7 @@ public partial class V1beta1EncryptionConfigStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An AWS KMS customer master key (CMK) ARN.</summary>
+    /// <summary>AWS KMS customer master key (CMK) ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
@@ -533,7 +533,7 @@ public partial class V1beta1EncryptionConfigStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
+    /// <summary>Type of encryption. Set to KMS to use your own key for encryption. Set to NONE for default encryption.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -592,6 +592,15 @@ public partial class V1beta1EncryptionConfigStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EncryptionConfigStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

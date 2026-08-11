@@ -483,6 +483,26 @@ spec:
                           - name
                           - namespace
                           type: object
+                        passwordWoSecretRef:
+                          description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.
+                          properties:
+                            key:
+                              description: The key to select.
+                              type: string
+                            name:
+                              description: Name of the secret.
+                              type: string
+                            namespace:
+                              description: Namespace of the secret.
+                              type: string
+                          required:
+                          - key
+                          - name
+                          - namespace
+                          type: object
+                        passwordWoVersion:
+                          description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                          type: number
                         username:
                           description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                           type: string
@@ -1009,6 +1029,26 @@ spec:
                           - name
                           - namespace
                           type: object
+                        passwordWoSecretRef:
+                          description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.
+                          properties:
+                            key:
+                              description: The key to select.
+                              type: string
+                            name:
+                              description: Name of the secret.
+                              type: string
+                            namespace:
+                              description: Namespace of the secret.
+                              type: string
+                          required:
+                          - key
+                          - name
+                          - namespace
+                          type: object
+                        passwordWoVersion:
+                          description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                          type: number
                         username:
                           description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                           type: string
@@ -1331,6 +1371,9 @@ spec:
                         organizationalUnitDistinguishedName:
                           description: The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.
                           type: string
+                        passwordWoVersion:
+                          description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                          type: number
                         username:
                           description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                           type: string
@@ -1416,6 +1459,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1872,7 +1922,7 @@ spec:
                         description: The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.
                         type: string
                       passwordSecretRef:
-                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
+                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.
                         properties:
                           key:
                             description: The key to select.
@@ -1888,6 +1938,26 @@ spec:
                         - name
                         - namespace
                         type: object
+                      passwordWoSecretRef:
+                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.
+                        properties:
+                          key:
+                            description: The key to select.
+                            type: string
+                          name:
+                            description: Name of the secret.
+                            type: string
+                          namespace:
+                            description: Namespace of the secret.
+                            type: string
+                        required:
+                        - key
+                        - name
+                        - namespace
+                        type: object
+                      passwordWoVersion:
+                        description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                        type: number
                       username:
                         description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                         type: string
@@ -2392,7 +2462,7 @@ spec:
                         description: The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.
                         type: string
                       passwordSecretRef:
-                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
+                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.
                         properties:
                           key:
                             description: The key to select.
@@ -2408,6 +2478,26 @@ spec:
                         - name
                         - namespace
                         type: object
+                      passwordWoSecretRef:
+                        description: The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.
+                        properties:
+                          key:
+                            description: The key to select.
+                            type: string
+                          name:
+                            description: Name of the secret.
+                            type: string
+                          namespace:
+                            description: Namespace of the secret.
+                            type: string
+                        required:
+                        - key
+                        - name
+                        - namespace
+                        type: object
+                      passwordWoVersion:
+                        description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                        type: number
                       username:
                         description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                         type: string
@@ -2724,6 +2814,9 @@ spec:
                       organizationalUnitDistinguishedName:
                         description: The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.
                         type: string
+                      passwordWoVersion:
+                        description: Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.
+                        type: number
                       username:
                         description: The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.
                         type: string
@@ -2808,6 +2901,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

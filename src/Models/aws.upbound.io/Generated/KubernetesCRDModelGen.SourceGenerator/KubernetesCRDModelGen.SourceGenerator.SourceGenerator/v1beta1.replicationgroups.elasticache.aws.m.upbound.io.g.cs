@@ -403,7 +403,7 @@ public partial class V1beta1ReplicationGroupSpecForProviderNodeGroupConfiguratio
     [JsonPropertyName("replicaAvailabilityZones")]
     public IList<string>? ReplicaAvailabilityZones { get; set; }
 
-    /// <summary>Number of replica nodes in this node group.</summary>
+    /// <summary>Number of replica nodes in this node group. Default AWS limit is 5. Higher values may be available with a quota increase.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
 
@@ -784,6 +784,10 @@ public partial class V1beta1ReplicationGroupSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
+
     /// <summary>
     /// Name of the cache engine to be used for the clusters in this replication group.
     /// Valid values are redis or valkey.
@@ -906,7 +910,7 @@ public partial class V1beta1ReplicationGroupSpecForProvider
     /// <summary>
     /// Number of replica nodes in each node group.
     /// Changing this number will trigger a resizing operation before other settings modifications.
-    /// Valid values are 0 to 5.
+    /// Default AWS limit is 5. Higher values may be available with a quota increase.
     /// Conflicts with num_cache_clusters.
     /// Can only be set if num_node_groups is set.
     /// </summary>
@@ -1350,7 +1354,7 @@ public partial class V1beta1ReplicationGroupSpecInitProviderNodeGroupConfigurati
     [JsonPropertyName("replicaAvailabilityZones")]
     public IList<string>? ReplicaAvailabilityZones { get; set; }
 
-    /// <summary>Number of replica nodes in this node group.</summary>
+    /// <summary>Number of replica nodes in this node group. Default AWS limit is 5. Higher values may be available with a quota increase.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
 
@@ -1736,6 +1740,10 @@ public partial class V1beta1ReplicationGroupSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
+
     /// <summary>
     /// Name of the cache engine to be used for the clusters in this replication group.
     /// Valid values are redis or valkey.
@@ -1851,7 +1859,7 @@ public partial class V1beta1ReplicationGroupSpecInitProvider
     /// <summary>
     /// Number of replica nodes in each node group.
     /// Changing this number will trigger a resizing operation before other settings modifications.
-    /// Valid values are 0 to 5.
+    /// Default AWS limit is 5. Higher values may be available with a quota increase.
     /// Conflicts with num_cache_clusters.
     /// Can only be set if num_node_groups is set.
     /// </summary>
@@ -2076,7 +2084,7 @@ public partial class V1beta1ReplicationGroupStatusAtProviderNodeGroupConfigurati
     [JsonPropertyName("replicaAvailabilityZones")]
     public IList<string>? ReplicaAvailabilityZones { get; set; }
 
-    /// <summary>Number of replica nodes in this node group.</summary>
+    /// <summary>Number of replica nodes in this node group. Default AWS limit is 5. Higher values may be available with a quota increase.</summary>
     [JsonPropertyName("replicaCount")]
     public double? ReplicaCount { get; set; }
 
@@ -2144,6 +2152,10 @@ public partial class V1beta1ReplicationGroupStatusAtProvider
     /// <summary>User-created description for the replication group. Must not be empty.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
 
     /// <summary>
     /// Name of the cache engine to be used for the clusters in this replication group.
@@ -2271,7 +2283,7 @@ public partial class V1beta1ReplicationGroupStatusAtProvider
     /// <summary>
     /// Number of replica nodes in each node group.
     /// Changing this number will trigger a resizing operation before other settings modifications.
-    /// Valid values are 0 to 5.
+    /// Default AWS limit is 5. Higher values may be available with a quota increase.
     /// Conflicts with num_cache_clusters.
     /// Can only be set if num_node_groups is set.
     /// </summary>
@@ -2390,6 +2402,15 @@ public partial class V1beta1ReplicationGroupStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ReplicationGroupStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -524,6 +524,10 @@ public partial class V1beta1ResourceGatewaySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    [JsonPropertyName("resourceConfigDnsResolution")]
+    public string? ResourceConfigDnsResolution { get; set; }
+
     /// <summary>References to SecurityGroup in ec2 to populate securityGroupIds.</summary>
     [JsonPropertyName("securityGroupIdRefs")]
     public IList<V1beta1ResourceGatewaySpecForProviderSecurityGroupIdRefs>? SecurityGroupIdRefs { get; set; }
@@ -1058,6 +1062,10 @@ public partial class V1beta1ResourceGatewaySpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    [JsonPropertyName("resourceConfigDnsResolution")]
+    public string? ResourceConfigDnsResolution { get; set; }
+
     /// <summary>References to SecurityGroup in ec2 to populate securityGroupIds.</summary>
     [JsonPropertyName("securityGroupIdRefs")]
     public IList<V1beta1ResourceGatewaySpecInitProviderSecurityGroupIdRefs>? SecurityGroupIdRefs { get; set; }
@@ -1237,6 +1245,10 @@ public partial class V1beta1ResourceGatewayStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    [JsonPropertyName("resourceConfigDnsResolution")]
+    public string? ResourceConfigDnsResolution { get; set; }
+
     /// <summary>Security group IDs associated with the resource gateway. The security groups must be in the same VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
@@ -1316,6 +1328,15 @@ public partial class V1beta1ResourceGatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResourceGatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -61,7 +61,7 @@ spec:
                     description: A comment to describe the response headers policy. The comment cannot be longer than 128 characters.
                     type: string
                   corsConfig:
-                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.
+                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.
                     properties:
                       accessControlAllowCredentials:
                         description: A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.
@@ -243,7 +243,7 @@ spec:
                     description: A comment to describe the response headers policy. The comment cannot be longer than 128 characters.
                     type: string
                   corsConfig:
-                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.
+                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.
                     properties:
                       accessControlAllowCredentials:
                         description: A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.
@@ -481,7 +481,7 @@ spec:
                     description: A comment to describe the response headers policy. The comment cannot be longer than 128 characters.
                     type: string
                   corsConfig:
-                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.
+                    description: A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.
                     properties:
                       accessControlAllowCredentials:
                         description: A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.
@@ -696,6 +696,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

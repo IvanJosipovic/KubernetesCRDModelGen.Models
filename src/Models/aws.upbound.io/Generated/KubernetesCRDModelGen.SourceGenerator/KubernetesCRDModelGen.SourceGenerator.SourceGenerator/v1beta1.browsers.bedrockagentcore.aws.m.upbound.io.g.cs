@@ -36,6 +36,249 @@ public partial class V1beta1BrowserList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1beta1Browser> Items { get; set; }
 }
 
+/// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderBrowserSigning
+{
+    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocationSecretsManager
+{
+    /// <summary>ARN of the AWS Secrets Manager secret containing the certificate.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificateLocation
+{
+    /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+    [JsonPropertyName("secretsManager")]
+    public V1beta1BrowserSpecForProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderCertificate
+{
+    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserSpecForProviderCertificateLocation? Location { get; set; }
+}
+
+/// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocationS3
+{
+    /// <summary>Name of the S3 bucket.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    /// <summary>Version ID of the S3 object. If not specified, the latest version is used.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
+}
+
+/// <summary>Location of the enterprise policy file. See location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderEnterprisePolicyLocation
+{
+    /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1BrowserSpecForProviderEnterprisePolicyLocationS3? S3 { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecForProviderEnterprisePolicy
+{
+    /// <summary>Location of the enterprise policy file. See location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserSpecForProviderEnterprisePolicyLocation? Location { get; set; }
+
+    /// <summary>Type of browser enterprise policy. Valid values: MANAGED, RECOMMENDED.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -414,9 +657,21 @@ public partial class V1beta1BrowserSpecForProviderRecording
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecForProvider
 {
+    /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+    [JsonPropertyName("browserSigning")]
+    public V1beta1BrowserSpecForProviderBrowserSigning? BrowserSigning { get; set; }
+
+    /// <summary>Certificates to install in the browser. See certificate below.</summary>
+    [JsonPropertyName("certificate")]
+    public IList<V1beta1BrowserSpecForProviderCertificate>? Certificate { get; set; }
+
     /// <summary>Description of the browser.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Enterprise policy files to apply to the browser. See enterprise_policy below.</summary>
+    [JsonPropertyName("enterprisePolicy")]
+    public IList<V1beta1BrowserSpecForProviderEnterprisePolicy>? EnterprisePolicy { get; set; }
 
     /// <summary>ARN of the IAM role that the browser assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
@@ -452,6 +707,249 @@ public partial class V1beta1BrowserSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderBrowserSigning
+{
+    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocationSecretsManager
+{
+    /// <summary>ARN of the AWS Secrets Manager secret containing the certificate.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManagerSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificateLocation
+{
+    /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+    [JsonPropertyName("secretsManager")]
+    public V1beta1BrowserSpecInitProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderCertificate
+{
+    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserSpecInitProviderCertificateLocation? Location { get; set; }
+}
+
+/// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocationS3
+{
+    /// <summary>Name of the S3 bucket.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    /// <summary>Version ID of the S3 object. If not specified, the latest version is used.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
+}
+
+/// <summary>Location of the enterprise policy file. See location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderEnterprisePolicyLocation
+{
+    /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1BrowserSpecInitProviderEnterprisePolicyLocationS3? S3 { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserSpecInitProviderEnterprisePolicy
+{
+    /// <summary>Location of the enterprise policy file. See location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserSpecInitProviderEnterprisePolicyLocation? Location { get; set; }
+
+    /// <summary>Type of browser enterprise policy. Valid values: MANAGED, RECOMMENDED.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>
@@ -844,9 +1342,21 @@ public partial class V1beta1BrowserSpecInitProviderRecording
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BrowserSpecInitProvider
 {
+    /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+    [JsonPropertyName("browserSigning")]
+    public V1beta1BrowserSpecInitProviderBrowserSigning? BrowserSigning { get; set; }
+
+    /// <summary>Certificates to install in the browser. See certificate below.</summary>
+    [JsonPropertyName("certificate")]
+    public IList<V1beta1BrowserSpecInitProviderCertificate>? Certificate { get; set; }
+
     /// <summary>Description of the browser.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Enterprise policy files to apply to the browser. See enterprise_policy below.</summary>
+    [JsonPropertyName("enterprisePolicy")]
+    public IList<V1beta1BrowserSpecInitProviderEnterprisePolicy>? EnterprisePolicy { get; set; }
 
     /// <summary>ARN of the IAM role that the browser assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
@@ -984,6 +1494,86 @@ public partial class V1beta1BrowserSpec
     public V1beta1BrowserSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderBrowserSigning
+{
+    /// <summary>Whether browser signing is enabled. When enabled, the browser cryptographically signs HTTP requests to identify itself as an AI agent to bot control vendors.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderCertificateLocationSecretsManager
+{
+    /// <summary>ARN of the AWS Secrets Manager secret containing the certificate.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+}
+
+/// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderCertificateLocation
+{
+    /// <summary>AWS Secrets Manager location of the certificate. See secrets_manager below.</summary>
+    [JsonPropertyName("secretsManager")]
+    public V1beta1BrowserStatusAtProviderCertificateLocationSecretsManager? SecretsManager { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderCertificate
+{
+    /// <summary>Location from which to retrieve the certificate. See certificates.location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserStatusAtProviderCertificateLocation? Location { get; set; }
+}
+
+/// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocationS3
+{
+    /// <summary>Name of the S3 bucket.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Prefix for objects in the S3 bucket.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    /// <summary>Version ID of the S3 object. If not specified, the latest version is used.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
+}
+
+/// <summary>Location of the enterprise policy file. See location below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderEnterprisePolicyLocation
+{
+    /// <summary>S3 location of the enterprise policy file. See s3 below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1BrowserStatusAtProviderEnterprisePolicyLocationS3? S3 { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrowserStatusAtProviderEnterprisePolicy
+{
+    /// <summary>Location of the enterprise policy file. See location below.</summary>
+    [JsonPropertyName("location")]
+    public V1beta1BrowserStatusAtProviderEnterprisePolicyLocation? Location { get; set; }
+
+    /// <summary>Type of browser enterprise policy. Valid values: MANAGED, RECOMMENDED.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>VPC configuration when network_mode is VPC. See vpc_config below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1052,9 +1642,21 @@ public partial class V1beta1BrowserStatusAtProvider
     [JsonPropertyName("browserId")]
     public string? BrowserId { get; set; }
 
+    /// <summary>Browser signing configuration that enables cryptographic agent identification using HTTP message signatures. See browser_signing below.</summary>
+    [JsonPropertyName("browserSigning")]
+    public V1beta1BrowserStatusAtProviderBrowserSigning? BrowserSigning { get; set; }
+
+    /// <summary>Certificates to install in the browser. See certificate below.</summary>
+    [JsonPropertyName("certificate")]
+    public IList<V1beta1BrowserStatusAtProviderCertificate>? Certificate { get; set; }
+
     /// <summary>Description of the browser.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Enterprise policy files to apply to the browser. See enterprise_policy below.</summary>
+    [JsonPropertyName("enterprisePolicy")]
+    public IList<V1beta1BrowserStatusAtProviderEnterprisePolicy>? EnterprisePolicy { get; set; }
 
     /// <summary>ARN of the IAM role that the browser assumes for execution.</summary>
     [JsonPropertyName("executionRoleArn")]
@@ -1145,6 +1747,15 @@ public partial class V1beta1BrowserStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BrowserStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

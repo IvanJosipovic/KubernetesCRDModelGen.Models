@@ -73,7 +73,7 @@ spec:
                     description: Whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are single-az or cross-az, default is single-az. If you want to choose cross-az, num_cache_nodes must be greater than 1.
                     type: string
                   engine:
-                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.
+                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.
                     type: string
                   engineVersion:
                     description: |-
@@ -122,7 +122,7 @@ spec:
                   nodeType:
                     description: |-
                       The instance class used.
-                      See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+                      See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
                       See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
                       For Memcached, changing this value will re-create the resource.
                     type: string
@@ -506,7 +506,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   transitEncryptionEnabled:
-                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
+                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
                     type: boolean
                 required:
                 - region
@@ -540,7 +540,7 @@ spec:
                     description: Whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are single-az or cross-az, default is single-az. If you want to choose cross-az, num_cache_nodes must be greater than 1.
                     type: string
                   engine:
-                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.
+                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.
                     type: string
                   engineVersion:
                     description: |-
@@ -589,7 +589,7 @@ spec:
                   nodeType:
                     description: |-
                       The instance class used.
-                      See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+                      See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
                       See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
                       For Memcached, changing this value will re-create the resource.
                     type: string
@@ -968,7 +968,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   transitEncryptionEnabled:
-                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
+                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
                     type: boolean
                 type: object
               managementPolicies:
@@ -1078,7 +1078,7 @@ spec:
                     description: (Memcached only) Configuration endpoint to allow host discovery.
                     type: string
                   engine:
-                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis and valkey.
+                    description: Name of the cache engine to be used for this cache cluster. Valid values are memcached, redis.
                     type: string
                   engineVersion:
                     description: |-
@@ -1132,7 +1132,7 @@ spec:
                   nodeType:
                     description: |-
                       The instance class used.
-                      See AWS documentation for information on supported node types for Valkey or Redis OSS and guidance on selecting node types for Valkey or Redis OSS.
+                      See AWS documentation for information on supported node types for Redis OSS and guidance on selecting node types for Redis OSS.
                       See AWS documentation for information on supported node types for Memcached and guidance on selecting node types for Memcached.
                       For Memcached, changing this value will re-create the resource.
                     type: string
@@ -1203,7 +1203,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   transitEncryptionEnabled:
-                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Valkey 7.2 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
+                    description: Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.
                     type: boolean
                 type: object
               conditions:
@@ -1250,6 +1250,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

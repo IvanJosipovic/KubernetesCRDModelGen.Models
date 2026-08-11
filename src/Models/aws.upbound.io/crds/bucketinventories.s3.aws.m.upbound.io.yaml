@@ -58,7 +58,7 @@ spec:
               forProvider:
                 properties:
                   bucket:
-                    description: Name of the source bucket that inventory lists the objects for.
+                    description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                     type: string
                   bucketRef:
                     description: Reference to a Bucket in s3 to populate bucket.
@@ -143,13 +143,13 @@ spec:
                     description: Contains information about where to publish the inventory results (documented below).
                     properties:
                       bucket:
-                        description: Name of the source bucket that inventory lists the objects for.
+                        description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                         properties:
                           accountId:
                             description: ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
                             type: string
                           bucketArn:
-                            description: Amazon S3 bucket ARN of the destination.
+                            description: Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.
                             type: string
                           bucketArnRef:
                             description: Reference to a Bucket in s3 to populate bucketArn.
@@ -303,7 +303,7 @@ spec:
                   autoscaler.
                 properties:
                   bucket:
-                    description: Name of the source bucket that inventory lists the objects for.
+                    description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                     type: string
                   bucketRef:
                     description: Reference to a Bucket in s3 to populate bucket.
@@ -388,13 +388,13 @@ spec:
                     description: Contains information about where to publish the inventory results (documented below).
                     properties:
                       bucket:
-                        description: Name of the source bucket that inventory lists the objects for.
+                        description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                         properties:
                           accountId:
                             description: ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
                             type: string
                           bucketArn:
-                            description: Amazon S3 bucket ARN of the destination.
+                            description: Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.
                             type: string
                           bucketArnRef:
                             description: Reference to a Bucket in s3 to populate bucketArn.
@@ -600,19 +600,19 @@ spec:
               atProvider:
                 properties:
                   bucket:
-                    description: Name of the source bucket that inventory lists the objects for.
+                    description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                     type: string
                   destination:
                     description: Contains information about where to publish the inventory results (documented below).
                     properties:
                       bucket:
-                        description: Name of the source bucket that inventory lists the objects for.
+                        description: Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.
                         properties:
                           accountId:
                             description: ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
                             type: string
                           bucketArn:
-                            description: Amazon S3 bucket ARN of the destination.
+                            description: Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.
                             type: string
                           encryption:
                             description: Contains the type of server-side encryption to use to encrypt the inventory (documented below).
@@ -717,6 +717,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

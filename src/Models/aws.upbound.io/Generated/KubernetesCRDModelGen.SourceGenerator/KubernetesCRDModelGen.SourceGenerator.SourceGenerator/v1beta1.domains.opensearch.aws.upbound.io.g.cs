@@ -69,6 +69,10 @@ public partial class V1beta1DomainSpecForProviderAdvancedSecurityOptionsJwtOptio
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
+
     /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
@@ -377,6 +381,16 @@ public partial class V1beta1DomainSpecForProviderCognitoOptions
     /// <summary>ID of the Cognito User Pool to use.</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DomainSpecForProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1247,6 +1261,10 @@ public partial class V1beta1DomainSpecForProvider
     [JsonPropertyName("cognitoOptions")]
     public IList<V1beta1DomainSpecForProviderCognitoOptions>? CognitoOptions { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public IList<V1beta1DomainSpecForProviderDeploymentStrategyOptions>? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public IList<V1beta1DomainSpecForProviderDomainEndpointOptions>? DomainEndpointOptions { get; set; }
@@ -1319,6 +1337,10 @@ public partial class V1beta1DomainSpecInitProviderAdvancedSecurityOptionsJwtOpti
     /// <summary>Whether JWT authentication is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
+
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
 
     /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
     [JsonPropertyName("publicKey")]
@@ -1628,6 +1650,16 @@ public partial class V1beta1DomainSpecInitProviderCognitoOptions
     /// <summary>ID of the Cognito User Pool to use.</summary>
     [JsonPropertyName("userPoolId")]
     public string? UserPoolId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DomainSpecInitProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2510,6 +2542,10 @@ public partial class V1beta1DomainSpecInitProvider
     [JsonPropertyName("cognitoOptions")]
     public IList<V1beta1DomainSpecInitProviderCognitoOptions>? CognitoOptions { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public IList<V1beta1DomainSpecInitProviderDeploymentStrategyOptions>? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public IList<V1beta1DomainSpecInitProviderDomainEndpointOptions>? DomainEndpointOptions { get; set; }
@@ -2765,6 +2801,10 @@ public partial class V1beta1DomainStatusAtProviderAdvancedSecurityOptionsJwtOpti
     /// <summary>Whether JWT authentication is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
+
+    /// <summary>URL endpoint that hosts the JSON Web Key Set (JWKS) containing public keys used to verify JWT signatures. This argument can be specified only with OpenSearch versions 3.3 and later. At least one of jwks_url or public_key must be specified when enabled is set to true.</summary>
+    [JsonPropertyName("jwksUrl")]
+    public string? JwksUrl { get; set; }
 
     /// <summary>PEM-encoded public key used to verify JWT signatures.</summary>
     [JsonPropertyName("publicKey")]
@@ -3056,6 +3096,16 @@ public partial class V1beta1DomainStatusAtProviderCognitoOptions
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DomainStatusAtProviderDeploymentStrategyOptions
+{
+    /// <summary>Deployment strategy for the domain. Valid values: Default and CapacityOptimized.</summary>
+    [JsonPropertyName("deploymentStrategy")]
+    public string? DeploymentStrategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainStatusAtProviderDomainEndpointOptions
 {
     /// <summary>Fully qualified domain for your custom endpoint.</summary>
@@ -3293,6 +3343,10 @@ public partial class V1beta1DomainStatusAtProvider
     [JsonPropertyName("dashboardEndpointV2")]
     public string? DashboardEndpointV2 { get; set; }
 
+    /// <summary>Configuration block for the deployment strategy options of the domain. Detailed below.</summary>
+    [JsonPropertyName("deploymentStrategyOptions")]
+    public IList<V1beta1DomainStatusAtProviderDeploymentStrategyOptions>? DeploymentStrategyOptions { get; set; }
+
     /// <summary>Configuration block for domain endpoint HTTP(S) related options. Detailed below.</summary>
     [JsonPropertyName("domainEndpointOptions")]
     public IList<V1beta1DomainStatusAtProviderDomainEndpointOptions>? DomainEndpointOptions { get; set; }
@@ -3436,6 +3490,15 @@ public partial class V1beta1DomainStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DomainStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

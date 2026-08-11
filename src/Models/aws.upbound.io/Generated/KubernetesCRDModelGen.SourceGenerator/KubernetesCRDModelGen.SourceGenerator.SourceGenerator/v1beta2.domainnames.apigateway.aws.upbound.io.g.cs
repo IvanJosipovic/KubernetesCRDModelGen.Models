@@ -225,11 +225,11 @@ public partial class V1beta2DomainNameSpecForProviderCertificatePrivateKeySecret
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecForProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>A list of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
+    /// <summary>List of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
     [JsonPropertyName("types")]
     public IList<string>? Types { get; set; }
 }
@@ -447,7 +447,7 @@ public partial class V1beta2DomainNameSpecForProvider
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>A stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
+    /// <summary>Stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -657,11 +657,11 @@ public partial class V1beta2DomainNameSpecInitProviderCertificatePrivateKeySecre
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameSpecInitProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>A list of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
+    /// <summary>List of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
     [JsonPropertyName("types")]
     public IList<string>? Types { get; set; }
 }
@@ -891,7 +891,7 @@ public partial class V1beta2DomainNameSpecInitProvider
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>A stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
+    /// <summary>Stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -1112,11 +1112,11 @@ public partial class V1beta2DomainNameSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainNameStatusAtProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a DomainName. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke a DomainName, or use dualstack to allow both IPv4 and IPv6 addresses to invoke a DomainName. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>A list of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
+    /// <summary>List of endpoint types of an API or its custom domain name. For an edge-optimized API and its custom domain name, the endpoint type is EDGE. For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.</summary>
     [JsonPropertyName("types")]
     public IList<string>? Types { get; set; }
 }
@@ -1175,7 +1175,7 @@ public partial class V1beta2DomainNameStatusAtProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The identifier for the domain name resource. Supported only for private custom domain names.</summary>
+    /// <summary>Identifier for the domain name resource. Supported only for private custom domain names.</summary>
     [JsonPropertyName("domainNameId")]
     public string? DomainNameId { get; set; }
 
@@ -1199,7 +1199,7 @@ public partial class V1beta2DomainNameStatusAtProvider
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>A stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
+    /// <summary>Stringified JSON policy document that applies to the execute-api service for this DomainName regardless of the caller and Method configuration. Supported only for private custom domain names.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -1297,6 +1297,15 @@ public partial class V1beta2DomainNameStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DomainNameStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

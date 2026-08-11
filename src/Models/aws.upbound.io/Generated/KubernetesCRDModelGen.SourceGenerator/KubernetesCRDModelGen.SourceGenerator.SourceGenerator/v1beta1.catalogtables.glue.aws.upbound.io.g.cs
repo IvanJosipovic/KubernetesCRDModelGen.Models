@@ -218,8 +218,166 @@ public partial class V1beta1CatalogTableSpecForProviderDatabaseNameSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
+{
+    /// <summary>The unique identifier assigned to this partition field within the Iceberg table&apos;s partition specification.</summary>
+    [JsonPropertyName("fieldId")]
+    public double? FieldId { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
+{
+    /// <summary>The list of partition fields that define how the table data should be partitioned. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this partition specification within the Iceberg table&apos;s metadata history.</summary>
+    [JsonPropertyName("specId")]
+    public double? SpecId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
+{
+    /// <summary>Optional documentation or description text that provides additional context about the purpose and usage of this field. Length between 0 and 255 characters.</summary>
+    [JsonPropertyName("doc")]
+    public string? Doc { get; set; }
+
+    /// <summary>The unique identifier assigned to this field within the Iceberg table schema, used for schema evolution and field tracking.</summary>
+    [JsonPropertyName("id")]
+    public double? Id { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for all records that were written before the field was added to the schema.</summary>
+    [JsonPropertyName("initialDefault")]
+    public string? InitialDefault { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Indicates whether this field is required (non-nullable) or optional (nullable) in the table schema.</summary>
+    [JsonPropertyName("required")]
+    public bool? Required { get; set; }
+
+    /// <summary>The data type definition for this field as a JSON string, specifying the structure and format of the data it contains. Examples: &quot;long&quot;, &quot;string&quot;, &quot;timestamp&quot;, &quot;decimal(10,2)&quot;.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for any records written after the field was added to the schema, if the writer does not supply the field&apos;s value.</summary>
+    [JsonPropertyName("writeDefault")]
+    public string? WriteDefault { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
+{
+    /// <summary>The list of field definitions that make up the table schema. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields>? Fields { get; set; }
+
+    /// <summary>The list of field identifiers that uniquely identify records in the table, used for row-level operations and deduplication.</summary>
+    [JsonPropertyName("identifierFieldIds")]
+    public IList<double>? IdentifierFieldIds { get; set; }
+
+    /// <summary>The unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
+    [JsonPropertyName("schemaId")]
+    public double? SchemaId { get; set; }
+
+    /// <summary>The root type of the schema structure. Valid value: struct.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
+{
+    /// <summary>The sort direction for this field. Valid values: asc, desc.</summary>
+    [JsonPropertyName("direction")]
+    public string? Direction { get; set; }
+
+    /// <summary>The ordering behavior for null values in this field. Valid values: nulls-first, nulls-last.</summary>
+    [JsonPropertyName("nullOrder")]
+    public string? NullOrder { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
+{
+    /// <summary>The list of fields and their sort directions that define the ordering criteria for the Iceberg table data. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this sort order specification within the Iceberg table&apos;s metadata.</summary>
+    [JsonPropertyName("orderId")]
+    public double? OrderId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInput
+{
+    /// <summary>The S3 location where the Iceberg table data will be stored. Maximum length of 2056 characters.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
+    [JsonPropertyName("partitionSpec")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec>? PartitionSpec { get; set; }
+
+    /// <summary>Key-value pairs of additional table properties and configuration settings for the Iceberg table.</summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>The schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
+    [JsonPropertyName("schema")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema>? Schema { get; set; }
+
+    /// <summary>The sort order specification that defines how data should be ordered within each partition to optimize query performance. See sort_order below.</summary>
+    [JsonPropertyName("sortOrder")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder>? SortOrder { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInput
 {
+    /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
+    [JsonPropertyName("icebergTableInput")]
+    public IList<V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInputIcebergTableInput>? IcebergTableInput { get; set; }
+
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
     [JsonPropertyName("metadataOperation")]
     public string? MetadataOperation { get; set; }
@@ -467,6 +625,237 @@ public partial class V1beta1CatalogTableSpecForProviderTargetTable
     public string? Region { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinitionRepresentations
+{
+    /// <summary>A parameter that specifies the engine type of a specific representation. Valid values are REDSHIFT, ATHENA, and SPARK.</summary>
+    [JsonPropertyName("dialect")]
+    public string? Dialect { get; set; }
+
+    /// <summary>A parameter that specifies the version of the engine of a specific representation.</summary>
+    [JsonPropertyName("dialectVersion")]
+    public string? DialectVersion { get; set; }
+
+    /// <summary>The name of the connection to be used to validate the specific representation of the view.</summary>
+    [JsonPropertyName("validationConnection")]
+    public string? ValidationConnection { get; set; }
+
+    /// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
+    [JsonPropertyName("validationConnectionRef")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionRef? ValidationConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
+    [JsonPropertyName("validationConnectionSelector")]
+    public V1beta1CatalogTableSpecForProviderViewDefinitionRepresentationsValidationConnectionSelector? ValidationConnectionSelector { get; set; }
+
+    /// <summary>A string that represents the SQL query that describes the view with expanded resource ARNs.</summary>
+    [JsonPropertyName("viewExpandedText")]
+    public string? ViewExpandedText { get; set; }
+
+    /// <summary>A string that represents the original SQL query that describes the view.</summary>
+    [JsonPropertyName("viewOriginalText")]
+    public string? ViewOriginalText { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecForProviderViewDefinition
+{
+    /// <summary>The definer of a view in SQL.</summary>
+    [JsonPropertyName("definer")]
+    public string? Definer { get; set; }
+
+    /// <summary>You can set this flag as true to instruct the engine not to push user-provided operations into the logical plan of the view during query planning. However, setting this flag does not guarantee that the engine will comply. Refer to the engine&apos;s documentation to understand the guarantees provided, if any.</summary>
+    [JsonPropertyName("isProtected")]
+    public bool? IsProtected { get; set; }
+
+    /// <summary>Type of the materialized view&apos;s last refresh. Valid values: Full, Incremental.</summary>
+    [JsonPropertyName("lastRefreshType")]
+    public string? LastRefreshType { get; set; }
+
+    /// <summary>Auto refresh interval in seconds for the materialized view.</summary>
+    [JsonPropertyName("refreshSeconds")]
+    public double? RefreshSeconds { get; set; }
+
+    /// <summary>A list of structures that contains the dialect of the view, and the query that defines the view. See representations below.</summary>
+    [JsonPropertyName("representations")]
+    public IList<V1beta1CatalogTableSpecForProviderViewDefinitionRepresentations>? Representations { get; set; }
+
+    /// <summary>List of the Apache Iceberg table versions referenced by the materialized view.</summary>
+    [JsonPropertyName("subObjectVersionIds")]
+    public IList<double>? SubObjectVersionIds { get; set; }
+
+    /// <summary>A list of base table ARNs that make up the view.</summary>
+    [JsonPropertyName("subObjects")]
+    public IList<string>? SubObjects { get; set; }
+
+    /// <summary>ID value that identifies this view&apos;s version. For materialized views, the version ID is the Apache Iceberg table&apos;s snapshot ID.</summary>
+    [JsonPropertyName("viewVersionId")]
+    public double? ViewVersionId { get; set; }
+
+    /// <summary>Version ID of the Apache Iceberg table.</summary>
+    [JsonPropertyName("viewVersionToken")]
+    public string? ViewVersionToken { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
@@ -535,6 +924,10 @@ public partial class V1beta1CatalogTableSpecForProvider
     [JsonPropertyName("targetTable")]
     public IList<V1beta1CatalogTableSpecForProviderTargetTable>? TargetTable { get; set; }
 
+    /// <summary>A structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
+    [JsonPropertyName("viewDefinition")]
+    public IList<V1beta1CatalogTableSpecForProviderViewDefinition>? ViewDefinition { get; set; }
+
     /// <summary>If the table is a view, the expanded text of the view; otherwise null.</summary>
     [JsonPropertyName("viewExpandedText")]
     public string? ViewExpandedText { get; set; }
@@ -547,8 +940,166 @@ public partial class V1beta1CatalogTableSpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
+{
+    /// <summary>The unique identifier assigned to this partition field within the Iceberg table&apos;s partition specification.</summary>
+    [JsonPropertyName("fieldId")]
+    public double? FieldId { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
+{
+    /// <summary>The list of partition fields that define how the table data should be partitioned. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this partition specification within the Iceberg table&apos;s metadata history.</summary>
+    [JsonPropertyName("specId")]
+    public double? SpecId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
+{
+    /// <summary>Optional documentation or description text that provides additional context about the purpose and usage of this field. Length between 0 and 255 characters.</summary>
+    [JsonPropertyName("doc")]
+    public string? Doc { get; set; }
+
+    /// <summary>The unique identifier assigned to this field within the Iceberg table schema, used for schema evolution and field tracking.</summary>
+    [JsonPropertyName("id")]
+    public double? Id { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for all records that were written before the field was added to the schema.</summary>
+    [JsonPropertyName("initialDefault")]
+    public string? InitialDefault { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Indicates whether this field is required (non-nullable) or optional (nullable) in the table schema.</summary>
+    [JsonPropertyName("required")]
+    public bool? Required { get; set; }
+
+    /// <summary>The data type definition for this field as a JSON string, specifying the structure and format of the data it contains. Examples: &quot;long&quot;, &quot;string&quot;, &quot;timestamp&quot;, &quot;decimal(10,2)&quot;.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for any records written after the field was added to the schema, if the writer does not supply the field&apos;s value.</summary>
+    [JsonPropertyName("writeDefault")]
+    public string? WriteDefault { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
+{
+    /// <summary>The list of field definitions that make up the table schema. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields>? Fields { get; set; }
+
+    /// <summary>The list of field identifiers that uniquely identify records in the table, used for row-level operations and deduplication.</summary>
+    [JsonPropertyName("identifierFieldIds")]
+    public IList<double>? IdentifierFieldIds { get; set; }
+
+    /// <summary>The unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
+    [JsonPropertyName("schemaId")]
+    public double? SchemaId { get; set; }
+
+    /// <summary>The root type of the schema structure. Valid value: struct.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
+{
+    /// <summary>The sort direction for this field. Valid values: asc, desc.</summary>
+    [JsonPropertyName("direction")]
+    public string? Direction { get; set; }
+
+    /// <summary>The ordering behavior for null values in this field. Valid values: nulls-first, nulls-last.</summary>
+    [JsonPropertyName("nullOrder")]
+    public string? NullOrder { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
+{
+    /// <summary>The list of fields and their sort directions that define the ordering criteria for the Iceberg table data. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this sort order specification within the Iceberg table&apos;s metadata.</summary>
+    [JsonPropertyName("orderId")]
+    public double? OrderId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInput
+{
+    /// <summary>The S3 location where the Iceberg table data will be stored. Maximum length of 2056 characters.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
+    [JsonPropertyName("partitionSpec")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec>? PartitionSpec { get; set; }
+
+    /// <summary>Key-value pairs of additional table properties and configuration settings for the Iceberg table.</summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>The schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
+    [JsonPropertyName("schema")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema>? Schema { get; set; }
+
+    /// <summary>The sort order specification that defines how data should be ordered within each partition to optimize query performance. See sort_order below.</summary>
+    [JsonPropertyName("sortOrder")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder>? SortOrder { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInput
 {
+    /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
+    [JsonPropertyName("icebergTableInput")]
+    public IList<V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInputIcebergTableInput>? IcebergTableInput { get; set; }
+
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
     [JsonPropertyName("metadataOperation")]
     public string? MetadataOperation { get; set; }
@@ -785,6 +1336,237 @@ public partial class V1beta1CatalogTableSpecInitProviderTargetTable
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentations
+{
+    /// <summary>A parameter that specifies the engine type of a specific representation. Valid values are REDSHIFT, ATHENA, and SPARK.</summary>
+    [JsonPropertyName("dialect")]
+    public string? Dialect { get; set; }
+
+    /// <summary>A parameter that specifies the version of the engine of a specific representation.</summary>
+    [JsonPropertyName("dialectVersion")]
+    public string? DialectVersion { get; set; }
+
+    /// <summary>The name of the connection to be used to validate the specific representation of the view.</summary>
+    [JsonPropertyName("validationConnection")]
+    public string? ValidationConnection { get; set; }
+
+    /// <summary>Reference to a Connection in glue to populate validationConnection.</summary>
+    [JsonPropertyName("validationConnectionRef")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionRef? ValidationConnectionRef { get; set; }
+
+    /// <summary>Selector for a Connection in glue to populate validationConnection.</summary>
+    [JsonPropertyName("validationConnectionSelector")]
+    public V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentationsValidationConnectionSelector? ValidationConnectionSelector { get; set; }
+
+    /// <summary>A string that represents the SQL query that describes the view with expanded resource ARNs.</summary>
+    [JsonPropertyName("viewExpandedText")]
+    public string? ViewExpandedText { get; set; }
+
+    /// <summary>A string that represents the original SQL query that describes the view.</summary>
+    [JsonPropertyName("viewOriginalText")]
+    public string? ViewOriginalText { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableSpecInitProviderViewDefinition
+{
+    /// <summary>The definer of a view in SQL.</summary>
+    [JsonPropertyName("definer")]
+    public string? Definer { get; set; }
+
+    /// <summary>You can set this flag as true to instruct the engine not to push user-provided operations into the logical plan of the view during query planning. However, setting this flag does not guarantee that the engine will comply. Refer to the engine&apos;s documentation to understand the guarantees provided, if any.</summary>
+    [JsonPropertyName("isProtected")]
+    public bool? IsProtected { get; set; }
+
+    /// <summary>Type of the materialized view&apos;s last refresh. Valid values: Full, Incremental.</summary>
+    [JsonPropertyName("lastRefreshType")]
+    public string? LastRefreshType { get; set; }
+
+    /// <summary>Auto refresh interval in seconds for the materialized view.</summary>
+    [JsonPropertyName("refreshSeconds")]
+    public double? RefreshSeconds { get; set; }
+
+    /// <summary>A list of structures that contains the dialect of the view, and the query that defines the view. See representations below.</summary>
+    [JsonPropertyName("representations")]
+    public IList<V1beta1CatalogTableSpecInitProviderViewDefinitionRepresentations>? Representations { get; set; }
+
+    /// <summary>List of the Apache Iceberg table versions referenced by the materialized view.</summary>
+    [JsonPropertyName("subObjectVersionIds")]
+    public IList<double>? SubObjectVersionIds { get; set; }
+
+    /// <summary>A list of base table ARNs that make up the view.</summary>
+    [JsonPropertyName("subObjects")]
+    public IList<string>? SubObjects { get; set; }
+
+    /// <summary>ID value that identifies this view&apos;s version. For materialized views, the version ID is the Apache Iceberg table&apos;s snapshot ID.</summary>
+    [JsonPropertyName("viewVersionId")]
+    public double? ViewVersionId { get; set; }
+
+    /// <summary>Version ID of the Apache Iceberg table.</summary>
+    [JsonPropertyName("viewVersionToken")]
+    public string? ViewVersionToken { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -840,6 +1622,10 @@ public partial class V1beta1CatalogTableSpecInitProvider
     /// <summary>Configuration block of a target table for resource linking. See target_table below.</summary>
     [JsonPropertyName("targetTable")]
     public IList<V1beta1CatalogTableSpecInitProviderTargetTable>? TargetTable { get; set; }
+
+    /// <summary>A structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
+    [JsonPropertyName("viewDefinition")]
+    public IList<V1beta1CatalogTableSpecInitProviderViewDefinition>? ViewDefinition { get; set; }
 
     /// <summary>If the table is a view, the expanded text of the view; otherwise null.</summary>
     [JsonPropertyName("viewExpandedText")]
@@ -1043,8 +1829,166 @@ public partial class V1beta1CatalogTableSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields
+{
+    /// <summary>The unique identifier assigned to this partition field within the Iceberg table&apos;s partition specification.</summary>
+    [JsonPropertyName("fieldId")]
+    public double? FieldId { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec
+{
+    /// <summary>The list of partition fields that define how the table data should be partitioned. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this partition specification within the Iceberg table&apos;s metadata history.</summary>
+    [JsonPropertyName("specId")]
+    public double? SpecId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields
+{
+    /// <summary>Optional documentation or description text that provides additional context about the purpose and usage of this field. Length between 0 and 255 characters.</summary>
+    [JsonPropertyName("doc")]
+    public string? Doc { get; set; }
+
+    /// <summary>The unique identifier assigned to this field within the Iceberg table schema, used for schema evolution and field tracking.</summary>
+    [JsonPropertyName("id")]
+    public double? Id { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for all records that were written before the field was added to the schema.</summary>
+    [JsonPropertyName("initialDefault")]
+    public string? InitialDefault { get; set; }
+
+    /// <summary>Name of the target table.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Indicates whether this field is required (non-nullable) or optional (nullable) in the table schema.</summary>
+    [JsonPropertyName("required")]
+    public bool? Required { get; set; }
+
+    /// <summary>The data type definition for this field as a JSON string, specifying the structure and format of the data it contains. Examples: &quot;long&quot;, &quot;string&quot;, &quot;timestamp&quot;, &quot;decimal(10,2)&quot;.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>Default value as JSON used to populate the field&apos;s value for any records written after the field was added to the schema, if the writer does not supply the field&apos;s value.</summary>
+    [JsonPropertyName("writeDefault")]
+    public string? WriteDefault { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema
+{
+    /// <summary>The list of field definitions that make up the table schema. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields>? Fields { get; set; }
+
+    /// <summary>The list of field identifiers that uniquely identify records in the table, used for row-level operations and deduplication.</summary>
+    [JsonPropertyName("identifierFieldIds")]
+    public IList<double>? IdentifierFieldIds { get; set; }
+
+    /// <summary>The unique identifier for this schema version within the Iceberg table&apos;s schema evolution history.</summary>
+    [JsonPropertyName("schemaId")]
+    public double? SchemaId { get; set; }
+
+    /// <summary>The root type of the schema structure. Valid value: struct.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields
+{
+    /// <summary>The sort direction for this field. Valid values: asc, desc.</summary>
+    [JsonPropertyName("direction")]
+    public string? Direction { get; set; }
+
+    /// <summary>The ordering behavior for null values in this field. Valid values: nulls-first, nulls-last.</summary>
+    [JsonPropertyName("nullOrder")]
+    public string? NullOrder { get; set; }
+
+    /// <summary>The identifier of the source field from the table schema that this partition field is based on.</summary>
+    [JsonPropertyName("sourceId")]
+    public double? SourceId { get; set; }
+
+    /// <summary>The transformation function applied to the source field to create the partition. Common values: identity, bucket, truncate, year, month, day, hour.</summary>
+    [JsonPropertyName("transform")]
+    public string? Transform { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder
+{
+    /// <summary>The list of fields and their sort directions that define the ordering criteria for the Iceberg table data. See fields below.</summary>
+    [JsonPropertyName("fields")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields>? Fields { get; set; }
+
+    /// <summary>The unique identifier for this sort order specification within the Iceberg table&apos;s metadata.</summary>
+    [JsonPropertyName("orderId")]
+    public double? OrderId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInput
+{
+    /// <summary>The S3 location where the Iceberg table data will be stored. Maximum length of 2056 characters.</summary>
+    [JsonPropertyName("location")]
+    public string? Location { get; set; }
+
+    /// <summary>The partitioning specification that defines how the Iceberg table data will be organized and partitioned for optimal query performance. See partition_spec below.</summary>
+    [JsonPropertyName("partitionSpec")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec>? PartitionSpec { get; set; }
+
+    /// <summary>Key-value pairs of additional table properties and configuration settings for the Iceberg table.</summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
+
+    /// <summary>The schema definition that specifies the structure, field types, and metadata for the Iceberg table. See schema below.</summary>
+    [JsonPropertyName("schema")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSchema>? Schema { get; set; }
+
+    /// <summary>The sort order specification that defines how data should be ordered within each partition to optimize query performance. See sort_order below.</summary>
+    [JsonPropertyName("sortOrder")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInputSortOrder>? SortOrder { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInput
 {
+    /// <summary>Configuration parameters, including table properties and metadata specifications. See iceberg_table_input below.</summary>
+    [JsonPropertyName("icebergTableInput")]
+    public IList<V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInputIcebergTableInput>? IcebergTableInput { get; set; }
+
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
     [JsonPropertyName("metadataOperation")]
     public string? MetadataOperation { get; set; }
@@ -1298,6 +2242,74 @@ public partial class V1beta1CatalogTableStatusAtProviderTargetTable
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderViewDefinitionRepresentations
+{
+    /// <summary>A parameter that specifies the engine type of a specific representation. Valid values are REDSHIFT, ATHENA, and SPARK.</summary>
+    [JsonPropertyName("dialect")]
+    public string? Dialect { get; set; }
+
+    /// <summary>A parameter that specifies the version of the engine of a specific representation.</summary>
+    [JsonPropertyName("dialectVersion")]
+    public string? DialectVersion { get; set; }
+
+    /// <summary>The name of the connection to be used to validate the specific representation of the view.</summary>
+    [JsonPropertyName("validationConnection")]
+    public string? ValidationConnection { get; set; }
+
+    /// <summary>A string that represents the SQL query that describes the view with expanded resource ARNs.</summary>
+    [JsonPropertyName("viewExpandedText")]
+    public string? ViewExpandedText { get; set; }
+
+    /// <summary>A string that represents the original SQL query that describes the view.</summary>
+    [JsonPropertyName("viewOriginalText")]
+    public string? ViewOriginalText { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CatalogTableStatusAtProviderViewDefinition
+{
+    /// <summary>The definer of a view in SQL.</summary>
+    [JsonPropertyName("definer")]
+    public string? Definer { get; set; }
+
+    /// <summary>You can set this flag as true to instruct the engine not to push user-provided operations into the logical plan of the view during query planning. However, setting this flag does not guarantee that the engine will comply. Refer to the engine&apos;s documentation to understand the guarantees provided, if any.</summary>
+    [JsonPropertyName("isProtected")]
+    public bool? IsProtected { get; set; }
+
+    /// <summary>Type of the materialized view&apos;s last refresh. Valid values: Full, Incremental.</summary>
+    [JsonPropertyName("lastRefreshType")]
+    public string? LastRefreshType { get; set; }
+
+    /// <summary>Auto refresh interval in seconds for the materialized view.</summary>
+    [JsonPropertyName("refreshSeconds")]
+    public double? RefreshSeconds { get; set; }
+
+    /// <summary>A list of structures that contains the dialect of the view, and the query that defines the view. See representations below.</summary>
+    [JsonPropertyName("representations")]
+    public IList<V1beta1CatalogTableStatusAtProviderViewDefinitionRepresentations>? Representations { get; set; }
+
+    /// <summary>List of the Apache Iceberg table versions referenced by the materialized view.</summary>
+    [JsonPropertyName("subObjectVersionIds")]
+    public IList<double>? SubObjectVersionIds { get; set; }
+
+    /// <summary>A list of base table ARNs that make up the view.</summary>
+    [JsonPropertyName("subObjects")]
+    public IList<string>? SubObjects { get; set; }
+
+    /// <summary>ID value that identifies this view&apos;s version. For materialized views, the version ID is the Apache Iceberg table&apos;s snapshot ID.</summary>
+    [JsonPropertyName("viewVersionId")]
+    public double? ViewVersionId { get; set; }
+
+    /// <summary>Version ID of the Apache Iceberg table.</summary>
+    [JsonPropertyName("viewVersionToken")]
+    public string? ViewVersionToken { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProvider
 {
     /// <summary>The ARN of the Glue Table.</summary>
@@ -1362,6 +2374,10 @@ public partial class V1beta1CatalogTableStatusAtProvider
     /// <summary>Configuration block of a target table for resource linking. See target_table below.</summary>
     [JsonPropertyName("targetTable")]
     public IList<V1beta1CatalogTableStatusAtProviderTargetTable>? TargetTable { get; set; }
+
+    /// <summary>A structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query. See view_definition below.</summary>
+    [JsonPropertyName("viewDefinition")]
+    public IList<V1beta1CatalogTableStatusAtProviderViewDefinition>? ViewDefinition { get; set; }
 
     /// <summary>If the table is a view, the expanded text of the view; otherwise null.</summary>
     [JsonPropertyName("viewExpandedText")]
@@ -1428,6 +2444,15 @@ public partial class V1beta1CatalogTableStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CatalogTableStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

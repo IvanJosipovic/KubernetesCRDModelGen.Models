@@ -203,19 +203,19 @@ public partial class V1beta1FilterSpecForProviderFindingCriteriaCriterion
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -297,19 +297,19 @@ public partial class V1beta1FilterSpecInitProviderFindingCriteriaCriterion
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -491,19 +491,19 @@ public partial class V1beta1FilterStatusAtProviderFindingCriteriaCriterion
     [JsonPropertyName("field")]
     public string? Field { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThan")]
     public string? GreaterThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("greaterThanOrEqual")]
     public string? GreaterThanOrEqual { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThan")]
     public string? LessThan { get; set; }
 
-    /// <summary>A value to be evaluated. Accepts either an integer or a date in RFC 3339 format.</summary>
+    /// <summary>A value to be evaluated. Accepts either an integer given as a string (i.e., enclosed in quotations) or a date in RFC 3339 format.</summary>
     [JsonPropertyName("lessThanOrEqual")]
     public string? LessThanOrEqual { get; set; }
 
@@ -630,6 +630,15 @@ public partial class V1beta1FilterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FilterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

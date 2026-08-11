@@ -2289,7 +2289,7 @@ public partial class V1beta2ApplicationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.</summary>
+    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
@@ -4553,7 +4553,7 @@ public partial class V1beta2ApplicationSpecInitProvider
     [JsonPropertyName("forceStop")]
     public bool? ForceStop { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.</summary>
+    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
@@ -5496,7 +5496,7 @@ public partial class V1beta2ApplicationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.</summary>
+    /// <summary>The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20, FLINK-2_2.</summary>
     [JsonPropertyName("runtimeEnvironment")]
     public string? RuntimeEnvironment { get; set; }
 
@@ -5579,6 +5579,15 @@ public partial class V1beta2ApplicationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ApplicationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

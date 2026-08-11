@@ -51,7 +51,72 @@ public partial class V1beta1InsightSpecForProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecForProviderFiltersAwsAccountName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InsightSpecForProviderFiltersCompanyName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecForProviderFiltersComplianceAssociatedStandardsId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecForProviderFiltersComplianceSecurityControlId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecForProviderFiltersComplianceSecurityControlParametersName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecForProviderFiltersComplianceSecurityControlParametersValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
     [JsonPropertyName("comparison")]
@@ -1407,9 +1472,29 @@ public partial class V1beta1InsightSpecForProviderFilters
     [JsonPropertyName("awsAccountId")]
     public IList<V1beta1InsightSpecForProviderFiltersAwsAccountId>? AwsAccountId { get; set; }
 
+    /// <summary>The name of the AWS account in which a finding is generated. See String_Filter below for more details.</summary>
+    [JsonPropertyName("awsAccountName")]
+    public IList<V1beta1InsightSpecForProviderFiltersAwsAccountName>? AwsAccountName { get; set; }
+
     /// <summary>The name of the findings provider (company) that owns the solution (product) that generates findings. See String_Filter below for more details.</summary>
     [JsonPropertyName("companyName")]
     public IList<V1beta1InsightSpecForProviderFiltersCompanyName>? CompanyName { get; set; }
+
+    /// <summary>The unique identifier of a standard in which a control is enabled. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceAssociatedStandardsId")]
+    public IList<V1beta1InsightSpecForProviderFiltersComplianceAssociatedStandardsId>? ComplianceAssociatedStandardsId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlId")]
+    public IList<V1beta1InsightSpecForProviderFiltersComplianceSecurityControlId>? ComplianceSecurityControlId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersName")]
+    public IList<V1beta1InsightSpecForProviderFiltersComplianceSecurityControlParametersName>? ComplianceSecurityControlParametersName { get; set; }
+
+    /// <summary>The current value of a security control parameter. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersValue")]
+    public IList<V1beta1InsightSpecForProviderFiltersComplianceSecurityControlParametersValue>? ComplianceSecurityControlParametersValue { get; set; }
 
     /// <summary>Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains security standard-related finding details. See String Filter below for more details.</summary>
     [JsonPropertyName("complianceStatus")]
@@ -1795,7 +1880,72 @@ public partial class V1beta1InsightSpecInitProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecInitProviderFiltersAwsAccountName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InsightSpecInitProviderFiltersCompanyName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecInitProviderFiltersComplianceAssociatedStandardsId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlParametersName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlParametersValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
     [JsonPropertyName("comparison")]
@@ -3151,9 +3301,29 @@ public partial class V1beta1InsightSpecInitProviderFilters
     [JsonPropertyName("awsAccountId")]
     public IList<V1beta1InsightSpecInitProviderFiltersAwsAccountId>? AwsAccountId { get; set; }
 
+    /// <summary>The name of the AWS account in which a finding is generated. See String_Filter below for more details.</summary>
+    [JsonPropertyName("awsAccountName")]
+    public IList<V1beta1InsightSpecInitProviderFiltersAwsAccountName>? AwsAccountName { get; set; }
+
     /// <summary>The name of the findings provider (company) that owns the solution (product) that generates findings. See String_Filter below for more details.</summary>
     [JsonPropertyName("companyName")]
     public IList<V1beta1InsightSpecInitProviderFiltersCompanyName>? CompanyName { get; set; }
+
+    /// <summary>The unique identifier of a standard in which a control is enabled. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceAssociatedStandardsId")]
+    public IList<V1beta1InsightSpecInitProviderFiltersComplianceAssociatedStandardsId>? ComplianceAssociatedStandardsId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlId")]
+    public IList<V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlId>? ComplianceSecurityControlId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersName")]
+    public IList<V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlParametersName>? ComplianceSecurityControlParametersName { get; set; }
+
+    /// <summary>The current value of a security control parameter. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersValue")]
+    public IList<V1beta1InsightSpecInitProviderFiltersComplianceSecurityControlParametersValue>? ComplianceSecurityControlParametersValue { get; set; }
 
     /// <summary>Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains security standard-related finding details. See String Filter below for more details.</summary>
     [JsonPropertyName("complianceStatus")]
@@ -3651,7 +3821,72 @@ public partial class V1beta1InsightStatusAtProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightStatusAtProviderFiltersAwsAccountName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InsightStatusAtProviderFiltersCompanyName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightStatusAtProviderFiltersComplianceAssociatedStandardsId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlId
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlParametersName
+{
+    /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
+    [JsonPropertyName("comparison")]
+    public string? Comparison { get; set; }
+
+    /// <summary>A value for the keyword.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlParametersValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
     [JsonPropertyName("comparison")]
@@ -5007,9 +5242,29 @@ public partial class V1beta1InsightStatusAtProviderFilters
     [JsonPropertyName("awsAccountId")]
     public IList<V1beta1InsightStatusAtProviderFiltersAwsAccountId>? AwsAccountId { get; set; }
 
+    /// <summary>The name of the AWS account in which a finding is generated. See String_Filter below for more details.</summary>
+    [JsonPropertyName("awsAccountName")]
+    public IList<V1beta1InsightStatusAtProviderFiltersAwsAccountName>? AwsAccountName { get; set; }
+
     /// <summary>The name of the findings provider (company) that owns the solution (product) that generates findings. See String_Filter below for more details.</summary>
     [JsonPropertyName("companyName")]
     public IList<V1beta1InsightStatusAtProviderFiltersCompanyName>? CompanyName { get; set; }
+
+    /// <summary>The unique identifier of a standard in which a control is enabled. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceAssociatedStandardsId")]
+    public IList<V1beta1InsightStatusAtProviderFiltersComplianceAssociatedStandardsId>? ComplianceAssociatedStandardsId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlId")]
+    public IList<V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlId>? ComplianceSecurityControlId { get; set; }
+
+    /// <summary>The unique identifier of a control across standards. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersName")]
+    public IList<V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlParametersName>? ComplianceSecurityControlParametersName { get; set; }
+
+    /// <summary>The current value of a security control parameter. See String_Filter below for more details.</summary>
+    [JsonPropertyName("complianceSecurityControlParametersValue")]
+    public IList<V1beta1InsightStatusAtProviderFiltersComplianceSecurityControlParametersValue>? ComplianceSecurityControlParametersValue { get; set; }
 
     /// <summary>Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains security standard-related finding details. See String Filter below for more details.</summary>
     [JsonPropertyName("complianceStatus")]
@@ -5442,6 +5697,15 @@ public partial class V1beta1InsightStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1InsightStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

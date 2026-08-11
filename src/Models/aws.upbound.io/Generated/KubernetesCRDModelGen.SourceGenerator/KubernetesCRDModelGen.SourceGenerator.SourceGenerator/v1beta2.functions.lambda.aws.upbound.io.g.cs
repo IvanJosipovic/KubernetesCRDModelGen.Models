@@ -429,12 +429,12 @@ public partial class V1beta2FunctionSpecForProviderFileSystemConfigArnSelector
     public V1beta2FunctionSpecForProviderFileSystemConfigArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for EFS file system. See below.</summary>
+/// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecForProviderFileSystemConfig
 {
-    /// <summary>ARN of the Amazon EFS Access Point.</summary>
+    /// <summary>ARN of the Amazon EFS Access Point, or the Amazon S3 Files access point.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1779,7 +1779,7 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("ephemeralStorage")]
     public V1beta2FunctionSpecForProviderEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>Configuration block for EFS file system. See below.</summary>
+    /// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
     [JsonPropertyName("fileSystemConfig")]
     public V1beta2FunctionSpecForProviderFileSystemConfig? FileSystemConfig { get; set; }
 
@@ -1933,6 +1933,10 @@ public partial class V1beta2FunctionSpecForProvider
     /// <summary>Configuration block for X-Ray tracing. See below.</summary>
     [JsonPropertyName("tracingConfig")]
     public V1beta2FunctionSpecForProviderTracingConfig? TracingConfig { get; set; }
+
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
 
     /// <summary>Configuration block for VPC. See below.</summary>
     [JsonPropertyName("vpcConfig")]
@@ -2313,12 +2317,12 @@ public partial class V1beta2FunctionSpecInitProviderFileSystemConfigArnSelector
     public V1beta2FunctionSpecInitProviderFileSystemConfigArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block for EFS file system. See below.</summary>
+/// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecInitProviderFileSystemConfig
 {
-    /// <summary>ARN of the Amazon EFS Access Point.</summary>
+    /// <summary>ARN of the Amazon EFS Access Point, or the Amazon S3 Files access point.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3675,7 +3679,7 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("ephemeralStorage")]
     public V1beta2FunctionSpecInitProviderEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>Configuration block for EFS file system. See below.</summary>
+    /// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
     [JsonPropertyName("fileSystemConfig")]
     public V1beta2FunctionSpecInitProviderFileSystemConfig? FileSystemConfig { get; set; }
 
@@ -3822,6 +3826,10 @@ public partial class V1beta2FunctionSpecInitProvider
     /// <summary>Configuration block for X-Ray tracing. See below.</summary>
     [JsonPropertyName("tracingConfig")]
     public V1beta2FunctionSpecInitProviderTracingConfig? TracingConfig { get; set; }
+
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
 
     /// <summary>Configuration block for VPC. See below.</summary>
     [JsonPropertyName("vpcConfig")]
@@ -4083,12 +4091,12 @@ public partial class V1beta2FunctionStatusAtProviderEphemeralStorage
     public double? Size { get; set; }
 }
 
-/// <summary>Configuration block for EFS file system. See below.</summary>
+/// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionStatusAtProviderFileSystemConfig
 {
-    /// <summary>ARN of the Amazon EFS Access Point.</summary>
+    /// <summary>ARN of the Amazon EFS Access Point, or the Amazon S3 Files access point.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -4237,7 +4245,7 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("ephemeralStorage")]
     public V1beta2FunctionStatusAtProviderEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>Configuration block for EFS file system. See below.</summary>
+    /// <summary>Configuration block for EFS or S3 Files file system. See below.</summary>
     [JsonPropertyName("fileSystemConfig")]
     public V1beta2FunctionStatusAtProviderFileSystemConfig? FileSystemConfig { get; set; }
 
@@ -4391,6 +4399,10 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("tracingConfig")]
     public V1beta2FunctionStatusAtProviderTracingConfig? TracingConfig { get; set; }
 
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
+
     /// <summary>Latest published version of your Lambda Function.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -4454,6 +4466,15 @@ public partial class V1beta2FunctionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2FunctionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

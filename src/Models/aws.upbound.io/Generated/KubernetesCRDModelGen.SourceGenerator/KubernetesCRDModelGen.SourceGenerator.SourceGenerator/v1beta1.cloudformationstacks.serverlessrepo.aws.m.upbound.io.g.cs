@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.serverlessrepo.aws.m.upbound.io;
-/// <summary>CloudFormationStack is the Schema for the CloudFormationStacks API. Deploys an Application CloudFormation Stack from the Serverless Application Repository.</summary>
+/// <summary>CloudFormationStack is the Schema for the CloudFormationStacks API. Manages an Application CloudFormation Stack from the Serverless Application Repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -40,19 +40,19 @@ public partial class V1beta1CloudFormationStackList : IKubernetesObject<V1ListMe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudFormationStackSpecForProvider
 {
-    /// <summary>The ARN of the application from the Serverless Application Repository.</summary>
+    /// <summary>ARN of the application from the Serverless Application Repository.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
-    /// <summary>A list of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND</summary>
+    /// <summary>List of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND. If the application contains IAM resources, IAM resources with custom names, resource-based policies, or nested applications, the corresponding capability must be specified. If omitted, the value applied by AWS is tracked in state.</summary>
     [JsonPropertyName("capabilities")]
     public IList<string>? Capabilities { get; set; }
 
-    /// <summary>The name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
+    /// <summary>Name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A map of Parameter structures that specify input parameters for the stack.</summary>
+    /// <summary>Map of Parameter structures that specify input parameters for the stack.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -63,7 +63,7 @@ public partial class V1beta1CloudFormationStackSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The version of the application to deploy. If not supplied, deploys the latest version.</summary>
+    /// <summary>Version of the application to deploy. If not supplied, deploys the latest version.</summary>
     [JsonPropertyName("semanticVersion")]
     public string? SemanticVersion { get; set; }
 
@@ -88,23 +88,23 @@ public partial class V1beta1CloudFormationStackSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudFormationStackSpecInitProvider
 {
-    /// <summary>The ARN of the application from the Serverless Application Repository.</summary>
+    /// <summary>ARN of the application from the Serverless Application Repository.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
-    /// <summary>A list of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND</summary>
+    /// <summary>List of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND. If the application contains IAM resources, IAM resources with custom names, resource-based policies, or nested applications, the corresponding capability must be specified. If omitted, the value applied by AWS is tracked in state.</summary>
     [JsonPropertyName("capabilities")]
     public IList<string>? Capabilities { get; set; }
 
-    /// <summary>The name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
+    /// <summary>Name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A map of Parameter structures that specify input parameters for the stack.</summary>
+    /// <summary>Map of Parameter structures that specify input parameters for the stack.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>The version of the application to deploy. If not supplied, deploys the latest version.</summary>
+    /// <summary>Version of the application to deploy. If not supplied, deploys the latest version.</summary>
     [JsonPropertyName("semanticVersion")]
     public string? SemanticVersion { get; set; }
 
@@ -224,27 +224,27 @@ public partial class V1beta1CloudFormationStackSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CloudFormationStackStatusAtProvider
 {
-    /// <summary>The ARN of the application from the Serverless Application Repository.</summary>
+    /// <summary>ARN of the application from the Serverless Application Repository.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
-    /// <summary>A list of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND</summary>
+    /// <summary>List of capabilities. Valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM, CAPABILITY_RESOURCE_POLICY, or CAPABILITY_AUTO_EXPAND. If the application contains IAM resources, IAM resources with custom names, resource-based policies, or nested applications, the corresponding capability must be specified. If omitted, the value applied by AWS is tracked in state.</summary>
     [JsonPropertyName("capabilities")]
     public IList<string>? Capabilities { get; set; }
 
-    /// <summary>A unique identifier of the stack.</summary>
+    /// <summary>Unique identifier of the stack.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
+    /// <summary>Name of the stack to create. The resource deployed in AWS will be prefixed with serverlessrepo-</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A map of outputs from the stack.</summary>
+    /// <summary>Map of outputs from the stack.</summary>
     [JsonPropertyName("outputs")]
     public IDictionary<string, string>? Outputs { get; set; }
 
-    /// <summary>A map of Parameter structures that specify input parameters for the stack.</summary>
+    /// <summary>Map of Parameter structures that specify input parameters for the stack.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -255,7 +255,7 @@ public partial class V1beta1CloudFormationStackStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The version of the application to deploy. If not supplied, deploys the latest version.</summary>
+    /// <summary>Version of the application to deploy. If not supplied, deploys the latest version.</summary>
     [JsonPropertyName("semanticVersion")]
     public string? SemanticVersion { get; set; }
 
@@ -263,7 +263,7 @@ public partial class V1beta1CloudFormationStackStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }
@@ -324,6 +324,15 @@ public partial class V1beta1CloudFormationStackStatus
     public IList<V1beta1CloudFormationStackStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -332,7 +341,7 @@ public partial class V1beta1CloudFormationStackStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CloudFormationStack is the Schema for the CloudFormationStacks API. Deploys an Application CloudFormation Stack from the Serverless Application Repository.</summary>
+/// <summary>CloudFormationStack is the Schema for the CloudFormationStacks API. Manages an Application CloudFormation Stack from the Serverless Application Repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

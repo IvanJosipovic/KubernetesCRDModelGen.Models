@@ -260,6 +260,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -668,6 +671,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -1025,6 +1031,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -1128,6 +1137,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1380,6 +1396,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -1784,6 +1803,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -2137,6 +2159,9 @@ spec:
                   edition:
                     description: The MicrosoftAD edition (Standard or Enterprise). Defaults to Enterprise.
                     type: string
+                  enableDirectoryDataAccess:
+                    description: Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.
+                    type: boolean
                   enableSso:
                     description: Whether to enable single-sign on for the directory. Requires alias. Defaults to false.
                     type: boolean
@@ -2238,6 +2263,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

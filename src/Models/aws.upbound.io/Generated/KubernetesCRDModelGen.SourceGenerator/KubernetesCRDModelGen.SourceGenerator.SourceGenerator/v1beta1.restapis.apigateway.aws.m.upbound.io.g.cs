@@ -196,7 +196,7 @@ public partial class V1beta1RestAPISpecForProviderEndpointConfigurationVpcEndpoi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestAPISpecForProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke an API (RestApi). Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a REST API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -241,11 +241,15 @@ public partial class V1beta1RestAPISpecForProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public V1beta1RestAPISpecForProviderEndpointConfiguration? EndpointConfiguration { get; set; }
 
-    /// <summary>Whether warnings while API Gateway is creating or updating the resource should return an error or not. Defaults to false</summary>
+    /// <summary>Whether to return an error for warnings while API Gateway is creating or updating the resource. Defaults to false.</summary>
     [JsonPropertyName("failOnWarnings")]
     public bool? FailOnWarnings { get; set; }
 
@@ -261,7 +265,7 @@ public partial class V1beta1RestAPISpecForProvider
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If unspecificed, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
+    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If not configured, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
     [JsonPropertyName("putRestApiMode")]
     public string? PutRestApiMode { get; set; }
 
@@ -271,6 +275,10 @@ public partial class V1beta1RestAPISpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -437,7 +445,7 @@ public partial class V1beta1RestAPISpecInitProviderEndpointConfigurationVpcEndpo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestAPISpecInitProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke an API (RestApi). Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a REST API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -494,11 +502,15 @@ public partial class V1beta1RestAPISpecInitProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public V1beta1RestAPISpecInitProviderEndpointConfiguration? EndpointConfiguration { get; set; }
 
-    /// <summary>Whether warnings while API Gateway is creating or updating the resource should return an error or not. Defaults to false</summary>
+    /// <summary>Whether to return an error for warnings while API Gateway is creating or updating the resource. Defaults to false.</summary>
     [JsonPropertyName("failOnWarnings")]
     public bool? FailOnWarnings { get; set; }
 
@@ -514,9 +526,13 @@ public partial class V1beta1RestAPISpecInitProvider
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If unspecificed, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
+    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If not configured, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
     [JsonPropertyName("putRestApiMode")]
     public string? PutRestApiMode { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -635,7 +651,7 @@ public partial class V1beta1RestAPISpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestAPIStatusAtProviderEndpointConfiguration
 {
-    /// <summary>The IP address types that can invoke an API (RestApi). Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
+    /// <summary>IP address types that can invoke a REST API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke an API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke an API. For the PRIVATE endpoint type, only dualstack is supported.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -680,19 +696,19 @@ public partial class V1beta1RestAPIStatusAtProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public V1beta1RestAPIStatusAtProviderEndpointConfiguration? EndpointConfiguration { get; set; }
 
-    /// <summary>
-    /// Execution ARN part to be used in lambda_permission&apos;s source_arn
-    /// when allowing API Gateway to invoke a Lambda function,
-    /// e.g., arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j, which can be concatenated with allowed stage, method and resource path.
-    /// </summary>
+    /// <summary>Execution ARN part to be used in lambda_permission&apos;s source_arn when allowing API Gateway to invoke a Lambda function, e.g., arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j, which can be concatenated with allowed stage, method and resource path.</summary>
     [JsonPropertyName("executionArn")]
     public string? ExecutionArn { get; set; }
 
-    /// <summary>Whether warnings while API Gateway is creating or updating the resource should return an error or not. Defaults to false</summary>
+    /// <summary>Whether to return an error for warnings while API Gateway is creating or updating the resource. Defaults to false.</summary>
     [JsonPropertyName("failOnWarnings")]
     public bool? FailOnWarnings { get; set; }
 
@@ -716,7 +732,7 @@ public partial class V1beta1RestAPIStatusAtProvider
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If unspecificed, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
+    /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If not configured, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
     [JsonPropertyName("putRestApiMode")]
     public string? PutRestApiMode { get; set; }
 
@@ -730,6 +746,10 @@ public partial class V1beta1RestAPIStatusAtProvider
     /// <summary>Resource ID of the REST API&apos;s root</summary>
     [JsonPropertyName("rootResourceId")]
     public string? RootResourceId { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -794,6 +814,15 @@ public partial class V1beta1RestAPIStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RestAPIStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

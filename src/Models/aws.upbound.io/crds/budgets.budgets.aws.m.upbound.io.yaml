@@ -132,7 +132,7 @@ spec:
                         type: boolean
                     type: object
                   filterExpression:
-                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter.
+                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.
                     properties:
                       and:
                         description: A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.
@@ -868,6 +868,11 @@ spec:
                   limitUnit:
                     description: The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.
                     type: string
+                  metrics:
+                    description: List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.
+                    items:
+                      type: string
+                    type: array
                   notification:
                     description: Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.
                     items:
@@ -1017,7 +1022,7 @@ spec:
                         type: boolean
                     type: object
                   filterExpression:
-                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter.
+                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.
                     properties:
                       and:
                         description: A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.
@@ -1753,6 +1758,11 @@ spec:
                   limitUnit:
                     description: The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.
                     type: string
+                  metrics:
+                    description: List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.
+                    items:
+                      type: string
+                    type: array
                   notification:
                     description: Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.
                     items:
@@ -1966,7 +1976,7 @@ spec:
                         type: boolean
                     type: object
                   filterExpression:
-                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter.
+                    description: Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.
                     properties:
                       and:
                         description: A list of filter expressions to combine with AND logic. Each and block is one operand and must itself contain exactly one root.
@@ -2705,6 +2715,11 @@ spec:
                   limitUnit:
                     description: The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.
                     type: string
+                  metrics:
+                    description: List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.
+                    items:
+                      type: string
+                    type: array
                   notification:
                     description: Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.
                     items:
@@ -2816,6 +2831,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

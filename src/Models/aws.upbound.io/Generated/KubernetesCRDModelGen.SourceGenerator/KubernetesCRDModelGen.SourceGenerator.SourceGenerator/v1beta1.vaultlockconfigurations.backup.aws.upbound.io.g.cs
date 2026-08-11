@@ -628,6 +628,12 @@ public partial class V1beta1VaultLockConfigurationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    [JsonPropertyName("lockDate")]
+    public string? LockDate { get; set; }
+
+    [JsonPropertyName("locked")]
+    public bool? Locked { get; set; }
+
     /// <summary>The maximum retention period that the vault retains its recovery points.</summary>
     [JsonPropertyName("maxRetentionDays")]
     public double? MaxRetentionDays { get; set; }
@@ -698,6 +704,15 @@ public partial class V1beta1VaultLockConfigurationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VaultLockConfigurationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

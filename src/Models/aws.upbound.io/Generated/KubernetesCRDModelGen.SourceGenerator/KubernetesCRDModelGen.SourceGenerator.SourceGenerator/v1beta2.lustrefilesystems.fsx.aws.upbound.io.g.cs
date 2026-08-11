@@ -598,7 +598,7 @@ public partial class V1beta2LustreFileSystemSpecForProvider
     [JsonPropertyName("exportPath")]
     public string? ExportPath { get; set; }
 
-    /// <summary>Sets the Lustre version for the file system that you&apos;re creating. Valid values are 2.10 for SCRATCH_1, SCRATCH_2 and PERSISTENT_1 deployment types. Valid values for 2.12 include all deployment types.</summary>
+    /// <summary>Sets the Lustre version for the file system. Valid values are 2.10, 2.12, and 2.15. When creating a file system, 2.10 is valid for SCRATCH_1, SCRATCH_2, and PERSISTENT_1 deployment types; 2.12 and 2.15 are valid for all deployment types. Changing this value to a higher version triggers an in-place upgrade. Changing to a lower version forces resource replacement (destroy and recreate).</summary>
     [JsonPropertyName("fileSystemTypeVersion")]
     public string? FileSystemTypeVersion { get; set; }
 
@@ -1253,7 +1253,7 @@ public partial class V1beta2LustreFileSystemSpecInitProvider
     [JsonPropertyName("exportPath")]
     public string? ExportPath { get; set; }
 
-    /// <summary>Sets the Lustre version for the file system that you&apos;re creating. Valid values are 2.10 for SCRATCH_1, SCRATCH_2 and PERSISTENT_1 deployment types. Valid values for 2.12 include all deployment types.</summary>
+    /// <summary>Sets the Lustre version for the file system. Valid values are 2.10, 2.12, and 2.15. When creating a file system, 2.10 is valid for SCRATCH_1, SCRATCH_2, and PERSISTENT_1 deployment types; 2.12 and 2.15 are valid for all deployment types. Changing this value to a higher version triggers an in-place upgrade. Changing to a lower version forces resource replacement (destroy and recreate).</summary>
     [JsonPropertyName("fileSystemTypeVersion")]
     public string? FileSystemTypeVersion { get; set; }
 
@@ -1639,7 +1639,7 @@ public partial class V1beta2LustreFileSystemStatusAtProvider
     [JsonPropertyName("exportPath")]
     public string? ExportPath { get; set; }
 
-    /// <summary>Sets the Lustre version for the file system that you&apos;re creating. Valid values are 2.10 for SCRATCH_1, SCRATCH_2 and PERSISTENT_1 deployment types. Valid values for 2.12 include all deployment types.</summary>
+    /// <summary>Sets the Lustre version for the file system. Valid values are 2.10, 2.12, and 2.15. When creating a file system, 2.10 is valid for SCRATCH_1, SCRATCH_2, and PERSISTENT_1 deployment types; 2.12 and 2.15 are valid for all deployment types. Changing this value to a higher version triggers an in-place upgrade. Changing to a lower version forces resource replacement (destroy and recreate).</summary>
     [JsonPropertyName("fileSystemTypeVersion")]
     public string? FileSystemTypeVersion { get; set; }
 
@@ -1793,6 +1793,15 @@ public partial class V1beta2LustreFileSystemStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2LustreFileSystemStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

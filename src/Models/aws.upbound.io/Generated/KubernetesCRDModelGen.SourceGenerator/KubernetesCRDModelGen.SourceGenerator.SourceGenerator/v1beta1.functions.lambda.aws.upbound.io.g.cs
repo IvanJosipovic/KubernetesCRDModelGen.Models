@@ -2020,6 +2020,10 @@ public partial class V1beta1FunctionSpecForProvider
     [JsonPropertyName("tracingConfig")]
     public IList<V1beta1FunctionSpecForProviderTracingConfig>? TracingConfig { get; set; }
 
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
+
     /// <summary>Configuration block for VPC. See below.</summary>
     [JsonPropertyName("vpcConfig")]
     public IList<V1beta1FunctionSpecForProviderVpcConfig>? VpcConfig { get; set; }
@@ -3990,6 +3994,10 @@ public partial class V1beta1FunctionSpecInitProvider
     [JsonPropertyName("tracingConfig")]
     public IList<V1beta1FunctionSpecInitProviderTracingConfig>? TracingConfig { get; set; }
 
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
+
     /// <summary>Configuration block for VPC. See below.</summary>
     [JsonPropertyName("vpcConfig")]
     public IList<V1beta1FunctionSpecInitProviderVpcConfig>? VpcConfig { get; set; }
@@ -4566,6 +4574,10 @@ public partial class V1beta1FunctionStatusAtProvider
     [JsonPropertyName("tracingConfig")]
     public IList<V1beta1FunctionStatusAtProviderTracingConfig>? TracingConfig { get; set; }
 
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
+
     /// <summary>Latest published version of your Lambda Function.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -4631,6 +4643,15 @@ public partial class V1beta1FunctionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FunctionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

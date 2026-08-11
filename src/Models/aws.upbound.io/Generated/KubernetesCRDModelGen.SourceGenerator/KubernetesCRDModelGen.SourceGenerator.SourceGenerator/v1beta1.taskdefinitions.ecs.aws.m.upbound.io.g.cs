@@ -344,6 +344,28 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileSer
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConfiguration
+{
+    /// <summary>Full ARN of the S3 Files access point to use. If configured, root_directory must either be omitted or set to &quot;/&quot;.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Full ARN of the S3 Files file system to mount.</summary>
+    [JsonPropertyName("fileSystemArn")]
+    public string? FileSystemArn { get; set; }
+
+    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    [JsonPropertyName("rootDirectory")]
+    public string? RootDirectory { get; set; }
+
+    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    [JsonPropertyName("transitEncryptionPort")]
+    public double? TransitEncryptionPort { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolume
@@ -374,6 +396,10 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolume
     /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+    [JsonPropertyName("s3filesVolumeConfiguration")]
+    public V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConfiguration? S3filesVolumeConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -780,6 +806,28 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileSe
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TaskDefinitionSpecInitProviderVolumeS3filesVolumeConfiguration
+{
+    /// <summary>Full ARN of the S3 Files access point to use. If configured, root_directory must either be omitted or set to &quot;/&quot;.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Full ARN of the S3 Files file system to mount.</summary>
+    [JsonPropertyName("fileSystemArn")]
+    public string? FileSystemArn { get; set; }
+
+    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    [JsonPropertyName("rootDirectory")]
+    public string? RootDirectory { get; set; }
+
+    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    [JsonPropertyName("transitEncryptionPort")]
+    public double? TransitEncryptionPort { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolume
@@ -810,6 +858,10 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolume
     /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+    [JsonPropertyName("s3filesVolumeConfiguration")]
+    public V1beta1TaskDefinitionSpecInitProviderVolumeS3filesVolumeConfiguration? S3filesVolumeConfiguration { get; set; }
 }
 
 /// <summary>
@@ -1173,6 +1225,28 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileSe
     public string? RootDirectory { get; set; }
 }
 
+/// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeConfiguration
+{
+    /// <summary>Full ARN of the S3 Files access point to use. If configured, root_directory must either be omitted or set to &quot;/&quot;.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Full ARN of the S3 Files file system to mount.</summary>
+    [JsonPropertyName("fileSystemArn")]
+    public string? FileSystemArn { get; set; }
+
+    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    [JsonPropertyName("rootDirectory")]
+    public string? RootDirectory { get; set; }
+
+    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    [JsonPropertyName("transitEncryptionPort")]
+    public double? TransitEncryptionPort { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolume
@@ -1203,6 +1277,10 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolume
     /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
+    [JsonPropertyName("s3filesVolumeConfiguration")]
+    public V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeConfiguration? S3filesVolumeConfiguration { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1366,6 +1444,15 @@ public partial class V1beta1TaskDefinitionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TaskDefinitionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

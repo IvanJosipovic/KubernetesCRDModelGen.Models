@@ -59,6 +59,10 @@ public enum V1beta2BucketSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketSpecForProvider
 {
+    /// <summary>Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).</summary>
+    [JsonPropertyName("bucketNamespace")]
+    public string? BucketNamespace { get; set; }
+
     /// <summary>Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
@@ -95,6 +99,10 @@ public partial class V1beta2BucketSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketSpecInitProvider
 {
+    /// <summary>Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).</summary>
+    [JsonPropertyName("bucketNamespace")]
+    public string? BucketNamespace { get; set; }
+
     /// <summary>Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
@@ -776,6 +784,10 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("bucketDomainName")]
     public string? BucketDomainName { get; set; }
 
+    /// <summary>Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).</summary>
+    [JsonPropertyName("bucketNamespace")]
+    public string? BucketNamespace { get; set; }
+
     /// <summary>AWS region this bucket resides in.</summary>
     [JsonPropertyName("bucketRegion")]
     public string? BucketRegion { get; set; }
@@ -948,6 +960,15 @@ public partial class V1beta2BucketStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2BucketStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

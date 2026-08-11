@@ -313,6 +313,14 @@ public partial class V1beta1CertificateSpecForProvider
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta1CertificateSpecForProviderPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    [JsonPropertyName("privateKeyWo")]
+    public string? PrivateKeyWo { get; set; }
+
+    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    [JsonPropertyName("privateKeyWoVersion")]
+    public double? PrivateKeyWoVersion { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -601,6 +609,14 @@ public partial class V1beta1CertificateSpecInitProvider
     /// <summary>Certificate&apos;s PEM-formatted private key</summary>
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta1CertificateSpecInitProviderPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
+
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    [JsonPropertyName("privateKeyWo")]
+    public string? PrivateKeyWo { get; set; }
+
+    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    [JsonPropertyName("privateKeyWoVersion")]
+    public double? PrivateKeyWoVersion { get; set; }
 
     /// <summary>Set of domains that should be SANs in the issued certificate.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
@@ -943,6 +959,14 @@ public partial class V1beta1CertificateStatusAtProvider
     [JsonPropertyName("pendingRenewal")]
     public bool? PendingRenewal { get; set; }
 
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    [JsonPropertyName("privateKeyWo")]
+    public string? PrivateKeyWo { get; set; }
+
+    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    [JsonPropertyName("privateKeyWoVersion")]
+    public double? PrivateKeyWoVersion { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -1047,6 +1071,15 @@ public partial class V1beta1CertificateStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CertificateStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

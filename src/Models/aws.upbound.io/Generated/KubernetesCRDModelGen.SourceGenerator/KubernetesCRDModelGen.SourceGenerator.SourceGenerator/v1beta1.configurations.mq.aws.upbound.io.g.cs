@@ -90,6 +90,10 @@ public partial class V1beta1ConfigurationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>Default is false.</summary>
+    [JsonPropertyName("skipDestroy")]
+    public bool? SkipDestroy { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -134,6 +138,10 @@ public partial class V1beta1ConfigurationSpecInitProvider
     /// <summary>Name of the configuration.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Default is false.</summary>
+    [JsonPropertyName("skipDestroy")]
+    public bool? SkipDestroy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -370,6 +378,10 @@ public partial class V1beta1ConfigurationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Default is false.</summary>
+    [JsonPropertyName("skipDestroy")]
+    public bool? SkipDestroy { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -433,6 +445,15 @@ public partial class V1beta1ConfigurationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ConfigurationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

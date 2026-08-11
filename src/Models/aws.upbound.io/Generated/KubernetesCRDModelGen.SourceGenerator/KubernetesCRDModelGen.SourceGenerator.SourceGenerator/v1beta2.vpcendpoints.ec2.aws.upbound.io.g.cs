@@ -859,7 +859,7 @@ public partial class V1beta2VPCEndpointSpecForProvider
 
     /// <summary>
     /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false.
+    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
     /// </summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
@@ -1752,7 +1752,7 @@ public partial class V1beta2VPCEndpointSpecInitProvider
 
     /// <summary>
     /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false.
+    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
     /// </summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
@@ -2107,7 +2107,7 @@ public partial class V1beta2VPCEndpointStatusAtProvider
 
     /// <summary>
     /// Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type Interface. Most users will want this enabled to allow services within the VPC to automatically use the endpoint.
-    /// Defaults to false.
+    /// Defaults to false. If vpc_endpoint_type is anything other than Interface, changing this value forces a new resource to be created.
     /// </summary>
     [JsonPropertyName("privateDnsEnabled")]
     public bool? PrivateDnsEnabled { get; set; }
@@ -2233,6 +2233,15 @@ public partial class V1beta2VPCEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2VPCEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

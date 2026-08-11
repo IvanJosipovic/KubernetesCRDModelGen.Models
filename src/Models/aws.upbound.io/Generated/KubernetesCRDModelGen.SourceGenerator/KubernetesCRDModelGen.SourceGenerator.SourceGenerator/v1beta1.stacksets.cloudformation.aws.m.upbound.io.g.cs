@@ -196,6 +196,10 @@ public partial class V1beta1StackSetSpecForProviderAdministrationRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSetSpecForProviderAutoDeployment
 {
+    /// <summary>A list of StackSet ARNs that this StackSet depends on for auto-deployment operations. When auto-deployment is triggered, operations will be sequenced to ensure all dependencies complete successfully before this StackSet&apos;s operation begins.</summary>
+    [JsonPropertyName("dependsOnStackSets")]
+    public IList<string>? DependsOnStackSets { get; set; }
+
     /// <summary>Whether or not auto-deployment is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
@@ -477,6 +481,10 @@ public partial class V1beta1StackSetSpecInitProviderAdministrationRoleArnSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSetSpecInitProviderAutoDeployment
 {
+    /// <summary>A list of StackSet ARNs that this StackSet depends on for auto-deployment operations. When auto-deployment is triggered, operations will be sequenced to ensure all dependencies complete successfully before this StackSet&apos;s operation begins.</summary>
+    [JsonPropertyName("dependsOnStackSets")]
+    public IList<string>? DependsOnStackSets { get; set; }
+
     /// <summary>Whether or not auto-deployment is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
@@ -715,6 +723,10 @@ public partial class V1beta1StackSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSetStatusAtProviderAutoDeployment
 {
+    /// <summary>A list of StackSet ARNs that this StackSet depends on for auto-deployment operations. When auto-deployment is triggered, operations will be sequenced to ensure all dependencies complete successfully before this StackSet&apos;s operation begins.</summary>
+    [JsonPropertyName("dependsOnStackSets")]
+    public IList<string>? DependsOnStackSets { get; set; }
+
     /// <summary>Whether or not auto-deployment is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
@@ -898,6 +910,15 @@ public partial class V1beta1StackSetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1StackSetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

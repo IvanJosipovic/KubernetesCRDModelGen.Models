@@ -121,6 +121,15 @@ spec:
                                       type: boolean
                                   type: object
                                 type: array
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                  type: object
+                                type: array
                               bucketLevel:
                                 description: level configuration. See Bucket Level below for more details.
                                 items:
@@ -149,6 +158,15 @@ spec:
                                         properties:
                                           enabled:
                                             description: Whether the S3 Storage Lens configuration is enabled.
+                                            type: boolean
+                                        type: object
+                                      type: array
+                                    advancedPerformanceMetrics:
+                                      description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                      items:
+                                        properties:
+                                          enabled:
+                                            description: Whether S3 Storage Lens export to S3 tables is enabled.
                                             type: boolean
                                         type: object
                                       type: array
@@ -340,6 +358,35 @@ spec:
                                       type: string
                                   type: object
                                 type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         enabled:
@@ -439,6 +486,82 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        expandedPrefixesDataExport:
+                          description: Configuration for the S3 Storage Lens expanded prefix metrics report. See Expanded Prefixes Data Export below for more details.
+                          items:
+                            properties:
+                              s3BucketDestination:
+                                description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                                items:
+                                  properties:
+                                    accountId:
+                                      description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                      type: string
+                                    arn:
+                                      description: The Amazon Resource Name (ARN) of the bucket.
+                                      type: string
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                    format:
+                                      description: 'The export format. Valid values: CSV, Parquet.'
+                                      type: string
+                                    outputSchemaVersion:
+                                      description: 'The schema version of the export file. Valid values: V_1.'
+                                      type: string
+                                    prefix:
+                                      description: The prefix of the destination bucket where the metrics export will be delivered.
+                                      type: string
+                                  type: object
+                                type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                         include:
                           description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                           items:
@@ -457,6 +580,9 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        prefixDelimiter:
+                          description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                          type: string
                       type: object
                     type: array
                   tags:
@@ -522,6 +648,15 @@ spec:
                                       type: boolean
                                   type: object
                                 type: array
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                  type: object
+                                type: array
                               bucketLevel:
                                 description: level configuration. See Bucket Level below for more details.
                                 items:
@@ -550,6 +685,15 @@ spec:
                                         properties:
                                           enabled:
                                             description: Whether the S3 Storage Lens configuration is enabled.
+                                            type: boolean
+                                        type: object
+                                      type: array
+                                    advancedPerformanceMetrics:
+                                      description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                      items:
+                                        properties:
+                                          enabled:
+                                            description: Whether S3 Storage Lens export to S3 tables is enabled.
                                             type: boolean
                                         type: object
                                       type: array
@@ -741,6 +885,35 @@ spec:
                                       type: string
                                   type: object
                                 type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         enabled:
@@ -840,6 +1013,82 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        expandedPrefixesDataExport:
+                          description: Configuration for the S3 Storage Lens expanded prefix metrics report. See Expanded Prefixes Data Export below for more details.
+                          items:
+                            properties:
+                              s3BucketDestination:
+                                description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                                items:
+                                  properties:
+                                    accountId:
+                                      description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                      type: string
+                                    arn:
+                                      description: The Amazon Resource Name (ARN) of the bucket.
+                                      type: string
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                    format:
+                                      description: 'The export format. Valid values: CSV, Parquet.'
+                                      type: string
+                                    outputSchemaVersion:
+                                      description: 'The schema version of the export file. Valid values: V_1.'
+                                      type: string
+                                    prefix:
+                                      description: The prefix of the destination bucket where the metrics export will be delivered.
+                                      type: string
+                                  type: object
+                                type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                         include:
                           description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                           items:
@@ -858,6 +1107,9 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        prefixDelimiter:
+                          description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                          type: string
                       type: object
                     type: array
                   tags:
@@ -1014,6 +1266,15 @@ spec:
                                       type: boolean
                                   type: object
                                 type: array
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                  type: object
+                                type: array
                               bucketLevel:
                                 description: level configuration. See Bucket Level below for more details.
                                 items:
@@ -1042,6 +1303,15 @@ spec:
                                         properties:
                                           enabled:
                                             description: Whether the S3 Storage Lens configuration is enabled.
+                                            type: boolean
+                                        type: object
+                                      type: array
+                                    advancedPerformanceMetrics:
+                                      description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                      items:
+                                        properties:
+                                          enabled:
+                                            description: Whether S3 Storage Lens export to S3 tables is enabled.
                                             type: boolean
                                         type: object
                                       type: array
@@ -1160,6 +1430,35 @@ spec:
                                       type: string
                                   type: object
                                 type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         enabled:
@@ -1183,6 +1482,82 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        expandedPrefixesDataExport:
+                          description: Configuration for the S3 Storage Lens expanded prefix metrics report. See Expanded Prefixes Data Export below for more details.
+                          items:
+                            properties:
+                              s3BucketDestination:
+                                description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                                items:
+                                  properties:
+                                    accountId:
+                                      description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                      type: string
+                                    arn:
+                                      description: The Amazon Resource Name (ARN) of the bucket.
+                                      type: string
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                    format:
+                                      description: 'The export format. Valid values: CSV, Parquet.'
+                                      type: string
+                                    outputSchemaVersion:
+                                      description: 'The schema version of the export file. Valid values: V_1.'
+                                      type: string
+                                    prefix:
+                                      description: The prefix of the destination bucket where the metrics export will be delivered.
+                                      type: string
+                                  type: object
+                                type: array
+                              storageLensTableDestination:
+                                description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                                items:
+                                  properties:
+                                    enabled:
+                                      description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                      type: boolean
+                                    encryption:
+                                      description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                      items:
+                                        properties:
+                                          sseKms:
+                                            description: KMS encryption. See SSE KMS below for more details.
+                                            items:
+                                              properties:
+                                                keyId:
+                                                  description: KMS key ARN.
+                                                  type: string
+                                              type: object
+                                            type: array
+                                          sseS3:
+                                            description: S3 encryption. An empty configuration block {} should be used.
+                                            items:
+                                              type: object
+                                            type: array
+                                        type: object
+                                      type: array
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                         include:
                           description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                           items:
@@ -1201,6 +1576,9 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           type: array
+                        prefixDelimiter:
+                          description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                          type: string
                       type: object
                     type: array
                   tags:
@@ -1260,6 +1638,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1357,14 +1742,21 @@ spec:
                             description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           advancedDataProtectionMetrics:
                             description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                            type: object
+                          advancedPerformanceMetrics:
+                            description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           bucketLevel:
@@ -1374,28 +1766,35 @@ spec:
                                 description: S3 Storage Lens activity metrics. See Activity Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedCostOptimizationMetrics:
                                 description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedDataProtectionMetrics:
                                 description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                    type: boolean
+                                type: object
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                properties:
+                                  enabled:
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               detailedStatusCodeMetrics:
                                 description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               prefixLevel:
@@ -1405,7 +1804,7 @@ spec:
                                     description: level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.
                                     properties:
                                       enabled:
-                                        description: Whether the S3 Storage Lens configuration is enabled.
+                                        description: Whether S3 Storage Lens export to S3 tables is enabled.
                                         type: boolean
                                       selectionCriteria:
                                         description: Selection criteria. See Selection Criteria below for more details.
@@ -1427,7 +1826,7 @@ spec:
                             description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                         type: object
@@ -1445,11 +1844,11 @@ spec:
                             description: Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           s3BucketDestination:
-                            description: The bucket where the S3 Storage Lens metrics export will be located. See S3 Bucket Destination below for more details.
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
                             properties:
                               accountId:
                                 description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
@@ -1531,7 +1930,7 @@ spec:
                                     type: object
                                 type: object
                               encryption:
-                                description: Encryption of the metrics exports in this bucket. See Encryption below for more details.
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
                                 properties:
                                   sseKms:
                                     description: KMS encryption. See SSE KMS below for more details.
@@ -1555,6 +1954,29 @@ spec:
                               prefix:
                                 description: The prefix of the destination bucket where the metrics export will be delivered.
                                 type: string
+                            type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
                             type: object
                         type: object
                       enabled:
@@ -1652,6 +2074,68 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      expandedPrefixesDataExport:
+                        description: Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.
+                        properties:
+                          s3BucketDestination:
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                            properties:
+                              accountId:
+                                description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                type: string
+                              arn:
+                                description: The Amazon Resource Name (ARN) of the bucket.
+                                type: string
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                              format:
+                                description: 'The export format. Valid values: CSV, Parquet.'
+                                type: string
+                              outputSchemaVersion:
+                                description: 'The schema version of the export file. Valid values: V_1.'
+                                type: string
+                              prefix:
+                                description: The prefix of the destination bucket where the metrics export will be delivered.
+                                type: string
+                            type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                            type: object
+                        type: object
                       include:
                         description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                         properties:
@@ -1668,6 +2152,9 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      prefixDelimiter:
+                        description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                        type: string
                     type: object
                   tags:
                     additionalProperties:
@@ -1714,14 +2201,21 @@ spec:
                             description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           advancedDataProtectionMetrics:
                             description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                            type: object
+                          advancedPerformanceMetrics:
+                            description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           bucketLevel:
@@ -1731,28 +2225,35 @@ spec:
                                 description: S3 Storage Lens activity metrics. See Activity Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedCostOptimizationMetrics:
                                 description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedDataProtectionMetrics:
                                 description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                    type: boolean
+                                type: object
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                properties:
+                                  enabled:
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               detailedStatusCodeMetrics:
                                 description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               prefixLevel:
@@ -1762,7 +2263,7 @@ spec:
                                     description: level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.
                                     properties:
                                       enabled:
-                                        description: Whether the S3 Storage Lens configuration is enabled.
+                                        description: Whether S3 Storage Lens export to S3 tables is enabled.
                                         type: boolean
                                       selectionCriteria:
                                         description: Selection criteria. See Selection Criteria below for more details.
@@ -1784,7 +2285,7 @@ spec:
                             description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                         type: object
@@ -1802,11 +2303,11 @@ spec:
                             description: Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           s3BucketDestination:
-                            description: The bucket where the S3 Storage Lens metrics export will be located. See S3 Bucket Destination below for more details.
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
                             properties:
                               accountId:
                                 description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
@@ -1888,7 +2389,7 @@ spec:
                                     type: object
                                 type: object
                               encryption:
-                                description: Encryption of the metrics exports in this bucket. See Encryption below for more details.
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
                                 properties:
                                   sseKms:
                                     description: KMS encryption. See SSE KMS below for more details.
@@ -1912,6 +2413,29 @@ spec:
                               prefix:
                                 description: The prefix of the destination bucket where the metrics export will be delivered.
                                 type: string
+                            type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
                             type: object
                         type: object
                       enabled:
@@ -2009,6 +2533,68 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      expandedPrefixesDataExport:
+                        description: Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.
+                        properties:
+                          s3BucketDestination:
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                            properties:
+                              accountId:
+                                description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                type: string
+                              arn:
+                                description: The Amazon Resource Name (ARN) of the bucket.
+                                type: string
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                              format:
+                                description: 'The export format. Valid values: CSV, Parquet.'
+                                type: string
+                              outputSchemaVersion:
+                                description: 'The schema version of the export file. Valid values: V_1.'
+                                type: string
+                              prefix:
+                                description: The prefix of the destination bucket where the metrics export will be delivered.
+                                type: string
+                            type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                            type: object
+                        type: object
                       include:
                         description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                         properties:
@@ -2025,6 +2611,9 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      prefixDelimiter:
+                        description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                        type: string
                     type: object
                   tags:
                     additionalProperties:
@@ -2162,14 +2751,21 @@ spec:
                             description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           advancedDataProtectionMetrics:
                             description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                            type: object
+                          advancedPerformanceMetrics:
+                            description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           bucketLevel:
@@ -2179,28 +2775,35 @@ spec:
                                 description: S3 Storage Lens activity metrics. See Activity Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedCostOptimizationMetrics:
                                 description: optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               advancedDataProtectionMetrics:
                                 description: protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                    type: boolean
+                                type: object
+                              advancedPerformanceMetrics:
+                                description: Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.
+                                properties:
+                                  enabled:
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               detailedStatusCodeMetrics:
                                 description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                                 properties:
                                   enabled:
-                                    description: Whether the S3 Storage Lens configuration is enabled.
+                                    description: Whether S3 Storage Lens export to S3 tables is enabled.
                                     type: boolean
                                 type: object
                               prefixLevel:
@@ -2210,7 +2813,7 @@ spec:
                                     description: level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.
                                     properties:
                                       enabled:
-                                        description: Whether the S3 Storage Lens configuration is enabled.
+                                        description: Whether S3 Storage Lens export to S3 tables is enabled.
                                         type: boolean
                                       selectionCriteria:
                                         description: Selection criteria. See Selection Criteria below for more details.
@@ -2232,7 +2835,7 @@ spec:
                             description: Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                         type: object
@@ -2250,11 +2853,11 @@ spec:
                             description: Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.
                             properties:
                               enabled:
-                                description: Whether the S3 Storage Lens configuration is enabled.
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
                                 type: boolean
                             type: object
                           s3BucketDestination:
-                            description: The bucket where the S3 Storage Lens metrics export will be located. See S3 Bucket Destination below for more details.
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
                             properties:
                               accountId:
                                 description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
@@ -2263,7 +2866,7 @@ spec:
                                 description: The Amazon Resource Name (ARN) of the bucket.
                                 type: string
                               encryption:
-                                description: Encryption of the metrics exports in this bucket. See Encryption below for more details.
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
                                 properties:
                                   sseKms:
                                     description: KMS encryption. See SSE KMS below for more details.
@@ -2288,6 +2891,29 @@ spec:
                                 description: The prefix of the destination bucket where the metrics export will be delivered.
                                 type: string
                             type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                            type: object
                         type: object
                       enabled:
                         description: Whether the S3 Storage Lens configuration is enabled.
@@ -2308,6 +2934,68 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      expandedPrefixesDataExport:
+                        description: Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.
+                        properties:
+                          s3BucketDestination:
+                            description: The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.
+                            properties:
+                              accountId:
+                                description: The account ID of the owner of the S3 Storage Lens metrics export bucket.
+                                type: string
+                              arn:
+                                description: The Amazon Resource Name (ARN) of the bucket.
+                                type: string
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                              format:
+                                description: 'The export format. Valid values: CSV, Parquet.'
+                                type: string
+                              outputSchemaVersion:
+                                description: 'The schema version of the export file. Valid values: V_1.'
+                                type: string
+                              prefix:
+                                description: The prefix of the destination bucket where the metrics export will be delivered.
+                                type: string
+                            type: object
+                          storageLensTableDestination:
+                            description: S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.
+                            properties:
+                              enabled:
+                                description: Whether S3 Storage Lens export to S3 tables is enabled.
+                                type: boolean
+                              encryption:
+                                description: Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.
+                                properties:
+                                  sseKms:
+                                    description: KMS encryption. See SSE KMS below for more details.
+                                    properties:
+                                      keyId:
+                                        description: KMS key ARN.
+                                        type: string
+                                    type: object
+                                  sseS3:
+                                    description: S3 encryption. An empty configuration block {} should be used.
+                                    items:
+                                      type: object
+                                    type: array
+                                type: object
+                            type: object
+                        type: object
                       include:
                         description: What is included in this configuration. Conflicts with exclude. See Include below for more details.
                         properties:
@@ -2324,6 +3012,9 @@ spec:
                             type: array
                             x-kubernetes-list-type: set
                         type: object
+                      prefixDelimiter:
+                        description: Prefix delimiter used for object keys in this S3 Storage Lens configuration.
+                        type: string
                     type: object
                   tags:
                     additionalProperties:
@@ -2382,6 +3073,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

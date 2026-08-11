@@ -192,6 +192,10 @@ public partial class V1beta1FindingAggregatorSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingAggregatorStatusAtProvider
 {
+    /// <summary>Amazon Resource Name (ARN) of the Security Hub finding aggregator.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -265,6 +269,15 @@ public partial class V1beta1FindingAggregatorStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FindingAggregatorStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -1002,6 +1002,161 @@ public partial class V1beta1ClusterSpecForProviderMonitoringRoleArnSelector
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderRestoreToPointInTimeSourceClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecForProviderRestoreToPointInTimeSourceClusterIdentifierRefPolicyResolutionEnum
 {
@@ -1599,10 +1754,15 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("autoGeneratePassword")]
     public bool? AutoGeneratePassword { get; set; }
 
+    /// <summary>Whether to apply minor engine upgrades automatically to the DB cluster during the maintenance window. Defaults to true.</summary>
+    [JsonPropertyName("autoMinorVersionUpgrade")]
+    public bool? AutoMinorVersionUpgrade { get; set; }
+
     /// <summary>
     /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
     /// We recommend specifying 3 AZs or using the  if necessary.
     /// A maximum of 3 AZs can be configured.
+    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
     /// </summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
@@ -1829,6 +1989,14 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("performanceInsightsKmsKeyId")]
     public string? PerformanceInsightsKmsKeyId { get; set; }
 
+    /// <summary>Reference to a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+    [JsonPropertyName("performanceInsightsKmsKeyIdRef")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdRef? PerformanceInsightsKmsKeyIdRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+    [JsonPropertyName("performanceInsightsKmsKeyIdSelector")]
+    public V1beta1ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelector? PerformanceInsightsKmsKeyIdSelector { get; set; }
+
     /// <summary>Specifies the amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
     [JsonPropertyName("performanceInsightsRetentionPeriod")]
     public double? PerformanceInsightsRetentionPeriod { get; set; }
@@ -1888,7 +2056,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
-    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
+    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2, gp3 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -2875,6 +3043,161 @@ public partial class V1beta1ClusterSpecInitProviderMonitoringRoleArnSelector
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum>))]
+public enum V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderRestoreToPointInTimeSourceClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecInitProviderRestoreToPointInTimeSourceClusterIdentifierRefPolicyResolutionEnum
 {
@@ -3480,10 +3803,15 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
+    /// <summary>Whether to apply minor engine upgrades automatically to the DB cluster during the maintenance window. Defaults to true.</summary>
+    [JsonPropertyName("autoMinorVersionUpgrade")]
+    public bool? AutoMinorVersionUpgrade { get; set; }
+
     /// <summary>
     /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
     /// We recommend specifying 3 AZs or using the  if necessary.
     /// A maximum of 3 AZs can be configured.
+    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
     /// </summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
@@ -3710,6 +4038,14 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("performanceInsightsKmsKeyId")]
     public string? PerformanceInsightsKmsKeyId { get; set; }
 
+    /// <summary>Reference to a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+    [JsonPropertyName("performanceInsightsKmsKeyIdRef")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdRef? PerformanceInsightsKmsKeyIdRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate performanceInsightsKmsKeyId.</summary>
+    [JsonPropertyName("performanceInsightsKmsKeyIdSelector")]
+    public V1beta1ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelector? PerformanceInsightsKmsKeyIdSelector { get; set; }
+
     /// <summary>Specifies the amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
     [JsonPropertyName("performanceInsightsRetentionPeriod")]
     public double? PerformanceInsightsRetentionPeriod { get; set; }
@@ -3762,7 +4098,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
-    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
+    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2, gp3 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -4030,10 +4366,15 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
+    /// <summary>Whether to apply minor engine upgrades automatically to the DB cluster during the maintenance window. Defaults to true.</summary>
+    [JsonPropertyName("autoMinorVersionUpgrade")]
+    public bool? AutoMinorVersionUpgrade { get; set; }
+
     /// <summary>
     /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
     /// We recommend specifying 3 AZs or using the  if necessary.
     /// A maximum of 3 AZs can be configured.
+    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
     /// </summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
@@ -4299,7 +4640,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
-    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
+    /// <summary>(Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB cluster. For Aurora DB clusters, storage_type modifications can be done in-place. For Multi-AZ DB Clusters, the iops argument must also be set. Valid values are: &quot; &quot;, aurora-iopt1 (Aurora DB Clusters); io1, io2, gp3 (Multi-AZ DB Clusters). Default: &quot; &quot; (Aurora DB Clusters); io1 (Multi-AZ DB Clusters).</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -4374,6 +4715,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

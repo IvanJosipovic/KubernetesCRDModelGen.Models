@@ -50,6 +50,10 @@ public partial class V1beta1ResourcePolicySpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>ARN of the CloudWatch Logs resource to which the resource policy is attached. Exactly one of policy_name or resource_arn must be specified and this argument is required for resource-scoped policies. Only one policy can be attached per log group resource ARN.</summary>
+    [JsonPropertyName("resourceArn")]
+    public string? ResourceArn { get; set; }
 }
 
 /// <summary>
@@ -71,6 +75,10 @@ public partial class V1beta1ResourcePolicySpecInitProvider
     /// <summary>Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.</summary>
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
+
+    /// <summary>ARN of the CloudWatch Logs resource to which the resource policy is attached. Exactly one of policy_name or resource_arn must be specified and this argument is required for resource-scoped policies. Only one policy can be attached per log group resource ARN.</summary>
+    [JsonPropertyName("resourceArn")]
+    public string? ResourceArn { get; set; }
 }
 
 /// <summary>
@@ -184,7 +192,7 @@ public partial class V1beta1ResourcePolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProvider
 {
-    /// <summary>The name of the CloudWatch log resource policy</summary>
+    /// <summary>The name of the CloudWatch log resource policy when resource_arn is not specified, or the ARN of the CloudWatch log group when resource_arn is specified.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -192,12 +200,24 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("policyDocument")]
     public string? PolicyDocument { get; set; }
 
+    /// <summary>Scope of the resource policy (ACCOUNT or RESOURCE).</summary>
+    [JsonPropertyName("policyScope")]
+    public string? PolicyScope { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>ARN of the CloudWatch Logs resource to which the resource policy is attached. Exactly one of policy_name or resource_arn must be specified and this argument is required for resource-scoped policies. Only one policy can be attached per log group resource ARN.</summary>
+    [JsonPropertyName("resourceArn")]
+    public string? ResourceArn { get; set; }
+
+    /// <summary>Revision ID of the resource policy. Only populated for resource-scoped policies.</summary>
+    [JsonPropertyName("revisionId")]
+    public string? RevisionId { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -254,6 +274,15 @@ public partial class V1beta1ResourcePolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResourcePolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

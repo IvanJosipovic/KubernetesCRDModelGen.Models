@@ -448,6 +448,10 @@ public partial class V1beta1TaskSpecForProviderSchedule
     /// <summary>Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
+
+    /// <summary>Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }
 
 /// <summary>
@@ -1163,6 +1167,10 @@ public partial class V1beta1TaskSpecInitProviderSchedule
     /// <summary>Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
+
+    /// <summary>Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }
 
 /// <summary>
@@ -1680,6 +1688,10 @@ public partial class V1beta1TaskStatusAtProviderSchedule
     /// <summary>Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
+
+    /// <summary>Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
 }
 
 /// <summary>Configuration block containing the configuration of the reporting level for aspects of your task report. See report_overrides below.</summary>
@@ -1870,6 +1882,15 @@ public partial class V1beta1TaskStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TaskStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

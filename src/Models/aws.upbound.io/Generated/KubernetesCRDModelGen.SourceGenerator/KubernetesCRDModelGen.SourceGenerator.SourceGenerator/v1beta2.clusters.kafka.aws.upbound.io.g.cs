@@ -268,6 +268,10 @@ public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public IList<V1beta2ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess>? PublicAccess { get; set; }
@@ -1816,6 +1820,10 @@ public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public IList<V1beta2ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess>? PublicAccess { get; set; }
@@ -3404,6 +3412,10 @@ public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public IList<V1beta2ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess>? PublicAccess { get; set; }
@@ -3766,6 +3778,10 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("currentVersion")]
     public string? CurrentVersion { get; set; }
 
+    /// <summary>Status indicating whether Amazon MSK requires customer action for the cluster. Valid values are NONE, ACTION_RECOMMENDED, and CRITICAL_ACTION_REQUIRED.</summary>
+    [JsonPropertyName("customerActionStatus")]
+    public string? CustomerActionStatus { get; set; }
+
     /// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
     [JsonPropertyName("encryptionInfo")]
     public IList<V1beta2ClusterStatusAtProviderEncryptionInfo>? EncryptionInfo { get; set; }
@@ -3881,6 +3897,15 @@ public partial class V1beta2ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -538,6 +538,10 @@ public partial class V1beta1TableItemStatusAtProvider
     [JsonPropertyName("hashKey")]
     public string? HashKey { get; set; }
 
+    /// <summary>Canonical string representation of the hash key value. Binary values are base64-encoded; numbers and strings are taken verbatim.</summary>
+    [JsonPropertyName("hashKeyValue")]
+    public string? HashKeyValue { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -548,6 +552,10 @@ public partial class V1beta1TableItemStatusAtProvider
     /// <summary>Range key to use for lookups and identification of the item. Required if there is range key defined in the table.</summary>
     [JsonPropertyName("rangeKey")]
     public string? RangeKey { get; set; }
+
+    /// <summary>Canonical string representation of the range key value, when the table has a range key. Same encoding as hash_key_value.</summary>
+    [JsonPropertyName("rangeKeyValue")]
+    public string? RangeKeyValue { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -615,6 +623,15 @@ public partial class V1beta1TableItemStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TableItemStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

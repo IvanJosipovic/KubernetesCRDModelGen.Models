@@ -206,7 +206,7 @@ public partial class V1beta2RouteSpecForProviderMeshNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -219,15 +219,12 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteActionWeightedTarge
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecForProviderSpecGrpcRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -241,12 +238,12 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadataMatchR
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadataMatch
@@ -263,7 +260,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadataMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadataMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -280,7 +277,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadata
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadataMatch? Match { get; set; }
 
@@ -289,7 +286,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatchMetadata
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatch
@@ -302,7 +299,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteMatch
     [JsonPropertyName("methodName")]
     public string? MethodName { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -329,22 +326,16 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteRetryPolicyPerRetry
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteRetryPolicy
 {
-    /// <summary>
-    /// List of gRPC retry events.
-    /// Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
-    /// </summary>
+    /// <summary>List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.</summary>
     [JsonPropertyName("grpcRetryEvents")]
     public IList<string>? GrpcRetryEvents { get; set; }
 
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -361,7 +352,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutIdle
@@ -375,7 +366,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest
@@ -389,38 +380,38 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route.</summary>
+/// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecForProviderSpecGrpcRouteTimeout? Timeout { get; set; }
 }
@@ -429,7 +420,7 @@ public partial class V1beta2RouteSpecForProviderSpecGrpcRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -442,15 +433,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteActionWeightedTarg
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecForProviderSpecHttp2RouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -464,12 +452,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRa
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
@@ -486,7 +474,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -503,7 +491,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -512,7 +500,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchPath
@@ -521,12 +509,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -540,7 +528,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParamete
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -549,12 +537,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParamete
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteSpecForProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
@@ -562,11 +550,11 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -574,7 +562,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteSpecForProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -597,15 +585,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteRetryPolicyPerRetr
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -622,7 +607,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutIdle
@@ -636,7 +621,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutPerRequest
@@ -650,38 +635,38 @@ public partial class V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2RouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP/2 routing information for the route.</summary>
+/// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecForProviderSpecHttp2RouteTimeout? Timeout { get; set; }
 }
@@ -837,7 +822,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -858,15 +843,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteActionWeightedTarge
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecForProviderSpecHttpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -880,12 +862,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchHeaderMatchRan
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchHeaderMatch
@@ -902,7 +884,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecForProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -919,7 +901,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -928,7 +910,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchPath
@@ -937,12 +919,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch
@@ -956,7 +938,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -965,12 +947,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameter
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteSpecForProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
@@ -978,11 +960,11 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteSpecForProviderSpecHttpRouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -990,7 +972,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteSpecForProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -1013,15 +995,12 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteRetryPolicyPerRetry
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -1038,7 +1017,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteTimeoutIdle
@@ -1052,7 +1031,7 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteTimeoutPerRequest
@@ -1066,38 +1045,38 @@ public partial class V1beta2RouteSpecForProviderSpecHttpRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecForProviderSpecHttpRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecForProviderSpecHttpRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP routing information for the route.</summary>
+/// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecForProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecHttpRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecForProviderSpecHttpRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecForProviderSpecHttpRouteTimeout? Timeout { get; set; }
 }
@@ -1253,7 +1232,7 @@ public partial class V1beta2RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1274,30 +1253,27 @@ public partial class V1beta2RouteSpecForProviderSpecTcpRouteActionWeightedTarget
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecForProviderSpecTcpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRouteMatch
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRouteTimeoutIdle
@@ -1311,30 +1287,30 @@ public partial class V1beta2RouteSpecForProviderSpecTcpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecForProviderSpecTcpRouteTimeoutIdle? Idle { get; set; }
 }
 
-/// <summary>TCP routing information for the route.</summary>
+/// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpecTcpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecForProviderSpecTcpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecForProviderSpecTcpRouteMatch? Match { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecForProviderSpecTcpRouteTimeout? Timeout { get; set; }
 }
@@ -1344,26 +1320,23 @@ public partial class V1beta2RouteSpecForProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecForProviderSpec
 {
-    /// <summary>GRPC routing information for the route.</summary>
+    /// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteSpecForProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>HTTP/2 routing information for the route.</summary>
+    /// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta2RouteSpecForProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>HTTP routing information for the route.</summary>
+    /// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta2RouteSpecForProviderSpecHttpRoute? HttpRoute { get; set; }
 
-    /// <summary>
-    /// Priority for the route, between 0 and 1000.
-    /// Routes are matched based on the specified value, where 0 is the highest priority.
-    /// </summary>
+    /// <summary>Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>TCP routing information for the route.</summary>
+    /// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
     [JsonPropertyName("tcpRoute")]
     public V1beta2RouteSpecForProviderSpecTcpRoute? TcpRoute { get; set; }
 }
@@ -1718,7 +1691,7 @@ public partial class V1beta2RouteSpecInitProviderMeshNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1731,15 +1704,12 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteActionWeightedTarg
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecInitProviderSpecGrpcRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -1753,12 +1723,12 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
@@ -1775,7 +1745,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -1792,7 +1762,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadata
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch? Match { get; set; }
 
@@ -1801,7 +1771,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatchMetadata
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatch
@@ -1814,7 +1784,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteMatch
     [JsonPropertyName("methodName")]
     public string? MethodName { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1841,22 +1811,16 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteRetryPolicyPerRetr
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteRetryPolicy
 {
-    /// <summary>
-    /// List of gRPC retry events.
-    /// Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
-    /// </summary>
+    /// <summary>List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.</summary>
     [JsonPropertyName("grpcRetryEvents")]
     public IList<string>? GrpcRetryEvents { get; set; }
 
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -1873,7 +1837,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutIdle
@@ -1887,7 +1851,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest
@@ -1901,38 +1865,38 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route.</summary>
+/// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecInitProviderSpecGrpcRouteTimeout? Timeout { get; set; }
 }
@@ -1941,7 +1905,7 @@ public partial class V1beta2RouteSpecInitProviderSpecGrpcRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1954,15 +1918,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteActionWeightedTar
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecInitProviderSpecHttp2RouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -1976,12 +1937,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchR
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
@@ -1998,7 +1959,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -2015,7 +1976,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -2024,7 +1985,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchPath
@@ -2033,12 +1994,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -2052,7 +2013,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParamet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -2061,12 +2022,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParamet
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteSpecInitProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
@@ -2074,11 +2035,11 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2086,7 +2047,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteSpecInitProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -2109,15 +2070,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteRetryPolicyPerRet
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -2134,7 +2092,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutIdle
@@ -2148,7 +2106,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutPerRequest
@@ -2162,38 +2120,38 @@ public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2RouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP/2 routing information for the route.</summary>
+/// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecInitProviderSpecHttp2RouteTimeout? Timeout { get; set; }
 }
@@ -2349,7 +2307,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2370,15 +2328,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecInitProviderSpecHttpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -2392,12 +2347,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRa
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
@@ -2414,7 +2369,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -2431,7 +2386,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -2440,7 +2395,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchPath
@@ -2449,12 +2404,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch
@@ -2468,7 +2423,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParamete
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -2477,12 +2432,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParamete
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteSpecInitProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
@@ -2490,11 +2445,11 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2502,7 +2457,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteSpecInitProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -2525,15 +2480,12 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteRetryPolicyPerRetr
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -2550,7 +2502,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutIdle
@@ -2564,7 +2516,7 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutPerRequest
@@ -2578,38 +2530,38 @@ public partial class V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP routing information for the route.</summary>
+/// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecInitProviderSpecHttpRouteTimeout? Timeout { get; set; }
 }
@@ -2765,7 +2717,7 @@ public partial class V1beta2RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2786,30 +2738,27 @@ public partial class V1beta2RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteSpecInitProviderSpecTcpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRouteMatch
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRouteTimeoutIdle
@@ -2823,30 +2772,30 @@ public partial class V1beta2RouteSpecInitProviderSpecTcpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteSpecInitProviderSpecTcpRouteTimeoutIdle? Idle { get; set; }
 }
 
-/// <summary>TCP routing information for the route.</summary>
+/// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpecTcpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteSpecInitProviderSpecTcpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteSpecInitProviderSpecTcpRouteMatch? Match { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteSpecInitProviderSpecTcpRouteTimeout? Timeout { get; set; }
 }
@@ -2856,26 +2805,23 @@ public partial class V1beta2RouteSpecInitProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteSpecInitProviderSpec
 {
-    /// <summary>GRPC routing information for the route.</summary>
+    /// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteSpecInitProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>HTTP/2 routing information for the route.</summary>
+    /// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta2RouteSpecInitProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>HTTP routing information for the route.</summary>
+    /// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta2RouteSpecInitProviderSpecHttpRoute? HttpRoute { get; set; }
 
-    /// <summary>
-    /// Priority for the route, between 0 and 1000.
-    /// Routes are matched based on the specified value, where 0 is the highest priority.
-    /// </summary>
+    /// <summary>Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>TCP routing information for the route.</summary>
+    /// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
     [JsonPropertyName("tcpRoute")]
     public V1beta2RouteSpecInitProviderSpecTcpRoute? TcpRoute { get; set; }
 }
@@ -3271,7 +3217,7 @@ public partial class V1beta2RouteSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3284,15 +3230,12 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteActionWeightedTarg
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteStatusAtProviderSpecGrpcRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -3306,12 +3249,12 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
@@ -3328,7 +3271,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
     [JsonPropertyName("range")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -3345,7 +3288,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadata
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch? Match { get; set; }
 
@@ -3354,7 +3297,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatchMetadata
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatch
@@ -3367,7 +3310,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteMatch
     [JsonPropertyName("methodName")]
     public string? MethodName { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3394,22 +3337,16 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteRetryPolicyPerRetr
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteRetryPolicy
 {
-    /// <summary>
-    /// List of gRPC retry events.
-    /// Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
-    /// </summary>
+    /// <summary>List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.</summary>
     [JsonPropertyName("grpcRetryEvents")]
     public IList<string>? GrpcRetryEvents { get; set; }
 
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -3426,7 +3363,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutIdle
@@ -3440,7 +3377,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest
@@ -3454,38 +3391,38 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>GRPC routing information for the route.</summary>
+/// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecGrpcRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteStatusAtProviderSpecGrpcRouteTimeout? Timeout { get; set; }
 }
@@ -3494,7 +3431,7 @@ public partial class V1beta2RouteStatusAtProviderSpecGrpcRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3507,15 +3444,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteActionWeightedTar
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteStatusAtProviderSpecHttp2RouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -3529,12 +3463,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchR
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
@@ -3551,7 +3485,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -3568,7 +3502,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch? Match { get; set; }
 
@@ -3577,7 +3511,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchPath
@@ -3586,12 +3520,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch
@@ -3605,7 +3539,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParamet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -3614,12 +3548,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParamet
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteStatusAtProviderSpecHttp2RouteMatchHeader>? Header { get; set; }
 
@@ -3627,11 +3561,11 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3639,7 +3573,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteStatusAtProviderSpecHttp2RouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -3662,15 +3596,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteRetryPolicyPerRet
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -3687,7 +3618,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutIdle
@@ -3701,7 +3632,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutPerRequest
@@ -3715,38 +3646,38 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2RouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP/2 routing information for the route.</summary>
+/// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttp2Route
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteStatusAtProviderSpecHttp2RouteTimeout? Timeout { get; set; }
 }
@@ -3755,7 +3686,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttp2Route
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3768,15 +3699,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteActionWeightedTarg
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteStatusAtProviderSpecHttpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
@@ -3790,12 +3718,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRa
     [JsonPropertyName("end")]
     public double? End { get; set; }
 
-    /// <summary>(Requited) Start of the range.</summary>
+    /// <summary>Start of the range.</summary>
     [JsonPropertyName("start")]
     public double? Start { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
@@ -3812,7 +3740,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
     [JsonPropertyName("range")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRange? Range { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 
@@ -3829,7 +3757,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeader
     [JsonPropertyName("invert")]
     public bool? Invert { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeaderMatch? Match { get; set; }
 
@@ -3838,7 +3766,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeader
     public string? Name { get; set; }
 }
 
-/// <summary>Client request path to match on.</summary>
+/// <summary>Client request path to match on. See path Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchPath
@@ -3847,12 +3775,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchPath
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>The regex used to match the path.</summary>
     [JsonPropertyName("regex")]
     public string? Regex { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch
@@ -3866,7 +3794,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParamete
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParameter
 {
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch? Match { get; set; }
 
@@ -3875,12 +3803,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParamete
     public string? Name { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatch
 {
-    /// <summary>Client request headers to match on.</summary>
+    /// <summary>Client request headers to match on. See header Block for details.</summary>
     [JsonPropertyName("header")]
     public IList<V1beta2RouteStatusAtProviderSpecHttpRouteMatchHeader>? Header { get; set; }
 
@@ -3888,11 +3816,11 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatch
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>Client request path to match on.</summary>
+    /// <summary>Client request path to match on. See path Block for details.</summary>
     [JsonPropertyName("path")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteMatchPath? Path { get; set; }
 
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3900,7 +3828,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteMatch
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Client request query parameters to match on.</summary>
+    /// <summary>Client request query parameters to match on. See query_parameter Block for details.</summary>
     [JsonPropertyName("queryParameter")]
     public IList<V1beta2RouteStatusAtProviderSpecHttpRouteMatchQueryParameter>? QueryParameter { get; set; }
 
@@ -3923,15 +3851,12 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteRetryPolicyPerRetr
     public double? Value { get; set; }
 }
 
-/// <summary>Retry policy.</summary>
+/// <summary>Retry policy. See retry_policy Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteRetryPolicy
 {
-    /// <summary>
-    /// List of HTTP retry events.
-    /// Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
-    /// </summary>
+    /// <summary>List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).</summary>
     [JsonPropertyName("httpRetryEvents")]
     public IList<string>? HttpRetryEvents { get; set; }
 
@@ -3948,7 +3873,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteRetryPolicy
     public IList<string>? TcpRetryEvents { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutIdle
@@ -3962,7 +3887,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutPerRequest
@@ -3976,38 +3901,38 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutPerRequest
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteTimeoutPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>HTTP routing information for the route.</summary>
+/// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecHttpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteMatch? Match { get; set; }
 
-    /// <summary>Retry policy.</summary>
+    /// <summary>Retry policy. See retry_policy Block for details.</summary>
     [JsonPropertyName("retryPolicy")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteStatusAtProviderSpecHttpRouteTimeout? Timeout { get; set; }
 }
@@ -4016,7 +3941,7 @@ public partial class V1beta2RouteStatusAtProviderSpecHttpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRouteActionWeightedTarget
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -4029,30 +3954,27 @@ public partial class V1beta2RouteStatusAtProviderSpecTcpRouteActionWeightedTarge
     public double? Weight { get; set; }
 }
 
-/// <summary>Action to take if a match is determined.</summary>
+/// <summary>Action to take if a match is determined. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRouteAction
 {
-    /// <summary>
-    /// Targets that traffic is routed to when a request matches the route.
-    /// You can specify one or more targets and their relative weights with which to distribute traffic.
-    /// </summary>
+    /// <summary>Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.</summary>
     [JsonPropertyName("weightedTarget")]
     public IList<V1beta2RouteStatusAtProviderSpecTcpRouteActionWeightedTarget>? WeightedTarget { get; set; }
 }
 
-/// <summary>Criteria for determining an gRPC request match.</summary>
+/// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRouteMatch
 {
-    /// <summary>The port number to match from the request.</summary>
+    /// <summary>The targeted port of the weighted object.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRouteTimeoutIdle
@@ -4066,30 +3988,30 @@ public partial class V1beta2RouteStatusAtProviderSpecTcpRouteTimeoutIdle
     public double? Value { get; set; }
 }
 
-/// <summary>Types of timeouts.</summary>
+/// <summary>Types of timeouts. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRouteTimeout
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2RouteStatusAtProviderSpecTcpRouteTimeoutIdle? Idle { get; set; }
 }
 
-/// <summary>TCP routing information for the route.</summary>
+/// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpecTcpRoute
 {
-    /// <summary>Action to take if a match is determined.</summary>
+    /// <summary>Action to take if a match is determined. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta2RouteStatusAtProviderSpecTcpRouteAction? Action { get; set; }
 
-    /// <summary>Criteria for determining an gRPC request match.</summary>
+    /// <summary>Criteria for determining an gRPC request match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta2RouteStatusAtProviderSpecTcpRouteMatch? Match { get; set; }
 
-    /// <summary>Types of timeouts.</summary>
+    /// <summary>Types of timeouts. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2RouteStatusAtProviderSpecTcpRouteTimeout? Timeout { get; set; }
 }
@@ -4099,26 +4021,23 @@ public partial class V1beta2RouteStatusAtProviderSpecTcpRoute
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RouteStatusAtProviderSpec
 {
-    /// <summary>GRPC routing information for the route.</summary>
+    /// <summary>GRPC routing information for the route. See grpc_route Block for details.</summary>
     [JsonPropertyName("grpcRoute")]
     public V1beta2RouteStatusAtProviderSpecGrpcRoute? GrpcRoute { get; set; }
 
-    /// <summary>HTTP/2 routing information for the route.</summary>
+    /// <summary>HTTP/2 routing information for the route. See http2_route Block for details.</summary>
     [JsonPropertyName("http2Route")]
     public V1beta2RouteStatusAtProviderSpecHttp2Route? Http2Route { get; set; }
 
-    /// <summary>HTTP routing information for the route.</summary>
+    /// <summary>HTTP routing information for the route. See http_route Block for details.</summary>
     [JsonPropertyName("httpRoute")]
     public V1beta2RouteStatusAtProviderSpecHttpRoute? HttpRoute { get; set; }
 
-    /// <summary>
-    /// Priority for the route, between 0 and 1000.
-    /// Routes are matched based on the specified value, where 0 is the highest priority.
-    /// </summary>
+    /// <summary>Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>TCP routing information for the route.</summary>
+    /// <summary>TCP routing information for the route. See tcp_route Block for details.</summary>
     [JsonPropertyName("tcpRoute")]
     public V1beta2RouteStatusAtProviderSpecTcpRoute? TcpRoute { get; set; }
 }
@@ -4237,6 +4156,15 @@ public partial class V1beta2RouteStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2RouteStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

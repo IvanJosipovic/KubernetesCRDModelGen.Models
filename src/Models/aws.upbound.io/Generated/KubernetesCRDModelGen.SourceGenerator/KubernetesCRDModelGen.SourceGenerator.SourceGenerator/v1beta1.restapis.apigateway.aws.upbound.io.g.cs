@@ -266,6 +266,10 @@ public partial class V1beta1RestAPISpecForProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1RestAPISpecForProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
@@ -296,6 +300,10 @@ public partial class V1beta1RestAPISpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -520,6 +528,10 @@ public partial class V1beta1RestAPISpecInitProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1RestAPISpecInitProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
@@ -543,6 +555,10 @@ public partial class V1beta1RestAPISpecInitProvider
     /// <summary>Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (create or update operation). Valid values are merge and overwrite. If unspecificed, defaults to overwrite (for backwards compatibility). This corresponds to the x-amazon-apigateway-put-integration-method extension. If the argument value is provided and is different than the OpenAPI value, the argument value will override the OpenAPI value.</summary>
     [JsonPropertyName("putRestApiMode")]
     public string? PutRestApiMode { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -790,6 +806,10 @@ public partial class V1beta1RestAPIStatusAtProvider
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
+    /// <summary>Endpoint access mode for the REST API. Valid values are BASIC and STRICT. Only available for REST APIs that use a security_policy value beginning with SecurityPolicy_ and is required when one of those values is configured.</summary>
+    [JsonPropertyName("endpointAccessMode")]
+    public string? EndpointAccessMode { get; set; }
+
     /// <summary>Configuration block defining API endpoint configuration including endpoint type. Defined below.</summary>
     [JsonPropertyName("endpointConfiguration")]
     public IList<V1beta1RestAPIStatusAtProviderEndpointConfiguration>? EndpointConfiguration { get; set; }
@@ -840,6 +860,10 @@ public partial class V1beta1RestAPIStatusAtProvider
     /// <summary>Resource ID of the REST API&apos;s root</summary>
     [JsonPropertyName("rootResourceId")]
     public string? RootResourceId { get; set; }
+
+    /// <summary>TLS version + cipher suite for the REST API&apos;s default execute-api endpoint. Must be configured for drift detection. When set to a value beginning with SecurityPolicy_, endpoint_access_mode must also be configured. For a list of valid security policies, see CreateRestApi in the Amazon API Gateway API Reference.</summary>
+    [JsonPropertyName("securityPolicy")]
+    public string? SecurityPolicy { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -906,6 +930,15 @@ public partial class V1beta1RestAPIStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RestAPIStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

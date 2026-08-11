@@ -390,7 +390,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`</summary>
+    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
@@ -398,7 +398,7 @@ public partial class V1beta1WorkspaceSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
@@ -836,7 +836,7 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`</summary>
+    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
@@ -844,7 +844,7 @@ public partial class V1beta1WorkspaceSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
@@ -1064,7 +1064,7 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("configuration")]
     public string? Configuration { get; set; }
 
-    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`</summary>
+    /// <summary>The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY</summary>
     [JsonPropertyName("dataSources")]
     public IList<string>? DataSources { get; set; }
 
@@ -1076,7 +1076,7 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.</summary>
+    /// <summary>Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.</summary>
     [JsonPropertyName("grafanaVersion")]
     public string? GrafanaVersion { get; set; }
 
@@ -1196,6 +1196,15 @@ public partial class V1beta1WorkspaceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WorkspaceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

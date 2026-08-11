@@ -779,6 +779,10 @@ public partial class V1beta1TableSpecForProvider
     [JsonPropertyName("replica")]
     public IList<V1beta1TableSpecForProviderReplica>? Replica { get; set; }
 
+    /// <summary>ARN of backup to restore.</summary>
+    [JsonPropertyName("restoreBackupArn")]
+    public string? RestoreBackupArn { get; set; }
+
     /// <summary>Time of the point-in-time recovery point to restore.</summary>
     [JsonPropertyName("restoreDateTime")]
     public string? RestoreDateTime { get; set; }
@@ -1560,6 +1564,10 @@ public partial class V1beta1TableSpecInitProvider
     [JsonPropertyName("replica")]
     public IList<V1beta1TableSpecInitProviderReplica>? Replica { get; set; }
 
+    /// <summary>ARN of backup to restore.</summary>
+    [JsonPropertyName("restoreBackupArn")]
+    public string? RestoreBackupArn { get; set; }
+
     /// <summary>Time of the point-in-time recovery point to restore.</summary>
     [JsonPropertyName("restoreDateTime")]
     public string? RestoreDateTime { get; set; }
@@ -2095,9 +2103,21 @@ public partial class V1beta1TableStatusAtProviderReplica
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
+    /// <summary>Whether Streams are enabled.</summary>
+    [JsonPropertyName("streamEnabled")]
+    public bool? StreamEnabled { get; set; }
+
     /// <summary>Timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not a unique identifier for the stream on its own. However, the combination of AWS customer ID, table name and this field is guaranteed to be unique. It can be used for creating CloudWatch Alarms. Only available when stream_enabled = true.</summary>
     [JsonPropertyName("streamLabel")]
     public string? StreamLabel { get; set; }
+
+    /// <summary>
+    /// When an item in the table is modified, StreamViewType determines what information is written to the table&apos;s stream.
+    /// Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+    /// Only valid when stream_enabled is true.
+    /// </summary>
+    [JsonPropertyName("streamViewType")]
+    public string? StreamViewType { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2219,6 +2239,10 @@ public partial class V1beta1TableStatusAtProvider
     /// <summary>Configuration block(s) with DynamoDB Global Tables V2 (version 2019.11.21) replication configurations. See below.</summary>
     [JsonPropertyName("replica")]
     public IList<V1beta1TableStatusAtProviderReplica>? Replica { get; set; }
+
+    /// <summary>ARN of backup to restore.</summary>
+    [JsonPropertyName("restoreBackupArn")]
+    public string? RestoreBackupArn { get; set; }
 
     /// <summary>Time of the point-in-time recovery point to restore.</summary>
     [JsonPropertyName("restoreDateTime")]
@@ -2345,6 +2369,15 @@ public partial class V1beta1TableStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1TableStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

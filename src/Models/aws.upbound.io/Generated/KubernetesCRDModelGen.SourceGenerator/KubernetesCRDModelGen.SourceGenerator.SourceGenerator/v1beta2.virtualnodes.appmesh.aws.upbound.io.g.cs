@@ -202,7 +202,7 @@ public partial class V1beta2VirtualNodeSpecForProviderMeshNameSelector
     public V1beta2VirtualNodeSpecForProviderMeshNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
@@ -216,7 +216,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
@@ -231,11 +231,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -270,7 +270,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
@@ -280,7 +280,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
@@ -299,11 +299,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceC
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -377,7 +377,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackend
     public V1beta2VirtualNodeSpecForProviderSpecBackendVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
@@ -391,7 +391,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
@@ -406,11 +406,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -445,7 +445,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
@@ -455,7 +455,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
@@ -474,11 +474,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -529,7 +529,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientP
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
 
-/// <summary>Defaults for backends.</summary>
+/// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaults
@@ -539,7 +539,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecBackendDefaults
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaultsClientPolicy? ClientPolicy { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolGrpc
@@ -580,29 +580,29 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
     public double? MaxConnections { get; set; }
 }
 
-/// <summary>Connection pool information for the listener.</summary>
+/// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolHttp>? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolHttp2>? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPoolTcp>? Tcp { get; set; }
 }
 
-/// <summary>Health check information for the listener.</summary>
+/// <summary>Health check information for the listener. See health_check Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck
@@ -615,7 +615,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -636,7 +636,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>Base amount of time for which a host is ejected.</summary>
+/// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionBaseEjectionDuration
@@ -645,12 +645,12 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Time interval between ejection sweep analysis.</summary>
+/// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionInterval
@@ -659,28 +659,25 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Outlier detection information for the listener.</summary>
+/// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetection
 {
-    /// <summary>Base amount of time for which a host is ejected.</summary>
+    /// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
     [JsonPropertyName("baseEjectionDuration")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionBaseEjectionDuration? BaseEjectionDuration { get; set; }
 
-    /// <summary>Time interval between ejection sweep analysis.</summary>
+    /// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
     [JsonPropertyName("interval")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetectionInterval? Interval { get; set; }
 
-    /// <summary>
-    /// Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value.
-    /// Minimum value of 0. Maximum value of 100.
-    /// </summary>
+    /// <summary>Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value. Minimum value of 0. Maximum value of 100.</summary>
     [JsonPropertyName("maxEjectionPercent")]
     public double? MaxEjectionPercent { get; set; }
 
@@ -689,7 +686,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetecti
     public double? MaxServerErrors { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerPortMapping
@@ -703,7 +700,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerPortMapping
     public string? Protocol { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcIdle
@@ -712,12 +709,12 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcIdl
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcPerRequest
@@ -726,26 +723,26 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcPer
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpc
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpcPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpIdle
@@ -754,12 +751,12 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpIdl
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpPerRequest
@@ -768,26 +765,26 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpPer
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP listeners.</summary>
+/// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttpPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Idle
@@ -796,12 +793,12 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Id
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2PerRequest
@@ -810,26 +807,26 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Pe
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP2 listeners.</summary>
+/// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2Idle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2PerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcpIdle
@@ -838,39 +835,39 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcpIdle
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for TCP listeners.</summary>
+/// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcpIdle? Idle { get; set; }
 }
 
-/// <summary>Timeouts for different protocols.</summary>
+/// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTimeout
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutHttp2? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeoutTcp? Tcp { get; set; }
 }
@@ -885,7 +882,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
     public string? CertificateArn { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateFile
@@ -899,7 +896,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateSds
@@ -918,11 +915,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificate
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -947,7 +944,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationS
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustFile
@@ -957,7 +954,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationT
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustSds
@@ -972,11 +969,11 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationT
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1017,23 +1014,23 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecListenerTls
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecListener
 {
-    /// <summary>Connection pool information for the listener.</summary>
+    /// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
     [JsonPropertyName("connectionPool")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerConnectionPool? ConnectionPool { get; set; }
 
-    /// <summary>Health check information for the listener.</summary>
+    /// <summary>Health check information for the listener. See health_check Block for details.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>Outlier detection information for the listener.</summary>
+    /// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerOutlierDetection? OutlierDetection { get; set; }
 
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Timeouts for different protocols.</summary>
+    /// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2VirtualNodeSpecForProviderSpecListenerTimeout? Timeout { get; set; }
 
@@ -1050,17 +1047,17 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFo
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs.</summary>
+/// <summary>The specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON.</summary>
+    /// <summary>The logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
@@ -1069,36 +1066,36 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFo
     public string? Text { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs.</summary>
+    /// <summary>The specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Access log configuration for a virtual node.</summary>
+/// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLog
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLogFile? File { get; set; }
 }
 
-/// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+/// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecLogging
 {
-    /// <summary>Access log configuration for a virtual node.</summary>
+    /// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
     [JsonPropertyName("accessLog")]
     public V1beta2VirtualNodeSpecForProviderSpecLoggingAccessLog? AccessLog { get; set; }
 }
@@ -1250,7 +1247,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+/// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMap
@@ -1259,10 +1256,7 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>
-    /// Name of the AWS Cloud Map namespace to use.
-    /// Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.
-    /// </summary>
+    /// <summary>Name of the AWS Cloud Map namespace to use. Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("namespaceName")]
     public string? NamespaceName { get; set; }
 
@@ -1274,12 +1268,12 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsClo
     [JsonPropertyName("namespaceNameSelector")]
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelector? NamespaceNameSelector { get; set; }
 
-    /// <summary>attribute of the dns object to hostname.</summary>
+    /// <summary>Name of the AWS Cloud Map service to use. Use the aws_service_discovery_service resource to configure a Cloud Map service. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 }
 
-/// <summary>DNS service name for the virtual node.</summary>
+/// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryDns
@@ -1297,16 +1291,16 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryDns
     public string? ResponseType { get; set; }
 }
 
-/// <summary>Service discovery information for the virtual node.</summary>
+/// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery
 {
-    /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+    /// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
     [JsonPropertyName("awsCloudMap")]
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryAwsCloudMap? AwsCloudMap { get; set; }
 
-    /// <summary>DNS service name for the virtual node.</summary>
+    /// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
     [JsonPropertyName("dns")]
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscoveryDns? Dns { get; set; }
 }
@@ -1316,23 +1310,23 @@ public partial class V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecForProviderSpec
 {
-    /// <summary>Backends to which the virtual node is expected to send outbound traffic.</summary>
+    /// <summary>Backends to which the virtual node is expected to send outbound traffic. See backend Block for details.</summary>
     [JsonPropertyName("backend")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecBackend>? Backend { get; set; }
 
-    /// <summary>Defaults for backends.</summary>
+    /// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
     [JsonPropertyName("backendDefaults")]
     public V1beta2VirtualNodeSpecForProviderSpecBackendDefaults? BackendDefaults { get; set; }
 
-    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic.</summary>
+    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta2VirtualNodeSpecForProviderSpecListener>? Listener { get; set; }
 
-    /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+    /// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
     [JsonPropertyName("logging")]
     public V1beta2VirtualNodeSpecForProviderSpecLogging? Logging { get; set; }
 
-    /// <summary>Service discovery information for the virtual node.</summary>
+    /// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2VirtualNodeSpecForProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -1524,7 +1518,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderMeshNameSelector
     public V1beta2VirtualNodeSpecInitProviderMeshNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
@@ -1538,7 +1532,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
@@ -1553,11 +1547,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -1592,7 +1586,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
@@ -1602,7 +1596,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
@@ -1621,11 +1615,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1699,7 +1693,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackend
     public V1beta2VirtualNodeSpecInitProviderSpecBackendVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
@@ -1713,7 +1707,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
@@ -1728,11 +1722,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -1767,7 +1761,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
@@ -1777,7 +1771,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
@@ -1796,11 +1790,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1851,7 +1845,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClient
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
 
-/// <summary>Defaults for backends.</summary>
+/// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaults
@@ -1861,7 +1855,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecBackendDefaults
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaultsClientPolicy? ClientPolicy { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolGrpc
@@ -1902,29 +1896,29 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoo
     public double? MaxConnections { get; set; }
 }
 
-/// <summary>Connection pool information for the listener.</summary>
+/// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPool
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolHttp>? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolHttp2>? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPoolTcp>? Tcp { get; set; }
 }
 
-/// <summary>Health check information for the listener.</summary>
+/// <summary>Health check information for the listener. See health_check Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck
@@ -1937,7 +1931,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -1958,7 +1952,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>Base amount of time for which a host is ejected.</summary>
+/// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionBaseEjectionDuration
@@ -1967,12 +1961,12 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Time interval between ejection sweep analysis.</summary>
+/// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionInterval
@@ -1981,28 +1975,25 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Outlier detection information for the listener.</summary>
+/// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetection
 {
-    /// <summary>Base amount of time for which a host is ejected.</summary>
+    /// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
     [JsonPropertyName("baseEjectionDuration")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionBaseEjectionDuration? BaseEjectionDuration { get; set; }
 
-    /// <summary>Time interval between ejection sweep analysis.</summary>
+    /// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
     [JsonPropertyName("interval")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetectionInterval? Interval { get; set; }
 
-    /// <summary>
-    /// Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value.
-    /// Minimum value of 0. Maximum value of 100.
-    /// </summary>
+    /// <summary>Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value. Minimum value of 0. Maximum value of 100.</summary>
     [JsonPropertyName("maxEjectionPercent")]
     public double? MaxEjectionPercent { get; set; }
 
@@ -2011,7 +2002,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetect
     public double? MaxServerErrors { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerPortMapping
@@ -2025,7 +2016,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerPortMapping
     public string? Protocol { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcIdle
@@ -2034,12 +2025,12 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcId
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcPerRequest
@@ -2048,26 +2039,26 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcPe
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpc
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpcPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpIdle
@@ -2076,12 +2067,12 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpId
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpPerRequest
@@ -2090,26 +2081,26 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpPe
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP listeners.</summary>
+/// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttpPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2Idle
@@ -2118,12 +2109,12 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2I
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2PerRequest
@@ -2132,26 +2123,26 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2P
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP2 listeners.</summary>
+/// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2Idle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2PerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcpIdle
@@ -2160,39 +2151,39 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcpIdl
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for TCP listeners.</summary>
+/// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcpIdle? Idle { get; set; }
 }
 
-/// <summary>Timeouts for different protocols.</summary>
+/// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTimeout
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutHttp2? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeoutTcp? Tcp { get; set; }
 }
@@ -2207,7 +2198,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
     public string? CertificateArn { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateFile
@@ -2221,7 +2212,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateSds
@@ -2240,11 +2231,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificat
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -2269,7 +2260,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustFile
@@ -2279,7 +2270,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustSds
@@ -2294,11 +2285,11 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -2339,23 +2330,23 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecListenerTls
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecListener
 {
-    /// <summary>Connection pool information for the listener.</summary>
+    /// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
     [JsonPropertyName("connectionPool")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerConnectionPool? ConnectionPool { get; set; }
 
-    /// <summary>Health check information for the listener.</summary>
+    /// <summary>Health check information for the listener. See health_check Block for details.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>Outlier detection information for the listener.</summary>
+    /// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerOutlierDetection? OutlierDetection { get; set; }
 
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Timeouts for different protocols.</summary>
+    /// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2VirtualNodeSpecInitProviderSpecListenerTimeout? Timeout { get; set; }
 
@@ -2372,17 +2363,17 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileF
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs.</summary>
+/// <summary>The specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON.</summary>
+    /// <summary>The logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
@@ -2391,36 +2382,36 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileF
     public string? Text { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs.</summary>
+    /// <summary>The specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Access log configuration for a virtual node.</summary>
+/// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLog
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLogFile? File { get; set; }
 }
 
-/// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+/// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecLogging
 {
-    /// <summary>Access log configuration for a virtual node.</summary>
+    /// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
     [JsonPropertyName("accessLog")]
     public V1beta2VirtualNodeSpecInitProviderSpecLoggingAccessLog? AccessLog { get; set; }
 }
@@ -2572,7 +2563,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
     public V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+/// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMap
@@ -2581,10 +2572,7 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>
-    /// Name of the AWS Cloud Map namespace to use.
-    /// Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.
-    /// </summary>
+    /// <summary>Name of the AWS Cloud Map namespace to use. Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("namespaceName")]
     public string? NamespaceName { get; set; }
 
@@ -2596,12 +2584,12 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCl
     [JsonPropertyName("namespaceNameSelector")]
     public V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMapNamespaceNameSelector? NamespaceNameSelector { get; set; }
 
-    /// <summary>attribute of the dns object to hostname.</summary>
+    /// <summary>Name of the AWS Cloud Map service to use. Use the aws_service_discovery_service resource to configure a Cloud Map service. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 }
 
-/// <summary>DNS service name for the virtual node.</summary>
+/// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryDns
@@ -2619,16 +2607,16 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryDns
     public string? ResponseType { get; set; }
 }
 
-/// <summary>Service discovery information for the virtual node.</summary>
+/// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscovery
 {
-    /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+    /// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
     [JsonPropertyName("awsCloudMap")]
     public V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryAwsCloudMap? AwsCloudMap { get; set; }
 
-    /// <summary>DNS service name for the virtual node.</summary>
+    /// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
     [JsonPropertyName("dns")]
     public V1beta2VirtualNodeSpecInitProviderSpecServiceDiscoveryDns? Dns { get; set; }
 }
@@ -2638,23 +2626,23 @@ public partial class V1beta2VirtualNodeSpecInitProviderSpecServiceDiscovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeSpecInitProviderSpec
 {
-    /// <summary>Backends to which the virtual node is expected to send outbound traffic.</summary>
+    /// <summary>Backends to which the virtual node is expected to send outbound traffic. See backend Block for details.</summary>
     [JsonPropertyName("backend")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecBackend>? Backend { get; set; }
 
-    /// <summary>Defaults for backends.</summary>
+    /// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
     [JsonPropertyName("backendDefaults")]
     public V1beta2VirtualNodeSpecInitProviderSpecBackendDefaults? BackendDefaults { get; set; }
 
-    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic.</summary>
+    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta2VirtualNodeSpecInitProviderSpecListener>? Listener { get; set; }
 
-    /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+    /// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
     [JsonPropertyName("logging")]
     public V1beta2VirtualNodeSpecInitProviderSpecLogging? Logging { get; set; }
 
-    /// <summary>Service discovery information for the virtual node.</summary>
+    /// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2VirtualNodeSpecInitProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -2887,7 +2875,7 @@ public partial class V1beta2VirtualNodeSpec
     public V1beta2VirtualNodeSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile
@@ -2901,7 +2889,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds
@@ -2916,11 +2904,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -2955,7 +2943,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile
@@ -2965,7 +2953,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds
@@ -2984,11 +2972,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -3062,7 +3050,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackend
     public V1beta2VirtualNodeStatusAtProviderSpecBackendVirtualService? VirtualService { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
@@ -3076,7 +3064,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
@@ -3091,11 +3079,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -3130,7 +3118,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
@@ -3140,7 +3128,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
@@ -3159,11 +3147,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -3214,7 +3202,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClient
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
 
-/// <summary>Defaults for backends.</summary>
+/// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaults
@@ -3224,7 +3212,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecBackendDefaults
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaultsClientPolicy? ClientPolicy { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolGrpc
@@ -3265,29 +3253,29 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoo
     public double? MaxConnections { get; set; }
 }
 
-/// <summary>Connection pool information for the listener.</summary>
+/// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPool
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolHttp>? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolHttp2>? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPoolTcp>? Tcp { get; set; }
 }
 
-/// <summary>Health check information for the listener.</summary>
+/// <summary>Health check information for the listener. See health_check Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck
@@ -3300,7 +3288,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -3321,7 +3309,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>Base amount of time for which a host is ejected.</summary>
+/// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionBaseEjectionDuration
@@ -3330,12 +3318,12 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Time interval between ejection sweep analysis.</summary>
+/// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionInterval
@@ -3344,28 +3332,25 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Outlier detection information for the listener.</summary>
+/// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetection
 {
-    /// <summary>Base amount of time for which a host is ejected.</summary>
+    /// <summary>Base amount of time for which a host is ejected. See base_ejection_duration Block for details.</summary>
     [JsonPropertyName("baseEjectionDuration")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionBaseEjectionDuration? BaseEjectionDuration { get; set; }
 
-    /// <summary>Time interval between ejection sweep analysis.</summary>
+    /// <summary>Time interval between ejection sweep analysis. See interval Block for details.</summary>
     [JsonPropertyName("interval")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetectionInterval? Interval { get; set; }
 
-    /// <summary>
-    /// Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value.
-    /// Minimum value of 0. Maximum value of 100.
-    /// </summary>
+    /// <summary>Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value. Minimum value of 0. Maximum value of 100.</summary>
     [JsonPropertyName("maxEjectionPercent")]
     public double? MaxEjectionPercent { get; set; }
 
@@ -3374,7 +3359,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetect
     public double? MaxServerErrors { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerPortMapping
@@ -3388,7 +3373,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerPortMapping
     public string? Protocol { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcIdle
@@ -3397,12 +3382,12 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcId
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcPerRequest
@@ -3411,26 +3396,26 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcPe
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for gRPC listeners.</summary>
+/// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpc
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpcPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpIdle
@@ -3439,12 +3424,12 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpId
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpPerRequest
@@ -3453,26 +3438,26 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpPe
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP listeners.</summary>
+/// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpIdle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttpPerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2Idle
@@ -3481,12 +3466,12 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2I
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Per request timeout.</summary>
+/// <summary>Per request timeout. See per_request Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2PerRequest
@@ -3495,26 +3480,26 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2P
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for HTTP2 listeners.</summary>
+/// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2Idle? Idle { get; set; }
 
-    /// <summary>Per request timeout.</summary>
+    /// <summary>Per request timeout. See per_request Block for details.</summary>
     [JsonPropertyName("perRequest")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2PerRequest? PerRequest { get; set; }
 }
 
-/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+/// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcpIdle
@@ -3523,39 +3508,39 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcpIdl
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public double? Value { get; set; }
 }
 
-/// <summary>Connection pool information for TCP listeners.</summary>
+/// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcp
 {
-    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
+    /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.</summary>
     [JsonPropertyName("idle")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcpIdle? Idle { get; set; }
 }
 
-/// <summary>Timeouts for different protocols.</summary>
+/// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTimeout
 {
-    /// <summary>Connection pool information for gRPC listeners.</summary>
+    /// <summary>Timeouts for gRPC listeners. See grpc Block for details.</summary>
     [JsonPropertyName("grpc")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutGrpc? Grpc { get; set; }
 
-    /// <summary>Connection pool information for HTTP listeners.</summary>
+    /// <summary>Timeouts for HTTP listeners. See http Block for details.</summary>
     [JsonPropertyName("http")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp? Http { get; set; }
 
-    /// <summary>Connection pool information for HTTP2 listeners.</summary>
+    /// <summary>Timeouts for HTTP2 listeners. See http2 Block for details.</summary>
     [JsonPropertyName("http2")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutHttp2? Http2 { get; set; }
 
-    /// <summary>Connection pool information for TCP listeners.</summary>
+    /// <summary>Timeouts for TCP listeners. See tcp Block for details.</summary>
     [JsonPropertyName("tcp")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeoutTcp? Tcp { get; set; }
 }
@@ -3570,7 +3555,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
     public string? CertificateArn { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateFile
@@ -3584,7 +3569,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateSds
@@ -3603,11 +3588,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificat
     [JsonPropertyName("acm")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -3632,7 +3617,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustFile
@@ -3642,7 +3627,7 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>A Secret Discovery Service certificate.</summary>
+/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustSds
@@ -3657,11 +3642,11 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>A Secret Discovery Service certificate.</summary>
+    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -3702,23 +3687,23 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecListenerTls
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecListener
 {
-    /// <summary>Connection pool information for the listener.</summary>
+    /// <summary>Connection pool information for the listener. See connection_pool Block for details.</summary>
     [JsonPropertyName("connectionPool")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerConnectionPool? ConnectionPool { get; set; }
 
-    /// <summary>Health check information for the listener.</summary>
+    /// <summary>Health check information for the listener. See health_check Block for details.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>Outlier detection information for the listener.</summary>
+    /// <summary>Outlier detection information for the listener. See outlier_detection Block for details.</summary>
     [JsonPropertyName("outlierDetection")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerOutlierDetection? OutlierDetection { get; set; }
 
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Timeouts for different protocols.</summary>
+    /// <summary>Timeouts for different protocols. See timeout Block for details.</summary>
     [JsonPropertyName("timeout")]
     public V1beta2VirtualNodeStatusAtProviderSpecListenerTimeout? Timeout { get; set; }
 
@@ -3735,17 +3720,17 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileF
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Number of time units. Minimum value of 0.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs.</summary>
+/// <summary>The specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON.</summary>
+    /// <summary>The logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
@@ -3754,41 +3739,41 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileF
     public string? Text { get; set; }
 }
 
-/// <summary>Local file certificate.</summary>
+/// <summary>TLS validation context trust for a local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs.</summary>
+    /// <summary>The specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Access log configuration for a virtual node.</summary>
+/// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLog
 {
-    /// <summary>Local file certificate.</summary>
+    /// <summary>TLS validation context trust for a local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLogFile? File { get; set; }
 }
 
-/// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+/// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecLogging
 {
-    /// <summary>Access log configuration for a virtual node.</summary>
+    /// <summary>Access log configuration for a virtual node. See access_log Block for details.</summary>
     [JsonPropertyName("accessLog")]
     public V1beta2VirtualNodeStatusAtProviderSpecLoggingAccessLog? AccessLog { get; set; }
 }
 
-/// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+/// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryAwsCloudMap
@@ -3797,19 +3782,16 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryAwsCl
     [JsonPropertyName("attributes")]
     public IDictionary<string, string>? Attributes { get; set; }
 
-    /// <summary>
-    /// Name of the AWS Cloud Map namespace to use.
-    /// Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.
-    /// </summary>
+    /// <summary>Name of the AWS Cloud Map namespace to use. Use the aws_service_discovery_http_namespace resource to configure a Cloud Map namespace. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("namespaceName")]
     public string? NamespaceName { get; set; }
 
-    /// <summary>attribute of the dns object to hostname.</summary>
+    /// <summary>Name of the AWS Cloud Map service to use. Use the aws_service_discovery_service resource to configure a Cloud Map service. Must be between 1 and 1024 characters in length.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 }
 
-/// <summary>DNS service name for the virtual node.</summary>
+/// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryDns
@@ -3827,16 +3809,16 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryDns
     public string? ResponseType { get; set; }
 }
 
-/// <summary>Service discovery information for the virtual node.</summary>
+/// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery
 {
-    /// <summary>Any AWS Cloud Map information for the virtual node.</summary>
+    /// <summary>Any AWS Cloud Map information for the virtual node. See aws_cloud_map Block for details.</summary>
     [JsonPropertyName("awsCloudMap")]
     public V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryAwsCloudMap? AwsCloudMap { get; set; }
 
-    /// <summary>DNS service name for the virtual node.</summary>
+    /// <summary>DNS service name for the virtual node. See dns Block for details.</summary>
     [JsonPropertyName("dns")]
     public V1beta2VirtualNodeStatusAtProviderSpecServiceDiscoveryDns? Dns { get; set; }
 }
@@ -3846,23 +3828,23 @@ public partial class V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNodeStatusAtProviderSpec
 {
-    /// <summary>Backends to which the virtual node is expected to send outbound traffic.</summary>
+    /// <summary>Backends to which the virtual node is expected to send outbound traffic. See backend Block for details.</summary>
     [JsonPropertyName("backend")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecBackend>? Backend { get; set; }
 
-    /// <summary>Defaults for backends.</summary>
+    /// <summary>Defaults for backends. See backend_defaults Block for details.</summary>
     [JsonPropertyName("backendDefaults")]
     public V1beta2VirtualNodeStatusAtProviderSpecBackendDefaults? BackendDefaults { get; set; }
 
-    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic.</summary>
+    /// <summary>Listeners from which the virtual node is expected to receive inbound traffic. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta2VirtualNodeStatusAtProviderSpecListener>? Listener { get; set; }
 
-    /// <summary>Inbound and outbound access logging information for the virtual node.</summary>
+    /// <summary>Inbound and outbound access logging information for the virtual node. See logging Block for details.</summary>
     [JsonPropertyName("logging")]
     public V1beta2VirtualNodeStatusAtProviderSpecLogging? Logging { get; set; }
 
-    /// <summary>Service discovery information for the virtual node.</summary>
+    /// <summary>Service discovery information for the virtual node. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2VirtualNodeStatusAtProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -3977,6 +3959,15 @@ public partial class V1beta2VirtualNodeStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2VirtualNodeStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

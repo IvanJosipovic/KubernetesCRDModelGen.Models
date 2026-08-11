@@ -36,6 +36,195 @@ public partial class V1beta1GatewayList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1beta1Gateway> Items { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -49,9 +238,29 @@ public partial class V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJ
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1GatewaySpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Configuration for request authorization. Required when authorizer_type is set to CUSTOM_JWT. See authorizer_configuration below.</summary>
@@ -429,6 +638,203 @@ public partial class V1beta1GatewaySpecForProviderKmsKeyArnSelector
     public V1beta1GatewaySpecForProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum>))]
+public enum V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolveEnum>))]
+public enum V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a PolicyEngine in bedrockagentcore to populate arn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum>))]
+public enum V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a PolicyEngine in bedrockagentcore to populate arn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderPolicyEngineConfiguration
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>Reference to a PolicyEngine in bedrockagentcore to populate arn.</summary>
+    [JsonPropertyName("arnRef")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnRef? ArnRef { get; set; }
+
+    /// <summary>Selector for a PolicyEngine in bedrockagentcore to populate arn.</summary>
+    [JsonPropertyName("arnSelector")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfigurationArnSelector? ArnSelector { get; set; }
+
+    /// <summary>Enforcement mode for the policy engine. Valid values: LOG_ONLY, ENFORCE. In LOG_ONLY mode, the policy engine evaluates actions and records traces but does not enforce decisions. In ENFORCE mode, the policy engine evaluates actions and enforces allow/deny decisions.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+}
+
+/// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderProtocolConfigurationMcpSessionConfiguration
+{
+    /// <summary>Integer value for session timeout in seconds. Must be between 900 and 28800.</summary>
+    [JsonPropertyName("sessionTimeoutInSeconds")]
+    public double? SessionTimeoutInSeconds { get; set; }
+}
+
+/// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecForProviderProtocolConfigurationMcpStreamingConfiguration
+{
+    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    [JsonPropertyName("enableResponseStreaming")]
+    public bool? EnableResponseStreaming { get; set; }
+}
+
 /// <summary>Model Context Protocol (MCP) configuration block. See mcp below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -441,6 +847,14 @@ public partial class V1beta1GatewaySpecForProviderProtocolConfigurationMcp
     /// <summary>Search type for MCP. Valid values: SEMANTIC.</summary>
     [JsonPropertyName("searchType")]
     public string? SearchType { get; set; }
+
+    /// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+    [JsonPropertyName("sessionConfiguration")]
+    public V1beta1GatewaySpecForProviderProtocolConfigurationMcpSessionConfiguration? SessionConfiguration { get; set; }
+
+    /// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+    [JsonPropertyName("streamingConfiguration")]
+    public V1beta1GatewaySpecForProviderProtocolConfigurationMcpStreamingConfiguration? StreamingConfiguration { get; set; }
 
     /// <summary>Set of supported MCP protocol versions.</summary>
     [JsonPropertyName("supportedVersions")]
@@ -628,7 +1042,7 @@ public partial class V1beta1GatewaySpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Exception level for the gateway. Valid values: INFO, WARN, ERROR.</summary>
+    /// <summary>Exception level for the gateway. Valid values: DEBUG.</summary>
     [JsonPropertyName("exceptionLevel")]
     public string? ExceptionLevel { get; set; }
 
@@ -652,11 +1066,15 @@ public partial class V1beta1GatewaySpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+    [JsonPropertyName("policyEngineConfiguration")]
+    public V1beta1GatewaySpecForProviderPolicyEngineConfiguration? PolicyEngineConfiguration { get; set; }
+
     /// <summary>Protocol-specific configuration for the gateway. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
     public V1beta1GatewaySpecForProviderProtocolConfiguration? ProtocolConfiguration { get; set; }
 
-    /// <summary>Protocol type for the gateway. Valid values: MCP.</summary>
+    /// <summary>Protocol type for the gateway. Valid values: MCP. Omit this argument to create a gateway that routes traffic directly to HTTP targets such as AgentCore Runtime agents (see aws_bedrockagentcore_gateway_target target_configuration.http).</summary>
     [JsonPropertyName("protocolType")]
     public string? ProtocolType { get; set; }
 
@@ -684,6 +1102,195 @@ public partial class V1beta1GatewaySpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -697,9 +1304,29 @@ public partial class V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustom
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1GatewaySpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Configuration for request authorization. Required when authorizer_type is set to CUSTOM_JWT. See authorizer_configuration below.</summary>
@@ -1077,6 +1704,203 @@ public partial class V1beta1GatewaySpecInitProviderKmsKeyArnSelector
     public V1beta1GatewaySpecInitProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum>))]
+public enum V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolveEnum>))]
+public enum V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a PolicyEngine in bedrockagentcore to populate arn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum>))]
+public enum V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a PolicyEngine in bedrockagentcore to populate arn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderPolicyEngineConfiguration
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>Reference to a PolicyEngine in bedrockagentcore to populate arn.</summary>
+    [JsonPropertyName("arnRef")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnRef? ArnRef { get; set; }
+
+    /// <summary>Selector for a PolicyEngine in bedrockagentcore to populate arn.</summary>
+    [JsonPropertyName("arnSelector")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfigurationArnSelector? ArnSelector { get; set; }
+
+    /// <summary>Enforcement mode for the policy engine. Valid values: LOG_ONLY, ENFORCE. In LOG_ONLY mode, the policy engine evaluates actions and records traces but does not enforce decisions. In ENFORCE mode, the policy engine evaluates actions and enforces allow/deny decisions.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+}
+
+/// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderProtocolConfigurationMcpSessionConfiguration
+{
+    /// <summary>Integer value for session timeout in seconds. Must be between 900 and 28800.</summary>
+    [JsonPropertyName("sessionTimeoutInSeconds")]
+    public double? SessionTimeoutInSeconds { get; set; }
+}
+
+/// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewaySpecInitProviderProtocolConfigurationMcpStreamingConfiguration
+{
+    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    [JsonPropertyName("enableResponseStreaming")]
+    public bool? EnableResponseStreaming { get; set; }
+}
+
 /// <summary>Model Context Protocol (MCP) configuration block. See mcp below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1089,6 +1913,14 @@ public partial class V1beta1GatewaySpecInitProviderProtocolConfigurationMcp
     /// <summary>Search type for MCP. Valid values: SEMANTIC.</summary>
     [JsonPropertyName("searchType")]
     public string? SearchType { get; set; }
+
+    /// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+    [JsonPropertyName("sessionConfiguration")]
+    public V1beta1GatewaySpecInitProviderProtocolConfigurationMcpSessionConfiguration? SessionConfiguration { get; set; }
+
+    /// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+    [JsonPropertyName("streamingConfiguration")]
+    public V1beta1GatewaySpecInitProviderProtocolConfigurationMcpStreamingConfiguration? StreamingConfiguration { get; set; }
 
     /// <summary>Set of supported MCP protocol versions.</summary>
     [JsonPropertyName("supportedVersions")]
@@ -1288,7 +2120,7 @@ public partial class V1beta1GatewaySpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Exception level for the gateway. Valid values: INFO, WARN, ERROR.</summary>
+    /// <summary>Exception level for the gateway. Valid values: DEBUG.</summary>
     [JsonPropertyName("exceptionLevel")]
     public string? ExceptionLevel { get; set; }
 
@@ -1312,11 +2144,15 @@ public partial class V1beta1GatewaySpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+    [JsonPropertyName("policyEngineConfiguration")]
+    public V1beta1GatewaySpecInitProviderPolicyEngineConfiguration? PolicyEngineConfiguration { get; set; }
+
     /// <summary>Protocol-specific configuration for the gateway. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
     public V1beta1GatewaySpecInitProviderProtocolConfiguration? ProtocolConfiguration { get; set; }
 
-    /// <summary>Protocol type for the gateway. Valid values: MCP.</summary>
+    /// <summary>Protocol type for the gateway. Valid values: MCP. Omit this argument to create a gateway that routes traffic directly to HTTP targets such as AgentCore Runtime agents (see aws_bedrockagentcore_gateway_target target_configuration.http).</summary>
     [JsonPropertyName("protocolType")]
     public string? ProtocolType { get; set; }
 
@@ -1444,6 +2280,195 @@ public partial class V1beta1GatewaySpec
     public V1beta1GatewaySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+}
+
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
+{
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    [JsonPropertyName("hostingEnvironment")]
+    public IList<V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
+
+    /// <summary>List of workload identity names allowed to use the authorizer. Between 1 and 10 entries.</summary>
+    [JsonPropertyName("workloadIdentities")]
+    public IList<string>? WorkloadIdentities { get; set; }
+}
+
+/// <summary>Value or values to match for. See claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
+{
+    /// <summary>String value to match for. Must be specified when claim_match_operator is EQUALS or CONTAINS. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueString")]
+    public string? MatchValueString { get; set; }
+
+    /// <summary>List of strings to check for a match. Must be specified when claim_match_operator is CONTAINS_ANY. Exactly one of match_value_string or match_value_string_list must be specified.</summary>
+    [JsonPropertyName("matchValueStringList")]
+    public IList<string>? MatchValueStringList { get; set; }
+}
+
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
+{
+    /// <summary>Relationship between the claim field value and the value or values to match for. Valid values are EQUALS, CONTAINS, and CONTAINS_ANY. EQUALS can be used only when inbound_token_claim_value_type is STRING. CONTAINS or CONTAINS_ANY can be used only when inbound_token_claim_value_type is STRING_ARRAY.</summary>
+    [JsonPropertyName("claimMatchOperator")]
+    public string? ClaimMatchOperator { get; set; }
+
+    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    [JsonPropertyName("claimMatchValue")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
+{
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    [JsonPropertyName("authorizingClaimMatchValue")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
+
+    /// <summary>Name of the custom claim field to check.</summary>
+    [JsonPropertyName("inboundTokenClaimName")]
+    public string? InboundTokenClaimName { get; set; }
+
+    /// <summary>Data type of the claim value to check for. Valid values are STRING and STRING_ARRAY.</summary>
+    [JsonPropertyName("inboundTokenClaimValueType")]
+    public string? InboundTokenClaimValueType { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
+{
+    /// <summary>IP address type for the endpoint. Valid values are IPV4 and IPV6.</summary>
+    [JsonPropertyName("endpointIpAddressType")]
+    public string? EndpointIpAddressType { get; set; }
+
+    /// <summary>Routing domain for the endpoint.</summary>
+    [JsonPropertyName("routingDomain")]
+    public string? RoutingDomain { get; set; }
+
+    /// <summary>IDs of the security groups for the endpoint.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>IDs of the subnets for the endpoint.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Identifier of the VPC for the endpoint.</summary>
+    [JsonPropertyName("vpcIdentifier")]
+    public string? VpcIdentifier { get; set; }
+}
+
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
+{
+    /// <summary>Identifier of the VPC Lattice resource configuration.</summary>
+    [JsonPropertyName("resourceConfigurationIdentifier")]
+    public string? ResourceConfigurationIdentifier { get; set; }
+}
+
+/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
+{
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    [JsonPropertyName("managedVpcResource")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
+
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    [JsonPropertyName("selfManagedLatticeResource")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides
+{
+    /// <summary>Domain the override applies to.</summary>
+    [JsonPropertyName("domain")]
+    public string? Domain { get; set; }
+
+    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
+}
+
 /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1457,9 +2482,29 @@ public partial class V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustom
     [JsonPropertyName("allowedClients")]
     public IList<string>? AllowedClients { get; set; }
 
+    /// <summary>Set of scopes that are allowed to access the token.</summary>
+    [JsonPropertyName("allowedScopes")]
+    public IList<string>? AllowedScopes { get; set; }
+
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    [JsonPropertyName("allowedWorkloadConfiguration")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
+
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    [JsonPropertyName("customClaim")]
+    public IList<V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
+
     /// <summary>URL used to fetch OpenID Connect configuration or authorization server metadata. Must end with .well-known/openid-configuration.</summary>
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
+
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    [JsonPropertyName("privateEndpoint")]
+    public V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
+
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    [JsonPropertyName("privateEndpointOverrides")]
+    public IList<V1beta1GatewayStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
 /// <summary>Configuration for request authorization. Required when authorizer_type is set to CUSTOM_JWT. See authorizer_configuration below.</summary>
@@ -1519,6 +2564,40 @@ public partial class V1beta1GatewayStatusAtProviderInterceptorConfiguration
     public V1beta1GatewayStatusAtProviderInterceptorConfigurationInterceptor? Interceptor { get; set; }
 }
 
+/// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderPolicyEngineConfiguration
+{
+    /// <summary>ARN of the policy engine. The policy engine contains Cedar policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>Enforcement mode for the policy engine. Valid values: LOG_ONLY, ENFORCE. In LOG_ONLY mode, the policy engine evaluates actions and records traces but does not enforce decisions. In ENFORCE mode, the policy engine evaluates actions and enforces allow/deny decisions.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+}
+
+/// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderProtocolConfigurationMcpSessionConfiguration
+{
+    /// <summary>Integer value for session timeout in seconds. Must be between 900 and 28800.</summary>
+    [JsonPropertyName("sessionTimeoutInSeconds")]
+    public double? SessionTimeoutInSeconds { get; set; }
+}
+
+/// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GatewayStatusAtProviderProtocolConfigurationMcpStreamingConfiguration
+{
+    /// <summary>Boolean indicating whether response streaming is enabled for the gateway.</summary>
+    [JsonPropertyName("enableResponseStreaming")]
+    public bool? EnableResponseStreaming { get; set; }
+}
+
 /// <summary>Model Context Protocol (MCP) configuration block. See mcp below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1531,6 +2610,14 @@ public partial class V1beta1GatewayStatusAtProviderProtocolConfigurationMcp
     /// <summary>Search type for MCP. Valid values: SEMANTIC.</summary>
     [JsonPropertyName("searchType")]
     public string? SearchType { get; set; }
+
+    /// <summary>Configuration block for session settings of the MCP gateway. See session_configuration below.</summary>
+    [JsonPropertyName("sessionConfiguration")]
+    public V1beta1GatewayStatusAtProviderProtocolConfigurationMcpSessionConfiguration? SessionConfiguration { get; set; }
+
+    /// <summary>Configuration block for streaming settings of the MCP gateway. See streaming_configuration below.</summary>
+    [JsonPropertyName("streamingConfiguration")]
+    public V1beta1GatewayStatusAtProviderProtocolConfigurationMcpStreamingConfiguration? StreamingConfiguration { get; set; }
 
     /// <summary>Set of supported MCP protocol versions.</summary>
     [JsonPropertyName("supportedVersions")]
@@ -1572,7 +2659,7 @@ public partial class V1beta1GatewayStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Exception level for the gateway. Valid values: INFO, WARN, ERROR.</summary>
+    /// <summary>Exception level for the gateway. Valid values: DEBUG.</summary>
     [JsonPropertyName("exceptionLevel")]
     public string? ExceptionLevel { get; set; }
 
@@ -1603,11 +2690,15 @@ public partial class V1beta1GatewayStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Configuration for a policy engine associated with the gateway. A policy engine is a collection of policies that evaluates and authorizes agent tool calls. When associated with a gateway, the policy engine intercepts all agent requests and determines whether to allow or deny each action based on the defined policies. See policy_engine_configuration below.</summary>
+    [JsonPropertyName("policyEngineConfiguration")]
+    public V1beta1GatewayStatusAtProviderPolicyEngineConfiguration? PolicyEngineConfiguration { get; set; }
+
     /// <summary>Protocol-specific configuration for the gateway. See protocol_configuration below.</summary>
     [JsonPropertyName("protocolConfiguration")]
     public V1beta1GatewayStatusAtProviderProtocolConfiguration? ProtocolConfiguration { get; set; }
 
-    /// <summary>Protocol type for the gateway. Valid values: MCP.</summary>
+    /// <summary>Protocol type for the gateway. Valid values: MCP. Omit this argument to create a gateway that routes traffic directly to HTTP targets such as AgentCore Runtime agents (see aws_bedrockagentcore_gateway_target target_configuration.http).</summary>
     [JsonPropertyName("protocolType")]
     public string? ProtocolType { get; set; }
 
@@ -1689,6 +2780,15 @@ public partial class V1beta1GatewayStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GatewayStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

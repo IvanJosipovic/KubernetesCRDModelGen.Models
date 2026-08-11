@@ -701,7 +701,7 @@ public partial class V1beta1EndpointSpecForProviderPostgresSettings
     [JsonPropertyName("mapJsonbAsClob")]
     public bool? MapJsonbAsClob { get; set; }
 
-    /// <summary>Optional When true, DMS migrates LONG values as VARCHAR.</summary>
+    /// <summary>Specifies how DMS maps LONG VARCHAR values. Valid values are wstring, clob, and nclob.</summary>
     [JsonPropertyName("mapLongVarcharAs")]
     public string? MapLongVarcharAs { get; set; }
 
@@ -1904,7 +1904,7 @@ public partial class V1beta1EndpointSpecInitProviderPostgresSettings
     [JsonPropertyName("mapJsonbAsClob")]
     public bool? MapJsonbAsClob { get; set; }
 
-    /// <summary>Optional When true, DMS migrates LONG values as VARCHAR.</summary>
+    /// <summary>Specifies how DMS maps LONG VARCHAR values. Valid values are wstring, clob, and nclob.</summary>
     [JsonPropertyName("mapLongVarcharAs")]
     public string? MapLongVarcharAs { get; set; }
 
@@ -2983,7 +2983,7 @@ public partial class V1beta1EndpointStatusAtProviderPostgresSettings
     [JsonPropertyName("mapJsonbAsClob")]
     public bool? MapJsonbAsClob { get; set; }
 
-    /// <summary>Optional When true, DMS migrates LONG values as VARCHAR.</summary>
+    /// <summary>Specifies how DMS maps LONG VARCHAR values. Valid values are wstring, clob, and nclob.</summary>
     [JsonPropertyName("mapLongVarcharAs")]
     public string? MapLongVarcharAs { get; set; }
 
@@ -3231,6 +3231,15 @@ public partial class V1beta1EndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

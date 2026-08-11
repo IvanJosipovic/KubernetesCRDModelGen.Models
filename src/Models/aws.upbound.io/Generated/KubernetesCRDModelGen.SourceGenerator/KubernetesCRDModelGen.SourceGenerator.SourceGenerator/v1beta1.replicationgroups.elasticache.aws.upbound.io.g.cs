@@ -806,6 +806,10 @@ public partial class V1beta1ReplicationGroupSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
+
     /// <summary>Name of the cache engine to be used for the clusters in this replication group. The only valid value is redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
@@ -1754,6 +1758,10 @@ public partial class V1beta1ReplicationGroupSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
+
     /// <summary>Name of the cache engine to be used for the clusters in this replication group. The only valid value is redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
@@ -2262,6 +2270,10 @@ public partial class V1beta1ReplicationGroupStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Specifies the durability mode for the replication group. Valid values are default, async, sync, or disabled. Requires cluster mode enabled and Valkey 9.0 or higher.</summary>
+    [JsonPropertyName("durability")]
+    public string? Durability { get; set; }
+
     /// <summary>Name of the cache engine to be used for the clusters in this replication group. The only valid value is redis.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
@@ -2494,6 +2506,15 @@ public partial class V1beta1ReplicationGroupStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ReplicationGroupStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
