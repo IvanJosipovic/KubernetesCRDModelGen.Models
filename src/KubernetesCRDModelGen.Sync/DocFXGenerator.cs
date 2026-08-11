@@ -81,7 +81,8 @@ static class DocFXGenerator
                     ["files"] = new JsonArray(assemblyPath)
                 }
             },
-            ["dest"] = destinationPath
+            ["dest"] = destinationPath,
+            ["filter"] = "docfx-filter.yml"
         };
     }
 
