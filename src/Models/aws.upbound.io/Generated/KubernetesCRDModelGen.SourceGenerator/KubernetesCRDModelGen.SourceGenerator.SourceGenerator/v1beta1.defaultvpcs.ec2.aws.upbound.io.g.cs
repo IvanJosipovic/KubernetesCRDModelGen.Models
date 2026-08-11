@@ -84,13 +84,17 @@ public partial class V1beta1DefaultVPCSpecForProvider
     [JsonPropertyName("ipv6CidrBlockNetworkBorderGroup")]
     public string? Ipv6CidrBlockNetworkBorderGroup { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("ipv6IpamPoolId")]
     public string? Ipv6IpamPoolId { get; set; }
 
     [JsonPropertyName("ipv6NetmaskLength")]
     public double? Ipv6NetmaskLength { get; set; }
 
-    /// <summary>Region is the region you&apos;d like your resource to be created in.</summary>
+    /// <summary>
+    /// (String) AWS Region for this resource.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
@@ -139,6 +143,7 @@ public partial class V1beta1DefaultVPCSpecInitProvider
     [JsonPropertyName("ipv6CidrBlockNetworkBorderGroup")]
     public string? Ipv6CidrBlockNetworkBorderGroup { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("ipv6IpamPoolId")]
     public string? Ipv6IpamPoolId { get; set; }
 
@@ -347,15 +352,19 @@ public partial class V1beta1DefaultVPCStatusAtProvider
     [JsonPropertyName("cidrBlock")]
     public string? CidrBlock { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("defaultNetworkAclId")]
     public string? DefaultNetworkAclId { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("defaultRouteTableId")]
     public string? DefaultRouteTableId { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("defaultSecurityGroupId")]
     public string? DefaultSecurityGroupId { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 
@@ -376,6 +385,7 @@ public partial class V1beta1DefaultVPCStatusAtProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -383,6 +393,7 @@ public partial class V1beta1DefaultVPCStatusAtProvider
     [JsonPropertyName("instanceTenancy")]
     public string? InstanceTenancy { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("ipv6AssociationId")]
     public string? Ipv6AssociationId { get; set; }
 
@@ -393,19 +404,25 @@ public partial class V1beta1DefaultVPCStatusAtProvider
     [JsonPropertyName("ipv6CidrBlockNetworkBorderGroup")]
     public string? Ipv6CidrBlockNetworkBorderGroup { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("ipv6IpamPoolId")]
     public string? Ipv6IpamPoolId { get; set; }
 
     [JsonPropertyName("ipv6NetmaskLength")]
     public double? Ipv6NetmaskLength { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("mainRouteTableId")]
     public string? MainRouteTableId { get; set; }
 
+    /// <summary>(String) VPC ID.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
-    /// <summary>Region is the region you&apos;d like your resource to be created in.</summary>
+    /// <summary>
+    /// (String) AWS Region for this resource.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
@@ -470,6 +487,15 @@ public partial class V1beta1DefaultVPCStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DefaultVPCStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -350,11 +350,11 @@ public partial class V1beta1UserPoolClientSpecForProviderAnalyticsConfigurationR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolClientSpecForProviderAnalyticsConfiguration
 {
-    /// <summary>Application ARN for an Amazon Pinpoint application. Conflicts with external_id and role_arn.</summary>
+    /// <summary>Application ARN for an AWS End User Messaging application. Conflicts with external_id and role_arn.</summary>
     [JsonPropertyName("applicationArn")]
     public string? ApplicationArn { get; set; }
 
-    /// <summary>Application ID for an Amazon Pinpoint application.</summary>
+    /// <summary>Application ID for an AWS End User Messaging application.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta1UserPoolClientSpecForProviderAnalyticsConfiguration
     [JsonPropertyName("externalId")]
     public string? ExternalId { get; set; }
 
-    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics. Conflicts with application_arn.</summary>
+    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to AWS End User Messaging analytics. Conflicts with application_arn.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -382,7 +382,7 @@ public partial class V1beta1UserPoolClientSpecForProviderAnalyticsConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1UserPoolClientSpecForProviderAnalyticsConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.</summary>
+    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to AWS End User Messaging analytics.</summary>
     [JsonPropertyName("userDataShared")]
     public bool? UserDataShared { get; set; }
 }
@@ -592,7 +592,7 @@ public partial class V1beta1UserPoolClientSpecForProvider
     [JsonPropertyName("allowedOauthScopes")]
     public IList<string>? AllowedOauthScopes { get; set; }
 
-    /// <summary>Configuration block for Amazon Pinpoint analytics that collects metrics for this user pool. See details below.</summary>
+    /// <summary>Configuration block for AWS End User Messaging analytics that collects metrics for this user pool. See details below.</summary>
     [JsonPropertyName("analyticsConfiguration")]
     public IList<V1beta1UserPoolClientSpecForProviderAnalyticsConfiguration>? AnalyticsConfiguration { get; set; }
 
@@ -998,11 +998,11 @@ public partial class V1beta1UserPoolClientSpecInitProviderAnalyticsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolClientSpecInitProviderAnalyticsConfiguration
 {
-    /// <summary>Application ARN for an Amazon Pinpoint application. Conflicts with external_id and role_arn.</summary>
+    /// <summary>Application ARN for an AWS End User Messaging application. Conflicts with external_id and role_arn.</summary>
     [JsonPropertyName("applicationArn")]
     public string? ApplicationArn { get; set; }
 
-    /// <summary>Application ID for an Amazon Pinpoint application.</summary>
+    /// <summary>Application ID for an AWS End User Messaging application.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
@@ -1018,7 +1018,7 @@ public partial class V1beta1UserPoolClientSpecInitProviderAnalyticsConfiguration
     [JsonPropertyName("externalId")]
     public string? ExternalId { get; set; }
 
-    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics. Conflicts with application_arn.</summary>
+    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to AWS End User Messaging analytics. Conflicts with application_arn.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1030,7 +1030,7 @@ public partial class V1beta1UserPoolClientSpecInitProviderAnalyticsConfiguration
     [JsonPropertyName("roleArnSelector")]
     public V1beta1UserPoolClientSpecInitProviderAnalyticsConfigurationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.</summary>
+    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to AWS End User Messaging analytics.</summary>
     [JsonPropertyName("userDataShared")]
     public bool? UserDataShared { get; set; }
 }
@@ -1252,7 +1252,7 @@ public partial class V1beta1UserPoolClientSpecInitProvider
     [JsonPropertyName("allowedOauthScopes")]
     public IList<string>? AllowedOauthScopes { get; set; }
 
-    /// <summary>Configuration block for Amazon Pinpoint analytics that collects metrics for this user pool. See details below.</summary>
+    /// <summary>Configuration block for AWS End User Messaging analytics that collects metrics for this user pool. See details below.</summary>
     [JsonPropertyName("analyticsConfiguration")]
     public IList<V1beta1UserPoolClientSpecInitProviderAnalyticsConfiguration>? AnalyticsConfiguration { get; set; }
 
@@ -1448,11 +1448,11 @@ public partial class V1beta1UserPoolClientSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolClientStatusAtProviderAnalyticsConfiguration
 {
-    /// <summary>Application ARN for an Amazon Pinpoint application. Conflicts with external_id and role_arn.</summary>
+    /// <summary>Application ARN for an AWS End User Messaging application. Conflicts with external_id and role_arn.</summary>
     [JsonPropertyName("applicationArn")]
     public string? ApplicationArn { get; set; }
 
-    /// <summary>Application ID for an Amazon Pinpoint application.</summary>
+    /// <summary>Application ID for an AWS End User Messaging application.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
@@ -1460,11 +1460,11 @@ public partial class V1beta1UserPoolClientStatusAtProviderAnalyticsConfiguration
     [JsonPropertyName("externalId")]
     public string? ExternalId { get; set; }
 
-    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to Amazon Pinpoint analytics. Conflicts with application_arn.</summary>
+    /// <summary>ARN of an IAM role that authorizes Amazon Cognito to publish events to AWS End User Messaging analytics. Conflicts with application_arn.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to Amazon Pinpoint analytics.</summary>
+    /// <summary>If set to true, Amazon Cognito will include user data in the events it publishes to AWS End User Messaging analytics.</summary>
     [JsonPropertyName("userDataShared")]
     public bool? UserDataShared { get; set; }
 }
@@ -1519,7 +1519,7 @@ public partial class V1beta1UserPoolClientStatusAtProvider
     [JsonPropertyName("allowedOauthScopes")]
     public IList<string>? AllowedOauthScopes { get; set; }
 
-    /// <summary>Configuration block for Amazon Pinpoint analytics that collects metrics for this user pool. See details below.</summary>
+    /// <summary>Configuration block for AWS End User Messaging analytics that collects metrics for this user pool. See details below.</summary>
     [JsonPropertyName("analyticsConfiguration")]
     public IList<V1beta1UserPoolClientStatusAtProviderAnalyticsConfiguration>? AnalyticsConfiguration { get; set; }
 
@@ -1661,6 +1661,15 @@ public partial class V1beta1UserPoolClientStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UserPoolClientStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

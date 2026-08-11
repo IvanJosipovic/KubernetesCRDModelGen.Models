@@ -123,6 +123,12 @@ spec:
                         description: Enables you to connect an application to Amazon EMR Studio to run interactive workloads in a notebook.
                         type: boolean
                     type: object
+                  jobLevelCostAllocationConfiguration:
+                    properties:
+                      enabled:
+                        description: Enables the application to automatically start on job submission. Defaults to true.
+                        type: boolean
+                    type: object
                   maximumCapacity:
                     description: The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.
                     properties:
@@ -339,6 +345,12 @@ spec:
                         type: boolean
                       studioEnabled:
                         description: Enables you to connect an application to Amazon EMR Studio to run interactive workloads in a notebook.
+                        type: boolean
+                    type: object
+                  jobLevelCostAllocationConfiguration:
+                    properties:
+                      enabled:
+                        description: Enables the application to automatically start on job submission. Defaults to true.
                         type: boolean
                     type: object
                   maximumCapacity:
@@ -615,6 +627,12 @@ spec:
                         description: Enables you to connect an application to Amazon EMR Studio to run interactive workloads in a notebook.
                         type: boolean
                     type: object
+                  jobLevelCostAllocationConfiguration:
+                    properties:
+                      enabled:
+                        description: Enables the application to automatically start on job submission. Defaults to true.
+                        type: boolean
+                    type: object
                   maximumCapacity:
                     description: The maximum capacity to allocate when the application is created. This is cumulative across all workers at any given point in time, not just when an application is created. No new resources will be created once any one of the defined limits is hit.
                     properties:
@@ -802,6 +820,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

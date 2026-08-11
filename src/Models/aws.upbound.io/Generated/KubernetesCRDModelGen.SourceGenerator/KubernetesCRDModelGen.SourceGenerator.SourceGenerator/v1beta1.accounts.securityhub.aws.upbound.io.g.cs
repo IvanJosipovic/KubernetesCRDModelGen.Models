@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.securityhub.aws.upbound.io;
-/// <summary>Account is the Schema for the Accounts API. Enables Security Hub for an AWS account.</summary>
+/// <summary>Account is the Schema for the Accounts API. Enables Security Hub CSPM for this AWS account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -379,6 +379,15 @@ public partial class V1beta1AccountStatus
     public IList<V1beta1AccountStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -387,7 +396,7 @@ public partial class V1beta1AccountStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Account is the Schema for the Accounts API. Enables Security Hub for an AWS account.</summary>
+/// <summary>Account is the Schema for the Accounts API. Enables Security Hub CSPM for this AWS account.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -1645,7 +1645,7 @@ public partial class V1beta1RecordStatusAtProvider
     [JsonPropertyName("failoverRoutingPolicy")]
     public V1beta1RecordStatusAtProviderFailoverRoutingPolicy? FailoverRoutingPolicy { get; set; }
 
-    /// <summary>FQDN built using the zone domain and name.</summary>
+    /// <summary>FQDN built using the zone domain and name. Does not include trailing ..</summary>
     [JsonPropertyName("fqdn")]
     public string? Fqdn { get; set; }
 
@@ -1755,6 +1755,15 @@ public partial class V1beta1RecordStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RecordStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

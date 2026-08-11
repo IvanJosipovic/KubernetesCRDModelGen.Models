@@ -908,6 +908,10 @@ public partial class V1beta1BrokerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>Set of AWS RAM resource share ARNs that grant the broker access to shared resources for private networking. Applies to engine_type of RabbitMQ only. Because Amazon MQ applies resource shares during a reboot, set apply_immediately to true for changes to take effect without waiting for the next maintenance window.</summary>
+    [JsonPropertyName("resourceShareArns")]
+    public IList<string>? ResourceShareArns { get; set; }
+
     /// <summary>References to SecurityGroup in ec2 to populate securityGroups.</summary>
     [JsonPropertyName("securityGroupRefs")]
     public IList<V1beta1BrokerSpecForProviderSecurityGroupRefs>? SecurityGroupRefs { get; set; }
@@ -1822,6 +1826,10 @@ public partial class V1beta1BrokerSpecInitProvider
     [JsonPropertyName("publiclyAccessible")]
     public bool? PubliclyAccessible { get; set; }
 
+    /// <summary>Set of AWS RAM resource share ARNs that grant the broker access to shared resources for private networking. Applies to engine_type of RabbitMQ only. Because Amazon MQ applies resource shares during a reboot, set apply_immediately to true for changes to take effect without waiting for the next maintenance window.</summary>
+    [JsonPropertyName("resourceShareArns")]
+    public IList<string>? ResourceShareArns { get; set; }
+
     /// <summary>References to SecurityGroup in ec2 to populate securityGroups.</summary>
     [JsonPropertyName("securityGroupRefs")]
     public IList<V1beta1BrokerSpecInitProviderSecurityGroupRefs>? SecurityGroupRefs { get; set; }
@@ -2002,7 +2010,7 @@ public partial class V1beta1BrokerStatusAtProviderInstances
     [JsonPropertyName("consoleUrl")]
     public string? ConsoleUrl { get; set; }
 
-    /// <summary>Broker&apos;s wire-level protocol endpoints in the following order &amp; format referenceable e.g., as instances.0.endpoints.0 (SSL):</summary>
+    /// <summary>Broker&apos;s wire-level protocol endpoints referenceable e.g., as instances.0.endpoints.0. Known endpoints are returned in the deterministic order below, based on protocol prefix and port number; any additional endpoint types introduced in the future are appended afterward in the order returned by the API.</summary>
     [JsonPropertyName("endpoints")]
     public IList<string>? Endpoints { get; set; }
 
@@ -2087,6 +2095,27 @@ public partial class V1beta1BrokerStatusAtProviderMaintenanceWindowStartTime
     /// <summary>Time zone in either the Country/City format or the UTC offset format, e.g., CET.</summary>
     [JsonPropertyName("timeZone")]
     public string? TimeZone { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BrokerStatusAtProviderSharedResources
+{
+    /// <summary>DNS names through which the broker reaches the shared resource.</summary>
+    [JsonPropertyName("dnsNames")]
+    public IList<string>? DnsNames { get; set; }
+
+    /// <summary>ARN of the shared resource.</summary>
+    [JsonPropertyName("resourceArn")]
+    public string? ResourceArn { get; set; }
+
+    /// <summary>Status of the shared resource.</summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+
+    /// <summary>Type of the shared resource, either RESOURCE_SHARE or RESOURCE.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2201,9 +2230,17 @@ public partial class V1beta1BrokerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
+    /// <summary>Set of AWS RAM resource share ARNs that grant the broker access to shared resources for private networking. Applies to engine_type of RabbitMQ only. Because Amazon MQ applies resource shares during a reboot, set apply_immediately to true for changes to take effect without waiting for the next maintenance window.</summary>
+    [JsonPropertyName("resourceShareArns")]
+    public IList<string>? ResourceShareArns { get; set; }
+
     /// <summary>List of security group IDs assigned to the broker.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
+
+    /// <summary>List of resources shared with the broker via resource_share_arns. Only populated for engine_type of RabbitMQ.</summary>
+    [JsonPropertyName("sharedResources")]
+    public IList<V1beta1BrokerStatusAtProviderSharedResources>? SharedResources { get; set; }
 
     /// <summary>Storage type of the broker. For engine_type ActiveMQ, valid values are efs and ebs (AWS-default is efs). For engine_type RabbitMQ, only ebs is supported. When using ebs, only the mq.m5 broker instance type family is supported.</summary>
     [JsonPropertyName("storageType")]
@@ -2280,6 +2317,15 @@ public partial class V1beta1BrokerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BrokerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

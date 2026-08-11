@@ -1088,7 +1088,7 @@ public partial class V1beta2BudgetSpecForProviderFilterExpressionTags
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetSpecForProviderFilterExpression
@@ -1192,7 +1192,7 @@ public partial class V1beta2BudgetSpecForProvider
     [JsonPropertyName("costTypes")]
     public V1beta2BudgetSpecForProviderCostTypes? CostTypes { get; set; }
 
-    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
     [JsonPropertyName("filterExpression")]
     public V1beta2BudgetSpecForProviderFilterExpression? FilterExpression { get; set; }
 
@@ -1203,6 +1203,10 @@ public partial class V1beta2BudgetSpecForProvider
     /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
+
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
 
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
@@ -2262,7 +2266,7 @@ public partial class V1beta2BudgetSpecInitProviderFilterExpressionTags
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetSpecInitProviderFilterExpression
@@ -2378,7 +2382,7 @@ public partial class V1beta2BudgetSpecInitProvider
     [JsonPropertyName("costTypes")]
     public V1beta2BudgetSpecInitProviderCostTypes? CostTypes { get; set; }
 
-    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
     [JsonPropertyName("filterExpression")]
     public V1beta2BudgetSpecInitProviderFilterExpression? FilterExpression { get; set; }
 
@@ -2389,6 +2393,10 @@ public partial class V1beta2BudgetSpecInitProvider
     /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
+
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
 
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
@@ -3639,7 +3647,7 @@ public partial class V1beta2BudgetStatusAtProviderFilterExpressionTags
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+/// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BudgetStatusAtProviderFilterExpression
@@ -3747,7 +3755,7 @@ public partial class V1beta2BudgetStatusAtProvider
     [JsonPropertyName("costTypes")]
     public V1beta2BudgetStatusAtProviderCostTypes? CostTypes { get; set; }
 
-    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter.</summary>
+    /// <summary>Object containing Filter Expression to apply to budget. Conflicts with cost_filter and requires metrics.</summary>
     [JsonPropertyName("filterExpression")]
     public V1beta2BudgetStatusAtProviderFilterExpression? FilterExpression { get; set; }
 
@@ -3762,6 +3770,10 @@ public partial class V1beta2BudgetStatusAtProvider
     /// <summary>The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See Spend documentation.</summary>
     [JsonPropertyName("limitUnit")]
     public string? LimitUnit { get; set; }
+
+    /// <summary>List containing definition for how the budget data is aggregated. Conflicts with cost_types and requires filter_expression.</summary>
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
 
     /// <summary>Object containing Budget Notifications. Can be used multiple times to define more than one budget notification.</summary>
     [JsonPropertyName("notification")]
@@ -3846,6 +3858,15 @@ public partial class V1beta2BudgetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2BudgetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

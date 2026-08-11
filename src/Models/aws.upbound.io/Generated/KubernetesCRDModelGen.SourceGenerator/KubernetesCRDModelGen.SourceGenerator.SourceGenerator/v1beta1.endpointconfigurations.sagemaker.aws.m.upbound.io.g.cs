@@ -463,6 +463,20 @@ public partial class V1beta1EndpointConfigurationSpecForProviderKmsKeyArnSelecto
     public V1beta1EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationSpecForProviderProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
+}
+
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -685,6 +699,10 @@ public partial class V1beta1EndpointConfigurationSpecForProviderProductionVarian
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationSpecForProviderProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
+
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
     public double? ContainerStartupHealthCheckTimeoutInSeconds { get; set; }
@@ -748,6 +766,20 @@ public partial class V1beta1EndpointConfigurationSpecForProviderProductionVarian
     /// <summary>Size, in GB, of the ML storage volume attached to individual inference instance associated with the production variant. Valid values between 1 and 512.</summary>
     [JsonPropertyName("volumeSizeInGb")]
     public double? VolumeSizeInGb { get; set; }
+}
+
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationSpecForProviderShadowProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
@@ -816,6 +848,10 @@ public partial class V1beta1EndpointConfigurationSpecForProviderShadowProduction
     /// <summary>Size of the Elastic Inference (EI) instance to use for the production variant.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationSpecForProviderShadowProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
 
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
@@ -1357,6 +1393,20 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderKmsKeyArnSelect
     public V1beta1EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationSpecInitProviderProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
+}
+
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1579,6 +1629,10 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderProductionVaria
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationSpecInitProviderProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
+
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
     public double? ContainerStartupHealthCheckTimeoutInSeconds { get; set; }
@@ -1642,6 +1696,20 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderProductionVaria
     /// <summary>Size, in GB, of the ML storage volume attached to individual inference instance associated with the production variant. Valid values between 1 and 512.</summary>
     [JsonPropertyName("volumeSizeInGb")]
     public double? VolumeSizeInGb { get; set; }
+}
+
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationSpecInitProviderShadowProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
@@ -1710,6 +1778,10 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderShadowProductio
     /// <summary>Size of the Elastic Inference (EI) instance to use for the production variant.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationSpecInitProviderShadowProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
 
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
@@ -2053,6 +2125,20 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderDataCaptureConf
     public string? KmsKeyId { get; set; }
 }
 
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationStatusAtProviderProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
+}
+
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2120,6 +2206,10 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderProductionVaria
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
 
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationStatusAtProviderProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
+
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
     public double? ContainerStartupHealthCheckTimeoutInSeconds { get; set; }
@@ -2175,6 +2265,20 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderProductionVaria
     /// <summary>Size, in GB, of the ML storage volume attached to individual inference instance associated with the production variant. Valid values between 1 and 512.</summary>
     [JsonPropertyName("volumeSizeInGb")]
     public double? VolumeSizeInGb { get; set; }
+}
+
+/// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1EndpointConfigurationStatusAtProviderShadowProductionVariantsCapacityReservationConfig
+{
+    /// <summary>Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.</summary>
+    [JsonPropertyName("capacityReservationPreference")]
+    public string? CapacityReservationPreference { get; set; }
+
+    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    [JsonPropertyName("mlReservationArn")]
+    public string? MlReservationArn { get; set; }
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
@@ -2243,6 +2347,10 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderShadowProductio
     /// <summary>Size of the Elastic Inference (EI) instance to use for the production variant.</summary>
     [JsonPropertyName("acceleratorType")]
     public string? AcceleratorType { get; set; }
+
+    /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
+    [JsonPropertyName("capacityReservationConfig")]
+    public V1beta1EndpointConfigurationStatusAtProviderShadowProductionVariantsCapacityReservationConfig? CapacityReservationConfig { get; set; }
 
     /// <summary>Timeout value, in seconds, for your inference container to pass health check by SageMaker AI Hosting. For more information about health check, see How Your Container Should Respond to Health Check (Ping) Requests. Valid values between 60 and 3600.</summary>
     [JsonPropertyName("containerStartupHealthCheckTimeoutInSeconds")]
@@ -2406,6 +2514,15 @@ public partial class V1beta1EndpointConfigurationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EndpointConfigurationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

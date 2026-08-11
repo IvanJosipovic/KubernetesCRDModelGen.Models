@@ -75,6 +75,9 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
+                    type: string
                   forceDestroy:
                     description: Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.
                     type: boolean
@@ -108,6 +111,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
+                    type: string
                   forceDestroy:
                     description: Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.
                     type: boolean
@@ -225,6 +231,9 @@ spec:
                     type: string
                   bucketDomainName:
                     description: Bucket domain name. Will be of format bucketname.s3.amazonaws.com.
+                    type: string
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
                     type: string
                   bucketRegion:
                     description: AWS region this bucket resides in.
@@ -679,6 +688,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -748,6 +764,9 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
+                    type: string
                   forceDestroy:
                     description: Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.
                     type: boolean
@@ -781,6 +800,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
+                    type: string
                   forceDestroy:
                     description: Boolean that indicates all objects (including any locked objects) should be deleted from the bucket when the bucket is destroyed so that the bucket can be destroyed without error. These objects are not recoverable. This only deletes objects when the bucket is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the bucket or destroying the bucket, this flag will not work.
                     type: boolean
@@ -898,6 +920,9 @@ spec:
                     type: string
                   bucketDomainName:
                     description: Bucket domain name. Will be of format bucketname.s3.amazonaws.com.
+                    type: string
+                  bucketNamespace:
+                    description: 'Namespace for the bucket. Determines bucket naming scope. Valid values: account-regional, global. Defaults to global (AWS).'
                     type: string
                   bucketRegion:
                     description: AWS region this bucket resides in.
@@ -1314,6 +1339,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

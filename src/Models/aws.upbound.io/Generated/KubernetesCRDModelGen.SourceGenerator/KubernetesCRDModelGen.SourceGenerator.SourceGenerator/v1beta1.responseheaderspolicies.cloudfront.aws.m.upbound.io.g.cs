@@ -72,7 +72,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccess
     public IList<string>? Items { get; set; }
 }
 
-/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfig
@@ -298,7 +298,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
     [JsonPropertyName("corsConfig")]
     public V1beta1ResponseHeadersPolicySpecForProviderCorsConfig? CorsConfig { get; set; }
 
@@ -359,7 +359,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAcces
     public IList<string>? Items { get; set; }
 }
 
-/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfig
@@ -597,7 +597,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
     [JsonPropertyName("corsConfig")]
     public V1beta1ResponseHeadersPolicySpecInitProviderCorsConfig? CorsConfig { get; set; }
 
@@ -765,7 +765,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAcces
     public IList<string>? Items { get; set; }
 }
 
-/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+/// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfig
@@ -995,7 +995,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See Cors Config for more information.</summary>
+    /// <summary>A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharing (CORS). See CORS Config for more information.</summary>
     [JsonPropertyName("corsConfig")]
     public V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfig? CorsConfig { get; set; }
 
@@ -1082,6 +1082,15 @@ public partial class V1beta1ResponseHeadersPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResponseHeadersPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

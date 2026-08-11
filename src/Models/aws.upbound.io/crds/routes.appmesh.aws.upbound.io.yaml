@@ -2693,6 +2693,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -2853,19 +2860,17 @@ spec:
                     description: Route specification to apply.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route.
+                        description: GRPC routing information for the route. See grpc_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -2877,7 +2882,7 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               metadata:
                                 description: Data to match from the gRPC request.
@@ -2887,7 +2892,7 @@ spec:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -2902,11 +2907,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -2921,7 +2926,7 @@ spec:
                                 description: Method name to match from the request. If you specify a name, you must also specify a service_name.
                                 type: string
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
@@ -2931,20 +2936,16 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               grpcRetryEvents:
-                                description: |-
-                                  List of gRPC retry events.
-                                  Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
+                                description: 'List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.'
                                 items:
                                   type: string
                                 type: array
                                 x-kubernetes-list-type: set
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -2970,10 +2971,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -2983,7 +2984,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -2995,19 +2996,17 @@ spec:
                             type: object
                         type: object
                       http2Route:
-                        description: HTTP/2 routing information for the route.
+                        description: HTTP/2 routing information for the route. See http2_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -3019,17 +3018,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3044,11 +3043,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -3063,27 +3062,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3099,12 +3098,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -3130,10 +3127,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3143,7 +3140,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3155,19 +3152,17 @@ spec:
                             type: object
                         type: object
                       httpRoute:
-                        description: HTTP routing information for the route.
+                        description: HTTP routing information for the route. See http_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -3252,17 +3247,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3277,11 +3272,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -3296,27 +3291,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3332,12 +3327,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -3363,10 +3356,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3376,7 +3369,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3388,24 +3381,20 @@ spec:
                             type: object
                         type: object
                       priority:
-                        description: |-
-                          Priority for the route, between 0 and 1000.
-                          Routes are matched based on the specified value, where 0 is the highest priority.
+                        description: Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.
                         type: number
                       tcpRoute:
-                        description: TCP routing information for the route.
+                        description: TCP routing information for the route. See tcp_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -3490,17 +3479,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3696,19 +3685,17 @@ spec:
                     description: Route specification to apply.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route.
+                        description: GRPC routing information for the route. See grpc_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -3720,7 +3707,7 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               metadata:
                                 description: Data to match from the gRPC request.
@@ -3730,7 +3717,7 @@ spec:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3745,11 +3732,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -3764,7 +3751,7 @@ spec:
                                 description: Method name to match from the request. If you specify a name, you must also specify a service_name.
                                 type: string
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
@@ -3774,20 +3761,16 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               grpcRetryEvents:
-                                description: |-
-                                  List of gRPC retry events.
-                                  Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
+                                description: 'List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.'
                                 items:
                                   type: string
                                 type: array
                                 x-kubernetes-list-type: set
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -3813,10 +3796,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3826,7 +3809,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3838,19 +3821,17 @@ spec:
                             type: object
                         type: object
                       http2Route:
-                        description: HTTP/2 routing information for the route.
+                        description: HTTP/2 routing information for the route. See http2_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -3862,17 +3843,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3887,11 +3868,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -3906,27 +3887,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -3942,12 +3923,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -3973,10 +3952,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3986,7 +3965,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -3998,19 +3977,17 @@ spec:
                             type: object
                         type: object
                       httpRoute:
-                        description: HTTP routing information for the route.
+                        description: HTTP routing information for the route. See http_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -4095,17 +4072,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4120,11 +4097,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -4139,27 +4116,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4175,12 +4152,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -4206,10 +4181,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4219,7 +4194,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4231,24 +4206,20 @@ spec:
                             type: object
                         type: object
                       priority:
-                        description: |-
-                          Priority for the route, between 0 and 1000.
-                          Routes are matched based on the specified value, where 0 is the highest priority.
+                        description: Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.
                         type: number
                       tcpRoute:
-                        description: TCP routing information for the route.
+                        description: TCP routing information for the route. See tcp_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -4333,17 +4304,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4567,19 +4538,17 @@ spec:
                     description: Route specification to apply.
                     properties:
                       grpcRoute:
-                        description: GRPC routing information for the route.
+                        description: GRPC routing information for the route. See grpc_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -4591,7 +4560,7 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               metadata:
                                 description: Data to match from the gRPC request.
@@ -4601,7 +4570,7 @@ spec:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4616,11 +4585,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -4635,7 +4604,7 @@ spec:
                                 description: Method name to match from the request. If you specify a name, you must also specify a service_name.
                                 type: string
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
@@ -4645,20 +4614,16 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               grpcRetryEvents:
-                                description: |-
-                                  List of gRPC retry events.
-                                  Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.
+                                description: 'List of gRPC retry events. Valid values: cancelled, deadline-exceeded, internal, resource-exhausted, unavailable.'
                                 items:
                                   type: string
                                 type: array
                                 x-kubernetes-list-type: set
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -4684,10 +4649,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4697,7 +4662,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4709,19 +4674,17 @@ spec:
                             type: object
                         type: object
                       http2Route:
-                        description: HTTP/2 routing information for the route.
+                        description: HTTP/2 routing information for the route. See http2_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -4733,17 +4696,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4758,11 +4721,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -4777,27 +4740,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4813,12 +4776,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -4844,10 +4805,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4857,7 +4818,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -4869,19 +4830,17 @@ spec:
                             type: object
                         type: object
                       httpRoute:
-                        description: HTTP routing information for the route.
+                        description: HTTP routing information for the route. See http_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -4893,17 +4852,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               header:
-                                description: Client request headers to match on.
+                                description: Client request headers to match on. See header Block for details.
                                 items:
                                   properties:
                                     invert:
                                       description: If true, the match is on the opposite of the match criteria. Default is false.
                                       type: boolean
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4918,11 +4877,11 @@ spec:
                                               description: End of the range.
                                               type: number
                                             start:
-                                              description: (Requited) Start of the range.
+                                              description: Start of the range.
                                               type: number
                                           type: object
                                         regex:
-                                          description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                          description: The regex used to match the path.
                                           type: string
                                         suffix:
                                           description: Value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
@@ -4937,27 +4896,27 @@ spec:
                                 description: 'Client request header method to match on. Valid values: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH.'
                                 type: string
                               path:
-                                description: Client request path to match on.
+                                description: Client request path to match on. See path Block for details.
                                 properties:
                                   exact:
                                     description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
                                     type: string
                                   regex:
-                                    description: Value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
+                                    description: The regex used to match the path.
                                     type: string
                                 type: object
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                               prefix:
                                 description: Value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
                                 type: string
                               queryParameter:
-                                description: Client request query parameters to match on.
+                                description: Client request query parameters to match on. See query_parameter Block for details.
                                 items:
                                   properties:
                                     match:
-                                      description: Criteria for determining an gRPC request match.
+                                      description: Criteria for determining an gRPC request match. See match Block for details.
                                       properties:
                                         exact:
                                           description: Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
@@ -4973,12 +4932,10 @@ spec:
                                 type: string
                             type: object
                           retryPolicy:
-                            description: Retry policy.
+                            description: Retry policy. See retry_policy Block for details.
                             properties:
                               httpRetryEvents:
-                                description: |-
-                                  List of HTTP retry events.
-                                  Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).
+                                description: 'List of HTTP retry events. Valid values: client-error (HTTP status code 409), gateway-error (HTTP status codes 502, 503, and 504), server-error (HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511), stream-error (retry on refused stream).'
                                 items:
                                   type: string
                                 type: array
@@ -5004,10 +4961,10 @@ spec:
                                 x-kubernetes-list-type: set
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -5017,7 +4974,7 @@ spec:
                                     type: number
                                 type: object
                               perRequest:
-                                description: Per request timeout.
+                                description: Per request timeout. See per_request Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -5029,24 +4986,20 @@ spec:
                             type: object
                         type: object
                       priority:
-                        description: |-
-                          Priority for the route, between 0 and 1000.
-                          Routes are matched based on the specified value, where 0 is the highest priority.
+                        description: Priority for the route, between 0 and 1000. Routes are matched based on the specified value, where 0 is the highest priority.
                         type: number
                       tcpRoute:
-                        description: TCP routing information for the route.
+                        description: TCP routing information for the route. See tcp_route Block for details.
                         properties:
                           action:
-                            description: Action to take if a match is determined.
+                            description: Action to take if a match is determined. See action Block for details.
                             properties:
                               weightedTarget:
-                                description: |-
-                                  Targets that traffic is routed to when a request matches the route.
-                                  You can specify one or more targets and their relative weights with which to distribute traffic.
+                                description: Targets that traffic is routed to when a request matches the route. You can specify one or more targets and their relative weights with which to distribute traffic.
                                 items:
                                   properties:
                                     port:
-                                      description: The port number to match from the request.
+                                      description: The targeted port of the weighted object.
                                       type: number
                                     virtualNode:
                                       description: Virtual node to associate with the weighted target. Must be between 1 and 255 characters in length.
@@ -5058,17 +5011,17 @@ spec:
                                 type: array
                             type: object
                           match:
-                            description: Criteria for determining an gRPC request match.
+                            description: Criteria for determining an gRPC request match. See match Block for details.
                             properties:
                               port:
-                                description: The port number to match from the request.
+                                description: The targeted port of the weighted object.
                                 type: number
                             type: object
                           timeout:
-                            description: Types of timeouts.
+                            description: Types of timeouts. See timeout Block for details.
                             properties:
                               idle:
-                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
+                                description: Idle timeout. An idle timeout bounds the amount of time that a connection may be idle. See idle Block for details.
                                 properties:
                                   unit:
                                     description: 'Unit of time. Valid values: ms, s.'
@@ -5140,6 +5093,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

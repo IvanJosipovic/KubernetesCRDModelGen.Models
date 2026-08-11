@@ -236,10 +236,6 @@ public partial class V1beta1KeyPairStatusAtProvider
     [JsonPropertyName("pgpKey")]
     public string? PgpKey { get; set; }
 
-    /// <summary>Private key, base64 encoded. This is only populated when creating a new key, and when no pgp_key is provided.</summary>
-    [JsonPropertyName("privateKey")]
-    public string? PrivateKey { get; set; }
-
     /// <summary>Public key material. This public key will be imported into Lightsail.</summary>
     [JsonPropertyName("publicKey")]
     public string? PublicKey { get; set; }
@@ -314,6 +310,15 @@ public partial class V1beta1KeyPairStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1KeyPairStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

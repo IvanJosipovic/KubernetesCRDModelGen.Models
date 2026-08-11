@@ -82,6 +82,19 @@ public partial class V1beta1UserSpecForProviderPasswordsSecretRef
     public required string Name { get; set; }
 }
 
+/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1UserSpecForProviderPasswordsWoSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserSpecForProvider
@@ -105,6 +118,14 @@ public partial class V1beta1UserSpecForProvider
     /// <summary>Passwords used for this user. You can create up to two passwords for each user.</summary>
     [JsonPropertyName("passwordsSecretRef")]
     public IList<V1beta1UserSpecForProviderPasswordsSecretRef>? PasswordsSecretRef { get; set; }
+
+    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+    [JsonPropertyName("passwordsWoSecretRef")]
+    public V1beta1UserSpecForProviderPasswordsWoSecretRef? PasswordsWoSecretRef { get; set; }
+
+    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    [JsonPropertyName("passwordsWoVersion")]
+    public double? PasswordsWoVersion { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -133,6 +154,19 @@ public partial class V1beta1UserSpecInitProviderAuthenticationMode
     /// <summary>Specifies the authentication type. Possible options are: password, no-password-required or iam.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+}
+
+/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1UserSpecInitProviderPasswordsWoSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>
@@ -169,6 +203,14 @@ public partial class V1beta1UserSpecInitProvider
 
     [JsonPropertyName("passwordsSecretRef")]
     public IList<string>? PasswordsSecretRef { get; set; }
+
+    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+    [JsonPropertyName("passwordsWoSecretRef")]
+    public V1beta1UserSpecInitProviderPasswordsWoSecretRef? PasswordsWoSecretRef { get; set; }
+
+    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    [JsonPropertyName("passwordsWoVersion")]
+    public double? PasswordsWoVersion { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -326,6 +368,10 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("noPasswordRequired")]
     public bool? NoPasswordRequired { get; set; }
 
+    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    [JsonPropertyName("passwordsWoVersion")]
+    public double? PasswordsWoVersion { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -399,6 +445,15 @@ public partial class V1beta1UserStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UserStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

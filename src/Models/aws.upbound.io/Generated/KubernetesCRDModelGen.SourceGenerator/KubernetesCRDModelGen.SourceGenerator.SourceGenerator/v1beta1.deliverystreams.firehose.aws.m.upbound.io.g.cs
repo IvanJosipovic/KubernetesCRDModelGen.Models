@@ -3163,7 +3163,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data.</summary>
+    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -12045,7 +12045,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data.</summary>
+    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -18747,7 +18747,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
     [JsonPropertyName("secretsManagerConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationSecretsManagerConfiguration? SecretsManagerConfiguration { get; set; }
 
-    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data.</summary>
+    /// <summary>The HTTP endpoint URL to which Kinesis Firehose sends your data. Refer to the target vendor&apos;s documentation for the correct intake URL (for example, New Relic or Datadog).</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -20271,6 +20271,15 @@ public partial class V1beta1DeliveryStreamStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DeliveryStreamStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

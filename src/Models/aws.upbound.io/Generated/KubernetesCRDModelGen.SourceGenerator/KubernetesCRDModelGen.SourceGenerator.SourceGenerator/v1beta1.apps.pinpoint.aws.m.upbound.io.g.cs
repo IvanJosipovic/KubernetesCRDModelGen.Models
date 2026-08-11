@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.pinpoint.aws.m.upbound.io;
-/// <summary>App is the Schema for the Apps API. Provides a Pinpoint App resource.</summary>
+/// <summary>App is the Schema for the Apps API. Provides an End User Messaging App resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,12 +36,12 @@ public partial class V1beta1AppList : IKubernetesObject<V1ListMeta>, IItems<V1be
     public required IList<V1beta1App> Items { get; set; }
 }
 
-/// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+/// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderCampaignHook
 {
-    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url</summary>
+    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url.</summary>
     [JsonPropertyName("lambdaFunctionName")]
     public string? LambdaFunctionName { get; set; }
 
@@ -49,43 +49,43 @@ public partial class V1beta1AppSpecForProviderCampaignHook
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name</summary>
+    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name.</summary>
     [JsonPropertyName("webUrl")]
     public string? WebUrl { get; set; }
 }
 
-/// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+/// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderLimits
 {
-    /// <summary>The maximum number of messages that the campaign can send daily.</summary>
+    /// <summary>Maximum number of messages that the campaign can send daily.</summary>
     [JsonPropertyName("daily")]
     public double? Daily { get; set; }
 
-    /// <summary>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.</summary>
+    /// <summary>Length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. Minimum value is 60.</summary>
     [JsonPropertyName("maximumDuration")]
     public double? MaximumDuration { get; set; }
 
-    /// <summary>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.</summary>
+    /// <summary>Number of messages that the campaign can send per second. Minimum value is 50, and the maximum is 20000.</summary>
     [JsonPropertyName("messagesPerSecond")]
     public double? MessagesPerSecond { get; set; }
 
-    /// <summary>The maximum total number of messages that the campaign can send.</summary>
+    /// <summary>Maximum total number of messages that the campaign can send.</summary>
     [JsonPropertyName("total")]
     public double? Total { get; set; }
 }
 
-/// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+/// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderQuietTime
 {
-    /// <summary>The default end time for quiet time in ISO 8601 format. Required if start is set</summary>
+    /// <summary>Default end time for quiet time in ISO 8601 format. Required if start is set.</summary>
     [JsonPropertyName("end")]
     public string? End { get; set; }
 
-    /// <summary>The default start time for quiet time in ISO 8601 format. Required if end is set</summary>
+    /// <summary>Default start time for quiet time in ISO 8601 format. Required if end is set.</summary>
     [JsonPropertyName("start")]
     public string? Start { get; set; }
 }
@@ -94,19 +94,19 @@ public partial class V1beta1AppSpecForProviderQuietTime
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProvider
 {
-    /// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+    /// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
     [JsonPropertyName("campaignHook")]
     public V1beta1AppSpecForProviderCampaignHook? CampaignHook { get; set; }
 
-    /// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+    /// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
     [JsonPropertyName("limits")]
     public V1beta1AppSpecForProviderLimits? Limits { get; set; }
 
-    /// <summary>The application name</summary>
+    /// <summary>Application name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+    /// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
     [JsonPropertyName("quietTime")]
     public V1beta1AppSpecForProviderQuietTime? QuietTime { get; set; }
 
@@ -122,12 +122,12 @@ public partial class V1beta1AppSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+/// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderCampaignHook
 {
-    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url</summary>
+    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url.</summary>
     [JsonPropertyName("lambdaFunctionName")]
     public string? LambdaFunctionName { get; set; }
 
@@ -135,43 +135,43 @@ public partial class V1beta1AppSpecInitProviderCampaignHook
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name</summary>
+    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name.</summary>
     [JsonPropertyName("webUrl")]
     public string? WebUrl { get; set; }
 }
 
-/// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+/// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderLimits
 {
-    /// <summary>The maximum number of messages that the campaign can send daily.</summary>
+    /// <summary>Maximum number of messages that the campaign can send daily.</summary>
     [JsonPropertyName("daily")]
     public double? Daily { get; set; }
 
-    /// <summary>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.</summary>
+    /// <summary>Length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. Minimum value is 60.</summary>
     [JsonPropertyName("maximumDuration")]
     public double? MaximumDuration { get; set; }
 
-    /// <summary>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.</summary>
+    /// <summary>Number of messages that the campaign can send per second. Minimum value is 50, and the maximum is 20000.</summary>
     [JsonPropertyName("messagesPerSecond")]
     public double? MessagesPerSecond { get; set; }
 
-    /// <summary>The maximum total number of messages that the campaign can send.</summary>
+    /// <summary>Maximum total number of messages that the campaign can send.</summary>
     [JsonPropertyName("total")]
     public double? Total { get; set; }
 }
 
-/// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+/// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderQuietTime
 {
-    /// <summary>The default end time for quiet time in ISO 8601 format. Required if start is set</summary>
+    /// <summary>Default end time for quiet time in ISO 8601 format. Required if start is set.</summary>
     [JsonPropertyName("end")]
     public string? End { get; set; }
 
-    /// <summary>The default start time for quiet time in ISO 8601 format. Required if end is set</summary>
+    /// <summary>Default start time for quiet time in ISO 8601 format. Required if end is set.</summary>
     [JsonPropertyName("start")]
     public string? Start { get; set; }
 }
@@ -192,19 +192,19 @@ public partial class V1beta1AppSpecInitProviderQuietTime
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProvider
 {
-    /// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+    /// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
     [JsonPropertyName("campaignHook")]
     public V1beta1AppSpecInitProviderCampaignHook? CampaignHook { get; set; }
 
-    /// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+    /// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
     [JsonPropertyName("limits")]
     public V1beta1AppSpecInitProviderLimits? Limits { get; set; }
 
-    /// <summary>The application name</summary>
+    /// <summary>Application name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+    /// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
     [JsonPropertyName("quietTime")]
     public V1beta1AppSpecInitProviderQuietTime? QuietTime { get; set; }
 
@@ -320,12 +320,12 @@ public partial class V1beta1AppSpec
     public V1beta1AppSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+/// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderCampaignHook
 {
-    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url</summary>
+    /// <summary>Lambda function name or ARN to be called for delivery. Conflicts with web_url.</summary>
     [JsonPropertyName("lambdaFunctionName")]
     public string? LambdaFunctionName { get; set; }
 
@@ -333,43 +333,43 @@ public partial class V1beta1AppStatusAtProviderCampaignHook
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name</summary>
+    /// <summary>Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with lambda_function_name.</summary>
     [JsonPropertyName("webUrl")]
     public string? WebUrl { get; set; }
 }
 
-/// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+/// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderLimits
 {
-    /// <summary>The maximum number of messages that the campaign can send daily.</summary>
+    /// <summary>Maximum number of messages that the campaign can send daily.</summary>
     [JsonPropertyName("daily")]
     public double? Daily { get; set; }
 
-    /// <summary>The length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. The minimum value is 60.</summary>
+    /// <summary>Length of time (in seconds) that the campaign can run before it ends and message deliveries stop. This duration begins at the scheduled start time for the campaign. Minimum value is 60.</summary>
     [JsonPropertyName("maximumDuration")]
     public double? MaximumDuration { get; set; }
 
-    /// <summary>The number of messages that the campaign can send per second. The minimum value is 50, and the maximum is 20000.</summary>
+    /// <summary>Number of messages that the campaign can send per second. Minimum value is 50, and the maximum is 20000.</summary>
     [JsonPropertyName("messagesPerSecond")]
     public double? MessagesPerSecond { get; set; }
 
-    /// <summary>The maximum total number of messages that the campaign can send.</summary>
+    /// <summary>Maximum total number of messages that the campaign can send.</summary>
     [JsonPropertyName("total")]
     public double? Total { get; set; }
 }
 
-/// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+/// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderQuietTime
 {
-    /// <summary>The default end time for quiet time in ISO 8601 format. Required if start is set</summary>
+    /// <summary>Default end time for quiet time in ISO 8601 format. Required if start is set.</summary>
     [JsonPropertyName("end")]
     public string? End { get; set; }
 
-    /// <summary>The default start time for quiet time in ISO 8601 format. Required if end is set</summary>
+    /// <summary>Default start time for quiet time in ISO 8601 format. Required if end is set.</summary>
     [JsonPropertyName("start")]
     public string? Start { get; set; }
 }
@@ -378,30 +378,30 @@ public partial class V1beta1AppStatusAtProviderQuietTime
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProvider
 {
-    /// <summary>The Application ID of the Pinpoint App.</summary>
+    /// <summary>Application ID of the End User Messaging App.</summary>
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the PinPoint Application</summary>
+    /// <summary>Amazon Resource Name (ARN) of the PinPoint Application.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies settings for invoking an AWS Lambda function that customizes a segment for a campaign</summary>
+    /// <summary>Settings for invoking an AWS Lambda function that customizes a segment for a campaign. See below.</summary>
     [JsonPropertyName("campaignHook")]
     public V1beta1AppStatusAtProviderCampaignHook? CampaignHook { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own</summary>
+    /// <summary>Default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own. See below.</summary>
     [JsonPropertyName("limits")]
     public V1beta1AppStatusAtProviderLimits? Limits { get; set; }
 
-    /// <summary>The application name</summary>
+    /// <summary>Application name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own</summary>
+    /// <summary>Default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own. See below.</summary>
     [JsonPropertyName("quietTime")]
     public V1beta1AppStatusAtProviderQuietTime? QuietTime { get; set; }
 
@@ -416,7 +416,7 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }
@@ -477,6 +477,15 @@ public partial class V1beta1AppStatus
     public IList<V1beta1AppStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -485,7 +494,7 @@ public partial class V1beta1AppStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>App is the Schema for the Apps API. Provides a Pinpoint App resource.</summary>
+/// <summary>App is the Schema for the Apps API. Provides an End User Messaging App resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

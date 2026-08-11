@@ -675,10 +675,28 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -726,9 +744,17 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordSecretRef? PasswordSecretRef { get; set; }
+
+    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+    [JsonPropertyName("passwordWoSecretRef")]
+    public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
+
+    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    [JsonPropertyName("passwordWoVersion")]
+    public double? PasswordWoVersion { get; set; }
 
     /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
@@ -1630,10 +1656,28 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -1681,9 +1725,17 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordSecretRef? PasswordSecretRef { get; set; }
+
+    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+    [JsonPropertyName("passwordWoSecretRef")]
+    public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
+
+    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    [JsonPropertyName("passwordWoVersion")]
+    public double? PasswordWoVersion { get; set; }
 
     /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
@@ -2210,6 +2262,10 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderSelfManagedActiveDi
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
+    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    [JsonPropertyName("passwordWoVersion")]
+    public double? PasswordWoVersion { get; set; }
+
     /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
@@ -2401,6 +2457,15 @@ public partial class V1beta2WindowsFileSystemStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2WindowsFileSystemStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

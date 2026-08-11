@@ -1070,7 +1070,7 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default) and PUBLIC_ONLY.</summary>
+    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
@@ -2111,7 +2111,7 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default) and PUBLIC_ONLY.</summary>
+    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
@@ -2513,7 +2513,7 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default) and PUBLIC_ONLY.</summary>
+    /// <summary>Specifies whether the webserver should be accessible over the internet or via your specified VPC. Possible options: PRIVATE_ONLY (default), PUBLIC_ONLY and PUBLIC_AND_PRIVATE.</summary>
     [JsonPropertyName("webserverAccessMode")]
     public string? WebserverAccessMode { get; set; }
 
@@ -2588,6 +2588,15 @@ public partial class V1beta1EnvironmentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EnvironmentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

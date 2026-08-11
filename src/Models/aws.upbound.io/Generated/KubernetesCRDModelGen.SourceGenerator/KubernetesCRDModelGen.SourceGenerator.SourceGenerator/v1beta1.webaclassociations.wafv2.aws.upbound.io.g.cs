@@ -360,7 +360,7 @@ public partial class V1beta1WebACLAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, or an Amazon Verified Access instance.</summary>
+    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -600,7 +600,7 @@ public partial class V1beta1WebACLAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, or an Amazon Verified Access instance.</summary>
+    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -663,6 +663,15 @@ public partial class V1beta1WebACLAssociationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WebACLAssociationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

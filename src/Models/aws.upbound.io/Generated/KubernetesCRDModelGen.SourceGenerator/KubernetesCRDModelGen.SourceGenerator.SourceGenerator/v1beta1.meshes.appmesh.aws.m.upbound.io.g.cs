@@ -36,7 +36,7 @@ public partial class V1beta1MeshList : IKubernetesObject<V1ListMeta>, IItems<V1b
     public required IList<V1beta1Mesh> Items { get; set; }
 }
 
-/// <summary>Egress filter rules for the service mesh.</summary>
+/// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecForProviderSpecEgressFilter
@@ -46,7 +46,7 @@ public partial class V1beta1MeshSpecForProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh.</summary>
+/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecForProviderSpecServiceDiscovery
@@ -56,16 +56,16 @@ public partial class V1beta1MeshSpecForProviderSpecServiceDiscovery
     public string? IpPreference { get; set; }
 }
 
-/// <summary>Service mesh specification to apply.</summary>
+/// <summary>Service mesh specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecForProviderSpec
 {
-    /// <summary>Egress filter rules for the service mesh.</summary>
+    /// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
     [JsonPropertyName("egressFilter")]
     public V1beta1MeshSpecForProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh.</summary>
+    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta1MeshSpecForProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -81,7 +81,7 @@ public partial class V1beta1MeshSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Service mesh specification to apply.</summary>
+    /// <summary>Service mesh specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1MeshSpecForProviderSpec? Spec { get; set; }
 
@@ -90,7 +90,7 @@ public partial class V1beta1MeshSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Egress filter rules for the service mesh.</summary>
+/// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecInitProviderSpecEgressFilter
@@ -100,7 +100,7 @@ public partial class V1beta1MeshSpecInitProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh.</summary>
+/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecInitProviderSpecServiceDiscovery
@@ -110,16 +110,16 @@ public partial class V1beta1MeshSpecInitProviderSpecServiceDiscovery
     public string? IpPreference { get; set; }
 }
 
-/// <summary>Service mesh specification to apply.</summary>
+/// <summary>Service mesh specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecInitProviderSpec
 {
-    /// <summary>Egress filter rules for the service mesh.</summary>
+    /// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
     [JsonPropertyName("egressFilter")]
     public V1beta1MeshSpecInitProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh.</summary>
+    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta1MeshSpecInitProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -140,7 +140,7 @@ public partial class V1beta1MeshSpecInitProviderSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshSpecInitProvider
 {
-    /// <summary>Service mesh specification to apply.</summary>
+    /// <summary>Service mesh specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1MeshSpecInitProviderSpec? Spec { get; set; }
 
@@ -256,7 +256,7 @@ public partial class V1beta1MeshSpec
     public V1beta1MeshSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Egress filter rules for the service mesh.</summary>
+/// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshStatusAtProviderSpecEgressFilter
@@ -266,7 +266,7 @@ public partial class V1beta1MeshStatusAtProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh.</summary>
+/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshStatusAtProviderSpecServiceDiscovery
@@ -276,16 +276,16 @@ public partial class V1beta1MeshStatusAtProviderSpecServiceDiscovery
     public string? IpPreference { get; set; }
 }
 
-/// <summary>Service mesh specification to apply.</summary>
+/// <summary>Service mesh specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MeshStatusAtProviderSpec
 {
-    /// <summary>Egress filter rules for the service mesh.</summary>
+    /// <summary>Egress filter rules for the service mesh. See egress_filter Block for details.</summary>
     [JsonPropertyName("egressFilter")]
     public V1beta1MeshStatusAtProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh.</summary>
+    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta1MeshStatusAtProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -325,7 +325,7 @@ public partial class V1beta1MeshStatusAtProvider
     [JsonPropertyName("resourceOwner")]
     public string? ResourceOwner { get; set; }
 
-    /// <summary>Service mesh specification to apply.</summary>
+    /// <summary>Service mesh specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1MeshStatusAtProviderSpec? Spec { get; set; }
 
@@ -392,6 +392,15 @@ public partial class V1beta1MeshStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MeshStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

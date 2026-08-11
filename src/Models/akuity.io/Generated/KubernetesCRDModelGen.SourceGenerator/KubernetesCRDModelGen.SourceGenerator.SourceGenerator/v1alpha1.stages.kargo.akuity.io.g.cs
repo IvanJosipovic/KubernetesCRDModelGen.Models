@@ -1619,6 +1619,79 @@ public partial class V1alpha1StageStatusCurrentPromotion
     public V1alpha1StageStatusCurrentPromotionStatus? Status { get; set; }
 }
 
+/// <summary>
+/// Kind is the kind of resource from which Freight may have originated. At
+/// present, this can only be &quot;Warehouse&quot;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1StageStatusEffectiveAutoPromotionHoldsOriginKindEnum>))]
+public enum V1alpha1StageStatusEffectiveAutoPromotionHoldsOriginKindEnum
+{
+    [EnumMember(Value = "Warehouse"), JsonStringEnumMemberName("Warehouse")]
+    Warehouse
+}
+
+/// <summary>
+/// Origin describes the FreightOrigin pinned by this hold. It matches the
+/// enclosing map key.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusEffectiveAutoPromotionHoldsOrigin
+{
+    /// <summary>
+    /// Kind is the kind of resource from which Freight may have originated. At
+    /// present, this can only be &quot;Warehouse&quot;.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public required V1alpha1StageStatusEffectiveAutoPromotionHoldsOriginKindEnum Kind { get; set; }
+
+    /// <summary>
+    /// Name is the name of the resource of the kind indicated by the Kind field
+    /// from which Freight may originate.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AutoPromotionHold is a value in the AutoPromotionHolds map. It records the
+/// details of the Promotion that established the hold.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusEffectiveAutoPromotionHolds
+{
+    /// <summary>Actor identifies the user who triggered the hold.</summary>
+    [JsonPropertyName("actor")]
+    public string? Actor { get; set; }
+
+    /// <summary>
+    /// CreatedAt is the creation timestamp of the Promotion that established this
+    /// hold.
+    /// </summary>
+    [JsonPropertyName("createdAt")]
+    public DateTime? CreatedAt { get; set; }
+
+    /// <summary>FreightName is the name of the Freight selected when the hold was created.</summary>
+    [JsonPropertyName("freightName")]
+    public required string FreightName { get; set; }
+
+    /// <summary>
+    /// Origin describes the FreightOrigin pinned by this hold. It matches the
+    /// enclosing map key.
+    /// </summary>
+    [JsonPropertyName("origin")]
+    public required V1alpha1StageStatusEffectiveAutoPromotionHoldsOrigin Origin { get; set; }
+
+    /// <summary>
+    /// PromotionName is the name of the Promotion that established this hold.
+    /// Stored here as a paper trail that survives Promotion garbage collection.
+    /// </summary>
+    [JsonPropertyName("promotionName")]
+    public string? PromotionName { get; set; }
+}
+
 /// <summary>ArtifactReference is a reference to a specific version of an artifact.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2856,6 +2929,15 @@ public partial class V1alpha1StageStatus
     /// <summary>CurrentPromotion is a reference to the currently Running promotion.</summary>
     [JsonPropertyName("currentPromotion")]
     public V1alpha1StageStatusCurrentPromotion? CurrentPromotion { get; set; }
+
+    /// <summary>
+    /// EffectiveAutoPromotionHolds is the set of auto-promotion holds in effect
+    /// right now. It is recomputed every reconciliation from AutoPromotionHolds
+    /// plus the newest in-flight Promotions, and unlike AutoPromotionHolds is not
+    /// durable. Clients should read this map to reflect current hold state.
+    /// </summary>
+    [JsonPropertyName("effectiveAutoPromotionHolds")]
+    public IDictionary<string, V1alpha1StageStatusEffectiveAutoPromotionHolds>? EffectiveAutoPromotionHolds { get; set; }
 
     /// <summary>
     /// FreightHistory is a list of recent Freight selections that were deployed

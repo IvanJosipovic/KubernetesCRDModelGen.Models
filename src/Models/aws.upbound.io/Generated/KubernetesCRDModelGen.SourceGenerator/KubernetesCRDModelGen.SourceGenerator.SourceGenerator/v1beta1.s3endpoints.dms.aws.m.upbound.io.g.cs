@@ -605,7 +605,7 @@ public partial class V1beta1S3EndpointSpecForProvider
     [JsonPropertyName("enableStatistics")]
     public bool? EnableStatistics { get; set; }
 
-    /// <summary>Type of encoding to use. Value values are rle_dictionary, plain, and plain_dictionary. (AWS default is rle_dictionary.)</summary>
+    /// <summary>Type of encoding to use. Value values are rle-dictionary, plain, and plain-dictionary. (AWS default is rle-dictionary.)</summary>
     [JsonPropertyName("encodingType")]
     public string? EncodingType { get; set; }
 
@@ -1306,7 +1306,7 @@ public partial class V1beta1S3EndpointSpecInitProvider
     [JsonPropertyName("enableStatistics")]
     public bool? EnableStatistics { get; set; }
 
-    /// <summary>Type of encoding to use. Value values are rle_dictionary, plain, and plain_dictionary. (AWS default is rle_dictionary.)</summary>
+    /// <summary>Type of encoding to use. Value values are rle-dictionary, plain, and plain-dictionary. (AWS default is rle-dictionary.)</summary>
     [JsonPropertyName("encodingType")]
     public string? EncodingType { get; set; }
 
@@ -1630,7 +1630,7 @@ public partial class V1beta1S3EndpointStatusAtProvider
     [JsonPropertyName("enableStatistics")]
     public bool? EnableStatistics { get; set; }
 
-    /// <summary>Type of encoding to use. Value values are rle_dictionary, plain, and plain_dictionary. (AWS default is rle_dictionary.)</summary>
+    /// <summary>Type of encoding to use. Value values are rle-dictionary, plain, and plain-dictionary. (AWS default is rle-dictionary.)</summary>
     [JsonPropertyName("encodingType")]
     public string? EncodingType { get; set; }
 
@@ -1803,6 +1803,15 @@ public partial class V1beta1S3EndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1S3EndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

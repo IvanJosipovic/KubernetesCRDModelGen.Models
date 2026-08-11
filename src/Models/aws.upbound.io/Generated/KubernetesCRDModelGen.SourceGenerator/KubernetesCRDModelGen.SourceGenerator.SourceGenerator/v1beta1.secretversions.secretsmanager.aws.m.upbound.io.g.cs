@@ -628,7 +628,10 @@ public partial class V1beta1SecretVersionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionStatusAtProvider
 {
-    /// <summary>The ARN of the secret.</summary>
+    /// <summary>
+    /// (Deprecated) The ARN of the secret.
+    /// Use secret_arn instead.
+    /// </summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -636,7 +639,6 @@ public partial class V1beta1SecretVersionStatusAtProvider
     [JsonPropertyName("hasSecretStringWo")]
     public bool? HasSecretStringWo { get; set; }
 
-    /// <summary>A pipe delimited combination of secret ID and version ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -646,6 +648,10 @@ public partial class V1beta1SecretVersionStatusAtProvider
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>The ARN of the secret.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
 
     /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
@@ -718,6 +724,15 @@ public partial class V1beta1SecretVersionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1SecretVersionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

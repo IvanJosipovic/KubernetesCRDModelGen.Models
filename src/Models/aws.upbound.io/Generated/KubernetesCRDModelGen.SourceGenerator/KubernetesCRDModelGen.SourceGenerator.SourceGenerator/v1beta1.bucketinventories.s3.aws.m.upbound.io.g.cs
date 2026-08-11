@@ -377,7 +377,7 @@ public partial class V1beta1BucketInventorySpecForProviderDestinationBucketEncry
     public V1beta1BucketInventorySpecForProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecForProviderDestinationBucket
@@ -386,7 +386,7 @@ public partial class V1beta1BucketInventorySpecForProviderDestinationBucket
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Amazon S3 bucket ARN of the destination.</summary>
+    /// <summary>Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -416,7 +416,7 @@ public partial class V1beta1BucketInventorySpecForProviderDestinationBucket
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecForProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public V1beta1BucketInventorySpecForProviderDestinationBucket? Bucket { get; set; }
 }
@@ -445,7 +445,7 @@ public partial class V1beta1BucketInventorySpecForProviderSchedule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecForProvider
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -834,7 +834,7 @@ public partial class V1beta1BucketInventorySpecInitProviderDestinationBucketEncr
     public V1beta1BucketInventorySpecInitProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecInitProviderDestinationBucket
@@ -843,7 +843,7 @@ public partial class V1beta1BucketInventorySpecInitProviderDestinationBucket
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Amazon S3 bucket ARN of the destination.</summary>
+    /// <summary>Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -873,7 +873,7 @@ public partial class V1beta1BucketInventorySpecInitProviderDestinationBucket
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecInitProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public V1beta1BucketInventorySpecInitProviderDestinationBucket? Bucket { get; set; }
 }
@@ -914,7 +914,7 @@ public partial class V1beta1BucketInventorySpecInitProviderSchedule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventorySpecInitProvider
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1093,7 +1093,7 @@ public partial class V1beta1BucketInventoryStatusAtProviderDestinationBucketEncr
     public V1beta1BucketInventoryStatusAtProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventoryStatusAtProviderDestinationBucket
@@ -1102,7 +1102,7 @@ public partial class V1beta1BucketInventoryStatusAtProviderDestinationBucket
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Amazon S3 bucket ARN of the destination.</summary>
+    /// <summary>Amazon S3 bucket ARN of the destination. Only general purpose buckets are supported.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -1124,7 +1124,7 @@ public partial class V1beta1BucketInventoryStatusAtProviderDestinationBucket
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventoryStatusAtProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public V1beta1BucketInventoryStatusAtProviderDestinationBucket? Bucket { get; set; }
 }
@@ -1153,7 +1153,7 @@ public partial class V1beta1BucketInventoryStatusAtProviderSchedule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketInventoryStatusAtProvider
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for.</summary>
+    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1250,6 +1250,15 @@ public partial class V1beta1BucketInventoryStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1BucketInventoryStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

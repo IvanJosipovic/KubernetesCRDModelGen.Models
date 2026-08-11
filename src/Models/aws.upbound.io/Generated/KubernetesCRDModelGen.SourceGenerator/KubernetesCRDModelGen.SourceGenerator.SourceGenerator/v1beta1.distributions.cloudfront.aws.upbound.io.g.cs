@@ -63,6 +63,16 @@ public enum V1beta1DistributionSpecDeletionPolicyEnum
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionSpecForProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderConnectionFunctionAssociation
 {
     /// <summary>Identifier of the connection function to associate with the distribution.</summary>
@@ -783,6 +793,16 @@ public partial class V1beta1DistributionSpecForProviderOriginCustomHeader
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionSpecForProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -800,6 +820,10 @@ public partial class V1beta1DistributionSpecForProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public IList<V1beta1DistributionSpecForProviderOriginCustomOriginConfigOriginMtlsConfig>? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -1372,6 +1396,10 @@ public partial class V1beta1DistributionSpecForProvider
     [JsonPropertyName("anycastIpListId")]
     public string? AnycastIpListId { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public IList<V1beta1DistributionSpecForProviderCacheTagConfig>? CacheTagConfig { get; set; }
+
     /// <summary>Any comments you want to include about the distribution.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
@@ -1459,6 +1487,16 @@ public partial class V1beta1DistributionSpecForProvider
     /// <summary>Unique identifier that specifies the AWS WAF web ACL, if any, to associate with this distribution. To specify a web ACL created using the latest version of AWS WAF (WAFv2), use the ACL ARN, for example aws_wafv2_web_acl.example.arn. To specify a web ACL created using AWS WAF Classic, use the ACL ID, for example aws_waf_web_acl.example.id. The WAF Web ACL must exist in the WAF Global (CloudFront) region and the credentials configuring this argument must have waf:GetWebACL permissions assigned.</summary>
     [JsonPropertyName("webAclId")]
     public string? WebAclId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionSpecInitProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2184,6 +2222,16 @@ public partial class V1beta1DistributionSpecInitProviderOriginCustomHeader
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionSpecInitProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -2201,6 +2249,10 @@ public partial class V1beta1DistributionSpecInitProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public IList<V1beta1DistributionSpecInitProviderOriginCustomOriginConfigOriginMtlsConfig>? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -2785,6 +2837,10 @@ public partial class V1beta1DistributionSpecInitProvider
     [JsonPropertyName("anycastIpListId")]
     public string? AnycastIpListId { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public IList<V1beta1DistributionSpecInitProviderCacheTagConfig>? CacheTagConfig { get; set; }
+
     /// <summary>Any comments you want to include about the distribution.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
@@ -3062,6 +3118,16 @@ public partial class V1beta1DistributionSpec
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
     public V1beta1DistributionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionStatusAtProviderCacheTagConfig
+{
+    /// <summary>Name of the HTTP header to extract cache tags. The header value must contain comma-separated tag values.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3461,6 +3527,16 @@ public partial class V1beta1DistributionStatusAtProviderOriginCustomHeader
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1DistributionStatusAtProviderOriginCustomOriginConfigOriginMtlsConfig
+{
+    /// <summary>ARN of the ACM certificate to use for mutual TLS authentication with the origin. The certificate must have Extended Key Usage set to TLS Client Authentication.</summary>
+    [JsonPropertyName("clientCertificateArn")]
+    public string? ClientCertificateArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -3478,6 +3554,10 @@ public partial class V1beta1DistributionStatusAtProviderOriginCustomOriginConfig
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
     [JsonPropertyName("originKeepaliveTimeout")]
     public double? OriginKeepaliveTimeout { get; set; }
+
+    /// <summary>The origin mTLS configuration for mutual TLS authentication between CloudFront and your origin.</summary>
+    [JsonPropertyName("originMtlsConfig")]
+    public IList<V1beta1DistributionStatusAtProviderOriginCustomOriginConfigOriginMtlsConfig>? OriginMtlsConfig { get; set; }
 
     /// <summary>Origin protocol policy to apply to your origin. One of http-only, https-only, or match-viewer.</summary>
     [JsonPropertyName("originProtocolPolicy")]
@@ -3784,6 +3864,10 @@ public partial class V1beta1DistributionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
+    /// <summary>Cache tag configuration block for cache tag extraction from origin responses (maximum one). See the AWS documentation for more information about cache tags.</summary>
+    [JsonPropertyName("cacheTagConfig")]
+    public IList<V1beta1DistributionStatusAtProviderCacheTagConfig>? CacheTagConfig { get; set; }
+
     /// <summary>Internal value used by CloudFront to allow future updates to the distribution configuration.</summary>
     [JsonPropertyName("callerReference")]
     public string? CallerReference { get; set; }
@@ -3977,6 +4061,15 @@ public partial class V1beta1DistributionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DistributionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

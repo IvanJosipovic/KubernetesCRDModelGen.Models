@@ -578,6 +578,10 @@ public partial class V1beta1ServerlessCacheSpecForProvider
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
+    /// <summary>IP protocol version used by the serverless cache. Valid values are ipv4, ipv6, or dual_stack. ipv6 is only supported with IPv6-only subnets. If not specified, defaults to ipv4, unless all provided subnets are IPv6-only, in which case it defaults to ipv6.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -1161,6 +1165,10 @@ public partial class V1beta1ServerlessCacheSpecInitProvider
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
+    /// <summary>IP protocol version used by the serverless cache. Valid values are ipv4, ipv6, or dual_stack. ipv6 is only supported with IPv6-only subnets. If not specified, defaults to ipv4, unless all provided subnets are IPv6-only, in which case it defaults to ipv6.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>References to SecurityGroup in ec2 to populate securityGroupIds.</summary>
     [JsonPropertyName("securityGroupIdRefs")]
     public IList<V1beta1ServerlessCacheSpecInitProviderSecurityGroupIdRefs>? SecurityGroupIdRefs { get; set; }
@@ -1504,6 +1512,10 @@ public partial class V1beta1ServerlessCacheStatusAtProvider
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
+    /// <summary>IP protocol version used by the serverless cache. Valid values are ipv4, ipv6, or dual_stack. ipv6 is only supported with IPv6-only subnets. If not specified, defaults to ipv4, unless all provided subnets are IPv6-only, in which case it defaults to ipv6.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Represents the information required for client programs to connect to a cache node. See reader_endpoint Block for details.</summary>
     [JsonPropertyName("readerEndpoint")]
     public IList<V1beta1ServerlessCacheStatusAtProviderReaderEndpoint>? ReaderEndpoint { get; set; }
@@ -1601,6 +1613,15 @@ public partial class V1beta1ServerlessCacheStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServerlessCacheStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

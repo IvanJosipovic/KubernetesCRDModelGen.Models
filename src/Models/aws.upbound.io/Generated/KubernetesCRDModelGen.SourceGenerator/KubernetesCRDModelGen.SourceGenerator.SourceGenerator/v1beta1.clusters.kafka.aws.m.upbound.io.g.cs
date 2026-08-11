@@ -244,6 +244,10 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivit
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
@@ -436,7 +440,7 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo
@@ -487,7 +491,7 @@ public partial class V1beta1ClusterSpecForProviderBrokerNodeGroupInfo
     [JsonPropertyName("securityGroupsSelector")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoSecurityGroupsSelector? SecurityGroupsSelector { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterSpecForProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
@@ -1791,6 +1795,10 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
@@ -1983,7 +1991,7 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo
@@ -2034,7 +2042,7 @@ public partial class V1beta1ClusterSpecInitProviderBrokerNodeGroupInfo
     [JsonPropertyName("securityGroupsSelector")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoSecurityGroupsSelector? SecurityGroupsSelector { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterSpecInitProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
@@ -3295,6 +3303,10 @@ public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfo
 {
+    /// <summary>Network type of the cluster. Valid values are: IPV4 or DUAL. Default value: IPV4. Only updating from IPV4 to DUAL is allowed.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Access control settings for brokers. See connectivity_info public_access Argument Reference below.</summary>
     [JsonPropertyName("publicAccess")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
@@ -3332,7 +3344,7 @@ public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInf
     public double? VolumeSize { get; set; }
 }
 
-/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+/// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo
@@ -3367,7 +3379,7 @@ public partial class V1beta1ClusterStatusAtProviderBrokerNodeGroupInfo
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below.</summary>
+    /// <summary>A block that contains information about storage volumes attached to MSK broker nodes. See broker_node_group_info storage_info Argument Reference below. This block must not be specified when an Express instance type is specified for instance_type.</summary>
     [JsonPropertyName("storageInfo")]
     public V1beta1ClusterStatusAtProviderBrokerNodeGroupInfoStorageInfo? StorageInfo { get; set; }
 }
@@ -3656,6 +3668,10 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("currentVersion")]
     public string? CurrentVersion { get; set; }
 
+    /// <summary>Status indicating whether Amazon MSK requires customer action for the cluster. Valid values are NONE, ACTION_RECOMMENDED, and CRITICAL_ACTION_REQUIRED.</summary>
+    [JsonPropertyName("customerActionStatus")]
+    public string? CustomerActionStatus { get; set; }
+
     /// <summary>Configuration block for specifying encryption. See encryption_info Argument Reference below.</summary>
     [JsonPropertyName("encryptionInfo")]
     public V1beta1ClusterStatusAtProviderEncryptionInfo? EncryptionInfo { get; set; }
@@ -3769,6 +3785,15 @@ public partial class V1beta1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

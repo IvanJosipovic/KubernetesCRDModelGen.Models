@@ -92,7 +92,7 @@ public partial class V1beta2ClusterSpecForProviderComputeConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderControlPlaneScalingConfig
 {
-    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, or tier-4xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
+    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, tier-4xl, or tier-8xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -157,9 +157,26 @@ public partial class V1beta2ClusterSpecForProviderKubernetesNetworkConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderOutpostConfigControlPlanePlacement
 {
-    /// <summary>The name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
+    /// <summary>Name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
+
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
+}
+
+/// <summary>
+/// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+/// The etcd_placement configuration block supports the following arguments:
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecForProviderOutpostConfigEtcdPlacement
+{
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
 }
 
 /// <summary>Configuration block representing the configuration of your local Amazon EKS cluster on an AWS Outpost. This block isn&apos;t available for creating Amazon EKS clusters on the AWS cloud.</summary>
@@ -177,6 +194,17 @@ public partial class V1beta2ClusterSpecForProviderOutpostConfig
     /// </summary>
     [JsonPropertyName("controlPlanePlacement")]
     public V1beta2ClusterSpecForProviderOutpostConfigControlPlanePlacement? ControlPlanePlacement { get; set; }
+
+    /// <summary>Amazon EC2 instance type for etcd instances of your local Amazon EKS cluster on AWS Outposts.</summary>
+    [JsonPropertyName("etcdInstanceType")]
+    public string? EtcdInstanceType { get; set; }
+
+    /// <summary>
+    /// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+    /// The etcd_placement configuration block supports the following arguments:
+    /// </summary>
+    [JsonPropertyName("etcdPlacement")]
+    public V1beta2ClusterSpecForProviderOutpostConfigEtcdPlacement? EtcdPlacement { get; set; }
 
     /// <summary>The ARN of the Outpost that you want to use for your local Amazon EKS cluster on Outposts. This argument is a list of arns, but only a single Outpost ARN is supported currently.</summary>
     [JsonPropertyName("outpostArns")]
@@ -693,6 +721,10 @@ public partial class V1beta2ClusterSpecForProviderVpcConfigSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderVpcConfig
 {
+    /// <summary>Egress mode for the EKS control plane. Valid values are AWS_MANAGED and CUSTOMER_ROUTED. Defaults to AWS_MANAGED. Changing from CUSTOMER_ROUTED back to AWS_MANAGED forces a new resource.</summary>
+    [JsonPropertyName("controlPlaneEgressMode")]
+    public string? ControlPlaneEgressMode { get; set; }
+
     /// <summary>Whether the Amazon EKS private API server endpoint is enabled. Default is false.</summary>
     [JsonPropertyName("endpointPrivateAccess")]
     public bool? EndpointPrivateAccess { get; set; }
@@ -869,7 +901,7 @@ public partial class V1beta2ClusterSpecInitProviderComputeConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderControlPlaneScalingConfig
 {
-    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, or tier-4xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
+    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, tier-4xl, or tier-8xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -934,9 +966,26 @@ public partial class V1beta2ClusterSpecInitProviderKubernetesNetworkConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderOutpostConfigControlPlanePlacement
 {
-    /// <summary>The name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
+    /// <summary>Name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
+
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
+}
+
+/// <summary>
+/// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+/// The etcd_placement configuration block supports the following arguments:
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecInitProviderOutpostConfigEtcdPlacement
+{
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
 }
 
 /// <summary>Configuration block representing the configuration of your local Amazon EKS cluster on an AWS Outpost. This block isn&apos;t available for creating Amazon EKS clusters on the AWS cloud.</summary>
@@ -954,6 +1003,17 @@ public partial class V1beta2ClusterSpecInitProviderOutpostConfig
     /// </summary>
     [JsonPropertyName("controlPlanePlacement")]
     public V1beta2ClusterSpecInitProviderOutpostConfigControlPlanePlacement? ControlPlanePlacement { get; set; }
+
+    /// <summary>Amazon EC2 instance type for etcd instances of your local Amazon EKS cluster on AWS Outposts.</summary>
+    [JsonPropertyName("etcdInstanceType")]
+    public string? EtcdInstanceType { get; set; }
+
+    /// <summary>
+    /// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+    /// The etcd_placement configuration block supports the following arguments:
+    /// </summary>
+    [JsonPropertyName("etcdPlacement")]
+    public V1beta2ClusterSpecInitProviderOutpostConfigEtcdPlacement? EtcdPlacement { get; set; }
 
     /// <summary>The ARN of the Outpost that you want to use for your local Amazon EKS cluster on Outposts. This argument is a list of arns, but only a single Outpost ARN is supported currently.</summary>
     [JsonPropertyName("outpostArns")]
@@ -1470,6 +1530,10 @@ public partial class V1beta2ClusterSpecInitProviderVpcConfigSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderVpcConfig
 {
+    /// <summary>Egress mode for the EKS control plane. Valid values are AWS_MANAGED and CUSTOMER_ROUTED. Defaults to AWS_MANAGED. Changing from CUSTOMER_ROUTED back to AWS_MANAGED forces a new resource.</summary>
+    [JsonPropertyName("controlPlaneEgressMode")]
+    public string? ControlPlaneEgressMode { get; set; }
+
     /// <summary>Whether the Amazon EKS private API server endpoint is enabled. Default is false.</summary>
     [JsonPropertyName("endpointPrivateAccess")]
     public bool? EndpointPrivateAccess { get; set; }
@@ -1843,7 +1907,7 @@ public partial class V1beta2ClusterStatusAtProviderComputeConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProviderControlPlaneScalingConfig
 {
-    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, or tier-4xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
+    /// <summary>The control plane scaling tier. Valid values are standard, tier-xl, tier-2xl, tier-4xl, or tier-8xl. Defaults to standard. For more information about each tier, see EKS Provisioned Control Plane.</summary>
     [JsonPropertyName("tier")]
     public string? Tier { get; set; }
 }
@@ -1930,9 +1994,26 @@ public partial class V1beta2ClusterStatusAtProviderKubernetesNetworkConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProviderOutpostConfigControlPlanePlacement
 {
-    /// <summary>The name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
+    /// <summary>Name of the placement group for the Kubernetes control plane instances. This setting can&apos;t be changed after cluster creation.</summary>
     [JsonPropertyName("groupName")]
     public string? GroupName { get; set; }
+
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
+}
+
+/// <summary>
+/// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+/// The etcd_placement configuration block supports the following arguments:
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterStatusAtProviderOutpostConfigEtcdPlacement
+{
+    /// <summary>Placement group spread level for etcd instances. Valid values: host, rack.</summary>
+    [JsonPropertyName("spreadLevel")]
+    public string? SpreadLevel { get; set; }
 }
 
 /// <summary>Configuration block representing the configuration of your local Amazon EKS cluster on an AWS Outpost. This block isn&apos;t available for creating Amazon EKS clusters on the AWS cloud.</summary>
@@ -1950,6 +2031,17 @@ public partial class V1beta2ClusterStatusAtProviderOutpostConfig
     /// </summary>
     [JsonPropertyName("controlPlanePlacement")]
     public V1beta2ClusterStatusAtProviderOutpostConfigControlPlanePlacement? ControlPlanePlacement { get; set; }
+
+    /// <summary>Amazon EC2 instance type for etcd instances of your local Amazon EKS cluster on AWS Outposts.</summary>
+    [JsonPropertyName("etcdInstanceType")]
+    public string? EtcdInstanceType { get; set; }
+
+    /// <summary>
+    /// Placement configuration for the etcd instances of your local Amazon EKS cluster on an AWS Outpost.
+    /// The etcd_placement configuration block supports the following arguments:
+    /// </summary>
+    [JsonPropertyName("etcdPlacement")]
+    public V1beta2ClusterStatusAtProviderOutpostConfigEtcdPlacement? EtcdPlacement { get; set; }
 
     /// <summary>The ARN of the Outpost that you want to use for your local Amazon EKS cluster on Outposts. This argument is a list of arns, but only a single Outpost ARN is supported currently.</summary>
     [JsonPropertyName("outpostArns")]
@@ -2028,6 +2120,10 @@ public partial class V1beta2ClusterStatusAtProviderVpcConfig
     /// <summary>(Computed) Cluster security group that is created by Amazon EKS for the cluster. Managed node groups use this security group for control-plane-to-data-plane communication.</summary>
     [JsonPropertyName("clusterSecurityGroupId")]
     public string? ClusterSecurityGroupId { get; set; }
+
+    /// <summary>Egress mode for the EKS control plane. Valid values are AWS_MANAGED and CUSTOMER_ROUTED. Defaults to AWS_MANAGED. Changing from CUSTOMER_ROUTED back to AWS_MANAGED forces a new resource.</summary>
+    [JsonPropertyName("controlPlaneEgressMode")]
+    public string? ControlPlaneEgressMode { get; set; }
 
     /// <summary>Whether the Amazon EKS private API server endpoint is enabled. Default is false.</summary>
     [JsonPropertyName("endpointPrivateAccess")]
@@ -2242,6 +2338,15 @@ public partial class V1beta2ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

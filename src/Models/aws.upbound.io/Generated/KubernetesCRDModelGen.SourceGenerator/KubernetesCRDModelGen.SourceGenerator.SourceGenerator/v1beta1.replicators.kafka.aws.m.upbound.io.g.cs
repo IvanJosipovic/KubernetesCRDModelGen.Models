@@ -562,10 +562,88 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaCluster
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
 
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
+{
+    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("logGroup")]
+    public string? LogGroup { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehose
+{
+    /// <summary>Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("deliveryStream")]
+    public string? DeliveryStream { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3
+{
+    /// <summary>Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Prefix to use when storing replicator logs in S3. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    [JsonPropertyName("cloudwatchLogs")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    [JsonPropertyName("firehose")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
+}
+
+/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    [JsonPropertyName("replicatorLogDelivery")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListConsumerGroupReplication
 {
+    /// <summary>Consumer group offset synchronization mode. Valid values are LEGACY and ENHANCED. With LEGACY, offsets are synchronized when producers write to the source cluster. With ENHANCED, consumer offsets are synchronized regardless of producer location. ENHANCED requires a corresponding replicator that replicates data from the target cluster to the source cluster and requires topic_name_configuration.type to be set to IDENTICAL. Defaults to LEGACY. Changing this value will force a new resource.</summary>
+    [JsonPropertyName("consumerGroupOffsetSyncMode")]
+    public string? ConsumerGroupOffsetSyncMode { get; set; }
+
     /// <summary>List of regular expression patterns indicating the consumer groups that should not be replicated.</summary>
     [JsonPropertyName("consumerGroupsToExclude")]
     public IList<string>? ConsumerGroupsToExclude { get; set; }
@@ -1155,6 +1233,10 @@ public partial class V1beta1ReplicatorSpecForProvider
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecForProviderKafkaCluster>? KafkaCluster { get; set; }
 
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    [JsonPropertyName("logDelivery")]
+    public V1beta1ReplicatorSpecForProviderLogDelivery? LogDelivery { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -1713,10 +1795,88 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaCluster
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
 
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
+{
+    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("logGroup")]
+    public string? LogGroup { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehose
+{
+    /// <summary>Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("deliveryStream")]
+    public string? DeliveryStream { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3
+{
+    /// <summary>Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Prefix to use when storing replicator logs in S3. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    [JsonPropertyName("cloudwatchLogs")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    [JsonPropertyName("firehose")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
+}
+
+/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    [JsonPropertyName("replicatorLogDelivery")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListConsumerGroupReplication
 {
+    /// <summary>Consumer group offset synchronization mode. Valid values are LEGACY and ENHANCED. With LEGACY, offsets are synchronized when producers write to the source cluster. With ENHANCED, consumer offsets are synchronized regardless of producer location. ENHANCED requires a corresponding replicator that replicates data from the target cluster to the source cluster and requires topic_name_configuration.type to be set to IDENTICAL. Defaults to LEGACY. Changing this value will force a new resource.</summary>
+    [JsonPropertyName("consumerGroupOffsetSyncMode")]
+    public string? ConsumerGroupOffsetSyncMode { get; set; }
+
     /// <summary>List of regular expression patterns indicating the consumer groups that should not be replicated.</summary>
     [JsonPropertyName("consumerGroupsToExclude")]
     public IList<string>? ConsumerGroupsToExclude { get; set; }
@@ -2318,6 +2478,10 @@ public partial class V1beta1ReplicatorSpecInitProvider
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecInitProviderKafkaCluster>? KafkaCluster { get; set; }
 
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    [JsonPropertyName("logDelivery")]
+    public V1beta1ReplicatorSpecInitProviderLogDelivery? LogDelivery { get; set; }
+
     /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
     [JsonPropertyName("replicationInfoList")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoList? ReplicationInfoList { get; set; }
@@ -2487,10 +2651,88 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaCluster
     public V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
 
+/// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
+{
+    /// <summary>Boolean whether to enable log delivery to CloudWatch Logs.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("logGroup")]
+    public string? LogGroup { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryFirehose
+{
+    /// <summary>Name of the Firehose delivery stream. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("deliveryStream")]
+    public string? DeliveryStream { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryS3
+{
+    /// <summary>Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("bucket")]
+    public string? Bucket { get; set; }
+
+    /// <summary>Boolean whether to enable log delivery to S3.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>Prefix to use when storing replicator logs in S3. If enabled is false, this value must not be set.</summary>
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+}
+
+/// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
+    [JsonPropertyName("cloudwatchLogs")]
+    public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs? CloudwatchLogs { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
+    [JsonPropertyName("firehose")]
+    public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryFirehose? Firehose { get; set; }
+
+    /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryS3? S3 { get; set; }
+}
+
+/// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderLogDelivery
+{
+    /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
+    [JsonPropertyName("replicatorLogDelivery")]
+    public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListConsumerGroupReplication
 {
+    /// <summary>Consumer group offset synchronization mode. Valid values are LEGACY and ENHANCED. With LEGACY, offsets are synchronized when producers write to the source cluster. With ENHANCED, consumer offsets are synchronized regardless of producer location. ENHANCED requires a corresponding replicator that replicates data from the target cluster to the source cluster and requires topic_name_configuration.type to be set to IDENTICAL. Defaults to LEGACY. Changing this value will force a new resource.</summary>
+    [JsonPropertyName("consumerGroupOffsetSyncMode")]
+    public string? ConsumerGroupOffsetSyncMode { get; set; }
+
     /// <summary>List of regular expression patterns indicating the consumer groups that should not be replicated.</summary>
     [JsonPropertyName("consumerGroupsToExclude")]
     public IList<string>? ConsumerGroupsToExclude { get; set; }
@@ -2615,6 +2857,10 @@ public partial class V1beta1ReplicatorStatusAtProvider
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorStatusAtProviderKafkaCluster>? KafkaCluster { get; set; }
 
+    /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
+    [JsonPropertyName("logDelivery")]
+    public V1beta1ReplicatorStatusAtProviderLogDelivery? LogDelivery { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -2697,6 +2943,15 @@ public partial class V1beta1ReplicatorStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ReplicatorStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

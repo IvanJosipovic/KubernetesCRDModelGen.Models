@@ -73,6 +73,9 @@ spec:
                   firewallPolicy:
                     description: A configuration block describing the rule groups and policy actions to use in the firewall policy. See Firewall Policy below for details.
                     properties:
+                      enableTlsSessionHolding:
+                        description: 'Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.'
+                        type: boolean
                       policyVariables:
                         description: . Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.
                         properties:
@@ -399,6 +402,9 @@ spec:
                   firewallPolicy:
                     description: A configuration block describing the rule groups and policy actions to use in the firewall policy. See Firewall Policy below for details.
                     properties:
+                      enableTlsSessionHolding:
+                        description: 'Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.'
+                        type: boolean
                       policyVariables:
                         description: . Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.
                         properties:
@@ -774,6 +780,9 @@ spec:
                   firewallPolicy:
                     description: A configuration block describing the rule groups and policy actions to use in the firewall policy. See Firewall Policy below for details.
                     properties:
+                      enableTlsSessionHolding:
+                        description: 'Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.'
+                        type: boolean
                       policyVariables:
                         description: . Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.
                         properties:
@@ -967,6 +976,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

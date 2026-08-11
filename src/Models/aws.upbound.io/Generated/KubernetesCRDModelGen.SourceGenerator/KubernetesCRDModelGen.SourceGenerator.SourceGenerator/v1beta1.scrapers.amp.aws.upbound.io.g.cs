@@ -841,7 +841,7 @@ public partial class V1beta1ScraperSpecForProviderSourceEksSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the new scraper.</summary>
+    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -878,6 +878,329 @@ public partial class V1beta1ScraperSpecForProviderSourceEks
     public V1beta1ScraperSpecForProviderSourceEksSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderSourceVpc
+{
+    /// <summary>List of security group IDs for the VPC configuration.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>References to SecurityGroup in ec2 to populate securityGroupIds.</summary>
+    [JsonPropertyName("securityGroupIdsRefs")]
+    public IList<V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsRefs>? SecurityGroupIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
+    [JsonPropertyName("securityGroupIdsSelector")]
+    public V1beta1ScraperSpecForProviderSourceVpcSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
+
+    /// <summary>List of subnet IDs. Must be in at least two different availability zones.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>References to Subnet in ec2 to populate subnetIds.</summary>
+    [JsonPropertyName("subnetIdsRefs")]
+    public IList<V1beta1ScraperSpecForProviderSourceVpcSubnetIdsRefs>? SubnetIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
+    [JsonPropertyName("subnetIdsSelector")]
+    public V1beta1ScraperSpecForProviderSourceVpcSubnetIdsSelector? SubnetIdsSelector { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderSource
@@ -885,6 +1208,10 @@ public partial class V1beta1ScraperSpecForProviderSource
     /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperSpecForProviderSourceEks>? Eks { get; set; }
+
+    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    [JsonPropertyName("vpc")]
+    public IList<V1beta1ScraperSpecForProviderSourceVpc>? Vpc { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1708,7 +2035,7 @@ public partial class V1beta1ScraperSpecInitProviderSourceEksSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the new scraper.</summary>
+    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -1745,6 +2072,329 @@ public partial class V1beta1ScraperSpecInitProviderSourceEks
     public V1beta1ScraperSpecInitProviderSourceEksSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderSourceVpc
+{
+    /// <summary>List of security group IDs for the VPC configuration.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>References to SecurityGroup in ec2 to populate securityGroupIds.</summary>
+    [JsonPropertyName("securityGroupIdsRefs")]
+    public IList<V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsRefs>? SecurityGroupIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
+    [JsonPropertyName("securityGroupIdsSelector")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
+
+    /// <summary>List of subnet IDs. Must be in at least two different availability zones.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+
+    /// <summary>References to Subnet in ec2 to populate subnetIds.</summary>
+    [JsonPropertyName("subnetIdsRefs")]
+    public IList<V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsRefs>? SubnetIdsRefs { get; set; }
+
+    /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
+    [JsonPropertyName("subnetIdsSelector")]
+    public V1beta1ScraperSpecInitProviderSourceVpcSubnetIdsSelector? SubnetIdsSelector { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderSource
@@ -1752,6 +2402,10 @@ public partial class V1beta1ScraperSpecInitProviderSource
     /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperSpecInitProviderSourceEks>? Eks { get; set; }
+
+    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    [JsonPropertyName("vpc")]
+    public IList<V1beta1ScraperSpecInitProviderSourceVpc>? Vpc { get; set; }
 }
 
 /// <summary>
@@ -2012,11 +2666,24 @@ public partial class V1beta1ScraperStatusAtProviderRoleConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the new scraper.</summary>
+    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
     /// <summary>List of the security group IDs for the Amazon EKS cluster VPC configuration.</summary>
+    [JsonPropertyName("securityGroupIds")]
+    public IList<string>? SecurityGroupIds { get; set; }
+
+    /// <summary>List of subnet IDs. Must be in at least two different availability zones.</summary>
+    [JsonPropertyName("subnetIds")]
+    public IList<string>? SubnetIds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperStatusAtProviderSourceVpc
+{
+    /// <summary>List of security group IDs for the VPC configuration.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -2032,6 +2699,10 @@ public partial class V1beta1ScraperStatusAtProviderSource
     /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperStatusAtProviderSourceEks>? Eks { get; set; }
+
+    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    [JsonPropertyName("vpc")]
+    public IList<V1beta1ScraperStatusAtProviderSourceVpc>? Vpc { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2137,6 +2808,15 @@ public partial class V1beta1ScraperStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ScraperStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

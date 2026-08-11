@@ -373,7 +373,7 @@ public partial class V1beta2InstanceSpecForProviderInstanceMarketOptionsSpotOpti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecForProviderInstanceMarketOptions
 {
-    /// <summary>Type of market for the instance. Valid values are spot and capacity-block. Defaults to spot. Required if spot_options is specified.</summary>
+    /// <summary>Type of market for the instance. Valid values are spot, capacity-block, and interruptible-capacity-reservation. Use interruptible-capacity-reservation to launch instances into interruptible Capacity Reservations. Defaults to spot. Required if spot_options is specified.</summary>
     [JsonPropertyName("marketType")]
     public string? MarketType { get; set; }
 
@@ -1853,7 +1853,7 @@ public partial class V1beta2InstanceSpecInitProviderInstanceMarketOptionsSpotOpt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceSpecInitProviderInstanceMarketOptions
 {
-    /// <summary>Type of market for the instance. Valid values are spot and capacity-block. Defaults to spot. Required if spot_options is specified.</summary>
+    /// <summary>Type of market for the instance. Valid values are spot, capacity-block, and interruptible-capacity-reservation. Use interruptible-capacity-reservation to launch instances into interruptible Capacity Reservations. Defaults to spot. Required if spot_options is specified.</summary>
     [JsonPropertyName("marketType")]
     public string? MarketType { get; set; }
 
@@ -3370,7 +3370,7 @@ public partial class V1beta2InstanceStatusAtProviderInstanceMarketOptionsSpotOpt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStatusAtProviderInstanceMarketOptions
 {
-    /// <summary>Type of market for the instance. Valid values are spot and capacity-block. Defaults to spot. Required if spot_options is specified.</summary>
+    /// <summary>Type of market for the instance. Valid values are spot, capacity-block, and interruptible-capacity-reservation. Use interruptible-capacity-reservation to launch instances into interruptible Capacity Reservations. Defaults to spot. Required if spot_options is specified.</summary>
     [JsonPropertyName("marketType")]
     public string? MarketType { get; set; }
 
@@ -3897,6 +3897,15 @@ public partial class V1beta2InstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2InstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

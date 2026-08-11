@@ -829,6 +829,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -910,7 +917,7 @@ spec:
                     description: The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.
                     type: string
                   dataSources:
-                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`
+                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY
                     items:
                       type: string
                     type: array
@@ -918,7 +925,7 @@ spec:
                     description: The workspace description.
                     type: string
                   grafanaVersion:
-                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.
+                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.
                     type: string
                   kmsKeyId:
                     description: The ARN of the AWS KMS key for encrypting workspace data.
@@ -1165,7 +1172,7 @@ spec:
                     description: The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.
                     type: string
                   dataSources:
-                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`
+                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY
                     items:
                       type: string
                     type: array
@@ -1173,7 +1180,7 @@ spec:
                     description: The workspace description.
                     type: string
                   grafanaVersion:
-                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.
+                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.
                     type: string
                   kmsKeyId:
                     description: The ARN of the AWS KMS key for encrypting workspace data.
@@ -1501,7 +1508,7 @@ spec:
                     description: The configuration string for the workspace that you create. For more information about the format and configuration options available, see Working in your Grafana workspace.
                     type: string
                   dataSources:
-                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY`
+                    description: The data sources for the workspace. Valid values are AMAZON_OPENSEARCH_SERVICE, ATHENA, CLOUDWATCH, PROMETHEUS, REDSHIFT, SITEWISE, TIMESTREAM, TWINMAKER, XRAY
                     items:
                       type: string
                     type: array
@@ -1512,7 +1519,7 @@ spec:
                     description: The endpoint of the Grafana workspace.
                     type: string
                   grafanaVersion:
-                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 8.4, 9.4 and 10.4. If not specified, defaults to the latest version.
+                    description: Specifies the version of Grafana to support in the new workspace. Supported values are 9.4, 10.4 and 12.4. If not specified, defaults to the latest version.
                     type: string
                   id:
                     type: string
@@ -1640,6 +1647,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

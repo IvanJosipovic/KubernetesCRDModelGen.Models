@@ -1515,6 +1515,10 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1RouteSpecForProviderNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
+    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    [JsonPropertyName("odbNetworkArn")]
+    public string? OdbNetworkArn { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -3062,6 +3066,10 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1RouteSpecInitProviderNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
+    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    [JsonPropertyName("odbNetworkArn")]
+    public string? OdbNetworkArn { get; set; }
+
     /// <summary>The ID of the routing table.</summary>
     [JsonPropertyName("routeTableId")]
     public string? RouteTableId { get; set; }
@@ -3274,6 +3282,10 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
+    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    [JsonPropertyName("odbNetworkArn")]
+    public string? OdbNetworkArn { get; set; }
+
     /// <summary>How the route was created - CreateRouteTable, CreateRoute or EnableVgwRoutePropagation.</summary>
     [JsonPropertyName("origin")]
     public string? Origin { get; set; }
@@ -3360,6 +3372,15 @@ public partial class V1beta1RouteStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RouteStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

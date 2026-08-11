@@ -1232,6 +1232,10 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
+    /// <summary>Type of IP addresses for the AWS Transfer Family endpoint. Valid values are IPV4 and DUALSTACK. The default value is IPV4. When ip_address_type is set to DUALSTACK, address_allocation_ids cannot be specified in the endpoint_details block. Updating ip_address_type stops the server and then restarts it with the new ip_address_type value.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
@@ -2483,6 +2487,10 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
+    /// <summary>Type of IP addresses for the AWS Transfer Family endpoint. Valid values are IPV4 and DUALSTACK. The default value is IPV4. When ip_address_type is set to DUALSTACK, address_allocation_ids cannot be specified in the endpoint_details block. Updating ip_address_type stops the server and then restarts it with the new ip_address_type value.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
@@ -2890,6 +2898,10 @@ public partial class V1beta1ServerStatusAtProvider
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
+    /// <summary>Type of IP addresses for the AWS Transfer Family endpoint. Valid values are IPV4 and DUALSTACK. The default value is IPV4. When ip_address_type is set to DUALSTACK, address_allocation_ids cannot be specified in the endpoint_details block. Updating ip_address_type stops the server and then restarts it with the new ip_address_type value.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
@@ -3001,6 +3013,15 @@ public partial class V1beta1ServerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ServerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

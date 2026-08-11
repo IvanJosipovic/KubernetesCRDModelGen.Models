@@ -202,6 +202,16 @@ public partial class V1beta1AddonSpecForProviderClusterNameSelector
     public V1beta1AddonSpecForProviderClusterNameSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AddonSpecForProviderNamespaceConfig
+{
+    /// <summary>Name of the Kubernetes namespace to install the add-on in. Once you install an add-on in a specific namespace, you must remove and re-create the add-on to change its namespace. For more details see the Custom namespace for add-ons.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AddonSpecForProviderPodIdentityAssociation
@@ -392,9 +402,13 @@ public partial class V1beta1AddonSpecForProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1AddonSpecForProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
+    /// <summary>Custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
     [JsonPropertyName("configurationValues")]
     public string? ConfigurationValues { get; set; }
+
+    /// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+    [JsonPropertyName("namespaceConfig")]
+    public V1beta1AddonSpecForProviderNamespaceConfig? NamespaceConfig { get; set; }
 
     /// <summary>Configuration block with EKS Pod Identity association settings. See pod_identity_association below for details.</summary>
     [JsonPropertyName("podIdentityAssociation")]
@@ -588,6 +602,16 @@ public partial class V1beta1AddonSpecInitProviderClusterNameSelector
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1AddonSpecInitProviderClusterNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AddonSpecInitProviderNamespaceConfig
+{
+    /// <summary>Name of the Kubernetes namespace to install the add-on in. Once you install an add-on in a specific namespace, you must remove and re-create the add-on to change its namespace. For more details see the Custom namespace for add-ons.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -792,9 +816,13 @@ public partial class V1beta1AddonSpecInitProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1AddonSpecInitProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
+    /// <summary>Custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
     [JsonPropertyName("configurationValues")]
     public string? ConfigurationValues { get; set; }
+
+    /// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+    [JsonPropertyName("namespaceConfig")]
+    public V1beta1AddonSpecInitProviderNamespaceConfig? NamespaceConfig { get; set; }
 
     /// <summary>Configuration block with EKS Pod Identity association settings. See pod_identity_association below for details.</summary>
     [JsonPropertyName("podIdentityAssociation")]
@@ -1019,6 +1047,16 @@ public partial class V1beta1AddonSpec
     public V1beta1AddonSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AddonStatusAtProviderNamespaceConfig
+{
+    /// <summary>Name of the Kubernetes namespace to install the add-on in. Once you install an add-on in a specific namespace, you must remove and re-create the add-on to change its namespace. For more details see the Custom namespace for add-ons.</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AddonStatusAtProviderPodIdentityAssociation
@@ -1058,7 +1096,7 @@ public partial class V1beta1AddonStatusAtProvider
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
-    /// <summary>custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
+    /// <summary>Custom configuration values for addons with single JSON string. This JSON string value must match the JSON schema derived from describe-addon-configuration.</summary>
     [JsonPropertyName("configurationValues")]
     public string? ConfigurationValues { get; set; }
 
@@ -1073,6 +1111,10 @@ public partial class V1beta1AddonStatusAtProvider
     /// <summary>Date and time in RFC3339 format that the EKS add-on was updated.</summary>
     [JsonPropertyName("modifiedAt")]
     public string? ModifiedAt { get; set; }
+
+    /// <summary>Namespace configuration for the add-on. See namespace_config below for details.</summary>
+    [JsonPropertyName("namespaceConfig")]
+    public V1beta1AddonStatusAtProviderNamespaceConfig? NamespaceConfig { get; set; }
 
     /// <summary>Configuration block with EKS Pod Identity association settings. See pod_identity_association below for details.</summary>
     [JsonPropertyName("podIdentityAssociation")]
@@ -1171,6 +1213,15 @@ public partial class V1beta1AddonStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1AddonStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

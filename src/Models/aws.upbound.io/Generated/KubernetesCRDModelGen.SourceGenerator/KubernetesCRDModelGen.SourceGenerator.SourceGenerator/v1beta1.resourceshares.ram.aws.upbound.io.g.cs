@@ -55,6 +55,16 @@ public enum V1beta1ResourceShareSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceShareSpecForProviderResourceShareConfiguration
+{
+    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
+    public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareSpecForProvider
@@ -78,9 +88,23 @@ public partial class V1beta1ResourceShareSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
+    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    [JsonPropertyName("resourceShareConfiguration")]
+    public V1beta1ResourceShareSpecForProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceShareSpecInitProviderResourceShareConfiguration
+{
+    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
+    public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
 }
 
 /// <summary>
@@ -110,6 +134,10 @@ public partial class V1beta1ResourceShareSpecInitProvider
     /// <summary>Specifies the Amazon Resource Names (ARNs) of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
     [JsonPropertyName("permissionArns")]
     public IList<string>? PermissionArns { get; set; }
+
+    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    [JsonPropertyName("resourceShareConfiguration")]
+    public V1beta1ResourceShareSpecInitProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -299,6 +327,16 @@ public partial class V1beta1ResourceShareSpec
     public V1beta1ResourceShareSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ResourceShareStatusAtProviderResourceShareConfiguration
+{
+    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
+    public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareStatusAtProvider
@@ -329,6 +367,10 @@ public partial class V1beta1ResourceShareStatusAtProvider
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    [JsonPropertyName("resourceShareConfiguration")]
+    public V1beta1ResourceShareStatusAtProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -393,6 +435,15 @@ public partial class V1beta1ResourceShareStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResourceShareStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

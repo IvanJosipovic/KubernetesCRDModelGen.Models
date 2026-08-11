@@ -792,6 +792,10 @@ public partial class V1beta1DirectorySpecForProvider
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
+    /// <summary>Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.</summary>
+    [JsonPropertyName("enableDirectoryDataAccess")]
+    public bool? EnableDirectoryDataAccess { get; set; }
+
     /// <summary>Whether to enable single-sign on for the directory. Requires alias. Defaults to false.</summary>
     [JsonPropertyName("enableSso")]
     public bool? EnableSso { get; set; }
@@ -1576,6 +1580,10 @@ public partial class V1beta1DirectorySpecInitProvider
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
+    /// <summary>Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.</summary>
+    [JsonPropertyName("enableDirectoryDataAccess")]
+    public bool? EnableDirectoryDataAccess { get; set; }
+
     /// <summary>Whether to enable single-sign on for the directory. Requires alias. Defaults to false.</summary>
     [JsonPropertyName("enableSso")]
     public bool? EnableSso { get; set; }
@@ -1878,6 +1886,10 @@ public partial class V1beta1DirectoryStatusAtProvider
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
+    /// <summary>Enables access to directory data via the Directory Service Data API for the specified directory. For more information, see Directory Service Data API Reference.</summary>
+    [JsonPropertyName("enableDirectoryDataAccess")]
+    public bool? EnableDirectoryDataAccess { get; set; }
+
     /// <summary>Whether to enable single-sign on for the directory. Requires alias. Defaults to false.</summary>
     [JsonPropertyName("enableSso")]
     public bool? EnableSso { get; set; }
@@ -1982,6 +1994,15 @@ public partial class V1beta1DirectoryStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DirectoryStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

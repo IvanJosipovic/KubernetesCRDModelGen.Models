@@ -908,6 +908,10 @@ public partial class V1beta1EventSourceMappingSpecForProvider
     /// <summary>Duration in seconds of a processing window for AWS Lambda streaming analytics. The range is between 1 second up to 900 seconds. Only available for stream sources (DynamoDB and Kinesis).</summary>
     [JsonPropertyName("tumblingWindowInSeconds")]
     public double? TumblingWindowInSeconds { get; set; }
+
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1763,6 +1767,10 @@ public partial class V1beta1EventSourceMappingSpecInitProvider
     /// <summary>Duration in seconds of a processing window for AWS Lambda streaming analytics. The range is between 1 second up to 900 seconds. Only available for stream sources (DynamoDB and Kinesis).</summary>
     [JsonPropertyName("tumblingWindowInSeconds")]
     public double? TumblingWindowInSeconds { get; set; }
+
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
 }
 
 /// <summary>
@@ -2346,6 +2354,10 @@ public partial class V1beta1EventSourceMappingStatusAtProvider
     [JsonPropertyName("tumblingWindowInSeconds")]
     public double? TumblingWindowInSeconds { get; set; }
 
+    /// <summary>Whether to apply resource level timeout values while retrying eventually consistent API operations. By default the provider uses a 5 minute timeout to allow for propagation in the Lambda service. When set to true, this default value is replaced with the configurable resource timeouts. Increased timeout values may be useful in highly active accounts, or regions where propagation delays are inconsistent.</summary>
+    [JsonPropertyName("useResourceTimeoutForPropagation")]
+    public bool? UseResourceTimeoutForPropagation { get; set; }
+
     /// <summary>UUID of the created event source mapping.</summary>
     [JsonPropertyName("uuid")]
     public string? Uuid { get; set; }
@@ -2407,6 +2419,15 @@ public partial class V1beta1EventSourceMappingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1EventSourceMappingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

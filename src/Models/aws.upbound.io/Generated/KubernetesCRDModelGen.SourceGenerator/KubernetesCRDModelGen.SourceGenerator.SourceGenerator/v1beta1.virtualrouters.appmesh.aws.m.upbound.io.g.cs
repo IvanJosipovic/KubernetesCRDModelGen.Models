@@ -191,7 +191,7 @@ public partial class V1beta1VirtualRouterSpecForProviderMeshNameSelector
     public V1beta1VirtualRouterSpecForProviderMeshNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecForProviderSpecListenerPortMapping
@@ -209,17 +209,17 @@ public partial class V1beta1VirtualRouterSpecForProviderSpecListenerPortMapping
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecForProviderSpecListener
 {
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta1VirtualRouterSpecForProviderSpecListenerPortMapping? PortMapping { get; set; }
 }
 
-/// <summary>Virtual router specification to apply.</summary>
+/// <summary>Virtual router specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecForProviderSpec
 {
-    /// <summary>configuration block to the spec argument.</summary>
+    /// <summary>Listeners that the virtual router is expected to receive inbound traffic from. Currently only one listener is supported per virtual router. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta1VirtualRouterSpecForProviderSpecListener>? Listener { get; set; }
 }
@@ -255,7 +255,7 @@ public partial class V1beta1VirtualRouterSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Virtual router specification to apply.</summary>
+    /// <summary>Virtual router specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1VirtualRouterSpecForProviderSpec? Spec { get; set; }
 
@@ -419,7 +419,7 @@ public partial class V1beta1VirtualRouterSpecInitProviderMeshNameSelector
     public V1beta1VirtualRouterSpecInitProviderMeshNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecInitProviderSpecListenerPortMapping
@@ -437,17 +437,17 @@ public partial class V1beta1VirtualRouterSpecInitProviderSpecListenerPortMapping
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecInitProviderSpecListener
 {
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta1VirtualRouterSpecInitProviderSpecListenerPortMapping? PortMapping { get; set; }
 }
 
-/// <summary>Virtual router specification to apply.</summary>
+/// <summary>Virtual router specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterSpecInitProviderSpec
 {
-    /// <summary>configuration block to the spec argument.</summary>
+    /// <summary>Listeners that the virtual router is expected to receive inbound traffic from. Currently only one listener is supported per virtual router. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta1VirtualRouterSpecInitProviderSpecListener>? Listener { get; set; }
 }
@@ -488,7 +488,7 @@ public partial class V1beta1VirtualRouterSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Virtual router specification to apply.</summary>
+    /// <summary>Virtual router specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1VirtualRouterSpecInitProviderSpec? Spec { get; set; }
 
@@ -604,7 +604,7 @@ public partial class V1beta1VirtualRouterSpec
     public V1beta1VirtualRouterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Port mapping information for the listener.</summary>
+/// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterStatusAtProviderSpecListenerPortMapping
@@ -622,17 +622,17 @@ public partial class V1beta1VirtualRouterStatusAtProviderSpecListenerPortMapping
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterStatusAtProviderSpecListener
 {
-    /// <summary>Port mapping information for the listener.</summary>
+    /// <summary>Port mapping information for the listener. See port_mapping Block for details.</summary>
     [JsonPropertyName("portMapping")]
     public V1beta1VirtualRouterStatusAtProviderSpecListenerPortMapping? PortMapping { get; set; }
 }
 
-/// <summary>Virtual router specification to apply.</summary>
+/// <summary>Virtual router specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualRouterStatusAtProviderSpec
 {
-    /// <summary>configuration block to the spec argument.</summary>
+    /// <summary>Listeners that the virtual router is expected to receive inbound traffic from. Currently only one listener is supported per virtual router. See listener Block for details.</summary>
     [JsonPropertyName("listener")]
     public IList<V1beta1VirtualRouterStatusAtProviderSpecListener>? Listener { get; set; }
 }
@@ -680,7 +680,7 @@ public partial class V1beta1VirtualRouterStatusAtProvider
     [JsonPropertyName("resourceOwner")]
     public string? ResourceOwner { get; set; }
 
-    /// <summary>Virtual router specification to apply.</summary>
+    /// <summary>Virtual router specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta1VirtualRouterStatusAtProviderSpec? Spec { get; set; }
 
@@ -747,6 +747,15 @@ public partial class V1beta1VirtualRouterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VirtualRouterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

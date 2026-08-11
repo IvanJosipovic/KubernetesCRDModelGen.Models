@@ -199,7 +199,7 @@ public partial class V1beta1MlflowTrackingServerSpecForProvider
     [JsonPropertyName("artifactStoreUri")]
     public string? ArtifactStoreUri { get; set; }
 
-    /// <summary>A list of Member Definitions that contains objects that identify the workers that make up the work team.</summary>
+    /// <summary>Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model Registry. Defaults to false.</summary>
     [JsonPropertyName("automaticModelRegistration")]
     public bool? AutomaticModelRegistration { get; set; }
 
@@ -414,7 +414,7 @@ public partial class V1beta1MlflowTrackingServerSpecInitProvider
     [JsonPropertyName("artifactStoreUri")]
     public string? ArtifactStoreUri { get; set; }
 
-    /// <summary>A list of Member Definitions that contains objects that identify the workers that make up the work team.</summary>
+    /// <summary>Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model Registry. Defaults to false.</summary>
     [JsonPropertyName("automaticModelRegistration")]
     public bool? AutomaticModelRegistration { get; set; }
 
@@ -566,7 +566,7 @@ public partial class V1beta1MlflowTrackingServerStatusAtProvider
     [JsonPropertyName("artifactStoreUri")]
     public string? ArtifactStoreUri { get; set; }
 
-    /// <summary>A list of Member Definitions that contains objects that identify the workers that make up the work team.</summary>
+    /// <summary>Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model Registry. Defaults to false.</summary>
     [JsonPropertyName("automaticModelRegistration")]
     public bool? AutomaticModelRegistration { get; set; }
 
@@ -664,6 +664,15 @@ public partial class V1beta1MlflowTrackingServerStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MlflowTrackingServerStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

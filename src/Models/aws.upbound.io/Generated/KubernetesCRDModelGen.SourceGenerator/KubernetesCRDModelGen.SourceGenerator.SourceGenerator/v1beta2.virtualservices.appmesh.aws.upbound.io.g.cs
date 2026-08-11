@@ -349,7 +349,7 @@ public partial class V1beta2VirtualServiceSpecForProviderSpecProviderVirtualNode
     public V1beta2VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual node associated with a virtual service.</summary>
+/// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecForProviderSpecProviderVirtualNode
@@ -514,7 +514,7 @@ public partial class V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRout
     public V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual router associated with a virtual service.</summary>
+/// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRouter
@@ -532,26 +532,26 @@ public partial class V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRout
     public V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelector? VirtualRouterNameSelector { get; set; }
 }
 
-/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecForProviderSpecProvider
 {
-    /// <summary>Virtual node associated with a virtual service.</summary>
+    /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
     [JsonPropertyName("virtualNode")]
     public V1beta2VirtualServiceSpecForProviderSpecProviderVirtualNode? VirtualNode { get; set; }
 
-    /// <summary>Virtual router associated with a virtual service.</summary>
+    /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
     [JsonPropertyName("virtualRouter")]
     public V1beta2VirtualServiceSpecForProviderSpecProviderVirtualRouter? VirtualRouter { get; set; }
 }
 
-/// <summary>Virtual service specification to apply.</summary>
+/// <summary>Virtual service specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecForProviderSpec
 {
-    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
     [JsonPropertyName("provider")]
     public V1beta2VirtualServiceSpecForProviderSpecProvider? Provider { get; set; }
 }
@@ -587,7 +587,7 @@ public partial class V1beta2VirtualServiceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Virtual service specification to apply.</summary>
+    /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta2VirtualServiceSpecForProviderSpec? Spec { get; set; }
 
@@ -890,7 +890,7 @@ public partial class V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualNod
     public V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual node associated with a virtual service.</summary>
+/// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualNode
@@ -1055,7 +1055,7 @@ public partial class V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRou
     public V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Virtual router associated with a virtual service.</summary>
+/// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRouter
@@ -1073,26 +1073,26 @@ public partial class V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRou
     public V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelector? VirtualRouterNameSelector { get; set; }
 }
 
-/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecInitProviderSpecProvider
 {
-    /// <summary>Virtual node associated with a virtual service.</summary>
+    /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
     [JsonPropertyName("virtualNode")]
     public V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualNode? VirtualNode { get; set; }
 
-    /// <summary>Virtual router associated with a virtual service.</summary>
+    /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
     [JsonPropertyName("virtualRouter")]
     public V1beta2VirtualServiceSpecInitProviderSpecProviderVirtualRouter? VirtualRouter { get; set; }
 }
 
-/// <summary>Virtual service specification to apply.</summary>
+/// <summary>Virtual service specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceSpecInitProviderSpec
 {
-    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
     [JsonPropertyName("provider")]
     public V1beta2VirtualServiceSpecInitProviderSpecProvider? Provider { get; set; }
 }
@@ -1133,7 +1133,7 @@ public partial class V1beta2VirtualServiceSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Virtual service specification to apply.</summary>
+    /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta2VirtualServiceSpecInitProviderSpec? Spec { get; set; }
 
@@ -1325,7 +1325,7 @@ public partial class V1beta2VirtualServiceSpec
     public V1beta2VirtualServiceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Virtual node associated with a virtual service.</summary>
+/// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualNode
@@ -1335,7 +1335,7 @@ public partial class V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualNod
     public string? VirtualNodeName { get; set; }
 }
 
-/// <summary>Virtual router associated with a virtual service.</summary>
+/// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualRouter
@@ -1345,26 +1345,26 @@ public partial class V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualRou
     public string? VirtualRouterName { get; set; }
 }
 
-/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+/// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceStatusAtProviderSpecProvider
 {
-    /// <summary>Virtual node associated with a virtual service.</summary>
+    /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
     [JsonPropertyName("virtualNode")]
     public V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualNode? VirtualNode { get; set; }
 
-    /// <summary>Virtual router associated with a virtual service.</summary>
+    /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
     [JsonPropertyName("virtualRouter")]
     public V1beta2VirtualServiceStatusAtProviderSpecProviderVirtualRouter? VirtualRouter { get; set; }
 }
 
-/// <summary>Virtual service specification to apply.</summary>
+/// <summary>Virtual service specification to apply. See spec Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualServiceStatusAtProviderSpec
 {
-    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router.</summary>
+    /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
     [JsonPropertyName("provider")]
     public V1beta2VirtualServiceStatusAtProviderSpecProvider? Provider { get; set; }
 }
@@ -1412,7 +1412,7 @@ public partial class V1beta2VirtualServiceStatusAtProvider
     [JsonPropertyName("resourceOwner")]
     public string? ResourceOwner { get; set; }
 
-    /// <summary>Virtual service specification to apply.</summary>
+    /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
     [JsonPropertyName("spec")]
     public V1beta2VirtualServiceStatusAtProviderSpec? Spec { get; set; }
 
@@ -1479,6 +1479,15 @@ public partial class V1beta2VirtualServiceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2VirtualServiceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

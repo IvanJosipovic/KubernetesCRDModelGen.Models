@@ -505,7 +505,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The alias for the Multi-Region Access Point.</summary>
+    /// <summary>Alias for the Multi-Region Access Point.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
@@ -517,13 +517,17 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProvider
     [JsonPropertyName("details")]
     public V1beta1MultiRegionAccessPointStatusAtProviderDetails? Details { get; set; }
 
-    /// <summary>The DNS domain name of the S3 Multi-Region Access Point in the format alias.accesspoint.s3-global.amazonaws.com. For more information, see the documentation on Multi-Region Access Point Requests.</summary>
+    /// <summary>DNS domain name of the S3 Multi-Region Access Point in the format alias.accesspoint.s3-global.amazonaws.com. For more information, see the documentation on Multi-Region Access Point Requests.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The AWS account ID and access point name separated by a colon (:).</summary>
+    /// <summary>AWS account ID and access point name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Name of the Multi-Region Access Point.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -532,7 +536,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The current status of the Multi-Region Access Point. One of: READY, INCONSISTENT_ACROSS_REGIONS, CREATING, PARTIALLY_CREATED, PARTIALLY_DELETED, DELETING.</summary>
+    /// <summary>Region Access Point. One of: READY, INCONSISTENT_ACROSS_REGIONS, CREATING, PARTIALLY_CREATED, PARTIALLY_DELETED, DELETING.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -591,6 +595,15 @@ public partial class V1beta1MultiRegionAccessPointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MultiRegionAccessPointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

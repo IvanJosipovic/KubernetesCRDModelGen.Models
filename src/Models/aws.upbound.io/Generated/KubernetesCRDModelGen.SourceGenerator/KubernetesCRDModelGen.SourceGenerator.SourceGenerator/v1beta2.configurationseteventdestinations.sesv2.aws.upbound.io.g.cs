@@ -710,7 +710,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecForProviderEvent
     public V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestinationPinpointDestinationApplicationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+/// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestinationPinpointDestination
@@ -892,7 +892,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecForProviderEvent
     public V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestinationSnsDestinationTopicArnSelector? TopicArnSelector { get; set; }
 }
 
-/// <summary>A name that identifies the event destination within the configuration set.</summary>
+/// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestination
@@ -917,7 +917,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecForProviderEvent
     [JsonPropertyName("matchingEventTypes")]
     public IList<string>? MatchingEventTypes { get; set; }
 
-    /// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+    /// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
     [JsonPropertyName("pinpointDestination")]
     public V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestinationPinpointDestination? PinpointDestination { get; set; }
 
@@ -942,11 +942,11 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecForProvider
     [JsonPropertyName("configurationSetNameSelector")]
     public V1beta2ConfigurationSetEventDestinationSpecForProviderConfigurationSetNameSelector? ConfigurationSetNameSelector { get; set; }
 
-    /// <summary>A name that identifies the event destination within the configuration set.</summary>
+    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
     [JsonPropertyName("eventDestination")]
     public V1beta2ConfigurationSetEventDestinationSpecForProviderEventDestination? EventDestination { get; set; }
 
-    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
+    /// <summary>A name that identifies the event destination within the configuration set.</summary>
     [JsonPropertyName("eventDestinationName")]
     public string? EventDestinationName { get; set; }
 
@@ -1613,7 +1613,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecInitProviderEven
     public V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestinationPinpointDestinationApplicationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+/// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestinationPinpointDestination
@@ -1795,7 +1795,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecInitProviderEven
     public V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestinationSnsDestinationTopicArnSelector? TopicArnSelector { get; set; }
 }
 
-/// <summary>A name that identifies the event destination within the configuration set.</summary>
+/// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestination
@@ -1820,7 +1820,7 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecInitProviderEven
     [JsonPropertyName("matchingEventTypes")]
     public IList<string>? MatchingEventTypes { get; set; }
 
-    /// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+    /// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
     [JsonPropertyName("pinpointDestination")]
     public V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestinationPinpointDestination? PinpointDestination { get; set; }
 
@@ -1857,11 +1857,11 @@ public partial class V1beta2ConfigurationSetEventDestinationSpecInitProvider
     [JsonPropertyName("configurationSetNameSelector")]
     public V1beta2ConfigurationSetEventDestinationSpecInitProviderConfigurationSetNameSelector? ConfigurationSetNameSelector { get; set; }
 
-    /// <summary>A name that identifies the event destination within the configuration set.</summary>
+    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
     [JsonPropertyName("eventDestination")]
     public V1beta2ConfigurationSetEventDestinationSpecInitProviderEventDestination? EventDestination { get; set; }
 
-    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
+    /// <summary>A name that identifies the event destination within the configuration set.</summary>
     [JsonPropertyName("eventDestinationName")]
     public string? EventDestinationName { get; set; }
 }
@@ -2100,7 +2100,7 @@ public partial class V1beta2ConfigurationSetEventDestinationStatusAtProviderEven
     public string? IamRoleArn { get; set; }
 }
 
-/// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+/// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationStatusAtProviderEventDestinationPinpointDestination
@@ -2119,7 +2119,7 @@ public partial class V1beta2ConfigurationSetEventDestinationStatusAtProviderEven
     public string? TopicArn { get; set; }
 }
 
-/// <summary>A name that identifies the event destination within the configuration set.</summary>
+/// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetEventDestinationStatusAtProviderEventDestination
@@ -2144,7 +2144,7 @@ public partial class V1beta2ConfigurationSetEventDestinationStatusAtProviderEven
     [JsonPropertyName("matchingEventTypes")]
     public IList<string>? MatchingEventTypes { get; set; }
 
-    /// <summary>An object that defines an Amazon Pinpoint project destination for email events. See pinpoint_destination Block for details.</summary>
+    /// <summary>An object that defines an AWS End User Messaging project destination for email events. See pinpoint_destination Block for details.</summary>
     [JsonPropertyName("pinpointDestination")]
     public V1beta2ConfigurationSetEventDestinationStatusAtProviderEventDestinationPinpointDestination? PinpointDestination { get; set; }
 
@@ -2161,11 +2161,11 @@ public partial class V1beta2ConfigurationSetEventDestinationStatusAtProvider
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
-    /// <summary>A name that identifies the event destination within the configuration set.</summary>
+    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
     [JsonPropertyName("eventDestination")]
     public V1beta2ConfigurationSetEventDestinationStatusAtProviderEventDestination? EventDestination { get; set; }
 
-    /// <summary>An object that defines the event destination. See event_destination Block for details.</summary>
+    /// <summary>A name that identifies the event destination within the configuration set.</summary>
     [JsonPropertyName("eventDestinationName")]
     public string? EventDestinationName { get; set; }
 
@@ -2235,6 +2235,15 @@ public partial class V1beta2ConfigurationSetEventDestinationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ConfigurationSetEventDestinationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

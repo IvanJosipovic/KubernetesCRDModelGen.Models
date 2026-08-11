@@ -280,6 +280,9 @@ public partial class V1beta1StandardsSubscriptionSpec
 public partial class V1beta1StandardsSubscriptionStatusAtProvider
 {
     /// <summary>The ARN of a resource that represents your subscription to a supported standard.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -349,6 +352,15 @@ public partial class V1beta1StandardsSubscriptionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1StandardsSubscriptionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

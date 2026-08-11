@@ -360,6 +360,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  restoreBackupArn:
+                    description: ARN of backup to restore.
+                    type: string
                   restoreDateTime:
                     description: Time of the point-in-time recovery point to restore.
                     type: string
@@ -823,6 +826,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  restoreBackupArn:
+                    description: ARN of backup to restore.
+                    type: string
                   restoreDateTime:
                     description: Time of the point-in-time recovery point to restore.
                     type: string
@@ -1270,11 +1276,23 @@ spec:
                         streamArn:
                           description: ARN of the Table Stream. Only available when stream_enabled = true
                           type: string
+                        streamEnabled:
+                          description: Whether Streams are enabled.
+                          type: boolean
                         streamLabel:
                           description: Timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not a unique identifier for the stream on its own. However, the combination of AWS customer ID, table name and this field is guaranteed to be unique. It can be used for creating CloudWatch Alarms. Only available when stream_enabled = true.
                           type: string
+                        streamViewType:
+                          description: |-
+                            When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                            Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                            Only valid when stream_enabled is true.
+                          type: string
                       type: object
                     type: array
+                  restoreBackupArn:
+                    description: ARN of backup to restore.
+                    type: string
                   restoreDateTime:
                     description: Time of the point-in-time recovery point to restore.
                     type: string
@@ -1402,6 +1420,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

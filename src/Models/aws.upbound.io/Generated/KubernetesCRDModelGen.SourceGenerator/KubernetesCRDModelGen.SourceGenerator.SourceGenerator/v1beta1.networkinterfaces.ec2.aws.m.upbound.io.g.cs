@@ -36,6 +36,30 @@ public partial class V1beta1NetworkInterfaceList : IKubernetesObject<V1ListMeta>
     public required IList<V1beta1NetworkInterface> Items { get; set; }
 }
 
+/// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecForProviderEnaSrdSpecificationEnaSrdUdpSpecification
+{
+    /// <summary>Indicates whether UDP traffic uses ENA Express. Requires ena_srd_enabled to be true.</summary>
+    [JsonPropertyName("enaSrdUdpEnabled")]
+    public bool? EnaSrdUdpEnabled { get; set; }
+}
+
+/// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecForProviderEnaSrdSpecification
+{
+    /// <summary>Indicates whether ENA Express is enabled for the network interface.</summary>
+    [JsonPropertyName("enaSrdEnabled")]
+    public bool? EnaSrdEnabled { get; set; }
+
+    /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdUdpSpecification")]
+    public V1beta1NetworkInterfaceSpecForProviderEnaSrdSpecificationEnaSrdUdpSpecification? EnaSrdUdpSpecification { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -354,6 +378,10 @@ public partial class V1beta1NetworkInterfaceSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdSpecification")]
+    public V1beta1NetworkInterfaceSpecForProviderEnaSrdSpecification? EnaSrdSpecification { get; set; }
+
     /// <summary>Enables assigning a primary IPv6 Global Unicast Address (GUA) to the network interface (ENI) in dual-stack or IPv6-only subnets. This ensures the instance attached to the ENI retains a consistent IPv6 address. Once enabled, the first IPv6 GUA becomes the primary IPv6 address and cannot be disabled. The primary IPv6 address remains assigned until the instance is terminated or the ENI is detached. Enabling and subsequent disabling forces recreation of the ENI.</summary>
     [JsonPropertyName("enablePrimaryIpv6")]
     public bool? EnablePrimaryIpv6 { get; set; }
@@ -451,6 +479,30 @@ public partial class V1beta1NetworkInterfaceSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecInitProviderEnaSrdSpecificationEnaSrdUdpSpecification
+{
+    /// <summary>Indicates whether UDP traffic uses ENA Express. Requires ena_srd_enabled to be true.</summary>
+    [JsonPropertyName("enaSrdUdpEnabled")]
+    public bool? EnaSrdUdpEnabled { get; set; }
+}
+
+/// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceSpecInitProviderEnaSrdSpecification
+{
+    /// <summary>Indicates whether ENA Express is enabled for the network interface.</summary>
+    [JsonPropertyName("enaSrdEnabled")]
+    public bool? EnaSrdEnabled { get; set; }
+
+    /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdUdpSpecification")]
+    public V1beta1NetworkInterfaceSpecInitProviderEnaSrdSpecificationEnaSrdUdpSpecification? EnaSrdUdpSpecification { get; set; }
 }
 
 /// <summary>
@@ -783,6 +835,10 @@ public partial class V1beta1NetworkInterfaceSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdSpecification")]
+    public V1beta1NetworkInterfaceSpecInitProviderEnaSrdSpecification? EnaSrdSpecification { get; set; }
+
     /// <summary>Enables assigning a primary IPv6 Global Unicast Address (GUA) to the network interface (ENI) in dual-stack or IPv6-only subnets. This ensures the instance attached to the ENI retains a consistent IPv6 address. Once enabled, the first IPv6 GUA becomes the primary IPv6 address and cannot be disabled. The primary IPv6 address remains assigned until the instance is terminated or the ENI is detached. Enabling and subsequent disabling forces recreation of the ENI.</summary>
     [JsonPropertyName("enablePrimaryIpv6")]
     public bool? EnablePrimaryIpv6 { get; set; }
@@ -1003,6 +1059,30 @@ public partial class V1beta1NetworkInterfaceStatusAtProviderAttachment
     public double? NetworkCardIndex { get; set; }
 }
 
+/// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceStatusAtProviderEnaSrdSpecificationEnaSrdUdpSpecification
+{
+    /// <summary>Indicates whether UDP traffic uses ENA Express. Requires ena_srd_enabled to be true.</summary>
+    [JsonPropertyName("enaSrdUdpEnabled")]
+    public bool? EnaSrdUdpEnabled { get; set; }
+}
+
+/// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NetworkInterfaceStatusAtProviderEnaSrdSpecification
+{
+    /// <summary>Indicates whether ENA Express is enabled for the network interface.</summary>
+    [JsonPropertyName("enaSrdEnabled")]
+    public bool? EnaSrdEnabled { get; set; }
+
+    /// <summary>Configures ENA Express for UDP network traffic. See ENA SRD UDP Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdUdpSpecification")]
+    public V1beta1NetworkInterfaceStatusAtProviderEnaSrdSpecificationEnaSrdUdpSpecification? EnaSrdUdpSpecification { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceStatusAtProvider
@@ -1018,6 +1098,10 @@ public partial class V1beta1NetworkInterfaceStatusAtProvider
     /// <summary>Description for the network interface.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Configures ENA Express for the network interface. The ENI must be attached to an instance to configure ENA Express. See ENA SRD Specification below for more details.</summary>
+    [JsonPropertyName("enaSrdSpecification")]
+    public V1beta1NetworkInterfaceStatusAtProviderEnaSrdSpecification? EnaSrdSpecification { get; set; }
 
     /// <summary>Enables assigning a primary IPv6 Global Unicast Address (GUA) to the network interface (ENI) in dual-stack or IPv6-only subnets. This ensures the instance attached to the ENI retains a consistent IPv6 address. Once enabled, the first IPv6 GUA becomes the primary IPv6 address and cannot be disabled. The primary IPv6 address remains assigned until the instance is terminated or the ENI is detached. Enabling and subsequent disabling forces recreation of the ENI.</summary>
     [JsonPropertyName("enablePrimaryIpv6")]
@@ -1180,6 +1264,15 @@ public partial class V1beta1NetworkInterfaceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1NetworkInterfaceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

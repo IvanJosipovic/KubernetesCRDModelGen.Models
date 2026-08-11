@@ -556,6 +556,10 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicy
 {
+    /// <summary>Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.</summary>
+    [JsonPropertyName("enableTlsSessionHolding")]
+    public bool? EnableTlsSessionHolding { get; set; }
+
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
@@ -1124,6 +1128,10 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicy
 {
+    /// <summary>Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.</summary>
+    [JsonPropertyName("enableTlsSessionHolding")]
+    public bool? EnableTlsSessionHolding { get; set; }
+
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
@@ -1561,6 +1569,10 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicy
 {
+    /// <summary>Boolean indicating whether to prevent TCP and TLS packets from reaching destination servers until TLS Inspection has evaluated Server Name Indication (SNI) rules. If true, tls_inspection_configuration_arn is required. Default value: false.</summary>
+    [JsonPropertyName("enableTlsSessionHolding")]
+    public bool? EnableTlsSessionHolding { get; set; }
+
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
     [JsonPropertyName("policyVariables")]
     public IList<V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVariables>? PolicyVariables { get; set; }
@@ -1705,6 +1717,15 @@ public partial class V1beta1FirewallPolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1FirewallPolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

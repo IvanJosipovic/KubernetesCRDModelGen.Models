@@ -229,6 +229,10 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -429,6 +433,10 @@ public partial class V1beta1VPCIpamPoolCidrAllocationSpecInitProvider
     /// <summary>The netmask length of the CIDR you would like to allocate to the IPAM pool. Valid Values: 0-128.</summary>
     [JsonPropertyName("netmaskLength")]
     public double? NetmaskLength { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>
@@ -588,6 +596,14 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatusAtProvider
     /// <summary>The type of the resource.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
+
+    /// <summary>Key-value map of resource tags.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    [JsonPropertyName("tagsAll")]
+    public IDictionary<string, string>? TagsAll { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -644,6 +660,15 @@ public partial class V1beta1VPCIpamPoolCidrAllocationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VPCIpamPoolCidrAllocationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

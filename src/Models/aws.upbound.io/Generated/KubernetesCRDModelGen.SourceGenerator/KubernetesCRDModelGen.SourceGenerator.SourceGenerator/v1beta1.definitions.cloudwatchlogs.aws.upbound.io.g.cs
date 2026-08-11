@@ -295,6 +295,10 @@ public partial class V1beta1DefinitionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefinitionStatusAtProvider
 {
+    /// <summary>The query definition ARN.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -376,6 +380,15 @@ public partial class V1beta1DefinitionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DefinitionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

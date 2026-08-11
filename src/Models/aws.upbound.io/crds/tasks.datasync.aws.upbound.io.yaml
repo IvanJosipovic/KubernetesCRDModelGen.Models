@@ -317,6 +317,9 @@ spec:
                         scheduleExpression:
                           description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                           type: string
+                        status:
+                          description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                          type: string
                       type: object
                     type: array
                   sourceLocationArn:
@@ -705,6 +708,9 @@ spec:
                         scheduleExpression:
                           description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                           type: string
+                        status:
+                          description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                          type: string
                       type: object
                     type: array
                   sourceLocationArn:
@@ -1034,6 +1040,9 @@ spec:
                         scheduleExpression:
                           description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                           type: string
+                        status:
+                          description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                          type: string
                       type: object
                     type: array
                   sourceLocationArn:
@@ -1147,6 +1156,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1451,6 +1467,9 @@ spec:
                       scheduleExpression:
                         description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                         type: string
+                      status:
+                        description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                        type: string
                     type: object
                   sourceLocationArn:
                     description: Amazon Resource Name (ARN) of source DataSync Location.
@@ -1825,6 +1844,9 @@ spec:
                       scheduleExpression:
                         description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                         type: string
+                      status:
+                        description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                        type: string
                     type: object
                   sourceLocationArn:
                     description: Amazon Resource Name (ARN) of source DataSync Location.
@@ -2140,6 +2162,9 @@ spec:
                       scheduleExpression:
                         description: Specifies the schedule you want your task to use for repeated executions. For more information, see Schedule Expressions for Rules.
                         type: string
+                      status:
+                        description: 'Whether to enable or disable your task schedule. Valid values: ENABLED, DISABLED. Default: ENABLED.'
+                        type: string
                     type: object
                   sourceLocationArn:
                     description: Amazon Resource Name (ARN) of source DataSync Location.
@@ -2246,6 +2271,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

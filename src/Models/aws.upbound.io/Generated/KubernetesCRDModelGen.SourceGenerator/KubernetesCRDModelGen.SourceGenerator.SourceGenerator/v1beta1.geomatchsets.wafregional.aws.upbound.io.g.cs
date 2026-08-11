@@ -59,15 +59,11 @@ public enum V1beta1GeoMatchSetSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetSpecForProviderGeoMatchConstraint
 {
-    /// <summary>The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
+    /// <summary>Type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// The country that you want AWS WAF to search for.
-    /// This is the two-letter country code, e.g., US, CA, RU, CN, etc.
-    /// See docs for all supported values.
-    /// </summary>
+    /// <summary>Two-letter country code that you want AWS WAF to search for, e.g., US, CA, RU, CN. See docs for all supported values.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -76,11 +72,11 @@ public partial class V1beta1GeoMatchSetSpecForProviderGeoMatchConstraint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetSpecForProvider
 {
-    /// <summary>The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
+    /// <summary>Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
     [JsonPropertyName("geoMatchConstraint")]
     public IList<V1beta1GeoMatchSetSpecForProviderGeoMatchConstraint>? GeoMatchConstraint { get; set; }
 
-    /// <summary>The name or description of the Geo Match Set.</summary>
+    /// <summary>Name or description of the Geo Match Set.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -96,15 +92,11 @@ public partial class V1beta1GeoMatchSetSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetSpecInitProviderGeoMatchConstraint
 {
-    /// <summary>The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
+    /// <summary>Type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// The country that you want AWS WAF to search for.
-    /// This is the two-letter country code, e.g., US, CA, RU, CN, etc.
-    /// See docs for all supported values.
-    /// </summary>
+    /// <summary>Two-letter country code that you want AWS WAF to search for, e.g., US, CA, RU, CN. See docs for all supported values.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -125,11 +117,11 @@ public partial class V1beta1GeoMatchSetSpecInitProviderGeoMatchConstraint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetSpecInitProvider
 {
-    /// <summary>The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
+    /// <summary>Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
     [JsonPropertyName("geoMatchConstraint")]
     public IList<V1beta1GeoMatchSetSpecInitProviderGeoMatchConstraint>? GeoMatchConstraint { get; set; }
 
-    /// <summary>The name or description of the Geo Match Set.</summary>
+    /// <summary>Name or description of the Geo Match Set.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -321,15 +313,11 @@ public partial class V1beta1GeoMatchSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetStatusAtProviderGeoMatchConstraint
 {
-    /// <summary>The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
+    /// <summary>Type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// The country that you want AWS WAF to search for.
-    /// This is the two-letter country code, e.g., US, CA, RU, CN, etc.
-    /// See docs for all supported values.
-    /// </summary>
+    /// <summary>Two-letter country code that you want AWS WAF to search for, e.g., US, CA, RU, CN. See docs for all supported values.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -338,15 +326,15 @@ public partial class V1beta1GeoMatchSetStatusAtProviderGeoMatchConstraint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeoMatchSetStatusAtProvider
 {
-    /// <summary>The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
+    /// <summary>Geo Match Constraint objects which contain the country that you want AWS WAF to search for.</summary>
     [JsonPropertyName("geoMatchConstraint")]
     public IList<V1beta1GeoMatchSetStatusAtProviderGeoMatchConstraint>? GeoMatchConstraint { get; set; }
 
-    /// <summary>The ID of the WAF Regional Geo Match Set.</summary>
+    /// <summary>ID of the WAF Regional Geo Match Set.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name or description of the Geo Match Set.</summary>
+    /// <summary>Name or description of the Geo Match Set.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -412,6 +400,15 @@ public partial class V1beta1GeoMatchSetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GeoMatchSetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

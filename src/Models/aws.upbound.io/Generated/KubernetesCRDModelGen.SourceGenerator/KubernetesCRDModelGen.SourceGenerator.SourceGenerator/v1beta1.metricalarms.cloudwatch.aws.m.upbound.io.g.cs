@@ -191,6 +191,34 @@ public partial class V1beta1MetricAlarmSpecForProviderAlarmActionsSelector
     public V1beta1MetricAlarmSpecForProviderAlarmActionsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The PromQL criteria for the alarm evaluation.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteriaPromqlCriteria
+{
+    /// <summary>The duration, in seconds, that a contributor must be continuously breaching before it transitions to the ALARM state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("pendingPeriod")]
+    public double? PendingPeriod { get; set; }
+
+    /// <summary>The PromQL query that the alarm evaluates. The query must return a result of vector type. Each entry in the vector result represents an alarm contributor.</summary>
+    [JsonPropertyName("query")]
+    public string? Query { get; set; }
+
+    /// <summary>The duration, in seconds, that a contributor must continuously not be breaching before it transitions back to the OK state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("recoveryPeriod")]
+    public double? RecoveryPeriod { get; set; }
+}
+
+/// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecForProviderEvaluationCriteria
+{
+    /// <summary>The PromQL criteria for the alarm evaluation.</summary>
+    [JsonPropertyName("promqlCriteria")]
+    public V1beta1MetricAlarmSpecForProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
+}
+
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -475,7 +503,15 @@ public partial class V1beta1MetricAlarmSpecForProvider
     [JsonPropertyName("evaluateLowSampleCountPercentiles")]
     public string? EvaluateLowSampleCountPercentiles { get; set; }
 
-    /// <summary>The number of periods over which data is compared to the specified threshold.</summary>
+    /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+    [JsonPropertyName("evaluationCriteria")]
+    public V1beta1MetricAlarmSpecForProviderEvaluationCriteria? EvaluationCriteria { get; set; }
+
+    /// <summary>The frequency, in seconds, at which the alarm is evaluated. Valid values are 10, 20, 30, and any multiple of 60. Required when using evaluation_criteria.</summary>
+    [JsonPropertyName("evaluationInterval")]
+    public double? EvaluationInterval { get; set; }
+
+    /// <summary>The number of periods over which data is compared to the specified threshold. Required for traditional metric alarms.</summary>
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
 
@@ -712,6 +748,34 @@ public partial class V1beta1MetricAlarmSpecInitProviderAlarmActionsSelector
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1MetricAlarmSpecInitProviderAlarmActionsSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>The PromQL criteria for the alarm evaluation.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteriaPromqlCriteria
+{
+    /// <summary>The duration, in seconds, that a contributor must be continuously breaching before it transitions to the ALARM state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("pendingPeriod")]
+    public double? PendingPeriod { get; set; }
+
+    /// <summary>The PromQL query that the alarm evaluates. The query must return a result of vector type. Each entry in the vector result represents an alarm contributor.</summary>
+    [JsonPropertyName("query")]
+    public string? Query { get; set; }
+
+    /// <summary>The duration, in seconds, that a contributor must continuously not be breaching before it transitions back to the OK state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("recoveryPeriod")]
+    public double? RecoveryPeriod { get; set; }
+}
+
+/// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecInitProviderEvaluationCriteria
+{
+    /// <summary>The PromQL criteria for the alarm evaluation.</summary>
+    [JsonPropertyName("promqlCriteria")]
+    public V1beta1MetricAlarmSpecInitProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
 }
 
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
@@ -1010,7 +1074,15 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     [JsonPropertyName("evaluateLowSampleCountPercentiles")]
     public string? EvaluateLowSampleCountPercentiles { get; set; }
 
-    /// <summary>The number of periods over which data is compared to the specified threshold.</summary>
+    /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+    [JsonPropertyName("evaluationCriteria")]
+    public V1beta1MetricAlarmSpecInitProviderEvaluationCriteria? EvaluationCriteria { get; set; }
+
+    /// <summary>The frequency, in seconds, at which the alarm is evaluated. Valid values are 10, 20, 30, and any multiple of 60. Required when using evaluation_criteria.</summary>
+    [JsonPropertyName("evaluationInterval")]
+    public double? EvaluationInterval { get; set; }
+
+    /// <summary>The number of periods over which data is compared to the specified threshold. Required for traditional metric alarms.</summary>
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
 
@@ -1194,6 +1266,34 @@ public partial class V1beta1MetricAlarmSpec
     public V1beta1MetricAlarmSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>The PromQL criteria for the alarm evaluation.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteriaPromqlCriteria
+{
+    /// <summary>The duration, in seconds, that a contributor must be continuously breaching before it transitions to the ALARM state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("pendingPeriod")]
+    public double? PendingPeriod { get; set; }
+
+    /// <summary>The PromQL query that the alarm evaluates. The query must return a result of vector type. Each entry in the vector result represents an alarm contributor.</summary>
+    [JsonPropertyName("query")]
+    public string? Query { get; set; }
+
+    /// <summary>The duration, in seconds, that a contributor must continuously not be breaching before it transitions back to the OK state. Valid range: 0-86400.</summary>
+    [JsonPropertyName("recoveryPeriod")]
+    public double? RecoveryPeriod { get; set; }
+}
+
+/// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmStatusAtProviderEvaluationCriteria
+{
+    /// <summary>The PromQL criteria for the alarm evaluation.</summary>
+    [JsonPropertyName("promqlCriteria")]
+    public V1beta1MetricAlarmStatusAtProviderEvaluationCriteriaPromqlCriteria? PromqlCriteria { get; set; }
+}
+
 /// <summary>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1319,7 +1419,15 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     [JsonPropertyName("evaluateLowSampleCountPercentiles")]
     public string? EvaluateLowSampleCountPercentiles { get; set; }
 
-    /// <summary>The number of periods over which data is compared to the specified threshold.</summary>
+    /// <summary>The evaluation criteria for PromQL alarms. Cannot be used with traditional metric alarm parameters.</summary>
+    [JsonPropertyName("evaluationCriteria")]
+    public V1beta1MetricAlarmStatusAtProviderEvaluationCriteria? EvaluationCriteria { get; set; }
+
+    /// <summary>The frequency, in seconds, at which the alarm is evaluated. Valid values are 10, 20, 30, and any multiple of 60. Required when using evaluation_criteria.</summary>
+    [JsonPropertyName("evaluationInterval")]
+    public double? EvaluationInterval { get; set; }
+
+    /// <summary>The number of periods over which data is compared to the specified threshold. Required for traditional metric alarms.</summary>
     [JsonPropertyName("evaluationPeriods")]
     public double? EvaluationPeriods { get; set; }
 
@@ -1457,6 +1565,15 @@ public partial class V1beta1MetricAlarmStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MetricAlarmStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.opensearchserverless.aws.m.upbound.io;
-/// <summary>Collection is the Schema for the Collections API.</summary>
+/// <summary>Collection is the Schema for the Collections API. Manages an AWS OpenSearch Serverless Collection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,16 +36,377 @@ public partial class V1beta1CollectionList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1Collection> Items { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderCollectionGroupNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderCollectionGroupNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderEncryptionConfig
+{
+    /// <summary>Whether to use an AWS owned key for collection encryption.</summary>
+    [JsonPropertyName("awsOwnedKey")]
+    public bool? AwsOwnedKey { get; set; }
+
+    /// <summary>ARN of the AWS KMS key to use for collection encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnRef")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnRef? KmsKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnSelector")]
+    public V1beta1CollectionSpecForProviderEncryptionConfigKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
+}
+
+/// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecForProviderVectorOptions
+{
+    /// <summary>Status of serverless vector acceleration for the collection. One of ENABLED, DISABLED, or ALLOWED.</summary>
+    [JsonPropertyName("serverlessVectorAcceleration")]
+    public string? ServerlessVectorAcceleration { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CollectionSpecForProvider
 {
+    /// <summary>
+    /// Name of the collection group to associate with this collection.
+    /// Name of the collection group to associate with this collection.
+    /// </summary>
+    [JsonPropertyName("collectionGroupName")]
+    public string? CollectionGroupName { get; set; }
+
+    /// <summary>Reference to a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+    [JsonPropertyName("collectionGroupNameRef")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameRef? CollectionGroupNameRef { get; set; }
+
+    /// <summary>Selector for a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+    [JsonPropertyName("collectionGroupNameSelector")]
+    public V1beta1CollectionSpecForProviderCollectionGroupNameSelector? CollectionGroupNameSelector { get; set; }
+
     /// <summary>
     /// Description of the collection.
     /// Description of the collection.
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1CollectionSpecForProviderEncryptionConfig? EncryptionConfig { get; set; }
 
     /// <summary>
     /// Name of the collection.
@@ -62,7 +423,7 @@ public partial class V1beta1CollectionSpecForProvider
     public required string Region { get; set; }
 
     /// <summary>
-    /// Indicates whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
+    /// Whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
     /// Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
     /// </summary>
     [JsonPropertyName("standbyReplicas")]
@@ -78,6 +439,352 @@ public partial class V1beta1CollectionSpecForProvider
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+
+    /// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+    [JsonPropertyName("vectorOptions")]
+    public V1beta1CollectionSpecForProviderVectorOptions? VectorOptions { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderCollectionGroupNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderCollectionGroupNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderEncryptionConfig
+{
+    /// <summary>Whether to use an AWS owned key for collection encryption.</summary>
+    [JsonPropertyName("awsOwnedKey")]
+    public bool? AwsOwnedKey { get; set; }
+
+    /// <summary>ARN of the AWS KMS key to use for collection encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+
+    /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnRef")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnRef? KmsKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
+    [JsonPropertyName("kmsKeyArnSelector")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfigKmsKeyArnSelector? KmsKeyArnSelector { get; set; }
+}
+
+/// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionSpecInitProviderVectorOptions
+{
+    /// <summary>Status of serverless vector acceleration for the collection. One of ENABLED, DISABLED, or ALLOWED.</summary>
+    [JsonPropertyName("serverlessVectorAcceleration")]
+    public string? ServerlessVectorAcceleration { get; set; }
 }
 
 /// <summary>
@@ -97,11 +804,30 @@ public partial class V1beta1CollectionSpecForProvider
 public partial class V1beta1CollectionSpecInitProvider
 {
     /// <summary>
+    /// Name of the collection group to associate with this collection.
+    /// Name of the collection group to associate with this collection.
+    /// </summary>
+    [JsonPropertyName("collectionGroupName")]
+    public string? CollectionGroupName { get; set; }
+
+    /// <summary>Reference to a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+    [JsonPropertyName("collectionGroupNameRef")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameRef? CollectionGroupNameRef { get; set; }
+
+    /// <summary>Selector for a CollectionGroup in opensearchserverless to populate collectionGroupName.</summary>
+    [JsonPropertyName("collectionGroupNameSelector")]
+    public V1beta1CollectionSpecInitProviderCollectionGroupNameSelector? CollectionGroupNameSelector { get; set; }
+
+    /// <summary>
     /// Description of the collection.
     /// Description of the collection.
     /// </summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1CollectionSpecInitProviderEncryptionConfig? EncryptionConfig { get; set; }
 
     /// <summary>
     /// Name of the collection.
@@ -111,7 +837,7 @@ public partial class V1beta1CollectionSpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// Indicates whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
+    /// Whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
     /// Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
     /// </summary>
     [JsonPropertyName("standbyReplicas")]
@@ -127,6 +853,10 @@ public partial class V1beta1CollectionSpecInitProvider
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+
+    /// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+    [JsonPropertyName("vectorOptions")]
+    public V1beta1CollectionSpecInitProviderVectorOptions? VectorOptions { get; set; }
 }
 
 /// <summary>
@@ -236,6 +966,30 @@ public partial class V1beta1CollectionSpec
     public V1beta1CollectionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionStatusAtProviderEncryptionConfig
+{
+    /// <summary>Whether to use an AWS owned key for collection encryption.</summary>
+    [JsonPropertyName("awsOwnedKey")]
+    public bool? AwsOwnedKey { get; set; }
+
+    /// <summary>ARN of the AWS KMS key to use for collection encryption.</summary>
+    [JsonPropertyName("kmsKeyArn")]
+    public string? KmsKeyArn { get; set; }
+}
+
+/// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CollectionStatusAtProviderVectorOptions
+{
+    /// <summary>Status of serverless vector acceleration for the collection. One of ENABLED, DISABLED, or ALLOWED.</summary>
+    [JsonPropertyName("serverlessVectorAcceleration")]
+    public string? ServerlessVectorAcceleration { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CollectionStatusAtProvider
@@ -252,6 +1006,13 @@ public partial class V1beta1CollectionStatusAtProvider
     public string? CollectionEndpoint { get; set; }
 
     /// <summary>
+    /// Name of the collection group to associate with this collection.
+    /// Name of the collection group to associate with this collection.
+    /// </summary>
+    [JsonPropertyName("collectionGroupName")]
+    public string? CollectionGroupName { get; set; }
+
+    /// <summary>
     /// Collection-specific endpoint used to access OpenSearch Dashboards.
     /// Collection-specific endpoint used to access OpenSearch Dashboards.
     /// </summary>
@@ -265,12 +1026,16 @@ public partial class V1beta1CollectionStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Configuration block for direct collection encryption settings. See encryption_config below for details.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public V1beta1CollectionStatusAtProviderEncryptionConfig? EncryptionConfig { get; set; }
+
     /// <summary>Unique identifier for the collection.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// The ARN of the Amazon Web Services KMS key used to encrypt the collection.
+    /// ARN of the Amazon Web Services KMS key used to encrypt the collection.
     /// The ARN of the Amazon Web Services KMS key used to encrypt the collection.
     /// </summary>
     [JsonPropertyName("kmsKeyArn")]
@@ -291,7 +1056,7 @@ public partial class V1beta1CollectionStatusAtProvider
     public string? Region { get; set; }
 
     /// <summary>
-    /// Indicates whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
+    /// Whether standby replicas should be used for a collection. One of ENABLED or DISABLED. Defaults to ENABLED.
     /// Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
     /// </summary>
     [JsonPropertyName("standbyReplicas")]
@@ -301,6 +1066,7 @@ public partial class V1beta1CollectionStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -310,6 +1076,10 @@ public partial class V1beta1CollectionStatusAtProvider
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+
+    /// <summary>Configuration block for vector search options. Only valid when type is VECTORSEARCH. See vector_options below for details.</summary>
+    [JsonPropertyName("vectorOptions")]
+    public V1beta1CollectionStatusAtProviderVectorOptions? VectorOptions { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -368,6 +1138,15 @@ public partial class V1beta1CollectionStatus
     public IList<V1beta1CollectionStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -376,7 +1155,7 @@ public partial class V1beta1CollectionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Collection is the Schema for the Collections API.</summary>
+/// <summary>Collection is the Schema for the Collections API. Manages an AWS OpenSearch Serverless Collection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
