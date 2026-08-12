@@ -743,7 +743,7 @@ public partial class V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsHtt
     public bool? Optional { get; set; }
 }
 
-/// <summary>EndpointParam is for requesting optional fields that should be sent in the oauth request</summary>
+/// <summary>OAuth2EndpointParam is an optional field that should be sent in the OAuth request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsHttpAuthOauth2EndpointParams
@@ -849,6 +849,15 @@ public partial class V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsHtt
     /// <summary>Headers are an optional list of headers to send with HTTP requests for artifacts</summary>
     [JsonPropertyName("headers")]
     public IList<V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsHttpHeaders>? Headers { get; set; }
+
+    /// <summary>
+    /// SaveStreamViaFile buffers a streamed upload to a temporary file before sending it,
+    /// so a 307/308 redirect (e.g. webHDFS) can be followed by re-sending the body. When
+    /// false (the default) SaveStream sends the reader directly and cannot follow such a
+    /// redirect, since a one-shot reader cannot be replayed.
+    /// </summary>
+    [JsonPropertyName("saveStreamViaFile")]
+    public bool? SaveStreamViaFile { get; set; }
 
     /// <summary>URL of the artifact</summary>
     [JsonPropertyName("url")]
@@ -1151,6 +1160,19 @@ public partial class V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsS3
     /// <summary>AccessKeySecret is the secret selector to the bucket&apos;s access key</summary>
     [JsonPropertyName("accessKeySecret")]
     public V1alpha1WorkflowEventBindingSpecSubmitArgumentsArtifactsS3AccessKeySecret? AccessKeySecret { get; set; }
+
+    /// <summary>
+    /// AddressingStyle defines how buckets are addressed by the S3 client.
+    /// This is required for some S3-compatible providers that only support
+    /// virtual-hosted-style bucket addressing.
+    /// 
+    /// Valid values are:
+    /// - &quot; &quot; (default, auto-detect)
+    /// - &quot;path&quot;
+    /// - &quot;virtual-hosted&quot;
+    /// </summary>
+    [JsonPropertyName("addressingStyle")]
+    public string? AddressingStyle { get; set; }
 
     /// <summary>Bucket is the name of the bucket</summary>
     [JsonPropertyName("bucket")]

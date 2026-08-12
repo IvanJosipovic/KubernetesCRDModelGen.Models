@@ -212,7 +212,9 @@ public enum V1alpha1ClusterProviderConfigSpecIdentityTypeEnum
     [EnumMember(Value = "UpboundTokens"), JsonStringEnumMemberName("UpboundTokens")]
     UpboundTokens,
     [EnumMember(Value = "AWSWebIdentityCredentials"), JsonStringEnumMemberName("AWSWebIdentityCredentials")]
-    AWSWebIdentityCredentials
+    AWSWebIdentityCredentials,
+    [EnumMember(Value = "NebiusServiceAccountCredentials"), JsonStringEnumMemberName("NebiusServiceAccountCredentials")]
+    NebiusServiceAccountCredentials
 }
 
 /// <summary>

@@ -389,6 +389,8 @@ spec:
                                 - value
                                 type: object
                               type: array
+                            saveStreamViaFile:
+                              type: boolean
                             url:
                               type: string
                           required:
@@ -482,6 +484,12 @@ spec:
                               - key
                               type: object
                               x-kubernetes-map-type: atomic
+                            addressingStyle:
+                              enum:
+                              - ""
+                              - path
+                              - virtual-hosted
+                              type: string
                             bucket:
                               type: string
                             caSecret:
@@ -955,6 +963,8 @@ spec:
                                   - value
                                   type: object
                                 type: array
+                              saveStreamViaFile:
+                                type: boolean
                               url:
                                 type: string
                             required:
@@ -1062,6 +1072,12 @@ spec:
                                 - key
                                 type: object
                                 x-kubernetes-map-type: atomic
+                              addressingStyle:
+                                enum:
+                                - ""
+                                - path
+                                - virtual-hosted
+                                type: string
                               bucket:
                                 type: string
                               caSecret:

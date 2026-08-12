@@ -232,6 +232,15 @@ public partial class V1alpha1ObservedObjectCollectionStatus
     public IList<V1alpha1ObservedObjectCollectionStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// MembershipLabel is the label set on each member of this collection
     /// and can be used for fetching them.
     /// </summary>
