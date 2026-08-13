@@ -37,6 +37,42 @@ public partial class V1alpha1PackageGroupList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1PackageGroupSpecDomainRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1PackageGroupSpecDomainRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1PackageGroupSpecDomainRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// A tag is a key-value pair that can be used to manage, search for, or filter
 /// resources in CodeArtifact.
 /// </summary>
@@ -78,7 +114,7 @@ public partial class V1alpha1PackageGroupSpec
     /// Regex Pattern: `^[a-z][a-z0-9\-]{0,48}[a-z0-9]$`
     /// </summary>
     [JsonPropertyName("domain")]
-    public required string Domain { get; set; }
+    public string? Domain { get; set; }
 
     /// <summary>
     /// The 12-digit account number of the Amazon Web Services account that owns
@@ -88,6 +124,18 @@ public partial class V1alpha1PackageGroupSpec
     /// </summary>
     [JsonPropertyName("domainOwner")]
     public string? DomainOwner { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("domainRef")]
+    public V1alpha1PackageGroupSpecDomainRef? DomainRef { get; set; }
 
     /// <summary>
     /// The pattern of the package group to create. The pattern is also the identifier

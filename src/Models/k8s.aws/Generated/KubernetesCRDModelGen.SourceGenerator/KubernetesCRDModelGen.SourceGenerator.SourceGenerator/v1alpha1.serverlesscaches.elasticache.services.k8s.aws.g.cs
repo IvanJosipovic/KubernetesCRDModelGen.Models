@@ -92,6 +92,42 @@ public partial class V1alpha1ServerlessCacheSpecCacheUsageLimits
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessCacheSpecKmsKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessCacheSpecKmsKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ServerlessCacheSpecKmsKeyRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessCacheSpecSecurityGroupRefsFrom
 {
     [JsonPropertyName("name")]
@@ -178,6 +214,42 @@ public partial class V1alpha1ServerlessCacheSpecTags
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessCacheSpecUserGroupRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessCacheSpecUserGroupRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ServerlessCacheSpecUserGroupRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// ServerlessCacheSpec defines the desired state of ServerlessCache.
 /// 
 /// The resource representing a serverless cache.
@@ -220,6 +292,18 @@ public partial class V1alpha1ServerlessCacheSpec
     /// </summary>
     [JsonPropertyName("kmsKeyID")]
     public string? KmsKeyID { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("kmsKeyRef")]
+    public V1alpha1ServerlessCacheSpecKmsKeyRef? KmsKeyRef { get; set; }
 
     /// <summary>
     /// The version of the cache engine that will be used to create the serverless
@@ -286,6 +370,18 @@ public partial class V1alpha1ServerlessCacheSpec
     /// </summary>
     [JsonPropertyName("userGroupID")]
     public string? UserGroupID { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("userGroupRef")]
+    public V1alpha1ServerlessCacheSpecUserGroupRef? UserGroupRef { get; set; }
 }
 
 /// <summary>

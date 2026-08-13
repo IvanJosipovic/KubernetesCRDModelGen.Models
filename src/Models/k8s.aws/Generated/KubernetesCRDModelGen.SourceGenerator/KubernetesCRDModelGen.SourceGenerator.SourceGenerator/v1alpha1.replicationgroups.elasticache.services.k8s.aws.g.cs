@@ -273,6 +273,42 @@ public partial class V1alpha1ReplicationGroupSpecNodeGroupConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecNotificationTopicRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecNotificationTopicRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ReplicationGroupSpecNotificationTopicRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ReplicationGroupSpecSecurityGroupRefsFrom
 {
     [JsonPropertyName("name")]
@@ -304,6 +340,42 @@ public partial class V1alpha1ReplicationGroupSpecSecurityGroupRefs
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecSnapshotRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecSnapshotRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ReplicationGroupSpecSnapshotRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// A tag that can be added to an ElastiCache cluster or replication group. Tags
 /// are composed of a Key/Value pair. You can use tags to categorize and track
 /// all your ElastiCache resources, with the exception of global replication
@@ -320,6 +392,42 @@ public partial class V1alpha1ReplicationGroupSpecTags
 
     [JsonPropertyName("value")]
     public string? Value { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecUserGroupRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ReplicationGroupSpecUserGroupRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ReplicationGroupSpecUserGroupRefsFrom? From { get; set; }
 }
 
 /// <summary>
@@ -602,6 +710,18 @@ public partial class V1alpha1ReplicationGroupSpec
     public string? NotificationTopicARN { get; set; }
 
     /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("notificationTopicRef")]
+    public V1alpha1ReplicationGroupSpecNotificationTopicRef? NotificationTopicRef { get; set; }
+
+    /// <summary>
     /// An optional parameter that specifies the number of node groups (shards) for
     /// this Valkey or Redis OSS (cluster mode enabled) replication group. For Valkey
     /// or Redis OSS (cluster mode disabled) either omit this parameter or set it
@@ -729,6 +849,18 @@ public partial class V1alpha1ReplicationGroupSpec
     public string? SnapshotName { get; set; }
 
     /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("snapshotRef")]
+    public V1alpha1ReplicationGroupSpecSnapshotRef? SnapshotRef { get; set; }
+
+    /// <summary>
     /// The number of days for which ElastiCache retains automatic snapshots before
     /// deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot
     /// that was taken today is retained for 5 days before being deleted.
@@ -782,6 +914,9 @@ public partial class V1alpha1ReplicationGroupSpec
     /// <summary>The user group to associate with the replication group.</summary>
     [JsonPropertyName("userGroupIDs")]
     public IList<string>? UserGroupIDs { get; set; }
+
+    [JsonPropertyName("userGroupRefs")]
+    public IList<V1alpha1ReplicationGroupSpecUserGroupRefs>? UserGroupRefs { get; set; }
 }
 
 /// <summary>

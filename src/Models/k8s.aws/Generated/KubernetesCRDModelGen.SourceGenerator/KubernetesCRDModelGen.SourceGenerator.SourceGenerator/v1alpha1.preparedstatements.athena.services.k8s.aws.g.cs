@@ -37,6 +37,42 @@ public partial class V1alpha1PreparedStatementList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1PreparedStatementSpecWorkGroupRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1PreparedStatementSpecWorkGroupRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1PreparedStatementSpecWorkGroupRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// PreparedStatementSpec defines the desired state of PreparedStatement.
 /// 
 /// A prepared SQL statement for use with Athena.
@@ -67,7 +103,19 @@ public partial class V1alpha1PreparedStatementSpec
     /// Regex Pattern: `^[a-zA-Z0-9._-]{1,128}$`
     /// </summary>
     [JsonPropertyName("workGroup")]
-    public required string WorkGroup { get; set; }
+    public string? WorkGroup { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("workGroupRef")]
+    public V1alpha1PreparedStatementSpecWorkGroupRef? WorkGroupRef { get; set; }
 }
 
 /// <summary>
