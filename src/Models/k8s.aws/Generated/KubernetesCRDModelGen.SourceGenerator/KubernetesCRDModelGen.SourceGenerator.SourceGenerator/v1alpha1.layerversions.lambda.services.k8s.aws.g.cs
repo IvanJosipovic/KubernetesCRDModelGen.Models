@@ -36,6 +36,34 @@ public partial class V1alpha1LayerVersionList : IKubernetesObject<V1ListMeta>, I
     public required IList<V1alpha1LayerVersion> Items { get; set; }
 }
 
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1LayerVersionSpecContentS3BucketRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for S3Bucket</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1LayerVersionSpecContentS3BucketRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1LayerVersionSpecContentS3BucketRefFrom? From { get; set; }
+}
+
 /// <summary>The function layer archive.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -43,6 +71,10 @@ public partial class V1alpha1LayerVersionSpecContent
 {
     [JsonPropertyName("s3Bucket")]
     public string? S3Bucket { get; set; }
+
+    /// <summary>Reference field for S3Bucket</summary>
+    [JsonPropertyName("s3BucketRef")]
+    public V1alpha1LayerVersionSpecContentS3BucketRef? S3BucketRef { get; set; }
 
     [JsonPropertyName("s3Key")]
     public string? S3Key { get; set; }

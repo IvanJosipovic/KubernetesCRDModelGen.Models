@@ -40,6 +40,18 @@ public partial class V1beta2InstanceManagerList : IKubernetesObject<V1ListMeta>,
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceManagerSpecDataEngineSpecV2
 {
+    /// <summary>
+    /// CPUIsolationEnabled overrides the cluster-wide
+    /// data-engine-cpu-isolation-enabled setting for this instance manager.
+    /// &quot;true&quot;  -&gt; pass --enable-irq-affinity and --enable-workqueue-affinity
+    ///            to start-spdk-tgt (steer host IRQs and unbound kernel
+    ///            workqueues away from the SPDK reactor CPUs).
+    /// &quot;false&quot; -&gt; do not pass the flags.
+    /// &quot; &quot;      -&gt; inherit the global setting value.
+    /// </summary>
+    [JsonPropertyName("cpuIsolationEnabled")]
+    public string? CpuIsolationEnabled { get; set; }
+
     [JsonPropertyName("cpuMask")]
     public string? CpuMask { get; set; }
 }
@@ -150,6 +162,9 @@ public partial class V1beta2InstanceManagerStatusConditions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceManagerStatusDataEngineStatusV2
 {
+    [JsonPropertyName("cpuCoreNumber")]
+    public long? CpuCoreNumber { get; set; }
+
     [JsonPropertyName("cpuMask")]
     public string? CpuMask { get; set; }
 
@@ -473,6 +488,208 @@ public partial class V1beta2InstanceManagerStatusInstanceReplicas
     public V1beta2InstanceManagerStatusInstanceReplicasStatus? Status { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardGroupsSpec
+{
+    [JsonPropertyName("dataEngine")]
+    public string? DataEngine { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardGroupsStatusPaths
+{
+    [JsonPropertyName("anaState")]
+    public string? AnaState { get; set; }
+
+    [JsonPropertyName("engineName")]
+    public string? EngineName { get; set; }
+
+    [JsonPropertyName("nguid")]
+    public string? Nguid { get; set; }
+
+    [JsonPropertyName("nqn")]
+    public string? Nqn { get; set; }
+
+    [JsonPropertyName("targetIP")]
+    public string? TargetIP { get; set; }
+
+    [JsonPropertyName("targetPort")]
+    public int? TargetPort { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardGroupsStatus
+{
+    [JsonPropertyName("activePath")]
+    public string? ActivePath { get; set; }
+
+    [JsonPropertyName("conditions")]
+    public IDictionary<string, bool>? Conditions { get; set; }
+
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    [JsonPropertyName("errorMsg")]
+    public string? ErrorMsg { get; set; }
+
+    [JsonPropertyName("frontend")]
+    public string? Frontend { get; set; }
+
+    [JsonPropertyName("listen")]
+    public string? Listen { get; set; }
+
+    [JsonPropertyName("paths")]
+    public IList<V1beta2InstanceManagerStatusInstanceShardGroupsStatusPaths>? Paths { get; set; }
+
+    [JsonPropertyName("portEnd")]
+    public int? PortEnd { get; set; }
+
+    [JsonPropertyName("portStart")]
+    public int? PortStart { get; set; }
+
+    [JsonPropertyName("preferredPath")]
+    public string? PreferredPath { get; set; }
+
+    [JsonPropertyName("resourceVersion")]
+    public long? ResourceVersion { get; set; }
+
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+
+    [JsonPropertyName("targetPortEnd")]
+    public int? TargetPortEnd { get; set; }
+
+    [JsonPropertyName("targetPortStart")]
+    public int? TargetPortStart { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("ublkID")]
+    public int? UblkID { get; set; }
+
+    [JsonPropertyName("uuid")]
+    public string? Uuid { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardGroups
+{
+    [JsonPropertyName("spec")]
+    public V1beta2InstanceManagerStatusInstanceShardGroupsSpec? Spec { get; set; }
+
+    [JsonPropertyName("status")]
+    public V1beta2InstanceManagerStatusInstanceShardGroupsStatus? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardsSpec
+{
+    [JsonPropertyName("dataEngine")]
+    public string? DataEngine { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardsStatusPaths
+{
+    [JsonPropertyName("anaState")]
+    public string? AnaState { get; set; }
+
+    [JsonPropertyName("engineName")]
+    public string? EngineName { get; set; }
+
+    [JsonPropertyName("nguid")]
+    public string? Nguid { get; set; }
+
+    [JsonPropertyName("nqn")]
+    public string? Nqn { get; set; }
+
+    [JsonPropertyName("targetIP")]
+    public string? TargetIP { get; set; }
+
+    [JsonPropertyName("targetPort")]
+    public int? TargetPort { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShardsStatus
+{
+    [JsonPropertyName("activePath")]
+    public string? ActivePath { get; set; }
+
+    [JsonPropertyName("conditions")]
+    public IDictionary<string, bool>? Conditions { get; set; }
+
+    [JsonPropertyName("endpoint")]
+    public string? Endpoint { get; set; }
+
+    [JsonPropertyName("errorMsg")]
+    public string? ErrorMsg { get; set; }
+
+    [JsonPropertyName("frontend")]
+    public string? Frontend { get; set; }
+
+    [JsonPropertyName("listen")]
+    public string? Listen { get; set; }
+
+    [JsonPropertyName("paths")]
+    public IList<V1beta2InstanceManagerStatusInstanceShardsStatusPaths>? Paths { get; set; }
+
+    [JsonPropertyName("portEnd")]
+    public int? PortEnd { get; set; }
+
+    [JsonPropertyName("portStart")]
+    public int? PortStart { get; set; }
+
+    [JsonPropertyName("preferredPath")]
+    public string? PreferredPath { get; set; }
+
+    [JsonPropertyName("resourceVersion")]
+    public long? ResourceVersion { get; set; }
+
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
+
+    [JsonPropertyName("targetPortEnd")]
+    public int? TargetPortEnd { get; set; }
+
+    [JsonPropertyName("targetPortStart")]
+    public int? TargetPortStart { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("ublkID")]
+    public int? UblkID { get; set; }
+
+    [JsonPropertyName("uuid")]
+    public string? Uuid { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InstanceManagerStatusInstanceShards
+{
+    [JsonPropertyName("spec")]
+    public V1beta2InstanceManagerStatusInstanceShardsSpec? Spec { get; set; }
+
+    [JsonPropertyName("status")]
+    public V1beta2InstanceManagerStatusInstanceShardsStatus? Status { get; set; }
+}
+
 /// <summary>InstanceManagerStatus defines the observed state of the Longhorn instance manager</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -504,6 +721,12 @@ public partial class V1beta2InstanceManagerStatus
 
     [JsonPropertyName("instanceReplicas")]
     public IDictionary<string, V1beta2InstanceManagerStatusInstanceReplicas>? InstanceReplicas { get; set; }
+
+    [JsonPropertyName("instanceShardGroups")]
+    public IDictionary<string, V1beta2InstanceManagerStatusInstanceShardGroups>? InstanceShardGroups { get; set; }
+
+    [JsonPropertyName("instanceShards")]
+    public IDictionary<string, V1beta2InstanceManagerStatusInstanceShards>? InstanceShards { get; set; }
 
     [JsonPropertyName("ip")]
     public string? Ip { get; set; }

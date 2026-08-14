@@ -349,6 +349,42 @@ public partial class V1alpha1FunctionSpecKmsKeyRef
     public V1alpha1FunctionSpecKmsKeyRefFrom? From { get; set; }
 }
 
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FunctionSpecLayerRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FunctionSpecLayerRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1FunctionSpecLayerRefsFrom? From { get; set; }
+}
+
 /// <summary>The function&apos;s Amazon CloudWatch Logs configuration settings.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -691,6 +727,9 @@ public partial class V1alpha1FunctionSpec
     /// </summary>
     [JsonPropertyName("kmsKeyRef")]
     public V1alpha1FunctionSpecKmsKeyRef? KmsKeyRef { get; set; }
+
+    [JsonPropertyName("layerRefs")]
+    public IList<V1alpha1FunctionSpecLayerRefs>? LayerRefs { get; set; }
 
     /// <summary>
     /// A list of function layers (https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
