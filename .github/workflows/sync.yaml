@@ -20,6 +20,7 @@ jobs:
   sync:
     name: Sync
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
 
       - name: Check out code
