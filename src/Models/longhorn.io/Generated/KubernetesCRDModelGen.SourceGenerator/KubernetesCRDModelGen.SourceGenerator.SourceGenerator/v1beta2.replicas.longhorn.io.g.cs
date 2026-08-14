@@ -127,6 +127,13 @@ public partial class V1beta2ReplicaSpec
     [JsonPropertyName("lastHealthyAt")]
     public string? LastHealthyAt { get; set; }
 
+    /// <summary>
+    /// LinkedCloneSrcReplicaName is the name of the src replica this clone replica is parented to.
+    /// Immutable once set. Non-empty only for linked-clone replicas.
+    /// </summary>
+    [JsonPropertyName("linkedCloneSrcReplicaName")]
+    public string? LinkedCloneSrcReplicaName { get; set; }
+
     [JsonPropertyName("logRequested")]
     public bool? LogRequested { get; set; }
 

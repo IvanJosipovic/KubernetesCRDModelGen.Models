@@ -117,6 +117,71 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
     public string? Type { get; set; }
 }
 
+/// <summary>Details for IAM access control for VPC connectivity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslIam
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Details for SASL/SCRAM client authentication for VPC connectivity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslScram
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Details for SASL client authentication for VPC connectivity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl
+{
+    /// <summary>Details for IAM access control for VPC connectivity.</summary>
+    [JsonPropertyName("iam")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslIam? Iam { get; set; }
+
+    /// <summary>Details for SASL/SCRAM client authentication for VPC connectivity.</summary>
+    [JsonPropertyName("scram")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSaslScram? Scram { get; set; }
+}
+
+/// <summary>Details for TLS client authentication for VPC connectivity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationTls
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+/// <summary>Includes all client authentication information for VPC connectivity.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication
+{
+    /// <summary>Details for SASL client authentication for VPC connectivity.</summary>
+    [JsonPropertyName("sasl")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationSasl? Sasl { get; set; }
+
+    /// <summary>Details for TLS client authentication for VPC connectivity.</summary>
+    [JsonPropertyName("tls")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthenticationTls? Tls { get; set; }
+}
+
+/// <summary>VPC connectivity access control for brokers.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
+{
+    /// <summary>Includes all client authentication information for VPC connectivity.</summary>
+    [JsonPropertyName("clientAuthentication")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivityClientAuthentication? ClientAuthentication { get; set; }
+}
+
 /// <summary>Information about the broker access configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -134,6 +199,10 @@ public partial class V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfo
     /// <summary>Public access control for brokers.</summary>
     [JsonPropertyName("publicAccess")]
     public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoPublicAccess? PublicAccess { get; set; }
+
+    /// <summary>VPC connectivity access control for brokers.</summary>
+    [JsonPropertyName("vpcConnectivity")]
+    public V1alpha1ServerlessClusterSpecProvisionedBrokerNodeGroupInfoConnectivityInfoVpcConnectivity? VpcConnectivity { get; set; }
 }
 
 /// <summary>

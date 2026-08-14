@@ -81,6 +81,49 @@ public enum V1beta2VolumeSpecDataEngineEnum
     V2
 }
 
+/// <summary>
+/// DataLayout declares the user&apos;s intended data layout (topology type, protection mode, and EC parameters).
+/// The entire struct is immutable after creation.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2VolumeSpecDataLayout
+{
+    /// <summary>
+    /// DataChunks is the number of data chunks (k) in the EC array.
+    /// Required when Type is sharded; must be 0 for replicated volumes.
+    /// </summary>
+    [JsonPropertyName("dataChunks")]
+    public int? DataChunks { get; set; }
+
+    /// <summary>
+    /// Mode describes the specific data protection mechanism in use.
+    /// Empty for V1 volumes where no SPDK-level mode applies.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>
+    /// ParityChunks is the number of parity chunks (m) in the EC array.
+    /// The volume tolerates up to m simultaneous disk failures.
+    /// Required when Type is sharded; must be 0 for replicated volumes.
+    /// </summary>
+    [JsonPropertyName("parityChunks")]
+    public int? ParityChunks { get; set; }
+
+    /// <summary>
+    /// StripSizeKB is the chunk size in KiB used by the EC bdev.
+    /// Must be a power of two in the range [4, 1024].
+    /// Required when Type is sharded; must be 0 for replicated volumes.
+    /// </summary>
+    [JsonPropertyName("stripSizeKB")]
+    public int? StripSizeKB { get; set; }
+
+    /// <summary>Type describes how volume data is distributed across nodes.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecDataLocalityEnum>))]
 public enum V1beta2VolumeSpecDataLocalityEnum
@@ -245,6 +288,13 @@ public partial class V1beta2VolumeSpec
 
     [JsonPropertyName("dataEngine")]
     public V1beta2VolumeSpecDataEngineEnum? DataEngine { get; set; }
+
+    /// <summary>
+    /// DataLayout declares the user&apos;s intended data layout (topology type, protection mode, and EC parameters).
+    /// The entire struct is immutable after creation.
+    /// </summary>
+    [JsonPropertyName("dataLayout")]
+    public V1beta2VolumeSpecDataLayout? DataLayout { get; set; }
 
     [JsonPropertyName("dataLocality")]
     public V1beta2VolumeSpecDataLocalityEnum? DataLocality { get; set; }

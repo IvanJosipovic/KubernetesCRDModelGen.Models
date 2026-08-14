@@ -317,6 +317,9 @@ public partial class V1beta2NodeStatus
     [JsonPropertyName("conditions")]
     public IList<V1beta2NodeStatusConditions>? Conditions { get; set; }
 
+    [JsonPropertyName("cpuPolicy")]
+    public string? CpuPolicy { get; set; }
+
     [JsonPropertyName("diskStatus")]
     public IDictionary<string, V1beta2NodeStatusDiskStatus>? DiskStatus { get; set; }
 

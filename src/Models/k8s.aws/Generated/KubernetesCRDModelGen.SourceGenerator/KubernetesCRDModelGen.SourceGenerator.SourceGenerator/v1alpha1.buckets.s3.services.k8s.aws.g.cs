@@ -36,6 +36,22 @@ public partial class V1alpha1BucketList : IKubernetesObject<V1ListMeta>, IItems<
     public required IList<V1alpha1Bucket> Items { get; set; }
 }
 
+/// <summary>
+/// The ABAC status of the general purpose bucket. When ABAC is enabled for the
+/// general purpose bucket, you can use tags to manage access to the general
+/// purpose buckets as well as for cost tracking purposes. When ABAC is disabled
+/// for the general purpose buckets, you can only use tags for cost tracking
+/// purposes. For more information, see Using tags with S3 general purpose buckets
+/// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/buckets-tagging.html).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BucketSpecAbac
+{
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
 /// <summary>Container for setting the transfer acceleration state.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2043,6 +2059,17 @@ public partial class V1alpha1BucketSpecWebsite
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BucketSpec
 {
+    /// <summary>
+    /// The ABAC status of the general purpose bucket. When ABAC is enabled for the
+    /// general purpose bucket, you can use tags to manage access to the general
+    /// purpose buckets as well as for cost tracking purposes. When ABAC is disabled
+    /// for the general purpose buckets, you can only use tags for cost tracking
+    /// purposes. For more information, see Using tags with S3 general purpose buckets
+    /// (https://docs.aws.amazon.com/AmazonS3/latest/userguide/buckets-tagging.html).
+    /// </summary>
+    [JsonPropertyName("abac")]
+    public V1alpha1BucketSpecAbac? Abac { get; set; }
+
     /// <summary>Container for setting the transfer acceleration state.</summary>
     [JsonPropertyName("accelerate")]
     public V1alpha1BucketSpecAccelerate? Accelerate { get; set; }
