@@ -12,3 +12,4 @@ jobs:
     uses: IvanJosipovic/templates/.github/workflows/csharp-build-test.yaml@main
     with:
       run_tests: false
+      timeout_minutes: 20
