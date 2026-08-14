@@ -1,5 +1,5 @@
 {
-  "src/Models/k8s.aws": "1.43.0",
+  "src/Models/k8s.aws": "1.44.0",
   "src/Models/aquasecurity.github.io": "1.8.0",
   "src/Models/akuity.io": "1.4.0",
   "src/Models/argoproj.io": "1.17.0",
@@ -29,7 +29,7 @@
   "src/Models/knative.dev": "1.27.0",
   "src/Models/kubevirt.io": "1.11.0",
   "src/Models/kyverno.io": "1.2.1",
-  "src/Models/longhorn.io": "1.5.1",
+  "src/Models/longhorn.io": "1.6.0",
   "src/Models/postgresql.cnpg.io": "1.12.1",
   "src/Models/projectcalico.org": "1.64.1",
   "src/Models/secrets-store.csi.x-k8s.io": "1.6.1",
