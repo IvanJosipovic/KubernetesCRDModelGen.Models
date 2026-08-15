@@ -109,6 +109,42 @@ public partial class V1alpha1SnapshotSpecKmsKeyRef
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotSpecSourceSnapshotRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotSpecSourceSnapshotRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1SnapshotSpecSourceSnapshotRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// A tag that can be added to an MemoryDB resource. Tags are composed of a Key/Value
 /// pair. You can use tags to categorize and track all your MemoryDB resources.
 /// When you add or remove tags on clusters, those actions will be replicated
@@ -175,6 +211,18 @@ public partial class V1alpha1SnapshotSpec
     /// <summary>The name of an existing snapshot from which to make a copy.</summary>
     [JsonPropertyName("sourceSnapshotName")]
     public string? SourceSnapshotName { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("sourceSnapshotRef")]
+    public V1alpha1SnapshotSpecSourceSnapshotRef? SourceSnapshotRef { get; set; }
 
     /// <summary>
     /// A list of tags to be added to this resource. A tag is a key-value pair. A
