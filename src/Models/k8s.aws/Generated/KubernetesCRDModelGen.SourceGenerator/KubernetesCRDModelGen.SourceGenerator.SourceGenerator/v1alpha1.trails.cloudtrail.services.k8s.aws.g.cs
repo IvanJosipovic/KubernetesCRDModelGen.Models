@@ -109,6 +109,42 @@ public partial class V1alpha1TrailSpecKmsKeyRef
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TrailSpecS3BucketRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TrailSpecS3BucketRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1TrailSpecS3BucketRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// A custom key-value pair associated with a resource such as a CloudTrail trail,
 /// event data store, dashboard, or channel.
 /// </summary>
@@ -262,7 +298,19 @@ public partial class V1alpha1TrailSpec
     /// in the Amazon Simple Storage Service User Guide.
     /// </summary>
     [JsonPropertyName("s3BucketName")]
-    public required string S3BucketName { get; set; }
+    public string? S3BucketName { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("s3BucketRef")]
+    public V1alpha1TrailSpecS3BucketRef? S3BucketRef { get; set; }
 
     /// <summary>
     /// Specifies the Amazon S3 key prefix that comes after the name of the bucket

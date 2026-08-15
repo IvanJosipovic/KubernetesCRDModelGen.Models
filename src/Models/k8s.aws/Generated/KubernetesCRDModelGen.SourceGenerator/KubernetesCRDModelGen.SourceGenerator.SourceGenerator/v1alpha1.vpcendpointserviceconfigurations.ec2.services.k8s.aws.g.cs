@@ -36,6 +36,78 @@ public partial class V1alpha1VPCEndpointServiceConfigurationList : IKubernetesOb
     public required IList<V1alpha1VPCEndpointServiceConfiguration> Items { get; set; }
 }
 
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCEndpointServiceConfigurationSpecGatewayLoadBalancerRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCEndpointServiceConfigurationSpecGatewayLoadBalancerRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1VPCEndpointServiceConfigurationSpecGatewayLoadBalancerRefsFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCEndpointServiceConfigurationSpecNetworkLoadBalancerRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCEndpointServiceConfigurationSpecNetworkLoadBalancerRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1VPCEndpointServiceConfigurationSpecNetworkLoadBalancerRefsFrom? From { get; set; }
+}
+
 /// <summary>Describes a tag.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -72,9 +144,15 @@ public partial class V1alpha1VPCEndpointServiceConfigurationSpec
     [JsonPropertyName("gatewayLoadBalancerARNs")]
     public IList<string>? GatewayLoadBalancerARNs { get; set; }
 
+    [JsonPropertyName("gatewayLoadBalancerRefs")]
+    public IList<V1alpha1VPCEndpointServiceConfigurationSpecGatewayLoadBalancerRefs>? GatewayLoadBalancerRefs { get; set; }
+
     /// <summary>The Amazon Resource Names (ARNs) of the Network Load Balancers.</summary>
     [JsonPropertyName("networkLoadBalancerARNs")]
     public IList<string>? NetworkLoadBalancerARNs { get; set; }
+
+    [JsonPropertyName("networkLoadBalancerRefs")]
+    public IList<V1alpha1VPCEndpointServiceConfigurationSpecNetworkLoadBalancerRefs>? NetworkLoadBalancerRefs { get; set; }
 
     /// <summary>
     /// (Interface endpoint configuration) The private DNS name to assign to the
