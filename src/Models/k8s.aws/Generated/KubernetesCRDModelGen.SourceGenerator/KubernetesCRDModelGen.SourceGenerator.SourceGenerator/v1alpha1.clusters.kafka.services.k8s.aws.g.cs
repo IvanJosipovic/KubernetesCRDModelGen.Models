@@ -628,6 +628,10 @@ public partial class V1alpha1ClusterSpec
     [JsonPropertyName("openMonitoring")]
     public V1alpha1ClusterSpecOpenMonitoring? OpenMonitoring { get; set; }
 
+    /// <summary>The cluster policy.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
     /// <summary>
     /// Specifies if intelligent rebalancing should be turned on for the new MSK
     /// Provisioned cluster with Express brokers. By default, intelligent rebalancing

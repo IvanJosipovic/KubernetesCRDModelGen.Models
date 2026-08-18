@@ -702,6 +702,10 @@ public partial class V1alpha1ServerlessClusterSpec
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
+    /// <summary>The cluster policy.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
     /// <summary>Information about the provisioned cluster.</summary>
     [JsonPropertyName("provisioned")]
     public V1alpha1ServerlessClusterSpecProvisioned? Provisioned { get; set; }
