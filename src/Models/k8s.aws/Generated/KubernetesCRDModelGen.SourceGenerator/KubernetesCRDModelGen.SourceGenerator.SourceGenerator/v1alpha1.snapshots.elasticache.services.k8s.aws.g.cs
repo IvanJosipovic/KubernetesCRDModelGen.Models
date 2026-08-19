@@ -263,7 +263,10 @@ public partial class V1alpha1SnapshotSpec
     [JsonPropertyName("replicationGroupRef")]
     public V1alpha1SnapshotSpecReplicationGroupRef? ReplicationGroupRef { get; set; }
 
-    /// <summary>A name for the snapshot being created.</summary>
+    /// <summary>
+    /// A name for the snapshot being created. This value is stored as a lowercase
+    /// string.
+    /// </summary>
     [JsonPropertyName("snapshotName")]
     public required string SnapshotName { get; set; }
 

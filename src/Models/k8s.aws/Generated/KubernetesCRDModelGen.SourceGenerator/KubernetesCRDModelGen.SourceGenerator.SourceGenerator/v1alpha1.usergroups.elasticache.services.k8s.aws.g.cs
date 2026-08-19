@@ -111,7 +111,7 @@ public partial class V1alpha1UserGroupSpec
     [JsonPropertyName("tags")]
     public IList<V1alpha1UserGroupSpecTags>? Tags { get; set; }
 
-    /// <summary>The ID of the user group.</summary>
+    /// <summary>The ID of the user group. This value is stored as a lowercase string.</summary>
     [JsonPropertyName("userGroupID")]
     public required string UserGroupID { get; set; }
 

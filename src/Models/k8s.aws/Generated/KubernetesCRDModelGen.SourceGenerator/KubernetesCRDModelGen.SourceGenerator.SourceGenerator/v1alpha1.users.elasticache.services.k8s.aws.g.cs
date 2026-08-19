@@ -152,7 +152,7 @@ public partial class V1alpha1UserSpec
     public IList<V1alpha1UserSpecTags>? Tags { get; set; }
 
     /// <summary>
-    /// The ID of the user.
+    /// The ID of the user. This value is stored as a lowercase string.
     /// 
     /// Regex Pattern: `^[a-zA-Z][a-zA-Z0-9\-]*$`
     /// </summary>
