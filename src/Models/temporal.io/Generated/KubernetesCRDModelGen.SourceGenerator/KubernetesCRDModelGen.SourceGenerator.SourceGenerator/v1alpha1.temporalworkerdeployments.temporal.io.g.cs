@@ -37,6 +37,21 @@ public partial class V1alpha1TemporalWorkerDeploymentList : IKubernetesObject<V1
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TemporalWorkerDeploymentSpecRolloutGateEncodingEnum>))]
+[global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
+public enum V1alpha1TemporalWorkerDeploymentSpecRolloutGateEncodingEnum
+{
+    [EnumMember(Value = "binary/plain"), JsonStringEnumMemberName("binary/plain")]
+    BinaryPlain,
+    [EnumMember(Value = "json/plain"), JsonStringEnumMemberName("json/plain")]
+    JsonPlain,
+    [EnumMember(Value = "json/protobuf"), JsonStringEnumMemberName("json/protobuf")]
+    JsonProtobuf,
+    [EnumMember(Value = "binary/protobuf"), JsonStringEnumMemberName("binary/protobuf")]
+    BinaryProtobuf
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFromConfigMapKeyRef
@@ -83,11 +98,17 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFrom
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecRolloutGate
 {
+    [JsonPropertyName("encoding")]
+    public V1alpha1TemporalWorkerDeploymentSpecRolloutGateEncodingEnum? Encoding { get; set; }
+
     [JsonPropertyName("input")]
     public JsonNode? Input { get; set; }
 
     [JsonPropertyName("inputFrom")]
     public V1alpha1TemporalWorkerDeploymentSpecRolloutGateInputFrom? InputFrom { get; set; }
+
+    [JsonPropertyName("messageType")]
+    public string? MessageType { get; set; }
 
     [JsonPropertyName("workflowType")]
     public required string WorkflowType { get; set; }
@@ -3634,6 +3655,15 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingG
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
+public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingGroup
+{
+    [JsonPropertyName("podGroupName")]
+    public string? PodGroupName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -4990,21 +5020,6 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumes
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
-public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpecWorkloadRef
-{
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    [JsonPropertyName("podGroup")]
-    public required string PodGroup { get; set; }
-
-    [JsonPropertyName("podGroupReplicaKey")]
-    public string? PodGroupReplicaKey { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete("TemporalWorkerDeployment is deprecated. Use WorkerDeployment instead.")]
 public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpec
 {
     [JsonPropertyName("activeDeadlineSeconds")]
@@ -5100,6 +5115,9 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpec
     [JsonPropertyName("schedulingGates")]
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingGates>? SchedulingGates { get; set; }
 
+    [JsonPropertyName("schedulingGroup")]
+    public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSchedulingGroup? SchedulingGroup { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecSecurityContext? SecurityContext { get; set; }
 
@@ -5129,9 +5147,6 @@ public partial class V1alpha1TemporalWorkerDeploymentSpecTemplateSpec
 
     [JsonPropertyName("volumes")]
     public IList<V1alpha1TemporalWorkerDeploymentSpecTemplateSpecVolumes>? Volumes { get; set; }
-
-    [JsonPropertyName("workloadRef")]
-    public V1alpha1TemporalWorkerDeploymentSpecTemplateSpecWorkloadRef? WorkloadRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

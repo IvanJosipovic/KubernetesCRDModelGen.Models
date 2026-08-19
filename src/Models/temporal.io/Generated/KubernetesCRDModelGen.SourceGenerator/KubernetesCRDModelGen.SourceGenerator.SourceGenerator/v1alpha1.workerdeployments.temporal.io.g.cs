@@ -36,6 +36,20 @@ public partial class V1alpha1WorkerDeploymentList : IKubernetesObject<V1ListMeta
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum>))]
+public enum V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum
+{
+    [EnumMember(Value = "binary/plain"), JsonStringEnumMemberName("binary/plain")]
+    BinaryPlain,
+    [EnumMember(Value = "json/plain"), JsonStringEnumMemberName("json/plain")]
+    JsonPlain,
+    [EnumMember(Value = "json/protobuf"), JsonStringEnumMemberName("json/protobuf")]
+    JsonProtobuf,
+    [EnumMember(Value = "binary/protobuf"), JsonStringEnumMemberName("binary/protobuf")]
+    BinaryProtobuf
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpecRolloutGateInputFromConfigMapKeyRef
 {
@@ -78,11 +92,17 @@ public partial class V1alpha1WorkerDeploymentSpecRolloutGateInputFrom
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpecRolloutGate
 {
+    [JsonPropertyName("encoding")]
+    public V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum? Encoding { get; set; }
+
     [JsonPropertyName("input")]
     public JsonNode? Input { get; set; }
 
     [JsonPropertyName("inputFrom")]
     public V1alpha1WorkerDeploymentSpecRolloutGateInputFrom? InputFrom { get; set; }
+
+    [JsonPropertyName("messageType")]
+    public string? MessageType { get; set; }
 
     [JsonPropertyName("workflowType")]
     public required string WorkflowType { get; set; }
@@ -3411,6 +3431,14 @@ public partial class V1alpha1WorkerDeploymentSpecTemplateSpecSchedulingGates
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecTemplateSpecSchedulingGroup
+{
+    [JsonPropertyName("podGroupName")]
+    public string? PodGroupName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpecTemplateSpecSecurityContextAppArmorProfile
 {
     [JsonPropertyName("localhostProfile")]
@@ -4691,20 +4719,6 @@ public partial class V1alpha1WorkerDeploymentSpecTemplateSpecVolumes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1WorkerDeploymentSpecTemplateSpecWorkloadRef
-{
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    [JsonPropertyName("podGroup")]
-    public required string PodGroup { get; set; }
-
-    [JsonPropertyName("podGroupReplicaKey")]
-    public string? PodGroupReplicaKey { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpecTemplateSpec
 {
     [JsonPropertyName("activeDeadlineSeconds")]
@@ -4800,6 +4814,9 @@ public partial class V1alpha1WorkerDeploymentSpecTemplateSpec
     [JsonPropertyName("schedulingGates")]
     public IList<V1alpha1WorkerDeploymentSpecTemplateSpecSchedulingGates>? SchedulingGates { get; set; }
 
+    [JsonPropertyName("schedulingGroup")]
+    public V1alpha1WorkerDeploymentSpecTemplateSpecSchedulingGroup? SchedulingGroup { get; set; }
+
     [JsonPropertyName("securityContext")]
     public V1alpha1WorkerDeploymentSpecTemplateSpecSecurityContext? SecurityContext { get; set; }
 
@@ -4829,9 +4846,6 @@ public partial class V1alpha1WorkerDeploymentSpecTemplateSpec
 
     [JsonPropertyName("volumes")]
     public IList<V1alpha1WorkerDeploymentSpecTemplateSpecVolumes>? Volumes { get; set; }
-
-    [JsonPropertyName("workloadRef")]
-    public V1alpha1WorkerDeploymentSpecTemplateSpecWorkloadRef? WorkloadRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
