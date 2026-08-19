@@ -178,7 +178,7 @@ public partial class V1alpha1ServerlessCacheSnapshotSpec
     /// <summary>
     /// The name for the snapshot being created. Must be unique for the customer
     /// account. Available for Valkey, Redis OSS and Serverless Memcached only. Must
-    /// be between 1 and 255 characters.
+    /// be between 1 and 255 characters. This value is stored as a lowercase string.
     /// </summary>
     [JsonPropertyName("serverlessCacheSnapshotName")]
     public required string ServerlessCacheSnapshotName { get; set; }

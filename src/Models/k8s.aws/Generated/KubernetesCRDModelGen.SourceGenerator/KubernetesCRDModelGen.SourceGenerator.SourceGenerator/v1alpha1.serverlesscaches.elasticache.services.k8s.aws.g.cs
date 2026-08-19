@@ -339,10 +339,9 @@ public partial class V1alpha1ServerlessCacheSpec
     public IList<string>? SnapshotARNsToRestore { get; set; }
 
     /// <summary>
-    /// The number of snapshots that will be retained for the serverless cache that
-    /// is being created. As new snapshots beyond this limit are added, the oldest
-    /// snapshots will be deleted on a rolling basis. Available for Valkey, Redis
-    /// OSS and Serverless Memcached only.
+    /// The number of days for which ElastiCache retains automatic snapshots before
+    /// deleting them. Available for Valkey, Redis OSS and Serverless Memcached only.
+    /// The maximum value allowed is 35 days.
     /// </summary>
     [JsonPropertyName("snapshotRetentionLimit")]
     public long? SnapshotRetentionLimit { get; set; }
@@ -534,6 +533,15 @@ public partial class V1alpha1ServerlessCacheStatus
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
+
+    /// <summary>
+    /// Indicates the type of encryption for data stored at rest in the serverless
+    /// cache. Serverless caches are always encrypted at rest. The value is sse-elasticache
+    /// if an ElastiCache service-managed key is used, or sse-kms if a customer-managed
+    /// KMS key is used.
+    /// </summary>
+    [JsonPropertyName("storageEncryptionType")]
+    public string? StorageEncryptionType { get; set; }
 }
 
 /// <summary>ServerlessCache is the Schema for the ServerlessCaches API</summary>

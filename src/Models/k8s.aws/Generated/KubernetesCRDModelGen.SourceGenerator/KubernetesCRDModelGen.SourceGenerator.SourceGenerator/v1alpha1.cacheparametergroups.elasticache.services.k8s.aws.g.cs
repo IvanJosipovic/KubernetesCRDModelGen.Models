@@ -86,7 +86,10 @@ public partial class V1alpha1CacheParameterGroupSpec
     [JsonPropertyName("cacheParameterGroupFamily")]
     public required string CacheParameterGroupFamily { get; set; }
 
-    /// <summary>A user-specified name for the cache parameter group.</summary>
+    /// <summary>
+    /// A user-specified name for the cache parameter group. This value is stored
+    /// as a lowercase string.
+    /// </summary>
     [JsonPropertyName("cacheParameterGroupName")]
     public required string CacheParameterGroupName { get; set; }
 
