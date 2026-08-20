@@ -1740,6 +1740,103 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumes
     public V1KafkaSpecKafkaTemplatePodVolumesImage? Image { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecretItems
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+/// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecret
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMapItems
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+/// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMap
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>`PersistentVolumeClaim` object to use to populate the volume. The name of the Persistent Volume Claim can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesPersistentVolumeClaim
+{
+    [JsonPropertyName("claimName")]
+    public string? ClaimName { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumes
+{
+    /// <summary>Name to use for the volume. Required.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("secret")]
+    public V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecret? Secret { get; set; }
+
+    /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("configMap")]
+    public V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMap? ConfigMap { get; set; }
+
+    /// <summary>`PersistentVolumeClaim` object to use to populate the volume. The name of the Persistent Volume Claim can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("persistentVolumeClaim")]
+    public V1KafkaSpecKafkaTemplatePodTemplatedVolumesPersistentVolumeClaim? PersistentVolumeClaim { get; set; }
+}
+
 /// <summary>Template for Kafka `Pods`.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1804,6 +1901,10 @@ public partial class V1KafkaSpecKafkaTemplatePod
     /// <summary>Additional volumes that can be mounted to the pod.</summary>
     [JsonPropertyName("volumes")]
     public IList<V1KafkaSpecKafkaTemplatePodVolumes>? Volumes { get; set; }
+
+    /// <summary>Additional volumes that can be mounted to the pod. These volumes can use templates to mount different volumes into individual Pods.</summary>
+    [JsonPropertyName("templatedVolumes")]
+    public IList<V1KafkaSpecKafkaTemplatePodTemplatedVolumes>? TemplatedVolumes { get; set; }
 
     /// <summary>Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.</summary>
     [JsonPropertyName("hostUsers")]
@@ -8463,6 +8564,10 @@ public partial class V1KafkaStatus
     /// <summary>The status of an auto-rebalancing triggered by a cluster scaling request.</summary>
     [JsonPropertyName("autoRebalance")]
     public V1KafkaStatusAutoRebalance? AutoRebalance { get; set; }
+
+    /// <summary>The current security configuration of the Kafka cluster.</summary>
+    [JsonPropertyName("clusterSecurity")]
+    public JsonNode? ClusterSecurity { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
