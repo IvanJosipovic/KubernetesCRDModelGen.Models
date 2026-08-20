@@ -196,6 +196,9 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKey
 /// log.
 /// Issuer/Subject uses a strict match, while IssuerRegExp and SubjectRegExp
 /// apply a regexp for matching.
+/// For a dynamic subject, use SubjectExpression which accepts a CEL expression
+/// evaluated at admission time. The result is used as a regexp match against the
+/// certificate SAN URI, so it can be either a literal string or a regexp pattern.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -213,6 +216,13 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKeylessIdentities
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
 
+    /// <summary>
+    /// SubjectExpression defines a CEL expression that evaluates to the subject string,
+    /// matched as a regexp against the certificate SAN URI. Mutually exclusive with SubjectRegExp.
+    /// </summary>
+    [JsonPropertyName("subjectExpression")]
+    public string? SubjectExpression { get; set; }
+
     /// <summary>SubjectRegExp specifies a regular expression to match the subject for this identity.</summary>
     [JsonPropertyName("subjectRegExp")]
     public string? SubjectRegExp { get; set; }
@@ -223,6 +233,10 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKeylessIdentities
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignKeyless
 {
+    /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
+    [JsonPropertyName("additionalExtensions")]
+    public IDictionary<string, string>? AdditionalExtensions { get; set; }
+
     /// <summary>Identities sets a list of identities.</summary>
     [JsonPropertyName("identities")]
     public required IList<V1ImageValidatingPolicySpecAttestorsCosignKeylessIdentities> Identities { get; set; }
@@ -278,6 +292,28 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignSource
     /// </summary>
     [JsonPropertyName("tagPrefix")]
     public string? TagPrefix { get; set; }
+}
+
+/// <summary>
+/// TrustedRoot is the sigstore-go TrustedRoot JSON
+/// (mediaType application/vnd.dev.sigstore.trustedroot+json;version=0.1).
+/// When set, Kyverno uses this trust material directly instead of fetching
+/// trusted_root.json from the Sigstore TUF repository. Use this field when
+/// verifying attestations from providers that do not operate a TUF server,
+/// such as GitHub Actions. Takes precedence over the tuf field.
+/// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ImageValidatingPolicySpecAttestorsCosignTrustedRoot
+{
+    /// <summary>Expression defines the a CEL expression input.</summary>
+    [JsonPropertyName("expression")]
+    public string? Expression { get; set; }
+
+    /// <summary>Value defines the raw string input.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>Root defines the path or data of the trusted root</summary>
@@ -340,6 +376,18 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosign
     /// <summary>Sources sets the configuration to specify the sources from where to consume the signature and attestations.</summary>
     [JsonPropertyName("source")]
     public V1ImageValidatingPolicySpecAttestorsCosignSource? Source { get; set; }
+
+    /// <summary>
+    /// TrustedRoot is the sigstore-go TrustedRoot JSON
+    /// (mediaType application/vnd.dev.sigstore.trustedroot+json;version=0.1).
+    /// When set, Kyverno uses this trust material directly instead of fetching
+    /// trusted_root.json from the Sigstore TUF repository. Use this field when
+    /// verifying attestations from providers that do not operate a TUF server,
+    /// such as GitHub Actions. Takes precedence over the tuf field.
+    /// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
+    /// </summary>
+    [JsonPropertyName("trustedRoot")]
+    public V1ImageValidatingPolicySpecAttestorsCosignTrustedRoot? TrustedRoot { get; set; }
 
     /// <summary>TUF defines the configuration to fetch sigstore root</summary>
     [JsonPropertyName("tuf")]
@@ -554,7 +602,7 @@ public partial class V1ImageValidatingPolicySpecEvaluation
 
     /// <summary>
     /// Mode is the mode of policy evaluation.
-    /// Allowed values are &quot;Kubernetes&quot; or &quot;JSON&quot;.
+    /// Allowed values are &quot;Kubernetes&quot;, &quot;HTTP&quot; or &quot;Envoy&quot;.
     /// Optional. Default value is &quot;Kubernetes&quot;.
     /// </summary>
     [JsonPropertyName("mode")]
@@ -1471,6 +1519,9 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 /// log.
 /// Issuer/Subject uses a strict match, while IssuerRegExp and SubjectRegExp
 /// apply a regexp for matching.
+/// For a dynamic subject, use SubjectExpression which accepts a CEL expression
+/// evaluated at admission time. The result is used as a regexp match against the
+/// certificate SAN URI, so it can be either a literal string or a regexp pattern.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1488,6 +1539,13 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
 
+    /// <summary>
+    /// SubjectExpression defines a CEL expression that evaluates to the subject string,
+    /// matched as a regexp against the certificate SAN URI. Mutually exclusive with SubjectRegExp.
+    /// </summary>
+    [JsonPropertyName("subjectExpression")]
+    public string? SubjectExpression { get; set; }
+
     /// <summary>SubjectRegExp specifies a regular expression to match the subject for this identity.</summary>
     [JsonPropertyName("subjectRegExp")]
     public string? SubjectRegExp { get; set; }
@@ -1498,6 +1556,10 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignKeyless
 {
+    /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
+    [JsonPropertyName("additionalExtensions")]
+    public IDictionary<string, string>? AdditionalExtensions { get; set; }
+
     /// <summary>Identities sets a list of identities.</summary>
     [JsonPropertyName("identities")]
     public required IList<V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignKeylessIdentities> Identities { get; set; }
@@ -1553,6 +1615,28 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
     /// </summary>
     [JsonPropertyName("tagPrefix")]
     public string? TagPrefix { get; set; }
+}
+
+/// <summary>
+/// TrustedRoot is the sigstore-go TrustedRoot JSON
+/// (mediaType application/vnd.dev.sigstore.trustedroot+json;version=0.1).
+/// When set, Kyverno uses this trust material directly instead of fetching
+/// trusted_root.json from the Sigstore TUF repository. Use this field when
+/// verifying attestations from providers that do not operate a TUF server,
+/// such as GitHub Actions. Takes precedence over the tuf field.
+/// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignTrustedRoot
+{
+    /// <summary>Expression defines the a CEL expression input.</summary>
+    [JsonPropertyName("expression")]
+    public string? Expression { get; set; }
+
+    /// <summary>Value defines the raw string input.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
 }
 
 /// <summary>Root defines the path or data of the trusted root</summary>
@@ -1615,6 +1699,18 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
     /// <summary>Sources sets the configuration to specify the sources from where to consume the signature and attestations.</summary>
     [JsonPropertyName("source")]
     public V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignSource? Source { get; set; }
+
+    /// <summary>
+    /// TrustedRoot is the sigstore-go TrustedRoot JSON
+    /// (mediaType application/vnd.dev.sigstore.trustedroot+json;version=0.1).
+    /// When set, Kyverno uses this trust material directly instead of fetching
+    /// trusted_root.json from the Sigstore TUF repository. Use this field when
+    /// verifying attestations from providers that do not operate a TUF server,
+    /// such as GitHub Actions. Takes precedence over the tuf field.
+    /// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
+    /// </summary>
+    [JsonPropertyName("trustedRoot")]
+    public V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignTrustedRoot? TrustedRoot { get; set; }
 
     /// <summary>TUF defines the configuration to fetch sigstore root</summary>
     [JsonPropertyName("tuf")]
@@ -1829,7 +1925,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluation
 
     /// <summary>
     /// Mode is the mode of policy evaluation.
-    /// Allowed values are &quot;Kubernetes&quot; or &quot;JSON&quot;.
+    /// Allowed values are &quot;Kubernetes&quot;, &quot;HTTP&quot; or &quot;Envoy&quot;.
     /// Optional. Default value is &quot;Kubernetes&quot;.
     /// </summary>
     [JsonPropertyName("mode")]

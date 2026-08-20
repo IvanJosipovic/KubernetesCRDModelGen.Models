@@ -72,7 +72,7 @@ public enum V2beta1PolicySpecFailurePolicyEnum
 public partial class V2beta1PolicySpecRulesCelPreconditions
 {
     /// <summary>
-    /// Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+    /// expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
     /// CEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:
     /// 
     /// &apos;object&apos; - The object from the incoming request. The value is null for DELETE requests.
@@ -90,7 +90,7 @@ public partial class V2beta1PolicySpecRulesCelPreconditions
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Name is an identifier for this match condition, used for strategic merging of MatchConditions,
+    /// name is an identifier for this match condition, used for strategic merging of MatchConditions,
     /// as well as providing an identifier for logging purposes. A good name should be descriptive of
     /// the associated expression.
     /// Name must be a qualified name consisting of alphanumeric characters, &apos;-&apos;, &apos;_&apos; or &apos;.&apos;, and
@@ -1476,8 +1476,8 @@ public partial class V2beta1PolicySpecRulesGenerate
 
     /// <summary>
     /// OrphanDownstreamOnPolicyDelete controls whether generated resources should be deleted when the rule that generated
-    /// them is deleted with synchronization enabled. This option is only applicable to generate rules of the data type.
-    /// See https://kyverno.io/docs/writing-policies/generate/#data-examples.
+    /// them is deleted with synchronization enabled.
+    /// See https://kyverno.io/docs/writing-policies/generate/.
     /// Defaults to &quot;false&quot; if not specified.
     /// </summary>
     [JsonPropertyName("orphanDownstreamOnPolicyDelete")]
@@ -3024,7 +3024,7 @@ public partial class V2beta1PolicySpecRulesValidateCelAuditAnnotations
 public partial class V2beta1PolicySpecRulesValidateCelExpressions
 {
     /// <summary>
-    /// Expression represents the expression which will be evaluated by CEL.
+    /// expression represents the expression which will be evaluated by CEL.
     /// ref: https://github.com/google/cel-spec
     /// CEL expressions have access to the contents of the API request/response, organized into CEL variables as well as some other useful variables:
     /// 
@@ -3070,7 +3070,7 @@ public partial class V2beta1PolicySpecRulesValidateCelExpressions
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Message represents the message displayed when validation fails. The message is required if the Expression contains
+    /// message represents the message displayed when validation fails. The message is required if the Expression contains
     /// line breaks. The message must not contain line breaks.
     /// If unset, the message is &quot;failed rule: {Rule}&quot;.
     /// e.g. &quot;must be a URL with the host matching spec.host&quot;
@@ -3097,7 +3097,7 @@ public partial class V2beta1PolicySpecRulesValidateCelExpressions
     public string? MessageExpression { get; set; }
 
     /// <summary>
-    /// Reason represents a machine-readable description of why this validation failed.
+    /// reason represents a machine-readable description of why this validation failed.
     /// If this is the first validation in the list to fail, this reason, as well as the
     /// corresponding HTTP response code, are used in the
     /// HTTP response to the client.
@@ -3114,7 +3114,7 @@ public partial class V2beta1PolicySpecRulesValidateCelExpressions
 public partial class V2beta1PolicySpecRulesValidateCelParamKind
 {
     /// <summary>
-    /// APIVersion is the API group version the resources belong to.
+    /// apiVersion is the API group version the resources belong to.
     /// In format of &quot;group/version&quot;.
     /// Required.
     /// </summary>
@@ -3122,7 +3122,7 @@ public partial class V2beta1PolicySpecRulesValidateCelParamKind
     public string? ApiVersion { get; set; }
 
     /// <summary>
-    /// Kind is the API kind the resources belong to.
+    /// kind is the API kind the resources belong to.
     /// Required.
     /// </summary>
     [JsonPropertyName("kind")]
@@ -3223,7 +3223,7 @@ public partial class V2beta1PolicySpecRulesValidateCelParamRef
     public string? Namespace { get; set; }
 
     /// <summary>
-    /// `parameterNotFoundAction` controls the behavior of the binding when the resource
+    /// parameterNotFoundAction controls the behavior of the binding when the resource
     /// exists, and name or selector is valid, but there are no parameters
     /// matched by the binding. If the value is set to `Allow`, then no
     /// matched parameters will be treated as successful validation by the binding.
@@ -3257,14 +3257,14 @@ public partial class V2beta1PolicySpecRulesValidateCelParamRef
 public partial class V2beta1PolicySpecRulesValidateCelVariables
 {
     /// <summary>
-    /// Expression is the expression that will be evaluated as the value of the variable.
+    /// expression is the expression that will be evaluated as the value of the variable.
     /// The CEL expression has access to the same identifiers as the CEL expressions in Validation.
     /// </summary>
     [JsonPropertyName("expression")]
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.
+    /// name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.
     /// The variable can be accessed in other expressions through `variables`
     /// For example, if name is &quot;foo&quot;, the variable will be available as `variables.foo`
     /// </summary>
@@ -4544,7 +4544,10 @@ public partial class V2beta1PolicySpecRulesValidate
     [JsonPropertyName("anyPattern")]
     public JsonNode? AnyPattern { get; set; }
 
-    /// <summary>Assert defines a kyverno-json assertion tree.</summary>
+    /// <summary>
+    /// Assert defines a kyverno-json assertion tree.
+    /// Deprecated, kept only for backward compatibility but has no effect since 1.19.
+    /// </summary>
     [JsonPropertyName("assert")]
     public JsonNode? Assert { get; set; }
 
@@ -5777,6 +5780,10 @@ public partial class V2beta1PolicySpecRules
     [JsonPropertyName("preconditions")]
     public V2beta1PolicySpecRulesPreconditions? Preconditions { get; set; }
 
+    /// <summary>ReportProperties are the additional properties from the rule that will be added to the policy report result</summary>
+    [JsonPropertyName("reportProperties")]
+    public IDictionary<string, string>? ReportProperties { get; set; }
+
     /// <summary>
     /// SkipBackgroundRequests bypasses admission requests that are sent by the background controller.
     /// The default value is set to &quot;true&quot;, it must be set to &quot;false&quot; to apply
@@ -5917,7 +5924,7 @@ public enum V2beta1PolicySpecWebhookConfigurationFailurePolicyEnum
 public partial class V2beta1PolicySpecWebhookConfigurationMatchConditions
 {
     /// <summary>
-    /// Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+    /// expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
     /// CEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:
     /// 
     /// &apos;object&apos; - The object from the incoming request. The value is null for DELETE requests.
@@ -5935,7 +5942,7 @@ public partial class V2beta1PolicySpecWebhookConfigurationMatchConditions
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Name is an identifier for this match condition, used for strategic merging of MatchConditions,
+    /// name is an identifier for this match condition, used for strategic merging of MatchConditions,
     /// as well as providing an identifier for logging purposes. A good name should be descriptive of
     /// the associated expression.
     /// Name must be a qualified name consisting of alphanumeric characters, &apos;-&apos;, &apos;_&apos; or &apos;.&apos;, and
@@ -6073,7 +6080,7 @@ public partial class V2beta1PolicySpec
 public partial class V2beta1PolicyStatusAutogenRulesCelPreconditions
 {
     /// <summary>
-    /// Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+    /// expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
     /// CEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:
     /// 
     /// &apos;object&apos; - The object from the incoming request. The value is null for DELETE requests.
@@ -6091,7 +6098,7 @@ public partial class V2beta1PolicyStatusAutogenRulesCelPreconditions
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Name is an identifier for this match condition, used for strategic merging of MatchConditions,
+    /// name is an identifier for this match condition, used for strategic merging of MatchConditions,
     /// as well as providing an identifier for logging purposes. A good name should be descriptive of
     /// the associated expression.
     /// Name must be a qualified name consisting of alphanumeric characters, &apos;-&apos;, &apos;_&apos; or &apos;.&apos;, and
@@ -7721,8 +7728,8 @@ public partial class V2beta1PolicyStatusAutogenRulesGenerate
 
     /// <summary>
     /// OrphanDownstreamOnPolicyDelete controls whether generated resources should be deleted when the rule that generated
-    /// them is deleted with synchronization enabled. This option is only applicable to generate rules of the data type.
-    /// See https://kyverno.io/docs/writing-policies/generate/#data-examples.
+    /// them is deleted with synchronization enabled.
+    /// See https://kyverno.io/docs/writing-policies/generate/.
     /// Defaults to &quot;false&quot; if not specified.
     /// </summary>
     [JsonPropertyName("orphanDownstreamOnPolicyDelete")]
@@ -9347,7 +9354,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelAuditAnnotations
 public partial class V2beta1PolicyStatusAutogenRulesValidateCelExpressions
 {
     /// <summary>
-    /// Expression represents the expression which will be evaluated by CEL.
+    /// expression represents the expression which will be evaluated by CEL.
     /// ref: https://github.com/google/cel-spec
     /// CEL expressions have access to the contents of the API request/response, organized into CEL variables as well as some other useful variables:
     /// 
@@ -9393,7 +9400,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelExpressions
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Message represents the message displayed when validation fails. The message is required if the Expression contains
+    /// message represents the message displayed when validation fails. The message is required if the Expression contains
     /// line breaks. The message must not contain line breaks.
     /// If unset, the message is &quot;failed rule: {Rule}&quot;.
     /// e.g. &quot;must be a URL with the host matching spec.host&quot;
@@ -9420,7 +9427,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelExpressions
     public string? MessageExpression { get; set; }
 
     /// <summary>
-    /// Reason represents a machine-readable description of why this validation failed.
+    /// reason represents a machine-readable description of why this validation failed.
     /// If this is the first validation in the list to fail, this reason, as well as the
     /// corresponding HTTP response code, are used in the
     /// HTTP response to the client.
@@ -9437,7 +9444,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelExpressions
 public partial class V2beta1PolicyStatusAutogenRulesValidateCelParamKind
 {
     /// <summary>
-    /// APIVersion is the API group version the resources belong to.
+    /// apiVersion is the API group version the resources belong to.
     /// In format of &quot;group/version&quot;.
     /// Required.
     /// </summary>
@@ -9445,7 +9452,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelParamKind
     public string? ApiVersion { get; set; }
 
     /// <summary>
-    /// Kind is the API kind the resources belong to.
+    /// kind is the API kind the resources belong to.
     /// Required.
     /// </summary>
     [JsonPropertyName("kind")]
@@ -9546,7 +9553,7 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelParamRef
     public string? Namespace { get; set; }
 
     /// <summary>
-    /// `parameterNotFoundAction` controls the behavior of the binding when the resource
+    /// parameterNotFoundAction controls the behavior of the binding when the resource
     /// exists, and name or selector is valid, but there are no parameters
     /// matched by the binding. If the value is set to `Allow`, then no
     /// matched parameters will be treated as successful validation by the binding.
@@ -9580,14 +9587,14 @@ public partial class V2beta1PolicyStatusAutogenRulesValidateCelParamRef
 public partial class V2beta1PolicyStatusAutogenRulesValidateCelVariables
 {
     /// <summary>
-    /// Expression is the expression that will be evaluated as the value of the variable.
+    /// expression is the expression that will be evaluated as the value of the variable.
     /// The CEL expression has access to the same identifiers as the CEL expressions in Validation.
     /// </summary>
     [JsonPropertyName("expression")]
     public required string Expression { get; set; }
 
     /// <summary>
-    /// Name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.
+    /// name is the name of the variable. The name must be a valid CEL identifier and unique among all variables.
     /// The variable can be accessed in other expressions through `variables`
     /// For example, if name is &quot;foo&quot;, the variable will be available as `variables.foo`
     /// </summary>
@@ -10708,7 +10715,10 @@ public partial class V2beta1PolicyStatusAutogenRulesValidate
     [JsonPropertyName("anyPattern")]
     public JsonNode? AnyPattern { get; set; }
 
-    /// <summary>Assert defines a kyverno-json assertion tree.</summary>
+    /// <summary>
+    /// Assert defines a kyverno-json assertion tree.
+    /// Deprecated, kept only for backward compatibility but has no effect since 1.19.
+    /// </summary>
     [JsonPropertyName("assert")]
     public JsonNode? Assert { get; set; }
 

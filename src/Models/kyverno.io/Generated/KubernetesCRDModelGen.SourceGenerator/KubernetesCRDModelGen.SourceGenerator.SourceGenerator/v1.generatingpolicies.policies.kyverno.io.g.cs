@@ -35,6 +35,52 @@ public partial class V1GeneratingPolicyList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1GeneratingPolicy> Items { get; set; }
 }
 
+/// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GeneratingPolicySpecAuditAnnotations
+{
+    /// <summary>
+    /// key specifies the audit annotation key. The audit annotation keys of
+    /// a ValidatingAdmissionPolicy must be unique. The key must be a qualified
+    /// name ([A-Za-z0-9][-A-Za-z0-9_.]*) no more than 63 bytes in length.
+    /// 
+    /// The key is combined with the resource name of the
+    /// ValidatingAdmissionPolicy to construct an audit annotation key:
+    /// &quot;{ValidatingAdmissionPolicy name}/{key}&quot;.
+    /// 
+    /// If an admission webhook uses the same resource name as this ValidatingAdmissionPolicy
+    /// and the same audit annotation key, the annotation key will be identical.
+    /// In this case, the first annotation written with the key will be included
+    /// in the audit event and all subsequent annotations with the same key
+    /// will be discarded.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// valueExpression represents the expression which is evaluated by CEL to
+    /// produce an audit annotation value. The expression must evaluate to either
+    /// a string or null value. If the expression evaluates to a string, the
+    /// audit annotation is included with the string value. If the expression
+    /// evaluates to null or empty string the audit annotation will be omitted.
+    /// The valueExpression may be no longer than 5kb in length.
+    /// If the result of the valueExpression is more than 10kb in length, it
+    /// will be truncated to 10kb.
+    /// 
+    /// If multiple ValidatingAdmissionPolicyBinding resources match an
+    /// API request, then the valueExpression will be evaluated for
+    /// each binding. All unique values produced by the valueExpressions
+    /// will be joined together in a comma-separated list.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("valueExpression")]
+    public required string ValueExpression { get; set; }
+}
+
 /// <summary>Admission controls policy evaluation during admission.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -108,9 +154,56 @@ public partial class V1GeneratingPolicySpecEvaluation
     [JsonPropertyName("orphanDownstreamOnPolicyDelete")]
     public V1GeneratingPolicySpecEvaluationOrphanDownstreamOnPolicyDelete? OrphanDownstreamOnPolicyDelete { get; set; }
 
+    /// <summary>
+    /// SkipBackgroundRequests bypasses admission requests that are sent by the background controller.
+    /// The default value is set to &quot;true&quot;, it must be set to &quot;false&quot; to apply generateExisting rules to those requests.
+    /// </summary>
+    [JsonPropertyName("skipBackgroundRequests")]
+    public bool? SkipBackgroundRequests { get; set; }
+
     /// <summary>Synchronization defines the configuration for the synchronization of generated resources.</summary>
     [JsonPropertyName("synchronize")]
     public V1GeneratingPolicySpecEvaluationSynchronize? Synchronize { get; set; }
+}
+
+/// <summary>
+/// Interpolate controls placeholder evaluation in Value:
+/// &quot;none&quot; (default) treats Value as plain YAML;
+/// &quot;cel&quot; evaluates `(( ... ))` placeholders as CEL expressions before the YAML is parsed.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1GeneratingPolicySpecGenerateTemplateInterpolateEnum>))]
+public enum V1GeneratingPolicySpecGenerateTemplateInterpolateEnum
+{
+    [EnumMember(Value = "none"), JsonStringEnumMemberName("none")]
+    None,
+    [EnumMember(Value = "cel"), JsonStringEnumMemberName("cel")]
+    Cel
+}
+
+/// <summary>
+/// Template declares the resources to be generated as a YAML document,
+/// with optional CEL interpolation.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GeneratingPolicySpecGenerateTemplate
+{
+    /// <summary>
+    /// Interpolate controls placeholder evaluation in Value:
+    /// &quot;none&quot; (default) treats Value as plain YAML;
+    /// &quot;cel&quot; evaluates `(( ... ))` placeholders as CEL expressions before the YAML is parsed.
+    /// </summary>
+    [JsonPropertyName("interpolate")]
+    public V1GeneratingPolicySpecGenerateTemplateInterpolateEnum? Interpolate { get; set; }
+
+    /// <summary>
+    /// Value is a YAML string, single or multi-document, defining the resources to generate.
+    /// The namespace of each generated resource is taken from its rendered metadata.namespace,
+    /// resources without a namespace are treated as cluster-scoped.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
 }
 
 /// <summary>Generation defines the configuration for the generation of resources.</summary>
@@ -121,6 +214,13 @@ public partial class V1GeneratingPolicySpecGenerate
     /// <summary>Expression is a CEL expression that takes a list of resources to be generated.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
+
+    /// <summary>
+    /// Template declares the resources to be generated as a YAML document,
+    /// with optional CEL interpolation.
+    /// </summary>
+    [JsonPropertyName("template")]
+    public V1GeneratingPolicySpecGenerateTemplate? Template { get; set; }
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
@@ -594,6 +694,16 @@ public partial class V1GeneratingPolicySpecWebhookConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GeneratingPolicySpec
 {
+    /// <summary>
+    /// AuditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the
+    /// API server. auditAnnotations are evaluated after the policy has been evaluated but before the decision is logged.
+    /// The results of evaluating the expressions are attached to the audit event as annotations with the key
+    /// &quot; &lt;policy name&gt;/&lt;key&gt; &quot;.
+    /// If the expression evaluates to an empty string or null the annotation will not be included in the audit event.
+    /// </summary>
+    [JsonPropertyName("auditAnnotations")]
+    public IList<V1GeneratingPolicySpecAuditAnnotations>? AuditAnnotations { get; set; }
+
     /// <summary>EvaluationConfiguration defines the configuration for the policy evaluation.</summary>
     [JsonPropertyName("evaluation")]
     public V1GeneratingPolicySpecEvaluation? Evaluation { get; set; }
@@ -628,6 +738,14 @@ public partial class V1GeneratingPolicySpec
     /// </summary>
     [JsonPropertyName("matchConstraints")]
     public V1GeneratingPolicySpecMatchConstraints? MatchConstraints { get; set; }
+
+    /// <summary>
+    /// UseServerSideApply controls whether to use server-side apply for generate rules.
+    /// If set to &quot;true&quot;, create &amp; update for generated resources will use apply instead of create/update.
+    /// Defaults to &quot;false&quot; if not specified.
+    /// </summary>
+    [JsonPropertyName("useServerSideApply")]
+    public bool? UseServerSideApply { get; set; }
 
     /// <summary>
     /// Variables contain definitions of variables that can be used in composition of other expressions.
