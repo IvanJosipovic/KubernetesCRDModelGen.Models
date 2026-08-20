@@ -1369,6 +1369,103 @@ public partial class V1KafkaConnectSpecTemplatePodVolumes
     public V1KafkaConnectSpecTemplatePodVolumesImage? Image { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesSecretItems
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+/// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesSecret
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1KafkaConnectSpecTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMapItems
+{
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+}
+
+/// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMap
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+/// <summary>`PersistentVolumeClaim` object to use to populate the volume. The name of the Persistent Volume Claim can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesPersistentVolumeClaim
+{
+    [JsonPropertyName("claimName")]
+    public string? ClaimName { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumes
+{
+    /// <summary>Name to use for the volume. Required.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("secret")]
+    public V1KafkaConnectSpecTemplatePodTemplatedVolumesSecret? Secret { get; set; }
+
+    /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("configMap")]
+    public V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMap? ConfigMap { get; set; }
+
+    /// <summary>`PersistentVolumeClaim` object to use to populate the volume. The name of the Persistent Volume Claim can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
+    [JsonPropertyName("persistentVolumeClaim")]
+    public V1KafkaConnectSpecTemplatePodTemplatedVolumesPersistentVolumeClaim? PersistentVolumeClaim { get; set; }
+}
+
 /// <summary>Template for Kafka Connect `Pods`.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1433,6 +1530,10 @@ public partial class V1KafkaConnectSpecTemplatePod
     /// <summary>Additional volumes that can be mounted to the pod.</summary>
     [JsonPropertyName("volumes")]
     public IList<V1KafkaConnectSpecTemplatePodVolumes>? Volumes { get; set; }
+
+    /// <summary>Additional volumes that can be mounted to the pod. These volumes can use templates to mount different volumes into individual Pods.</summary>
+    [JsonPropertyName("templatedVolumes")]
+    public IList<V1KafkaConnectSpecTemplatePodTemplatedVolumes>? TemplatedVolumes { get; set; }
 
     /// <summary>Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.</summary>
     [JsonPropertyName("hostUsers")]
@@ -3421,6 +3522,15 @@ public enum V1KafkaConnectSpecBuildPluginsArtifactsIncludeScopeEnum
     System
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecBuildPluginsArtifactsMirrors
+{
+    /// <summary>The URL of the Maven mirror. All repository requests during the build, including plugin repositories and Maven Central, are redirected to this mirror. Applicable to the `maven` artifact type only.</summary>
+    [JsonPropertyName("url")]
+    public required string Url { get; set; }
+}
+
 /// <summary>Artifact type. Currently, the supported artifact types are `tgz`, `jar`, `zip`, `other` and `maven`.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaConnectSpecBuildPluginsArtifactsTypeEnum>))]
@@ -3461,6 +3571,10 @@ public partial class V1KafkaConnectSpecBuildPluginsArtifacts
     /// <summary>By default, connections using TLS are verified to check they are secure. The server certificate used must be valid, trusted, and contain the server name. By setting this option to `true`, all TLS verification is disabled and the artifact will be downloaded, even when the server is considered insecure.</summary>
     [JsonPropertyName("insecure")]
     public bool? Insecure { get; set; }
+
+    /// <summary>List of Maven mirrors used to download the artifact and its dependencies. All repository requests during the build, including plugin repositories and Maven Central, are redirected to the configured mirror(s). Applicable to the `maven` artifact type only.</summary>
+    [JsonPropertyName("mirrors")]
+    public IList<V1KafkaConnectSpecBuildPluginsArtifactsMirrors>? Mirrors { get; set; }
 
     /// <summary>Maven repository to download the artifact from. Applicable to the `maven` artifact type only.</summary>
     [JsonPropertyName("repository")]
