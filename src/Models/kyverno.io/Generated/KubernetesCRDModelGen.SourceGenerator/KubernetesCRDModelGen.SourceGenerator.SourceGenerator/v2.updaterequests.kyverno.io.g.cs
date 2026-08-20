@@ -123,23 +123,23 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestUserInfo
 {
-    /// <summary>Any additional information provided by the authenticator.</summary>
+    /// <summary>extra is any additional information provided by the authenticator.</summary>
     [JsonPropertyName("extra")]
     public IDictionary<string, IList<string>>? Extra { get; set; }
 
-    /// <summary>The names of groups this user is a part of.</summary>
+    /// <summary>groups is the names of groups this user is a part of.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
     /// <summary>
-    /// A unique value that identifies this user across time. If this user is
+    /// uid is a unique value that identifies this user across time. If this user is
     /// deleted and another user by the same name is added, they will have
     /// different UIDs.
     /// </summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 
-    /// <summary>The name that uniquely identifies this user among all active users.</summary>
+    /// <summary>username is the name that uniquely identifies this user among all active users.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -158,7 +158,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 
     /// <summary>kind is the fully-qualified type of object being submitted (for example, v1.Pod or autoscaling.v1.Scale)</summary>
     [JsonPropertyName("kind")]
-    public required V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestKind Kind { get; set; }
+    public V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestKind? Kind { get; set; }
 
     /// <summary>
     /// name is the name of the object as presented in the request.  On a CREATE operation, the client may omit name and
@@ -184,7 +184,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
     /// requested. e.g. a patch can result in either a CREATE or UPDATE Operation.
     /// </summary>
     [JsonPropertyName("operation")]
-    public required string Operation { get; set; }
+    public string? Operation { get; set; }
 
     /// <summary>
     /// options is the operation option structure of the operation being performed.
@@ -236,7 +236,7 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
 
     /// <summary>resource is the fully-qualified resource being requested (for example, v1.pods)</summary>
     [JsonPropertyName("resource")]
-    public required V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestResource Resource { get; set; }
+    public V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestResource? Resource { get; set; }
 
     /// <summary>subResource is the subresource being requested, if any (for example, &quot;status&quot; or &quot;scale&quot;)</summary>
     [JsonPropertyName("subResource")]
@@ -249,11 +249,11 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequ
     /// It is suitable for correlating log entries between the webhook and apiserver, for either auditing or debugging.
     /// </summary>
     [JsonPropertyName("uid")]
-    public required string Uid { get; set; }
+    public string? Uid { get; set; }
 
     /// <summary>userInfo is information about the requesting user</summary>
     [JsonPropertyName("userInfo")]
-    public required V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestUserInfo UserInfo { get; set; }
+    public V2UpdateRequestSpecContextAdmissionRequestInfoAdmissionRequestUserInfo? UserInfo { get; set; }
 }
 
 /// <summary>AdmissionRequestInfoObject stores the admission request and operation details</summary>
@@ -275,23 +275,23 @@ public partial class V2UpdateRequestSpecContextAdmissionRequestInfo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2UpdateRequestSpecContextUserInfoUserInfo
 {
-    /// <summary>Any additional information provided by the authenticator.</summary>
+    /// <summary>extra is any additional information provided by the authenticator.</summary>
     [JsonPropertyName("extra")]
     public IDictionary<string, IList<string>>? Extra { get; set; }
 
-    /// <summary>The names of groups this user is a part of.</summary>
+    /// <summary>groups is the names of groups this user is a part of.</summary>
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
     /// <summary>
-    /// A unique value that identifies this user across time. If this user is
+    /// uid is a unique value that identifies this user across time. If this user is
     /// deleted and another user by the same name is added, they will have
     /// different UIDs.
     /// </summary>
     [JsonPropertyName("uid")]
     public string? Uid { get; set; }
 
-    /// <summary>The name that uniquely identifies this user among all active users.</summary>
+    /// <summary>username is the name that uniquely identifies this user among all active users.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }

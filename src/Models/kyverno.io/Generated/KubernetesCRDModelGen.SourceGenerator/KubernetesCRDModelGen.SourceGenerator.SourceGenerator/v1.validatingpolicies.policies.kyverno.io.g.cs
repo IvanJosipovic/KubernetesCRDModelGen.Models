@@ -159,7 +159,7 @@ public partial class V1ValidatingPolicySpecEvaluation
 
     /// <summary>
     /// Mode is the mode of policy evaluation.
-    /// Allowed values are &quot;Kubernetes&quot; or &quot;JSON&quot;.
+    /// Allowed values are &quot;Kubernetes&quot;, &quot;HTTP&quot; or &quot;Envoy&quot;.
     /// Optional. Default value is &quot;Kubernetes&quot;.
     /// </summary>
     [JsonPropertyName("mode")]
@@ -998,7 +998,7 @@ public partial class V1ValidatingPolicyStatusAutogenConfigsSpecEvaluation
 
     /// <summary>
     /// Mode is the mode of policy evaluation.
-    /// Allowed values are &quot;Kubernetes&quot; or &quot;JSON&quot;.
+    /// Allowed values are &quot;Kubernetes&quot;, &quot;HTTP&quot; or &quot;Envoy&quot;.
     /// Optional. Default value is &quot;Kubernetes&quot;.
     /// </summary>
     [JsonPropertyName("mode")]

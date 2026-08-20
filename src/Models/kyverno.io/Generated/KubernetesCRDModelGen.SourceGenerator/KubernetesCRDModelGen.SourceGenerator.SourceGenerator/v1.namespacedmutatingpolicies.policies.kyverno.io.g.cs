@@ -35,6 +35,52 @@ public partial class V1NamespacedMutatingPolicyList : IKubernetesObject<V1ListMe
     public required IList<V1NamespacedMutatingPolicy> Items { get; set; }
 }
 
+/// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1NamespacedMutatingPolicySpecAuditAnnotations
+{
+    /// <summary>
+    /// key specifies the audit annotation key. The audit annotation keys of
+    /// a ValidatingAdmissionPolicy must be unique. The key must be a qualified
+    /// name ([A-Za-z0-9][-A-Za-z0-9_.]*) no more than 63 bytes in length.
+    /// 
+    /// The key is combined with the resource name of the
+    /// ValidatingAdmissionPolicy to construct an audit annotation key:
+    /// &quot;{ValidatingAdmissionPolicy name}/{key}&quot;.
+    /// 
+    /// If an admission webhook uses the same resource name as this ValidatingAdmissionPolicy
+    /// and the same audit annotation key, the annotation key will be identical.
+    /// In this case, the first annotation written with the key will be included
+    /// in the audit event and all subsequent annotations with the same key
+    /// will be discarded.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// valueExpression represents the expression which is evaluated by CEL to
+    /// produce an audit annotation value. The expression must evaluate to either
+    /// a string or null value. If the expression evaluates to a string, the
+    /// audit annotation is included with the string value. If the expression
+    /// evaluates to null or empty string the audit annotation will be omitted.
+    /// The valueExpression may be no longer than 5kb in length.
+    /// If the result of the valueExpression is more than 10kb in length, it
+    /// will be truncated to 10kb.
+    /// 
+    /// If multiple ValidatingAdmissionPolicyBinding resources match an
+    /// API request, then the valueExpression will be evaluated for
+    /// each binding. All unique values produced by the valueExpressions
+    /// will be joined together in a comma-separated list.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("valueExpression")]
+    public required string ValueExpression { get; set; }
+}
+
 /// <summary>MutatingAdmissionPolicy specifies whether to generate a Kubernetes MutatingAdmissionPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -135,6 +181,23 @@ public partial class V1NamespacedMutatingPolicySpecEvaluation
     /// <summary>MutateExisting controls whether existing resources are mutated.</summary>
     [JsonPropertyName("mutateExisting")]
     public V1NamespacedMutatingPolicySpecEvaluationMutateExisting? MutateExisting { get; set; }
+
+    /// <summary>
+    /// SkipBackgroundRequests bypasses admission requests that are sent by the background controller.
+    /// The default value is set to &quot;true&quot;, it must be set to &quot;false&quot; to apply mutateExisting rules to those requests.
+    /// </summary>
+    [JsonPropertyName("skipBackgroundRequests")]
+    public bool? SkipBackgroundRequests { get; set; }
+
+    /// <summary>
+    /// UseServerSideApply applies ApplyConfiguration patches with Server-Side Apply semantics,
+    /// which allows setting atomic fields (for example a container&apos;s args or a projected volume)
+    /// that the default MutatingAdmissionPolicy behaviour rejects. When true, an atomic value is
+    /// replaced as a whole, so any field the object owner set but the patch does not is dropped.
+    /// The default is false, which keeps parity with a native MutatingAdmissionPolicy.
+    /// </summary>
+    [JsonPropertyName("useServerSideApply")]
+    public bool? UseServerSideApply { get; set; }
 }
 
 /// <summary>
@@ -483,8 +546,9 @@ public partial class V1NamespacedMutatingPolicySpecMatchConstraintsResourceRules
 }
 
 /// <summary>
-/// MatchConstraints specifies what resources this policy is designed to evaluate.
+/// MatchConstraints specifies the trigger resources this policy is designed to evaluate.
 /// The AdmissionPolicy cares about a request if it matches _all_ Constraints.
+/// Trigger constraints and MatchConditions are evaluated before target resolution.
 /// Required.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -751,6 +815,44 @@ public partial class V1NamespacedMutatingPolicySpecMutations
     /// </summary>
     [JsonPropertyName("patchType")]
     public required string PatchType { get; set; }
+}
+
+/// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1NamespacedMutatingPolicySpecTargetMatchConditions
+{
+    /// <summary>
+    /// Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+    /// CEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:
+    /// 
+    /// &apos;object&apos; - The object from the incoming request. The value is null for DELETE requests.
+    /// &apos;oldObject&apos; - The existing object. The value is null for CREATE requests.
+    /// &apos;request&apos; - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).
+    /// &apos;authorizer&apos; - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.
+    ///   See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz
+    /// &apos;authorizer.requestResource&apos; - A CEL ResourceCheck constructed from the &apos;authorizer&apos; and configured with the
+    ///   request resource.
+    /// Documentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("expression")]
+    public required string Expression { get; set; }
+
+    /// <summary>
+    /// Name is an identifier for this match condition, used for strategic merging of MatchConditions,
+    /// as well as providing an identifier for logging purposes. A good name should be descriptive of
+    /// the associated expression.
+    /// Name must be a qualified name consisting of alphanumeric characters, &apos;-&apos;, &apos;_&apos; or &apos;.&apos;, and
+    /// must start and end with an alphanumeric character (e.g. &apos;MyName&apos;,  or &apos;my.name&apos;,  or
+    /// &apos;123-abc&apos;, regex used for validation is &apos;([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]&apos;) with an
+    /// optional DNS subdomain prefix and &apos;/&apos; (e.g. &apos;example.com/MyName&apos;)
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
@@ -1039,7 +1141,7 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraintsResourc
     public string? Scope { get; set; }
 }
 
-/// <summary>TargetMatchConstraints specifies what target mutation resources this policy is designed to evaluate.</summary>
+/// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraints
@@ -1051,6 +1153,10 @@ public partial class V1NamespacedMutatingPolicySpecTargetMatchConstraints
     [JsonPropertyName("excludeResourceRules")]
     public IList<V1NamespacedMutatingPolicySpecTargetMatchConstraintsExcludeResourceRules>? ExcludeResourceRules { get; set; }
 
+    /// <summary>
+    /// Expression resolves one target object or a list of target objects. The expression can use
+    /// variables computed from the trigger request.
+    /// </summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
@@ -1185,6 +1291,16 @@ public partial class V1NamespacedMutatingPolicySpecWebhookConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicySpec
 {
+    /// <summary>
+    /// AuditAnnotations contains CEL expressions which are used to produce audit annotations that are surfaced
+    /// as properties in policy report results. auditAnnotations are evaluated after the mutations have been
+    /// applied successfully. The results of evaluating the expressions are attached to the report result as
+    /// properties with the annotation key.
+    /// If the expression evaluates to an empty string or null the annotation will not be included.
+    /// </summary>
+    [JsonPropertyName("auditAnnotations")]
+    public IList<V1NamespacedMutatingPolicySpecAuditAnnotations>? AuditAnnotations { get; set; }
+
     /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
     [JsonPropertyName("autogen")]
     public V1NamespacedMutatingPolicySpecAutogen? Autogen { get; set; }
@@ -1224,8 +1340,9 @@ public partial class V1NamespacedMutatingPolicySpec
     public IList<V1NamespacedMutatingPolicySpecMatchConditions>? MatchConditions { get; set; }
 
     /// <summary>
-    /// MatchConstraints specifies what resources this policy is designed to evaluate.
+    /// MatchConstraints specifies the trigger resources this policy is designed to evaluate.
     /// The AdmissionPolicy cares about a request if it matches _all_ Constraints.
+    /// Trigger constraints and MatchConditions are evaluated before target resolution.
     /// Required.
     /// </summary>
     [JsonPropertyName("matchConstraints")]
@@ -1257,15 +1374,26 @@ public partial class V1NamespacedMutatingPolicySpec
     [JsonPropertyName("reinvocationPolicy")]
     public string? ReinvocationPolicy { get; set; }
 
-    /// <summary>TargetMatchConstraints specifies what target mutation resources this policy is designed to evaluate.</summary>
+    /// <summary>
+    /// TargetMatchConditions is a list of conditions that must be met for a resolved target resource.
+    /// Target match conditions are evaluated after variables and target resolution. They can reference
+    /// variables and use Object to refer to the target resource.
+    /// </summary>
+    [JsonPropertyName("targetMatchConditions")]
+    public IList<V1NamespacedMutatingPolicySpecTargetMatchConditions>? TargetMatchConditions { get; set; }
+
+    /// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
     [JsonPropertyName("targetMatchConstraints")]
     public V1NamespacedMutatingPolicySpecTargetMatchConstraints? TargetMatchConstraints { get; set; }
 
     /// <summary>
     /// Variables contain definitions of variables that can be used in composition of other expressions.
     /// Each variable is defined as a named CEL expression.
-    /// The variables defined here will be available under `variables` in other expressions of the policy
-    /// except MatchConditions because MatchConditions are evaluated before the rest of the policy.
+    /// The variables defined here will be available under `variables` in other expressions of the policy,
+    /// including MatchConditions where they are evaluated lazily on first reference.
+    /// Note that a native Kubernetes MutatingAdmissionPolicy does not support variables in match
+    /// conditions; policies that generate a MutatingAdmissionPolicy through autogen should not
+    /// reference variables in MatchConditions.
     /// 
     /// The expression of a variable can refer to other variables defined earlier in the list but not those after.
     /// Thus, Variables must be sorted by the order of first appearance and acyclic.
@@ -1276,6 +1404,52 @@ public partial class V1NamespacedMutatingPolicySpec
     /// <summary>WebhookConfiguration defines the configuration for the webhook.</summary>
     [JsonPropertyName("webhookConfiguration")]
     public V1NamespacedMutatingPolicySpecWebhookConfiguration? WebhookConfiguration { get; set; }
+}
+
+/// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAuditAnnotations
+{
+    /// <summary>
+    /// key specifies the audit annotation key. The audit annotation keys of
+    /// a ValidatingAdmissionPolicy must be unique. The key must be a qualified
+    /// name ([A-Za-z0-9][-A-Za-z0-9_.]*) no more than 63 bytes in length.
+    /// 
+    /// The key is combined with the resource name of the
+    /// ValidatingAdmissionPolicy to construct an audit annotation key:
+    /// &quot;{ValidatingAdmissionPolicy name}/{key}&quot;.
+    /// 
+    /// If an admission webhook uses the same resource name as this ValidatingAdmissionPolicy
+    /// and the same audit annotation key, the annotation key will be identical.
+    /// In this case, the first annotation written with the key will be included
+    /// in the audit event and all subsequent annotations with the same key
+    /// will be discarded.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// valueExpression represents the expression which is evaluated by CEL to
+    /// produce an audit annotation value. The expression must evaluate to either
+    /// a string or null value. If the expression evaluates to a string, the
+    /// audit annotation is included with the string value. If the expression
+    /// evaluates to null or empty string the audit annotation will be omitted.
+    /// The valueExpression may be no longer than 5kb in length.
+    /// If the result of the valueExpression is more than 10kb in length, it
+    /// will be truncated to 10kb.
+    /// 
+    /// If multiple ValidatingAdmissionPolicyBinding resources match an
+    /// API request, then the valueExpression will be evaluated for
+    /// each binding. All unique values produced by the valueExpressions
+    /// will be joined together in a comma-separated list.
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("valueExpression")]
+    public required string ValueExpression { get; set; }
 }
 
 /// <summary>MutatingAdmissionPolicy specifies whether to generate a Kubernetes MutatingAdmissionPolicy.</summary>
@@ -1378,6 +1552,23 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluatio
     /// <summary>MutateExisting controls whether existing resources are mutated.</summary>
     [JsonPropertyName("mutateExisting")]
     public V1NamespacedMutatingPolicyStatusAutogenConfigsSpecEvaluationMutateExisting? MutateExisting { get; set; }
+
+    /// <summary>
+    /// SkipBackgroundRequests bypasses admission requests that are sent by the background controller.
+    /// The default value is set to &quot;true&quot;, it must be set to &quot;false&quot; to apply mutateExisting rules to those requests.
+    /// </summary>
+    [JsonPropertyName("skipBackgroundRequests")]
+    public bool? SkipBackgroundRequests { get; set; }
+
+    /// <summary>
+    /// UseServerSideApply applies ApplyConfiguration patches with Server-Side Apply semantics,
+    /// which allows setting atomic fields (for example a container&apos;s args or a projected volume)
+    /// that the default MutatingAdmissionPolicy behaviour rejects. When true, an atomic value is
+    /// replaced as a whole, so any field the object owner set but the patch does not is dropped.
+    /// The default is false, which keeps parity with a native MutatingAdmissionPolicy.
+    /// </summary>
+    [JsonPropertyName("useServerSideApply")]
+    public bool? UseServerSideApply { get; set; }
 }
 
 /// <summary>
@@ -1726,8 +1917,9 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchCons
 }
 
 /// <summary>
-/// MatchConstraints specifies what resources this policy is designed to evaluate.
+/// MatchConstraints specifies the trigger resources this policy is designed to evaluate.
 /// The AdmissionPolicy cares about a request if it matches _all_ Constraints.
+/// Trigger constraints and MatchConditions are evaluated before target resolution.
 /// Required.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1994,6 +2186,44 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMutations
     /// </summary>
     [JsonPropertyName("patchType")]
     public required string PatchType { get; set; }
+}
+
+/// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConditions
+{
+    /// <summary>
+    /// Expression represents the expression which will be evaluated by CEL. Must evaluate to bool.
+    /// CEL expressions have access to the contents of the AdmissionRequest and Authorizer, organized into CEL variables:
+    /// 
+    /// &apos;object&apos; - The object from the incoming request. The value is null for DELETE requests.
+    /// &apos;oldObject&apos; - The existing object. The value is null for CREATE requests.
+    /// &apos;request&apos; - Attributes of the admission request(/pkg/apis/admission/types.go#AdmissionRequest).
+    /// &apos;authorizer&apos; - A CEL Authorizer. May be used to perform authorization checks for the principal (user or service account) of the request.
+    ///   See https://pkg.go.dev/k8s.io/apiserver/pkg/cel/library#Authz
+    /// &apos;authorizer.requestResource&apos; - A CEL ResourceCheck constructed from the &apos;authorizer&apos; and configured with the
+    ///   request resource.
+    /// Documentation on CEL: https://kubernetes.io/docs/reference/using-api/cel/
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("expression")]
+    public required string Expression { get; set; }
+
+    /// <summary>
+    /// Name is an identifier for this match condition, used for strategic merging of MatchConditions,
+    /// as well as providing an identifier for logging purposes. A good name should be descriptive of
+    /// the associated expression.
+    /// Name must be a qualified name consisting of alphanumeric characters, &apos;-&apos;, &apos;_&apos; or &apos;.&apos;, and
+    /// must start and end with an alphanumeric character (e.g. &apos;MyName&apos;,  or &apos;my.name&apos;,  or
+    /// &apos;123-abc&apos;, regex used for validation is &apos;([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]&apos;) with an
+    /// optional DNS subdomain prefix and &apos;/&apos; (e.g. &apos;example.com/MyName&apos;)
+    /// 
+    /// Required.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
@@ -2282,7 +2512,7 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
     public string? Scope { get; set; }
 }
 
-/// <summary>TargetMatchConstraints specifies what target mutation resources this policy is designed to evaluate.</summary>
+/// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraints
@@ -2294,6 +2524,10 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMat
     [JsonPropertyName("excludeResourceRules")]
     public IList<V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraintsExcludeResourceRules>? ExcludeResourceRules { get; set; }
 
+    /// <summary>
+    /// Expression resolves one target object or a list of target objects. The expression can use
+    /// variables computed from the trigger request.
+    /// </summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
@@ -2428,6 +2662,16 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpecWebhookCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpec
 {
+    /// <summary>
+    /// AuditAnnotations contains CEL expressions which are used to produce audit annotations that are surfaced
+    /// as properties in policy report results. auditAnnotations are evaluated after the mutations have been
+    /// applied successfully. The results of evaluating the expressions are attached to the report result as
+    /// properties with the annotation key.
+    /// If the expression evaluates to an empty string or null the annotation will not be included.
+    /// </summary>
+    [JsonPropertyName("auditAnnotations")]
+    public IList<V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAuditAnnotations>? AuditAnnotations { get; set; }
+
     /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
     [JsonPropertyName("autogen")]
     public V1NamespacedMutatingPolicyStatusAutogenConfigsSpecAutogen? Autogen { get; set; }
@@ -2467,8 +2711,9 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpec
     public IList<V1NamespacedMutatingPolicyStatusAutogenConfigsSpecMatchConditions>? MatchConditions { get; set; }
 
     /// <summary>
-    /// MatchConstraints specifies what resources this policy is designed to evaluate.
+    /// MatchConstraints specifies the trigger resources this policy is designed to evaluate.
     /// The AdmissionPolicy cares about a request if it matches _all_ Constraints.
+    /// Trigger constraints and MatchConditions are evaluated before target resolution.
     /// Required.
     /// </summary>
     [JsonPropertyName("matchConstraints")]
@@ -2500,15 +2745,26 @@ public partial class V1NamespacedMutatingPolicyStatusAutogenConfigsSpec
     [JsonPropertyName("reinvocationPolicy")]
     public string? ReinvocationPolicy { get; set; }
 
-    /// <summary>TargetMatchConstraints specifies what target mutation resources this policy is designed to evaluate.</summary>
+    /// <summary>
+    /// TargetMatchConditions is a list of conditions that must be met for a resolved target resource.
+    /// Target match conditions are evaluated after variables and target resolution. They can reference
+    /// variables and use Object to refer to the target resource.
+    /// </summary>
+    [JsonPropertyName("targetMatchConditions")]
+    public IList<V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConditions>? TargetMatchConditions { get; set; }
+
+    /// <summary>TargetMatchConstraints resolves the resources to mutate after Variables are evaluated.</summary>
     [JsonPropertyName("targetMatchConstraints")]
     public V1NamespacedMutatingPolicyStatusAutogenConfigsSpecTargetMatchConstraints? TargetMatchConstraints { get; set; }
 
     /// <summary>
     /// Variables contain definitions of variables that can be used in composition of other expressions.
     /// Each variable is defined as a named CEL expression.
-    /// The variables defined here will be available under `variables` in other expressions of the policy
-    /// except MatchConditions because MatchConditions are evaluated before the rest of the policy.
+    /// The variables defined here will be available under `variables` in other expressions of the policy,
+    /// including MatchConditions where they are evaluated lazily on first reference.
+    /// Note that a native Kubernetes MutatingAdmissionPolicy does not support variables in match
+    /// conditions; policies that generate a MutatingAdmissionPolicy through autogen should not
+    /// reference variables in MatchConditions.
     /// 
     /// The expression of a variable can refer to other variables defined earlier in the list but not those after.
     /// Thus, Variables must be sorted by the order of first appearance and acyclic.

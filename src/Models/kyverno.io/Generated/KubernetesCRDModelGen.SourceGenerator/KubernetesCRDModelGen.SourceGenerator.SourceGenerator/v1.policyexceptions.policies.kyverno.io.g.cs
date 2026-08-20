@@ -113,6 +113,18 @@ public partial class V1PolicyExceptionSpec
     [JsonPropertyName("allowedValues")]
     public IList<string>? AllowedValues { get; set; }
 
+    /// <summary>Evaluation mode denotes which controller is in charge of compiling and handling this exception.</summary>
+    [JsonPropertyName("evaluationMode")]
+    public string? EvaluationMode { get; set; }
+
+    /// <summary>
+    /// ExpiresAt specifies the time when the policy exception expires.
+    /// Once expired, the exception will no longer be applied to incoming requests.
+    /// The expected format is RFC3339 date-time (for example &quot;2026-05-01T00:00:00Z&quot;).
+    /// </summary>
+    [JsonPropertyName("expiresAt")]
+    public DateTime? ExpiresAt { get; set; }
+
     /// <summary>
     /// Images specifies container images to be excluded from policy evaluation.
     /// These excluded images can be referenced in CEL expressions via `exceptions.allowedImages`.
@@ -127,6 +139,16 @@ public partial class V1PolicyExceptionSpec
     /// <summary>PolicyRefs identifies the policies to which the exception is applied.</summary>
     [JsonPropertyName("policyRefs")]
     public required IList<V1PolicyExceptionSpecPolicyRefs> PolicyRefs { get; set; }
+
+    /// <summary>
+    /// Properties is an optional map for additional metadata attached to this exception.
+    /// For example:
+    /// - reason: why this exception is needed
+    /// - ticket: external approval/request identifier
+    /// - approved-by: comma-separated approver list
+    /// </summary>
+    [JsonPropertyName("properties")]
+    public IDictionary<string, string>? Properties { get; set; }
 
     /// <summary>
     /// ReportResult indicates whether the policy exception should be reported in the policy report
