@@ -134,6 +134,107 @@ public partial class V1alpha1ClusterSpecEncryptionConfig
     public IList<string>? Resources { get; set; }
 }
 
+/// <summary>The port range for Kubernetes NodePort services.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeAPIServerConfigServiceNodePortRange
+{
+    [JsonPropertyName("maxPort")]
+    public long? MaxPort { get; set; }
+
+    [JsonPropertyName("minPort")]
+    public long? MinPort { get; set; }
+}
+
+/// <summary>The Kubernetes API server configuration for the new cluster.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeAPIServerConfig
+{
+    [JsonPropertyName("eventTTL")]
+    public string? EventTTL { get; set; }
+
+    /// <summary>The port range for Kubernetes NodePort services.</summary>
+    [JsonPropertyName("serviceNodePortRange")]
+    public V1alpha1ClusterSpecKubeAPIServerConfigServiceNodePortRange? ServiceNodePortRange { get; set; }
+}
+
+/// <summary>
+/// The horizontal pod autoscaler controller configuration for the Kubernetes
+/// controller manager.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+{
+    [JsonPropertyName("horizontalPodAutoscalerSyncPeriod")]
+    public string? HorizontalPodAutoscalerSyncPeriod { get; set; }
+}
+
+/// <summary>The Kubernetes controller manager configuration for the new cluster.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeControllerManagerConfig
+{
+    /// <summary>
+    /// The horizontal pod autoscaler controller configuration for the Kubernetes
+    /// controller manager.
+    /// </summary>
+    [JsonPropertyName("horizontalPodAutoscalerControllerConfig")]
+    public V1alpha1ClusterSpecKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig? HorizontalPodAutoscalerControllerConfig { get; set; }
+}
+
+/// <summary>A resource weight entry for the scheduler scoring strategy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFitScoringStrategyResources
+{
+    /// <summary>The name of a resource used in the scheduler scoring strategy.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// The weight value for a resource in the scheduler scoring strategy. Must be
+    /// between 1 and 100.
+    /// </summary>
+    [JsonPropertyName("weight")]
+    public long? Weight { get; set; }
+}
+
+/// <summary>The scoring strategy configuration for the NodeResourcesFit scheduler plugin.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFitScoringStrategy
+{
+    /// <summary>A list of resource weights for the scoring strategy.</summary>
+    [JsonPropertyName("resources")]
+    public IList<V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFitScoringStrategyResources>? Resources { get; set; }
+
+    /// <summary>The scoring strategy type for the NodeResourcesFit scheduler plugin.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>The NodeResourcesFit plugin configuration for the Kubernetes scheduler.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFit
+{
+    /// <summary>The scoring strategy configuration for the NodeResourcesFit scheduler plugin.</summary>
+    [JsonPropertyName("scoringStrategy")]
+    public V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFitScoringStrategy? ScoringStrategy { get; set; }
+}
+
+/// <summary>The Kubernetes scheduler configuration for the new cluster.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeSchedulerConfig
+{
+    /// <summary>The NodeResourcesFit plugin configuration for the Kubernetes scheduler.</summary>
+    [JsonPropertyName("nodeResourcesFit")]
+    public V1alpha1ClusterSpecKubeSchedulerConfigNodeResourcesFit? NodeResourcesFit { get; set; }
+}
+
 /// <summary>
 /// Indicates the current configuration of the load balancing capability on your
 /// EKS Auto Mode cluster. For example, if the capability is enabled or disabled.
@@ -608,6 +709,18 @@ public partial class V1alpha1ClusterSpec
     /// <summary>The encryption configuration for the cluster.</summary>
     [JsonPropertyName("encryptionConfig")]
     public IList<V1alpha1ClusterSpecEncryptionConfig>? EncryptionConfig { get; set; }
+
+    /// <summary>The Kubernetes API server configuration for the new cluster.</summary>
+    [JsonPropertyName("kubeAPIServerConfig")]
+    public V1alpha1ClusterSpecKubeAPIServerConfig? KubeAPIServerConfig { get; set; }
+
+    /// <summary>The Kubernetes controller manager configuration for the new cluster.</summary>
+    [JsonPropertyName("kubeControllerManagerConfig")]
+    public V1alpha1ClusterSpecKubeControllerManagerConfig? KubeControllerManagerConfig { get; set; }
+
+    /// <summary>The Kubernetes scheduler configuration for the new cluster.</summary>
+    [JsonPropertyName("kubeSchedulerConfig")]
+    public V1alpha1ClusterSpecKubeSchedulerConfig? KubeSchedulerConfig { get; set; }
 
     /// <summary>The Kubernetes network configuration for the cluster.</summary>
     [JsonPropertyName("kubernetesNetworkConfig")]
