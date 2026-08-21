@@ -37,6 +37,42 @@ public partial class V1alpha1CapabilityList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CapabilitySpecClusterRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CapabilitySpecClusterRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1CapabilitySpecClusterRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// Configuration for integrating Argo CD with IAM Identity CenterIAM; Identity
 /// Center. This allows you to use your organization&apos;s identity provider for
 /// authentication to Argo CD.
@@ -195,7 +231,19 @@ public partial class V1alpha1CapabilitySpec
 {
     /// <summary>The name of the Amazon EKS cluster where you want to create the capability.</summary>
     [JsonPropertyName("clusterName")]
-    public required string ClusterName { get; set; }
+    public string? ClusterName { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("clusterRef")]
+    public V1alpha1CapabilitySpecClusterRef? ClusterRef { get; set; }
 
     /// <summary>
     /// The configuration settings for the capability. The structure of this object

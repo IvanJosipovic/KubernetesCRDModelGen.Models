@@ -4318,7 +4318,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecExecutorPluginsSpecSidec
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -25849,7 +25849,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesContainer
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -27744,7 +27744,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesContainerSetCon
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -34224,7 +34224,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesInitContainers
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -40735,7 +40735,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesScript
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -42936,7 +42936,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesSidecars
     /// <summary>
     /// Image pull policy.
     /// One of Always, Never, IfNotPresent.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// Cannot be updated.
     /// More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
     /// </summary>
@@ -47458,7 +47458,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecTemplatesVolumesImage
     /// Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.
     /// Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn&apos;t present.
     /// IfNotPresent: the kubelet pulls if the reference isn&apos;t already present on disk. Container creation will fail if the reference isn&apos;t present and the pull fails.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// </summary>
     [JsonPropertyName("pullPolicy")]
     public string? PullPolicy { get; set; }
@@ -50921,7 +50921,7 @@ public partial class V1alpha1ClusterWorkflowTemplateSpecVolumesImage
     /// Always: the kubelet always attempts to pull the reference. Container creation will fail If the pull fails.
     /// Never: the kubelet never pulls the reference and only uses a local image or artifact. Container creation will fail if the reference isn&apos;t present.
     /// IfNotPresent: the kubelet pulls if the reference isn&apos;t already present on disk. Container creation will fail if the reference isn&apos;t present and the pull fails.
-    /// Defaults to Always if :v4.1.1 tag is specified, or IfNotPresent otherwise.
+    /// Defaults to Always if :v4.1.2 tag is specified, or IfNotPresent otherwise.
     /// </summary>
     [JsonPropertyName("pullPolicy")]
     public string? PullPolicy { get; set; }
