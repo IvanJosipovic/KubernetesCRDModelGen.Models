@@ -22,6 +22,7 @@ jobs:
           token: ${{ secrets.GH_PAT }}
 
       - name: Enable Pull Request Automerge
+        if: ${{ steps.release.outputs.prs_created == 'true' }}
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.GH_PAT }}
