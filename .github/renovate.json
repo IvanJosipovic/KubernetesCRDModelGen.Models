@@ -49,7 +49,7 @@
         "global.json",
         "tests/**",
         "benchmarks/**",
-        "src/KubernetesCRDModelGen.Sync/**"
+        "src/KubernetesCRDModelGen.Sync/KubernetesCRDModelGen.Sync.csproj"
       ]
     }
   ],
