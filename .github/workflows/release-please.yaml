@@ -20,3 +20,10 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GH_PAT }}
+
+      - name: Enable Pull Request Automerge
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+          pull-request-number: ${{ fromJSON(steps.release.outputs.pr).number }}
+          merge-method: squash
