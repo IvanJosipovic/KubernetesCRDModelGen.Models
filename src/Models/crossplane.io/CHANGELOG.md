@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/crossplane.io-v1.17.1...crossplane.io-v1.18.0) (2026-08-21)
+
+
+### Features
+
+* Sync ([#80](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/80)) ([813b9b5](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/813b9b515ac57ab49d13a64d7ceb2d2942b4112f))
+
 ## [1.17.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/crossplane.io-v1.17.0...crossplane.io-v1.17.1) (2026-07-13)
 
 

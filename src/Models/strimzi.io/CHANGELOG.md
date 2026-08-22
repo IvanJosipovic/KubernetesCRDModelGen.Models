@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/strimzi.io-v1.2.1...strimzi.io-v1.3.0) (2026-08-21)
+
+
+### Features
+
+* Sync ([#79](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/79)) ([5fdd708](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/5fdd70892b9a8ed26cb0cf416b715b30cceabecd))
+
 ## [1.2.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/strimzi.io-v1.2.0...strimzi.io-v1.2.1) (2026-07-13)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/kyverno.io-v1.2.1...kyverno.io-v1.3.0) (2026-08-21)
+
+
+### Features
+
+* Sync ([#80](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/80)) ([813b9b5](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/813b9b515ac57ab49d13a64d7ceb2d2942b4112f))
+
 ## [1.2.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/kyverno.io-v1.2.0...kyverno.io-v1.2.1) (2026-07-13)
 
 
