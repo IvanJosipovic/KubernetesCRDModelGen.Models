@@ -21,6 +21,12 @@
   ],
   "packageRules": [
     {
+      "description": "Preserve NuGet floating version ranges",
+      "matchManagers": ["nuget"],
+      "matchCurrentValue": "/\\*$/",
+      "rangeStrategy": "replace"
+    },
+    {
       "matchUpdateTypes": [
         "minor",
         "patch",
@@ -42,7 +48,8 @@
       "matchFileNames": [
         "global.json",
         "tests/**",
-        "benchmarks/**"
+        "benchmarks/**",
+        "src/KubernetesCRDModelGen.Sync/**"
       ]
     }
   ],
