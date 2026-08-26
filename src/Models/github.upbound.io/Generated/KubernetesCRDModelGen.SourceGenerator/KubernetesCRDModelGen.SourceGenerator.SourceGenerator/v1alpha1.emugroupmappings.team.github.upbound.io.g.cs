@@ -602,6 +602,7 @@ public partial class V1alpha1EmuGroupMappingSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingStatusAtProvider
 {
+    /// <summary>An etag representing the external group state</summary>
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
@@ -612,8 +613,22 @@ public partial class V1alpha1EmuGroupMappingStatusAtProvider
     [JsonPropertyName("groupId")]
     public long? GroupId { get; set; }
 
+    /// <summary>
+    /// The name of the external group
+    /// Name of the external group.
+    /// </summary>
+    [JsonPropertyName("groupName")]
+    public string? GroupName { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// The ID of the GitHub team
+    /// ID of the GitHub team.
+    /// </summary>
+    [JsonPropertyName("teamId")]
+    public long? TeamId { get; set; }
 
     /// <summary>
     /// Slug of the GitHub team

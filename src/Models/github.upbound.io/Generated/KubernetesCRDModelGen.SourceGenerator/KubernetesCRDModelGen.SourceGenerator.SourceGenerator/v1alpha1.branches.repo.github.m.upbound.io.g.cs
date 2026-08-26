@@ -203,6 +203,13 @@ public partial class V1alpha1BranchSpecForProvider
     public string? Branch { get; set; }
 
     /// <summary>
+    /// An etag representing the Branch object.
+    /// An etag representing the Branch object.
+    /// </summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>
     /// The GitHub repository name.
     /// The GitHub repository name.
     /// </summary>
@@ -409,6 +416,13 @@ public partial class V1alpha1BranchSpecInitProvider
     /// </summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
+
+    /// <summary>
+    /// An etag representing the Branch object.
+    /// An etag representing the Branch object.
+    /// </summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
 
     /// <summary>
     /// The GitHub repository name.

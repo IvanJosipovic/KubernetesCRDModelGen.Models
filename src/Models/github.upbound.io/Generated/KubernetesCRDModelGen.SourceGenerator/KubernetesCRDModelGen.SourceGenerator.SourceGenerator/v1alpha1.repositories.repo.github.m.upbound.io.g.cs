@@ -86,8 +86,20 @@ public partial class V1alpha1RepositorySpecForProviderPages
 public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisAdvancedSecurity
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;, This value being present when split licensing is enabled will error out.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisCodeSecurity
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable code security on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -98,8 +110,32 @@ public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisAdvance
 public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanning
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanningAiDetection
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning AI detection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanningNonProviderPatterns
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning non-provider patterns on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -110,8 +146,8 @@ public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretS
 public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanningPushProtection
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -129,11 +165,32 @@ public partial class V1alpha1RepositorySpecForProviderSecurityAndAnalysis
     public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysisAdvancedSecurity>? AdvancedSecurity { get; set; }
 
     /// <summary>
+    /// The code security configuration for the repository. See Code Security below for details.
+    /// The code security configuration for the repository.
+    /// </summary>
+    [JsonPropertyName("codeSecurity")]
+    public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysisCodeSecurity>? CodeSecurity { get; set; }
+
+    /// <summary>
     /// The secret scanning configuration for the repository. See Secret Scanning Configuration below for details.
     /// The secret scanning configuration for the repository.
     /// </summary>
     [JsonPropertyName("secretScanning")]
     public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanning>? SecretScanning { get; set; }
+
+    /// <summary>
+    /// The secret scanning ai detection configuration for the repository. See Secret Scanning AI Detection Configuration below for details.
+    /// The secret scanning AI detection configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningAiDetection")]
+    public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanningAiDetection>? SecretScanningAiDetection { get; set; }
+
+    /// <summary>
+    /// The secret scanning non-provider patterns configuration for this repository. See Secret Scanning Non-Provider Patterns Configuration below for more details.
+    /// The secret scanning non-provider patterns configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningNonProviderPatterns")]
+    public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysisSecretScanningNonProviderPatterns>? SecretScanningNonProviderPatterns { get; set; }
 
     /// <summary>
     /// The secret scanning push protection configuration for the repository. See Secret Scanning Push Protection Configuration below for details.
@@ -179,6 +236,13 @@ public partial class V1alpha1RepositorySpecForProvider
     /// </summary>
     [JsonPropertyName("allowAutoMerge")]
     public bool? AllowAutoMerge { get; set; }
+
+    /// <summary>
+    /// Configure private forking for organization owned private and internal repositories; set to true to enable, false to disable, and leave unset for the default behaviour. Configuring this requires that private forking is not being explicitly configured at the organization level.
+    /// Set to &apos;true&apos; to allow private forking on the repository; this is only relevant if the repository is owned by an organization and is private or internal.
+    /// </summary>
+    [JsonPropertyName("allowForking")]
+    public bool? AllowForking { get; set; }
 
     /// <summary>
     /// Set to false to disable merge commits on the repository.
@@ -230,9 +294,7 @@ public partial class V1alpha1RepositorySpecForProvider
     public bool? AutoInit { get; set; }
 
     /// <summary>
-    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created,
-    /// and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the
-    /// initial repository creation and create the target branch inside of the repository prior to setting this attribute.
+    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created, and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the initial repository creation and create the target branch inside of the repository prior to setting this attribute.
     /// Can only be set after initial repository creation, and only if the target branch exists
     /// </summary>
     [JsonPropertyName("defaultBranch")]
@@ -252,6 +314,16 @@ public partial class V1alpha1RepositorySpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>
+    /// Set to true to create a fork of an existing repository. When set to true, both source_owner and source_repo must also be specified.
+    /// Set to &apos;true&apos; to fork an existing repository.
+    /// </summary>
+    [JsonPropertyName("fork")]
+    public string? Fork { get; set; }
+
     /// <summary>
     /// Use the name of the template without the extension. For example, &quot;Haskell&quot;.
     /// Use the name of the template without the extension. For example, &apos;Haskell&apos;.
@@ -267,15 +339,14 @@ public partial class V1alpha1RepositorySpecForProvider
     public bool? HasDiscussions { get; set; }
 
     /// <summary>
-    /// Set to true to enable the (deprecated) downloads features on the repository.
+    /// (DEPRECATED)  Set to true to enable the (deprecated) downloads features on the repository. This attribute is no longer in use, but it hasn&apos;t been removed yet. It will be removed in a future version. See this discussion.
     /// Set to &apos;true&apos; to enable the (deprecated) downloads features on the repository.
     /// </summary>
     [JsonPropertyName("hasDownloads")]
     public bool? HasDownloads { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Issues features
-    /// on the repository.
+    /// Set to true to enable the GitHub Issues features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Issues features on the repository
     /// </summary>
     [JsonPropertyName("hasIssues")]
@@ -289,8 +360,7 @@ public partial class V1alpha1RepositorySpecForProvider
     public bool? HasProjects { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Wiki features on
-    /// the repository.
+    /// Set to true to enable the GitHub Wiki features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Wiki features on the repository.
     /// </summary>
     [JsonPropertyName("hasWiki")]
@@ -303,10 +373,7 @@ public partial class V1alpha1RepositorySpecForProvider
     [JsonPropertyName("homepageUrl")]
     public string? HomepageUrl { get; set; }
 
-    /// <summary>
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// </summary>
+    /// <summary>This is ignored as the provider now handles lack of permissions automatically. This field will be removed in a future version.</summary>
     [JsonPropertyName("ignoreVulnerabilityAlertsDuringRead")]
     public bool? IgnoreVulnerabilityAlertsDuringRead { get; set; }
 
@@ -346,16 +413,13 @@ public partial class V1alpha1RepositorySpecForProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// The repository&apos;s GitHub Pages configuration. See GitHub Pages Configuration below for details.
+    /// (DEPRECATED) The repository&apos;s GitHub Pages configuration. Use the github_repository_pages resource instead. This field will be removed in a future version. See GitHub Pages Configuration below for details.
     /// The repository&apos;s GitHub Pages configuration
     /// </summary>
     [JsonPropertyName("pages")]
     public IList<V1alpha1RepositorySpecForProviderPages>? Pages { get; set; }
 
-    /// <summary>
-    /// Set to true to create a private repository.
-    /// Repositories are created as public (e.g. open source) by default.
-    /// </summary>
+    /// <summary>Set to true to create a private repository. Repositories are created as public (e.g. open source) by default.</summary>
     [JsonPropertyName("private")]
     public bool? Private { get; set; }
 
@@ -365,6 +429,20 @@ public partial class V1alpha1RepositorySpecForProvider
     /// </summary>
     [JsonPropertyName("securityAndAnalysis")]
     public IList<V1alpha1RepositorySpecForProviderSecurityAndAnalysis>? SecurityAndAnalysis { get; set; }
+
+    /// <summary>
+    /// The GitHub username or organization that owns the repository being forked. Required when fork is true.
+    /// The owner of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceOwner")]
+    public string? SourceOwner { get; set; }
+
+    /// <summary>
+    /// The name of the repository to fork. Required when fork is true.
+    /// The name of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceRepo")]
+    public string? SourceRepo { get; set; }
 
     /// <summary>
     /// Can be PR_BODY, COMMIT_MESSAGES, or BLANK for a default squash merge commit message. Applicable only if allow_squash_merge is true.
@@ -402,15 +480,15 @@ public partial class V1alpha1RepositorySpecForProvider
     public string? Visibility { get; set; }
 
     /// <summary>
-    /// Set to true to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default.) See GitHub Documentation for details. Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
-    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
+    /// (DEPRECATED) Configure Dependabot security alerts for vulnerable dependencies; set to true to enable, set to false to disable, and leave unset for the default behavior. Configuring this requires that alerts are not being explicitly configured at the organization level. This field will be removed in a future version. Use the github_repository_vulnerability_alerts resource instead.
+    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on all repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
     /// </summary>
     [JsonPropertyName("vulnerabilityAlerts")]
     public bool? VulnerabilityAlerts { get; set; }
 
     /// <summary>
-    /// Require contributors to sign off on web-based commits. See more here. Defaults to false.
-    /// Require contributors to sign off on web-based commits. Defaults to &apos;false&apos;.
+    /// Require contributors to sign off on web-based commits. See more in the GitHub documentation.
+    /// Require contributors to sign off on web-based commits.
     /// </summary>
     [JsonPropertyName("webCommitSignoffRequired")]
     public bool? WebCommitSignoffRequired { get; set; }
@@ -466,8 +544,20 @@ public partial class V1alpha1RepositorySpecInitProviderPages
 public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisAdvancedSecurity
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;, This value being present when split licensing is enabled will error out.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisCodeSecurity
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable code security on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -478,8 +568,32 @@ public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisAdvanc
 public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanning
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanningAiDetection
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning AI detection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanningNonProviderPatterns
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning non-provider patterns on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -490,8 +604,8 @@ public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecret
 public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanningPushProtection
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -509,11 +623,32 @@ public partial class V1alpha1RepositorySpecInitProviderSecurityAndAnalysis
     public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysisAdvancedSecurity>? AdvancedSecurity { get; set; }
 
     /// <summary>
+    /// The code security configuration for the repository. See Code Security below for details.
+    /// The code security configuration for the repository.
+    /// </summary>
+    [JsonPropertyName("codeSecurity")]
+    public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysisCodeSecurity>? CodeSecurity { get; set; }
+
+    /// <summary>
     /// The secret scanning configuration for the repository. See Secret Scanning Configuration below for details.
     /// The secret scanning configuration for the repository.
     /// </summary>
     [JsonPropertyName("secretScanning")]
     public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanning>? SecretScanning { get; set; }
+
+    /// <summary>
+    /// The secret scanning ai detection configuration for the repository. See Secret Scanning AI Detection Configuration below for details.
+    /// The secret scanning AI detection configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningAiDetection")]
+    public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanningAiDetection>? SecretScanningAiDetection { get; set; }
+
+    /// <summary>
+    /// The secret scanning non-provider patterns configuration for this repository. See Secret Scanning Non-Provider Patterns Configuration below for more details.
+    /// The secret scanning non-provider patterns configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningNonProviderPatterns")]
+    public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysisSecretScanningNonProviderPatterns>? SecretScanningNonProviderPatterns { get; set; }
 
     /// <summary>
     /// The secret scanning push protection configuration for the repository. See Secret Scanning Push Protection Configuration below for details.
@@ -573,6 +708,13 @@ public partial class V1alpha1RepositorySpecInitProvider
     public bool? AllowAutoMerge { get; set; }
 
     /// <summary>
+    /// Configure private forking for organization owned private and internal repositories; set to true to enable, false to disable, and leave unset for the default behaviour. Configuring this requires that private forking is not being explicitly configured at the organization level.
+    /// Set to &apos;true&apos; to allow private forking on the repository; this is only relevant if the repository is owned by an organization and is private or internal.
+    /// </summary>
+    [JsonPropertyName("allowForking")]
+    public bool? AllowForking { get; set; }
+
+    /// <summary>
     /// Set to false to disable merge commits on the repository.
     /// Set to &apos;false&apos; to disable merge commits on the repository.
     /// </summary>
@@ -622,9 +764,7 @@ public partial class V1alpha1RepositorySpecInitProvider
     public bool? AutoInit { get; set; }
 
     /// <summary>
-    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created,
-    /// and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the
-    /// initial repository creation and create the target branch inside of the repository prior to setting this attribute.
+    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created, and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the initial repository creation and create the target branch inside of the repository prior to setting this attribute.
     /// Can only be set after initial repository creation, and only if the target branch exists
     /// </summary>
     [JsonPropertyName("defaultBranch")]
@@ -644,6 +784,16 @@ public partial class V1alpha1RepositorySpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>
+    /// Set to true to create a fork of an existing repository. When set to true, both source_owner and source_repo must also be specified.
+    /// Set to &apos;true&apos; to fork an existing repository.
+    /// </summary>
+    [JsonPropertyName("fork")]
+    public string? Fork { get; set; }
+
     /// <summary>
     /// Use the name of the template without the extension. For example, &quot;Haskell&quot;.
     /// Use the name of the template without the extension. For example, &apos;Haskell&apos;.
@@ -659,15 +809,14 @@ public partial class V1alpha1RepositorySpecInitProvider
     public bool? HasDiscussions { get; set; }
 
     /// <summary>
-    /// Set to true to enable the (deprecated) downloads features on the repository.
+    /// (DEPRECATED)  Set to true to enable the (deprecated) downloads features on the repository. This attribute is no longer in use, but it hasn&apos;t been removed yet. It will be removed in a future version. See this discussion.
     /// Set to &apos;true&apos; to enable the (deprecated) downloads features on the repository.
     /// </summary>
     [JsonPropertyName("hasDownloads")]
     public bool? HasDownloads { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Issues features
-    /// on the repository.
+    /// Set to true to enable the GitHub Issues features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Issues features on the repository
     /// </summary>
     [JsonPropertyName("hasIssues")]
@@ -681,8 +830,7 @@ public partial class V1alpha1RepositorySpecInitProvider
     public bool? HasProjects { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Wiki features on
-    /// the repository.
+    /// Set to true to enable the GitHub Wiki features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Wiki features on the repository.
     /// </summary>
     [JsonPropertyName("hasWiki")]
@@ -695,10 +843,7 @@ public partial class V1alpha1RepositorySpecInitProvider
     [JsonPropertyName("homepageUrl")]
     public string? HomepageUrl { get; set; }
 
-    /// <summary>
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// </summary>
+    /// <summary>This is ignored as the provider now handles lack of permissions automatically. This field will be removed in a future version.</summary>
     [JsonPropertyName("ignoreVulnerabilityAlertsDuringRead")]
     public bool? IgnoreVulnerabilityAlertsDuringRead { get; set; }
 
@@ -738,16 +883,13 @@ public partial class V1alpha1RepositorySpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// The repository&apos;s GitHub Pages configuration. See GitHub Pages Configuration below for details.
+    /// (DEPRECATED) The repository&apos;s GitHub Pages configuration. Use the github_repository_pages resource instead. This field will be removed in a future version. See GitHub Pages Configuration below for details.
     /// The repository&apos;s GitHub Pages configuration
     /// </summary>
     [JsonPropertyName("pages")]
     public IList<V1alpha1RepositorySpecInitProviderPages>? Pages { get; set; }
 
-    /// <summary>
-    /// Set to true to create a private repository.
-    /// Repositories are created as public (e.g. open source) by default.
-    /// </summary>
+    /// <summary>Set to true to create a private repository. Repositories are created as public (e.g. open source) by default.</summary>
     [JsonPropertyName("private")]
     public bool? Private { get; set; }
 
@@ -757,6 +899,20 @@ public partial class V1alpha1RepositorySpecInitProvider
     /// </summary>
     [JsonPropertyName("securityAndAnalysis")]
     public IList<V1alpha1RepositorySpecInitProviderSecurityAndAnalysis>? SecurityAndAnalysis { get; set; }
+
+    /// <summary>
+    /// The GitHub username or organization that owns the repository being forked. Required when fork is true.
+    /// The owner of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceOwner")]
+    public string? SourceOwner { get; set; }
+
+    /// <summary>
+    /// The name of the repository to fork. Required when fork is true.
+    /// The name of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceRepo")]
+    public string? SourceRepo { get; set; }
 
     /// <summary>
     /// Can be PR_BODY, COMMIT_MESSAGES, or BLANK for a default squash merge commit message. Applicable only if allow_squash_merge is true.
@@ -794,15 +950,15 @@ public partial class V1alpha1RepositorySpecInitProvider
     public string? Visibility { get; set; }
 
     /// <summary>
-    /// Set to true to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default.) See GitHub Documentation for details. Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
-    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
+    /// (DEPRECATED) Configure Dependabot security alerts for vulnerable dependencies; set to true to enable, set to false to disable, and leave unset for the default behavior. Configuring this requires that alerts are not being explicitly configured at the organization level. This field will be removed in a future version. Use the github_repository_vulnerability_alerts resource instead.
+    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on all repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
     /// </summary>
     [JsonPropertyName("vulnerabilityAlerts")]
     public bool? VulnerabilityAlerts { get; set; }
 
     /// <summary>
-    /// Require contributors to sign off on web-based commits. See more here. Defaults to false.
-    /// Require contributors to sign off on web-based commits. Defaults to &apos;false&apos;.
+    /// Require contributors to sign off on web-based commits. See more in the GitHub documentation.
+    /// Require contributors to sign off on web-based commits.
     /// </summary>
     [JsonPropertyName("webCommitSignoffRequired")]
     public bool? WebCommitSignoffRequired { get; set; }
@@ -960,7 +1116,7 @@ public partial class V1alpha1RepositoryStatusAtProviderPages
     public bool? Custom404 { get; set; }
 
     /// <summary>
-    /// URL to the repository on the web.
+    /// The absolute URL (including scheme) of the rendered GitHub Pages site e.g. https://username.github.io.
     /// URL to the repository on the web.
     /// </summary>
     [JsonPropertyName("htmlUrl")]
@@ -974,7 +1130,7 @@ public partial class V1alpha1RepositoryStatusAtProviderPages
     public IList<V1alpha1RepositoryStatusAtProviderPagesSource>? Source { get; set; }
 
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
+    /// The GitHub Pages site&apos;s build status e.g. building or built.
     /// The GitHub Pages site&apos;s build status e.g. building or built.
     /// </summary>
     [JsonPropertyName("status")]
@@ -989,8 +1145,20 @@ public partial class V1alpha1RepositoryStatusAtProviderPages
 public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisAdvancedSecurity
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable advanced security features on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;, This value being present when split licensing is enabled will error out.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisCodeSecurity
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable code security on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -1001,8 +1169,32 @@ public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisAdvanc
 public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanning
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanningAiDetection
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning AI detection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
+    /// </summary>
+    [JsonPropertyName("status")]
+    public string? Status { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanningNonProviderPatterns
+{
+    /// <summary>
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning non-provider patterns on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -1013,8 +1205,8 @@ public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecret
 public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanningPushProtection
 {
     /// <summary>
-    /// Set to enabled to enable secret scanning on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public or security_and_analysis[0].advanced_security[0].status must also be set to enabled.
-    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos; or &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;.
+    /// Set to enabled to enable GitHub Code Security on the repository. Can be enabled or disabled. If set to enabled, the repository&apos;s visibility must be public, security_and_analysis[0].advanced_security[0].status must also be set to enabled, or your Organization must have split licensing for Advanced security.
+    /// Set to &apos;enabled&apos; to enable secret scanning push protection on the repository. Can be &apos;enabled&apos; or &apos;disabled&apos;. If set to &apos;enabled&apos;, the repository&apos;s visibility must be &apos;public&apos;, &apos;security_and_analysis[0].advanced_security[0].status&apos; must also be set to &apos;enabled&apos;, or your Organization must have split licensing for Advanced security.
     /// </summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -1032,11 +1224,32 @@ public partial class V1alpha1RepositoryStatusAtProviderSecurityAndAnalysis
     public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisAdvancedSecurity>? AdvancedSecurity { get; set; }
 
     /// <summary>
+    /// The code security configuration for the repository. See Code Security below for details.
+    /// The code security configuration for the repository.
+    /// </summary>
+    [JsonPropertyName("codeSecurity")]
+    public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisCodeSecurity>? CodeSecurity { get; set; }
+
+    /// <summary>
     /// The secret scanning configuration for the repository. See Secret Scanning Configuration below for details.
     /// The secret scanning configuration for the repository.
     /// </summary>
     [JsonPropertyName("secretScanning")]
     public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanning>? SecretScanning { get; set; }
+
+    /// <summary>
+    /// The secret scanning ai detection configuration for the repository. See Secret Scanning AI Detection Configuration below for details.
+    /// The secret scanning AI detection configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningAiDetection")]
+    public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanningAiDetection>? SecretScanningAiDetection { get; set; }
+
+    /// <summary>
+    /// The secret scanning non-provider patterns configuration for this repository. See Secret Scanning Non-Provider Patterns Configuration below for more details.
+    /// The secret scanning non-provider patterns configuration for this repository.
+    /// </summary>
+    [JsonPropertyName("secretScanningNonProviderPatterns")]
+    public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysisSecretScanningNonProviderPatterns>? SecretScanningNonProviderPatterns { get; set; }
 
     /// <summary>
     /// The secret scanning push protection configuration for the repository. See Secret Scanning Push Protection Configuration below for details.
@@ -1082,6 +1295,13 @@ public partial class V1alpha1RepositoryStatusAtProvider
     /// </summary>
     [JsonPropertyName("allowAutoMerge")]
     public bool? AllowAutoMerge { get; set; }
+
+    /// <summary>
+    /// Configure private forking for organization owned private and internal repositories; set to true to enable, false to disable, and leave unset for the default behaviour. Configuring this requires that private forking is not being explicitly configured at the organization level.
+    /// Set to &apos;true&apos; to allow private forking on the repository; this is only relevant if the repository is owned by an organization and is private or internal.
+    /// </summary>
+    [JsonPropertyName("allowForking")]
+    public bool? AllowForking { get; set; }
 
     /// <summary>
     /// Set to false to disable merge commits on the repository.
@@ -1133,9 +1353,7 @@ public partial class V1alpha1RepositoryStatusAtProvider
     public bool? AutoInit { get; set; }
 
     /// <summary>
-    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created,
-    /// and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the
-    /// initial repository creation and create the target branch inside of the repository prior to setting this attribute.
+    /// (Deprecated: Use github_branch_default resource instead) The name of the default branch of the repository. NOTE: This can only be set after a repository has already been created, and after a correct reference has been created for the target branch inside the repository. This means a user will have to omit this parameter from the initial repository creation and create the target branch inside of the repository prior to setting this attribute.
     /// Can only be set after initial repository creation, and only if the target branch exists
     /// </summary>
     [JsonPropertyName("defaultBranch")]
@@ -1157,6 +1375,13 @@ public partial class V1alpha1RepositoryStatusAtProvider
 
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
+
+    /// <summary>
+    /// Set to true to create a fork of an existing repository. When set to true, both source_owner and source_repo must also be specified.
+    /// Set to &apos;true&apos; to fork an existing repository.
+    /// </summary>
+    [JsonPropertyName("fork")]
+    public string? Fork { get; set; }
 
     /// <summary>
     /// A string of the form &quot;orgname/reponame&quot;.
@@ -1187,15 +1412,14 @@ public partial class V1alpha1RepositoryStatusAtProvider
     public bool? HasDiscussions { get; set; }
 
     /// <summary>
-    /// Set to true to enable the (deprecated) downloads features on the repository.
+    /// (DEPRECATED)  Set to true to enable the (deprecated) downloads features on the repository. This attribute is no longer in use, but it hasn&apos;t been removed yet. It will be removed in a future version. See this discussion.
     /// Set to &apos;true&apos; to enable the (deprecated) downloads features on the repository.
     /// </summary>
     [JsonPropertyName("hasDownloads")]
     public bool? HasDownloads { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Issues features
-    /// on the repository.
+    /// Set to true to enable the GitHub Issues features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Issues features on the repository
     /// </summary>
     [JsonPropertyName("hasIssues")]
@@ -1209,8 +1433,7 @@ public partial class V1alpha1RepositoryStatusAtProvider
     public bool? HasProjects { get; set; }
 
     /// <summary>
-    /// Set to true to enable the GitHub Wiki features on
-    /// the repository.
+    /// Set to true to enable the GitHub Wiki features on the repository.
     /// Set to &apos;true&apos; to enable the GitHub Wiki features on the repository.
     /// </summary>
     [JsonPropertyName("hasWiki")]
@@ -1240,10 +1463,7 @@ public partial class V1alpha1RepositoryStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
-    /// </summary>
+    /// <summary>This is ignored as the provider now handles lack of permissions automatically. This field will be removed in a future version.</summary>
     [JsonPropertyName("ignoreVulnerabilityAlertsDuringRead")]
     public bool? IgnoreVulnerabilityAlertsDuringRead { get; set; }
 
@@ -1290,7 +1510,7 @@ public partial class V1alpha1RepositoryStatusAtProvider
     public string? NodeId { get; set; }
 
     /// <summary>
-    /// The repository&apos;s GitHub Pages configuration. See GitHub Pages Configuration below for details.
+    /// (DEPRECATED) The repository&apos;s GitHub Pages configuration. Use the github_repository_pages resource instead. This field will be removed in a future version. See GitHub Pages Configuration below for details.
     /// The repository&apos;s GitHub Pages configuration
     /// </summary>
     [JsonPropertyName("pages")]
@@ -1300,10 +1520,7 @@ public partial class V1alpha1RepositoryStatusAtProvider
     [JsonPropertyName("primaryLanguage")]
     public string? PrimaryLanguage { get; set; }
 
-    /// <summary>
-    /// Set to true to create a private repository.
-    /// Repositories are created as public (e.g. open source) by default.
-    /// </summary>
+    /// <summary>Set to true to create a private repository. Repositories are created as public (e.g. open source) by default.</summary>
     [JsonPropertyName("private")]
     public bool? Private { get; set; }
 
@@ -1320,6 +1537,20 @@ public partial class V1alpha1RepositoryStatusAtProvider
     /// </summary>
     [JsonPropertyName("securityAndAnalysis")]
     public IList<V1alpha1RepositoryStatusAtProviderSecurityAndAnalysis>? SecurityAndAnalysis { get; set; }
+
+    /// <summary>
+    /// The GitHub username or organization that owns the repository being forked. Required when fork is true.
+    /// The owner of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceOwner")]
+    public string? SourceOwner { get; set; }
+
+    /// <summary>
+    /// The name of the repository to fork. Required when fork is true.
+    /// The name of the source repository to fork from.
+    /// </summary>
+    [JsonPropertyName("sourceRepo")]
+    public string? SourceRepo { get; set; }
 
     /// <summary>
     /// Can be PR_BODY, COMMIT_MESSAGES, or BLANK for a default squash merge commit message. Applicable only if allow_squash_merge is true.
@@ -1371,15 +1602,15 @@ public partial class V1alpha1RepositoryStatusAtProvider
     public string? Visibility { get; set; }
 
     /// <summary>
-    /// Set to true to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default.) See GitHub Documentation for details. Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
-    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
+    /// (DEPRECATED) Configure Dependabot security alerts for vulnerable dependencies; set to true to enable, set to false to disable, and leave unset for the default behavior. Configuring this requires that alerts are not being explicitly configured at the organization level. This field will be removed in a future version. Use the github_repository_vulnerability_alerts resource instead.
+    /// Set to &apos;true&apos; to enable security alerts for vulnerable dependencies. Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on all repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
     /// </summary>
     [JsonPropertyName("vulnerabilityAlerts")]
     public bool? VulnerabilityAlerts { get; set; }
 
     /// <summary>
-    /// Require contributors to sign off on web-based commits. See more here. Defaults to false.
-    /// Require contributors to sign off on web-based commits. Defaults to &apos;false&apos;.
+    /// Require contributors to sign off on web-based commits. See more in the GitHub documentation.
+    /// Require contributors to sign off on web-based commits.
     /// </summary>
     [JsonPropertyName("webCommitSignoffRequired")]
     public bool? WebCommitSignoffRequired { get; set; }

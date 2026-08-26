@@ -3,18 +3,18 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.19.0
-  name: environments.repo.github.upbound.io
+  name: repositorycollaboratorsets.repo.github.upbound.io
 spec:
   group: repo.github.upbound.io
   names:
-    kind: Environment
+    kind: RepositoryCollaboratorSet
     categories:
     - crossplane
     - managed
     - github
-    listKind: EnvironmentList
-    plural: environments
-    singular: environment
+    listKind: RepositoryCollaboratorSetList
+    plural: repositorycollaboratorsets
+    singular: repositorycollaboratorset
   scope: Cluster
   versions:
   - additionalPrinterColumns:
@@ -33,7 +33,7 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: Environment is the Schema for the Environments API. Creates and manages environments for GitHub repositories
+        description: RepositoryCollaboratorSet is the Schema for the RepositoryCollaboratorSets API. Manage the complete set of collaborators (users and teams) for a GitHub repository.
         properties:
           apiVersion:
             description: |-
@@ -53,7 +53,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: EnvironmentSpec defines the desired state of Environment
+            description: RepositoryCollaboratorSetSpec defines the desired state of RepositoryCollaboratorSet
             properties:
               deletionPolicy:
                 default: Delete
@@ -71,41 +71,23 @@ spec:
                 type: string
               forProvider:
                 properties:
-                  canAdminsBypass:
+                  ignoreTeam:
                     description: |-
-                      Can repository admins bypass the environment protections. Defaults to true.
-                      Can Admins bypass deployment protections
-                    type: boolean
-                  deploymentBranchPolicy:
-                    description: The deployment branch policy configuration
+                      (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+                      Teams to ignore when managing repository collaborators.
                     items:
                       properties:
-                        customBranchPolicies:
+                        teamId:
                           description: |-
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                          type: boolean
-                        protectedBranches:
-                          description: |-
-                            Whether only branches with branch protection rules can deploy to this environment.
-                            Whether only branches with branch protection rules can deploy to this environment.
-                          type: boolean
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to ignore.
+                          type: string
                       type: object
                     type: array
-                  environment:
-                    description: |-
-                      The name of the environment.
-                      The name of the environment.
-                    type: string
-                  preventSelfReview:
-                    description: |-
-                      Whether or not a user who created the job is prevented from approving their own job. Defaults to false.
-                      Prevent users from approving workflows runs that they triggered.
-                    type: boolean
                   repository:
                     description: |-
-                      The repository of the environment.
-                      The repository of the environment.
+                      (String) Name of the repository.
+                      Name of the repository.
                     type: string
                   repositoryRef:
                     description: Reference to a Repository in repo to populate repository.
@@ -180,36 +162,115 @@ spec:
                             type: string
                         type: object
                     type: object
-                  reviewers:
-                    description: The environment reviewers configuration.
+                  team:
+                    description: |-
+                      (Block Set) Teams to grant access to the repository. (see below for nested schema)
+                      Teams to grant access to the repository.
                     items:
                       properties:
-                        teams:
+                        permission:
                           description: |-
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
-                        users:
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
+                          type: string
+                        teamId:
                           description: |-
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to add to the repository as a collaborator.
+                          type: string
+                        teamIdRef:
+                          description: Reference to a Team in team to populate teamId.
+                          properties:
+                            name:
+                              description: Name of the referenced object.
+                              type: string
+                            policy:
+                              description: Policies for referencing.
+                              properties:
+                                resolution:
+                                  default: Required
+                                  description: |-
+                                    Resolution specifies whether resolution of this reference is required.
+                                    The default is 'Required', which means the reconcile will fail if the
+                                    reference cannot be resolved. 'Optional' means this reference will be
+                                    a no-op if it cannot be resolved.
+                                  enum:
+                                  - Required
+                                  - Optional
+                                  type: string
+                                resolve:
+                                  description: |-
+                                    Resolve specifies when this reference should be resolved. The default
+                                    is 'IfNotPresent', which will attempt to resolve the reference only when
+                                    the corresponding field is not present. Use 'Always' to resolve the
+                                    reference on every reconcile.
+                                  enum:
+                                  - Always
+                                  - IfNotPresent
+                                  type: string
+                              type: object
+                          required:
+                          - name
+                          type: object
+                        teamIdSelector:
+                          description: Selector for a Team in team to populate teamId.
+                          properties:
+                            matchControllerRef:
+                              description: |-
+                                MatchControllerRef ensures an object with the same controller reference
+                                as the selecting object is selected.
+                              type: boolean
+                            matchLabels:
+                              additionalProperties:
+                                type: string
+                              description: MatchLabels ensures an object with matching labels is selected.
+                              type: object
+                            policy:
+                              description: Policies for selection.
+                              properties:
+                                resolution:
+                                  default: Required
+                                  description: |-
+                                    Resolution specifies whether resolution of this reference is required.
+                                    The default is 'Required', which means the reconcile will fail if the
+                                    reference cannot be resolved. 'Optional' means this reference will be
+                                    a no-op if it cannot be resolved.
+                                  enum:
+                                  - Required
+                                  - Optional
+                                  type: string
+                                resolve:
+                                  description: |-
+                                    Resolve specifies when this reference should be resolved. The default
+                                    is 'IfNotPresent', which will attempt to resolve the reference only when
+                                    the corresponding field is not present. Use 'Always' to resolve the
+                                    reference on every reconcile.
+                                  enum:
+                                  - Always
+                                  - IfNotPresent
+                                  type: string
+                              type: object
+                          type: object
                       type: object
                     type: array
-                  waitTimer:
+                  user:
                     description: |-
-                      Amount of time to delay a job after the job is initially triggered.
-                      Amount of time to delay a job after the job is initially triggered.
-                    format: int64
-                    type: integer
+                      (Block Set) Users to grant access to the repository. (see below for nested schema)
+                      Users to grant access to the repository.
+                    items:
+                      properties:
+                        permission:
+                          description: |-
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+                          type: string
+                        username:
+                          description: |-
+                            (String) Login for the user to add to the repository as a collaborator.
+                            Login for the user to add to the repository as a collaborator.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               initProvider:
                 description: |-
@@ -224,41 +285,23 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
-                  canAdminsBypass:
+                  ignoreTeam:
                     description: |-
-                      Can repository admins bypass the environment protections. Defaults to true.
-                      Can Admins bypass deployment protections
-                    type: boolean
-                  deploymentBranchPolicy:
-                    description: The deployment branch policy configuration
+                      (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+                      Teams to ignore when managing repository collaborators.
                     items:
                       properties:
-                        customBranchPolicies:
+                        teamId:
                           description: |-
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                          type: boolean
-                        protectedBranches:
-                          description: |-
-                            Whether only branches with branch protection rules can deploy to this environment.
-                            Whether only branches with branch protection rules can deploy to this environment.
-                          type: boolean
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to ignore.
+                          type: string
                       type: object
                     type: array
-                  environment:
-                    description: |-
-                      The name of the environment.
-                      The name of the environment.
-                    type: string
-                  preventSelfReview:
-                    description: |-
-                      Whether or not a user who created the job is prevented from approving their own job. Defaults to false.
-                      Prevent users from approving workflows runs that they triggered.
-                    type: boolean
                   repository:
                     description: |-
-                      The repository of the environment.
-                      The repository of the environment.
+                      (String) Name of the repository.
+                      Name of the repository.
                     type: string
                   repositoryRef:
                     description: Reference to a Repository in repo to populate repository.
@@ -333,36 +376,115 @@ spec:
                             type: string
                         type: object
                     type: object
-                  reviewers:
-                    description: The environment reviewers configuration.
+                  team:
+                    description: |-
+                      (Block Set) Teams to grant access to the repository. (see below for nested schema)
+                      Teams to grant access to the repository.
                     items:
                       properties:
-                        teams:
+                        permission:
                           description: |-
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
-                        users:
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
+                          type: string
+                        teamId:
                           description: |-
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to add to the repository as a collaborator.
+                          type: string
+                        teamIdRef:
+                          description: Reference to a Team in team to populate teamId.
+                          properties:
+                            name:
+                              description: Name of the referenced object.
+                              type: string
+                            policy:
+                              description: Policies for referencing.
+                              properties:
+                                resolution:
+                                  default: Required
+                                  description: |-
+                                    Resolution specifies whether resolution of this reference is required.
+                                    The default is 'Required', which means the reconcile will fail if the
+                                    reference cannot be resolved. 'Optional' means this reference will be
+                                    a no-op if it cannot be resolved.
+                                  enum:
+                                  - Required
+                                  - Optional
+                                  type: string
+                                resolve:
+                                  description: |-
+                                    Resolve specifies when this reference should be resolved. The default
+                                    is 'IfNotPresent', which will attempt to resolve the reference only when
+                                    the corresponding field is not present. Use 'Always' to resolve the
+                                    reference on every reconcile.
+                                  enum:
+                                  - Always
+                                  - IfNotPresent
+                                  type: string
+                              type: object
+                          required:
+                          - name
+                          type: object
+                        teamIdSelector:
+                          description: Selector for a Team in team to populate teamId.
+                          properties:
+                            matchControllerRef:
+                              description: |-
+                                MatchControllerRef ensures an object with the same controller reference
+                                as the selecting object is selected.
+                              type: boolean
+                            matchLabels:
+                              additionalProperties:
+                                type: string
+                              description: MatchLabels ensures an object with matching labels is selected.
+                              type: object
+                            policy:
+                              description: Policies for selection.
+                              properties:
+                                resolution:
+                                  default: Required
+                                  description: |-
+                                    Resolution specifies whether resolution of this reference is required.
+                                    The default is 'Required', which means the reconcile will fail if the
+                                    reference cannot be resolved. 'Optional' means this reference will be
+                                    a no-op if it cannot be resolved.
+                                  enum:
+                                  - Required
+                                  - Optional
+                                  type: string
+                                resolve:
+                                  description: |-
+                                    Resolve specifies when this reference should be resolved. The default
+                                    is 'IfNotPresent', which will attempt to resolve the reference only when
+                                    the corresponding field is not present. Use 'Always' to resolve the
+                                    reference on every reconcile.
+                                  enum:
+                                  - Always
+                                  - IfNotPresent
+                                  type: string
+                              type: object
+                          type: object
                       type: object
                     type: array
-                  waitTimer:
+                  user:
                     description: |-
-                      Amount of time to delay a job after the job is initially triggered.
-                      Amount of time to delay a job after the job is initially triggered.
-                    format: int64
-                    type: integer
+                      (Block Set) Users to grant access to the repository. (see below for nested schema)
+                      Users to grant access to the repository.
+                    items:
+                      properties:
+                        permission:
+                          description: |-
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+                          type: string
+                        username:
+                          description: |-
+                            (String) Login for the user to add to the repository as a collaborator.
+                            Login for the user to add to the repository as a collaborator.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               managementPolicies:
                 default:
@@ -450,88 +572,87 @@ spec:
             required:
             - forProvider
             type: object
-            x-kubernetes-validations:
-            - message: spec.forProvider.environment is a required parameter
-              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.environment) || (has(self.initProvider) && has(self.initProvider.environment))"
           status:
-            description: EnvironmentStatus defines the observed state of Environment.
+            description: RepositoryCollaboratorSetStatus defines the observed state of RepositoryCollaboratorSet.
             properties:
               atProvider:
                 properties:
-                  canAdminsBypass:
+                  id:
+                    description: (String) The ID of this resource.
+                    type: string
+                  ignoreTeam:
                     description: |-
-                      Can repository admins bypass the environment protections. Defaults to true.
-                      Can Admins bypass deployment protections
-                    type: boolean
-                  deploymentBranchPolicy:
-                    description: The deployment branch policy configuration
+                      (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+                      Teams to ignore when managing repository collaborators.
                     items:
                       properties:
-                        customBranchPolicies:
+                        teamId:
                           description: |-
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                            Whether only branches that match the specified name patterns can deploy to this environment.
-                          type: boolean
-                        protectedBranches:
-                          description: |-
-                            Whether only branches with branch protection rules can deploy to this environment.
-                            Whether only branches with branch protection rules can deploy to this environment.
-                          type: boolean
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to ignore.
+                          type: string
                       type: object
                     type: array
-                  environment:
+                  invitationIds:
+                    additionalProperties:
+                      type: string
                     description: |-
-                      The name of the environment.
-                      The name of the environment.
-                    type: string
-                  id:
-                    type: string
-                  preventSelfReview:
+                      (Map of String) Map of usernames to invitation ID for users that haven't yet accepted their invitation to become a collaborator. This is only set on read, and is used internally to track pending invitations for users that aren't yet collaborators.
+                      Map of usernames to invitation ID for users that haven't yet accepted their invitation to become a collaborator. This is only set on read, and is used internally to track pending invitations for users that aren't yet collaborators.
+                    type: object
+                    x-kubernetes-map-type: granular
+                  ownerConfigured:
                     description: |-
-                      Whether or not a user who created the job is prevented from approving their own job. Defaults to false.
-                      Prevent users from approving workflows runs that they triggered.
+                      (Boolean) Indicates whether the owner of a personal repository is configured as a collaborator.
+                      Indicates whether the owner of a personal repository is configured as a collaborator.
                     type: boolean
                   repository:
                     description: |-
-                      The repository of the environment.
-                      The repository of the environment.
+                      (String) Name of the repository.
+                      Name of the repository.
                     type: string
                   repositoryId:
                     description: |-
-                      The ID of the repository.
-                      The ID of the GitHub repository.
+                      (Number) ID of the repository.
+                      ID of the repository.
                     format: int64
                     type: integer
-                  reviewers:
-                    description: The environment reviewers configuration.
+                  team:
+                    description: |-
+                      (Block Set) Teams to grant access to the repository. (see below for nested schema)
+                      Teams to grant access to the repository.
                     items:
                       properties:
-                        teams:
+                        permission:
                           description: |-
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
-                        users:
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
+                          type: string
+                        teamId:
                           description: |-
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                            Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
-                          items:
-                            format: int64
-                            type: integer
-                          type: array
-                          x-kubernetes-list-type: set
+                            (String) ID or slug of the team to ignore.
+                            ID or slug of the team to add to the repository as a collaborator.
+                          type: string
                       type: object
                     type: array
-                  waitTimer:
+                  user:
                     description: |-
-                      Amount of time to delay a job after the job is initially triggered.
-                      Amount of time to delay a job after the job is initially triggered.
-                    format: int64
-                    type: integer
+                      (Block Set) Users to grant access to the repository. (see below for nested schema)
+                      Users to grant access to the repository.
+                    items:
+                      properties:
+                        permission:
+                          description: |-
+                            (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+                            Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+                          type: string
+                        username:
+                          description: |-
+                            (String) Login for the user to add to the repository as a collaborator.
+                            Login for the user to add to the repository as a collaborator.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               conditions:
                 description: Conditions of the resource.

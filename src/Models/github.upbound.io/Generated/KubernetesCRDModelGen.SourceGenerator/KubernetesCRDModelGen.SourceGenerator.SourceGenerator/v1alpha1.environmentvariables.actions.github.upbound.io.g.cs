@@ -384,7 +384,7 @@ public partial class V1alpha1EnvironmentVariableSpecForProvider
     public V1alpha1EnvironmentVariableSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
@@ -739,7 +739,7 @@ public partial class V1alpha1EnvironmentVariableSpecInitProvider
     public V1alpha1EnvironmentVariableSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
@@ -941,7 +941,7 @@ public partial class V1alpha1EnvironmentVariableSpec
 public partial class V1alpha1EnvironmentVariableStatusAtProvider
 {
     /// <summary>
-    /// Date of actions_environment_secret creation.
+    /// Date the variable was created.
     /// Date of &apos;actions_variable&apos; creation.
     /// </summary>
     [JsonPropertyName("createdAt")]
@@ -965,14 +965,21 @@ public partial class V1alpha1EnvironmentVariableStatusAtProvider
     public string? Repository { get; set; }
 
     /// <summary>
-    /// Date of actions_environment_secret update.
+    /// ID of the repository.
+    /// ID of the repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
+
+    /// <summary>
+    /// Date the variable was last updated.
     /// Date of &apos;actions_variable&apos; update.
     /// </summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]

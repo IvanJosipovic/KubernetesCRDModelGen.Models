@@ -207,7 +207,7 @@ public partial class V1alpha1ActionsVariableSpecForProviderRepositorySelector
 public partial class V1alpha1ActionsVariableSpecForProvider
 {
     /// <summary>
-    /// Name of the repository
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -222,14 +222,14 @@ public partial class V1alpha1ActionsVariableSpecForProvider
     public V1alpha1ActionsVariableSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]
@@ -400,7 +400,7 @@ public partial class V1alpha1ActionsVariableSpecInitProviderRepositorySelector
 public partial class V1alpha1ActionsVariableSpecInitProvider
 {
     /// <summary>
-    /// Name of the repository
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -415,14 +415,14 @@ public partial class V1alpha1ActionsVariableSpecInitProvider
     public V1alpha1ActionsVariableSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]
@@ -617,7 +617,7 @@ public partial class V1alpha1ActionsVariableSpec
 public partial class V1alpha1ActionsVariableStatusAtProvider
 {
     /// <summary>
-    /// Date of actions_variable creation.
+    /// Date the variable was created.
     /// Date of &apos;actions_variable&apos; creation.
     /// </summary>
     [JsonPropertyName("createdAt")]
@@ -627,28 +627,35 @@ public partial class V1alpha1ActionsVariableStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// Name of the repository
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
     /// <summary>
-    /// Date of actions_variable update.
+    /// ID of the repository.
+    /// ID of the repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
+
+    /// <summary>
+    /// Date the variable was last updated.
     /// Date of &apos;actions_variable&apos; update.
     /// </summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]

@@ -267,6 +267,13 @@ public partial class V1alpha1RepositoryPermissionsSpecForProvider
     /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
     public V1alpha1RepositoryPermissionsSpecForProviderRepositorySelector? RepositorySelector { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the repository.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in a repository.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -493,6 +500,13 @@ public partial class V1alpha1RepositoryPermissionsSpecInitProvider
     /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
     public V1alpha1RepositoryPermissionsSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the repository.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in a repository.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 /// <summary>
@@ -738,6 +752,13 @@ public partial class V1alpha1RepositoryPermissionsStatusAtProvider
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the repository.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in a repository.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

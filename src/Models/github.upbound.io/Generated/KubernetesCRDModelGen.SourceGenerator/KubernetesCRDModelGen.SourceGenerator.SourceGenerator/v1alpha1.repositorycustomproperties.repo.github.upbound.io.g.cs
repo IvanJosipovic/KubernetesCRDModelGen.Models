@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.repo.github.upbound.io;
-/// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Creates and a specific custom property for a GitHub repository</summary>
+/// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Resource to manage GitHub repository custom properties.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -207,29 +207,29 @@ public partial class V1alpha1RepositoryCustomPropertySpecForProviderRepositorySe
 public partial class V1alpha1RepositoryCustomPropertySpecForProvider
 {
     /// <summary>
-    /// Name of the custom property. Note that a pre-requisiste for this resource is that a custom property of this name has already been defined on the organization level
+    /// (String) Name of the custom property.
     /// Name of the custom property.
     /// </summary>
     [JsonPropertyName("propertyName")]
     public string? PropertyName { get; set; }
 
     /// <summary>
-    /// Type of the custom property. Can be one of single_select, multi_select, string, or true_false
-    /// Type of the custom property
+    /// (String) Type of the custom property. Valid values are string, single_select, multi_select, true_false, and url.
+    /// Type of the custom property. Valid values are `string`, `single_select`, `multi_select`, `true_false`, and `url`.
     /// </summary>
     [JsonPropertyName("propertyType")]
     public string? PropertyType { get; set; }
 
     /// <summary>
-    /// Value of the custom property in the form of an array. Properties of type single_select, string, and true_false are represented as a string array of length 1
-    /// Value of the custom property.
+    /// (Set of String) Value of the custom property. For string, single_select, true_false, and url property types, this should be a single value. For multi_select property types, this can be multiple values.
+    /// Value of the custom property. For `string`, `single_select`, `true_false`, and `url` property types, this should be a single value. For `multi_select` property types, this can be multiple values.
     /// </summary>
     [JsonPropertyName("propertyValue")]
     public IList<string>? PropertyValue { get; set; }
 
     /// <summary>
-    /// The repository of the environment.
-    /// Name of the repository which the custom properties should be on.
+    /// (String) Name of the repository.
+    /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -407,29 +407,29 @@ public partial class V1alpha1RepositoryCustomPropertySpecInitProviderRepositoryS
 public partial class V1alpha1RepositoryCustomPropertySpecInitProvider
 {
     /// <summary>
-    /// Name of the custom property. Note that a pre-requisiste for this resource is that a custom property of this name has already been defined on the organization level
+    /// (String) Name of the custom property.
     /// Name of the custom property.
     /// </summary>
     [JsonPropertyName("propertyName")]
     public string? PropertyName { get; set; }
 
     /// <summary>
-    /// Type of the custom property. Can be one of single_select, multi_select, string, or true_false
-    /// Type of the custom property
+    /// (String) Type of the custom property. Valid values are string, single_select, multi_select, true_false, and url.
+    /// Type of the custom property. Valid values are `string`, `single_select`, `multi_select`, `true_false`, and `url`.
     /// </summary>
     [JsonPropertyName("propertyType")]
     public string? PropertyType { get; set; }
 
     /// <summary>
-    /// Value of the custom property in the form of an array. Properties of type single_select, string, and true_false are represented as a string array of length 1
-    /// Value of the custom property.
+    /// (Set of String) Value of the custom property. For string, single_select, true_false, and url property types, this should be a single value. For multi_select property types, this can be multiple values.
+    /// Value of the custom property. For `string`, `single_select`, `true_false`, and `url` property types, this should be a single value. For `multi_select` property types, this can be multiple values.
     /// </summary>
     [JsonPropertyName("propertyValue")]
     public IList<string>? PropertyValue { get; set; }
 
     /// <summary>
-    /// The repository of the environment.
-    /// Name of the repository which the custom properties should be on.
+    /// (String) Name of the repository.
+    /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -630,36 +630,44 @@ public partial class V1alpha1RepositoryCustomPropertySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryCustomPropertyStatusAtProvider
 {
+    /// <summary>(String) The ID of this resource.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// Name of the custom property. Note that a pre-requisiste for this resource is that a custom property of this name has already been defined on the organization level
+    /// (String) Name of the custom property.
     /// Name of the custom property.
     /// </summary>
     [JsonPropertyName("propertyName")]
     public string? PropertyName { get; set; }
 
     /// <summary>
-    /// Type of the custom property. Can be one of single_select, multi_select, string, or true_false
-    /// Type of the custom property
+    /// (String) Type of the custom property. Valid values are string, single_select, multi_select, true_false, and url.
+    /// Type of the custom property. Valid values are `string`, `single_select`, `multi_select`, `true_false`, and `url`.
     /// </summary>
     [JsonPropertyName("propertyType")]
     public string? PropertyType { get; set; }
 
     /// <summary>
-    /// Value of the custom property in the form of an array. Properties of type single_select, string, and true_false are represented as a string array of length 1
-    /// Value of the custom property.
+    /// (Set of String) Value of the custom property. For string, single_select, true_false, and url property types, this should be a single value. For multi_select property types, this can be multiple values.
+    /// Value of the custom property. For `string`, `single_select`, `true_false`, and `url` property types, this should be a single value. For `multi_select` property types, this can be multiple values.
     /// </summary>
     [JsonPropertyName("propertyValue")]
     public IList<string>? PropertyValue { get; set; }
 
     /// <summary>
-    /// The repository of the environment.
-    /// Name of the repository which the custom properties should be on.
+    /// (String) Name of the repository.
+    /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
+
+    /// <summary>
+    /// (Number) ID of the repository.
+    /// ID of the repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -726,7 +734,7 @@ public partial class V1alpha1RepositoryCustomPropertyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Creates and a specific custom property for a GitHub repository</summary>
+/// <summary>RepositoryCustomProperty is the Schema for the RepositoryCustomPropertys API. Resource to manage GitHub repository custom properties.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -42,20 +42,20 @@ public partial class V1alpha1TeamSettingsSpecForProviderReviewRequestDelegation
 {
     /// <summary>
     /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE. Default value is ROUND_ROBIN
-    /// The algorithm to use when assigning pull requests to team members. Supported values are &apos;ROUND_ROBIN&apos; and &apos;LOAD_BALANCE&apos;.
+    /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE.
     /// </summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
     /// <summary>
-    /// The number of team members to assign to a pull request
+    /// The number of team members to assign to a pull request. Default value is 1.
     /// The number of team members to assign to a pull request.
     /// </summary>
     [JsonPropertyName("memberCount")]
     public long? MemberCount { get; set; }
 
     /// <summary>
-    /// whether to notify the entire team when at least one member is also assigned to the pull request
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
     /// whether to notify the entire team when at least one member is also assigned to the pull request.
     /// </summary>
     [JsonPropertyName("notify")]
@@ -222,6 +222,13 @@ public partial class V1alpha1TeamSettingsSpecForProviderTeamIdSelector
 public partial class V1alpha1TeamSettingsSpecForProvider
 {
     /// <summary>
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request.
+    /// </summary>
+    [JsonPropertyName("notify")]
+    public bool? Notify { get; set; }
+
+    /// <summary>
     /// The settings for delegating code reviews to individuals on behalf of the team. If this block is present, even without any fields, then review request delegation will be enabled for the team. See GitHub Review Request Delegation below for details. See GitHub&apos;s documentation for more configuration details.
     /// The settings for delegating code reviews to individuals on behalf of the team. If this block is present, even without any fields, then review request delegation will be enabled for the team.
     /// </summary>
@@ -250,20 +257,20 @@ public partial class V1alpha1TeamSettingsSpecInitProviderReviewRequestDelegation
 {
     /// <summary>
     /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE. Default value is ROUND_ROBIN
-    /// The algorithm to use when assigning pull requests to team members. Supported values are &apos;ROUND_ROBIN&apos; and &apos;LOAD_BALANCE&apos;.
+    /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE.
     /// </summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
     /// <summary>
-    /// The number of team members to assign to a pull request
+    /// The number of team members to assign to a pull request. Default value is 1.
     /// The number of team members to assign to a pull request.
     /// </summary>
     [JsonPropertyName("memberCount")]
     public long? MemberCount { get; set; }
 
     /// <summary>
-    /// whether to notify the entire team when at least one member is also assigned to the pull request
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
     /// whether to notify the entire team when at least one member is also assigned to the pull request.
     /// </summary>
     [JsonPropertyName("notify")]
@@ -442,6 +449,13 @@ public partial class V1alpha1TeamSettingsSpecInitProviderTeamIdSelector
 public partial class V1alpha1TeamSettingsSpecInitProvider
 {
     /// <summary>
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request.
+    /// </summary>
+    [JsonPropertyName("notify")]
+    public bool? Notify { get; set; }
+
+    /// <summary>
     /// The settings for delegating code reviews to individuals on behalf of the team. If this block is present, even without any fields, then review request delegation will be enabled for the team. See GitHub Review Request Delegation below for details. See GitHub&apos;s documentation for more configuration details.
     /// The settings for delegating code reviews to individuals on behalf of the team. If this block is present, even without any fields, then review request delegation will be enabled for the team.
     /// </summary>
@@ -577,20 +591,20 @@ public partial class V1alpha1TeamSettingsStatusAtProviderReviewRequestDelegation
 {
     /// <summary>
     /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE. Default value is ROUND_ROBIN
-    /// The algorithm to use when assigning pull requests to team members. Supported values are &apos;ROUND_ROBIN&apos; and &apos;LOAD_BALANCE&apos;.
+    /// The algorithm to use when assigning pull requests to team members. Supported values are ROUND_ROBIN and LOAD_BALANCE.
     /// </summary>
     [JsonPropertyName("algorithm")]
     public string? Algorithm { get; set; }
 
     /// <summary>
-    /// The number of team members to assign to a pull request
+    /// The number of team members to assign to a pull request. Default value is 1.
     /// The number of team members to assign to a pull request.
     /// </summary>
     [JsonPropertyName("memberCount")]
     public long? MemberCount { get; set; }
 
     /// <summary>
-    /// whether to notify the entire team when at least one member is also assigned to the pull request
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
     /// whether to notify the entire team when at least one member is also assigned to the pull request.
     /// </summary>
     [JsonPropertyName("notify")]
@@ -603,6 +617,13 @@ public partial class V1alpha1TeamSettingsStatusAtProvider
 {
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request. Can be set independently of review_request_delegation. Default value is false.
+    /// Whether to notify the entire team when at least one member is also assigned to the pull request.
+    /// </summary>
+    [JsonPropertyName("notify")]
+    public bool? Notify { get; set; }
 
     /// <summary>
     /// The settings for delegating code reviews to individuals on behalf of the team. If this block is present, even without any fields, then review request delegation will be enabled for the team. See GitHub Review Request Delegation below for details. See GitHub&apos;s documentation for more configuration details.
@@ -618,11 +639,17 @@ public partial class V1alpha1TeamSettingsStatusAtProvider
     [JsonPropertyName("teamId")]
     public string? TeamId { get; set; }
 
-    /// <summary>The slug of the Team within the Organization.</summary>
+    /// <summary>
+    /// The slug of the Team.
+    /// The slug of the Team within the Organization.
+    /// </summary>
     [JsonPropertyName("teamSlug")]
     public string? TeamSlug { get; set; }
 
-    /// <summary>The unique ID of the Team on GitHub. Corresponds to the ID of the &apos;github_team_settings&apos; resource.</summary>
+    /// <summary>
+    /// The unique node ID of the Team on GitHub. Corresponds to the ID of the github_team_settings resource.
+    /// The unique ID of the Team on GitHub. Corresponds to the ID of the &apos;github_team_settings&apos; resource.
+    /// </summary>
     [JsonPropertyName("teamUid")]
     public string? TeamUid { get; set; }
 }

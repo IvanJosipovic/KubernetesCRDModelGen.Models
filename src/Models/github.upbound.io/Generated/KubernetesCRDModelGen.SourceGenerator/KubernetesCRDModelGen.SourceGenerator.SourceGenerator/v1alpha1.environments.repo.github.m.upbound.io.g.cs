@@ -234,7 +234,7 @@ public partial class V1alpha1EnvironmentSpecForProviderReviewers
 public partial class V1alpha1EnvironmentSpecForProvider
 {
     /// <summary>
-    /// Can repository admins bypass the environment protections.  Defaults to true.
+    /// Can repository admins bypass the environment protections. Defaults to true.
     /// Can Admins bypass deployment protections
     /// </summary>
     [JsonPropertyName("canAdminsBypass")]
@@ -495,7 +495,7 @@ public partial class V1alpha1EnvironmentSpecInitProviderReviewers
 public partial class V1alpha1EnvironmentSpecInitProvider
 {
     /// <summary>
-    /// Can repository admins bypass the environment protections.  Defaults to true.
+    /// Can repository admins bypass the environment protections. Defaults to true.
     /// Can Admins bypass deployment protections
     /// </summary>
     [JsonPropertyName("canAdminsBypass")]
@@ -696,7 +696,7 @@ public partial class V1alpha1EnvironmentStatusAtProviderReviewers
 public partial class V1alpha1EnvironmentStatusAtProvider
 {
     /// <summary>
-    /// Can repository admins bypass the environment protections.  Defaults to true.
+    /// Can repository admins bypass the environment protections. Defaults to true.
     /// Can Admins bypass deployment protections
     /// </summary>
     [JsonPropertyName("canAdminsBypass")]
@@ -729,6 +729,13 @@ public partial class V1alpha1EnvironmentStatusAtProvider
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
+
+    /// <summary>
+    /// The ID of the repository.
+    /// The ID of the GitHub repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
 
     /// <summary>The environment reviewers configuration.</summary>
     [JsonPropertyName("reviewers")]

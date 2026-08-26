@@ -224,15 +224,14 @@ public partial class V1alpha1BranchProtectionSpecForProviderRequiredPullRequestR
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that The most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that The most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that The most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
     public bool? RequireLastPushApproval { get; set; }
 
     /// <summary>
-    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information.
-    /// (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
+    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information. (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
     /// Require &apos;x&apos; number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 0-6.
     /// </summary>
     [JsonPropertyName("requiredApprovingReviewCount")]
@@ -576,15 +575,14 @@ public partial class V1alpha1BranchProtectionSpecInitProviderRequiredPullRequest
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that The most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that The most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that The most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
     public bool? RequireLastPushApproval { get; set; }
 
     /// <summary>
-    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information.
-    /// (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
+    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information. (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
     /// Require &apos;x&apos; number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 0-6.
     /// </summary>
     [JsonPropertyName("requiredApprovingReviewCount")]
@@ -892,15 +890,14 @@ public partial class V1alpha1BranchProtectionStatusAtProviderRequiredPullRequest
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that The most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that The most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that The most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
     public bool? RequireLastPushApproval { get; set; }
 
     /// <summary>
-    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information.
-    /// (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
+    /// 6. This requirement matches GitHub&apos;s API, see the upstream documentation for more information. (https://developer.github.com/v3/repos/branches/#parameters-1) for more information.
     /// Require &apos;x&apos; number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 0-6.
     /// </summary>
     [JsonPropertyName("requiredApprovingReviewCount")]

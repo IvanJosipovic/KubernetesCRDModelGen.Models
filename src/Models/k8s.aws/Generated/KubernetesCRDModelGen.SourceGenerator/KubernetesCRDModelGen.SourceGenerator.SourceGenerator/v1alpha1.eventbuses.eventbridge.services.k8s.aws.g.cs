@@ -91,6 +91,10 @@ public partial class V1alpha1EventBusSpec
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
+    /// <summary>The policy that enables the external account to send events to your account.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
     /// <summary>Tags to associate with the event bus.</summary>
     [JsonPropertyName("tags")]
     public IList<V1alpha1EventBusSpecTags>? Tags { get; set; }

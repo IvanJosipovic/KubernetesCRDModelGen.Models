@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.repo.github.upbound.io;
-/// <summary>DefaultBranch is the Schema for the DefaultBranchs API. Provides a GitHub branch default for a given repository.</summary>
+/// <summary>DefaultBranch is the Schema for the DefaultBranchs API. Configures the default branch for a GitHub repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -207,8 +207,8 @@ public partial class V1alpha1DefaultBranchSpecForProviderBranchSelector
 public partial class V1alpha1DefaultBranchSpecForProvider
 {
     /// <summary>
-    /// The branch (e.g. main)
-    /// The branch (e.g. &apos;main&apos;).
+    /// (String) The name of the branch to set as the default (e.g. &apos;main&apos;).
+    /// The name of the branch to set as the default (e.g. &apos;main&apos;).
     /// </summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
@@ -222,11 +222,25 @@ public partial class V1alpha1DefaultBranchSpecForProvider
     public V1alpha1DefaultBranchSpecForProviderBranchSelector? BranchSelector { get; set; }
 
     /// <summary>
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to false.
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to &apos;false&apos;.
+    /// (String) The ETag header for the repository API response.
+    /// The ETag header for the repository API response.
+    /// </summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>
+    /// (Boolean) If true rename the existing branch when the branch input is changed. Defaults to &apos;false&apos;.
+    /// If `true` rename the existing branch when the `branch` input is changed. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("rename")]
     public bool? Rename { get; set; }
+
+    /// <summary>
+    /// (Boolean) If true, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when rename is also true. Defaults to &apos;false&apos;.
+    /// If `true`, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when `rename` is also `true`. Defaults to &apos;false&apos;.
+    /// </summary>
+    [JsonPropertyName("waitForRename")]
+    public bool? WaitForRename { get; set; }
 }
 
 /// <summary>
@@ -393,8 +407,8 @@ public partial class V1alpha1DefaultBranchSpecInitProviderBranchSelector
 public partial class V1alpha1DefaultBranchSpecInitProvider
 {
     /// <summary>
-    /// The branch (e.g. main)
-    /// The branch (e.g. &apos;main&apos;).
+    /// (String) The name of the branch to set as the default (e.g. &apos;main&apos;).
+    /// The name of the branch to set as the default (e.g. &apos;main&apos;).
     /// </summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
@@ -408,11 +422,25 @@ public partial class V1alpha1DefaultBranchSpecInitProvider
     public V1alpha1DefaultBranchSpecInitProviderBranchSelector? BranchSelector { get; set; }
 
     /// <summary>
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to false.
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to &apos;false&apos;.
+    /// (String) The ETag header for the repository API response.
+    /// The ETag header for the repository API response.
+    /// </summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>
+    /// (Boolean) If true rename the existing branch when the branch input is changed. Defaults to &apos;false&apos;.
+    /// If `true` rename the existing branch when the `branch` input is changed. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("rename")]
     public bool? Rename { get; set; }
+
+    /// <summary>
+    /// (Boolean) If true, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when rename is also true. Defaults to &apos;false&apos;.
+    /// If `true`, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when `rename` is also `true`. Defaults to &apos;false&apos;.
+    /// </summary>
+    [JsonPropertyName("waitForRename")]
+    public bool? WaitForRename { get; set; }
 }
 
 /// <summary>
@@ -603,24 +631,43 @@ public partial class V1alpha1DefaultBranchSpec
 public partial class V1alpha1DefaultBranchStatusAtProvider
 {
     /// <summary>
-    /// The branch (e.g. main)
-    /// The branch (e.g. &apos;main&apos;).
+    /// (String) The name of the branch to set as the default (e.g. &apos;main&apos;).
+    /// The name of the branch to set as the default (e.g. &apos;main&apos;).
     /// </summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
+    /// <summary>
+    /// (String) The ETag header for the repository API response.
+    /// The ETag header for the repository API response.
+    /// </summary>
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
+    /// <summary>(String) The ID of this resource.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to false.
-    /// Indicate if it should rename the branch rather than use an existing branch. Defaults to &apos;false&apos;.
+    /// (Boolean) If true rename the existing branch when the branch input is changed. Defaults to &apos;false&apos;.
+    /// If `true` rename the existing branch when the `branch` input is changed. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("rename")]
     public bool? Rename { get; set; }
+
+    /// <summary>
+    /// (Number) The ID of the GitHub repository.
+    /// The ID of the GitHub repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
+
+    /// <summary>
+    /// (Boolean) If true, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when rename is also true. Defaults to &apos;false&apos;.
+    /// If `true`, poll until GitHub propagates the renamed default branch before proceeding. Only has effect when `rename` is also `true`. Defaults to &apos;false&apos;.
+    /// </summary>
+    [JsonPropertyName("waitForRename")]
+    public bool? WaitForRename { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -687,7 +734,7 @@ public partial class V1alpha1DefaultBranchStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DefaultBranch is the Schema for the DefaultBranchs API. Provides a GitHub branch default for a given repository.</summary>
+/// <summary>DefaultBranch is the Schema for the DefaultBranchs API. Configures the default branch for a GitHub repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

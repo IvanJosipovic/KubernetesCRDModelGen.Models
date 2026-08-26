@@ -207,8 +207,7 @@ public partial class V1alpha1TeamRepositorySpecForProviderTeamIdSelector
 public partial class V1alpha1TeamRepositorySpecForProvider
 {
     /// <summary>
-    /// The permissions of team members regarding the repository.
-    /// Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
+    /// The permissions of team members regarding the repository. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
     /// The permissions of team members regarding the repository. Must be one of &apos;pull&apos;, &apos;triage&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;admin&apos; or the name of an existing custom repository role within the organisation.
     /// </summary>
     [JsonPropertyName("permission")]
@@ -401,8 +400,7 @@ public partial class V1alpha1TeamRepositorySpecInitProviderTeamIdSelector
 public partial class V1alpha1TeamRepositorySpecInitProvider
 {
     /// <summary>
-    /// The permissions of team members regarding the repository.
-    /// Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
+    /// The permissions of team members regarding the repository. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
     /// The permissions of team members regarding the repository. Must be one of &apos;pull&apos;, &apos;triage&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;admin&apos; or the name of an existing custom repository role within the organisation.
     /// </summary>
     [JsonPropertyName("permission")]
@@ -625,8 +623,7 @@ public partial class V1alpha1TeamRepositoryStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// The permissions of team members regarding the repository.
-    /// Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
+    /// The permissions of team members regarding the repository. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organisation. Defaults to pull.
     /// The permissions of team members regarding the repository. Must be one of &apos;pull&apos;, &apos;triage&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;admin&apos; or the name of an existing custom repository role within the organisation.
     /// </summary>
     [JsonPropertyName("permission")]

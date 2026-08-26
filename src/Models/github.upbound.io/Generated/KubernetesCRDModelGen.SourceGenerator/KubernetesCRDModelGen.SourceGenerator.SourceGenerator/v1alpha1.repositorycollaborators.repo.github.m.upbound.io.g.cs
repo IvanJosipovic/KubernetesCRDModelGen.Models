@@ -196,16 +196,14 @@ public partial class V1alpha1RepositoryCollaboratorSpecForProviderRepositorySele
 public partial class V1alpha1RepositoryCollaboratorSpecForProvider
 {
     /// <summary>
-    /// The permission of the outside collaborator for the repository.
-    /// Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories.
-    /// Must be push for personal repositories. Defaults to push.
+    /// The permission of the outside collaborator for the repository. Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories. Must be push for personal repositories. Defaults to push.
     /// The permission of the outside collaborator for the repository. Must be one of &apos;pull&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;triage&apos; or &apos;admin&apos; or the name of an existing custom repository role within the organization for organization-owned repositories. Must be &apos;push&apos; for personal repositories. Defaults to &apos;push&apos;.
     /// </summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
     /// <summary>
-    /// Suppress plan diffs for triage and maintain.  Defaults to false.
+    /// Suppress plan diffs for triage and maintain. Defaults to false.
     /// Suppress plan diffs for triage and maintain. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("permissionDiffSuppression")]
@@ -406,16 +404,14 @@ public partial class V1alpha1RepositoryCollaboratorSpecInitProviderRepositorySel
 public partial class V1alpha1RepositoryCollaboratorSpecInitProvider
 {
     /// <summary>
-    /// The permission of the outside collaborator for the repository.
-    /// Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories.
-    /// Must be push for personal repositories. Defaults to push.
+    /// The permission of the outside collaborator for the repository. Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories. Must be push for personal repositories. Defaults to push.
     /// The permission of the outside collaborator for the repository. Must be one of &apos;pull&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;triage&apos; or &apos;admin&apos; or the name of an existing custom repository role within the organization for organization-owned repositories. Must be &apos;push&apos; for personal repositories. Defaults to &apos;push&apos;.
     /// </summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
     /// <summary>
-    /// Suppress plan diffs for triage and maintain.  Defaults to false.
+    /// Suppress plan diffs for triage and maintain. Defaults to false.
     /// Suppress plan diffs for triage and maintain. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("permissionDiffSuppression")]
@@ -559,23 +555,21 @@ public partial class V1alpha1RepositoryCollaboratorStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// ID of the invitation to be used in github_user_invitation_accepter
+    /// ID of the invitation to be used in github_user_invitation_accepter.
     /// ID of the invitation to be used in &apos;github_user_invitation_accepter&apos;
     /// </summary>
     [JsonPropertyName("invitationId")]
     public string? InvitationId { get; set; }
 
     /// <summary>
-    /// The permission of the outside collaborator for the repository.
-    /// Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories.
-    /// Must be push for personal repositories. Defaults to push.
+    /// The permission of the outside collaborator for the repository. Must be one of pull, push, maintain, triage or admin or the name of an existing custom repository role within the organization for organization-owned repositories. Must be push for personal repositories. Defaults to push.
     /// The permission of the outside collaborator for the repository. Must be one of &apos;pull&apos;, &apos;push&apos;, &apos;maintain&apos;, &apos;triage&apos; or &apos;admin&apos; or the name of an existing custom repository role within the organization for organization-owned repositories. Must be &apos;push&apos; for personal repositories. Defaults to &apos;push&apos;.
     /// </summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
     /// <summary>
-    /// Suppress plan diffs for triage and maintain.  Defaults to false.
+    /// Suppress plan diffs for triage and maintain. Defaults to false.
     /// Suppress plan diffs for triage and maintain. Defaults to &apos;false&apos;.
     /// </summary>
     [JsonPropertyName("permissionDiffSuppression")]
