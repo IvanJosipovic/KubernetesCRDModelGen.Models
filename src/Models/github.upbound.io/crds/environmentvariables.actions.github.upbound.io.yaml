@@ -229,7 +229,7 @@ spec:
                     type: object
                   value:
                     description: |-
-                      Value of the variable
+                      Value of the variable.
                       Value of the variable.
                     type: string
                   variableName:
@@ -409,7 +409,7 @@ spec:
                     type: object
                   value:
                     description: |-
-                      Value of the variable
+                      Value of the variable.
                       Value of the variable.
                     type: string
                   variableName:
@@ -516,7 +516,7 @@ spec:
                 properties:
                   createdAt:
                     description: |-
-                      Date of actions_environment_secret creation.
+                      Date the variable was created.
                       Date of 'actions_variable' creation.
                     type: string
                   environment:
@@ -531,14 +531,20 @@ spec:
                       Name of the repository.
                       Name of the repository.
                     type: string
+                  repositoryId:
+                    description: |-
+                      ID of the repository.
+                      ID of the repository.
+                    format: int64
+                    type: integer
                   updatedAt:
                     description: |-
-                      Date of actions_environment_secret update.
+                      Date the variable was last updated.
                       Date of 'actions_variable' update.
                     type: string
                   value:
                     description: |-
-                      Value of the variable
+                      Value of the variable.
                       Value of the variable.
                     type: string
                   variableName:

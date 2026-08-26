@@ -8,32 +8,32 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
-namespace KubernetesCRDModelGen.Models.actions.github.upbound.io;
-/// <summary>EnvironmentSecret is the Schema for the EnvironmentSecrets API. Creates and manages an Action Secret within a GitHub repository environment</summary>
+namespace KubernetesCRDModelGen.Models.repo.github.upbound.io;
+/// <summary>RepositoryCollaboratorSet is the Schema for the RepositoryCollaboratorSets API. Manage the complete set of collaborators (users and teams) for a GitHub repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
-public partial class V1alpha1EnvironmentSecretList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1EnvironmentSecret>
+public partial class V1alpha1RepositoryCollaboratorSetList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RepositoryCollaboratorSet>
 {
     public const string KubeApiVersion = "v1alpha1";
-    public const string KubeKind = "EnvironmentSecretList";
-    public const string KubeGroup = "actions.github.upbound.io";
-    public const string KubePluralName = "environmentsecrets";
+    public const string KubeKind = "RepositoryCollaboratorSetList";
+    public const string KubeGroup = "repo.github.upbound.io";
+    public const string KubePluralName = "repositorycollaboratorsets";
     /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
     [JsonPropertyName("apiVersion")]
-    public string ApiVersion { get; set; } = "actions.github.upbound.io/v1alpha1";
+    public string ApiVersion { get; set; } = "repo.github.upbound.io/v1alpha1";
 
     /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
     [JsonPropertyName("kind")]
-    public string Kind { get; set; } = "EnvironmentSecretList";
+    public string Kind { get; set; } = "RepositoryCollaboratorSetList";
 
     /// <summary>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</summary>
     [JsonPropertyName("metadata")]
     public V1ListMeta? Metadata { get; set; }
 
-    /// <summary>List of V1alpha1EnvironmentSecret objects.</summary>
+    /// <summary>List of V1alpha1RepositoryCollaboratorSet objects.</summary>
     [JsonPropertyName("items")]
-    public required IList<V1alpha1EnvironmentSecret> Items { get; set; }
+    public required IList<V1alpha1RepositoryCollaboratorSet> Items { get; set; }
 }
 
 /// <summary>
@@ -46,8 +46,8 @@ public partial class V1alpha1EnvironmentSecretList : IKubernetesObject<V1ListMet
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecDeletionPolicyEnum>))]
-public enum V1alpha1EnvironmentSecretSpecDeletionPolicyEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecDeletionPolicyEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
     Orphan,
@@ -55,25 +55,16 @@ public enum V1alpha1EnvironmentSecretSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>
-/// (DEPRECATED) Please use value_encrypted.
-/// Encrypted value of the secret using the GitHub public key in Base64 format.
-/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderEncryptedValueSecretRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderIgnoreTeam
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    /// <summary>
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to ignore.
+    /// </summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
 }
 
 /// <summary>
@@ -83,8 +74,8 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderEncryptedValueSecre
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolutionEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
     Required,
@@ -99,8 +90,8 @@ public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResoluti
 /// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolveEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
     Always,
@@ -111,7 +102,7 @@ public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicy
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicy
 {
     /// <summary>
     /// Resolution specifies whether resolution of this reference is required.
@@ -120,7 +111,7 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolic
     /// a no-op if it cannot be resolved.
     /// </summary>
     [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolutionEnum? Resolution { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolutionEnum? Resolution { get; set; }
 
     /// <summary>
     /// Resolve specifies when this reference should be resolved. The default
@@ -129,181 +120,13 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolic
     /// reference on every reconcile.
     /// </summary>
     [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a Environment in repo to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a Environment in repo to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelectorPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// (DEPRECATED) Please use value.
-/// Plaintext value of the secret to be encrypted.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderPlaintextValueSecretRef
-{
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderRepositoryRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRef
 {
     /// <summary>Name of the referenced object.</summary>
     [JsonPropertyName("name")]
@@ -311,7 +134,7 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderRepositoryRef
 
     /// <summary>Policies for referencing.</summary>
     [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositoryRefPolicy? Policy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRefPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -321,8 +144,8 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderRepositoryRef
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolutionEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
     Required,
@@ -337,8 +160,8 @@ public enum V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyReso
 /// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolveEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
     Always,
@@ -349,7 +172,7 @@ public enum V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicy
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicy
 {
     /// <summary>
     /// Resolution specifies whether resolution of this reference is required.
@@ -358,7 +181,7 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorP
     /// a no-op if it cannot be resolved.
     /// </summary>
     [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolutionEnum? Resolution { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolutionEnum? Resolution { get; set; }
 
     /// <summary>
     /// Resolve specifies when this reference should be resolved. The default
@@ -367,13 +190,13 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorP
     /// reference on every reconcile.
     /// </summary>
     [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderRepositorySelector
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelector
 {
     /// <summary>
     /// MatchControllerRef ensures an object with the same controller reference
@@ -388,93 +211,215 @@ public partial class V1alpha1EnvironmentSecretSpecForProviderRepositorySelector
 
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositorySelectorPolicy? Policy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
-/// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
-/// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderValueEncryptedSecretRef
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolutionEnum
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
 }
 
 /// <summary>
-/// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
-/// Plaintext value to be encrypted.
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProviderValueSecretRef
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolveEnum
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
 
-    /// <summary>Name of the secret.</summary>
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Team in team to populate teamId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Team in team to populate teamId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelectorPolicy? Policy { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecForProvider
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderTeam
 {
     /// <summary>
-    /// (DEPRECATED) Please use value_encrypted.
-    /// Encrypted value of the secret using the GitHub public key in Base64 format.
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
     /// </summary>
-    [JsonPropertyName("encryptedValueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderEncryptedValueSecretRef? EncryptedValueSecretRef { get; set; }
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 
     /// <summary>
-    /// Name of the environment.
-    /// Name of the environment.
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to add to the repository as a collaborator.
     /// </summary>
-    [JsonPropertyName("environment")]
-    public string? Environment { get; set; }
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
 
-    /// <summary>Reference to a Environment in repo to populate environment.</summary>
-    [JsonPropertyName("environmentRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentRef? EnvironmentRef { get; set; }
+    /// <summary>Reference to a Team in team to populate teamId.</summary>
+    [JsonPropertyName("teamIdRef")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdRef? TeamIdRef { get; set; }
 
-    /// <summary>Selector for a Environment in repo to populate environment.</summary>
-    [JsonPropertyName("environmentSelector")]
-    public V1alpha1EnvironmentSecretSpecForProviderEnvironmentSelector? EnvironmentSelector { get; set; }
+    /// <summary>Selector for a Team in team to populate teamId.</summary>
+    [JsonPropertyName("teamIdSelector")]
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderTeamTeamIdSelector? TeamIdSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProviderUser
+{
+    /// <summary>
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+    /// </summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 
     /// <summary>
-    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
-    /// ID of the public key used to encrypt the secret.
+    /// (String) Login for the user to add to the repository as a collaborator.
+    /// Login for the user to add to the repository as a collaborator.
     /// </summary>
-    [JsonPropertyName("keyId")]
-    public string? KeyId { get; set; }
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecForProvider
+{
+    /// <summary>
+    /// (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+    /// Teams to ignore when managing repository collaborators.
+    /// </summary>
+    [JsonPropertyName("ignoreTeam")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecForProviderIgnoreTeam>? IgnoreTeam { get; set; }
 
     /// <summary>
-    /// (DEPRECATED) Please use value.
-    /// Plaintext value of the secret to be encrypted.
-    /// </summary>
-    [JsonPropertyName("plaintextValueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderPlaintextValueSecretRef? PlaintextValueSecretRef { get; set; }
-
-    /// <summary>
-    /// Name of the repository.
+    /// (String) Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -482,53 +427,37 @@ public partial class V1alpha1EnvironmentSecretSpecForProvider
 
     /// <summary>Reference to a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositoryRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositoryRef? RepositoryRef { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositoryRef? RepositoryRef { get; set; }
 
     /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
-    public V1alpha1EnvironmentSecretSpecForProviderRepositorySelector? RepositorySelector { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Name of the secret.
-    /// Name of the secret.
+    /// (Block Set) Teams to grant access to the repository. (see below for nested schema)
+    /// Teams to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("secretName")]
-    public string? SecretName { get; set; }
+    [JsonPropertyName("team")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecForProviderTeam>? Team { get; set; }
 
     /// <summary>
-    /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
-    /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+    /// (Block Set) Users to grant access to the repository. (see below for nested schema)
+    /// Users to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("valueEncryptedSecretRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderValueEncryptedSecretRef? ValueEncryptedSecretRef { get; set; }
-
-    /// <summary>
-    /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
-    /// Plaintext value to be encrypted.
-    /// </summary>
-    [JsonPropertyName("valueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecForProviderValueSecretRef? ValueSecretRef { get; set; }
+    [JsonPropertyName("user")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecForProviderUser>? User { get; set; }
 }
 
-/// <summary>
-/// (DEPRECATED) Please use value_encrypted.
-/// Encrypted value of the secret using the GitHub public key in Base64 format.
-/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderEncryptedValueSecretRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderIgnoreTeam
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    /// <summary>
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to ignore.
+    /// </summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
 }
 
 /// <summary>
@@ -538,8 +467,8 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderEncryptedValueSecr
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolutionEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
     Required,
@@ -554,8 +483,8 @@ public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolut
 /// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolveEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
     Always,
@@ -566,7 +495,7 @@ public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicy
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicy
 {
     /// <summary>
     /// Resolution specifies whether resolution of this reference is required.
@@ -575,7 +504,7 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPoli
     /// a no-op if it cannot be resolved.
     /// </summary>
     [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolutionEnum? Resolution { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolutionEnum? Resolution { get; set; }
 
     /// <summary>
     /// Resolve specifies when this reference should be resolved. The default
@@ -584,181 +513,13 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPoli
     /// reference on every reconcile.
     /// </summary>
     [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a Environment in repo to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a Environment in repo to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelectorPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// (DEPRECATED) Please use value.
-/// Plaintext value of the secret to be encrypted.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderPlaintextValueSecretRef
-{
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicyResolveEnum? Resolve { get; set; }
 }
 
 /// <summary>Reference to a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositoryRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRef
 {
     /// <summary>Name of the referenced object.</summary>
     [JsonPropertyName("name")]
@@ -766,7 +527,7 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositoryRef
 
     /// <summary>Policies for referencing.</summary>
     [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositoryRefPolicy? Policy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRefPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -776,8 +537,8 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositoryRef
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolutionEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
     Required,
@@ -792,8 +553,8 @@ public enum V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyRes
 /// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolveEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
     Always,
@@ -804,7 +565,7 @@ public enum V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicy
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicy
 {
     /// <summary>
     /// Resolution specifies whether resolution of this reference is required.
@@ -813,7 +574,7 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositorySelector
     /// a no-op if it cannot be resolved.
     /// </summary>
     [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolutionEnum? Resolution { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolutionEnum? Resolution { get; set; }
 
     /// <summary>
     /// Resolve specifies when this reference should be resolved. The default
@@ -822,13 +583,13 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositorySelector
     /// reference on every reconcile.
     /// </summary>
     [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicyResolveEnum? Resolve { get; set; }
 }
 
 /// <summary>Selector for a Repository in repo to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositorySelector
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelector
 {
     /// <summary>
     /// MatchControllerRef ensures an object with the same controller reference
@@ -843,49 +604,200 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderRepositorySelector
 
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositorySelectorPolicy? Policy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
-/// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
-/// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderValueEncryptedSecretRef
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolutionEnum
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
 }
 
 /// <summary>
-/// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
-/// Plaintext value to be encrypted.
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProviderValueSecretRef
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolveEnum
 {
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
 
-    /// <summary>Name of the secret.</summary>
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Team in team to populate teamId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Team in team to populate teamId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderTeam
+{
+    /// <summary>
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
+    /// </summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+
+    /// <summary>
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to add to the repository as a collaborator.
+    /// </summary>
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+
+    /// <summary>Reference to a Team in team to populate teamId.</summary>
+    [JsonPropertyName("teamIdRef")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdRef? TeamIdRef { get; set; }
+
+    /// <summary>Selector for a Team in team to populate teamId.</summary>
+    [JsonPropertyName("teamIdSelector")]
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderTeamTeamIdSelector? TeamIdSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProviderUser
+{
+    /// <summary>
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+    /// </summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+
+    /// <summary>
+    /// (String) Login for the user to add to the repository as a collaborator.
+    /// Login for the user to add to the repository as a collaborator.
+    /// </summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
 }
 
 /// <summary>
@@ -902,46 +814,17 @@ public partial class V1alpha1EnvironmentSecretSpecInitProviderValueSecretRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecInitProvider
+public partial class V1alpha1RepositoryCollaboratorSetSpecInitProvider
 {
     /// <summary>
-    /// (DEPRECATED) Please use value_encrypted.
-    /// Encrypted value of the secret using the GitHub public key in Base64 format.
+    /// (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+    /// Teams to ignore when managing repository collaborators.
     /// </summary>
-    [JsonPropertyName("encryptedValueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEncryptedValueSecretRef? EncryptedValueSecretRef { get; set; }
+    [JsonPropertyName("ignoreTeam")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecInitProviderIgnoreTeam>? IgnoreTeam { get; set; }
 
     /// <summary>
-    /// Name of the environment.
-    /// Name of the environment.
-    /// </summary>
-    [JsonPropertyName("environment")]
-    public string? Environment { get; set; }
-
-    /// <summary>Reference to a Environment in repo to populate environment.</summary>
-    [JsonPropertyName("environmentRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentRef? EnvironmentRef { get; set; }
-
-    /// <summary>Selector for a Environment in repo to populate environment.</summary>
-    [JsonPropertyName("environmentSelector")]
-    public V1alpha1EnvironmentSecretSpecInitProviderEnvironmentSelector? EnvironmentSelector { get; set; }
-
-    /// <summary>
-    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
-    /// ID of the public key used to encrypt the secret.
-    /// </summary>
-    [JsonPropertyName("keyId")]
-    public string? KeyId { get; set; }
-
-    /// <summary>
-    /// (DEPRECATED) Please use value.
-    /// Plaintext value of the secret to be encrypted.
-    /// </summary>
-    [JsonPropertyName("plaintextValueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderPlaintextValueSecretRef? PlaintextValueSecretRef { get; set; }
-
-    /// <summary>
-    /// Name of the repository.
+    /// (String) Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -949,32 +832,25 @@ public partial class V1alpha1EnvironmentSecretSpecInitProvider
 
     /// <summary>Reference to a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositoryRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositoryRef? RepositoryRef { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositoryRef? RepositoryRef { get; set; }
 
     /// <summary>Selector for a Repository in repo to populate repository.</summary>
     [JsonPropertyName("repositorySelector")]
-    public V1alpha1EnvironmentSecretSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Name of the secret.
-    /// Name of the secret.
+    /// (Block Set) Teams to grant access to the repository. (see below for nested schema)
+    /// Teams to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("secretName")]
-    public string? SecretName { get; set; }
+    [JsonPropertyName("team")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecInitProviderTeam>? Team { get; set; }
 
     /// <summary>
-    /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
-    /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+    /// (Block Set) Users to grant access to the repository. (see below for nested schema)
+    /// Users to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("valueEncryptedSecretRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderValueEncryptedSecretRef? ValueEncryptedSecretRef { get; set; }
-
-    /// <summary>
-    /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
-    /// Plaintext value to be encrypted.
-    /// </summary>
-    [JsonPropertyName("valueSecretRef")]
-    public V1alpha1EnvironmentSecretSpecInitProviderValueSecretRef? ValueSecretRef { get; set; }
+    [JsonPropertyName("user")]
+    public IList<V1alpha1RepositoryCollaboratorSetSpecInitProviderUser>? User { get; set; }
 }
 
 /// <summary>
@@ -982,8 +858,8 @@ public partial class V1alpha1EnvironmentSecretSpecInitProvider
 /// can take on an external resource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecManagementPoliciesEnum>))]
-public enum V1alpha1EnvironmentSecretSpecManagementPoliciesEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecManagementPoliciesEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
     Observe,
@@ -1006,8 +882,8 @@ public enum V1alpha1EnvironmentSecretSpecManagementPoliciesEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolutionEnum>))]
-public enum V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolutionEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolutionEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
     Required,
@@ -1022,8 +898,8 @@ public enum V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolutionEnum
 /// reference on every reconcile.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolveEnum>))]
-public enum V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolveEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolveEnum>))]
+public enum V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
     Always,
@@ -1034,7 +910,7 @@ public enum V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecProviderConfigRefPolicy
+public partial class V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicy
 {
     /// <summary>
     /// Resolution specifies whether resolution of this reference is required.
@@ -1043,7 +919,7 @@ public partial class V1alpha1EnvironmentSecretSpecProviderConfigRefPolicy
     /// a no-op if it cannot be resolved.
     /// </summary>
     [JsonPropertyName("resolution")]
-    public V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolutionEnum? Resolution { get; set; }
 
     /// <summary>
     /// Resolve specifies when this reference should be resolved. The default
@@ -1052,7 +928,7 @@ public partial class V1alpha1EnvironmentSecretSpecProviderConfigRefPolicy
     /// reference on every reconcile.
     /// </summary>
     [JsonPropertyName("resolve")]
-    public V1alpha1EnvironmentSecretSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicyResolveEnum? Resolve { get; set; }
 }
 
 /// <summary>
@@ -1062,7 +938,7 @@ public partial class V1alpha1EnvironmentSecretSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecProviderConfigRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
     [JsonPropertyName("name")]
@@ -1070,7 +946,7 @@ public partial class V1alpha1EnvironmentSecretSpecProviderConfigRef
 
     /// <summary>Policies for referencing.</summary>
     [JsonPropertyName("policy")]
-    public V1alpha1EnvironmentSecretSpecProviderConfigRefPolicy? Policy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecProviderConfigRefPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -1081,7 +957,7 @@ public partial class V1alpha1EnvironmentSecretSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpecWriteConnectionSecretToRef
+public partial class V1alpha1RepositoryCollaboratorSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
     [JsonPropertyName("name")]
@@ -1092,10 +968,10 @@ public partial class V1alpha1EnvironmentSecretSpecWriteConnectionSecretToRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>EnvironmentSecretSpec defines the desired state of EnvironmentSecret</summary>
+/// <summary>RepositoryCollaboratorSetSpec defines the desired state of RepositoryCollaboratorSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretSpec
+public partial class V1alpha1RepositoryCollaboratorSetSpec
 {
     /// <summary>
     /// DeletionPolicy specifies what will happen to the underlying external
@@ -1107,10 +983,10 @@ public partial class V1alpha1EnvironmentSecretSpec
     /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
     /// </summary>
     [JsonPropertyName("deletionPolicy")]
-    public V1alpha1EnvironmentSecretSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecDeletionPolicyEnum? DeletionPolicy { get; set; }
 
     [JsonPropertyName("forProvider")]
-    public required V1alpha1EnvironmentSecretSpecForProvider ForProvider { get; set; }
+    public required V1alpha1RepositoryCollaboratorSetSpecForProvider ForProvider { get; set; }
 
     /// <summary>
     /// THIS IS A BETA FIELD. It will be honored
@@ -1125,7 +1001,7 @@ public partial class V1alpha1EnvironmentSecretSpec
     /// autoscaler.
     /// </summary>
     [JsonPropertyName("initProvider")]
-    public V1alpha1EnvironmentSecretSpecInitProvider? InitProvider { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecInitProvider? InitProvider { get; set; }
 
     /// <summary>
     /// THIS IS A BETA FIELD. It is on by default but can be opted out
@@ -1140,7 +1016,7 @@ public partial class V1alpha1EnvironmentSecretSpec
     /// and this one: https://github.com/crossplane/crossplane/blob/444267e84783136daa93568b364a5f01228cacbe/design/one-pager-ignore-changes.md
     /// </summary>
     [JsonPropertyName("managementPolicies")]
-    public IList<V1alpha1EnvironmentSecretSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
+    public IList<V1alpha1RepositoryCollaboratorSetSpecManagementPoliciesEnum>? ManagementPolicies { get; set; }
 
     /// <summary>
     /// ProviderConfigReference specifies how the provider that will be used to
@@ -1148,7 +1024,7 @@ public partial class V1alpha1EnvironmentSecretSpec
     /// configured.
     /// </summary>
     [JsonPropertyName("providerConfigRef")]
-    public V1alpha1EnvironmentSecretSpecProviderConfigRef? ProviderConfigRef { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecProviderConfigRef? ProviderConfigRef { get; set; }
 
     /// <summary>
     /// WriteConnectionSecretToReference specifies the namespace and name of a
@@ -1157,77 +1033,121 @@ public partial class V1alpha1EnvironmentSecretSpec
     /// and password required to connect to the managed resource.
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
-    public V1alpha1EnvironmentSecretSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+    public V1alpha1RepositoryCollaboratorSetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretStatusAtProvider
+public partial class V1alpha1RepositoryCollaboratorSetStatusAtProviderIgnoreTeam
 {
     /// <summary>
-    /// Date the secret was created.
-    /// Date of &apos;actions_environment_secret&apos; creation.
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to ignore.
     /// </summary>
-    [JsonPropertyName("createdAt")]
-    public string? CreatedAt { get; set; }
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetStatusAtProviderTeam
+{
+    /// <summary>
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the team. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Defaults to `push`.
+    /// </summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 
     /// <summary>
-    /// Name of the environment.
-    /// Name of the environment.
+    /// (String) ID or slug of the team to ignore.
+    /// ID or slug of the team to add to the repository as a collaborator.
     /// </summary>
-    [JsonPropertyName("environment")]
-    public string? Environment { get; set; }
+    [JsonPropertyName("teamId")]
+    public string? TeamId { get; set; }
+}
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetStatusAtProviderUser
+{
+    /// <summary>
+    /// (String) Permission to grant to the team. Must be one of pull, triage, push, maintain, admin or the name of an existing custom repository role within the organization. Defaults to push.
+    /// Permission to grant to the user. Must be one of `pull`, `triage`, `push`, `maintain`, `admin` or the name of an existing [custom repository role](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-peoples-access-to-your-organization-with-roles/managing-custom-repository-roles-for-an-organization) within the organization. Must be `push` for personal repositories. Defaults to `push`.
+    /// </summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+
+    /// <summary>
+    /// (String) Login for the user to add to the repository as a collaborator.
+    /// Login for the user to add to the repository as a collaborator.
+    /// </summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryCollaboratorSetStatusAtProvider
+{
+    /// <summary>(String) The ID of this resource.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
-    /// ID of the public key used to encrypt the secret.
+    /// (Block Set) Teams to ignore when managing repository collaborators. (see below for nested schema)
+    /// Teams to ignore when managing repository collaborators.
     /// </summary>
-    [JsonPropertyName("keyId")]
-    public string? KeyId { get; set; }
+    [JsonPropertyName("ignoreTeam")]
+    public IList<V1alpha1RepositoryCollaboratorSetStatusAtProviderIgnoreTeam>? IgnoreTeam { get; set; }
 
     /// <summary>
-    /// Date the secret was last updated in GitHub.
-    /// Date of remote &apos;actions_environment_secret&apos; update.
+    /// (Map of String) Map of usernames to invitation ID for users that haven&apos;t yet accepted their invitation to become a collaborator. This is only set on read, and is used internally to track pending invitations for users that aren&apos;t yet collaborators.
+    /// Map of usernames to invitation ID for users that haven&apos;t yet accepted their invitation to become a collaborator. This is only set on read, and is used internally to track pending invitations for users that aren&apos;t yet collaborators.
     /// </summary>
-    [JsonPropertyName("remoteUpdatedAt")]
-    public string? RemoteUpdatedAt { get; set; }
+    [JsonPropertyName("invitationIds")]
+    public IDictionary<string, string>? InvitationIds { get; set; }
 
     /// <summary>
-    /// Name of the repository.
+    /// (Boolean) Indicates whether the owner of a personal repository is configured as a collaborator.
+    /// Indicates whether the owner of a personal repository is configured as a collaborator.
+    /// </summary>
+    [JsonPropertyName("ownerConfigured")]
+    public bool? OwnerConfigured { get; set; }
+
+    /// <summary>
+    /// (String) Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
     /// <summary>
-    /// ID of the repository.
+    /// (Number) ID of the repository.
     /// ID of the repository.
     /// </summary>
     [JsonPropertyName("repositoryId")]
     public long? RepositoryId { get; set; }
 
     /// <summary>
-    /// Name of the secret.
-    /// Name of the secret.
+    /// (Block Set) Teams to grant access to the repository. (see below for nested schema)
+    /// Teams to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("secretName")]
-    public string? SecretName { get; set; }
+    [JsonPropertyName("team")]
+    public IList<V1alpha1RepositoryCollaboratorSetStatusAtProviderTeam>? Team { get; set; }
 
     /// <summary>
-    /// Date the secret was last updated by the provider.
-    /// Date of &apos;actions_environment_secret&apos; update.
+    /// (Block Set) Users to grant access to the repository. (see below for nested schema)
+    /// Users to grant access to the repository.
     /// </summary>
-    [JsonPropertyName("updatedAt")]
-    public string? UpdatedAt { get; set; }
+    [JsonPropertyName("user")]
+    public IList<V1alpha1RepositoryCollaboratorSetStatusAtProviderUser>? User { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretStatusConditions
+public partial class V1alpha1RepositoryCollaboratorSetStatusConditions
 {
     /// <summary>
     /// LastTransitionTime is the last time this condition transitioned from one
@@ -1267,17 +1187,17 @@ public partial class V1alpha1EnvironmentSecretStatusConditions
     public required string Type { get; set; }
 }
 
-/// <summary>EnvironmentSecretStatus defines the observed state of EnvironmentSecret.</summary>
+/// <summary>RepositoryCollaboratorSetStatus defines the observed state of RepositoryCollaboratorSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1EnvironmentSecretStatus
+public partial class V1alpha1RepositoryCollaboratorSetStatus
 {
     [JsonPropertyName("atProvider")]
-    public V1alpha1EnvironmentSecretStatusAtProvider? AtProvider { get; set; }
+    public V1alpha1RepositoryCollaboratorSetStatusAtProvider? AtProvider { get; set; }
 
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
-    public IList<V1alpha1EnvironmentSecretStatusConditions>? Conditions { get; set; }
+    public IList<V1alpha1RepositoryCollaboratorSetStatusConditions>? Conditions { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
@@ -1288,33 +1208,33 @@ public partial class V1alpha1EnvironmentSecretStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>EnvironmentSecret is the Schema for the EnvironmentSecrets API. Creates and manages an Action Secret within a GitHub repository environment</summary>
+/// <summary>RepositoryCollaboratorSet is the Schema for the RepositoryCollaboratorSets API. Manage the complete set of collaborators (users and teams) for a GitHub repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
-public partial class V1alpha1EnvironmentSecret : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EnvironmentSecretSpec>, IStatus<V1alpha1EnvironmentSecretStatus?>
+public partial class V1alpha1RepositoryCollaboratorSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RepositoryCollaboratorSetSpec>, IStatus<V1alpha1RepositoryCollaboratorSetStatus?>
 {
     public const string KubeApiVersion = "v1alpha1";
-    public const string KubeKind = "EnvironmentSecret";
-    public const string KubeGroup = "actions.github.upbound.io";
-    public const string KubePluralName = "environmentsecrets";
+    public const string KubeKind = "RepositoryCollaboratorSet";
+    public const string KubeGroup = "repo.github.upbound.io";
+    public const string KubePluralName = "repositorycollaboratorsets";
     /// <summary>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</summary>
     [JsonPropertyName("apiVersion")]
-    public string ApiVersion { get; set; } = "actions.github.upbound.io/v1alpha1";
+    public string ApiVersion { get; set; } = "repo.github.upbound.io/v1alpha1";
 
     /// <summary>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</summary>
     [JsonPropertyName("kind")]
-    public string Kind { get; set; } = "EnvironmentSecret";
+    public string Kind { get; set; } = "RepositoryCollaboratorSet";
 
     /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
-    /// <summary>EnvironmentSecretSpec defines the desired state of EnvironmentSecret</summary>
+    /// <summary>RepositoryCollaboratorSetSpec defines the desired state of RepositoryCollaboratorSet</summary>
     [JsonPropertyName("spec")]
-    public required V1alpha1EnvironmentSecretSpec Spec { get; set; }
+    public required V1alpha1RepositoryCollaboratorSetSpec Spec { get; set; }
 
-    /// <summary>EnvironmentSecretStatus defines the observed state of EnvironmentSecret.</summary>
+    /// <summary>RepositoryCollaboratorSetStatus defines the observed state of RepositoryCollaboratorSet.</summary>
     [JsonPropertyName("status")]
-    public V1alpha1EnvironmentSecretStatus? Status { get; set; }
+    public V1alpha1RepositoryCollaboratorSetStatus? Status { get; set; }
 }

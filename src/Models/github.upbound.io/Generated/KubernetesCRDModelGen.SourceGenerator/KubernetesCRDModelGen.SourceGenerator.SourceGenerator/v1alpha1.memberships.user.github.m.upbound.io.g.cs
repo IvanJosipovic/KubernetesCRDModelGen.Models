@@ -41,19 +41,14 @@ public partial class V1alpha1MembershipList : IKubernetesObject<V1ListMeta>, IIt
 public partial class V1alpha1MembershipSpecForProvider
 {
     /// <summary>
-    /// Defaults to false. If set to true,
-    /// when this resource is destroyed, the member will not be removed
-    /// from the organization. Instead, the member&apos;s role will be
-    /// downgraded to &apos;member&apos;.
+    /// Defaults to false. If set to true, when this resource is destroyed, the member will not be removed from the organization. Instead, the member&apos;s role will be downgraded to &apos;member&apos;.
     /// Instead of removing the member from the org, you can choose to downgrade their membership to &apos;member&apos; when this resource is destroyed. This is useful when wanting to downgrade admins while keeping them in the organization
     /// </summary>
     [JsonPropertyName("downgradeOnDestroy")]
     public bool? DowngradeOnDestroy { get; set; }
 
     /// <summary>
-    /// The role of the user within the organization.
-    /// Must be one of member or admin. Defaults to member.
-    /// admin role represents the owner role available via GitHub UI.
+    /// The role of the user within the organization. Must be one of member or admin. Defaults to member. admin role represents the owner role available via GitHub UI.
     /// The role of the user within the organization. Must be one of &apos;member&apos; or &apos;admin&apos;.
     /// </summary>
     [JsonPropertyName("role")]
@@ -84,19 +79,14 @@ public partial class V1alpha1MembershipSpecForProvider
 public partial class V1alpha1MembershipSpecInitProvider
 {
     /// <summary>
-    /// Defaults to false. If set to true,
-    /// when this resource is destroyed, the member will not be removed
-    /// from the organization. Instead, the member&apos;s role will be
-    /// downgraded to &apos;member&apos;.
+    /// Defaults to false. If set to true, when this resource is destroyed, the member will not be removed from the organization. Instead, the member&apos;s role will be downgraded to &apos;member&apos;.
     /// Instead of removing the member from the org, you can choose to downgrade their membership to &apos;member&apos; when this resource is destroyed. This is useful when wanting to downgrade admins while keeping them in the organization
     /// </summary>
     [JsonPropertyName("downgradeOnDestroy")]
     public bool? DowngradeOnDestroy { get; set; }
 
     /// <summary>
-    /// The role of the user within the organization.
-    /// Must be one of member or admin. Defaults to member.
-    /// admin role represents the owner role available via GitHub UI.
+    /// The role of the user within the organization. Must be one of member or admin. Defaults to member. admin role represents the owner role available via GitHub UI.
     /// The role of the user within the organization. Must be one of &apos;member&apos; or &apos;admin&apos;.
     /// </summary>
     [JsonPropertyName("role")]
@@ -222,10 +212,7 @@ public partial class V1alpha1MembershipSpec
 public partial class V1alpha1MembershipStatusAtProvider
 {
     /// <summary>
-    /// Defaults to false. If set to true,
-    /// when this resource is destroyed, the member will not be removed
-    /// from the organization. Instead, the member&apos;s role will be
-    /// downgraded to &apos;member&apos;.
+    /// Defaults to false. If set to true, when this resource is destroyed, the member will not be removed from the organization. Instead, the member&apos;s role will be downgraded to &apos;member&apos;.
     /// Instead of removing the member from the org, you can choose to downgrade their membership to &apos;member&apos; when this resource is destroyed. This is useful when wanting to downgrade admins while keeping them in the organization
     /// </summary>
     [JsonPropertyName("downgradeOnDestroy")]
@@ -238,9 +225,7 @@ public partial class V1alpha1MembershipStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// The role of the user within the organization.
-    /// Must be one of member or admin. Defaults to member.
-    /// admin role represents the owner role available via GitHub UI.
+    /// The role of the user within the organization. Must be one of member or admin. Defaults to member. admin role represents the owner role available via GitHub UI.
     /// The role of the user within the organization. Must be one of &apos;member&apos; or &apos;admin&apos;.
     /// </summary>
     [JsonPropertyName("role")]

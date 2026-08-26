@@ -141,6 +141,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 
     /// <summary>
     /// ResponsePath is a jq filter expression representing the path in the response where the secret value will be extracted from.
+    /// 
     /// Deprecated: Use KeyMappings for injecting single or multiple keys.
     /// </summary>
     [JsonPropertyName("responsePath")]
@@ -148,6 +149,7 @@ public partial class V1alpha2DisposableRequestSpecForProviderSecretInjectionConf
 
     /// <summary>
     /// SecretKey is the key within the Kubernetes secret where the data will be injected.
+    /// 
     /// Deprecated: Use KeyMappings for injecting single or multiple keys.
     /// </summary>
     [JsonPropertyName("secretKey")]
@@ -594,6 +596,15 @@ public partial class V1alpha2DisposableRequestStatus
 
     [JsonPropertyName("failed")]
     public int? Failed { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>LastReconcileTime records the last time the resource was reconciled.</summary>
     [JsonPropertyName("lastReconcileTime")]

@@ -60,22 +60,22 @@ public enum V1alpha1RepositoryRulesetSpecDeletionPolicyEnum
 public partial class V1alpha1RepositoryRulesetSpecForProviderBypassActors
 {
     /// <summary>
-    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs
-    /// The ID of the actor that can bypass a ruleset. When `actor_type` is `OrganizationAdmin`, this should be set to `1`.
+    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs. If actor_type is User, actor_id is the numeric GitHub user ID. Some actor types such as OrganizationAdmin, EnterpriseOwner, and DeployKey do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
+    /// The ID of the actor that can bypass a ruleset. If `actor_type` is `Integration`, `actor_id` is a GitHub App ID. When `actor_type` is `User`, this should be set to the numeric GitHub user ID. Some actor types such as `OrganizationAdmin`, `EnterpriseOwner`, and `DeployKey` do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
     /// </summary>
     [JsonPropertyName("actorId")]
     public long? ActorId { get; set; }
 
     /// <summary>
-    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin.
-    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`.
+    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin, DeployKey, EnterpriseOwner, User.
+    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`, `DeployKey`, `EnterpriseOwner`, or `User`. See https://docs.github.com/en/rest/repos/rules for more information.
     /// </summary>
     [JsonPropertyName("actorType")]
     public string? ActorType { get; set; }
 
     /// <summary>
-    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request.
-    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`.
+    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request, exempt.
+    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
     /// </summary>
     [JsonPropertyName("bypassMode")]
     public string? BypassMode { get; set; }
@@ -104,7 +104,7 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderConditionsRefName
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecForProviderConditions
 {
-    /// <summary>(Block List, Min: 1, Max: 1) (see below for nested schema)</summary>
+    /// <summary>(Block List, Max: 1) Required for branch and tag targets. Must NOT be set for push targets. (see below for nested schema)</summary>
     [JsonPropertyName("refName")]
     public IList<V1alpha1RepositoryRulesetSpecForProviderConditionsRefName>? RefName { get; set; }
 }
@@ -390,17 +390,84 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRulesCommitterEmail
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesCopilotCodeReview
+{
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to false.
+    /// Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewDraftPullRequests")]
+    public bool? ReviewDraftPullRequests { get; set; }
+
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews each new push to the pull request. Defaults to false.
+    /// Copilot automatically reviews each new push to the pull request. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewOnPush")]
+    public bool? ReviewOnPush { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesFileExtensionRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file extensions that are restricted from being pushed to the commit graph.
+    /// A list of file extensions.
+    /// </summary>
+    [JsonPropertyName("restrictedFileExtensions")]
+    public IList<string>? RestrictedFileExtensions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesFilePathRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file paths that are restricted from being pushed to the commit graph.
+    /// The file paths that are restricted from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("restrictedFilePaths")]
+    public IList<string>? RestrictedFilePaths { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesMaxFilePathLength
+{
+    /// <summary>
+    /// (Integer) The maximum number of characters allowed in file paths.
+    /// The maximum allowed length of a file path.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public long? MaxFilePathLength { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesMaxFileSize
+{
+    /// <summary>
+    /// (Integer) The maximum allowed size, in megabytes (MB), of a file. Valid range is 1-100 MB.
+    /// The maximum allowed size of a file in megabytes (MB). Valid range is 1-100 MB.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public long? MaxFileSize { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecForProviderRulesMergeQueue
 {
     /// <summary>
-    /// (Number)Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
+    /// (Number) Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
     /// Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to `60`.
     /// </summary>
     [JsonPropertyName("checkResponseTimeoutMinutes")]
     public long? CheckResponseTimeoutMinutes { get; set; }
 
     /// <summary>
-    /// (String)When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
+    /// (String) When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
     /// When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to `ALLGREEN`.
     /// </summary>
     [JsonPropertyName("groupingStrategy")]
@@ -414,7 +481,7 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRulesMergeQueue
     public long? MaxEntriesToBuild { get; set; }
 
     /// <summary>
-    /// (Number) Limit the number of queued pull requests requesting checks and workflow runs at the same time. Defaults to 5.
+    /// (Number) Limit the number of queued pull requests that will be merged together in a group. Defaults to 5.
     /// The maximum number of PRs that will be merged together in a group. Defaults to `5`.
     /// </summary>
     [JsonPropertyName("maxEntriesToMerge")]
@@ -444,8 +511,60 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRulesMergeQueue
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesPullRequestRequiredReviewersReviewer
+{
+    /// <summary>
+    /// (Number) The ID of the reviewer (Team ID).
+    /// The ID of the reviewer that must review.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public long? Id { get; set; }
+
+    /// <summary>
+    /// (String) The type of reviewer. Currently only Team is supported.
+    /// The type of reviewer. Currently only `Team` is supported.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecForProviderRulesPullRequestRequiredReviewers
+{
+    /// <summary>
+    /// (List of String) File patterns (fnmatch syntax) that this reviewer must approve.
+    /// File patterns (fnmatch syntax) that this reviewer must approve.
+    /// </summary>
+    [JsonPropertyName("filePatterns")]
+    public IList<string>? FilePatterns { get; set; }
+
+    /// <summary>
+    /// (Number) Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// </summary>
+    [JsonPropertyName("minimumApprovals")]
+    public long? MinimumApprovals { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) The reviewer that must review matching files. (see below for nested schema)
+    /// The reviewer that must review matching files.
+    /// </summary>
+    [JsonPropertyName("reviewer")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesPullRequestRequiredReviewersReviewer>? Reviewer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecForProviderRulesPullRequest
 {
+    /// <summary>
+    /// (List of String, Min: 1) Array of merge methods to be allowed. Allowed values include merge, squash, and rebase. At least one must be enabled.
+    /// Array of allowed merge methods. Allowed values include `merge`, `squash`, and `rebase`. At least one option must be enabled.
+    /// </summary>
+    [JsonPropertyName("allowedMergeMethods")]
+    public IList<string>? AllowedMergeMethods { get; set; }
+
     /// <summary>
     /// (Boolean) New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to false.
     /// New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
@@ -480,6 +599,13 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRulesPullRequest
     /// </summary>
     [JsonPropertyName("requiredReviewThreadResolution")]
     public bool? RequiredReviewThreadResolution { get; set; }
+
+    /// <summary>
+    /// (Block List) Require specific reviewers to approve pull requests. Note: This feature is in beta. (see below for nested schema)
+    /// Require specific reviewers to approve pull requests targeting matching branches. Note: This feature is in beta and subject to change.
+    /// </summary>
+    [JsonPropertyName("requiredReviewers")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesPullRequestRequiredReviewers>? RequiredReviewers { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -643,6 +769,13 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRules
     public IList<V1alpha1RepositoryRulesetSpecForProviderRulesCommitterEmailPattern>? CommitterEmailPattern { get; set; }
 
     /// <summary>
+    /// (Block List, Max: 1) Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit. (see below for nested schema)
+    /// Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit.
+    /// </summary>
+    [JsonPropertyName("copilotCodeReview")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesCopilotCodeReview>? CopilotCodeReview { get; set; }
+
+    /// <summary>
     /// (Boolean) Only allow users with bypass permission to create matching refs.
     /// Only allow users with bypass permission to create matching refs.
     /// </summary>
@@ -657,7 +790,35 @@ public partial class V1alpha1RepositoryRulesetSpecForProviderRules
     public bool? Deletion { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Merges must be performed via a merge queue.
+    /// (Block List, Max: 1) Prevent commits that include files with specified file extensions from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file extensions.
+    /// </summary>
+    [JsonPropertyName("fileExtensionRestriction")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesFileExtensionRestriction>? FileExtensionRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the file_path_restriction rule. When enabled restricts access to files within the repository. (See below for nested schema)
+    /// Prevent commits that include changes in specified file paths from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("filePathRestriction")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesFilePathRestriction>? FilePathRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Prevent commits that include file paths that exceed a specified character limit from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file path length.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesMaxFilePathLength>? MaxFilePathLength { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the max_file_size rule. When enabled restricts the maximum size of a file that can be pushed to the repository. (See below for nested schema)
+    /// Prevent pushes based on file size.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public IList<V1alpha1RepositoryRulesetSpecForProviderRulesMaxFileSize>? MaxFileSize { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Merges must be performed via a merge queue. (see below for nested schema)
     /// Merges must be performed via a merge queue.
     /// </summary>
     [JsonPropertyName("mergeQueue")]
@@ -746,7 +907,7 @@ public partial class V1alpha1RepositoryRulesetSpecForProvider
     public IList<V1alpha1RepositoryRulesetSpecForProviderBypassActors>? BypassActors { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Parameters for a repository ruleset ref name condition. (see below for nested schema)
+    /// (Block List, Max: 1) Parameters for a repository ruleset condition. For branch and tag targets, ref_name is required. For push targets, ref_name must NOT be set - conditions are optional for push targets. (see below for nested schema)
     /// Parameters for a repository ruleset ref name condition.
     /// </summary>
     [JsonPropertyName("conditions")]
@@ -767,8 +928,8 @@ public partial class V1alpha1RepositoryRulesetSpecForProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// (String) Name of the repository to apply rulset to.
-    /// Name of the repository to apply rulset to.
+    /// (String) Name of the repository to apply ruleset to.
+    /// Name of the repository to apply ruleset to.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -789,8 +950,8 @@ public partial class V1alpha1RepositoryRulesetSpecForProvider
     public IList<V1alpha1RepositoryRulesetSpecForProviderRules>? Rules { get; set; }
 
     /// <summary>
-    /// (String) Possible values are branch and tag.
-    /// Possible values are `branch` and `tag`.
+    /// (String) Possible values are branch, tag and push.
+    /// Possible values are branch, push and tag
     /// </summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
@@ -801,22 +962,22 @@ public partial class V1alpha1RepositoryRulesetSpecForProvider
 public partial class V1alpha1RepositoryRulesetSpecInitProviderBypassActors
 {
     /// <summary>
-    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs
-    /// The ID of the actor that can bypass a ruleset. When `actor_type` is `OrganizationAdmin`, this should be set to `1`.
+    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs. If actor_type is User, actor_id is the numeric GitHub user ID. Some actor types such as OrganizationAdmin, EnterpriseOwner, and DeployKey do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
+    /// The ID of the actor that can bypass a ruleset. If `actor_type` is `Integration`, `actor_id` is a GitHub App ID. When `actor_type` is `User`, this should be set to the numeric GitHub user ID. Some actor types such as `OrganizationAdmin`, `EnterpriseOwner`, and `DeployKey` do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
     /// </summary>
     [JsonPropertyName("actorId")]
     public long? ActorId { get; set; }
 
     /// <summary>
-    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin.
-    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`.
+    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin, DeployKey, EnterpriseOwner, User.
+    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`, `DeployKey`, `EnterpriseOwner`, or `User`. See https://docs.github.com/en/rest/repos/rules for more information.
     /// </summary>
     [JsonPropertyName("actorType")]
     public string? ActorType { get; set; }
 
     /// <summary>
-    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request.
-    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`.
+    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request, exempt.
+    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
     /// </summary>
     [JsonPropertyName("bypassMode")]
     public string? BypassMode { get; set; }
@@ -845,7 +1006,7 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderConditionsRefName
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecInitProviderConditions
 {
-    /// <summary>(Block List, Min: 1, Max: 1) (see below for nested schema)</summary>
+    /// <summary>(Block List, Max: 1) Required for branch and tag targets. Must NOT be set for push targets. (see below for nested schema)</summary>
     [JsonPropertyName("refName")]
     public IList<V1alpha1RepositoryRulesetSpecInitProviderConditionsRefName>? RefName { get; set; }
 }
@@ -1131,17 +1292,84 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesCommitterEmai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesCopilotCodeReview
+{
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to false.
+    /// Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewDraftPullRequests")]
+    public bool? ReviewDraftPullRequests { get; set; }
+
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews each new push to the pull request. Defaults to false.
+    /// Copilot automatically reviews each new push to the pull request. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewOnPush")]
+    public bool? ReviewOnPush { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesFileExtensionRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file extensions that are restricted from being pushed to the commit graph.
+    /// A list of file extensions.
+    /// </summary>
+    [JsonPropertyName("restrictedFileExtensions")]
+    public IList<string>? RestrictedFileExtensions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesFilePathRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file paths that are restricted from being pushed to the commit graph.
+    /// The file paths that are restricted from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("restrictedFilePaths")]
+    public IList<string>? RestrictedFilePaths { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesMaxFilePathLength
+{
+    /// <summary>
+    /// (Integer) The maximum number of characters allowed in file paths.
+    /// The maximum allowed length of a file path.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public long? MaxFilePathLength { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesMaxFileSize
+{
+    /// <summary>
+    /// (Integer) The maximum allowed size, in megabytes (MB), of a file. Valid range is 1-100 MB.
+    /// The maximum allowed size of a file in megabytes (MB). Valid range is 1-100 MB.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public long? MaxFileSize { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesMergeQueue
 {
     /// <summary>
-    /// (Number)Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
+    /// (Number) Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
     /// Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to `60`.
     /// </summary>
     [JsonPropertyName("checkResponseTimeoutMinutes")]
     public long? CheckResponseTimeoutMinutes { get; set; }
 
     /// <summary>
-    /// (String)When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
+    /// (String) When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
     /// When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to `ALLGREEN`.
     /// </summary>
     [JsonPropertyName("groupingStrategy")]
@@ -1155,7 +1383,7 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesMergeQueue
     public long? MaxEntriesToBuild { get; set; }
 
     /// <summary>
-    /// (Number) Limit the number of queued pull requests requesting checks and workflow runs at the same time. Defaults to 5.
+    /// (Number) Limit the number of queued pull requests that will be merged together in a group. Defaults to 5.
     /// The maximum number of PRs that will be merged together in a group. Defaults to `5`.
     /// </summary>
     [JsonPropertyName("maxEntriesToMerge")]
@@ -1185,8 +1413,60 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesMergeQueue
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequestRequiredReviewersReviewer
+{
+    /// <summary>
+    /// (Number) The ID of the reviewer (Team ID).
+    /// The ID of the reviewer that must review.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public long? Id { get; set; }
+
+    /// <summary>
+    /// (String) The type of reviewer. Currently only Team is supported.
+    /// The type of reviewer. Currently only `Team` is supported.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequestRequiredReviewers
+{
+    /// <summary>
+    /// (List of String) File patterns (fnmatch syntax) that this reviewer must approve.
+    /// File patterns (fnmatch syntax) that this reviewer must approve.
+    /// </summary>
+    [JsonPropertyName("filePatterns")]
+    public IList<string>? FilePatterns { get; set; }
+
+    /// <summary>
+    /// (Number) Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// </summary>
+    [JsonPropertyName("minimumApprovals")]
+    public long? MinimumApprovals { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) The reviewer that must review matching files. (see below for nested schema)
+    /// The reviewer that must review matching files.
+    /// </summary>
+    [JsonPropertyName("reviewer")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequestRequiredReviewersReviewer>? Reviewer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequest
 {
+    /// <summary>
+    /// (List of String, Min: 1) Array of merge methods to be allowed. Allowed values include merge, squash, and rebase. At least one must be enabled.
+    /// Array of allowed merge methods. Allowed values include `merge`, `squash`, and `rebase`. At least one option must be enabled.
+    /// </summary>
+    [JsonPropertyName("allowedMergeMethods")]
+    public IList<string>? AllowedMergeMethods { get; set; }
+
     /// <summary>
     /// (Boolean) New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to false.
     /// New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
@@ -1221,6 +1501,13 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequest
     /// </summary>
     [JsonPropertyName("requiredReviewThreadResolution")]
     public bool? RequiredReviewThreadResolution { get; set; }
+
+    /// <summary>
+    /// (Block List) Require specific reviewers to approve pull requests. Note: This feature is in beta. (see below for nested schema)
+    /// Require specific reviewers to approve pull requests targeting matching branches. Note: This feature is in beta and subject to change.
+    /// </summary>
+    [JsonPropertyName("requiredReviewers")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesPullRequestRequiredReviewers>? RequiredReviewers { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1384,6 +1671,13 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRules
     public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesCommitterEmailPattern>? CommitterEmailPattern { get; set; }
 
     /// <summary>
+    /// (Block List, Max: 1) Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit. (see below for nested schema)
+    /// Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit.
+    /// </summary>
+    [JsonPropertyName("copilotCodeReview")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesCopilotCodeReview>? CopilotCodeReview { get; set; }
+
+    /// <summary>
     /// (Boolean) Only allow users with bypass permission to create matching refs.
     /// Only allow users with bypass permission to create matching refs.
     /// </summary>
@@ -1398,7 +1692,35 @@ public partial class V1alpha1RepositoryRulesetSpecInitProviderRules
     public bool? Deletion { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Merges must be performed via a merge queue.
+    /// (Block List, Max: 1) Prevent commits that include files with specified file extensions from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file extensions.
+    /// </summary>
+    [JsonPropertyName("fileExtensionRestriction")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesFileExtensionRestriction>? FileExtensionRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the file_path_restriction rule. When enabled restricts access to files within the repository. (See below for nested schema)
+    /// Prevent commits that include changes in specified file paths from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("filePathRestriction")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesFilePathRestriction>? FilePathRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Prevent commits that include file paths that exceed a specified character limit from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file path length.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesMaxFilePathLength>? MaxFilePathLength { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the max_file_size rule. When enabled restricts the maximum size of a file that can be pushed to the repository. (See below for nested schema)
+    /// Prevent pushes based on file size.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public IList<V1alpha1RepositoryRulesetSpecInitProviderRulesMaxFileSize>? MaxFileSize { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Merges must be performed via a merge queue. (see below for nested schema)
     /// Merges must be performed via a merge queue.
     /// </summary>
     [JsonPropertyName("mergeQueue")]
@@ -1499,7 +1821,7 @@ public partial class V1alpha1RepositoryRulesetSpecInitProvider
     public IList<V1alpha1RepositoryRulesetSpecInitProviderBypassActors>? BypassActors { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Parameters for a repository ruleset ref name condition. (see below for nested schema)
+    /// (Block List, Max: 1) Parameters for a repository ruleset condition. For branch and tag targets, ref_name is required. For push targets, ref_name must NOT be set - conditions are optional for push targets. (see below for nested schema)
     /// Parameters for a repository ruleset ref name condition.
     /// </summary>
     [JsonPropertyName("conditions")]
@@ -1520,8 +1842,8 @@ public partial class V1alpha1RepositoryRulesetSpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
-    /// (String) Name of the repository to apply rulset to.
-    /// Name of the repository to apply rulset to.
+    /// (String) Name of the repository to apply ruleset to.
+    /// Name of the repository to apply ruleset to.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -1542,8 +1864,8 @@ public partial class V1alpha1RepositoryRulesetSpecInitProvider
     public IList<V1alpha1RepositoryRulesetSpecInitProviderRules>? Rules { get; set; }
 
     /// <summary>
-    /// (String) Possible values are branch and tag.
-    /// Possible values are `branch` and `tag`.
+    /// (String) Possible values are branch, tag and push.
+    /// Possible values are branch, push and tag
     /// </summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
@@ -1737,22 +2059,22 @@ public partial class V1alpha1RepositoryRulesetSpec
 public partial class V1alpha1RepositoryRulesetStatusAtProviderBypassActors
 {
     /// <summary>
-    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs
-    /// The ID of the actor that can bypass a ruleset. When `actor_type` is `OrganizationAdmin`, this should be set to `1`.
+    /// (Number) The ID of the actor that can bypass a ruleset. If actor_type is Integration, actor_id is a GitHub App ID. App ID can be obtained by following instructions from the Get an App API docs. If actor_type is User, actor_id is the numeric GitHub user ID. Some actor types such as OrganizationAdmin, EnterpriseOwner, and DeployKey do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
+    /// The ID of the actor that can bypass a ruleset. If `actor_type` is `Integration`, `actor_id` is a GitHub App ID. When `actor_type` is `User`, this should be set to the numeric GitHub user ID. Some actor types such as `OrganizationAdmin`, `EnterpriseOwner`, and `DeployKey` do not have an ID — this argument should not be set in those cases as the GitHub API will ignore it.
     /// </summary>
     [JsonPropertyName("actorId")]
     public long? ActorId { get; set; }
 
     /// <summary>
-    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin.
-    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`.
+    /// (String) The type of actor that can bypass a ruleset. Can be one of: RepositoryRole, Team, Integration, OrganizationAdmin, DeployKey, EnterpriseOwner, User.
+    /// The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`, `DeployKey`, `EnterpriseOwner`, or `User`. See https://docs.github.com/en/rest/repos/rules for more information.
     /// </summary>
     [JsonPropertyName("actorType")]
     public string? ActorType { get; set; }
 
     /// <summary>
-    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request.
-    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`.
+    /// (String) When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: always, pull_request, exempt.
+    /// When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
     /// </summary>
     [JsonPropertyName("bypassMode")]
     public string? BypassMode { get; set; }
@@ -1781,7 +2103,7 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderConditionsRefName
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetStatusAtProviderConditions
 {
-    /// <summary>(Block List, Min: 1, Max: 1) (see below for nested schema)</summary>
+    /// <summary>(Block List, Max: 1) Required for branch and tag targets. Must NOT be set for push targets. (see below for nested schema)</summary>
     [JsonPropertyName("refName")]
     public IList<V1alpha1RepositoryRulesetStatusAtProviderConditionsRefName>? RefName { get; set; }
 }
@@ -1920,17 +2242,84 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesCommitterEmai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesCopilotCodeReview
+{
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to false.
+    /// Copilot automatically reviews draft pull requests before they are marked as ready for review. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewDraftPullRequests")]
+    public bool? ReviewDraftPullRequests { get; set; }
+
+    /// <summary>
+    /// (Boolean) Copilot automatically reviews each new push to the pull request. Defaults to false.
+    /// Copilot automatically reviews each new push to the pull request. Defaults to `false`.
+    /// </summary>
+    [JsonPropertyName("reviewOnPush")]
+    public bool? ReviewOnPush { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesFileExtensionRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file extensions that are restricted from being pushed to the commit graph.
+    /// A list of file extensions.
+    /// </summary>
+    [JsonPropertyName("restrictedFileExtensions")]
+    public IList<string>? RestrictedFileExtensions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesFilePathRestriction
+{
+    /// <summary>
+    /// (Block Set, Min: 1) The file paths that are restricted from being pushed to the commit graph.
+    /// The file paths that are restricted from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("restrictedFilePaths")]
+    public IList<string>? RestrictedFilePaths { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesMaxFilePathLength
+{
+    /// <summary>
+    /// (Integer) The maximum number of characters allowed in file paths.
+    /// The maximum allowed length of a file path.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public long? MaxFilePathLength { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesMaxFileSize
+{
+    /// <summary>
+    /// (Integer) The maximum allowed size, in megabytes (MB), of a file. Valid range is 1-100 MB.
+    /// The maximum allowed size of a file in megabytes (MB). Valid range is 1-100 MB.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public long? MaxFileSize { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesMergeQueue
 {
     /// <summary>
-    /// (Number)Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
+    /// (Number) Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to 60.
     /// Maximum time for a required status check to report a conclusion. After this much time has elapsed, checks that have not reported a conclusion will be assumed to have failed. Defaults to `60`.
     /// </summary>
     [JsonPropertyName("checkResponseTimeoutMinutes")]
     public long? CheckResponseTimeoutMinutes { get; set; }
 
     /// <summary>
-    /// (String)When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
+    /// (String) When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to ALLGREEN.
     /// When set to ALLGREEN, the merge commit created by merge queue for each PR in the group must pass all required checks to merge. When set to HEADGREEN, only the commit at the head of the merge group, i.e. the commit containing changes from all of the PRs in the group, must pass its required checks to merge. Can be one of: ALLGREEN, HEADGREEN. Defaults to `ALLGREEN`.
     /// </summary>
     [JsonPropertyName("groupingStrategy")]
@@ -1944,7 +2333,7 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesMergeQueue
     public long? MaxEntriesToBuild { get; set; }
 
     /// <summary>
-    /// (Number) Limit the number of queued pull requests requesting checks and workflow runs at the same time. Defaults to 5.
+    /// (Number) Limit the number of queued pull requests that will be merged together in a group. Defaults to 5.
     /// The maximum number of PRs that will be merged together in a group. Defaults to `5`.
     /// </summary>
     [JsonPropertyName("maxEntriesToMerge")]
@@ -1974,8 +2363,60 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesMergeQueue
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequestRequiredReviewersReviewer
+{
+    /// <summary>
+    /// (Number) The ID of the reviewer (Team ID).
+    /// The ID of the reviewer that must review.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public long? Id { get; set; }
+
+    /// <summary>
+    /// (String) The type of reviewer. Currently only Team is supported.
+    /// The type of reviewer. Currently only `Team` is supported.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequestRequiredReviewers
+{
+    /// <summary>
+    /// (List of String) File patterns (fnmatch syntax) that this reviewer must approve.
+    /// File patterns (fnmatch syntax) that this reviewer must approve.
+    /// </summary>
+    [JsonPropertyName("filePatterns")]
+    public IList<string>? FilePatterns { get; set; }
+
+    /// <summary>
+    /// (Number) Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// Minimum number of approvals required from this reviewer. Set to 0 to make approval optional.
+    /// </summary>
+    [JsonPropertyName("minimumApprovals")]
+    public long? MinimumApprovals { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) The reviewer that must review matching files. (see below for nested schema)
+    /// The reviewer that must review matching files.
+    /// </summary>
+    [JsonPropertyName("reviewer")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequestRequiredReviewersReviewer>? Reviewer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequest
 {
+    /// <summary>
+    /// (List of String, Min: 1) Array of merge methods to be allowed. Allowed values include merge, squash, and rebase. At least one must be enabled.
+    /// Array of allowed merge methods. Allowed values include `merge`, `squash`, and `rebase`. At least one option must be enabled.
+    /// </summary>
+    [JsonPropertyName("allowedMergeMethods")]
+    public IList<string>? AllowedMergeMethods { get; set; }
+
     /// <summary>
     /// (Boolean) New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to false.
     /// New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
@@ -2010,6 +2451,13 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequest
     /// </summary>
     [JsonPropertyName("requiredReviewThreadResolution")]
     public bool? RequiredReviewThreadResolution { get; set; }
+
+    /// <summary>
+    /// (Block List) Require specific reviewers to approve pull requests. Note: This feature is in beta. (see below for nested schema)
+    /// Require specific reviewers to approve pull requests targeting matching branches. Note: This feature is in beta and subject to change.
+    /// </summary>
+    [JsonPropertyName("requiredReviewers")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesPullRequestRequiredReviewers>? RequiredReviewers { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2173,6 +2621,13 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRules
     public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesCommitterEmailPattern>? CommitterEmailPattern { get; set; }
 
     /// <summary>
+    /// (Block List, Max: 1) Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit. (see below for nested schema)
+    /// Automatically request Copilot code review for new pull requests if the author has access to Copilot code review and their premium requests quota has not reached the limit.
+    /// </summary>
+    [JsonPropertyName("copilotCodeReview")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesCopilotCodeReview>? CopilotCodeReview { get; set; }
+
+    /// <summary>
     /// (Boolean) Only allow users with bypass permission to create matching refs.
     /// Only allow users with bypass permission to create matching refs.
     /// </summary>
@@ -2187,7 +2642,35 @@ public partial class V1alpha1RepositoryRulesetStatusAtProviderRules
     public bool? Deletion { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Merges must be performed via a merge queue.
+    /// (Block List, Max: 1) Prevent commits that include files with specified file extensions from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file extensions.
+    /// </summary>
+    [JsonPropertyName("fileExtensionRestriction")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesFileExtensionRestriction>? FileExtensionRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the file_path_restriction rule. When enabled restricts access to files within the repository. (See below for nested schema)
+    /// Prevent commits that include changes in specified file paths from being pushed to the commit graph.
+    /// </summary>
+    [JsonPropertyName("filePathRestriction")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesFilePathRestriction>? FilePathRestriction { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Prevent commits that include file paths that exceed a specified character limit from being pushed to the commit graph. This rule only applies to rulesets with target push. (see below for nested schema)
+    /// Prevent pushes based on file path length.
+    /// </summary>
+    [JsonPropertyName("maxFilePathLength")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesMaxFilePathLength>? MaxFilePathLength { get; set; }
+
+    /// <summary>
+    /// (Block List, Max 1) Parameters to be used for the max_file_size rule. When enabled restricts the maximum size of a file that can be pushed to the repository. (See below for nested schema)
+    /// Prevent pushes based on file size.
+    /// </summary>
+    [JsonPropertyName("maxFileSize")]
+    public IList<V1alpha1RepositoryRulesetStatusAtProviderRulesMaxFileSize>? MaxFileSize { get; set; }
+
+    /// <summary>
+    /// (Block List, Max: 1) Merges must be performed via a merge queue. (see below for nested schema)
     /// Merges must be performed via a merge queue.
     /// </summary>
     [JsonPropertyName("mergeQueue")]
@@ -2276,7 +2759,7 @@ public partial class V1alpha1RepositoryRulesetStatusAtProvider
     public IList<V1alpha1RepositoryRulesetStatusAtProviderBypassActors>? BypassActors { get; set; }
 
     /// <summary>
-    /// (Block List, Max: 1) Parameters for a repository ruleset ref name condition. (see below for nested schema)
+    /// (Block List, Max: 1) Parameters for a repository ruleset condition. For branch and tag targets, ref_name is required. For push targets, ref_name must NOT be set - conditions are optional for push targets. (see below for nested schema)
     /// Parameters for a repository ruleset ref name condition.
     /// </summary>
     [JsonPropertyName("conditions")]
@@ -2293,6 +2776,7 @@ public partial class V1alpha1RepositoryRulesetStatusAtProvider
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
+    /// <summary>(Number) The ID of the reviewer (Team ID).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -2311,8 +2795,8 @@ public partial class V1alpha1RepositoryRulesetStatusAtProvider
     public string? NodeId { get; set; }
 
     /// <summary>
-    /// (String) Name of the repository to apply rulset to.
-    /// Name of the repository to apply rulset to.
+    /// (String) Name of the repository to apply ruleset to.
+    /// Name of the repository to apply ruleset to.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -2332,8 +2816,8 @@ public partial class V1alpha1RepositoryRulesetStatusAtProvider
     public long? RulesetId { get; set; }
 
     /// <summary>
-    /// (String) Possible values are branch and tag.
-    /// Possible values are `branch` and `tag`.
+    /// (String) Possible values are branch, tag and push.
+    /// Possible values are branch, push and tag
     /// </summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }

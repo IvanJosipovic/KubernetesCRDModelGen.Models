@@ -105,6 +105,13 @@ public partial class V1alpha1OrganizationPermissionsSpecForProvider
     /// </summary>
     [JsonPropertyName("enabledRepositoriesConfig")]
     public IList<V1alpha1OrganizationPermissionsSpecForProviderEnabledRepositoriesConfig>? EnabledRepositoriesConfig { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the organization.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in an organization.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -188,6 +195,13 @@ public partial class V1alpha1OrganizationPermissionsSpecInitProvider
     /// </summary>
     [JsonPropertyName("enabledRepositoriesConfig")]
     public IList<V1alpha1OrganizationPermissionsSpecInitProviderEnabledRepositoriesConfig>? EnabledRepositoriesConfig { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the organization.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in an organization.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 /// <summary>
@@ -369,6 +383,13 @@ public partial class V1alpha1OrganizationPermissionsStatusAtProvider
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in the organization.
+    /// Whether pinning to a specific SHA is required for all actions and reusable workflows in an organization.
+    /// </summary>
+    [JsonPropertyName("shaPinningRequired")]
+    public bool? ShaPinningRequired { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

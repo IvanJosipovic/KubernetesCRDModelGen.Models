@@ -377,7 +377,7 @@ public partial class V1alpha1EnvironmentDeploymentPolicySpecForProvider
 
     /// <summary>
     /// The repository of the environment.
-    /// The name of the repository. The name is not case sensitive.
+    /// The name of the GitHub repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -732,7 +732,7 @@ public partial class V1alpha1EnvironmentDeploymentPolicySpecInitProvider
 
     /// <summary>
     /// The repository of the environment.
-    /// The name of the repository. The name is not case sensitive.
+    /// The name of the GitHub repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -958,11 +958,25 @@ public partial class V1alpha1EnvironmentDeploymentPolicyStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// The ID of the deployment policy.
+    /// The ID of the deployment policy.
+    /// </summary>
+    [JsonPropertyName("policyId")]
+    public long? PolicyId { get; set; }
+
+    /// <summary>
     /// The repository of the environment.
-    /// The name of the repository. The name is not case sensitive.
+    /// The name of the GitHub repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
+
+    /// <summary>
+    /// The ID of the repository.
+    /// The ID of the GitHub repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
 
     /// <summary>
     /// The name pattern that tags must match in order to deploy to the environment. If not specified, branch_pattern must be specified.

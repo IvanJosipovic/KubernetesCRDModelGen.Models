@@ -351,29 +351,28 @@ public partial class V1alpha1RepositoryFileSpecForProviderRepositorySelector
 public partial class V1alpha1RepositoryFileSpecForProvider
 {
     /// <summary>
-    /// Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;.
+    /// Deprecated Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;. Use the github_branch resource instead.
     /// Automatically create the branch if it could not be found. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;
     /// </summary>
     [JsonPropertyName("autocreateBranch")]
     public bool? AutocreateBranch { get; set; }
 
     /// <summary>
-    /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
+    /// Deprecated The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;. Use the github_branch resource instead.
     /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceBranch")]
     public string? AutocreateBranchSourceBranch { get; set; }
 
     /// <summary>
-    /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
+    /// Deprecated The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored. Use the github_branch resource instead.
     /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceSha")]
     public string? AutocreateBranchSourceSha { get; set; }
 
     /// <summary>
-    /// Git branch (defaults to the repository&apos;s default branch).
-    /// The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
+    /// Git branch (defaults to the repository&apos;s default branch). The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
     /// The branch name, defaults to the repository&apos;s default branch
     /// </summary>
     [JsonPropertyName("branch")]
@@ -772,29 +771,28 @@ public partial class V1alpha1RepositoryFileSpecInitProviderRepositorySelector
 public partial class V1alpha1RepositoryFileSpecInitProvider
 {
     /// <summary>
-    /// Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;.
+    /// Deprecated Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;. Use the github_branch resource instead.
     /// Automatically create the branch if it could not be found. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;
     /// </summary>
     [JsonPropertyName("autocreateBranch")]
     public bool? AutocreateBranch { get; set; }
 
     /// <summary>
-    /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
+    /// Deprecated The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;. Use the github_branch resource instead.
     /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceBranch")]
     public string? AutocreateBranchSourceBranch { get; set; }
 
     /// <summary>
-    /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
+    /// Deprecated The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored. Use the github_branch resource instead.
     /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceSha")]
     public string? AutocreateBranchSourceSha { get; set; }
 
     /// <summary>
-    /// Git branch (defaults to the repository&apos;s default branch).
-    /// The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
+    /// Git branch (defaults to the repository&apos;s default branch). The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
     /// The branch name, defaults to the repository&apos;s default branch
     /// </summary>
     [JsonPropertyName("branch")]
@@ -978,29 +976,28 @@ public partial class V1alpha1RepositoryFileSpec
 public partial class V1alpha1RepositoryFileStatusAtProvider
 {
     /// <summary>
-    /// Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;.
+    /// Deprecated Automatically create the branch if it could not be found. Defaults to false. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;. Use the github_branch resource instead.
     /// Automatically create the branch if it could not be found. Subsequent reads if the branch is deleted will occur from &apos;autocreate_branch_source_branch&apos;
     /// </summary>
     [JsonPropertyName("autocreateBranch")]
     public bool? AutocreateBranch { get; set; }
 
     /// <summary>
-    /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
+    /// Deprecated The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;. Use the github_branch resource instead.
     /// The branch name to start from, if &apos;autocreate_branch&apos; is set. Defaults to &apos;main&apos;.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceBranch")]
     public string? AutocreateBranchSourceBranch { get; set; }
 
     /// <summary>
-    /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
+    /// Deprecated The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored. Use the github_branch resource instead.
     /// The commit hash to start from, if &apos;autocreate_branch&apos; is set. Defaults to the tip of &apos;autocreate_branch_source_branch&apos;. If provided, &apos;autocreate_branch_source_branch&apos; is ignored.
     /// </summary>
     [JsonPropertyName("autocreateBranchSourceSha")]
     public string? AutocreateBranchSourceSha { get; set; }
 
     /// <summary>
-    /// Git branch (defaults to the repository&apos;s default branch).
-    /// The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
+    /// Git branch (defaults to the repository&apos;s default branch). The branch must already exist, it will only be created automatically if &apos;autocreate_branch&apos; is set true.
     /// The branch name, defaults to the repository&apos;s default branch
     /// </summary>
     [JsonPropertyName("branch")]
@@ -1071,6 +1068,13 @@ public partial class V1alpha1RepositoryFileStatusAtProvider
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
+
+    /// <summary>
+    /// The ID of the repository.
+    /// The repository ID
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
 
     /// <summary>
     /// The SHA blob of the file.

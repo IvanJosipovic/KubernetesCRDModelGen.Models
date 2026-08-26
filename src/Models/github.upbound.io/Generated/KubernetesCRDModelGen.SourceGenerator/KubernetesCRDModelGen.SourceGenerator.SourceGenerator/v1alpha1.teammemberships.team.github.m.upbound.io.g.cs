@@ -196,8 +196,7 @@ public partial class V1alpha1TeamMembershipSpecForProviderTeamIdSelector
 public partial class V1alpha1TeamMembershipSpecForProvider
 {
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
+    /// The role of the user within the team. Must be one of member or maintainer. Defaults to member.
     /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
     /// </summary>
     [JsonPropertyName("role")]
@@ -398,8 +397,7 @@ public partial class V1alpha1TeamMembershipSpecInitProviderTeamIdSelector
 public partial class V1alpha1TeamMembershipSpecInitProvider
 {
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
+    /// The role of the user within the team. Must be one of member or maintainer. Defaults to member.
     /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
     /// </summary>
     [JsonPropertyName("role")]
@@ -546,8 +544,7 @@ public partial class V1alpha1TeamMembershipStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
+    /// The role of the user within the team. Must be one of member or maintainer. Defaults to member.
     /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
     /// </summary>
     [JsonPropertyName("role")]

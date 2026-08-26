@@ -55,6 +55,9 @@ public partial class V1alpha1TableSpecContinuousBackups
 {
     [JsonPropertyName("pointInTimeRecoveryEnabled")]
     public bool? PointInTimeRecoveryEnabled { get; set; }
+
+    [JsonPropertyName("recoveryPeriodInDays")]
+    public long? RecoveryPeriodInDays { get; set; }
 }
 
 /// <summary>

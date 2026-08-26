@@ -86,7 +86,7 @@ public partial class V1alpha1TeamSyncGroupMappingSpecForProviderGroup
 public partial class V1alpha1TeamSyncGroupMappingSpecForProvider
 {
     /// <summary>
-    /// An Array of GitHub Identity Provider Groups (or empty []).  Each group block consists of the fields documented below.
+    /// An Array of GitHub Identity Provider Groups (or empty []). Each group block consists of the fields documented below.
     /// An Array of GitHub Identity Provider Groups (or empty []).
     /// </summary>
     [JsonPropertyName("group")]
@@ -143,7 +143,7 @@ public partial class V1alpha1TeamSyncGroupMappingSpecInitProviderGroup
 public partial class V1alpha1TeamSyncGroupMappingSpecInitProvider
 {
     /// <summary>
-    /// An Array of GitHub Identity Provider Groups (or empty []).  Each group block consists of the fields documented below.
+    /// An Array of GitHub Identity Provider Groups (or empty []). Each group block consists of the fields documented below.
     /// An Array of GitHub Identity Provider Groups (or empty []).
     /// </summary>
     [JsonPropertyName("group")]
@@ -374,7 +374,7 @@ public partial class V1alpha1TeamSyncGroupMappingStatusAtProvider
     public string? Etag { get; set; }
 
     /// <summary>
-    /// An Array of GitHub Identity Provider Groups (or empty []).  Each group block consists of the fields documented below.
+    /// An Array of GitHub Identity Provider Groups (or empty []). Each group block consists of the fields documented below.
     /// An Array of GitHub Identity Provider Groups (or empty []).
     /// </summary>
     [JsonPropertyName("group")]

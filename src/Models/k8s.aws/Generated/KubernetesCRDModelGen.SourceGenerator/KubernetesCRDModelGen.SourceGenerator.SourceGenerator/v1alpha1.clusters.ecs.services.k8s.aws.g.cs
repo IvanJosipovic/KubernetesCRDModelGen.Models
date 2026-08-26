@@ -37,6 +37,42 @@ public partial class V1alpha1ClusterList : IKubernetesObject<V1ListMeta>, IItems
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecCapacityProviderRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecCapacityProviderRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1ClusterSpecCapacityProviderRefsFrom? From { get; set; }
+}
+
+/// <summary>
 /// The log configuration for the results of the execute command actions. The
 /// logs can be sent to CloudWatch Logs or an Amazon S3 bucket.
 /// </summary>
@@ -239,6 +275,9 @@ public partial class V1alpha1ClusterSpecTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterSpec
 {
+    [JsonPropertyName("capacityProviderRefs")]
+    public IList<V1alpha1ClusterSpecCapacityProviderRefs>? CapacityProviderRefs { get; set; }
+
     /// <summary>
     /// The short name of one or more capacity providers to associate with the cluster.
     /// A capacity provider must be associated with a cluster before it can be included

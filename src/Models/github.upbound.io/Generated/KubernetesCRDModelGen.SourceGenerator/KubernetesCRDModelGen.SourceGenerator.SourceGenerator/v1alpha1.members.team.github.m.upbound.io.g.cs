@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.team.github.m.upbound.io;
-/// <summary>Members is the Schema for the Memberss API. Provides an authoritative GitHub team members resource.</summary>
+/// <summary>Members is the Schema for the Memberss API. Resource to authoritatively manage GitHub team members.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -41,16 +41,15 @@ public partial class V1alpha1MembersList : IKubernetesObject<V1ListMeta>, IItems
 public partial class V1alpha1MembersSpecForProviderMembers
 {
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
-    /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
+    /// (String) Role to grant the user within the team; must be one of member or maintainer.
+    /// Role to grant the user within the team; must be one of `member` or `maintainer`.
     /// </summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
     /// <summary>
-    /// The user to add to the team.
-    /// The user to add to the team.
+    /// (String) User to add to the team.
+    /// User to add to the team.
     /// </summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
@@ -211,20 +210,175 @@ public partial class V1alpha1MembersSpecForProviderTeamIdSelector
     public V1alpha1MembersSpecForProviderTeamIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolutionEnum>))]
+public enum V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolveEnum>))]
+public enum V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecForProviderTeamSlugRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MembersSpecForProviderTeamSlugRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Team in team to populate teamSlug.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecForProviderTeamSlugRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MembersSpecForProviderTeamSlugRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolutionEnum>))]
+public enum V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolveEnum>))]
+public enum V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecForProviderTeamSlugSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MembersSpecForProviderTeamSlugSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Team in team to populate teamSlug.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecForProviderTeamSlugSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MembersSpecForProviderTeamSlugSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MembersSpecForProvider
 {
     /// <summary>
-    /// List of team members. See Members below for details.
-    /// List of team members.
+    /// (Block Set, Min: 1) List of users that should be members of the team. (see below for nested schema)
+    /// List of users that should be members of the team.
     /// </summary>
     [JsonPropertyName("members")]
     public IList<V1alpha1MembersSpecForProviderMembers>? Members { get; set; }
 
     /// <summary>
-    /// The team id or the team slug
-    /// The GitHub team id or slug
+    /// (String, Deprecated) ID or slug of the GitHub team to manage membership for.
+    /// ID or slug of the GitHub team to manage membership for.
     /// </summary>
     [JsonPropertyName("teamId")]
     public string? TeamId { get; set; }
@@ -236,6 +390,21 @@ public partial class V1alpha1MembersSpecForProvider
     /// <summary>Selector for a Team in team to populate teamId.</summary>
     [JsonPropertyName("teamIdSelector")]
     public V1alpha1MembersSpecForProviderTeamIdSelector? TeamIdSelector { get; set; }
+
+    /// <summary>
+    /// (String) Slug of the GitHub team to manage membership for.
+    /// Slug of the GitHub team to manage membership for.
+    /// </summary>
+    [JsonPropertyName("teamSlug")]
+    public string? TeamSlug { get; set; }
+
+    /// <summary>Reference to a Team in team to populate teamSlug.</summary>
+    [JsonPropertyName("teamSlugRef")]
+    public V1alpha1MembersSpecForProviderTeamSlugRef? TeamSlugRef { get; set; }
+
+    /// <summary>Selector for a Team in team to populate teamSlug.</summary>
+    [JsonPropertyName("teamSlugSelector")]
+    public V1alpha1MembersSpecForProviderTeamSlugSelector? TeamSlugSelector { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -243,16 +412,15 @@ public partial class V1alpha1MembersSpecForProvider
 public partial class V1alpha1MembersSpecInitProviderMembers
 {
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
-    /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
+    /// (String) Role to grant the user within the team; must be one of member or maintainer.
+    /// Role to grant the user within the team; must be one of `member` or `maintainer`.
     /// </summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
     /// <summary>
-    /// The user to add to the team.
-    /// The user to add to the team.
+    /// (String) User to add to the team.
+    /// User to add to the team.
     /// </summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
@@ -414,6 +582,161 @@ public partial class V1alpha1MembersSpecInitProviderTeamIdSelector
 }
 
 /// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolutionEnum>))]
+public enum V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolveEnum>))]
+public enum V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecInitProviderTeamSlugRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MembersSpecInitProviderTeamSlugRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Team in team to populate teamSlug.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecInitProviderTeamSlugRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MembersSpecInitProviderTeamSlugRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolutionEnum>))]
+public enum V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolveEnum>))]
+public enum V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Team in team to populate teamSlug.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1MembersSpecInitProviderTeamSlugSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1alpha1MembersSpecInitProviderTeamSlugSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -430,15 +753,15 @@ public partial class V1alpha1MembersSpecInitProviderTeamIdSelector
 public partial class V1alpha1MembersSpecInitProvider
 {
     /// <summary>
-    /// List of team members. See Members below for details.
-    /// List of team members.
+    /// (Block Set, Min: 1) List of users that should be members of the team. (see below for nested schema)
+    /// List of users that should be members of the team.
     /// </summary>
     [JsonPropertyName("members")]
     public IList<V1alpha1MembersSpecInitProviderMembers>? Members { get; set; }
 
     /// <summary>
-    /// The team id or the team slug
-    /// The GitHub team id or slug
+    /// (String, Deprecated) ID or slug of the GitHub team to manage membership for.
+    /// ID or slug of the GitHub team to manage membership for.
     /// </summary>
     [JsonPropertyName("teamId")]
     public string? TeamId { get; set; }
@@ -450,6 +773,21 @@ public partial class V1alpha1MembersSpecInitProvider
     /// <summary>Selector for a Team in team to populate teamId.</summary>
     [JsonPropertyName("teamIdSelector")]
     public V1alpha1MembersSpecInitProviderTeamIdSelector? TeamIdSelector { get; set; }
+
+    /// <summary>
+    /// (String) Slug of the GitHub team to manage membership for.
+    /// Slug of the GitHub team to manage membership for.
+    /// </summary>
+    [JsonPropertyName("teamSlug")]
+    public string? TeamSlug { get; set; }
+
+    /// <summary>Reference to a Team in team to populate teamSlug.</summary>
+    [JsonPropertyName("teamSlugRef")]
+    public V1alpha1MembersSpecInitProviderTeamSlugRef? TeamSlugRef { get; set; }
+
+    /// <summary>Selector for a Team in team to populate teamSlug.</summary>
+    [JsonPropertyName("teamSlugSelector")]
+    public V1alpha1MembersSpecInitProviderTeamSlugSelector? TeamSlugSelector { get; set; }
 }
 
 /// <summary>
@@ -564,16 +902,15 @@ public partial class V1alpha1MembersSpec
 public partial class V1alpha1MembersStatusAtProviderMembers
 {
     /// <summary>
-    /// The role of the user within the team.
-    /// Must be one of member or maintainer. Defaults to member.
-    /// The role of the user within the team. Must be one of &apos;member&apos; or &apos;maintainer&apos;.
+    /// (String) Role to grant the user within the team; must be one of member or maintainer.
+    /// Role to grant the user within the team; must be one of `member` or `maintainer`.
     /// </summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
     /// <summary>
-    /// The user to add to the team.
-    /// The user to add to the team.
+    /// (String) User to add to the team.
+    /// User to add to the team.
     /// </summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
@@ -583,22 +920,30 @@ public partial class V1alpha1MembersStatusAtProviderMembers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MembersStatusAtProvider
 {
+    /// <summary>(String) The ID of this resource.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// List of team members. See Members below for details.
-    /// List of team members.
+    /// (Block Set, Min: 1) List of users that should be members of the team. (see below for nested schema)
+    /// List of users that should be members of the team.
     /// </summary>
     [JsonPropertyName("members")]
     public IList<V1alpha1MembersStatusAtProviderMembers>? Members { get; set; }
 
     /// <summary>
-    /// The team id or the team slug
-    /// The GitHub team id or slug
+    /// (String, Deprecated) ID or slug of the GitHub team to manage membership for.
+    /// ID or slug of the GitHub team to manage membership for.
     /// </summary>
     [JsonPropertyName("teamId")]
     public string? TeamId { get; set; }
+
+    /// <summary>
+    /// (String) Slug of the GitHub team to manage membership for.
+    /// Slug of the GitHub team to manage membership for.
+    /// </summary>
+    [JsonPropertyName("teamSlug")]
+    public string? TeamSlug { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -665,7 +1010,7 @@ public partial class V1alpha1MembersStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Members is the Schema for the Memberss API. Provides an authoritative GitHub team members resource.</summary>
+/// <summary>Members is the Schema for the Memberss API. Resource to authoritatively manage GitHub team members.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

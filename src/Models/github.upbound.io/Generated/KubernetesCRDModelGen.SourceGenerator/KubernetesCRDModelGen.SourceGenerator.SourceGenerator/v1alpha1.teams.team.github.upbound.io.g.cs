@@ -60,7 +60,7 @@ public enum V1alpha1TeamSpecDeletionPolicyEnum
 public partial class V1alpha1TeamSpecForProvider
 {
     /// <summary>
-    /// Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
+    /// (DEPRECATED)  Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
     /// Adds a default maintainer to the team. Adds the creating user to the team when &apos;true&apos;.
     /// </summary>
     [JsonPropertyName("createDefaultMaintainer")]
@@ -88,6 +88,13 @@ public partial class V1alpha1TeamSpecForProvider
     public string? Name { get; set; }
 
     /// <summary>
+    /// The notification setting for the team. Must be one of notifications_enabled *(default)- or notifications_disabled.
+    /// The notification setting for the team. Must be one of &apos;notifications_enabled&apos; or &apos;notifications_disabled&apos;.
+    /// </summary>
+    [JsonPropertyName("notificationSetting")]
+    public string? NotificationSetting { get; set; }
+
+    /// <summary>
     /// The ID or slug of the parent team, if this is a nested team.
     /// The ID or slug of the parent team, if this is a nested team.
     /// </summary>
@@ -102,17 +109,14 @@ public partial class V1alpha1TeamSpecForProvider
     public string? ParentTeamReadId { get; set; }
 
     /// <summary>
-    /// The slug of the created team, which may or may not differ from name,
-    /// depending on whether name contains &quot;URL-unsafe&quot; characters.
-    /// Useful when referencing the team in github_branch_protection.
+    /// The slug of the created team, which may or may not differ from name, depending on whether name contains &quot;URL-unsafe&quot; characters.
     /// The id of the parent team read in Github.
     /// </summary>
     [JsonPropertyName("parentTeamReadSlug")]
     public string? ParentTeamReadSlug { get; set; }
 
     /// <summary>
-    /// The level of privacy for the team. Must be one of secret or closed.
-    /// Defaults to secret.
+    /// The level of privacy for the team. Must be one of secret *(default)- or closed.
     /// The level of privacy for the team. Must be one of &apos;secret&apos; or &apos;closed&apos;.
     /// </summary>
     [JsonPropertyName("privacy")]
@@ -136,7 +140,7 @@ public partial class V1alpha1TeamSpecForProvider
 public partial class V1alpha1TeamSpecInitProvider
 {
     /// <summary>
-    /// Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
+    /// (DEPRECATED)  Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
     /// Adds a default maintainer to the team. Adds the creating user to the team when &apos;true&apos;.
     /// </summary>
     [JsonPropertyName("createDefaultMaintainer")]
@@ -164,6 +168,13 @@ public partial class V1alpha1TeamSpecInitProvider
     public string? Name { get; set; }
 
     /// <summary>
+    /// The notification setting for the team. Must be one of notifications_enabled *(default)- or notifications_disabled.
+    /// The notification setting for the team. Must be one of &apos;notifications_enabled&apos; or &apos;notifications_disabled&apos;.
+    /// </summary>
+    [JsonPropertyName("notificationSetting")]
+    public string? NotificationSetting { get; set; }
+
+    /// <summary>
     /// The ID or slug of the parent team, if this is a nested team.
     /// The ID or slug of the parent team, if this is a nested team.
     /// </summary>
@@ -178,17 +189,14 @@ public partial class V1alpha1TeamSpecInitProvider
     public string? ParentTeamReadId { get; set; }
 
     /// <summary>
-    /// The slug of the created team, which may or may not differ from name,
-    /// depending on whether name contains &quot;URL-unsafe&quot; characters.
-    /// Useful when referencing the team in github_branch_protection.
+    /// The slug of the created team, which may or may not differ from name, depending on whether name contains &quot;URL-unsafe&quot; characters.
     /// The id of the parent team read in Github.
     /// </summary>
     [JsonPropertyName("parentTeamReadSlug")]
     public string? ParentTeamReadSlug { get; set; }
 
     /// <summary>
-    /// The level of privacy for the team. Must be one of secret or closed.
-    /// Defaults to secret.
+    /// The level of privacy for the team. Must be one of secret *(default)- or closed.
     /// The level of privacy for the team. Must be one of &apos;secret&apos; or &apos;closed&apos;.
     /// </summary>
     [JsonPropertyName("privacy")]
@@ -383,7 +391,7 @@ public partial class V1alpha1TeamSpec
 public partial class V1alpha1TeamStatusAtProvider
 {
     /// <summary>
-    /// Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
+    /// (DEPRECATED)  Adds a default maintainer to the team. Defaults to false and adds the creating user to the team when true.
     /// Adds a default maintainer to the team. Adds the creating user to the team when &apos;true&apos;.
     /// </summary>
     [JsonPropertyName("createDefaultMaintainer")]
@@ -428,6 +436,13 @@ public partial class V1alpha1TeamStatusAtProvider
     public string? NodeId { get; set; }
 
     /// <summary>
+    /// The notification setting for the team. Must be one of notifications_enabled *(default)- or notifications_disabled.
+    /// The notification setting for the team. Must be one of &apos;notifications_enabled&apos; or &apos;notifications_disabled&apos;.
+    /// </summary>
+    [JsonPropertyName("notificationSetting")]
+    public string? NotificationSetting { get; set; }
+
+    /// <summary>
     /// The ID or slug of the parent team, if this is a nested team.
     /// The ID or slug of the parent team, if this is a nested team.
     /// </summary>
@@ -442,26 +457,21 @@ public partial class V1alpha1TeamStatusAtProvider
     public string? ParentTeamReadId { get; set; }
 
     /// <summary>
-    /// The slug of the created team, which may or may not differ from name,
-    /// depending on whether name contains &quot;URL-unsafe&quot; characters.
-    /// Useful when referencing the team in github_branch_protection.
+    /// The slug of the created team, which may or may not differ from name, depending on whether name contains &quot;URL-unsafe&quot; characters.
     /// The id of the parent team read in Github.
     /// </summary>
     [JsonPropertyName("parentTeamReadSlug")]
     public string? ParentTeamReadSlug { get; set; }
 
     /// <summary>
-    /// The level of privacy for the team. Must be one of secret or closed.
-    /// Defaults to secret.
+    /// The level of privacy for the team. Must be one of secret *(default)- or closed.
     /// The level of privacy for the team. Must be one of &apos;secret&apos; or &apos;closed&apos;.
     /// </summary>
     [JsonPropertyName("privacy")]
     public string? Privacy { get; set; }
 
     /// <summary>
-    /// The slug of the created team, which may or may not differ from name,
-    /// depending on whether name contains &quot;URL-unsafe&quot; characters.
-    /// Useful when referencing the team in github_branch_protection.
+    /// The slug of the created team, which may or may not differ from name, depending on whether name contains &quot;URL-unsafe&quot; characters.
     /// The slug of the created team.
     /// </summary>
     [JsonPropertyName("slug")]

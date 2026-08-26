@@ -295,6 +295,9 @@ public partial class V1alpha1RepositoryWebhookSpecForProvider
     [JsonPropertyName("configuration")]
     public IList<V1alpha1RepositoryWebhookSpecForProviderConfiguration>? Configuration { get; set; }
 
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
     /// <summary>
     /// A list of events which should trigger the webhook. See a list of available events.
     /// A list of events which should trigger the webhook
@@ -304,7 +307,7 @@ public partial class V1alpha1RepositoryWebhookSpecForProvider
 
     /// <summary>
     /// The repository of the webhook.
-    /// The repository of the webhook.
+    /// The repository name of the webhook, not including the organization, which will be inferred.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -570,6 +573,9 @@ public partial class V1alpha1RepositoryWebhookSpecInitProvider
     [JsonPropertyName("configuration")]
     public IList<V1alpha1RepositoryWebhookSpecInitProviderConfiguration>? Configuration { get; set; }
 
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
     /// <summary>
     /// A list of events which should trigger the webhook. See a list of available events.
     /// A list of events which should trigger the webhook
@@ -579,7 +585,7 @@ public partial class V1alpha1RepositoryWebhookSpecInitProvider
 
     /// <summary>
     /// The repository of the webhook.
-    /// The repository of the webhook.
+    /// The repository name of the webhook, not including the organization, which will be inferred.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
@@ -828,13 +834,13 @@ public partial class V1alpha1RepositoryWebhookStatusAtProvider
 
     /// <summary>
     /// The repository of the webhook.
-    /// The repository of the webhook.
+    /// The repository name of the webhook, not including the organization, which will be inferred.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
     /// <summary>
-    /// URL of the webhook.  This is a sensitive attribute because it may include basic auth credentials.
+    /// URL of the webhook. This is a sensitive attribute because it may include basic auth credentials.
     /// Configuration block for the webhook
     /// </summary>
     [JsonPropertyName("url")]

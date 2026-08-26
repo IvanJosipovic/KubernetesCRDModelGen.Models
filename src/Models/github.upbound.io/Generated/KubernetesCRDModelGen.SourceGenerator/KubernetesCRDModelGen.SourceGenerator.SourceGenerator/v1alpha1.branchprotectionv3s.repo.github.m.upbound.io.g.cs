@@ -354,10 +354,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     [JsonPropertyName("apps")]
     public IList<string>? Apps { get; set; }
 
-    /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
-    /// </summary>
+    /// <summary>:  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.</summary>
     [JsonPropertyName("teams")]
     public IList<string>? Teams { get; set; }
 
@@ -552,8 +549,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     public IList<string>? DismissalApps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with dismissal access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("dismissalTeams")]
@@ -585,7 +581,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredPullReques
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that the most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that the most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that the most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
@@ -610,7 +606,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRequiredStatusChec
     [JsonPropertyName("checks")]
     public IList<string>? Checks { get; set; }
 
-    /// <summary>: [DEPRECATED]  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
+    /// <summary>: (DEPRECATED)  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
     [JsonPropertyName("contexts")]
     public IList<string>? Contexts { get; set; }
 
@@ -792,8 +788,7 @@ public partial class V1alpha1BranchProtectionv3SpecForProviderRestrictions
     public IList<string>? Apps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("teams")]
@@ -1202,10 +1197,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     [JsonPropertyName("apps")]
     public IList<string>? Apps { get; set; }
 
-    /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
-    /// </summary>
+    /// <summary>:  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.</summary>
     [JsonPropertyName("teams")]
     public IList<string>? Teams { get; set; }
 
@@ -1400,8 +1392,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     public IList<string>? DismissalApps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with dismissal access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("dismissalTeams")]
@@ -1433,7 +1424,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredPullReque
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that the most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that the most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that the most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
@@ -1458,7 +1449,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRequiredStatusChe
     [JsonPropertyName("checks")]
     public IList<string>? Checks { get; set; }
 
-    /// <summary>: [DEPRECATED]  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
+    /// <summary>: (DEPRECATED)  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
     [JsonPropertyName("contexts")]
     public IList<string>? Contexts { get; set; }
 
@@ -1640,8 +1631,7 @@ public partial class V1alpha1BranchProtectionv3SpecInitProviderRestrictions
     public IList<string>? Apps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("teams")]
@@ -1859,10 +1849,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullReque
     [JsonPropertyName("apps")]
     public IList<string>? Apps { get; set; }
 
-    /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
-    /// </summary>
+    /// <summary>:  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.</summary>
     [JsonPropertyName("teams")]
     public IList<string>? Teams { get; set; }
 
@@ -1894,8 +1881,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullReque
     public IList<string>? DismissalApps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with dismissal access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("dismissalTeams")]
@@ -1919,7 +1905,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredPullReque
     public bool? RequireCodeOwnerReviews { get; set; }
 
     /// <summary>
-    /// :  Require that the most recent push must be approved by someone other than the last pusher.  Defaults to false
+    /// :  Require that the most recent push must be approved by someone other than the last pusher. Defaults to false
     /// Require that the most recent push must be approved by someone other than the last pusher.
     /// </summary>
     [JsonPropertyName("requireLastPushApproval")]
@@ -1944,7 +1930,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRequiredStatusChe
     [JsonPropertyName("checks")]
     public IList<string>? Checks { get; set; }
 
-    /// <summary>: [DEPRECATED]  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
+    /// <summary>: (DEPRECATED)  The list of status checks to require in order to merge into this branch. No status checks are required by default.</summary>
     [JsonPropertyName("contexts")]
     public IList<string>? Contexts { get; set; }
 
@@ -1971,8 +1957,7 @@ public partial class V1alpha1BranchProtectionv3StatusAtProviderRestrictions
     public IList<string>? Apps { get; set; }
 
     /// <summary>
-    /// :  The list of team slugs with push access.
-    /// Always use slug of the team, not its name. Each team already has to have access to the repository.
+    /// :  The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
     /// </summary>
     [JsonPropertyName("teams")]

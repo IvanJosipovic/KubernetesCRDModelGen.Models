@@ -56,7 +56,7 @@ public enum V1alpha1ActionsSecretSpecDeletionPolicyEnum
 }
 
 /// <summary>
-/// Encrypted value of the secret using the GitHub public key in Base64 format.
+/// (DEPRECATED) Please use value_encrypted.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -77,7 +77,7 @@ public partial class V1alpha1ActionsSecretSpecForProviderEncryptedValueSecretRef
 }
 
 /// <summary>
-/// Plaintext value of the secret to be encrypted
+/// (DEPRECATED) Please use value.
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -244,26 +244,79 @@ public partial class V1alpha1ActionsSecretSpecForProviderRepositorySelector
     public V1alpha1ActionsSecretSpecForProviderRepositorySelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
+/// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ActionsSecretSpecForProviderValueEncryptedSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
+/// Plaintext value to be encrypted.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ActionsSecretSpecForProviderValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecForProvider
 {
+    /// <summary>(DEPRECATED)  This is ignored as drift detection is built into the resource.</summary>
+    [JsonPropertyName("destroyOnDrift")]
+    public bool? DestroyOnDrift { get; set; }
+
     /// <summary>
-    /// Encrypted value of the secret using the GitHub public key in Base64 format.
+    /// (DEPRECATED) Please use value_encrypted.
     /// Encrypted value of the secret using the GitHub public key in Base64 format.
     /// </summary>
     [JsonPropertyName("encryptedValueSecretRef")]
     public V1alpha1ActionsSecretSpecForProviderEncryptedValueSecretRef? EncryptedValueSecretRef { get; set; }
 
     /// <summary>
-    /// Plaintext value of the secret to be encrypted
+    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
+    /// ID of the public key used to encrypt the secret.
+    /// </summary>
+    [JsonPropertyName("keyId")]
+    public string? KeyId { get; set; }
+
+    /// <summary>
+    /// (DEPRECATED) Please use value.
     /// Plaintext value of the secret to be encrypted.
     /// </summary>
     [JsonPropertyName("plaintextValueSecretRef")]
     public V1alpha1ActionsSecretSpecForProviderPlaintextValueSecretRef? PlaintextValueSecretRef { get; set; }
 
     /// <summary>
-    /// Name of the repository
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -278,15 +331,29 @@ public partial class V1alpha1ActionsSecretSpecForProvider
     public V1alpha1ActionsSecretSpecForProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Name of the secret
+    /// Name of the secret.
     /// Name of the secret.
     /// </summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
+
+    /// <summary>
+    /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
+    /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+    /// </summary>
+    [JsonPropertyName("valueEncryptedSecretRef")]
+    public V1alpha1ActionsSecretSpecForProviderValueEncryptedSecretRef? ValueEncryptedSecretRef { get; set; }
+
+    /// <summary>
+    /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
+    /// Plaintext value to be encrypted.
+    /// </summary>
+    [JsonPropertyName("valueSecretRef")]
+    public V1alpha1ActionsSecretSpecForProviderValueSecretRef? ValueSecretRef { get; set; }
 }
 
 /// <summary>
-/// Encrypted value of the secret using the GitHub public key in Base64 format.
+/// (DEPRECATED) Please use value_encrypted.
 /// Encrypted value of the secret using the GitHub public key in Base64 format.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -307,7 +374,7 @@ public partial class V1alpha1ActionsSecretSpecInitProviderEncryptedValueSecretRe
 }
 
 /// <summary>
-/// Plaintext value of the secret to be encrypted
+/// (DEPRECATED) Please use value.
 /// Plaintext value of the secret to be encrypted.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -475,6 +542,48 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelector
 }
 
 /// <summary>
+/// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
+/// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ActionsSecretSpecInitProviderValueEncryptedSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
+/// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
+/// Plaintext value to be encrypted.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ActionsSecretSpecInitProviderValueSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -490,22 +599,33 @@ public partial class V1alpha1ActionsSecretSpecInitProviderRepositorySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ActionsSecretSpecInitProvider
 {
+    /// <summary>(DEPRECATED)  This is ignored as drift detection is built into the resource.</summary>
+    [JsonPropertyName("destroyOnDrift")]
+    public bool? DestroyOnDrift { get; set; }
+
     /// <summary>
-    /// Encrypted value of the secret using the GitHub public key in Base64 format.
+    /// (DEPRECATED) Please use value_encrypted.
     /// Encrypted value of the secret using the GitHub public key in Base64 format.
     /// </summary>
     [JsonPropertyName("encryptedValueSecretRef")]
     public V1alpha1ActionsSecretSpecInitProviderEncryptedValueSecretRef? EncryptedValueSecretRef { get; set; }
 
     /// <summary>
-    /// Plaintext value of the secret to be encrypted
+    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
+    /// ID of the public key used to encrypt the secret.
+    /// </summary>
+    [JsonPropertyName("keyId")]
+    public string? KeyId { get; set; }
+
+    /// <summary>
+    /// (DEPRECATED) Please use value.
     /// Plaintext value of the secret to be encrypted.
     /// </summary>
     [JsonPropertyName("plaintextValueSecretRef")]
     public V1alpha1ActionsSecretSpecInitProviderPlaintextValueSecretRef? PlaintextValueSecretRef { get; set; }
 
     /// <summary>
-    /// Name of the repository
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
@@ -520,11 +640,25 @@ public partial class V1alpha1ActionsSecretSpecInitProvider
     public V1alpha1ActionsSecretSpecInitProviderRepositorySelector? RepositorySelector { get; set; }
 
     /// <summary>
-    /// Name of the secret
+    /// Name of the secret.
     /// Name of the secret.
     /// </summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
+
+    /// <summary>
+    /// Encrypted value of the secret using the GitHub public key in Base64 format, key_id is required with this value. This conflicts with value, encrypted_value &amp; plaintext_value.
+    /// Value encrypted with the GitHub public key, defined by key_id, in Base64 format.
+    /// </summary>
+    [JsonPropertyName("valueEncryptedSecretRef")]
+    public V1alpha1ActionsSecretSpecInitProviderValueEncryptedSecretRef? ValueEncryptedSecretRef { get; set; }
+
+    /// <summary>
+    /// Plaintext value of the secret to be encrypted. This conflicts with value_encrypted, encrypted_value &amp; plaintext_value.
+    /// Plaintext value to be encrypted.
+    /// </summary>
+    [JsonPropertyName("valueSecretRef")]
+    public V1alpha1ActionsSecretSpecInitProviderValueSecretRef? ValueSecretRef { get; set; }
 }
 
 /// <summary>
@@ -715,32 +849,57 @@ public partial class V1alpha1ActionsSecretSpec
 public partial class V1alpha1ActionsSecretStatusAtProvider
 {
     /// <summary>
-    /// Date of actions_secret creation.
-    /// Date of &apos;actions_secret&apos; creation.
+    /// Date the secret was created.
+    /// Date of secret creation.
     /// </summary>
     [JsonPropertyName("createdAt")]
     public string? CreatedAt { get; set; }
+
+    /// <summary>(DEPRECATED)  This is ignored as drift detection is built into the resource.</summary>
+    [JsonPropertyName("destroyOnDrift")]
+    public bool? DestroyOnDrift { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
     /// <summary>
-    /// Name of the repository
+    /// ID of the public key used to encrypt the secret, required when setting encrypted_value.
+    /// ID of the public key used to encrypt the secret.
+    /// </summary>
+    [JsonPropertyName("keyId")]
+    public string? KeyId { get; set; }
+
+    /// <summary>
+    /// Date the secret was last updated in GitHub.
+    /// Date of secret update at the remote.
+    /// </summary>
+    [JsonPropertyName("remoteUpdatedAt")]
+    public string? RemoteUpdatedAt { get; set; }
+
+    /// <summary>
+    /// Name of the repository.
     /// Name of the repository.
     /// </summary>
     [JsonPropertyName("repository")]
     public string? Repository { get; set; }
 
     /// <summary>
-    /// Name of the secret
+    /// ID of the repository.
+    /// ID of the repository.
+    /// </summary>
+    [JsonPropertyName("repositoryId")]
+    public long? RepositoryId { get; set; }
+
+    /// <summary>
+    /// Name of the secret.
     /// Name of the secret.
     /// </summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 
     /// <summary>
-    /// Date of actions_secret update.
-    /// Date of &apos;actions_secret&apos; update.
+    /// Date the secret was last updated by the provider.
+    /// Date of secret update.
     /// </summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }

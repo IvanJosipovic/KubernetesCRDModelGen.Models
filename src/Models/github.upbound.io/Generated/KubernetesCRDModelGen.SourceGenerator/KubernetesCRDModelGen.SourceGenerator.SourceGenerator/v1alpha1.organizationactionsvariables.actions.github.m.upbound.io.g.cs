@@ -41,29 +41,28 @@ public partial class V1alpha1OrganizationActionsVariableList : IKubernetesObject
 public partial class V1alpha1OrganizationActionsVariableSpecForProvider
 {
     /// <summary>
-    /// An array of repository ids that can access the organization variable.
+    /// An array of repository IDs that can access the organization variable; this requires visibility to be set to selected.
     /// An array of repository ids that can access the organization variable.
     /// </summary>
     [JsonPropertyName("selectedRepositoryIds")]
     public IList<long>? SelectedRepositoryIds { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]
     public string? VariableName { get; set; }
 
     /// <summary>
-    /// Configures the access that repositories have to the organization variable.
-    /// Must be one of all, private, selected. selected_repository_ids is required if set to selected.
+    /// Configures the access that repositories have to the organization variable; must be one of all, private, or selected.
     /// Configures the access that repositories have to the organization variable. Must be one of &apos;all&apos;, &apos;private&apos;, or &apos;selected&apos;. &apos;selected_repository_ids&apos; is required if set to &apos;selected&apos;.
     /// </summary>
     [JsonPropertyName("visibility")]
@@ -87,29 +86,28 @@ public partial class V1alpha1OrganizationActionsVariableSpecForProvider
 public partial class V1alpha1OrganizationActionsVariableSpecInitProvider
 {
     /// <summary>
-    /// An array of repository ids that can access the organization variable.
+    /// An array of repository IDs that can access the organization variable; this requires visibility to be set to selected.
     /// An array of repository ids that can access the organization variable.
     /// </summary>
     [JsonPropertyName("selectedRepositoryIds")]
     public IList<long>? SelectedRepositoryIds { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]
     public string? VariableName { get; set; }
 
     /// <summary>
-    /// Configures the access that repositories have to the organization variable.
-    /// Must be one of all, private, selected. selected_repository_ids is required if set to selected.
+    /// Configures the access that repositories have to the organization variable; must be one of all, private, or selected.
     /// Configures the access that repositories have to the organization variable. Must be one of &apos;all&apos;, &apos;private&apos;, or &apos;selected&apos;. &apos;selected_repository_ids&apos; is required if set to &apos;selected&apos;.
     /// </summary>
     [JsonPropertyName("visibility")]
@@ -228,7 +226,7 @@ public partial class V1alpha1OrganizationActionsVariableSpec
 public partial class V1alpha1OrganizationActionsVariableStatusAtProvider
 {
     /// <summary>
-    /// Date of actions_variable creation.
+    /// Date the variable was created.
     /// Date of &apos;actions_variable&apos; creation.
     /// </summary>
     [JsonPropertyName("createdAt")]
@@ -238,36 +236,35 @@ public partial class V1alpha1OrganizationActionsVariableStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
-    /// An array of repository ids that can access the organization variable.
+    /// An array of repository IDs that can access the organization variable; this requires visibility to be set to selected.
     /// An array of repository ids that can access the organization variable.
     /// </summary>
     [JsonPropertyName("selectedRepositoryIds")]
     public IList<long>? SelectedRepositoryIds { get; set; }
 
     /// <summary>
-    /// Date of actions_variable update.
+    /// Date the variable was last updated.
     /// Date of &apos;actions_variable&apos; update.
     /// </summary>
     [JsonPropertyName("updatedAt")]
     public string? UpdatedAt { get; set; }
 
     /// <summary>
-    /// Value of the variable
+    /// Value of the variable.
     /// Value of the variable.
     /// </summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 
     /// <summary>
-    /// Name of the variable
+    /// Name of the variable.
     /// Name of the variable.
     /// </summary>
     [JsonPropertyName("variableName")]
     public string? VariableName { get; set; }
 
     /// <summary>
-    /// Configures the access that repositories have to the organization variable.
-    /// Must be one of all, private, selected. selected_repository_ids is required if set to selected.
+    /// Configures the access that repositories have to the organization variable; must be one of all, private, or selected.
     /// Configures the access that repositories have to the organization variable. Must be one of &apos;all&apos;, &apos;private&apos;, or &apos;selected&apos;. &apos;selected_repository_ids&apos; is required if set to &apos;selected&apos;.
     /// </summary>
     [JsonPropertyName("visibility")]
