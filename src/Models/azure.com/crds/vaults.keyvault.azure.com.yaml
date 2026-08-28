@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: vaults.keyvault.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/preview/2021-04-01-preview/keyvault.json
+          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/preview/2021-04-01-preview/keyvault.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
         properties:
           apiVersion:
@@ -825,7 +825,7 @@ spec:
         description: |-
           Storage version of v1api20210401preview.Vault
           Generator information:
-          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/preview/2021-04-01-preview/keyvault.json
+          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/preview/2021-04-01-preview/keyvault.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
         properties:
           apiVersion:
@@ -1550,7 +1550,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/stable/2023-07-01/keyvault.json
+          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/stable/2023-07-01/keyvault.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
         properties:
           apiVersion:
@@ -2346,7 +2346,7 @@ spec:
         description: |-
           Storage version of v1api20230701.Vault
           Generator information:
-          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/stable/2023-07-01/keyvault.json
+          - Generated from: /keyvault/resource-manager/Microsoft.KeyVault/KeyVault/stable/2023-07-01/keyvault.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.KeyVault/vaults/{vaultName}
         properties:
           apiVersion:

@@ -41,7 +41,10 @@ public partial class V1api20241101storageExtensionList : IKubernetesObject<V1Lis
     public required IList<V1api20241101storageExtension> Items { get; set; }
 }
 
-/// <summary>Storage version of v1api20241101.Extension_Properties_AksAssignedIdentity_Spec</summary>
+/// <summary>
+/// Storage version of v1api20241101.ExtensionPropertiesAksAssignedIdentity
+/// Identity of the Extension resource in an AKS cluster
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241101storageExtensionSpecAksAssignedIdentity
@@ -376,12 +379,12 @@ public partial class V1api20241101storageExtensionSpecScope
 }
 
 /// <summary>
-/// Storage version of v1api20241101.SystemData
-/// Metadata pertaining to creation and last modification of the resource.
+/// Storage version of v1api20241101.ExtensionStatus
+/// Status from the extension.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1api20241101storageExtensionSpecSystemData
+public partial class V1api20241101storageExtensionSpecStatuses
 {
     /// <summary>
     /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
@@ -390,23 +393,20 @@ public partial class V1api20241101storageExtensionSpecSystemData
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    [JsonPropertyName("createdAt")]
-    public string? CreatedAt { get; set; }
+    [JsonPropertyName("code")]
+    public string? Code { get; set; }
 
-    [JsonPropertyName("createdBy")]
-    public string? CreatedBy { get; set; }
+    [JsonPropertyName("displayStatus")]
+    public string? DisplayStatus { get; set; }
 
-    [JsonPropertyName("createdByType")]
-    public string? CreatedByType { get; set; }
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
 
-    [JsonPropertyName("lastModifiedAt")]
-    public string? LastModifiedAt { get; set; }
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
 
-    [JsonPropertyName("lastModifiedBy")]
-    public string? LastModifiedBy { get; set; }
-
-    [JsonPropertyName("lastModifiedByType")]
-    public string? LastModifiedByType { get; set; }
+    [JsonPropertyName("time")]
+    public string? Time { get; set; }
 }
 
 /// <summary>Storage version of v1api20241101.Extension_Spec</summary>
@@ -421,7 +421,10 @@ public partial class V1api20241101storageExtensionSpec
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20241101.Extension_Properties_AksAssignedIdentity_Spec</summary>
+    /// <summary>
+    /// Storage version of v1api20241101.ExtensionPropertiesAksAssignedIdentity
+    /// Identity of the Extension resource in an AKS cluster
+    /// </summary>
     [JsonPropertyName("aksAssignedIdentity")]
     public V1api20241101storageExtensionSpecAksAssignedIdentity? AksAssignedIdentity { get; set; }
 
@@ -490,18 +493,17 @@ public partial class V1api20241101storageExtensionSpec
     [JsonPropertyName("scope")]
     public V1api20241101storageExtensionSpecScope? Scope { get; set; }
 
-    /// <summary>
-    /// Storage version of v1api20241101.SystemData
-    /// Metadata pertaining to creation and last modification of the resource.
-    /// </summary>
-    [JsonPropertyName("systemData")]
-    public V1api20241101storageExtensionSpecSystemData? SystemData { get; set; }
+    [JsonPropertyName("statuses")]
+    public IList<V1api20241101storageExtensionSpecStatuses>? Statuses { get; set; }
 
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
 
-/// <summary>Storage version of v1api20241101.Extension_Properties_AksAssignedIdentity_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20241101.ExtensionPropertiesAksAssignedIdentity_STATUS
+/// Identity of the Extension resource in an AKS cluster
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241101storageExtensionStatusAksAssignedIdentity
@@ -873,7 +875,10 @@ public partial class V1api20241101storageExtensionStatus
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20241101.Extension_Properties_AksAssignedIdentity_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20241101.ExtensionPropertiesAksAssignedIdentity_STATUS
+    /// Identity of the Extension resource in an AKS cluster
+    /// </summary>
     [JsonPropertyName("aksAssignedIdentity")]
     public V1api20241101storageExtensionStatusAksAssignedIdentity? AksAssignedIdentity { get; set; }
 
@@ -930,6 +935,9 @@ public partial class V1api20241101storageExtensionStatus
     /// </summary>
     [JsonPropertyName("plan")]
     public V1api20241101storageExtensionStatusPlan? Plan { get; set; }
+
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
 
     [JsonPropertyName("releaseTrain")]
     public string? ReleaseTrain { get; set; }

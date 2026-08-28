@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// <summary>
 /// Storage version of v20201201.VirtualMachineScaleSetsExtension
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2020-12-01/compute.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2020-12-01/compute.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/extensions/{vmssExtensionName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -348,7 +348,7 @@ public partial class V20201201storageVirtualMachineScaleSetsExtensionStatus
 /// <summary>
 /// Storage version of v20201201.VirtualMachineScaleSetsExtension
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2020-12-01/compute.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2020-12-01/compute.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmScaleSetName}/extensions/{vmssExtensionName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

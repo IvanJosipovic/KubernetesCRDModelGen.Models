@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20201001.ActivityLogAlert
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2020-10-01/activityLogAlerts_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2020-10-01/activityLogAlerts_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/activityLogAlerts/{activityLogAlertName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -635,7 +635,7 @@ public partial class V1api20201001storageActivityLogAlertStatus
 /// <summary>
 /// Storage version of v1api20201001.ActivityLogAlert
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2020-10-01/activityLogAlerts_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2020-10-01/activityLogAlerts_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/activityLogAlerts/{activityLogAlertName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

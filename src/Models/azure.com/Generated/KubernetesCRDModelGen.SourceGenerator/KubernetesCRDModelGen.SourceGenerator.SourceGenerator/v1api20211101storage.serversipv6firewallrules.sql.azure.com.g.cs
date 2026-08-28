@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// <summary>
 /// Storage version of v1api20211101.ServersIPV6FirewallRule
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/IPv6FirewallRules.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/IPv6FirewallRules.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/ipv6FirewallRules/{firewallRuleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -286,7 +286,7 @@ public partial class V1api20211101storageServersIPV6FirewallRuleStatus
 /// <summary>
 /// Storage version of v1api20211101.ServersIPV6FirewallRule
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/IPv6FirewallRules.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/IPv6FirewallRules.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/ipv6FirewallRules/{firewallRuleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -444,6 +444,9 @@ public partial class V1api20230401storageRedisSpecRedisConfiguration
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }
 
@@ -819,6 +822,9 @@ public partial class V1api20230401storageRedisStatusRedisConfiguration
     /// </summary>
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
 
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }

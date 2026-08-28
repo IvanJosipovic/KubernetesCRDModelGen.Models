@@ -1738,6 +1738,40 @@ public partial class V1api20241101storageFluxConfigurationStatusStatuses
 }
 
 /// <summary>
+/// Storage version of v1api20241101.SystemData_STATUS
+/// Metadata pertaining to creation and last modification of the resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20241101storageFluxConfigurationStatusSystemData
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("createdAt")]
+    public string? CreatedAt { get; set; }
+
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    [JsonPropertyName("createdByType")]
+    public string? CreatedByType { get; set; }
+
+    [JsonPropertyName("lastModifiedAt")]
+    public string? LastModifiedAt { get; set; }
+
+    [JsonPropertyName("lastModifiedBy")]
+    public string? LastModifiedBy { get; set; }
+
+    [JsonPropertyName("lastModifiedByType")]
+    public string? LastModifiedByType { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20241101.FluxConfiguration_STATUS
 /// The Flux Configuration object returned in Get &amp; Put response.
 /// </summary>
@@ -1830,6 +1864,13 @@ public partial class V1api20241101storageFluxConfigurationStatus
 
     [JsonPropertyName("suspend")]
     public bool? Suspend { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20241101.SystemData_STATUS
+    /// Metadata pertaining to creation and last modification of the resource.
+    /// </summary>
+    [JsonPropertyName("systemData")]
+    public V1api20241101storageFluxConfigurationStatusSystemData? SystemData { get; set; }
 
     [JsonPropertyName("type")]
     public string? Type { get; set; }

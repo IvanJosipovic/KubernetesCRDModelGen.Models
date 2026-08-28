@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/componentFeaturesAndPricing_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2017-10-01/componentFeaturesAndPricing_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.insights/components/{resourceName}/pricingPlans/current
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -293,7 +293,7 @@ public partial class V1api20171001PricingPlanStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/componentFeaturesAndPricing_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2017-10-01/componentFeaturesAndPricing_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/microsoft.insights/components/{resourceName}/pricingPlans/current
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

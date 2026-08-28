@@ -184,7 +184,7 @@ public partial class V20210601storageWorkspaceSpecEncryptionCmkKekIdentity
     public IDictionary<string, string>? PropertyBag { get; set; }
 
     [JsonPropertyName("useSystemAssignedIdentity")]
-    public JsonNode? UseSystemAssignedIdentity { get; set; }
+    public bool? UseSystemAssignedIdentity { get; set; }
 
     /// <summary>UserAssignedIdentityReference: User assigned identity resource Id</summary>
     [JsonPropertyName("userAssignedIdentityReference")]
@@ -842,7 +842,7 @@ public partial class V20210601storageWorkspaceStatusEncryptionCmkKekIdentity
     public IDictionary<string, string>? PropertyBag { get; set; }
 
     [JsonPropertyName("useSystemAssignedIdentity")]
-    public JsonNode? UseSystemAssignedIdentity { get; set; }
+    public bool? UseSystemAssignedIdentity { get; set; }
 
     [JsonPropertyName("userAssignedIdentity")]
     public string? UserAssignedIdentity { get; set; }

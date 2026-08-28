@@ -11,8 +11,8 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-10-01/autoscale_API.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-10-01/autoScale.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -751,7 +751,7 @@ public partial class V1api20221001AutoscaleSettingSpec
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Location: Resource location</summary>
+    /// <summary>Location: The geo-location where the resource lives</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 
@@ -789,11 +789,7 @@ public partial class V1api20221001AutoscaleSettingSpec
     [JsonPropertyName("profiles")]
     public required IList<V1api20221001AutoscaleSettingSpecProfiles> Profiles { get; set; }
 
-    /// <summary>
-    /// Tags: Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping
-    /// this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no
-    /// greater in length than 128 characters and a value no greater in length than 256 characters.
-    /// </summary>
+    /// <summary>Tags: Resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -1333,7 +1329,7 @@ public partial class V1api20221001AutoscaleSettingStatusProfiles
     public required IList<V1api20221001AutoscaleSettingStatusProfilesRules> Rules { get; set; }
 }
 
-/// <summary>SystemData: The system metadata related to the response.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20221001AutoscaleSettingStatusSystemData
@@ -1375,15 +1371,18 @@ public partial class V1api20221001AutoscaleSettingStatus
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Id: Azure resource Id</summary>
+    /// <summary>
+    /// Id: Fully qualified resource ID for the resource. Ex -
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Location: Resource location</summary>
+    /// <summary>Location: The geo-location where the resource lives</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Name: Azure resource name</summary>
+    /// <summary>Name: The name of the resource</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1406,15 +1405,11 @@ public partial class V1api20221001AutoscaleSettingStatus
     [JsonPropertyName("properties_name")]
     public string? PropertiesName { get; set; }
 
-    /// <summary>SystemData: The system metadata related to the response.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20221001AutoscaleSettingStatusSystemData? SystemData { get; set; }
 
-    /// <summary>
-    /// Tags: Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping
-    /// this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no
-    /// greater in length than 128 characters and a value no greater in length than 256 characters.
-    /// </summary>
+    /// <summary>Tags: Resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -1426,15 +1421,15 @@ public partial class V1api20221001AutoscaleSettingStatus
     [JsonPropertyName("targetResourceUri")]
     public string? TargetResourceUri { get; set; }
 
-    /// <summary>Type: Azure resource type</summary>
+    /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-10-01/autoscale_API.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-10-01/autoScale.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

@@ -12,8 +12,8 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20221001.AutoscaleSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-10-01/autoscale_API.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-10-01/autoScale.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1215,8 +1215,8 @@ public partial class V1api20221001storageAutoscaleSettingStatus
 /// <summary>
 /// Storage version of v1api20221001.AutoscaleSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-10-01/autoscale_API.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-10-01/autoScale.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/autoscalesettings/{autoscaleSettingName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

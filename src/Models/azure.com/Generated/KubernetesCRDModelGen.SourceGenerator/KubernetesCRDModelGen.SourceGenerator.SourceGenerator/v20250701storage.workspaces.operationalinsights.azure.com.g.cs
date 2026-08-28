@@ -12,8 +12,8 @@ namespace KubernetesCRDModelGen.Models.operationalinsights.azure.com;
 /// <summary>
 /// Storage version of v20250701.Workspace
 /// Generator information:
-/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -111,6 +111,9 @@ public partial class V20250701storageWorkspaceSpecFeatures
     /// </summary>
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
 
     /// <summary>ClusterResourceReference: Dedicated LA cluster resourceId that is linked to the workspaces.</summary>
     [JsonPropertyName("clusterResourceReference")]
@@ -657,6 +660,9 @@ public partial class V20250701storageWorkspaceStatusFeatures
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     [JsonPropertyName("associations")]
     public IList<string>? Associations { get; set; }
 
@@ -985,8 +991,8 @@ public partial class V20250701storageWorkspaceStatus
 /// <summary>
 /// Storage version of v20250701.Workspace
 /// Generator information:
-/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

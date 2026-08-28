@@ -428,6 +428,9 @@ public enum V1api20230401RedisSpecPublicNetworkAccessEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230401RedisSpecRedisConfiguration
 {
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     /// <summary>AofBackupEnabled: Specifies whether the aof backup is enabled</summary>
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }
@@ -830,6 +833,9 @@ public partial class V1api20230401RedisStatusPrivateEndpointConnections
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230401RedisStatusRedisConfiguration
 {
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     /// <summary>AofBackupEnabled: Specifies whether the aof backup is enabled</summary>
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }

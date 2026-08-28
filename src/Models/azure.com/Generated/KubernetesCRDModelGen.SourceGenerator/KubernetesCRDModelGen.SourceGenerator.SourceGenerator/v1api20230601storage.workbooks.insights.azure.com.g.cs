@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20230601.Workbook
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -582,7 +582,7 @@ public partial class V1api20230601storageWorkbookStatus
 /// <summary>
 /// Storage version of v1api20230601.Workbook
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

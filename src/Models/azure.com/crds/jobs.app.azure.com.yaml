@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: jobs.app.azure.com
 spec:
   conversion:
@@ -302,6 +302,11 @@ spec:
                     - UserAssigned
                     type: string
                   userAssignedIdentities:
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     items:
                       description: Information about the user assigned identity for the resource
                       properties:
@@ -934,6 +939,11 @@ spec:
                           description: 'PrincipalId: The principal ID of the assigned identity.'
                           type: string
                       type: object
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     type: object
                 type: object
               location:
@@ -3003,6 +3013,11 @@ spec:
                     - UserAssigned
                     type: string
                   userAssignedIdentities:
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     items:
                       description: Information about the user assigned identity for the resource
                       properties:
@@ -3660,6 +3675,11 @@ spec:
                           description: 'PrincipalId: The principal ID of the assigned identity.'
                           type: string
                       type: object
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     type: object
                 type: object
               location:
@@ -5752,6 +5772,11 @@ spec:
                     - UserAssigned
                     type: string
                   userAssignedIdentities:
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     items:
                       description: Information about the user assigned identity for the resource
                       properties:
@@ -6384,6 +6409,11 @@ spec:
                           description: 'PrincipalId: The principal ID of the assigned identity.'
                           type: string
                       type: object
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     type: object
                 type: object
               location:
@@ -8453,6 +8483,11 @@ spec:
                     - UserAssigned
                     type: string
                   userAssignedIdentities:
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     items:
                       description: Information about the user assigned identity for the resource
                       properties:
@@ -9110,6 +9145,11 @@ spec:
                           description: 'PrincipalId: The principal ID of the assigned identity.'
                           type: string
                       type: object
+                    description: |-
+                      UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+                      dictionary keys will be ARM resource ids in the form:
+                      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+                      The dictionary values can be empty objects ({}) in requests.
                     type: object
                 type: object
               location:

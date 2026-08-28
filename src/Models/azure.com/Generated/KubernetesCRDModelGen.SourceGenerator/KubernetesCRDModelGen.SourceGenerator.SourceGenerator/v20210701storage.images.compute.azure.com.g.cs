@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// <summary>
 /// Storage version of v20210701.Image
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2021-07-01/compute.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2021-07-01/compute.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1028,7 +1028,7 @@ public partial class V20210701storageImageStatus
 /// <summary>
 /// Storage version of v20210701.Image
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2021-07-01/compute.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2021-07-01/compute.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

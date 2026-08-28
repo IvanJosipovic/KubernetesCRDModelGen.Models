@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: datacollectionruleassociations.insights.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2023-03-11/dataCollectionRuleAssociations_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-03-11/dataCollectionRuleAssociations_API.json
           - ARM URI: /{resourceUri}/providers/Microsoft.Insights/dataCollectionRuleAssociations/{associationName}
         properties:
           apiVersion:
@@ -360,7 +360,7 @@ spec:
         description: |-
           Storage version of v1api20230311.DataCollectionRuleAssociation
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2023-03-11/dataCollectionRuleAssociations_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-03-11/dataCollectionRuleAssociations_API.json
           - ARM URI: /{resourceUri}/providers/Microsoft.Insights/dataCollectionRuleAssociations/{associationName}
         properties:
           apiVersion:
@@ -692,7 +692,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionRuleAssociations_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
           - ARM URI: /{resourceUri}/providers/Microsoft.Insights/dataCollectionRuleAssociations/{associationName}
         properties:
           apiVersion:
@@ -931,7 +931,9 @@ spec:
                 description: 'Etag: Resource entity tag (ETag).'
                 type: string
               id:
-                description: 'Id: Fully qualified ID of the resource.'
+                description: |-
+                  Id: Fully qualified resource ID for the resource. Ex -
+                  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
                 type: string
               metadata:
                 description: 'Metadata: Metadata about the resource'
@@ -947,13 +949,13 @@ spec:
                     type: string
                 type: object
               name:
-                description: 'Name: The name of the resource.'
+                description: 'Name: The name of the resource'
                 type: string
               provisioningState:
                 description: 'ProvisioningState: The resource provisioning state.'
                 type: string
               systemData:
-                description: 'SystemData: Metadata pertaining to creation and last modification of the resource.'
+                description: 'SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.'
                 properties:
                   createdAt:
                     description: 'CreatedAt: The timestamp of resource creation (UTC).'
@@ -975,7 +977,7 @@ spec:
                     type: string
                 type: object
               type:
-                description: 'Type: The type of the resource.'
+                description: 'Type: The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"'
                 type: string
             type: object
         type: object
@@ -1002,7 +1004,7 @@ spec:
         description: |-
           Storage version of v1api20240311.DataCollectionRuleAssociation
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionRuleAssociations_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
           - ARM URI: /{resourceUri}/providers/Microsoft.Insights/dataCollectionRuleAssociations/{associationName}
         properties:
           apiVersion:

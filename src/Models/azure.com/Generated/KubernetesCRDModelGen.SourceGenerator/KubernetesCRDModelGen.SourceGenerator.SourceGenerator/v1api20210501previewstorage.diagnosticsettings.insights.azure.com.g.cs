@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20210501preview.DiagnosticSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -716,7 +716,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatus
 /// <summary>
 /// Storage version of v1api20210501preview.DiagnosticSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

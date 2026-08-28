@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.authorization.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /authorization/resource-manager/Microsoft.Authorization/stable/2022-04-01/authorization-RoleAssignmentsCalls.json
+/// - Generated from: /authorization/resource-manager/Microsoft.Authorization/Authorization/stable/2022-04-01/authorization-RoleAssignmentsCalls.json
 /// - ARM URI: /{scope}/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -384,6 +384,36 @@ public partial class V1api20220401RoleAssignmentStatusConditions
     public required string Type { get; set; }
 }
 
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220401RoleAssignmentStatusSystemData
+{
+    /// <summary>CreatedAt: The timestamp of resource creation (UTC).</summary>
+    [JsonPropertyName("createdAt")]
+    public string? CreatedAt { get; set; }
+
+    /// <summary>CreatedBy: The identity that created the resource.</summary>
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    /// <summary>CreatedByType: The type of identity that created the resource.</summary>
+    [JsonPropertyName("createdByType")]
+    public string? CreatedByType { get; set; }
+
+    /// <summary>LastModifiedAt: The timestamp of resource last modification (UTC)</summary>
+    [JsonPropertyName("lastModifiedAt")]
+    public string? LastModifiedAt { get; set; }
+
+    /// <summary>LastModifiedBy: The identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedBy")]
+    public string? LastModifiedBy { get; set; }
+
+    /// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedByType")]
+    public string? LastModifiedByType { get; set; }
+}
+
 /// <summary>Role Assignments</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -421,11 +451,14 @@ public partial class V1api20220401RoleAssignmentStatus
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Id: The role assignment ID.</summary>
+    /// <summary>
+    /// Id: Fully qualified resource ID for the resource. Ex -
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Name: The role assignment name.</summary>
+    /// <summary>Name: The name of the resource</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -445,7 +478,11 @@ public partial class V1api20220401RoleAssignmentStatus
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>Type: The role assignment type.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
+    [JsonPropertyName("systemData")]
+    public V1api20220401RoleAssignmentStatusSystemData? SystemData { get; set; }
+
+    /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -460,7 +497,7 @@ public partial class V1api20220401RoleAssignmentStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /authorization/resource-manager/Microsoft.Authorization/stable/2022-04-01/authorization-RoleAssignmentsCalls.json
+/// - Generated from: /authorization/resource-manager/Microsoft.Authorization/Authorization/stable/2022-04-01/authorization-RoleAssignmentsCalls.json
 /// - ARM URI: /{scope}/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

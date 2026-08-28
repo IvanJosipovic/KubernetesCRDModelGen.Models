@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: availabilitysets.compute.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2024-11-01/ComputeRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
         properties:
           apiVersion:
@@ -535,7 +535,7 @@ spec:
         description: |-
           Storage version of v1api20241101.AvailabilitySet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2024-11-01/ComputeRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
         properties:
           apiVersion:
@@ -1132,7 +1132,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2024-11-01/ComputeRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
         properties:
           apiVersion:
@@ -1617,7 +1617,7 @@ spec:
         description: |-
           Storage version of v20241101.AvailabilitySet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2024-11-01/ComputeRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
         properties:
           apiVersion:

@@ -260,7 +260,7 @@ public partial class V1api20241101ExtensionSpecOwner
     public string? Name { get; set; }
 }
 
-/// <summary>Plan: The plan information.</summary>
+/// <summary>Plan: Details of the resource plan.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241101ExtensionSpecPlan
@@ -329,67 +329,43 @@ public partial class V1api20241101ExtensionSpecScope
     public V1api20241101ExtensionSpecScopeNamespace? Namespace { get; set; }
 }
 
-/// <summary>CreatedByType: The type of identity that created the resource.</summary>
+/// <summary>Level: Level of the status.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1api20241101ExtensionSpecSystemDataCreatedByTypeEnum>))]
-public enum V1api20241101ExtensionSpecSystemDataCreatedByTypeEnum
+[JsonConverter(typeof(JsonStringEnumConverter<V1api20241101ExtensionSpecStatusesLevelEnum>))]
+public enum V1api20241101ExtensionSpecStatusesLevelEnum
 {
-    [EnumMember(Value = "Application"), JsonStringEnumMemberName("Application")]
-    Application,
-    [EnumMember(Value = "Key"), JsonStringEnumMemberName("Key")]
-    Key,
-    [EnumMember(Value = "ManagedIdentity"), JsonStringEnumMemberName("ManagedIdentity")]
-    ManagedIdentity,
-    [EnumMember(Value = "User"), JsonStringEnumMemberName("User")]
-    User
+    [EnumMember(Value = "Error"), JsonStringEnumMemberName("Error")]
+    Error,
+    [EnumMember(Value = "Information"), JsonStringEnumMemberName("Information")]
+    Information,
+    [EnumMember(Value = "Warning"), JsonStringEnumMemberName("Warning")]
+    Warning
 }
 
-/// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1api20241101ExtensionSpecSystemDataLastModifiedByTypeEnum>))]
-public enum V1api20241101ExtensionSpecSystemDataLastModifiedByTypeEnum
-{
-    [EnumMember(Value = "Application"), JsonStringEnumMemberName("Application")]
-    Application,
-    [EnumMember(Value = "Key"), JsonStringEnumMemberName("Key")]
-    Key,
-    [EnumMember(Value = "ManagedIdentity"), JsonStringEnumMemberName("ManagedIdentity")]
-    ManagedIdentity,
-    [EnumMember(Value = "User"), JsonStringEnumMemberName("User")]
-    User
-}
-
-/// <summary>
-/// SystemData: Top level metadata
-/// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
-/// </summary>
+/// <summary>Status from the extension.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1api20241101ExtensionSpecSystemData
+public partial class V1api20241101ExtensionSpecStatuses
 {
-    /// <summary>CreatedAt: The timestamp of resource creation (UTC).</summary>
-    [JsonPropertyName("createdAt")]
-    public string? CreatedAt { get; set; }
+    /// <summary>Code: Status code provided by the Extension</summary>
+    [JsonPropertyName("code")]
+    public string? Code { get; set; }
 
-    /// <summary>CreatedBy: The identity that created the resource.</summary>
-    [JsonPropertyName("createdBy")]
-    public string? CreatedBy { get; set; }
+    /// <summary>DisplayStatus: Short description of status of the extension.</summary>
+    [JsonPropertyName("displayStatus")]
+    public string? DisplayStatus { get; set; }
 
-    /// <summary>CreatedByType: The type of identity that created the resource.</summary>
-    [JsonPropertyName("createdByType")]
-    public V1api20241101ExtensionSpecSystemDataCreatedByTypeEnum? CreatedByType { get; set; }
+    /// <summary>Level: Level of the status.</summary>
+    [JsonPropertyName("level")]
+    public V1api20241101ExtensionSpecStatusesLevelEnum? Level { get; set; }
 
-    /// <summary>LastModifiedAt: The timestamp of resource last modification (UTC)</summary>
-    [JsonPropertyName("lastModifiedAt")]
-    public string? LastModifiedAt { get; set; }
+    /// <summary>Message: Detailed message of the status from the Extension.</summary>
+    [JsonPropertyName("message")]
+    public string? Message { get; set; }
 
-    /// <summary>LastModifiedBy: The identity that last modified the resource.</summary>
-    [JsonPropertyName("lastModifiedBy")]
-    public string? LastModifiedBy { get; set; }
-
-    /// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
-    [JsonPropertyName("lastModifiedByType")]
-    public V1api20241101ExtensionSpecSystemDataLastModifiedByTypeEnum? LastModifiedByType { get; set; }
+    /// <summary>Time: DateLiteral (per ISO8601) noting the time of installation status.</summary>
+    [JsonPropertyName("time")]
+    public string? Time { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -448,7 +424,7 @@ public partial class V1api20241101ExtensionSpec
     [JsonPropertyName("owner")]
     public required V1api20241101ExtensionSpecOwner Owner { get; set; }
 
-    /// <summary>Plan: The plan information.</summary>
+    /// <summary>Plan: Details of the resource plan.</summary>
     [JsonPropertyName("plan")]
     public V1api20241101ExtensionSpecPlan? Plan { get; set; }
 
@@ -463,12 +439,9 @@ public partial class V1api20241101ExtensionSpec
     [JsonPropertyName("scope")]
     public V1api20241101ExtensionSpecScope? Scope { get; set; }
 
-    /// <summary>
-    /// SystemData: Top level metadata
-    /// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
-    /// </summary>
-    [JsonPropertyName("systemData")]
-    public V1api20241101ExtensionSpecSystemData? SystemData { get; set; }
+    /// <summary>Statuses: Status from this extension.</summary>
+    [JsonPropertyName("statuses")]
+    public IList<V1api20241101ExtensionSpecStatuses>? Statuses { get; set; }
 
     /// <summary>
     /// Version: User-specified version of the extension for this extension to &apos;pin&apos;. To use &apos;version&apos;, autoUpgradeMinorVersion
@@ -635,7 +608,7 @@ public partial class V1api20241101ExtensionStatusIdentity
     public string? Type { get; set; }
 }
 
-/// <summary>Plan: The plan information.</summary>
+/// <summary>Plan: Details of the resource plan.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241101ExtensionStatusPlan
@@ -730,10 +703,7 @@ public partial class V1api20241101ExtensionStatusStatuses
     public string? Time { get; set; }
 }
 
-/// <summary>
-/// SystemData: Top level metadata
-/// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
-/// </summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20241101ExtensionStatusSystemData
@@ -833,9 +803,13 @@ public partial class V1api20241101ExtensionStatus
     [JsonPropertyName("packageUri")]
     public string? PackageUri { get; set; }
 
-    /// <summary>Plan: The plan information.</summary>
+    /// <summary>Plan: Details of the resource plan.</summary>
     [JsonPropertyName("plan")]
     public V1api20241101ExtensionStatusPlan? Plan { get; set; }
+
+    /// <summary>ProvisioningState: Status of installation of this extension.</summary>
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
 
     /// <summary>
     /// ReleaseTrain: ReleaseTrain this extension participates in for auto-upgrade (e.g. Stable, Preview, etc.) - only if
@@ -852,10 +826,7 @@ public partial class V1api20241101ExtensionStatus
     [JsonPropertyName("statuses")]
     public IList<V1api20241101ExtensionStatusStatuses>? Statuses { get; set; }
 
-    /// <summary>
-    /// SystemData: Top level metadata
-    /// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
-    /// </summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20241101ExtensionStatusSystemData? SystemData { get; set; }
 

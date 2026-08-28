@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -66,6 +66,23 @@ public enum V1api20211101ServerSpecAdministratorsAdministratorTypeEnum
     ActiveDirectory
 }
 
+/// <summary>LoginFromConfig: Login name of the server administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101ServerSpecAdministratorsLoginFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>PrincipalType: Principal Type of the sever administrator.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20211101ServerSpecAdministratorsPrincipalTypeEnum>))]
@@ -77,6 +94,40 @@ public enum V1api20211101ServerSpecAdministratorsPrincipalTypeEnum
     Group,
     [EnumMember(Value = "User"), JsonStringEnumMemberName("User")]
     User
+}
+
+/// <summary>SidFromConfig: SID (object ID) of the server administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101ServerSpecAdministratorsSidFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>TenantIdFromConfig: Tenant ID of the administrator.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101ServerSpecAdministratorsTenantIdFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>Administrators: The Azure Active Directory administrator of the server.</summary>
@@ -96,6 +147,10 @@ public partial class V1api20211101ServerSpecAdministrators
     [JsonPropertyName("login")]
     public string? Login { get; set; }
 
+    /// <summary>LoginFromConfig: Login name of the server administrator.</summary>
+    [JsonPropertyName("loginFromConfig")]
+    public V1api20211101ServerSpecAdministratorsLoginFromConfig? LoginFromConfig { get; set; }
+
     /// <summary>PrincipalType: Principal Type of the sever administrator.</summary>
     [JsonPropertyName("principalType")]
     public V1api20211101ServerSpecAdministratorsPrincipalTypeEnum? PrincipalType { get; set; }
@@ -104,9 +159,17 @@ public partial class V1api20211101ServerSpecAdministrators
     [JsonPropertyName("sid")]
     public string? Sid { get; set; }
 
+    /// <summary>SidFromConfig: SID (object ID) of the server administrator.</summary>
+    [JsonPropertyName("sidFromConfig")]
+    public V1api20211101ServerSpecAdministratorsSidFromConfig? SidFromConfig { get; set; }
+
     /// <summary>TenantId: Tenant ID of the administrator.</summary>
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
+
+    /// <summary>TenantIdFromConfig: Tenant ID of the administrator.</summary>
+    [JsonPropertyName("tenantIdFromConfig")]
+    public V1api20211101ServerSpecAdministratorsTenantIdFromConfig? TenantIdFromConfig { get; set; }
 }
 
 /// <summary>
@@ -757,7 +820,7 @@ public partial class V1api20211101ServerStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

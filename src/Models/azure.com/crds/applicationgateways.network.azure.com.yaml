@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: applicationgateways.network.azure.com
 spec:
   conversion:
@@ -1070,25 +1070,44 @@ spec:
                       items:
                         description: The application gateway private link ip configuration.
                         properties:
-                          reference:
-                            description: 'Reference: Resource ID.'
+                          name:
+                            description: 'Name: The name of application gateway private link ip configuration.'
+                            type: string
+                          primary:
+                            description: 'Primary: Whether the ip configuration is primary or not.'
+                            type: boolean
+                          privateIPAddress:
+                            description: 'PrivateIPAddress: The private IP address of the IP configuration.'
+                            type: string
+                          privateIPAllocationMethod:
+                            description: 'PrivateIPAllocationMethod: The private IP address allocation method.'
+                            enum:
+                            - Dynamic
+                            - Static
+                            type: string
+                          subnet:
+                            description: 'Subnet: Reference to the subnet resource.'
                             properties:
-                              armId:
-                                description: |-
-                                  ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
-                                  The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
-                                  ARMID is mutually exclusive with Group, Kind, Namespace and Name.
-                                pattern: (?i)(^(/subscriptions/([^/]+)(/resourcegroups/([^/]+))?)?/providers/([^/]+)/([^/]+/[^/]+)(/([^/]+/[^/]+))*$|^/subscriptions/([^/]+)(/resourcegroups/([^/]+))?$)
-                                type: string
-                              group:
-                                description: Group is the Kubernetes group of the resource.
-                                type: string
-                              kind:
-                                description: Kind is the Kubernetes kind of the resource.
-                                type: string
-                              name:
-                                description: Name is the Kubernetes name of the resource.
-                                type: string
+                              reference:
+                                description: 'Reference: Resource ID.'
+                                properties:
+                                  armId:
+                                    description: |-
+                                      ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+                                      The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+                                      ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+                                    pattern: (?i)(^(/subscriptions/([^/]+)(/resourcegroups/([^/]+))?)?/providers/([^/]+)/([^/]+/[^/]+)(/([^/]+/[^/]+))*$|^/subscriptions/([^/]+)(/resourcegroups/([^/]+))?$)
+                                    type: string
+                                  group:
+                                    description: Group is the Kubernetes group of the resource.
+                                    type: string
+                                  kind:
+                                    description: Kind is the Kubernetes kind of the resource.
+                                    type: string
+                                  name:
+                                    description: Name is the Kubernetes name of the resource.
+                                    type: string
+                                type: object
                             type: object
                         type: object
                       type: array
@@ -2680,8 +2699,58 @@ spec:
                 items:
                   description: Private Link Configuration on an application gateway.
                   properties:
+                    etag:
+                      description: 'Etag: A unique read-only string that changes whenever the resource is updated.'
+                      type: string
                     id:
                       description: 'Id: Resource ID.'
+                      type: string
+                    ipConfigurations:
+                      description: 'IpConfigurations: An array of application gateway private link ip configurations.'
+                      items:
+                        description: The application gateway private link ip configuration.
+                        properties:
+                          etag:
+                            description: 'Etag: A unique read-only string that changes whenever the resource is updated.'
+                            type: string
+                          id:
+                            description: 'Id: Resource ID.'
+                            type: string
+                          name:
+                            description: 'Name: The name of application gateway private link ip configuration.'
+                            type: string
+                          primary:
+                            description: 'Primary: Whether the ip configuration is primary or not.'
+                            type: boolean
+                          privateIPAddress:
+                            description: 'PrivateIPAddress: The private IP address of the IP configuration.'
+                            type: string
+                          privateIPAllocationMethod:
+                            description: 'PrivateIPAllocationMethod: The private IP address allocation method.'
+                            type: string
+                          provisioningState:
+                            description: 'ProvisioningState: The provisioning state of the application gateway private link IP configuration.'
+                            type: string
+                          subnet:
+                            description: 'Subnet: Reference to the subnet resource.'
+                            properties:
+                              id:
+                                description: 'Id: Resource ID.'
+                                type: string
+                            type: object
+                          type:
+                            description: 'Type: The resource type.'
+                            type: string
+                        type: object
+                      type: array
+                    name:
+                      description: 'Name: Name of the private link configuration that is unique within an Application Gateway.'
+                      type: string
+                    provisioningState:
+                      description: 'ProvisioningState: The provisioning state of the application gateway private link configuration.'
+                      type: string
+                    type:
+                      description: 'Type: Type of the resource.'
                       type: string
                   type: object
                 type: array
@@ -4182,25 +4251,46 @@ spec:
                               PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
                               resources, allowing for full fidelity round trip conversions
                             type: object
-                          reference:
-                            description: 'Reference: Resource ID.'
+                          name:
+                            type: string
+                          primary:
+                            type: boolean
+                          privateIPAddress:
+                            type: string
+                          privateIPAllocationMethod:
+                            type: string
+                          subnet:
+                            description: |-
+                              Storage version of v1api20220701.SubResource
+                              Reference to another ARM resource.
                             properties:
-                              armId:
+                              $propertyBag:
+                                additionalProperties:
+                                  type: string
                                 description: |-
-                                  ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
-                                  The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
-                                  ARMID is mutually exclusive with Group, Kind, Namespace and Name.
-                                pattern: (?i)(^(/subscriptions/([^/]+)(/resourcegroups/([^/]+))?)?/providers/([^/]+)/([^/]+/[^/]+)(/([^/]+/[^/]+))*$|^/subscriptions/([^/]+)(/resourcegroups/([^/]+))?$)
-                                type: string
-                              group:
-                                description: Group is the Kubernetes group of the resource.
-                                type: string
-                              kind:
-                                description: Kind is the Kubernetes kind of the resource.
-                                type: string
-                              name:
-                                description: Name is the Kubernetes name of the resource.
-                                type: string
+                                  PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+                                  resources, allowing for full fidelity round trip conversions
+                                type: object
+                              reference:
+                                description: 'Reference: Resource ID.'
+                                properties:
+                                  armId:
+                                    description: |-
+                                      ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
+                                      The /resourcegroups/{resourceGroupName} bit is optional as some resources are scoped at the subscription level
+                                      ARMID is mutually exclusive with Group, Kind, Namespace and Name.
+                                    pattern: (?i)(^(/subscriptions/([^/]+)(/resourcegroups/([^/]+))?)?/providers/([^/]+)/([^/]+/[^/]+)(/([^/]+/[^/]+))*$|^/subscriptions/([^/]+)(/resourcegroups/([^/]+))?$)
+                                    type: string
+                                  group:
+                                    description: Group is the Kubernetes group of the resource.
+                                    type: string
+                                  kind:
+                                    description: Kind is the Kubernetes kind of the resource.
+                                    type: string
+                                  name:
+                                    description: Name is the Kubernetes name of the resource.
+                                    type: string
+                                type: object
                             type: object
                         type: object
                       type: array
@@ -6051,7 +6141,61 @@ spec:
                         PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
                         resources, allowing for full fidelity round trip conversions
                       type: object
+                    etag:
+                      type: string
                     id:
+                      type: string
+                    ipConfigurations:
+                      items:
+                        description: |-
+                          Storage version of v1api20220701.ApplicationGatewayPrivateLinkIpConfiguration_STATUS
+                          The application gateway private link ip configuration.
+                        properties:
+                          $propertyBag:
+                            additionalProperties:
+                              type: string
+                            description: |-
+                              PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+                              resources, allowing for full fidelity round trip conversions
+                            type: object
+                          etag:
+                            type: string
+                          id:
+                            type: string
+                          name:
+                            type: string
+                          primary:
+                            type: boolean
+                          privateIPAddress:
+                            type: string
+                          privateIPAllocationMethod:
+                            type: string
+                          provisioningState:
+                            type: string
+                          subnet:
+                            description: |-
+                              Storage version of v1api20220701.SubResource_STATUS
+                              Reference to another ARM resource.
+                            properties:
+                              $propertyBag:
+                                additionalProperties:
+                                  type: string
+                                description: |-
+                                  PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+                                  resources, allowing for full fidelity round trip conversions
+                                type: object
+                              id:
+                                type: string
+                            type: object
+                          type:
+                            type: string
+                        type: object
+                      type: array
+                    name:
+                      type: string
+                    provisioningState:
+                      type: string
+                    type:
                       type: string
                   type: object
                 type: array

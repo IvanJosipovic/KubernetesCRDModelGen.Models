@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: workbooks.insights.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
         properties:
           apiVersion:
@@ -416,7 +416,7 @@ spec:
                 description: 'StorageUri: The resourceId to the storage account when bring your own storage is used'
                 type: string
               systemData:
-                description: 'SystemData: Metadata pertaining to creation and last modification of the resource.'
+                description: 'SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.'
                 properties:
                   createdAt:
                     description: 'CreatedAt: The timestamp of resource creation (UTC).'
@@ -479,7 +479,7 @@ spec:
         description: |-
           Storage version of v1api20230601.Workbook
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
         properties:
           apiVersion:

@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20220615.ScheduledQueryRule
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-06-15/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-06-15/scheduledQueryRule_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -114,7 +114,7 @@ public partial class V1api20220615storageScheduledQueryRuleSpecCriteriaAllOfDime
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.Condition_FailingPeriods</summary>
+/// <summary>Storage version of v1api20220615.ConditionFailingPeriods</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageScheduledQueryRuleSpecCriteriaAllOfFailingPeriods
@@ -180,7 +180,7 @@ public partial class V1api20220615storageScheduledQueryRuleSpecCriteriaAllOf
     [JsonPropertyName("dimensions")]
     public IList<V1api20220615storageScheduledQueryRuleSpecCriteriaAllOfDimensions>? Dimensions { get; set; }
 
-    /// <summary>Storage version of v1api20220615.Condition_FailingPeriods</summary>
+    /// <summary>Storage version of v1api20220615.ConditionFailingPeriods</summary>
     [JsonPropertyName("failingPeriods")]
     public V1api20220615storageScheduledQueryRuleSpecCriteriaAllOfFailingPeriods? FailingPeriods { get; set; }
 
@@ -569,7 +569,7 @@ public partial class V1api20220615storageScheduledQueryRuleStatusCriteriaAllOfDi
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.Condition_FailingPeriods_STATUS</summary>
+/// <summary>Storage version of v1api20220615.ConditionFailingPeriods_STATUS</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageScheduledQueryRuleStatusCriteriaAllOfFailingPeriods
@@ -606,7 +606,7 @@ public partial class V1api20220615storageScheduledQueryRuleStatusCriteriaAllOf
     [JsonPropertyName("dimensions")]
     public IList<V1api20220615storageScheduledQueryRuleStatusCriteriaAllOfDimensions>? Dimensions { get; set; }
 
-    /// <summary>Storage version of v1api20220615.Condition_FailingPeriods_STATUS</summary>
+    /// <summary>Storage version of v1api20220615.ConditionFailingPeriods_STATUS</summary>
     [JsonPropertyName("failingPeriods")]
     public V1api20220615storageScheduledQueryRuleStatusCriteriaAllOfFailingPeriods? FailingPeriods { get; set; }
 
@@ -794,7 +794,7 @@ public partial class V1api20220615storageScheduledQueryRuleStatus
 /// <summary>
 /// Storage version of v1api20220615.ScheduledQueryRule
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-06-15/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-06-15/scheduledQueryRule_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

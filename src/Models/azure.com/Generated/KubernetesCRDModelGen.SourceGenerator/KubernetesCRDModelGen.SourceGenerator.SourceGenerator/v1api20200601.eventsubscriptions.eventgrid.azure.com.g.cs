@@ -390,6 +390,26 @@ public enum V1api20200601EventSubscriptionSpecDestinationStorageQueueEndpointTyp
 }
 
 /// <summary>
+/// QueueNameFromConfig: The name of the Storage queue under a storage account that is the destination of an event
+/// subscription.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200601EventSubscriptionSpecDestinationStorageQueueQueueNameFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
 /// event subscription.
 /// </summary>
@@ -432,11 +452,38 @@ public partial class V1api20200601EventSubscriptionSpecDestinationStorageQueue
     public string? QueueName { get; set; }
 
     /// <summary>
+    /// QueueNameFromConfig: The name of the Storage queue under a storage account that is the destination of an event
+    /// subscription.
+    /// </summary>
+    [JsonPropertyName("queueNameFromConfig")]
+    public V1api20200601EventSubscriptionSpecDestinationStorageQueueQueueNameFromConfig? QueueNameFromConfig { get; set; }
+
+    /// <summary>
     /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
     /// event subscription.
     /// </summary>
     [JsonPropertyName("resourceReference")]
     public V1api20200601EventSubscriptionSpecDestinationStorageQueueResourceReference? ResourceReference { get; set; }
+}
+
+/// <summary>
+/// AzureActiveDirectoryApplicationIdOrUriFromConfig: The Azure Active Directory Application ID or URI to get the access
+/// token that will be included as the bearer token in delivery requests.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200601EventSubscriptionSpecDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>EndpointType: Type of the endpoint for the event subscription destination.</summary>
@@ -476,6 +523,13 @@ public partial class V1api20200601EventSubscriptionSpecDestinationWebHook
     /// </summary>
     [JsonPropertyName("azureActiveDirectoryApplicationIdOrUri")]
     public string? AzureActiveDirectoryApplicationIdOrUri { get; set; }
+
+    /// <summary>
+    /// AzureActiveDirectoryApplicationIdOrUriFromConfig: The Azure Active Directory Application ID or URI to get the access
+    /// token that will be included as the bearer token in delivery requests.
+    /// </summary>
+    [JsonPropertyName("azureActiveDirectoryApplicationIdOrUriFromConfig")]
+    public V1api20200601EventSubscriptionSpecDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig? AzureActiveDirectoryApplicationIdOrUriFromConfig { get; set; }
 
     /// <summary>
     /// AzureActiveDirectoryTenantId: The Azure Active Directory Tenant ID to get the access token that will be included as the

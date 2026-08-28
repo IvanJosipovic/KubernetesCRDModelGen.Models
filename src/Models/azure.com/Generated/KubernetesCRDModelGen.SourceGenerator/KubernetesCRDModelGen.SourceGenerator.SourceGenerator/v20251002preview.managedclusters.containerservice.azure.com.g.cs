@@ -40,6 +40,23 @@ public partial class V20251002previewManagedClusterList : IKubernetesObject<V1Li
     public required IList<V20251002previewManagedCluster> Items { get; set; }
 }
 
+/// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V20251002previewManagedClusterSpecAadProfileServerAppSecret
+{
+    /// <summary>Key is the key in the Kubernetes secret being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes secret being referenced.
+    /// The secret must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>AadProfile: The Azure Active Directory configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -67,7 +84,7 @@ public partial class V20251002previewManagedClusterSpecAadProfile
 
     /// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
     [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
+    public V20251002previewManagedClusterSpecAadProfileServerAppSecret? ServerAppSecret { get; set; }
 
     /// <summary>
     /// TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -1661,6 +1678,10 @@ public partial class V20251002previewManagedClusterSpecAgentPoolProfiles
     /// <summary>NodeCustomizationProfile: Settings to determine the node customization used to provision nodes in a pool.</summary>
     [JsonPropertyName("nodeCustomizationProfile")]
     public V20251002previewManagedClusterSpecAgentPoolProfilesNodeCustomizationProfile? NodeCustomizationProfile { get; set; }
+
+    /// <summary>NodeImageVersion: The version of node image</summary>
+    [JsonPropertyName("nodeImageVersion")]
+    public string? NodeImageVersion { get; set; }
 
     /// <summary>
     /// NodeInitializationTaints: Taints added on the nodes during creation that will not be reconciled by AKS. These taints
@@ -4230,7 +4251,7 @@ public partial class V20251002previewManagedClusterSpecPrivateLinkResources
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
 
-    /// <summary>Name: The name of the private link resource.</summary>
+    /// <summary>Name: The name of the private link resource. See [naming rules](https://aka.ms/search-naming-rules) for more details.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -4498,6 +4519,7 @@ public partial class V20251002previewManagedClusterSpecSecurityProfileDefenderSe
     public V20251002previewManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentityResourceReference? ResourceReference { get; set; }
 }
 
+/// <summary>Identity information used by Defender security gating to access container registries.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentities
@@ -5556,10 +5578,6 @@ public partial class V20251002previewManagedClusterStatusAadProfile
     /// <summary>ServerAppID: (DEPRECATED) The server AAD application ID. Learn more at https://aka.ms/aks/aad-legacy.</summary>
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
-
-    /// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
-    [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
 
     /// <summary>
     /// TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -7383,6 +7401,7 @@ public partial class V20251002previewManagedClusterStatusIdentityDelegatedResour
     public string? TenantId { get; set; }
 }
 
+/// <summary>User assigned identity properties.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewManagedClusterStatusIdentityUserAssignedIdentities
@@ -8243,6 +8262,7 @@ public partial class V20251002previewManagedClusterStatusPodIdentityProfileUserA
     public V20251002previewManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfoErrorError? Error { get; set; }
 }
 
+/// <summary>ProvisioningInfo: The provisioning information for the pod identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfo
@@ -8273,6 +8293,7 @@ public partial class V20251002previewManagedClusterStatusPodIdentityProfileUserA
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
+    /// <summary>ProvisioningInfo: The provisioning information for the pod identity.</summary>
     [JsonPropertyName("provisioningInfo")]
     public V20251002previewManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfo? ProvisioningInfo { get; set; }
 
@@ -8359,7 +8380,7 @@ public partial class V20251002previewManagedClusterStatusPrivateLinkResources
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Name: The name of the private link resource.</summary>
+    /// <summary>Name: The name of the private link resource. See [naming rules](https://aka.ms/search-naming-rules) for more details.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -8461,6 +8482,7 @@ public partial class V20251002previewManagedClusterStatusSecurityProfileDefender
     public string? ResourceId { get; set; }
 }
 
+/// <summary>Identity information used by Defender security gating to access container registries.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewManagedClusterStatusSecurityProfileDefenderSecurityGatingIdentities
