@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -872,16 +872,16 @@ public partial class V1api20250101previewScheduledQueryRuleStatusCriteria
     public IList<V1api20250101previewScheduledQueryRuleStatusCriteriaAllOf>? AllOf { get; set; }
 }
 
-/// <summary>User assigned identity properties.</summary>
+/// <summary>Properties of the user assigned identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusIdentityUserAssignedIdentities
 {
-    /// <summary>ClientId: The client id of user assigned identity.</summary>
+    /// <summary>ClientId: The client ID of resource identity.</summary>
     [JsonPropertyName("clientId")]
     public string? ClientId { get; set; }
 
-    /// <summary>PrincipalId: The principal id of user assigned identity.</summary>
+    /// <summary>PrincipalId: The principal ID of resource identity.</summary>
     [JsonPropertyName("principalId")]
     public string? PrincipalId { get; set; }
 }
@@ -932,7 +932,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatusResolveConfigur
     public string? TimeToResolve { get; set; }
 }
 
-/// <summary>SystemData: SystemData of ScheduledQueryRule.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewScheduledQueryRuleStatusSystemData
@@ -1009,10 +1009,10 @@ public partial class V1api20250101previewScheduledQueryRuleStatus
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Etag: The etag field is *not* required. If it is provided in the response body, it must also be provided as a header per
-    /// the normal etag convention.  Entity tags are used for comparing two or more entities from the same requested resource.
-    /// HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and
-    /// If-Range (section 14.27) header fields.
+    /// Etag: &quot;If etag is provided in the response body, it may also be provided as a header per the normal etag convention.
+    /// Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in
+    /// the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header
+    /// fields.&quot;)
     /// </summary>
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
@@ -1097,7 +1097,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatus
     [JsonPropertyName("skipQueryValidation")]
     public bool? SkipQueryValidation { get; set; }
 
-    /// <summary>SystemData: SystemData of ScheduledQueryRule.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20250101previewScheduledQueryRuleStatusSystemData? SystemData { get; set; }
 
@@ -1128,7 +1128,7 @@ public partial class V1api20250101previewScheduledQueryRuleStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: webtests.insights.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2018-05-01-preview/webTests_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/preview/2018-05-01-preview/webTests_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
         properties:
           apiVersion:
@@ -507,7 +507,7 @@ spec:
         description: |-
           Storage version of v1api20180501preview.Webtest
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2018-05-01-preview/webTests_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/preview/2018-05-01-preview/webTests_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
         properties:
           apiVersion:
@@ -992,7 +992,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2022-06-15/webTests_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2022-06-15/webTests_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
         properties:
           apiVersion:
@@ -1448,7 +1448,7 @@ spec:
         description: |-
           Storage version of v1api20220615.Webtest
           Generator information:
-          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2022-06-15/webTests_API.json
+          - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2022-06-15/webTests_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
         properties:
           apiVersion:
@@ -1479,7 +1479,9 @@ spec:
                   resources, allowing for full fidelity round trip conversions
                 type: object
               Configuration:
-                description: Storage version of v1api20220615.WebTestProperties_Configuration
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesConfiguration
+                  An XML configuration specification for a WebTest.
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1519,7 +1521,9 @@ spec:
               Name:
                 type: string
               Request:
-                description: Storage version of v1api20220615.WebTestProperties_Request
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesRequest
+                  The collection of request properties
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1565,7 +1569,9 @@ spec:
               Timeout:
                 type: integer
               ValidationRules:
-                description: Storage version of v1api20220615.WebTestProperties_ValidationRules
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesValidationRules
+                  The collection of validation rule properties
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1575,7 +1581,9 @@ spec:
                       resources, allowing for full fidelity round trip conversions
                     type: object
                   ContentValidation:
-                    description: Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation
+                    description: |-
+                      Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation
+                      The collection of content validation properties
                     properties:
                       $propertyBag:
                         additionalProperties:
@@ -1731,7 +1739,9 @@ spec:
                   resources, allowing for full fidelity round trip conversions
                 type: object
               Configuration:
-                description: Storage version of v1api20220615.WebTestProperties_Configuration_STATUS
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesConfiguration_STATUS
+                  An XML configuration specification for a WebTest.
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1769,7 +1779,9 @@ spec:
                   type: object
                 type: array
               Request:
-                description: Storage version of v1api20220615.WebTestProperties_Request_STATUS
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesRequest_STATUS
+                  The collection of request properties
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1815,7 +1827,9 @@ spec:
               Timeout:
                 type: integer
               ValidationRules:
-                description: Storage version of v1api20220615.WebTestProperties_ValidationRules_STATUS
+                description: |-
+                  Storage version of v1api20220615.WebTestPropertiesValidationRules_STATUS
+                  The collection of validation rule properties
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -1825,7 +1839,9 @@ spec:
                       resources, allowing for full fidelity round trip conversions
                     type: object
                   ContentValidation:
-                    description: Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation_STATUS
+                    description: |-
+                      Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation_STATUS
+                      The collection of content validation properties
                     properties:
                       $propertyBag:
                         additionalProperties:

@@ -11,8 +11,8 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.operationalinsights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -101,6 +101,9 @@ public partial class V20250701WorkspaceSpecFeaturesClusterResourceReference
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250701WorkspaceSpecFeatures
 {
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     /// <summary>ClusterResourceReference: Dedicated LA cluster resourceId that is linked to the workspaces.</summary>
     [JsonPropertyName("clusterResourceReference")]
     public V20250701WorkspaceSpecFeaturesClusterResourceReference? ClusterResourceReference { get; set; }
@@ -629,6 +632,9 @@ public partial class V20250701WorkspaceStatusFailover
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250701WorkspaceStatusFeatures
 {
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     /// <summary>
     /// Associations: List of associations for the workspace. Indicates if the workspace is associated with any of the following
     /// experiences: MDC, Sentinel, SentinelGraph, etc.
@@ -765,7 +771,7 @@ public partial class V20250701WorkspaceStatusSku
     public string? Name { get; set; }
 }
 
-/// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250701WorkspaceStatusSystemData
@@ -855,8 +861,8 @@ public partial class V20250701WorkspaceStatus
     public bool? ForceCmkForQuery { get; set; }
 
     /// <summary>
-    /// Id: Fully qualified resource ID for the resource. Ex -
-    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
     /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -908,7 +914,7 @@ public partial class V20250701WorkspaceStatus
     [JsonPropertyName("sku")]
     public V20250701WorkspaceStatusSku? Sku { get; set; }
 
-    /// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V20250701WorkspaceStatusSystemData? SystemData { get; set; }
 
@@ -927,8 +933,8 @@ public partial class V20250701WorkspaceStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-/// - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+/// - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+/// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]

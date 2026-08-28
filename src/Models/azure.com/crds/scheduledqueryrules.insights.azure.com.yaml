@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: scheduledqueryrules.insights.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-06-15/scheduledQueryRule_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-06-15/scheduledQueryRule_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
         properties:
           apiVersion:
@@ -700,7 +700,7 @@ spec:
         description: |-
           Storage version of v1api20220615.ScheduledQueryRule
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2022-06-15/scheduledQueryRule_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2022-06-15/scheduledQueryRule_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
         properties:
           apiVersion:
@@ -827,7 +827,7 @@ spec:
                             type: object
                           type: array
                         failingPeriods:
-                          description: Storage version of v1api20220615.Condition_FailingPeriods
+                          description: Storage version of v1api20220615.ConditionFailingPeriods
                           properties:
                             $propertyBag:
                               additionalProperties:
@@ -1168,7 +1168,7 @@ spec:
                             type: object
                           type: array
                         failingPeriods:
-                          description: Storage version of v1api20220615.Condition_FailingPeriods_STATUS
+                          description: Storage version of v1api20220615.ConditionFailingPeriods_STATUS
                           properties:
                             $propertyBag:
                               additionalProperties:
@@ -1294,7 +1294,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
         properties:
           apiVersion:
@@ -1928,10 +1928,10 @@ spec:
                 type: boolean
               etag:
                 description: |-
-                  Etag: The etag field is *not* required. If it is provided in the response body, it must also be provided as a header per
-                  the normal etag convention.  Entity tags are used for comparing two or more entities from the same requested resource.
-                  HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and
-                  If-Range (section 14.27) header fields.
+                  Etag: "If etag is provided in the response body, it may also be provided as a header per the normal etag convention.
+                  Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in
+                  the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header
+                  fields.")
                 type: string
               evaluationFrequency:
                 description: |-
@@ -1957,13 +1957,13 @@ spec:
                     type: string
                   userAssignedIdentities:
                     additionalProperties:
-                      description: User assigned identity properties.
+                      description: Properties of the user assigned identity.
                       properties:
                         clientId:
-                          description: 'ClientId: The client id of user assigned identity.'
+                          description: 'ClientId: The client ID of resource identity.'
                           type: string
                         principalId:
-                          description: 'PrincipalId: The principal id of user assigned identity.'
+                          description: 'PrincipalId: The principal ID of resource identity.'
                           type: string
                       type: object
                     description: |-
@@ -2029,7 +2029,7 @@ spec:
                   false. Relevant only for rules of the kind LogAlert.
                 type: boolean
               systemData:
-                description: 'SystemData: SystemData of ScheduledQueryRule.'
+                description: 'SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.'
                 properties:
                   createdAt:
                     description: 'CreatedAt: The timestamp of resource creation (UTC).'
@@ -2097,7 +2097,7 @@ spec:
         description: |-
           Storage version of v1api20250101preview.ScheduledQueryRule
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
         properties:
           apiVersion:
@@ -2232,7 +2232,10 @@ spec:
                             type: object
                           type: array
                         failingPeriods:
-                          description: Storage version of v1api20250101preview.Condition_FailingPeriods
+                          description: |-
+                            Storage version of v1api20250101preview.ConditionFailingPeriods
+                            The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+                            only for rules of the kind LogAlert.
                           properties:
                             $propertyBag:
                               additionalProperties:
@@ -2297,7 +2300,7 @@ spec:
                 type: string
               identity:
                 description: |-
-                  Storage version of v1api20250101preview.Identity
+                  Storage version of v1api20250101preview.MicrosoftCommonIdentity
                   Identity for the resource.
                 properties:
                   $propertyBag:
@@ -2652,7 +2655,10 @@ spec:
                             type: object
                           type: array
                         failingPeriods:
-                          description: Storage version of v1api20250101preview.Condition_FailingPeriods_STATUS
+                          description: |-
+                            Storage version of v1api20250101preview.ConditionFailingPeriods_STATUS
+                            The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+                            only for rules of the kind LogAlert.
                           properties:
                             $propertyBag:
                               additionalProperties:
@@ -2701,7 +2707,7 @@ spec:
                 type: string
               identity:
                 description: |-
-                  Storage version of v1api20250101preview.Identity_STATUS
+                  Storage version of v1api20250101preview.MicrosoftCommonIdentity_STATUS
                   Identity for the resource.
                 properties:
                   $propertyBag:
@@ -2720,8 +2726,8 @@ spec:
                   userAssignedIdentities:
                     additionalProperties:
                       description: |-
-                        Storage version of v1api20250101preview.UserIdentityProperties_STATUS
-                        User assigned identity properties.
+                        Storage version of v1api20250101preview.MicrosoftCommonUserIdentityProperties_STATUS
+                        Properties of the user assigned identity.
                       properties:
                         $propertyBag:
                           additionalProperties:

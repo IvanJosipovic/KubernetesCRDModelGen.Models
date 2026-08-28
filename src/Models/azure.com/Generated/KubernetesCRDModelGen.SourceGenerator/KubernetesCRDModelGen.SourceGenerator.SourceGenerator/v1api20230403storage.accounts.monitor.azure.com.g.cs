@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.monitor.azure.com;
 /// <summary>
 /// Storage version of v1api20230403.Account
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Monitor/stable/2023-04-03/monitoringAccounts_API.json
+/// - Generated from: /monitoringservice/resource-manager/Microsoft.Monitor/Accounts/stable/2023-04-03/monitoringAccounts_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/accounts/{azureMonitorWorkspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -422,7 +422,7 @@ public partial class V1api20230403storageAccountStatus
 /// <summary>
 /// Storage version of v1api20230403.Account
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Monitor/stable/2023-04-03/monitoringAccounts_API.json
+/// - Generated from: /monitoringservice/resource-manager/Microsoft.Monitor/Accounts/stable/2023-04-03/monitoringAccounts_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/accounts/{azureMonitorWorkspaceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

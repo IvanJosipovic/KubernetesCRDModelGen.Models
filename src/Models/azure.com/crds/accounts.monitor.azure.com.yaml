@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: accounts.monitor.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Monitor/stable/2023-04-03/monitoringAccounts_API.json
+          - Generated from: /monitoringservice/resource-manager/Microsoft.Monitor/Accounts/stable/2023-04-03/monitoringAccounts_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/accounts/{azureMonitorWorkspaceName}
         properties:
           apiVersion:
@@ -352,7 +352,7 @@ spec:
         description: |-
           Storage version of v1api20230403.Account
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Monitor/stable/2023-04-03/monitoringAccounts_API.json
+          - Generated from: /monitoringservice/resource-manager/Microsoft.Monitor/Accounts/stable/2023-04-03/monitoringAccounts_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Monitor/accounts/{azureMonitorWorkspaceName}
         properties:
           apiVersion:

@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20180501preview.Webtest
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2018-05-01-preview/webTests_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/preview/2018-05-01-preview/webTests_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -645,7 +645,7 @@ public partial class V1api20180501previewstorageWebtestStatus
 /// <summary>
 /// Storage version of v1api20180501preview.Webtest
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/preview/2018-05-01-preview/webTests_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/preview/2018-05-01-preview/webTests_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

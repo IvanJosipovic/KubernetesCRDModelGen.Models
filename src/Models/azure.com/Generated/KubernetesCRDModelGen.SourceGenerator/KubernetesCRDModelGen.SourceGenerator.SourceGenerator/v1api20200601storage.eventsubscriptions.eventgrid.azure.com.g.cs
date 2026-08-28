@@ -368,6 +368,26 @@ public partial class V1api20200601storageEventSubscriptionSpecDestinationService
 }
 
 /// <summary>
+/// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200601storageEventSubscriptionSpecDestinationStorageQueueQueueNameFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
 /// event subscription.
 /// </summary>
@@ -415,11 +435,38 @@ public partial class V1api20200601storageEventSubscriptionSpecDestinationStorage
     public string? QueueName { get; set; }
 
     /// <summary>
+    /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
+    [JsonPropertyName("queueNameFromConfig")]
+    public V1api20200601storageEventSubscriptionSpecDestinationStorageQueueQueueNameFromConfig? QueueNameFromConfig { get; set; }
+
+    /// <summary>
     /// ResourceReference: The Azure Resource ID of the storage account that contains the queue that is the destination of an
     /// event subscription.
     /// </summary>
     [JsonPropertyName("resourceReference")]
     public V1api20200601storageEventSubscriptionSpecDestinationStorageQueueResourceReference? ResourceReference { get; set; }
+}
+
+/// <summary>
+/// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20200601storageEventSubscriptionSpecDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>
@@ -456,6 +503,13 @@ public partial class V1api20200601storageEventSubscriptionSpecDestinationWebHook
 
     [JsonPropertyName("azureActiveDirectoryApplicationIdOrUri")]
     public string? AzureActiveDirectoryApplicationIdOrUri { get; set; }
+
+    /// <summary>
+    /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
+    [JsonPropertyName("azureActiveDirectoryApplicationIdOrUriFromConfig")]
+    public V1api20200601storageEventSubscriptionSpecDestinationWebHookAzureActiveDirectoryApplicationIdOrUriFromConfig? AzureActiveDirectoryApplicationIdOrUriFromConfig { get; set; }
 
     [JsonPropertyName("azureActiveDirectoryTenantId")]
     public string? AzureActiveDirectoryTenantId { get; set; }

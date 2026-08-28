@@ -40,6 +40,23 @@ public partial class V1api20250801ManagedClusterList : IKubernetesObject<V1ListM
     public required IList<V1api20250801ManagedCluster> Items { get; set; }
 }
 
+/// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20250801ManagedClusterSpecAadProfileServerAppSecret
+{
+    /// <summary>Key is the key in the Kubernetes secret being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes secret being referenced.
+    /// The secret must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 /// <summary>AadProfile: The Azure Active Directory configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -67,7 +84,7 @@ public partial class V1api20250801ManagedClusterSpecAadProfile
 
     /// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
     [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
+    public V1api20250801ManagedClusterSpecAadProfileServerAppSecret? ServerAppSecret { get; set; }
 
     /// <summary>
     /// TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -4225,10 +4242,6 @@ public partial class V1api20250801ManagedClusterStatusAadProfile
     /// <summary>ServerAppID: (DEPRECATED) The server AAD application ID. Learn more at https://aka.ms/aks/aad-legacy.</summary>
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
-
-    /// <summary>ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.</summary>
-    [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
 
     /// <summary>
     /// TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment

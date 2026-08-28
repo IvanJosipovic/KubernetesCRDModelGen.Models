@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: datacollectionendpoints.insights.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2023-03-11/dataCollectionEndpoints_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-03-11/dataCollectionEndpoints_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
         properties:
           apiVersion:
@@ -479,7 +479,7 @@ spec:
         description: |-
           Storage version of v1api20230311.DataCollectionEndpoint
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2023-03-11/dataCollectionEndpoints_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2023-03-11/dataCollectionEndpoints_API.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
         properties:
           apiVersion:
@@ -988,7 +988,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionEndpoints_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
         properties:
           apiVersion:
@@ -1065,7 +1065,7 @@ spec:
                 - Windows
                 type: string
               location:
-                description: 'Location: The geo-location where the resource lives.'
+                description: 'Location: The geo-location where the resource lives'
                 type: string
               networkAcls:
                 description: 'NetworkAcls: Network access control rules for the endpoints.'
@@ -1189,7 +1189,7 @@ spec:
                     description: 'Family: If the service has different generations of hardware, for the same SKU, then that can be captured here.'
                     type: string
                   name:
-                    description: 'Name: The name of the SKU. E.g. P3. It is typically a letter+number code'
+                    description: 'Name: The name of the SKU. Ex - P3. It is typically a letter+number code'
                     type: string
                   size:
                     description: |-
@@ -1300,7 +1300,9 @@ spec:
                     type: array
                 type: object
               id:
-                description: 'Id: Fully qualified ID of the resource.'
+                description: |-
+                  Id: Fully qualified resource ID for the resource. Ex -
+                  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
                 type: string
               identity:
                 description: 'Identity: Managed service identity of the resource.'
@@ -1338,7 +1340,7 @@ spec:
                 description: 'Kind: The kind of the resource.'
                 type: string
               location:
-                description: 'Location: The geo-location where the resource lives.'
+                description: 'Location: The geo-location where the resource lives'
                 type: string
               logsIngestion:
                 description: 'LogsIngestion: The endpoint used by clients to ingest logs.'
@@ -1370,7 +1372,7 @@ spec:
                     type: string
                 type: object
               name:
-                description: 'Name: The name of the resource.'
+                description: 'Name: The name of the resource'
                 type: string
               networkAcls:
                 description: 'NetworkAcls: Network access control rules for the endpoints.'
@@ -1410,7 +1412,7 @@ spec:
                     description: 'Family: If the service has different generations of hardware, for the same SKU, then that can be captured here.'
                     type: string
                   name:
-                    description: 'Name: The name of the SKU. E.g. P3. It is typically a letter+number code'
+                    description: 'Name: The name of the SKU. Ex - P3. It is typically a letter+number code'
                     type: string
                   size:
                     description: |-
@@ -1424,7 +1426,7 @@ spec:
                     type: string
                 type: object
               systemData:
-                description: 'SystemData: Metadata pertaining to creation and last modification of the resource.'
+                description: 'SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.'
                 properties:
                   createdAt:
                     description: 'CreatedAt: The timestamp of resource creation (UTC).'
@@ -1451,7 +1453,7 @@ spec:
                 description: 'Tags: Resource tags.'
                 type: object
               type:
-                description: 'Type: The type of the resource.'
+                description: 'Type: The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"'
                 type: string
             type: object
         type: object
@@ -1478,7 +1480,7 @@ spec:
         description: |-
           Storage version of v1api20240311.DataCollectionEndpoint
           Generator information:
-          - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionEndpoints_API.json
+          - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
         properties:
           apiVersion:

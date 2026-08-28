@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: workspaces.operationalinsights.azure.com
 spec:
   conversion:
@@ -1029,8 +1029,8 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-          - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+          - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+          - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
         properties:
           apiVersion:
             description: |-
@@ -1088,6 +1088,10 @@ spec:
               features:
                 description: 'Features: Workspace features.'
                 properties:
+                  additionalProperties:
+                    additionalProperties:
+                      x-kubernetes-preserve-unknown-fields: true
+                    type: object
                   clusterResourceReference:
                     description: 'ClusterResourceReference: Dedicated LA cluster resourceId that is linked to the workspaces.'
                     properties:
@@ -1472,6 +1476,10 @@ spec:
               features:
                 description: 'Features: Workspace features.'
                 properties:
+                  additionalProperties:
+                    additionalProperties:
+                      x-kubernetes-preserve-unknown-fields: true
+                    type: object
                   associations:
                     description: |-
                       Associations: List of associations for the workspace. Indicates if the workspace is associated with any of the following
@@ -1503,8 +1511,8 @@ spec:
                 type: boolean
               id:
                 description: |-
-                  Id: Fully qualified resource ID for the resource. Ex -
-                  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+                  Id: Fully qualified resource ID for the resource. E.g.
+                  "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
                 type: string
               identity:
                 description: 'Identity: The identity of the resource.'
@@ -1608,7 +1616,7 @@ spec:
                     type: string
                 type: object
               systemData:
-                description: 'SystemData: Metadata pertaining to creation and last modification of the resource.'
+                description: 'SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.'
                 properties:
                   createdAt:
                     description: 'CreatedAt: The timestamp of resource creation (UTC).'
@@ -1675,8 +1683,8 @@ spec:
         description: |-
           Storage version of v20250701.Workspace
           Generator information:
-          - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/Workspaces.json
-          - ARM URI: /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
+          - Generated from: /operationalinsights/resource-manager/Microsoft.OperationalInsights/OperationalInsights/stable/2025-07-01/openapi.json
+          - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}
         properties:
           apiVersion:
             description: |-
@@ -1746,6 +1754,10 @@ spec:
                     description: |-
                       PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
                       resources, allowing for full fidelity round trip conversions
+                    type: object
+                  additionalProperties:
+                    additionalProperties:
+                      x-kubernetes-preserve-unknown-fields: true
                     type: object
                   clusterResourceReference:
                     description: 'ClusterResourceReference: Dedicated LA cluster resourceId that is linked to the workspaces.'
@@ -2156,6 +2168,10 @@ spec:
                     description: |-
                       PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
                       resources, allowing for full fidelity round trip conversions
+                    type: object
+                  additionalProperties:
+                    additionalProperties:
+                      x-kubernetes-preserve-unknown-fields: true
                     type: object
                   associations:
                     items:

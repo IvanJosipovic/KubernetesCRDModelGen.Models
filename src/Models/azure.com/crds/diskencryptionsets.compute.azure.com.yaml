@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: diskencryptionsets.compute.azure.com
 spec:
   conversion:
@@ -50,7 +50,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2022-07-02/diskEncryptionSet.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -548,7 +548,7 @@ spec:
         description: |-
           Storage version of v1api20220702.DiskEncryptionSet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2022-07-02/diskEncryptionSet.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -1097,7 +1097,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-03-02/DiskRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -1619,7 +1619,7 @@ spec:
         description: |-
           Storage version of v1api20240302.DiskEncryptionSet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-03-02/DiskRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -2193,7 +2193,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2022-07-02/diskEncryptionSet.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -2691,7 +2691,7 @@ spec:
         description: |-
           Storage version of v20220702.DiskEncryptionSet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2022-07-02/diskEncryptionSet.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-07-02/diskEncryptionSet.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -3240,7 +3240,7 @@ spec:
       openAPIV3Schema:
         description: |-
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-03-02/DiskRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:
@@ -3762,7 +3762,7 @@ spec:
         description: |-
           Storage version of v20240302.DiskEncryptionSet
           Generator information:
-          - Generated from: /compute/resource-manager/Microsoft.Compute/DiskRP/stable/2024-03-02/DiskRP.json
+          - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-03-02/DiskRP.json
           - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/diskEncryptionSets/{diskEncryptionSetName}
         properties:
           apiVersion:

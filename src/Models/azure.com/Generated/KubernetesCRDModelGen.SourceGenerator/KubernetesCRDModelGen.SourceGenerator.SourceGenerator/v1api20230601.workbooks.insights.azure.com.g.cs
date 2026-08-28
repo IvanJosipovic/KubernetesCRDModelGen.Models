@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -443,7 +443,7 @@ public partial class V1api20230601WorkbookStatusIdentity
     public IDictionary<string, V1api20230601WorkbookStatusIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }
 
-/// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20230601WorkbookStatusSystemData
@@ -541,7 +541,7 @@ public partial class V1api20230601WorkbookStatus
     [JsonPropertyName("storageUri")]
     public string? StorageUri { get; set; }
 
-    /// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20230601WorkbookStatusSystemData? SystemData { get; set; }
 
@@ -568,7 +568,7 @@ public partial class V1api20230601WorkbookStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2023-06-01/workbooks_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2023-06-01/workbooks_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/workbooks/{resourceName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

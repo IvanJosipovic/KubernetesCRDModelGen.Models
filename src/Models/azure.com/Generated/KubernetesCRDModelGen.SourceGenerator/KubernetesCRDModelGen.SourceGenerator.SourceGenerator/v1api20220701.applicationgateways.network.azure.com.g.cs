@@ -1473,10 +1473,21 @@ public partial class V1api20220701ApplicationGatewaySpecOwner
     public string? Name { get; set; }
 }
 
+/// <summary>PrivateIPAllocationMethod: The private IP address allocation method.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsPrivateIPAllocationMethodEnum>))]
+public enum V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsPrivateIPAllocationMethodEnum
+{
+    [EnumMember(Value = "Dynamic"), JsonStringEnumMemberName("Dynamic")]
+    Dynamic,
+    [EnumMember(Value = "Static"), JsonStringEnumMemberName("Static")]
+    Static
+}
+
 /// <summary>Reference: Resource ID.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsReference
+public partial class V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnetReference
 {
     /// <summary>
     /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
@@ -1499,14 +1510,40 @@ public partial class V1api20220701ApplicationGatewaySpecPrivateLinkConfiguration
     public string? Name { get; set; }
 }
 
+/// <summary>Subnet: Reference to the subnet resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnet
+{
+    /// <summary>Reference: Resource ID.</summary>
+    [JsonPropertyName("reference")]
+    public V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnetReference? Reference { get; set; }
+}
+
 /// <summary>The application gateway private link ip configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurations
 {
-    /// <summary>Reference: Resource ID.</summary>
-    [JsonPropertyName("reference")]
-    public V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsReference? Reference { get; set; }
+    /// <summary>Name: The name of application gateway private link ip configuration.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Primary: Whether the ip configuration is primary or not.</summary>
+    [JsonPropertyName("primary")]
+    public bool? Primary { get; set; }
+
+    /// <summary>PrivateIPAddress: The private IP address of the IP configuration.</summary>
+    [JsonPropertyName("privateIPAddress")]
+    public string? PrivateIPAddress { get; set; }
+
+    /// <summary>PrivateIPAllocationMethod: The private IP address allocation method.</summary>
+    [JsonPropertyName("privateIPAllocationMethod")]
+    public V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsPrivateIPAllocationMethodEnum? PrivateIPAllocationMethod { get; set; }
+
+    /// <summary>Subnet: Reference to the subnet resource.</summary>
+    [JsonPropertyName("subnet")]
+    public V1api20220701ApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnet? Subnet { get; set; }
 }
 
 /// <summary>Private Link Configuration on an application gateway.</summary>
@@ -4015,14 +4052,86 @@ public partial class V1api20220701ApplicationGatewayStatusPrivateEndpointConnect
     public string? Id { get; set; }
 }
 
+/// <summary>Subnet: Reference to the subnet resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701ApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurationsSubnet
+{
+    /// <summary>Id: Resource ID.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+/// <summary>The application gateway private link ip configuration.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701ApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurations
+{
+    /// <summary>Etag: A unique read-only string that changes whenever the resource is updated.</summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    /// <summary>Id: Resource ID.</summary>
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    /// <summary>Name: The name of application gateway private link ip configuration.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Primary: Whether the ip configuration is primary or not.</summary>
+    [JsonPropertyName("primary")]
+    public bool? Primary { get; set; }
+
+    /// <summary>PrivateIPAddress: The private IP address of the IP configuration.</summary>
+    [JsonPropertyName("privateIPAddress")]
+    public string? PrivateIPAddress { get; set; }
+
+    /// <summary>PrivateIPAllocationMethod: The private IP address allocation method.</summary>
+    [JsonPropertyName("privateIPAllocationMethod")]
+    public string? PrivateIPAllocationMethod { get; set; }
+
+    /// <summary>ProvisioningState: The provisioning state of the application gateway private link IP configuration.</summary>
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    /// <summary>Subnet: Reference to the subnet resource.</summary>
+    [JsonPropertyName("subnet")]
+    public V1api20220701ApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurationsSubnet? Subnet { get; set; }
+
+    /// <summary>Type: The resource type.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
 /// <summary>Private Link Configuration on an application gateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220701ApplicationGatewayStatusPrivateLinkConfigurations
 {
+    /// <summary>Etag: A unique read-only string that changes whenever the resource is updated.</summary>
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
     /// <summary>Id: Resource ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>IpConfigurations: An array of application gateway private link ip configurations.</summary>
+    [JsonPropertyName("ipConfigurations")]
+    public IList<V1api20220701ApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurations>? IpConfigurations { get; set; }
+
+    /// <summary>Name: Name of the private link configuration that is unique within an Application Gateway.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>ProvisioningState: The provisioning state of the application gateway private link configuration.</summary>
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    /// <summary>Type: Type of the resource.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>Probe of the application gateway.</summary>

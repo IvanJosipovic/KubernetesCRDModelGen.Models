@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.datafactory.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/datafactory.json
+/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -805,6 +805,36 @@ public partial class V20180601FactoryStatusRepoConfiguration
     public V20180601FactoryStatusRepoConfigurationFactoryVSTSConfiguration? FactoryVSTSConfiguration { get; set; }
 }
 
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V20180601FactoryStatusSystemData
+{
+    /// <summary>CreatedAt: The timestamp of resource creation (UTC).</summary>
+    [JsonPropertyName("createdAt")]
+    public string? CreatedAt { get; set; }
+
+    /// <summary>CreatedBy: The identity that created the resource.</summary>
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    /// <summary>CreatedByType: The type of identity that created the resource.</summary>
+    [JsonPropertyName("createdByType")]
+    public string? CreatedByType { get; set; }
+
+    /// <summary>LastModifiedAt: The timestamp of resource last modification (UTC)</summary>
+    [JsonPropertyName("lastModifiedAt")]
+    public string? LastModifiedAt { get; set; }
+
+    /// <summary>LastModifiedBy: The identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedBy")]
+    public string? LastModifiedBy { get; set; }
+
+    /// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedByType")]
+    public string? LastModifiedByType { get; set; }
+}
+
 /// <summary>Factory resource type.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -821,7 +851,12 @@ public partial class V20180601FactoryStatus
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
-    /// <summary>ETag: Etag identifies change in the resource.</summary>
+    /// <summary>
+    /// ETag: If eTag is provided in the response body, it may also be provided as a header per the normal etag convention.
+    /// Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in
+    /// the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header
+    /// fields.
+    /// </summary>
     [JsonPropertyName("eTag")]
     public string? ETag { get; set; }
 
@@ -833,7 +868,10 @@ public partial class V20180601FactoryStatus
     [JsonPropertyName("globalParameters")]
     public IDictionary<string, V20180601FactoryStatusGlobalParameters>? GlobalParameters { get; set; }
 
-    /// <summary>Id: The resource identifier.</summary>
+    /// <summary>
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
+    /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -845,7 +883,7 @@ public partial class V20180601FactoryStatus
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
-    /// <summary>Name: The resource name.</summary>
+    /// <summary>Name: The name of the resource</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -865,11 +903,15 @@ public partial class V20180601FactoryStatus
     [JsonPropertyName("repoConfiguration")]
     public V20180601FactoryStatusRepoConfiguration? RepoConfiguration { get; set; }
 
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
+    [JsonPropertyName("systemData")]
+    public V20180601FactoryStatusSystemData? SystemData { get; set; }
+
     /// <summary>Tags: The resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Type: The resource type.</summary>
+    /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -880,7 +922,7 @@ public partial class V20180601FactoryStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/datafactory.json
+/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

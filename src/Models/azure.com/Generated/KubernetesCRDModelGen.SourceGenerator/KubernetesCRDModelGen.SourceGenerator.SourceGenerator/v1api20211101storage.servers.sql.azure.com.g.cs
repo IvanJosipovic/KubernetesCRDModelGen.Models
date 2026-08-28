@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.sql.azure.com;
 /// <summary>
 /// Storage version of v1api20211101.Server
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -62,6 +62,66 @@ public partial class V1api20211101storageServerSpecAdministratorLoginPassword
 }
 
 /// <summary>
+/// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101storageServerSpecAdministratorsLoginFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101storageServerSpecAdministratorsSidFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20211101storageServerSpecAdministratorsTenantIdFromConfig
+{
+    /// <summary>Key is the key in the Kubernetes configmap being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes configmap being referenced.
+    /// The configmap must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20211101.ServerExternalAdministrator
 /// Properties of a active directory administrator.
 /// </summary>
@@ -85,14 +145,35 @@ public partial class V1api20211101storageServerSpecAdministrators
     [JsonPropertyName("login")]
     public string? Login { get; set; }
 
+    /// <summary>
+    /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
+    [JsonPropertyName("loginFromConfig")]
+    public V1api20211101storageServerSpecAdministratorsLoginFromConfig? LoginFromConfig { get; set; }
+
     [JsonPropertyName("principalType")]
     public string? PrincipalType { get; set; }
 
     [JsonPropertyName("sid")]
     public string? Sid { get; set; }
 
+    /// <summary>
+    /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
+    [JsonPropertyName("sidFromConfig")]
+    public V1api20211101storageServerSpecAdministratorsSidFromConfig? SidFromConfig { get; set; }
+
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
+
+    /// <summary>
+    /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
+    [JsonPropertyName("tenantIdFromConfig")]
+    public V1api20211101storageServerSpecAdministratorsTenantIdFromConfig? TenantIdFromConfig { get; set; }
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
@@ -768,7 +849,7 @@ public partial class V1api20211101storageServerStatus
 /// <summary>
 /// Storage version of v1api20211101.Server
 /// Generator information:
-/// - Generated from: /sql/resource-manager/Microsoft.Sql/stable/2021-11-01/Servers.json
+/// - Generated from: /sql/resource-manager/Microsoft.Sql/SQL/stable/2021-11-01/Servers.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

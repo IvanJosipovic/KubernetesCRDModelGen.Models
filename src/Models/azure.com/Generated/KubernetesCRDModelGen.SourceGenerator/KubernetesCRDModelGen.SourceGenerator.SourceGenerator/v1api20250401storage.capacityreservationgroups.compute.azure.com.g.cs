@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// <summary>
 /// Storage version of v1api20250401.CapacityReservationGroup
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2025-04-01/ComputeRP.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2025-04-01/ComputeRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/capacityReservationGroups/{capacityReservationGroupName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -619,7 +619,7 @@ public partial class V1api20250401storageCapacityReservationGroupStatus
 /// <summary>
 /// Storage version of v1api20250401.CapacityReservationGroup
 /// Generator information:
-/// - Generated from: /compute/resource-manager/Microsoft.Compute/ComputeRP/stable/2025-04-01/ComputeRP.json
+/// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2025-04-01/ComputeRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/capacityReservationGroups/{capacityReservationGroupName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

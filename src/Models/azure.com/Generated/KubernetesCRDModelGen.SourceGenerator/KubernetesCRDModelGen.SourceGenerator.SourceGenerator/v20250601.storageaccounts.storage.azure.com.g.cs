@@ -859,7 +859,7 @@ public enum V20250601StorageAccountSpecLargeFileSharesStateEnum
 
 /// <summary>
 /// MinimumTlsVersion: Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS
-/// 1.0 for this property.
+/// 1.0 for this property. Minimum TLS version 1.3 version is not supported.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250601StorageAccountSpecMinimumTlsVersionEnum>))]
@@ -1996,7 +1996,7 @@ public partial class V20250601StorageAccountSpec
 
     /// <summary>
     /// MinimumTlsVersion: Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS
-    /// 1.0 for this property.
+    /// 1.0 for this property. Minimum TLS version 1.3 version is not supported.
     /// </summary>
     [JsonPropertyName("minimumTlsVersion")]
     public V20250601StorageAccountSpecMinimumTlsVersionEnum? MinimumTlsVersion { get; set; }
@@ -3484,7 +3484,7 @@ public partial class V20250601StorageAccountStatus
 
     /// <summary>
     /// MinimumTlsVersion: Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS
-    /// 1.0 for this property.
+    /// 1.0 for this property. Minimum TLS version 1.3 version is not supported.
     /// </summary>
     [JsonPropertyName("minimumTlsVersion")]
     public string? MinimumTlsVersion { get; set; }

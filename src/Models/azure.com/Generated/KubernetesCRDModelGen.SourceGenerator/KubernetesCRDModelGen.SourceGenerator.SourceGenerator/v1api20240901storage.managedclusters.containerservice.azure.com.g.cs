@@ -42,6 +42,26 @@ public partial class V1api20240901storageManagedClusterList : IKubernetesObject<
 }
 
 /// <summary>
+/// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20240901storageManagedClusterSpecAadProfileServerAppSecret
+{
+    /// <summary>Key is the key in the Kubernetes secret being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes secret being referenced.
+    /// The secret must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20240901.ManagedClusterAADProfile
 /// For more details see [managed AAD on AKS](https://docs.microsoft.com/azure/aks/managed-aad).
 /// </summary>
@@ -71,8 +91,12 @@ public partial class V1api20240901storageManagedClusterSpecAadProfile
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
 
+    /// <summary>
+    /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
     [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
+    public V1api20240901storageManagedClusterSpecAadProfileServerAppSecret? ServerAppSecret { get; set; }
 
     [JsonPropertyName("tenantID")]
     public string? TenantID { get; set; }
@@ -3736,9 +3760,6 @@ public partial class V1api20240901storageManagedClusterStatusAadProfile
 
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
-
-    [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
 
     [JsonPropertyName("tenantID")]
     public string? TenantID { get; set; }

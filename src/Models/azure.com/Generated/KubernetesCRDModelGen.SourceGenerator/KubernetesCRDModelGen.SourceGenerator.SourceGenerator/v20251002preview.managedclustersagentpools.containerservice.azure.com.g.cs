@@ -1726,6 +1726,10 @@ public partial class V20251002previewManagedClustersAgentPoolSpec
     [JsonPropertyName("nodeCustomizationProfile")]
     public V20251002previewManagedClustersAgentPoolSpecNodeCustomizationProfile? NodeCustomizationProfile { get; set; }
 
+    /// <summary>NodeImageVersion: The version of node image</summary>
+    [JsonPropertyName("nodeImageVersion")]
+    public string? NodeImageVersion { get; set; }
+
     /// <summary>
     /// NodeInitializationTaints: Taints added on the nodes during creation that will not be reconciled by AKS. These taints
     /// will not be reconciled by AKS and can be removed with a kubectl call. This field can be modified after node pool is

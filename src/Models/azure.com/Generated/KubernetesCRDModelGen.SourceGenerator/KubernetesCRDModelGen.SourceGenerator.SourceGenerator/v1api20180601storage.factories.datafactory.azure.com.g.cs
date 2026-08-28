@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.datafactory.azure.com;
 /// <summary>
 /// Storage version of v1api20180601.Factory
 /// Generator information:
-/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/datafactory.json
+/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -881,6 +881,40 @@ public partial class V1api20180601storageFactoryStatusRepoConfiguration
 }
 
 /// <summary>
+/// Storage version of v1api20180601.SystemData_STATUS
+/// Metadata pertaining to creation and last modification of the resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20180601storageFactoryStatusSystemData
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("createdAt")]
+    public string? CreatedAt { get; set; }
+
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    [JsonPropertyName("createdByType")]
+    public string? CreatedByType { get; set; }
+
+    [JsonPropertyName("lastModifiedAt")]
+    public string? LastModifiedAt { get; set; }
+
+    [JsonPropertyName("lastModifiedBy")]
+    public string? LastModifiedBy { get; set; }
+
+    [JsonPropertyName("lastModifiedByType")]
+    public string? LastModifiedByType { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20180601.Factory_STATUS
 /// Factory resource type.
 /// </summary>
@@ -950,6 +984,13 @@ public partial class V1api20180601storageFactoryStatus
     [JsonPropertyName("repoConfiguration")]
     public V1api20180601storageFactoryStatusRepoConfiguration? RepoConfiguration { get; set; }
 
+    /// <summary>
+    /// Storage version of v1api20180601.SystemData_STATUS
+    /// Metadata pertaining to creation and last modification of the resource.
+    /// </summary>
+    [JsonPropertyName("systemData")]
+    public V1api20180601storageFactoryStatusSystemData? SystemData { get; set; }
+
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
@@ -963,7 +1004,7 @@ public partial class V1api20180601storageFactoryStatus
 /// <summary>
 /// Storage version of v1api20180601.Factory
 /// Generator information:
-/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/datafactory.json
+/// - Generated from: /datafactory/resource-manager/Microsoft.DataFactory/DataFactory/stable/2018-06-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataFactory/factories/{factoryName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

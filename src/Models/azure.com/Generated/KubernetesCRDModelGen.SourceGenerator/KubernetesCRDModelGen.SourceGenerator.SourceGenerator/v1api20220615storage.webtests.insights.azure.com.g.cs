@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20220615.Webtest
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2022-06-15/webTests_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2022-06-15/webTests_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -41,7 +41,10 @@ public partial class V1api20220615storageWebtestList : IKubernetesObject<V1ListM
     public required IList<V1api20220615storageWebtest> Items { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_Configuration</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesConfiguration
+/// An XML configuration specification for a WebTest.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestSpecConfiguration
@@ -98,7 +101,10 @@ public partial class V1api20220615storageWebtestSpecRequestHeaders
     public string? Value { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_Request</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesRequest
+/// The collection of request properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestSpecRequest
@@ -129,7 +135,10 @@ public partial class V1api20220615storageWebtestSpecRequest
     public string? RequestUrl { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation
+/// The collection of content validation properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestSpecValidationRulesContentValidation
@@ -151,7 +160,10 @@ public partial class V1api20220615storageWebtestSpecValidationRulesContentValida
     public bool? PassIfTextFound { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesValidationRules
+/// The collection of validation rule properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestSpecValidationRules
@@ -163,7 +175,10 @@ public partial class V1api20220615storageWebtestSpecValidationRules
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation
+    /// The collection of content validation properties
+    /// </summary>
     [JsonPropertyName("ContentValidation")]
     public V1api20220615storageWebtestSpecValidationRulesContentValidation? ContentValidation { get; set; }
 
@@ -313,7 +328,10 @@ public partial class V1api20220615storageWebtestSpec
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_Configuration</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesConfiguration
+    /// An XML configuration specification for a WebTest.
+    /// </summary>
     [JsonPropertyName("Configuration")]
     public V1api20220615storageWebtestSpecConfiguration? Configuration { get; set; }
 
@@ -335,7 +353,10 @@ public partial class V1api20220615storageWebtestSpec
     [JsonPropertyName("Name")]
     public string? Name { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_Request</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesRequest
+    /// The collection of request properties
+    /// </summary>
     [JsonPropertyName("Request")]
     public V1api20220615storageWebtestSpecRequest? Request { get; set; }
 
@@ -348,7 +369,10 @@ public partial class V1api20220615storageWebtestSpec
     [JsonPropertyName("Timeout")]
     public int? Timeout { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesValidationRules
+    /// The collection of validation rule properties
+    /// </summary>
     [JsonPropertyName("ValidationRules")]
     public V1api20220615storageWebtestSpecValidationRules? ValidationRules { get; set; }
 
@@ -384,7 +408,10 @@ public partial class V1api20220615storageWebtestSpec
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_Configuration_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesConfiguration_STATUS
+/// An XML configuration specification for a WebTest.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestStatusConfiguration
@@ -441,7 +468,10 @@ public partial class V1api20220615storageWebtestStatusRequestHeaders
     public string? Value { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_Request_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesRequest_STATUS
+/// The collection of request properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestStatusRequest
@@ -472,7 +502,10 @@ public partial class V1api20220615storageWebtestStatusRequest
     public string? RequestUrl { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation_STATUS
+/// The collection of content validation properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestStatusValidationRulesContentValidation
@@ -494,7 +527,10 @@ public partial class V1api20220615storageWebtestStatusValidationRulesContentVali
     public bool? PassIfTextFound { get; set; }
 }
 
-/// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20220615.WebTestPropertiesValidationRules_STATUS
+/// The collection of validation rule properties
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20220615storageWebtestStatusValidationRules
@@ -506,7 +542,10 @@ public partial class V1api20220615storageWebtestStatusValidationRules
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_ContentValidation_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesValidationRulesContentValidation_STATUS
+    /// The collection of content validation properties
+    /// </summary>
     [JsonPropertyName("ContentValidation")]
     public V1api20220615storageWebtestStatusValidationRulesContentValidation? ContentValidation { get; set; }
 
@@ -581,7 +620,10 @@ public partial class V1api20220615storageWebtestStatus
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_Configuration_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesConfiguration_STATUS
+    /// An XML configuration specification for a WebTest.
+    /// </summary>
     [JsonPropertyName("Configuration")]
     public V1api20220615storageWebtestStatusConfiguration? Configuration { get; set; }
 
@@ -600,7 +642,10 @@ public partial class V1api20220615storageWebtestStatus
     [JsonPropertyName("Locations")]
     public IList<V1api20220615storageWebtestStatusLocations>? Locations { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_Request_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesRequest_STATUS
+    /// The collection of request properties
+    /// </summary>
     [JsonPropertyName("Request")]
     public V1api20220615storageWebtestStatusRequest? Request { get; set; }
 
@@ -613,7 +658,10 @@ public partial class V1api20220615storageWebtestStatus
     [JsonPropertyName("Timeout")]
     public int? Timeout { get; set; }
 
-    /// <summary>Storage version of v1api20220615.WebTestProperties_ValidationRules_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20220615.WebTestPropertiesValidationRules_STATUS
+    /// The collection of validation rule properties
+    /// </summary>
     [JsonPropertyName("ValidationRules")]
     public V1api20220615storageWebtestStatusValidationRules? ValidationRules { get; set; }
 
@@ -645,7 +693,7 @@ public partial class V1api20220615storageWebtestStatus
 /// <summary>
 /// Storage version of v1api20220615.Webtest
 /// Generator information:
-/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/stable/2022-06-15/webTests_API.json
+/// - Generated from: /applicationinsights/resource-manager/Microsoft.Insights/ApplicationInsights/stable/2022-06-15/webTests_API.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/webtests/{webTestName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -152,7 +152,7 @@ public partial class V20210601WorkspaceSpecEncryptionCmkKekIdentity
 {
     /// <summary>UseSystemAssignedIdentity: Boolean specifying whether to use system assigned identity or not</summary>
     [JsonPropertyName("useSystemAssignedIdentity")]
-    public JsonNode? UseSystemAssignedIdentity { get; set; }
+    public bool? UseSystemAssignedIdentity { get; set; }
 
     /// <summary>UserAssignedIdentityReference: User assigned identity resource Id</summary>
     [JsonPropertyName("userAssignedIdentityReference")]
@@ -697,7 +697,7 @@ public partial class V20210601WorkspaceStatusEncryptionCmkKekIdentity
 {
     /// <summary>UseSystemAssignedIdentity: Boolean specifying whether to use system assigned identity or not</summary>
     [JsonPropertyName("useSystemAssignedIdentity")]
-    public JsonNode? UseSystemAssignedIdentity { get; set; }
+    public bool? UseSystemAssignedIdentity { get; set; }
 
     /// <summary>UserAssignedIdentity: User assigned identity resource Id</summary>
     [JsonPropertyName("userAssignedIdentity")]

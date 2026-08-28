@@ -42,6 +42,26 @@ public partial class V20251002previewstorageManagedClusterList : IKubernetesObje
 }
 
 /// <summary>
+/// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+/// the resource it is on.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V20251002previewstorageManagedClusterSpecAadProfileServerAppSecret
+{
+    /// <summary>Key is the key in the Kubernetes secret being referenced</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// Name is the name of the Kubernetes secret being referenced.
+    /// The secret must be in the same namespace as the resource
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Storage version of v20251002preview.ManagedClusterAADProfile
 /// AADProfile specifies attributes for Azure Active Directory integration. For more details see [managed AAD on
 /// AKS](https://docs.microsoft.com/azure/aks/managed-aad).
@@ -72,8 +92,12 @@ public partial class V20251002previewstorageManagedClusterSpecAadProfile
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
 
+    /// <summary>
+    /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+    /// the resource it is on.
+    /// </summary>
     [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
+    public V20251002previewstorageManagedClusterSpecAadProfileServerAppSecret? ServerAppSecret { get; set; }
 
     [JsonPropertyName("tenantID")]
     public string? TenantID { get; set; }
@@ -101,7 +125,10 @@ public partial class V20251002previewstorageManagedClusterSpecAddonProfiles
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile</summary>
+/// <summary>
+/// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+/// Artifact streaming profile for the agent pool.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfilesArtifactStreamingProfile
@@ -1083,7 +1110,10 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfiles
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+    /// Artifact streaming profile for the agent pool.
+    /// </summary>
     [JsonPropertyName("artifactStreamingProfile")]
     public V20251002previewstorageManagedClusterSpecAgentPoolProfilesArtifactStreamingProfile? ArtifactStreamingProfile { get; set; }
 
@@ -1209,6 +1239,9 @@ public partial class V20251002previewstorageManagedClusterSpecAgentPoolProfiles
     /// </summary>
     [JsonPropertyName("nodeCustomizationProfile")]
     public V20251002previewstorageManagedClusterSpecAgentPoolProfilesNodeCustomizationProfile? NodeCustomizationProfile { get; set; }
+
+    [JsonPropertyName("nodeImageVersion")]
+    public string? NodeImageVersion { get; set; }
 
     [JsonPropertyName("nodeInitializationTaints")]
     public IList<string>? NodeInitializationTaints { get; set; }
@@ -2256,7 +2289,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileAppl
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration
+/// Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileGatewayAPI
@@ -2272,7 +2308,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileGate
     public string? Installation { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile
+/// Default domain profile for the managed cluster ingress profile.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingDefaultDomain
@@ -2314,7 +2353,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
     public string? Name { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressProfileNginx
+/// Nginx ingress controller configuration for the managed cluster ingress profile.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingNginx
@@ -2345,7 +2387,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile
+    /// Default domain profile for the managed cluster ingress profile.
+    /// </summary>
     [JsonPropertyName("defaultDomain")]
     public V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingDefaultDomain? DefaultDomain { get; set; }
 
@@ -2355,7 +2400,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfileWebA
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressProfileNginx
+    /// Nginx ingress controller configuration for the managed cluster ingress profile.
+    /// </summary>
     [JsonPropertyName("nginx")]
     public V20251002previewstorageManagedClusterSpecIngressProfileWebAppRoutingNginx? Nginx { get; set; }
 }
@@ -2382,7 +2430,10 @@ public partial class V20251002previewstorageManagedClusterSpecIngressProfile
     [JsonPropertyName("applicationLoadBalancer")]
     public V20251002previewstorageManagedClusterSpecIngressProfileApplicationLoadBalancer? ApplicationLoadBalancer { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration
+    /// Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
+    /// </summary>
     [JsonPropertyName("gatewayAPI")]
     public V20251002previewstorageManagedClusterSpecIngressProfileGatewayAPI? GatewayAPI { get; set; }
 
@@ -3052,7 +3103,10 @@ public partial class V20251002previewstorageManagedClusterSpecNetworkProfile
     public V20251002previewstorageManagedClusterSpecNetworkProfileStaticEgressGatewayProfile? StaticEgressGatewayProfile { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile
+/// Node provisioning profile for the managed cluster.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecNodeProvisioningProfile
@@ -3890,7 +3944,10 @@ public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDef
     public V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentitiesIdentityResourceReference? ResourceReference { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem
+/// Identity information used by Defender security gating to access container registries.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterSpecSecurityProfileDefenderSecurityGatingIdentities
@@ -4953,7 +5010,10 @@ public partial class V20251002previewstorageManagedClusterSpec
     [JsonPropertyName("networkProfile")]
     public V20251002previewstorageManagedClusterSpecNetworkProfile? NetworkProfile { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile
+    /// Node provisioning profile for the managed cluster.
+    /// </summary>
     [JsonPropertyName("nodeProvisioningProfile")]
     public V20251002previewstorageManagedClusterSpecNodeProvisioningProfile? NodeProvisioningProfile { get; set; }
 
@@ -5107,9 +5167,6 @@ public partial class V20251002previewstorageManagedClusterStatusAadProfile
     [JsonPropertyName("serverAppID")]
     public string? ServerAppID { get; set; }
 
-    [JsonPropertyName("serverAppSecret")]
-    public string? ServerAppSecret { get; set; }
-
     [JsonPropertyName("tenantID")]
     public string? TenantID { get; set; }
 }
@@ -5168,7 +5225,10 @@ public partial class V20251002previewstorageManagedClusterStatusAddonProfiles
     public V20251002previewstorageManagedClusterStatusAddonProfilesIdentity? Identity { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+/// Artifact streaming profile for the agent pool.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfilesArtifactStreamingProfile
@@ -6011,7 +6071,10 @@ public partial class V20251002previewstorageManagedClusterStatusAgentPoolProfile
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+    /// Artifact streaming profile for the agent pool.
+    /// </summary>
     [JsonPropertyName("artifactStreamingProfile")]
     public V20251002previewstorageManagedClusterStatusAgentPoolProfilesArtifactStreamingProfile? ArtifactStreamingProfile { get; set; }
 
@@ -6844,7 +6907,10 @@ public partial class V20251002previewstorageManagedClusterStatusIdentityDelegate
     public string? TenantId { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedServiceIdentityUserAssignedIdentitiesValue_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedServiceIdentityUserAssignedIdentitiesValue_STATUS
+/// User assigned identity properties.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIdentityUserAssignedIdentities
@@ -6970,7 +7036,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileAp
     public V20251002previewstorageManagedClusterStatusIngressProfileApplicationLoadBalancerIdentity? Identity { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS
+/// Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileGatewayAPI
@@ -6986,7 +7055,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileGa
     public string? Installation { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS
+/// Default domain profile for the managed cluster ingress profile.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingDefaultDomain
@@ -7030,7 +7102,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
     public string? ResourceId { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS
+/// Nginx ingress controller configuration for the managed cluster ingress profile.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingNginx
@@ -7061,7 +7136,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS
+    /// Default domain profile for the managed cluster ingress profile.
+    /// </summary>
     [JsonPropertyName("defaultDomain")]
     public V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingDefaultDomain? DefaultDomain { get; set; }
 
@@ -7078,7 +7156,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfileWe
     [JsonPropertyName("identity")]
     public V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingIdentity? Identity { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS
+    /// Nginx ingress controller configuration for the managed cluster ingress profile.
+    /// </summary>
     [JsonPropertyName("nginx")]
     public V20251002previewstorageManagedClusterStatusIngressProfileWebAppRoutingNginx? Nginx { get; set; }
 }
@@ -7105,7 +7186,10 @@ public partial class V20251002previewstorageManagedClusterStatusIngressProfile
     [JsonPropertyName("applicationLoadBalancer")]
     public V20251002previewstorageManagedClusterStatusIngressProfileApplicationLoadBalancer? ApplicationLoadBalancer { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS
+    /// Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
+    /// </summary>
     [JsonPropertyName("gatewayAPI")]
     public V20251002previewstorageManagedClusterStatusIngressProfileGatewayAPI? GatewayAPI { get; set; }
 
@@ -7765,7 +7849,10 @@ public partial class V20251002previewstorageManagedClusterStatusNetworkProfile
     public V20251002previewstorageManagedClusterStatusNetworkProfileStaticEgressGatewayProfile? StaticEgressGatewayProfile { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS
+/// Node provisioning profile for the managed cluster.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusNodeProvisioningProfile
@@ -7923,7 +8010,10 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
     public V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfoErrorError? Error { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS
+/// Pod identity provisioning information.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfo
@@ -7974,7 +8064,10 @@ public partial class V20251002previewstorageManagedClusterStatusPodIdentityProfi
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS
+    /// Pod identity provisioning information.
+    /// </summary>
     [JsonPropertyName("provisioningInfo")]
     public V20251002previewstorageManagedClusterStatusPodIdentityProfileUserAssignedIdentitiesProvisioningInfo? ProvisioningInfo { get; set; }
 
@@ -8210,7 +8303,10 @@ public partial class V20251002previewstorageManagedClusterStatusSecurityProfileD
     public string? ResourceId { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem_STATUS
+/// Identity information used by Defender security gating to access container registries.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClusterStatusSecurityProfileDefenderSecurityGatingIdentities
@@ -9359,7 +9455,10 @@ public partial class V20251002previewstorageManagedClusterStatus
     [JsonPropertyName("networkProfile")]
     public V20251002previewstorageManagedClusterStatusNetworkProfile? NetworkProfile { get; set; }
 
-    /// <summary>Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS
+    /// Node provisioning profile for the managed cluster.
+    /// </summary>
     [JsonPropertyName("nodeProvisioningProfile")]
     public V20251002previewstorageManagedClusterStatusNodeProvisioningProfile? NodeProvisioningProfile { get; set; }
 

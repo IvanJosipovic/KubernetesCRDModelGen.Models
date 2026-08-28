@@ -41,7 +41,10 @@ public partial class V20251002previewstorageManagedClustersAgentPoolList : IKube
     public required IList<V20251002previewstorageManagedClustersAgentPool> Items { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile</summary>
+/// <summary>
+/// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+/// Artifact streaming profile for the agent pool.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClustersAgentPoolSpecArtifactStreamingProfile
@@ -1141,7 +1144,10 @@ public partial class V20251002previewstorageManagedClustersAgentPoolSpec
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+    /// Artifact streaming profile for the agent pool.
+    /// </summary>
     [JsonPropertyName("artifactStreamingProfile")]
     public V20251002previewstorageManagedClustersAgentPoolSpecArtifactStreamingProfile? ArtifactStreamingProfile { get; set; }
 
@@ -1271,6 +1277,9 @@ public partial class V20251002previewstorageManagedClustersAgentPoolSpec
     /// </summary>
     [JsonPropertyName("nodeCustomizationProfile")]
     public V20251002previewstorageManagedClustersAgentPoolSpecNodeCustomizationProfile? NodeCustomizationProfile { get; set; }
+
+    [JsonPropertyName("nodeImageVersion")]
+    public string? NodeImageVersion { get; set; }
 
     [JsonPropertyName("nodeInitializationTaints")]
     public IList<string>? NodeInitializationTaints { get; set; }
@@ -1418,7 +1427,10 @@ public partial class V20251002previewstorageManagedClustersAgentPoolSpec
     public string? WorkloadRuntime { get; set; }
 }
 
-/// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS</summary>
+/// <summary>
+/// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+/// Artifact streaming profile for the agent pool.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20251002previewstorageManagedClustersAgentPoolStatusArtifactStreamingProfile
@@ -2338,7 +2350,10 @@ public partial class V20251002previewstorageManagedClustersAgentPoolStatus
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS</summary>
+    /// <summary>
+    /// Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+    /// Artifact streaming profile for the agent pool.
+    /// </summary>
     [JsonPropertyName("artifactStreamingProfile")]
     public V20251002previewstorageManagedClustersAgentPoolStatusArtifactStreamingProfile? ArtifactStreamingProfile { get; set; }
 

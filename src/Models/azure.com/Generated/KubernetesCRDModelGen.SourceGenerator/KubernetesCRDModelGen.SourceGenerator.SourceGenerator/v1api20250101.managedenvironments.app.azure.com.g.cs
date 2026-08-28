@@ -299,6 +299,12 @@ public partial class V1api20250101ManagedEnvironmentSpecIdentity
     [JsonPropertyName("type")]
     public required V1api20250101ManagedEnvironmentSpecIdentityTypeEnum Type { get; set; }
 
+    /// <summary>
+    /// UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+    /// dictionary keys will be ARM resource ids in the form:
+    /// &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+    /// The dictionary values can be empty objects ({}) in requests.
+    /// </summary>
     [JsonPropertyName("userAssignedIdentities")]
     public IList<V1api20250101ManagedEnvironmentSpecIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }
@@ -820,6 +826,12 @@ public partial class V1api20250101ManagedEnvironmentStatusIdentity
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
+    /// <summary>
+    /// UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+    /// dictionary keys will be ARM resource ids in the form:
+    /// &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+    /// The dictionary values can be empty objects ({}) in requests.
+    /// </summary>
     [JsonPropertyName("userAssignedIdentities")]
     public IDictionary<string, V1api20250101ManagedEnvironmentStatusIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }

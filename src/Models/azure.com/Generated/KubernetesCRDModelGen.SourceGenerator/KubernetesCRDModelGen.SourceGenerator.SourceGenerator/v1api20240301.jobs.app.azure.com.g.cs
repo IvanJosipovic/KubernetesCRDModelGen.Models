@@ -427,6 +427,12 @@ public partial class V1api20240301JobSpecIdentity
     [JsonPropertyName("type")]
     public required V1api20240301JobSpecIdentityTypeEnum Type { get; set; }
 
+    /// <summary>
+    /// UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+    /// dictionary keys will be ARM resource ids in the form:
+    /// &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+    /// The dictionary values can be empty objects ({}) in requests.
+    /// </summary>
     [JsonPropertyName("userAssignedIdentities")]
     public IList<V1api20240301JobSpecIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }
@@ -1288,6 +1294,12 @@ public partial class V1api20240301JobStatusIdentity
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
+    /// <summary>
+    /// UserAssignedIdentities: The set of user assigned identities associated with the resource. The userAssignedIdentities
+    /// dictionary keys will be ARM resource ids in the form:
+    /// &apos;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}.
+    /// The dictionary values can be empty objects ({}) in requests.
+    /// </summary>
     [JsonPropertyName("userAssignedIdentities")]
     public IDictionary<string, V1api20240301JobStatusIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }

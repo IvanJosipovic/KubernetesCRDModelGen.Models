@@ -1703,7 +1703,7 @@ public partial class V1api20220701storageApplicationGatewaySpecOwner
 /// <summary>Reference: Resource ID.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsReference
+public partial class V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnetReference
 {
     /// <summary>
     /// ARMID is a string of the form /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.
@@ -1727,6 +1727,26 @@ public partial class V1api20220701storageApplicationGatewaySpecPrivateLinkConfig
 }
 
 /// <summary>
+/// Storage version of v1api20220701.SubResource
+/// Reference to another ARM resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnet
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    /// <summary>Reference: Resource ID.</summary>
+    [JsonPropertyName("reference")]
+    public V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnetReference? Reference { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20220701.ApplicationGatewayPrivateLinkIpConfiguration
 /// The application gateway private link ip configuration.
 /// </summary>
@@ -1741,9 +1761,24 @@ public partial class V1api20220701storageApplicationGatewaySpecPrivateLinkConfig
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
-    /// <summary>Reference: Resource ID.</summary>
-    [JsonPropertyName("reference")]
-    public V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsReference? Reference { get; set; }
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("primary")]
+    public bool? Primary { get; set; }
+
+    [JsonPropertyName("privateIPAddress")]
+    public string? PrivateIPAddress { get; set; }
+
+    [JsonPropertyName("privateIPAllocationMethod")]
+    public string? PrivateIPAllocationMethod { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20220701.SubResource
+    /// Reference to another ARM resource.
+    /// </summary>
+    [JsonPropertyName("subnet")]
+    public V1api20220701storageApplicationGatewaySpecPrivateLinkConfigurationsIpConfigurationsSubnet? Subnet { get; set; }
 }
 
 /// <summary>
@@ -4478,6 +4513,72 @@ public partial class V1api20220701storageApplicationGatewayStatusPrivateEndpoint
 }
 
 /// <summary>
+/// Storage version of v1api20220701.SubResource_STATUS
+/// Reference to another ARM resource.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701storageApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurationsSubnet
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+}
+
+/// <summary>
+/// Storage version of v1api20220701.ApplicationGatewayPrivateLinkIpConfiguration_STATUS
+/// The application gateway private link ip configuration.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20220701storageApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurations
+{
+    /// <summary>
+    /// PropertyBag is an unordered set of stashed information that used for properties not directly supported by storage
+    /// resources, allowing for full fidelity round trip conversions
+    /// </summary>
+    [JsonPropertyName("$propertyBag")]
+    public IDictionary<string, string>? PropertyBag { get; set; }
+
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("primary")]
+    public bool? Primary { get; set; }
+
+    [JsonPropertyName("privateIPAddress")]
+    public string? PrivateIPAddress { get; set; }
+
+    [JsonPropertyName("privateIPAllocationMethod")]
+    public string? PrivateIPAllocationMethod { get; set; }
+
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    /// <summary>
+    /// Storage version of v1api20220701.SubResource_STATUS
+    /// Reference to another ARM resource.
+    /// </summary>
+    [JsonPropertyName("subnet")]
+    public V1api20220701storageApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurationsSubnet? Subnet { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
 /// Storage version of v1api20220701.ApplicationGatewayPrivateLinkConfiguration_STATUS
 /// Private Link Configuration on an application gateway.
 /// </summary>
@@ -4492,8 +4593,23 @@ public partial class V1api20220701storageApplicationGatewayStatusPrivateLinkConf
     [JsonPropertyName("$propertyBag")]
     public IDictionary<string, string>? PropertyBag { get; set; }
 
+    [JsonPropertyName("etag")]
+    public string? Etag { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("ipConfigurations")]
+    public IList<V1api20220701storageApplicationGatewayStatusPrivateLinkConfigurationsIpConfigurations>? IpConfigurations { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("provisioningState")]
+    public string? ProvisioningState { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>

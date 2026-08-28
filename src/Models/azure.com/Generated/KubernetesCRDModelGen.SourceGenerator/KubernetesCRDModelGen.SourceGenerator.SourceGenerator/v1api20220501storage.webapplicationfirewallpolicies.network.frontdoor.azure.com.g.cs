@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.network.frontdoor.azure.com;
 /// <summary>
 /// Storage version of v1api20220501.WebApplicationFirewallPolicy
 /// Generator information:
-/// - Generated from: /frontdoor/resource-manager/Microsoft.Network/stable/2022-05-01/webapplicationfirewall.json
+/// - Generated from: /frontdoor/resource-manager/Microsoft.Network/FrontDoor/stable/2022-05-01/webapplicationfirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/FrontDoorWebApplicationFirewallPolicies/{policyName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1068,7 +1068,7 @@ public partial class V1api20220501storageWebApplicationFirewallPolicyStatus
 /// <summary>
 /// Storage version of v1api20220501.WebApplicationFirewallPolicy
 /// Generator information:
-/// - Generated from: /frontdoor/resource-manager/Microsoft.Network/stable/2022-05-01/webapplicationfirewall.json
+/// - Generated from: /frontdoor/resource-manager/Microsoft.Network/FrontDoor/stable/2022-05-01/webapplicationfirewall.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/FrontDoorWebApplicationFirewallPolicies/{policyName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

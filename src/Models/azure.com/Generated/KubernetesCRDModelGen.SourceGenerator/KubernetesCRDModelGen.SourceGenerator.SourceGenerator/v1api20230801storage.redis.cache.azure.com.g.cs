@@ -447,6 +447,9 @@ public partial class V1api20230801storageRedisSpecRedisConfiguration
     [JsonPropertyName("aad-enabled")]
     public string? AadEnabled { get; set; }
 
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
+
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }
 
@@ -831,6 +834,9 @@ public partial class V1api20230801storageRedisStatusRedisConfiguration
 
     [JsonPropertyName("aad-enabled")]
     public string? AadEnabled { get; set; }
+
+    [JsonPropertyName("additionalProperties")]
+    public IDictionary<string, JsonNode>? AdditionalProperties { get; set; }
 
     [JsonPropertyName("aof-backup-enabled")]
     public string? AofBackupEnabled { get; set; }

@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20250101preview.ScheduledQueryRule
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -117,7 +117,11 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Storage version of v1api20250101preview.Condition_FailingPeriods</summary>
+/// <summary>
+/// Storage version of v1api20250101preview.ConditionFailingPeriods
+/// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+/// only for rules of the kind LogAlert.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfFailingPeriods
@@ -189,7 +193,11 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAl
     [JsonPropertyName("dimensions")]
     public IList<V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfDimensions>? Dimensions { get; set; }
 
-    /// <summary>Storage version of v1api20250101preview.Condition_FailingPeriods</summary>
+    /// <summary>
+    /// Storage version of v1api20250101preview.ConditionFailingPeriods
+    /// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+    /// only for rules of the kind LogAlert.
+    /// </summary>
     [JsonPropertyName("failingPeriods")]
     public V1api20250101previewstorageScheduledQueryRuleSpecCriteriaAllOfFailingPeriods? FailingPeriods { get; set; }
 
@@ -291,7 +299,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpecIdentityUs
 }
 
 /// <summary>
-/// Storage version of v1api20250101preview.Identity
+/// Storage version of v1api20250101preview.MicrosoftCommonIdentity
 /// Identity for the resource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -533,7 +541,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleSpec
     public string? EvaluationFrequency { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20250101preview.Identity
+    /// Storage version of v1api20250101preview.MicrosoftCommonIdentity
     /// Identity for the resource.
     /// </summary>
     [JsonPropertyName("identity")]
@@ -691,7 +699,11 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
     public IList<string>? Values { get; set; }
 }
 
-/// <summary>Storage version of v1api20250101preview.Condition_FailingPeriods_STATUS</summary>
+/// <summary>
+/// Storage version of v1api20250101preview.ConditionFailingPeriods_STATUS
+/// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+/// only for rules of the kind LogAlert.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOfFailingPeriods
@@ -734,7 +746,11 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
     [JsonPropertyName("dimensions")]
     public IList<V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOfDimensions>? Dimensions { get; set; }
 
-    /// <summary>Storage version of v1api20250101preview.Condition_FailingPeriods_STATUS</summary>
+    /// <summary>
+    /// Storage version of v1api20250101preview.ConditionFailingPeriods_STATUS
+    /// The minimum number of violations required within the selected lookback time window required to raise an alert. Relevant
+    /// only for rules of the kind LogAlert.
+    /// </summary>
     [JsonPropertyName("failingPeriods")]
     public V1api20250101previewstorageScheduledQueryRuleStatusCriteriaAllOfFailingPeriods? FailingPeriods { get; set; }
 
@@ -786,8 +802,8 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusCriteria
 }
 
 /// <summary>
-/// Storage version of v1api20250101preview.UserIdentityProperties_STATUS
-/// User assigned identity properties.
+/// Storage version of v1api20250101preview.MicrosoftCommonUserIdentityProperties_STATUS
+/// Properties of the user assigned identity.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -808,7 +824,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatusIdentity
 }
 
 /// <summary>
-/// Storage version of v1api20250101preview.Identity_STATUS
+/// Storage version of v1api20250101preview.MicrosoftCommonIdentity_STATUS
 /// Identity for the resource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -948,7 +964,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatus
     public string? Id { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20250101preview.Identity_STATUS
+    /// Storage version of v1api20250101preview.MicrosoftCommonIdentity_STATUS
     /// Identity for the resource.
     /// </summary>
     [JsonPropertyName("identity")]
@@ -1014,7 +1030,7 @@ public partial class V1api20250101previewstorageScheduledQueryRuleStatus
 /// <summary>
 /// Storage version of v1api20250101preview.ScheduledQueryRule
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/preview/2025-01-01-preview/scheduledQueryRule_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2025-01-01-preview/scheduledQueryRule.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/scheduledQueryRules/{ruleName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

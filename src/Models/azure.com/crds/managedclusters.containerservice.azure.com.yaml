@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.20.0
+    app.kubernetes.io/version: v2.21.0
   name: managedclusters.containerservice.azure.com
 spec:
   conversion:
@@ -94,7 +94,19 @@ spec:
                     type: string
                   serverAppSecret:
                     description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     description: |-
                       TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -2404,9 +2416,6 @@ spec:
                   serverAppID:
                     description: 'ServerAppID: (DEPRECATED) The server AAD application ID. Learn more at https://aka.ms/aks/aad-legacy.'
                     type: string
-                  serverAppSecret:
-                    description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
                   tenantID:
                     description: |-
                       TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -4091,7 +4100,22 @@ spec:
                   serverAppID:
                     type: string
                   serverAppSecret:
-                    type: string
+                    description: |-
+                      SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+                      the resource it is on.
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     type: string
                 type: object
@@ -6479,8 +6503,6 @@ spec:
                     type: boolean
                   serverAppID:
                     type: string
-                  serverAppSecret:
-                    type: string
                   tenantID:
                     type: string
                 type: object
@@ -8359,7 +8381,19 @@ spec:
                     type: string
                   serverAppSecret:
                     description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     description: |-
                       TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -10896,9 +10930,6 @@ spec:
                   serverAppID:
                     description: 'ServerAppID: (DEPRECATED) The server AAD application ID. Learn more at https://aka.ms/aks/aad-legacy.'
                     type: string
-                  serverAppSecret:
-                    description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
                   tenantID:
                     description: |-
                       TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -12920,7 +12951,22 @@ spec:
                   serverAppID:
                     type: string
                   serverAppSecret:
-                    type: string
+                    description: |-
+                      SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+                      the resource it is on.
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     type: string
                 type: object
@@ -15477,8 +15523,6 @@ spec:
                     type: boolean
                   serverAppID:
                     type: string
-                  serverAppSecret:
-                    type: string
                   tenantID:
                     type: string
                 type: object
@@ -17738,7 +17782,19 @@ spec:
                     type: string
                   serverAppSecret:
                     description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     description: |-
                       TenantID: The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment
@@ -18374,6 +18430,9 @@ spec:
                               type: string
                           type: object
                       type: object
+                    nodeImageVersion:
+                      description: 'NodeImageVersion: The version of node image'
+                      type: string
                     nodeInitializationTaints:
                       description: |-
                         NodeInitializationTaints: Taints added on the nodes during creation that will not be reconciled by AKS. These taints
@@ -20294,7 +20353,7 @@ spec:
                       description: 'GroupId: The group ID of the resource.'
                       type: string
                     name:
-                      description: 'Name: The name of the private link resource.'
+                      description: 'Name: The name of the private link resource. See [naming rules](https://aka.ms/search-naming-rules) for more details.'
                       type: string
                     reference:
                       description: 'Reference: The ID of the private link resource.'
@@ -20460,6 +20519,7 @@ spec:
                               the registry. These are the same identities used by the cluster to pull container images. Each identity provided should
                               have federated identity credential attached to it.
                             items:
+                              description: Identity information used by Defender security gating to access container registries.
                               properties:
                                 azureContainerRegistry:
                                   description: |-
@@ -20952,9 +21012,6 @@ spec:
                     type: boolean
                   serverAppID:
                     description: 'ServerAppID: (DEPRECATED) The server AAD application ID. Learn more at https://aka.ms/aks/aad-legacy.'
-                    type: string
-                  serverAppSecret:
-                    description: 'ServerAppSecret: (DEPRECATED) The server AAD application secret. Learn more at https://aka.ms/aks/aad-legacy.'
                     type: string
                   tenantID:
                     description: |-
@@ -22290,6 +22347,7 @@ spec:
                     type: string
                   userAssignedIdentities:
                     additionalProperties:
+                      description: User assigned identity properties.
                       properties:
                         clientId:
                           description: 'ClientId: The client id of user assigned identity.'
@@ -22832,6 +22890,7 @@ spec:
                           description: 'Namespace: The namespace of the pod identity.'
                           type: string
                         provisioningInfo:
+                          description: 'ProvisioningInfo: The provisioning information for the pod identity.'
                           properties:
                             error:
                               description: 'Error: Pod identity assignment error (if any).'
@@ -22916,7 +22975,7 @@ spec:
                       description: 'Id: The ID of the private link resource.'
                       type: string
                     name:
-                      description: 'Name: The name of the private link resource.'
+                      description: 'Name: The name of the private link resource. See [naming rules](https://aka.ms/search-naming-rules) for more details.'
                       type: string
                     privateLinkServiceID:
                       description: 'PrivateLinkServiceID: The private link service ID of the resource, this field is exposed only to NRP internally.'
@@ -23027,6 +23086,7 @@ spec:
                               the registry. These are the same identities used by the cluster to pull container images. Each identity provided should
                               have federated identity credential attached to it.
                             items:
+                              description: Identity information used by Defender security gating to access container registries.
                               properties:
                                 azureContainerRegistry:
                                   description: |-
@@ -23513,7 +23573,22 @@ spec:
                   serverAppID:
                     type: string
                   serverAppSecret:
-                    type: string
+                    description: |-
+                      SecretReference is a reference to a Kubernetes secret and key in the same namespace as
+                      the resource it is on.
+                    properties:
+                      key:
+                        description: Key is the key in the Kubernetes secret being referenced
+                        type: string
+                      name:
+                        description: |-
+                          Name is the name of the Kubernetes secret being referenced.
+                          The secret must be in the same namespace as the resource
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
                   tenantID:
                     type: string
                 type: object
@@ -23552,7 +23627,9 @@ spec:
                         resources, allowing for full fidelity round trip conversions
                       type: object
                     artifactStreamingProfile:
-                      description: Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+                      description: |-
+                        Storage version of v20251002preview.AgentPoolArtifactStreamingProfile
+                        Artifact streaming profile for the agent pool.
                       properties:
                         $propertyBag:
                           additionalProperties:
@@ -24027,6 +24104,8 @@ spec:
                               type: string
                           type: object
                       type: object
+                    nodeImageVersion:
+                      type: string
                     nodeInitializationTaints:
                       items:
                         type: string
@@ -24996,7 +25075,9 @@ spec:
                         type: boolean
                     type: object
                   gatewayAPI:
-                    description: Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration
+                    description: |-
+                      Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration
+                      Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
                     properties:
                       $propertyBag:
                         additionalProperties:
@@ -25021,7 +25102,9 @@ spec:
                           resources, allowing for full fidelity round trip conversions
                         type: object
                       defaultDomain:
-                        description: Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile
+                        description: |-
+                          Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile
+                          Default domain profile for the managed cluster ingress profile.
                         properties:
                           $propertyBag:
                             additionalProperties:
@@ -25058,7 +25141,9 @@ spec:
                       enabled:
                         type: boolean
                       nginx:
-                        description: Storage version of v20251002preview.ManagedClusterIngressProfileNginx
+                        description: |-
+                          Storage version of v20251002preview.ManagedClusterIngressProfileNginx
+                          Nginx ingress controller configuration for the managed cluster ingress profile.
                         properties:
                           $propertyBag:
                             additionalProperties:
@@ -25499,7 +25584,9 @@ spec:
                     type: object
                 type: object
               nodeProvisioningProfile:
-                description: Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile
+                description: |-
+                  Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile
+                  Node provisioning profile for the managed cluster.
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -26093,7 +26180,9 @@ spec:
                             type: boolean
                           identities:
                             items:
-                              description: Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem
+                              description: |-
+                                Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem
+                                Identity information used by Defender security gating to access container registries.
                               properties:
                                 $propertyBag:
                                   additionalProperties:
@@ -26719,8 +26808,6 @@ spec:
                     type: boolean
                   serverAppID:
                     type: string
-                  serverAppSecret:
-                    type: string
                   tenantID:
                     type: string
                 type: object
@@ -26778,7 +26865,9 @@ spec:
                         resources, allowing for full fidelity round trip conversions
                       type: object
                     artifactStreamingProfile:
-                      description: Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+                      description: |-
+                        Storage version of v20251002preview.AgentPoolArtifactStreamingProfile_STATUS
+                        Artifact streaming profile for the agent pool.
                       properties:
                         $propertyBag:
                           additionalProperties:
@@ -27947,7 +28036,9 @@ spec:
                     type: string
                   userAssignedIdentities:
                     additionalProperties:
-                      description: Storage version of v20251002preview.ManagedServiceIdentityUserAssignedIdentitiesValue_STATUS
+                      description: |-
+                        Storage version of v20251002preview.ManagedServiceIdentityUserAssignedIdentitiesValue_STATUS
+                        User assigned identity properties.
                       properties:
                         $propertyBag:
                           additionalProperties:
@@ -28031,7 +28122,9 @@ spec:
                         type: object
                     type: object
                   gatewayAPI:
-                    description: Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS
+                    description: |-
+                      Storage version of v20251002preview.ManagedClusterIngressProfileGatewayConfiguration_STATUS
+                      Configuration for the ingress managed gateway. See https://aka.ms/k8s-gateway-api for more details.
                     properties:
                       $propertyBag:
                         additionalProperties:
@@ -28056,7 +28149,9 @@ spec:
                           resources, allowing for full fidelity round trip conversions
                         type: object
                       defaultDomain:
-                        description: Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS
+                        description: |-
+                          Storage version of v20251002preview.ManagedClusterIngressDefaultDomainProfile_STATUS
+                          Default domain profile for the managed cluster ingress profile.
                         properties:
                           $propertyBag:
                             additionalProperties:
@@ -28096,7 +28191,9 @@ spec:
                             type: string
                         type: object
                       nginx:
-                        description: Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS
+                        description: |-
+                          Storage version of v20251002preview.ManagedClusterIngressProfileNginx_STATUS
+                          Nginx ingress controller configuration for the managed cluster ingress profile.
                         properties:
                           $propertyBag:
                             additionalProperties:
@@ -28539,7 +28636,9 @@ spec:
                     type: object
                 type: object
               nodeProvisioningProfile:
-                description: Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS
+                description: |-
+                  Storage version of v20251002preview.ManagedClusterNodeProvisioningProfile_STATUS
+                  Node provisioning profile for the managed cluster.
                 properties:
                   $propertyBag:
                     additionalProperties:
@@ -28643,7 +28742,9 @@ spec:
                         namespace:
                           type: string
                         provisioningInfo:
-                          description: Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS
+                          description: |-
+                            Storage version of v20251002preview.ManagedClusterPodIdentityProvisioningInfo_STATUS
+                            Pod identity provisioning information.
                           properties:
                             $propertyBag:
                               additionalProperties:
@@ -28899,7 +29000,9 @@ spec:
                             type: boolean
                           identities:
                             items:
-                              description: Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem_STATUS
+                              description: |-
+                                Storage version of v20251002preview.ManagedClusterSecurityProfileDefenderSecurityGatingIdentitiesItem_STATUS
+                                Identity information used by Defender security gating to access container registries.
                               properties:
                                 $propertyBag:
                                   additionalProperties:

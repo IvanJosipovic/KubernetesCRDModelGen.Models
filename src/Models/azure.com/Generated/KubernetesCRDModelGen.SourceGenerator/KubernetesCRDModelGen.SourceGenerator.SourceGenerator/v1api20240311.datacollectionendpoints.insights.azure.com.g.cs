@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionEndpoints_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -288,7 +288,7 @@ public partial class V1api20240311DataCollectionEndpointSpecSku
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Name: The name of the SKU. E.g. P3. It is typically a letter+number code</summary>
+    /// <summary>Name: The name of the SKU. Ex - P3. It is typically a letter+number code</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -330,7 +330,7 @@ public partial class V1api20240311DataCollectionEndpointSpec
     [JsonPropertyName("kind")]
     public V1api20240311DataCollectionEndpointSpecKindEnum? Kind { get; set; }
 
-    /// <summary>Location: The geo-location where the resource lives.</summary>
+    /// <summary>Location: The geo-location where the resource lives</summary>
     [JsonPropertyName("location")]
     public required string Location { get; set; }
 
@@ -572,7 +572,7 @@ public partial class V1api20240311DataCollectionEndpointStatusSku
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Name: The name of the SKU. E.g. P3. It is typically a letter+number code</summary>
+    /// <summary>Name: The name of the SKU. Ex - P3. It is typically a letter+number code</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -591,7 +591,7 @@ public partial class V1api20240311DataCollectionEndpointStatusSku
     public string? Tier { get; set; }
 }
 
-/// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240311DataCollectionEndpointStatusSystemData
@@ -649,7 +649,10 @@ public partial class V1api20240311DataCollectionEndpointStatus
     [JsonPropertyName("failoverConfiguration")]
     public V1api20240311DataCollectionEndpointStatusFailoverConfiguration? FailoverConfiguration { get; set; }
 
-    /// <summary>Id: Fully qualified ID of the resource.</summary>
+    /// <summary>
+    /// Id: Fully qualified resource ID for the resource. Ex -
+    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -665,7 +668,7 @@ public partial class V1api20240311DataCollectionEndpointStatus
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
-    /// <summary>Location: The geo-location where the resource lives.</summary>
+    /// <summary>Location: The geo-location where the resource lives</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
@@ -684,7 +687,7 @@ public partial class V1api20240311DataCollectionEndpointStatus
     [JsonPropertyName("metricsIngestion")]
     public V1api20240311DataCollectionEndpointStatusMetricsIngestion? MetricsIngestion { get; set; }
 
-    /// <summary>Name: The name of the resource.</summary>
+    /// <summary>Name: The name of the resource</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -707,7 +710,7 @@ public partial class V1api20240311DataCollectionEndpointStatus
     [JsonPropertyName("sku")]
     public V1api20240311DataCollectionEndpointStatusSku? Sku { get; set; }
 
-    /// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20240311DataCollectionEndpointStatusSystemData? SystemData { get; set; }
 
@@ -715,14 +718,14 @@ public partial class V1api20240311DataCollectionEndpointStatus
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Type: The type of the resource.</summary>
+    /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/stable/2024-03-11/dataCollectionEndpoints_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/stable/2024-03-11/dataCollection.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Insights/dataCollectionEndpoints/{dataCollectionEndpointName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

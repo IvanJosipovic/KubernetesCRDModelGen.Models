@@ -1491,6 +1491,39 @@ public partial class V1api20241101FluxConfigurationStatusStatuses
     public IList<V1api20241101FluxConfigurationStatusStatusesStatusConditions>? StatusConditions { get; set; }
 }
 
+/// <summary>
+/// SystemData: Top level metadata
+/// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1api20241101FluxConfigurationStatusSystemData
+{
+    /// <summary>CreatedAt: The timestamp of resource creation (UTC).</summary>
+    [JsonPropertyName("createdAt")]
+    public string? CreatedAt { get; set; }
+
+    /// <summary>CreatedBy: The identity that created the resource.</summary>
+    [JsonPropertyName("createdBy")]
+    public string? CreatedBy { get; set; }
+
+    /// <summary>CreatedByType: The type of identity that created the resource.</summary>
+    [JsonPropertyName("createdByType")]
+    public string? CreatedByType { get; set; }
+
+    /// <summary>LastModifiedAt: The timestamp of resource last modification (UTC)</summary>
+    [JsonPropertyName("lastModifiedAt")]
+    public string? LastModifiedAt { get; set; }
+
+    /// <summary>LastModifiedBy: The identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedBy")]
+    public string? LastModifiedBy { get; set; }
+
+    /// <summary>LastModifiedByType: The type of identity that last modified the resource.</summary>
+    [JsonPropertyName("lastModifiedByType")]
+    public string? LastModifiedByType { get; set; }
+}
+
 /// <summary>The Flux Configuration object returned in Get &amp; Put response.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1594,6 +1627,13 @@ public partial class V1api20241101FluxConfigurationStatus
     /// <summary>Suspend: Whether this configuration should suspend its reconciliation of its kustomizations and sources.</summary>
     [JsonPropertyName("suspend")]
     public bool? Suspend { get; set; }
+
+    /// <summary>
+    /// SystemData: Top level metadata
+    /// https://github.com/Azure/azure-resource-manager-rpc/blob/master/v1.0/common-api-contracts.md#system-metadata-for-all-azure-resources
+    /// </summary>
+    [JsonPropertyName("systemData")]
+    public V1api20241101FluxConfigurationStatusSystemData? SystemData { get; set; }
 
     /// <summary>Type: The type of the resource. E.g. &quot;Microsoft.Compute/virtualMachines&quot; or &quot;Microsoft.Storage/storageAccounts&quot;</summary>
     [JsonPropertyName("type")]
