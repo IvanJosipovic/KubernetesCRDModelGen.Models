@@ -332,6 +332,42 @@ public partial class V1alpha1DBClusterSpecServerlessV2ScalingConfiguration
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBClusterSpecSourceDBClusterIdentifierRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBClusterSpecSourceDBClusterIdentifierRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DBClusterSpecSourceDBClusterIdentifierRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// Metadata assigned to an Amazon RDS resource consisting of a key-value pair.
 /// 
 /// For more information, see Tagging Amazon RDS resources (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html)
@@ -1345,6 +1381,18 @@ public partial class V1alpha1DBClusterSpec
     /// </summary>
     [JsonPropertyName("sourceDBClusterIdentifier")]
     public string? SourceDBClusterIdentifier { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("sourceDBClusterIdentifierRef")]
+    public V1alpha1DBClusterSpecSourceDBClusterIdentifierRef? SourceDBClusterIdentifierRef { get; set; }
 
     /// <summary>
     /// SourceRegion is the source region where the resource exists. This is not

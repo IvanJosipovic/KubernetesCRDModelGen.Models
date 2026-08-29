@@ -119,6 +119,78 @@ public partial class V1alpha1DBProxySpecTags
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBProxySpecVpcSecurityGroupRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBProxySpecVpcSecurityGroupRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DBProxySpecVpcSecurityGroupRefsFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBProxySpecVpcSubnetRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBProxySpecVpcSubnetRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DBProxySpecVpcSubnetRefsFrom? From { get; set; }
+}
+
+/// <summary>
 /// DBProxySpec defines the desired state of DBProxy.
 /// 
 /// The data structure representing a proxy managed by the RDS Proxy.
@@ -212,9 +284,15 @@ public partial class V1alpha1DBProxySpec
     [JsonPropertyName("vpcSecurityGroupIDs")]
     public IList<string>? VpcSecurityGroupIDs { get; set; }
 
+    [JsonPropertyName("vpcSecurityGroupRefs")]
+    public IList<V1alpha1DBProxySpecVpcSecurityGroupRefs>? VpcSecurityGroupRefs { get; set; }
+
     /// <summary>One or more VPC subnet IDs to associate with the new proxy.</summary>
     [JsonPropertyName("vpcSubnetIDs")]
-    public required IList<string> VpcSubnetIDs { get; set; }
+    public IList<string>? VpcSubnetIDs { get; set; }
+
+    [JsonPropertyName("vpcSubnetRefs")]
+    public IList<V1alpha1DBProxySpecVpcSubnetRefs>? VpcSubnetRefs { get; set; }
 }
 
 /// <summary>
