@@ -37,6 +37,42 @@ public partial class V1alpha1GlobalClusterList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1GlobalClusterSpecSourceDBClusterIdentifierRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1GlobalClusterSpecSourceDBClusterIdentifierRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1GlobalClusterSpecSourceDBClusterIdentifierRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// Metadata assigned to an Amazon RDS resource consisting of a key-value pair.
 /// 
 /// For more information, see Tagging Amazon RDS resources (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html)
@@ -134,6 +170,18 @@ public partial class V1alpha1GlobalClusterSpec
     /// </summary>
     [JsonPropertyName("sourceDBClusterIdentifier")]
     public string? SourceDBClusterIdentifier { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("sourceDBClusterIdentifierRef")]
+    public V1alpha1GlobalClusterSpecSourceDBClusterIdentifierRef? SourceDBClusterIdentifierRef { get; set; }
 
     /// <summary>
     /// Specifies whether to enable storage encryption for the new global database

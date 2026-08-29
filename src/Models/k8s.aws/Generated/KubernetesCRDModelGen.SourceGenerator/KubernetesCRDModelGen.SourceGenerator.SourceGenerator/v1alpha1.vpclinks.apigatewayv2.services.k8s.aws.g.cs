@@ -37,6 +37,78 @@ public partial class V1alpha1VPCLinkList : IKubernetesObject<V1ListMeta>, IItems
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCLinkSpecSecurityGroupRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCLinkSpecSecurityGroupRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1VPCLinkSpecSecurityGroupRefsFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCLinkSpecSubnetRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1VPCLinkSpecSubnetRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1VPCLinkSpecSubnetRefsFrom? From { get; set; }
+}
+
+/// <summary>
 /// VpcLinkSpec defines the desired state of VpcLink.
 /// 
 /// Represents a VPC link.
@@ -53,9 +125,15 @@ public partial class V1alpha1VPCLinkSpec
     [JsonPropertyName("securityGroupIDs")]
     public IList<string>? SecurityGroupIDs { get; set; }
 
+    [JsonPropertyName("securityGroupRefs")]
+    public IList<V1alpha1VPCLinkSpecSecurityGroupRefs>? SecurityGroupRefs { get; set; }
+
     /// <summary>A list of subnet IDs to include in the VPC link.</summary>
     [JsonPropertyName("subnetIDs")]
-    public required IList<string> SubnetIDs { get; set; }
+    public IList<string>? SubnetIDs { get; set; }
+
+    [JsonPropertyName("subnetRefs")]
+    public IList<V1alpha1VPCLinkSpecSubnetRefs>? SubnetRefs { get; set; }
 
     /// <summary>A list of tags.</summary>
     [JsonPropertyName("tags")]

@@ -49,6 +49,42 @@ public partial class V1alpha1FirewallSpecEncryptionConfiguration
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FirewallSpecFirewallPolicyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FirewallSpecFirewallPolicyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1FirewallSpecFirewallPolicyRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// Defines where Network Firewall sends logs for the firewall for one log type.
 /// This is used in LoggingConfiguration. You can send each type of log to an
 /// Amazon S3 bucket, a CloudWatch log group, or a Firehose delivery stream.
@@ -118,6 +154,42 @@ public partial class V1alpha1FirewallSpecTags
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FirewallSpecVpcRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1FirewallSpecVpcRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1FirewallSpecVpcRefFrom? From { get; set; }
+}
+
+/// <summary>
 /// FirewallSpec defines the desired state of Firewall.
 /// 
 /// The firewall defines the configuration settings for an Network Firewall firewall.
@@ -170,7 +242,7 @@ public partial class V1alpha1FirewallSpec
     /// Regex Pattern: `^arn:aws`
     /// </summary>
     [JsonPropertyName("firewallPolicyARN")]
-    public required string FirewallPolicyARN { get; set; }
+    public string? FirewallPolicyARN { get; set; }
 
     /// <summary>
     /// A setting indicating whether the firewall is protected against a change to
@@ -180,6 +252,18 @@ public partial class V1alpha1FirewallSpec
     /// </summary>
     [JsonPropertyName("firewallPolicyChangeProtection")]
     public bool? FirewallPolicyChangeProtection { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("firewallPolicyRef")]
+    public V1alpha1FirewallSpecFirewallPolicyRef? FirewallPolicyRef { get; set; }
 
     /// <summary>
     /// Defines how Network Firewall performs logging for a firewall. If you omit
@@ -218,7 +302,19 @@ public partial class V1alpha1FirewallSpec
     /// Regex Pattern: `^vpc-[0-9a-f]+$`
     /// </summary>
     [JsonPropertyName("vpcID")]
-    public required string VpcID { get; set; }
+    public string? VpcID { get; set; }
+
+    /// <summary>
+    /// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+    /// type to provide more user friendly syntax for references using &apos;from&apos; field
+    /// Ex:
+    /// APIIDRef:
+    /// 
+    /// 	from:
+    /// 	  name: my-api
+    /// </summary>
+    [JsonPropertyName("vpcRef")]
+    public V1alpha1FirewallSpecVpcRef? VpcRef { get; set; }
 }
 
 /// <summary>

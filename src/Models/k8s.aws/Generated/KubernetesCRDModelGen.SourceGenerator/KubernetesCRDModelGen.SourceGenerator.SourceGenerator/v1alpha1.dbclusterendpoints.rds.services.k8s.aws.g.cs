@@ -73,6 +73,42 @@ public partial class V1alpha1DBClusterEndpointSpecDbClusterIdentifierRef
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBClusterEndpointSpecStaticMemberRefsFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReferenceWrapper provides a wrapper around *AWSResourceReference
+/// type to provide more user friendly syntax for references using &apos;from&apos; field
+/// Ex:
+/// APIIDRef:
+/// 
+/// 	from:
+/// 	  name: my-api
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DBClusterEndpointSpecStaticMemberRefs
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DBClusterEndpointSpecStaticMemberRefsFrom? From { get; set; }
+}
+
+/// <summary>
 /// Metadata assigned to an Amazon RDS resource consisting of a key-value pair.
 /// 
 /// For more information, see Tagging Amazon RDS resources (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html)
@@ -150,6 +186,9 @@ public partial class V1alpha1DBClusterEndpointSpec
     /// </summary>
     [JsonPropertyName("excludedMembers")]
     public IList<string>? ExcludedMembers { get; set; }
+
+    [JsonPropertyName("staticMemberRefs")]
+    public IList<V1alpha1DBClusterEndpointSpecStaticMemberRefs>? StaticMemberRefs { get; set; }
 
     /// <summary>List of DB instance identifiers that are part of the custom endpoint group.</summary>
     [JsonPropertyName("staticMembers")]
