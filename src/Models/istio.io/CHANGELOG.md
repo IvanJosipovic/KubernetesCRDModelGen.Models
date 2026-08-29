@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/istio.io-v1.20.0...istio.io-v1.21.0) (2026-08-29)
+
+
+### Features
+
+* Sync ([#86](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/86)) ([a7f9af8](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/a7f9af8464c3f422ac41d41610f7bad8ccd04252))
+
 ## [1.20.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/istio.io-v1.19.1...istio.io-v1.20.0) (2026-07-17)
 
 
