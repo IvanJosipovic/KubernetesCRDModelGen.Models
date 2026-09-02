@@ -63,6 +63,16 @@ public enum V1alpha1UserSpecDeletionPolicyEnum
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserSpecForProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the user (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserSpecForProvider
 {
     /// <summary>identifier for use in databricks_access_control_rule_set, e.g. users/mr.foo@example.com.</summary>
@@ -80,6 +90,13 @@ public partial class V1alpha1UserSpecForProvider
     /// <summary>Allow the user to have instance pool create privileges. Defaults to false. More fine grained permissions could be assigned with databricks_permissions and instance_pool_id argument.</summary>
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
+
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
 
     /// <summary>This is a field to allow the user to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
@@ -113,6 +130,9 @@ public partial class V1alpha1UserSpecForProvider
     [JsonPropertyName("home")]
     public string? Home { get; set; }
 
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>Personal Repos location of the user, e.g. /Repos/mr.foo@example.com.</summary>
     [JsonPropertyName("repos")]
     public string? Repos { get; set; }
@@ -128,6 +148,16 @@ public partial class V1alpha1UserSpecForProvider
     /// <summary>This is a field to allow the user to have access only to Databricks One.  Couldn&apos;t be used with workspace_access or databricks_sql_access.</summary>
     [JsonPropertyName("workspaceConsume")]
     public bool? WorkspaceConsume { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserSpecInitProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the user (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -163,6 +193,13 @@ public partial class V1alpha1UserSpecInitProvider
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
 
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is a field to allow the user to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
     public bool? DatabricksSqlAccess { get; set; }
@@ -194,6 +231,9 @@ public partial class V1alpha1UserSpecInitProvider
     /// <summary>Home folder of the user, e.g. /Users/mr.foo@example.com.</summary>
     [JsonPropertyName("home")]
     public string? Home { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Personal Repos location of the user, e.g. /Repos/mr.foo@example.com.</summary>
     [JsonPropertyName("repos")]
@@ -405,6 +445,16 @@ public partial class V1alpha1UserSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserStatusAtProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the user (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserStatusAtProvider
 {
     /// <summary>identifier for use in databricks_access_control_rule_set, e.g. users/mr.foo@example.com.</summary>
@@ -422,6 +472,13 @@ public partial class V1alpha1UserStatusAtProvider
     /// <summary>Allow the user to have instance pool create privileges. Defaults to false. More fine grained permissions could be assigned with databricks_permissions and instance_pool_id argument.</summary>
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
+
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
 
     /// <summary>This is a field to allow the user to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
@@ -458,6 +515,9 @@ public partial class V1alpha1UserStatusAtProvider
     /// <summary>Canonical unique identifier for the user (SCIM ID).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Personal Repos location of the user, e.g. /Repos/mr.foo@example.com.</summary>
     [JsonPropertyName("repos")]
@@ -532,6 +592,15 @@ public partial class V1alpha1UserStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1UserStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

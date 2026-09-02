@@ -3797,6 +3797,10 @@ public partial class V1alpha1PermissionsSpecForProvider
     [JsonPropertyName("jobIdSelector")]
     public V1alpha1PermissionsSpecForProviderJobIdSelector? JobIdSelector { get; set; }
 
+    /// <summary>Knowledge Assistant id</summary>
+    [JsonPropertyName("knowledgeAssistantId")]
+    public string? KnowledgeAssistantId { get; set; }
+
     /// <summary>ID of notebook within workspace</summary>
     [JsonPropertyName("notebookId")]
     public string? NotebookId { get; set; }
@@ -3928,6 +3932,10 @@ public partial class V1alpha1PermissionsSpecForProvider
     /// <summary>Selector for a SQLQuery in sql to populate sqlQueryId.</summary>
     [JsonPropertyName("sqlQueryIdSelector")]
     public V1alpha1PermissionsSpecForProviderSqlQueryIdSelector? SqlQueryIdSelector { get; set; }
+
+    /// <summary>Supervisor Agent id</summary>
+    [JsonPropertyName("supervisorAgentId")]
+    public string? SupervisorAgentId { get; set; }
 
     /// <summary>Vector Search endpoint id.</summary>
     [JsonPropertyName("vectorSearchEndpointId")]
@@ -7714,6 +7722,10 @@ public partial class V1alpha1PermissionsSpecInitProvider
     [JsonPropertyName("jobIdSelector")]
     public V1alpha1PermissionsSpecInitProviderJobIdSelector? JobIdSelector { get; set; }
 
+    /// <summary>Knowledge Assistant id</summary>
+    [JsonPropertyName("knowledgeAssistantId")]
+    public string? KnowledgeAssistantId { get; set; }
+
     /// <summary>ID of notebook within workspace</summary>
     [JsonPropertyName("notebookId")]
     public string? NotebookId { get; set; }
@@ -7845,6 +7857,10 @@ public partial class V1alpha1PermissionsSpecInitProvider
     /// <summary>Selector for a SQLQuery in sql to populate sqlQueryId.</summary>
     [JsonPropertyName("sqlQueryIdSelector")]
     public V1alpha1PermissionsSpecInitProviderSqlQueryIdSelector? SqlQueryIdSelector { get; set; }
+
+    /// <summary>Supervisor Agent id</summary>
+    [JsonPropertyName("supervisorAgentId")]
+    public string? SupervisorAgentId { get; set; }
 
     /// <summary>Vector Search endpoint id.</summary>
     [JsonPropertyName("vectorSearchEndpointId")]
@@ -8168,6 +8184,10 @@ public partial class V1alpha1PermissionsStatusAtProvider
     [JsonPropertyName("jobId")]
     public string? JobId { get; set; }
 
+    /// <summary>Knowledge Assistant id</summary>
+    [JsonPropertyName("knowledgeAssistantId")]
+    public string? KnowledgeAssistantId { get; set; }
+
     /// <summary>ID of notebook within workspace</summary>
     [JsonPropertyName("notebookId")]
     public string? NotebookId { get; set; }
@@ -8219,6 +8239,10 @@ public partial class V1alpha1PermissionsStatusAtProvider
     /// <summary>SQL query id</summary>
     [JsonPropertyName("sqlQueryId")]
     public string? SqlQueryId { get; set; }
+
+    /// <summary>Supervisor Agent id</summary>
+    [JsonPropertyName("supervisorAgentId")]
+    public string? SupervisorAgentId { get; set; }
 
     /// <summary>Vector Search endpoint id.</summary>
     [JsonPropertyName("vectorSearchEndpointId")]
@@ -8288,6 +8312,15 @@ public partial class V1alpha1PermissionsStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1PermissionsStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

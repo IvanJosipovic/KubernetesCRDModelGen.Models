@@ -70,6 +70,9 @@ public partial class V1beta1RestrictWorkspaceAdminsSettingSpecForProviderProvide
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestrictWorkspaceAdminsSettingSpecForProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -109,6 +112,9 @@ public partial class V1beta1RestrictWorkspaceAdminsSettingSpecInitProviderProvid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestrictWorkspaceAdminsSettingSpecInitProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -343,6 +349,9 @@ public partial class V1beta1RestrictWorkspaceAdminsSettingStatusAtProviderProvid
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RestrictWorkspaceAdminsSettingStatusAtProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -424,6 +433,15 @@ public partial class V1beta1RestrictWorkspaceAdminsSettingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1RestrictWorkspaceAdminsSettingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

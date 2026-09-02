@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: connections.unity.databricks.crossplane.io
 spec:
   group: unity.databricks.crossplane.io
@@ -76,16 +76,30 @@ spec:
               forProvider:
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    items:
+                      properties:
+                        environmentVersion:
+                          description: Environment version.
+                          type: string
+                        javaDependencies:
+                          description: List of Java dependencies.
+                          items:
+                            type: string
+                          type: array
+                      type: object
+                    type: array
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   optionsSecretRef:
-                    description: The key value of options required by the connection, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret or GoogleServiceAccountKeyJson. Please consult the documentation for the required option.
+                    description: A map of key-value properties attached to the securable. The required keys depend on the connection type, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret, or GoogleServiceAccountKeyJson. Please consult the documentation for the required options. This field is sensitive.
                     properties:
                       name:
                         description: Name of the secret.
@@ -98,12 +112,12 @@ spec:
                     - namespace
                     type: object
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -116,7 +130,7 @@ spec:
                       type: object
                     type: array
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                 type: object
               initProvider:
@@ -133,25 +147,39 @@ spec:
                   autoscaler.
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    items:
+                      properties:
+                        environmentVersion:
+                          description: Environment version.
+                          type: string
+                        javaDependencies:
+                          description: List of Java dependencies.
+                          items:
+                            type: string
+                          type: array
+                      type: object
+                    type: array
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   optionsSecretRef:
                     additionalProperties:
                       type: string
                     type: object
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -164,7 +192,7 @@ spec:
                       type: object
                     type: array
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                 type: object
               managementPolicies:
@@ -259,13 +287,13 @@ spec:
               atProvider:
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionId:
-                    description: Unique ID of the connection.
+                    description: Unique identifier of the Connection.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
                   createdAt:
                     description: Time at which this connection was created, in epoch milliseconds.
@@ -274,8 +302,22 @@ spec:
                     description: Username of connection creator.
                     type: string
                   credentialType:
-                    description: The type of credential for this connection.
+                    description: The type of credential.
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    items:
+                      properties:
+                        environmentVersion:
+                          description: Environment version.
+                          type: string
+                        javaDependencies:
+                          description: List of Java dependencies.
+                          items:
+                            type: string
+                          type: array
+                      type: object
+                    type: array
                   fullName:
                     description: Full name of connection.
                     type: string
@@ -283,18 +325,18 @@ spec:
                     description: ID of this connection in form of <metastore_id>|<name>.
                     type: string
                   metastoreId:
-                    description: Unique ID of the UC metastore for this connection.
+                    description: Unique identifier of parent metastore.
                     type: string
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -307,23 +349,25 @@ spec:
                       type: object
                     type: array
                   provisioningInfo:
-                    description: Object with the status of an asynchronously provisioned resource.
+                    description: 'Status of an asynchronously provisioned resource. This block consists of the following fields:'
                     items:
                       properties:
                         state:
+                          description: 'The provisioning state of the resource. Possible values are: ACTIVE, DEGRADED, DELETING, FAILED, PROVISIONING, or UPDATING.'
                           type: string
                       type: object
                     type: array
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                   securableType:
+                    description: Securable type.
                     type: string
                   updatedAt:
-                    description: Time at which connection this was last modified, in epoch milliseconds.
+                    description: Time at which this connection was updated, in epoch milliseconds.
                     type: number
                   updatedBy:
-                    description: Username of user who last modified the connection.
+                    description: Username of user who last modified connection.
                     type: string
                   url:
                     description: URL of the remote data source, extracted from options.
@@ -373,6 +417,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -443,16 +494,28 @@ spec:
               forProvider:
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    properties:
+                      environmentVersion:
+                        description: Environment version.
+                        type: string
+                      javaDependencies:
+                        description: List of Java dependencies.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   optionsSecretRef:
-                    description: The key value of options required by the connection, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret or GoogleServiceAccountKeyJson. Please consult the documentation for the required option.
+                    description: A map of key-value properties attached to the securable. The required keys depend on the connection type, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret, or GoogleServiceAccountKeyJson. Please consult the documentation for the required options. This field is sensitive.
                     properties:
                       name:
                         description: Name of the secret.
@@ -465,12 +528,12 @@ spec:
                     - namespace
                     type: object
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -481,7 +544,7 @@ spec:
                         type: string
                     type: object
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                 type: object
               initProvider:
@@ -498,25 +561,37 @@ spec:
                   autoscaler.
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    properties:
+                      environmentVersion:
+                        description: Environment version.
+                        type: string
+                      javaDependencies:
+                        description: List of Java dependencies.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   optionsSecretRef:
                     additionalProperties:
                       type: string
                     type: object
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -527,7 +602,7 @@ spec:
                         type: string
                     type: object
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                 type: object
               managementPolicies:
@@ -622,13 +697,13 @@ spec:
               atProvider:
                 properties:
                   comment:
-                    description: Free-form text. Change forces creation of a new resource.
+                    description: User-provided free-form text description. Change forces creation of a new resource.
                     type: string
                   connectionId:
-                    description: Unique ID of the connection.
+                    description: Unique identifier of the Connection.
                     type: string
                   connectionType:
-                    description: Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.
+                    description: 'The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.'
                     type: string
                   createdAt:
                     description: Time at which this connection was created, in epoch milliseconds.
@@ -637,8 +712,20 @@ spec:
                     description: Username of connection creator.
                     type: string
                   credentialType:
-                    description: The type of credential for this connection.
+                    description: The type of credential.
                     type: string
+                  environmentSettings:
+                    description: 'Connection environment settings. This block consists of the following fields:'
+                    properties:
+                      environmentVersion:
+                        description: Environment version.
+                        type: string
+                      javaDependencies:
+                        description: List of Java dependencies.
+                        items:
+                          type: string
+                        type: array
+                    type: object
                   fullName:
                     description: Full name of connection.
                     type: string
@@ -646,18 +733,18 @@ spec:
                     description: ID of this connection in form of <metastore_id>|<name>.
                     type: string
                   metastoreId:
-                    description: Unique ID of the UC metastore for this connection.
+                    description: Unique identifier of parent metastore.
                     type: string
                   name:
-                    description: Name of the Connection.
+                    description: Name of the connection.
                     type: string
                   owner:
-                    description: Name of the connection owner.
+                    description: Username of current owner of the connection.
                     type: string
                   properties:
                     additionalProperties:
                       type: string
-                    description: Free-form connection properties. Change forces creation of a new resource.
+                    description: A map of key-value properties attached to the securable. Change forces creation of a new resource.
                     type: object
                     x-kubernetes-map-type: granular
                   providerConfig:
@@ -668,23 +755,25 @@ spec:
                         type: string
                     type: object
                   provisioningInfo:
-                    description: Object with the status of an asynchronously provisioned resource.
+                    description: 'Status of an asynchronously provisioned resource. This block consists of the following fields:'
                     items:
                       properties:
                         state:
+                          description: 'The provisioning state of the resource. Possible values are: ACTIVE, DEGRADED, DELETING, FAILED, PROVISIONING, or UPDATING.'
                           type: string
                       type: object
                     type: array
                   readOnly:
-                    description: Indicates whether the connection is read-only. Change forces creation of a new resource.
+                    description: If the connection is read only. Change forces creation of a new resource.
                     type: boolean
                   securableType:
+                    description: Securable type.
                     type: string
                   updatedAt:
-                    description: Time at which connection this was last modified, in epoch milliseconds.
+                    description: Time at which this connection was updated, in epoch milliseconds.
                     type: number
                   updatedBy:
-                    description: Username of user who last modified the connection.
+                    description: Username of user who last modified connection.
                     type: string
                   url:
                     description: URL of the remote data source, extracted from options.
@@ -734,6 +823,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

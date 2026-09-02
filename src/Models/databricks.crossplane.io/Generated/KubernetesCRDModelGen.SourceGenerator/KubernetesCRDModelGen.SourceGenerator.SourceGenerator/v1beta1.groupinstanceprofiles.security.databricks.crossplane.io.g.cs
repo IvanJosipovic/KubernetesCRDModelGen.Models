@@ -351,8 +351,24 @@ public partial class V1beta1GroupInstanceProfileSpecForProviderInstanceProfileId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupInstanceProfileSpecForProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;group_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupInstanceProfileSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -376,6 +392,9 @@ public partial class V1beta1GroupInstanceProfileSpecForProvider
     /// <summary>Selector for a InstanceProfile in deployment to populate instanceProfileId.</summary>
     [JsonPropertyName("instanceProfileIdSelector")]
     public V1beta1GroupInstanceProfileSpecForProviderInstanceProfileIdSelector? InstanceProfileIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupInstanceProfileSpecForProviderProviderConfig? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -672,6 +691,15 @@ public partial class V1beta1GroupInstanceProfileSpecInitProviderInstanceProfileI
     public V1beta1GroupInstanceProfileSpecInitProviderInstanceProfileIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupInstanceProfileSpecInitProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;group_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -688,6 +716,13 @@ public partial class V1beta1GroupInstanceProfileSpecInitProviderInstanceProfileI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupInstanceProfileSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -711,6 +746,9 @@ public partial class V1beta1GroupInstanceProfileSpecInitProvider
     /// <summary>Selector for a InstanceProfile in deployment to populate instanceProfileId.</summary>
     [JsonPropertyName("instanceProfileIdSelector")]
     public V1beta1GroupInstanceProfileSpecInitProviderInstanceProfileIdSelector? InstanceProfileIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupInstanceProfileSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -898,8 +936,24 @@ public partial class V1beta1GroupInstanceProfileSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupInstanceProfileStatusAtProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;group_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupInstanceProfileStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -911,6 +965,9 @@ public partial class V1beta1GroupInstanceProfileStatusAtProvider
     /// <summary>This is the id of the instance profile resource.</summary>
     [JsonPropertyName("instanceProfileId")]
     public string? InstanceProfileId { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupInstanceProfileStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -967,6 +1024,15 @@ public partial class V1beta1GroupInstanceProfileStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GroupInstanceProfileStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

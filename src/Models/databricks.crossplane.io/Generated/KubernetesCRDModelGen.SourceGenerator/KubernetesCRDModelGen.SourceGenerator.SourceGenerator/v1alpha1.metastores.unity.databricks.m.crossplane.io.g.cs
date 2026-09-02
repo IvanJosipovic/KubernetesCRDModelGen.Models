@@ -43,8 +43,25 @@ public partial class V1alpha1MetastoreList : IKubernetesObject<V1ListMeta>, IIte
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MetastoreSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>Unique identifier of the metastore&apos;s default data access configuration.</summary>
     [JsonPropertyName("defaultDataAccessConfigId")]
     public string? DefaultDataAccessConfigId { get; set; }
@@ -81,6 +98,10 @@ public partial class V1alpha1MetastoreSpecForProvider
     [JsonPropertyName("privilegeModelVersion")]
     public string? PrivilegeModelVersion { get; set; }
 
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1MetastoreSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>(Mandatory for account-level) The region of the metastore</summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
@@ -96,6 +117,16 @@ public partial class V1alpha1MetastoreSpecForProvider
     /// <summary>Name of the storage credential to access the metastore storage_root.</summary>
     [JsonPropertyName("storageRootCredentialName")]
     public string? StorageRootCredentialName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -115,6 +146,13 @@ public partial class V1alpha1MetastoreSpecForProvider
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MetastoreSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>Unique identifier of the metastore&apos;s default data access configuration.</summary>
     [JsonPropertyName("defaultDataAccessConfigId")]
     public string? DefaultDataAccessConfigId { get; set; }
@@ -150,6 +188,10 @@ public partial class V1alpha1MetastoreSpecInitProvider
     /// <summary>Privilege model version of the metastore, of the form major.minor (e.g., 1.0).</summary>
     [JsonPropertyName("privilegeModelVersion")]
     public string? PrivilegeModelVersion { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1MetastoreSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>(Mandatory for account-level) The region of the metastore</summary>
     [JsonPropertyName("region")]
@@ -282,8 +324,25 @@ public partial class V1alpha1MetastoreSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MetastoreStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MetastoreStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>Cloud vendor of the metastore home shard (e.g., aws, azure, gcp).</summary>
     [JsonPropertyName("cloud")]
     public string? Cloud { get; set; }
@@ -343,6 +402,10 @@ public partial class V1alpha1MetastoreStatusAtProvider
     /// <summary>Privilege model version of the metastore, of the form major.minor (e.g., 1.0).</summary>
     [JsonPropertyName("privilegeModelVersion")]
     public string? PrivilegeModelVersion { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1MetastoreStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>(Mandatory for account-level) The region of the metastore</summary>
     [JsonPropertyName("region")]
@@ -425,6 +488,15 @@ public partial class V1alpha1MetastoreStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1MetastoreStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

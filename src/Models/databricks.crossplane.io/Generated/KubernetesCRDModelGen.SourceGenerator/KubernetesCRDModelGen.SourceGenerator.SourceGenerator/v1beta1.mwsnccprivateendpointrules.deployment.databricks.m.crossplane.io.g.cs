@@ -36,6 +36,14 @@ public partial class V1beta1MwsNccPrivateEndpointRuleList : IKubernetesObject<V1
     public required IList<V1beta1MwsNccPrivateEndpointRule> Items { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpoint
+{
+    [JsonPropertyName("serviceAttachment")]
+    public string? ServiceAttachment { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -195,28 +203,6 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProviderNetworkConne
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProvider
 {
-    [JsonPropertyName("accountId")]
-    public string? AccountId { get; set; }
-
-    /// <summary>
-    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
-    /// The possible values are:
-    /// </summary>
-    [JsonPropertyName("connectionState")]
-    public string? ConnectionState { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was created.</summary>
-    [JsonPropertyName("creationTime")]
-    public double? CreationTime { get; set; }
-
-    /// <summary>Whether this private endpoint is deactivated.</summary>
-    [JsonPropertyName("deactivated")]
-    public bool? Deactivated { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was deactivated.</summary>
-    [JsonPropertyName("deactivatedAt")]
-    public double? DeactivatedAt { get; set; }
-
     [JsonPropertyName("domainNames")]
     public IList<string>? DomainNames { get; set; }
 
@@ -224,16 +210,12 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the Azure private endpoint resource, e.g. &quot;databricks-088781b3-77fa-4132-b429-1af0d91bc593-pe-3cb31234&quot;</summary>
-    [JsonPropertyName("endpointName")]
-    public string? EndpointName { get; set; }
-
     /// <summary>(AWS only) Example com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123. The full target AWS endpoint service name that connects to the destination resources of the private endpoint. Change forces creation of a new resource.</summary>
     [JsonPropertyName("endpointService")]
     public string? EndpointService { get; set; }
 
-    [JsonPropertyName("errorMessage")]
-    public string? ErrorMessage { get; set; }
+    [JsonPropertyName("gcpEndpoint")]
+    public V1beta1MwsNccPrivateEndpointRuleSpecForProviderGcpEndpoint? GcpEndpoint { get; set; }
 
     /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
     [JsonPropertyName("groupId")]
@@ -258,18 +240,14 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecForProvider
     /// <summary>.</summary>
     [JsonPropertyName("resourceNames")]
     public IList<string>? ResourceNames { get; set; }
+}
 
-    /// <summary>the ID of a private endpoint rule.</summary>
-    [JsonPropertyName("ruleId")]
-    public string? RuleId { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was updated.</summary>
-    [JsonPropertyName("updatedTime")]
-    public double? UpdatedTime { get; set; }
-
-    /// <summary>The AWS VPC endpoint ID. You can use this ID to identify the VPC endpoint created by Databricks.</summary>
-    [JsonPropertyName("vpcEndpointId")]
-    public string? VpcEndpointId { get; set; }
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpoint
+{
+    [JsonPropertyName("serviceAttachment")]
+    public string? ServiceAttachment { get; set; }
 }
 
 /// <summary>
@@ -443,28 +421,6 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProviderNetworkConn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProvider
 {
-    [JsonPropertyName("accountId")]
-    public string? AccountId { get; set; }
-
-    /// <summary>
-    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
-    /// The possible values are:
-    /// </summary>
-    [JsonPropertyName("connectionState")]
-    public string? ConnectionState { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was created.</summary>
-    [JsonPropertyName("creationTime")]
-    public double? CreationTime { get; set; }
-
-    /// <summary>Whether this private endpoint is deactivated.</summary>
-    [JsonPropertyName("deactivated")]
-    public bool? Deactivated { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was deactivated.</summary>
-    [JsonPropertyName("deactivatedAt")]
-    public double? DeactivatedAt { get; set; }
-
     [JsonPropertyName("domainNames")]
     public IList<string>? DomainNames { get; set; }
 
@@ -472,16 +428,12 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The name of the Azure private endpoint resource, e.g. &quot;databricks-088781b3-77fa-4132-b429-1af0d91bc593-pe-3cb31234&quot;</summary>
-    [JsonPropertyName("endpointName")]
-    public string? EndpointName { get; set; }
-
     /// <summary>(AWS only) Example com.amazonaws.vpce.us-east-1.vpce-svc-123abcc1298abc123. The full target AWS endpoint service name that connects to the destination resources of the private endpoint. Change forces creation of a new resource.</summary>
     [JsonPropertyName("endpointService")]
     public string? EndpointService { get; set; }
 
-    [JsonPropertyName("errorMessage")]
-    public string? ErrorMessage { get; set; }
+    [JsonPropertyName("gcpEndpoint")]
+    public V1beta1MwsNccPrivateEndpointRuleSpecInitProviderGcpEndpoint? GcpEndpoint { get; set; }
 
     /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
     [JsonPropertyName("groupId")]
@@ -506,18 +458,6 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpecInitProvider
     /// <summary>.</summary>
     [JsonPropertyName("resourceNames")]
     public IList<string>? ResourceNames { get; set; }
-
-    /// <summary>the ID of a private endpoint rule.</summary>
-    [JsonPropertyName("ruleId")]
-    public string? RuleId { get; set; }
-
-    /// <summary>Time in epoch milliseconds when this object was updated.</summary>
-    [JsonPropertyName("updatedTime")]
-    public double? UpdatedTime { get; set; }
-
-    /// <summary>The AWS VPC endpoint ID. You can use this ID to identify the VPC endpoint created by Databricks.</summary>
-    [JsonPropertyName("vpcEndpointId")]
-    public string? VpcEndpointId { get; set; }
 }
 
 /// <summary>
@@ -629,13 +569,25 @@ public partial class V1beta1MwsNccPrivateEndpointRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpoint
+{
+    [JsonPropertyName("pscEndpointUri")]
+    public string? PscEndpointUri { get; set; }
+
+    [JsonPropertyName("serviceAttachment")]
+    public string? ServiceAttachment { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccPrivateEndpointRuleStatusAtProvider
 {
+    /// <summary>The Databricks account ID that owns this private endpoint rule.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
     /// <summary>
-    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the Azure portal before they take effect.
+    /// The current status of this private endpoint. The private endpoint rules are effective only if the connection state is ESTABLISHED. Remember that you must approve new endpoints on your resources in the cloud console before they take effect.
     /// The possible values are:
     /// </summary>
     [JsonPropertyName("connectionState")]
@@ -668,13 +620,18 @@ public partial class V1beta1MwsNccPrivateEndpointRuleStatusAtProvider
     [JsonPropertyName("endpointService")]
     public string? EndpointService { get; set; }
 
+    /// <summary>Error message describing why the rule is in a CREATE_FAILED or otherwise failed state, if any.</summary>
     [JsonPropertyName("errorMessage")]
     public string? ErrorMessage { get; set; }
+
+    [JsonPropertyName("gcpEndpoint")]
+    public V1beta1MwsNccPrivateEndpointRuleStatusAtProviderGcpEndpoint? GcpEndpoint { get; set; }
 
     /// <summary>(Azure only) Not used by customer-managed private endpoint services. The sub-resource type (group ID) of the target resource. Must be one of supported resource types (i.e., blob, dfs, sqlServer , etc. Consult the Azure documentation for full list of supported resources). Note that to connect to workspace root storage (root DBFS), you need two endpoints, one for blob and one for dfs. Change forces creation of a new resource. Conflicts with domain_names.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
 
+    /// <summary>The composite resource identifier, in the form &lt;network_connectivity_config_id&gt;/&lt;rule_id&gt;, used for import.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -757,6 +714,15 @@ public partial class V1beta1MwsNccPrivateEndpointRuleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MwsNccPrivateEndpointRuleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

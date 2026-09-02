@@ -35,6 +35,7 @@
     <Project Path="src/Models/kubevirt.io/KubernetesCRDModelGen.Models.kubevirt.io.csproj" />
     <Project Path="src/Models/kyverno.io/KubernetesCRDModelGen.Models.kyverno.io.csproj" />
     <Project Path="src/Models/longhorn.io/KubernetesCRDModelGen.Models.longhorn.io.csproj" />
+    <Project Path="src/Models/multicluster.x-k8s.io/KubernetesCRDModelGen.Models.multicluster.x-k8s.io.csproj" />
     <Project Path="src/Models/opentofu.upbound.io/KubernetesCRDModelGen.Models.opentofu.upbound.io.csproj" />
     <Project Path="src/Models/postgresql.cnpg.io/KubernetesCRDModelGen.Models.postgresql.cnpg.io.csproj" />
     <Project Path="src/Models/projectcalico.org/KubernetesCRDModelGen.Models.projectcalico.org.csproj" />

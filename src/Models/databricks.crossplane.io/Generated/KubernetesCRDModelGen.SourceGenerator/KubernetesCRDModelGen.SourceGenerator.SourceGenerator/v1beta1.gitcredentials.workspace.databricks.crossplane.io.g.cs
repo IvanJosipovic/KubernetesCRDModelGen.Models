@@ -115,7 +115,7 @@ public partial class V1beta1GitCredentialSpecForProvider
     [JsonPropertyName("personalAccessTokenSecretRef")]
     public V1beta1GitCredentialSpecForProviderPersonalAccessTokenSecretRef? PersonalAccessTokenSecretRef { get; set; }
 
-    /// <summary>identifier of specific Git credential</summary>
+    /// <summary>The ID of the service principal whose credentials will be managed. Only service principal managers can use this field. When specified, the git credential is created or updated for the given service principal instead of the calling user.</summary>
     [JsonPropertyName("principalId")]
     public double? PrincipalId { get; set; }
 
@@ -196,7 +196,7 @@ public partial class V1beta1GitCredentialSpecInitProvider
     [JsonPropertyName("personalAccessTokenSecretRef")]
     public V1beta1GitCredentialSpecInitProviderPersonalAccessTokenSecretRef? PersonalAccessTokenSecretRef { get; set; }
 
-    /// <summary>identifier of specific Git credential</summary>
+    /// <summary>The ID of the service principal whose credentials will be managed. Only service principal managers can use this field. When specified, the git credential is created or updated for the given service principal instead of the calling user.</summary>
     [JsonPropertyName("principalId")]
     public double? PrincipalId { get; set; }
 
@@ -430,7 +430,7 @@ public partial class V1beta1GitCredentialStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>identifier of specific Git credential</summary>
+    /// <summary>The ID of the service principal whose credentials will be managed. Only service principal managers can use this field. When specified, the git credential is created or updated for the given service principal instead of the calling user.</summary>
     [JsonPropertyName("principalId")]
     public double? PrincipalId { get; set; }
 
@@ -493,6 +493,15 @@ public partial class V1beta1GitCredentialStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GitCredentialStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

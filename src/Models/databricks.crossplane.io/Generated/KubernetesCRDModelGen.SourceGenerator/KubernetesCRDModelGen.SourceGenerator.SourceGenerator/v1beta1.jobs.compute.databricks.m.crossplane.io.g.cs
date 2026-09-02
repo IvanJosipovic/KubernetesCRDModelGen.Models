@@ -251,12 +251,20 @@ public partial class V1beta1JobSpecForProviderDbtTask
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecForProviderDeployment
 {
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
     /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 /// <summary>(List) An optional set of email addresses notified when runs of this job begins, completes or fails. The default behavior is to not send any emails. This field is a block and is documented below.</summary>
@@ -489,6 +497,9 @@ public partial class V1beta1JobSpecForProviderJobClusterNewClusterAzureAttribute
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -643,6 +654,9 @@ public partial class V1beta1JobSpecForProviderJobClusterNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -1168,6 +1182,9 @@ public partial class V1beta1JobSpecForProviderNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -1322,6 +1339,9 @@ public partial class V1beta1JobSpecForProviderNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -2152,6 +2172,23 @@ public partial class V1beta1JobSpecForProviderRunJobTask
     public IDictionary<string, string>? JobParameters { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderScheduleSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2164,6 +2201,10 @@ public partial class V1beta1JobSpecForProviderSchedule
     /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
     [JsonPropertyName("quartzCronExpression")]
     public string? QuartzCronExpression { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobSpecForProviderScheduleSqlCondition? SqlCondition { get; set; }
 
     /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
     [JsonPropertyName("timezoneId")]
@@ -2213,6 +2254,88 @@ public partial class V1beta1JobSpecForProviderSparkSubmitTask
     /// <summary>Parameters for the task</summary>
     [JsonPropertyName("parameters")]
     public IList<string>? Parameters { get; set; }
+}
+
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobSpecForProviderTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobSpecForProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobSpecForProviderTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -2903,6 +3026,88 @@ public partial class V1beta1JobSpecForProviderTaskExistingClusterIdSelector
     public V1beta1JobSpecForProviderTaskExistingClusterIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobSpecForProviderTaskForEachTaskTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -3331,6 +3536,9 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskNewClusterAzure
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -3485,6 +3693,9 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskNewClusterGcpAt
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -3901,9 +4112,25 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -3979,6 +4206,32 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskPowerBiTask
     public string? WarehouseId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobSpecForProviderTaskForEachTaskTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4008,6 +4261,18 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskRunJobTaskPipel
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -4294,6 +4559,14 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTaskWebhookNotifica
 public partial class V1beta1JobSpecForProviderTaskForEachTaskTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobSpecForProviderTaskForEachTaskTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobSpecForProviderTaskForEachTaskTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobSpecForProviderTaskForEachTaskTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -4333,6 +4606,7 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -4391,6 +4665,10 @@ public partial class V1beta1JobSpecForProviderTaskForEachTaskTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobSpecForProviderTaskForEachTaskTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobSpecForProviderTaskForEachTaskTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -4676,6 +4954,9 @@ public partial class V1beta1JobSpecForProviderTaskNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -4830,6 +5111,9 @@ public partial class V1beta1JobSpecForProviderTaskNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -5730,6 +6014,13 @@ public partial class V1beta1JobSpecForProviderTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
@@ -5741,6 +6032,15 @@ public partial class V1beta1JobSpecForProviderTaskPipelineTask
     /// <summary>Selector for a Pipeline in compute to populate pipelineId.</summary>
     [JsonPropertyName("pipelineIdSelector")]
     public V1beta1JobSpecForProviderTaskPipelineTaskPipelineIdSelector? PipelineIdSelector { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -5979,6 +6279,32 @@ public partial class V1beta1JobSpecForProviderTaskPowerBiTask
     public V1beta1JobSpecForProviderTaskPowerBiTaskWarehouseIdSelector? WarehouseIdSelector { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobSpecForProviderTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -6008,6 +6334,18 @@ public partial class V1beta1JobSpecForProviderTaskRunJobTaskPipelineParams
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -6945,6 +7283,14 @@ public partial class V1beta1JobSpecForProviderTaskWebhookNotifications
 public partial class V1beta1JobSpecForProviderTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobSpecForProviderTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobSpecForProviderTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobSpecForProviderTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -6984,6 +7330,7 @@ public partial class V1beta1JobSpecForProviderTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -7054,6 +7401,10 @@ public partial class V1beta1JobSpecForProviderTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobSpecForProviderTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobSpecForProviderTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -7156,6 +7507,23 @@ public partial class V1beta1JobSpecForProviderTriggerPeriodic
     public string? Unit { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecForProviderTriggerSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -7197,6 +7565,10 @@ public partial class V1beta1JobSpecForProviderTrigger
     /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
     [JsonPropertyName("periodic")]
     public V1beta1JobSpecForProviderTriggerPeriodic? Periodic { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobSpecForProviderTriggerSqlCondition? SqlCondition { get; set; }
 
     /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
     [JsonPropertyName("tableUpdate")]
@@ -7370,6 +7742,10 @@ public partial class V1beta1JobSpecForProvider
     /// <summary>Specifies job parameter for the job. See parameter Configuration Block</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1JobSpecForProviderParameter>? Parameter { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>The performance mode on a serverless job. The performance target determines the level of compute performance or cost-efficiency for the run.  Supported values are:</summary>
     [JsonPropertyName("performanceTarget")]
@@ -7659,12 +8035,20 @@ public partial class V1beta1JobSpecInitProviderDbtTask
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobSpecInitProviderDeployment
 {
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
     /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 /// <summary>(List) An optional set of email addresses notified when runs of this job begins, completes or fails. The default behavior is to not send any emails. This field is a block and is documented below.</summary>
@@ -7897,6 +8281,9 @@ public partial class V1beta1JobSpecInitProviderJobClusterNewClusterAzureAttribut
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -8051,6 +8438,9 @@ public partial class V1beta1JobSpecInitProviderJobClusterNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -8576,6 +8966,9 @@ public partial class V1beta1JobSpecInitProviderNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -8730,6 +9123,9 @@ public partial class V1beta1JobSpecInitProviderNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -9560,6 +9956,23 @@ public partial class V1beta1JobSpecInitProviderRunJobTask
     public IDictionary<string, string>? JobParameters { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderScheduleSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -9572,6 +9985,10 @@ public partial class V1beta1JobSpecInitProviderSchedule
     /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
     [JsonPropertyName("quartzCronExpression")]
     public string? QuartzCronExpression { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobSpecInitProviderScheduleSqlCondition? SqlCondition { get; set; }
 
     /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
     [JsonPropertyName("timezoneId")]
@@ -9621,6 +10038,88 @@ public partial class V1beta1JobSpecInitProviderSparkSubmitTask
     /// <summary>Parameters for the task</summary>
     [JsonPropertyName("parameters")]
     public IList<string>? Parameters { get; set; }
+}
+
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobSpecInitProviderTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobSpecInitProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobSpecInitProviderTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -10311,6 +10810,88 @@ public partial class V1beta1JobSpecInitProviderTaskExistingClusterIdSelector
     public V1beta1JobSpecInitProviderTaskExistingClusterIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobSpecInitProviderTaskForEachTaskTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -10739,6 +11320,9 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskNewClusterAzur
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -10893,6 +11477,9 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskNewClusterGcpA
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -11309,9 +11896,25 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -11387,6 +11990,32 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskPowerBiTask
     public string? WarehouseId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobSpecInitProviderTaskForEachTaskTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -11416,6 +12045,18 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskRunJobTaskPipe
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -11702,6 +12343,14 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTaskWebhookNotific
 public partial class V1beta1JobSpecInitProviderTaskForEachTaskTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobSpecInitProviderTaskForEachTaskTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobSpecInitProviderTaskForEachTaskTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobSpecInitProviderTaskForEachTaskTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -11741,6 +12390,7 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -11799,6 +12449,10 @@ public partial class V1beta1JobSpecInitProviderTaskForEachTaskTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobSpecInitProviderTaskForEachTaskTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobSpecInitProviderTaskForEachTaskTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -12084,6 +12738,9 @@ public partial class V1beta1JobSpecInitProviderTaskNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -12238,6 +12895,9 @@ public partial class V1beta1JobSpecInitProviderTaskNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -13138,6 +13798,13 @@ public partial class V1beta1JobSpecInitProviderTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
@@ -13149,6 +13816,15 @@ public partial class V1beta1JobSpecInitProviderTaskPipelineTask
     /// <summary>Selector for a Pipeline in compute to populate pipelineId.</summary>
     [JsonPropertyName("pipelineIdSelector")]
     public V1beta1JobSpecInitProviderTaskPipelineTaskPipelineIdSelector? PipelineIdSelector { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -13387,6 +14063,32 @@ public partial class V1beta1JobSpecInitProviderTaskPowerBiTask
     public V1beta1JobSpecInitProviderTaskPowerBiTaskWarehouseIdSelector? WarehouseIdSelector { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobSpecInitProviderTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -13416,6 +14118,18 @@ public partial class V1beta1JobSpecInitProviderTaskRunJobTaskPipelineParams
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -14353,6 +15067,14 @@ public partial class V1beta1JobSpecInitProviderTaskWebhookNotifications
 public partial class V1beta1JobSpecInitProviderTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobSpecInitProviderTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobSpecInitProviderTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobSpecInitProviderTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -14392,6 +15114,7 @@ public partial class V1beta1JobSpecInitProviderTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -14462,6 +15185,10 @@ public partial class V1beta1JobSpecInitProviderTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobSpecInitProviderTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobSpecInitProviderTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -14564,6 +15291,23 @@ public partial class V1beta1JobSpecInitProviderTriggerPeriodic
     public string? Unit { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobSpecInitProviderTriggerSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -14605,6 +15349,10 @@ public partial class V1beta1JobSpecInitProviderTrigger
     /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
     [JsonPropertyName("periodic")]
     public V1beta1JobSpecInitProviderTriggerPeriodic? Periodic { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobSpecInitProviderTriggerSqlCondition? SqlCondition { get; set; }
 
     /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
     [JsonPropertyName("tableUpdate")]
@@ -14790,6 +15538,10 @@ public partial class V1beta1JobSpecInitProvider
     /// <summary>Specifies job parameter for the job. See parameter Configuration Block</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1JobSpecInitProviderParameter>? Parameter { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
 
     /// <summary>The performance mode on a serverless job. The performance target determines the level of compute performance or cost-efficiency for the run.  Supported values are:</summary>
     [JsonPropertyName("performanceTarget")]
@@ -15023,12 +15775,20 @@ public partial class V1beta1JobStatusAtProviderDbtTask
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobStatusAtProviderDeployment
 {
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
 
     /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 /// <summary>(List) An optional set of email addresses notified when runs of this job begins, completes or fails. The default behavior is to not send any emails. This field is a block and is documented below.</summary>
@@ -15261,6 +16021,9 @@ public partial class V1beta1JobStatusAtProviderJobClusterNewClusterAzureAttribut
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -15392,6 +16155,9 @@ public partial class V1beta1JobStatusAtProviderJobClusterNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -15917,6 +16683,9 @@ public partial class V1beta1JobStatusAtProviderNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -16048,6 +16817,9 @@ public partial class V1beta1JobStatusAtProviderNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -16552,6 +17324,23 @@ public partial class V1beta1JobStatusAtProviderRunJobTask
     public IDictionary<string, string>? JobParameters { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderScheduleSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>An optional periodic schedule for this job. The default behavior is that the job runs when triggered by clicking Run Now in the Jobs UI or sending an API request to runNow. See schedule Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -16564,6 +17353,10 @@ public partial class V1beta1JobStatusAtProviderSchedule
     /// <summary>A Cron expression using Quartz syntax that describes the schedule for a job. This field is required.</summary>
     [JsonPropertyName("quartzCronExpression")]
     public string? QuartzCronExpression { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobStatusAtProviderScheduleSqlCondition? SqlCondition { get; set; }
 
     /// <summary>A Java timezone ID. The schedule for a job will be resolved with respect to this timezone. See Java TimeZone for details. This field is required.</summary>
     [JsonPropertyName("timezoneId")]
@@ -16613,6 +17406,88 @@ public partial class V1beta1JobStatusAtProviderSparkSubmitTask
     /// <summary>Parameters for the task</summary>
     [JsonPropertyName("parameters")]
     public IList<string>? Parameters { get; set; }
+}
+
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobStatusAtProviderTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobStatusAtProviderTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobStatusAtProviderTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -16820,6 +17695,88 @@ public partial class V1beta1JobStatusAtProviderTaskEmailNotifications
     /// <summary>(List) list of notification IDs to call when the run completes successfully. A maximum of 3 destinations can be specified.</summary>
     [JsonPropertyName("onSuccess")]
     public IList<string>? OnSuccess { get; set; }
+}
+
+/// <summary>Task level compute configuration. This block is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute
+{
+    [JsonPropertyName("acceleratorCount")]
+    public double? AcceleratorCount { get; set; }
+
+    [JsonPropertyName("acceleratorType")]
+    public string? AcceleratorType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTaskDeployments
+{
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("commandPath")]
+    public string? CommandPath { get; set; }
+
+    /// <summary>Task level compute configuration. This block is documented below.</summary>
+    [JsonPropertyName("compute")]
+    public V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTaskDeploymentsCompute? Compute { get; set; }
+
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTask
+{
+    [JsonPropertyName("deployments")]
+    public IList<V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTaskDeployments>? Deployments { get; set; }
+
+    [JsonPropertyName("experiment")]
+    public string? Experiment { get; set; }
+
+    [JsonPropertyName("mlflowExperimentDirectory")]
+    public string? MlflowExperimentDirectory { get; set; }
+
+    [JsonPropertyName("mlflowRun")]
+    public string? MlflowRun { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskAlertTaskSubscribers
+{
+    /// <summary>A snapshot of the dashboard will be sent to the destination when the destination_id field is present.</summary>
+    [JsonPropertyName("destinationId")]
+    public string? DestinationId { get; set; }
+
+    /// <summary>A snapshot of the dashboard will be sent to the user&apos;s email when the user_name field is present.</summary>
+    [JsonPropertyName("userName")]
+    public string? UserName { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskAlertTask
+{
+    /// <summary>(String) identifier of the Databricks Alert (databricks_alert).</summary>
+    [JsonPropertyName("alertId")]
+    public string? AlertId { get; set; }
+
+    /// <summary>The list of subscribers to send the snapshot of the dashboard to.</summary>
+    [JsonPropertyName("subscribers")]
+    public IList<V1beta1JobStatusAtProviderTaskForEachTaskTaskAlertTaskSubscribers>? Subscribers { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("workspacePath")]
+    public string? WorkspacePath { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -17250,6 +18207,9 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskNewClusterAzur
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -17381,6 +18341,9 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskNewClusterGcpA
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -17797,9 +18760,25 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -17875,6 +18854,32 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskPowerBiTask
     public string? WarehouseId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobStatusAtProviderTaskForEachTaskTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -17904,6 +18909,18 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskRunJobTaskPipe
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -18190,6 +19207,14 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTaskWebhookNotific
 public partial class V1beta1JobStatusAtProviderTaskForEachTaskTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobStatusAtProviderTaskForEachTaskTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobStatusAtProviderTaskForEachTaskTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobStatusAtProviderTaskForEachTaskTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -18229,6 +19254,7 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -18287,6 +19313,10 @@ public partial class V1beta1JobStatusAtProviderTaskForEachTaskTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobStatusAtProviderTaskForEachTaskTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobStatusAtProviderTaskForEachTaskTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -18572,6 +19602,9 @@ public partial class V1beta1JobStatusAtProviderTaskNewClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -18703,6 +19736,9 @@ public partial class V1beta1JobStatusAtProviderTaskNewClusterGcpAttributes
 
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -19122,9 +20158,25 @@ public partial class V1beta1JobStatusAtProviderTaskPipelineTask
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
 
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IDictionary<string, string>? Parameters { get; set; }
+
     /// <summary>The pipeline&apos;s unique ID.</summary>
     [JsonPropertyName("pipelineId")]
     public string? PipelineId { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>The semantic model to update. Block consists of following fields:</summary>
@@ -19200,6 +20252,32 @@ public partial class V1beta1JobStatusAtProviderTaskPowerBiTask
     public string? WarehouseId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskPythonOperatorTaskParameters
+{
+    /// <summary>An optional name for the job. The default value is Untitled.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>integer value used to compare to the given metric.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTaskPythonOperatorTask
+{
+    [JsonPropertyName("main")]
+    public string? Main { get; set; }
+
+    /// <summary>Parameters for the task</summary>
+    [JsonPropertyName("parameters")]
+    public IList<V1beta1JobStatusAtProviderTaskPythonOperatorTaskParameters>? Parameters { get; set; }
+}
+
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -19229,6 +20307,18 @@ public partial class V1beta1JobStatusAtProviderTaskRunJobTaskPipelineParams
     /// <summary>(Bool) Specifies if there should be full refresh of the pipeline.</summary>
     [JsonPropertyName("fullRefresh")]
     public bool? FullRefresh { get; set; }
+
+    [JsonPropertyName("fullRefreshSelection")]
+    public IList<string>? FullRefreshSelection { get; set; }
+
+    [JsonPropertyName("refreshFlowSelection")]
+    public IList<string>? RefreshFlowSelection { get; set; }
+
+    [JsonPropertyName("refreshSelection")]
+    public IList<string>? RefreshSelection { get; set; }
+
+    [JsonPropertyName("resetCheckpointSelection")]
+    public IList<string>? ResetCheckpointSelection { get; set; }
 }
 
 /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
@@ -19514,6 +20604,14 @@ public partial class V1beta1JobStatusAtProviderTaskWebhookNotifications
 public partial class V1beta1JobStatusAtProviderTask
 {
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("aiRuntimeTask")]
+    public V1beta1JobStatusAtProviderTaskAiRuntimeTask? AiRuntimeTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("alertTask")]
+    public V1beta1JobStatusAtProviderTaskAlertTask? AlertTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("cleanRoomsNotebookTask")]
     public V1beta1JobStatusAtProviderTaskCleanRoomsNotebookTask? CleanRoomsNotebookTask { get; set; }
 
@@ -19553,6 +20651,7 @@ public partial class V1beta1JobStatusAtProviderTask
     [JsonPropertyName("disableAutoOptimization")]
     public bool? DisableAutoOptimization { get; set; }
 
+    /// <summary>(Bool) An optional flag to disable the task. If set to true, the task will not run even if it is part of a job.</summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
 
@@ -19615,6 +20714,10 @@ public partial class V1beta1JobStatusAtProviderTask
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("powerBiTask")]
     public V1beta1JobStatusAtProviderTaskPowerBiTask? PowerBiTask { get; set; }
+
+    /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
+    [JsonPropertyName("pythonOperatorTask")]
+    public V1beta1JobStatusAtProviderTaskPythonOperatorTask? PythonOperatorTask { get; set; }
 
     /// <summary>A list of task specification that the job will execute. See task Configuration Block below.</summary>
     [JsonPropertyName("pythonWheelTask")]
@@ -19717,6 +20820,23 @@ public partial class V1beta1JobStatusAtProviderTriggerPeriodic
     public string? Unit { get; set; }
 }
 
+/// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1JobStatusAtProviderTriggerSqlCondition
+{
+    /// <summary>ID of the system notification that is notified when an event defined in webhook_notifications is triggered.</summary>
+    [JsonPropertyName("sqlQueryId")]
+    public string? SqlQueryId { get; set; }
+
+    [JsonPropertyName("triggerMode")]
+    public string? TriggerMode { get; set; }
+
+    /// <summary>The warehouse id to execute the dashboard with for the schedule. If not specified, will use the default warehouse of dashboard</summary>
+    [JsonPropertyName("warehouseId")]
+    public string? WarehouseId { get; set; }
+}
+
 /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -19758,6 +20878,10 @@ public partial class V1beta1JobStatusAtProviderTrigger
     /// <summary>configuration block to define a trigger for Periodic Triggers consisting of the following attributes:</summary>
     [JsonPropertyName("periodic")]
     public V1beta1JobStatusAtProviderTriggerPeriodic? Periodic { get; set; }
+
+    /// <summary>The table(s) condition based on which to trigger a job run.  Possible values are ANY_UPDATED, ALL_UPDATED.</summary>
+    [JsonPropertyName("sqlCondition")]
+    public V1beta1JobStatusAtProviderTriggerSqlCondition? SqlCondition { get; set; }
 
     /// <summary>configuration block to define a trigger for Table Updates consisting of following attributes:</summary>
     [JsonPropertyName("tableUpdate")]
@@ -19936,6 +21060,10 @@ public partial class V1beta1JobStatusAtProvider
     [JsonPropertyName("parameter")]
     public IList<V1beta1JobStatusAtProviderParameter>? Parameter { get; set; }
 
+    /// <summary>If source is GIT: Relative path to the file in the repository specified in the git_source block with SQL commands to execute. If source is WORKSPACE: Absolute path to the file in the workspace with SQL commands to execute.</summary>
+    [JsonPropertyName("parentPath")]
+    public string? ParentPath { get; set; }
+
     /// <summary>The performance mode on a serverless job. The performance target determines the level of compute performance or cost-efficiency for the run.  Supported values are:</summary>
     [JsonPropertyName("performanceTarget")]
     public string? PerformanceTarget { get; set; }
@@ -20067,6 +21195,15 @@ public partial class V1beta1JobStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1JobStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

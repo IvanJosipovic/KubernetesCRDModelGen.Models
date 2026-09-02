@@ -153,6 +153,16 @@ public partial class V1alpha1CredentialSpecForProviderDatabricksGcpServiceAccoun
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1CredentialSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1CredentialSpecForProvider
 {
     [JsonPropertyName("awsIamRole")]
@@ -203,6 +213,10 @@ public partial class V1alpha1CredentialSpecForProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1CredentialSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -316,6 +330,16 @@ public partial class V1alpha1CredentialSpecInitProviderDatabricksGcpServiceAccou
     public string? PrivateKeyId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1CredentialSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -381,6 +405,10 @@ public partial class V1alpha1CredentialSpecInitProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1CredentialSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -664,6 +692,16 @@ public partial class V1alpha1CredentialStatusAtProviderDatabricksGcpServiceAccou
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1CredentialStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1CredentialStatusAtProvider
 {
     [JsonPropertyName("awsIamRole")]
@@ -722,6 +760,10 @@ public partial class V1alpha1CredentialStatusAtProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1CredentialStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -801,6 +843,15 @@ public partial class V1alpha1CredentialStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1CredentialStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

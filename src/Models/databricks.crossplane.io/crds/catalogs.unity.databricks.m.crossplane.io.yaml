@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: catalogs.unity.databricks.m.crossplane.io
 spec:
   group: unity.databricks.m.crossplane.io
@@ -69,6 +69,8 @@ spec:
                   connectionName:
                     description: 'For Foreign Catalogs: the name of the connection to an external data source. Changes forces creation of a new resource.'
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     items:
                       properties:
@@ -90,6 +92,31 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    items:
+                      properties:
+                        azureEncryptionSettings:
+                          items:
+                            properties:
+                              azureCmkAccessConnectorId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureCmkManagedIdentityId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureTenantId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                            type: object
+                          type: array
+                        azureKeyVaultKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                        customerManagedKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                      type: object
+                    type: array
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -158,6 +185,8 @@ spec:
                   connectionName:
                     description: 'For Foreign Catalogs: the name of the connection to an external data source. Changes forces creation of a new resource.'
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     items:
                       properties:
@@ -179,6 +208,31 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    items:
+                      properties:
+                        azureEncryptionSettings:
+                          items:
+                            properties:
+                              azureCmkAccessConnectorId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureCmkManagedIdentityId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureTenantId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                            type: object
+                          type: array
+                        azureKeyVaultKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                        customerManagedKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                      type: object
+                    type: array
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -306,6 +360,8 @@ spec:
                   createdBy:
                     description: username of catalog creator.
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     items:
                       properties:
@@ -333,6 +389,31 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    items:
+                      properties:
+                        azureEncryptionSettings:
+                          items:
+                            properties:
+                              azureCmkAccessConnectorId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureCmkManagedIdentityId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                              azureTenantId:
+                                description: ID of this catalog - same as the name.
+                                type: string
+                            type: object
+                          type: array
+                        azureKeyVaultKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                        customerManagedKeyId:
+                          description: ID of this catalog - same as the name.
+                          type: string
+                      type: object
+                    type: array
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -436,6 +517,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -499,6 +587,8 @@ spec:
                   connectionName:
                     description: 'For Foreign Catalogs: the name of the connection to an external data source. Changes forces creation of a new resource.'
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     properties:
                       inheritedFromName:
@@ -518,6 +608,27 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    properties:
+                      azureEncryptionSettings:
+                        properties:
+                          azureCmkAccessConnectorId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureCmkManagedIdentityId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureTenantId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                        type: object
+                      azureKeyVaultKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                      customerManagedKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                    type: object
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -582,6 +693,8 @@ spec:
                   connectionName:
                     description: 'For Foreign Catalogs: the name of the connection to an external data source. Changes forces creation of a new resource.'
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     properties:
                       inheritedFromName:
@@ -601,6 +714,27 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    properties:
+                      azureEncryptionSettings:
+                        properties:
+                          azureCmkAccessConnectorId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureCmkManagedIdentityId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureTenantId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                        type: object
+                      azureKeyVaultKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                      customerManagedKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                    type: object
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -724,6 +858,8 @@ spec:
                   createdBy:
                     description: username of catalog creator.
                     type: string
+                  customMaxRetentionHours:
+                    type: number
                   effectivePredictiveOptimizationFlag:
                     properties:
                       inheritedFromName:
@@ -749,6 +885,27 @@ spec:
                   isolationMode:
                     description: Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.
                     type: string
+                  managedEncryptionSettings:
+                    properties:
+                      azureEncryptionSettings:
+                        properties:
+                          azureCmkAccessConnectorId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureCmkManagedIdentityId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                          azureTenantId:
+                            description: ID of this catalog - same as the name.
+                            type: string
+                        type: object
+                      azureKeyVaultKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                      customerManagedKeyId:
+                        description: ID of this catalog - same as the name.
+                        type: string
+                    type: object
                   metastoreId:
                     description: ID of the parent metastore.
                     type: string
@@ -848,6 +1005,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

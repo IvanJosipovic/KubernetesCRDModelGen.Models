@@ -418,6 +418,17 @@
           "xpath": "//Project/PropertyGroup/Version"
         }
       ]
+    },
+    "src/Models/multicluster.x-k8s.io": {
+      "release-type": "simple",
+      "component": "multicluster.x-k8s.io",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "Directory.Build.props",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
     }
   }
 }

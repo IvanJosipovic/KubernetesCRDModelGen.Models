@@ -60,6 +60,16 @@ public enum V1alpha1ServicePrincipalRoleSpecDeletionPolicyEnum
     Delete
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ServicePrincipalRoleSpecForProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;service_principal_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -375,6 +385,16 @@ public partial class V1alpha1ServicePrincipalRoleSpecForProviderServicePrincipal
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ServicePrincipalRoleSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1ServicePrincipalRoleSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>This is the role name, role id, or instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -398,6 +418,16 @@ public partial class V1alpha1ServicePrincipalRoleSpecForProvider
     /// <summary>Selector for a ServicePrincipal in security to populate servicePrincipalId.</summary>
     [JsonPropertyName("servicePrincipalIdSelector")]
     public V1alpha1ServicePrincipalRoleSpecForProviderServicePrincipalIdSelector? ServicePrincipalIdSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ServicePrincipalRoleSpecInitProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;service_principal_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -727,6 +757,16 @@ public partial class V1alpha1ServicePrincipalRoleSpecInitProviderServicePrincipa
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ServicePrincipalRoleSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1ServicePrincipalRoleSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>This is the role name, role id, or instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -945,11 +985,31 @@ public partial class V1alpha1ServicePrincipalRoleSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ServicePrincipalRoleStatusAtProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;service_principal_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ServicePrincipalRoleStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The id in the format &lt;service_principal_id&gt;|&lt;role&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1ServicePrincipalRoleStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>This is the role name, role id, or instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -1016,6 +1076,15 @@ public partial class V1alpha1ServicePrincipalRoleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1ServicePrincipalRoleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

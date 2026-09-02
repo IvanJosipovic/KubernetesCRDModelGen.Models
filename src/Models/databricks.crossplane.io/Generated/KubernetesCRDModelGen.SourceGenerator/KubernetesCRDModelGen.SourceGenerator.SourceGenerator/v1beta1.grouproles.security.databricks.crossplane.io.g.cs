@@ -202,6 +202,15 @@ public partial class V1beta1GroupRoleSpecForProviderGroupIdSelector
     public V1beta1GroupRoleSpecForProviderGroupIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupRoleSpecForProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_role object which is in the format &lt;group_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -353,6 +362,13 @@ public partial class V1beta1GroupRoleSpecForProviderRoleSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -364,6 +380,9 @@ public partial class V1beta1GroupRoleSpecForProvider
     /// <summary>Selector for a Group in security to populate groupId.</summary>
     [JsonPropertyName("groupIdSelector")]
     public V1beta1GroupRoleSpecForProviderGroupIdSelector? GroupIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupRoleSpecForProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -523,6 +542,15 @@ public partial class V1beta1GroupRoleSpecInitProviderGroupIdSelector
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1beta1GroupRoleSpecInitProviderGroupIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupRoleSpecInitProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_role object which is in the format &lt;group_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -688,6 +716,13 @@ public partial class V1beta1GroupRoleSpecInitProviderRoleSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -699,6 +734,9 @@ public partial class V1beta1GroupRoleSpecInitProvider
     /// <summary>Selector for a Group in security to populate groupId.</summary>
     [JsonPropertyName("groupIdSelector")]
     public V1beta1GroupRoleSpecInitProviderGroupIdSelector? GroupIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupRoleSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -898,8 +936,24 @@ public partial class V1beta1GroupRoleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupRoleStatusAtProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_role object which is in the format &lt;group_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupRoleStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -907,6 +961,9 @@ public partial class V1beta1GroupRoleStatusAtProvider
     /// <summary>The id for the databricks_group_role object which is in the format &lt;group_id&gt;|&lt;role&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupRoleStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -967,6 +1024,15 @@ public partial class V1beta1GroupRoleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GroupRoleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

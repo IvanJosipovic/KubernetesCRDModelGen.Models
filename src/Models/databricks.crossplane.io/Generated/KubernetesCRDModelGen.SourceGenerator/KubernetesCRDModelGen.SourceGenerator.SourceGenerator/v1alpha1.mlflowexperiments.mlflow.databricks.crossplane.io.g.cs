@@ -85,6 +85,30 @@ public partial class V1alpha1MlflowExperimentSpecForProviderTags
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentSpecForProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public IList<V1alpha1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentSpecForProvider
 {
     /// <summary>Path to artifact location of the MLflow experiment.</summary>
@@ -118,6 +142,9 @@ public partial class V1alpha1MlflowExperimentSpecForProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentSpecForProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public IList<V1alpha1MlflowExperimentSpecForProviderTraceLocation>? TraceLocation { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -140,6 +167,30 @@ public partial class V1alpha1MlflowExperimentSpecInitProviderTags
 
     [JsonPropertyName("value")]
     public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentSpecInitProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public IList<V1alpha1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
 }
 
 /// <summary>
@@ -190,6 +241,9 @@ public partial class V1alpha1MlflowExperimentSpecInitProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentSpecInitProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public IList<V1alpha1MlflowExperimentSpecInitProviderTraceLocation>? TraceLocation { get; set; }
 }
 
 /// <summary>
@@ -407,6 +461,30 @@ public partial class V1alpha1MlflowExperimentStatusAtProviderTags
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1MlflowExperimentStatusAtProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public IList<V1alpha1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation>? UcTraceLocation { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1MlflowExperimentStatusAtProvider
 {
     /// <summary>Path to artifact location of the MLflow experiment.</summary>
@@ -444,6 +522,9 @@ public partial class V1alpha1MlflowExperimentStatusAtProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1alpha1MlflowExperimentStatusAtProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public IList<V1alpha1MlflowExperimentStatusAtProviderTraceLocation>? TraceLocation { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -502,6 +583,15 @@ public partial class V1alpha1MlflowExperimentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1MlflowExperimentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

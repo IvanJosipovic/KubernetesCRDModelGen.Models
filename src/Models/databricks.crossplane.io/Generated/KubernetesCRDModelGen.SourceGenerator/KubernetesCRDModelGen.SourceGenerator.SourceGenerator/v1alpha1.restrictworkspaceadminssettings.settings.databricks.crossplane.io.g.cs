@@ -75,6 +75,9 @@ public partial class V1alpha1RestrictWorkspaceAdminsSettingSpecForProviderProvid
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1RestrictWorkspaceAdminsSettingSpecForProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -115,6 +118,9 @@ public partial class V1alpha1RestrictWorkspaceAdminsSettingSpecInitProviderProvi
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1RestrictWorkspaceAdminsSettingSpecInitProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -357,6 +363,9 @@ public partial class V1alpha1RestrictWorkspaceAdminsSettingStatusAtProviderProvi
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1RestrictWorkspaceAdminsSettingStatusAtProviderRestrictWorkspaceAdmins
 {
+    [JsonPropertyName("disableGovTagCreation")]
+    public bool? DisableGovTagCreation { get; set; }
+
     /// <summary>The restrict workspace admins status for the workspace.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
@@ -441,6 +450,15 @@ public partial class V1alpha1RestrictWorkspaceAdminsSettingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1RestrictWorkspaceAdminsSettingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

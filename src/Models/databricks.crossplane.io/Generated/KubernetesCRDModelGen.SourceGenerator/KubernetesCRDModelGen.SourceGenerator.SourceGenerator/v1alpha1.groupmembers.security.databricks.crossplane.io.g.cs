@@ -373,8 +373,25 @@ public partial class V1alpha1GroupMemberSpecForProviderMemberIdSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1GroupMemberSpecForProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_member object which is in the format &lt;group_id&gt;|&lt;member_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1GroupMemberSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id attribute (SCIM ID) of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -398,6 +415,9 @@ public partial class V1alpha1GroupMemberSpecForProvider
     /// <summary>Selector for a Group in security to populate memberId.</summary>
     [JsonPropertyName("memberIdSelector")]
     public V1alpha1GroupMemberSpecForProviderMemberIdSelector? MemberIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1GroupMemberSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -710,6 +730,16 @@ public partial class V1alpha1GroupMemberSpecInitProviderMemberIdSelector
     public V1alpha1GroupMemberSpecInitProviderMemberIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1GroupMemberSpecInitProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_member object which is in the format &lt;group_id&gt;|&lt;member_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -727,6 +757,13 @@ public partial class V1alpha1GroupMemberSpecInitProviderMemberIdSelector
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1GroupMemberSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id attribute (SCIM ID) of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -750,6 +787,9 @@ public partial class V1alpha1GroupMemberSpecInitProvider
     /// <summary>Selector for a Group in security to populate memberId.</summary>
     [JsonPropertyName("memberIdSelector")]
     public V1alpha1GroupMemberSpecInitProviderMemberIdSelector? MemberIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1GroupMemberSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -945,8 +985,25 @@ public partial class V1alpha1GroupMemberSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1GroupMemberStatusAtProviderProviderConfig
+{
+    /// <summary>The id for the databricks_group_member object which is in the format &lt;group_id&gt;|&lt;member_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1GroupMemberStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id attribute (SCIM ID) of the group resource.</summary>
     [JsonPropertyName("groupId")]
     public string? GroupId { get; set; }
@@ -958,6 +1015,9 @@ public partial class V1alpha1GroupMemberStatusAtProvider
     /// <summary>This is the id attribute (SCIM ID) of the group, service principal, or user.</summary>
     [JsonPropertyName("memberId")]
     public string? MemberId { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1GroupMemberStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -1016,6 +1076,15 @@ public partial class V1alpha1GroupMemberStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1GroupMemberStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

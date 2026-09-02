@@ -80,7 +80,6 @@ public partial class V1beta1QualityMonitorSpecForProviderCustomMetrics
     public string? Type { get; set; }
 }
 
-/// <summary>The data classification config for the monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderDataClassificationConfig
@@ -90,7 +89,6 @@ public partial class V1beta1QualityMonitorSpecForProviderDataClassificationConfi
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Configuration for the inference log monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderInferenceLog
@@ -124,7 +122,6 @@ public partial class V1beta1QualityMonitorSpecForProviderInferenceLog
     public string? TimestampCol { get; set; }
 }
 
-/// <summary>who to send notifications to on monitor failure.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderNotificationsOnFailure
@@ -133,7 +130,6 @@ public partial class V1beta1QualityMonitorSpecForProviderNotificationsOnFailure
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>Who to send notifications to when new data classification tags are detected.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderNotificationsOnNewClassificationTagDetected
@@ -142,21 +138,19 @@ public partial class V1beta1QualityMonitorSpecForProviderNotificationsOnNewClass
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderNotifications
 {
     /// <summary>who to send notifications to on monitor failure.</summary>
     [JsonPropertyName("onFailure")]
-    public V1beta1QualityMonitorSpecForProviderNotificationsOnFailure? OnFailure { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderNotificationsOnFailure>? OnFailure { get; set; }
 
     /// <summary>Who to send notifications to when new data classification tags are detected.</summary>
     [JsonPropertyName("onNewClassificationTagDetected")]
-    public V1beta1QualityMonitorSpecForProviderNotificationsOnNewClassificationTagDetected? OnNewClassificationTagDetected { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderNotificationsOnNewClassificationTagDetected>? OnNewClassificationTagDetected { get; set; }
 }
 
-/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderProviderConfig
@@ -166,7 +160,6 @@ public partial class V1beta1QualityMonitorSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderSchedule
@@ -180,14 +173,12 @@ public partial class V1beta1QualityMonitorSpecForProviderSchedule
     public string? TimezoneId { get; set; }
 }
 
-/// <summary>Configuration for monitoring snapshot tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderSnapshot
 {
 }
 
-/// <summary>Configuration for monitoring timeseries tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecForProviderTimeSeries
@@ -222,18 +213,18 @@ public partial class V1beta1QualityMonitorSpecForProvider
 
     /// <summary>The data classification config for the monitor</summary>
     [JsonPropertyName("dataClassificationConfig")]
-    public V1beta1QualityMonitorSpecForProviderDataClassificationConfig? DataClassificationConfig { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderDataClassificationConfig>? DataClassificationConfig { get; set; }
 
     /// <summary>Configuration for the inference log monitor</summary>
     [JsonPropertyName("inferenceLog")]
-    public V1beta1QualityMonitorSpecForProviderInferenceLog? InferenceLog { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderInferenceLog>? InferenceLog { get; set; }
 
     [JsonPropertyName("latestMonitorFailureMsg")]
     public string? LatestMonitorFailureMsg { get; set; }
 
     /// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
     [JsonPropertyName("notifications")]
-    public V1beta1QualityMonitorSpecForProviderNotifications? Notifications { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderNotifications>? Notifications { get; set; }
 
     /// <summary>- Schema where output metric tables are created</summary>
     [JsonPropertyName("outputSchemaName")]
@@ -241,11 +232,11 @@ public partial class V1beta1QualityMonitorSpecForProvider
 
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1QualityMonitorSpecForProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
     [JsonPropertyName("schedule")]
-    public V1beta1QualityMonitorSpecForProviderSchedule? Schedule { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderSchedule>? Schedule { get; set; }
 
     /// <summary>Whether to skip creating a default dashboard summarizing data quality metrics.  (Can&apos;t be updated after creation).</summary>
     [JsonPropertyName("skipBuiltinDashboard")]
@@ -257,7 +248,7 @@ public partial class V1beta1QualityMonitorSpecForProvider
 
     /// <summary>Configuration for monitoring snapshot tables.</summary>
     [JsonPropertyName("snapshot")]
-    public V1beta1QualityMonitorSpecForProviderSnapshot? Snapshot { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderSnapshot>? Snapshot { get; set; }
 
     /// <summary>- The full name of the table to attach the monitor too. Its of the format {catalog}.{schema}.{tableName}</summary>
     [JsonPropertyName("tableName")]
@@ -265,7 +256,7 @@ public partial class V1beta1QualityMonitorSpecForProvider
 
     /// <summary>Configuration for monitoring timeseries tables.</summary>
     [JsonPropertyName("timeSeries")]
-    public V1beta1QualityMonitorSpecForProviderTimeSeries? TimeSeries { get; set; }
+    public IList<V1beta1QualityMonitorSpecForProviderTimeSeries>? TimeSeries { get; set; }
 
     /// <summary>Optional argument to specify the warehouse for dashboard creation. If not specified, the first running warehouse will be used.  (Can&apos;t be updated after creation)</summary>
     [JsonPropertyName("warehouseId")]
@@ -297,7 +288,6 @@ public partial class V1beta1QualityMonitorSpecInitProviderCustomMetrics
     public string? Type { get; set; }
 }
 
-/// <summary>The data classification config for the monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderDataClassificationConfig
@@ -307,7 +297,6 @@ public partial class V1beta1QualityMonitorSpecInitProviderDataClassificationConf
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Configuration for the inference log monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderInferenceLog
@@ -341,7 +330,6 @@ public partial class V1beta1QualityMonitorSpecInitProviderInferenceLog
     public string? TimestampCol { get; set; }
 }
 
-/// <summary>who to send notifications to on monitor failure.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderNotificationsOnFailure
@@ -350,7 +338,6 @@ public partial class V1beta1QualityMonitorSpecInitProviderNotificationsOnFailure
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>Who to send notifications to when new data classification tags are detected.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderNotificationsOnNewClassificationTagDetected
@@ -359,21 +346,19 @@ public partial class V1beta1QualityMonitorSpecInitProviderNotificationsOnNewClas
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderNotifications
 {
     /// <summary>who to send notifications to on monitor failure.</summary>
     [JsonPropertyName("onFailure")]
-    public V1beta1QualityMonitorSpecInitProviderNotificationsOnFailure? OnFailure { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderNotificationsOnFailure>? OnFailure { get; set; }
 
     /// <summary>Who to send notifications to when new data classification tags are detected.</summary>
     [JsonPropertyName("onNewClassificationTagDetected")]
-    public V1beta1QualityMonitorSpecInitProviderNotificationsOnNewClassificationTagDetected? OnNewClassificationTagDetected { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderNotificationsOnNewClassificationTagDetected>? OnNewClassificationTagDetected { get; set; }
 }
 
-/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderProviderConfig
@@ -383,7 +368,6 @@ public partial class V1beta1QualityMonitorSpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderSchedule
@@ -397,14 +381,12 @@ public partial class V1beta1QualityMonitorSpecInitProviderSchedule
     public string? TimezoneId { get; set; }
 }
 
-/// <summary>Configuration for monitoring snapshot tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderSnapshot
 {
 }
 
-/// <summary>Configuration for monitoring timeseries tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorSpecInitProviderTimeSeries
@@ -451,18 +433,18 @@ public partial class V1beta1QualityMonitorSpecInitProvider
 
     /// <summary>The data classification config for the monitor</summary>
     [JsonPropertyName("dataClassificationConfig")]
-    public V1beta1QualityMonitorSpecInitProviderDataClassificationConfig? DataClassificationConfig { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderDataClassificationConfig>? DataClassificationConfig { get; set; }
 
     /// <summary>Configuration for the inference log monitor</summary>
     [JsonPropertyName("inferenceLog")]
-    public V1beta1QualityMonitorSpecInitProviderInferenceLog? InferenceLog { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderInferenceLog>? InferenceLog { get; set; }
 
     [JsonPropertyName("latestMonitorFailureMsg")]
     public string? LatestMonitorFailureMsg { get; set; }
 
     /// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
     [JsonPropertyName("notifications")]
-    public V1beta1QualityMonitorSpecInitProviderNotifications? Notifications { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderNotifications>? Notifications { get; set; }
 
     /// <summary>- Schema where output metric tables are created</summary>
     [JsonPropertyName("outputSchemaName")]
@@ -470,11 +452,11 @@ public partial class V1beta1QualityMonitorSpecInitProvider
 
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1QualityMonitorSpecInitProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
     [JsonPropertyName("schedule")]
-    public V1beta1QualityMonitorSpecInitProviderSchedule? Schedule { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderSchedule>? Schedule { get; set; }
 
     /// <summary>Whether to skip creating a default dashboard summarizing data quality metrics.  (Can&apos;t be updated after creation).</summary>
     [JsonPropertyName("skipBuiltinDashboard")]
@@ -486,7 +468,7 @@ public partial class V1beta1QualityMonitorSpecInitProvider
 
     /// <summary>Configuration for monitoring snapshot tables.</summary>
     [JsonPropertyName("snapshot")]
-    public V1beta1QualityMonitorSpecInitProviderSnapshot? Snapshot { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderSnapshot>? Snapshot { get; set; }
 
     /// <summary>- The full name of the table to attach the monitor too. Its of the format {catalog}.{schema}.{tableName}</summary>
     [JsonPropertyName("tableName")]
@@ -494,7 +476,7 @@ public partial class V1beta1QualityMonitorSpecInitProvider
 
     /// <summary>Configuration for monitoring timeseries tables.</summary>
     [JsonPropertyName("timeSeries")]
-    public V1beta1QualityMonitorSpecInitProviderTimeSeries? TimeSeries { get; set; }
+    public IList<V1beta1QualityMonitorSpecInitProviderTimeSeries>? TimeSeries { get; set; }
 
     /// <summary>Optional argument to specify the warehouse for dashboard creation. If not specified, the first running warehouse will be used.  (Can&apos;t be updated after creation)</summary>
     [JsonPropertyName("warehouseId")]
@@ -709,7 +691,6 @@ public partial class V1beta1QualityMonitorStatusAtProviderCustomMetrics
     public string? Type { get; set; }
 }
 
-/// <summary>The data classification config for the monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderDataClassificationConfig
@@ -719,7 +700,6 @@ public partial class V1beta1QualityMonitorStatusAtProviderDataClassificationConf
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Configuration for the inference log monitor</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderInferenceLog
@@ -753,7 +733,6 @@ public partial class V1beta1QualityMonitorStatusAtProviderInferenceLog
     public string? TimestampCol { get; set; }
 }
 
-/// <summary>who to send notifications to on monitor failure.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderNotificationsOnFailure
@@ -762,7 +741,6 @@ public partial class V1beta1QualityMonitorStatusAtProviderNotificationsOnFailure
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>Who to send notifications to when new data classification tags are detected.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderNotificationsOnNewClassificationTagDetected
@@ -771,21 +749,19 @@ public partial class V1beta1QualityMonitorStatusAtProviderNotificationsOnNewClas
     public IList<string>? EmailAddresses { get; set; }
 }
 
-/// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderNotifications
 {
     /// <summary>who to send notifications to on monitor failure.</summary>
     [JsonPropertyName("onFailure")]
-    public V1beta1QualityMonitorStatusAtProviderNotificationsOnFailure? OnFailure { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderNotificationsOnFailure>? OnFailure { get; set; }
 
     /// <summary>Who to send notifications to when new data classification tags are detected.</summary>
     [JsonPropertyName("onNewClassificationTagDetected")]
-    public V1beta1QualityMonitorStatusAtProviderNotificationsOnNewClassificationTagDetected? OnNewClassificationTagDetected { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderNotificationsOnNewClassificationTagDetected>? OnNewClassificationTagDetected { get; set; }
 }
 
-/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderProviderConfig
@@ -795,7 +771,6 @@ public partial class V1beta1QualityMonitorStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-/// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderSchedule
@@ -813,14 +788,12 @@ public partial class V1beta1QualityMonitorStatusAtProviderSchedule
     public string? TimezoneId { get; set; }
 }
 
-/// <summary>Configuration for monitoring snapshot tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderSnapshot
 {
 }
 
-/// <summary>Configuration for monitoring timeseries tables.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QualityMonitorStatusAtProviderTimeSeries
@@ -859,7 +832,7 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>The data classification config for the monitor</summary>
     [JsonPropertyName("dataClassificationConfig")]
-    public V1beta1QualityMonitorStatusAtProviderDataClassificationConfig? DataClassificationConfig { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderDataClassificationConfig>? DataClassificationConfig { get; set; }
 
     /// <summary>The full name of the drift metrics table. Format: catalog_name.schema_name.table_name.</summary>
     [JsonPropertyName("driftMetricsTableName")]
@@ -871,7 +844,7 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>Configuration for the inference log monitor</summary>
     [JsonPropertyName("inferenceLog")]
-    public V1beta1QualityMonitorStatusAtProviderInferenceLog? InferenceLog { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderInferenceLog>? InferenceLog { get; set; }
 
     [JsonPropertyName("latestMonitorFailureMsg")]
     public string? LatestMonitorFailureMsg { get; set; }
@@ -882,7 +855,7 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>The notification settings for the monitor.  The following optional blocks are supported, each consisting of the single string array field with name email_addresses containing a list of emails to notify:</summary>
     [JsonPropertyName("notifications")]
-    public V1beta1QualityMonitorStatusAtProviderNotifications? Notifications { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderNotifications>? Notifications { get; set; }
 
     /// <summary>- Schema where output metric tables are created</summary>
     [JsonPropertyName("outputSchemaName")]
@@ -894,11 +867,11 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
     [JsonPropertyName("providerConfig")]
-    public V1beta1QualityMonitorStatusAtProviderProviderConfig? ProviderConfig { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>The schedule for automatically updating and refreshing metric tables.  This block consists of following fields:</summary>
     [JsonPropertyName("schedule")]
-    public V1beta1QualityMonitorStatusAtProviderSchedule? Schedule { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderSchedule>? Schedule { get; set; }
 
     /// <summary>Whether to skip creating a default dashboard summarizing data quality metrics.  (Can&apos;t be updated after creation).</summary>
     [JsonPropertyName("skipBuiltinDashboard")]
@@ -910,7 +883,7 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>Configuration for monitoring snapshot tables.</summary>
     [JsonPropertyName("snapshot")]
-    public V1beta1QualityMonitorStatusAtProviderSnapshot? Snapshot { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderSnapshot>? Snapshot { get; set; }
 
     /// <summary>Status of the Monitor</summary>
     [JsonPropertyName("status")]
@@ -922,7 +895,7 @@ public partial class V1beta1QualityMonitorStatusAtProvider
 
     /// <summary>Configuration for monitoring timeseries tables.</summary>
     [JsonPropertyName("timeSeries")]
-    public V1beta1QualityMonitorStatusAtProviderTimeSeries? TimeSeries { get; set; }
+    public IList<V1beta1QualityMonitorStatusAtProviderTimeSeries>? TimeSeries { get; set; }
 
     /// <summary>Optional argument to specify the warehouse for dashboard creation. If not specified, the first running warehouse will be used.  (Can&apos;t be updated after creation)</summary>
     [JsonPropertyName("warehouseId")]
@@ -983,6 +956,15 @@ public partial class V1beta1QualityMonitorStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1QualityMonitorStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -215,6 +215,16 @@ public partial class V1alpha1UserInstanceProfileSpecForProviderInstanceProfileId
     public V1alpha1UserInstanceProfileSpecForProviderInstanceProfileIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserInstanceProfileSpecForProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -375,6 +385,13 @@ public partial class V1alpha1UserInstanceProfileSpecForProviderUserIdSelector
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserInstanceProfileSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the instance profile resource.</summary>
     [JsonPropertyName("instanceProfileId")]
     public string? InstanceProfileId { get; set; }
@@ -386,6 +403,9 @@ public partial class V1alpha1UserInstanceProfileSpecForProvider
     /// <summary>Selector for a InstanceProfile in deployment to populate instanceProfileId.</summary>
     [JsonPropertyName("instanceProfileIdSelector")]
     public V1alpha1UserInstanceProfileSpecForProviderInstanceProfileIdSelector? InstanceProfileIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserInstanceProfileSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>This is the id of the user resource.</summary>
     [JsonPropertyName("userId")]
@@ -553,6 +573,16 @@ public partial class V1alpha1UserInstanceProfileSpecInitProviderInstanceProfileI
     /// <summary>Policies for selection.</summary>
     [JsonPropertyName("policy")]
     public V1alpha1UserInstanceProfileSpecInitProviderInstanceProfileIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserInstanceProfileSpecInitProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -727,6 +757,13 @@ public partial class V1alpha1UserInstanceProfileSpecInitProviderUserIdSelector
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserInstanceProfileSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is the id of the instance profile resource.</summary>
     [JsonPropertyName("instanceProfileId")]
     public string? InstanceProfileId { get; set; }
@@ -738,6 +775,9 @@ public partial class V1alpha1UserInstanceProfileSpecInitProvider
     /// <summary>Selector for a InstanceProfile in deployment to populate instanceProfileId.</summary>
     [JsonPropertyName("instanceProfileIdSelector")]
     public V1alpha1UserInstanceProfileSpecInitProviderInstanceProfileIdSelector? InstanceProfileIdSelector { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserInstanceProfileSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>This is the id of the user resource.</summary>
     [JsonPropertyName("userId")]
@@ -945,8 +985,25 @@ public partial class V1alpha1UserInstanceProfileSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserInstanceProfileStatusAtProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;instance_profile_id&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserInstanceProfileStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The id in the format &lt;user_id&gt;|&lt;instance_profile_id&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -954,6 +1011,9 @@ public partial class V1alpha1UserInstanceProfileStatusAtProvider
     /// <summary>This is the id of the instance profile resource.</summary>
     [JsonPropertyName("instanceProfileId")]
     public string? InstanceProfileId { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserInstanceProfileStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>This is the id of the user resource.</summary>
     [JsonPropertyName("userId")]
@@ -1016,6 +1076,15 @@ public partial class V1alpha1UserInstanceProfileStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1UserInstanceProfileStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

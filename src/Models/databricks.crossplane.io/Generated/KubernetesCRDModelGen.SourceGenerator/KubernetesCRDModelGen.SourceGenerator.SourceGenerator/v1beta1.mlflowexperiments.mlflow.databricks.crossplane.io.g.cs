@@ -78,6 +78,28 @@ public partial class V1beta1MlflowExperimentSpecForProviderTags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentSpecForProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public V1beta1MlflowExperimentSpecForProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentSpecForProvider
 {
     /// <summary>Path to artifact location of the MLflow experiment.</summary>
@@ -111,6 +133,9 @@ public partial class V1beta1MlflowExperimentSpecForProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentSpecForProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public V1beta1MlflowExperimentSpecForProviderTraceLocation? TraceLocation { get; set; }
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
@@ -132,6 +157,28 @@ public partial class V1beta1MlflowExperimentSpecInitProviderTags
 
     [JsonPropertyName("value")]
     public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentSpecInitProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public V1beta1MlflowExperimentSpecInitProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
 }
 
 /// <summary>
@@ -181,6 +228,9 @@ public partial class V1beta1MlflowExperimentSpecInitProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentSpecInitProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public V1beta1MlflowExperimentSpecInitProviderTraceLocation? TraceLocation { get; set; }
 }
 
 /// <summary>
@@ -389,6 +439,28 @@ public partial class V1beta1MlflowExperimentStatusAtProviderTags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation
+{
+    [JsonPropertyName("catalog")]
+    public string? Catalog { get; set; }
+
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("tablePrefix")]
+    public string? TablePrefix { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MlflowExperimentStatusAtProviderTraceLocation
+{
+    [JsonPropertyName("ucTraceLocation")]
+    public V1beta1MlflowExperimentStatusAtProviderTraceLocationUcTraceLocation? UcTraceLocation { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowExperimentStatusAtProvider
 {
     /// <summary>Path to artifact location of the MLflow experiment.</summary>
@@ -426,6 +498,9 @@ public partial class V1beta1MlflowExperimentStatusAtProvider
     /// <summary>Tags for the MLflow experiment.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1MlflowExperimentStatusAtProviderTags>? Tags { get; set; }
+
+    [JsonPropertyName("traceLocation")]
+    public V1beta1MlflowExperimentStatusAtProviderTraceLocation? TraceLocation { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -482,6 +557,15 @@ public partial class V1beta1MlflowExperimentStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MlflowExperimentStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

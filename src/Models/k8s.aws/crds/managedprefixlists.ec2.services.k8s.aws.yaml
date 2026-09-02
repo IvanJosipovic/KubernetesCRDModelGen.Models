@@ -57,6 +57,9 @@ spec:
 
                   Valid Values: IPv4 | IPv6
                 type: string
+                x-kubernetes-validations:
+                - message: Value is immutable once set
+                  rule: self == oldSelf
               entries:
                 items:
                   description: An entry for a prefix list.

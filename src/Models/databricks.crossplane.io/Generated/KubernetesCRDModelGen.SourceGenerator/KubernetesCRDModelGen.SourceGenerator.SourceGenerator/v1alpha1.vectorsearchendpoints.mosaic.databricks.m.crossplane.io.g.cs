@@ -55,8 +55,8 @@ public partial class V1alpha1VectorSearchEndpointSpecForProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1VectorSearchEndpointSpecForProviderScalingInfo
 {
-    [JsonPropertyName("requestedMinQps")]
-    public double? RequestedMinQps { get; set; }
+    [JsonPropertyName("requestedTargetQps")]
+    public double? RequestedTargetQps { get; set; }
 
     /// <summary>Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.</summary>
     [JsonPropertyName("state")]
@@ -103,8 +103,8 @@ public partial class V1alpha1VectorSearchEndpointSpecInitProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1VectorSearchEndpointSpecInitProviderScalingInfo
 {
-    [JsonPropertyName("requestedMinQps")]
-    public double? RequestedMinQps { get; set; }
+    [JsonPropertyName("requestedTargetQps")]
+    public double? RequestedTargetQps { get; set; }
 
     /// <summary>Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.</summary>
     [JsonPropertyName("state")]
@@ -288,8 +288,8 @@ public partial class V1alpha1VectorSearchEndpointStatusAtProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1VectorSearchEndpointStatusAtProviderScalingInfo
 {
-    [JsonPropertyName("requestedMinQps")]
-    public double? RequestedMinQps { get; set; }
+    [JsonPropertyName("requestedTargetQps")]
+    public double? RequestedTargetQps { get; set; }
 
     /// <summary>Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.</summary>
     [JsonPropertyName("state")]
@@ -413,6 +413,15 @@ public partial class V1alpha1VectorSearchEndpointStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1VectorSearchEndpointStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

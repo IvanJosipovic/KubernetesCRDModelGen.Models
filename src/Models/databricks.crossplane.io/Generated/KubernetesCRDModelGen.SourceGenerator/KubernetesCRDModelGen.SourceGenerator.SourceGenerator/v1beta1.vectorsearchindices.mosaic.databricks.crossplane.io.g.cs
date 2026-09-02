@@ -245,6 +245,12 @@ public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpec
 {
+    [JsonPropertyName("columnsToIndex")]
+    public IList<string>? ColumnsToIndex { get; set; }
+
+    [JsonPropertyName("columnsToSync")]
+    public IList<string>? ColumnsToSync { get; set; }
+
     /// <summary>array of objects representing columns that contain the embedding source.  Each entry consists of:</summary>
     [JsonPropertyName("embeddingSourceColumns")]
     public IList<V1beta1VectorSearchIndexSpecForProviderDeltaSyncIndexSpecEmbeddingSourceColumns>? EmbeddingSourceColumns { get; set; }
@@ -483,6 +489,10 @@ public partial class V1beta1VectorSearchIndexSpecForProvider
     [JsonPropertyName("directAccessIndexSpec")]
     public V1beta1VectorSearchIndexSpecForProviderDirectAccessIndexSpec? DirectAccessIndexSpec { get; set; }
 
+    /// <summary>The same as the name of the index.</summary>
+    [JsonPropertyName("endpointId")]
+    public string? EndpointId { get; set; }
+
     /// <summary>The name of the Mosaic AI Vector Search Endpoint that will be used for indexing the data.</summary>
     [JsonPropertyName("endpointName")]
     public string? EndpointName { get; set; }
@@ -494,6 +504,9 @@ public partial class V1beta1VectorSearchIndexSpecForProvider
     /// <summary>Selector for a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
     [JsonPropertyName("endpointNameSelector")]
     public V1beta1VectorSearchIndexSpecForProviderEndpointNameSelector? EndpointNameSelector { get; set; }
+
+    [JsonPropertyName("indexSubtype")]
+    public string? IndexSubtype { get; set; }
 
     /// <summary>Mosaic AI Vector Search index type. Currently supported values are:</summary>
     [JsonPropertyName("indexType")]
@@ -702,6 +715,12 @@ public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpec
 {
+    [JsonPropertyName("columnsToIndex")]
+    public IList<string>? ColumnsToIndex { get; set; }
+
+    [JsonPropertyName("columnsToSync")]
+    public IList<string>? ColumnsToSync { get; set; }
+
     /// <summary>array of objects representing columns that contain the embedding source.  Each entry consists of:</summary>
     [JsonPropertyName("embeddingSourceColumns")]
     public IList<V1beta1VectorSearchIndexSpecInitProviderDeltaSyncIndexSpecEmbeddingSourceColumns>? EmbeddingSourceColumns { get; set; }
@@ -952,6 +971,10 @@ public partial class V1beta1VectorSearchIndexSpecInitProvider
     [JsonPropertyName("directAccessIndexSpec")]
     public V1beta1VectorSearchIndexSpecInitProviderDirectAccessIndexSpec? DirectAccessIndexSpec { get; set; }
 
+    /// <summary>The same as the name of the index.</summary>
+    [JsonPropertyName("endpointId")]
+    public string? EndpointId { get; set; }
+
     /// <summary>The name of the Mosaic AI Vector Search Endpoint that will be used for indexing the data.</summary>
     [JsonPropertyName("endpointName")]
     public string? EndpointName { get; set; }
@@ -963,6 +986,9 @@ public partial class V1beta1VectorSearchIndexSpecInitProvider
     /// <summary>Selector for a VectorSearchEndpoint in mosaic to populate endpointName.</summary>
     [JsonPropertyName("endpointNameSelector")]
     public V1beta1VectorSearchIndexSpecInitProviderEndpointNameSelector? EndpointNameSelector { get; set; }
+
+    [JsonPropertyName("indexSubtype")]
+    public string? IndexSubtype { get; set; }
 
     /// <summary>Mosaic AI Vector Search index type. Currently supported values are:</summary>
     [JsonPropertyName("indexType")]
@@ -1199,6 +1225,12 @@ public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpec
 {
+    [JsonPropertyName("columnsToIndex")]
+    public IList<string>? ColumnsToIndex { get; set; }
+
+    [JsonPropertyName("columnsToSync")]
+    public IList<string>? ColumnsToSync { get; set; }
+
     /// <summary>array of objects representing columns that contain the embedding source.  Each entry consists of:</summary>
     [JsonPropertyName("embeddingSourceColumns")]
     public IList<V1beta1VectorSearchIndexStatusAtProviderDeltaSyncIndexSpecEmbeddingSourceColumns>? EmbeddingSourceColumns { get; set; }
@@ -1319,6 +1351,10 @@ public partial class V1beta1VectorSearchIndexStatusAtProvider
     [JsonPropertyName("directAccessIndexSpec")]
     public V1beta1VectorSearchIndexStatusAtProviderDirectAccessIndexSpec? DirectAccessIndexSpec { get; set; }
 
+    /// <summary>The same as the name of the index.</summary>
+    [JsonPropertyName("endpointId")]
+    public string? EndpointId { get; set; }
+
     /// <summary>The name of the Mosaic AI Vector Search Endpoint that will be used for indexing the data.</summary>
     [JsonPropertyName("endpointName")]
     public string? EndpointName { get; set; }
@@ -1326,6 +1362,9 @@ public partial class V1beta1VectorSearchIndexStatusAtProvider
     /// <summary>The same as the name of the index.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("indexSubtype")]
+    public string? IndexSubtype { get; set; }
 
     /// <summary>Mosaic AI Vector Search index type. Currently supported values are:</summary>
     [JsonPropertyName("indexType")]
@@ -1402,6 +1441,15 @@ public partial class V1beta1VectorSearchIndexStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1VectorSearchIndexStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

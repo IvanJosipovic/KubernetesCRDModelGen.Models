@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: userinstanceprofiles.security.databricks.crossplane.io
 spec:
   group: security.databricks.crossplane.io
@@ -75,6 +75,11 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
@@ -151,6 +156,14 @@ spec:
                             type: string
                         type: object
                     type: object
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: The id in the format <user_id>|<instance_profile_id>.
+                          type: string
+                      type: object
+                    type: array
                   userId:
                     description: This is the id of the user resource.
                     type: string
@@ -241,6 +254,11 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
@@ -317,6 +335,14 @@ spec:
                             type: string
                         type: object
                     type: object
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: The id in the format <user_id>|<instance_profile_id>.
+                          type: string
+                      type: object
+                    type: array
                   userId:
                     description: This is the id of the user resource.
                     type: string
@@ -485,12 +511,25 @@ spec:
             properties:
               atProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   id:
                     description: The id in the format <user_id>|<instance_profile_id>.
                     type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: The id in the format <user_id>|<instance_profile_id>.
+                          type: string
+                      type: object
+                    type: array
                   userId:
                     description: This is the id of the user resource.
                     type: string
@@ -539,6 +578,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -608,6 +654,11 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
@@ -683,6 +734,12 @@ spec:
                             - IfNotPresent
                             type: string
                         type: object
+                    type: object
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: The id in the format <user_id>|<instance_profile_id>.
+                        type: string
                     type: object
                   userId:
                     description: This is the id of the user resource.
@@ -774,6 +831,11 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
@@ -849,6 +911,12 @@ spec:
                             - IfNotPresent
                             type: string
                         type: object
+                    type: object
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: The id in the format <user_id>|<instance_profile_id>.
+                        type: string
                     type: object
                   userId:
                     description: This is the id of the user resource.
@@ -1018,12 +1086,23 @@ spec:
             properties:
               atProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   id:
                     description: The id in the format <user_id>|<instance_profile_id>.
                     type: string
                   instanceProfileId:
                     description: This is the id of the instance profile resource.
                     type: string
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: The id in the format <user_id>|<instance_profile_id>.
+                        type: string
+                    type: object
                   userId:
                     description: This is the id of the user resource.
                     type: string
@@ -1072,6 +1151,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

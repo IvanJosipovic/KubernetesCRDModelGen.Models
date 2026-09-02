@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: clusters.compute.databricks.crossplane.io
 spec:
   group: compute.databricks.crossplane.io
@@ -133,6 +133,8 @@ spec:
                         availability:
                           description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                           type: string
+                        capacityReservationGroup:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -151,6 +153,9 @@ spec:
                           type: number
                       type: object
                     type: array
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterLogConf:
                     items:
                       properties:
@@ -298,6 +303,8 @@ spec:
                         bootDiskSize:
                           description: Boot disk size in GB
                           type: number
+                        confidentialComputeType:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -606,6 +613,8 @@ spec:
                         availability:
                           description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                           type: string
+                        capacityReservationGroup:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -624,6 +633,9 @@ spec:
                           type: number
                       type: object
                     type: array
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterLogConf:
                     items:
                       properties:
@@ -773,6 +785,8 @@ spec:
                         bootDiskSize:
                           description: Boot disk size in GB
                           type: number
+                        confidentialComputeType:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -1162,6 +1176,8 @@ spec:
                         availability:
                           description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                           type: string
+                        capacityReservationGroup:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -1180,6 +1196,9 @@ spec:
                           type: number
                       type: object
                     type: array
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterId:
                     description: Canonical unique identifier for the cluster.
                     type: string
@@ -1319,6 +1338,8 @@ spec:
                         bootDiskSize:
                           description: Boot disk size in GB
                           type: number
+                        confidentialComputeType:
+                          type: string
                         firstOnDemand:
                           description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                           type: number
@@ -1609,6 +1630,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -1731,6 +1759,8 @@ spec:
                       availability:
                         description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                         type: string
+                      capacityReservationGroup:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -1746,6 +1776,9 @@ spec:
                         description: The max bid price used for Azure spot instances. You can set this to greater than or equal to the current spot price. You can also set this to -1, which specifies that the instance cannot be evicted on the basis of price. The price for the instance will be the current price for spot instances or the price for a standard instance.
                         type: number
                     type: object
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterLogConf:
                     properties:
                       dbfs:
@@ -1876,6 +1909,8 @@ spec:
                       bootDiskSize:
                         description: Boot disk size in GB
                         type: number
+                      confidentialComputeType:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -2150,6 +2185,8 @@ spec:
                       availability:
                         description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                         type: string
+                      capacityReservationGroup:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -2165,6 +2202,9 @@ spec:
                         description: The max bid price used for Azure spot instances. You can set this to greater than or equal to the current spot price. You can also set this to -1, which specifies that the instance cannot be evicted on the basis of price. The price for the instance will be the current price for spot instances or the price for a standard instance.
                         type: number
                     type: object
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterLogConf:
                     properties:
                       dbfs:
@@ -2297,6 +2337,8 @@ spec:
                       bootDiskSize:
                         description: Boot disk size in GB
                         type: number
+                      confidentialComputeType:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -2652,6 +2694,8 @@ spec:
                       availability:
                         description: 'Availability type used for all subsequent nodes past the first_on_demand ones. Valid values are SPOT_AZURE, SPOT_WITH_FALLBACK_AZURE, and ON_DEMAND_AZURE. Note: If first_on_demand is zero, this availability type will be used for the entire cluster.'
                         type: string
+                      capacityReservationGroup:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -2667,6 +2711,9 @@ spec:
                         description: The max bid price used for Azure spot instances. You can set this to greater than or equal to the current spot price. You can also set this to -1, which specifies that the instance cannot be evicted on the basis of price. The price for the instance will be the current price for spot instances or the price for a standard instance.
                         type: number
                     type: object
+                  clearCloudAttributesOnRemove:
+                    description: If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.
+                    type: boolean
                   clusterId:
                     description: Canonical unique identifier for the cluster.
                     type: string
@@ -2789,6 +2836,8 @@ spec:
                       bootDiskSize:
                         description: Boot disk size in GB
                         type: number
+                      confidentialComputeType:
+                        type: string
                       firstOnDemand:
                         description: The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.
                         type: number
@@ -3050,6 +3099,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

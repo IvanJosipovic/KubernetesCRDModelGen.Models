@@ -363,7 +363,7 @@ public partial class V1beta1WorkspaceBindingSpecForProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceBindingSpecForProvider
 {
-    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE.</summary>
+    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE. Note: BINDING_TYPE_READ_ONLY is only supported when securable_type is catalog. For storage_credential, external_location, and credential, only BINDING_TYPE_READ_WRITE is supported.</summary>
     [JsonPropertyName("bindingType")]
     public string? BindingType { get; set; }
 
@@ -723,7 +723,7 @@ public partial class V1beta1WorkspaceBindingSpecInitProviderWorkspaceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceBindingSpecInitProvider
 {
-    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE.</summary>
+    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE. Note: BINDING_TYPE_READ_ONLY is only supported when securable_type is catalog. For storage_credential, external_location, and credential, only BINDING_TYPE_READ_WRITE is supported.</summary>
     [JsonPropertyName("bindingType")]
     public string? BindingType { get; set; }
 
@@ -960,7 +960,7 @@ public partial class V1beta1WorkspaceBindingStatusAtProviderProviderConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkspaceBindingStatusAtProvider
 {
-    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE.</summary>
+    /// <summary>Binding mode. Default to BINDING_TYPE_READ_WRITE. Possible values are BINDING_TYPE_READ_ONLY, BINDING_TYPE_READ_WRITE. Note: BINDING_TYPE_READ_ONLY is only supported when securable_type is catalog. For storage_credential, external_location, and credential, only BINDING_TYPE_READ_WRITE is supported.</summary>
     [JsonPropertyName("bindingType")]
     public string? BindingType { get; set; }
 
@@ -1041,6 +1041,15 @@ public partial class V1beta1WorkspaceBindingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1WorkspaceBindingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
