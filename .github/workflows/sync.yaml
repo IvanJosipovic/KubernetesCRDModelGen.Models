@@ -20,7 +20,7 @@ jobs:
   sync:
     name: Sync
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
     steps:
 
       - name: Check out code
@@ -60,7 +60,7 @@ jobs:
           }
 
       - name: Build
-        run: dotnet build -c Release --tl:off -clp:ErrorsOnly
+        run: dotnet build -c Release /m:1 --tl:off -clp:ErrorsOnly
 
       - name: Validate Cs
         shell: pwsh
