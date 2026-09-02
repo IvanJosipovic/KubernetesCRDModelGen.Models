@@ -6214,6 +6214,29 @@ public partial class V1InstallationSpecCniIpam
 }
 
 /// <summary>
+/// SpecVersion configures the CNI specification version declared in the
+/// CNI configuration (&quot;cniVersion&quot;) that the operator generates. Auto
+/// (the default) lets the operator choose an appropriate version, which
+/// may increase across operator upgrades. Pin an explicit version if a
+/// chained CNI plugin or container runtime in your environment requires
+/// one. Only relevant when using the Calico CNI plugin.
+/// Default: Auto
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCniSpecVersionEnum>))]
+public enum V1InstallationSpecCniSpecVersionEnum
+{
+    [EnumMember(Value = "Auto"), JsonStringEnumMemberName("Auto")]
+    Auto,
+    [EnumMember(Value = "0.3.1"), JsonStringEnumMemberName("0.3.1")]
+    _031,
+    [EnumMember(Value = "0.4.0"), JsonStringEnumMemberName("0.4.0")]
+    _040,
+    [EnumMember(Value = "1.0.0"), JsonStringEnumMemberName("1.0.0")]
+    _100
+}
+
+/// <summary>
 /// Specifies the CNI plugin that will be used in the Calico or Calico Enterprise installation.
 /// * For KubernetesProvider GKE, this field defaults to GKE.
 /// * For KubernetesProvider AKS, this field defaults to AzureVNET.
@@ -6274,6 +6297,18 @@ public partial class V1InstallationSpecCni
     /// </summary>
     [JsonPropertyName("ipam")]
     public V1InstallationSpecCniIpam? Ipam { get; set; }
+
+    /// <summary>
+    /// SpecVersion configures the CNI specification version declared in the
+    /// CNI configuration (&quot;cniVersion&quot;) that the operator generates. Auto
+    /// (the default) lets the operator choose an appropriate version, which
+    /// may increase across operator upgrades. Pin an explicit version if a
+    /// chained CNI plugin or container runtime in your environment requires
+    /// one. Only relevant when using the Calico CNI plugin.
+    /// Default: Auto
+    /// </summary>
+    [JsonPropertyName("specVersion")]
+    public V1InstallationSpecCniSpecVersionEnum? SpecVersion { get; set; }
 
     /// <summary>
     /// Specifies the CNI plugin that will be used in the Calico or Calico Enterprise installation.
@@ -16349,6 +16384,29 @@ public partial class V1InstallationStatusComputedCniIpam
 }
 
 /// <summary>
+/// SpecVersion configures the CNI specification version declared in the
+/// CNI configuration (&quot;cniVersion&quot;) that the operator generates. Auto
+/// (the default) lets the operator choose an appropriate version, which
+/// may increase across operator upgrades. Pin an explicit version if a
+/// chained CNI plugin or container runtime in your environment requires
+/// one. Only relevant when using the Calico CNI plugin.
+/// Default: Auto
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCniSpecVersionEnum>))]
+public enum V1InstallationStatusComputedCniSpecVersionEnum
+{
+    [EnumMember(Value = "Auto"), JsonStringEnumMemberName("Auto")]
+    Auto,
+    [EnumMember(Value = "0.3.1"), JsonStringEnumMemberName("0.3.1")]
+    _031,
+    [EnumMember(Value = "0.4.0"), JsonStringEnumMemberName("0.4.0")]
+    _040,
+    [EnumMember(Value = "1.0.0"), JsonStringEnumMemberName("1.0.0")]
+    _100
+}
+
+/// <summary>
 /// Specifies the CNI plugin that will be used in the Calico or Calico Enterprise installation.
 /// * For KubernetesProvider GKE, this field defaults to GKE.
 /// * For KubernetesProvider AKS, this field defaults to AzureVNET.
@@ -16409,6 +16467,18 @@ public partial class V1InstallationStatusComputedCni
     /// </summary>
     [JsonPropertyName("ipam")]
     public V1InstallationStatusComputedCniIpam? Ipam { get; set; }
+
+    /// <summary>
+    /// SpecVersion configures the CNI specification version declared in the
+    /// CNI configuration (&quot;cniVersion&quot;) that the operator generates. Auto
+    /// (the default) lets the operator choose an appropriate version, which
+    /// may increase across operator upgrades. Pin an explicit version if a
+    /// chained CNI plugin or container runtime in your environment requires
+    /// one. Only relevant when using the Calico CNI plugin.
+    /// Default: Auto
+    /// </summary>
+    [JsonPropertyName("specVersion")]
+    public V1InstallationStatusComputedCniSpecVersionEnum? SpecVersion { get; set; }
 
     /// <summary>
     /// Specifies the CNI plugin that will be used in the Calico or Calico Enterprise installation.

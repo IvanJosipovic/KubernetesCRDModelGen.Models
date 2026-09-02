@@ -59,8 +59,19 @@ public partial class V1alpha1ConnectionSpecMutualTLSSecretRef
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ConnectionSpecTlsCaCertSecretRef
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ConnectionSpecTls
 {
+    [JsonPropertyName("caCertSecretRef")]
+    public V1alpha1ConnectionSpecTlsCaCertSecretRef? CaCertSecretRef { get; set; }
+
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 }

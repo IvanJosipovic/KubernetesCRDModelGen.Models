@@ -241,6 +241,9 @@ public partial class V1alpha1AnalysisRunSpecMetricsProviderDatadog
     [JsonPropertyName("query")]
     public string? Query { get; set; }
 
+    [JsonPropertyName("requestTimeout")]
+    public string? RequestTimeout { get; set; }
+
     [JsonPropertyName("secretRef")]
     public V1alpha1AnalysisRunSpecMetricsProviderDatadogSecretRef? SecretRef { get; set; }
 }

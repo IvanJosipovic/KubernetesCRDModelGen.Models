@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: accesscontrolrulesets.security.databricks.crossplane.io
 spec:
   group: security.databricks.crossplane.io
@@ -75,6 +75,11 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   grantRules:
                     description: The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.
                     items:
@@ -169,6 +174,14 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: ID of the access control rule set - the same as name.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               initProvider:
                 description: |-
@@ -183,6 +196,11 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   grantRules:
                     description: The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.
                     items:
@@ -277,6 +295,14 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: ID of the access control rule set - the same as name.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               managementPolicies:
                 default:
@@ -372,6 +398,11 @@ spec:
             properties:
               atProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   etag:
                     type: string
                   grantRules:
@@ -395,6 +426,14 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    items:
+                      properties:
+                        workspaceId:
+                          description: ID of the access control rule set - the same as name.
+                          type: string
+                      type: object
+                    type: array
                 type: object
               conditions:
                 description: Conditions of the resource.
@@ -440,6 +479,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -509,6 +555,11 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   grantRules:
                     description: The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.
                     items:
@@ -603,6 +654,12 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: ID of the access control rule set - the same as name.
+                        type: string
+                    type: object
                 type: object
               initProvider:
                 description: |-
@@ -617,6 +674,11 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   grantRules:
                     description: The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.
                     items:
@@ -711,6 +773,12 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: ID of the access control rule set - the same as name.
+                        type: string
+                    type: object
                 type: object
               managementPolicies:
                 default:
@@ -806,6 +874,11 @@ spec:
             properties:
               atProvider:
                 properties:
+                  api:
+                    description: |-
+                      Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+                      Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+                    type: string
                   etag:
                     type: string
                   grantRules:
@@ -829,6 +902,12 @@ spec:
                   name:
                     description: 'Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:'
                     type: string
+                  providerConfig:
+                    properties:
+                      workspaceId:
+                        description: ID of the access control rule set - the same as name.
+                        type: string
+                    type: object
                 type: object
               conditions:
                 description: Conditions of the resource.
@@ -874,6 +953,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

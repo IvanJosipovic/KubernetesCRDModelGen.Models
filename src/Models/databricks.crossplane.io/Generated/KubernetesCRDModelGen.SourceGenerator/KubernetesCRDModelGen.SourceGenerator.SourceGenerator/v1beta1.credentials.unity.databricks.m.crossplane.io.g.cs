@@ -116,6 +116,16 @@ public partial class V1beta1CredentialSpecForProviderDatabricksGcpServiceAccount
     public string? PrivateKeyId { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CredentialSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSpecForProvider
@@ -168,6 +178,10 @@ public partial class V1beta1CredentialSpecForProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1CredentialSpecForProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -271,6 +285,16 @@ public partial class V1beta1CredentialSpecInitProviderDatabricksGcpServiceAccoun
     public string? PrivateKeyId { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CredentialSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -335,6 +359,10 @@ public partial class V1beta1CredentialSpecInitProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1CredentialSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -528,6 +556,16 @@ public partial class V1beta1CredentialStatusAtProviderDatabricksGcpServiceAccoun
     public string? PrivateKeyId { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CredentialStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialStatusAtProvider
@@ -588,6 +626,10 @@ public partial class V1beta1CredentialStatusAtProvider
     /// <summary>Username/groupname/sp application_id of the credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1CredentialStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates the purpose of the credential. Can be SERVICE or STORAGE.</summary>
     [JsonPropertyName("purpose")]
@@ -665,6 +707,15 @@ public partial class V1beta1CredentialStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CredentialStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

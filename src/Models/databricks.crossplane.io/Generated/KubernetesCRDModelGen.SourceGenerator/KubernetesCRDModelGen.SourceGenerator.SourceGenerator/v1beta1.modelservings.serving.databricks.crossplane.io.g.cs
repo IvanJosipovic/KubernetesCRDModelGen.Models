@@ -978,6 +978,29 @@ public partial class V1beta1ModelServingSpecForProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig
+{
+    /// <summary>The name of a served model. It must be unique across an endpoint. If not specified, this field will default to modelname-modelversion. A served model name can consist of alphanumeric characters, dashes, and underscores.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("samplingFraction")]
+    public double? SamplingFraction { get; set; }
+}
+
+/// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecForProviderTelemetryConfig
+{
+    /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+    [JsonPropertyName("inferenceTableConfig")]
+    public V1beta1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProvider
@@ -1021,6 +1044,10 @@ public partial class V1beta1ModelServingSpecForProvider
     /// <summary>Tags to be attached to the serving endpoint and automatically propagated to billing logs.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1ModelServingSpecForProviderTags>? Tags { get; set; }
+
+    /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+    [JsonPropertyName("telemetryConfig")]
+    public V1beta1ModelServingSpecForProviderTelemetryConfig? TelemetryConfig { get; set; }
 }
 
 /// <summary>block with configuration for traffic fallback which auto fallbacks to other served entities if the request to a served entity fails with certain error codes, to increase availability.</summary>
@@ -1946,6 +1973,29 @@ public partial class V1beta1ModelServingSpecInitProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecInitProviderTelemetryConfigInferenceTableConfig
+{
+    /// <summary>The name of a served model. It must be unique across an endpoint. If not specified, this field will default to modelname-modelversion. A served model name can consist of alphanumeric characters, dashes, and underscores.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("samplingFraction")]
+    public double? SamplingFraction { get; set; }
+}
+
+/// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingSpecInitProviderTelemetryConfig
+{
+    /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+    [JsonPropertyName("inferenceTableConfig")]
+    public V1beta1ModelServingSpecInitProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -2001,6 +2051,10 @@ public partial class V1beta1ModelServingSpecInitProvider
     /// <summary>Tags to be attached to the serving endpoint and automatically propagated to billing logs.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1ModelServingSpecInitProviderTags>? Tags { get; set; }
+
+    /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+    [JsonPropertyName("telemetryConfig")]
+    public V1beta1ModelServingSpecInitProviderTelemetryConfig? TelemetryConfig { get; set; }
 }
 
 /// <summary>
@@ -2845,6 +2899,29 @@ public partial class V1beta1ModelServingStatusAtProviderTags
     public string? Value { get; set; }
 }
 
+/// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig
+{
+    /// <summary>The name of a served model. It must be unique across an endpoint. If not specified, this field will default to modelname-modelversion. A served model name can consist of alphanumeric characters, dashes, and underscores.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("samplingFraction")]
+    public double? SamplingFraction { get; set; }
+}
+
+/// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ModelServingStatusAtProviderTelemetryConfig
+{
+    /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
+    [JsonPropertyName("inferenceTableConfig")]
+    public V1beta1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProvider
@@ -2900,6 +2977,10 @@ public partial class V1beta1ModelServingStatusAtProvider
     /// <summary>Tags to be attached to the serving endpoint and automatically propagated to billing logs.</summary>
     [JsonPropertyName("tags")]
     public IList<V1beta1ModelServingStatusAtProviderTags>? Tags { get; set; }
+
+    /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
+    [JsonPropertyName("telemetryConfig")]
+    public V1beta1ModelServingStatusAtProviderTelemetryConfig? TelemetryConfig { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -2956,6 +3037,15 @@ public partial class V1beta1ModelServingStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ModelServingStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

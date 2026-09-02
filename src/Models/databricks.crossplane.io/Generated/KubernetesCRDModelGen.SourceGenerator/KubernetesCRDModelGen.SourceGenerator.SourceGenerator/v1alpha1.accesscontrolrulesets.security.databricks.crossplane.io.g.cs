@@ -240,8 +240,25 @@ public partial class V1alpha1AccessControlRuleSetSpecForProviderGrantRules
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AccessControlRuleSetSpecForProviderProviderConfig
+{
+    /// <summary>ID of the access control rule set - the same as name.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AccessControlRuleSetSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.</summary>
     [JsonPropertyName("grantRules")]
     public IList<V1alpha1AccessControlRuleSetSpecForProviderGrantRules>? GrantRules { get; set; }
@@ -249,6 +266,9 @@ public partial class V1alpha1AccessControlRuleSetSpecForProvider
     /// <summary>Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1AccessControlRuleSetSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -428,6 +448,16 @@ public partial class V1alpha1AccessControlRuleSetSpecInitProviderGrantRules
     public string? Role { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AccessControlRuleSetSpecInitProviderProviderConfig
+{
+    /// <summary>ID of the access control rule set - the same as name.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -445,6 +475,13 @@ public partial class V1alpha1AccessControlRuleSetSpecInitProviderGrantRules
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AccessControlRuleSetSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The access control rules to be granted by this rule set, consisting of a set of principals and roles to be granted to them.</summary>
     [JsonPropertyName("grantRules")]
     public IList<V1alpha1AccessControlRuleSetSpecInitProviderGrantRules>? GrantRules { get; set; }
@@ -452,6 +489,9 @@ public partial class V1alpha1AccessControlRuleSetSpecInitProvider
     /// <summary>Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1AccessControlRuleSetSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>
@@ -661,8 +701,25 @@ public partial class V1alpha1AccessControlRuleSetStatusAtProviderGrantRules
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AccessControlRuleSetStatusAtProviderProviderConfig
+{
+    /// <summary>ID of the access control rule set - the same as name.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AccessControlRuleSetStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     [JsonPropertyName("etag")]
     public string? Etag { get; set; }
 
@@ -677,6 +734,9 @@ public partial class V1alpha1AccessControlRuleSetStatusAtProvider
     /// <summary>Unique identifier of a rule set. The name determines the resource to which the rule set applies. Changing the name recreates the resource!. Currently, only default rule sets are supported. The following rule set formats are supported:</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1AccessControlRuleSetStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
@@ -735,6 +795,15 @@ public partial class V1alpha1AccessControlRuleSetStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1AccessControlRuleSetStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -124,6 +124,9 @@ public partial class V1beta1PipelineSpecForProviderClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -196,6 +199,9 @@ public partial class V1beta1PipelineSpecForProviderClusterGcpAttributes
 {
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -386,6 +392,10 @@ public partial class V1beta1PipelineSpecForProviderCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderDeployment
 {
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     /// <summary>The deployment method that manages the pipeline.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
@@ -393,6 +403,10 @@ public partial class V1beta1PipelineSpecForProviderDeployment
     /// <summary>The path to the file containing metadata about the deployment.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -402,6 +416,9 @@ public partial class V1beta1PipelineSpecForProviderEnvironment
     /// <summary>a list of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("dependencies")]
     public IList<string>? Dependencies { get; set; }
+
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
 }
 
 /// <summary>an optional block specifying a table where LDP Event Log will be stored.  Consists of the following fields:</summary>
@@ -472,6 +489,23 @@ public partial class V1beta1PipelineSpecForProviderGatewayDefinition
     /// <summary>Required, Immutable. The name of the schema for the gateway pipelines&apos;s storage location.</summary>
     [JsonPropertyName("gatewayStorageSchema")]
     public string? GatewayStorageSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionDataStagingOptions
+{
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("catalogName")]
+    public string? CatalogName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("schemaName")]
+    public string? SchemaName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -547,6 +581,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsRep
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -570,6 +610,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsRep
 
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
+
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
 
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
@@ -597,6 +643,477 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsRep
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsReportTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -657,6 +1174,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -681,6 +1204,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -690,6 +1219,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchema
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -709,6 +1241,477 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSch
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -769,6 +1772,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -793,6 +1802,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -801,6 +1816,9 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTab
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTable
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionObjectsTableConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -879,11 +1897,23 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig
+{
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurations
 {
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
+
+    [JsonPropertyName("googleAdsConfig")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig? GoogleAdsConfig { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -944,6 +1974,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionTableConfi
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -968,6 +2004,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinitionTableConfi
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -979,6 +2021,12 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinition
     /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
+
+    [JsonPropertyName("connectorType")]
+    public string? ConnectorType { get; set; }
+
+    [JsonPropertyName("dataStagingOptions")]
+    public V1beta1PipelineSpecForProviderIngestionDefinitionDataStagingOptions? DataStagingOptions { get; set; }
 
     [JsonPropertyName("fullRefreshWindow")]
     public V1beta1PipelineSpecForProviderIngestionDefinitionFullRefreshWindow? FullRefreshWindow { get; set; }
@@ -1408,9 +2456,6 @@ public partial class V1beta1PipelineSpecForProvider
     [JsonPropertyName("ingestionDefinition")]
     public V1beta1PipelineSpecForProviderIngestionDefinition? IngestionDefinition { get; set; }
 
-    [JsonPropertyName("lastModified")]
-    public double? LastModified { get; set; }
-
     [JsonPropertyName("latestUpdates")]
     public IList<V1beta1PipelineSpecForProviderLatestUpdates>? LatestUpdates { get; set; }
 
@@ -1456,8 +2501,9 @@ public partial class V1beta1PipelineSpecForProvider
     [JsonPropertyName("serverless")]
     public bool? Serverless { get; set; }
 
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 
     /// <summary>to catalog or vice versa.  If pipeline was already created with catalog set, the value could be changed.</summary>
     [JsonPropertyName("storage")]
@@ -1552,6 +2598,9 @@ public partial class V1beta1PipelineSpecInitProviderClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -1624,6 +2673,9 @@ public partial class V1beta1PipelineSpecInitProviderClusterGcpAttributes
 {
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -1814,6 +2866,10 @@ public partial class V1beta1PipelineSpecInitProviderCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderDeployment
 {
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     /// <summary>The deployment method that manages the pipeline.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
@@ -1821,6 +2877,10 @@ public partial class V1beta1PipelineSpecInitProviderDeployment
     /// <summary>The path to the file containing metadata about the deployment.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1830,6 +2890,9 @@ public partial class V1beta1PipelineSpecInitProviderEnvironment
     /// <summary>a list of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("dependencies")]
     public IList<string>? Dependencies { get; set; }
+
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
 }
 
 /// <summary>an optional block specifying a table where LDP Event Log will be stored.  Consists of the following fields:</summary>
@@ -1900,6 +2963,23 @@ public partial class V1beta1PipelineSpecInitProviderGatewayDefinition
     /// <summary>Required, Immutable. The name of the schema for the gateway pipelines&apos;s storage location.</summary>
     [JsonPropertyName("gatewayStorageSchema")]
     public string? GatewayStorageSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionDataStagingOptions
+{
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("catalogName")]
+    public string? CatalogName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("schemaName")]
+    public string? SchemaName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1975,6 +3055,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsRe
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -1998,6 +3084,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsRe
 
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
+
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
 
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
@@ -2025,6 +3117,477 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsRe
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsReportTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2085,6 +3648,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -2109,6 +3678,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -2118,6 +3693,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchema
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -2137,6 +3715,477 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSc
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2197,6 +4246,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -2221,6 +4276,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -2229,6 +4290,9 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTable
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionObjectsTableConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -2307,11 +4371,23 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig
+{
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurations
 {
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
+
+    [JsonPropertyName("googleAdsConfig")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig? GoogleAdsConfig { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2372,6 +4448,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionTableConf
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -2396,6 +4478,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinitionTableConf
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -2407,6 +4495,12 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinition
     /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
+
+    [JsonPropertyName("connectorType")]
+    public string? ConnectorType { get; set; }
+
+    [JsonPropertyName("dataStagingOptions")]
+    public V1beta1PipelineSpecInitProviderIngestionDefinitionDataStagingOptions? DataStagingOptions { get; set; }
 
     [JsonPropertyName("fullRefreshWindow")]
     public V1beta1PipelineSpecInitProviderIngestionDefinitionFullRefreshWindow? FullRefreshWindow { get; set; }
@@ -2848,9 +4942,6 @@ public partial class V1beta1PipelineSpecInitProvider
     [JsonPropertyName("ingestionDefinition")]
     public V1beta1PipelineSpecInitProviderIngestionDefinition? IngestionDefinition { get; set; }
 
-    [JsonPropertyName("lastModified")]
-    public double? LastModified { get; set; }
-
     [JsonPropertyName("latestUpdates")]
     public IList<V1beta1PipelineSpecInitProviderLatestUpdates>? LatestUpdates { get; set; }
 
@@ -2896,8 +4987,9 @@ public partial class V1beta1PipelineSpecInitProvider
     [JsonPropertyName("serverless")]
     public bool? Serverless { get; set; }
 
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 
     /// <summary>to catalog or vice versa.  If pipeline was already created with catalog set, the value could be changed.</summary>
     [JsonPropertyName("storage")]
@@ -3175,6 +5267,9 @@ public partial class V1beta1PipelineStatusAtProviderClusterAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
 
@@ -3247,6 +5342,9 @@ public partial class V1beta1PipelineStatusAtProviderClusterGcpAttributes
 {
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -3437,6 +5535,10 @@ public partial class V1beta1PipelineStatusAtProviderCluster
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderDeployment
 {
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("deploymentId")]
+    public string? DeploymentId { get; set; }
+
     /// <summary>The deployment method that manages the pipeline.</summary>
     [JsonPropertyName("kind")]
     public string? Kind { get; set; }
@@ -3444,6 +5546,10 @@ public partial class V1beta1PipelineStatusAtProviderDeployment
     /// <summary>The path to the file containing metadata about the deployment.</summary>
     [JsonPropertyName("metadataFilePath")]
     public string? MetadataFilePath { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("versionId")]
+    public string? VersionId { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3453,6 +5559,9 @@ public partial class V1beta1PipelineStatusAtProviderEnvironment
     /// <summary>a list of pip dependencies, as supported by the version of pip in this environment. Each dependency is a pip requirement file line.  See API docs for more information.</summary>
     [JsonPropertyName("dependencies")]
     public IList<string>? Dependencies { get; set; }
+
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
 }
 
 /// <summary>an optional block specifying a table where LDP Event Log will be stored.  Consists of the following fields:</summary>
@@ -3523,6 +5632,23 @@ public partial class V1beta1PipelineStatusAtProviderGatewayDefinition
     /// <summary>Required, Immutable. The name of the schema for the gateway pipelines&apos;s storage location.</summary>
     [JsonPropertyName("gatewayStorageSchema")]
     public string? GatewayStorageSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionDataStagingOptions
+{
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("catalogName")]
+    public string? CatalogName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("schemaName")]
+    public string? SchemaName { get; set; }
+
+    /// <summary>A user-friendly name for this pipeline. The name can be used to identify pipeline jobs in the UI.</summary>
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3598,6 +5724,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsRe
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -3621,6 +5753,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsRe
 
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
+
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
 
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
@@ -3648,6 +5786,477 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsRe
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsReportTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3708,6 +6317,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -3732,6 +6347,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -3741,6 +6362,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchema
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -3760,6 +6384,477 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSc
     /// <summary>Configuration settings to control the ingestion of tables. These settings are applied to all tables in the pipeline.</summary>
     [JsonPropertyName("tableConfiguration")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsSchemaTableConfiguration? TableConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions
+{
+    [JsonPropertyName("includeConfluenceSpaces")]
+    public IList<string>? IncludeConfluenceSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("resource")]
+    public string? Resource { get; set; }
+
+    [JsonPropertyName("resourceFields")]
+    public IList<string>? ResourceFields { get; set; }
+
+    [JsonPropertyName("segments")]
+    public IList<string>? Segments { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions
+{
+    [JsonPropertyName("includeJiraSpaces")]
+    public IList<string>? IncludeJiraSpaces { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions
+{
+    [JsonPropertyName("asVariant")]
+    public bool? AsVariant { get; set; }
+
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("schema")]
+    public string? Schema { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaFilePath")]
+    public string? SchemaFilePath { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer
+{
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("jsonOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions? JsonOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
+{
+    [JsonPropertyName("clientConfig")]
+    public IDictionary<string, string>? ClientConfig { get; set; }
+
+    [JsonPropertyName("keyTransformer")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer? KeyTransformer { get; set; }
+
+    [JsonPropertyName("maxOffsetsPerTrigger")]
+    public double? MaxOffsetsPerTrigger { get; set; }
+
+    [JsonPropertyName("startingOffset")]
+    public string? StartingOffset { get; set; }
+
+    [JsonPropertyName("topicPattern")]
+    public string? TopicPattern { get; set; }
+
+    [JsonPropertyName("topics")]
+    public IList<string>? Topics { get; set; }
+
+    [JsonPropertyName("valueTransformer")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer? ValueTransformer { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions
+{
+    [JsonPropertyName("actionAttributionWindows")]
+    public IList<string>? ActionAttributionWindows { get; set; }
+
+    [JsonPropertyName("actionBreakdowns")]
+    public IList<string>? ActionBreakdowns { get; set; }
+
+    [JsonPropertyName("actionReportTime")]
+    public string? ActionReportTime { get; set; }
+
+    [JsonPropertyName("breakdowns")]
+    public IList<string>? Breakdowns { get; set; }
+
+    [JsonPropertyName("customInsightsLookbackWindow")]
+    public double? CustomInsightsLookbackWindow { get; set; }
+
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("timeIncrement")]
+    public string? TimeIncrement { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions
+{
+    [JsonPropertyName("attachmentMode")]
+    public string? AttachmentMode { get; set; }
+
+    [JsonPropertyName("bodyFormat")]
+    public string? BodyFormat { get; set; }
+
+    [JsonPropertyName("folderFilter")]
+    public IList<string>? FolderFilter { get; set; }
+
+    [JsonPropertyName("includeFolders")]
+    public IList<string>? IncludeFolders { get; set; }
+
+    [JsonPropertyName("includeMailboxes")]
+    public IList<string>? IncludeMailboxes { get; set; }
+
+    [JsonPropertyName("includeSenders")]
+    public IList<string>? IncludeSenders { get; set; }
+
+    [JsonPropertyName("includeSubjects")]
+    public IList<string>? IncludeSubjects { get; set; }
+
+    [JsonPropertyName("senderFilter")]
+    public IList<string>? SenderFilter { get; set; }
+
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+
+    [JsonPropertyName("subjectFilter")]
+    public IList<string>? SubjectFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters
+{
+    [JsonPropertyName("modifiedAfter")]
+    public string? ModifiedAfter { get; set; }
+
+    [JsonPropertyName("modifiedBefore")]
+    public string? ModifiedBefore { get; set; }
+
+    [JsonPropertyName("pathFilter")]
+    public string? PathFilter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions
+{
+    [JsonPropertyName("corruptRecordColumn")]
+    public string? CorruptRecordColumn { get; set; }
+
+    /// <summary>Filters on which Pipeline packages to include in the deployed graph.  This block consists of following attributes:</summary>
+    [JsonPropertyName("fileFilters")]
+    public IList<V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters>? FileFilters { get; set; }
+
+    [JsonPropertyName("format")]
+    public string? Format { get; set; }
+
+    [JsonPropertyName("formatOptions")]
+    public IDictionary<string, string>? FormatOptions { get; set; }
+
+    [JsonPropertyName("ignoreCorruptFiles")]
+    public bool? IgnoreCorruptFiles { get; set; }
+
+    [JsonPropertyName("inferColumnTypes")]
+    public bool? InferColumnTypes { get; set; }
+
+    [JsonPropertyName("readerCaseSensitive")]
+    public bool? ReaderCaseSensitive { get; set; }
+
+    [JsonPropertyName("rescuedDataColumn")]
+    public string? RescuedDataColumn { get; set; }
+
+    [JsonPropertyName("schemaEvolutionMode")]
+    public string? SchemaEvolutionMode { get; set; }
+
+    [JsonPropertyName("schemaHints")]
+    public string? SchemaHints { get; set; }
+
+    [JsonPropertyName("singleVariantColumn")]
+    public string? SingleVariantColumn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions
+{
+    [JsonPropertyName("entityType")]
+    public string? EntityType { get; set; }
+
+    [JsonPropertyName("fileIngestionOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions? FileIngestionOptions { get; set; }
+
+    /// <summary>URL of the Lakeflow Declarative Pipeline on the given workspace.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions
+{
+    /// <summary>The default schema (database) where tables are read from or published to. The presence of this attribute implies that the pipeline is in direct publishing mode.</summary>
+    [JsonPropertyName("enforceSchema")]
+    public bool? EnforceSchema { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions
+{
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions
+{
+    [JsonPropertyName("customReportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions? CustomReportOptions { get; set; }
+
+    [JsonPropertyName("dataLevel")]
+    public string? DataLevel { get; set; }
+
+    [JsonPropertyName("dimensions")]
+    public IList<string>? Dimensions { get; set; }
+
+    [JsonPropertyName("lookbackWindowDays")]
+    public double? LookbackWindowDays { get; set; }
+
+    [JsonPropertyName("metrics")]
+    public IList<string>? Metrics { get; set; }
+
+    [JsonPropertyName("queryLifetime")]
+    public bool? QueryLifetime { get; set; }
+
+    [JsonPropertyName("reportType")]
+    public string? ReportType { get; set; }
+
+    [JsonPropertyName("syncStartDate")]
+    public string? SyncStartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions
+{
+    [JsonPropertyName("startDate")]
+    public string? StartDate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptions
+{
+    [JsonPropertyName("confluenceOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions? ConfluenceOptions { get; set; }
+
+    [JsonPropertyName("gdriveOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions? GdriveOptions { get; set; }
+
+    [JsonPropertyName("googleAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions? GoogleAdsOptions { get; set; }
+
+    [JsonPropertyName("jiraOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsJiraOptions? JiraOptions { get; set; }
+
+    [JsonPropertyName("kafkaOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions? KafkaOptions { get; set; }
+
+    [JsonPropertyName("metaAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions? MetaAdsOptions { get; set; }
+
+    [JsonPropertyName("outlookOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions? OutlookOptions { get; set; }
+
+    [JsonPropertyName("sharepointOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions? SharepointOptions { get; set; }
+
+    [JsonPropertyName("smartsheetOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions? SmartsheetOptions { get; set; }
+
+    [JsonPropertyName("tiktokAdsOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions? TiktokAdsOptions { get; set; }
+
+    [JsonPropertyName("zendeskSupportOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions? ZendeskSupportOptions { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3820,6 +6915,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -3844,6 +6945,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -3852,6 +6959,9 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTable
 {
+    [JsonPropertyName("connectorOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionObjectsTableConnectorOptions? ConnectorOptions { get; set; }
+
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("destinationCatalog")]
     public string? DestinationCatalog { get; set; }
@@ -3930,11 +7040,23 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig
+{
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("managerAccountId")]
+    public string? ManagerAccountId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurations
 {
     /// <summary>The name of default catalog in Unity Catalog. Change of this parameter forces recreation of the pipeline if you switch from  (Conflicts with storage).</summary>
     [JsonPropertyName("catalog")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsCatalog? Catalog { get; set; }
+
+    [JsonPropertyName("googleAdsConfig")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionSourceConfigurationsGoogleAdsConfig? GoogleAdsConfig { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3995,6 +7117,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionTableConf
     [JsonPropertyName("autoFullRefreshPolicy")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionTableConfigurationAutoFullRefreshPolicy? AutoFullRefreshPolicy { get; set; }
 
+    [JsonPropertyName("clusteringColumns")]
+    public IList<string>? ClusteringColumns { get; set; }
+
+    [JsonPropertyName("enableAutoClustering")]
+    public bool? EnableAutoClustering { get; set; }
+
     [JsonPropertyName("excludeColumns")]
     public IList<string>? ExcludeColumns { get; set; }
 
@@ -4019,6 +7147,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinitionTableConf
     [JsonPropertyName("sequenceBy")]
     public IList<string>? SequenceBy { get; set; }
 
+    [JsonPropertyName("sourceMetadataColumn")]
+    public string? SourceMetadataColumn { get; set; }
+
+    [JsonPropertyName("tableProperties")]
+    public IDictionary<string, string>? TableProperties { get; set; }
+
     [JsonPropertyName("workdayReportParameters")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionTableConfigurationWorkdayReportParameters? WorkdayReportParameters { get; set; }
 }
@@ -4030,6 +7164,12 @@ public partial class V1beta1PipelineStatusAtProviderIngestionDefinition
     /// <summary>Immutable. The Unity Catalog connection this ingestion pipeline uses to communicate with the source. Specify either ingestion_gateway_id or connection_name.</summary>
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
+
+    [JsonPropertyName("connectorType")]
+    public string? ConnectorType { get; set; }
+
+    [JsonPropertyName("dataStagingOptions")]
+    public V1beta1PipelineStatusAtProviderIngestionDefinitionDataStagingOptions? DataStagingOptions { get; set; }
 
     [JsonPropertyName("fullRefreshWindow")]
     public V1beta1PipelineStatusAtProviderIngestionDefinitionFullRefreshWindow? FullRefreshWindow { get; set; }
@@ -4308,9 +7448,6 @@ public partial class V1beta1PipelineStatusAtProvider
     [JsonPropertyName("ingestionDefinition")]
     public V1beta1PipelineStatusAtProviderIngestionDefinition? IngestionDefinition { get; set; }
 
-    [JsonPropertyName("lastModified")]
-    public double? LastModified { get; set; }
-
     [JsonPropertyName("latestUpdates")]
     public IList<V1beta1PipelineStatusAtProviderLatestUpdates>? LatestUpdates { get; set; }
 
@@ -4355,6 +7492,10 @@ public partial class V1beta1PipelineStatusAtProvider
     /// <summary>An optional flag indicating if serverless compute should be used for this Lakeflow Declarative Pipeline.  Requires catalog to be set, as it could be used only with Unity Catalog.</summary>
     [JsonPropertyName("serverless")]
     public bool? Serverless { get; set; }
+
+    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
+    [JsonPropertyName("serverlessComputeId")]
+    public string? ServerlessComputeId { get; set; }
 
     [JsonPropertyName("state")]
     public string? State { get; set; }
@@ -4437,6 +7578,15 @@ public partial class V1beta1PipelineStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1PipelineStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

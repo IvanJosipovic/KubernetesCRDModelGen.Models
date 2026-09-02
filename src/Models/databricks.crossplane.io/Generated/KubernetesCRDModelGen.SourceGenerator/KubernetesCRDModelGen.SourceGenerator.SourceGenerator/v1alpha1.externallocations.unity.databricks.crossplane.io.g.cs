@@ -218,6 +218,136 @@ public partial class V1alpha1ExternalLocationSpecForProviderCredentialNameSelect
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueue
+{
+    /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
+    [JsonPropertyName("managedAqs")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedAqs>? ManagedAqs { get; set; }
+
+    /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("managedPubsub")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedPubsub>? ManagedPubsub { get; set; }
+
+    /// <summary>Configuration for managed Amazon SQS queue.</summary>
+    [JsonPropertyName("managedSqs")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedSqs>? ManagedSqs { get; set; }
+
+    /// <summary>Configuration for provided Azure Storage Queue.</summary>
+    [JsonPropertyName("providedAqs")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedAqs>? ProvidedAqs { get; set; }
+
+    /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("providedPubsub")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedPubsub>? ProvidedPubsub { get; set; }
+
+    /// <summary>Configuration for provided Amazon SQS queue.</summary>
+    [JsonPropertyName("providedSqs")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedSqs>? ProvidedSqs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ExternalLocationSpecForProviderEncryptionDetailsSseEncryptionDetails
 {
     /// <summary>Encryption algorithm value. Sets the value of the x-amz-server-side-encryption header in S3 request.</summary>
@@ -375,6 +505,9 @@ public partial class V1alpha1ExternalLocationSpecForProvider
     /// <summary>Selector for a StorageCredential in unity to populate credentialName.</summary>
     [JsonPropertyName("credentialNameSelector")]
     public V1alpha1ExternalLocationSpecForProviderCredentialNameSelector? CredentialNameSelector { get; set; }
+
+    [JsonPropertyName("effectiveFileEventQueue")]
+    public IList<V1alpha1ExternalLocationSpecForProviderEffectiveFileEventQueue>? EffectiveFileEventQueue { get; set; }
 
     /// <summary>indicates if managed file events are enabled for this external location.  Requires file_event_queue block.</summary>
     [JsonPropertyName("enableFileEvents")]
@@ -589,6 +722,136 @@ public partial class V1alpha1ExternalLocationSpecInitProviderCredentialNameSelec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueue
+{
+    /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
+    [JsonPropertyName("managedAqs")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedAqs>? ManagedAqs { get; set; }
+
+    /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("managedPubsub")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedPubsub>? ManagedPubsub { get; set; }
+
+    /// <summary>Configuration for managed Amazon SQS queue.</summary>
+    [JsonPropertyName("managedSqs")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedSqs>? ManagedSqs { get; set; }
+
+    /// <summary>Configuration for provided Azure Storage Queue.</summary>
+    [JsonPropertyName("providedAqs")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedAqs>? ProvidedAqs { get; set; }
+
+    /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("providedPubsub")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedPubsub>? ProvidedPubsub { get; set; }
+
+    /// <summary>Configuration for provided Amazon SQS queue.</summary>
+    [JsonPropertyName("providedSqs")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedSqs>? ProvidedSqs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ExternalLocationSpecInitProviderEncryptionDetailsSseEncryptionDetails
 {
     /// <summary>Encryption algorithm value. Sets the value of the x-amz-server-side-encryption header in S3 request.</summary>
@@ -758,6 +1021,9 @@ public partial class V1alpha1ExternalLocationSpecInitProvider
     /// <summary>Selector for a StorageCredential in unity to populate credentialName.</summary>
     [JsonPropertyName("credentialNameSelector")]
     public V1alpha1ExternalLocationSpecInitProviderCredentialNameSelector? CredentialNameSelector { get; set; }
+
+    [JsonPropertyName("effectiveFileEventQueue")]
+    public IList<V1alpha1ExternalLocationSpecInitProviderEffectiveFileEventQueue>? EffectiveFileEventQueue { get; set; }
 
     /// <summary>indicates if managed file events are enabled for this external location.  Requires file_event_queue block.</summary>
     [JsonPropertyName("enableFileEvents")]
@@ -1007,6 +1273,136 @@ public partial class V1alpha1ExternalLocationSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedAqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+
+    /// <summary>The name of the Azure resource group.</summary>
+    [JsonPropertyName("resourceGroup")]
+    public string? ResourceGroup { get; set; }
+
+    /// <summary>The Azure subscription ID.</summary>
+    [JsonPropertyName("subscriptionId")]
+    public string? SubscriptionId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedPubsub
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The name of the subscription.</summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedSqs
+{
+    /// <summary>(Computed) The ID of the managed resource.</summary>
+    [JsonPropertyName("managedResourceId")]
+    public string? ManagedResourceId { get; set; }
+
+    /// <summary>The URL of the queue.</summary>
+    [JsonPropertyName("queueUrl")]
+    public string? QueueUrl { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueue
+{
+    /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
+    [JsonPropertyName("managedAqs")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedAqs>? ManagedAqs { get; set; }
+
+    /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("managedPubsub")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedPubsub>? ManagedPubsub { get; set; }
+
+    /// <summary>Configuration for managed Amazon SQS queue.</summary>
+    [JsonPropertyName("managedSqs")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedSqs>? ManagedSqs { get; set; }
+
+    /// <summary>Configuration for provided Azure Storage Queue.</summary>
+    [JsonPropertyName("providedAqs")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedAqs>? ProvidedAqs { get; set; }
+
+    /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
+    [JsonPropertyName("providedPubsub")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedPubsub>? ProvidedPubsub { get; set; }
+
+    /// <summary>Configuration for provided Amazon SQS queue.</summary>
+    [JsonPropertyName("providedSqs")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedSqs>? ProvidedSqs { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ExternalLocationStatusAtProviderEncryptionDetailsSseEncryptionDetails
 {
     /// <summary>Encryption algorithm value. Sets the value of the x-amz-server-side-encryption header in S3 request.</summary>
@@ -1200,6 +1596,9 @@ public partial class V1alpha1ExternalLocationStatusAtProvider
     [JsonPropertyName("effectiveEnableFileEvents")]
     public bool? EffectiveEnableFileEvents { get; set; }
 
+    [JsonPropertyName("effectiveFileEventQueue")]
+    public IList<V1alpha1ExternalLocationStatusAtProviderEffectiveFileEventQueue>? EffectiveFileEventQueue { get; set; }
+
     /// <summary>indicates if managed file events are enabled for this external location.  Requires file_event_queue block.</summary>
     [JsonPropertyName("enableFileEvents")]
     public bool? EnableFileEvents { get; set; }
@@ -1323,6 +1722,15 @@ public partial class V1alpha1ExternalLocationStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1ExternalLocationStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

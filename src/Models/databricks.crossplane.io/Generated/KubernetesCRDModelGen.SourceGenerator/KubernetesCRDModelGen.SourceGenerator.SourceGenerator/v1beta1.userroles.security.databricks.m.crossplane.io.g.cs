@@ -36,6 +36,15 @@ public partial class V1beta1UserRoleList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1beta1UserRole> Items { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1UserRoleSpecForProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -350,6 +359,16 @@ public partial class V1beta1UserRoleSpecForProviderUserIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserRoleSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1UserRoleSpecForProviderProviderConfig? ProviderConfig { get; set; }
+
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -373,6 +392,15 @@ public partial class V1beta1UserRoleSpecForProvider
     /// <summary>Selector for a User in security to populate userId.</summary>
     [JsonPropertyName("userIdSelector")]
     public V1beta1UserRoleSpecForProviderUserIdSelector? UserIdSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1UserRoleSpecInitProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -701,6 +729,16 @@ public partial class V1beta1UserRoleSpecInitProviderUserIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserRoleSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1UserRoleSpecInitProviderProviderConfig? ProviderConfig { get; set; }
+
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -835,11 +873,30 @@ public partial class V1beta1UserRoleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1UserRoleStatusAtProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserRoleStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1UserRoleStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -904,6 +961,15 @@ public partial class V1beta1UserRoleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UserRoleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

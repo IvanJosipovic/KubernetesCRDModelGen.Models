@@ -51,6 +51,39 @@ public partial class V1beta1CatalogSpecForProviderEffectivePredictiveOptimizatio
     public string? Value { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogSpecForProviderManagedEncryptionSettingsAzureEncryptionSettings
+{
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkAccessConnectorId")]
+    public string? AzureCmkAccessConnectorId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkManagedIdentityId")]
+    public string? AzureCmkManagedIdentityId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureTenantId")]
+    public string? AzureTenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogSpecForProviderManagedEncryptionSettings
+{
+    [JsonPropertyName("azureEncryptionSettings")]
+    public V1beta1CatalogSpecForProviderManagedEncryptionSettingsAzureEncryptionSettings? AzureEncryptionSettings { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureKeyVaultKeyId")]
+    public string? AzureKeyVaultKeyId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("customerManagedKeyId")]
+    public string? CustomerManagedKeyId { get; set; }
+}
+
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -84,6 +117,9 @@ public partial class V1beta1CatalogSpecForProvider
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
+    [JsonPropertyName("customMaxRetentionHours")]
+    public double? CustomMaxRetentionHours { get; set; }
+
     [JsonPropertyName("effectivePredictiveOptimizationFlag")]
     public V1beta1CatalogSpecForProviderEffectivePredictiveOptimizationFlag? EffectivePredictiveOptimizationFlag { get; set; }
 
@@ -98,6 +134,9 @@ public partial class V1beta1CatalogSpecForProvider
     /// <summary>Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
+
+    [JsonPropertyName("managedEncryptionSettings")]
+    public V1beta1CatalogSpecForProviderManagedEncryptionSettings? ManagedEncryptionSettings { get; set; }
 
     /// <summary>ID of the parent metastore.</summary>
     [JsonPropertyName("metastoreId")]
@@ -154,6 +193,39 @@ public partial class V1beta1CatalogSpecInitProviderEffectivePredictiveOptimizati
     public string? Value { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogSpecInitProviderManagedEncryptionSettingsAzureEncryptionSettings
+{
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkAccessConnectorId")]
+    public string? AzureCmkAccessConnectorId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkManagedIdentityId")]
+    public string? AzureCmkManagedIdentityId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureTenantId")]
+    public string? AzureTenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogSpecInitProviderManagedEncryptionSettings
+{
+    [JsonPropertyName("azureEncryptionSettings")]
+    public V1beta1CatalogSpecInitProviderManagedEncryptionSettingsAzureEncryptionSettings? AzureEncryptionSettings { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureKeyVaultKeyId")]
+    public string? AzureKeyVaultKeyId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("customerManagedKeyId")]
+    public string? CustomerManagedKeyId { get; set; }
+}
+
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -199,6 +271,9 @@ public partial class V1beta1CatalogSpecInitProvider
     [JsonPropertyName("connectionName")]
     public string? ConnectionName { get; set; }
 
+    [JsonPropertyName("customMaxRetentionHours")]
+    public double? CustomMaxRetentionHours { get; set; }
+
     [JsonPropertyName("effectivePredictiveOptimizationFlag")]
     public V1beta1CatalogSpecInitProviderEffectivePredictiveOptimizationFlag? EffectivePredictiveOptimizationFlag { get; set; }
 
@@ -213,6 +288,9 @@ public partial class V1beta1CatalogSpecInitProvider
     /// <summary>Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
+
+    [JsonPropertyName("managedEncryptionSettings")]
+    public V1beta1CatalogSpecInitProviderManagedEncryptionSettings? ManagedEncryptionSettings { get; set; }
 
     /// <summary>ID of the parent metastore.</summary>
     [JsonPropertyName("metastoreId")]
@@ -376,6 +454,39 @@ public partial class V1beta1CatalogStatusAtProviderEffectivePredictiveOptimizati
     public string? Value { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogStatusAtProviderManagedEncryptionSettingsAzureEncryptionSettings
+{
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkAccessConnectorId")]
+    public string? AzureCmkAccessConnectorId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureCmkManagedIdentityId")]
+    public string? AzureCmkManagedIdentityId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureTenantId")]
+    public string? AzureTenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogStatusAtProviderManagedEncryptionSettings
+{
+    [JsonPropertyName("azureEncryptionSettings")]
+    public V1beta1CatalogStatusAtProviderManagedEncryptionSettingsAzureEncryptionSettings? AzureEncryptionSettings { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("azureKeyVaultKeyId")]
+    public string? AzureKeyVaultKeyId { get; set; }
+
+    /// <summary>ID of this catalog - same as the name.</summary>
+    [JsonPropertyName("customerManagedKeyId")]
+    public string? CustomerManagedKeyId { get; set; }
+}
+
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -421,6 +532,9 @@ public partial class V1beta1CatalogStatusAtProvider
     [JsonPropertyName("createdBy")]
     public string? CreatedBy { get; set; }
 
+    [JsonPropertyName("customMaxRetentionHours")]
+    public double? CustomMaxRetentionHours { get; set; }
+
     [JsonPropertyName("effectivePredictiveOptimizationFlag")]
     public V1beta1CatalogStatusAtProviderEffectivePredictiveOptimizationFlag? EffectivePredictiveOptimizationFlag { get; set; }
 
@@ -443,6 +557,9 @@ public partial class V1beta1CatalogStatusAtProvider
     /// <summary>Whether the catalog is accessible from all workspaces or a specific set of workspaces. Can be ISOLATED or OPEN. Setting the catalog to ISOLATED will automatically allow access from the current workspace.</summary>
     [JsonPropertyName("isolationMode")]
     public string? IsolationMode { get; set; }
+
+    [JsonPropertyName("managedEncryptionSettings")]
+    public V1beta1CatalogStatusAtProviderManagedEncryptionSettings? ManagedEncryptionSettings { get; set; }
 
     /// <summary>ID of the parent metastore.</summary>
     [JsonPropertyName("metastoreId")]
@@ -554,6 +671,15 @@ public partial class V1beta1CatalogStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1CatalogStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -38,6 +38,15 @@ public partial class V1beta1GroupList : IKubernetesObject<V1ListMeta>, IItems<V1
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupSpecForProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the group (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupSpecForProvider
 {
     /// <summary>identifier for use in databricks_access_control_rule_set, e.g. groups/Some Group.</summary>
@@ -51,6 +60,13 @@ public partial class V1beta1GroupSpecForProvider
     /// <summary>This is a field to allow the group to have instance pool create privileges. More fine grained permissions could be assigned with databricks_permissions and instance_pool_id argument.</summary>
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
+
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
 
     /// <summary>This is a field to allow the group to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
@@ -68,6 +84,9 @@ public partial class V1beta1GroupSpecForProvider
     [JsonPropertyName("force")]
     public bool? Force { get; set; }
 
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupSpecForProviderProviderConfig? ProviderConfig { get; set; }
+
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
@@ -78,6 +97,15 @@ public partial class V1beta1GroupSpecForProvider
     /// <summary>This is a field to allow the group to have access only to Databricks One.  Couldn&apos;t be used with workspace_access or databricks_sql_access.</summary>
     [JsonPropertyName("workspaceConsume")]
     public bool? WorkspaceConsume { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupSpecInitProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the group (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -108,6 +136,13 @@ public partial class V1beta1GroupSpecInitProvider
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
 
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>This is a field to allow the group to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
     public bool? DatabricksSqlAccess { get; set; }
@@ -123,6 +158,9 @@ public partial class V1beta1GroupSpecInitProvider
     /// <summary>Ignore cannot create group: Group with name X already exists. This functionality is experimental and is designed to simplify corner cases, like Azure Active Directory synchronisation.</summary>
     [JsonPropertyName("force")]
     public bool? Force { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
     [JsonPropertyName("url")]
     public string? Url { get; set; }
@@ -245,6 +283,15 @@ public partial class V1beta1GroupSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1GroupStatusAtProviderProviderConfig
+{
+    /// <summary>Canonical unique identifier for the group (SCIM ID).</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProvider
 {
     /// <summary>identifier for use in databricks_access_control_rule_set, e.g. groups/Some Group.</summary>
@@ -258,6 +305,13 @@ public partial class V1beta1GroupStatusAtProvider
     /// <summary>This is a field to allow the group to have instance pool create privileges. More fine grained permissions could be assigned with databricks_permissions and instance_pool_id argument.</summary>
     [JsonPropertyName("allowInstancePoolCreate")]
     public bool? AllowInstancePoolCreate { get; set; }
+
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
 
     /// <summary>This is a field to allow the group to have access to Databricks SQL  UI, Databricks One and through databricks_sql_endpoint.</summary>
     [JsonPropertyName("databricksSqlAccess")]
@@ -278,6 +332,9 @@ public partial class V1beta1GroupStatusAtProvider
     /// <summary>Canonical unique identifier for the group (SCIM ID).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public V1beta1GroupStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     [JsonPropertyName("url")]
     public string? Url { get; set; }
@@ -345,6 +402,15 @@ public partial class V1beta1GroupStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1GroupStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -60,6 +60,16 @@ public enum V1alpha1UserRoleSpecDeletionPolicyEnum
     Delete
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserRoleSpecForProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -375,6 +385,16 @@ public partial class V1alpha1UserRoleSpecForProviderUserIdSelector
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserRoleSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserRoleSpecForProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -398,6 +418,16 @@ public partial class V1alpha1UserRoleSpecForProvider
     /// <summary>Selector for a User in security to populate userId.</summary>
     [JsonPropertyName("userIdSelector")]
     public V1alpha1UserRoleSpecForProviderUserIdSelector? UserIdSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserRoleSpecInitProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
 }
 
 /// <summary>
@@ -727,6 +757,16 @@ public partial class V1alpha1UserRoleSpecInitProviderUserIdSelector
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserRoleSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserRoleSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
+
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
@@ -945,11 +985,31 @@ public partial class V1alpha1UserRoleSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1UserRoleStatusAtProviderProviderConfig
+{
+    /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1UserRoleStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>The id in the format &lt;user_id&gt;|&lt;role&gt;.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    [JsonPropertyName("providerConfig")]
+    public IList<V1alpha1UserRoleStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
     /// <summary>Either a role name or the ARN/ID of the instance profile resource.</summary>
     [JsonPropertyName("role")]
@@ -1016,6 +1076,15 @@ public partial class V1alpha1UserRoleStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1UserRoleStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

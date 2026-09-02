@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.0
+    controller-gen.kubebuilder.io/version: v0.21.0
   name: vectorsearchendpoints.mosaic.databricks.m.crossplane.io
 spec:
   group: mosaic.databricks.m.crossplane.io
@@ -82,7 +82,7 @@ spec:
                   scalingInfo:
                     items:
                       properties:
-                        requestedMinQps:
+                        requestedTargetQps:
                           type: number
                         state:
                           description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -124,7 +124,7 @@ spec:
                   scalingInfo:
                     items:
                       properties:
-                        requestedMinQps:
+                        requestedTargetQps:
                           type: number
                         state:
                           description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -257,7 +257,7 @@ spec:
                   scalingInfo:
                     items:
                       properties:
-                        requestedMinQps:
+                        requestedTargetQps:
                           type: number
                         state:
                           description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -309,6 +309,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation
@@ -382,7 +389,7 @@ spec:
                     type: object
                   scalingInfo:
                     properties:
-                      requestedMinQps:
+                      requestedTargetQps:
                         type: number
                       state:
                         description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -420,7 +427,7 @@ spec:
                     type: object
                   scalingInfo:
                     properties:
-                      requestedMinQps:
+                      requestedTargetQps:
                         type: number
                       state:
                         description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -549,7 +556,7 @@ spec:
                     type: object
                   scalingInfo:
                     properties:
-                      requestedMinQps:
+                      requestedTargetQps:
                         type: number
                       state:
                         description: 'Current state of the endpoint. Currently following values are supported: PROVISIONING, ONLINE, and OFFLINE.'
@@ -600,6 +607,13 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              lastHandledReconcileAt:
+                description: |-
+                  LastHandledReconcileAt holds the value of the most recent
+                  reconcile-requested-at annotation token that the controller has
+                  processed. Users can compare this to the annotation to determine
+                  whether a reconcile request has been handled.
+                type: string
               observedGeneration:
                 description: |-
                   ObservedGeneration is the latest metadata.generation

@@ -60,15 +60,17 @@ public enum V1alpha1AppSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecForProviderGitRepository
 {
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -83,11 +85,19 @@ public partial class V1alpha1AppSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>reference to another Databricks App.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecForProviderResourcesApp
 {
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 }
 
 /// <summary>attribute</summary>
@@ -109,12 +119,13 @@ public partial class V1alpha1AppSpecForProviderResourcesDatabase
     public string? Permission { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecForProviderResourcesExperiment
 {
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The ID of the MLflow experiment to grant permission on.</summary>
     [JsonPropertyName("experimentId")]
     public string? ExperimentId { get; set; }
 
@@ -151,6 +162,25 @@ public partial class V1alpha1AppSpecForProviderResourcesJob
     /// <summary>Id of the SQL warehouse to grant permission on.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+}
+
+/// <summary>attribute</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecForProviderResourcesPostgres
+{
+    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>attribute</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
 
     /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
     [JsonPropertyName("permission")]
@@ -216,11 +246,11 @@ public partial class V1alpha1AppSpecForProviderResourcesUcSecurable
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
-    /// <summary>the full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
+    /// <summary>The full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
     [JsonPropertyName("securableFullName")]
     public string? SecurableFullName { get; set; }
 
-    /// <summary>the type of UC securable, i.e. VOLUME.</summary>
+    /// <summary>The type of UC securable. Supported values are CONNECTION, FUNCTION, TABLE, VOLUME.</summary>
     [JsonPropertyName("securableType")]
     public string? SecurableType { get; set; }
 }
@@ -230,6 +260,7 @@ public partial class V1alpha1AppSpecForProviderResourcesUcSecurable
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecForProviderResources
 {
+    /// <summary>reference to another Databricks App.</summary>
     [JsonPropertyName("app")]
     public V1alpha1AppSpecForProviderResourcesApp? App { get; set; }
 
@@ -241,6 +272,7 @@ public partial class V1alpha1AppSpecForProviderResources
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("experiment")]
     public V1alpha1AppSpecForProviderResourcesExperiment? Experiment { get; set; }
 
@@ -255,6 +287,10 @@ public partial class V1alpha1AppSpecForProviderResources
     /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>attribute</summary>
+    [JsonPropertyName("postgres")]
+    public V1alpha1AppSpecForProviderResourcesPostgres? Postgres { get; set; }
 
     /// <summary>attribute</summary>
     [JsonPropertyName("secret")]
@@ -273,6 +309,35 @@ public partial class V1alpha1AppSpecForProviderResources
     public V1alpha1AppSpecForProviderResourcesUcSecurable? UcSecurable { get; set; }
 }
 
+/// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecForProviderTelemetryExportDestinationsUnityCatalog
+{
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry logs.</summary>
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry metrics.</summary>
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry traces (spans).</summary>
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecForProviderTelemetryExportDestinations
+{
+    /// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+    [JsonPropertyName("unityCatalog")]
+    public V1alpha1AppSpecForProviderTelemetryExportDestinationsUnityCatalog? UnityCatalog { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -282,6 +347,12 @@ public partial class V1alpha1AppSpecForProvider
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
 
+    [JsonPropertyName("computeMaxInstances")]
+    public double? ComputeMaxInstances { get; set; }
+
+    [JsonPropertyName("computeMinInstances")]
+    public double? ComputeMinInstances { get; set; }
+
     /// <summary>A string specifying compute size for the App. Possible values are MEDIUM, LARGE.</summary>
     [JsonPropertyName("computeSize")]
     public string? ComputeSize { get; set; }
@@ -290,6 +361,7 @@ public partial class V1alpha1AppSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppSpecForProviderGitRepository? GitRepository { get; set; }
 
@@ -306,24 +378,30 @@ public partial class V1alpha1AppSpecForProvider
     [JsonPropertyName("space")]
     public string? Space { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>A list of destinations to which the app&apos;s telemetry (logs, metrics, traces) is exported (see below).</summary>
+    [JsonPropertyName("telemetryExportDestinations")]
+    public IList<V1alpha1AppSpecForProviderTelemetryExportDestinations>? TelemetryExportDestinations { get; set; }
+
+    /// <summary>The Usage Policy ID set for this resource.</summary>
     [JsonPropertyName("usagePolicyId")]
     public string? UsagePolicyId { get; set; }
 
-    /// <summary>A list of api scopes granted to the user access token.</summary>
+    /// <summary>A list of api scopes granted to the user access token.  See REST API docs for full list of supported scopes.</summary>
     [JsonPropertyName("userApiScopes")]
     public IList<string>? UserApiScopes { get; set; }
 }
 
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecInitProviderGitRepository
 {
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -338,11 +416,19 @@ public partial class V1alpha1AppSpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>reference to another Databricks App.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecInitProviderResourcesApp
 {
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 }
 
 /// <summary>attribute</summary>
@@ -364,12 +450,13 @@ public partial class V1alpha1AppSpecInitProviderResourcesDatabase
     public string? Permission { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecInitProviderResourcesExperiment
 {
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The ID of the MLflow experiment to grant permission on.</summary>
     [JsonPropertyName("experimentId")]
     public string? ExperimentId { get; set; }
 
@@ -406,6 +493,25 @@ public partial class V1alpha1AppSpecInitProviderResourcesJob
     /// <summary>Id of the SQL warehouse to grant permission on.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+}
+
+/// <summary>attribute</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecInitProviderResourcesPostgres
+{
+    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>attribute</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
 
     /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
     [JsonPropertyName("permission")]
@@ -471,11 +577,11 @@ public partial class V1alpha1AppSpecInitProviderResourcesUcSecurable
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
-    /// <summary>the full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
+    /// <summary>The full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
     [JsonPropertyName("securableFullName")]
     public string? SecurableFullName { get; set; }
 
-    /// <summary>the type of UC securable, i.e. VOLUME.</summary>
+    /// <summary>The type of UC securable. Supported values are CONNECTION, FUNCTION, TABLE, VOLUME.</summary>
     [JsonPropertyName("securableType")]
     public string? SecurableType { get; set; }
 }
@@ -485,6 +591,7 @@ public partial class V1alpha1AppSpecInitProviderResourcesUcSecurable
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppSpecInitProviderResources
 {
+    /// <summary>reference to another Databricks App.</summary>
     [JsonPropertyName("app")]
     public V1alpha1AppSpecInitProviderResourcesApp? App { get; set; }
 
@@ -496,6 +603,7 @@ public partial class V1alpha1AppSpecInitProviderResources
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("experiment")]
     public V1alpha1AppSpecInitProviderResourcesExperiment? Experiment { get; set; }
 
@@ -512,6 +620,10 @@ public partial class V1alpha1AppSpecInitProviderResources
     public string? Name { get; set; }
 
     /// <summary>attribute</summary>
+    [JsonPropertyName("postgres")]
+    public V1alpha1AppSpecInitProviderResourcesPostgres? Postgres { get; set; }
+
+    /// <summary>attribute</summary>
     [JsonPropertyName("secret")]
     public V1alpha1AppSpecInitProviderResourcesSecret? Secret { get; set; }
 
@@ -526,6 +638,35 @@ public partial class V1alpha1AppSpecInitProviderResources
     /// <summary>attribute (see the API docs for full list of supported UC objects)</summary>
     [JsonPropertyName("ucSecurable")]
     public V1alpha1AppSpecInitProviderResourcesUcSecurable? UcSecurable { get; set; }
+}
+
+/// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecInitProviderTelemetryExportDestinationsUnityCatalog
+{
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry logs.</summary>
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry metrics.</summary>
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry traces (spans).</summary>
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppSpecInitProviderTelemetryExportDestinations
+{
+    /// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+    [JsonPropertyName("unityCatalog")]
+    public V1alpha1AppSpecInitProviderTelemetryExportDestinationsUnityCatalog? UnityCatalog { get; set; }
 }
 
 /// <summary>
@@ -549,6 +690,12 @@ public partial class V1alpha1AppSpecInitProvider
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
 
+    [JsonPropertyName("computeMaxInstances")]
+    public double? ComputeMaxInstances { get; set; }
+
+    [JsonPropertyName("computeMinInstances")]
+    public double? ComputeMinInstances { get; set; }
+
     /// <summary>A string specifying compute size for the App. Possible values are MEDIUM, LARGE.</summary>
     [JsonPropertyName("computeSize")]
     public string? ComputeSize { get; set; }
@@ -557,6 +704,7 @@ public partial class V1alpha1AppSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppSpecInitProviderGitRepository? GitRepository { get; set; }
 
@@ -573,11 +721,15 @@ public partial class V1alpha1AppSpecInitProvider
     [JsonPropertyName("space")]
     public string? Space { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>A list of destinations to which the app&apos;s telemetry (logs, metrics, traces) is exported (see below).</summary>
+    [JsonPropertyName("telemetryExportDestinations")]
+    public IList<V1alpha1AppSpecInitProviderTelemetryExportDestinations>? TelemetryExportDestinations { get; set; }
+
+    /// <summary>The Usage Policy ID set for this resource.</summary>
     [JsonPropertyName("usagePolicyId")]
     public string? UsagePolicyId { get; set; }
 
-    /// <summary>A list of api scopes granted to the user access token.</summary>
+    /// <summary>A list of api scopes granted to the user access token.  See REST API docs for full list of supported scopes.</summary>
     [JsonPropertyName("userApiScopes")]
     public IList<string>? UserApiScopes { get; set; }
 }
@@ -772,11 +924,13 @@ public partial class V1alpha1AppSpec
     public V1alpha1AppSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderActiveDeploymentDeploymentArtifacts
 {
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 }
@@ -797,15 +951,17 @@ public partial class V1alpha1AppStatusAtProviderActiveDeploymentEnvVars
     public string? ValueFrom { get; set; }
 }
 
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderActiveDeploymentGitSourceGitRepository
 {
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -815,18 +971,21 @@ public partial class V1alpha1AppStatusAtProviderActiveDeploymentGitSourceGitRepo
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderActiveDeploymentGitSource
 {
+    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
     [JsonPropertyName("commit")]
     public string? Commit { get; set; }
 
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppStatusAtProviderActiveDeploymentGitSourceGitRepository? GitRepository { get; set; }
 
     [JsonPropertyName("resolvedCommit")]
     public string? ResolvedCommit { get; set; }
 
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
@@ -834,6 +993,7 @@ public partial class V1alpha1AppStatusAtProviderActiveDeploymentGitSource
     public string? Tag { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -848,6 +1008,7 @@ public partial class V1alpha1AppStatusAtProviderActiveDeploymentStatus
     public string? State { get; set; }
 }
 
+/// <summary>the active deployment of the app. A deployment is considered active when it has been deployed to the app compute.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -864,10 +1025,11 @@ public partial class V1alpha1AppStatusAtProviderActiveDeployment
     [JsonPropertyName("creator")]
     public string? Creator { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("deploymentArtifacts")]
     public V1alpha1AppStatusAtProviderActiveDeploymentDeploymentArtifacts? DeploymentArtifacts { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The unique ID of the deployment.</summary>
     [JsonPropertyName("deploymentId")]
     public string? DeploymentId { get; set; }
 
@@ -877,12 +1039,15 @@ public partial class V1alpha1AppStatusAtProviderActiveDeployment
     [JsonPropertyName("gitSource")]
     public V1alpha1AppStatusAtProviderActiveDeploymentGitSource? GitSource { get; set; }
 
+    /// <summary>The deployment mode (AUTO_SYNC or SNAPSHOT).</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("status")]
     public V1alpha1AppStatusAtProviderActiveDeploymentStatus? Status { get; set; }
 
@@ -900,6 +1065,9 @@ public partial class V1alpha1AppStatusAtProviderAppStatus
     /// <summary>Compute status message</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
+
+    [JsonPropertyName("runningInstances")]
+    public double? RunningInstances { get; set; }
 
     /// <summary>State of the app compute.</summary>
     [JsonPropertyName("state")]
@@ -924,24 +1092,28 @@ public partial class V1alpha1AppStatusAtProviderComputeStatus
     public string? State { get; set; }
 }
 
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderGitRepository
 {
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderPendingDeploymentDeploymentArtifacts
 {
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 }
@@ -962,15 +1134,17 @@ public partial class V1alpha1AppStatusAtProviderPendingDeploymentEnvVars
     public string? ValueFrom { get; set; }
 }
 
+/// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderPendingDeploymentGitSourceGitRepository
 {
+    /// <summary>Git provider. Case insensitive. Supported values: gitHub, gitHubEnterprise, bitbucketCloud, bitbucketServer, azureDevOpsServices, gitLab, gitLabEnterpriseEdition, awsCodeCommit.</summary>
     [JsonPropertyName("provider")]
     public string? Provider { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -980,18 +1154,21 @@ public partial class V1alpha1AppStatusAtProviderPendingDeploymentGitSourceGitRep
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderPendingDeploymentGitSource
 {
+    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
     [JsonPropertyName("branch")]
     public string? Branch { get; set; }
 
     [JsonPropertyName("commit")]
     public string? Commit { get; set; }
 
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppStatusAtProviderPendingDeploymentGitSourceGitRepository? GitRepository { get; set; }
 
     [JsonPropertyName("resolvedCommit")]
     public string? ResolvedCommit { get; set; }
 
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
@@ -999,6 +1176,7 @@ public partial class V1alpha1AppStatusAtProviderPendingDeploymentGitSource
     public string? Tag { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -1013,6 +1191,7 @@ public partial class V1alpha1AppStatusAtProviderPendingDeploymentStatus
     public string? State { get; set; }
 }
 
+/// <summary>the pending deployment of the app. A deployment is considered pending when it is being prepared for deployment to the app compute. Schema is identical to active_deployment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -1029,10 +1208,11 @@ public partial class V1alpha1AppStatusAtProviderPendingDeployment
     [JsonPropertyName("creator")]
     public string? Creator { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("deploymentArtifacts")]
     public V1alpha1AppStatusAtProviderPendingDeploymentDeploymentArtifacts? DeploymentArtifacts { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The unique ID of the deployment.</summary>
     [JsonPropertyName("deploymentId")]
     public string? DeploymentId { get; set; }
 
@@ -1042,12 +1222,15 @@ public partial class V1alpha1AppStatusAtProviderPendingDeployment
     [JsonPropertyName("gitSource")]
     public V1alpha1AppStatusAtProviderPendingDeploymentGitSource? GitSource { get; set; }
 
+    /// <summary>The deployment mode (AUTO_SYNC or SNAPSHOT).</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
+    /// <summary>The workspace file system path of the source code used to create the deployment.</summary>
     [JsonPropertyName("sourceCodePath")]
     public string? SourceCodePath { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("status")]
     public V1alpha1AppStatusAtProviderPendingDeploymentStatus? Status { get; set; }
 
@@ -1066,11 +1249,19 @@ public partial class V1alpha1AppStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
+/// <summary>reference to another Databricks App.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderResourcesApp
 {
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
 }
 
 /// <summary>attribute</summary>
@@ -1092,12 +1283,13 @@ public partial class V1alpha1AppStatusAtProviderResourcesDatabase
     public string? Permission { get; set; }
 }
 
+/// <summary>attribute</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderResourcesExperiment
 {
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The ID of the MLflow experiment to grant permission on.</summary>
     [JsonPropertyName("experimentId")]
     public string? ExperimentId { get; set; }
 
@@ -1134,6 +1326,25 @@ public partial class V1alpha1AppStatusAtProviderResourcesJob
     /// <summary>Id of the SQL warehouse to grant permission on.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
+    [JsonPropertyName("permission")]
+    public string? Permission { get; set; }
+}
+
+/// <summary>attribute</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppStatusAtProviderResourcesPostgres
+{
+    /// <summary>The resource path of the Lakebase Autoscaling branch to grant permission on (e.g. projects/proj-abc123/branches/branch-xyz789).</summary>
+    [JsonPropertyName("branch")]
+    public string? Branch { get; set; }
+
+    /// <summary>attribute</summary>
+    [JsonPropertyName("database")]
+    public string? Database { get; set; }
 
     /// <summary>Permission to grant on the secret scope. For secrets, only one permission is allowed. Permission must be one of: READ, WRITE, MANAGE.</summary>
     [JsonPropertyName("permission")]
@@ -1199,14 +1410,14 @@ public partial class V1alpha1AppStatusAtProviderResourcesUcSecurable
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 
-    /// <summary>the full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
+    /// <summary>The full name of UC securable, i.e. my-catalog.my-schema.my-volume.</summary>
     [JsonPropertyName("securableFullName")]
     public string? SecurableFullName { get; set; }
 
     [JsonPropertyName("securableKind")]
     public string? SecurableKind { get; set; }
 
-    /// <summary>the type of UC securable, i.e. VOLUME.</summary>
+    /// <summary>The type of UC securable. Supported values are CONNECTION, FUNCTION, TABLE, VOLUME.</summary>
     [JsonPropertyName("securableType")]
     public string? SecurableType { get; set; }
 }
@@ -1216,6 +1427,7 @@ public partial class V1alpha1AppStatusAtProviderResourcesUcSecurable
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProviderResources
 {
+    /// <summary>reference to another Databricks App.</summary>
     [JsonPropertyName("app")]
     public V1alpha1AppStatusAtProviderResourcesApp? App { get; set; }
 
@@ -1227,6 +1439,7 @@ public partial class V1alpha1AppStatusAtProviderResources
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>attribute</summary>
     [JsonPropertyName("experiment")]
     public V1alpha1AppStatusAtProviderResourcesExperiment? Experiment { get; set; }
 
@@ -1241,6 +1454,10 @@ public partial class V1alpha1AppStatusAtProviderResources
     /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>attribute</summary>
+    [JsonPropertyName("postgres")]
+    public V1alpha1AppStatusAtProviderResourcesPostgres? Postgres { get; set; }
 
     /// <summary>attribute</summary>
     [JsonPropertyName("secret")]
@@ -1259,11 +1476,41 @@ public partial class V1alpha1AppStatusAtProviderResources
     public V1alpha1AppStatusAtProviderResourcesUcSecurable? UcSecurable { get; set; }
 }
 
+/// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppStatusAtProviderTelemetryExportDestinationsUnityCatalog
+{
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry logs.</summary>
+    [JsonPropertyName("logsTable")]
+    public string? LogsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry metrics.</summary>
+    [JsonPropertyName("metricsTable")]
+    public string? MetricsTable { get; set; }
+
+    /// <summary>Full name of the Unity Catalog table for OpenTelemetry traces (spans).</summary>
+    [JsonPropertyName("tracesTable")]
+    public string? TracesTable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1AppStatusAtProviderTelemetryExportDestinations
+{
+    /// <summary>export telemetry to Unity Catalog tables (must already exist and be writable by the app&apos;s service principal).</summary>
+    [JsonPropertyName("unityCatalog")]
+    public V1alpha1AppStatusAtProviderTelemetryExportDestinationsUnityCatalog? UnityCatalog { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1AppStatusAtProvider
 {
+    /// <summary>the active deployment of the app. A deployment is considered active when it has been deployed to the app compute.</summary>
     [JsonPropertyName("activeDeployment")]
     public V1alpha1AppStatusAtProviderActiveDeployment? ActiveDeployment { get; set; }
 
@@ -1274,6 +1521,12 @@ public partial class V1alpha1AppStatusAtProvider
     /// <summary>The Budget Policy ID set for this resource.</summary>
     [JsonPropertyName("budgetPolicyId")]
     public string? BudgetPolicyId { get; set; }
+
+    [JsonPropertyName("computeMaxInstances")]
+    public double? ComputeMaxInstances { get; set; }
+
+    [JsonPropertyName("computeMinInstances")]
+    public double? ComputeMinInstances { get; set; }
 
     /// <summary>A string specifying compute size for the App. Possible values are MEDIUM, LARGE.</summary>
     [JsonPropertyName("computeSize")]
@@ -1303,7 +1556,7 @@ public partial class V1alpha1AppStatusAtProvider
     [JsonPropertyName("effectiveBudgetPolicyId")]
     public string? EffectiveBudgetPolicyId { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The effective usage policy ID.</summary>
     [JsonPropertyName("effectiveUsagePolicyId")]
     public string? EffectiveUsagePolicyId { get; set; }
 
@@ -1311,6 +1564,7 @@ public partial class V1alpha1AppStatusAtProvider
     [JsonPropertyName("effectiveUserApiScopes")]
     public IList<string>? EffectiveUserApiScopes { get; set; }
 
+    /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppStatusAtProviderGitRepository? GitRepository { get; set; }
 
@@ -1321,14 +1575,15 @@ public partial class V1alpha1AppStatusAtProvider
     [JsonPropertyName("noCompute")]
     public bool? NoCompute { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The OAuth2 client ID of the app&apos;s integration, set when the app uses user authorization.</summary>
     [JsonPropertyName("oauth2AppClientId")]
     public string? Oauth2AppClientId { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The unique ID of the OAuth2 integration associated with the app.</summary>
     [JsonPropertyName("oauth2AppIntegrationId")]
     public string? Oauth2AppIntegrationId { get; set; }
 
+    /// <summary>the pending deployment of the app. A deployment is considered pending when it is being prepared for deployment to the app compute. Schema is identical to active_deployment.</summary>
     [JsonPropertyName("pendingDeployment")]
     public V1alpha1AppStatusAtProviderPendingDeployment? PendingDeployment { get; set; }
 
@@ -1354,6 +1609,14 @@ public partial class V1alpha1AppStatusAtProvider
     [JsonPropertyName("space")]
     public string? Space { get; set; }
 
+    /// <summary>A list of destinations to which the app&apos;s telemetry (logs, metrics, traces) is exported (see below).</summary>
+    [JsonPropertyName("telemetryExportDestinations")]
+    public IList<V1alpha1AppStatusAtProviderTelemetryExportDestinations>? TelemetryExportDestinations { get; set; }
+
+    /// <summary>The URL of the thumbnail image for the app.</summary>
+    [JsonPropertyName("thumbnailUrl")]
+    public string? ThumbnailUrl { get; set; }
+
     /// <summary>The update time of the app.</summary>
     [JsonPropertyName("updateTime")]
     public string? UpdateTime { get; set; }
@@ -1362,15 +1625,15 @@ public partial class V1alpha1AppStatusAtProvider
     [JsonPropertyName("updater")]
     public string? Updater { get; set; }
 
-    /// <summary>The URL of the app once it is deployed.</summary>
+    /// <summary>URL of the Git repository.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Id of the SQL warehouse to grant permission on.</summary>
+    /// <summary>The Usage Policy ID set for this resource.</summary>
     [JsonPropertyName("usagePolicyId")]
     public string? UsagePolicyId { get; set; }
 
-    /// <summary>A list of api scopes granted to the user access token.</summary>
+    /// <summary>A list of api scopes granted to the user access token.  See REST API docs for full list of supported scopes.</summary>
     [JsonPropertyName("userApiScopes")]
     public IList<string>? UserApiScopes { get; set; }
 }
@@ -1431,6 +1694,15 @@ public partial class V1alpha1AppStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1AppStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

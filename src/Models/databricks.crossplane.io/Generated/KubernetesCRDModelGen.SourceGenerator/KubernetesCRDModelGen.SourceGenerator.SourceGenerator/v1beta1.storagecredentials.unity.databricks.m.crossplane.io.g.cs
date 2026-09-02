@@ -180,10 +180,27 @@ public partial class V1beta1StorageCredentialSpecForProviderGcpServiceAccountKey
     public V1beta1StorageCredentialSpecForProviderGcpServiceAccountKeyPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StorageCredentialSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageCredentialSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>exposes two additional attributes:</summary>
     [JsonPropertyName("awsIamRole")]
     public V1beta1StorageCredentialSpecForProviderAwsIamRole? AwsIamRole { get; set; }
@@ -229,6 +246,10 @@ public partial class V1beta1StorageCredentialSpecForProvider
     /// <summary>Username/groupname/sp application_id of the storage credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1StorageCredentialSpecForProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates whether the storage credential is only usable for read operations.</summary>
     [JsonPropertyName("readOnly")]
@@ -383,6 +404,16 @@ public partial class V1beta1StorageCredentialSpecInitProviderGcpServiceAccountKe
     public required V1beta1StorageCredentialSpecInitProviderGcpServiceAccountKeyPrivateKeySecretRef PrivateKeySecretRef { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StorageCredentialSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -399,6 +430,13 @@ public partial class V1beta1StorageCredentialSpecInitProviderGcpServiceAccountKe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageCredentialSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>exposes two additional attributes:</summary>
     [JsonPropertyName("awsIamRole")]
     public V1beta1StorageCredentialSpecInitProviderAwsIamRole? AwsIamRole { get; set; }
@@ -444,6 +482,10 @@ public partial class V1beta1StorageCredentialSpecInitProvider
     /// <summary>Username/groupname/sp application_id of the storage credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1StorageCredentialSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates whether the storage credential is only usable for read operations.</summary>
     [JsonPropertyName("readOnly")]
@@ -648,10 +690,27 @@ public partial class V1beta1StorageCredentialStatusAtProviderGcpServiceAccountKe
     public string? PrivateKeyId { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1StorageCredentialStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageCredentialStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     /// <summary>exposes two additional attributes:</summary>
     [JsonPropertyName("awsIamRole")]
     public V1beta1StorageCredentialStatusAtProviderAwsIamRole? AwsIamRole { get; set; }
@@ -701,6 +760,10 @@ public partial class V1beta1StorageCredentialStatusAtProvider
     /// <summary>Username/groupname/sp application_id of the storage credential owner.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1StorageCredentialStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     /// <summary>Indicates whether the storage credential is only usable for read operations.</summary>
     [JsonPropertyName("readOnly")]
@@ -769,6 +832,15 @@ public partial class V1beta1StorageCredentialStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1StorageCredentialStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

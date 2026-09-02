@@ -149,7 +149,10 @@ public partial class V1beta1DatabaseInstanceSpecForProvider
     [JsonPropertyName("providerConfig")]
     public V1beta1DatabaseInstanceSpecForProviderProviderConfig? ProviderConfig { get; set; }
 
-    /// <summary>Purge the resource on delete</summary>
+    /// <summary>
+    /// Deprecated. Omitting the field or setting it to true will result in the field being hard deleted. Setting a value
+    /// of false will throw a bad request
+    /// </summary>
     [JsonPropertyName("purgeOnDelete")]
     public bool? PurgeOnDelete { get; set; }
 
@@ -276,7 +279,10 @@ public partial class V1beta1DatabaseInstanceSpecInitProvider
     [JsonPropertyName("providerConfig")]
     public V1beta1DatabaseInstanceSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
-    /// <summary>Purge the resource on delete</summary>
+    /// <summary>
+    /// Deprecated. Omitting the field or setting it to true will result in the field being hard deleted. Setting a value
+    /// of false will throw a bad request
+    /// </summary>
     [JsonPropertyName("purgeOnDelete")]
     public bool? PurgeOnDelete { get; set; }
 
@@ -730,7 +736,10 @@ public partial class V1beta1DatabaseInstanceStatusAtProvider
     [JsonPropertyName("providerConfig")]
     public V1beta1DatabaseInstanceStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
-    /// <summary>Purge the resource on delete</summary>
+    /// <summary>
+    /// Deprecated. Omitting the field or setting it to true will result in the field being hard deleted. Setting a value
+    /// of false will throw a bad request
+    /// </summary>
     [JsonPropertyName("purgeOnDelete")]
     public bool? PurgeOnDelete { get; set; }
 
@@ -824,6 +833,15 @@ public partial class V1beta1DatabaseInstanceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1DatabaseInstanceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -40,7 +40,21 @@ public partial class V1alpha1ConnectionList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1alpha1Connection> Items { get; set; }
 }
 
-/// <summary>The key value of options required by the connection, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret or GoogleServiceAccountKeyJson. Please consult the documentation for the required option.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ConnectionSpecForProviderEnvironmentSettings
+{
+    /// <summary>Environment version.</summary>
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
+
+    /// <summary>List of Java dependencies.</summary>
+    [JsonPropertyName("javaDependencies")]
+    public IList<string>? JavaDependencies { get; set; }
+}
+
+/// <summary>A map of key-value properties attached to the securable. The required keys depend on the connection type, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret, or GoogleServiceAccountKeyJson. Please consult the documentation for the required options. This field is sensitive.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
@@ -66,27 +80,31 @@ public partial class V1alpha1ConnectionSpecForProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ConnectionSpecForProvider
 {
-    /// <summary>Free-form text. Change forces creation of a new resource.</summary>
+    /// <summary>User-provided free-form text description. Change forces creation of a new resource.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.</summary>
+    /// <summary>The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.</summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
-    /// <summary>Name of the Connection.</summary>
+    /// <summary>Connection environment settings. This block consists of the following fields:</summary>
+    [JsonPropertyName("environmentSettings")]
+    public IList<V1alpha1ConnectionSpecForProviderEnvironmentSettings>? EnvironmentSettings { get; set; }
+
+    /// <summary>Name of the connection.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The key value of options required by the connection, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret or GoogleServiceAccountKeyJson. Please consult the documentation for the required option.</summary>
+    /// <summary>A map of key-value properties attached to the securable. The required keys depend on the connection type, e.g. host, port, user, password, authorization_endpoint, client_id, client_secret, or GoogleServiceAccountKeyJson. Please consult the documentation for the required options. This field is sensitive.</summary>
     [JsonPropertyName("optionsSecretRef")]
     public V1alpha1ConnectionSpecForProviderOptionsSecretRef? OptionsSecretRef { get; set; }
 
-    /// <summary>Name of the connection owner.</summary>
+    /// <summary>Username of current owner of the connection.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>Free-form connection properties. Change forces creation of a new resource.</summary>
+    /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
     public IDictionary<string, string>? Properties { get; set; }
 
@@ -94,9 +112,23 @@ public partial class V1alpha1ConnectionSpecForProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ConnectionSpecForProviderProviderConfig>? ProviderConfig { get; set; }
 
-    /// <summary>Indicates whether the connection is read-only. Change forces creation of a new resource.</summary>
+    /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ConnectionSpecInitProviderEnvironmentSettings
+{
+    /// <summary>Environment version.</summary>
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
+
+    /// <summary>List of Java dependencies.</summary>
+    [JsonPropertyName("javaDependencies")]
+    public IList<string>? JavaDependencies { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -126,26 +158,30 @@ public partial class V1alpha1ConnectionSpecInitProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ConnectionSpecInitProvider
 {
-    /// <summary>Free-form text. Change forces creation of a new resource.</summary>
+    /// <summary>User-provided free-form text description. Change forces creation of a new resource.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.</summary>
+    /// <summary>The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.</summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
-    /// <summary>Name of the Connection.</summary>
+    /// <summary>Connection environment settings. This block consists of the following fields:</summary>
+    [JsonPropertyName("environmentSettings")]
+    public IList<V1alpha1ConnectionSpecInitProviderEnvironmentSettings>? EnvironmentSettings { get; set; }
+
+    /// <summary>Name of the connection.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
     [JsonPropertyName("optionsSecretRef")]
     public IDictionary<string, string>? OptionsSecretRef { get; set; }
 
-    /// <summary>Name of the connection owner.</summary>
+    /// <summary>Username of current owner of the connection.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>Free-form connection properties. Change forces creation of a new resource.</summary>
+    /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
     public IDictionary<string, string>? Properties { get; set; }
 
@@ -153,7 +189,7 @@ public partial class V1alpha1ConnectionSpecInitProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ConnectionSpecInitProviderProviderConfig>? ProviderConfig { get; set; }
 
-    /// <summary>Indicates whether the connection is read-only. Change forces creation of a new resource.</summary>
+    /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -272,6 +308,20 @@ public partial class V1alpha1ConnectionSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
+public partial class V1alpha1ConnectionStatusAtProviderEnvironmentSettings
+{
+    /// <summary>Environment version.</summary>
+    [JsonPropertyName("environmentVersion")]
+    public string? EnvironmentVersion { get; set; }
+
+    /// <summary>List of Java dependencies.</summary>
+    [JsonPropertyName("javaDependencies")]
+    public IList<string>? JavaDependencies { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ConnectionStatusAtProviderProviderConfig
 {
     /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
@@ -284,6 +334,7 @@ public partial class V1alpha1ConnectionStatusAtProviderProviderConfig
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ConnectionStatusAtProviderProvisioningInfo
 {
+    /// <summary>The provisioning state of the resource. Possible values are: ACTIVE, DEGRADED, DELETING, FAILED, PROVISIONING, or UPDATING.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -293,15 +344,15 @@ public partial class V1alpha1ConnectionStatusAtProviderProvisioningInfo
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1ConnectionStatusAtProvider
 {
-    /// <summary>Free-form text. Change forces creation of a new resource.</summary>
+    /// <summary>User-provided free-form text description. Change forces creation of a new resource.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Unique ID of the connection.</summary>
+    /// <summary>Unique identifier of the Connection.</summary>
     [JsonPropertyName("connectionId")]
     public string? ConnectionId { get; set; }
 
-    /// <summary>Connection type. MYSQL, POSTGRESQL, SNOWFLAKE, REDSHIFT SQLDW, SQLSERVER, DATABRICKS, SALESFORCE, BIGQUERY, WORKDAY_RAAS, HIVE_METASTORE, GA4_RAW_DATA, SERVICENOW, SALESFORCE_DATA_CLOUD, GLUE, ORACLE, TERADATA, HTTP or POWER_BI are supported. Up-to-date list of connection type supported is in the documentation. Change forces creation of a new resource.</summary>
+    /// <summary>The type of connection. Possible values are: BIGQUERY, CONFLUENCE, DATABRICKS, GA4_RAW_DATA, GITHUB, GLUE, HIVE_METASTORE, HTTP, HUBSPOT, META_MARKETING, MYSQL, ORACLE, OUTLOOK, POSTGRESQL, POWER_BI, REDSHIFT, SALESFORCE, SALESFORCE_DATA_CLOUD, SERVICENOW, SMARTSHEET, SNOWFLAKE, SQLDW, SQLSERVER, TERADATA, WORKDAY_RAAS, or ZENDESK. For an up-to-date list of connection types and required options, see the documentation. Change forces creation of a new resource.</summary>
     [JsonPropertyName("connectionType")]
     public string? ConnectionType { get; set; }
 
@@ -313,9 +364,13 @@ public partial class V1alpha1ConnectionStatusAtProvider
     [JsonPropertyName("createdBy")]
     public string? CreatedBy { get; set; }
 
-    /// <summary>The type of credential for this connection.</summary>
+    /// <summary>The type of credential.</summary>
     [JsonPropertyName("credentialType")]
     public string? CredentialType { get; set; }
+
+    /// <summary>Connection environment settings. This block consists of the following fields:</summary>
+    [JsonPropertyName("environmentSettings")]
+    public IList<V1alpha1ConnectionStatusAtProviderEnvironmentSettings>? EnvironmentSettings { get; set; }
 
     /// <summary>Full name of connection.</summary>
     [JsonPropertyName("fullName")]
@@ -325,19 +380,19 @@ public partial class V1alpha1ConnectionStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Unique ID of the UC metastore for this connection.</summary>
+    /// <summary>Unique identifier of parent metastore.</summary>
     [JsonPropertyName("metastoreId")]
     public string? MetastoreId { get; set; }
 
-    /// <summary>Name of the Connection.</summary>
+    /// <summary>Name of the connection.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Name of the connection owner.</summary>
+    /// <summary>Username of current owner of the connection.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 
-    /// <summary>Free-form connection properties. Change forces creation of a new resource.</summary>
+    /// <summary>A map of key-value properties attached to the securable. Change forces creation of a new resource.</summary>
     [JsonPropertyName("properties")]
     public IDictionary<string, string>? Properties { get; set; }
 
@@ -345,22 +400,23 @@ public partial class V1alpha1ConnectionStatusAtProvider
     [JsonPropertyName("providerConfig")]
     public IList<V1alpha1ConnectionStatusAtProviderProviderConfig>? ProviderConfig { get; set; }
 
-    /// <summary>Object with the status of an asynchronously provisioned resource.</summary>
+    /// <summary>Status of an asynchronously provisioned resource. This block consists of the following fields:</summary>
     [JsonPropertyName("provisioningInfo")]
     public IList<V1alpha1ConnectionStatusAtProviderProvisioningInfo>? ProvisioningInfo { get; set; }
 
-    /// <summary>Indicates whether the connection is read-only. Change forces creation of a new resource.</summary>
+    /// <summary>If the connection is read only. Change forces creation of a new resource.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 
+    /// <summary>Securable type.</summary>
     [JsonPropertyName("securableType")]
     public string? SecurableType { get; set; }
 
-    /// <summary>Time at which connection this was last modified, in epoch milliseconds.</summary>
+    /// <summary>Time at which this connection was updated, in epoch milliseconds.</summary>
     [JsonPropertyName("updatedAt")]
     public double? UpdatedAt { get; set; }
 
-    /// <summary>Username of user who last modified the connection.</summary>
+    /// <summary>Username of user who last modified connection.</summary>
     [JsonPropertyName("updatedBy")]
     public string? UpdatedBy { get; set; }
 
@@ -425,6 +481,15 @@ public partial class V1alpha1ConnectionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1ConnectionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

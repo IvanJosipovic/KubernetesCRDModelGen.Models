@@ -342,10 +342,27 @@ public partial class V1beta1MetastoreDataAccessSpecForProviderMetastoreIdSelecto
     public V1beta1MetastoreDataAccessSpecForProviderMetastoreIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetastoreDataAccessSpecForProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetastoreDataAccessSpecForProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     [JsonPropertyName("awsIamRole")]
     public V1beta1MetastoreDataAccessSpecForProviderAwsIamRole? AwsIamRole { get; set; }
 
@@ -397,6 +414,10 @@ public partial class V1beta1MetastoreDataAccessSpecForProvider
 
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1MetastoreDataAccessSpecForProviderProviderConfig? ProviderConfig { get; set; }
 
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
@@ -711,6 +732,16 @@ public partial class V1beta1MetastoreDataAccessSpecInitProviderMetastoreIdSelect
     public V1beta1MetastoreDataAccessSpecInitProviderMetastoreIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetastoreDataAccessSpecInitProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -727,6 +758,13 @@ public partial class V1beta1MetastoreDataAccessSpecInitProviderMetastoreIdSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetastoreDataAccessSpecInitProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     [JsonPropertyName("awsIamRole")]
     public V1beta1MetastoreDataAccessSpecInitProviderAwsIamRole? AwsIamRole { get; set; }
 
@@ -778,6 +816,10 @@ public partial class V1beta1MetastoreDataAccessSpecInitProvider
 
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1MetastoreDataAccessSpecInitProviderProviderConfig? ProviderConfig { get; set; }
 
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
@@ -975,10 +1017,27 @@ public partial class V1beta1MetastoreDataAccessStatusAtProviderGcpServiceAccount
     public string? PrivateKeyId { get; set; }
 }
 
+/// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetastoreDataAccessStatusAtProviderProviderConfig
+{
+    /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
+    [JsonPropertyName("workspaceId")]
+    public string? WorkspaceId { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetastoreDataAccessStatusAtProvider
 {
+    /// <summary>
+    /// Specifies whether to use account-level or workspace-level API. Valid values are account and workspace. When not set, the API level is inferred from the provider host.
+    /// Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+    /// </summary>
+    [JsonPropertyName("api")]
+    public string? Api { get; set; }
+
     [JsonPropertyName("awsIamRole")]
     public V1beta1MetastoreDataAccessStatusAtProviderAwsIamRole? AwsIamRole { get; set; }
 
@@ -1026,6 +1085,10 @@ public partial class V1beta1MetastoreDataAccessStatusAtProvider
 
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
+
+    /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
+    [JsonPropertyName("providerConfig")]
+    public V1beta1MetastoreDataAccessStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
@@ -1088,6 +1151,15 @@ public partial class V1beta1MetastoreDataAccessStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1MetastoreDataAccessStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

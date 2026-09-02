@@ -36,5 +36,6 @@
   "src/Models/storage.k8s.io": "1.8.1",
   "src/Models/strimzi.io": "1.3.0",
   "src/Models/temporal.io": "1.2.0",
-  "src/Models/traefik.io": "1.19.0"
+  "src/Models/traefik.io": "1.19.0",
+  "src/Models/multicluster.x-k8s.io": "1.0.0"
 }

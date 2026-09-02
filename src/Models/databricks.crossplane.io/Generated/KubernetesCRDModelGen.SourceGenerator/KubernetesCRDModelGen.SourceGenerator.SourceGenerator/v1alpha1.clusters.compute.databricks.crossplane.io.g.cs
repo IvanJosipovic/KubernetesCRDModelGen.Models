@@ -142,6 +142,9 @@ public partial class V1alpha1ClusterSpecForProviderAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -323,6 +326,9 @@ public partial class V1alpha1ClusterSpecForProviderGcpAttributes
     /// <summary>Boot disk size in GB</summary>
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
@@ -597,6 +603,10 @@ public partial class V1alpha1ClusterSpecForProvider
     [JsonPropertyName("azureAttributes")]
     public IList<V1alpha1ClusterSpecForProviderAzureAttributes>? AzureAttributes { get; set; }
 
+    /// <summary>If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.</summary>
+    [JsonPropertyName("clearCloudAttributesOnRemove")]
+    public bool? ClearCloudAttributesOnRemove { get; set; }
+
     [JsonPropertyName("clusterLogConf")]
     public IList<V1alpha1ClusterSpecForProviderClusterLogConf>? ClusterLogConf { get; set; }
 
@@ -811,6 +821,9 @@ public partial class V1alpha1ClusterSpecInitProviderAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -992,6 +1005,9 @@ public partial class V1alpha1ClusterSpecInitProviderGcpAttributes
     /// <summary>Boot disk size in GB</summary>
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
@@ -1277,6 +1293,10 @@ public partial class V1alpha1ClusterSpecInitProvider
 
     [JsonPropertyName("azureAttributes")]
     public IList<V1alpha1ClusterSpecInitProviderAzureAttributes>? AzureAttributes { get; set; }
+
+    /// <summary>If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.</summary>
+    [JsonPropertyName("clearCloudAttributesOnRemove")]
+    public bool? ClearCloudAttributesOnRemove { get; set; }
 
     [JsonPropertyName("clusterLogConf")]
     public IList<V1alpha1ClusterSpecInitProviderClusterLogConf>? ClusterLogConf { get; set; }
@@ -1682,6 +1702,9 @@ public partial class V1alpha1ClusterStatusAtProviderAzureAttributes
     [JsonPropertyName("availability")]
     public string? Availability { get; set; }
 
+    [JsonPropertyName("capacityReservationGroup")]
+    public string? CapacityReservationGroup { get; set; }
+
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
     public double? FirstOnDemand { get; set; }
@@ -1840,6 +1863,9 @@ public partial class V1alpha1ClusterStatusAtProviderGcpAttributes
     /// <summary>Boot disk size in GB</summary>
     [JsonPropertyName("bootDiskSize")]
     public double? BootDiskSize { get; set; }
+
+    [JsonPropertyName("confidentialComputeType")]
+    public string? ConfidentialComputeType { get; set; }
 
     /// <summary>The first first_on_demand nodes of the cluster will be placed on on-demand instances. If this value is greater than 0, the cluster driver node will be placed on an on-demand instance. If this value is greater than or equal to the current cluster size, all nodes will be placed on on-demand instances. If this value is less than the current cluster size, first_on_demand nodes will be placed on on-demand instances, and the remainder will be placed on availability instances. This value does not affect cluster size and cannot be mutated over the lifetime of a cluster.</summary>
     [JsonPropertyName("firstOnDemand")]
@@ -2114,6 +2140,10 @@ public partial class V1alpha1ClusterStatusAtProvider
     [JsonPropertyName("azureAttributes")]
     public IList<V1alpha1ClusterStatusAtProviderAzureAttributes>? AzureAttributes { get; set; }
 
+    /// <summary>If true, removing a cloud attributes block (aws_attributes, azure_attributes, or gcp_attributes) from the configuration clears it on the cluster instead of the removal being ignored. Defaults to false, in which case removing such a block is suppressed to avoid a perpetual diff caused by the platform returning default cloud attributes. Keeping the block, even partially specified, preserves the suppression; only removing the whole block clears.</summary>
+    [JsonPropertyName("clearCloudAttributesOnRemove")]
+    public bool? ClearCloudAttributesOnRemove { get; set; }
+
     /// <summary>Canonical unique identifier for the cluster.</summary>
     [JsonPropertyName("clusterId")]
     public string? ClusterId { get; set; }
@@ -2322,6 +2352,15 @@ public partial class V1alpha1ClusterStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1ClusterStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

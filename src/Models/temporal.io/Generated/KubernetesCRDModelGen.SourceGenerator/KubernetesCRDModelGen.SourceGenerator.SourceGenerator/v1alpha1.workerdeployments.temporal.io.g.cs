@@ -4861,10 +4861,30 @@ public partial class V1alpha1WorkerDeploymentSpecTemplate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecWorkerOptionsConnectionRefObjectRef
+{
+    [JsonPropertyName("apiGroup")]
+    public string? ApiGroup { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpecWorkerOptionsConnectionRef
 {
     [JsonPropertyName("name")]
-    public required string Name { get; set; }
+    public string? Name { get; set; }
+
+    [JsonPropertyName("objectRef")]
+    public V1alpha1WorkerDeploymentSpecWorkerOptionsConnectionRefObjectRef? ObjectRef { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5064,6 +5084,34 @@ public partial class V1alpha1WorkerDeploymentStatusDeprecatedVersions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentStatusObservedConnectionRefObjectRef
+{
+    [JsonPropertyName("apiGroup")]
+    public string? ApiGroup { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentStatusObservedConnectionRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("objectRef")]
+    public V1alpha1WorkerDeploymentStatusObservedConnectionRefObjectRef? ObjectRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentStatusTargetVersionDeployment
 {
     [JsonPropertyName("apiVersion")]
@@ -5166,6 +5214,12 @@ public partial class V1alpha1WorkerDeploymentStatus
 
     [JsonPropertyName("managerIdentity")]
     public string? ManagerIdentity { get; set; }
+
+    [JsonPropertyName("observedConnectionRef")]
+    public V1alpha1WorkerDeploymentStatusObservedConnectionRef? ObservedConnectionRef { get; set; }
+
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
 
     [JsonPropertyName("targetVersion")]
     public required V1alpha1WorkerDeploymentStatusTargetVersion TargetVersion { get; set; }
