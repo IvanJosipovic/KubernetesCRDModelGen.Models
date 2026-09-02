@@ -515,6 +515,9 @@ public partial class V1alpha1ClusterSpecResourcesVPCConfigSubnetRefs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ClusterSpecResourcesVPCConfig
 {
+    [JsonPropertyName("controlPlaneEgressMode")]
+    public string? ControlPlaneEgressMode { get; set; }
+
     [JsonPropertyName("endpointPrivateAccess")]
     public bool? EndpointPrivateAccess { get; set; }
 
