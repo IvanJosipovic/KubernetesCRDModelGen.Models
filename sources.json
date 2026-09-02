@@ -509,6 +509,15 @@
       ]
     },
     {
+      "Group": "multicluster.x-k8s.io",
+      "GitHub": [
+        {
+          "Repo": "kubernetes-sigs/mcs-api",
+          "ArchivePathRegex": "config/crd/"
+        }
+      ]
+    },
+    {
       "Group": "postgresql.cnpg.io",
       "Helm": [
         {
