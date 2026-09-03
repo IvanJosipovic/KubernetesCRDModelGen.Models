@@ -930,6 +930,42 @@ public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetGrants
 }
 
 /// <summary>
+/// Amazon S3 keys for log objects are partitioned in the following format:
+/// 
+/// [DestinationPrefix][SourceAccountId]/[SourceRegion]/[SourceBucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]-[ss]-[UniqueString]
+/// 
+/// PartitionedPrefix defaults to EventTime delivery when server access logs
+/// are delivered.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetObjectKeyFormatPartitionedPrefix
+{
+    [JsonPropertyName("partitionDateSource")]
+    public string? PartitionDateSource { get; set; }
+}
+
+/// <summary>
+/// Amazon S3 key format for log objects. Only one format, PartitionedPrefix
+/// or SimplePrefix, is allowed.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1BucketSpecLoggingLoggingEnabledTargetObjectKeyFormat
+{
+    /// <summary>
+    /// Amazon S3 keys for log objects are partitioned in the following format:
+    /// 
+    /// [DestinationPrefix][SourceAccountId]/[SourceRegion]/[SourceBucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]-[ss]-[UniqueString]
+    /// 
+    /// PartitionedPrefix defaults to EventTime delivery when server access logs
+    /// are delivered.
+    /// </summary>
+    [JsonPropertyName("partitionedPrefix")]
+    public V1alpha1BucketSpecLoggingLoggingEnabledTargetObjectKeyFormatPartitionedPrefix? PartitionedPrefix { get; set; }
+}
+
+/// <summary>
 /// Describes where logs are stored and the prefix that Amazon S3 assigns to
 /// all log object keys for a bucket. For more information, see PUT Bucket logging
 /// (https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTlogging.html)
@@ -944,6 +980,13 @@ public partial class V1alpha1BucketSpecLoggingLoggingEnabled
 
     [JsonPropertyName("targetGrants")]
     public IList<V1alpha1BucketSpecLoggingLoggingEnabledTargetGrants>? TargetGrants { get; set; }
+
+    /// <summary>
+    /// Amazon S3 key format for log objects. Only one format, PartitionedPrefix
+    /// or SimplePrefix, is allowed.
+    /// </summary>
+    [JsonPropertyName("targetObjectKeyFormat")]
+    public V1alpha1BucketSpecLoggingLoggingEnabledTargetObjectKeyFormat? TargetObjectKeyFormat { get; set; }
 
     [JsonPropertyName("targetPrefix")]
     public string? TargetPrefix { get; set; }
