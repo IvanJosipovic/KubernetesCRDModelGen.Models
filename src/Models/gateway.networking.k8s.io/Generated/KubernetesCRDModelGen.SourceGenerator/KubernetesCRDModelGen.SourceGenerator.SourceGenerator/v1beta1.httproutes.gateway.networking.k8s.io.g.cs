@@ -940,7 +940,7 @@ public partial class V1beta1HTTPRouteSpecRulesBackendRefsFiltersRequestRedirect
     /// Accepted Condition for the Route to `status: False`, with a
     /// Reason of `UnsupportedValue`.
     /// 
-    /// Support: Core
+    /// Support: statusCode 301 and 302 are Core; all others are Extended.
     /// </summary>
     [JsonPropertyName("statusCode")]
     public int? StatusCode { get; set; }
@@ -2211,7 +2211,7 @@ public partial class V1beta1HTTPRouteSpecRulesFiltersRequestRedirect
     /// Accepted Condition for the Route to `status: False`, with a
     /// Reason of `UnsupportedValue`.
     /// 
-    /// Support: Core
+    /// Support: statusCode 301 and 302 are Core; all others are Extended.
     /// </summary>
     [JsonPropertyName("statusCode")]
     public int? StatusCode { get; set; }
