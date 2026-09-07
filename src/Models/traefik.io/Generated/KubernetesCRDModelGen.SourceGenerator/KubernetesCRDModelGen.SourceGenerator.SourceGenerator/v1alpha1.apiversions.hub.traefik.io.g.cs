@@ -36,6 +36,29 @@ public partial class V1alpha1APIVersionList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1alpha1APIVersion> Items { get; set; }
 }
 
+/// <summary>OperationFilter specifies the allowed operations on APIs and APIVersions.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1APIVersionSpecApiAuthsOperationFilter
+{
+    /// <summary>Include defines the names of OperationSets that will be accessible.</summary>
+    [JsonPropertyName("include")]
+    public IList<string>? Include { get; set; }
+}
+
+/// <summary>APIAuthReference references an APIAuth resource for authentication configuration.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1APIVersionSpecApiAuths
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>OperationFilter specifies the allowed operations on APIs and APIVersions.</summary>
+    [JsonPropertyName("operationFilter")]
+    public V1alpha1APIVersionSpecApiAuthsOperationFilter? OperationFilter { get; set; }
+}
+
 /// <summary>Cors defines the Cross-Origin Resource Sharing configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -183,6 +206,10 @@ public partial class V1alpha1APIVersionSpecOpenApiSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIVersionSpec
 {
+    /// <summary>APIAuths defines the API authentication configuration.</summary>
+    [JsonPropertyName("apiAuths")]
+    public IList<V1alpha1APIVersionSpecApiAuths>? ApiAuths { get; set; }
+
     /// <summary>Cors defines the Cross-Origin Resource Sharing configuration.</summary>
     [JsonPropertyName("cors")]
     public V1alpha1APIVersionSpecCors? Cors { get; set; }
