@@ -19,7 +19,7 @@
   "src/Models/kubernetes.crossplane.io": "1.12.0",
   "src/Models/opentofu.upbound.io": "1.8.1",
   "src/Models/tf.upbound.io": "1.9.0",
-  "src/Models/upbound.io": "1.7.1",
+  "src/Models/upbound.io": "1.8.0",
   "src/Models/vault.upbound.io": "1.9.1",
   "src/Models/fluxcd.io": "1.15.0",
   "src/Models/gateway.networking.k8s.io": "1.55.0",
