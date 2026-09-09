@@ -171,6 +171,22 @@ public partial class V1alpha1ClusterSpecKubeControllerManagerConfigHorizontalPod
     public string? HorizontalPodAutoscalerSyncPeriod { get; set; }
 }
 
+/// <summary>
+/// The pod garbage collection controller configuration for the Kubernetes controller
+/// manager.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterSpecKubeControllerManagerConfigPodGCControllerConfig
+{
+    /// <summary>
+    /// The threshold for the number of terminated pods before garbage collection
+    /// starts.
+    /// </summary>
+    [JsonPropertyName("terminatedPodGCThreshold")]
+    public long? TerminatedPodGCThreshold { get; set; }
+}
+
 /// <summary>The Kubernetes controller manager configuration for the new cluster.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -182,6 +198,13 @@ public partial class V1alpha1ClusterSpecKubeControllerManagerConfig
     /// </summary>
     [JsonPropertyName("horizontalPodAutoscalerControllerConfig")]
     public V1alpha1ClusterSpecKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig? HorizontalPodAutoscalerControllerConfig { get; set; }
+
+    /// <summary>
+    /// The pod garbage collection controller configuration for the Kubernetes controller
+    /// manager.
+    /// </summary>
+    [JsonPropertyName("podGCControllerConfig")]
+    public V1alpha1ClusterSpecKubeControllerManagerConfigPodGCControllerConfig? PodGCControllerConfig { get; set; }
 }
 
 /// <summary>A resource weight entry for the scheduler scoring strategy.</summary>
