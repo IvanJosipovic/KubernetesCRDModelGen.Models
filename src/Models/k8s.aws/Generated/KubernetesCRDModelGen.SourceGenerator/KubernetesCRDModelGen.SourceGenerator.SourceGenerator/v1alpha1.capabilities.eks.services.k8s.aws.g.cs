@@ -308,13 +308,13 @@ public partial class V1alpha1CapabilitySpec
     /// <summary>
     /// The type of capability to create. Valid values are:
     /// 
-    ///   - ACK – Amazon Web Services Controllers for Kubernetes (ACK), which
-    ///     lets you manage resources directly from Kubernetes.
+    ///    * ACK – Amazon Web Services Controllers for Kubernetes (ACK), which
+    ///    lets you manage resources directly from Kubernetes.
     /// 
-    ///   - ARGOCD – Argo CD for GitOps-based continuous delivery.
+    ///    * ARGOCD – Argo CD for GitOps-based continuous delivery.
     /// 
-    ///   - KRO – Kube Resource Orchestrator (KRO) for composing and managing
-    ///     custom Kubernetes resources.
+    ///    * KRO – Kube Resource Orchestrator (KRO) for composing and managing
+    ///    custom Kubernetes resources.
     /// </summary>
     [JsonPropertyName("type")]
     public required string Type { get; set; }
