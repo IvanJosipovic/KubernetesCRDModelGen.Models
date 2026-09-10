@@ -15,6 +15,7 @@ namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1PolicyList : IKubernetesObject<V1ListMeta>, IItems<V1Policy>
 {
@@ -47,6 +48,7 @@ public partial class V1PolicyList : IKubernetesObject<V1ListMeta>, IItems<V1Poli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecApplyRulesEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecApplyRulesEnum
 {
     [EnumMember(Value = "All"), JsonStringEnumMemberName("All")]
@@ -58,6 +60,7 @@ public enum V1PolicySpecApplyRulesEnum
 /// <summary>Deprecated, use failurePolicy under the webhookConfiguration instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecFailurePolicyEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecFailurePolicyEnum
 {
     [EnumMember(Value = "Ignore"), JsonStringEnumMemberName("Ignore")]
@@ -69,6 +72,7 @@ public enum V1PolicySpecFailurePolicyEnum
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesCelPreconditions
 {
     /// <summary>
@@ -107,6 +111,7 @@ public partial class V1PolicySpecRulesCelPreconditions
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -121,6 +126,7 @@ public partial class V1PolicySpecRulesContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -131,6 +137,7 @@ public enum V1PolicySpecRulesContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -149,6 +156,7 @@ public partial class V1PolicySpecRulesContextApiCallServiceHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextApiCallService
 {
     /// <summary>
@@ -176,6 +184,7 @@ public partial class V1PolicySpecRulesContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextApiCall
 {
     /// <summary>
@@ -229,6 +238,7 @@ public partial class V1PolicySpecRulesContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -243,6 +253,7 @@ public partial class V1PolicySpecRulesContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextGlobalReference
 {
     /// <summary>
@@ -263,6 +274,7 @@ public partial class V1PolicySpecRulesContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -280,6 +292,7 @@ public enum V1PolicySpecRulesContextImageRegistryImageRegistryCredentialsProvide
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -308,6 +321,7 @@ public partial class V1PolicySpecRulesContextImageRegistryImageRegistryCredentia
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -333,6 +347,7 @@ public partial class V1PolicySpecRulesContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContextVariable
 {
     /// <summary>
@@ -360,6 +375,7 @@ public partial class V1PolicySpecRulesContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesContext
 {
     /// <summary>
@@ -399,6 +415,7 @@ public partial class V1PolicySpecRulesContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -431,6 +448,7 @@ public partial class V1PolicySpecRulesExcludeAllResourcesNamespaceSelectorMatchE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -449,6 +467,7 @@ public partial class V1PolicySpecRulesExcludeAllResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesExcludeAllResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesExcludeAllResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -467,6 +486,7 @@ public enum V1PolicySpecRulesExcludeAllResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -498,6 +518,7 @@ public partial class V1PolicySpecRulesExcludeAllResourcesSelectorMatchExpression
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -516,6 +537,7 @@ public partial class V1PolicySpecRulesExcludeAllResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllResources
 {
     /// <summary>
@@ -582,6 +604,7 @@ public partial class V1PolicySpecRulesExcludeAllResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAllSubjects
 {
     /// <summary>
@@ -614,6 +637,7 @@ public partial class V1PolicySpecRulesExcludeAllSubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAll
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -639,6 +663,7 @@ public partial class V1PolicySpecRulesExcludeAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnyResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -671,6 +696,7 @@ public partial class V1PolicySpecRulesExcludeAnyResourcesNamespaceSelectorMatchE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnyResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -689,6 +715,7 @@ public partial class V1PolicySpecRulesExcludeAnyResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesExcludeAnyResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesExcludeAnyResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -707,6 +734,7 @@ public enum V1PolicySpecRulesExcludeAnyResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnyResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -738,6 +766,7 @@ public partial class V1PolicySpecRulesExcludeAnyResourcesSelectorMatchExpression
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnyResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -756,6 +785,7 @@ public partial class V1PolicySpecRulesExcludeAnyResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnyResources
 {
     /// <summary>
@@ -822,6 +852,7 @@ public partial class V1PolicySpecRulesExcludeAnyResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAnySubjects
 {
     /// <summary>
@@ -854,6 +885,7 @@ public partial class V1PolicySpecRulesExcludeAnySubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeAny
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -879,6 +911,7 @@ public partial class V1PolicySpecRulesExcludeAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -911,6 +944,7 @@ public partial class V1PolicySpecRulesExcludeResourcesNamespaceSelectorMatchExpr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -929,6 +963,7 @@ public partial class V1PolicySpecRulesExcludeResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesExcludeResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesExcludeResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -947,6 +982,7 @@ public enum V1PolicySpecRulesExcludeResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -978,6 +1014,7 @@ public partial class V1PolicySpecRulesExcludeResourcesSelectorMatchExpressions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -1001,6 +1038,7 @@ public partial class V1PolicySpecRulesExcludeResourcesSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeResources
 {
     /// <summary>
@@ -1067,6 +1105,7 @@ public partial class V1PolicySpecRulesExcludeResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExcludeSubjects
 {
     /// <summary>
@@ -1103,6 +1142,7 @@ public partial class V1PolicySpecRulesExcludeSubjects
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesExclude
 {
     /// <summary>All allows specifying resources which will be ANDed</summary>
@@ -1142,6 +1182,7 @@ public partial class V1PolicySpecRulesExclude
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateClone
 {
     /// <summary>Name specifies name of the resource.</summary>
@@ -1159,6 +1200,7 @@ public partial class V1PolicySpecRulesGenerateClone
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateCloneListSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -1188,6 +1230,7 @@ public partial class V1PolicySpecRulesGenerateCloneListSelectorMatchExpressions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateCloneListSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -1206,6 +1249,7 @@ public partial class V1PolicySpecRulesGenerateCloneListSelector
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateCloneList
 {
     /// <summary>Kinds is a list of resource kinds.</summary>
@@ -1231,6 +1275,7 @@ public partial class V1PolicySpecRulesGenerateCloneList
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachClone
 {
     /// <summary>Name specifies name of the resource.</summary>
@@ -1248,6 +1293,7 @@ public partial class V1PolicySpecRulesGenerateForeachClone
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachCloneListSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -1277,6 +1323,7 @@ public partial class V1PolicySpecRulesGenerateForeachCloneListSelectorMatchExpre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachCloneListSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -1295,6 +1342,7 @@ public partial class V1PolicySpecRulesGenerateForeachCloneListSelector
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachCloneList
 {
     /// <summary>Kinds is a list of resource kinds.</summary>
@@ -1316,6 +1364,7 @@ public partial class V1PolicySpecRulesGenerateForeachCloneList
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -1330,6 +1379,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesGenerateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesGenerateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -1340,6 +1390,7 @@ public enum V1PolicySpecRulesGenerateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -1358,6 +1409,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextApiCallServiceHeader
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextApiCallService
 {
     /// <summary>
@@ -1385,6 +1437,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextApiCall
 {
     /// <summary>
@@ -1438,6 +1491,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -1452,6 +1506,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextGlobalReference
 {
     /// <summary>
@@ -1472,6 +1527,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -1489,6 +1545,7 @@ public enum V1PolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCre
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -1517,6 +1574,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextImageRegistryImageRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -1542,6 +1600,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContextVariable
 {
     /// <summary>
@@ -1569,6 +1628,7 @@ public partial class V1PolicySpecRulesGenerateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeachContext
 {
     /// <summary>
@@ -1604,6 +1664,7 @@ public partial class V1PolicySpecRulesGenerateForeachContext
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerateForeach
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -1669,6 +1730,7 @@ public partial class V1PolicySpecRulesGenerateForeach
 /// <summary>Generation is used to create new resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesGenerate
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -1743,6 +1805,7 @@ public partial class V1PolicySpecRulesGenerate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesImageExtractors
 {
     /// <summary>
@@ -1790,6 +1853,7 @@ public partial class V1PolicySpecRulesImageExtractors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -1822,6 +1886,7 @@ public partial class V1PolicySpecRulesMatchAllResourcesNamespaceSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -1840,6 +1905,7 @@ public partial class V1PolicySpecRulesMatchAllResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMatchAllResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMatchAllResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -1858,6 +1924,7 @@ public enum V1PolicySpecRulesMatchAllResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -1889,6 +1956,7 @@ public partial class V1PolicySpecRulesMatchAllResourcesSelectorMatchExpressions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -1907,6 +1975,7 @@ public partial class V1PolicySpecRulesMatchAllResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllResources
 {
     /// <summary>
@@ -1973,6 +2042,7 @@ public partial class V1PolicySpecRulesMatchAllResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAllSubjects
 {
     /// <summary>
@@ -2005,6 +2075,7 @@ public partial class V1PolicySpecRulesMatchAllSubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAll
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -2030,6 +2101,7 @@ public partial class V1PolicySpecRulesMatchAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnyResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -2062,6 +2134,7 @@ public partial class V1PolicySpecRulesMatchAnyResourcesNamespaceSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnyResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -2080,6 +2153,7 @@ public partial class V1PolicySpecRulesMatchAnyResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMatchAnyResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMatchAnyResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -2098,6 +2172,7 @@ public enum V1PolicySpecRulesMatchAnyResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnyResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -2129,6 +2204,7 @@ public partial class V1PolicySpecRulesMatchAnyResourcesSelectorMatchExpressions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnyResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -2147,6 +2223,7 @@ public partial class V1PolicySpecRulesMatchAnyResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnyResources
 {
     /// <summary>
@@ -2213,6 +2290,7 @@ public partial class V1PolicySpecRulesMatchAnyResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAnySubjects
 {
     /// <summary>
@@ -2245,6 +2323,7 @@ public partial class V1PolicySpecRulesMatchAnySubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchAny
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -2270,6 +2349,7 @@ public partial class V1PolicySpecRulesMatchAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -2302,6 +2382,7 @@ public partial class V1PolicySpecRulesMatchResourcesNamespaceSelectorMatchExpres
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -2320,6 +2401,7 @@ public partial class V1PolicySpecRulesMatchResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMatchResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMatchResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -2338,6 +2420,7 @@ public enum V1PolicySpecRulesMatchResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -2369,6 +2452,7 @@ public partial class V1PolicySpecRulesMatchResourcesSelectorMatchExpressions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -2392,6 +2476,7 @@ public partial class V1PolicySpecRulesMatchResourcesSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchResources
 {
     /// <summary>
@@ -2458,6 +2543,7 @@ public partial class V1PolicySpecRulesMatchResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatchSubjects
 {
     /// <summary>
@@ -2495,6 +2581,7 @@ public partial class V1PolicySpecRulesMatchSubjects
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMatch
 {
     /// <summary>All allows specifying resources which will be ANDed</summary>
@@ -2530,6 +2617,7 @@ public partial class V1PolicySpecRulesMatch
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -2544,6 +2632,7 @@ public partial class V1PolicySpecRulesMutateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMutateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMutateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -2554,6 +2643,7 @@ public enum V1PolicySpecRulesMutateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -2572,6 +2662,7 @@ public partial class V1PolicySpecRulesMutateForeachContextApiCallServiceHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextApiCallService
 {
     /// <summary>
@@ -2599,6 +2690,7 @@ public partial class V1PolicySpecRulesMutateForeachContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextApiCall
 {
     /// <summary>
@@ -2652,6 +2744,7 @@ public partial class V1PolicySpecRulesMutateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -2666,6 +2759,7 @@ public partial class V1PolicySpecRulesMutateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextGlobalReference
 {
     /// <summary>
@@ -2686,6 +2780,7 @@ public partial class V1PolicySpecRulesMutateForeachContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -2703,6 +2798,7 @@ public enum V1PolicySpecRulesMutateForeachContextImageRegistryImageRegistryCrede
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -2731,6 +2827,7 @@ public partial class V1PolicySpecRulesMutateForeachContextImageRegistryImageRegi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -2756,6 +2853,7 @@ public partial class V1PolicySpecRulesMutateForeachContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContextVariable
 {
     /// <summary>
@@ -2783,6 +2881,7 @@ public partial class V1PolicySpecRulesMutateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeachContext
 {
     /// <summary>
@@ -2822,6 +2921,7 @@ public partial class V1PolicySpecRulesMutateForeachContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMutateForeachOrderEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMutateForeachOrderEnum
 {
     [EnumMember(Value = "Ascending"), JsonStringEnumMemberName("Ascending")]
@@ -2833,6 +2933,7 @@ public enum V1PolicySpecRulesMutateForeachOrderEnum
 /// <summary>ForEachMutation applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateForeach
 {
     /// <summary>Context defines variables and data sources that can be used during rule execution.</summary>
@@ -2884,6 +2985,7 @@ public partial class V1PolicySpecRulesMutateForeach
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -2898,6 +3000,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMutateTargetsContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMutateTargetsContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -2908,6 +3011,7 @@ public enum V1PolicySpecRulesMutateTargetsContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -2926,6 +3030,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextApiCallServiceHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextApiCallService
 {
     /// <summary>
@@ -2953,6 +3058,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextApiCall
 {
     /// <summary>
@@ -3006,6 +3112,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -3020,6 +3127,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextGlobalReference
 {
     /// <summary>
@@ -3040,6 +3148,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -3057,6 +3166,7 @@ public enum V1PolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCrede
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -3085,6 +3195,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextImageRegistryImageRegi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -3110,6 +3221,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContextVariable
 {
     /// <summary>
@@ -3137,6 +3249,7 @@ public partial class V1PolicySpecRulesMutateTargetsContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsContext
 {
     /// <summary>
@@ -3176,6 +3289,7 @@ public partial class V1PolicySpecRulesMutateTargetsContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -3202,6 +3316,7 @@ public partial class V1PolicySpecRulesMutateTargetsSelectorMatchExpressions
 /// <summary>Selector allows you to select target resources with their labels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargetsSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -3220,6 +3335,7 @@ public partial class V1PolicySpecRulesMutateTargetsSelector
 /// <summary>TargetResourceSpec defines targets for mutating existing resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutateTargets
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -3264,6 +3380,7 @@ public partial class V1PolicySpecRulesMutateTargets
 /// <summary>Mutation is used to modify matching resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesMutate
 {
     /// <summary>ForEach applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
@@ -3297,6 +3414,7 @@ public partial class V1PolicySpecRulesMutate
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelAuditAnnotations
 {
     /// <summary>
@@ -3343,6 +3461,7 @@ public partial class V1PolicySpecRulesValidateCelAuditAnnotations
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelExpressions
 {
     /// <summary>
@@ -3433,6 +3552,7 @@ public partial class V1PolicySpecRulesValidateCelExpressions
 /// <summary>ParamKind is a tuple of Group Kind and Version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelParamKind
 {
     /// <summary>
@@ -3457,6 +3577,7 @@ public partial class V1PolicySpecRulesValidateCelParamKind
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelParamRefSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -3492,6 +3613,7 @@ public partial class V1PolicySpecRulesValidateCelParamRefSelectorMatchExpression
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelParamRefSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -3510,6 +3632,7 @@ public partial class V1PolicySpecRulesValidateCelParamRefSelector
 /// <summary>ParamRef references a parameter resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelParamRef
 {
     /// <summary>
@@ -3576,6 +3699,7 @@ public partial class V1PolicySpecRulesValidateCelParamRef
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCelVariables
 {
     /// <summary>
@@ -3597,6 +3721,7 @@ public partial class V1PolicySpecRulesValidateCelVariables
 /// <summary>CEL allows validation checks using the Common Expression Language (https://kubernetes.io/docs/reference/using-api/cel/).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateCel
 {
     /// <summary>AuditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the API request.</summary>
@@ -3634,6 +3759,7 @@ public partial class V1PolicySpecRulesValidateCel
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateDeny
 {
     /// <summary>
@@ -3654,6 +3780,7 @@ public partial class V1PolicySpecRulesValidateDeny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidateFailureActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidateFailureActionEnum
 {
     [EnumMember(Value = "Audit"), JsonStringEnumMemberName("Audit")]
@@ -3665,6 +3792,7 @@ public enum V1PolicySpecRulesValidateFailureActionEnum
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidateFailureActionOverridesActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidateFailureActionOverridesActionEnum
 {
     [EnumMember(Value = "audit"), JsonStringEnumMemberName("audit")]
@@ -3683,6 +3811,7 @@ public enum V1PolicySpecRulesValidateFailureActionOverridesActionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateFailureActionOverridesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -3713,6 +3842,7 @@ public partial class V1PolicySpecRulesValidateFailureActionOverridesNamespaceSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateFailureActionOverridesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -3730,6 +3860,7 @@ public partial class V1PolicySpecRulesValidateFailureActionOverridesNamespaceSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateFailureActionOverrides
 {
     /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
@@ -3751,6 +3882,7 @@ public partial class V1PolicySpecRulesValidateFailureActionOverrides
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -3765,6 +3897,7 @@ public partial class V1PolicySpecRulesValidateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -3775,6 +3908,7 @@ public enum V1PolicySpecRulesValidateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -3793,6 +3927,7 @@ public partial class V1PolicySpecRulesValidateForeachContextApiCallServiceHeader
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextApiCallService
 {
     /// <summary>
@@ -3820,6 +3955,7 @@ public partial class V1PolicySpecRulesValidateForeachContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextApiCall
 {
     /// <summary>
@@ -3873,6 +4009,7 @@ public partial class V1PolicySpecRulesValidateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -3887,6 +4024,7 @@ public partial class V1PolicySpecRulesValidateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextGlobalReference
 {
     /// <summary>
@@ -3907,6 +4045,7 @@ public partial class V1PolicySpecRulesValidateForeachContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -3924,6 +4063,7 @@ public enum V1PolicySpecRulesValidateForeachContextImageRegistryImageRegistryCre
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -3952,6 +4092,7 @@ public partial class V1PolicySpecRulesValidateForeachContextImageRegistryImageRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -3977,6 +4118,7 @@ public partial class V1PolicySpecRulesValidateForeachContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContextVariable
 {
     /// <summary>
@@ -4004,6 +4146,7 @@ public partial class V1PolicySpecRulesValidateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachContext
 {
     /// <summary>
@@ -4040,6 +4183,7 @@ public partial class V1PolicySpecRulesValidateForeachContext
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeachDeny
 {
     /// <summary>
@@ -4055,6 +4199,7 @@ public partial class V1PolicySpecRulesValidateForeachDeny
 /// <summary>ForEachValidation applies validate rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateForeach
 {
     /// <summary>
@@ -4110,6 +4255,7 @@ public partial class V1PolicySpecRulesValidateForeach
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -4138,6 +4284,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertifica
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4159,6 +4306,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertifica
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -4190,6 +4338,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesCertifica
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -4218,6 +4367,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeylessCt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4242,6 +4392,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeylessRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -4292,6 +4443,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeyless
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -4320,6 +4472,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysCtlog
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4341,6 +4494,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysRekor
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -4355,6 +4509,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeysSecre
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeys
 {
     /// <summary>
@@ -4402,6 +4557,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntriesKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestorsEntries
 {
     /// <summary>
@@ -4445,6 +4601,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsAttestors
 {
     /// <summary>
@@ -4466,6 +4623,7 @@ public partial class V1PolicySpecRulesValidateManifestsAttestors
 /// <summary>DryRun configuration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsDryRun
 {
     [JsonPropertyName("enable")]
@@ -4477,6 +4635,7 @@ public partial class V1PolicySpecRulesValidateManifestsDryRun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsIgnoreFieldsObjects
 {
     [JsonPropertyName("group")]
@@ -4497,6 +4656,7 @@ public partial class V1PolicySpecRulesValidateManifestsIgnoreFieldsObjects
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifestsIgnoreFields
 {
     [JsonPropertyName("fields")]
@@ -4509,6 +4669,7 @@ public partial class V1PolicySpecRulesValidateManifestsIgnoreFields
 /// <summary>Manifest specifies conditions for manifest verification</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidateManifests
 {
     /// <summary>AnnotationDomain is custom domain of annotation for message and signature. Default is &quot;cosign.sigstore.dev&quot;.</summary>
@@ -4541,6 +4702,7 @@ public partial class V1PolicySpecRulesValidateManifests
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidatePodSecurityExcludeControlNameEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidatePodSecurityExcludeControlNameEnum
 {
     [EnumMember(Value = "HostProcess"), JsonStringEnumMemberName("HostProcess")]
@@ -4578,6 +4740,7 @@ public enum V1PolicySpecRulesValidatePodSecurityExcludeControlNameEnum
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidatePodSecurityExclude
 {
     /// <summary>
@@ -4614,6 +4777,7 @@ public partial class V1PolicySpecRulesValidatePodSecurityExclude
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidatePodSecurityLevelEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidatePodSecurityLevelEnum
 {
     [EnumMember(Value = "privileged"), JsonStringEnumMemberName("privileged")]
@@ -4630,6 +4794,7 @@ public enum V1PolicySpecRulesValidatePodSecurityLevelEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesValidatePodSecurityVersionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesValidatePodSecurityVersionEnum
 {
     [EnumMember(Value = "v1.19"), JsonStringEnumMemberName("v1.19")]
@@ -4670,6 +4835,7 @@ public enum V1PolicySpecRulesValidatePodSecurityVersionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidatePodSecurity
 {
     /// <summary>Exclude specifies the Pod Security Standard controls to be excluded.</summary>
@@ -4694,6 +4860,7 @@ public partial class V1PolicySpecRulesValidatePodSecurity
 /// <summary>Validation is used to validate matching resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesValidate
 {
     /// <summary>AllowExistingViolations allows prexisting violating resources to continue violating a policy.</summary>
@@ -4768,6 +4935,7 @@ public partial class V1PolicySpecRulesValidate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -4796,6 +4964,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4817,6 +4986,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCe
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -4848,6 +5018,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesCe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -4876,6 +5047,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4900,6 +5072,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -4950,6 +5123,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -4978,6 +5152,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -4999,6 +5174,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -5013,6 +5189,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKeys
 {
     /// <summary>
@@ -5060,6 +5237,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntriesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntries
 {
     /// <summary>
@@ -5103,6 +5281,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestors
 {
     /// <summary>
@@ -5129,6 +5308,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesVerifyImagesAttestationsConditionsAllOperatorEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesVerifyImagesAttestationsConditionsAllOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -5168,6 +5348,7 @@ public enum V1PolicySpecRulesVerifyImagesAttestationsConditionsAllOperatorEnum
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsConditionsAll
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -5203,6 +5384,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsConditionsAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesVerifyImagesAttestationsConditionsAnyOperatorEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesVerifyImagesAttestationsConditionsAnyOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -5242,6 +5424,7 @@ public enum V1PolicySpecRulesVerifyImagesAttestationsConditionsAnyOperatorEnum
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsConditionsAny
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -5276,6 +5459,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsConditionsAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestationsConditions
 {
     /// <summary>
@@ -5304,6 +5488,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestationsConditions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestations
 {
     /// <summary>Attestors specify the required attestors (i.e. authorities).</summary>
@@ -5336,6 +5521,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -5364,6 +5550,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificatesCt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -5385,6 +5572,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificatesRe
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -5416,6 +5604,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesCertificates
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -5444,6 +5633,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeylessCtlog
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -5468,6 +5658,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeylessRekor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -5518,6 +5709,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeyless
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -5546,6 +5738,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysCtlog
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -5567,6 +5760,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysRekor
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -5581,6 +5775,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeysSecret
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeys
 {
     /// <summary>
@@ -5628,6 +5823,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntriesKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestorsEntries
 {
     /// <summary>
@@ -5671,6 +5867,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesAttestors
 {
     /// <summary>
@@ -5692,6 +5889,7 @@ public partial class V1PolicySpecRulesVerifyImagesAttestors
 /// <summary>Allowed values are Audit or Enforce.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesVerifyImagesFailureActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesVerifyImagesFailureActionEnum
 {
     [EnumMember(Value = "Audit"), JsonStringEnumMemberName("Audit")]
@@ -5703,6 +5901,7 @@ public enum V1PolicySpecRulesVerifyImagesFailureActionEnum
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesVerifyImagesImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesVerifyImagesImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -5720,6 +5919,7 @@ public enum V1PolicySpecRulesVerifyImagesImageRegistryCredentialsProvidersEnum
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -5748,6 +5948,7 @@ public partial class V1PolicySpecRulesVerifyImagesImageRegistryCredentials
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecRulesVerifyImagesTypeEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecRulesVerifyImagesTypeEnum
 {
     [EnumMember(Value = "Cosign"), JsonStringEnumMemberName("Cosign")]
@@ -5761,6 +5962,7 @@ public enum V1PolicySpecRulesVerifyImagesTypeEnum
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesValidateDeny
 {
     /// <summary>
@@ -5779,6 +5981,7 @@ public partial class V1PolicySpecRulesVerifyImagesValidateDeny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImagesValidate
 {
     /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
@@ -5797,6 +6000,7 @@ public partial class V1PolicySpecRulesVerifyImagesValidate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRulesVerifyImages
 {
     /// <summary>Deprecated.</summary>
@@ -5921,6 +6125,7 @@ public partial class V1PolicySpecRulesVerifyImages
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecRules
 {
     /// <summary>
@@ -6004,6 +6209,7 @@ public partial class V1PolicySpecRules
 /// <summary>Deprecated, use validationFailureAction under the validate rule instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecValidationFailureActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecValidationFailureActionEnum
 {
     [EnumMember(Value = "audit"), JsonStringEnumMemberName("audit")]
@@ -6019,6 +6225,7 @@ public enum V1PolicySpecValidationFailureActionEnum
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecValidationFailureActionOverridesActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecValidationFailureActionOverridesActionEnum
 {
     [EnumMember(Value = "audit"), JsonStringEnumMemberName("audit")]
@@ -6037,6 +6244,7 @@ public enum V1PolicySpecValidationFailureActionOverridesActionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecValidationFailureActionOverridesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -6067,6 +6275,7 @@ public partial class V1PolicySpecValidationFailureActionOverridesNamespaceSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecValidationFailureActionOverridesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -6084,6 +6293,7 @@ public partial class V1PolicySpecValidationFailureActionOverridesNamespaceSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecValidationFailureActionOverrides
 {
     /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
@@ -6110,6 +6320,7 @@ public partial class V1PolicySpecValidationFailureActionOverrides
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicySpecWebhookConfigurationFailurePolicyEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicySpecWebhookConfigurationFailurePolicyEnum
 {
     [EnumMember(Value = "Ignore"), JsonStringEnumMemberName("Ignore")]
@@ -6121,6 +6332,7 @@ public enum V1PolicySpecWebhookConfigurationFailurePolicyEnum
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecWebhookConfigurationMatchConditions
 {
     /// <summary>
@@ -6159,6 +6371,7 @@ public partial class V1PolicySpecWebhookConfigurationMatchConditions
 /// <summary>WebhookConfiguration specifies the custom configuration for Kubernetes admission webhookconfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpecWebhookConfiguration
 {
     /// <summary>
@@ -6189,6 +6402,7 @@ public partial class V1PolicySpecWebhookConfiguration
 /// <summary>Spec defines policy behaviors and contains one or more rules.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicySpec
 {
     /// <summary>
@@ -6277,6 +6491,7 @@ public partial class V1PolicySpec
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesCelPreconditions
 {
     /// <summary>
@@ -6315,6 +6530,7 @@ public partial class V1PolicyStatusAutogenRulesCelPreconditions
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -6329,6 +6545,7 @@ public partial class V1PolicyStatusAutogenRulesContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -6339,6 +6556,7 @@ public enum V1PolicyStatusAutogenRulesContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -6357,6 +6575,7 @@ public partial class V1PolicyStatusAutogenRulesContextApiCallServiceHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextApiCallService
 {
     /// <summary>
@@ -6384,6 +6603,7 @@ public partial class V1PolicyStatusAutogenRulesContextApiCallService
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextApiCall
 {
     /// <summary>
@@ -6437,6 +6657,7 @@ public partial class V1PolicyStatusAutogenRulesContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -6451,6 +6672,7 @@ public partial class V1PolicyStatusAutogenRulesContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextGlobalReference
 {
     /// <summary>
@@ -6471,6 +6693,7 @@ public partial class V1PolicyStatusAutogenRulesContextGlobalReference
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -6488,6 +6711,7 @@ public enum V1PolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentia
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -6516,6 +6740,7 @@ public partial class V1PolicyStatusAutogenRulesContextImageRegistryImageRegistry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -6541,6 +6766,7 @@ public partial class V1PolicyStatusAutogenRulesContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContextVariable
 {
     /// <summary>
@@ -6568,6 +6794,7 @@ public partial class V1PolicyStatusAutogenRulesContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesContext
 {
     /// <summary>
@@ -6607,6 +6834,7 @@ public partial class V1PolicyStatusAutogenRulesContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -6639,6 +6867,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -6657,6 +6886,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesNamespaceSelec
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -6675,6 +6905,7 @@ public enum V1PolicyStatusAutogenRulesExcludeAllResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -6706,6 +6937,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesSelectorMatchE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -6724,6 +6956,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllResources
 {
     /// <summary>
@@ -6790,6 +7023,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAllSubjects
 {
     /// <summary>
@@ -6822,6 +7056,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAllSubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAll
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -6847,6 +7082,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -6879,6 +7115,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -6897,6 +7134,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesNamespaceSelec
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -6915,6 +7153,7 @@ public enum V1PolicyStatusAutogenRulesExcludeAnyResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -6946,6 +7185,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesSelectorMatchE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -6964,6 +7204,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnyResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnyResources
 {
     /// <summary>
@@ -7030,6 +7271,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnyResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAnySubjects
 {
     /// <summary>
@@ -7062,6 +7304,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAnySubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeAny
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -7087,6 +7330,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -7119,6 +7363,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeResourcesNamespaceSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -7137,6 +7382,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesExcludeResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesExcludeResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -7155,6 +7401,7 @@ public enum V1PolicyStatusAutogenRulesExcludeResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -7186,6 +7433,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeResourcesSelectorMatchExpr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -7209,6 +7457,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeResourcesSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeResources
 {
     /// <summary>
@@ -7275,6 +7524,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExcludeSubjects
 {
     /// <summary>
@@ -7311,6 +7561,7 @@ public partial class V1PolicyStatusAutogenRulesExcludeSubjects
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesExclude
 {
     /// <summary>All allows specifying resources which will be ANDed</summary>
@@ -7350,6 +7601,7 @@ public partial class V1PolicyStatusAutogenRulesExclude
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateClone
 {
     /// <summary>Name specifies name of the resource.</summary>
@@ -7367,6 +7619,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateClone
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateCloneListSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -7396,6 +7649,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateCloneListSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateCloneListSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -7414,6 +7668,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateCloneListSelector
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateCloneList
 {
     /// <summary>Kinds is a list of resource kinds.</summary>
@@ -7439,6 +7694,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateCloneList
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachClone
 {
     /// <summary>Name specifies name of the resource.</summary>
@@ -7456,6 +7712,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachClone
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneListSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -7485,6 +7742,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneListSelectorM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneListSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -7503,6 +7761,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneListSelector
 /// <summary>CloneList specifies the list of source resource used to populate each generated resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneList
 {
     /// <summary>Kinds is a list of resource kinds.</summary>
@@ -7524,6 +7783,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachCloneList
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -7538,6 +7798,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesGenerateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesGenerateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -7548,6 +7809,7 @@ public enum V1PolicyStatusAutogenRulesGenerateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -7566,6 +7828,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallServ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallService
 {
     /// <summary>
@@ -7593,6 +7856,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCallServ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCall
 {
     /// <summary>
@@ -7646,6 +7910,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -7660,6 +7925,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextGlobalReference
 {
     /// <summary>
@@ -7680,6 +7946,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextGlobalRefer
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -7697,6 +7964,7 @@ public enum V1PolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRe
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -7725,6 +7993,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextImageRegist
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -7750,6 +8019,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextImageRegist
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContextVariable
 {
     /// <summary>
@@ -7777,6 +8047,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeachContext
 {
     /// <summary>
@@ -7812,6 +8083,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeachContext
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerateForeach
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -7877,6 +8149,7 @@ public partial class V1PolicyStatusAutogenRulesGenerateForeach
 /// <summary>Generation is used to create new resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesGenerate
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -7951,6 +8224,7 @@ public partial class V1PolicyStatusAutogenRulesGenerate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesImageExtractors
 {
     /// <summary>
@@ -7998,6 +8272,7 @@ public partial class V1PolicyStatusAutogenRulesImageExtractors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8030,6 +8305,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllResourcesNamespaceSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8048,6 +8324,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllResourcesNamespaceSelecto
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMatchAllResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMatchAllResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -8066,6 +8343,7 @@ public enum V1PolicyStatusAutogenRulesMatchAllResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8097,6 +8375,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllResourcesSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8115,6 +8394,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllResources
 {
     /// <summary>
@@ -8181,6 +8461,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAllSubjects
 {
     /// <summary>
@@ -8213,6 +8494,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAllSubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAll
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -8238,6 +8520,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8270,6 +8553,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8288,6 +8572,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesNamespaceSelecto
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -8306,6 +8591,7 @@ public enum V1PolicyStatusAutogenRulesMatchAnyResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8337,6 +8623,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8355,6 +8642,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnyResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnyResources
 {
     /// <summary>
@@ -8421,6 +8709,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnyResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAnySubjects
 {
     /// <summary>
@@ -8453,6 +8742,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAnySubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchAny
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -8478,6 +8768,7 @@ public partial class V1PolicyStatusAutogenRulesMatchAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8510,6 +8801,7 @@ public partial class V1PolicyStatusAutogenRulesMatchResourcesNamespaceSelectorMa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8528,6 +8820,7 @@ public partial class V1PolicyStatusAutogenRulesMatchResourcesNamespaceSelector
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMatchResourcesOperationsEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMatchResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -8546,6 +8839,7 @@ public enum V1PolicyStatusAutogenRulesMatchResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -8577,6 +8871,7 @@ public partial class V1PolicyStatusAutogenRulesMatchResourcesSelectorMatchExpres
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -8600,6 +8895,7 @@ public partial class V1PolicyStatusAutogenRulesMatchResourcesSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchResources
 {
     /// <summary>
@@ -8666,6 +8962,7 @@ public partial class V1PolicyStatusAutogenRulesMatchResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatchSubjects
 {
     /// <summary>
@@ -8703,6 +9000,7 @@ public partial class V1PolicyStatusAutogenRulesMatchSubjects
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMatch
 {
     /// <summary>All allows specifying resources which will be ANDed</summary>
@@ -8738,6 +9036,7 @@ public partial class V1PolicyStatusAutogenRulesMatch
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -8752,6 +9051,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMutateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMutateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -8762,6 +9062,7 @@ public enum V1PolicyStatusAutogenRulesMutateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -8780,6 +9081,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallServic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallService
 {
     /// <summary>
@@ -8807,6 +9109,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCallServic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCall
 {
     /// <summary>
@@ -8860,6 +9163,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -8874,6 +9178,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextGlobalReference
 {
     /// <summary>
@@ -8894,6 +9199,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextGlobalReferen
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -8911,6 +9217,7 @@ public enum V1PolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegi
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -8939,6 +9246,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextImageRegistry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -8964,6 +9272,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContextVariable
 {
     /// <summary>
@@ -8991,6 +9300,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeachContext
 {
     /// <summary>
@@ -9030,6 +9340,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeachContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMutateForeachOrderEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMutateForeachOrderEnum
 {
     [EnumMember(Value = "Ascending"), JsonStringEnumMemberName("Ascending")]
@@ -9041,6 +9352,7 @@ public enum V1PolicyStatusAutogenRulesMutateForeachOrderEnum
 /// <summary>ForEachMutation applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateForeach
 {
     /// <summary>Context defines variables and data sources that can be used during rule execution.</summary>
@@ -9092,6 +9404,7 @@ public partial class V1PolicyStatusAutogenRulesMutateForeach
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -9106,6 +9419,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -9116,6 +9430,7 @@ public enum V1PolicyStatusAutogenRulesMutateTargetsContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -9134,6 +9449,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallServic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallService
 {
     /// <summary>
@@ -9161,6 +9477,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCallServic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCall
 {
     /// <summary>
@@ -9214,6 +9531,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -9228,6 +9546,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextGlobalReference
 {
     /// <summary>
@@ -9248,6 +9567,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextGlobalReferen
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -9265,6 +9585,7 @@ public enum V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegi
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -9293,6 +9614,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -9318,6 +9640,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextImageRegistry
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContextVariable
 {
     /// <summary>
@@ -9345,6 +9668,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsContext
 {
     /// <summary>
@@ -9384,6 +9708,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsContext
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -9410,6 +9735,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsSelectorMatchExpress
 /// <summary>Selector allows you to select target resources with their labels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargetsSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -9428,6 +9754,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargetsSelector
 /// <summary>TargetResourceSpec defines targets for mutating existing resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutateTargets
 {
     /// <summary>APIVersion specifies resource apiVersion.</summary>
@@ -9472,6 +9799,7 @@ public partial class V1PolicyStatusAutogenRulesMutateTargets
 /// <summary>Mutation is used to modify matching resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesMutate
 {
     /// <summary>ForEach applies mutation rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
@@ -9505,6 +9833,7 @@ public partial class V1PolicyStatusAutogenRulesMutate
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelAuditAnnotations
 {
     /// <summary>
@@ -9551,6 +9880,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelAuditAnnotations
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelExpressions
 {
     /// <summary>
@@ -9641,6 +9971,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelExpressions
 /// <summary>ParamKind is a tuple of Group Kind and Version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelParamKind
 {
     /// <summary>
@@ -9665,6 +9996,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelParamKind
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelParamRefSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -9700,6 +10032,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelParamRefSelectorMatchE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelParamRefSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -9718,6 +10051,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelParamRefSelector
 /// <summary>ParamRef references a parameter resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelParamRef
 {
     /// <summary>
@@ -9784,6 +10118,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelParamRef
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCelVariables
 {
     /// <summary>
@@ -9805,6 +10140,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCelVariables
 /// <summary>CEL allows validation checks using the Common Expression Language (https://kubernetes.io/docs/reference/using-api/cel/).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateCel
 {
     /// <summary>AuditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the API request.</summary>
@@ -9842,6 +10178,7 @@ public partial class V1PolicyStatusAutogenRulesValidateCel
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateDeny
 {
     /// <summary>
@@ -9862,6 +10199,7 @@ public partial class V1PolicyStatusAutogenRulesValidateDeny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidateFailureActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidateFailureActionEnum
 {
     [EnumMember(Value = "Audit"), JsonStringEnumMemberName("Audit")]
@@ -9873,6 +10211,7 @@ public enum V1PolicyStatusAutogenRulesValidateFailureActionEnum
 /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidateFailureActionOverridesActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidateFailureActionOverridesActionEnum
 {
     [EnumMember(Value = "audit"), JsonStringEnumMemberName("audit")]
@@ -9891,6 +10230,7 @@ public enum V1PolicyStatusAutogenRulesValidateFailureActionOverridesActionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverridesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -9921,6 +10261,7 @@ public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverridesNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverridesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -9938,6 +10279,7 @@ public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverridesNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverrides
 {
     /// <summary>ValidationFailureAction defines the policy validation failure action</summary>
@@ -9959,6 +10301,7 @@ public partial class V1PolicyStatusAutogenRulesValidateFailureActionOverrides
 /// <summary>RequestData contains the HTTP POST data</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallData
 {
     /// <summary>Key is a unique identifier for the data value</summary>
@@ -9973,6 +10316,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallData
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidateForeachContextApiCallMethodEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidateForeachContextApiCallMethodEnum
 {
     [EnumMember(Value = "GET"), JsonStringEnumMemberName("GET")]
@@ -9983,6 +10327,7 @@ public enum V1PolicyStatusAutogenRulesValidateForeachContextApiCallMethodEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallServiceHeaders
 {
     /// <summary>Key is the header key</summary>
@@ -10001,6 +10346,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallServ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallService
 {
     /// <summary>
@@ -10028,6 +10374,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCallServ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCall
 {
     /// <summary>
@@ -10081,6 +10428,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextApiCall
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextConfigMap
 {
     /// <summary>Name is the ConfigMap name.</summary>
@@ -10095,6 +10443,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextConfigMap
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextGlobalReference
 {
     /// <summary>
@@ -10115,6 +10464,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextGlobalRefer
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -10132,6 +10482,7 @@ public enum V1PolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRe
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextImageRegistryImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -10160,6 +10511,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextImageRegist
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextImageRegistry
 {
     /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
@@ -10185,6 +10537,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextImageRegist
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContextVariable
 {
     /// <summary>
@@ -10212,6 +10565,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContextVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachContext
 {
     /// <summary>
@@ -10248,6 +10602,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachContext
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeachDeny
 {
     /// <summary>
@@ -10263,6 +10618,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeachDeny
 /// <summary>ForEachValidation applies validate rules to a list of sub-elements by creating a context for each entry in the list and looping over it to apply the specified logic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateForeach
 {
     /// <summary>
@@ -10318,6 +10674,7 @@ public partial class V1PolicyStatusAutogenRulesValidateForeach
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -10346,6 +10703,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -10367,6 +10725,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -10398,6 +10757,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -10426,6 +10786,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -10450,6 +10811,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -10500,6 +10862,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -10528,6 +10891,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -10549,6 +10913,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -10563,6 +10928,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntriesKeys
 {
     /// <summary>
@@ -10610,6 +10976,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 {
     /// <summary>
@@ -10653,6 +11020,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestors
 {
     /// <summary>
@@ -10674,6 +11042,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsAttestors
 /// <summary>DryRun configuration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsDryRun
 {
     [JsonPropertyName("enable")]
@@ -10685,6 +11054,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsDryRun
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsIgnoreFieldsObjects
 {
     [JsonPropertyName("group")]
@@ -10705,6 +11075,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsIgnoreFieldsObje
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifestsIgnoreFields
 {
     [JsonPropertyName("fields")]
@@ -10717,6 +11088,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifestsIgnoreFields
 /// <summary>Manifest specifies conditions for manifest verification</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidateManifests
 {
     /// <summary>AnnotationDomain is custom domain of annotation for message and signature. Default is &quot;cosign.sigstore.dev&quot;.</summary>
@@ -10749,6 +11121,7 @@ public partial class V1PolicyStatusAutogenRulesValidateManifests
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidatePodSecurityExcludeControlNameEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidatePodSecurityExcludeControlNameEnum
 {
     [EnumMember(Value = "HostProcess"), JsonStringEnumMemberName("HostProcess")]
@@ -10786,6 +11159,7 @@ public enum V1PolicyStatusAutogenRulesValidatePodSecurityExcludeControlNameEnum
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidatePodSecurityExclude
 {
     /// <summary>
@@ -10822,6 +11196,7 @@ public partial class V1PolicyStatusAutogenRulesValidatePodSecurityExclude
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidatePodSecurityLevelEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidatePodSecurityLevelEnum
 {
     [EnumMember(Value = "privileged"), JsonStringEnumMemberName("privileged")]
@@ -10838,6 +11213,7 @@ public enum V1PolicyStatusAutogenRulesValidatePodSecurityLevelEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesValidatePodSecurityVersionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesValidatePodSecurityVersionEnum
 {
     [EnumMember(Value = "v1.19"), JsonStringEnumMemberName("v1.19")]
@@ -10878,6 +11254,7 @@ public enum V1PolicyStatusAutogenRulesValidatePodSecurityVersionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidatePodSecurity
 {
     /// <summary>Exclude specifies the Pod Security Standard controls to be excluded.</summary>
@@ -10902,6 +11279,7 @@ public partial class V1PolicyStatusAutogenRulesValidatePodSecurity
 /// <summary>Validation is used to validate matching resources.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesValidate
 {
     /// <summary>AllowExistingViolations allows prexisting violating resources to continue violating a policy.</summary>
@@ -10976,6 +11354,7 @@ public partial class V1PolicyStatusAutogenRulesValidate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -11004,6 +11383,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11025,6 +11405,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -11056,6 +11437,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -11084,6 +11466,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11108,6 +11491,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -11158,6 +11542,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -11186,6 +11571,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11207,6 +11593,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -11221,6 +11608,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntriesKeys
 {
     /// <summary>
@@ -11268,6 +11656,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestorsEntries
 {
     /// <summary>
@@ -11311,6 +11700,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 {
     /// <summary>
@@ -11337,6 +11727,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsAttestors
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAllOperatorEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAllOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -11376,6 +11767,7 @@ public enum V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAllOpera
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAll
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -11411,6 +11803,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAnyOperatorEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAnyOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -11450,6 +11843,7 @@ public enum V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAnyOpera
 /// <summary>Condition defines variable-based conditional criteria for rule execution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditionsAny
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -11484,6 +11878,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsConditions
 {
     /// <summary>
@@ -11512,6 +11907,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestationsCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestations
 {
     /// <summary>Attestors specify the required attestors (i.e. authorities).</summary>
@@ -11544,6 +11940,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificatesCtlog
 {
     /// <summary>
@@ -11572,6 +11969,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCerti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificatesRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11593,6 +11991,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCerti
 /// <summary>Certificates specifies one or more certificates.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCertificates
 {
     /// <summary>Cert is an optional PEM-encoded public certificate.</summary>
@@ -11624,6 +12023,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesCerti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeylessCtlog
 {
     /// <summary>
@@ -11652,6 +12052,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeyle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeylessRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11676,6 +12077,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeyle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeyless
 {
     /// <summary>AdditionalExtensions are certificate-extensions used for keyless signing.</summary>
@@ -11726,6 +12128,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeyle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysCtlog
 {
     /// <summary>
@@ -11754,6 +12157,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysRekor
 {
     /// <summary>IgnoreTlog skips transparency log verification.</summary>
@@ -11775,6 +12179,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysR
 /// <summary>Reference to a Secret resource that contains a public key</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysSecret
 {
     /// <summary>Name of the secret. The provided secret must contain a key named cosign.pub.</summary>
@@ -11789,6 +12194,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeysS
 /// <summary>Keys specifies one or more public keys.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeys
 {
     /// <summary>
@@ -11836,6 +12242,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntriesKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntries
 {
     /// <summary>
@@ -11879,6 +12286,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestorsEntries
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestors
 {
     /// <summary>
@@ -11900,6 +12308,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesAttestors
 /// <summary>Allowed values are Audit or Enforce.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesVerifyImagesFailureActionEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesVerifyImagesFailureActionEnum
 {
     [EnumMember(Value = "Audit"), JsonStringEnumMemberName("Audit")]
@@ -11911,6 +12320,7 @@ public enum V1PolicyStatusAutogenRulesVerifyImagesFailureActionEnum
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesVerifyImagesImageRegistryCredentialsProvidersEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesVerifyImagesImageRegistryCredentialsProvidersEnum
 {
     [EnumMember(Value = "default"), JsonStringEnumMemberName("default")]
@@ -11928,6 +12338,7 @@ public enum V1PolicyStatusAutogenRulesVerifyImagesImageRegistryCredentialsProvid
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesImageRegistryCredentials
 {
     /// <summary>AllowInsecureRegistry allows insecure access to a registry.</summary>
@@ -11956,6 +12367,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesImageRegistryCredenti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusAutogenRulesVerifyImagesTypeEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusAutogenRulesVerifyImagesTypeEnum
 {
     [EnumMember(Value = "Cosign"), JsonStringEnumMemberName("Cosign")]
@@ -11969,6 +12381,7 @@ public enum V1PolicyStatusAutogenRulesVerifyImagesTypeEnum
 /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesValidateDeny
 {
     /// <summary>
@@ -11987,6 +12400,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesValidateDeny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImagesValidate
 {
     /// <summary>Deny defines conditions used to pass or fail a validation rule.</summary>
@@ -12005,6 +12419,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImagesValidate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesVerifyImages
 {
     /// <summary>Deprecated.</summary>
@@ -12129,6 +12544,7 @@ public partial class V1PolicyStatusAutogenRulesVerifyImages
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRules
 {
     /// <summary>
@@ -12212,6 +12628,7 @@ public partial class V1PolicyStatusAutogenRules
 /// <summary>AutogenStatus contains autogen status information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogen
 {
     /// <summary>Rules is a list of Rule instances. It contains auto generated rules added for pod controllers</summary>
@@ -12222,6 +12639,7 @@ public partial class V1PolicyStatusAutogen
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1PolicyStatusConditionsStatusEnum>))]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V1PolicyStatusConditionsStatusEnum
 {
     [EnumMember(Value = "True"), JsonStringEnumMemberName("True")]
@@ -12235,6 +12653,7 @@ public enum V1PolicyStatusConditionsStatusEnum
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusConditions
 {
     /// <summary>
@@ -12284,6 +12703,7 @@ public partial class V1PolicyStatusConditions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusRulecount
 {
     /// <summary>Count for generate rules in policy</summary>
@@ -12306,6 +12726,7 @@ public partial class V1PolicyStatusRulecount
 /// <summary>ValidatingAdmissionPolicy contains status information</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusValidatingadmissionpolicy
 {
     /// <summary>Generated indicates whether a validating admission policy is generated from the policy or not</summary>
@@ -12323,6 +12744,7 @@ public partial class V1PolicyStatusValidatingadmissionpolicy
 /// <summary>Deprecated. Policy metrics are available via the metrics endpoint</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatus
 {
     /// <summary>AutogenStatus contains autogen status information.</summary>
@@ -12354,6 +12776,7 @@ public partial class V1PolicyStatus
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Policy : IKubernetesObject<V1ObjectMeta>, ISpec<V1PolicySpec>, IStatus<V1PolicyStatus?>
 {
