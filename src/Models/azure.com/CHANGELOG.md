@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azure.com-v1.18.0...azure.com-v1.19.0) (2026-09-10)
+
+
+### Features
+
+* Sync ([#115](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/115)) ([2ca821f](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/2ca821f05c6ff3139c0ca7d9ace8c013ea9cb898))
+
 ## [1.18.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azure.com-v1.17.0...azure.com-v1.18.0) (2026-08-29)
 
 
