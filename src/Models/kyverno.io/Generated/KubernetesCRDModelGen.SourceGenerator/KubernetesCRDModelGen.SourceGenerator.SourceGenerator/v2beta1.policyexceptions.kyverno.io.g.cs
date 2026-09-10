@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>PolicyException declares resources to be excluded from specified policies.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2beta1PolicyExceptionList : IKubernetesObject<V1ListMeta>, IItems<V2beta1PolicyException>
 {
@@ -45,7 +45,7 @@ public partial class V2beta1PolicyExceptionList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecConditionsAllOperatorEnum>))]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2beta1PolicyExceptionSpecConditionsAllOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -80,7 +80,7 @@ public enum V2beta1PolicyExceptionSpecConditionsAllOperatorEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecConditionsAll
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -116,7 +116,7 @@ public partial class V2beta1PolicyExceptionSpecConditionsAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum>))]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum
 {
     [EnumMember(Value = "Equals"), JsonStringEnumMemberName("Equals")]
@@ -151,7 +151,7 @@ public enum V2beta1PolicyExceptionSpecConditionsAnyOperatorEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecConditionsAny
 {
     /// <summary>Key is the context entry (using JMESPath) for conditional rule evaluation.</summary>
@@ -185,7 +185,7 @@ public partial class V2beta1PolicyExceptionSpecConditionsAny
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecConditions
 {
     /// <summary>
@@ -210,7 +210,7 @@ public partial class V2beta1PolicyExceptionSpecConditions
 /// <summary>Exception stores infos about a policy and rules</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecExceptions
 {
     /// <summary>
@@ -232,7 +232,7 @@ public partial class V2beta1PolicyExceptionSpecExceptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -265,7 +265,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -284,7 +284,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesNamespaceSelecto
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum>))]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -303,7 +303,7 @@ public enum V2beta1PolicyExceptionSpecMatchAllResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -335,7 +335,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -354,7 +354,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllResources
 {
     /// <summary>
@@ -421,7 +421,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAllSubjects
 {
     /// <summary>
@@ -454,7 +454,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAllSubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAll
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -480,7 +480,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAll
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -513,7 +513,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -532,7 +532,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesNamespaceSelecto
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum>))]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum
 {
     [EnumMember(Value = "CREATE"), JsonStringEnumMemberName("CREATE")]
@@ -551,7 +551,7 @@ public enum V2beta1PolicyExceptionSpecMatchAnyResourcesOperationsEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelectorMatchExpressions
 {
     /// <summary>key is the label key that the selector applies to.</summary>
@@ -583,7 +583,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelectorMatchExp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelector
 {
     /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
@@ -602,7 +602,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResourcesSelector
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnyResources
 {
     /// <summary>
@@ -669,7 +669,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnyResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAnySubjects
 {
     /// <summary>
@@ -702,7 +702,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAnySubjects
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatchAny
 {
     /// <summary>ClusterRoles is the list of cluster-wide role names for the user.</summary>
@@ -725,7 +725,7 @@ public partial class V2beta1PolicyExceptionSpecMatchAny
 /// <summary>Match defines match clause used to check if a resource applies to the exception</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecMatch
 {
     /// <summary>All allows specifying resources which will be ANDed</summary>
@@ -743,7 +743,7 @@ public partial class V2beta1PolicyExceptionSpecMatch
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2beta1PolicyExceptionSpecPodSecurityControlNameEnum>))]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2beta1PolicyExceptionSpecPodSecurityControlNameEnum
 {
     [EnumMember(Value = "HostProcess"), JsonStringEnumMemberName("HostProcess")]
@@ -781,7 +781,7 @@ public enum V2beta1PolicyExceptionSpecPodSecurityControlNameEnum
 /// <summary>PodSecurityStandard specifies the Pod Security Standard controls to be excluded.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpecPodSecurity
 {
     /// <summary>
@@ -815,7 +815,7 @@ public partial class V2beta1PolicyExceptionSpecPodSecurity
 /// <summary>Spec declares policy exception behaviors.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2beta1PolicyExceptionSpec
 {
     /// <summary>
@@ -852,7 +852,7 @@ public partial class V2beta1PolicyExceptionSpec
 /// <summary>PolicyException declares resources to be excluded from specified policies.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete]
+[global::System.Obsolete("kyverno.io/v2beta1 PolicyException is deprecated and will be removed in a future release; migrate to PolicyException (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V2beta1PolicyException : IKubernetesObject<V1ObjectMeta>, ISpec<V2beta1PolicyExceptionSpec>
 {
