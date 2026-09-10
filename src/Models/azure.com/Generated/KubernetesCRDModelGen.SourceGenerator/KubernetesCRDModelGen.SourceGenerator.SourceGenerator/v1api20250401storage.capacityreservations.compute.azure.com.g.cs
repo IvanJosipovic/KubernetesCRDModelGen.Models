@@ -164,10 +164,13 @@ public partial class V1api20250401storageCapacityReservationSpecOwner
 
 /// <summary>
 /// Storage version of v1api20250401.ScheduleProfile
-/// Defines the schedule for Block-type capacity reservations. Specifies the schedule during which capacity reservation is
-/// active and VM or VMSS resource can be allocated using reservation. This property is required and only supported when the
-/// capacity reservation group type is &apos;Block&apos;. The scheduleProfile, start, and end fields are immutable after creation.
-/// Minimum API version: 2025-04-01. Please refer to https://aka.ms/blockcapacityreservation for more details.
+/// Defines the schedule for Block and Future capacity reservations. Specifies the schedule during which capacity
+/// reservation is active and VM or VMSS resource can be allocated using reservation. For Block capacity reservations, the
+/// scheduleProfile, start, and end fields are immutable after creation. Please refer to
+/// https://aka.ms/blockcapacityreservation for more details. Minimum API version for Block capacity reservations:
+/// 2025-04-01. Future capacity reservations must use this property with only a start time, which can be changed until the
+/// ‘modifiableUntil’ time. Please refer to https://aka.ms/futurecapacityreservation for more details. Minimum API
+/// version for Future capacity reservations: 2026-04-01.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -255,10 +258,13 @@ public partial class V1api20250401storageCapacityReservationSpec
 
     /// <summary>
     /// Storage version of v1api20250401.ScheduleProfile
-    /// Defines the schedule for Block-type capacity reservations. Specifies the schedule during which capacity reservation is
-    /// active and VM or VMSS resource can be allocated using reservation. This property is required and only supported when the
-    /// capacity reservation group type is &apos;Block&apos;. The scheduleProfile, start, and end fields are immutable after creation.
-    /// Minimum API version: 2025-04-01. Please refer to https://aka.ms/blockcapacityreservation for more details.
+    /// Defines the schedule for Block and Future capacity reservations. Specifies the schedule during which capacity
+    /// reservation is active and VM or VMSS resource can be allocated using reservation. For Block capacity reservations, the
+    /// scheduleProfile, start, and end fields are immutable after creation. Please refer to
+    /// https://aka.ms/blockcapacityreservation for more details. Minimum API version for Block capacity reservations:
+    /// 2025-04-01. Future capacity reservations must use this property with only a start time, which can be changed until the
+    /// ‘modifiableUntil’ time. Please refer to https://aka.ms/futurecapacityreservation for more details. Minimum API
+    /// version for Future capacity reservations: 2026-04-01.
     /// </summary>
     [JsonPropertyName("scheduleProfile")]
     public V1api20250401storageCapacityReservationSpecScheduleProfile? ScheduleProfile { get; set; }
@@ -422,10 +428,13 @@ public partial class V1api20250401storageCapacityReservationStatusInstanceView
 
 /// <summary>
 /// Storage version of v1api20250401.ScheduleProfile_STATUS
-/// Defines the schedule for Block-type capacity reservations. Specifies the schedule during which capacity reservation is
-/// active and VM or VMSS resource can be allocated using reservation. This property is required and only supported when the
-/// capacity reservation group type is &apos;Block&apos;. The scheduleProfile, start, and end fields are immutable after creation.
-/// Minimum API version: 2025-04-01. Please refer to https://aka.ms/blockcapacityreservation for more details.
+/// Defines the schedule for Block and Future capacity reservations. Specifies the schedule during which capacity
+/// reservation is active and VM or VMSS resource can be allocated using reservation. For Block capacity reservations, the
+/// scheduleProfile, start, and end fields are immutable after creation. Please refer to
+/// https://aka.ms/blockcapacityreservation for more details. Minimum API version for Block capacity reservations:
+/// 2025-04-01. Future capacity reservations must use this property with only a start time, which can be changed until the
+/// ‘modifiableUntil’ time. Please refer to https://aka.ms/futurecapacityreservation for more details. Minimum API
+/// version for Future capacity reservations: 2026-04-01.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -567,10 +576,13 @@ public partial class V1api20250401storageCapacityReservationStatus
 
     /// <summary>
     /// Storage version of v1api20250401.ScheduleProfile_STATUS
-    /// Defines the schedule for Block-type capacity reservations. Specifies the schedule during which capacity reservation is
-    /// active and VM or VMSS resource can be allocated using reservation. This property is required and only supported when the
-    /// capacity reservation group type is &apos;Block&apos;. The scheduleProfile, start, and end fields are immutable after creation.
-    /// Minimum API version: 2025-04-01. Please refer to https://aka.ms/blockcapacityreservation for more details.
+    /// Defines the schedule for Block and Future capacity reservations. Specifies the schedule during which capacity
+    /// reservation is active and VM or VMSS resource can be allocated using reservation. For Block capacity reservations, the
+    /// scheduleProfile, start, and end fields are immutable after creation. Please refer to
+    /// https://aka.ms/blockcapacityreservation for more details. Minimum API version for Block capacity reservations:
+    /// 2025-04-01. Future capacity reservations must use this property with only a start time, which can be changed until the
+    /// ‘modifiableUntil’ time. Please refer to https://aka.ms/futurecapacityreservation for more details. Minimum API
+    /// version for Future capacity reservations: 2026-04-01.
     /// </summary>
     [JsonPropertyName("scheduleProfile")]
     public V1api20250401storageCapacityReservationStatusScheduleProfile? ScheduleProfile { get; set; }

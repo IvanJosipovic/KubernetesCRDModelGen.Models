@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.21.0
+    app.kubernetes.io/version: v2.21.1
   name: autoscalesettings.insights.azure.com
 spec:
   conversion:
@@ -660,8 +660,8 @@ spec:
                 type: boolean
               id:
                 description: |-
-                  Id: Fully qualified resource ID for the resource. Ex -
-                  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+                  Id: Fully qualified resource ID for the resource. E.g.
+                  "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
                 type: string
               location:
                 description: 'Location: The geo-location where the resource lives'

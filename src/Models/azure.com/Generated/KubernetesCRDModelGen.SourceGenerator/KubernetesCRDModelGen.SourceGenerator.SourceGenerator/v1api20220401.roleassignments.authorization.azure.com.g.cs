@@ -234,6 +234,10 @@ public partial class V1api20220401RoleAssignmentSpecPrincipalIdFromConfig
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20220401RoleAssignmentSpecPrincipalTypeEnum>))]
 public enum V1api20220401RoleAssignmentSpecPrincipalTypeEnum
 {
+    [EnumMember(Value = "AgentServicePrincipal"), JsonStringEnumMemberName("AgentServicePrincipal")]
+    AgentServicePrincipal,
+    [EnumMember(Value = "AgentUser"), JsonStringEnumMemberName("AgentUser")]
+    AgentUser,
     [EnumMember(Value = "Device"), JsonStringEnumMemberName("Device")]
     Device,
     [EnumMember(Value = "ForeignGroup"), JsonStringEnumMemberName("ForeignGroup")]
@@ -452,8 +456,8 @@ public partial class V1api20220401RoleAssignmentStatus
     public string? Description { get; set; }
 
     /// <summary>
-    /// Id: Fully qualified resource ID for the resource. Ex -
-    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
     /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }

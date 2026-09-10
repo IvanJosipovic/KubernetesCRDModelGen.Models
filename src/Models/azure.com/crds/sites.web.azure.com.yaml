@@ -6,7 +6,7 @@ metadata:
     controller-gen.kubebuilder.io/version: v0.19.0
   labels:
     app.kubernetes.io/name: azure-service-operator
-    app.kubernetes.io/version: v2.21.0
+    app.kubernetes.io/version: v2.21.1
   name: sites.web.azure.com
 spec:
   conversion:
@@ -9366,7 +9366,7 @@ spec:
                           bandwidth are allocated proportionally.
                         type: integer
                       maximumInstanceCount:
-                        description: 'MaximumInstanceCount: The maximum number of instances for the function app.'
+                        description: 'MaximumInstanceCount: The maximum number of on demand instances per function group.'
                         type: integer
                       triggers:
                         description: 'Triggers: Scale and concurrency settings for the function app triggers.'
@@ -10926,7 +10926,7 @@ spec:
                           bandwidth are allocated proportionally.
                         type: integer
                       maximumInstanceCount:
-                        description: 'MaximumInstanceCount: The maximum number of instances for the function app.'
+                        description: 'MaximumInstanceCount: The maximum number of on demand instances per function group.'
                         type: integer
                       triggers:
                         description: 'Triggers: Scale and concurrency settings for the function app triggers.'

@@ -1916,7 +1916,7 @@ public partial class V1api20240311DataCollectionRuleSpecSku
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Name: The name of the SKU. Ex - P3. It is typically a letter+number code</summary>
+    /// <summary>Name: The name of the SKU. E.g. P3. It is typically a letter+number code</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
@@ -3367,7 +3367,7 @@ public partial class V1api20240311DataCollectionRuleStatusSku
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>Name: The name of the SKU. Ex - P3. It is typically a letter+number code</summary>
+    /// <summary>Name: The name of the SKU. E.g. P3. It is typically a letter+number code</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -3493,8 +3493,8 @@ public partial class V1api20240311DataCollectionRuleStatus
     public string? Etag { get; set; }
 
     /// <summary>
-    /// Id: Fully qualified resource ID for the resource. Ex -
-    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
     /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }

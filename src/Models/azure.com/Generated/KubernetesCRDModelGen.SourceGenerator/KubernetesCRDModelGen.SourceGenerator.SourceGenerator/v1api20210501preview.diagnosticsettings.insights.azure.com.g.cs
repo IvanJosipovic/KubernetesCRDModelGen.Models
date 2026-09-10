@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -558,7 +558,7 @@ public partial class V1api20210501previewDiagnosticSettingStatusMetrics
     public string? TimeGrain { get; set; }
 }
 
-/// <summary>SystemData: The system metadata related to this resource.</summary>
+/// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210501previewDiagnosticSettingStatusSystemData
@@ -605,8 +605,8 @@ public partial class V1api20210501previewDiagnosticSettingStatus
     public string? EventHubName { get; set; }
 
     /// <summary>
-    /// Id: Fully qualified resource ID for the resource. Ex -
-    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
     /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -646,7 +646,7 @@ public partial class V1api20210501previewDiagnosticSettingStatus
     [JsonPropertyName("storageAccountId")]
     public string? StorageAccountId { get; set; }
 
-    /// <summary>SystemData: The system metadata related to this resource.</summary>
+    /// <summary>SystemData: Azure Resource Manager metadata containing createdBy and modifiedBy information.</summary>
     [JsonPropertyName("systemData")]
     public V1api20210501previewDiagnosticSettingStatusSystemData? SystemData { get; set; }
 
@@ -665,7 +665,7 @@ public partial class V1api20210501previewDiagnosticSettingStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
