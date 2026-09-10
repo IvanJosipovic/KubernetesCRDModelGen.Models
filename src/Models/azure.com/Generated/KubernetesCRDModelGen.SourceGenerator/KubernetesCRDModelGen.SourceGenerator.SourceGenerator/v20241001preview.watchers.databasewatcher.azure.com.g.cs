@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 namespace KubernetesCRDModelGen.Models.databasewatcher.azure.com;
 /// <summary>
 /// Generator information:
-/// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
+/// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DatabaseWatcher/watchers/{watcherName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -648,7 +648,7 @@ public partial class V20241001previewWatcherStatus
 
 /// <summary>
 /// Generator information:
-/// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
+/// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DatabaseWatcher/watchers/{watcherName}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -1372,8 +1372,8 @@ public partial class V1api20221001AutoscaleSettingStatus
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Id: Fully qualified resource ID for the resource. Ex -
-    /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+    /// Id: Fully qualified resource ID for the resource. E.g.
+    /// &quot;/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}&quot;
     /// </summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }

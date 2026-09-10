@@ -269,7 +269,9 @@ public enum V20250101ServerSpecIsIPv6EnabledEnum
     [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
     Disabled,
     [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
-    Enabled
+    Enabled,
+    [EnumMember(Value = "SecuredByPerimeter"), JsonStringEnumMemberName("SecuredByPerimeter")]
+    SecuredByPerimeter
 }
 
 /// <summary>MinimalTlsVersion: Minimal TLS version. Allowed values: &apos;None&apos;, 1.0&apos;, &apos;1.1&apos;, &apos;1.2&apos;, &apos;1.3&apos;</summary>
@@ -503,7 +505,9 @@ public enum V20250101ServerSpecRestrictOutboundNetworkAccessEnum
     [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
     Disabled,
     [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
-    Enabled
+    Enabled,
+    [EnumMember(Value = "SecuredByPerimeter"), JsonStringEnumMemberName("SecuredByPerimeter")]
+    SecuredByPerimeter
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

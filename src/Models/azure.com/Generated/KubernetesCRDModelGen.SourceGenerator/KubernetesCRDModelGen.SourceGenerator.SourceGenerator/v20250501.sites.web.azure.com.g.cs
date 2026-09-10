@@ -501,7 +501,7 @@ public partial class V20250501SiteSpecFunctionAppConfigScaleAndConcurrency
     [JsonPropertyName("instanceMemoryMB")]
     public int? InstanceMemoryMB { get; set; }
 
-    /// <summary>MaximumInstanceCount: The maximum number of instances for the function app.</summary>
+    /// <summary>MaximumInstanceCount: The maximum number of on demand instances per function group.</summary>
     [JsonPropertyName("maximumInstanceCount")]
     public int? MaximumInstanceCount { get; set; }
 
@@ -2898,7 +2898,7 @@ public partial class V20250501SiteStatusFunctionAppConfigScaleAndConcurrency
     [JsonPropertyName("instanceMemoryMB")]
     public int? InstanceMemoryMB { get; set; }
 
-    /// <summary>MaximumInstanceCount: The maximum number of instances for the function app.</summary>
+    /// <summary>MaximumInstanceCount: The maximum number of on demand instances per function group.</summary>
     [JsonPropertyName("maximumInstanceCount")]
     public int? MaximumInstanceCount { get; set; }
 

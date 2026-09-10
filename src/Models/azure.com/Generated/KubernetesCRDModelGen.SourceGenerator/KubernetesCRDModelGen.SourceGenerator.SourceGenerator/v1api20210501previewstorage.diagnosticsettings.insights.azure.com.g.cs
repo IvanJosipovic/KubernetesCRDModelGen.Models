@@ -12,7 +12,7 @@ namespace KubernetesCRDModelGen.Models.insights.azure.com;
 /// <summary>
 /// Storage version of v1api20210501preview.DiagnosticSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -68,7 +68,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecEventHubAut
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.RetentionPolicy
+/// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
 /// Specifies the retention policy for the log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -90,7 +90,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecLogsRetenti
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.LogSettings
+/// Storage version of v1api20210501preview.DiagnosticsLogSettings
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -114,7 +114,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecLogs
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20210501preview.RetentionPolicy
+    /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
     /// Specifies the retention policy for the log.
     /// </summary>
     [JsonPropertyName("retentionPolicy")]
@@ -151,7 +151,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMarketplace
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.RetentionPolicy
+/// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
 /// Specifies the retention policy for the log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -173,7 +173,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMetricsRete
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.MetricSettings
+/// Storage version of v1api20210501preview.DiagnosticsMetricSettings
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular metric.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -194,7 +194,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingSpecMetrics
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20210501preview.RetentionPolicy
+    /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy
     /// Specifies the retention policy for the log.
     /// </summary>
     [JsonPropertyName("retentionPolicy")]
@@ -513,7 +513,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusCondition
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.RetentionPolicy_STATUS
+/// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
 /// Specifies the retention policy for the log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -535,7 +535,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusLogsReten
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.LogSettings_STATUS
+/// Storage version of v1api20210501preview.DiagnosticsLogSettings_STATUS
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -559,7 +559,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusLogs
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20210501preview.RetentionPolicy_STATUS
+    /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
     /// Specifies the retention policy for the log.
     /// </summary>
     [JsonPropertyName("retentionPolicy")]
@@ -567,7 +567,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusLogs
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.RetentionPolicy_STATUS
+/// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
 /// Specifies the retention policy for the log.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -589,7 +589,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusMetricsRe
 }
 
 /// <summary>
-/// Storage version of v1api20210501preview.MetricSettings_STATUS
+/// Storage version of v1api20210501preview.DiagnosticsMetricSettings_STATUS
 /// Part of MultiTenantDiagnosticSettings. Specifies the settings for a particular metric.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -610,7 +610,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatusMetrics
     public bool? Enabled { get; set; }
 
     /// <summary>
-    /// Storage version of v1api20210501preview.RetentionPolicy_STATUS
+    /// Storage version of v1api20210501preview.MicrosoftCommonRetentionPolicy_STATUS
     /// Specifies the retention policy for the log.
     /// </summary>
     [JsonPropertyName("retentionPolicy")]
@@ -716,7 +716,7 @@ public partial class V1api20210501previewstorageDiagnosticSettingStatus
 /// <summary>
 /// Storage version of v1api20210501preview.DiagnosticSetting
 /// Generator information:
-/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/diagnosticsSettings_API.json
+/// - Generated from: /monitor/resource-manager/Microsoft.Insights/Insights/preview/2021-05-01-preview/openapi.json
 /// - ARM URI: /{resourceUri}/providers/Microsoft.Insights/diagnosticSettings/{name}
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -158,8 +158,13 @@ public partial class V1api20250401CapacityReservationGroupSpecOwner
 
 /// <summary>
 /// ReservationType: Indicates the type of capacity reservation. Allowed values are &apos;Block&apos; for block capacity reservations
-/// and &apos;Targeted&apos; for reservations that enable a VM to consume a specific capacity reservation when a capacity reservation
-/// group is provided. The reservation type is immutable and cannot be changed after it is assigned.
+/// that enable a VM to consume capacity only from this capacity block when it is associated using a capacity reservation
+/// group, &apos;Targeted&apos; for reservations that enable a VM to consume capacity from an explicitly associated capacity
+/// reservation group and fall back to the publicly available capacity if the reservation is full, and &apos;Open&apos; for
+/// reservations that a VM consumes when it is eligible from an implicitly associated capacity reservation group with the
+/// matching VM size and zone without associating that capacity reservation group and fall back to the publicly available
+/// capacity if the reservation is full. The reservation type is immutable and cannot be changed after the capacity
+/// reservation group is created.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20250401CapacityReservationGroupSpecReservationTypeEnum>))]
@@ -258,8 +263,13 @@ public partial class V1api20250401CapacityReservationGroupSpec
 
     /// <summary>
     /// ReservationType: Indicates the type of capacity reservation. Allowed values are &apos;Block&apos; for block capacity reservations
-    /// and &apos;Targeted&apos; for reservations that enable a VM to consume a specific capacity reservation when a capacity reservation
-    /// group is provided. The reservation type is immutable and cannot be changed after it is assigned.
+    /// that enable a VM to consume capacity only from this capacity block when it is associated using a capacity reservation
+    /// group, &apos;Targeted&apos; for reservations that enable a VM to consume capacity from an explicitly associated capacity
+    /// reservation group and fall back to the publicly available capacity if the reservation is full, and &apos;Open&apos; for
+    /// reservations that a VM consumes when it is eligible from an implicitly associated capacity reservation group with the
+    /// matching VM size and zone without associating that capacity reservation group and fall back to the publicly available
+    /// capacity if the reservation is full. The reservation type is immutable and cannot be changed after the capacity
+    /// reservation group is created.
     /// </summary>
     [JsonPropertyName("reservationType")]
     public V1api20250401CapacityReservationGroupSpecReservationTypeEnum? ReservationType { get; set; }
@@ -549,8 +559,13 @@ public partial class V1api20250401CapacityReservationGroupStatus
 
     /// <summary>
     /// ReservationType: Indicates the type of capacity reservation. Allowed values are &apos;Block&apos; for block capacity reservations
-    /// and &apos;Targeted&apos; for reservations that enable a VM to consume a specific capacity reservation when a capacity reservation
-    /// group is provided. The reservation type is immutable and cannot be changed after it is assigned.
+    /// that enable a VM to consume capacity only from this capacity block when it is associated using a capacity reservation
+    /// group, &apos;Targeted&apos; for reservations that enable a VM to consume capacity from an explicitly associated capacity
+    /// reservation group and fall back to the publicly available capacity if the reservation is full, and &apos;Open&apos; for
+    /// reservations that a VM consumes when it is eligible from an implicitly associated capacity reservation group with the
+    /// matching VM size and zone without associating that capacity reservation group and fall back to the publicly available
+    /// capacity if the reservation is full. The reservation type is immutable and cannot be changed after the capacity
+    /// reservation group is created.
     /// </summary>
     [JsonPropertyName("reservationType")]
     public string? ReservationType { get; set; }
