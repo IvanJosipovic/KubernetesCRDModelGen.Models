@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/jetstack.io-v1.19.0...jetstack.io-v1.20.0) (2026-09-11)
+
+
+### Features
+
+* Sync ([#122](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/122)) ([0f5cedb](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/0f5cedb6fe80d1f9df2d84438ee199723eae48e8))
+
 ## [1.19.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/jetstack.io-v1.18.1...jetstack.io-v1.19.0) (2026-07-29)
 
 
