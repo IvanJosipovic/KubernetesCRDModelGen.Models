@@ -172,6 +172,18 @@ public partial class V1alpha1DomainNameStatusConditions
     public required string Type { get; set; }
 }
 
+/// <summary>Custom ACK type for EndpointConfiguration</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DomainNameStatusEndpointConfigurations
+{
+    [JsonPropertyName("apiGatewayDomainName")]
+    public string? ApiGatewayDomainName { get; set; }
+
+    [JsonPropertyName("hostedZoneID")]
+    public string? HostedZoneID { get; set; }
+}
+
 /// <summary>DomainNameStatus defines the observed state of DomainName</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -197,6 +209,15 @@ public partial class V1alpha1DomainNameStatus
     /// </summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1DomainNameStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// The endpoint configuration assigned by API Gateway for this domain name.
+    /// apiGatewayDomainName is the target hostname and hostedZoneID is the hosted
+    /// zone of that API Gateway endpoint; together they identify the alias target
+    /// for a Route 53 record.
+    /// </summary>
+    [JsonPropertyName("endpointConfigurations")]
+    public IList<V1alpha1DomainNameStatusEndpointConfigurations>? EndpointConfigurations { get; set; }
 }
 
 /// <summary>DomainName is the Schema for the DomainNames API</summary>
