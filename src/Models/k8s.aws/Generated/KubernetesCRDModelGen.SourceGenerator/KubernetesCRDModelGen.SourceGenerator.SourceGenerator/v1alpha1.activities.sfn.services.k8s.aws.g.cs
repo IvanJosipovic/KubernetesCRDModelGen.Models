@@ -72,7 +72,7 @@ public partial class V1alpha1ActivitySpec
     /// 
     /// A name must not contain:
     /// 
-    ///   - white space
+    ///    * white space
     /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
