@@ -168,10 +168,24 @@ public partial class V1alpha1StateMachineSpec
     /// 
     /// A name must not contain:
     /// 
-    ///   - white space
+    ///    * white space
     /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+
+    /// <summary>
+    /// Whether to publish an immutable version of the state machine whenever its
+    /// configuration is pushed to AWS. Versions are cut on create and on update, so
+    /// leaving this set means every change to the state machine produces a version;
+    /// AWS deduplicates per revision, so an unchanged configuration cuts nothing.
+    /// Setting this back to false stops further versions being cut and does not delete
+    /// any that already exist. Note that stateMachineVersionARN names the version
+    /// holding the configuration last pushed rather than the last version ever
+    /// published, so the next update carried out with publish set to false clears it.
+    /// The default is false.
+    /// </summary>
+    [JsonPropertyName("publish")]
+    public bool? Publish { get; set; }
 
     /// <summary>The Amazon Resource Name (ARN) of the IAM role to use for this state machine.</summary>
     [JsonPropertyName("roleARN")]
@@ -308,6 +322,24 @@ public partial class V1alpha1StateMachineStatus
     /// <summary>The date the state machine is created.</summary>
     [JsonPropertyName("creationDate")]
     public DateTime? CreationDate { get; set; }
+
+    /// <summary>
+    /// The revision identifier for the state machine.
+    /// 
+    /// Use the revisionId parameter to compare between versions of a state machine
+    /// configuration used for executions without performing a diff of the properties,
+    /// such as definition and roleArn.
+    /// </summary>
+    [JsonPropertyName("revisionID")]
+    public string? RevisionID { get; set; }
+
+    /// <summary>
+    /// The Amazon Resource Name (ARN) that identifies the created state machine
+    /// version. If you do not set the publish parameter to true, this field returns
+    /// null value.
+    /// </summary>
+    [JsonPropertyName("stateMachineVersionARN")]
+    public string? StateMachineVersionARN { get; set; }
 }
 
 /// <summary>StateMachine is the Schema for the StateMachines API</summary>

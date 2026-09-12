@@ -346,17 +346,17 @@ public partial class V1alpha1TableSpecSseSpecification
 /// <summary>
 /// The settings for DynamoDB Streams on the table. These settings consist of:
 /// 
-///   - StreamEnabled - Indicates whether DynamoDB Streams is to be enabled
-///     (true) or disabled (false).
+///    * StreamEnabled - Indicates whether DynamoDB Streams is to be enabled
+///    (true) or disabled (false).
 /// 
-///   - StreamViewType - When an item in the table is modified, StreamViewType
-///     determines what information is written to the table&apos;s stream. Valid values
-///     for StreamViewType are: KEYS_ONLY - Only the key attributes of the modified
-///     item are written to the stream. NEW_IMAGE - The entire item, as it appears
-///     after it was modified, is written to the stream. OLD_IMAGE - The entire
-///     item, as it appeared before it was modified, is written to the stream.
-///     NEW_AND_OLD_IMAGES - Both the new and the old item images of the item
-///     are written to the stream.
+///    * StreamViewType - When an item in the table is modified, StreamViewType
+///    determines what information is written to the table&apos;s stream. Valid values
+///    for StreamViewType are: KEYS_ONLY - Only the key attributes of the modified
+///    item are written to the stream. NEW_IMAGE - The entire item, as it appears
+///    after it was modified, is written to the stream. OLD_IMAGE - The entire
+///    item, as it appeared before it was modified, is written to the stream.
+///    NEW_AND_OLD_IMAGES - Both the new and the old item images of the item
+///    are written to the stream.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -486,12 +486,12 @@ public partial class V1alpha1TableSpec
     /// Controls how you are charged for read and write throughput and how you manage
     /// capacity. This setting can be changed later.
     /// 
-    ///   - PROVISIONED - We recommend using PROVISIONED for predictable workloads.
-    ///     PROVISIONED sets the billing mode to Provisioned capacity mode (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html).
+    ///    * PROVISIONED - We recommend using PROVISIONED for predictable workloads.
+    ///    PROVISIONED sets the billing mode to Provisioned capacity mode (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html).
     /// 
-    ///   - PAY_PER_REQUEST - We recommend using PAY_PER_REQUEST for unpredictable
-    ///     workloads. PAY_PER_REQUEST sets the billing mode to On-demand capacity
-    ///     mode (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/on-demand-capacity-mode.html).
+    ///    * PAY_PER_REQUEST - We recommend using PAY_PER_REQUEST for unpredictable
+    ///    workloads. PAY_PER_REQUEST sets the billing mode to On-demand capacity
+    ///    mode (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/on-demand-capacity-mode.html).
     /// </summary>
     [JsonPropertyName("billingMode")]
     public string? BillingMode { get; set; }
@@ -515,29 +515,27 @@ public partial class V1alpha1TableSpec
     /// One or more global secondary indexes (the maximum is 20) to be created on
     /// the table. Each global secondary index in the array includes the following:
     /// 
-    ///   - IndexName - The name of the global secondary index. Must be unique only
-    ///     for this table.
+    ///    * IndexName - The name of the global secondary index. Must be unique only
+    ///    for this table.
     /// 
-    ///   - KeySchema - Specifies the key schema for the global secondary index.
+    ///    * KeySchema - Specifies the key schema for the global secondary index.
     /// 
-    ///   - Projection - Specifies attributes that are copied (projected) from the
-    ///     table into the index. These are in addition to the primary key attributes
-    ///     and index key attributes, which are automatically projected. Each attribute
-    ///     specification is composed of: ProjectionType - One of the following: KEYS_ONLY
+    ///    * Projection - Specifies attributes that are copied (projected) from the
+    ///    table into the index. These are in addition to the primary key attributes
+    ///    and index key attributes, which are automatically projected. Each attribute
+    ///    specification is composed of: ProjectionType - One of the following: KEYS_ONLY
+    ///    - Only the index and primary keys are projected into the index. INCLUDE
+    ///    - Only the specified table attributes are projected into the index. The
+    ///    list of projected attributes is in NonKeyAttributes. ALL - All of the
+    ///    table attributes are projected into the index. NonKeyAttributes - A list
+    ///    of one or more non-key attribute names that are projected into the secondary
+    ///    index. The total count of attributes provided in NonKeyAttributes, summed
+    ///    across all of the secondary indexes, must not exceed 100. If you project
+    ///    the same attribute into two different indexes, this counts as two distinct
+    ///    attributes when determining the total.
     /// 
-    ///   - Only the index and primary keys are projected into the index. INCLUDE
-    /// 
-    ///   - Only the specified table attributes are projected into the index. The
-    ///     list of projected attributes is in NonKeyAttributes. ALL - All of the
-    ///     table attributes are projected into the index. NonKeyAttributes - A list
-    ///     of one or more non-key attribute names that are projected into the secondary
-    ///     index. The total count of attributes provided in NonKeyAttributes, summed
-    ///     across all of the secondary indexes, must not exceed 100. If you project
-    ///     the same attribute into two different indexes, this counts as two distinct
-    ///     attributes when determining the total.
-    /// 
-    ///   - ProvisionedThroughput - The provisioned throughput settings for the
-    ///     global secondary index, consisting of read and write capacity units.
+    ///    * ProvisionedThroughput - The provisioned throughput settings for the
+    ///    global secondary index, consisting of read and write capacity units.
     /// </summary>
     [JsonPropertyName("globalSecondaryIndexes")]
     public IList<V1alpha1TableSpecGlobalSecondaryIndexes>? GlobalSecondaryIndexes { get; set; }
@@ -550,10 +548,10 @@ public partial class V1alpha1TableSpec
     /// 
     /// Each KeySchemaElement in the array is composed of:
     /// 
-    ///   - AttributeName - The name of this key attribute.
+    ///    * AttributeName - The name of this key attribute.
     /// 
-    ///   - KeyType - The role that the key attribute will assume: HASH - partition
-    ///     key RANGE - sort key
+    ///    * KeyType - The role that the key attribute will assume: HASH - partition
+    ///    key RANGE - sort key
     /// 
     /// The partition key of an item is also known as its hash attribute. The term
     /// &quot;hash attribute&quot; derives from the DynamoDB usage of an internal hash function
@@ -585,27 +583,25 @@ public partial class V1alpha1TableSpec
     /// 
     /// Each local secondary index in the array includes the following:
     /// 
-    ///   - IndexName - The name of the local secondary index. Must be unique only
-    ///     for this table.
+    ///    * IndexName - The name of the local secondary index. Must be unique only
+    ///    for this table.
     /// 
-    ///   - KeySchema - Specifies the key schema for the local secondary index.
-    ///     The key schema must begin with the same partition key as the table.
+    ///    * KeySchema - Specifies the key schema for the local secondary index.
+    ///    The key schema must begin with the same partition key as the table.
     /// 
-    ///   - Projection - Specifies attributes that are copied (projected) from the
-    ///     table into the index. These are in addition to the primary key attributes
-    ///     and index key attributes, which are automatically projected. Each attribute
-    ///     specification is composed of: ProjectionType - One of the following: KEYS_ONLY
-    /// 
-    ///   - Only the index and primary keys are projected into the index. INCLUDE
-    /// 
-    ///   - Only the specified table attributes are projected into the index. The
-    ///     list of projected attributes is in NonKeyAttributes. ALL - All of the
-    ///     table attributes are projected into the index. NonKeyAttributes - A list
-    ///     of one or more non-key attribute names that are projected into the secondary
-    ///     index. The total count of attributes provided in NonKeyAttributes, summed
-    ///     across all of the secondary indexes, must not exceed 100. If you project
-    ///     the same attribute into two different indexes, this counts as two distinct
-    ///     attributes when determining the total.
+    ///    * Projection - Specifies attributes that are copied (projected) from the
+    ///    table into the index. These are in addition to the primary key attributes
+    ///    and index key attributes, which are automatically projected. Each attribute
+    ///    specification is composed of: ProjectionType - One of the following: KEYS_ONLY
+    ///    - Only the index and primary keys are projected into the index. INCLUDE
+    ///    - Only the specified table attributes are projected into the index. The
+    ///    list of projected attributes is in NonKeyAttributes. ALL - All of the
+    ///    table attributes are projected into the index. NonKeyAttributes - A list
+    ///    of one or more non-key attribute names that are projected into the secondary
+    ///    index. The total count of attributes provided in NonKeyAttributes, summed
+    ///    across all of the secondary indexes, must not exceed 100. If you project
+    ///    the same attribute into two different indexes, this counts as two distinct
+    ///    attributes when determining the total.
     /// </summary>
     [JsonPropertyName("localSecondaryIndexes")]
     public IList<V1alpha1TableSpecLocalSecondaryIndexes>? LocalSecondaryIndexes { get; set; }
@@ -635,13 +631,13 @@ public partial class V1alpha1TableSpec
     /// <summary>
     /// An Amazon Web Services resource-based policy document in JSON format.
     /// 
-    ///   - The maximum size supported for a resource-based policy document is 20
-    ///     KB. DynamoDB counts whitespaces when calculating the size of a policy
-    ///     against this limit.
+    ///    * The maximum size supported for a resource-based policy document is 20
+    ///    KB. DynamoDB counts whitespaces when calculating the size of a policy
+    ///    against this limit.
     /// 
-    ///   - Within a resource-based policy, if the action for a DynamoDB service-linked
-    ///     role (SLR) to replicate data for a global table is denied, adding or deleting
-    ///     a replica will fail with an error.
+    ///    * Within a resource-based policy, if the action for a DynamoDB service-linked
+    ///    role (SLR) to replicate data for a global table is denied, adding or deleting
+    ///    a replica will fail with an error.
     /// 
     /// For a full list of all considerations that apply while attaching a resource-based
     /// policy, see Resource-based policy considerations (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-considerations.html).
@@ -656,17 +652,17 @@ public partial class V1alpha1TableSpec
     /// <summary>
     /// The settings for DynamoDB Streams on the table. These settings consist of:
     /// 
-    ///   - StreamEnabled - Indicates whether DynamoDB Streams is to be enabled
-    ///     (true) or disabled (false).
+    ///    * StreamEnabled - Indicates whether DynamoDB Streams is to be enabled
+    ///    (true) or disabled (false).
     /// 
-    ///   - StreamViewType - When an item in the table is modified, StreamViewType
-    ///     determines what information is written to the table&apos;s stream. Valid values
-    ///     for StreamViewType are: KEYS_ONLY - Only the key attributes of the modified
-    ///     item are written to the stream. NEW_IMAGE - The entire item, as it appears
-    ///     after it was modified, is written to the stream. OLD_IMAGE - The entire
-    ///     item, as it appeared before it was modified, is written to the stream.
-    ///     NEW_AND_OLD_IMAGES - Both the new and the old item images of the item
-    ///     are written to the stream.
+    ///    * StreamViewType - When an item in the table is modified, StreamViewType
+    ///    determines what information is written to the table&apos;s stream. Valid values
+    ///    for StreamViewType are: KEYS_ONLY - Only the key attributes of the modified
+    ///    item are written to the stream. NEW_IMAGE - The entire item, as it appears
+    ///    after it was modified, is written to the stream. OLD_IMAGE - The entire
+    ///    item, as it appeared before it was modified, is written to the stream.
+    ///    NEW_AND_OLD_IMAGES - Both the new and the old item images of the item
+    ///    are written to the stream.
     /// </summary>
     [JsonPropertyName("streamSpecification")]
     public V1alpha1TableSpecStreamSpecification? StreamSpecification { get; set; }
