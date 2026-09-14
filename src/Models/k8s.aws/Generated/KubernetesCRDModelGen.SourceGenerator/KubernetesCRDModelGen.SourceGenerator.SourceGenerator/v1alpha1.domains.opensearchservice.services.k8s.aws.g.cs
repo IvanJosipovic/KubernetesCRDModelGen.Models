@@ -654,26 +654,26 @@ public partial class V1alpha1DomainSpec
     /// Key-value pairs to specify advanced configuration options. The following
     /// key-value pairs are supported:
     /// 
-    ///   - &quot;rest.action.multi.allow_explicit_index&quot;: &quot;true&quot; | &quot;false&quot; - Note the
-    ///     use of a string rather than a boolean. Specifies whether explicit references
-    ///     to indexes are allowed inside the body of HTTP requests. If you want to
-    ///     configure access policies for domain sub-resources, such as specific indexes
-    ///     and domain APIs, you must disable this property. Default is true.
+    ///    * &quot;rest.action.multi.allow_explicit_index&quot;: &quot;true&quot; | &quot;false&quot; - Note the
+    ///    use of a string rather than a boolean. Specifies whether explicit references
+    ///    to indexes are allowed inside the body of HTTP requests. If you want to
+    ///    configure access policies for domain sub-resources, such as specific indexes
+    ///    and domain APIs, you must disable this property. Default is true.
     /// 
-    ///   - &quot;indices.fielddata.cache.size&quot;: &quot;80&quot; - Note the use of a string rather
-    ///     than a boolean. Specifies the percentage of heap space allocated to field
-    ///     data. Default is unbounded.
+    ///    * &quot;indices.fielddata.cache.size&quot;: &quot;80&quot; - Note the use of a string rather
+    ///    than a boolean. Specifies the percentage of heap space allocated to field
+    ///    data. Default is unbounded.
     /// 
-    ///   - &quot;indices.query.bool.max_clause_count&quot;: &quot;1024&quot; - Note the use of a string
-    ///     rather than a boolean. Specifies the maximum number of clauses allowed
-    ///     in a Lucene boolean query. Default is 1,024. Queries with more than the
-    ///     permitted number of clauses result in a TooManyClauses error.
+    ///    * &quot;indices.query.bool.max_clause_count&quot;: &quot;1024&quot; - Note the use of a string
+    ///    rather than a boolean. Specifies the maximum number of clauses allowed
+    ///    in a Lucene boolean query. Default is 1,024. Queries with more than the
+    ///    permitted number of clauses result in a TooManyClauses error.
     /// 
-    ///   - &quot;override_main_response_version&quot;: &quot;true&quot; | &quot;false&quot; - Note the use of
-    ///     a string rather than a boolean. Specifies whether the domain reports its
-    ///     version as 7.10 to allow Elasticsearch OSS clients and plugins to continue
-    ///     working with it. Default is false when creating a domain and true when
-    ///     upgrading a domain.
+    ///    * &quot;override_main_response_version&quot;: &quot;true&quot; | &quot;false&quot; - Note the use of
+    ///    a string rather than a boolean. Specifies whether the domain reports its
+    ///    version as 7.10 to allow Elasticsearch OSS clients and plugins to continue
+    ///    working with it. Default is false when creating a domain and true when
+    ///    upgrading a domain.
     /// 
     /// For more information, see Advanced cluster parameters (https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html#createdomain-configure-advanced-options).
     /// </summary>
