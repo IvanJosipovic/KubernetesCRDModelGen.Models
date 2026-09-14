@@ -84,15 +84,15 @@ public partial class V1alpha1DataCatalogSpec
     /// 
     /// For FEDERATED type the catalog name has following considerations and limits:
     /// 
-    ///   - The catalog name allows special characters such as _ , @ , \ , - . These
-    ///     characters are replaced with a hyphen (-) when creating the CFN Stack
-    ///     Name and with an underscore (_) when creating the Lambda Function and
-    ///     Glue Connection Name.
+    ///    * The catalog name allows special characters such as _ , @ , \ , - . These
+    ///    characters are replaced with a hyphen (-) when creating the CFN Stack
+    ///    Name and with an underscore (_) when creating the Lambda Function and
+    ///    Glue Connection Name.
     /// 
-    ///   - The catalog name has a theoretical limit of 128 characters. However,
-    ///     since we use it to create other resources that allow less characters and
-    ///     we prepend a prefix to it, the actual catalog name limit for FEDERATED
-    ///     catalog is 64 - 23 = 41 characters.
+    ///    * The catalog name has a theoretical limit of 128 characters. However,
+    ///    since we use it to create other resources that allow less characters and
+    ///    we prepend a prefix to it, the actual catalog name limit for FEDERATED
+    ///    catalog is 64 - 23 = 41 characters.
     /// 
     /// Regex Pattern: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*$`
     /// </summary>
@@ -103,30 +103,30 @@ public partial class V1alpha1DataCatalogSpec
     /// Specifies the Lambda function or functions to use for creating the data catalog.
     /// This is a mapping whose values depend on the catalog type.
     /// 
-    ///   - For the HIVE data catalog type, use the following syntax. The metadata-function
-    ///     parameter is required. The sdk-version parameter is optional and defaults
-    ///     to the currently supported version. metadata-function=lambda_arn, sdk-version=version_number
+    ///    * For the HIVE data catalog type, use the following syntax. The metadata-function
+    ///    parameter is required. The sdk-version parameter is optional and defaults
+    ///    to the currently supported version. metadata-function=lambda_arn, sdk-version=version_number
     /// 
-    ///   - For the LAMBDA data catalog type, use one of the following sets of required
-    ///     parameters, but not both. If you have one Lambda function that processes
-    ///     metadata and another for reading the actual data, use the following syntax.
-    ///     Both parameters are required. metadata-function=lambda_arn, record-function=lambda_arn
-    ///     If you have a composite Lambda function that processes both metadata and
-    ///     data, use the following syntax to specify your Lambda function. function=lambda_arn
+    ///    * For the LAMBDA data catalog type, use one of the following sets of required
+    ///    parameters, but not both. If you have one Lambda function that processes
+    ///    metadata and another for reading the actual data, use the following syntax.
+    ///    Both parameters are required. metadata-function=lambda_arn, record-function=lambda_arn
+    ///    If you have a composite Lambda function that processes both metadata and
+    ///    data, use the following syntax to specify your Lambda function. function=lambda_arn
     /// 
-    ///   - The GLUE type takes a catalog ID parameter and is required. The catalog_id
-    ///     is the account ID of the Amazon Web Services account to which the Glue
-    ///     Data Catalog belongs. catalog-id=catalog_id The GLUE data catalog type
-    ///     also applies to the default AwsDataCatalog that already exists in your
-    ///     account, of which you can have only one and cannot modify.
+    ///    * The GLUE type takes a catalog ID parameter and is required. The catalog_id
+    ///    is the account ID of the Amazon Web Services account to which the Glue
+    ///    Data Catalog belongs. catalog-id=catalog_id The GLUE data catalog type
+    ///    also applies to the default AwsDataCatalog that already exists in your
+    ///    account, of which you can have only one and cannot modify.
     /// 
-    ///   - The FEDERATED data catalog type uses one of the following parameters,
-    ///     but not both. Use connection-arn for an existing Glue connection. Use
-    ///     connection-type and connection-properties to specify the configuration
-    ///     setting for a new connection. connection-arn: lambda-role-arn (optional):
-    ///     The execution role to use for the Lambda function. If not provided, one
-    ///     is created. connection-type:MYSQL|REDSHIFT|...., connection-properties:&quot; &quot;
-    ///     For , use escaped JSON text, as in the following example. &quot;{\&quot;spill_bucket\&quot;:\&quot;my_spill\&quot;,\&quot;spill_prefix\&quot;:\&quot;athena-spill\&quot;,\&quot;host\&quot;:\&quot;abc12345.snowflakecomputing.com\&quot;,\&quot;port\&quot;:\&quot;1234\&quot;,\&quot;warehouse\&quot;:\&quot;DEV_WH\&quot;,\&quot;database\&quot;:\&quot;TEST\&quot;,\&quot;schema\&quot;:\&quot;PUBLIC\&quot;,\&quot;SecretArn\&quot;:\&quot;arn:aws:secretsmanager:ap-south-1:111122223333:secret:snowflake-XHb67j\&quot;}&quot;
+    ///    * The FEDERATED data catalog type uses one of the following parameters,
+    ///    but not both. Use connection-arn for an existing Glue connection. Use
+    ///    connection-type and connection-properties to specify the configuration
+    ///    setting for a new connection. connection-arn: lambda-role-arn (optional):
+    ///    The execution role to use for the Lambda function. If not provided, one
+    ///    is created. connection-type:MYSQL|REDSHIFT|...., connection-properties:&quot; &quot;
+    ///    For , use escaped JSON text, as in the following example. &quot;{\&quot;spill_bucket\&quot;:\&quot;my_spill\&quot;,\&quot;spill_prefix\&quot;:\&quot;athena-spill\&quot;,\&quot;host\&quot;:\&quot;abc12345.snowflakecomputing.com\&quot;,\&quot;port\&quot;:\&quot;1234\&quot;,\&quot;warehouse\&quot;:\&quot;DEV_WH\&quot;,\&quot;database\&quot;:\&quot;TEST\&quot;,\&quot;schema\&quot;:\&quot;PUBLIC\&quot;,\&quot;SecretArn\&quot;:\&quot;arn:aws:secretsmanager:ap-south-1:111122223333:secret:snowflake-XHb67j\&quot;}&quot;
     /// </summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
