@@ -7705,10 +7705,10 @@ public partial class V1alpha1WebACLSpec
     /// To work with CloudFront, you must also specify the Region US East (N. Virginia)
     /// as follows:
     /// 
-    ///   - CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT
-    ///     --region=us-east-1.
+    ///    * CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT
+    ///    --region=us-east-1.
     /// 
-    ///   - API and SDKs - For all calls, use the Region endpoint us-east-1.
+    ///    * API and SDKs - For all calls, use the Region endpoint us-east-1.
     /// </summary>
     [JsonPropertyName("scope")]
     public required string Scope { get; set; }

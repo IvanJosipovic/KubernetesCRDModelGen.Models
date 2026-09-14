@@ -269,9 +269,9 @@ public partial class V1alpha1MetricStreamSpec
     /// be in the same account as the metric stream. This IAM role must include the
     /// following permissions:
     /// 
-    ///   - firehose:PutRecord
+    ///    * firehose:PutRecord
     /// 
-    ///   - firehose:PutRecordBatch
+    ///    * firehose:PutRecordBatch
     /// </summary>
     [JsonPropertyName("roleARN")]
     public string? RoleARN { get; set; }
