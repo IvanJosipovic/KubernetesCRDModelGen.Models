@@ -10,7 +10,7 @@
   "src/Models/azure.upbound.io": "1.54.0",
   "src/Models/azuread.upbound.io": "1.15.0",
   "src/Models/crossplane.io": "1.18.0",
-  "src/Models/databricks.crossplane.io": "1.14.0",
+  "src/Models/databricks.crossplane.io": "1.15.0",
   "src/Models/databricks.upbound.io": "1.10.1",
   "src/Models/gcp.upbound.io": "1.25.0",
   "src/Models/github.upbound.io": "1.11.0",
