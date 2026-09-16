@@ -81,6 +81,10 @@ public partial class V1beta1ExternalMetadataSpecForProvider
     [JsonPropertyName("entityType")]
     public string? EntityType { get; set; }
 
+    /// <summary>Name of the external metadata object</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Owner of the external metadata object</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
@@ -139,6 +143,10 @@ public partial class V1beta1ExternalMetadataSpecInitProvider
     /// <summary>Type of entity within the external system</summary>
     [JsonPropertyName("entityType")]
     public string? EntityType { get; set; }
+
+    /// <summary>Name of the external metadata object</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Owner of the external metadata object</summary>
     [JsonPropertyName("owner")]
@@ -385,6 +393,10 @@ public partial class V1beta1ExternalMetadataStatusAtProvider
     /// <summary>Unique identifier of parent metastore</summary>
     [JsonPropertyName("metastoreId")]
     public string? MetastoreId { get; set; }
+
+    /// <summary>Name of the external metadata object</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Owner of the external metadata object</summary>
     [JsonPropertyName("owner")]

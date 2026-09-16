@@ -427,6 +427,9 @@ public partial class V1beta1SupervisorAgentToolStatusAtProvider
     [JsonPropertyName("knowledgeAssistant")]
     public V1beta1SupervisorAgentToolStatusAtProviderKnowledgeAssistant? KnowledgeAssistant { get; set; }
 
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }
 

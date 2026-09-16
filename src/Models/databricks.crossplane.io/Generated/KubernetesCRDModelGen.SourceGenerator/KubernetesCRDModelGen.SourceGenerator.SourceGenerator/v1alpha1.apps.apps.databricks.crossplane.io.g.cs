@@ -365,6 +365,10 @@ public partial class V1alpha1AppSpecForProvider
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppSpecForProviderGitRepository? GitRepository { get; set; }
 
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("noCompute")]
     public bool? NoCompute { get; set; }
 
@@ -707,6 +711,10 @@ public partial class V1alpha1AppSpecInitProvider
     /// <summary>Git repository configuration for app deployments (see below). When specified, deployments can reference code from this repository by providing only the git reference (branch, tag, or commit).</summary>
     [JsonPropertyName("gitRepository")]
     public V1alpha1AppSpecInitProviderGitRepository? GitRepository { get; set; }
+
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     [JsonPropertyName("noCompute")]
     public bool? NoCompute { get; set; }
@@ -1571,6 +1579,10 @@ public partial class V1alpha1AppStatusAtProvider
     /// <summary>Id of the SQL warehouse to grant permission on.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     [JsonPropertyName("noCompute")]
     public bool? NoCompute { get; set; }

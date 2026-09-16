@@ -443,6 +443,10 @@ public partial class V1beta1WorkspaceSettingV2SpecForProvider
     [JsonPropertyName("integerVal")]
     public V1beta1WorkspaceSettingV2SpecForProviderIntegerVal? IntegerVal { get; set; }
 
+    /// <summary>Name of the setting</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
     [JsonPropertyName("operationalEmailCustomRecipient")]
     public V1beta1WorkspaceSettingV2SpecForProviderOperationalEmailCustomRecipient? OperationalEmailCustomRecipient { get; set; }
@@ -863,6 +867,10 @@ public partial class V1beta1WorkspaceSettingV2SpecInitProvider
     /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
     [JsonPropertyName("integerVal")]
     public V1beta1WorkspaceSettingV2SpecInitProviderIntegerVal? IntegerVal { get; set; }
+
+    /// <summary>Name of the setting</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
     [JsonPropertyName("operationalEmailCustomRecipient")]
@@ -1542,6 +1550,10 @@ public partial class V1beta1WorkspaceSettingV2StatusAtProvider
     /// <summary>Setting value for integer type setting. This is the setting value set by consumers, check effective_integer_val for final setting value</summary>
     [JsonPropertyName("integerVal")]
     public V1beta1WorkspaceSettingV2StatusAtProviderIntegerVal? IntegerVal { get; set; }
+
+    /// <summary>Name of the setting</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value</summary>
     [JsonPropertyName("operationalEmailCustomRecipient")]

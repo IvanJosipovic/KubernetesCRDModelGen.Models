@@ -201,6 +201,13 @@ public partial class V1beta1PolicyInfoSpecForProvider
     public IList<V1beta1PolicyInfoSpecForProviderMatchColumns>? MatchColumns { get; set; }
 
     /// <summary>
+    /// Name of the policy. Required on create and optional on update.
+    /// To rename the policy, set name to a different value on update
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// Full name of the securable on which the policy is defined.
     /// Required on create
     /// </summary>
@@ -399,6 +406,13 @@ public partial class V1beta1PolicyInfoSpecInitProvider
     /// </summary>
     [JsonPropertyName("matchColumns")]
     public IList<V1beta1PolicyInfoSpecInitProviderMatchColumns>? MatchColumns { get; set; }
+
+    /// <summary>
+    /// Name of the policy. Required on create and optional on update.
+    /// To rename the policy, set name to a different value on update
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// Full name of the securable on which the policy is defined.
@@ -782,6 +796,13 @@ public partial class V1beta1PolicyInfoStatusAtProvider
     /// </summary>
     [JsonPropertyName("matchColumns")]
     public IList<V1beta1PolicyInfoStatusAtProviderMatchColumns>? MatchColumns { get; set; }
+
+    /// <summary>
+    /// Name of the policy. Required on create and optional on update.
+    /// To rename the policy, set name to a different value on update
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// Full name of the securable on which the policy is defined.

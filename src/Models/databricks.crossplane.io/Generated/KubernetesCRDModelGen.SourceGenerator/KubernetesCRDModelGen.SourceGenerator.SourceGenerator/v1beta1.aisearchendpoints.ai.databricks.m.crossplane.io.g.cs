@@ -461,6 +461,15 @@ public partial class V1beta1AISearchEndpointStatusAtProvider
     public string? LastUpdatedUser { get; set; }
 
     /// <summary>
+    /// Name of the AI Search endpoint. Server-assigned full resource path
+    /// (workspaces/{workspace}/endpoints/{endpoint}) on output. On create, the
+    /// user-supplied short name is conveyed via CreateEndpointRequest.endpoint_id;
+    /// the server composes the full name and returns it on the response
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The Workspace where this Endpoint will be created.
     /// Format: workspaces/{workspace_id}
     /// </summary>

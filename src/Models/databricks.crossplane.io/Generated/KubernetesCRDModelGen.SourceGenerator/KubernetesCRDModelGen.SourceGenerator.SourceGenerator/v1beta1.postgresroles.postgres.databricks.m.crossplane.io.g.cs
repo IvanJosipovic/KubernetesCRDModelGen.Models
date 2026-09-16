@@ -789,6 +789,13 @@ public partial class V1beta1PostgresRoleStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// Output only. The full resource path of the role.
+    /// Format: projects/{project_id}/branches/{branch_id}/roles/{role_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The Branch where this Role exists.
     /// Format: projects/{project_id}/branches/{branch_id}
     /// </summary>

@@ -333,6 +333,13 @@ public partial class V1beta1DisasterRecoveryStableURLStatusAtProvider
     [JsonPropertyName("initialWorkspaceId")]
     public string? InitialWorkspaceId { get; set; }
 
+    /// <summary>
+    /// Fully qualified resource name.
+    /// Format: accounts/{account_id}/stable-urls/{stable_url_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>The parent resource. Format: accounts/{account_id}</summary>
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }

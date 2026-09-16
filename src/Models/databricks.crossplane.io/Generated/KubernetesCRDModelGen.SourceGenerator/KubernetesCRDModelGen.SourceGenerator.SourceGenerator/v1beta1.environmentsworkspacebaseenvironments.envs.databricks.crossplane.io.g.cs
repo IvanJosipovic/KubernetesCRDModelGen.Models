@@ -403,6 +403,13 @@ public partial class V1beta1EnvironmentsWorkspaceBaseEnvironmentStatusAtProvider
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
+    /// <summary>
+    /// The resource name of the workspace base environment.
+    /// Format: workspace-base-environments/{workspace-base-environment}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Configure the provider for management through account provider.</summary>
     [JsonPropertyName("providerConfig")]
     public V1beta1EnvironmentsWorkspaceBaseEnvironmentStatusAtProviderProviderConfig? ProviderConfig { get; set; }

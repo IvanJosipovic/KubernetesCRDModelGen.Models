@@ -493,6 +493,17 @@ public partial class V1alpha1ServicePrincipalFederationPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>
+    /// Resource name for the federation policy. Example values include
+    /// accounts/&lt;account-id&gt;/federationPolicies/my-federation-policy for Account Federation Policies, and
+    /// accounts/&lt;account-id&gt;/servicePrincipals/&lt;service-principal-id&gt;/federationPolicies/my-federation-policy
+    /// for Service Principal Federation Policies. Typically an output parameter, which does not need to be
+    /// specified in create or update requests. If specified in a request, must match the value in the
+    /// request URL
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>(OidcFederationPolicy, optional)</summary>
     [JsonPropertyName("oidcPolicy")]
     public V1alpha1ServicePrincipalFederationPolicyStatusAtProviderOidcPolicy? OidcPolicy { get; set; }

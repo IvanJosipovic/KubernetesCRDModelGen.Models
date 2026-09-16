@@ -118,6 +118,10 @@ public partial class V1alpha1DatabaseInstanceSpecForProvider
     [JsonPropertyName("enableReadableSecondaries")]
     public bool? EnableReadableSecondaries { get; set; }
 
+    /// <summary>The name of the instance. This is the unique identifier for the instance</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>
     /// The number of nodes in the instance, composed of 1 primary and 0 or more secondaries. Defaults to
     /// 1 primary and 0 secondaries. This field is input only, see effective_node_count for the output
@@ -251,6 +255,10 @@ public partial class V1alpha1DatabaseInstanceSpecInitProvider
     /// <summary>Whether to enable secondaries to serve read-only traffic. Defaults to false</summary>
     [JsonPropertyName("enableReadableSecondaries")]
     public bool? EnableReadableSecondaries { get; set; }
+
+    /// <summary>The name of the instance. This is the unique identifier for the instance</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// The number of nodes in the instance, composed of 1 primary and 0 or more secondaries. Defaults to
@@ -638,6 +646,10 @@ public partial class V1alpha1DatabaseInstanceStatusAtProvider
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The name of the instance. This is the unique identifier for the instance</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// The number of nodes in the instance, composed of 1 primary and 0 or more secondaries. Defaults to

@@ -339,6 +339,9 @@ public partial class V1beta1KnowledgeAssistantStatusAtProvider
     [JsonPropertyName("instructions")]
     public string? Instructions { get; set; }
 
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("providerConfig")]
     public V1beta1KnowledgeAssistantStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 

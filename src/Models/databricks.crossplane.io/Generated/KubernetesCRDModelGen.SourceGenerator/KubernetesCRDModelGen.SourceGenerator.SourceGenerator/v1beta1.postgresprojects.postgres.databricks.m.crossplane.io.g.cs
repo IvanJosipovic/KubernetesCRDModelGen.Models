@@ -949,6 +949,13 @@ public partial class V1beta1PostgresProjectStatusAtProvider
     [JsonPropertyName("initialEndpointSpec")]
     public V1beta1PostgresProjectStatusAtProviderInitialEndpointSpec? InitialEndpointSpec { get; set; }
 
+    /// <summary>
+    /// Output only. The full resource path of the project.
+    /// Format: projects/{project_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>The part of the name, chosen by the user when the resource was created</summary>
     [JsonPropertyName("projectId")]
     public string? ProjectId { get; set; }

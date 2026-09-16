@@ -710,6 +710,10 @@ public partial class V1beta1AISearchIndexStatusAtProvider
     [JsonPropertyName("indexType")]
     public string? IndexType { get; set; }
 
+    /// <summary>Name of the source column</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>
     /// The Endpoint where this Index will be created.
     /// Format: workspaces/{workspace_id}/endpoints/{endpoint_id}

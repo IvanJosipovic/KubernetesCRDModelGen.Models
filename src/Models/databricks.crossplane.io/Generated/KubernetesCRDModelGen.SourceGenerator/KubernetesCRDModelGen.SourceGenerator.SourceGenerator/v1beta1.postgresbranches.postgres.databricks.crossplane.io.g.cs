@@ -885,6 +885,13 @@ public partial class V1beta1PostgresBranchStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// Output only. The full resource path of the branch.
+    /// Format: projects/{project_id}/branches/{branch_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The project containing this branch (API resource hierarchy).
     /// Format: projects/{project_id}
     /// </summary>
