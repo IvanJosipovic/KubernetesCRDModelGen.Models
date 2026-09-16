@@ -252,6 +252,9 @@ spec:
                         description: (boolean, optional)
                         type: number
                     type: object
+                  name:
+                    description: Name of the setting
+                    type: string
                   operationalEmailCustomRecipient:
                     description: Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value
                     properties:
@@ -487,6 +490,9 @@ spec:
                         description: (boolean, optional)
                         type: number
                     type: object
+                  name:
+                    description: Name of the setting
+                    type: string
                   operationalEmailCustomRecipient:
                     description: Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value
                     properties:
@@ -846,6 +852,9 @@ spec:
                         description: (boolean, optional)
                         type: number
                     type: object
+                  name:
+                    description: Name of the setting
+                    type: string
                   operationalEmailCustomRecipient:
                     description: Setting value for operational_email_custom_recipient setting. This is the setting value set by consumers, check effective_operational_email_custom_recipient for final setting value
                     properties:

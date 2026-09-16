@@ -66,6 +66,10 @@ public partial class V1beta1SecretUcSpecForProvider
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
 
+    /// <summary>The name of the secret, relative to its parent schema</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>
     /// The owner of the secret. Defaults to the creating principal on creation. Can be updated to
     /// transfer ownership of the secret to another principal
@@ -132,6 +136,10 @@ public partial class V1beta1SecretUcSpecInitProvider
     /// </summary>
     [JsonPropertyName("expireTime")]
     public string? ExpireTime { get; set; }
+
+    /// <summary>The name of the secret, relative to its parent schema</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// The owner of the secret. Defaults to the creating principal on creation. Can be updated to
@@ -327,6 +335,10 @@ public partial class V1beta1SecretUcStatusAtProvider
     /// <summary>Unique identifier of the metastore hosting the secret</summary>
     [JsonPropertyName("metastoreId")]
     public string? MetastoreId { get; set; }
+
+    /// <summary>The name of the secret, relative to its parent schema</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>
     /// The owner of the secret. Defaults to the creating principal on creation. Can be updated to

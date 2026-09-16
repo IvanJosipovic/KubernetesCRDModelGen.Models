@@ -330,6 +330,10 @@ public partial class V1beta1PostgresCatalogStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Output only. The full resource path of the catalog.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Configure the provider for management through account provider.</summary>
     [JsonPropertyName("providerConfig")]
     public V1beta1PostgresCatalogStatusAtProviderProviderConfig? ProviderConfig { get; set; }

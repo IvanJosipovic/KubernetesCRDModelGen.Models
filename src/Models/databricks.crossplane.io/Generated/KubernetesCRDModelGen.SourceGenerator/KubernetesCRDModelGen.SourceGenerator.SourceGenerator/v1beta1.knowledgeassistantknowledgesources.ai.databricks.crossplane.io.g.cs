@@ -459,6 +459,9 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProvider
     [JsonPropertyName("knowledgeCutoffTime")]
     public string? KnowledgeCutoffTime { get; set; }
 
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }
 

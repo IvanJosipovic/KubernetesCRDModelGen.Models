@@ -78,6 +78,9 @@ spec:
                   comment:
                     description: User-supplied free-form text.
                     type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
+                    type: string
                   object:
                     items:
                       properties:
@@ -164,6 +167,9 @@ spec:
                 properties:
                   comment:
                     description: User-supplied free-form text.
+                    type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
                     type: string
                   object:
                     items:
@@ -322,6 +328,9 @@ spec:
             required:
             - forProvider
             type: object
+            x-kubernetes-validations:
+            - message: spec.forProvider.name is a required parameter
+              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.name) || (has(self.initProvider) && has(self.initProvider.name))"
           status:
             description: ShareStatus defines the observed state of Share.
             properties:
@@ -341,6 +350,9 @@ spec:
                     type: string
                   id:
                     description: the ID of the share, the same as name.
+                    type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
                     type: string
                   object:
                     items:
@@ -564,6 +576,9 @@ spec:
                   comment:
                     description: User-supplied free-form text.
                     type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
+                    type: string
                   object:
                     items:
                       properties:
@@ -650,6 +665,9 @@ spec:
                 properties:
                   comment:
                     description: User-supplied free-form text.
+                    type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
                     type: string
                   object:
                     items:
@@ -808,6 +826,9 @@ spec:
             required:
             - forProvider
             type: object
+            x-kubernetes-validations:
+            - message: spec.forProvider.name is a required parameter
+              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.name) || (has(self.initProvider) && has(self.initProvider.name))"
           status:
             description: ShareStatus defines the observed state of Share.
             properties:
@@ -827,6 +848,9 @@ spec:
                     type: string
                   id:
                     description: the ID of the share, the same as name.
+                    type: string
+                  name:
+                    description: Name of share. Change forces creation of a new resource.
                     type: string
                   object:
                     items:

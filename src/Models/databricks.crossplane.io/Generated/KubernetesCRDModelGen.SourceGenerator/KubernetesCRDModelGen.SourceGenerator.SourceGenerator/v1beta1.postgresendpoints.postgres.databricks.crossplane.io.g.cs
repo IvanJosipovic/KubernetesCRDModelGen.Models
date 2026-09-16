@@ -1106,6 +1106,13 @@ public partial class V1beta1PostgresEndpointStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// Output only. The full resource path of the endpoint.
+    /// Format: projects/{project_id}/branches/{branch_id}/endpoints/{endpoint_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The branch containing this endpoint (API resource hierarchy).
     /// Format: projects/{project_id}/branches/{branch_id}
     /// </summary>

@@ -147,6 +147,10 @@ public partial class V1beta1ShareSpecForProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
+    /// <summary>Name of share. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("object")]
     public IList<V1beta1ShareSpecForProviderObject>? Object { get; set; }
 
@@ -265,6 +269,10 @@ public partial class V1beta1ShareSpecInitProvider
     /// <summary>User-supplied free-form text.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
+
+    /// <summary>Name of share. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     [JsonPropertyName("object")]
     public IList<V1beta1ShareSpecInitProviderObject>? Object { get; set; }
@@ -601,6 +609,10 @@ public partial class V1beta1ShareStatusAtProvider
     /// <summary>the ID of the share, the same as name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Name of share. Change forces creation of a new resource.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     [JsonPropertyName("object")]
     public IList<V1beta1ShareStatusAtProviderObject>? Object { get; set; }

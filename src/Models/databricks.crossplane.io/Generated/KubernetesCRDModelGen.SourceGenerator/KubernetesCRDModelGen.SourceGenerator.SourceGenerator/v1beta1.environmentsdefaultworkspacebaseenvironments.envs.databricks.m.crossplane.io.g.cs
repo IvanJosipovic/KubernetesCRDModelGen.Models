@@ -904,6 +904,13 @@ public partial class V1beta1EnvironmentsDefaultWorkspaceBaseEnvironmentStatusAtP
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>
+    /// The resource name of this singleton resource.
+    /// Format: default-workspace-base-environment
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Configure the provider for management through account provider.</summary>
     [JsonPropertyName("providerConfig")]
     public V1beta1EnvironmentsDefaultWorkspaceBaseEnvironmentStatusAtProviderProviderConfig? ProviderConfig { get; set; }

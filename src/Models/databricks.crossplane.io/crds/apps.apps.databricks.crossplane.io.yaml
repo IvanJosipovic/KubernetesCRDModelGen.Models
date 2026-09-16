@@ -98,6 +98,9 @@ spec:
                         description: URL of the Git repository.
                         type: string
                     type: object
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
+                    type: string
                   noCompute:
                     type: boolean
                   providerConfig:
@@ -299,6 +302,9 @@ spec:
                         description: URL of the Git repository.
                         type: string
                     type: object
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
+                    type: string
                   noCompute:
                     type: boolean
                   providerConfig:
@@ -550,6 +556,9 @@ spec:
             required:
             - forProvider
             type: object
+            x-kubernetes-validations:
+            - message: spec.forProvider.name is a required parameter
+              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.name) || (has(self.initProvider) && has(self.initProvider.name))"
           status:
             description: AppStatus defines the observed state of App.
             properties:
@@ -704,6 +713,9 @@ spec:
                     type: object
                   id:
                     description: Id of the SQL warehouse to grant permission on.
+                    type: string
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
                     type: string
                   noCompute:
                     type: boolean
@@ -1122,6 +1134,9 @@ spec:
                         description: URL of the Git repository.
                         type: string
                     type: object
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
+                    type: string
                   noCompute:
                     type: boolean
                   providerConfig:
@@ -1323,6 +1338,9 @@ spec:
                         description: URL of the Git repository.
                         type: string
                     type: object
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
+                    type: string
                   noCompute:
                     type: boolean
                   providerConfig:
@@ -1574,6 +1592,9 @@ spec:
             required:
             - forProvider
             type: object
+            x-kubernetes-validations:
+            - message: spec.forProvider.name is a required parameter
+              rule: "!('*' in self.managementPolicies || 'Create' in self.managementPolicies || 'Update' in self.managementPolicies) || has(self.forProvider.name) || (has(self.initProvider) && has(self.initProvider.name))"
           status:
             description: AppStatus defines the observed state of App.
             properties:
@@ -1728,6 +1749,9 @@ spec:
                     type: object
                   id:
                     description: Id of the SQL warehouse to grant permission on.
+                    type: string
+                  name:
+                    description: The name of the app. The name must contain only lowercase alphanumeric characters and hyphens. It must be unique within the workspace.
                     type: string
                   noCompute:
                     type: boolean

@@ -526,6 +526,10 @@ public partial class V1beta1DataClassificationCatalogConfigStatusAtProvider
     [JsonPropertyName("includedSchemas")]
     public V1beta1DataClassificationCatalogConfigStatusAtProviderIncludedSchemas? IncludedSchemas { get; set; }
 
+    /// <summary>Resource name in the format: catalogs/{catalog_name}/config</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Parent resource in the format: catalogs/{catalog_name}</summary>
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }

@@ -336,6 +336,9 @@ public partial class V1beta1SupervisorAgentStatusAtProvider
     [JsonPropertyName("instructions")]
     public string? Instructions { get; set; }
 
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     [JsonPropertyName("providerConfig")]
     public V1beta1SupervisorAgentStatusAtProviderProviderConfig? ProviderConfig { get; set; }
 

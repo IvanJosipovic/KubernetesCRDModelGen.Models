@@ -522,6 +522,10 @@ public partial class V1beta1DisasterRecoveryFailoverGroupStatusAtProvider
     [JsonPropertyName("initialPrimaryRegion")]
     public string? InitialPrimaryRegion { get; set; }
 
+    /// <summary>Resource name for this location</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>The parent resource. Format: accounts/{account_id}</summary>
     [JsonPropertyName("parent")]
     public string? Parent { get; set; }

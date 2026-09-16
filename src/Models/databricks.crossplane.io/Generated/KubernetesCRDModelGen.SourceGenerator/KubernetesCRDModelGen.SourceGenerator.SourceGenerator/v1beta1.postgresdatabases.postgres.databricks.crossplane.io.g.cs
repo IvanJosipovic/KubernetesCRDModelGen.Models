@@ -740,6 +740,13 @@ public partial class V1beta1PostgresDatabaseStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// The resource name of the database.
+    /// Format: projects/{project_id}/branches/{branch_id}/databases/{database_id}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The branch containing this database.
     /// Format: projects/{project_id}/branches/{branch_id}
     /// </summary>

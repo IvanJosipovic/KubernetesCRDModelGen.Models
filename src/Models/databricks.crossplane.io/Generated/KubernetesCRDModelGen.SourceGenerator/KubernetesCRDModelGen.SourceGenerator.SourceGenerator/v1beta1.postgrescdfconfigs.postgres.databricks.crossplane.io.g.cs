@@ -689,6 +689,13 @@ public partial class V1beta1PostgresCdfConfigStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// Output only. The full resource name of the CdfConfig.
+    /// Format: projects/{project}/branches/{branch}/databases/{database}/cdf-configs/{cdf_config}
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
     /// The parent database under which to create the CdfConfig.
     /// Format: projects/{project}/branches/{branch}/databases/{database}
     /// </summary>

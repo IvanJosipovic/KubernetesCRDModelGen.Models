@@ -803,6 +803,13 @@ public partial class V1beta1PostgresSyncedTableStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>
+    /// Output only. The Full resource name of the synced table in Postgres
+    /// where (catalog, schema, table) are the UC entity names.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Configure the provider for management through account provider.</summary>
     [JsonPropertyName("providerConfig")]
     public V1beta1PostgresSyncedTableStatusAtProviderProviderConfig? ProviderConfig { get; set; }
