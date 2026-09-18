@@ -459,14 +459,14 @@ public partial class V1alpha1ModelPackageSpecInferenceSpecificationContainers
 /// Specifies details about inference jobs that you can run with models based
 /// on this model package, including the following information:
 /// 
-///   - The Amazon ECR paths of containers that contain the inference code and
-///     model artifacts.
+///    * The Amazon ECR paths of containers that contain the inference code and
+///    model artifacts.
 /// 
-///   - The instance types that the model package supports for transform jobs
-///     and real-time endpoints used for inference.
+///    * The instance types that the model package supports for transform jobs
+///    and real-time endpoints used for inference.
 /// 
-///   - The input and output content formats that the model package supports
-///     for inference.
+///    * The input and output content formats that the model package supports
+///    for inference.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -990,14 +990,14 @@ public partial class V1alpha1ModelPackageSpec
     /// Specifies details about inference jobs that you can run with models based
     /// on this model package, including the following information:
     /// 
-    ///   - The Amazon ECR paths of containers that contain the inference code and
-    ///     model artifacts.
+    ///    * The Amazon ECR paths of containers that contain the inference code and
+    ///    model artifacts.
     /// 
-    ///   - The instance types that the model package supports for transform jobs
-    ///     and real-time endpoints used for inference.
+    ///    * The instance types that the model package supports for transform jobs
+    ///    and real-time endpoints used for inference.
     /// 
-    ///   - The input and output content formats that the model package supports
-    ///     for inference.
+    ///    * The input and output content formats that the model package supports
+    ///    for inference.
     /// </summary>
     [JsonPropertyName("inferenceSpecification")]
     public V1alpha1ModelPackageSpecInferenceSpecification? InferenceSpecification { get; set; }

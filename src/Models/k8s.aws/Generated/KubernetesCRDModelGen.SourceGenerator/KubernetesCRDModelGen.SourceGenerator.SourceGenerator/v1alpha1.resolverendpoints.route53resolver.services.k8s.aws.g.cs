@@ -157,11 +157,11 @@ public partial class V1alpha1ResolverEndpointSpec
     /// <summary>
     /// Specify the applicable value:
     /// 
-    ///   - INBOUND: Resolver forwards DNS queries to the DNS service for a VPC
-    ///     from your network
+    ///    * INBOUND: Resolver forwards DNS queries to the DNS service for a VPC
+    ///    from your network
     /// 
-    ///   - OUTBOUND: Resolver forwards DNS queries from the DNS service for a VPC
-    ///     to your network
+    ///    * OUTBOUND: Resolver forwards DNS queries from the DNS service for a VPC
+    ///    to your network
     /// </summary>
     [JsonPropertyName("direction")]
     public required string Direction { get; set; }

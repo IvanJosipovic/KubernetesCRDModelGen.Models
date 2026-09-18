@@ -615,7 +615,7 @@ public partial class V1alpha1RuleGroupSpec
     /// You can&apos;t change or exceed this capacity when you update the rule group,
     /// so leave room for your rule group to grow.
     /// 
-    /// # Capacity for a stateless rule group
+    /// Capacity for a stateless rule group
     /// 
     /// For a stateless rule group, the capacity required is the sum of the capacity
     /// requirements of the individual rules that you expect to have in the rule
@@ -624,15 +624,15 @@ public partial class V1alpha1RuleGroupSpec
     /// To calculate the capacity requirement of a single rule, multiply the capacity
     /// requirement values of each of the rule&apos;s match settings:
     /// 
-    ///   - A match setting with no criteria specified has a value of 1.
+    ///    * A match setting with no criteria specified has a value of 1.
     /// 
-    ///   - A match setting with Any specified has a value of 1.
+    ///    * A match setting with Any specified has a value of 1.
     /// 
-    ///   - All other match settings have a value equal to the number of elements
-    ///     provided in the setting. For example, a protocol setting [&quot;UDP&quot;] and a
-    ///     source setting [&quot;10.0.0.0/24&quot;] each have a value of 1. A protocol setting
-    ///     [&quot;UDP&quot;,&quot;TCP&quot;] has a value of 2. A source setting [&quot;10.0.0.0/24&quot;,&quot;10.0.0.1/24&quot;,&quot;10.0.0.2/24&quot;]
-    ///     has a value of 3.
+    ///    * All other match settings have a value equal to the number of elements
+    ///    provided in the setting. For example, a protocol setting [&quot;UDP&quot;] and a
+    ///    source setting [&quot;10.0.0.0/24&quot;] each have a value of 1. A protocol setting
+    ///    [&quot;UDP&quot;,&quot;TCP&quot;] has a value of 2. A source setting [&quot;10.0.0.0/24&quot;,&quot;10.0.0.1/24&quot;,&quot;10.0.0.2/24&quot;]
+    ///    has a value of 3.
     /// 
     /// A rule with no criteria specified in any of its match settings has a capacity
     /// requirement of 1. A rule with protocol setting [&quot;UDP&quot;,&quot;TCP&quot;], source setting
@@ -640,7 +640,7 @@ public partial class V1alpha1RuleGroupSpec
     /// no specification for each of the other match settings has a capacity requirement
     /// of 6.
     /// 
-    /// # Capacity for a stateful rule group
+    /// Capacity for a stateful rule group
     /// 
     /// For a stateful rule group, the minimum capacity required is the number of
     /// individual rules that you expect to have in the rule group.

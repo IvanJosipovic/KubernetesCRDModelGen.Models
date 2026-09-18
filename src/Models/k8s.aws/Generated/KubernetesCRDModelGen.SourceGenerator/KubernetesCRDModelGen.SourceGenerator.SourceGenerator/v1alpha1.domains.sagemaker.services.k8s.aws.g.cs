@@ -1161,10 +1161,10 @@ public partial class V1alpha1DomainSpec
     /// <summary>
     /// Specifies the VPC used for non-EFS traffic. The default value is PublicInternetOnly.
     /// 
-    ///   - PublicInternetOnly - Non-EFS traffic is through a VPC managed by Amazon
-    ///     SageMaker AI, which allows direct internet access
+    ///    * PublicInternetOnly - Non-EFS traffic is through a VPC managed by Amazon
+    ///    SageMaker AI, which allows direct internet access
     /// 
-    ///   - VpcOnly - All traffic is through the specified VPC and subnets
+    ///    * VpcOnly - All traffic is through the specified VPC and subnets
     /// </summary>
     [JsonPropertyName("appNetworkAccessType")]
     public string? AppNetworkAccessType { get; set; }

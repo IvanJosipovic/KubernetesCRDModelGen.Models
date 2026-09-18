@@ -189,15 +189,15 @@ public partial class V1alpha1QueueSpec
     /// 
     /// When you use queue tags, keep the following guidelines in mind:
     /// 
-    ///   - Adding more than 50 tags to a queue isn&apos;t recommended.
+    ///    * Adding more than 50 tags to a queue isn&apos;t recommended.
     /// 
-    ///   - Tags don&apos;t have any semantic meaning. Amazon SQS interprets tags as
-    ///     character strings.
+    ///    * Tags don&apos;t have any semantic meaning. Amazon SQS interprets tags as
+    ///    character strings.
     /// 
-    ///   - Tags are case-sensitive.
+    ///    * Tags are case-sensitive.
     /// 
-    ///   - A new tag with a key identical to that of an existing tag overwrites
-    ///     the existing tag.
+    ///    * A new tag with a key identical to that of an existing tag overwrites
+    ///    the existing tag.
     /// 
     /// For a full list of tag restrictions, see Quotas related to queues (https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-limits.html#limits-queues)
     /// in the Amazon SQS Developer Guide.

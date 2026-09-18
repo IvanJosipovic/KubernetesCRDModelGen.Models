@@ -282,7 +282,7 @@ public partial class V1alpha1PatchBaselineSpec
     /// its status is reported as INSTALLED_OTHER. Any package not already installed
     /// on the node is skipped. This is the default action if no option is specified.
     /// 
-    /// # BLOCK
+    /// BLOCK
     /// 
     /// All OSs: Packages in the rejected patches list, and packages that include
     /// them as dependencies, aren&apos;t installed by Patch Manager under any circumstances.
@@ -308,9 +308,9 @@ public partial class V1alpha1PatchBaselineSpec
     /// level of patches it specifies and the operating system family it applies
     /// to. In this case, you could specify the following key-value pairs:
     /// 
-    ///   - Key=PatchSeverity,Value=Critical
+    ///    * Key=PatchSeverity,Value=Critical
     /// 
-    ///   - Key=OS,Value=Windows
+    ///    * Key=OS,Value=Windows
     /// 
     /// To add tags to an existing patch baseline, use the AddTagsToResource operation.
     /// </summary>

@@ -640,10 +640,10 @@ public partial class V1alpha1DeliveryStreamSpec
     /// <summary>
     /// The Firehose stream type. This parameter can be one of the following values:
     /// 
-    ///   - DirectPut: Provider applications access the Firehose stream directly.
+    ///    * DirectPut: Provider applications access the Firehose stream directly.
     /// 
-    ///   - KinesisStreamAsSource: The Firehose stream uses a Kinesis data stream
-    ///     as a source.
+    ///    * KinesisStreamAsSource: The Firehose stream uses a Kinesis data stream
+    ///    as a source.
     /// </summary>
     [JsonPropertyName("deliveryStreamType")]
     public string? DeliveryStreamType { get; set; }
@@ -671,7 +671,7 @@ public partial class V1alpha1DeliveryStreamSpec
     /// this permission, requests to create new Firehose streams with IAM resource
     /// tags will fail with an AccessDeniedException such as following.
     /// 
-    /// # AccessDeniedException
+    /// AccessDeniedException
     /// 
     /// User: arn:aws:sts::x:assumed-role/x/x is not authorized to perform: firehose:TagDeliveryStream
     /// on resource: arn:aws:firehose:us-east-1:x:deliverystream/x with an explicit

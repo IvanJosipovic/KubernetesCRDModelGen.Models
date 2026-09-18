@@ -39,12 +39,12 @@ public partial class V1alpha1KeyspaceList : IKubernetesObject<V1ListMeta>, IItem
 /// <summary>
 /// The replication specification of the keyspace includes:
 /// 
-///   - replicationStrategy - the required value is SINGLE_REGION or MULTI_REGION.
+///    * replicationStrategy - the required value is SINGLE_REGION or MULTI_REGION.
 /// 
-///   - regionList - if the replicationStrategy is MULTI_REGION, the regionList
-///     requires the current Region and at least one additional Amazon Web Services
-///     Region where the keyspace is going to be replicated in. The maximum number
-///     of supported replication Regions including the current Region is six.
+///    * regionList - if the replicationStrategy is MULTI_REGION, the regionList
+///    requires the current Region and at least one additional Amazon Web Services
+///    Region where the keyspace is going to be replicated in. The maximum number
+///    of supported replication Regions including the current Region is six.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -98,12 +98,12 @@ public partial class V1alpha1KeyspaceSpec
     /// <summary>
     /// The replication specification of the keyspace includes:
     /// 
-    ///   - replicationStrategy - the required value is SINGLE_REGION or MULTI_REGION.
+    ///    * replicationStrategy - the required value is SINGLE_REGION or MULTI_REGION.
     /// 
-    ///   - regionList - if the replicationStrategy is MULTI_REGION, the regionList
-    ///     requires the current Region and at least one additional Amazon Web Services
-    ///     Region where the keyspace is going to be replicated in. The maximum number
-    ///     of supported replication Regions including the current Region is six.
+    ///    * regionList - if the replicationStrategy is MULTI_REGION, the regionList
+    ///    requires the current Region and at least one additional Amazon Web Services
+    ///    Region where the keyspace is going to be replicated in. The maximum number
+    ///    of supported replication Regions including the current Region is six.
     /// </summary>
     [JsonPropertyName("replicationSpecification")]
     public V1alpha1KeyspaceSpecReplicationSpecification? ReplicationSpecification { get; set; }
