@@ -87,13 +87,13 @@ public partial class V1alpha1OrganizationalUnitSpec
     /// The regex pattern (http://wikipedia.org/wiki/regex) for a parent ID string
     /// requires one of the following:
     /// 
-    ///   - Root - A string that begins with &quot;r-&quot; followed by from 4 to 32 lowercase
-    ///     letters or digits.
+    ///    * Root - A string that begins with &quot;r-&quot; followed by from 4 to 32 lowercase
+    ///    letters or digits.
     /// 
-    ///   - Organizational unit (OU) - A string that begins with &quot;ou-&quot; followed
-    ///     by from 4 to 32 lowercase letters or digits (the ID of the root that the
-    ///     OU is in). This string is followed by a second &quot;-&quot; dash and from 8 to
-    ///     32 additional lowercase letters or digits.
+    ///    * Organizational unit (OU) - A string that begins with &quot;ou-&quot; followed
+    ///    by from 4 to 32 lowercase letters or digits (the ID of the root that the
+    ///    OU is in). This string is followed by a second &quot;-&quot; dash and from 8 to
+    ///    32 additional lowercase letters or digits.
     /// 
     /// Regex Pattern: `^(r-[0-9a-z]{4,32})|(ou-[0-9a-z]{4,32}-[a-z0-9]{8,32})$`
     /// </summary>

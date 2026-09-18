@@ -84,14 +84,14 @@ spec:
                   AllowedOAuthFlowsUserPoolClient must be true before you can configure the
                   following features in your app client.
 
-                    - CallBackURLs: Callback URLs.
+                     * CallBackURLs: Callback URLs.
 
-                    - LogoutURLs: Sign-out redirect URLs.
+                     * LogoutURLs: Sign-out redirect URLs.
 
-                    - AllowedOAuthScopes: OAuth 2.0 scopes.
+                     * AllowedOAuthScopes: OAuth 2.0 scopes.
 
-                    - AllowedOAuthFlows: Support for authorization code, implicit, and client
-                      credentials OAuth 2.0 grants.
+                     * AllowedOAuthFlows: Support for authorization code, implicit, and client
+                     credentials OAuth 2.0 grants.
 
                   To use OAuth 2.0 features, configure one of these features in the Amazon
                   Cognito console or set AllowedOAuthFlowsUserPoolClient to true in a CreateUserPoolClient
@@ -143,11 +143,11 @@ spec:
 
                   A redirect URI must:
 
-                    - Be an absolute URI.
+                     * Be an absolute URI.
 
-                    - Be registered with the authorization server.
+                     * Be registered with the authorization server.
 
-                    - Not include a fragment component.
+                     * Not include a fragment component.
 
                   See OAuth 2.0 - Redirection Endpoint (https://tools.ietf.org/html/rfc6749#section-3.1.2).
 
@@ -165,11 +165,11 @@ spec:
 
                   A redirect URI must:
 
-                    - Be an absolute URI.
+                     * Be an absolute URI.
 
-                    - Be registered with the authorization server.
+                     * Be registered with the authorization server.
 
-                    - Not include a fragment component.
+                     * Not include a fragment component.
 
                   For more information, see Default redirect URI (https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html#cognito-user-pools-app-idp-settings-about).
 
@@ -211,29 +211,29 @@ spec:
 
                   Valid values include:
 
-                    - ALLOW_USER_AUTH: Enable selection-based sign-in with USER_AUTH. This
-                      setting covers username-password, secure remote password (SRP), passwordless,
-                      and passkey authentication. This authentiation flow can do username-password
-                      and SRP authentication without other ExplicitAuthFlows permitting them.
-                      For example users can complete an SRP challenge through USER_AUTH without
-                      the flow USER_SRP_AUTH being active for the app client. This flow doesn't
-                      include CUSTOM_AUTH.
+                     * ALLOW_USER_AUTH: Enable selection-based sign-in with USER_AUTH. This
+                     setting covers username-password, secure remote password (SRP), passwordless,
+                     and passkey authentication. This authentiation flow can do username-password
+                     and SRP authentication without other ExplicitAuthFlows permitting them.
+                     For example users can complete an SRP challenge through USER_AUTH without
+                     the flow USER_SRP_AUTH being active for the app client. This flow doesn't
+                     include CUSTOM_AUTH.
 
-                    - ALLOW_ADMIN_USER_PASSWORD_AUTH: Enable admin based user password authentication
-                      flow ADMIN_USER_PASSWORD_AUTH. This setting replaces the ADMIN_NO_SRP_AUTH
-                      setting. With this authentication flow, your app passes a user name and
-                      password to Amazon Cognito in the request, instead of using the Secure
-                      Remote Password (SRP) protocol to securely transmit the password.
+                     * ALLOW_ADMIN_USER_PASSWORD_AUTH: Enable admin based user password authentication
+                     flow ADMIN_USER_PASSWORD_AUTH. This setting replaces the ADMIN_NO_SRP_AUTH
+                     setting. With this authentication flow, your app passes a user name and
+                     password to Amazon Cognito in the request, instead of using the Secure
+                     Remote Password (SRP) protocol to securely transmit the password.
 
-                    - ALLOW_CUSTOM_AUTH: Enable Lambda trigger based authentication.
+                     * ALLOW_CUSTOM_AUTH: Enable Lambda trigger based authentication.
 
-                    - ALLOW_USER_PASSWORD_AUTH: Enable user password-based authentication.
-                      In this flow, Amazon Cognito receives the password in the request instead
-                      of using the SRP protocol to verify passwords.
+                     * ALLOW_USER_PASSWORD_AUTH: Enable user password-based authentication.
+                     In this flow, Amazon Cognito receives the password in the request instead
+                     of using the SRP protocol to verify passwords.
 
-                    - ALLOW_USER_SRP_AUTH: Enable SRP-based authentication.
+                     * ALLOW_USER_SRP_AUTH: Enable SRP-based authentication.
 
-                    - ALLOW_REFRESH_TOKEN_AUTH: Enable authflow to refresh tokens.
+                     * ALLOW_REFRESH_TOKEN_AUTH: Enable authflow to refresh tokens.
 
                   In some environments, you will see the values ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,
                   or USER_PASSWORD_AUTH. You can't assign these legacy ExplicitAuthFlows values
@@ -291,10 +291,10 @@ spec:
 
                   Valid values include:
 
-                    - ENABLED - This prevents user existence-related errors.
+                     * ENABLED - This prevents user existence-related errors.
 
-                    - LEGACY - This represents the early behavior of Amazon Cognito where
-                      user existence related errors aren't prevented.
+                     * LEGACY - This represents the early behavior of Amazon Cognito where
+                     user existence related errors aren't prevented.
 
                   Defaults to LEGACY when you don't provide a value.
                 type: string

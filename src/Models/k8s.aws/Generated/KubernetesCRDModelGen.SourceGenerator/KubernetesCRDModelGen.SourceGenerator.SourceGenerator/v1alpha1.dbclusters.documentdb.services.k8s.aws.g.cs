@@ -255,7 +255,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be a value from 1 to 35.
+    ///    * Must be a value from 1 to 35.
     /// </summary>
     [JsonPropertyName("backupRetentionPeriod")]
     public long? BackupRetentionPeriod { get; set; }
@@ -265,11 +265,11 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must contain from 1 to 63 letters, numbers, or hyphens.
+    ///    * Must contain from 1 to 63 letters, numbers, or hyphens.
     /// 
-    ///   - The first character must be a letter.
+    ///    * The first character must be a letter.
     /// 
-    ///   - Cannot end with a hyphen or contain two consecutive hyphens.
+    ///    * Cannot end with a hyphen or contain two consecutive hyphens.
     /// 
     /// Example: my-cluster
     /// </summary>
@@ -360,8 +360,8 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// If an encryption key is not specified in KmsKeyId:
     /// 
-    ///   - If the StorageEncrypted parameter is true, Amazon DocumentDB uses your
-    ///     default encryption key.
+    ///    * If the StorageEncrypted parameter is true, Amazon DocumentDB uses your
+    ///    default encryption key.
     /// 
     /// KMS creates the default encryption key for your Amazon Web Services account.
     /// Your Amazon Web Services account has a different default encryption key for
@@ -441,11 +441,11 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be from 1 to 63 letters or numbers.
+    ///    * Must be from 1 to 63 letters or numbers.
     /// 
-    ///   - The first character must be a letter.
+    ///    * The first character must be a letter.
     /// 
-    ///   - Cannot be a reserved word for the chosen database engine.
+    ///    * Cannot be a reserved word for the chosen database engine.
     /// </summary>
     [JsonPropertyName("masterUsername")]
     public string? MasterUsername { get; set; }
@@ -482,13 +482,13 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be in the format hh24:mi-hh24:mi.
+    ///    * Must be in the format hh24:mi-hh24:mi.
     /// 
-    ///   - Must be in Universal Coordinated Time (UTC).
+    ///    * Must be in Universal Coordinated Time (UTC).
     /// 
-    ///   - Must not conflict with the preferred maintenance window.
+    ///    * Must not conflict with the preferred maintenance window.
     /// 
-    ///   - Must be at least 30 minutes.
+    ///    * Must be at least 30 minutes.
     /// </summary>
     [JsonPropertyName("preferredBackupWindow")]
     public string? PreferredBackupWindow { get; set; }
@@ -522,7 +522,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the identifier of an existing snapshot.
+    ///    * Must match the identifier of an existing snapshot.
     /// </summary>
     [JsonPropertyName("snapshotIdentifier")]
     public string? SnapshotIdentifier { get; set; }
@@ -545,9 +545,9 @@ public partial class V1alpha1DBClusterSpec
     /// For information on storage types for Amazon DocumentDB clusters, see Cluster
     /// storage configurations in the Amazon DocumentDB Developer Guide.
     /// 
-    /// # Valid values for storage type - standard | iopt1
+    /// Valid values for storage type - standard | iopt1
     /// 
-    /// # Default value is standard
+    /// Default value is standard
     /// 
     /// When you create an Amazon DocumentDB cluster with the storage type set to
     /// iopt1, the storage type is returned in the response. The storage type isn&apos;t

@@ -40,10 +40,10 @@ public partial class V1alpha1TableList : IKubernetesObject<V1ListMeta>, IItems<V
 /// Specifies the read/write throughput capacity mode for the table. The options
 /// are:
 /// 
-///   - throughputMode:PAY_PER_REQUEST and
+///    * throughputMode:PAY_PER_REQUEST and
 /// 
-///   - throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits
-///     and writeCapacityUnits as input.
+///    * throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits
+///    and writeCapacityUnits as input.
 /// 
 /// The default is throughput_mode:PAY_PER_REQUEST.
 /// 
@@ -68,7 +68,7 @@ public partial class V1alpha1TableSpecCapacitySpecification
 /// Enables client-side timestamps for the table. By default, the setting is
 /// disabled. You can enable client-side timestamps with the following option:
 /// 
-///   - status: &quot;enabled&quot;
+///    * status: &quot;enabled&quot;
 /// 
 /// Once client-side timestamps are enabled for a table, this setting cannot
 /// be disabled.
@@ -122,11 +122,11 @@ public partial class V1alpha1TableSpecEncryptionSpecificationKmsKeyIdentifierRef
 /// Specifies how the encryption key for encryption at rest is managed for the
 /// table. You can choose one of the following KMS key (KMS key):
 /// 
-///   - type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.
+///    * type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.
 /// 
-///   - type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and
-///     is created, owned, and managed by you. This option requires the kms_key_identifier
-///     of the KMS key in Amazon Resource Name (ARN) format as input.
+///    * type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and
+///    is created, owned, and managed by you. This option requires the kms_key_identifier
+///    of the KMS key in Amazon Resource Name (ARN) format as input.
 /// 
 /// The default is type:AWS_OWNED_KMS_KEY.
 /// 
@@ -152,9 +152,9 @@ public partial class V1alpha1TableSpecEncryptionSpecification
 /// Specifies if pointInTimeRecovery is enabled or disabled for the table. The
 /// options are:
 /// 
-///   - status=ENABLED
+///    * status=ENABLED
 /// 
-///   - status=DISABLED
+///    * status=DISABLED
 /// 
 /// If it&apos;s not specified, the default is status=DISABLED.
 /// 
@@ -226,33 +226,33 @@ public partial class V1alpha1TableSpecSchemaDefinitionStaticColumns
 /// 
 /// For each column to be created:
 /// 
-///   - name - The name of the column.
+///    * name - The name of the column.
 /// 
-///   - type - An Amazon Keyspaces data type. For more information, see Data
-///     types (https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.elements.html#cql.data-types)
-///     in the Amazon Keyspaces Developer Guide.
+///    * type - An Amazon Keyspaces data type. For more information, see Data
+///    types (https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.elements.html#cql.data-types)
+///    in the Amazon Keyspaces Developer Guide.
 /// 
 /// The primary key of the table consists of the following columns:
 /// 
-///   - partitionKeys - The partition key can be a single column, or it can
-///     be a compound value composed of two or more columns. The partition key
-///     portion of the primary key is required and determines how Amazon Keyspaces
-///     stores your data.
+///    * partitionKeys - The partition key can be a single column, or it can
+///    be a compound value composed of two or more columns. The partition key
+///    portion of the primary key is required and determines how Amazon Keyspaces
+///    stores your data.
 /// 
-///   - name - The name of each partition key column.
+///    * name - The name of each partition key column.
 /// 
-///   - clusteringKeys - The optional clustering column portion of your primary
-///     key determines how the data is clustered and sorted within each partition.
+///    * clusteringKeys - The optional clustering column portion of your primary
+///    key determines how the data is clustered and sorted within each partition.
 /// 
-///   - name - The name of the clustering column.
+///    * name - The name of the clustering column.
 /// 
-///   - orderBy - Sets the ascendant (ASC) or descendant (DESC) order modifier.
-///     To define a column as static use staticColumns - Static columns store
-///     values that are shared by all rows in the same partition:
+///    * orderBy - Sets the ascendant (ASC) or descendant (DESC) order modifier.
+///    To define a column as static use staticColumns - Static columns store
+///    values that are shared by all rows in the same partition:
 /// 
-///   - name - The name of the column.
+///    * name - The name of the column.
 /// 
-///   - type - An Amazon Keyspaces data type.
+///    * type - An Amazon Keyspaces data type.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -299,9 +299,9 @@ public partial class V1alpha1TableSpecTags
 /// <summary>
 /// Enables Time to Live custom settings for the table. The options are:
 /// 
-///   - status:enabled
+///    * status:enabled
 /// 
-///   - status:disabled
+///    * status:disabled
 /// 
 /// The default is status:disabled. After ttl is enabled, you can&apos;t disable it
 /// for the table.
@@ -327,10 +327,10 @@ public partial class V1alpha1TableSpec
     /// Specifies the read/write throughput capacity mode for the table. The options
     /// are:
     /// 
-    ///   - throughputMode:PAY_PER_REQUEST and
+    ///    * throughputMode:PAY_PER_REQUEST and
     /// 
-    ///   - throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits
-    ///     and writeCapacityUnits as input.
+    ///    * throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits
+    ///    and writeCapacityUnits as input.
     /// 
     /// The default is throughput_mode:PAY_PER_REQUEST.
     /// 
@@ -344,7 +344,7 @@ public partial class V1alpha1TableSpec
     /// Enables client-side timestamps for the table. By default, the setting is
     /// disabled. You can enable client-side timestamps with the following option:
     /// 
-    ///   - status: &quot;enabled&quot;
+    ///    * status: &quot;enabled&quot;
     /// 
     /// Once client-side timestamps are enabled for a table, this setting cannot
     /// be disabled.
@@ -369,11 +369,11 @@ public partial class V1alpha1TableSpec
     /// Specifies how the encryption key for encryption at rest is managed for the
     /// table. You can choose one of the following KMS key (KMS key):
     /// 
-    ///   - type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.
+    ///    * type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.
     /// 
-    ///   - type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and
-    ///     is created, owned, and managed by you. This option requires the kms_key_identifier
-    ///     of the KMS key in Amazon Resource Name (ARN) format as input.
+    ///    * type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and
+    ///    is created, owned, and managed by you. This option requires the kms_key_identifier
+    ///    of the KMS key in Amazon Resource Name (ARN) format as input.
     /// 
     /// The default is type:AWS_OWNED_KMS_KEY.
     /// 
@@ -395,9 +395,9 @@ public partial class V1alpha1TableSpec
     /// Specifies if pointInTimeRecovery is enabled or disabled for the table. The
     /// options are:
     /// 
-    ///   - status=ENABLED
+    ///    * status=ENABLED
     /// 
-    ///   - status=DISABLED
+    ///    * status=DISABLED
     /// 
     /// If it&apos;s not specified, the default is status=DISABLED.
     /// 
@@ -412,33 +412,33 @@ public partial class V1alpha1TableSpec
     /// 
     /// For each column to be created:
     /// 
-    ///   - name - The name of the column.
+    ///    * name - The name of the column.
     /// 
-    ///   - type - An Amazon Keyspaces data type. For more information, see Data
-    ///     types (https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.elements.html#cql.data-types)
-    ///     in the Amazon Keyspaces Developer Guide.
+    ///    * type - An Amazon Keyspaces data type. For more information, see Data
+    ///    types (https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.elements.html#cql.data-types)
+    ///    in the Amazon Keyspaces Developer Guide.
     /// 
     /// The primary key of the table consists of the following columns:
     /// 
-    ///   - partitionKeys - The partition key can be a single column, or it can
-    ///     be a compound value composed of two or more columns. The partition key
-    ///     portion of the primary key is required and determines how Amazon Keyspaces
-    ///     stores your data.
+    ///    * partitionKeys - The partition key can be a single column, or it can
+    ///    be a compound value composed of two or more columns. The partition key
+    ///    portion of the primary key is required and determines how Amazon Keyspaces
+    ///    stores your data.
     /// 
-    ///   - name - The name of each partition key column.
+    ///    * name - The name of each partition key column.
     /// 
-    ///   - clusteringKeys - The optional clustering column portion of your primary
-    ///     key determines how the data is clustered and sorted within each partition.
+    ///    * clusteringKeys - The optional clustering column portion of your primary
+    ///    key determines how the data is clustered and sorted within each partition.
     /// 
-    ///   - name - The name of the clustering column.
+    ///    * name - The name of the clustering column.
     /// 
-    ///   - orderBy - Sets the ascendant (ASC) or descendant (DESC) order modifier.
-    ///     To define a column as static use staticColumns - Static columns store
-    ///     values that are shared by all rows in the same partition:
+    ///    * orderBy - Sets the ascendant (ASC) or descendant (DESC) order modifier.
+    ///    To define a column as static use staticColumns - Static columns store
+    ///    values that are shared by all rows in the same partition:
     /// 
-    ///   - name - The name of the column.
+    ///    * name - The name of the column.
     /// 
-    ///   - type - An Amazon Keyspaces data type.
+    ///    * type - An Amazon Keyspaces data type.
     /// </summary>
     [JsonPropertyName("schemaDefinition")]
     public required V1alpha1TableSpecSchemaDefinition SchemaDefinition { get; set; }
@@ -464,9 +464,9 @@ public partial class V1alpha1TableSpec
     /// <summary>
     /// Enables Time to Live custom settings for the table. The options are:
     /// 
-    ///   - status:enabled
+    ///    * status:enabled
     /// 
-    ///   - status:disabled
+    ///    * status:disabled
     /// 
     /// The default is status:disabled. After ttl is enabled, you can&apos;t disable it
     /// for the table.

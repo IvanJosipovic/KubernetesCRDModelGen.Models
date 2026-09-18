@@ -373,19 +373,19 @@ public partial class V1alpha1ClusterSpec
     /// 
     /// Valid values for ddd are:
     /// 
-    ///   - sun
+    ///    * sun
     /// 
-    ///   - mon
+    ///    * mon
     /// 
-    ///   - tue
+    ///    * tue
     /// 
-    ///   - wed
+    ///    * wed
     /// 
-    ///   - thu
+    ///    * thu
     /// 
-    ///   - fri
+    ///    * fri
     /// 
-    ///   - sat
+    ///    * sat
     /// 
     /// Example: sun:23:00-mon:01:30
     /// </summary>
