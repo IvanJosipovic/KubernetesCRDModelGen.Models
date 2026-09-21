@@ -107,8 +107,8 @@ public partial class V1alpha1GlobalClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
-    ///     case, Amazon Aurora uses the database name from the source DB cluster.
+    ///    * Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
+    ///    case, Amazon Aurora uses the database name from the source DB cluster.
     /// </summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
@@ -128,8 +128,8 @@ public partial class V1alpha1GlobalClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
-    ///     case, Amazon Aurora uses the engine of the source DB cluster.
+    ///    * Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
+    ///    case, Amazon Aurora uses the engine of the source DB cluster.
     /// </summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
@@ -139,8 +139,8 @@ public partial class V1alpha1GlobalClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
-    ///     case, Amazon Aurora uses the engine version of the source DB cluster.
+    ///    * Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
+    ///    case, Amazon Aurora uses the engine version of the source DB cluster.
     /// </summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
@@ -160,13 +160,13 @@ public partial class V1alpha1GlobalClusterSpec
     /// settings because Amazon Aurora uses the values from the specified source
     /// DB cluster:
     /// 
-    ///   - DatabaseName
+    ///    * DatabaseName
     /// 
-    ///   - Engine
+    ///    * Engine
     /// 
-    ///   - EngineVersion
+    ///    * EngineVersion
     /// 
-    ///   - StorageEncrypted
+    ///    * StorageEncrypted
     /// </summary>
     [JsonPropertyName("sourceDBClusterIdentifier")]
     public string? SourceDBClusterIdentifier { get; set; }
@@ -189,8 +189,8 @@ public partial class V1alpha1GlobalClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
-    ///     case, Amazon Aurora uses the setting from the source DB cluster.
+    ///    * Can&apos;t be specified if SourceDBClusterIdentifier is specified. In this
+    ///    case, Amazon Aurora uses the setting from the source DB cluster.
     /// </summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }

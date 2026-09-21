@@ -107,7 +107,7 @@ public partial class V1alpha1DBSnapshotSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the identifier of an existing DBInstance.
+    ///    * Must match the identifier of an existing DBInstance.
     /// </summary>
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
@@ -129,13 +129,13 @@ public partial class V1alpha1DBSnapshotSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t be null, empty, or blank
+    ///    * Can&apos;t be null, empty, or blank
     /// 
-    ///   - Must contain from 1 to 255 letters, numbers, or hyphens
+    ///    * Must contain from 1 to 255 letters, numbers, or hyphens
     /// 
-    ///   - First character must be a letter
+    ///    * First character must be a letter
     /// 
-    ///   - Can&apos;t end with a hyphen or contain two consecutive hyphens
+    ///    * Can&apos;t end with a hyphen or contain two consecutive hyphens
     /// 
     /// Example: my-snapshot-id
     /// </summary>

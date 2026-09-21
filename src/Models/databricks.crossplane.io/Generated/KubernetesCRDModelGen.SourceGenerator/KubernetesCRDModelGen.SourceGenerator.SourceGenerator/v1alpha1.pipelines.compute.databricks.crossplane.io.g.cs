@@ -2157,22 +2157,6 @@ public partial class V1alpha1PipelineSpecForProviderIngestionDefinition
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
-public partial class V1alpha1PipelineSpecForProviderLatestUpdates
-{
-    [JsonPropertyName("creationTime")]
-    public string? CreationTime { get; set; }
-
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-
-    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
-    [JsonPropertyName("updateId")]
-    public string? UpdateId { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecForProviderLibraryFile
 {
     [JsonPropertyName("path")]
@@ -2568,9 +2552,6 @@ public partial class V1alpha1PipelineSpecForProvider
 
     [JsonPropertyName("ingestionDefinition")]
     public IList<V1alpha1PipelineSpecForProviderIngestionDefinition>? IngestionDefinition { get; set; }
-
-    [JsonPropertyName("latestUpdates")]
-    public IList<V1alpha1PipelineSpecForProviderLatestUpdates>? LatestUpdates { get; set; }
 
     /// <summary>Specifies pipeline code.</summary>
     [JsonPropertyName("library")]
@@ -4739,22 +4720,6 @@ public partial class V1alpha1PipelineSpecInitProviderIngestionDefinition
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
-public partial class V1alpha1PipelineSpecInitProviderLatestUpdates
-{
-    [JsonPropertyName("creationTime")]
-    public string? CreationTime { get; set; }
-
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-
-    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
-    [JsonPropertyName("updateId")]
-    public string? UpdateId { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-[global::System.Obsolete("This API version is deprecated. Please migrate to v1beta1.")]
 public partial class V1alpha1PipelineSpecInitProviderLibraryFile
 {
     [JsonPropertyName("path")]
@@ -5162,9 +5127,6 @@ public partial class V1alpha1PipelineSpecInitProvider
 
     [JsonPropertyName("ingestionDefinition")]
     public IList<V1alpha1PipelineSpecInitProviderIngestionDefinition>? IngestionDefinition { get; set; }
-
-    [JsonPropertyName("latestUpdates")]
-    public IList<V1alpha1PipelineSpecInitProviderLatestUpdates>? LatestUpdates { get; set; }
 
     /// <summary>Specifies pipeline code.</summary>
     [JsonPropertyName("library")]

@@ -2039,21 +2039,6 @@ public partial class V1beta1PipelineSpecForProviderIngestionDefinition
     public V1beta1PipelineSpecForProviderIngestionDefinitionTableConfiguration? TableConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1PipelineSpecForProviderLatestUpdates
-{
-    [JsonPropertyName("creationTime")]
-    public string? CreationTime { get; set; }
-
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-
-    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
-    [JsonPropertyName("updateId")]
-    public string? UpdateId { get; set; }
-}
-
 /// <summary>specifies path to a file in Databricks Workspace to include as source. Actual path is specified as path attribute inside the block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2444,9 +2429,6 @@ public partial class V1beta1PipelineSpecForProvider
 
     [JsonPropertyName("ingestionDefinition")]
     public V1beta1PipelineSpecForProviderIngestionDefinition? IngestionDefinition { get; set; }
-
-    [JsonPropertyName("latestUpdates")]
-    public IList<V1beta1PipelineSpecForProviderLatestUpdates>? LatestUpdates { get; set; }
 
     /// <summary>Specifies pipeline code.</summary>
     [JsonPropertyName("library")]
@@ -4521,21 +4503,6 @@ public partial class V1beta1PipelineSpecInitProviderIngestionDefinition
     public V1beta1PipelineSpecInitProviderIngestionDefinitionTableConfiguration? TableConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1PipelineSpecInitProviderLatestUpdates
-{
-    [JsonPropertyName("creationTime")]
-    public string? CreationTime { get; set; }
-
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-
-    /// <summary>Canonical unique identifier of the Lakeflow Declarative Pipeline.</summary>
-    [JsonPropertyName("updateId")]
-    public string? UpdateId { get; set; }
-}
-
 /// <summary>specifies path to a file in Databricks Workspace to include as source. Actual path is specified as path attribute inside the block.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4938,9 +4905,6 @@ public partial class V1beta1PipelineSpecInitProvider
 
     [JsonPropertyName("ingestionDefinition")]
     public V1beta1PipelineSpecInitProviderIngestionDefinition? IngestionDefinition { get; set; }
-
-    [JsonPropertyName("latestUpdates")]
-    public IList<V1beta1PipelineSpecInitProviderLatestUpdates>? LatestUpdates { get; set; }
 
     /// <summary>Specifies pipeline code.</summary>
     [JsonPropertyName("library")]
