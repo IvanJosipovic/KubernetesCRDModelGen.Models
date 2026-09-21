@@ -617,7 +617,7 @@ public partial class V1beta1VPNGatewayStatusAtProvider
     [JsonPropertyName("amazonSideAsn")]
     public string? AmazonSideAsn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the VPN Gateway.</summary>
+    /// <summary>ARN of the VPN Gateway.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

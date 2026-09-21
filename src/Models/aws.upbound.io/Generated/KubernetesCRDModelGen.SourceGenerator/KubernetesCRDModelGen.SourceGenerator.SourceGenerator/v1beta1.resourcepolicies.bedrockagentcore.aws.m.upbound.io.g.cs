@@ -51,7 +51,7 @@ public partial class V1beta1ResourcePolicySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the resource for which to create or update the resource policy.</summary>
+    /// <summary>ARN of the resource for which to create or update the resource policy.</summary>
     [JsonPropertyName("resourceArn")]
     public required string ResourceArn { get; set; }
 }
@@ -202,7 +202,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the resource for which to create or update the resource policy.</summary>
+    /// <summary>ARN of the resource for which to create or update the resource policy.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }

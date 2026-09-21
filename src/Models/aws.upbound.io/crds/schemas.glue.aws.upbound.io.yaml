@@ -388,7 +388,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the schema.
+                    description: ARN of the schema.
                     type: string
                   compatibility:
                     description: 'The compatibility mode of the schema. Values values are: NONE, DISABLED, BACKWARD, BACKWARD_ALL, FORWARD, FORWARD_ALL, FULL, and FULL_ALL.'
@@ -400,7 +400,7 @@ spec:
                     description: A description of the schema.
                     type: string
                   id:
-                    description: Amazon Resource Name (ARN) of the schema.
+                    description: ARN of the schema.
                     type: string
                   latestSchemaVersion:
                     description: The latest version of the schema associated with the returned schema definition.

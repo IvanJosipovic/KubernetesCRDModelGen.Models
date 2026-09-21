@@ -568,7 +568,7 @@ spec:
                     description: Specifies details about the repository. see Output Config details below.
                     properties:
                       kmsKeyId:
-                        description: The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
+                        description: KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
                         type: string
                       s3OutputLocation:
                         description: The Amazon Simple Storage (S3) bucker URI.
@@ -580,7 +580,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).
+                    description: ARN that has access to AWS Internet of Things (IoT).
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -687,14 +687,14 @@ spec:
                     description: Specifies details about the repository. see Output Config details below.
                     properties:
                       kmsKeyId:
-                        description: The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
+                        description: KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
                         type: string
                       s3OutputLocation:
                         description: The Amazon Simple Storage (S3) bucker URI.
                         type: string
                     type: object
                   roleArn:
-                    description: The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).
+                    description: ARN that has access to AWS Internet of Things (IoT).
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -871,7 +871,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) assigned by AWS to this Device Fleet.
+                    description: ARN assigned by AWS to this Device Fleet.
                     type: string
                   description:
                     description: A description of the fleet.
@@ -888,7 +888,7 @@ spec:
                     description: Specifies details about the repository. see Output Config details below.
                     properties:
                       kmsKeyId:
-                        description: The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
+                        description: KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don't provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role's account.
                         type: string
                       s3OutputLocation:
                         description: The Amazon Simple Storage (S3) bucker URI.
@@ -900,7 +900,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).
+                    description: ARN that has access to AWS Internet of Things (IoT).
                     type: string
                   tags:
                     additionalProperties:

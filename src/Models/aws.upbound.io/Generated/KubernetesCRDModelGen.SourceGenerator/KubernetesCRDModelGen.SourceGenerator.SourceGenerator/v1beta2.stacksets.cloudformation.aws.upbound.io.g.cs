@@ -863,7 +863,7 @@ public partial class V1beta2StackSetStatusAtProvider
     [JsonPropertyName("administrationRoleArn")]
     public string? AdministrationRoleArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the StackSet.</summary>
+    /// <summary>ARN of the StackSet.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -589,11 +589,11 @@ public partial class V1beta1AccountSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProviderThrottleSettings
 {
-    /// <summary>Absolute maximum number of times API Gateway allows the API to be called per second (RPS).</summary>
+    /// <summary>Absolute maximum number of times API Gateway allows the API to be called per second.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>Number of times API Gateway allows the API to be called per second on average (RPS).</summary>
+    /// <summary>Number of times API Gateway allows the API to be called per second on average.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -602,7 +602,7 @@ public partial class V1beta1AccountStatusAtProviderThrottleSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountStatusAtProvider
 {
-    /// <summary>The version of the API keys used for the account.</summary>
+    /// <summary>Version of the API keys used for the account.</summary>
     [JsonPropertyName("apiKeyVersion")]
     public string? ApiKeyVersion { get; set; }
 
@@ -610,7 +610,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("cloudwatchRoleArn")]
     public string? CloudwatchRoleArn { get; set; }
 
-    /// <summary>A list of features supported for the account.</summary>
+    /// <summary>List of features supported for the account.</summary>
     [JsonPropertyName("features")]
     public IList<string>? Features { get; set; }
 
@@ -624,7 +624,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Account-Level throttle settings. See exported fields below.</summary>
+    /// <summary>Account-Level throttle settings. See throttle_settings Block below.</summary>
     [JsonPropertyName("throttleSettings")]
     public IList<V1beta1AccountStatusAtProviderThrottleSettings>? ThrottleSettings { get; set; }
 }

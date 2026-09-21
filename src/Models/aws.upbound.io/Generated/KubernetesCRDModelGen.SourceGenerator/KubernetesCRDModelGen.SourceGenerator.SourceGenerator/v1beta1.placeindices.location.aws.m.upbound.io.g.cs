@@ -41,7 +41,7 @@ public partial class V1beta1PlaceIndexList : IKubernetesObject<V1ListMeta>, IIte
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexSpecForProviderDataSourceConfiguration
 {
-    /// <summary>Specifies how the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
+    /// <summary>How the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
     [JsonPropertyName("intendedUse")]
     public string? IntendedUse { get; set; }
 }
@@ -50,7 +50,7 @@ public partial class V1beta1PlaceIndexSpecForProviderDataSourceConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexSpecForProvider
 {
-    /// <summary>Specifies the geospatial data provider for the new place index.</summary>
+    /// <summary>Geospatial data provider for the new place index.</summary>
     [JsonPropertyName("dataSource")]
     public string? DataSource { get; set; }
 
@@ -58,7 +58,7 @@ public partial class V1beta1PlaceIndexSpecForProvider
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1PlaceIndexSpecForProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
-    /// <summary>The optional description for the place index resource.</summary>
+    /// <summary>Optional description for the place index resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -79,7 +79,7 @@ public partial class V1beta1PlaceIndexSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexSpecInitProviderDataSourceConfiguration
 {
-    /// <summary>Specifies how the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
+    /// <summary>How the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
     [JsonPropertyName("intendedUse")]
     public string? IntendedUse { get; set; }
 }
@@ -100,7 +100,7 @@ public partial class V1beta1PlaceIndexSpecInitProviderDataSourceConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexSpecInitProvider
 {
-    /// <summary>Specifies the geospatial data provider for the new place index.</summary>
+    /// <summary>Geospatial data provider for the new place index.</summary>
     [JsonPropertyName("dataSource")]
     public string? DataSource { get; set; }
 
@@ -108,7 +108,7 @@ public partial class V1beta1PlaceIndexSpecInitProvider
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1PlaceIndexSpecInitProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
-    /// <summary>The optional description for the place index resource.</summary>
+    /// <summary>Optional description for the place index resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -229,7 +229,7 @@ public partial class V1beta1PlaceIndexSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexStatusAtProviderDataSourceConfiguration
 {
-    /// <summary>Specifies how the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
+    /// <summary>How the results of an operation will be stored by the caller. Valid values: SingleUse, Storage. Default: SingleUse.</summary>
     [JsonPropertyName("intendedUse")]
     public string? IntendedUse { get; set; }
 }
@@ -238,11 +238,11 @@ public partial class V1beta1PlaceIndexStatusAtProviderDataSourceConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlaceIndexStatusAtProvider
 {
-    /// <summary>The timestamp for when the place index resource was created in ISO 8601 format.</summary>
+    /// <summary>Timestamp for when the place index resource was created in ISO 8601 format.</summary>
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
-    /// <summary>Specifies the geospatial data provider for the new place index.</summary>
+    /// <summary>Geospatial data provider for the new place index.</summary>
     [JsonPropertyName("dataSource")]
     public string? DataSource { get; set; }
 
@@ -250,14 +250,14 @@ public partial class V1beta1PlaceIndexStatusAtProvider
     [JsonPropertyName("dataSourceConfiguration")]
     public V1beta1PlaceIndexStatusAtProviderDataSourceConfiguration? DataSourceConfiguration { get; set; }
 
-    /// <summary>The optional description for the place index resource.</summary>
+    /// <summary>Optional description for the place index resource.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the place index resource. Used to specify a resource across AWS.</summary>
+    /// <summary>ARN for the place index resource. Used to specify a resource across AWS.</summary>
     [JsonPropertyName("indexArn")]
     public string? IndexArn { get; set; }
 
@@ -272,11 +272,11 @@ public partial class V1beta1PlaceIndexStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The timestamp for when the place index resource was last update in ISO 8601.</summary>
+    /// <summary>Timestamp for when the place index resource was last updated in ISO 8601 format.</summary>
     [JsonPropertyName("updateTime")]
     public string? UpdateTime { get; set; }
 }

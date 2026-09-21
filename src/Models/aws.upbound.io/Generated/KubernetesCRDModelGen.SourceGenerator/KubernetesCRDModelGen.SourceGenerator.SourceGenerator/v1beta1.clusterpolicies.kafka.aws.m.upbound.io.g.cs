@@ -195,7 +195,7 @@ public partial class V1beta1ClusterPolicySpecForProviderClusterArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterPolicySpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the cluster.</summary>
+    /// <summary>ARN that uniquely identifies the cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -351,7 +351,7 @@ public partial class V1beta1ClusterPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterPolicyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the cluster.</summary>
+    /// <summary>ARN that uniquely identifies the cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 

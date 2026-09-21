@@ -202,7 +202,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluster
@@ -218,6 +218,533 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
     /// <summary>Selector for a Cluster in kafka to populate mskClusterArn.</summary>
     [JsonPropertyName("mskClusterArnSelector")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelector? MskClusterArnSelector { get; set; }
+}
+
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaCluster
+{
+    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    [JsonPropertyName("apacheKafkaClusterId")]
+    public string? ApacheKafkaClusterId { get; set; }
+
+    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    [JsonPropertyName("bootstrapBrokerString")]
+    public string? BootstrapBrokerString { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScram
+{
+    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    [JsonPropertyName("mechanism")]
+    public string? Mechanism { get; set; }
+
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentication
+{
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("mtls")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
+
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("saslScram")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransit
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("rootCaCertificate")]
+    public string? RootCaCertificate { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
+    [JsonPropertyName("rootCaCertificateRef")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRef? RootCaCertificateRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
+    [JsonPropertyName("rootCaCertificateSelector")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector? RootCaCertificateSelector { get; set; }
 }
 
 /// <summary>
@@ -514,7 +1041,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
@@ -531,7 +1058,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
     [JsonPropertyName("securityGroupsIdsSelector")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelector? SecurityGroupsIdsSelector { get; set; }
 
-    /// <summary>The list of subnets to connect to in the virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
+    /// <summary>List of subnets to connect to in the VPC. AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -548,13 +1075,172 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    [JsonPropertyName("apacheKafkaCluster")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
+
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    [JsonPropertyName("clientAuthentication")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
+
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    [JsonPropertyName("encryptionInTransit")]
+    public V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
+
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
@@ -569,6 +1255,161 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     /// <summary>Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
+
+    /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
+    [JsonPropertyName("logGroupRef")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef? LogGroupRef { get; set; }
+
+    /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
+    [JsonPropertyName("logGroupSelector")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector? LogGroupSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
@@ -580,9 +1421,164 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
+    /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
+    [JsonPropertyName("deliveryStreamRef")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef? DeliveryStreamRef { get; set; }
+
+    /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
+    [JsonPropertyName("deliveryStreamSelector")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
+
     /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
@@ -593,6 +1589,14 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
     /// <summary>Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRef? BucketRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
+    [JsonPropertyName("bucketSelector")]
+    public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector? BucketSelector { get; set; }
 
     /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
@@ -1012,7 +2016,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
     [JsonPropertyName("consumerGroupReplication")]
     public IList<V1beta1ReplicatorSpecForProviderReplicationInfoListConsumerGroupReplication>? ConsumerGroupReplication { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster.</summary>
+    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
 
@@ -1024,11 +2028,15 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
     [JsonPropertyName("sourceKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelector? SourceKafkaClusterArnSelector { get; set; }
 
+    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("sourceKafkaClusterId")]
+    public string? SourceKafkaClusterId { get; set; }
+
     /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
     public string? TargetCompressionType { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster.</summary>
+    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
 
@@ -1039,6 +2047,10 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
     /// <summary>Selector for a Cluster in kafka to populate targetKafkaClusterArn.</summary>
     [JsonPropertyName("targetKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelector? TargetKafkaClusterArnSelector { get; set; }
+
+    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("targetKafkaClusterId")]
+    public string? TargetKafkaClusterId { get; set; }
 
     /// <summary>Configuration relating to topic replication.</summary>
     [JsonPropertyName("topicReplication")]
@@ -1200,7 +2212,7 @@ public partial class V1beta1ReplicatorSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A list of Kafka clusters which are targets of the replicator.</summary>
+    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecForProviderKafkaCluster>? KafkaCluster { get; set; }
 
@@ -1387,7 +2399,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskCluster
@@ -1403,6 +2415,533 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
     /// <summary>Selector for a Cluster in kafka to populate mskClusterArn.</summary>
     [JsonPropertyName("mskClusterArnSelector")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelector? MskClusterArnSelector { get; set; }
+}
+
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaCluster
+{
+    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    [JsonPropertyName("apacheKafkaClusterId")]
+    public string? ApacheKafkaClusterId { get; set; }
+
+    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    [JsonPropertyName("bootstrapBrokerString")]
+    public string? BootstrapBrokerString { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtls
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScram
+{
+    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    [JsonPropertyName("mechanism")]
+    public string? Mechanism { get; set; }
+
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnRef")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef? SecretArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
+    [JsonPropertyName("secretArnSelector")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector? SecretArnSelector { get; set; }
+}
+
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthentication
+{
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("mtls")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
+
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("saslScram")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransit
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("rootCaCertificate")]
+    public string? RootCaCertificate { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
+    [JsonPropertyName("rootCaCertificateRef")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRef? RootCaCertificateRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
+    [JsonPropertyName("rootCaCertificateSelector")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector? RootCaCertificateSelector { get; set; }
 }
 
 /// <summary>
@@ -1699,7 +3238,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
@@ -1716,7 +3255,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
     [JsonPropertyName("securityGroupsIdsSelector")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelector? SecurityGroupsIdsSelector { get; set; }
 
-    /// <summary>The list of subnets to connect to in the virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
+    /// <summary>List of subnets to connect to in the VPC. AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1733,13 +3272,172 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    [JsonPropertyName("apacheKafkaCluster")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
+
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    [JsonPropertyName("clientAuthentication")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
+
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    [JsonPropertyName("encryptionInTransit")]
+    public V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
+
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
@@ -1754,6 +3452,161 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     /// <summary>Name of CloudWatch Logs log group. Required if enabled is true. If enabled is false, this value must not be set.</summary>
     [JsonPropertyName("logGroup")]
     public string? LogGroup { get; set; }
+
+    /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
+    [JsonPropertyName("logGroupRef")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef? LogGroupRef { get; set; }
+
+    /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
+    [JsonPropertyName("logGroupSelector")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector? LogGroupSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
@@ -1765,9 +3618,164 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     [JsonPropertyName("deliveryStream")]
     public string? DeliveryStream { get; set; }
 
+    /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
+    [JsonPropertyName("deliveryStreamRef")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef? DeliveryStreamRef { get; set; }
+
+    /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
+    [JsonPropertyName("deliveryStreamSelector")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector? DeliveryStreamSelector { get; set; }
+
     /// <summary>Boolean whether to enable log delivery to Firehose.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum>))]
+public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
@@ -1778,6 +3786,14 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
     /// <summary>Name of the S3 bucket. Required if enabled is true. If enabled is false, this value must not be set.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
+
+    /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRef? BucketRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
+    [JsonPropertyName("bucketSelector")]
+    public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector? BucketSelector { get; set; }
 
     /// <summary>Boolean whether to enable log delivery to S3.</summary>
     [JsonPropertyName("enabled")]
@@ -2197,7 +4213,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
     [JsonPropertyName("consumerGroupReplication")]
     public IList<V1beta1ReplicatorSpecInitProviderReplicationInfoListConsumerGroupReplication>? ConsumerGroupReplication { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster.</summary>
+    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
 
@@ -2209,11 +4225,15 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
     [JsonPropertyName("sourceKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelector? SourceKafkaClusterArnSelector { get; set; }
 
+    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("sourceKafkaClusterId")]
+    public string? SourceKafkaClusterId { get; set; }
+
     /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
     public string? TargetCompressionType { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster.</summary>
+    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
 
@@ -2224,6 +4244,10 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
     /// <summary>Selector for a Cluster in kafka to populate targetKafkaClusterArn.</summary>
     [JsonPropertyName("targetKafkaClusterArnSelector")]
     public V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelector? TargetKafkaClusterArnSelector { get; set; }
+
+    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("targetKafkaClusterId")]
+    public string? TargetKafkaClusterId { get; set; }
 
     /// <summary>Configuration relating to topic replication.</summary>
     [JsonPropertyName("topicReplication")]
@@ -2397,7 +4421,7 @@ public partial class V1beta1ReplicatorSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A list of Kafka clusters which are targets of the replicator.</summary>
+    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorSpecInitProviderKafkaCluster>? KafkaCluster { get; set; }
 
@@ -2613,7 +4637,7 @@ public partial class V1beta1ReplicatorSpec
     public V1beta1ReplicatorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Details of an Amazon MSK cluster.</summary>
+/// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskCluster
@@ -2623,7 +4647,69 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskClust
     public string? MskClusterArn { get; set; }
 }
 
-/// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+/// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaCluster
+{
+    /// <summary>The Kafka cluster.id of the self-managed or on-premises Apache Kafka cluster (as reported by the cluster itself, e.g. via the Kafka admin tooling), not an arbitrary name. MSK Replicator validates this value against the source cluster. See Migrate third-party and self-managed Apache Kafka clusters to Amazon MSK for how to obtain the cluster ID and the other required inputs.</summary>
+    [JsonPropertyName("apacheKafkaClusterId")]
+    public string? ApacheKafkaClusterId { get; set; }
+
+    /// <summary>The bootstrap broker connection string used to connect to the Apache Kafka cluster.</summary>
+    [JsonPropertyName("bootstrapBrokerString")]
+    public string? BootstrapBrokerString { get; set; }
+}
+
+/// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationMtls
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+}
+
+/// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationSaslScram
+{
+    /// <summary>The SASL/SCRAM mechanism used for authentication. Valid values are SHA256 and SHA512.</summary>
+    [JsonPropertyName("mechanism")]
+    public string? Mechanism { get; set; }
+
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the private key and certificate used for mTLS authentication. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("secretArn")]
+    public string? SecretArn { get; set; }
+}
+
+/// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthentication
+{
+    /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("mtls")]
+    public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationMtls? Mtls { get; set; }
+
+    /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
+    [JsonPropertyName("saslScram")]
+    public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationSaslScram? SaslScram { get; set; }
+}
+
+/// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTransit
+{
+    /// <summary>The ARN of the AWS Secrets Manager secret that stores the custom root CA certificate chain used to trust the certificate authority of the Apache Kafka cluster. See Set up prerequisites for MSK Replicator with self-managed Apache Kafka clusters for the required secret contents and format.</summary>
+    [JsonPropertyName("rootCaCertificate")]
+    public string? RootCaCertificate { get; set; }
+}
+
+/// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
@@ -2632,7 +4718,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
     [JsonPropertyName("securityGroupsIds")]
     public IList<string>? SecurityGroupsIds { get; set; }
 
-    /// <summary>The list of subnets to connect to in the virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
+    /// <summary>List of subnets to connect to in the VPC. AWS creates elastic network interfaces inside these subnets to allow communication between your Kafka Cluster and the replicator.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 }
@@ -2641,11 +4727,23 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaCluster
 {
-    /// <summary>Details of an Amazon MSK cluster.</summary>
+    /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
     [JsonPropertyName("amazonMskCluster")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskCluster? AmazonMskCluster { get; set; }
 
-    /// <summary>Details of an Amazon VPC which has network connectivity to the Apache Kafka cluster.</summary>
+    /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
+    [JsonPropertyName("apacheKafkaCluster")]
+    public V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaCluster? ApacheKafkaCluster { get; set; }
+
+    /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
+    [JsonPropertyName("clientAuthentication")]
+    public V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthentication? ClientAuthentication { get; set; }
+
+    /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
+    [JsonPropertyName("encryptionInTransit")]
+    public V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTransit? EncryptionInTransit { get; set; }
+
+    /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
     [JsonPropertyName("vpcConfig")]
     public V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig? VpcConfig { get; set; }
 }
@@ -2814,9 +4912,13 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoList
     [JsonPropertyName("sourceKafkaClusterAlias")]
     public string? SourceKafkaClusterAlias { get; set; }
 
-    /// <summary>The ARN of the source Kafka cluster.</summary>
+    /// <summary>The ARN of the source Kafka cluster. Use for an Amazon MSK source. Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("sourceKafkaClusterArn")]
     public string? SourceKafkaClusterArn { get; set; }
+
+    /// <summary>The identifier of the source Kafka cluster. Use for a self-managed / on-premises Apache Kafka source (matches apache_kafka_cluster_id). Exactly one of source_kafka_cluster_arn or source_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("sourceKafkaClusterId")]
+    public string? SourceKafkaClusterId { get; set; }
 
     /// <summary>The type of compression to use writing records to target Kafka cluster.</summary>
     [JsonPropertyName("targetCompressionType")]
@@ -2825,9 +4927,13 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoList
     [JsonPropertyName("targetKafkaClusterAlias")]
     public string? TargetKafkaClusterAlias { get; set; }
 
-    /// <summary>The ARN of the target Kafka cluster.</summary>
+    /// <summary>The ARN of the target Kafka cluster. Use for an Amazon MSK target. Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
     [JsonPropertyName("targetKafkaClusterArn")]
     public string? TargetKafkaClusterArn { get; set; }
+
+    /// <summary>The identifier of the target Kafka cluster. Use for a self-managed / on-premises Apache Kafka target (matches apache_kafka_cluster_id). Exactly one of target_kafka_cluster_arn or target_kafka_cluster_id must be specified.</summary>
+    [JsonPropertyName("targetKafkaClusterId")]
+    public string? TargetKafkaClusterId { get; set; }
 
     /// <summary>Configuration relating to topic replication.</summary>
     [JsonPropertyName("topicReplication")]
@@ -2852,7 +4958,7 @@ public partial class V1beta1ReplicatorStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A list of Kafka clusters which are targets of the replicator.</summary>
+    /// <summary>The source and target Kafka clusters for the replicator. Exactly two blocks are required. Detailed below.</summary>
     [JsonPropertyName("kafkaCluster")]
     public IList<V1beta1ReplicatorStatusAtProviderKafkaCluster>? KafkaCluster { get; set; }
 

@@ -680,7 +680,7 @@ public partial class V1beta1DevicePoolStatusAtProviderRule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DevicePoolStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this Device Pool</summary>
+    /// <summary>ARN of this Device Pool</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

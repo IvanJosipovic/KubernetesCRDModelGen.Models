@@ -521,10 +521,7 @@ public partial class V1beta1AuthorizerSpecForProvider
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-    /// e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 
@@ -1073,10 +1070,7 @@ public partial class V1beta1AuthorizerSpecInitProvider
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-    /// e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 
@@ -1244,10 +1238,7 @@ public partial class V1beta1AuthorizerStatusAtProvider
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-    /// e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 

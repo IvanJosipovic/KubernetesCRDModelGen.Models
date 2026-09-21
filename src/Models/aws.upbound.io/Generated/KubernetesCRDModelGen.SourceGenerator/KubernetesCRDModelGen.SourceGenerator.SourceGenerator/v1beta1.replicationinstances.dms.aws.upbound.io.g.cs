@@ -550,7 +550,7 @@ public partial class V1beta1ReplicationInstanceSpecForProvider
     [JsonPropertyName("kerberosAuthenticationSettings")]
     public V1beta1ReplicationInstanceSpecForProviderKerberosAuthenticationSettings? KerberosAuthenticationSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
+    /// <summary>ARN for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1125,7 +1125,7 @@ public partial class V1beta1ReplicationInstanceSpecInitProvider
     [JsonPropertyName("kerberosAuthenticationSettings")]
     public V1beta1ReplicationInstanceSpecInitProviderKerberosAuthenticationSettings? KerberosAuthenticationSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
+    /// <summary>ARN for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1426,7 +1426,7 @@ public partial class V1beta1ReplicationInstanceStatusAtProvider
     [JsonPropertyName("kerberosAuthenticationSettings")]
     public V1beta1ReplicationInstanceStatusAtProviderKerberosAuthenticationSettings? KerberosAuthenticationSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
+    /// <summary>ARN for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for kms_key_arn, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1453,7 +1453,7 @@ public partial class V1beta1ReplicationInstanceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the replication instance.</summary>
+    /// <summary>ARN of the replication instance.</summary>
     [JsonPropertyName("replicationInstanceArn")]
     public string? ReplicationInstanceArn { get; set; }
 

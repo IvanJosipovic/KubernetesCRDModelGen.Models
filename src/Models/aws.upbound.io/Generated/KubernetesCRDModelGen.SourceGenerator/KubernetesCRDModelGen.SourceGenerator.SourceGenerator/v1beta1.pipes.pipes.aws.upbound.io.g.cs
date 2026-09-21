@@ -404,7 +404,7 @@ public partial class V1beta1PipeSpecForProviderLogConfigurationCloudwatchLogsLog
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecForProviderLogConfigurationFirehoseLogDestination
 {
-    /// <summary>Amazon Resource Name (ARN) of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
+    /// <summary>ARN of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
     [JsonPropertyName("deliveryStreamArn")]
     public string? DeliveryStreamArn { get; set; }
 }
@@ -1210,7 +1210,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersBatchJobParameter
     [JsonPropertyName("dependsOn")]
     public IList<V1beta1PipeSpecForProviderTargetParametersBatchJobParametersDependsOn>? DependsOn { get; set; }
 
-    /// <summary>The job definition used by this job. This value can be one of name, name:revision, or the Amazon Resource Name (ARN) for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
+    /// <summary>Job definition used by this job. This value can be one of name, name:revision, or the ARN for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
     [JsonPropertyName("jobDefinition")]
     public string? JobDefinition { get; set; }
 
@@ -1307,7 +1307,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.</summary>
+    /// <summary>ARN of the Amazon S3 object containing the environment variable file.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -1402,7 +1402,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1PipeSpecForProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution IAM role override for the task.</summary>
+    /// <summary>ARN of the task execution IAM role override for the task.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -1414,7 +1414,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEcsTaskParameters
     [JsonPropertyName("memory")]
     public string? Memory { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
+    /// <summary>ARN of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
     [JsonPropertyName("taskRoleArn")]
     public string? TaskRoleArn { get; set; }
 }
@@ -1524,7 +1524,7 @@ public partial class V1beta1PipeSpecForProviderTargetParametersEventbridgeEventB
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>List of AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.</summary>
+    /// <summary>List of AWS resources, identified by ARN, which the event primarily concerns. Any number, including zero, may be present.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
@@ -1881,7 +1881,7 @@ public partial class V1beta1PipeSpecForProvider
     [JsonPropertyName("enrichmentSelector")]
     public V1beta1PipeSpecForProviderEnrichmentSelector? EnrichmentSelector { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key ARN, KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -1908,7 +1908,7 @@ public partial class V1beta1PipeSpecForProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1PipeSpecForProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Source resource of the pipe. This field typically requires an ARN (Amazon Resource Name). However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
+    /// <summary>Source resource of the pipe. This field typically requires an ARN. However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
@@ -2294,7 +2294,7 @@ public partial class V1beta1PipeSpecInitProviderLogConfigurationCloudwatchLogsLo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeSpecInitProviderLogConfigurationFirehoseLogDestination
 {
-    /// <summary>Amazon Resource Name (ARN) of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
+    /// <summary>ARN of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
     [JsonPropertyName("deliveryStreamArn")]
     public string? DeliveryStreamArn { get; set; }
 }
@@ -3100,7 +3100,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersBatchJobParamete
     [JsonPropertyName("dependsOn")]
     public IList<V1beta1PipeSpecInitProviderTargetParametersBatchJobParametersDependsOn>? DependsOn { get; set; }
 
-    /// <summary>The job definition used by this job. This value can be one of name, name:revision, or the Amazon Resource Name (ARN) for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
+    /// <summary>Job definition used by this job. This value can be one of name, name:revision, or the ARN for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
     [JsonPropertyName("jobDefinition")]
     public string? JobDefinition { get; set; }
 
@@ -3197,7 +3197,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.</summary>
+    /// <summary>ARN of the Amazon S3 object containing the environment variable file.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -3292,7 +3292,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1PipeSpecInitProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution IAM role override for the task.</summary>
+    /// <summary>ARN of the task execution IAM role override for the task.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -3304,7 +3304,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("memory")]
     public string? Memory { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
+    /// <summary>ARN of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
     [JsonPropertyName("taskRoleArn")]
     public string? TaskRoleArn { get; set; }
 }
@@ -3414,7 +3414,7 @@ public partial class V1beta1PipeSpecInitProviderTargetParametersEventbridgeEvent
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>List of AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.</summary>
+    /// <summary>List of AWS resources, identified by ARN, which the event primarily concerns. Any number, including zero, may be present.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
@@ -3783,7 +3783,7 @@ public partial class V1beta1PipeSpecInitProvider
     [JsonPropertyName("enrichmentSelector")]
     public V1beta1PipeSpecInitProviderEnrichmentSelector? EnrichmentSelector { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key ARN, KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -3803,7 +3803,7 @@ public partial class V1beta1PipeSpecInitProvider
     [JsonPropertyName("roleArnSelector")]
     public V1beta1PipeSpecInitProviderRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>Source resource of the pipe. This field typically requires an ARN (Amazon Resource Name). However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
+    /// <summary>Source resource of the pipe. This field typically requires an ARN. However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
@@ -4070,7 +4070,7 @@ public partial class V1beta1PipeStatusAtProviderLogConfigurationCloudwatchLogsLo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipeStatusAtProviderLogConfigurationFirehoseLogDestination
 {
-    /// <summary>Amazon Resource Name (ARN) of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
+    /// <summary>ARN of the Kinesis Data Firehose delivery stream to which EventBridge delivers the pipe log records.</summary>
     [JsonPropertyName("deliveryStreamArn")]
     public string? DeliveryStreamArn { get; set; }
 }
@@ -4582,7 +4582,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersBatchJobParamete
     [JsonPropertyName("dependsOn")]
     public IList<V1beta1PipeStatusAtProviderTargetParametersBatchJobParametersDependsOn>? DependsOn { get; set; }
 
-    /// <summary>The job definition used by this job. This value can be one of name, name:revision, or the Amazon Resource Name (ARN) for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
+    /// <summary>Job definition used by this job. This value can be one of name, name:revision, or the ARN for the job definition. If name is specified without a revision then the latest active revision is used.</summary>
     [JsonPropertyName("jobDefinition")]
     public string? JobDefinition { get; set; }
 
@@ -4679,7 +4679,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon S3 object containing the environment variable file.</summary>
+    /// <summary>ARN of the Amazon S3 object containing the environment variable file.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -4774,7 +4774,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1PipeStatusAtProviderTargetParametersEcsTaskParametersOverridesEphemeralStorage? EphemeralStorage { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution IAM role override for the task.</summary>
+    /// <summary>ARN of the task execution IAM role override for the task.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -4786,7 +4786,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEcsTaskParameter
     [JsonPropertyName("memory")]
     public string? Memory { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
+    /// <summary>ARN of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.</summary>
     [JsonPropertyName("taskRoleArn")]
     public string? TaskRoleArn { get; set; }
 }
@@ -4896,7 +4896,7 @@ public partial class V1beta1PipeStatusAtProviderTargetParametersEventbridgeEvent
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
-    /// <summary>List of AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.</summary>
+    /// <summary>List of AWS resources, identified by ARN, which the event primarily concerns. Any number, including zero, may be present.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
@@ -5106,7 +5106,7 @@ public partial class V1beta1PipeStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt pipe data. The identifier can be the key ARN, KeyId, key alias, or key alias ARN. If not set, EventBridge uses an AWS owned key to encrypt pipe data.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -5125,7 +5125,7 @@ public partial class V1beta1PipeStatusAtProvider
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Source resource of the pipe. This field typically requires an ARN (Amazon Resource Name). However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
+    /// <summary>Source resource of the pipe. This field typically requires an ARN. However, when using a self-managed Kafka cluster, you should use a different format. Instead of an ARN, use &apos;smk://&apos; followed by the bootstrap server&apos;s address.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 

@@ -1008,7 +1008,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   vpcConfiguration:
-                    description: Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.
+                    description: Configuration of the VPC connection. For more info, see the AWS documentation.
                     properties:
                       roleArn:
                         description: The ARN of a role that has permission to create and attach to elastic network interfaces (ENIs).
@@ -1347,7 +1347,7 @@ spec:
                     description: 'Whether or not to enable the destination. Default: true.'
                     type: boolean
                   vpcConfiguration:
-                    description: Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.
+                    description: Configuration of the VPC connection. For more info, see the AWS documentation.
                     properties:
                       roleArn:
                         description: The ARN of a role that has permission to create and attach to elastic network interfaces (ENIs).
@@ -1775,7 +1775,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   vpcConfiguration:
-                    description: Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.
+                    description: Configuration of the VPC connection. For more info, see the AWS documentation.
                     properties:
                       roleArn:
                         description: The ARN of a role that has permission to create and attach to elastic network interfaces (ENIs).

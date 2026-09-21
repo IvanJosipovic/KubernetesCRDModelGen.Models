@@ -154,7 +154,7 @@ spec:
                         description: A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.
                         properties:
                           firehoseArn:
-                            description: The Amazon Resource Name (ARN) of the delivery stream.
+                            description: ARN of the delivery stream.
                             type: string
                           firehoseArnRef:
                             description: Reference to a DeliveryStream in firehose to populate firehoseArn.
@@ -240,7 +240,7 @@ spec:
                         description: A block that specifies the configuration of the Kinesis data stream. Documented below.
                         properties:
                           streamArn:
-                            description: The Amazon Resource Name (ARN) of the data stream.
+                            description: ARN of the data stream.
                             type: string
                           streamArnRef:
                             description: Reference to a Stream in kinesis to populate streamArn.
@@ -711,7 +711,7 @@ spec:
                         description: A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.
                         properties:
                           firehoseArn:
-                            description: The Amazon Resource Name (ARN) of the delivery stream.
+                            description: ARN of the delivery stream.
                             type: string
                           firehoseArnRef:
                             description: Reference to a DeliveryStream in firehose to populate firehoseArn.
@@ -797,7 +797,7 @@ spec:
                         description: A block that specifies the configuration of the Kinesis data stream. Documented below.
                         properties:
                           streamArn:
-                            description: The Amazon Resource Name (ARN) of the data stream.
+                            description: ARN of the data stream.
                             type: string
                           streamArnRef:
                             description: Reference to a Stream in kinesis to populate streamArn.
@@ -1253,14 +1253,14 @@ spec:
                         description: A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.
                         properties:
                           firehoseArn:
-                            description: The Amazon Resource Name (ARN) of the delivery stream.
+                            description: ARN of the delivery stream.
                             type: string
                         type: object
                       kinesisStreamConfig:
                         description: A block that specifies the configuration of the Kinesis data stream. Documented below.
                         properties:
                           streamArn:
-                            description: The Amazon Resource Name (ARN) of the data stream.
+                            description: ARN of the data stream.
                             type: string
                         type: object
                       kinesisVideoStreamConfig:

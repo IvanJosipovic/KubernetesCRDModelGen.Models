@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eks.aws.m.upbound.io;
-/// <summary>AccessPolicyAssociation is the Schema for the AccessPolicyAssociations API. &lt;no value&gt;</summary>
+/// <summary>AccessPolicyAssociation is the Schema for the AccessPolicyAssociations API. Access Entry Policy Association for an EKS Cluster.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -36,13 +36,16 @@ public partial class V1beta1AccessPolicyAssociationList : IKubernetesObject<V1Li
     public required IList<V1beta1AccessPolicyAssociation> Items { get; set; }
 }
 
+/// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationSpecForProviderAccessScope
 {
+    /// <summary>The namespaces to which the access scope applies when type is namespace.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
+    /// <summary>Valid values are namespace or cluster.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -361,9 +364,11 @@ public partial class V1beta1AccessPolicyAssociationSpecForProviderPrincipalArnSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationSpecForProvider
 {
+    /// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
     [JsonPropertyName("accessScope")]
     public V1beta1AccessPolicyAssociationSpecForProviderAccessScope? AccessScope { get; set; }
 
+    /// <summary>Name of the EKS Cluster.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
@@ -375,9 +380,11 @@ public partial class V1beta1AccessPolicyAssociationSpecForProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1AccessPolicyAssociationSpecForProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
+    /// <summary>The ARN of the access policy that you&apos;re associating.</summary>
     [JsonPropertyName("policyArn")]
     public required string PolicyArn { get; set; }
 
+    /// <summary>The IAM Principal ARN which requires Authentication access to the EKS cluster.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
@@ -389,18 +396,24 @@ public partial class V1beta1AccessPolicyAssociationSpecForProvider
     [JsonPropertyName("principalArnSelector")]
     public V1beta1AccessPolicyAssociationSpecForProviderPrincipalArnSelector? PrincipalArnSelector { get; set; }
 
-    /// <summary>Region is the region you&apos;d like your resource to be created in.</summary>
+    /// <summary>
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 }
 
+/// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationSpecInitProviderAccessScope
 {
+    /// <summary>The namespaces to which the access scope applies when type is namespace.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
+    /// <summary>Valid values are namespace or cluster.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -421,6 +434,7 @@ public partial class V1beta1AccessPolicyAssociationSpecInitProviderAccessScope
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationSpecInitProvider
 {
+    /// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
     [JsonPropertyName("accessScope")]
     public V1beta1AccessPolicyAssociationSpecInitProviderAccessScope? AccessScope { get; set; }
 }
@@ -532,13 +546,16 @@ public partial class V1beta1AccessPolicyAssociationSpec
     public V1beta1AccessPolicyAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationStatusAtProviderAccessScope
 {
+    /// <summary>The namespaces to which the access scope applies when type is namespace.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
 
+    /// <summary>Valid values are namespace or cluster.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -547,28 +564,37 @@ public partial class V1beta1AccessPolicyAssociationStatusAtProviderAccessScope
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPolicyAssociationStatusAtProvider
 {
+    /// <summary>The configuration block to determine the scope of the access. See access_scope Block below.</summary>
     [JsonPropertyName("accessScope")]
     public V1beta1AccessPolicyAssociationStatusAtProviderAccessScope? AccessScope { get; set; }
 
+    /// <summary>Date and time in RFC3339 format that the policy was associated.</summary>
     [JsonPropertyName("associatedAt")]
     public string? AssociatedAt { get; set; }
 
+    /// <summary>Name of the EKS Cluster.</summary>
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Date and time in RFC3339 format that the policy was updated.</summary>
     [JsonPropertyName("modifiedAt")]
     public string? ModifiedAt { get; set; }
 
+    /// <summary>The ARN of the access policy that you&apos;re associating.</summary>
     [JsonPropertyName("policyArn")]
     public string? PolicyArn { get; set; }
 
+    /// <summary>The IAM Principal ARN which requires Authentication access to the EKS cluster.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
-    /// <summary>Region is the region you&apos;d like your resource to be created in.</summary>
+    /// <summary>
+    /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
+    /// Region is the region you&apos;d like your resource to be created in.
+    /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 }
@@ -646,7 +672,7 @@ public partial class V1beta1AccessPolicyAssociationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AccessPolicyAssociation is the Schema for the AccessPolicyAssociations API. &lt;no value&gt;</summary>
+/// <summary>AccessPolicyAssociation is the Schema for the AccessPolicyAssociations API. Access Entry Policy Association for an EKS Cluster.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

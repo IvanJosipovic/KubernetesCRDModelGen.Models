@@ -55,10 +55,7 @@ public enum V1beta1RedshiftServerlessNamespaceSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>
-/// The password of the administrator for the first database created in the namespace.
-/// Conflicts with manage_admin_password and admin_user_password_wo.
-/// </summary>
+/// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedshiftServerlessNamespaceSpecForProviderAdminUserPasswordSecretRef
@@ -543,21 +540,15 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecForProvider
     [JsonPropertyName("adminPasswordSecretKmsKeyId")]
     public string? AdminPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>
-    /// The password of the administrator for the first database created in the namespace.
-    /// Conflicts with manage_admin_password and admin_user_password_wo.
-    /// </summary>
+    /// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password_wo.</summary>
     [JsonPropertyName("adminUserPasswordSecretRef")]
     public V1beta1RedshiftServerlessNamespaceSpecForProviderAdminUserPasswordSecretRef? AdminUserPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// The password of the administrator for the first database created in the namespace.
-    /// Conflicts with manage_admin_password and admin_user_password.
-    /// </summary>
+    /// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password. If set, requires admin_user_password_wo_version to be set.</summary>
     [JsonPropertyName("adminUserPasswordWo")]
     public string? AdminUserPasswordWo { get; set; }
 
-    /// <summary>Used together with admin_user_password_wo to trigger an update. Increment this value when an update to the admin_user_password_wo is required</summary>
+    /// <summary>Required when admin_user_password_wo is set. Changing this value triggers an update to admin_user_password_wo.</summary>
     [JsonPropertyName("adminUserPasswordWoVersion")]
     public double? AdminUserPasswordWoVersion { get; set; }
 
@@ -569,7 +560,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecForProvider
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
+    /// <summary>ARN of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -593,7 +584,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecForProvider
     [JsonPropertyName("iamRoles")]
     public IList<string>? IamRoles { get; set; }
 
-    /// <summary>The ARN of the Amazon Web Services Key Management Service key used to encrypt your data.</summary>
+    /// <summary>ARN of the Amazon Web Services KMS key used to encrypt your data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -609,10 +600,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecForProvider
     [JsonPropertyName("logExports")]
     public IList<string>? LogExports { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretManager to manage namespace&apos;s admin credentials.
-    /// Conflicts with admin_user_password and admin_user_password_wo.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretManager to manage namespace&apos;s admin credentials. Conflicts with admin_user_password and admin_user_password_wo.</summary>
     [JsonPropertyName("manageAdminPassword")]
     public bool? ManageAdminPassword { get; set; }
 
@@ -628,10 +616,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>
-/// The password of the administrator for the first database created in the namespace.
-/// Conflicts with manage_admin_password and admin_user_password_wo.
-/// </summary>
+/// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedshiftServerlessNamespaceSpecInitProviderAdminUserPasswordSecretRef
@@ -1128,21 +1113,15 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecInitProvider
     [JsonPropertyName("adminPasswordSecretKmsKeyId")]
     public string? AdminPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>
-    /// The password of the administrator for the first database created in the namespace.
-    /// Conflicts with manage_admin_password and admin_user_password_wo.
-    /// </summary>
+    /// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password_wo.</summary>
     [JsonPropertyName("adminUserPasswordSecretRef")]
     public V1beta1RedshiftServerlessNamespaceSpecInitProviderAdminUserPasswordSecretRef? AdminUserPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// The password of the administrator for the first database created in the namespace.
-    /// Conflicts with manage_admin_password and admin_user_password.
-    /// </summary>
+    /// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password. If set, requires admin_user_password_wo_version to be set.</summary>
     [JsonPropertyName("adminUserPasswordWo")]
     public string? AdminUserPasswordWo { get; set; }
 
-    /// <summary>Used together with admin_user_password_wo to trigger an update. Increment this value when an update to the admin_user_password_wo is required</summary>
+    /// <summary>Required when admin_user_password_wo is set. Changing this value triggers an update to admin_user_password_wo.</summary>
     [JsonPropertyName("adminUserPasswordWoVersion")]
     public double? AdminUserPasswordWoVersion { get; set; }
 
@@ -1154,7 +1133,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecInitProvider
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
+    /// <summary>ARN of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -1178,7 +1157,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecInitProvider
     [JsonPropertyName("iamRoles")]
     public IList<string>? IamRoles { get; set; }
 
-    /// <summary>The ARN of the Amazon Web Services Key Management Service key used to encrypt your data.</summary>
+    /// <summary>ARN of the Amazon Web Services KMS key used to encrypt your data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1194,10 +1173,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpecInitProvider
     [JsonPropertyName("logExports")]
     public IList<string>? LogExports { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretManager to manage namespace&apos;s admin credentials.
-    /// Conflicts with admin_user_password and admin_user_password_wo.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretManager to manage namespace&apos;s admin credentials. Conflicts with admin_user_password and admin_user_password_wo.</summary>
     [JsonPropertyName("manageAdminPassword")]
     public bool? ManageAdminPassword { get; set; }
 
@@ -1393,7 +1369,7 @@ public partial class V1beta1RedshiftServerlessNamespaceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RedshiftServerlessNamespaceStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of namespace&apos;s admin user credentials secret.</summary>
+    /// <summary>ARN of namespace&apos;s admin user credentials secret.</summary>
     [JsonPropertyName("adminPasswordSecretArn")]
     public string? AdminPasswordSecretArn { get; set; }
 
@@ -1401,18 +1377,15 @@ public partial class V1beta1RedshiftServerlessNamespaceStatusAtProvider
     [JsonPropertyName("adminPasswordSecretKmsKeyId")]
     public string? AdminPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>
-    /// The password of the administrator for the first database created in the namespace.
-    /// Conflicts with manage_admin_password and admin_user_password.
-    /// </summary>
+    /// <summary>The password of the administrator for the first database created in the namespace. Conflicts with manage_admin_password and admin_user_password. If set, requires admin_user_password_wo_version to be set.</summary>
     [JsonPropertyName("adminUserPasswordWo")]
     public string? AdminUserPasswordWo { get; set; }
 
-    /// <summary>Used together with admin_user_password_wo to trigger an update. Increment this value when an update to the admin_user_password_wo is required</summary>
+    /// <summary>Required when admin_user_password_wo is set. Changing this value triggers an update to admin_user_password_wo.</summary>
     [JsonPropertyName("adminUserPasswordWoVersion")]
     public double? AdminUserPasswordWoVersion { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Serverless Namespace.</summary>
+    /// <summary>ARN of the Redshift Serverless Namespace.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1420,7 +1393,7 @@ public partial class V1beta1RedshiftServerlessNamespaceStatusAtProvider
     [JsonPropertyName("dbName")]
     public string? DbName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
+    /// <summary>ARN of the IAM role to set as a default in the namespace. When specifying default_iam_role_arn, it also must be part of iam_roles.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -1432,7 +1405,7 @@ public partial class V1beta1RedshiftServerlessNamespaceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the Amazon Web Services Key Management Service key used to encrypt your data.</summary>
+    /// <summary>ARN of the Amazon Web Services KMS key used to encrypt your data.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1440,10 +1413,7 @@ public partial class V1beta1RedshiftServerlessNamespaceStatusAtProvider
     [JsonPropertyName("logExports")]
     public IList<string>? LogExports { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretManager to manage namespace&apos;s admin credentials.
-    /// Conflicts with admin_user_password and admin_user_password_wo.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretManager to manage namespace&apos;s admin credentials. Conflicts with admin_user_password and admin_user_password_wo.</summary>
     [JsonPropertyName("manageAdminPassword")]
     public bool? ManageAdminPassword { get; set; }
 

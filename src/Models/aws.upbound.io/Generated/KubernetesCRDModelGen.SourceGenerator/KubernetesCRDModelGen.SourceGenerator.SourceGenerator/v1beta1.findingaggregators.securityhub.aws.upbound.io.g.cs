@@ -287,7 +287,7 @@ public partial class V1beta1FindingAggregatorSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FindingAggregatorStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Security Hub finding aggregator.</summary>
+    /// <summary>ARN of the Security Hub finding aggregator.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

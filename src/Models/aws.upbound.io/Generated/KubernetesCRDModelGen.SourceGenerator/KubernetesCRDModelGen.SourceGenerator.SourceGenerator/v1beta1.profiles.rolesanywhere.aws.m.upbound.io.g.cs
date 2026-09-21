@@ -571,7 +571,7 @@ public partial class V1beta1ProfileStatusAtProvider
     [JsonPropertyName("acceptRoleSessionName")]
     public bool? AcceptRoleSessionName { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Profile</summary>
+    /// <summary>ARN of the Profile</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

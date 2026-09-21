@@ -519,7 +519,7 @@ public partial class V1beta2BudgetActionSpecForProviderDefinitionIamActionDefini
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the policy to be attached.</summary>
+    /// <summary>ARN of the policy to be attached.</summary>
     [JsonPropertyName("policyArn")]
     public string? PolicyArn { get; set; }
 
@@ -1283,7 +1283,7 @@ public partial class V1beta2BudgetActionSpecInitProviderDefinitionIamActionDefin
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the policy to be attached.</summary>
+    /// <summary>ARN of the policy to be attached.</summary>
     [JsonPropertyName("policyArn")]
     public string? PolicyArn { get; set; }
 
@@ -1797,7 +1797,7 @@ public partial class V1beta2BudgetActionStatusAtProviderDefinitionIamActionDefin
     [JsonPropertyName("groups")]
     public IList<string>? Groups { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the policy to be attached.</summary>
+    /// <summary>ARN of the policy to be attached.</summary>
     [JsonPropertyName("policyArn")]
     public string? PolicyArn { get; set; }
 

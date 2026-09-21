@@ -383,7 +383,7 @@ public partial class V1beta1GrantSpecForProvider
     [JsonPropertyName("granteePrincipalSelector")]
     public V1beta1GrantSpecForProviderGranteePrincipalSelector? GranteePrincipalSelector { get; set; }
 
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
@@ -781,7 +781,7 @@ public partial class V1beta1GrantSpecInitProvider
     [JsonPropertyName("granteePrincipalSelector")]
     public V1beta1GrantSpecInitProviderGranteePrincipalSelector? GranteePrincipalSelector { get; set; }
 
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 
@@ -956,7 +956,7 @@ public partial class V1beta1GrantStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN.</summary>
     [JsonPropertyName("keyId")]
     public string? KeyId { get; set; }
 

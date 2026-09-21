@@ -229,7 +229,7 @@ public partial class V1beta1PhoneNumberSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.</summary>
+    /// <summary>ARN for Amazon Connect instances that phone numbers are claimed to.</summary>
     [JsonPropertyName("targetArn")]
     public string? TargetArn { get; set; }
 
@@ -425,7 +425,7 @@ public partial class V1beta1PhoneNumberSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.</summary>
+    /// <summary>ARN for Amazon Connect instances that phone numbers are claimed to.</summary>
     [JsonPropertyName("targetArn")]
     public string? TargetArn { get; set; }
 
@@ -685,7 +685,7 @@ public partial class V1beta1PhoneNumberStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.</summary>
+    /// <summary>ARN for Amazon Connect instances that phone numbers are claimed to.</summary>
     [JsonPropertyName("targetArn")]
     public string? TargetArn { get; set; }
 

@@ -195,15 +195,15 @@ public partial class V1beta1ProxySpecForProviderAuthSecretArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxySpecForProviderAuth
 {
-    /// <summary>The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
+    /// <summary>Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
     [JsonPropertyName("authScheme")]
     public string? AuthScheme { get; set; }
 
-    /// <summary>The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
+    /// <summary>Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
     [JsonPropertyName("clientPasswordAuthType")]
     public string? ClientPasswordAuthType { get; set; }
 
-    /// <summary>A user-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
+    /// <summary>User-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -211,7 +211,7 @@ public partial class V1beta1ProxySpecForProviderAuth
     [JsonPropertyName("iamAuth")]
     public string? IamAuth { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
+    /// <summary>ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -223,7 +223,7 @@ public partial class V1beta1ProxySpecForProviderAuth
     [JsonPropertyName("secretArnSelector")]
     public V1beta1ProxySpecForProviderAuthSecretArnSelector? SecretArnSelector { get; set; }
 
-    /// <summary>The name of the database user to which the proxy connects.</summary>
+    /// <summary>Name of the database user to which the proxy connects.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -697,7 +697,7 @@ public partial class V1beta1ProxySpecForProviderVpcSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxySpecForProvider
 {
-    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.</summary>
+    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.</summary>
     [JsonPropertyName("auth")]
     public IList<V1beta1ProxySpecForProviderAuth>? Auth { get; set; }
 
@@ -713,11 +713,11 @@ public partial class V1beta1ProxySpecForProvider
     [JsonPropertyName("endpointNetworkType")]
     public string? EndpointNetworkType { get; set; }
 
-    /// <summary>The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
+    /// <summary>Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
     [JsonPropertyName("engineFamily")]
     public string? EngineFamily { get; set; }
 
-    /// <summary>The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
+    /// <summary>Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
     [JsonPropertyName("idleClientTimeout")]
     public double? IdleClientTimeout { get; set; }
 
@@ -728,11 +728,11 @@ public partial class V1beta1ProxySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.</summary>
+    /// <summary>Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.</summary>
     [JsonPropertyName("requireTls")]
     public bool? RequireTls { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
+    /// <summary>ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -936,15 +936,15 @@ public partial class V1beta1ProxySpecInitProviderAuthSecretArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxySpecInitProviderAuth
 {
-    /// <summary>The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
+    /// <summary>Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
     [JsonPropertyName("authScheme")]
     public string? AuthScheme { get; set; }
 
-    /// <summary>The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
+    /// <summary>Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
     [JsonPropertyName("clientPasswordAuthType")]
     public string? ClientPasswordAuthType { get; set; }
 
-    /// <summary>A user-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
+    /// <summary>User-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -952,7 +952,7 @@ public partial class V1beta1ProxySpecInitProviderAuth
     [JsonPropertyName("iamAuth")]
     public string? IamAuth { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
+    /// <summary>ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -964,7 +964,7 @@ public partial class V1beta1ProxySpecInitProviderAuth
     [JsonPropertyName("secretArnSelector")]
     public V1beta1ProxySpecInitProviderAuthSecretArnSelector? SecretArnSelector { get; set; }
 
-    /// <summary>The name of the database user to which the proxy connects.</summary>
+    /// <summary>Name of the database user to which the proxy connects.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1450,7 +1450,7 @@ public partial class V1beta1ProxySpecInitProviderVpcSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxySpecInitProvider
 {
-    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.</summary>
+    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.</summary>
     [JsonPropertyName("auth")]
     public IList<V1beta1ProxySpecInitProviderAuth>? Auth { get; set; }
 
@@ -1466,19 +1466,19 @@ public partial class V1beta1ProxySpecInitProvider
     [JsonPropertyName("endpointNetworkType")]
     public string? EndpointNetworkType { get; set; }
 
-    /// <summary>The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
+    /// <summary>Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
     [JsonPropertyName("engineFamily")]
     public string? EngineFamily { get; set; }
 
-    /// <summary>The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
+    /// <summary>Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
     [JsonPropertyName("idleClientTimeout")]
     public double? IdleClientTimeout { get; set; }
 
-    /// <summary>A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.</summary>
+    /// <summary>Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.</summary>
     [JsonPropertyName("requireTls")]
     public bool? RequireTls { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
+    /// <summary>ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1634,15 +1634,15 @@ public partial class V1beta1ProxySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyStatusAtProviderAuth
 {
-    /// <summary>The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
+    /// <summary>Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.</summary>
     [JsonPropertyName("authScheme")]
     public string? AuthScheme { get; set; }
 
-    /// <summary>The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
+    /// <summary>Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.</summary>
     [JsonPropertyName("clientPasswordAuthType")]
     public string? ClientPasswordAuthType { get; set; }
 
-    /// <summary>A user-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
+    /// <summary>User-specified description about the authentication used by a proxy to log in as a specific database user.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -1650,11 +1650,11 @@ public partial class V1beta1ProxyStatusAtProviderAuth
     [JsonPropertyName("iamAuth")]
     public string? IamAuth { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
+    /// <summary>ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
-    /// <summary>The name of the database user to which the proxy connects.</summary>
+    /// <summary>Name of the database user to which the proxy connects.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1663,11 +1663,11 @@ public partial class V1beta1ProxyStatusAtProviderAuth
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the proxy.</summary>
+    /// <summary>ARN for the proxy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.</summary>
+    /// <summary>Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.</summary>
     [JsonPropertyName("auth")]
     public IList<V1beta1ProxyStatusAtProviderAuth>? Auth { get; set; }
 
@@ -1679,7 +1679,7 @@ public partial class V1beta1ProxyStatusAtProvider
     [JsonPropertyName("defaultAuthScheme")]
     public string? DefaultAuthScheme { get; set; }
 
-    /// <summary>The endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.</summary>
+    /// <summary>Endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
@@ -1687,15 +1687,15 @@ public partial class V1beta1ProxyStatusAtProvider
     [JsonPropertyName("endpointNetworkType")]
     public string? EndpointNetworkType { get; set; }
 
-    /// <summary>The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
+    /// <summary>Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.</summary>
     [JsonPropertyName("engineFamily")]
     public string? EngineFamily { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the proxy.</summary>
+    /// <summary>ARN for the proxy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
+    /// <summary>Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.</summary>
     [JsonPropertyName("idleClientTimeout")]
     public double? IdleClientTimeout { get; set; }
 
@@ -1706,11 +1706,11 @@ public partial class V1beta1ProxyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.</summary>
+    /// <summary>Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.</summary>
     [JsonPropertyName("requireTls")]
     public bool? RequireTls { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
+    /// <summary>ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1718,7 +1718,7 @@ public partial class V1beta1ProxyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

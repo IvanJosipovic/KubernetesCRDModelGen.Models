@@ -350,7 +350,7 @@ public partial class V1beta1ConformancePackStatusAtProviderInputParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConformancePackStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the conformance pack.</summary>
+    /// <summary>ARN of the conformance pack.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

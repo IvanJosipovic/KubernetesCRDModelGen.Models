@@ -353,11 +353,11 @@ public partial class V1beta1AccountAssignmentSpecForProviderPrincipalIdFromGroup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountAssignmentSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance.</summary>
+    /// <summary>ARN of the SSO Instance.</summary>
     [JsonPropertyName("instanceArn")]
     public required string InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set that the admin wants to grant the principal access to.</summary>
+    /// <summary>ARN of the Permission Set that the admin wants to grant the principal access to.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 
@@ -610,11 +610,11 @@ public partial class V1beta1AccountAssignmentStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance.</summary>
+    /// <summary>ARN of the SSO Instance.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set that the admin wants to grant the principal access to.</summary>
+    /// <summary>ARN of the Permission Set that the admin wants to grant the principal access to.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 

@@ -362,6 +362,14 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
     [JsonPropertyName("dxGatewayIdSelector")]
     public V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelector? DxGatewayIdSelector { get; set; }
 
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -724,6 +732,14 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
     [JsonPropertyName("dxGatewayIdSelector")]
     public V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelector? DxGatewayIdSelector { get; set; }
 
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -863,6 +879,14 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatusAtProvide
     /// <summary>The ID of the virtual interface.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

@@ -63,7 +63,7 @@ public partial class V1beta1PermissionSetSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
@@ -111,7 +111,7 @@ public partial class V1beta1PermissionSetSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
@@ -319,7 +319,7 @@ public partial class V1beta1PermissionSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionSetStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -331,11 +331,11 @@ public partial class V1beta1PermissionSetStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Names (ARNs) of the Permission Set and SSO Instance, separated by a comma (,).</summary>
+    /// <summary>ARNs of the Permission Set and SSO Instance, separated by a comma (,).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 

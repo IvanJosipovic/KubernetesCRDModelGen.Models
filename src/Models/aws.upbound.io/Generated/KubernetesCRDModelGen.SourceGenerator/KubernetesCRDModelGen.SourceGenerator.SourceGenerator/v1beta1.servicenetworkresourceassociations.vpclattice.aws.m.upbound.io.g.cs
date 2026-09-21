@@ -860,11 +860,11 @@ public partial class V1beta1ServiceNetworkResourceAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceNetworkResourceAssociationStatusAtProviderDnsEntry
 {
-    /// <summary>The domain name of the association in the service network.</summary>
+    /// <summary>Domain name of the association in the service network.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The ID of the hosted zone containing the domain name.</summary>
+    /// <summary>ID of the hosted zone containing the domain name.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 }

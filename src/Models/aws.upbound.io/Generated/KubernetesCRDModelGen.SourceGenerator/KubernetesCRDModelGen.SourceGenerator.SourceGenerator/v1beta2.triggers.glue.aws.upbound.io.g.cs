@@ -1868,7 +1868,7 @@ public partial class V1beta2TriggerStatusAtProvider
     [JsonPropertyName("actions")]
     public IList<V1beta2TriggerStatusAtProviderActions>? Actions { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of Glue Trigger</summary>
+    /// <summary>ARN of Glue Trigger</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

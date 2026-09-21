@@ -206,7 +206,7 @@ public partial class V1beta1BackupSpecForProviderFileSystemIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupSpecForProvider
 {
-    /// <summary>The ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
+    /// <summary>ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -229,7 +229,7 @@ public partial class V1beta1BackupSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
+    /// <summary>ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 }
@@ -397,7 +397,7 @@ public partial class V1beta1BackupSpecInitProviderFileSystemIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupSpecInitProvider
 {
-    /// <summary>The ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
+    /// <summary>ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -413,7 +413,7 @@ public partial class V1beta1BackupSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
+    /// <summary>ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 }
@@ -605,11 +605,11 @@ public partial class V1beta1BackupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name of the backup.</summary>
+    /// <summary>ARN of the backup.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
+    /// <summary>ID of the file system to back up. Required if backing up Lustre or Windows file systems.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -617,7 +617,7 @@ public partial class V1beta1BackupStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ID of the AWS Key Management Service (AWS KMS) key used to encrypt the backup of the Amazon FSx file system&apos;s data at rest.</summary>
+    /// <summary>ID of the KMS key used to encrypt the backup of the Amazon FSx file system&apos;s data at rest.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -636,15 +636,15 @@ public partial class V1beta1BackupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of the file system backup.</summary>
+    /// <summary>Type of the file system backup.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>The ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
+    /// <summary>ID of the volume to back up. Required if backing up a ONTAP Volume.</summary>
     [JsonPropertyName("volumeId")]
     public string? VolumeId { get; set; }
 }

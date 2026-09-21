@@ -558,7 +558,7 @@ public partial class V1beta1SchemaSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SchemaStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the schema.</summary>
+    /// <summary>ARN of the schema.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -574,7 +574,7 @@ public partial class V1beta1SchemaStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the schema.</summary>
+    /// <summary>ARN of the schema.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

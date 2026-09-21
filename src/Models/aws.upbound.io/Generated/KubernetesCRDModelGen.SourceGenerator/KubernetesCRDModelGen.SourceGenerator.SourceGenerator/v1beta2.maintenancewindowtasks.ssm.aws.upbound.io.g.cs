@@ -900,7 +900,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationPa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecForProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
-    /// <summary>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
+    /// <summary>ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
     [JsonPropertyName("notificationArn")]
     public string? NotificationArn { get; set; }
 
@@ -2424,7 +2424,7 @@ public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskSpecInitProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
-    /// <summary>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
+    /// <summary>ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
     [JsonPropertyName("notificationArn")]
     public string? NotificationArn { get; set; }
 
@@ -3363,7 +3363,7 @@ public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationP
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MaintenanceWindowTaskStatusAtProviderTaskInvocationParametersRunCommandParametersNotificationConfig
 {
-    /// <summary>An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
+    /// <summary>ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.</summary>
     [JsonPropertyName("notificationArn")]
     public string? NotificationArn { get; set; }
 

@@ -221,7 +221,7 @@ public partial class V1beta1ImageSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
+    /// <summary>ARN of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -409,7 +409,7 @@ public partial class V1beta1ImageSpecInitProvider
     [JsonPropertyName("displayName")]
     public string? DisplayName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
+    /// <summary>ARN of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -613,7 +613,7 @@ public partial class V1beta1ImageSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ImageStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Image.</summary>
+    /// <summary>ARN assigned by AWS to this Image.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -636,7 +636,7 @@ public partial class V1beta1ImageStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
+    /// <summary>ARN of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

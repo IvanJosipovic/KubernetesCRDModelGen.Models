@@ -965,7 +965,7 @@ public partial class V1beta1EndpointAccessStatusAtProvider
     [JsonPropertyName("address")]
     public string? Address { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Serverless Endpoint Access.</summary>
+    /// <summary>ARN of the Redshift Serverless Endpoint Access.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

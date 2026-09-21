@@ -49,12 +49,12 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -67,20 +67,20 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -89,11 +89,11 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -101,21 +101,21 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized capacity metric specification. See supported fields below.</summary>
+/// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -133,12 +133,12 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -151,20 +151,20 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -173,11 +173,11 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -185,21 +185,21 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized load metric specification. See supported fields below.</summary>
+/// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -217,12 +217,12 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -235,20 +235,20 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -257,11 +257,11 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -269,63 +269,63 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized scaling metric specification. See supported fields below.</summary>
+/// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-/// <summary>Predefined load metric specification. See supported fields below.</summary>
+/// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined load metric type. See the PredictiveScalingPredefinedLoadMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a target group. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Pair of predefined metrics (one load metric and one scaling metric) to use. See the PredictiveScalingPredefinedMetricPairSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the total and average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+/// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined scaling metric type. See the PredictiveScalingPredefinedScalingMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -334,31 +334,31 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
-    /// <summary>Customized capacity metric specification. See supported fields below.</summary>
+    /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedCapacityMetricSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification? CustomizedCapacityMetricSpecification { get; set; }
 
-    /// <summary>Customized load metric specification. See supported fields below.</summary>
+    /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedLoadMetricSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification? CustomizedLoadMetricSpecification { get; set; }
 
-    /// <summary>Customized scaling metric specification. See supported fields below.</summary>
+    /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedScalingMetricSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification? CustomizedScalingMetricSpecification { get; set; }
 
-    /// <summary>Predefined load metric specification. See supported fields below.</summary>
+    /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedLoadMetricSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification? PredefinedLoadMetricSpecification { get; set; }
 
-    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricPairSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification? PredefinedMetricPairSpecification { get; set; }
 
-    /// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+    /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedScalingMetricSpecification")]
     public V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification? PredefinedScalingMetricSpecification { get; set; }
 
-    /// <summary>Target value for the metric.</summary>
+    /// <summary>Target utilization.</summary>
     [JsonPropertyName("targetValue")]
     public string? TargetValue { get; set; }
 }
@@ -368,7 +368,7 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfiguration
 {
-    /// <summary>The behavior that should be applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
+    /// <summary>Behavior applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
     [JsonPropertyName("maxCapacityBreachBehavior")]
     public string? MaxCapacityBreachBehavior { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigur
     [JsonPropertyName("maxCapacityBuffer")]
     public double? MaxCapacityBuffer { get; set; }
 
-    /// <summary>Metrics and target utilization to use for predictive scaling. See supported fields below.</summary>
+    /// <summary>Metrics and target utilization to use for predictive scaling. See predictive_scaling_policy_configuration.metric_specification Block for details.</summary>
     [JsonPropertyName("metricSpecification")]
     public IList<V1beta1PolicySpecForProviderPredictiveScalingPolicyConfigurationMetricSpecification>? MetricSpecification { get; set; }
 
@@ -858,11 +858,11 @@ public partial class V1beta1PolicySpecForProviderServiceNamespaceSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderStepScalingPolicyConfigurationStepAdjustment
 {
-    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as negative infinity.</summary>
+    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as negative infinity.</summary>
     [JsonPropertyName("metricIntervalLowerBound")]
     public string? MetricIntervalLowerBound { get; set; }
 
-    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.</summary>
+    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as infinity. The upper bound must be greater than the lower bound.</summary>
     [JsonPropertyName("metricIntervalUpperBound")]
     public string? MetricIntervalUpperBound { get; set; }
 
@@ -884,7 +884,7 @@ public partial class V1beta1PolicySpecForProviderStepScalingPolicyConfiguration
     [JsonPropertyName("cooldown")]
     public double? Cooldown { get; set; }
 
-    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are &quot;Minimum&quot;, &quot;Maximum&quot;, and &quot;Average&quot;. Without a value, AWS will treat the aggregation type as &quot;Average&quot;.</summary>
+    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are Minimum, Maximum, and Average. Without a value, AWS treats the aggregation type as Average.</summary>
     [JsonPropertyName("metricAggregationType")]
     public string? MetricAggregationType { get; set; }
 
@@ -892,7 +892,7 @@ public partial class V1beta1PolicySpecForProviderStepScalingPolicyConfiguration
     [JsonPropertyName("minAdjustmentMagnitude")]
     public double? MinAdjustmentMagnitude { get; set; }
 
-    /// <summary>Set of adjustments that manage scaling. These have the following structure:</summary>
+    /// <summary>Set of adjustments that manage scaling. See step_scaling_policy_configuration.step_adjustment Block for details.</summary>
     [JsonPropertyName("stepAdjustment")]
     public IList<V1beta1PolicySpecForProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
@@ -923,12 +923,12 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions>? Dimensions { get; set; }
 
@@ -941,12 +941,12 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric? Metric { get; set; }
 
@@ -954,7 +954,7 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit of the metrics to return.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -975,21 +975,21 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric. Defaults to true.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+/// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric if the metric was published with dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions>? Dimensions { get; set; }
 
@@ -997,7 +997,7 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>Metrics to include, as a metric data query.</summary>
+    /// <summary>Metrics to include, as a metric data query. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics Block for details.</summary>
     [JsonPropertyName("metrics")]
     public IList<V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics>? Metrics { get; set; }
 
@@ -1005,7 +1005,7 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>Statistic of the metric. Valid values: Average, Minimum, Maximum, SampleCount, and Sum.</summary>
+    /// <summary>Statistic of the metric. Valid values are Average, Minimum, Maximum, SampleCount, and Sum.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 
@@ -1014,7 +1014,7 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     public string? Unit { get; set; }
 }
 
-/// <summary>Predefined metric. See supported fields below.</summary>
+/// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
@@ -1023,7 +1023,7 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. See the AWS Predefined Scaling Metric Specification documentation. Must be less than or equal to 1023 characters in length.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -1033,15 +1033,15 @@ public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfiguration
 {
-    /// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+    /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedMetricSpecification")]
     public V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification? CustomizedMetricSpecification { get; set; }
 
-    /// <summary>Whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won&apos;t remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is false.</summary>
+    /// <summary>Whether scale in by the target tracking policy is disabled. If true, scale in is disabled and the target tracking policy does not remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. Defaults to false.</summary>
     [JsonPropertyName("disableScaleIn")]
     public bool? DisableScaleIn { get; set; }
 
-    /// <summary>Predefined metric. See supported fields below.</summary>
+    /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricSpecification")]
     public V1beta1PolicySpecForProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification? PredefinedMetricSpecification { get; set; }
 
@@ -1135,12 +1135,12 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -1153,20 +1153,20 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1175,11 +1175,11 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1187,21 +1187,21 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized capacity metric specification. See supported fields below.</summary>
+/// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -1219,12 +1219,12 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -1237,20 +1237,20 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1259,11 +1259,11 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1271,21 +1271,21 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized load metric specification. See supported fields below.</summary>
+/// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -1303,12 +1303,12 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -1321,20 +1321,20 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1343,11 +1343,11 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1355,63 +1355,63 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized scaling metric specification. See supported fields below.</summary>
+/// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-/// <summary>Predefined load metric specification. See supported fields below.</summary>
+/// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined load metric type. See the PredictiveScalingPredefinedLoadMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a target group. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Pair of predefined metrics (one load metric and one scaling metric) to use. See the PredictiveScalingPredefinedMetricPairSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the total and average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+/// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined scaling metric type. See the PredictiveScalingPredefinedScalingMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -1420,31 +1420,31 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
-    /// <summary>Customized capacity metric specification. See supported fields below.</summary>
+    /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedCapacityMetricSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification? CustomizedCapacityMetricSpecification { get; set; }
 
-    /// <summary>Customized load metric specification. See supported fields below.</summary>
+    /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedLoadMetricSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification? CustomizedLoadMetricSpecification { get; set; }
 
-    /// <summary>Customized scaling metric specification. See supported fields below.</summary>
+    /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedScalingMetricSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification? CustomizedScalingMetricSpecification { get; set; }
 
-    /// <summary>Predefined load metric specification. See supported fields below.</summary>
+    /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedLoadMetricSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification? PredefinedLoadMetricSpecification { get; set; }
 
-    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricPairSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification? PredefinedMetricPairSpecification { get; set; }
 
-    /// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+    /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedScalingMetricSpecification")]
     public V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification? PredefinedScalingMetricSpecification { get; set; }
 
-    /// <summary>Target value for the metric.</summary>
+    /// <summary>Target utilization.</summary>
     [JsonPropertyName("targetValue")]
     public string? TargetValue { get; set; }
 }
@@ -1454,7 +1454,7 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfiguration
 {
-    /// <summary>The behavior that should be applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
+    /// <summary>Behavior applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
     [JsonPropertyName("maxCapacityBreachBehavior")]
     public string? MaxCapacityBreachBehavior { get; set; }
 
@@ -1462,7 +1462,7 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("maxCapacityBuffer")]
     public double? MaxCapacityBuffer { get; set; }
 
-    /// <summary>Metrics and target utilization to use for predictive scaling. See supported fields below.</summary>
+    /// <summary>Metrics and target utilization to use for predictive scaling. See predictive_scaling_policy_configuration.metric_specification Block for details.</summary>
     [JsonPropertyName("metricSpecification")]
     public IList<V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigurationMetricSpecification>? MetricSpecification { get; set; }
 
@@ -1479,11 +1479,11 @@ public partial class V1beta1PolicySpecInitProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderStepScalingPolicyConfigurationStepAdjustment
 {
-    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as negative infinity.</summary>
+    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as negative infinity.</summary>
     [JsonPropertyName("metricIntervalLowerBound")]
     public string? MetricIntervalLowerBound { get; set; }
 
-    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.</summary>
+    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as infinity. The upper bound must be greater than the lower bound.</summary>
     [JsonPropertyName("metricIntervalUpperBound")]
     public string? MetricIntervalUpperBound { get; set; }
 
@@ -1505,7 +1505,7 @@ public partial class V1beta1PolicySpecInitProviderStepScalingPolicyConfiguration
     [JsonPropertyName("cooldown")]
     public double? Cooldown { get; set; }
 
-    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are &quot;Minimum&quot;, &quot;Maximum&quot;, and &quot;Average&quot;. Without a value, AWS will treat the aggregation type as &quot;Average&quot;.</summary>
+    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are Minimum, Maximum, and Average. Without a value, AWS treats the aggregation type as Average.</summary>
     [JsonPropertyName("metricAggregationType")]
     public string? MetricAggregationType { get; set; }
 
@@ -1513,7 +1513,7 @@ public partial class V1beta1PolicySpecInitProviderStepScalingPolicyConfiguration
     [JsonPropertyName("minAdjustmentMagnitude")]
     public double? MinAdjustmentMagnitude { get; set; }
 
-    /// <summary>Set of adjustments that manage scaling. These have the following structure:</summary>
+    /// <summary>Set of adjustments that manage scaling. See step_scaling_policy_configuration.step_adjustment Block for details.</summary>
     [JsonPropertyName("stepAdjustment")]
     public IList<V1beta1PolicySpecInitProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
@@ -1544,12 +1544,12 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions>? Dimensions { get; set; }
 
@@ -1562,12 +1562,12 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric? Metric { get; set; }
 
@@ -1575,7 +1575,7 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit of the metrics to return.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1596,21 +1596,21 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric. Defaults to true.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+/// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric if the metric was published with dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions>? Dimensions { get; set; }
 
@@ -1618,7 +1618,7 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>Metrics to include, as a metric data query.</summary>
+    /// <summary>Metrics to include, as a metric data query. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics Block for details.</summary>
     [JsonPropertyName("metrics")]
     public IList<V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics>? Metrics { get; set; }
 
@@ -1626,7 +1626,7 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>Statistic of the metric. Valid values: Average, Minimum, Maximum, SampleCount, and Sum.</summary>
+    /// <summary>Statistic of the metric. Valid values are Average, Minimum, Maximum, SampleCount, and Sum.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 
@@ -1635,7 +1635,7 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     public string? Unit { get; set; }
 }
 
-/// <summary>Predefined metric. See supported fields below.</summary>
+/// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
@@ -1644,7 +1644,7 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. See the AWS Predefined Scaling Metric Specification documentation. Must be less than or equal to 1023 characters in length.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -1654,15 +1654,15 @@ public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfiguration
 {
-    /// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+    /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedMetricSpecification")]
     public V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification? CustomizedMetricSpecification { get; set; }
 
-    /// <summary>Whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won&apos;t remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is false.</summary>
+    /// <summary>Whether scale in by the target tracking policy is disabled. If true, scale in is disabled and the target tracking policy does not remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. Defaults to false.</summary>
     [JsonPropertyName("disableScaleIn")]
     public bool? DisableScaleIn { get; set; }
 
-    /// <summary>Predefined metric. See supported fields below.</summary>
+    /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricSpecification")]
     public V1beta1PolicySpecInitProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification? PredefinedMetricSpecification { get; set; }
 
@@ -1832,12 +1832,12 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -1850,20 +1850,20 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1872,11 +1872,11 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1884,21 +1884,21 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized capacity metric specification. See supported fields below.</summary>
+/// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -1916,12 +1916,12 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -1934,20 +1934,20 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -1956,11 +1956,11 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1968,21 +1968,21 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized load metric specification. See supported fields below.</summary>
+/// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
@@ -2000,12 +2000,12 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric
 {
-    /// <summary>Dimensions of the metric. See supported fields below.</summary>
+    /// <summary>Dimensions of the metric. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric.dimension Block for details.</summary>
     [JsonPropertyName("dimension")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetricDimension>? Dimension { get; set; }
 
@@ -2018,20 +2018,20 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>CloudWatch metric to return, including the metric name, namespace, and dimensions. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStatMetric? Metric { get; set; }
 
-    /// <summary>Statistic of the metrics to return.</summary>
+    /// <summary>Statistic to return.</summary>
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit to use for the returned data points.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -2040,11 +2040,11 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery
 {
-    /// <summary>Math expression used on the returned metric. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Math expression to perform on the returned data, if this object is performing a math expression.</summary>
     [JsonPropertyName("expression")]
     public string? Expression { get; set; }
 
-    /// <summary>Short name for the metric used in target tracking scaling policy.</summary>
+    /// <summary>Short name that identifies the object&apos;s results in the response.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -2052,63 +2052,63 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Information about the metric data to return. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueryMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Customized scaling metric specification. See supported fields below.</summary>
+/// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification
 {
-    /// <summary>One or more metric data queries to provide data points for a metric specification. See supported fields below.</summary>
+    /// <summary>One or more metric data queries to provide data points for a metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification.metric_data_query Block for details.</summary>
     [JsonPropertyName("metricDataQuery")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQuery>? MetricDataQuery { get; set; }
 }
 
-/// <summary>Predefined load metric specification. See supported fields below.</summary>
+/// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined load metric type. See the PredictiveScalingPredefinedLoadMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a target group. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+/// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Pair of predefined metrics (one load metric and one scaling metric) to use. See the PredictiveScalingPredefinedMetricPairSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the total and average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
 
-/// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+/// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification
 {
-    /// <summary>Metric type.</summary>
+    /// <summary>Predefined scaling metric type. See the PredictiveScalingPredefinedScalingMetricSpecification AWS API reference for valid values.</summary>
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Label that uniquely identifies a specific target group from which to determine the average request count. Required when predefined_metric_type is an ALB-based value.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -2117,31 +2117,31 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecification
 {
-    /// <summary>Customized capacity metric specification. See supported fields below.</summary>
+    /// <summary>Customized capacity metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_capacity_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedCapacityMetricSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedCapacityMetricSpecification? CustomizedCapacityMetricSpecification { get; set; }
 
-    /// <summary>Customized load metric specification. See supported fields below.</summary>
+    /// <summary>Customized load metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_load_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedLoadMetricSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedLoadMetricSpecification? CustomizedLoadMetricSpecification { get; set; }
 
-    /// <summary>Customized scaling metric specification. See supported fields below.</summary>
+    /// <summary>Customized scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.customized_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedScalingMetricSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationCustomizedScalingMetricSpecification? CustomizedScalingMetricSpecification { get; set; }
 
-    /// <summary>Predefined load metric specification. See supported fields below.</summary>
+    /// <summary>Predefined load metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_load_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedLoadMetricSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedLoadMetricSpecification? PredefinedLoadMetricSpecification { get; set; }
 
-    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See supported fields below.</summary>
+    /// <summary>Predefined metric pair specification that determines the appropriate scaling metric and load metric to use. See predictive_scaling_policy_configuration.metric_specification.predefined_metric_pair_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricPairSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedMetricPairSpecification? PredefinedMetricPairSpecification { get; set; }
 
-    /// <summary>Predefined scaling metric specification. See supported fields below.</summary>
+    /// <summary>Predefined scaling metric specification. See predictive_scaling_policy_configuration.metric_specification.predefined_scaling_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedScalingMetricSpecification")]
     public V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecificationPredefinedScalingMetricSpecification? PredefinedScalingMetricSpecification { get; set; }
 
-    /// <summary>Target value for the metric.</summary>
+    /// <summary>Target utilization.</summary>
     [JsonPropertyName("targetValue")]
     public string? TargetValue { get; set; }
 }
@@ -2151,7 +2151,7 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfiguration
 {
-    /// <summary>The behavior that should be applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
+    /// <summary>Behavior applied if the forecast capacity approaches or exceeds the maximum capacity. Valid values are HonorMaxCapacity and IncreaseMaxCapacity.</summary>
     [JsonPropertyName("maxCapacityBreachBehavior")]
     public string? MaxCapacityBreachBehavior { get; set; }
 
@@ -2159,7 +2159,7 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
     [JsonPropertyName("maxCapacityBuffer")]
     public double? MaxCapacityBuffer { get; set; }
 
-    /// <summary>Metrics and target utilization to use for predictive scaling. See supported fields below.</summary>
+    /// <summary>Metrics and target utilization to use for predictive scaling. See predictive_scaling_policy_configuration.metric_specification Block for details.</summary>
     [JsonPropertyName("metricSpecification")]
     public IList<V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigurationMetricSpecification>? MetricSpecification { get; set; }
 
@@ -2176,11 +2176,11 @@ public partial class V1beta1PolicyStatusAtProviderPredictiveScalingPolicyConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderStepScalingPolicyConfigurationStepAdjustment
 {
-    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as negative infinity.</summary>
+    /// <summary>Lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as negative infinity.</summary>
     [JsonPropertyName("metricIntervalLowerBound")]
     public string? MetricIntervalLowerBound { get; set; }
 
-    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.</summary>
+    /// <summary>Upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS treats this bound as infinity. The upper bound must be greater than the lower bound.</summary>
     [JsonPropertyName("metricIntervalUpperBound")]
     public string? MetricIntervalUpperBound { get; set; }
 
@@ -2202,7 +2202,7 @@ public partial class V1beta1PolicyStatusAtProviderStepScalingPolicyConfiguration
     [JsonPropertyName("cooldown")]
     public double? Cooldown { get; set; }
 
-    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are &quot;Minimum&quot;, &quot;Maximum&quot;, and &quot;Average&quot;. Without a value, AWS will treat the aggregation type as &quot;Average&quot;.</summary>
+    /// <summary>Aggregation type for the policy&apos;s metrics. Valid values are Minimum, Maximum, and Average. Without a value, AWS treats the aggregation type as Average.</summary>
     [JsonPropertyName("metricAggregationType")]
     public string? MetricAggregationType { get; set; }
 
@@ -2210,7 +2210,7 @@ public partial class V1beta1PolicyStatusAtProviderStepScalingPolicyConfiguration
     [JsonPropertyName("minAdjustmentMagnitude")]
     public double? MinAdjustmentMagnitude { get; set; }
 
-    /// <summary>Set of adjustments that manage scaling. These have the following structure:</summary>
+    /// <summary>Set of adjustments that manage scaling. See step_scaling_policy_configuration.step_adjustment Block for details.</summary>
     [JsonPropertyName("stepAdjustment")]
     public IList<V1beta1PolicyStatusAtProviderStepScalingPolicyConfigurationStepAdjustment>? StepAdjustment { get; set; }
 }
@@ -2241,12 +2241,12 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public string? Value { get; set; }
 }
 
-/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+/// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions>? Dimensions { get; set; }
 
@@ -2259,12 +2259,12 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public string? Namespace { get; set; }
 }
 
-/// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+/// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat
 {
-    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to return, including the metric name, namespace, and dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat.metric Block for details.</summary>
     [JsonPropertyName("metric")]
     public V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric? Metric { get; set; }
 
@@ -2272,7 +2272,7 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("stat")]
     public string? Stat { get; set; }
 
-    /// <summary>Unit of the metric.</summary>
+    /// <summary>Unit of the metrics to return.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
 }
@@ -2293,21 +2293,21 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("label")]
     public string? Label { get; set; }
 
-    /// <summary>Structure that defines CloudWatch metric to be used in target tracking scaling policy. You must specify either expression or metric_stat, but not both.</summary>
+    /// <summary>Structure that defines the CloudWatch metric to be used in a target tracking scaling policy. You must specify either expression or metric_stat, but not both. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics.metric_stat Block for details.</summary>
     [JsonPropertyName("metricStat")]
     public V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat? MetricStat { get; set; }
 
-    /// <summary>Boolean that indicates whether to return the timestamps and raw data values of this metric, the default is true</summary>
+    /// <summary>Whether to return the timestamps and raw data values of this metric. Defaults to true.</summary>
     [JsonPropertyName("returnData")]
     public bool? ReturnData { get; set; }
 }
 
-/// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+/// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification
 {
-    /// <summary>Configuration block(s) with the dimensions of the metric if the metric was published with dimensions. Detailed below.</summary>
+    /// <summary>Dimensions of the metric if the metric was published with dimensions. See target_tracking_scaling_policy_configuration.customized_metric_specification.dimensions Block for details.</summary>
     [JsonPropertyName("dimensions")]
     public IList<V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions>? Dimensions { get; set; }
 
@@ -2315,7 +2315,7 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("metricName")]
     public string? MetricName { get; set; }
 
-    /// <summary>Metrics to include, as a metric data query.</summary>
+    /// <summary>Metrics to include, as a metric data query. See target_tracking_scaling_policy_configuration.customized_metric_specification.metrics Block for details.</summary>
     [JsonPropertyName("metrics")]
     public IList<V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics>? Metrics { get; set; }
 
@@ -2323,7 +2323,7 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>Statistic of the metric. Valid values: Average, Minimum, Maximum, SampleCount, and Sum.</summary>
+    /// <summary>Statistic of the metric. Valid values are Average, Minimum, Maximum, SampleCount, and Sum.</summary>
     [JsonPropertyName("statistic")]
     public string? Statistic { get; set; }
 
@@ -2332,7 +2332,7 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     public string? Unit { get; set; }
 }
 
-/// <summary>Predefined metric. See supported fields below.</summary>
+/// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification
@@ -2341,7 +2341,7 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
     [JsonPropertyName("predefinedMetricType")]
     public string? PredefinedMetricType { get; set; }
 
-    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. Documentation can be found at: AWS Predefined Scaling Metric Specification. Must be less than or equal to 1023 characters in length.</summary>
+    /// <summary>Reserved for future use if the predefined_metric_type is not ALBRequestCountPerTarget. If the predefined_metric_type is ALBRequestCountPerTarget, you must specify this argument. See the AWS Predefined Scaling Metric Specification documentation. Must be less than or equal to 1023 characters in length.</summary>
     [JsonPropertyName("resourceLabel")]
     public string? ResourceLabel { get; set; }
 }
@@ -2351,15 +2351,15 @@ public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfiguration
 {
-    /// <summary>Custom CloudWatch metric. Documentation can be found  at: AWS Customized Metric Specification. See supported fields below.</summary>
+    /// <summary>Custom CloudWatch metric. See the AWS Customized Metric Specification documentation. See target_tracking_scaling_policy_configuration.customized_metric_specification Block for details.</summary>
     [JsonPropertyName("customizedMetricSpecification")]
     public V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification? CustomizedMetricSpecification { get; set; }
 
-    /// <summary>Whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won&apos;t remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is false.</summary>
+    /// <summary>Whether scale in by the target tracking policy is disabled. If true, scale in is disabled and the target tracking policy does not remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. Defaults to false.</summary>
     [JsonPropertyName("disableScaleIn")]
     public bool? DisableScaleIn { get; set; }
 
-    /// <summary>Predefined metric. See supported fields below.</summary>
+    /// <summary>Predefined metric. See target_tracking_scaling_policy_configuration.predefined_metric_specification Block for details.</summary>
     [JsonPropertyName("predefinedMetricSpecification")]
     public V1beta1PolicyStatusAtProviderTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification? PredefinedMetricSpecification { get; set; }
 

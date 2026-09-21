@@ -44,13 +44,17 @@ public partial class V1beta1ServiceSpecForProvider
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the certificate.</summary>
+    /// <summary>ARN of the certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
     /// <summary>Custom domain name of the service.</summary>
     [JsonPropertyName("customDomainName")]
     public string? CustomDomainName { get; set; }
+
+    /// <summary>Amount of time, in seconds, that a connection can remain idle (no data sent) before VPC Lattice closes it. The valid range is 60 to 600 seconds. Default is 60 seconds.</summary>
+    [JsonPropertyName("idleTimeoutSeconds")]
+    public double? IdleTimeoutSeconds { get; set; }
 
     /// <summary>Name of the service. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.Must be between 3 and 40 characters in length.</summary>
     [JsonPropertyName("name")]
@@ -88,13 +92,17 @@ public partial class V1beta1ServiceSpecInitProvider
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the certificate.</summary>
+    /// <summary>ARN of the certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
     /// <summary>Custom domain name of the service.</summary>
     [JsonPropertyName("customDomainName")]
     public string? CustomDomainName { get; set; }
+
+    /// <summary>Amount of time, in seconds, that a connection can remain idle (no data sent) before VPC Lattice closes it. The valid range is 60 to 600 seconds. Default is 60 seconds.</summary>
+    [JsonPropertyName("idleTimeoutSeconds")]
+    public double? IdleTimeoutSeconds { get; set; }
 
     /// <summary>Name of the service. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.Must be between 3 and 40 characters in length.</summary>
     [JsonPropertyName("name")]
@@ -216,11 +224,11 @@ public partial class V1beta1ServiceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceStatusAtProviderDnsEntry
 {
-    /// <summary>Name of the service. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.Must be between 3 and 40 characters in length.</summary>
+    /// <summary>Domain name of the service.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>Unique identifier for the service.</summary>
+    /// <summary>ID of the hosted zone.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 }
@@ -237,7 +245,7 @@ public partial class V1beta1ServiceStatusAtProvider
     [JsonPropertyName("authType")]
     public string? AuthType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the certificate.</summary>
+    /// <summary>ARN of the certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
@@ -252,6 +260,10 @@ public partial class V1beta1ServiceStatusAtProvider
     /// <summary>Unique identifier for the service.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Amount of time, in seconds, that a connection can remain idle (no data sent) before VPC Lattice closes it. The valid range is 60 to 600 seconds. Default is 60 seconds.</summary>
+    [JsonPropertyName("idleTimeoutSeconds")]
+    public double? IdleTimeoutSeconds { get; set; }
 
     /// <summary>Name of the service. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.Must be between 3 and 40 characters in length.</summary>
     [JsonPropertyName("name")]

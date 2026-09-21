@@ -625,7 +625,7 @@ public partial class V1beta1RuleStatusAtProviderTargetIp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleStatusAtProvider
 {
-    /// <summary>ARN (Amazon Resource Name) for the resolver rule.</summary>
+    /// <summary>ARN for the resolver rule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

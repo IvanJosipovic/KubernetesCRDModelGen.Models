@@ -1334,7 +1334,7 @@ spec:
                               type: string
                           type: object
                         userPoolConfig:
-                          description: Amazon Cognito User Pool configuration. See user_pool_config Block for details.
+                          description: Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.
                           properties:
                             appIdClientRegex:
                               description: Regular expression for validating the incoming Amazon Cognito User Pool app client ID.
@@ -1387,7 +1387,7 @@ spec:
                     description: Nested argument containing logging configuration. See log_config Block for details.
                     properties:
                       cloudwatchLogsRoleArn:
-                        description: Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
+                        description: ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
                         type: string
                       cloudwatchLogsRoleArnRef:
                         description: Reference to a Role in iam to populate cloudwatchLogsRoleArn.
@@ -1565,7 +1565,7 @@ spec:
                         type: string
                     type: object
                   queryDepthLimit:
-                    description: The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   region:
                     description: |-
@@ -1573,7 +1573,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   resolverCountLimit:
-                    description: The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   schema:
                     description: Schema definition, in GraphQL schema language format.
@@ -1732,7 +1732,7 @@ spec:
                               type: string
                           type: object
                         userPoolConfig:
-                          description: Amazon Cognito User Pool configuration. See user_pool_config Block for details.
+                          description: Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.
                           properties:
                             appIdClientRegex:
                               description: Regular expression for validating the incoming Amazon Cognito User Pool app client ID.
@@ -1785,7 +1785,7 @@ spec:
                     description: Nested argument containing logging configuration. See log_config Block for details.
                     properties:
                       cloudwatchLogsRoleArn:
-                        description: Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
+                        description: ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
                         type: string
                       cloudwatchLogsRoleArnRef:
                         description: Reference to a Role in iam to populate cloudwatchLogsRoleArn.
@@ -1963,10 +1963,10 @@ spec:
                         type: string
                     type: object
                   queryDepthLimit:
-                    description: The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   resolverCountLimit:
-                    description: The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   schema:
                     description: Schema definition, in GraphQL schema language format.
@@ -2206,7 +2206,7 @@ spec:
                               type: string
                           type: object
                         userPoolConfig:
-                          description: Amazon Cognito User Pool configuration. See user_pool_config Block for details.
+                          description: Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.
                           properties:
                             appIdClientRegex:
                               description: Regular expression for validating the incoming Amazon Cognito User Pool app client ID.
@@ -2265,7 +2265,7 @@ spec:
                     description: Nested argument containing logging configuration. See log_config Block for details.
                     properties:
                       cloudwatchLogsRoleArn:
-                        description: Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
+                        description: ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
                         type: string
                       excludeVerboseContent:
                         description: 'Set to TRUE to exclude sections that contain information such as headers, context, and evaluated mapping templates, regardless of logging  level. Valid values: true, false. Default value: false'
@@ -2297,7 +2297,7 @@ spec:
                         type: string
                     type: object
                   queryDepthLimit:
-                    description: The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there's no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   region:
                     description: |-
@@ -2305,7 +2305,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   resolverCountLimit:
-                    description: The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
+                    description: Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.
                     type: number
                   schema:
                     description: Schema definition, in GraphQL schema language format.

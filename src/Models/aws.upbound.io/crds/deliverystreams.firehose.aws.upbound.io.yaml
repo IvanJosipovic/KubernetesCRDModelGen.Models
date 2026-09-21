@@ -13255,7 +13255,7 @@ spec:
                         type: object
                     type: object
                   kinesisSourceConfiguration:
-                    description: The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
+                    description: Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
                     properties:
                       kinesisStreamArn:
                         description: The kinesis stream used as the source of the firehose delivery stream.
@@ -14084,7 +14084,7 @@ spec:
                         description: After an initial failure to deliver to the Serverless offering for Amazon OpenSearch Service, the total amount of time, in seconds between 0 to 7200, during which Kinesis Data Firehose retries delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
                         type: number
                       roleArn:
-                        description: The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
+                        description: ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
                         type: string
                       roleArnRef:
                         description: Reference to a Role in iam to populate roleArn.
@@ -14935,7 +14935,7 @@ spec:
                         description: Whether to enable encryption at rest. Default is false.
                         type: boolean
                       keyArn:
-                        description: Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
+                        description: ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
                         type: string
                       keyType:
                         description: Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK
@@ -17745,7 +17745,7 @@ spec:
                         type: object
                     type: object
                   kinesisSourceConfiguration:
-                    description: The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
+                    description: Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
                     properties:
                       kinesisStreamArn:
                         description: The kinesis stream used as the source of the firehose delivery stream.
@@ -18574,7 +18574,7 @@ spec:
                         description: After an initial failure to deliver to the Serverless offering for Amazon OpenSearch Service, the total amount of time, in seconds between 0 to 7200, during which Kinesis Data Firehose retries delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
                         type: number
                       roleArn:
-                        description: The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
+                        description: ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
                         type: string
                       roleArnRef:
                         description: Reference to a Role in iam to populate roleArn.
@@ -19420,7 +19420,7 @@ spec:
                         description: Whether to enable encryption at rest. Default is false.
                         type: boolean
                       keyArn:
-                        description: Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
+                        description: ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
                         type: string
                       keyType:
                         description: Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK
@@ -20230,7 +20230,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) specifying the Stream
+                    description: ARN specifying the Stream
                     type: string
                   destination:
                     description: This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.
@@ -20911,7 +20911,7 @@ spec:
                   id:
                     type: string
                   kinesisSourceConfiguration:
-                    description: The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
+                    description: Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.
                     properties:
                       kinesisStreamArn:
                         description: The kinesis stream used as the source of the firehose delivery stream.
@@ -21152,7 +21152,7 @@ spec:
                         description: After an initial failure to deliver to the Serverless offering for Amazon OpenSearch Service, the total amount of time, in seconds between 0 to 7200, during which Kinesis Data Firehose retries delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
                         type: number
                       roleArn:
-                        description: The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
+                        description: ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.
                         type: string
                       s3BackupMode:
                         description: Defines how documents should be delivered to Amazon S3.  Valid values are FailedDocumentsOnly and AllDocuments.  Default value is FailedDocumentsOnly.
@@ -21404,7 +21404,7 @@ spec:
                         description: Whether to enable encryption at rest. Default is false.
                         type: boolean
                       keyArn:
-                        description: Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
+                        description: ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.
                         type: string
                       keyType:
                         description: Type of encryption key. Default is AWS_OWNED_CMK. Valid values are AWS_OWNED_CMK and CUSTOMER_MANAGED_CMK

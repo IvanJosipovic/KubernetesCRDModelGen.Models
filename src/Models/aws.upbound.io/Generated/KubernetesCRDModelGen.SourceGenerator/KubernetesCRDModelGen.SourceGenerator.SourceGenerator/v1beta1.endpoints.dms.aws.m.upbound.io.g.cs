@@ -145,7 +145,7 @@ public partial class V1beta1EndpointSpecForProviderKafkaSettings
     [JsonPropertyName("saslUsername")]
     public string? SaslUsername { get; set; }
 
-    /// <summary>Set secure connection to a Kafka target endpoint using Transport Layer Security (TLS). Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
+    /// <summary>Set secure connection to a Kafka target endpoint using TLS. Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
     [JsonPropertyName("securityProtocol")]
     public string? SecurityProtocol { get; set; }
 
@@ -759,11 +759,11 @@ public partial class V1beta1EndpointSpecForProviderRedisSettings
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
+    /// <summary>ARN for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
     [JsonPropertyName("sslCaCertificateArn")]
     public string? SslCaCertificateArn { get; set; }
 
-    /// <summary>The plaintext option doesn&apos;t provide Transport Layer Security (TLS) encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
+    /// <summary>The plaintext option doesn&apos;t provide TLS encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
     [JsonPropertyName("sslSecurityProtocol")]
     public string? SslSecurityProtocol { get; set; }
 }
@@ -789,7 +789,7 @@ public partial class V1beta1EndpointSpecForProviderRedshiftSettings
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
+    /// <summary>ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
     [JsonPropertyName("serviceAccessRoleArn")]
     public string? ServiceAccessRoleArn { get; set; }
 }
@@ -1348,7 +1348,7 @@ public partial class V1beta1EndpointSpecInitProviderKafkaSettings
     [JsonPropertyName("saslUsername")]
     public string? SaslUsername { get; set; }
 
-    /// <summary>Set secure connection to a Kafka target endpoint using Transport Layer Security (TLS). Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
+    /// <summary>Set secure connection to a Kafka target endpoint using TLS. Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
     [JsonPropertyName("securityProtocol")]
     public string? SecurityProtocol { get; set; }
 
@@ -1962,11 +1962,11 @@ public partial class V1beta1EndpointSpecInitProviderRedisSettings
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
+    /// <summary>ARN for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
     [JsonPropertyName("sslCaCertificateArn")]
     public string? SslCaCertificateArn { get; set; }
 
-    /// <summary>The plaintext option doesn&apos;t provide Transport Layer Security (TLS) encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
+    /// <summary>The plaintext option doesn&apos;t provide TLS encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
     [JsonPropertyName("sslSecurityProtocol")]
     public string? SslSecurityProtocol { get; set; }
 }
@@ -1992,7 +1992,7 @@ public partial class V1beta1EndpointSpecInitProviderRedshiftSettings
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
+    /// <summary>ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
     [JsonPropertyName("serviceAccessRoleArn")]
     public string? ServiceAccessRoleArn { get; set; }
 }
@@ -2633,7 +2633,7 @@ public partial class V1beta1EndpointStatusAtProviderKafkaSettings
     [JsonPropertyName("saslUsername")]
     public string? SaslUsername { get; set; }
 
-    /// <summary>Set secure connection to a Kafka target endpoint using Transport Layer Security (TLS). Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
+    /// <summary>Set secure connection to a Kafka target endpoint using TLS. Options include ssl-encryption, ssl-authentication, and sasl-ssl. sasl-ssl requires sasl_username and sasl_password.</summary>
     [JsonPropertyName("securityProtocol")]
     public string? SecurityProtocol { get; set; }
 
@@ -3024,11 +3024,11 @@ public partial class V1beta1EndpointStatusAtProviderRedisSettings
     [JsonPropertyName("serverName")]
     public string? ServerName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
+    /// <summary>ARN for the certificate authority (CA) that DMS uses to connect to your Redis target endpoint.</summary>
     [JsonPropertyName("sslCaCertificateArn")]
     public string? SslCaCertificateArn { get; set; }
 
-    /// <summary>The plaintext option doesn&apos;t provide Transport Layer Security (TLS) encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
+    /// <summary>The plaintext option doesn&apos;t provide TLS encryption for traffic between endpoint and database. Options include plaintext, ssl-encryption. The default is ssl-encryption.</summary>
     [JsonPropertyName("sslSecurityProtocol")]
     public string? SslSecurityProtocol { get; set; }
 }
@@ -3054,7 +3054,7 @@ public partial class V1beta1EndpointStatusAtProviderRedshiftSettings
     [JsonPropertyName("serverSideEncryptionKmsKeyId")]
     public string? ServerSideEncryptionKmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
+    /// <summary>ARN of the IAM Role with permissions to read from or write to the S3 Bucket for intermediate storage.</summary>
     [JsonPropertyName("serviceAccessRoleArn")]
     public string? ServiceAccessRoleArn { get; set; }
 }

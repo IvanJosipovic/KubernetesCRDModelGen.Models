@@ -288,7 +288,7 @@ spec:
                     description: 'Mode to route traffic for the domain name. Valid values: BASE_PATH_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_BASE_PATH_MAPPING.'
                     type: string
                   securityPolicy:
-                    description: Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
+                    description: TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
                     type: string
                   tags:
                     additionalProperties:
@@ -538,7 +538,7 @@ spec:
                     description: 'Mode to route traffic for the domain name. Valid values: BASE_PATH_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_BASE_PATH_MAPPING.'
                     type: string
                   securityPolicy:
-                    description: Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
+                    description: TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
                     type: string
                   tags:
                     additionalProperties:
@@ -698,7 +698,7 @@ spec:
                     description: 'Mode to route traffic for the domain name. Valid values: BASE_PATH_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_BASE_PATH_MAPPING.'
                     type: string
                   securityPolicy:
-                    description: Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
+                    description: TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.
                     type: string
                   tags:
                     additionalProperties:

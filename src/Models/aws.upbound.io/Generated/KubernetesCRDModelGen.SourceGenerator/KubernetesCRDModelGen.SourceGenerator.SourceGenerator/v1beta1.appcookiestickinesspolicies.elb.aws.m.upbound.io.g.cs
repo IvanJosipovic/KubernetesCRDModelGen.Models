@@ -199,18 +199,11 @@ public partial class V1beta1AppCookieStickinessPolicySpecForProvider
     [JsonPropertyName("cookieName")]
     public string? CookieName { get; set; }
 
-    /// <summary>
-    /// Load balancer port to which the policy
-    /// should be applied. This must be an active listener on the load
-    /// balancer.
-    /// </summary>
+    /// <summary>Load balancer port to which the policy should be applied. This must be an active listener on the load balancer.</summary>
     [JsonPropertyName("lbPort")]
     public required double LbPort { get; set; }
 
-    /// <summary>
-    /// Name of load balancer to which the policy
-    /// should be attached.
-    /// </summary>
+    /// <summary>Name of load balancer to which the policy should be attached.</summary>
     [JsonPropertyName("loadBalancer")]
     public string? LoadBalancer { get; set; }
 
@@ -370,18 +363,11 @@ public partial class V1beta1AppCookieStickinessPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// Load balancer port to which the policy
-    /// should be applied. This must be an active listener on the load
-    /// balancer.
-    /// </summary>
+    /// <summary>Load balancer port to which the policy should be applied. This must be an active listener on the load balancer.</summary>
     [JsonPropertyName("lbPort")]
     public double? LbPort { get; set; }
 
-    /// <summary>
-    /// Name of load balancer to which the policy
-    /// should be attached.
-    /// </summary>
+    /// <summary>Name of load balancer to which the policy should be attached.</summary>
     [JsonPropertyName("loadBalancer")]
     public string? LoadBalancer { get; set; }
 

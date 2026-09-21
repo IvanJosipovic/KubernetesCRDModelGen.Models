@@ -55,25 +55,25 @@ public enum V1beta2ConfigurationSetSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+/// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderDeliveryOptions
 {
-    /// <summary>The maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
+    /// <summary>Maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must be greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
     [JsonPropertyName("maxDeliverySeconds")]
     public double? MaxDeliverySeconds { get; set; }
 
-    /// <summary>The name of the dedicated IP pool to associate with the configuration set.</summary>
+    /// <summary>Name of the dedicated IP pool to associate with the configuration set.</summary>
     [JsonPropertyName("sendingPoolName")]
     public string? SendingPoolName { get; set; }
 
-    /// <summary>Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). Valid values: REQUIRE, OPTIONAL.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. Valid values: REQUIRE, OPTIONAL.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderReputationOptions
@@ -83,7 +83,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderReputationOptions
     public bool? ReputationMetricsEnabled { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderSendingOptions
@@ -93,60 +93,60 @@ public partial class V1beta2ConfigurationSetSpecForProviderSendingOptions
     public bool? SendingEnabled { get; set; }
 }
 
-/// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+/// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderSuppressionOptions
 {
-    /// <summary>A list that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
+    /// <summary>List that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
     [JsonPropertyName("suppressedReasons")]
     public IList<string>? SuppressedReasons { get; set; }
 }
 
-/// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+/// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderTrackingOptions
 {
-    /// <summary>The domain to use for tracking open and click events.</summary>
+    /// <summary>Domain to use for tracking open and click events.</summary>
     [JsonPropertyName("customRedirectDomain")]
     public string? CustomRedirectDomain { get; set; }
 
-    /// <summary>: The https policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
+    /// <summary>HTTPS policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
     [JsonPropertyName("httpsPolicy")]
     public string? HttpsPolicy { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsDashboardOptions
 {
-    /// <summary>Specifies the status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("engagementMetrics")]
     public string? EngagementMetrics { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsGuardianOptions
 {
-    /// <summary>Specifies the status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("optimizedSharedDelivery")]
     public string? OptimizedSharedDelivery { get; set; }
 }
 
-/// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+/// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptions
 {
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
     [JsonPropertyName("dashboardOptions")]
     public V1beta2ConfigurationSetSpecForProviderVdmOptionsDashboardOptions? DashboardOptions { get; set; }
 
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
     [JsonPropertyName("guardianOptions")]
     public V1beta2ConfigurationSetSpecForProviderVdmOptionsGuardianOptions? GuardianOptions { get; set; }
 }
@@ -155,7 +155,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderVdmOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProvider
 {
-    /// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+    /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
     [JsonPropertyName("deliveryOptions")]
     public V1beta2ConfigurationSetSpecForProviderDeliveryOptions? DeliveryOptions { get; set; }
 
@@ -166,15 +166,15 @@ public partial class V1beta2ConfigurationSetSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
     [JsonPropertyName("reputationOptions")]
     public V1beta2ConfigurationSetSpecForProviderReputationOptions? ReputationOptions { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
     [JsonPropertyName("sendingOptions")]
     public V1beta2ConfigurationSetSpecForProviderSendingOptions? SendingOptions { get; set; }
 
-    /// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+    /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
     [JsonPropertyName("suppressionOptions")]
     public V1beta2ConfigurationSetSpecForProviderSuppressionOptions? SuppressionOptions { get; set; }
 
@@ -182,34 +182,34 @@ public partial class V1beta2ConfigurationSetSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+    /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
     [JsonPropertyName("trackingOptions")]
     public V1beta2ConfigurationSetSpecForProviderTrackingOptions? TrackingOptions { get; set; }
 
-    /// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+    /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
     [JsonPropertyName("vdmOptions")]
     public V1beta2ConfigurationSetSpecForProviderVdmOptions? VdmOptions { get; set; }
 }
 
-/// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+/// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderDeliveryOptions
 {
-    /// <summary>The maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
+    /// <summary>Maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must be greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
     [JsonPropertyName("maxDeliverySeconds")]
     public double? MaxDeliverySeconds { get; set; }
 
-    /// <summary>The name of the dedicated IP pool to associate with the configuration set.</summary>
+    /// <summary>Name of the dedicated IP pool to associate with the configuration set.</summary>
     [JsonPropertyName("sendingPoolName")]
     public string? SendingPoolName { get; set; }
 
-    /// <summary>Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). Valid values: REQUIRE, OPTIONAL.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. Valid values: REQUIRE, OPTIONAL.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderReputationOptions
@@ -219,7 +219,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderReputationOptions
     public bool? ReputationMetricsEnabled { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderSendingOptions
@@ -229,60 +229,60 @@ public partial class V1beta2ConfigurationSetSpecInitProviderSendingOptions
     public bool? SendingEnabled { get; set; }
 }
 
-/// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+/// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderSuppressionOptions
 {
-    /// <summary>A list that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
+    /// <summary>List that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
     [JsonPropertyName("suppressedReasons")]
     public IList<string>? SuppressedReasons { get; set; }
 }
 
-/// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+/// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderTrackingOptions
 {
-    /// <summary>The domain to use for tracking open and click events.</summary>
+    /// <summary>Domain to use for tracking open and click events.</summary>
     [JsonPropertyName("customRedirectDomain")]
     public string? CustomRedirectDomain { get; set; }
 
-    /// <summary>: The https policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
+    /// <summary>HTTPS policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
     [JsonPropertyName("httpsPolicy")]
     public string? HttpsPolicy { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsDashboardOptions
 {
-    /// <summary>Specifies the status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("engagementMetrics")]
     public string? EngagementMetrics { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsGuardianOptions
 {
-    /// <summary>Specifies the status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("optimizedSharedDelivery")]
     public string? OptimizedSharedDelivery { get; set; }
 }
 
-/// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+/// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptions
 {
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
     [JsonPropertyName("dashboardOptions")]
     public V1beta2ConfigurationSetSpecInitProviderVdmOptionsDashboardOptions? DashboardOptions { get; set; }
 
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
     [JsonPropertyName("guardianOptions")]
     public V1beta2ConfigurationSetSpecInitProviderVdmOptionsGuardianOptions? GuardianOptions { get; set; }
 }
@@ -303,19 +303,19 @@ public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProvider
 {
-    /// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+    /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
     [JsonPropertyName("deliveryOptions")]
     public V1beta2ConfigurationSetSpecInitProviderDeliveryOptions? DeliveryOptions { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
     [JsonPropertyName("reputationOptions")]
     public V1beta2ConfigurationSetSpecInitProviderReputationOptions? ReputationOptions { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
     [JsonPropertyName("sendingOptions")]
     public V1beta2ConfigurationSetSpecInitProviderSendingOptions? SendingOptions { get; set; }
 
-    /// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+    /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
     [JsonPropertyName("suppressionOptions")]
     public V1beta2ConfigurationSetSpecInitProviderSuppressionOptions? SuppressionOptions { get; set; }
 
@@ -323,11 +323,11 @@ public partial class V1beta2ConfigurationSetSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+    /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
     [JsonPropertyName("trackingOptions")]
     public V1beta2ConfigurationSetSpecInitProviderTrackingOptions? TrackingOptions { get; set; }
 
-    /// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+    /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
     [JsonPropertyName("vdmOptions")]
     public V1beta2ConfigurationSetSpecInitProviderVdmOptions? VdmOptions { get; set; }
 }
@@ -515,30 +515,30 @@ public partial class V1beta2ConfigurationSetSpec
     public V1beta2ConfigurationSetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+/// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderDeliveryOptions
 {
-    /// <summary>The maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
+    /// <summary>Maximum amount of time, in seconds, that Amazon SES API v2 will attempt delivery of email. If specified, the value must be greater than or equal to 300 seconds (5 minutes) and less than or equal to 50400 seconds (840 minutes).</summary>
     [JsonPropertyName("maxDeliverySeconds")]
     public double? MaxDeliverySeconds { get; set; }
 
-    /// <summary>The name of the dedicated IP pool to associate with the configuration set.</summary>
+    /// <summary>Name of the dedicated IP pool to associate with the configuration set.</summary>
     [JsonPropertyName("sendingPoolName")]
     public string? SendingPoolName { get; set; }
 
-    /// <summary>Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS). Valid values: REQUIRE, OPTIONAL.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. Valid values: REQUIRE, OPTIONAL.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderReputationOptions
 {
-    /// <summary>The date and time (in Unix time) when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.</summary>
+    /// <summary>Date and time (in Unix time) when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.</summary>
     [JsonPropertyName("lastFreshStart")]
     public string? LastFreshStart { get; set; }
 
@@ -547,7 +547,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderReputationOptions
     public bool? ReputationMetricsEnabled { get; set; }
 }
 
-/// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+/// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderSendingOptions
@@ -557,60 +557,60 @@ public partial class V1beta2ConfigurationSetStatusAtProviderSendingOptions
     public bool? SendingEnabled { get; set; }
 }
 
-/// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+/// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderSuppressionOptions
 {
-    /// <summary>A list that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
+    /// <summary>List that contains the reasons that email addresses are automatically added to the suppression list for your account. Valid values: BOUNCE, COMPLAINT.</summary>
     [JsonPropertyName("suppressedReasons")]
     public IList<string>? SuppressedReasons { get; set; }
 }
 
-/// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+/// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderTrackingOptions
 {
-    /// <summary>The domain to use for tracking open and click events.</summary>
+    /// <summary>Domain to use for tracking open and click events.</summary>
     [JsonPropertyName("customRedirectDomain")]
     public string? CustomRedirectDomain { get; set; }
 
-    /// <summary>: The https policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
+    /// <summary>HTTPS policy to use for tracking open and click events. Valid values are REQUIRE, REQUIRE_OPEN_ONLY or OPTIONAL.</summary>
     [JsonPropertyName("httpsPolicy")]
     public string? HttpsPolicy { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsDashboardOptions
 {
-    /// <summary>Specifies the status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM engagement metrics collection. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("engagementMetrics")]
     public string? EngagementMetrics { get; set; }
 }
 
-/// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+/// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsGuardianOptions
 {
-    /// <summary>Specifies the status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
+    /// <summary>Status of your VDM optimized shared delivery. Valid values: ENABLED, DISABLED.</summary>
     [JsonPropertyName("optimizedSharedDelivery")]
     public string? OptimizedSharedDelivery { get; set; }
 }
 
-/// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+/// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptions
 {
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
     [JsonPropertyName("dashboardOptions")]
     public V1beta2ConfigurationSetStatusAtProviderVdmOptionsDashboardOptions? DashboardOptions { get; set; }
 
-    /// <summary>Specifies additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
+    /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
     [JsonPropertyName("guardianOptions")]
     public V1beta2ConfigurationSetStatusAtProviderVdmOptionsGuardianOptions? GuardianOptions { get; set; }
 }
@@ -623,7 +623,7 @@ public partial class V1beta2ConfigurationSetStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
+    /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
     [JsonPropertyName("deliveryOptions")]
     public V1beta2ConfigurationSetStatusAtProviderDeliveryOptions? DeliveryOptions { get; set; }
 
@@ -637,15 +637,15 @@ public partial class V1beta2ConfigurationSetStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
     [JsonPropertyName("reputationOptions")]
     public V1beta2ConfigurationSetStatusAtProviderReputationOptions? ReputationOptions { get; set; }
 
-    /// <summary>An object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
+    /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
     [JsonPropertyName("sendingOptions")]
     public V1beta2ConfigurationSetStatusAtProviderSendingOptions? SendingOptions { get; set; }
 
-    /// <summary>An object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
+    /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
     [JsonPropertyName("suppressionOptions")]
     public V1beta2ConfigurationSetStatusAtProviderSuppressionOptions? SuppressionOptions { get; set; }
 
@@ -656,11 +656,11 @@ public partial class V1beta2ConfigurationSetStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>An object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
+    /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
     [JsonPropertyName("trackingOptions")]
     public V1beta2ConfigurationSetStatusAtProviderTrackingOptions? TrackingOptions { get; set; }
 
-    /// <summary>An object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
+    /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
     [JsonPropertyName("vdmOptions")]
     public V1beta2ConfigurationSetStatusAtProviderVdmOptions? VdmOptions { get; set; }
 }

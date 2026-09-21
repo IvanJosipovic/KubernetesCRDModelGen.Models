@@ -1012,10 +1012,7 @@ public partial class V1beta1IntegrationSpecForProvider
     [JsonPropertyName("credentials")]
     public string? Credentials { get; set; }
 
-    /// <summary>
-    /// HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY)
-    /// when calling the associated resource.
-    /// </summary>
+    /// <summary>HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY) when calling the associated resource.</summary>
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
@@ -1027,17 +1024,11 @@ public partial class V1beta1IntegrationSpecForProvider
     [JsonPropertyName("httpMethodSelector")]
     public V1beta1IntegrationSpecForProviderHttpMethodSelector? HttpMethodSelector { get; set; }
 
-    /// <summary>
-    /// Integration HTTP method
-    /// (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end.
-    /// Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// Not all methods are compatible with all AWS integrations.
-    /// e.g., Lambda function can only be invoked via POST.
-    /// </summary>
+    /// <summary>Integration HTTP method (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. Not all methods are compatible with all AWS integrations. e.g., Lambda function can only be invoked via POST.</summary>
     [JsonPropertyName("integrationHttpMethod")]
     public string? IntegrationHttpMethod { get; set; }
 
-    /// <summary>The ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
+    /// <summary>ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
     [JsonPropertyName("integrationTarget")]
     public string? IntegrationTarget { get; set; }
 
@@ -1060,10 +1051,7 @@ public partial class V1beta1IntegrationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// Map of request query string parameters and headers that should be passed to the backend responder.
-    /// For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }
-    /// </summary>
+    /// <summary>Map of request query string parameters and headers that should be passed to the backend responder. For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -1083,10 +1071,7 @@ public partial class V1beta1IntegrationSpecForProvider
     [JsonPropertyName("resourceIdSelector")]
     public V1beta1IntegrationSpecForProviderResourceIdSelector? ResourceIdSelector { get; set; }
 
-    /// <summary>
-    /// –  Specifies the response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED.
-    /// Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.
-    /// </summary>
+    /// <summary>Response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED. Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.</summary>
     [JsonPropertyName("responseTransferMode")]
     public string? ResponseTransferMode { get; set; }
 
@@ -1114,11 +1099,7 @@ public partial class V1beta1IntegrationSpecForProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint.
-    /// e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.
-    /// </summary>
+    /// <summary>Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint. e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
@@ -2119,10 +2100,7 @@ public partial class V1beta1IntegrationSpecInitProvider
     [JsonPropertyName("credentials")]
     public string? Credentials { get; set; }
 
-    /// <summary>
-    /// HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY)
-    /// when calling the associated resource.
-    /// </summary>
+    /// <summary>HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY) when calling the associated resource.</summary>
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
@@ -2134,17 +2112,11 @@ public partial class V1beta1IntegrationSpecInitProvider
     [JsonPropertyName("httpMethodSelector")]
     public V1beta1IntegrationSpecInitProviderHttpMethodSelector? HttpMethodSelector { get; set; }
 
-    /// <summary>
-    /// Integration HTTP method
-    /// (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end.
-    /// Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// Not all methods are compatible with all AWS integrations.
-    /// e.g., Lambda function can only be invoked via POST.
-    /// </summary>
+    /// <summary>Integration HTTP method (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. Not all methods are compatible with all AWS integrations. e.g., Lambda function can only be invoked via POST.</summary>
     [JsonPropertyName("integrationHttpMethod")]
     public string? IntegrationHttpMethod { get; set; }
 
-    /// <summary>The ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
+    /// <summary>ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
     [JsonPropertyName("integrationTarget")]
     public string? IntegrationTarget { get; set; }
 
@@ -2160,10 +2132,7 @@ public partial class V1beta1IntegrationSpecInitProvider
     [JsonPropertyName("passthroughBehavior")]
     public string? PassthroughBehavior { get; set; }
 
-    /// <summary>
-    /// Map of request query string parameters and headers that should be passed to the backend responder.
-    /// For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }
-    /// </summary>
+    /// <summary>Map of request query string parameters and headers that should be passed to the backend responder. For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -2183,10 +2152,7 @@ public partial class V1beta1IntegrationSpecInitProvider
     [JsonPropertyName("resourceIdSelector")]
     public V1beta1IntegrationSpecInitProviderResourceIdSelector? ResourceIdSelector { get; set; }
 
-    /// <summary>
-    /// –  Specifies the response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED.
-    /// Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.
-    /// </summary>
+    /// <summary>Response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED. Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.</summary>
     [JsonPropertyName("responseTransferMode")]
     public string? ResponseTransferMode { get; set; }
 
@@ -2214,11 +2180,7 @@ public partial class V1beta1IntegrationSpecInitProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint.
-    /// e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.
-    /// </summary>
+    /// <summary>Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint. e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
@@ -2376,27 +2338,18 @@ public partial class V1beta1IntegrationStatusAtProvider
     [JsonPropertyName("credentials")]
     public string? Credentials { get; set; }
 
-    /// <summary>
-    /// HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY)
-    /// when calling the associated resource.
-    /// </summary>
+    /// <summary>HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY) when calling the associated resource.</summary>
     [JsonPropertyName("httpMethod")]
     public string? HttpMethod { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// Integration HTTP method
-    /// (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end.
-    /// Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// Not all methods are compatible with all AWS integrations.
-    /// e.g., Lambda function can only be invoked via POST.
-    /// </summary>
+    /// <summary>Integration HTTP method (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Gateway will interact with the back end. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. Not all methods are compatible with all AWS integrations. e.g., Lambda function can only be invoked via POST.</summary>
     [JsonPropertyName("integrationHttpMethod")]
     public string? IntegrationHttpMethod { get; set; }
 
-    /// <summary>The ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
+    /// <summary>ALB or NLB ARN to send the request to. Used for private integrations with VPC Link V2. When using VPC Link V2, this parameter specifies the load balancer ARN, while uri is used to set the Host header.</summary>
     [JsonPropertyName("integrationTarget")]
     public string? IntegrationTarget { get; set; }
 
@@ -2411,10 +2364,7 @@ public partial class V1beta1IntegrationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Map of request query string parameters and headers that should be passed to the backend responder.
-    /// For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }
-    /// </summary>
+    /// <summary>Map of request query string parameters and headers that should be passed to the backend responder. For example: request_parameters = { &quot;integration.request.header.X-Some-Other-Header&quot; = &quot;method.request.header.X-Some-Header&quot; }</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -2426,10 +2376,7 @@ public partial class V1beta1IntegrationStatusAtProvider
     [JsonPropertyName("resourceId")]
     public string? ResourceId { get; set; }
 
-    /// <summary>
-    /// –  Specifies the response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED.
-    /// Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.
-    /// </summary>
+    /// <summary>Response transfer mode of the integration. Valid values are BUFFERED and STREAM. Default to BUFFERED. Once set, setting the value to BUFFERED requires explicitly specifying BUFFERED, rather than removing this argument.</summary>
     [JsonPropertyName("responseTransferMode")]
     public string? ResponseTransferMode { get; set; }
 
@@ -2449,11 +2396,7 @@ public partial class V1beta1IntegrationStatusAtProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>
-    /// Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY.
-    /// For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint.
-    /// e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.
-    /// </summary>
+    /// <summary>Input&apos;s URI. Required if type is AWS, AWS_PROXY, HTTP or HTTP_PROXY. For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}. region, subdomain and service are used to determine the right endpoint. e.g., arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:123456789012:function:my-func/invocations. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }

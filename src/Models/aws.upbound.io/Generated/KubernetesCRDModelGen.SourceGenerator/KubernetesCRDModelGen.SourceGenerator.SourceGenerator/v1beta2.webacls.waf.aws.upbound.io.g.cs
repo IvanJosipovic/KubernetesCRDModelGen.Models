@@ -243,7 +243,7 @@ public partial class V1beta2WebACLSpecForProviderLoggingConfigurationRedactedFie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecForProviderLoggingConfiguration
 {
-    /// <summary>Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream</summary>
+    /// <summary>ARN of Kinesis Firehose Delivery Stream</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 
@@ -680,7 +680,7 @@ public partial class V1beta2WebACLSpecInitProviderLoggingConfigurationRedactedFi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLSpecInitProviderLoggingConfiguration
 {
-    /// <summary>Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream</summary>
+    /// <summary>ARN of Kinesis Firehose Delivery Stream</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 
@@ -1165,7 +1165,7 @@ public partial class V1beta2WebACLStatusAtProviderLoggingConfigurationRedactedFi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WebACLStatusAtProviderLoggingConfiguration
 {
-    /// <summary>Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream</summary>
+    /// <summary>ARN of Kinesis Firehose Delivery Stream</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 

@@ -62,18 +62,18 @@ spec:
                     items:
                       properties:
                         defaultValue:
-                          description: The default value for the event
+                          description: Default value for the event
                           type: string
                         dimensionName:
-                          description: The name for the dimension
+                          description: Name for the dimension
                           type: string
                         valueSource:
-                          description: The source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
+                          description: Source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
                           type: string
                       type: object
                     type: array
                   configurationSetName:
-                    description: The name of the configuration set
+                    description: Name of the configuration set
                     type: string
                   configurationSetNameRef:
                     description: Reference to a ConfigurationSet in ses to populate configurationSetName.
@@ -161,7 +161,7 @@ spec:
                     description: Send the events to a kinesis firehose destination
                     properties:
                       roleArn:
-                        description: The ARN of the role that has permissions to access the Kinesis Stream
+                        description: ARN of the role that has permissions to access the Kinesis Stream
                         type: string
                       roleArnRef:
                         description: Reference to a Role in iam to populate roleArn.
@@ -243,7 +243,7 @@ spec:
                             type: object
                         type: object
                       streamArn:
-                        description: The ARN of the Kinesis Stream
+                        description: ARN of the Kinesis Stream
                         type: string
                       streamArnRef:
                         description: Reference to a DeliveryStream in firehose to populate streamArn.
@@ -326,7 +326,7 @@ spec:
                         type: object
                     type: object
                   matchingTypes:
-                    description: A list of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
+                    description: List of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
                     items:
                       type: string
                     type: array
@@ -340,7 +340,7 @@ spec:
                     description: Send the events to an SNS Topic destination
                     properties:
                       topicArn:
-                        description: The ARN of the SNS topic
+                        description: ARN of the SNS topic
                         type: string
                       topicArnRef:
                         description: Reference to a Topic in sns to populate topicArn.
@@ -443,18 +443,18 @@ spec:
                     items:
                       properties:
                         defaultValue:
-                          description: The default value for the event
+                          description: Default value for the event
                           type: string
                         dimensionName:
-                          description: The name for the dimension
+                          description: Name for the dimension
                           type: string
                         valueSource:
-                          description: The source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
+                          description: Source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
                           type: string
                       type: object
                     type: array
                   configurationSetName:
-                    description: The name of the configuration set
+                    description: Name of the configuration set
                     type: string
                   configurationSetNameRef:
                     description: Reference to a ConfigurationSet in ses to populate configurationSetName.
@@ -542,7 +542,7 @@ spec:
                     description: Send the events to a kinesis firehose destination
                     properties:
                       roleArn:
-                        description: The ARN of the role that has permissions to access the Kinesis Stream
+                        description: ARN of the role that has permissions to access the Kinesis Stream
                         type: string
                       roleArnRef:
                         description: Reference to a Role in iam to populate roleArn.
@@ -624,7 +624,7 @@ spec:
                             type: object
                         type: object
                       streamArn:
-                        description: The ARN of the Kinesis Stream
+                        description: ARN of the Kinesis Stream
                         type: string
                       streamArnRef:
                         description: Reference to a DeliveryStream in firehose to populate streamArn.
@@ -707,7 +707,7 @@ spec:
                         type: object
                     type: object
                   matchingTypes:
-                    description: A list of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
+                    description: List of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
                     items:
                       type: string
                     type: array
@@ -716,7 +716,7 @@ spec:
                     description: Send the events to an SNS Topic destination
                     properties:
                       topicArn:
-                        description: The ARN of the SNS topic
+                        description: ARN of the SNS topic
                         type: string
                       topicArnRef:
                         description: Reference to a Topic in sns to populate topicArn.
@@ -866,44 +866,44 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The SES event destination ARN.
+                    description: SES event destination ARN.
                     type: string
                   cloudwatchDestination:
                     description: CloudWatch destination for the events
                     items:
                       properties:
                         defaultValue:
-                          description: The default value for the event
+                          description: Default value for the event
                           type: string
                         dimensionName:
-                          description: The name for the dimension
+                          description: Name for the dimension
                           type: string
                         valueSource:
-                          description: The source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
+                          description: Source for the value. May be any of "messageTag", "emailHeader" or "linkTag".
                           type: string
                       type: object
                     type: array
                   configurationSetName:
-                    description: The name of the configuration set
+                    description: Name of the configuration set
                     type: string
                   enabled:
                     description: If true, the event destination will be enabled
                     type: boolean
                   id:
-                    description: The SES event destination name.
+                    description: SES event destination name.
                     type: string
                   kinesisDestination:
                     description: Send the events to a kinesis firehose destination
                     properties:
                       roleArn:
-                        description: The ARN of the role that has permissions to access the Kinesis Stream
+                        description: ARN of the role that has permissions to access the Kinesis Stream
                         type: string
                       streamArn:
-                        description: The ARN of the Kinesis Stream
+                        description: ARN of the Kinesis Stream
                         type: string
                     type: object
                   matchingTypes:
-                    description: A list of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
+                    description: List of matching types. May be any of "send", "reject", "bounce", "complaint", "delivery", "open", "click", or "renderingFailure".
                     items:
                       type: string
                     type: array
@@ -917,7 +917,7 @@ spec:
                     description: Send the events to an SNS Topic destination
                     properties:
                       topicArn:
-                        description: The ARN of the SNS topic
+                        description: ARN of the SNS topic
                         type: string
                     type: object
                 type: object

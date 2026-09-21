@@ -738,7 +738,7 @@ public partial class V1beta2AppImageConfigStatusAtProviderKernelGatewayImageConf
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AppImageConfigStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this App Image Config.</summary>
+    /// <summary>ARN assigned by AWS to this App Image Config.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

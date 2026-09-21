@@ -412,7 +412,7 @@ public partial class V1beta1PoolSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.</summary>
+    /// <summary>An array of ARNs of the SAML provider for your identity.</summary>
     [JsonPropertyName("samlProviderArns")]
     public IList<string>? SamlProviderArns { get; set; }
 
@@ -795,7 +795,7 @@ public partial class V1beta1PoolSpecInitProvider
     [JsonPropertyName("openidConnectProviderArns")]
     public IList<string>? OpenidConnectProviderArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.</summary>
+    /// <summary>An array of ARNs of the SAML provider for your identity.</summary>
     [JsonPropertyName("samlProviderArns")]
     public IList<string>? SamlProviderArns { get; set; }
 
@@ -1062,7 +1062,7 @@ public partial class V1beta1PoolStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.</summary>
+    /// <summary>An array of ARNs of the SAML provider for your identity.</summary>
     [JsonPropertyName("samlProviderArns")]
     public IList<string>? SamlProviderArns { get; set; }
 

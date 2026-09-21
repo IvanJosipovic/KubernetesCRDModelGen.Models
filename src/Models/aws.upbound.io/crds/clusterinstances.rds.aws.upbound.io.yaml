@@ -72,10 +72,10 @@ spec:
               forProvider:
                 properties:
                   applyImmediately:
-                    description: Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.
+                    description: Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.
                     type: boolean
                   autoMinorVersionUpgrade:
-                    description: Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
+                    description: Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
                     type: boolean
                   availabilityZone:
                     description: EC2 Availability Zone that the DB instance is created in. See docs about the details.
@@ -160,7 +160,7 @@ spec:
                         type: object
                     type: object
                   copyTagsToSnapshot:
-                    description: Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
+                    description: Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
                     type: boolean
                   customIamInstanceProfile:
                     description: Instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance.
@@ -242,7 +242,7 @@ spec:
                         type: object
                     type: object
                   dbSubnetGroupName:
-                    description: 'Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
+                    description: 'DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
                     type: string
                   dbSubnetGroupNameRef:
                     description: Reference to a SubnetGroup in rds to populate dbSubnetGroupName.
@@ -318,12 +318,10 @@ spec:
                         type: object
                     type: object
                   engine:
-                    description: |-
-                      Name of the database engine to be used for the RDS cluster instance.
-                      Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
+                    description: 'Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).'
                     type: string
                   engineVersion:
-                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.
+                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.
                     type: string
                   forceDestroy:
                     description: 'Forces an instance to be destroyed when a part of a read replica cluster. Note: will promote the read replica to a standalone cluster before instance deletion.'
@@ -411,7 +409,7 @@ spec:
                         type: object
                     type: object
                   performanceInsightsEnabled:
-                    description: "Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
+                    description: "Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
                     type: boolean
                   performanceInsightsKmsKeyId:
                     description: ARN for the KMS key to encrypt Performance Insights data. When specifying performance_insights_kms_key_id, performance_insights_enabled needs to be set to true.
@@ -515,6 +513,12 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  warningEventCategories:
+                    description: Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                 required:
                 - region
                 type: object
@@ -532,10 +536,10 @@ spec:
                   autoscaler.
                 properties:
                   applyImmediately:
-                    description: Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.
+                    description: Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.
                     type: boolean
                   autoMinorVersionUpgrade:
-                    description: Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
+                    description: Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
                     type: boolean
                   availabilityZone:
                     description: EC2 Availability Zone that the DB instance is created in. See docs about the details.
@@ -620,7 +624,7 @@ spec:
                         type: object
                     type: object
                   copyTagsToSnapshot:
-                    description: Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
+                    description: Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
                     type: boolean
                   customIamInstanceProfile:
                     description: Instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance.
@@ -702,7 +706,7 @@ spec:
                         type: object
                     type: object
                   dbSubnetGroupName:
-                    description: 'Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
+                    description: 'DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
                     type: string
                   dbSubnetGroupNameRef:
                     description: Reference to a SubnetGroup in rds to populate dbSubnetGroupName.
@@ -778,12 +782,10 @@ spec:
                         type: object
                     type: object
                   engine:
-                    description: |-
-                      Name of the database engine to be used for the RDS cluster instance.
-                      Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
+                    description: 'Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).'
                     type: string
                   engineVersion:
-                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.
+                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.
                     type: string
                   forceDestroy:
                     description: 'Forces an instance to be destroyed when a part of a read replica cluster. Note: will promote the read replica to a standalone cluster before instance deletion.'
@@ -871,7 +873,7 @@ spec:
                         type: object
                     type: object
                   performanceInsightsEnabled:
-                    description: "Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
+                    description: "Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
                     type: boolean
                   performanceInsightsKmsKeyId:
                     description: ARN for the KMS key to encrypt Performance Insights data. When specifying performance_insights_kms_key_id, performance_insights_enabled needs to be set to true.
@@ -970,6 +972,12 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  warningEventCategories:
+                    description: Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                 type: object
               managementPolicies:
                 default:
@@ -1068,13 +1076,13 @@ spec:
               atProvider:
                 properties:
                   applyImmediately:
-                    description: Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.
+                    description: Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.
                     type: boolean
                   arn:
-                    description: Amazon Resource Name (ARN) of cluster instance
+                    description: ARN of cluster instance
                     type: string
                   autoMinorVersionUpgrade:
-                    description: Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
+                    description: Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.
                     type: boolean
                   availabilityZone:
                     description: EC2 Availability Zone that the DB instance is created in. See docs about the details.
@@ -1086,7 +1094,7 @@ spec:
                     description: Identifier of the aws_rds_cluster in which to launch this instance.
                     type: string
                   copyTagsToSnapshot:
-                    description: Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
+                    description: Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.
                     type: boolean
                   customIamInstanceProfile:
                     description: Instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance.
@@ -1095,7 +1103,7 @@ spec:
                     description: Name of the DB parameter group to associate with this instance.
                     type: string
                   dbSubnetGroupName:
-                    description: 'Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
+                    description: 'DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.'
                     type: string
                   dbiResourceId:
                     description: Region-unique, immutable identifier for the DB instance.
@@ -1104,12 +1112,10 @@ spec:
                     description: DNS address for this instance. May not be writable
                     type: string
                   engine:
-                    description: |-
-                      Name of the database engine to be used for the RDS cluster instance.
-                      Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
+                    description: 'Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).'
                     type: string
                   engineVersion:
-                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.
+                    description: Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.
                     type: string
                   engineVersionActual:
                     description: Database engine version
@@ -1136,7 +1142,7 @@ spec:
                     description: Network type of the DB instance.
                     type: string
                   performanceInsightsEnabled:
-                    description: "Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
+                    description: "Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster's configuration."
                     type: boolean
                   performanceInsightsKmsKeyId:
                     description: ARN for the KMS key to encrypt Performance Insights data. When specifying performance_insights_kms_key_id, performance_insights_enabled needs to be set to true.
@@ -1165,7 +1171,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   storageEncrypted:
-                    description: Specifies whether the DB cluster is encrypted.
+                    description: Whether the DB cluster is encrypted.
                     type: boolean
                   tags:
                     additionalProperties:
@@ -1179,6 +1185,12 @@ spec:
                     description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  warningEventCategories:
+                    description: Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   writer:
                     description: Boolean indicating if this instance is writable. False indicates this instance is a read replica.
                     type: boolean

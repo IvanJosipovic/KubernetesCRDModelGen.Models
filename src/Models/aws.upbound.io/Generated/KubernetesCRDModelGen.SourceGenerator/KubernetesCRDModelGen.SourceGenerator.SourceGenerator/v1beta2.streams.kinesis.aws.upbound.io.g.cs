@@ -691,7 +691,7 @@ public partial class V1beta2StreamStatusAtProviderStreamModeDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StreamStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the stream (same as id).</summary>
+    /// <summary>ARN specifying the stream (same as id).</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

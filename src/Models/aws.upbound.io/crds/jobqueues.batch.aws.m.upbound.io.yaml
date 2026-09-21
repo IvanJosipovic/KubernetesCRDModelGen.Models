@@ -62,7 +62,7 @@ spec:
                     items:
                       properties:
                         computeEnvironment:
-                          description: The Amazon Resource Name (ARN) of the compute environment.
+                          description: ARN of the compute environment.
                           type: string
                         computeEnvironmentRef:
                           description: Reference to a ComputeEnvironment in batch to populate computeEnvironment.
@@ -288,7 +288,7 @@ spec:
                     items:
                       properties:
                         computeEnvironment:
-                          description: The Amazon Resource Name (ARN) of the compute environment.
+                          description: ARN of the compute environment.
                           type: string
                         computeEnvironmentRef:
                           description: Reference to a ComputeEnvironment in batch to populate computeEnvironment.
@@ -558,14 +558,14 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name of the job queue.
+                    description: ARN of the job queue.
                     type: string
                   computeEnvironmentOrder:
                     description: The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment runs a specific job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.
                     items:
                       properties:
                         computeEnvironment:
-                          description: The Amazon Resource Name (ARN) of the compute environment.
+                          description: ARN of the compute environment.
                           type: string
                         order:
                           description: The order of the compute environment. Compute environments are tried in ascending order. For example, if two compute environments are associated with a job queue, the compute environment with a lower order integer value is tried for job placement first.

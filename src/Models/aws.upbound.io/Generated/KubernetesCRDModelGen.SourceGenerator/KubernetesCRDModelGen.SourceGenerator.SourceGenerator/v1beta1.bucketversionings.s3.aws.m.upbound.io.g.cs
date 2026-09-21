@@ -196,7 +196,7 @@ public partial class V1beta1BucketVersioningSpecForProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketVersioningSpecForProviderVersioningConfiguration
 {
-    /// <summary>Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
+    /// <summary>Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
     [JsonPropertyName("mfaDelete")]
     public string? MfaDelete { get; set; }
 
@@ -401,7 +401,7 @@ public partial class V1beta1BucketVersioningSpecInitProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketVersioningSpecInitProviderVersioningConfiguration
 {
-    /// <summary>Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
+    /// <summary>Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
     [JsonPropertyName("mfaDelete")]
     public string? MfaDelete { get; set; }
 
@@ -563,7 +563,7 @@ public partial class V1beta1BucketVersioningSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketVersioningStatusAtProviderVersioningConfiguration
 {
-    /// <summary>Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
+    /// <summary>Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.</summary>
     [JsonPropertyName("mfaDelete")]
     public string? MfaDelete { get; set; }
 
@@ -584,7 +584,7 @@ public partial class V1beta1BucketVersioningStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
+    /// <summary>bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

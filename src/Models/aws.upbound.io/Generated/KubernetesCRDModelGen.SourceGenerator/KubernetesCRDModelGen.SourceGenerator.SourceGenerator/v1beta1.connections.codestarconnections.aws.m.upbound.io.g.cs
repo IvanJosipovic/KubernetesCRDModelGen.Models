@@ -40,7 +40,7 @@ public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IIte
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the host associated with the connection. Conflicts with provider_type</summary>
+    /// <summary>ARN of the host associated with the connection. Conflicts with provider_type</summary>
     [JsonPropertyName("hostArn")]
     public string? HostArn { get; set; }
 
@@ -80,7 +80,7 @@ public partial class V1beta1ConnectionSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the host associated with the connection. Conflicts with provider_type</summary>
+    /// <summary>ARN of the host associated with the connection. Conflicts with provider_type</summary>
     [JsonPropertyName("hostArn")]
     public string? HostArn { get; set; }
 
@@ -216,7 +216,7 @@ public partial class V1beta1ConnectionStatusAtProvider
     [JsonPropertyName("connectionStatus")]
     public string? ConnectionStatus { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the host associated with the connection. Conflicts with provider_type</summary>
+    /// <summary>ARN of the host associated with the connection. Conflicts with provider_type</summary>
     [JsonPropertyName("hostArn")]
     public string? HostArn { get; set; }
 

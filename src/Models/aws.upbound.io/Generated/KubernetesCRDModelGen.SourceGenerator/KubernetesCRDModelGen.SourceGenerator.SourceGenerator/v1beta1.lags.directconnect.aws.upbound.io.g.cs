@@ -325,6 +325,27 @@ public partial class V1beta1LagSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1LagStatusAtProviderRateLimiterStatus
+{
+    /// <summary>Number of rate limiters currently in use.</summary>
+    [JsonPropertyName("inUse")]
+    public double? InUse { get; set; }
+
+    /// <summary>Maximum number of rate limiters allowed on the LAG.</summary>
+    [JsonPropertyName("maxAllowed")]
+    public double? MaxAllowed { get; set; }
+
+    /// <summary>Number of rate limiters remaining (available).</summary>
+    [JsonPropertyName("remaining")]
+    public double? Remaining { get; set; }
+
+    /// <summary>Total bandwidth allocated across all rate limiters.</summary>
+    [JsonPropertyName("totalBandwidth")]
+    public string? TotalBandwidth { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LagStatusAtProvider
 {
     /// <summary>The ARN of the LAG.</summary>
@@ -370,6 +391,10 @@ public partial class V1beta1LagStatusAtProvider
     /// <summary>The name of the service provider associated with the LAG.</summary>
     [JsonPropertyName("providerName")]
     public string? ProviderName { get; set; }
+
+    /// <summary>Rate limiter status for the LAG. See rate_limiter_status Block below.</summary>
+    [JsonPropertyName("rateLimiterStatus")]
+    public IList<V1beta1LagStatusAtProviderRateLimiterStatus>? RateLimiterStatus { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

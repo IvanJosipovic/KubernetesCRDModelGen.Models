@@ -55,30 +55,30 @@ public enum V1beta2FlowSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
@@ -86,7 +86,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -99,7 +99,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
@@ -113,30 +113,30 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public string? ObjectTypeName { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -145,30 +145,30 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -183,30 +183,30 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 {
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -215,25 +215,25 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
@@ -242,7 +242,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -250,7 +250,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Redshift flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
@@ -402,44 +402,44 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 
-    /// <summary>The desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination. Integer value.</summary>
+    /// <summary>Desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination.</summary>
     [JsonPropertyName("targetFileSize")]
     public double? TargetFileSize { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
@@ -447,16 +447,16 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 
-    /// <summary>Whether the data types from the source system need to be preserved (Only valid for Parquet file type)</summary>
+    /// <summary>Whether to preserve the data types from the source system. Only valid for the PARQUET file type.</summary>
     [JsonPropertyName("preserveSourceDataTyping")]
     public bool? PreserveSourceDataTyping { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3
@@ -477,43 +477,43 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data to Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -521,53 +521,53 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Salesforce. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -575,34 +575,34 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
     [JsonPropertyName("successResponseHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig? SuccessResponseHandlingConfig { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Possible write operations in the destination connector. Defaults to INSERT when not provided. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+/// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
@@ -611,111 +611,111 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Redshift.</summary>
+    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Snowflake.</summary>
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Snowflake flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
-    /// <summary>File type that Amazon AppFlow places in the Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
+    /// <summary>File type that Amazon AppFlow places in the Upsolver Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+/// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Upsolver Amazon S3 bucket name in which Amazon AppFlow places the transferred data. Must begin with upsolver-appflow.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Upsolver Amazon S3 bucket in which Amazon AppFlow places the destination files.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -723,64 +723,64 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Zendesk. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+/// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorProperties
 {
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
     [JsonPropertyName("customerProfiles")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles? CustomerProfiles { get; set; }
 
-    /// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
     [JsonPropertyName("eventBridge")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge? EventBridge { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
     [JsonPropertyName("honeycode")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode? Honeycode { get; set; }
 
     [JsonPropertyName("lookoutMetrics")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics? LookoutMetrics { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
     [JsonPropertyName("redshift")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift? Redshift { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
     [JsonPropertyName("snowflake")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake? Snowflake { get; set; }
 
-    /// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
     [JsonPropertyName("upsolver")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver? Upsolver { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
@@ -793,7 +793,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfig
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -801,38 +801,40 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+    /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
     [JsonPropertyName("destinationConnectorProperties")]
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorProperties? DestinationConnectorProperties { get; set; }
 }
 
+/// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderMetadataCatalogConfigGlueDataCatalog
 {
-    /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
+    /// <summary>Name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The ARN of an IAM role that grants AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
+    /// <summary>ARN of the IAM role that grants Amazon AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A naming prefix for each Data Catalog table that Amazon AppFlow creates</summary>
+    /// <summary>Naming prefix for each Data Catalog table that Amazon AppFlow creates.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
-/// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderMetadataCatalogConfig
 {
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
     [JsonPropertyName("glueDataCatalog")]
     public V1beta2FlowSpecForProviderMetadataCatalogConfigGlueDataCatalog? GlueDataCatalog { get; set; }
 }
 
-/// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+/// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigIncrementalPullConfig
@@ -842,76 +844,76 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigIncrementalPullCo
     public string? DatetimeTypeFieldName { get; set; }
 }
 
-/// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a source in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
-    /// <summary>Entity specified in the custom connector as a destination in the flow.</summary>
+    /// <summary>Entity specified in the custom connector as a source in the flow.</summary>
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 }
 
-/// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+/// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
@@ -1063,7 +1065,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+/// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
@@ -1073,12 +1075,12 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
     public string? S3InputFileType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Amazon S3 bucket name where the source files are stored.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1090,116 +1092,116 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
     [JsonPropertyName("bucketNameSelector")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Amazon S3 bucket in which the source files are stored.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+    /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
     [JsonPropertyName("s3InputFormatConfig")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig? S3InputFormatConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data from Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Flag that enables dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
+    /// <summary>Whether to enable dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
     [JsonPropertyName("enableDynamicFieldUpdate")]
     public bool? EnableDynamicFieldUpdate { get; set; }
 
-    /// <summary>Whether Amazon AppFlow includes deleted files in the flow run.</summary>
+    /// <summary>Whether to include deleted files in the flow run.</summary>
     [JsonPropertyName("includeDeletedRecords")]
     public bool? IncludeDeletedRecords { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Salesforce flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+/// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+/// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of processes that Amazon AppFlow runs at the same time when it retrieves your data from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
-    /// <summary>Object path specified in the SAPOData flow destination.</summary>
+    /// <summary>Object path specified in the SAPOData flow source.</summary>
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+    /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
     [JsonPropertyName("paginationConfig")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig? PaginationConfig { get; set; }
 
-    /// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+    /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
     [JsonPropertyName("parallelismConfig")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig? ParallelismConfig { get; set; }
 }
 
-/// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+/// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesVeeva
@@ -1208,113 +1210,113 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
     [JsonPropertyName("documentType")]
     public string? DocumentType { get; set; }
 
-    /// <summary>Boolean value to include All Versions of files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include all versions of files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeAllVersions")]
     public bool? IncludeAllVersions { get; set; }
 
-    /// <summary>Boolean value to include file renditions in Veeva document extract flow.</summary>
+    /// <summary>Whether to include file renditions in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeRenditions")]
     public bool? IncludeRenditions { get; set; }
 
-    /// <summary>Boolean value to include source files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include source files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeSourceFiles")]
     public bool? IncludeSourceFiles { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Veeva flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+/// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorProperties
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
     [JsonPropertyName("amplitude")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesAmplitude? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
     [JsonPropertyName("datadog")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDatadog? Datadog { get; set; }
 
-    /// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
     [JsonPropertyName("dynatrace")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDynatrace? Dynatrace { get; set; }
 
-    /// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+    /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
     [JsonPropertyName("googleAnalytics")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
     [JsonPropertyName("inforNexus")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesInforNexus? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
     [JsonPropertyName("serviceNow")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesServiceNow? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
     [JsonPropertyName("singular")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSingular? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
     [JsonPropertyName("slack")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSlack? Slack { get; set; }
 
-    /// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
     [JsonPropertyName("trendmicro")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
     [JsonPropertyName("veeva")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesVeeva? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-/// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+/// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfig
 {
-    /// <summary>API version that the destination connector uses.</summary>
+    /// <summary>API version that the source connector uses.</summary>
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -1322,11 +1324,11 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+    /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
     [JsonPropertyName("incrementalPullConfig")]
     public V1beta2FlowSpecForProviderSourceFlowConfigIncrementalPullConfig? IncrementalPullConfig { get; set; }
 
-    /// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+    /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
     [JsonPropertyName("sourceConnectorProperties")]
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
@@ -1335,15 +1337,15 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amplitude source fields. The only valid value is BETWEEN.</summary>
     [JsonPropertyName("amplitude")]
     public string? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Operators supported by the custom connector. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("customConnector")]
     public string? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Datadog source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("datadog")]
     public string? Datadog { get; set; }
 
@@ -1355,35 +1357,35 @@ public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
     [JsonPropertyName("googleAnalytics")]
     public string? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Infor Nexus source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("inforNexus")]
     public string? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Marketo source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("marketo")]
     public string? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amazon S3 source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("s3")]
     public string? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Salesforce source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("salesforce")]
     public string? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided SAPOData source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("sapoData")]
     public string? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided ServiceNow source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("serviceNow")]
     public string? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Singular source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("singular")]
     public string? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Slack source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("slack")]
     public string? Slack { get; set; }
 
@@ -1391,11 +1393,11 @@ public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
     [JsonPropertyName("trendmicro")]
     public string? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Veeva source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("veeva")]
     public string? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Zendesk source fields. Valid values are PROJECTION, GREATER_THAN, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("zendesk")]
     public string? Zendesk { get; set; }
 }
@@ -1404,7 +1406,7 @@ public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTask
 {
-    /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
+    /// <summary>Operation to be performed on the provided source fields. See the task.connector_operator Block for details.</summary>
     [JsonPropertyName("connectorOperator")]
     public IList<V1beta2FlowSpecForProviderTaskConnectorOperator>? ConnectorOperator { get; set; }
 
@@ -1425,6 +1427,7 @@ public partial class V1beta2FlowSpecForProviderTask
     public string? TaskType { get; set; }
 }
 
+/// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesScheduled
@@ -1441,11 +1444,11 @@ public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesSch
     [JsonPropertyName("scheduleEndTime")]
     public string? ScheduleEndTime { get; set; }
 
-    /// <summary>Scheduling expression that determines the rate at which the schedule will run, for example rate(5minutes).</summary>
+    /// <summary>Scheduling expression that determines the rate at which the schedule runs, for example rate(5minutes).</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 
-    /// <summary>Optional offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
+    /// <summary>Offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
     [JsonPropertyName("scheduleOffset")]
     public double? ScheduleOffset { get; set; }
 
@@ -1458,21 +1461,22 @@ public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesSch
     public string? Timezone { get; set; }
 }
 
-/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerProperties
 {
+    /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
     [JsonPropertyName("scheduled")]
     public V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesScheduled? Scheduled { get; set; }
 }
 
-/// <summary>A Trigger that determine how and when the flow runs.</summary>
+/// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfig
 {
-    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
     [JsonPropertyName("triggerProperties")]
     public V1beta2FlowSpecForProviderTriggerConfigTriggerProperties? TriggerProperties { get; set; }
 
@@ -1485,19 +1489,19 @@ public partial class V1beta2FlowSpecForProviderTriggerConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProvider
 {
-    /// <summary>Description of the flow you want to create.</summary>
+    /// <summary>Description of the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A Destination Flow Config that controls how Amazon AppFlow places data in the destination connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow places data in the destination connector. See the destination_flow_config Block for details.</summary>
     [JsonPropertyName("destinationFlowConfig")]
     public IList<V1beta2FlowSpecForProviderDestinationFlowConfig>? DestinationFlowConfig { get; set; }
 
-    /// <summary>ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don&apos;t provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.</summary>
+    /// <summary>ARN of the KMS key you provide for encryption. Required if you do not want to use the Amazon AppFlow-managed KMS key. Uses the Amazon AppFlow-managed KMS key when not provided.</summary>
     [JsonPropertyName("kmsArn")]
     public string? KmsArn { get; set; }
 
-    /// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
     [JsonPropertyName("metadataCatalogConfig")]
     public V1beta2FlowSpecForProviderMetadataCatalogConfig? MetadataCatalogConfig { get; set; }
 
@@ -1508,7 +1512,7 @@ public partial class V1beta2FlowSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
     [JsonPropertyName("sourceFlowConfig")]
     public V1beta2FlowSpecForProviderSourceFlowConfig? SourceFlowConfig { get; set; }
 
@@ -1516,39 +1520,39 @@ public partial class V1beta2FlowSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A Task that Amazon AppFlow performs while transferring the data in the flow run.</summary>
+    /// <summary>Tasks that Amazon AppFlow performs while transferring the data in the flow run. See the task Block for details.</summary>
     [JsonPropertyName("task")]
     public IList<V1beta2FlowSpecForProviderTask>? Task { get; set; }
 
-    /// <summary>A Trigger that determine how and when the flow runs.</summary>
+    /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
     [JsonPropertyName("triggerConfig")]
     public V1beta2FlowSpecForProviderTriggerConfig? TriggerConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
@@ -1556,7 +1560,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -1569,7 +1573,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
@@ -1583,30 +1587,30 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public string? ObjectTypeName { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -1615,30 +1619,30 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -1653,30 +1657,30 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 {
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -1685,25 +1689,25 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
@@ -1712,7 +1716,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -1720,7 +1724,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Redshift flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
@@ -1872,44 +1876,44 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 
-    /// <summary>The desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination. Integer value.</summary>
+    /// <summary>Desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination.</summary>
     [JsonPropertyName("targetFileSize")]
     public double? TargetFileSize { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
@@ -1917,16 +1921,16 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 
-    /// <summary>Whether the data types from the source system need to be preserved (Only valid for Parquet file type)</summary>
+    /// <summary>Whether to preserve the data types from the source system. Only valid for the PARQUET file type.</summary>
     [JsonPropertyName("preserveSourceDataTyping")]
     public bool? PreserveSourceDataTyping { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3
@@ -1947,43 +1951,43 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data to Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -1991,53 +1995,53 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Salesforce. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -2045,34 +2049,34 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
     [JsonPropertyName("successResponseHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig? SuccessResponseHandlingConfig { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Possible write operations in the destination connector. Defaults to INSERT when not provided. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+/// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
@@ -2081,111 +2085,111 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Redshift.</summary>
+    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Snowflake.</summary>
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Snowflake flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
-    /// <summary>File type that Amazon AppFlow places in the Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
+    /// <summary>File type that Amazon AppFlow places in the Upsolver Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+/// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Upsolver Amazon S3 bucket name in which Amazon AppFlow places the transferred data. Must begin with upsolver-appflow.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Upsolver Amazon S3 bucket in which Amazon AppFlow places the destination files.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -2193,64 +2197,64 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Zendesk. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+/// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorProperties
 {
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
     [JsonPropertyName("customerProfiles")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles? CustomerProfiles { get; set; }
 
-    /// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
     [JsonPropertyName("eventBridge")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge? EventBridge { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
     [JsonPropertyName("honeycode")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode? Honeycode { get; set; }
 
     [JsonPropertyName("lookoutMetrics")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics? LookoutMetrics { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
     [JsonPropertyName("redshift")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift? Redshift { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
     [JsonPropertyName("snowflake")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake? Snowflake { get; set; }
 
-    /// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
     [JsonPropertyName("upsolver")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver? Upsolver { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
@@ -2263,7 +2267,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfig
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -2271,38 +2275,40 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+    /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
     [JsonPropertyName("destinationConnectorProperties")]
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorProperties? DestinationConnectorProperties { get; set; }
 }
 
+/// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfigGlueDataCatalog
 {
-    /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
+    /// <summary>Name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The ARN of an IAM role that grants AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
+    /// <summary>ARN of the IAM role that grants Amazon AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A naming prefix for each Data Catalog table that Amazon AppFlow creates</summary>
+    /// <summary>Naming prefix for each Data Catalog table that Amazon AppFlow creates.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
-/// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfig
 {
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
     [JsonPropertyName("glueDataCatalog")]
     public V1beta2FlowSpecInitProviderMetadataCatalogConfigGlueDataCatalog? GlueDataCatalog { get; set; }
 }
 
-/// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+/// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigIncrementalPullConfig
@@ -2312,76 +2318,76 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigIncrementalPullC
     public string? DatetimeTypeFieldName { get; set; }
 }
 
-/// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a source in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
-    /// <summary>Entity specified in the custom connector as a destination in the flow.</summary>
+    /// <summary>Entity specified in the custom connector as a source in the flow.</summary>
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 }
 
-/// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+/// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
@@ -2533,7 +2539,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+/// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
@@ -2543,12 +2549,12 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
     public string? S3InputFileType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Amazon S3 bucket name where the source files are stored.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -2560,116 +2566,116 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
     [JsonPropertyName("bucketNameSelector")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Amazon S3 bucket in which the source files are stored.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+    /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
     [JsonPropertyName("s3InputFormatConfig")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig? S3InputFormatConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data from Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Flag that enables dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
+    /// <summary>Whether to enable dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
     [JsonPropertyName("enableDynamicFieldUpdate")]
     public bool? EnableDynamicFieldUpdate { get; set; }
 
-    /// <summary>Whether Amazon AppFlow includes deleted files in the flow run.</summary>
+    /// <summary>Whether to include deleted files in the flow run.</summary>
     [JsonPropertyName("includeDeletedRecords")]
     public bool? IncludeDeletedRecords { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Salesforce flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+/// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+/// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of processes that Amazon AppFlow runs at the same time when it retrieves your data from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
-    /// <summary>Object path specified in the SAPOData flow destination.</summary>
+    /// <summary>Object path specified in the SAPOData flow source.</summary>
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+    /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
     [JsonPropertyName("paginationConfig")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig? PaginationConfig { get; set; }
 
-    /// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+    /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
     [JsonPropertyName("parallelismConfig")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig? ParallelismConfig { get; set; }
 }
 
-/// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+/// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesVeeva
@@ -2678,113 +2684,113 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
     [JsonPropertyName("documentType")]
     public string? DocumentType { get; set; }
 
-    /// <summary>Boolean value to include All Versions of files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include all versions of files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeAllVersions")]
     public bool? IncludeAllVersions { get; set; }
 
-    /// <summary>Boolean value to include file renditions in Veeva document extract flow.</summary>
+    /// <summary>Whether to include file renditions in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeRenditions")]
     public bool? IncludeRenditions { get; set; }
 
-    /// <summary>Boolean value to include source files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include source files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeSourceFiles")]
     public bool? IncludeSourceFiles { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Veeva flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+/// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
     [JsonPropertyName("amplitude")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesAmplitude? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
     [JsonPropertyName("datadog")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDatadog? Datadog { get; set; }
 
-    /// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
     [JsonPropertyName("dynatrace")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDynatrace? Dynatrace { get; set; }
 
-    /// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+    /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
     [JsonPropertyName("googleAnalytics")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
     [JsonPropertyName("inforNexus")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesInforNexus? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
     [JsonPropertyName("serviceNow")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesServiceNow? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
     [JsonPropertyName("singular")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSingular? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
     [JsonPropertyName("slack")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSlack? Slack { get; set; }
 
-    /// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
     [JsonPropertyName("trendmicro")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
     [JsonPropertyName("veeva")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesVeeva? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-/// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+/// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfig
 {
-    /// <summary>API version that the destination connector uses.</summary>
+    /// <summary>API version that the source connector uses.</summary>
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -2792,11 +2798,11 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+    /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
     [JsonPropertyName("incrementalPullConfig")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigIncrementalPullConfig? IncrementalPullConfig { get; set; }
 
-    /// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+    /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
     [JsonPropertyName("sourceConnectorProperties")]
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
@@ -2805,15 +2811,15 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amplitude source fields. The only valid value is BETWEEN.</summary>
     [JsonPropertyName("amplitude")]
     public string? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Operators supported by the custom connector. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("customConnector")]
     public string? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Datadog source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("datadog")]
     public string? Datadog { get; set; }
 
@@ -2825,35 +2831,35 @@ public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
     [JsonPropertyName("googleAnalytics")]
     public string? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Infor Nexus source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("inforNexus")]
     public string? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Marketo source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("marketo")]
     public string? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amazon S3 source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("s3")]
     public string? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Salesforce source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("salesforce")]
     public string? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided SAPOData source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("sapoData")]
     public string? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided ServiceNow source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("serviceNow")]
     public string? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Singular source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("singular")]
     public string? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Slack source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("slack")]
     public string? Slack { get; set; }
 
@@ -2861,11 +2867,11 @@ public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
     [JsonPropertyName("trendmicro")]
     public string? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Veeva source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("veeva")]
     public string? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Zendesk source fields. Valid values are PROJECTION, GREATER_THAN, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("zendesk")]
     public string? Zendesk { get; set; }
 }
@@ -2874,7 +2880,7 @@ public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTask
 {
-    /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
+    /// <summary>Operation to be performed on the provided source fields. See the task.connector_operator Block for details.</summary>
     [JsonPropertyName("connectorOperator")]
     public IList<V1beta2FlowSpecInitProviderTaskConnectorOperator>? ConnectorOperator { get; set; }
 
@@ -2895,6 +2901,7 @@ public partial class V1beta2FlowSpecInitProviderTask
     public string? TaskType { get; set; }
 }
 
+/// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesScheduled
@@ -2911,11 +2918,11 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesSc
     [JsonPropertyName("scheduleEndTime")]
     public string? ScheduleEndTime { get; set; }
 
-    /// <summary>Scheduling expression that determines the rate at which the schedule will run, for example rate(5minutes).</summary>
+    /// <summary>Scheduling expression that determines the rate at which the schedule runs, for example rate(5minutes).</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 
-    /// <summary>Optional offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
+    /// <summary>Offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
     [JsonPropertyName("scheduleOffset")]
     public double? ScheduleOffset { get; set; }
 
@@ -2928,21 +2935,22 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesSc
     public string? Timezone { get; set; }
 }
 
-/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerProperties
 {
+    /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
     [JsonPropertyName("scheduled")]
     public V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesScheduled? Scheduled { get; set; }
 }
 
-/// <summary>A Trigger that determine how and when the flow runs.</summary>
+/// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfig
 {
-    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
     [JsonPropertyName("triggerProperties")]
     public V1beta2FlowSpecInitProviderTriggerConfigTriggerProperties? TriggerProperties { get; set; }
 
@@ -2967,23 +2975,23 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProvider
 {
-    /// <summary>Description of the flow you want to create.</summary>
+    /// <summary>Description of the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A Destination Flow Config that controls how Amazon AppFlow places data in the destination connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow places data in the destination connector. See the destination_flow_config Block for details.</summary>
     [JsonPropertyName("destinationFlowConfig")]
     public IList<V1beta2FlowSpecInitProviderDestinationFlowConfig>? DestinationFlowConfig { get; set; }
 
-    /// <summary>ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don&apos;t provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.</summary>
+    /// <summary>ARN of the KMS key you provide for encryption. Required if you do not want to use the Amazon AppFlow-managed KMS key. Uses the Amazon AppFlow-managed KMS key when not provided.</summary>
     [JsonPropertyName("kmsArn")]
     public string? KmsArn { get; set; }
 
-    /// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
     [JsonPropertyName("metadataCatalogConfig")]
     public V1beta2FlowSpecInitProviderMetadataCatalogConfig? MetadataCatalogConfig { get; set; }
 
-    /// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
     [JsonPropertyName("sourceFlowConfig")]
     public V1beta2FlowSpecInitProviderSourceFlowConfig? SourceFlowConfig { get; set; }
 
@@ -2991,11 +2999,11 @@ public partial class V1beta2FlowSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A Task that Amazon AppFlow performs while transferring the data in the flow run.</summary>
+    /// <summary>Tasks that Amazon AppFlow performs while transferring the data in the flow run. See the task Block for details.</summary>
     [JsonPropertyName("task")]
     public IList<V1beta2FlowSpecInitProviderTask>? Task { get; set; }
 
-    /// <summary>A Trigger that determine how and when the flow runs.</summary>
+    /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
     [JsonPropertyName("triggerConfig")]
     public V1beta2FlowSpecInitProviderTriggerConfig? TriggerConfig { get; set; }
 }
@@ -3183,30 +3191,30 @@ public partial class V1beta2FlowSpec
     public V1beta2FlowSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
@@ -3214,7 +3222,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -3227,7 +3235,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
@@ -3241,30 +3249,30 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public string? ObjectTypeName { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -3273,30 +3281,30 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -3311,30 +3319,30 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 {
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -3343,25 +3351,25 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
@@ -3370,7 +3378,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
@@ -3378,49 +3386,49 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Redshift flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 
-    /// <summary>The desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination. Integer value.</summary>
+    /// <summary>Desired file size, in MB, for each output file that Amazon AppFlow writes to the flow destination.</summary>
     [JsonPropertyName("targetFileSize")]
     public double? TargetFileSize { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
@@ -3428,16 +3436,16 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 
-    /// <summary>Whether the data types from the source system need to be preserved (Only valid for Parquet file type)</summary>
+    /// <summary>Whether to preserve the data types from the source system. Only valid for the PARQUET file type.</summary>
     [JsonPropertyName("preserveSourceDataTyping")]
     public bool? PreserveSourceDataTyping { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3
@@ -3450,43 +3458,43 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data to Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -3494,53 +3502,53 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Salesforce. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -3548,34 +3556,34 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data. See Success Response Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
     [JsonPropertyName("successResponseHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig? SuccessResponseHandlingConfig { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Possible write operations in the destination connector. Defaults to INSERT when not provided. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+/// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
@@ -3584,111 +3592,111 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Redshift.</summary>
+    /// <summary>Intermediate bucket that Amazon AppFlow uses when moving data into Amazon Snowflake.</summary>
     [JsonPropertyName("intermediateBucketName")]
     public string? IntermediateBucketName { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Amazon Snowflake flow destination.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+/// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
-    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
+    /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leaves them unaggregated. Valid values are None and SingleFile.</summary>
     [JsonPropertyName("aggregationType")]
     public string? AggregationType { get; set; }
 }
 
-/// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+/// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
-    /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
+    /// <summary>Level of granularity included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
     [JsonPropertyName("prefixFormat")]
     public string? PrefixFormat { get; set; }
 
-    /// <summary>Determines whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION</summary>
+    /// <summary>Whether the destination file path includes either or both of the selected elements. Valid values are EXECUTION_ID and SCHEMA_VERSION.</summary>
     [JsonPropertyName("prefixHierarchy")]
     public IList<string>? PrefixHierarchy { get; set; }
 
-    /// <summary>Determines the format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
+    /// <summary>Format of the prefix, and whether it applies to the file name, file path, or both. Valid values are FILENAME, PATH, and PATH_AND_FILENAME.</summary>
     [JsonPropertyName("prefixType")]
     public string? PrefixType { get; set; }
 }
 
-/// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
-    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
+    /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
     [JsonPropertyName("aggregationConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig? AggregationConfig { get; set; }
 
-    /// <summary>File type that Amazon AppFlow places in the Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
+    /// <summary>File type that Amazon AppFlow places in the Upsolver Amazon S3 bucket. Valid values are CSV, JSON, and PARQUET.</summary>
     [JsonPropertyName("fileType")]
     public string? FileType { get; set; }
 
-    /// <summary>Determines the prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. You can name folders according to the flow frequency and date. See Prefix Config for more details.</summary>
+    /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
     [JsonPropertyName("prefixConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig? PrefixConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+/// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Upsolver Amazon S3 bucket name in which Amazon AppFlow places the transferred data. Must begin with upsolver-appflow.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Upsolver Amazon S3 bucket in which Amazon AppFlow places the destination files.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>Configuration that determines how Amazon AppFlow should format the flow output data when Amazon S3 is used as the destination. See S3 Output Format Config for more details.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
     [JsonPropertyName("s3OutputFormatConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig? S3OutputFormatConfig { get; set; }
 }
 
-/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+/// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Name of the Amazon S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Amazon S3 bucket prefix.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>If the flow should fail after the first instance of a failure when attempting to place data in the destination.</summary>
+    /// <summary>Whether to fail the flow after the first instance of a failure when attempting to place data in the destination.</summary>
     [JsonPropertyName("failOnFirstDestinationError")]
     public bool? FailOnFirstDestinationError { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
-    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
+    /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
     [JsonPropertyName("errorHandlingConfig")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig? ErrorHandlingConfig { get; set; }
 
-    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update, delete, or upsert.</summary>
+    /// <summary>Name of the field that Amazon AppFlow uses as an ID when performing a write operation such as update or delete.</summary>
     [JsonPropertyName("idFieldNames")]
     public IList<string>? IdFieldNames { get; set; }
 
@@ -3696,64 +3704,64 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 
-    /// <summary>Type of write operation to be performed in the custom connector when it&apos;s used as destination. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
+    /// <summary>Type of write operation to be performed in Zendesk. When the value is UPSERT, id_field_names is required. Valid values are INSERT, UPSERT, UPDATE, and DELETE.</summary>
     [JsonPropertyName("writeOperationType")]
     public string? WriteOperationType { get; set; }
 }
 
-/// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+/// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorProperties
 {
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Connect Customer Profiles. See Customer Profiles Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
     [JsonPropertyName("customerProfiles")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles? CustomerProfiles { get; set; }
 
-    /// <summary>Properties that are required to query Amazon EventBridge. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
     [JsonPropertyName("eventBridge")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge? EventBridge { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Honeycode. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
     [JsonPropertyName("honeycode")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode? Honeycode { get; set; }
 
     [JsonPropertyName("lookoutMetrics")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics? LookoutMetrics { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon Redshift. See Redshift Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
     [JsonPropertyName("redshift")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift? Redshift { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Properties that are required to query Snowflake. See Snowflake Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
     [JsonPropertyName("snowflake")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake? Snowflake { get; set; }
 
-    /// <summary>Properties that are required to query Upsolver. See Upsolver Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
     [JsonPropertyName("upsolver")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver? Upsolver { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
@@ -3766,7 +3774,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfig
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -3774,38 +3782,40 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>This stores the information that is required to query a particular connector. See Destination Connector Properties for more information.</summary>
+    /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
     [JsonPropertyName("destinationConnectorProperties")]
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorProperties? DestinationConnectorProperties { get; set; }
 }
 
+/// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfigGlueDataCatalog
 {
-    /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
+    /// <summary>Name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The ARN of an IAM role that grants AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
+    /// <summary>ARN of the IAM role that grants Amazon AppFlow the permissions it needs to create Data Catalog tables, databases, and partitions.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>A naming prefix for each Data Catalog table that Amazon AppFlow creates</summary>
+    /// <summary>Naming prefix for each Data Catalog table that Amazon AppFlow creates.</summary>
     [JsonPropertyName("tablePrefix")]
     public string? TablePrefix { get; set; }
 }
 
-/// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+/// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfig
 {
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
     [JsonPropertyName("glueDataCatalog")]
     public V1beta2FlowStatusAtProviderMetadataCatalogConfigGlueDataCatalog? GlueDataCatalog { get; set; }
 }
 
-/// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+/// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigIncrementalPullConfig
@@ -3815,81 +3825,81 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigIncrementalPullC
     public string? DatetimeTypeFieldName { get; set; }
 }
 
-/// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+/// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
-    /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
+    /// <summary>Custom properties specific to the connector when it&apos;s used as a source in the flow. Maximum of 50 items.</summary>
     [JsonPropertyName("customProperties")]
     public IDictionary<string, string>? CustomProperties { get; set; }
 
-    /// <summary>Entity specified in the custom connector as a destination in the flow.</summary>
+    /// <summary>Entity specified in the custom connector as a source in the flow.</summary>
     [JsonPropertyName("entityName")]
     public string? EntityName { get; set; }
 }
 
-/// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+/// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+/// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+/// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
@@ -3899,125 +3909,125 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
     public string? S3InputFileType { get; set; }
 }
 
-/// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+/// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
-    /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
+    /// <summary>Amazon S3 bucket name where the source files are stored.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
+    /// <summary>Object key for the Amazon S3 bucket in which the source files are stored.</summary>
     [JsonPropertyName("bucketPrefix")]
     public string? BucketPrefix { get; set; }
 
-    /// <summary>When you use Amazon S3 as the source, the configuration format that you provide the flow input data. See S3 Input Format Config for details.</summary>
+    /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
     [JsonPropertyName("s3InputFormatConfig")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig? S3InputFormatConfig { get; set; }
 }
 
-/// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+/// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
-    /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
+    /// <summary>Salesforce API used by Amazon AppFlow when the flow transfers data from Salesforce.</summary>
     [JsonPropertyName("dataTransferApi")]
     public string? DataTransferApi { get; set; }
 
-    /// <summary>Flag that enables dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
+    /// <summary>Whether to enable dynamic fetching of new (recently added) fields in the Salesforce objects while running a flow.</summary>
     [JsonPropertyName("enableDynamicFieldUpdate")]
     public bool? EnableDynamicFieldUpdate { get; set; }
 
-    /// <summary>Whether Amazon AppFlow includes deleted files in the flow run.</summary>
+    /// <summary>Whether to include deleted files in the flow run.</summary>
     [JsonPropertyName("includeDeletedRecords")]
     public bool? IncludeDeletedRecords { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Salesforce flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+/// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+/// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
-    /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
+    /// <summary>Maximum number of processes that Amazon AppFlow runs at the same time when it retrieves your data from your SAP application.</summary>
     [JsonPropertyName("maxPageSize")]
     public double? MaxPageSize { get; set; }
 }
 
-/// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+/// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
-    /// <summary>Object path specified in the SAPOData flow destination.</summary>
+    /// <summary>Object path specified in the SAPOData flow source.</summary>
     [JsonPropertyName("objectPath")]
     public string? ObjectPath { get; set; }
 
-    /// <summary>Sets the page size for each concurrent process that transfers OData records from your SAP instance.</summary>
+    /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
     [JsonPropertyName("paginationConfig")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig? PaginationConfig { get; set; }
 
-    /// <summary>Sets the number of concurrent processes that transfers OData records from your SAP instance.</summary>
+    /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
     [JsonPropertyName("parallelismConfig")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig? ParallelismConfig { get; set; }
 }
 
-/// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+/// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+/// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+/// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesVeeva
@@ -4026,113 +4036,113 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
     [JsonPropertyName("documentType")]
     public string? DocumentType { get; set; }
 
-    /// <summary>Boolean value to include All Versions of files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include all versions of files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeAllVersions")]
     public bool? IncludeAllVersions { get; set; }
 
-    /// <summary>Boolean value to include file renditions in Veeva document extract flow.</summary>
+    /// <summary>Whether to include file renditions in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeRenditions")]
     public bool? IncludeRenditions { get; set; }
 
-    /// <summary>Boolean value to include source files in Veeva document extract flow.</summary>
+    /// <summary>Whether to include source files in the Veeva document extract flow.</summary>
     [JsonPropertyName("includeSourceFiles")]
     public bool? IncludeSourceFiles { get; set; }
 
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the Veeva flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+/// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
-    /// <summary>Object specified in the flow destination.</summary>
+    /// <summary>Object specified in the flow source.</summary>
     [JsonPropertyName("object")]
     public string? Object { get; set; }
 }
 
-/// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+/// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorProperties
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
     [JsonPropertyName("amplitude")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesAmplitude? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
     [JsonPropertyName("customConnector")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
     [JsonPropertyName("datadog")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDatadog? Datadog { get; set; }
 
-    /// <summary>Operation to be performed on the provided Dynatrace source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
     [JsonPropertyName("dynatrace")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDynatrace? Dynatrace { get; set; }
 
-    /// <summary>Operation to be performed on the provided Google Analytics source fields. Valid values are PROJECTION and BETWEEN.</summary>
+    /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
     [JsonPropertyName("googleAnalytics")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
     [JsonPropertyName("inforNexus")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesInforNexus? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
     [JsonPropertyName("marketo")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesMarketo? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
     [JsonPropertyName("s3")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
     [JsonPropertyName("salesforce")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSalesforce? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
     [JsonPropertyName("sapoData")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoData? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
     [JsonPropertyName("serviceNow")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesServiceNow? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
     [JsonPropertyName("singular")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSingular? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
     [JsonPropertyName("slack")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSlack? Slack { get; set; }
 
-    /// <summary>Operation to be performed on the provided Trend Micro source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
+    /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
     [JsonPropertyName("trendmicro")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
     [JsonPropertyName("veeva")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesVeeva? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
     [JsonPropertyName("zendesk")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-/// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+/// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfig
 {
-    /// <summary>API version that the destination connector uses.</summary>
+    /// <summary>API version that the source connector uses.</summary>
     [JsonPropertyName("apiVersion")]
     public string? ApiVersion { get; set; }
 
-    /// <summary>Name of the connector profile. This name must be unique for each connector profile in the AWS account.</summary>
+    /// <summary>Name of the connector profile. Must be unique for each connector profile in the AWS account.</summary>
     [JsonPropertyName("connectorProfileName")]
     public string? ConnectorProfileName { get; set; }
 
@@ -4140,11 +4150,11 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfig
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
-    /// <summary>Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. See Incremental Pull Config for more details.</summary>
+    /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
     [JsonPropertyName("incrementalPullConfig")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigIncrementalPullConfig? IncrementalPullConfig { get; set; }
 
-    /// <summary>Information that is required to query a particular source connector. See Source Connector Properties for details.</summary>
+    /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
     [JsonPropertyName("sourceConnectorProperties")]
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
@@ -4153,15 +4163,15 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
 {
-    /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amplitude source fields. The only valid value is BETWEEN.</summary>
     [JsonPropertyName("amplitude")]
     public string? Amplitude { get; set; }
 
-    /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
+    /// <summary>Operators supported by the custom connector. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("customConnector")]
     public string? CustomConnector { get; set; }
 
-    /// <summary>Information that is required for querying Datadog. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Datadog source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("datadog")]
     public string? Datadog { get; set; }
 
@@ -4173,35 +4183,35 @@ public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
     [JsonPropertyName("googleAnalytics")]
     public string? GoogleAnalytics { get; set; }
 
-    /// <summary>Information that is required for querying Infor Nexus. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Infor Nexus source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("inforNexus")]
     public string? InforNexus { get; set; }
 
-    /// <summary>Properties that are required to query Marketo. See Generic Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Marketo source fields. Valid values are PROJECTION, BETWEEN, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("marketo")]
     public string? Marketo { get; set; }
 
-    /// <summary>Properties that are required to query Amazon S3. See S3 Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Amazon S3 source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("s3")]
     public string? S3 { get; set; }
 
-    /// <summary>Properties that are required to query Salesforce. See Salesforce Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Salesforce source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("salesforce")]
     public string? Salesforce { get; set; }
 
-    /// <summary>Properties that are required to query SAPOData. See SAPOData Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided SAPOData source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("sapoData")]
     public string? SapoData { get; set; }
 
-    /// <summary>Information that is required for querying ServiceNow. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided ServiceNow source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("serviceNow")]
     public string? ServiceNow { get; set; }
 
-    /// <summary>Information that is required for querying Singular. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Singular source fields. Valid values are PROJECTION, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("singular")]
     public string? Singular { get; set; }
 
-    /// <summary>Information that is required for querying Slack. See Generic Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Slack source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("slack")]
     public string? Slack { get; set; }
 
@@ -4209,11 +4219,11 @@ public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
     [JsonPropertyName("trendmicro")]
     public string? Trendmicro { get; set; }
 
-    /// <summary>Information that is required for querying Veeva. See Veeva Source Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Veeva source fields. Valid values are PROJECTION, LESS_THAN, GREATER_THAN, CONTAINS, BETWEEN, LESS_THAN_OR_EQUAL_TO, GREATER_THAN_OR_EQUAL_TO, EQUAL_TO, NOT_EQUAL_TO, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("veeva")]
     public string? Veeva { get; set; }
 
-    /// <summary>Properties that are required to query Zendesk. See Zendesk Destination Properties for more details.</summary>
+    /// <summary>Operation to be performed on the provided Zendesk source fields. Valid values are PROJECTION, GREATER_THAN, ADDITION, MULTIPLICATION, DIVISION, SUBTRACTION, MASK_ALL, MASK_FIRST_N, MASK_LAST_N, VALIDATE_NON_NULL, VALIDATE_NON_ZERO, VALIDATE_NON_NEGATIVE, VALIDATE_NUMERIC, and NO_OP.</summary>
     [JsonPropertyName("zendesk")]
     public string? Zendesk { get; set; }
 }
@@ -4222,7 +4232,7 @@ public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTask
 {
-    /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
+    /// <summary>Operation to be performed on the provided source fields. See the task.connector_operator Block for details.</summary>
     [JsonPropertyName("connectorOperator")]
     public IList<V1beta2FlowStatusAtProviderTaskConnectorOperator>? ConnectorOperator { get; set; }
 
@@ -4243,6 +4253,7 @@ public partial class V1beta2FlowStatusAtProviderTask
     public string? TaskType { get; set; }
 }
 
+/// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesScheduled
@@ -4259,11 +4270,11 @@ public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesSc
     [JsonPropertyName("scheduleEndTime")]
     public string? ScheduleEndTime { get; set; }
 
-    /// <summary>Scheduling expression that determines the rate at which the schedule will run, for example rate(5minutes).</summary>
+    /// <summary>Scheduling expression that determines the rate at which the schedule runs, for example rate(5minutes).</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 
-    /// <summary>Optional offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
+    /// <summary>Offset that is added to the time interval for a schedule-triggered flow. Maximum value of 36000.</summary>
     [JsonPropertyName("scheduleOffset")]
     public double? ScheduleOffset { get; set; }
 
@@ -4276,21 +4287,22 @@ public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesSc
     public string? Timezone { get; set; }
 }
 
-/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+/// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerProperties
 {
+    /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
     [JsonPropertyName("scheduled")]
     public V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesScheduled? Scheduled { get; set; }
 }
 
-/// <summary>A Trigger that determine how and when the flow runs.</summary>
+/// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfig
 {
-    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
+    /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
     [JsonPropertyName("triggerProperties")]
     public V1beta2FlowStatusAtProviderTriggerConfigTriggerProperties? TriggerProperties { get; set; }
 
@@ -4307,26 +4319,26 @@ public partial class V1beta2FlowStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Description of the flow you want to create.</summary>
+    /// <summary>Description of the flow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A Destination Flow Config that controls how Amazon AppFlow places data in the destination connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow places data in the destination connector. See the destination_flow_config Block for details.</summary>
     [JsonPropertyName("destinationFlowConfig")]
     public IList<V1beta2FlowStatusAtProviderDestinationFlowConfig>? DestinationFlowConfig { get; set; }
 
-    /// <summary>The current status of the flow.</summary>
+    /// <summary>Current status of the flow.</summary>
     [JsonPropertyName("flowStatus")]
     public string? FlowStatus { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don&apos;t provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key.</summary>
+    /// <summary>ARN of the KMS key you provide for encryption. Required if you do not want to use the Amazon AppFlow-managed KMS key. Uses the Amazon AppFlow-managed KMS key when not provided.</summary>
     [JsonPropertyName("kmsArn")]
     public string? KmsArn { get; set; }
 
-    /// <summary>A Catalog that determines the configuration that Amazon AppFlow uses when it catalogs the data that’s transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.</summary>
+    /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
     [JsonPropertyName("metadataCatalogConfig")]
     public V1beta2FlowStatusAtProviderMetadataCatalogConfig? MetadataCatalogConfig { get; set; }
 
@@ -4337,7 +4349,7 @@ public partial class V1beta2FlowStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Source Flow Config that controls how Amazon AppFlow retrieves data from the source connector.</summary>
+    /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
     [JsonPropertyName("sourceFlowConfig")]
     public V1beta2FlowStatusAtProviderSourceFlowConfig? SourceFlowConfig { get; set; }
 
@@ -4349,11 +4361,11 @@ public partial class V1beta2FlowStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>A Task that Amazon AppFlow performs while transferring the data in the flow run.</summary>
+    /// <summary>Tasks that Amazon AppFlow performs while transferring the data in the flow run. See the task Block for details.</summary>
     [JsonPropertyName("task")]
     public IList<V1beta2FlowStatusAtProviderTask>? Task { get; set; }
 
-    /// <summary>A Trigger that determine how and when the flow runs.</summary>
+    /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
     [JsonPropertyName("triggerConfig")]
     public V1beta2FlowStatusAtProviderTriggerConfig? TriggerConfig { get; set; }
 }

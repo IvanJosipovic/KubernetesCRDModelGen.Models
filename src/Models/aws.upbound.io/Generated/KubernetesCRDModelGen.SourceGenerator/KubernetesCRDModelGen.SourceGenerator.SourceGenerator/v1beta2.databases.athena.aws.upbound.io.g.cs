@@ -212,7 +212,7 @@ public partial class V1beta2DatabaseSpecForProviderBucketSelector
     public V1beta2DatabaseSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseSpecForProviderEncryptionConfiguration
@@ -250,7 +250,7 @@ public partial class V1beta2DatabaseSpecForProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2DatabaseSpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -435,7 +435,7 @@ public partial class V1beta2DatabaseSpecInitProviderBucketSelector
     public V1beta2DatabaseSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseSpecInitProviderEncryptionConfiguration
@@ -485,7 +485,7 @@ public partial class V1beta2DatabaseSpecInitProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2DatabaseSpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -699,7 +699,7 @@ public partial class V1beta2DatabaseStatusAtProviderAclConfiguration
     public string? S3AclOption { get; set; }
 }
 
-/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+/// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatabaseStatusAtProviderEncryptionConfiguration
@@ -729,7 +729,7 @@ public partial class V1beta2DatabaseStatusAtProvider
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
-    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.</summary>
+    /// <summary>Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2DatabaseStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 

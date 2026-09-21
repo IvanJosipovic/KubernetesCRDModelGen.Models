@@ -303,7 +303,7 @@ public partial class V1beta1ConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConfigurationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the configuration.</summary>
+    /// <summary>ARN of the configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

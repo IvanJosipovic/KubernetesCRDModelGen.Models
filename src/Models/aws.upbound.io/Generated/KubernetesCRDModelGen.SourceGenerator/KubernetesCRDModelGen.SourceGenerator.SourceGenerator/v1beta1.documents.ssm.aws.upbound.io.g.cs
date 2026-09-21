@@ -407,7 +407,7 @@ public partial class V1beta1DocumentStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DocumentStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the document.</summary>
+    /// <summary>ARN of the document.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

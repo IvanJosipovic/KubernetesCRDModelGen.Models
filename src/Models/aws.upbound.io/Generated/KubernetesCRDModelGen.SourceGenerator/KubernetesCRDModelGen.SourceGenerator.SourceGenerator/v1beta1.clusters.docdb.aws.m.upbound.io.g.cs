@@ -347,8 +347,7 @@ public partial class V1beta1ClusterSpecForProviderKmsKeyIdSelector
 }
 
 /// <summary>
-/// Password for the master DB user. Note that this may
-/// show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
+/// Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
 /// Password for the master DB user. If you set autoGeneratePassword to true, the Secret referenced here will be created or updated with generated password if it does not already contain one.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -620,11 +619,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>
-    /// The name of your final DB snapshot
-    /// when this DB cluster is deleted. If omitted, no final snapshot will be
-    /// made.
-    /// </summary>
+    /// <summary>The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.</summary>
     [JsonPropertyName("finalSnapshotIdentifier")]
     public string? FinalSnapshotIdentifier { get; set; }
 
@@ -649,21 +644,17 @@ public partial class V1beta1ClusterSpecForProvider
     public bool? ManageMasterUserPassword { get; set; }
 
     /// <summary>
-    /// Password for the master DB user. Note that this may
-    /// show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
+    /// Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
     /// Password for the master DB user. If you set autoGeneratePassword to true, the Secret referenced here will be created or updated with generated password if it does not already contain one.
     /// </summary>
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta1ClusterSpecForProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user. Note that this may
-    /// show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password.
-    /// </summary>
+    /// <summary>Password for the master DB user. Note that this will show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWo")]
     public string? MasterPasswordWo { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -1052,8 +1043,7 @@ public partial class V1beta1ClusterSpecInitProviderKmsKeyIdSelector
 }
 
 /// <summary>
-/// Password for the master DB user. Note that this may
-/// show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
+/// Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
 /// Password for the master DB user. If you set autoGeneratePassword to true, the Secret referenced here will be created or updated with generated password if it does not already contain one.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1333,11 +1323,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>
-    /// The name of your final DB snapshot
-    /// when this DB cluster is deleted. If omitted, no final snapshot will be
-    /// made.
-    /// </summary>
+    /// <summary>The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.</summary>
     [JsonPropertyName("finalSnapshotIdentifier")]
     public string? FinalSnapshotIdentifier { get; set; }
 
@@ -1362,21 +1348,17 @@ public partial class V1beta1ClusterSpecInitProvider
     public bool? ManageMasterUserPassword { get; set; }
 
     /// <summary>
-    /// Password for the master DB user. Note that this may
-    /// show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
+    /// Password for the master DB user. Note that this may show up in logs, and it will be stored in the state file. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password_wo and manage_master_user_password.
     /// Password for the master DB user. If you set autoGeneratePassword to true, the Secret referenced here will be created or updated with generated password if it does not already contain one.
     /// </summary>
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta1ClusterSpecInitProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user. Note that this may
-    /// show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password.
-    /// </summary>
+    /// <summary>Password for the master DB user. Note that this will show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWo")]
     public string? MasterPasswordWo { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -1562,7 +1544,7 @@ public partial class V1beta1ClusterStatusAtProviderMasterUserSecret
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>ARN of cluster</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -1622,7 +1604,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>ARN of cluster</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1676,11 +1658,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
-    /// <summary>
-    /// The name of your final DB snapshot
-    /// when this DB cluster is deleted. If omitted, no final snapshot will be
-    /// made.
-    /// </summary>
+    /// <summary>The name of your final DB snapshot when this DB cluster is deleted. If omitted, no final snapshot will be made.</summary>
     [JsonPropertyName("finalSnapshotIdentifier")]
     public string? FinalSnapshotIdentifier { get; set; }
 
@@ -1692,7 +1670,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
-    /// <summary>(Deprecated) Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>(Deprecated) ARN of cluster</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1704,14 +1682,11 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("manageMasterUserPassword")]
     public bool? ManageMasterUserPassword { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user. Note that this may
-    /// show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password.
-    /// </summary>
+    /// <summary>Password for the master DB user. Note that this will show up in logs. Please refer to the DocumentDB Naming Constraints. Conflicts with master_password and manage_master_user_password. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWo")]
     public string? MasterPasswordWo { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 

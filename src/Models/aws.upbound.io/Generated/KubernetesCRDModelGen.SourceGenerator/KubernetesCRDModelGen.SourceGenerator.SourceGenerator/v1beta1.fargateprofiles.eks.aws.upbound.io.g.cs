@@ -525,7 +525,7 @@ public partial class V1beta1FargateProfileSpecForProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1FargateProfileSpecForProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
     [JsonPropertyName("podExecutionRoleArn")]
     public string? PodExecutionRoleArn { get; set; }
 
@@ -1047,7 +1047,7 @@ public partial class V1beta1FargateProfileSpecInitProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1FargateProfileSpecInitProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
     [JsonPropertyName("podExecutionRoleArn")]
     public string? PodExecutionRoleArn { get; set; }
 
@@ -1280,7 +1280,7 @@ public partial class V1beta1FargateProfileStatusAtProviderSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FargateProfileStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the EKS Fargate Profile.</summary>
+    /// <summary>ARN of the EKS Fargate Profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1292,7 +1292,7 @@ public partial class V1beta1FargateProfileStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Fargate Profile.</summary>
     [JsonPropertyName("podExecutionRoleArn")]
     public string? PodExecutionRoleArn { get; set; }
 

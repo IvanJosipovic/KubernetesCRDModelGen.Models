@@ -217,7 +217,7 @@ public partial class V1beta1ResourcePolicySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the account to create or update a resource policy for.</summary>
+    /// <summary>ARN of the account to create or update a resource policy for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -397,7 +397,7 @@ public partial class V1beta1ResourcePolicySpecInitProvider
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the account to create or update a resource policy for.</summary>
+    /// <summary>ARN of the account to create or update a resource policy for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -597,7 +597,7 @@ public partial class V1beta1ResourcePolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the account to create or update a resource policy for.</summary>
+    /// <summary>ARN of the account to create or update a resource policy for.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -612,7 +612,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the account to create or update a resource policy for.</summary>
+    /// <summary>ARN of the account to create or update a resource policy for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }

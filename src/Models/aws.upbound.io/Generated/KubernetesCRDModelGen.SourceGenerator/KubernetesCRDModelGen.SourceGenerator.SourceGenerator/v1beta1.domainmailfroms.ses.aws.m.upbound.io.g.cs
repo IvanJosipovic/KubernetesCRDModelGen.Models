@@ -195,7 +195,7 @@ public partial class V1beta1DomainMailFromSpecForProviderDomainSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainMailFromSpecForProvider
 {
-    /// <summary>The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
+    /// <summary>Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
@@ -394,7 +394,7 @@ public partial class V1beta1DomainMailFromSpecInitProviderDomainSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainMailFromSpecInitProvider
 {
-    /// <summary>The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
+    /// <summary>Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
@@ -526,7 +526,7 @@ public partial class V1beta1DomainMailFromSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainMailFromStatusAtProvider
 {
-    /// <summary>The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
+    /// <summary>Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
@@ -534,7 +534,7 @@ public partial class V1beta1DomainMailFromStatusAtProvider
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The domain name.</summary>
+    /// <summary>Domain name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

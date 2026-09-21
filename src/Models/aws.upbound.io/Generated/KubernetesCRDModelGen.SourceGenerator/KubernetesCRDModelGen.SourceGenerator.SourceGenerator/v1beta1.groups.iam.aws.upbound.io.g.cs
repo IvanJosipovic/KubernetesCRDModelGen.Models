@@ -272,11 +272,11 @@ public partial class V1beta1GroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProvider
 {
-    /// <summary>The ARN assigned by AWS for this group.</summary>
+    /// <summary>ARN assigned by AWS for this group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The group&apos;s name.</summary>
+    /// <summary>Group&apos;s name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -284,7 +284,7 @@ public partial class V1beta1GroupStatusAtProvider
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The unique ID assigned by AWS.</summary>
+    /// <summary>Unique ID assigned by AWS.</summary>
     [JsonPropertyName("uniqueId")]
     public string? UniqueId { get; set; }
 }

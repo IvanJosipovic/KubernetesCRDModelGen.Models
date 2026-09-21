@@ -1466,7 +1466,7 @@ public partial class V1beta1ServerlessCacheStatusAtProviderReaderEndpoint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerlessCacheStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the serverless cache.</summary>
+    /// <summary>ARN of the serverless cache.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

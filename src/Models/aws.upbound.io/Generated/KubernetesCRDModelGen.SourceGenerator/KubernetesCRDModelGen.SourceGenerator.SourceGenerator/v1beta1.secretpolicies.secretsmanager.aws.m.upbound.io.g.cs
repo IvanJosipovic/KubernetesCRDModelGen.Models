@@ -530,7 +530,7 @@ public partial class V1beta1SecretPolicyStatusAtProvider
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

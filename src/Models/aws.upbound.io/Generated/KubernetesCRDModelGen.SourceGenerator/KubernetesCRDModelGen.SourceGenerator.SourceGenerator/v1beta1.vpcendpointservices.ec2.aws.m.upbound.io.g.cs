@@ -354,7 +354,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProvider
     [JsonPropertyName("acceptanceRequired")]
     public bool? AcceptanceRequired { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Gateway Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Gateway Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("gatewayLoadBalancerArns")]
     public IList<string>? GatewayLoadBalancerArns { get; set; }
 
@@ -366,7 +366,7 @@ public partial class V1beta1VPCEndpointServiceSpecForProvider
     [JsonPropertyName("gatewayLoadBalancerArnsSelector")]
     public V1beta1VPCEndpointServiceSpecForProviderGatewayLoadBalancerArnsSelector? GatewayLoadBalancerArnsSelector { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Network Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Network Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("networkLoadBalancerArns")]
     public IList<string>? NetworkLoadBalancerArns { get; set; }
 
@@ -732,7 +732,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProvider
     [JsonPropertyName("acceptanceRequired")]
     public bool? AcceptanceRequired { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Gateway Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Gateway Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("gatewayLoadBalancerArns")]
     public IList<string>? GatewayLoadBalancerArns { get; set; }
 
@@ -744,7 +744,7 @@ public partial class V1beta1VPCEndpointServiceSpecInitProvider
     [JsonPropertyName("gatewayLoadBalancerArnsSelector")]
     public V1beta1VPCEndpointServiceSpecInitProviderGatewayLoadBalancerArnsSelector? GatewayLoadBalancerArnsSelector { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Network Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Network Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("networkLoadBalancerArns")]
     public IList<string>? NetworkLoadBalancerArns { get; set; }
 
@@ -913,7 +913,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("allowedPrincipals")]
     public IList<string>? AllowedPrincipals { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the VPC endpoint service.</summary>
+    /// <summary>ARN of the VPC endpoint service.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -925,7 +925,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("baseEndpointDnsNames")]
     public IList<string>? BaseEndpointDnsNames { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Gateway Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Gateway Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("gatewayLoadBalancerArns")]
     public IList<string>? GatewayLoadBalancerArns { get; set; }
 
@@ -937,7 +937,7 @@ public partial class V1beta1VPCEndpointServiceStatusAtProvider
     [JsonPropertyName("managesVpcEndpoints")]
     public bool? ManagesVpcEndpoints { get; set; }
 
-    /// <summary>Amazon Resource Names (ARNs) of one or more Network Load Balancers for the endpoint service.</summary>
+    /// <summary>ARNs of one or more Network Load Balancers for the endpoint service.</summary>
     [JsonPropertyName("networkLoadBalancerArns")]
     public IList<string>? NetworkLoadBalancerArns { get; set; }
 

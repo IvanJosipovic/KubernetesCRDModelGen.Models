@@ -1795,7 +1795,7 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
+    /// <summary>ARN of the KMS key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1914,7 +1914,7 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("sourceCodeHash")]
     public string? SourceCodeHash { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
     [JsonPropertyName("sourceKmsKeyArn")]
     public string? SourceKmsKeyArn { get; set; }
 
@@ -3695,7 +3695,7 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("imageUri")]
     public string? ImageUri { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
+    /// <summary>ARN of the KMS key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -3807,7 +3807,7 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("sourceCodeHash")]
     public string? SourceCodeHash { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
     [JsonPropertyName("sourceKmsKeyArn")]
     public string? SourceKmsKeyArn { get; set; }
 
@@ -4268,7 +4268,7 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("invokeArn")]
     public string? InvokeArn { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
+    /// <summary>ARN of the KMS key used to encrypt environment variables. If not provided when environment variables are in use, AWS Lambda uses a default service key. If provided when environment variables are not in use, the AWS Lambda API does not save this configuration.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -4375,7 +4375,7 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("sourceCodeSize")]
     public double? SourceCodeSize { get; set; }
 
-    /// <summary>ARN of the AWS Key Management Service key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
+    /// <summary>ARN of the KMS key used to encrypt the function&apos;s .zip deployment package. Conflicts with image_uri.</summary>
     [JsonPropertyName("sourceKmsKeyArn")]
     public string? SourceKmsKeyArn { get; set; }
 

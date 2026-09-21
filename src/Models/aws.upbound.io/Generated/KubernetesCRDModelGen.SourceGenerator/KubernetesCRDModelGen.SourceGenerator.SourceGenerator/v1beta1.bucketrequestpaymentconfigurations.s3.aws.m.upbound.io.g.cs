@@ -211,7 +211,7 @@ public partial class V1beta1BucketRequestPaymentConfigurationSpecForProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>Specifies who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
+    /// <summary>Who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
     [JsonPropertyName("payer")]
     public string? Payer { get; set; }
 
@@ -410,7 +410,7 @@ public partial class V1beta1BucketRequestPaymentConfigurationSpecInitProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>Specifies who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
+    /// <summary>Who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
     [JsonPropertyName("payer")]
     public string? Payer { get; set; }
 }
@@ -534,11 +534,11 @@ public partial class V1beta1BucketRequestPaymentConfigurationStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
+    /// <summary>bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
+    /// <summary>Who pays for the download and request fees. Valid values: BucketOwner, Requester.</summary>
     [JsonPropertyName("payer")]
     public string? Payer { get; set; }
 

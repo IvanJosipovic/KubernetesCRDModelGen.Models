@@ -252,7 +252,7 @@ public partial class V1beta1CertificateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CertificateStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the certificate.</summary>
+    /// <summary>ARN for the certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 

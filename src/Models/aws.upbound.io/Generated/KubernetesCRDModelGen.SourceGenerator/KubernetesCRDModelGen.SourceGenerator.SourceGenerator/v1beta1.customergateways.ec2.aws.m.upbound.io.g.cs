@@ -48,7 +48,7 @@ public partial class V1beta1CustomerGatewaySpecForProvider
     [JsonPropertyName("bgpAsnExtended")]
     public string? BgpAsnExtended { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the customer gateway certificate.</summary>
+    /// <summary>ARN for the customer gateway certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
@@ -103,7 +103,7 @@ public partial class V1beta1CustomerGatewaySpecInitProvider
     [JsonPropertyName("bgpAsnExtended")]
     public string? BgpAsnExtended { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the customer gateway certificate.</summary>
+    /// <summary>ARN for the customer gateway certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
@@ -250,7 +250,7 @@ public partial class V1beta1CustomerGatewayStatusAtProvider
     [JsonPropertyName("bgpAsnExtended")]
     public string? BgpAsnExtended { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the customer gateway certificate.</summary>
+    /// <summary>ARN for the customer gateway certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 

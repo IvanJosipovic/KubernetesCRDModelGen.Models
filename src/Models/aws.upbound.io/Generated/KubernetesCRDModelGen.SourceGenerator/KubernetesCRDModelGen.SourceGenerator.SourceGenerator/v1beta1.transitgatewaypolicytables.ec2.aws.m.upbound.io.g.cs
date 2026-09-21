@@ -518,7 +518,7 @@ public partial class V1beta1TransitGatewayPolicyTableSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayPolicyTableStatusAtProvider
 {
-    /// <summary>EC2 Transit Gateway Policy Table Amazon Resource Name (ARN).</summary>
+    /// <summary>EC2 Transit Gateway Policy Table ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

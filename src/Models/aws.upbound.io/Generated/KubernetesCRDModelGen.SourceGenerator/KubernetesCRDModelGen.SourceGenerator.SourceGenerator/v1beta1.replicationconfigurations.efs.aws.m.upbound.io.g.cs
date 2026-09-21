@@ -595,7 +595,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the original source Amazon EFS file system in the replication configuration.</summary>
+    /// <summary>ARN of the original source Amazon EFS file system in the replication configuration.</summary>
     [JsonPropertyName("originalSourceFileSystemArn")]
     public string? OriginalSourceFileSystemArn { get; set; }
 
@@ -606,7 +606,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the current source file system in the replication configuration.</summary>
+    /// <summary>ARN of the current source file system in the replication configuration.</summary>
     [JsonPropertyName("sourceFileSystemArn")]
     public string? SourceFileSystemArn { get; set; }
 

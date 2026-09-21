@@ -621,7 +621,7 @@ public partial class V1beta1ClusterEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterEndpointStatusAtProvider
 {
-    /// <summary>The Neptune Cluster Endpoint Amazon Resource Name (ARN).</summary>
+    /// <summary>Neptune Cluster Endpoint ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

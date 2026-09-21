@@ -363,7 +363,7 @@ public partial class V1beta1APIKeyStatusAtProvider
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
-    /// <summary>API Key ID (Formatted as ApiId:Key)</summary>
+    /// <summary>ID of the API key.</summary>
     [JsonPropertyName("apiKeyId")]
     public string? ApiKeyId { get; set; }
 

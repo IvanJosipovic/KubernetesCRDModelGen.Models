@@ -206,7 +206,7 @@ public partial class V1beta1ResourcePolicySpecForProviderResourceArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProvider
 {
-    /// <summary>An IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -217,7 +217,7 @@ public partial class V1beta1ResourcePolicySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -393,11 +393,11 @@ public partial class V1beta1ResourcePolicySpecInitProviderResourceArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProvider
 {
-    /// <summary>An IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -600,7 +600,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>IAM policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -611,7 +611,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }

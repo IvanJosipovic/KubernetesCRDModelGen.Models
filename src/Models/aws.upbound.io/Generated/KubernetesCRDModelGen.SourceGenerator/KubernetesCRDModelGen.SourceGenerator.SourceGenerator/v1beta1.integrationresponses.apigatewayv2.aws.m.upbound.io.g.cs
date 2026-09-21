@@ -393,7 +393,7 @@ public partial class V1beta1IntegrationResponseSpecForProvider
     [JsonPropertyName("responseTemplates")]
     public IDictionary<string, string>? ResponseTemplates { get; set; }
 
-    /// <summary>The template selection expression for the integration response.</summary>
+    /// <summary>Template selection expression for the integration response.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 }
@@ -760,7 +760,7 @@ public partial class V1beta1IntegrationResponseSpecInitProvider
     [JsonPropertyName("responseTemplates")]
     public IDictionary<string, string>? ResponseTemplates { get; set; }
 
-    /// <summary>The template selection expression for the integration response.</summary>
+    /// <summary>Template selection expression for the integration response.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 }
@@ -907,7 +907,7 @@ public partial class V1beta1IntegrationResponseStatusAtProvider
     [JsonPropertyName("responseTemplates")]
     public IDictionary<string, string>? ResponseTemplates { get; set; }
 
-    /// <summary>The template selection expression for the integration response.</summary>
+    /// <summary>Template selection expression for the integration response.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 }

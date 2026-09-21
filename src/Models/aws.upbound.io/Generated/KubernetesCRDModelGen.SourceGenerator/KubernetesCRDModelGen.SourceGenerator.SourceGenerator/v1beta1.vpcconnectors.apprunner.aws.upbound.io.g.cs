@@ -961,7 +961,7 @@ public partial class V1beta1VPCConnectorStatusAtProvider
     [JsonPropertyName("vpcConnectorName")]
     public string? VpcConnectorName { get; set; }
 
-    /// <summary>The revision of VPC connector. It&apos;s unique among all the active connectors (&quot;Status&quot;: &quot;ACTIVE&quot;) that share the same Name.</summary>
+    /// <summary>Revision of VPC connector. It&apos;s unique among all the active connectors (&quot;Status&quot;: &quot;ACTIVE&quot;) that share the same Name.</summary>
     [JsonPropertyName("vpcConnectorRevision")]
     public double? VpcConnectorRevision { get; set; }
 }

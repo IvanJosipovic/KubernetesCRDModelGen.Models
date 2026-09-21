@@ -62,6 +62,321 @@ public enum V1beta2SecretRotationSpecDeletionPolicyEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueRef")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueRef? ValueRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueSelector")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelector? ValueSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum
 {
@@ -202,12 +517,12 @@ public partial class V1beta2SecretRotationSpecForProviderRotationLambdaArnSelect
     public V1beta2SecretRotationSpecForProviderRotationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+/// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationSpecForProviderRotationRules
 {
-    /// <summary>Specifies the number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>Number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("automaticallyAfterDays")]
     public double? AutomaticallyAfterDays { get; set; }
 
@@ -215,7 +530,7 @@ public partial class V1beta2SecretRotationSpecForProviderRotationRules
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>A cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 }
@@ -371,6 +686,22 @@ public partial class V1beta2SecretRotationSpecForProviderSecretIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationSpecForProvider
 {
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta2SecretRotationSpecForProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
+    /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnRef")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnRef? ExternalSecretRotationRoleArnRef { get; set; }
+
+    /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnSelector")]
+    public V1beta2SecretRotationSpecForProviderExternalSecretRotationRoleArnSelector? ExternalSecretRotationRoleArnSelector { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -378,11 +709,15 @@ public partial class V1beta2SecretRotationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
+    /// <summary>Whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
     [JsonPropertyName("rotateImmediately")]
     public bool? RotateImmediately { get; set; }
 
-    /// <summary>Specifies the ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
+    /// <summary>Whether automatic rotation is enabled for the secret. Set to false to disable rotation on a secret whose rotation is otherwise managed by AWS (for example, an RDS master user password secret). When false, rotation_rules must be omitted. Defaults to enabled when rotation_rules is configured. Destroying this resource does not re-enable the automatic rotation that AWS configured.</summary>
+    [JsonPropertyName("rotationEnabled")]
+    public bool? RotationEnabled { get; set; }
+
+    /// <summary>ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
     [JsonPropertyName("rotationLambdaArn")]
     public string? RotationLambdaArn { get; set; }
 
@@ -394,11 +729,11 @@ public partial class V1beta2SecretRotationSpecForProvider
     [JsonPropertyName("rotationLambdaArnSelector")]
     public V1beta2SecretRotationSpecForProviderRotationLambdaArnSelector? RotationLambdaArnSelector { get; set; }
 
-    /// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+    /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
     [JsonPropertyName("rotationRules")]
     public V1beta2SecretRotationSpecForProviderRotationRules? RotationRules { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -409,6 +744,321 @@ public partial class V1beta2SecretRotationSpecForProvider
     /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
     [JsonPropertyName("secretIdSelector")]
     public V1beta2SecretRotationSpecForProviderSecretIdSelector? SecretIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueRef")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRef? ValueRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueSelector")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelector? ValueSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
+public enum V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -558,12 +1208,12 @@ public partial class V1beta2SecretRotationSpecInitProviderRotationLambdaArnSelec
     public V1beta2SecretRotationSpecInitProviderRotationLambdaArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+/// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationSpecInitProviderRotationRules
 {
-    /// <summary>Specifies the number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>Number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("automaticallyAfterDays")]
     public double? AutomaticallyAfterDays { get; set; }
 
@@ -571,7 +1221,7 @@ public partial class V1beta2SecretRotationSpecInitProviderRotationRules
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>A cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 }
@@ -739,11 +1389,31 @@ public partial class V1beta2SecretRotationSpecInitProviderSecretIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationSpecInitProvider
 {
-    /// <summary>Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta2SecretRotationSpecInitProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
+    /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnRef")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnRef? ExternalSecretRotationRoleArnRef { get; set; }
+
+    /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnSelector")]
+    public V1beta2SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelector? ExternalSecretRotationRoleArnSelector { get; set; }
+
+    /// <summary>Whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
     [JsonPropertyName("rotateImmediately")]
     public bool? RotateImmediately { get; set; }
 
-    /// <summary>Specifies the ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
+    /// <summary>Whether automatic rotation is enabled for the secret. Set to false to disable rotation on a secret whose rotation is otherwise managed by AWS (for example, an RDS master user password secret). When false, rotation_rules must be omitted. Defaults to enabled when rotation_rules is configured. Destroying this resource does not re-enable the automatic rotation that AWS configured.</summary>
+    [JsonPropertyName("rotationEnabled")]
+    public bool? RotationEnabled { get; set; }
+
+    /// <summary>ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
     [JsonPropertyName("rotationLambdaArn")]
     public string? RotationLambdaArn { get; set; }
 
@@ -755,11 +1425,11 @@ public partial class V1beta2SecretRotationSpecInitProvider
     [JsonPropertyName("rotationLambdaArnSelector")]
     public V1beta2SecretRotationSpecInitProviderRotationLambdaArnSelector? RotationLambdaArnSelector { get; set; }
 
-    /// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+    /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
     [JsonPropertyName("rotationRules")]
     public V1beta2SecretRotationSpecInitProviderRotationRules? RotationRules { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -955,12 +1625,25 @@ public partial class V1beta2SecretRotationSpec
     public V1beta2SecretRotationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SecretRotationStatusAtProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+/// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationStatusAtProviderRotationRules
 {
-    /// <summary>Specifies the number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>Number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("automaticallyAfterDays")]
     public double? AutomaticallyAfterDays { get; set; }
 
@@ -968,7 +1651,7 @@ public partial class V1beta2SecretRotationStatusAtProviderRotationRules
     [JsonPropertyName("duration")]
     public string? Duration { get; set; }
 
-    /// <summary>A cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
+    /// <summary>cron() or rate() expression that defines the schedule for rotating your secret. Either automatically_after_days or schedule_expression must be specified.</summary>
     [JsonPropertyName("scheduleExpression")]
     public string? ScheduleExpression { get; set; }
 }
@@ -977,7 +1660,15 @@ public partial class V1beta2SecretRotationStatusAtProviderRotationRules
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecretRotationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta2SecretRotationStatusAtProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -988,23 +1679,23 @@ public partial class V1beta2SecretRotationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
+    /// <summary>Whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
     [JsonPropertyName("rotateImmediately")]
     public bool? RotateImmediately { get; set; }
 
-    /// <summary>Specifies whether automatic rotation is enabled for this secret.</summary>
+    /// <summary>Whether automatic rotation is enabled for the secret. Set to false to disable rotation on a secret whose rotation is otherwise managed by AWS (for example, an RDS master user password secret). When false, rotation_rules must be omitted. Defaults to enabled when rotation_rules is configured. Destroying this resource does not re-enable the automatic rotation that AWS configured.</summary>
     [JsonPropertyName("rotationEnabled")]
     public bool? RotationEnabled { get; set; }
 
-    /// <summary>Specifies the ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
+    /// <summary>ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
     [JsonPropertyName("rotationLambdaArn")]
     public string? RotationLambdaArn { get; set; }
 
-    /// <summary>A structure that defines the rotation configuration for this secret. Defined below.</summary>
+    /// <summary>Structure that defines the rotation configuration for this secret. Required unless rotation_enabled is false. Defined below.</summary>
     [JsonPropertyName("rotationRules")]
     public V1beta2SecretRotationStatusAtProviderRotationRules? RotationRules { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 }

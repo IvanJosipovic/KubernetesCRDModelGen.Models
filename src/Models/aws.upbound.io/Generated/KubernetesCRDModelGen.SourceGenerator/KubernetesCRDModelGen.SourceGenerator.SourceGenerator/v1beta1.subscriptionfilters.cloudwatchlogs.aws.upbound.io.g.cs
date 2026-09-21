@@ -373,7 +373,7 @@ public partial class V1beta1SubscriptionFilterSpecForProvider
     [JsonPropertyName("distribution")]
     public string? Distribution { get; set; }
 
-    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
+    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;, &quot;@source.log&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
     [JsonPropertyName("emitSystemFields")]
     public IList<string>? EmitSystemFields { get; set; }
 
@@ -739,7 +739,7 @@ public partial class V1beta1SubscriptionFilterSpecInitProvider
     [JsonPropertyName("distribution")]
     public string? Distribution { get; set; }
 
-    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
+    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;, &quot;@source.log&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
     [JsonPropertyName("emitSystemFields")]
     public IList<string>? EmitSystemFields { get; set; }
 
@@ -967,7 +967,7 @@ public partial class V1beta1SubscriptionFilterStatusAtProvider
     [JsonPropertyName("distribution")]
     public string? Distribution { get; set; }
 
-    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
+    /// <summary>List of system fields to include in the log events sent to the subscription destination. These fields provide source information for centralized log data in the forwarded payload. Valid values: &quot;@aws.account&quot;, &quot;@aws.region&quot;, &quot;@source.log&quot;. To remove this argument after it has been set, specify an empty list [] explicitly to avoid perpetual differences.</summary>
     [JsonPropertyName("emitSystemFields")]
     public IList<string>? EmitSystemFields { get; set; }
 

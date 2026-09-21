@@ -55,50 +55,50 @@ public enum V1beta2ReportPlanSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+/// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecForProviderReportDeliveryChannel
 {
-    /// <summary>A list of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
+    /// <summary>List of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
     [JsonPropertyName("formats")]
     public IList<string>? Formats { get; set; }
 
-    /// <summary>The unique name of the S3 bucket that receives your reports.</summary>
+    /// <summary>Unique name of the S3 bucket that receives your reports.</summary>
     [JsonPropertyName("s3BucketName")]
     public string? S3BucketName { get; set; }
 
-    /// <summary>The prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
+    /// <summary>Prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
     [JsonPropertyName("s3KeyPrefix")]
     public string? S3KeyPrefix { get; set; }
 }
 
-/// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+/// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecForProviderReportSetting
 {
-    /// <summary>Specifies the list of accounts a report covers.</summary>
+    /// <summary>List of accounts a report covers.</summary>
     [JsonPropertyName("accounts")]
     public IList<string>? Accounts { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the frameworks a report covers.</summary>
+    /// <summary>ARNs of the frameworks a report covers.</summary>
     [JsonPropertyName("frameworkArns")]
     public IList<string>? FrameworkArns { get; set; }
 
-    /// <summary>Specifies the number of frameworks a report covers.</summary>
+    /// <summary>Number of frameworks a report covers.</summary>
     [JsonPropertyName("numberOfFrameworks")]
     public double? NumberOfFrameworks { get; set; }
 
-    /// <summary>Specifies the list of Organizational Units a report covers.</summary>
+    /// <summary>List of Organizational Units a report covers.</summary>
     [JsonPropertyName("organizationUnits")]
     public IList<string>? OrganizationUnits { get; set; }
 
-    /// <summary>Specifies the list of regions a report covers.</summary>
+    /// <summary>List of regions a report covers.</summary>
     [JsonPropertyName("regions")]
     public IList<string>? Regions { get; set; }
 
-    /// <summary>Identifies the report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
+    /// <summary>Report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
     [JsonPropertyName("reportTemplate")]
     public string? ReportTemplate { get; set; }
 }
@@ -107,11 +107,11 @@ public partial class V1beta2ReportPlanSpecForProviderReportSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecForProvider
 {
-    /// <summary>The description of the report plan with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the report plan with a maximum of 1,024 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -122,11 +122,11 @@ public partial class V1beta2ReportPlanSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+    /// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
     [JsonPropertyName("reportDeliveryChannel")]
     public V1beta2ReportPlanSpecForProviderReportDeliveryChannel? ReportDeliveryChannel { get; set; }
 
-    /// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+    /// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
     [JsonPropertyName("reportSetting")]
     public V1beta2ReportPlanSpecForProviderReportSetting? ReportSetting { get; set; }
 
@@ -135,50 +135,50 @@ public partial class V1beta2ReportPlanSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+/// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecInitProviderReportDeliveryChannel
 {
-    /// <summary>A list of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
+    /// <summary>List of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
     [JsonPropertyName("formats")]
     public IList<string>? Formats { get; set; }
 
-    /// <summary>The unique name of the S3 bucket that receives your reports.</summary>
+    /// <summary>Unique name of the S3 bucket that receives your reports.</summary>
     [JsonPropertyName("s3BucketName")]
     public string? S3BucketName { get; set; }
 
-    /// <summary>The prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
+    /// <summary>Prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
     [JsonPropertyName("s3KeyPrefix")]
     public string? S3KeyPrefix { get; set; }
 }
 
-/// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+/// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecInitProviderReportSetting
 {
-    /// <summary>Specifies the list of accounts a report covers.</summary>
+    /// <summary>List of accounts a report covers.</summary>
     [JsonPropertyName("accounts")]
     public IList<string>? Accounts { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the frameworks a report covers.</summary>
+    /// <summary>ARNs of the frameworks a report covers.</summary>
     [JsonPropertyName("frameworkArns")]
     public IList<string>? FrameworkArns { get; set; }
 
-    /// <summary>Specifies the number of frameworks a report covers.</summary>
+    /// <summary>Number of frameworks a report covers.</summary>
     [JsonPropertyName("numberOfFrameworks")]
     public double? NumberOfFrameworks { get; set; }
 
-    /// <summary>Specifies the list of Organizational Units a report covers.</summary>
+    /// <summary>List of Organizational Units a report covers.</summary>
     [JsonPropertyName("organizationUnits")]
     public IList<string>? OrganizationUnits { get; set; }
 
-    /// <summary>Specifies the list of regions a report covers.</summary>
+    /// <summary>List of regions a report covers.</summary>
     [JsonPropertyName("regions")]
     public IList<string>? Regions { get; set; }
 
-    /// <summary>Identifies the report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
+    /// <summary>Report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
     [JsonPropertyName("reportTemplate")]
     public string? ReportTemplate { get; set; }
 }
@@ -199,19 +199,19 @@ public partial class V1beta2ReportPlanSpecInitProviderReportSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanSpecInitProvider
 {
-    /// <summary>The description of the report plan with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the report plan with a maximum of 1,024 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+    /// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
     [JsonPropertyName("reportDeliveryChannel")]
     public V1beta2ReportPlanSpecInitProviderReportDeliveryChannel? ReportDeliveryChannel { get; set; }
 
-    /// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+    /// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
     [JsonPropertyName("reportSetting")]
     public V1beta2ReportPlanSpecInitProviderReportSetting? ReportSetting { get; set; }
 
@@ -403,50 +403,50 @@ public partial class V1beta2ReportPlanSpec
     public V1beta2ReportPlanSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+/// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanStatusAtProviderReportDeliveryChannel
 {
-    /// <summary>A list of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
+    /// <summary>List of the format of your reports: CSV, JSON, or both. If not specified, the default format is CSV.</summary>
     [JsonPropertyName("formats")]
     public IList<string>? Formats { get; set; }
 
-    /// <summary>The unique name of the S3 bucket that receives your reports.</summary>
+    /// <summary>Unique name of the S3 bucket that receives your reports.</summary>
     [JsonPropertyName("s3BucketName")]
     public string? S3BucketName { get; set; }
 
-    /// <summary>The prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
+    /// <summary>Prefix for where Backup Audit Manager delivers your reports to Amazon S3. The prefix is this part of the following path: s3://your-bucket-name/prefix/Backup/us-west-2/year/month/day/report-name. If not specified, there is no prefix.</summary>
     [JsonPropertyName("s3KeyPrefix")]
     public string? S3KeyPrefix { get; set; }
 }
 
-/// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+/// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanStatusAtProviderReportSetting
 {
-    /// <summary>Specifies the list of accounts a report covers.</summary>
+    /// <summary>List of accounts a report covers.</summary>
     [JsonPropertyName("accounts")]
     public IList<string>? Accounts { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the frameworks a report covers.</summary>
+    /// <summary>ARNs of the frameworks a report covers.</summary>
     [JsonPropertyName("frameworkArns")]
     public IList<string>? FrameworkArns { get; set; }
 
-    /// <summary>Specifies the number of frameworks a report covers.</summary>
+    /// <summary>Number of frameworks a report covers.</summary>
     [JsonPropertyName("numberOfFrameworks")]
     public double? NumberOfFrameworks { get; set; }
 
-    /// <summary>Specifies the list of Organizational Units a report covers.</summary>
+    /// <summary>List of Organizational Units a report covers.</summary>
     [JsonPropertyName("organizationUnits")]
     public IList<string>? OrganizationUnits { get; set; }
 
-    /// <summary>Specifies the list of regions a report covers.</summary>
+    /// <summary>List of regions a report covers.</summary>
     [JsonPropertyName("regions")]
     public IList<string>? Regions { get; set; }
 
-    /// <summary>Identifies the report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
+    /// <summary>Report template for the report. Reports are built using a report template. The report templates are: RESOURCE_COMPLIANCE_REPORT | CONTROL_COMPLIANCE_REPORT | BACKUP_JOB_REPORT | COPY_JOB_REPORT | RESTORE_JOB_REPORT.</summary>
     [JsonPropertyName("reportTemplate")]
     public string? ReportTemplate { get; set; }
 }
@@ -455,27 +455,27 @@ public partial class V1beta2ReportPlanStatusAtProviderReportSetting
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReportPlanStatusAtProvider
 {
-    /// <summary>The ARN of the backup report plan.</summary>
+    /// <summary>ARN of the backup report plan.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The date and time that a report plan is created, in Unix format and Coordinated Universal Time (UTC).</summary>
+    /// <summary>Date and time that a report plan is created, in Unix format and Coordinated Universal Time (UTC).</summary>
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
 
-    /// <summary>The deployment status of a report plan. The statuses are: CREATE_IN_PROGRESS | UPDATE_IN_PROGRESS | DELETE_IN_PROGRESS | COMPLETED.</summary>
+    /// <summary>Deployment status of a report plan. The statuses are: CREATE_IN_PROGRESS | UPDATE_IN_PROGRESS | DELETE_IN_PROGRESS | COMPLETED.</summary>
     [JsonPropertyName("deploymentStatus")]
     public string? DeploymentStatus { get; set; }
 
-    /// <summary>The description of the report plan with a maximum of 1,024 characters</summary>
+    /// <summary>Description of the report plan with a maximum of 1,024 characters.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The id of the backup report plan.</summary>
+    /// <summary>ID of the backup report plan.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
+    /// <summary>Unique name of the report plan. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -486,11 +486,11 @@ public partial class V1beta2ReportPlanStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
+    /// <summary>Object that contains information about where and how to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports. Detailed below.</summary>
     [JsonPropertyName("reportDeliveryChannel")]
     public V1beta2ReportPlanStatusAtProviderReportDeliveryChannel? ReportDeliveryChannel { get; set; }
 
-    /// <summary>An object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
+    /// <summary>Object that identifies the report template for the report. Reports are built using a report template. Detailed below.</summary>
     [JsonPropertyName("reportSetting")]
     public V1beta2ReportPlanStatusAtProviderReportSetting? ReportSetting { get; set; }
 
@@ -498,7 +498,7 @@ public partial class V1beta2ReportPlanStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

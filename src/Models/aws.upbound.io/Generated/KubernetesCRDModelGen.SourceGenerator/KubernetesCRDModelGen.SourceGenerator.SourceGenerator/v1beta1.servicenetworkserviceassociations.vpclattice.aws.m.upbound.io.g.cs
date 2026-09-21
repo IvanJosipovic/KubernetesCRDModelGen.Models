@@ -357,7 +357,7 @@ public partial class V1beta1ServiceNetworkServiceAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 
@@ -369,7 +369,7 @@ public partial class V1beta1ServiceNetworkServiceAssociationSpecForProvider
     [JsonPropertyName("serviceIdentifierSelector")]
     public V1beta1ServiceNetworkServiceAssociationSpecForProviderServiceIdentifierSelector? ServiceIdentifierSelector { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
@@ -712,7 +712,7 @@ public partial class V1beta1ServiceNetworkServiceAssociationSpecInitProviderServ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceNetworkServiceAssociationSpecInitProvider
 {
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 
@@ -724,7 +724,7 @@ public partial class V1beta1ServiceNetworkServiceAssociationSpecInitProvider
     [JsonPropertyName("serviceIdentifierSelector")]
     public V1beta1ServiceNetworkServiceAssociationSpecInitProviderServiceIdentifierSelector? ServiceIdentifierSelector { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
@@ -852,11 +852,11 @@ public partial class V1beta1ServiceNetworkServiceAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceNetworkServiceAssociationStatusAtProviderDnsEntry
 {
-    /// <summary>The domain name of the service.</summary>
+    /// <summary>Domain name of the service.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The ID of the hosted zone.</summary>
+    /// <summary>ID of the hosted zone.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 }
@@ -865,23 +865,23 @@ public partial class V1beta1ServiceNetworkServiceAssociationStatusAtProviderDnsE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceNetworkServiceAssociationStatusAtProvider
 {
-    /// <summary>The ARN of the Association.</summary>
+    /// <summary>ARN of the Association.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The account that created the association.</summary>
+    /// <summary>Account that created the association.</summary>
     [JsonPropertyName("createdBy")]
     public string? CreatedBy { get; set; }
 
-    /// <summary>The custom domain name of the service.</summary>
+    /// <summary>Custom domain name of the service.</summary>
     [JsonPropertyName("customDomainName")]
     public string? CustomDomainName { get; set; }
 
-    /// <summary>The DNS name of the service.</summary>
+    /// <summary>DNS name of the service.</summary>
     [JsonPropertyName("dnsEntry")]
     public IList<V1beta1ServiceNetworkServiceAssociationStatusAtProviderDnsEntry>? DnsEntry { get; set; }
 
-    /// <summary>The ID of the association.</summary>
+    /// <summary>ID of the association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -892,15 +892,15 @@ public partial class V1beta1ServiceNetworkServiceAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
-    /// <summary>The operations status. Valid Values are CREATE_IN_PROGRESS | ACTIVE | DELETE_IN_PROGRESS | CREATE_FAILED | DELETE_FAILED</summary>
+    /// <summary>Operations status. Valid Values are CREATE_IN_PROGRESS | ACTIVE | DELETE_IN_PROGRESS | CREATE_FAILED | DELETE_FAILED</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 

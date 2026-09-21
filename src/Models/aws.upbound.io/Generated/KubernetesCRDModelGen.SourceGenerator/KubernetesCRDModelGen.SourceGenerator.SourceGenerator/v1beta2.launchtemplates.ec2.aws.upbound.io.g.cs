@@ -686,7 +686,7 @@ public partial class V1beta2LaunchTemplateSpecForProviderIamInstanceProfileNameS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LaunchTemplateSpecForProviderIamInstanceProfile
 {
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile. Conflicts with name.</summary>
+    /// <summary>ARN of the instance profile. Conflicts with name.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1551,6 +1551,10 @@ public partial class V1beta2LaunchTemplateSpecForProviderNetworkInterfaces
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
 
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
+
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]
     public V1beta2LaunchTemplateSpecForProviderNetworkInterfacesEnaSrdSpecification? EnaSrdSpecification { get; set; }
@@ -2079,7 +2083,7 @@ public partial class V1beta2LaunchTemplateSpecForProvider
     [JsonPropertyName("defaultVersion")]
     public double? DefaultVersion { get; set; }
 
-    /// <summary>Description of the launch template.</summary>
+    /// <summary>Description of the launch template version (VersionDescription in the EC2 API). Launch templates in AWS do not have a template-level description; whenever a change to this resource creates a new version, the new version is created with this description. To give each version a distinct description, update this argument in the same apply as the other changes.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -2878,7 +2882,7 @@ public partial class V1beta2LaunchTemplateSpecInitProviderIamInstanceProfileName
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LaunchTemplateSpecInitProviderIamInstanceProfile
 {
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile. Conflicts with name.</summary>
+    /// <summary>ARN of the instance profile. Conflicts with name.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3743,6 +3747,10 @@ public partial class V1beta2LaunchTemplateSpecInitProviderNetworkInterfaces
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
 
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
+
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]
     public V1beta2LaunchTemplateSpecInitProviderNetworkInterfacesEnaSrdSpecification? EnaSrdSpecification { get; set; }
@@ -4283,7 +4291,7 @@ public partial class V1beta2LaunchTemplateSpecInitProvider
     [JsonPropertyName("defaultVersion")]
     public double? DefaultVersion { get; set; }
 
-    /// <summary>Description of the launch template.</summary>
+    /// <summary>Description of the launch template version (VersionDescription in the EC2 API). Launch templates in AWS do not have a template-level description; whenever a change to this resource creates a new version, the new version is created with this description. To give each version a distinct description, update this argument in the same apply as the other changes.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -4809,7 +4817,7 @@ public partial class V1beta2LaunchTemplateStatusAtProviderHibernationOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LaunchTemplateStatusAtProviderIamInstanceProfile
 {
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile. Conflicts with name.</summary>
+    /// <summary>ARN of the instance profile. Conflicts with name.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -5217,6 +5225,10 @@ public partial class V1beta2LaunchTemplateStatusAtProviderNetworkInterfaces
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
 
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
+
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]
     public V1beta2LaunchTemplateStatusAtProviderNetworkInterfacesEnaSrdSpecification? EnaSrdSpecification { get; set; }
@@ -5401,7 +5413,7 @@ public partial class V1beta2LaunchTemplateStatusAtProviderTagSpecifications
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LaunchTemplateStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the launch template.</summary>
+    /// <summary>ARN of the launch template.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -5431,7 +5443,7 @@ public partial class V1beta2LaunchTemplateStatusAtProvider
     [JsonPropertyName("defaultVersion")]
     public double? DefaultVersion { get; set; }
 
-    /// <summary>Description of the launch template.</summary>
+    /// <summary>Description of the launch template version (VersionDescription in the EC2 API). Launch templates in AWS do not have a template-level description; whenever a change to this resource creates a new version, the new version is created with this description. To give each version a distinct description, update this argument in the same apply as the other changes.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 

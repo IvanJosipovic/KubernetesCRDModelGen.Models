@@ -291,7 +291,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -509,7 +509,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -857,7 +857,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -1075,7 +1075,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -1380,7 +1380,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateful
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -1435,7 +1435,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the stateless rule group.</summary>
+    /// <summary>ARN of the stateless rule group.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }
@@ -1496,7 +1496,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that identifies the firewall policy.</summary>
+    /// <summary>ARN that identifies the firewall policy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1512,7 +1512,7 @@ public partial class V1beta1FirewallPolicyStatusAtProvider
     [JsonPropertyName("firewallPolicy")]
     public V1beta1FirewallPolicyStatusAtProviderFirewallPolicy? FirewallPolicy { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that identifies the firewall policy.</summary>
+    /// <summary>ARN that identifies the firewall policy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

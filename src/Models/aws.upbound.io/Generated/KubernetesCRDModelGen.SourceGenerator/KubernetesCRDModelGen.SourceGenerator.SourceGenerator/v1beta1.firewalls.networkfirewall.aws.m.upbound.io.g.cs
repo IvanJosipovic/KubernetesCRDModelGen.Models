@@ -728,7 +728,7 @@ public partial class V1beta1FirewallSpecForProvider
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1FirewallSpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the VPC Firewall policy.</summary>
+    /// <summary>ARN of the VPC Firewall policy.</summary>
     [JsonPropertyName("firewallPolicyArn")]
     public string? FirewallPolicyArn { get; set; }
 
@@ -1496,7 +1496,7 @@ public partial class V1beta1FirewallSpecInitProvider
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1FirewallSpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the VPC Firewall policy.</summary>
+    /// <summary>ARN of the VPC Firewall policy.</summary>
     [JsonPropertyName("firewallPolicyArn")]
     public string? FirewallPolicyArn { get; set; }
 
@@ -1748,7 +1748,7 @@ public partial class V1beta1FirewallStatusAtProviderSubnetMapping
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that identifies the firewall.</summary>
+    /// <summary>ARN that identifies the firewall.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1776,7 +1776,7 @@ public partial class V1beta1FirewallStatusAtProvider
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1FirewallStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the VPC Firewall policy.</summary>
+    /// <summary>ARN of the VPC Firewall policy.</summary>
     [JsonPropertyName("firewallPolicyArn")]
     public string? FirewallPolicyArn { get; set; }
 
@@ -1788,7 +1788,7 @@ public partial class V1beta1FirewallStatusAtProvider
     [JsonPropertyName("firewallStatus")]
     public IList<V1beta1FirewallStatusAtProviderFirewallStatus>? FirewallStatus { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that identifies the firewall.</summary>
+    /// <summary>ARN that identifies the firewall.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

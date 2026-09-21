@@ -40,7 +40,7 @@ public partial class V1beta1JobDefinitionList : IKubernetesObject<V1ListMeta>, I
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -49,14 +49,16 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -74,6 +76,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -94,14 +97,15 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -118,7 +122,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersEnv>? Env { get; set; }
 
@@ -130,11 +134,11 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the container. If the name isn&apos;t specified, the default name &quot;Default&quot; is used. Each container in a pod must have a unique name.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersResources? Resources { get; set; }
 
@@ -142,7 +146,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
@@ -151,7 +155,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesImagePullSecret
 {
-    /// <summary>Unique identifier.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -160,7 +164,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -169,14 +173,16 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -194,6 +200,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -214,14 +221,15 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -238,7 +246,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersEnv>? Env { get; set; }
 
@@ -250,11 +258,11 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersResources? Resources { get; set; }
 
@@ -262,12 +270,12 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-/// <summary>Metadata about the Kubernetes pod.</summary>
+/// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesMetadata
@@ -277,6 +285,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public IDictionary<string, string>? Labels { get; set; }
 }
 
+/// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesEmptyDir
@@ -290,7 +299,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? SizeLimit { get; set; }
 }
 
-/// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+/// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesHostPath
@@ -300,6 +309,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     public string? Path { get; set; }
 }
 
+/// <summary>Secret to mount as a volume. See secret below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesSecret
@@ -317,17 +327,19 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumes
 {
+    /// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
     [JsonPropertyName("emptyDir")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesEmptyDir? EmptyDir { get; set; }
 
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
     [JsonPropertyName("hostPath")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesHostPath? HostPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Secret to mount as a volume. See secret below.</summary>
     [JsonPropertyName("secret")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesSecret? Secret { get; set; }
 }
@@ -353,11 +365,11 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("imagePullSecret")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesImagePullSecret>? ImagePullSecret { get; set; }
 
-    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.</summary>
+    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.</summary>
     [JsonPropertyName("initContainers")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainers>? InitContainers { get; set; }
 
-    /// <summary>Metadata about the Kubernetes pod.</summary>
+    /// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
     [JsonPropertyName("metadata")]
     public V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesMetadata? Metadata { get; set; }
 
@@ -365,11 +377,11 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }
 
-    /// <summary>Indicates if the processes in a container are shared, or visible, to other containers in the same pod.</summary>
+    /// <summary>Whether the processes in a container are shared, or visible, to other containers in the same pod.</summary>
     [JsonPropertyName("shareProcessNamespace")]
     public bool? ShareProcessNamespace { get; set; }
 
-    /// <summary>Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.</summary>
+    /// <summary>Volumes for a job definition that uses Amazon EKS resources. See volumes below.</summary>
     [JsonPropertyName("volumes")]
     public IList<V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }
@@ -501,7 +513,7 @@ public partial class V1beta1JobDefinitionSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -510,14 +522,16 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -535,6 +549,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -555,14 +570,15 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -579,7 +595,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersEnv>? Env { get; set; }
 
@@ -591,11 +607,11 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the container. If the name isn&apos;t specified, the default name &quot;Default&quot; is used. Each container in a pod must have a unique name.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersResources? Resources { get; set; }
 
@@ -603,7 +619,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
@@ -612,7 +628,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesImagePullSecret
 {
-    /// <summary>Unique identifier.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -621,7 +637,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -630,14 +646,16 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -655,6 +673,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -675,14 +694,15 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -699,7 +719,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersEnv>? Env { get; set; }
 
@@ -711,11 +731,11 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersResources? Resources { get; set; }
 
@@ -723,12 +743,12 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-/// <summary>Metadata about the Kubernetes pod.</summary>
+/// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesMetadata
@@ -738,6 +758,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public IDictionary<string, string>? Labels { get; set; }
 }
 
+/// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesEmptyDir
@@ -751,7 +772,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? SizeLimit { get; set; }
 }
 
-/// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+/// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesHostPath
@@ -761,6 +782,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     public string? Path { get; set; }
 }
 
+/// <summary>Secret to mount as a volume. See secret below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesSecret
@@ -778,17 +800,19 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumes
 {
+    /// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
     [JsonPropertyName("emptyDir")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesEmptyDir? EmptyDir { get; set; }
 
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
     [JsonPropertyName("hostPath")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesHostPath? HostPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Secret to mount as a volume. See secret below.</summary>
     [JsonPropertyName("secret")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesSecret? Secret { get; set; }
 }
@@ -814,11 +838,11 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullSecret")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesImagePullSecret>? ImagePullSecret { get; set; }
 
-    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.</summary>
+    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.</summary>
     [JsonPropertyName("initContainers")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainers>? InitContainers { get; set; }
 
-    /// <summary>Metadata about the Kubernetes pod.</summary>
+    /// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
     [JsonPropertyName("metadata")]
     public V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesMetadata? Metadata { get; set; }
 
@@ -826,11 +850,11 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }
 
-    /// <summary>Indicates if the processes in a container are shared, or visible, to other containers in the same pod.</summary>
+    /// <summary>Whether the processes in a container are shared, or visible, to other containers in the same pod.</summary>
     [JsonPropertyName("shareProcessNamespace")]
     public bool? ShareProcessNamespace { get; set; }
 
-    /// <summary>Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.</summary>
+    /// <summary>Volumes for a job definition that uses Amazon EKS resources. See volumes below.</summary>
     [JsonPropertyName("volumes")]
     public IList<V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }
@@ -1074,7 +1098,7 @@ public partial class V1beta1JobDefinitionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1083,14 +1107,16 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -1108,6 +1134,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -1128,14 +1155,15 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -1152,7 +1180,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersEnv>? Env { get; set; }
 
@@ -1164,11 +1192,11 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the container. If the name isn&apos;t specified, the default name &quot;Default&quot; is used. Each container in a pod must have a unique name.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersResources? Resources { get; set; }
 
@@ -1176,7 +1204,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersVolumeMounts>? VolumeMounts { get; set; }
 }
@@ -1185,7 +1213,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesImagePullSecret
 {
-    /// <summary>Unique identifier.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -1194,7 +1222,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersEnv
 {
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1203,14 +1231,16 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? Value { get; set; }
 }
 
-/// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+/// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersResources
 {
+    /// <summary>Type and quantity of the resources to reserve for the container. The values vary based on the name that&apos;s specified. Limits must be equal to or greater than requests.</summary>
     [JsonPropertyName("limits")]
     public IDictionary<string, string>? Limits { get; set; }
 
+    /// <summary>Type and quantity of the resources to request for the container. The values vary based on the name that&apos;s specified.</summary>
     [JsonPropertyName("requests")]
     public IDictionary<string, string>? Requests { get; set; }
 }
@@ -1228,6 +1258,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("privileged")]
     public bool? Privileged { get; set; }
 
+    /// <summary>When this parameter is true, the container is given read-only access to its root file system. The default value is false.</summary>
     [JsonPropertyName("readOnlyRootFileSystem")]
     public bool? ReadOnlyRootFileSystem { get; set; }
 
@@ -1248,14 +1279,15 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the container where the volume is mounted.</summary>
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Whether the container has read-only access to the volume. The default value is false.</summary>
     [JsonPropertyName("readOnly")]
     public bool? ReadOnly { get; set; }
 }
@@ -1272,7 +1304,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
-    /// <summary>Environment variables to pass to a container. See EKS Environment below.</summary>
+    /// <summary>Environment variables to pass to a container. See env below.</summary>
     [JsonPropertyName("env")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersEnv>? Env { get; set; }
 
@@ -1284,11 +1316,11 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullPolicy")]
     public string? ImagePullPolicy { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.</summary>
+    /// <summary>Type and amount of resources to assign to a container. See resources below.</summary>
     [JsonPropertyName("resources")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersResources? Resources { get; set; }
 
@@ -1296,12 +1328,12 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("securityContext")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersSecurityContext? SecurityContext { get; set; }
 
-    /// <summary>Volume mounts for the container.</summary>
+    /// <summary>Volume mounts for the container. See volume_mounts below.</summary>
     [JsonPropertyName("volumeMounts")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersVolumeMounts>? VolumeMounts { get; set; }
 }
 
-/// <summary>Metadata about the Kubernetes pod.</summary>
+/// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesMetadata
@@ -1311,6 +1343,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public IDictionary<string, string>? Labels { get; set; }
 }
 
+/// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesEmptyDir
@@ -1324,7 +1357,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? SizeLimit { get; set; }
 }
 
-/// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+/// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesHostPath
@@ -1334,6 +1367,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     public string? Path { get; set; }
 }
 
+/// <summary>Secret to mount as a volume. See secret below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesSecret
@@ -1351,17 +1385,19 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumes
 {
+    /// <summary>Empty directory to mount on the pod. See empty_dir below.</summary>
     [JsonPropertyName("emptyDir")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesEmptyDir? EmptyDir { get; set; }
 
-    /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
+    /// <summary>Path on the host that&apos;s mounted to the pod. See host_path below.</summary>
     [JsonPropertyName("hostPath")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesHostPath? HostPath { get; set; }
 
-    /// <summary>Name of the job definition.</summary>
+    /// <summary>Name of the volume. The name must be allowed as a DNS subdomain name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>Secret to mount as a volume. See secret below.</summary>
     [JsonPropertyName("secret")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesSecret? Secret { get; set; }
 }
@@ -1387,11 +1423,11 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("imagePullSecret")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesImagePullSecret>? ImagePullSecret { get; set; }
 
-    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.</summary>
+    /// <summary>Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.</summary>
     [JsonPropertyName("initContainers")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainers>? InitContainers { get; set; }
 
-    /// <summary>Metadata about the Kubernetes pod.</summary>
+    /// <summary>Metadata about the Kubernetes pod. See metadata below.</summary>
     [JsonPropertyName("metadata")]
     public V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesMetadata? Metadata { get; set; }
 
@@ -1399,11 +1435,11 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }
 
-    /// <summary>Indicates if the processes in a container are shared, or visible, to other containers in the same pod.</summary>
+    /// <summary>Whether the processes in a container are shared, or visible, to other containers in the same pod.</summary>
     [JsonPropertyName("shareProcessNamespace")]
     public bool? ShareProcessNamespace { get; set; }
 
-    /// <summary>Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.</summary>
+    /// <summary>Volumes for a job definition that uses Amazon EKS resources. See volumes below.</summary>
     [JsonPropertyName("volumes")]
     public IList<V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumes>? Volumes { get; set; }
 }

@@ -686,7 +686,7 @@ public partial class V1beta1VPCConnectionSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster.</summary>
+    /// <summary>ARN of the cluster.</summary>
     [JsonPropertyName("targetClusterArn")]
     public string? TargetClusterArn { get; set; }
 
@@ -1347,7 +1347,7 @@ public partial class V1beta1VPCConnectionSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster.</summary>
+    /// <summary>ARN of the cluster.</summary>
     [JsonPropertyName("targetClusterArn")]
     public string? TargetClusterArn { get; set; }
 
@@ -1559,7 +1559,7 @@ public partial class V1beta1VPCConnectionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCConnectionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the VPC connection.</summary>
+    /// <summary>ARN of the VPC connection.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1593,7 +1593,7 @@ public partial class V1beta1VPCConnectionStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster.</summary>
+    /// <summary>ARN of the cluster.</summary>
     [JsonPropertyName("targetClusterArn")]
     public string? TargetClusterArn { get; set; }
 

@@ -203,7 +203,7 @@ public partial class V1beta1StreamSpecForProvider
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>The ID of the AWS Key Management Service (AWS KMS) key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
+    /// <summary>ID of the KMS key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -417,7 +417,7 @@ public partial class V1beta1StreamSpecInitProvider
     [JsonPropertyName("deviceName")]
     public string? DeviceName { get; set; }
 
-    /// <summary>The ID of the AWS Key Management Service (AWS KMS) key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
+    /// <summary>ID of the KMS key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -556,7 +556,7 @@ public partial class V1beta1StreamSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the Stream (same as id)</summary>
+    /// <summary>ARN specifying the Stream (same as id)</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -576,7 +576,7 @@ public partial class V1beta1StreamStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ID of the AWS Key Management Service (AWS KMS) key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
+    /// <summary>ID of the KMS key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (aws/kinesisvideo) is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

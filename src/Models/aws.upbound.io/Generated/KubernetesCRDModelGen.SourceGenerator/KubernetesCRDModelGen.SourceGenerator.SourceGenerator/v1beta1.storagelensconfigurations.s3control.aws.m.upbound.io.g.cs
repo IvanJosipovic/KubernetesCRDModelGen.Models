@@ -36,7 +36,7 @@ public partial class V1beta1StorageLensConfigurationList : IKubernetesObject<V1L
     public required IList<V1beta1StorageLensConfiguration> Items { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelActivityMetrics
@@ -46,7 +46,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
@@ -56,7 +56,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
@@ -66,7 +66,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
@@ -76,7 +76,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
@@ -86,7 +86,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
@@ -96,7 +96,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
@@ -106,7 +106,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
@@ -116,7 +116,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
@@ -126,25 +126,25 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+/// <summary>Selection criteria. See selection_criteria below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
-    /// <summary>The delimiter of the selection criteria being used.</summary>
+    /// <summary>Delimiter of the selection criteria being used.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>The max depth of the selection criteria.</summary>
+    /// <summary>Max depth of the selection criteria.</summary>
     [JsonPropertyName("maxDepth")]
     public double? MaxDepth { get; set; }
 
-    /// <summary>The minimum number of storage bytes percentage whose metrics will be selected.</summary>
+    /// <summary>Minimum number of storage bytes percentage whose metrics will be selected.</summary>
     [JsonPropertyName("minStorageBytesPercentage")]
     public double? MinStorageBytesPercentage { get; set; }
 }
 
-/// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+/// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
@@ -153,52 +153,52 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+    /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
     [JsonPropertyName("selectionCriteria")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria? SelectionCriteria { get; set; }
 }
 
-/// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+/// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
-    /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+    /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
     [JsonPropertyName("storageMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics? StorageMetrics { get; set; }
 }
 
-/// <summary>level configuration. See Bucket Level below for more details.</summary>
+/// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 
-    /// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+    /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
     [JsonPropertyName("prefixLevel")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel? PrefixLevel { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
@@ -208,47 +208,47 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public bool? Enabled { get; set; }
 }
 
-/// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+/// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>level configuration. See Bucket Level below for more details.</summary>
+    /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
     [JsonPropertyName("bucketLevel")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevel? BucketLevel { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 }
 
-/// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+/// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAwsOrg
 {
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
 
-/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportCloudWatchMetrics
@@ -413,7 +413,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
@@ -429,30 +429,30 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -464,24 +464,24 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     [JsonPropertyName("arnSelector")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
@@ -497,21 +497,21 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestination
@@ -520,25 +520,25 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExport
 {
-    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
     [JsonPropertyName("cloudWatchMetrics")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportCloudWatchMetrics? CloudWatchMetrics { get; set; }
 
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
@@ -698,7 +698,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+/// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExclude
@@ -720,7 +720,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
@@ -736,51 +736,51 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
@@ -796,21 +796,21 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
@@ -819,26 +819,26 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
 
-/// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+/// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationInclude
@@ -852,20 +852,20 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+/// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfiguration
 {
-    /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+    /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
     [JsonPropertyName("accountLevel")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevel? AccountLevel { get; set; }
 
-    /// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+    /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
     [JsonPropertyName("awsOrg")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAwsOrg? AwsOrg { get; set; }
 
-    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
     [JsonPropertyName("dataExport")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExport? DataExport { get; set; }
 
@@ -873,15 +873,15 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+    /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
     [JsonPropertyName("exclude")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExclude? Exclude { get; set; }
 
-    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
     [JsonPropertyName("expandedPrefixesDataExport")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExport? ExpandedPrefixesDataExport { get; set; }
 
-    /// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+    /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
     [JsonPropertyName("include")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationInclude? Include { get; set; }
 
@@ -894,11 +894,11 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProvider
 {
-    /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
+    /// <summary>AWS account ID for the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The ID of the S3 Storage Lens configuration.</summary>
+    /// <summary>ID of the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("configId")]
     public string? ConfigId { get; set; }
 
@@ -909,7 +909,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+    /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
     [JsonPropertyName("storageLensConfiguration")]
     public V1beta1StorageLensConfigurationSpecForProviderStorageLensConfiguration? StorageLensConfiguration { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelActivityMetrics
@@ -928,7 +928,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
@@ -938,7 +938,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
@@ -948,7 +948,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
@@ -958,7 +958,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
@@ -968,7 +968,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
@@ -978,7 +978,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
@@ -988,7 +988,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
@@ -998,7 +998,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
@@ -1008,25 +1008,25 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+/// <summary>Selection criteria. See selection_criteria below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
-    /// <summary>The delimiter of the selection criteria being used.</summary>
+    /// <summary>Delimiter of the selection criteria being used.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>The max depth of the selection criteria.</summary>
+    /// <summary>Max depth of the selection criteria.</summary>
     [JsonPropertyName("maxDepth")]
     public double? MaxDepth { get; set; }
 
-    /// <summary>The minimum number of storage bytes percentage whose metrics will be selected.</summary>
+    /// <summary>Minimum number of storage bytes percentage whose metrics will be selected.</summary>
     [JsonPropertyName("minStorageBytesPercentage")]
     public double? MinStorageBytesPercentage { get; set; }
 }
 
-/// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+/// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
@@ -1035,52 +1035,52 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+    /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
     [JsonPropertyName("selectionCriteria")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria? SelectionCriteria { get; set; }
 }
 
-/// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+/// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
-    /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+    /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
     [JsonPropertyName("storageMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics? StorageMetrics { get; set; }
 }
 
-/// <summary>level configuration. See Bucket Level below for more details.</summary>
+/// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 
-    /// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+    /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
     [JsonPropertyName("prefixLevel")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel? PrefixLevel { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
@@ -1090,47 +1090,47 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+/// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>level configuration. See Bucket Level below for more details.</summary>
+    /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
     [JsonPropertyName("bucketLevel")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevel? BucketLevel { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 }
 
-/// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+/// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAwsOrg
 {
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
 
-/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportCloudWatchMetrics
@@ -1295,7 +1295,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
@@ -1311,30 +1311,30 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1346,24 +1346,24 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     [JsonPropertyName("arnSelector")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector? ArnSelector { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
@@ -1379,21 +1379,21 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestination
@@ -1402,25 +1402,25 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExport
 {
-    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
     [JsonPropertyName("cloudWatchMetrics")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportCloudWatchMetrics? CloudWatchMetrics { get; set; }
 
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
@@ -1580,7 +1580,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+/// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExclude
@@ -1602,7 +1602,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
@@ -1618,51 +1618,51 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
@@ -1678,21 +1678,21 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
@@ -1701,26 +1701,26 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
 
-/// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+/// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationInclude
@@ -1734,20 +1734,20 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+/// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfiguration
 {
-    /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+    /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
     [JsonPropertyName("accountLevel")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevel? AccountLevel { get; set; }
 
-    /// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+    /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
     [JsonPropertyName("awsOrg")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAwsOrg? AwsOrg { get; set; }
 
-    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
     [JsonPropertyName("dataExport")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExport? DataExport { get; set; }
 
@@ -1755,15 +1755,15 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+    /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
     [JsonPropertyName("exclude")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExclude? Exclude { get; set; }
 
-    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
     [JsonPropertyName("expandedPrefixesDataExport")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExport? ExpandedPrefixesDataExport { get; set; }
 
-    /// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+    /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
     [JsonPropertyName("include")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationInclude? Include { get; set; }
 
@@ -1788,15 +1788,15 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProvider
 {
-    /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
+    /// <summary>AWS account ID for the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The ID of the S3 Storage Lens configuration.</summary>
+    /// <summary>ID of the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("configId")]
     public string? ConfigId { get; set; }
 
-    /// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+    /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
     [JsonPropertyName("storageLensConfiguration")]
     public V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfiguration? StorageLensConfiguration { get; set; }
 
@@ -1912,7 +1912,7 @@ public partial class V1beta1StorageLensConfigurationSpec
     public V1beta1StorageLensConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelActivityMetrics
@@ -1922,7 +1922,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
@@ -1932,7 +1932,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
@@ -1942,7 +1942,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
@@ -1952,7 +1952,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+/// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
@@ -1962,7 +1962,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+/// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
@@ -1972,7 +1972,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+/// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
@@ -1982,7 +1982,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+/// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
@@ -1992,7 +1992,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
@@ -2002,25 +2002,25 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+/// <summary>Selection criteria. See selection_criteria below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
-    /// <summary>The delimiter of the selection criteria being used.</summary>
+    /// <summary>Delimiter of the selection criteria being used.</summary>
     [JsonPropertyName("delimiter")]
     public string? Delimiter { get; set; }
 
-    /// <summary>The max depth of the selection criteria.</summary>
+    /// <summary>Max depth of the selection criteria.</summary>
     [JsonPropertyName("maxDepth")]
     public double? MaxDepth { get; set; }
 
-    /// <summary>The minimum number of storage bytes percentage whose metrics will be selected.</summary>
+    /// <summary>Minimum number of storage bytes percentage whose metrics will be selected.</summary>
     [JsonPropertyName("minStorageBytesPercentage")]
     public double? MinStorageBytesPercentage { get; set; }
 }
 
-/// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+/// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
@@ -2029,52 +2029,52 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Selection criteria. See Selection Criteria below for more details.</summary>
+    /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
     [JsonPropertyName("selectionCriteria")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria? SelectionCriteria { get; set; }
 }
 
-/// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+/// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
-    /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
+    /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
     [JsonPropertyName("storageMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics? StorageMetrics { get; set; }
 }
 
-/// <summary>level configuration. See Bucket Level below for more details.</summary>
+/// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 
-    /// <summary>level metrics for S3 Storage Lens. See Prefix Level below for more details.</summary>
+    /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
     [JsonPropertyName("prefixLevel")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel? PrefixLevel { get; set; }
 }
 
-/// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+/// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
@@ -2084,47 +2084,47 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+/// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevel
 {
-    /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
+    /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
     [JsonPropertyName("activityMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelActivityMetrics? ActivityMetrics { get; set; }
 
-    /// <summary>optimization metrics for S3 Storage Lens. See Advanced Cost-Optimization Metrics below for more details.</summary>
+    /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
     [JsonPropertyName("advancedCostOptimizationMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics? AdvancedCostOptimizationMetrics { get; set; }
 
-    /// <summary>protection metrics for S3 Storage Lens. See Advanced Data-Protection Metrics below for more details.</summary>
+    /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
     [JsonPropertyName("advancedDataProtectionMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics? AdvancedDataProtectionMetrics { get; set; }
 
-    /// <summary>Advanced performance metrics for S3 Storage Lens. See Advanced Performance Metrics below for more details.</summary>
+    /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
     [JsonPropertyName("advancedPerformanceMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics? AdvancedPerformanceMetrics { get; set; }
 
-    /// <summary>level configuration. See Bucket Level below for more details.</summary>
+    /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
     [JsonPropertyName("bucketLevel")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevel? BucketLevel { get; set; }
 
-    /// <summary>Detailed status code metrics for S3 Storage Lens. See Detailed Status Code Metrics below for more details.</summary>
+    /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
     [JsonPropertyName("detailedStatusCodeMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics? DetailedStatusCodeMetrics { get; set; }
 }
 
-/// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+/// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAwsOrg
 {
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
 
-/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+/// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportCloudWatchMetrics
@@ -2134,7 +2134,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public bool? Enabled { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
@@ -2150,51 +2150,51 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
@@ -2210,21 +2210,21 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestination
@@ -2233,30 +2233,30 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+/// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExport
 {
-    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
+    /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
     [JsonPropertyName("cloudWatchMetrics")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportCloudWatchMetrics? CloudWatchMetrics { get; set; }
 
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
 
-/// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+/// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExclude
@@ -2270,7 +2270,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
@@ -2286,51 +2286,51 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+/// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
-    /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
+    /// <summary>Account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
+    /// <summary>ARN of the bucket.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption? Encryption { get; set; }
 
-    /// <summary>The export format. Valid values: CSV, Parquet.</summary>
+    /// <summary>Export format. Valid values: CSV, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>The schema version of the export file. Valid values: V_1.</summary>
+    /// <summary>Schema version of the export file. Valid values: V_1.</summary>
     [JsonPropertyName("outputSchemaVersion")]
     public string? OutputSchemaVersion { get; set; }
 
-    /// <summary>The prefix of the destination bucket where the metrics export will be delivered.</summary>
+    /// <summary>Prefix of the destination bucket where the metrics export will be delivered.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+/// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
@@ -2346,21 +2346,21 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 {
 }
 
-/// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+/// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
-    /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
+    /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>S3 encryption. An empty configuration block {} should be used.</summary>
+    /// <summary>SSE-S3 encryption. An empty configuration block {} should be used.</summary>
     [JsonPropertyName("sseS3")]
     public IList<V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3>? SseS3 { get; set; }
 }
 
-/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+/// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
@@ -2369,26 +2369,26 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See Encryption below for more details.</summary>
+    /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
     [JsonPropertyName("encryption")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption? Encryption { get; set; }
 }
 
-/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+/// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
-    /// <summary>The bucket where the S3 Storage Lens expanded prefix metrics export will be located. See S3 Bucket Destination below for more details.</summary>
+    /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
     [JsonPropertyName("s3BucketDestination")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination? S3BucketDestination { get; set; }
 
-    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See Storage Lens Table Destination below for more details.</summary>
+    /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
     [JsonPropertyName("storageLensTableDestination")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination? StorageLensTableDestination { get; set; }
 }
 
-/// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+/// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationInclude
@@ -2402,20 +2402,20 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public IList<string>? Regions { get; set; }
 }
 
-/// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+/// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfiguration
 {
-    /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
+    /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
     [JsonPropertyName("accountLevel")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevel? AccountLevel { get; set; }
 
-    /// <summary>The Amazon Web Services organization for the S3 Storage Lens configuration. See AWS Org below for more details.</summary>
+    /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
     [JsonPropertyName("awsOrg")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAwsOrg? AwsOrg { get; set; }
 
-    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See Data Export below for more details.</summary>
+    /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
     [JsonPropertyName("dataExport")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExport? DataExport { get; set; }
 
@@ -2423,15 +2423,15 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>What is excluded in this configuration. Conflicts with include. See Exclude below for more details.</summary>
+    /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
     [JsonPropertyName("exclude")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExclude? Exclude { get; set; }
 
-    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See Expanded Prefixes Data Export below for more details.</summary>
+    /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
     [JsonPropertyName("expandedPrefixesDataExport")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExport? ExpandedPrefixesDataExport { get; set; }
 
-    /// <summary>What is included in this configuration. Conflicts with exclude. See Include below for more details.</summary>
+    /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
     [JsonPropertyName("include")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationInclude? Include { get; set; }
 
@@ -2444,15 +2444,15 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProvider
 {
-    /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
+    /// <summary>AWS account ID for the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the S3 Storage Lens configuration.</summary>
+    /// <summary>ARN of the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The ID of the S3 Storage Lens configuration.</summary>
+    /// <summary>ID of the S3 Storage Lens configuration.</summary>
     [JsonPropertyName("configId")]
     public string? ConfigId { get; set; }
 
@@ -2466,7 +2466,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The S3 Storage Lens configuration. See Storage Lens Configuration below for more details.</summary>
+    /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
     [JsonPropertyName("storageLensConfiguration")]
     public V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfiguration? StorageLensConfiguration { get; set; }
 
@@ -2474,7 +2474,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

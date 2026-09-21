@@ -1287,7 +1287,7 @@ public partial class V1beta2TestGridProjectStatusAtProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2TestGridProjectStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this Test Grid Project.</summary>
+    /// <summary>ARN of this Test Grid Project.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

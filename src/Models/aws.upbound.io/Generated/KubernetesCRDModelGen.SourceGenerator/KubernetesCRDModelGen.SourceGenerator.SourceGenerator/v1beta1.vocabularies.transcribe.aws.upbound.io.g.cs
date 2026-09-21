@@ -59,11 +59,11 @@ public enum V1beta1VocabularySpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VocabularySpecForProvider
 {
-    /// <summary>The language code you selected for your vocabulary.</summary>
+    /// <summary>Language code you selected for your vocabulary.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
     [JsonPropertyName("phrases")]
     public IList<string>? Phrases { get; set; }
 
@@ -78,7 +78,7 @@ public partial class V1beta1VocabularySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
     [JsonPropertyName("vocabularyFileUri")]
     public string? VocabularyFileUri { get; set; }
 }
@@ -99,11 +99,11 @@ public partial class V1beta1VocabularySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VocabularySpecInitProvider
 {
-    /// <summary>The language code you selected for your vocabulary.</summary>
+    /// <summary>Language code you selected for your vocabulary.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
     [JsonPropertyName("phrases")]
     public IList<string>? Phrases { get; set; }
 
@@ -111,7 +111,7 @@ public partial class V1beta1VocabularySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
     [JsonPropertyName("vocabularyFileUri")]
     public string? VocabularyFileUri { get; set; }
 }
@@ -315,11 +315,11 @@ public partial class V1beta1VocabularyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The language code you selected for your vocabulary.</summary>
+    /// <summary>Language code you selected for your vocabulary.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_file_uri</summary>
     [JsonPropertyName("phrases")]
     public IList<string>? Phrases { get; set; }
 
@@ -337,7 +337,7 @@ public partial class V1beta1VocabularyStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom vocabulary. Conflicts wth phrases.</summary>
     [JsonPropertyName("vocabularyFileUri")]
     public string? VocabularyFileUri { get; set; }
 }

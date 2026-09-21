@@ -1239,6 +1239,10 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionQueryString
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionSourceIp
 {
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
@@ -2719,6 +2723,10 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionQueryString
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionSourceIp
 {
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
@@ -3556,6 +3564,10 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionQueryString
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionSourceIp
 {
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }

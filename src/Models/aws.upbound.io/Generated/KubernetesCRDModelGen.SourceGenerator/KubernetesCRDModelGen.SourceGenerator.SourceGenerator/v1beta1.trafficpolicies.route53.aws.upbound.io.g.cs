@@ -288,7 +288,7 @@ public partial class V1beta1TrafficPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficPolicyStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the traffic policy.</summary>
+    /// <summary>ARN of the traffic policy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

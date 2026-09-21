@@ -334,6 +334,10 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsParameter
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
 
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
+
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]
     public bool? NoReboot { get; set; }
@@ -1172,6 +1176,10 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsParamete
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
+
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
 
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]
@@ -2051,6 +2059,10 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsParamete
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
+
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
 
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]

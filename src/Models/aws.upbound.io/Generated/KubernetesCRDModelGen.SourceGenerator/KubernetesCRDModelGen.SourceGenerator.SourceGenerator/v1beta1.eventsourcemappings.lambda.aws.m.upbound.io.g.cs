@@ -63,7 +63,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -75,7 +75,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -290,7 +290,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDocumentDbEventSour
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
+    /// <summary>DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
     [JsonPropertyName("fullDocument")]
     public string? FullDocument { get; set; }
 }
@@ -629,7 +629,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecForProviderMetricsConfig
 {
-    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
+    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 }
@@ -647,7 +647,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderProvisionedPollerCo
     [JsonPropertyName("minimumPollers")]
     public double? MinimumPollers { get; set; }
 
-    /// <summary>The name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
+    /// <summary>Name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
     [JsonPropertyName("pollerGroupName")]
     public string? PollerGroupName { get; set; }
 }
@@ -699,7 +699,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -711,7 +711,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -795,7 +795,7 @@ public partial class V1beta1EventSourceMappingSpecForProvider
     [JsonPropertyName("functionResponseTypes")]
     public IList<string>? FunctionResponseTypes { get; set; }
 
-    /// <summary>ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
+    /// <summary>ARN of the KMS customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -910,7 +910,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -922,7 +922,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -1137,7 +1137,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDocumentDbEventSou
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
+    /// <summary>DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
     [JsonPropertyName("fullDocument")]
     public string? FullDocument { get; set; }
 }
@@ -1476,7 +1476,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecInitProviderMetricsConfig
 {
-    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
+    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 }
@@ -1494,7 +1494,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderProvisionedPollerC
     [JsonPropertyName("minimumPollers")]
     public double? MinimumPollers { get; set; }
 
-    /// <summary>The name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
+    /// <summary>Name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
     [JsonPropertyName("pollerGroupName")]
     public string? PollerGroupName { get; set; }
 }
@@ -1546,7 +1546,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -1558,7 +1558,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -1654,7 +1654,7 @@ public partial class V1beta1EventSourceMappingSpecInitProvider
     [JsonPropertyName("functionResponseTypes")]
     public IList<string>? FunctionResponseTypes { get; set; }
 
-    /// <summary>ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
+    /// <summary>ARN of the KMS customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1869,7 +1869,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -1881,7 +1881,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -1933,7 +1933,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderDocumentDbEventSou
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
+    /// <summary>DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.</summary>
     [JsonPropertyName("fullDocument")]
     public string? FullDocument { get; set; }
 }
@@ -1962,7 +1962,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderFilterCriteria
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingStatusAtProviderMetricsConfig
 {
-    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
+    /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.</summary>
     [JsonPropertyName("metrics")]
     public IList<string>? Metrics { get; set; }
 }
@@ -1980,7 +1980,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderProvisionedPollerC
     [JsonPropertyName("minimumPollers")]
     public double? MinimumPollers { get; set; }
 
-    /// <summary>The name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
+    /// <summary>Name of the provisioned poller group used to group multiple ESMs within the event source&apos;s VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.</summary>
     [JsonPropertyName("pollerGroupName")]
     public string? PollerGroupName { get; set; }
 }
@@ -2032,7 +2032,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
-    /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
+    /// <summary>Configuration block for authentication Lambda uses to access the schema registry. See below.</summary>
     [JsonPropertyName("accessConfig")]
     public IList<V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig>? AccessConfig { get; set; }
 
@@ -2044,7 +2044,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
     [JsonPropertyName("schemaRegistryUri")]
     public string? SchemaRegistryUri { get; set; }
 
-    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.</summary>
+    /// <summary>Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.</summary>
     [JsonPropertyName("schemaValidationConfig")]
     public IList<V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig>? SchemaValidationConfig { get; set; }
 }
@@ -2131,7 +2131,7 @@ public partial class V1beta1EventSourceMappingStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
+    /// <summary>ARN of the KMS customer managed key that Lambda uses to encrypt your function&apos;s filter criteria.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 

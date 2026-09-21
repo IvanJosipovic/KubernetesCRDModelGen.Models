@@ -577,7 +577,7 @@ public partial class V1beta2ImageSpecForProviderWorkflow
     [JsonPropertyName("parameter")]
     public IList<V1beta2ImageSpecForProviderWorkflowParameter>? Parameter { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Workflow.</summary>
+    /// <summary>ARN of the Image Builder Workflow.</summary>
     [JsonPropertyName("workflowArn")]
     public string? WorkflowArn { get; set; }
 }
@@ -586,11 +586,11 @@ public partial class V1beta2ImageSpecForProviderWorkflow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageSpecForProvider
 {
-    /// <summary>- Amazon Resource Name (ARN) of the container recipe.</summary>
+    /// <summary>- ARN of the container recipe.</summary>
     [JsonPropertyName("containerRecipeArn")]
     public string? ContainerRecipeArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.</summary>
+    /// <summary>ARN of the Image Builder Distribution Configuration.</summary>
     [JsonPropertyName("distributionConfigurationArn")]
     public string? DistributionConfigurationArn { get; set; }
 
@@ -606,11 +606,11 @@ public partial class V1beta2ImageSpecForProvider
     [JsonPropertyName("enhancedImageMetadataEnabled")]
     public bool? EnhancedImageMetadataEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.</summary>
+    /// <summary>ARN of the service-linked role to be used by Image Builder to execute workflows.</summary>
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image recipe.</summary>
+    /// <summary>ARN of the image recipe.</summary>
     [JsonPropertyName("imageRecipeArn")]
     public string? ImageRecipeArn { get; set; }
 
@@ -630,7 +630,7 @@ public partial class V1beta2ImageSpecForProvider
     [JsonPropertyName("imageTestsConfiguration")]
     public V1beta2ImageSpecForProviderImageTestsConfiguration? ImageTestsConfiguration { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.</summary>
+    /// <summary>ARN of the Image Builder Infrastructure Configuration.</summary>
     [JsonPropertyName("infrastructureConfigurationArn")]
     public string? InfrastructureConfigurationArn { get; set; }
 
@@ -1184,7 +1184,7 @@ public partial class V1beta2ImageSpecInitProviderWorkflow
     [JsonPropertyName("parameter")]
     public IList<V1beta2ImageSpecInitProviderWorkflowParameter>? Parameter { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Workflow.</summary>
+    /// <summary>ARN of the Image Builder Workflow.</summary>
     [JsonPropertyName("workflowArn")]
     public string? WorkflowArn { get; set; }
 }
@@ -1205,11 +1205,11 @@ public partial class V1beta2ImageSpecInitProviderWorkflow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageSpecInitProvider
 {
-    /// <summary>- Amazon Resource Name (ARN) of the container recipe.</summary>
+    /// <summary>- ARN of the container recipe.</summary>
     [JsonPropertyName("containerRecipeArn")]
     public string? ContainerRecipeArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.</summary>
+    /// <summary>ARN of the Image Builder Distribution Configuration.</summary>
     [JsonPropertyName("distributionConfigurationArn")]
     public string? DistributionConfigurationArn { get; set; }
 
@@ -1225,11 +1225,11 @@ public partial class V1beta2ImageSpecInitProvider
     [JsonPropertyName("enhancedImageMetadataEnabled")]
     public bool? EnhancedImageMetadataEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.</summary>
+    /// <summary>ARN of the service-linked role to be used by Image Builder to execute workflows.</summary>
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image recipe.</summary>
+    /// <summary>ARN of the image recipe.</summary>
     [JsonPropertyName("imageRecipeArn")]
     public string? ImageRecipeArn { get; set; }
 
@@ -1249,7 +1249,7 @@ public partial class V1beta2ImageSpecInitProvider
     [JsonPropertyName("imageTestsConfiguration")]
     public V1beta2ImageSpecInitProviderImageTestsConfiguration? ImageTestsConfiguration { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.</summary>
+    /// <summary>ARN of the Image Builder Infrastructure Configuration.</summary>
     [JsonPropertyName("infrastructureConfigurationArn")]
     public string? InfrastructureConfigurationArn { get; set; }
 
@@ -1551,7 +1551,7 @@ public partial class V1beta2ImageStatusAtProviderOutputResourcesContainers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageStatusAtProviderOutputResources
 {
-    /// <summary>Set of objects with each Amazon Machine Image (AMI) created.</summary>
+    /// <summary>Set of objects with each AMI created.</summary>
     [JsonPropertyName("amis")]
     public IList<V1beta2ImageStatusAtProviderOutputResourcesAmis>? Amis { get; set; }
 
@@ -1589,7 +1589,7 @@ public partial class V1beta2ImageStatusAtProviderWorkflow
     [JsonPropertyName("parameter")]
     public IList<V1beta2ImageStatusAtProviderWorkflowParameter>? Parameter { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Workflow.</summary>
+    /// <summary>ARN of the Image Builder Workflow.</summary>
     [JsonPropertyName("workflowArn")]
     public string? WorkflowArn { get; set; }
 }
@@ -1598,11 +1598,11 @@ public partial class V1beta2ImageStatusAtProviderWorkflow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the image.</summary>
+    /// <summary>ARN of the image.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>- Amazon Resource Name (ARN) of the container recipe.</summary>
+    /// <summary>- ARN of the container recipe.</summary>
     [JsonPropertyName("containerRecipeArn")]
     public string? ContainerRecipeArn { get; set; }
 
@@ -1610,7 +1610,7 @@ public partial class V1beta2ImageStatusAtProvider
     [JsonPropertyName("dateCreated")]
     public string? DateCreated { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.</summary>
+    /// <summary>ARN of the Image Builder Distribution Configuration.</summary>
     [JsonPropertyName("distributionConfigurationArn")]
     public string? DistributionConfigurationArn { get; set; }
 
@@ -1618,15 +1618,15 @@ public partial class V1beta2ImageStatusAtProvider
     [JsonPropertyName("enhancedImageMetadataEnabled")]
     public bool? EnhancedImageMetadataEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.</summary>
+    /// <summary>ARN of the service-linked role to be used by Image Builder to execute workflows.</summary>
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image.</summary>
+    /// <summary>ARN of the image.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image recipe.</summary>
+    /// <summary>ARN of the image recipe.</summary>
     [JsonPropertyName("imageRecipeArn")]
     public string? ImageRecipeArn { get; set; }
 
@@ -1638,7 +1638,7 @@ public partial class V1beta2ImageStatusAtProvider
     [JsonPropertyName("imageTestsConfiguration")]
     public V1beta2ImageStatusAtProviderImageTestsConfiguration? ImageTestsConfiguration { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.</summary>
+    /// <summary>ARN of the Image Builder Infrastructure Configuration.</summary>
     [JsonPropertyName("infrastructureConfigurationArn")]
     public string? InfrastructureConfigurationArn { get; set; }
 

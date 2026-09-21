@@ -1273,7 +1273,7 @@ public partial class V1beta1MountTargetStatusAtProvider
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>Amazon Resource Name of the file system.</summary>
+    /// <summary>ARN of the file system.</summary>
     [JsonPropertyName("fileSystemArn")]
     public string? FileSystemArn { get; set; }
 

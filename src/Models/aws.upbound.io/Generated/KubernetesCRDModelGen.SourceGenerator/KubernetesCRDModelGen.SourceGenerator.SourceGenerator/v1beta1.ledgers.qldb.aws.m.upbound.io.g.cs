@@ -199,7 +199,7 @@ public partial class V1beta1LedgerSpecForProvider
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The key in AWS Key Management Service (AWS KMS) to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
+    /// <summary>Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
@@ -402,7 +402,7 @@ public partial class V1beta1LedgerSpecInitProvider
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The key in AWS Key Management Service (AWS KMS) to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
+    /// <summary>Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
@@ -546,7 +546,7 @@ public partial class V1beta1LedgerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The key in AWS Key Management Service (AWS KMS) to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
+    /// <summary>Key in KMS to use for encryption of data at rest in the ledger. For more information, see the AWS documentation. Valid values are &quot;AWS_OWNED_KMS_KEY&quot; to use an AWS KMS key that is owned and managed by AWS on your behalf, or the ARN of a valid symmetric customer managed KMS key.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 

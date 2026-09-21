@@ -1315,10 +1315,7 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// State of the environment. Possible values are READY_FOR_DEPLOYMENT, DEPLOYING, ROLLING_BACK
-    /// or ROLLED_BACK.
-    /// </summary>
+    /// <summary>State of the environment. Possible values are READY_FOR_DEPLOYMENT, DEPLOYING, ROLLING_BACK or ROLLED_BACK.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 

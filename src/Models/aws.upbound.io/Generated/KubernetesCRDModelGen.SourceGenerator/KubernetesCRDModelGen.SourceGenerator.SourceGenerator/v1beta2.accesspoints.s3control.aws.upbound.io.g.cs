@@ -207,19 +207,19 @@ public partial class V1beta2AccessPointSpecForProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointSpecForProviderPublicAccessBlockConfiguration
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
@@ -371,12 +371,12 @@ public partial class V1beta2AccessPointSpecForProviderVpcConfigurationVpcIdSelec
     public V1beta2AccessPointSpecForProviderVpcConfigurationVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+/// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointSpecForProviderVpcConfiguration
 {
-    /// <summary>This access point will only allow connections from the specified VPC ID.</summary>
+    /// <summary>VPC ID from which the access point allows connections.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -436,7 +436,7 @@ public partial class V1beta2AccessPointSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+    /// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2AccessPointSpecForProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -593,19 +593,19 @@ public partial class V1beta2AccessPointSpecInitProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointSpecInitProviderPublicAccessBlockConfiguration
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
@@ -757,12 +757,12 @@ public partial class V1beta2AccessPointSpecInitProviderVpcConfigurationVpcIdSele
     public V1beta2AccessPointSpecInitProviderVpcConfigurationVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+/// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointSpecInitProviderVpcConfiguration
 {
-    /// <summary>This access point will only allow connections from the specified VPC ID.</summary>
+    /// <summary>VPC ID from which the access point allows connections.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -827,7 +827,7 @@ public partial class V1beta2AccessPointSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+    /// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2AccessPointSpecInitProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -1020,29 +1020,29 @@ public partial class V1beta2AccessPointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointStatusAtProviderPublicAccessBlockConfiguration
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
 
-/// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+/// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AccessPointStatusAtProviderVpcConfiguration
 {
-    /// <summary>This access point will only allow connections from the specified VPC ID.</summary>
+    /// <summary>VPC ID from which the access point allows connections.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
@@ -1071,10 +1071,7 @@ public partial class V1beta2AccessPointStatusAtProvider
     [JsonPropertyName("bucketAccountId")]
     public string? BucketAccountId { get; set; }
 
-    /// <summary>
-    /// DNS domain name of the S3 Access Point in the format name-account_id.s3-accesspoint.region.amazonaws.com.
-    /// Note: S3 access points only support secure access by HTTPS. HTTP isn&apos;t supported.
-    /// </summary>
+    /// <summary>DNS domain name of the S3 Access Point in the format name-account_id.s3-accesspoint.region.amazonaws.com. S3 access points only support secure access by HTTPS. HTTP isn&apos;t supported.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
@@ -1082,7 +1079,7 @@ public partial class V1beta2AccessPointStatusAtProvider
     [JsonPropertyName("endpoints")]
     public IDictionary<string, string>? Endpoints { get; set; }
 
-    /// <summary>Indicates whether this access point currently has a policy that allows public access.</summary>
+    /// <summary>Whether this access point currently has a policy that allows public access.</summary>
     [JsonPropertyName("hasPublicAccessPolicy")]
     public bool? HasPublicAccessPolicy { get; set; }
 
@@ -1094,7 +1091,7 @@ public partial class V1beta2AccessPointStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Indicates whether this access point allows access from the public Internet. Values are VPC (the access point doesn&apos;t allow access from the public Internet) and Internet (the access point allows access from the public Internet, subject to the access point and bucket access policies).</summary>
+    /// <summary>Whether this access point allows access from the public Internet. Values are VPC (the access point doesn&apos;t allow access from the public Internet) and Internet (the access point allows access from the public Internet, subject to the access point and bucket access policies).</summary>
     [JsonPropertyName("networkOrigin")]
     public string? NetworkOrigin { get; set; }
 
@@ -1121,7 +1118,7 @@ public partial class V1beta2AccessPointStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Required for S3 on Outposts. Detailed below.</summary>
+    /// <summary>Configuration block to restrict access to this access point to requests from the specified VPC. Required for S3 on Outposts. Detailed below.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta2AccessPointStatusAtProviderVpcConfiguration? VpcConfiguration { get; set; }
 }

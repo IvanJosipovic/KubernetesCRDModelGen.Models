@@ -202,12 +202,12 @@ public partial class V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSel
     public V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+/// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderAuditLogConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
+    /// <summary>ARN for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
     [JsonPropertyName("auditLogDestination")]
     public string? AuditLogDestination { get; set; }
 
@@ -220,16 +220,16 @@ public partial class V1beta2WindowsFileSystemSpecForProviderAuditLogConfiguratio
     public string? FileShareAccessAuditLogLevel { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderDiskIopsConfiguration
 {
-    /// <summary>The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Mode for the number of IOPS for the file system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
@@ -675,7 +675,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordSecretRef
@@ -693,7 +693,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
     public required string Namespace { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This argument is not persisted to state. Conflicts with domain_join_service_account_secret and password. If set, requires password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordWoSecretRef
@@ -716,11 +716,11 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectory
 {
-    /// <summary>A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
+    /// <summary>List of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
+    /// <summary>ARN for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
     [JsonPropertyName("domainJoinServiceAccountSecret")]
     public string? DomainJoinServiceAccountSecret { get; set; }
 
@@ -732,31 +732,31 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDir
     [JsonPropertyName("domainJoinServiceAccountSecretSelector")]
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelector? DomainJoinServiceAccountSecretSelector { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This argument is not persisted to state. Conflicts with domain_join_service_account_secret and password. If set, requires password_wo_version to be set.</summary>
     [JsonPropertyName("passwordWoSecretRef")]
     public V1beta2WindowsFileSystemSpecForProviderSelfManagedActiveDirectoryPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
 
-    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    /// <summary>Required when password_wo is set. Changing this value triggers an update to password_wo.</summary>
     [JsonPropertyName("passwordWoVersion")]
     public double? PasswordWoVersion { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -912,7 +912,7 @@ public partial class V1beta2WindowsFileSystemSpecForProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecForProvider
 {
-    /// <summary>The ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
+    /// <summary>ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
     [JsonPropertyName("activeDirectoryId")]
     public string? ActiveDirectoryId { get; set; }
 
@@ -924,39 +924,39 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("activeDirectoryIdSelector")]
     public V1beta2WindowsFileSystemSpecForProviderActiveDirectoryIdSelector? ActiveDirectoryIdSelector { get; set; }
 
-    /// <summary>An array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
+    /// <summary>Array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
     [JsonPropertyName("aliases")]
     public IList<string>? Aliases { get; set; }
 
-    /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+    /// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
     [JsonPropertyName("auditLogConfiguration")]
     public V1beta2WindowsFileSystemSpecForProviderAuditLogConfiguration? AuditLogConfiguration { get; set; }
 
-    /// <summary>The number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
+    /// <summary>Number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>The ID of the source backup to create the filesystem from.</summary>
+    /// <summary>ID of the source backup to create the filesystem from.</summary>
     [JsonPropertyName("backupId")]
     public string? BackupId { get; set; }
 
-    /// <summary>A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to false.</summary>
+    /// <summary>Whether to copy tags on the file system to backups. Defaults to false.</summary>
     [JsonPropertyName("copyTagsToBackups")]
     public bool? CopyTagsToBackups { get; set; }
 
-    /// <summary>The preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
+    /// <summary>Preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>Specifies the file system deployment type, valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
+    /// <summary>File system deployment type. Valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta2WindowsFileSystemSpecForProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
-    /// <summary>A map of tags to apply to the file system&apos;s final backup.</summary>
+    /// <summary>Map of tags to apply to the file system&apos;s final backup.</summary>
     [JsonPropertyName("finalBackupTags")]
     public IDictionary<string, string>? FinalBackupTags { get; set; }
 
@@ -972,7 +972,11 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta2WindowsFileSystemSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
+    /// <summary>Subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -991,7 +995,7 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta2WindowsFileSystemSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -1007,7 +1011,7 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>Specifies the storage type, Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
+    /// <summary>Storage type. Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -1019,7 +1023,7 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta2WindowsFileSystemSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1031,7 +1035,7 @@ public partial class V1beta2WindowsFileSystemSpecForProvider
     [JsonPropertyName("throughputCapacity")]
     public double? ThroughputCapacity { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }
@@ -1183,12 +1187,12 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSe
     public V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+/// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderAuditLogConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
+    /// <summary>ARN for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
     [JsonPropertyName("auditLogDestination")]
     public string? AuditLogDestination { get; set; }
 
@@ -1201,16 +1205,16 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderAuditLogConfigurati
     public string? FileShareAccessAuditLogLevel { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderDiskIopsConfiguration
 {
-    /// <summary>The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Mode for the number of IOPS for the file system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
@@ -1656,7 +1660,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordSecretRef
@@ -1674,7 +1678,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
     public required string Namespace { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This argument is not persisted to state. Conflicts with domain_join_service_account_secret and password. If set, requires password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordWoSecretRef
@@ -1697,11 +1701,11 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectory
 {
-    /// <summary>A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
+    /// <summary>List of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
+    /// <summary>ARN for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
     [JsonPropertyName("domainJoinServiceAccountSecret")]
     public string? DomainJoinServiceAccountSecret { get; set; }
 
@@ -1713,31 +1717,31 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDi
     [JsonPropertyName("domainJoinServiceAccountSecretSelector")]
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryDomainJoinServiceAccountSecretSelector? DomainJoinServiceAccountSecretSelector { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret and password_wo.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This is a write-only argument which is not persisted to state. Conflicts with domain_join_service_account_secret and password. Required with password_wo_version.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. This argument is not persisted to state. Conflicts with domain_join_service_account_secret and password. If set, requires password_wo_version to be set.</summary>
     [JsonPropertyName("passwordWoSecretRef")]
     public V1beta2WindowsFileSystemSpecInitProviderSelfManagedActiveDirectoryPasswordWoSecretRef? PasswordWoSecretRef { get; set; }
 
-    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    /// <summary>Required when password_wo is set. Changing this value triggers an update to password_wo.</summary>
     [JsonPropertyName("passwordWoVersion")]
     public double? PasswordWoVersion { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -1905,7 +1909,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemSpecInitProvider
 {
-    /// <summary>The ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
+    /// <summary>ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
     [JsonPropertyName("activeDirectoryId")]
     public string? ActiveDirectoryId { get; set; }
 
@@ -1917,39 +1921,39 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("activeDirectoryIdSelector")]
     public V1beta2WindowsFileSystemSpecInitProviderActiveDirectoryIdSelector? ActiveDirectoryIdSelector { get; set; }
 
-    /// <summary>An array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
+    /// <summary>Array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
     [JsonPropertyName("aliases")]
     public IList<string>? Aliases { get; set; }
 
-    /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+    /// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
     [JsonPropertyName("auditLogConfiguration")]
     public V1beta2WindowsFileSystemSpecInitProviderAuditLogConfiguration? AuditLogConfiguration { get; set; }
 
-    /// <summary>The number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
+    /// <summary>Number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>The ID of the source backup to create the filesystem from.</summary>
+    /// <summary>ID of the source backup to create the filesystem from.</summary>
     [JsonPropertyName("backupId")]
     public string? BackupId { get; set; }
 
-    /// <summary>A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to false.</summary>
+    /// <summary>Whether to copy tags on the file system to backups. Defaults to false.</summary>
     [JsonPropertyName("copyTagsToBackups")]
     public bool? CopyTagsToBackups { get; set; }
 
-    /// <summary>The preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
+    /// <summary>Preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>Specifies the file system deployment type, valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
+    /// <summary>File system deployment type. Valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta2WindowsFileSystemSpecInitProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
-    /// <summary>A map of tags to apply to the file system&apos;s final backup.</summary>
+    /// <summary>Map of tags to apply to the file system&apos;s final backup.</summary>
     [JsonPropertyName("finalBackupTags")]
     public IDictionary<string, string>? FinalBackupTags { get; set; }
 
@@ -1965,7 +1969,11 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta2WindowsFileSystemSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
+    /// <summary>Subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -1977,7 +1985,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta2WindowsFileSystemSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -1993,7 +2001,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>Specifies the storage type, Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
+    /// <summary>Storage type. Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -2005,7 +2013,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta2WindowsFileSystemSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2017,7 +2025,7 @@ public partial class V1beta2WindowsFileSystemSpecInitProvider
     [JsonPropertyName("throughputCapacity")]
     public double? ThroughputCapacity { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }
@@ -2205,12 +2213,12 @@ public partial class V1beta2WindowsFileSystemSpec
     public V1beta2WindowsFileSystemSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+/// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderAuditLogConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
+    /// <summary>ARN for the destination of the audit logs. The destination can be any Amazon CloudWatch Logs log group ARN or Amazon Kinesis Data Firehose delivery stream ARN. Can be specified when file_access_audit_log_level and file_share_access_audit_log_level are not set to DISABLED. The name of the Amazon CloudWatch Logs log group must begin with the /aws/fsx prefix. The name of the Amazon Kinesis Data Firehouse delivery stream must begin with the aws-fsx prefix. If you do not provide a destination in audit_log_destionation, Amazon FSx will create and use a log stream in the CloudWatch Logs /aws/fsx/windows log group.</summary>
     [JsonPropertyName("auditLogDestination")]
     public string? AuditLogDestination { get; set; }
 
@@ -2223,16 +2231,16 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderAuditLogConfigurati
     public string? FileShareAccessAuditLogLevel { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderDiskIopsConfiguration
 {
-    /// <summary>The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Mode for the number of IOPS for the file system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
@@ -2242,31 +2250,31 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderDiskIopsConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProviderSelfManagedActiveDirectory
 {
-    /// <summary>A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
+    /// <summary>List of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory. The IP addresses need to be either in the same VPC CIDR range as the file system or in the private IP version 4 (IPv4) address ranges as specified in RFC 1918.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
+    /// <summary>ARN for the AWS Secrets Manager secret that contains the credentials for the service account on your self-managed AD domain. Conflicts with username and password.</summary>
     [JsonPropertyName("domainJoinServiceAccountSecret")]
     public string? DomainJoinServiceAccountSecret { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the file system. Administrative privileges include taking ownership of files and folders, and setting audit controls (audit ACLs) on files and folders. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the file system. If none is provided, the FSx file system is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>Version of the password. Required with password_wo. Update this argument when the value of password_wo has changed to trigger an update to the remote password.</summary>
+    /// <summary>Required when password_wo is set. Changing this value triggers an update to password_wo.</summary>
     [JsonPropertyName("passwordWoVersion")]
     public double? PasswordWoVersion { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain. Conflicts with domain_join_service_account_secret.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -2275,43 +2283,43 @@ public partial class V1beta2WindowsFileSystemStatusAtProviderSelfManagedActiveDi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2WindowsFileSystemStatusAtProvider
 {
-    /// <summary>The ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
+    /// <summary>ID for an existing Microsoft Active Directory instance that the file system should join when it&apos;s created. Cannot be specified with self_managed_active_directory.</summary>
     [JsonPropertyName("activeDirectoryId")]
     public string? ActiveDirectoryId { get; set; }
 
-    /// <summary>An array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
+    /// <summary>Array DNS alias names that you want to associate with the Amazon FSx file system.  For more information, see Working with DNS Aliases</summary>
     [JsonPropertyName("aliases")]
     public IList<string>? Aliases { get; set; }
 
-    /// <summary>Amazon Resource Name of the file system.</summary>
+    /// <summary>ARN of the file system.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
+    /// <summary>Configuration that Amazon FSx for Windows File Server uses to audit and log user accesses of files, folders, and file shares on the Amazon FSx for Windows File Server file system. See audit_log_configuration Block for details.</summary>
     [JsonPropertyName("auditLogConfiguration")]
     public V1beta2WindowsFileSystemStatusAtProviderAuditLogConfiguration? AuditLogConfiguration { get; set; }
 
-    /// <summary>The number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
+    /// <summary>Number of days to retain automatic backups. Minimum of 0 and maximum of 90. Defaults to 7. Set to 0 to disable.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>The ID of the source backup to create the filesystem from.</summary>
+    /// <summary>ID of the source backup to create the filesystem from.</summary>
     [JsonPropertyName("backupId")]
     public string? BackupId { get; set; }
 
-    /// <summary>A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to false.</summary>
+    /// <summary>Whether to copy tags on the file system to backups. Defaults to false.</summary>
     [JsonPropertyName("copyTagsToBackups")]
     public bool? CopyTagsToBackups { get; set; }
 
-    /// <summary>The preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
+    /// <summary>Preferred time (in HH:MM format) to take daily automatic backups, in the UTC time zone.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>Specifies the file system deployment type, valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
+    /// <summary>File system deployment type. Valid values are MULTI_AZ_1, SINGLE_AZ_1 and SINGLE_AZ_2. Default value is SINGLE_AZ_1.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for Windows File Server file system. See disk_iops_configuration Block for details.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta2WindowsFileSystemStatusAtProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
@@ -2319,7 +2327,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>A map of tags to apply to the file system&apos;s final backup.</summary>
+    /// <summary>Map of tags to apply to the file system&apos;s final backup.</summary>
     [JsonPropertyName("finalBackupTags")]
     public IDictionary<string, string>? FinalBackupTags { get; set; }
 
@@ -2335,15 +2343,19 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>AWS account identifier that created the file system.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
-    /// <summary>The IP address of the primary, or preferred, file server.</summary>
+    /// <summary>IP address of the primary, or preferred, file server.</summary>
     [JsonPropertyName("preferredFileServerIp")]
     public string? PreferredFileServerIp { get; set; }
 
-    /// <summary>Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
+    /// <summary>Subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -2358,7 +2370,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("remoteAdministrationEndpoint")]
     public string? RemoteAdministrationEndpoint { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -2374,11 +2386,11 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>Specifies the storage type, Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
+    /// <summary>Storage type. Valid values are SSD and HDD. HDD is supported on SINGLE_AZ_2 and MULTI_AZ_1 Windows file system deployment types. Default value is SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set deployment_type to MULTI_AZ_1.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2386,7 +2398,7 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -2394,11 +2406,11 @@ public partial class V1beta2WindowsFileSystemStatusAtProvider
     [JsonPropertyName("throughputCapacity")]
     public double? ThroughputCapacity { get; set; }
 
-    /// <summary>Identifier of the Virtual Private Cloud for the file system.</summary>
+    /// <summary>Identifier of the VPC for the file system.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }

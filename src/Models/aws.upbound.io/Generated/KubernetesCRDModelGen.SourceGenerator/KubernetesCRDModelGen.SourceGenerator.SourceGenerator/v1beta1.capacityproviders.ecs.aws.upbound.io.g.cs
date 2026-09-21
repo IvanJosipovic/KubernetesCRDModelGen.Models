@@ -274,11 +274,35 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInfrastructureOptimization
 {
     /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -494,6 +518,16 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
     /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
@@ -524,6 +558,10 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public IList<V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations>? CapacityReservations { get; set; }
+
     /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
@@ -531,6 +569,10 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
     /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public IList<V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements>? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public IList<V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration>? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
@@ -550,6 +592,10 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvider
 {
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public IList<V1beta1CapacityProviderSpecForProviderManagedInstancesProviderAutoRepairConfiguration>? AutoRepairConfiguration { get; set; }
+
     /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public IList<V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInfrastructureOptimization>? InfrastructureOptimization { get; set; }
@@ -810,11 +856,35 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInfrastructureOptimization
 {
     /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1030,6 +1100,16 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
     /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
@@ -1060,6 +1140,10 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public IList<V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations>? CapacityReservations { get; set; }
+
     /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
@@ -1067,6 +1151,10 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
     /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public IList<V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements>? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public IList<V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration>? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
@@ -1086,6 +1174,10 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProvider
 {
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public IList<V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderAutoRepairConfiguration>? AutoRepairConfiguration { get; set; }
+
     /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public IList<V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInfrastructureOptimization>? InfrastructureOptimization { get; set; }
@@ -1378,11 +1470,35 @@ public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProv
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInfrastructureOptimization
 {
     /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1598,6 +1714,16 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
     /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
@@ -1628,6 +1754,10 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public IList<V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations>? CapacityReservations { get; set; }
+
     /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
@@ -1635,6 +1765,10 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
     /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public IList<V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements>? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public IList<V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration>? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
@@ -1654,6 +1788,10 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProvider
 {
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public IList<V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderAutoRepairConfiguration>? AutoRepairConfiguration { get; set; }
+
     /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public IList<V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInfrastructureOptimization>? InfrastructureOptimization { get; set; }

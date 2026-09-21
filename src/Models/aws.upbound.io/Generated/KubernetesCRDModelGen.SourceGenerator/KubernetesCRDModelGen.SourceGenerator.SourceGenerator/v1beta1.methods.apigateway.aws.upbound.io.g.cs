@@ -539,18 +539,11 @@ public partial class V1beta1MethodSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// Map of the API models used for the request&apos;s content type
-    /// where key is the content type (e.g., application/json)
-    /// and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.
-    /// </summary>
+    /// <summary>Map of the API models used for the request&apos;s content type where key is the content type (e.g., application/json) and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.</summary>
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>
-    /// Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false).
-    /// For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.
-    /// </summary>
+    /// <summary>Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false). For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, bool>? RequestParameters { get; set; }
 
@@ -1072,18 +1065,11 @@ public partial class V1beta1MethodSpecInitProvider
     [JsonPropertyName("operationName")]
     public string? OperationName { get; set; }
 
-    /// <summary>
-    /// Map of the API models used for the request&apos;s content type
-    /// where key is the content type (e.g., application/json)
-    /// and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.
-    /// </summary>
+    /// <summary>Map of the API models used for the request&apos;s content type where key is the content type (e.g., application/json) and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.</summary>
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>
-    /// Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false).
-    /// For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.
-    /// </summary>
+    /// <summary>Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false). For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, bool>? RequestParameters { get; set; }
 
@@ -1337,18 +1323,11 @@ public partial class V1beta1MethodStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Map of the API models used for the request&apos;s content type
-    /// where key is the content type (e.g., application/json)
-    /// and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.
-    /// </summary>
+    /// <summary>Map of the API models used for the request&apos;s content type where key is the content type (e.g., application/json) and value is either Error, Empty (built-in models) or aws_api_gateway_model&apos;s name.</summary>
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>
-    /// Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false).
-    /// For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.
-    /// </summary>
+    /// <summary>Map of request parameters (from the path, query string and headers) that should be passed to the integration. The boolean value indicates whether the parameter is required (true) or optional (false). For example: request_parameters = {&quot;method.request.header.X-Some-Header&quot; = true &quot;method.request.querystring.some-query-param&quot; = true} would define that the header X-Some-Header and the query string some-query-param must be provided in the request.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, bool>? RequestParameters { get; set; }
 

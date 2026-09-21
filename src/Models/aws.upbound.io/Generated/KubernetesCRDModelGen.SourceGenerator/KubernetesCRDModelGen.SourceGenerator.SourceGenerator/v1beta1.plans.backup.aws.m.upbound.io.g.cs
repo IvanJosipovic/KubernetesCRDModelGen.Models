@@ -71,7 +71,7 @@ public partial class V1beta1PlanSpecForProviderRuleCopyActionLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlanSpecForProviderRuleCopyAction
 {
-    /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
+    /// <summary>ARN that uniquely identifies the destination backup vault for the copied backup.</summary>
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 
@@ -411,7 +411,7 @@ public partial class V1beta1PlanSpecInitProviderRuleCopyActionLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlanSpecInitProviderRuleCopyAction
 {
-    /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
+    /// <summary>ARN that uniquely identifies the destination backup vault for the copied backup.</summary>
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 
@@ -863,7 +863,7 @@ public partial class V1beta1PlanStatusAtProviderRuleCopyActionLifecycle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlanStatusAtProviderRuleCopyAction
 {
-    /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
+    /// <summary>ARN that uniquely identifies the destination backup vault for the copied backup.</summary>
     [JsonPropertyName("destinationVaultArn")]
     public string? DestinationVaultArn { get; set; }
 

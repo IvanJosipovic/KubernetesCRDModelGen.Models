@@ -363,13 +363,15 @@ public partial class V1beta1LBCertificateStatusAtProviderDomainValidationRecords
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>SSL/TLS certificate name.</summary>
+    /// <summary>Name of the DNS record to create to validate the certificate.</summary>
     [JsonPropertyName("resourceRecordName")]
     public string? ResourceRecordName { get; set; }
 
+    /// <summary>Type of DNS record to create to validate the certificate.</summary>
     [JsonPropertyName("resourceRecordType")]
     public string? ResourceRecordType { get; set; }
 
+    /// <summary>Value of the DNS record to create to validate the certificate.</summary>
     [JsonPropertyName("resourceRecordValue")]
     public string? ResourceRecordValue { get; set; }
 }
@@ -390,7 +392,7 @@ public partial class V1beta1LBCertificateStatusAtProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>Set of domain validation objects which can be used to complete certificate validation. Can have more than one element, e.g., if SANs are defined.</summary>
+    /// <summary>Set of domain validation objects which can be used to complete certificate validation. Can have more than one element, e.g., if SANs are defined. Each element contains the following attributes:</summary>
     [JsonPropertyName("domainValidationRecords")]
     public IList<V1beta1LBCertificateStatusAtProviderDomainValidationRecords>? DomainValidationRecords { get; set; }
 

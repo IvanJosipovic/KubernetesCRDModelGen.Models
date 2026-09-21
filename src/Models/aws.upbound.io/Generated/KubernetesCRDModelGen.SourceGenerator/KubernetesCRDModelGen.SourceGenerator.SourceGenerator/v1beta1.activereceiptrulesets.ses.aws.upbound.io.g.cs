@@ -66,7 +66,7 @@ public partial class V1beta1ActiveReceiptRuleSetSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 }
@@ -87,7 +87,7 @@ public partial class V1beta1ActiveReceiptRuleSetSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActiveReceiptRuleSetSpecInitProvider
 {
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 }
@@ -279,11 +279,11 @@ public partial class V1beta1ActiveReceiptRuleSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActiveReceiptRuleSetStatusAtProvider
 {
-    /// <summary>The SES receipt rule set ARN.</summary>
+    /// <summary>SES receipt rule set ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The SES receipt rule set name.</summary>
+    /// <summary>SES receipt rule set name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -294,7 +294,7 @@ public partial class V1beta1ActiveReceiptRuleSetStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 }

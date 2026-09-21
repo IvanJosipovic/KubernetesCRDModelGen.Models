@@ -368,7 +368,7 @@ public partial class V1beta1LocationS3SpecForProviderS3Config
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LocationS3SpecForProvider
 {
-    /// <summary>(Amazon S3 on Outposts only) Amazon Resource Name (ARN) of the DataSync agent on the Outpost.</summary>
+    /// <summary>(Amazon S3 on Outposts only) ARN of the DataSync agent on the Outpost.</summary>
     [JsonPropertyName("agentArns")]
     public IList<string>? AgentArns { get; set; }
 
@@ -379,7 +379,7 @@ public partial class V1beta1LocationS3SpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
+    /// <summary>ARN of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
     [JsonPropertyName("s3BucketArn")]
     public string? S3BucketArn { get; set; }
 
@@ -752,11 +752,11 @@ public partial class V1beta1LocationS3SpecInitProviderS3Config
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LocationS3SpecInitProvider
 {
-    /// <summary>(Amazon S3 on Outposts only) Amazon Resource Name (ARN) of the DataSync agent on the Outpost.</summary>
+    /// <summary>(Amazon S3 on Outposts only) ARN of the DataSync agent on the Outpost.</summary>
     [JsonPropertyName("agentArns")]
     public IList<string>? AgentArns { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
+    /// <summary>ARN of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
     [JsonPropertyName("s3BucketArn")]
     public string? S3BucketArn { get; set; }
 
@@ -906,15 +906,15 @@ public partial class V1beta1LocationS3StatusAtProviderS3Config
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LocationS3StatusAtProvider
 {
-    /// <summary>(Amazon S3 on Outposts only) Amazon Resource Name (ARN) of the DataSync agent on the Outpost.</summary>
+    /// <summary>(Amazon S3 on Outposts only) ARN of the DataSync agent on the Outpost.</summary>
     [JsonPropertyName("agentArns")]
     public IList<string>? AgentArns { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the DataSync Location.</summary>
+    /// <summary>ARN of the DataSync Location.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the DataSync Location.</summary>
+    /// <summary>ARN of the DataSync Location.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -925,7 +925,7 @@ public partial class V1beta1LocationS3StatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
+    /// <summary>ARN of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outposts resource.</summary>
     [JsonPropertyName("s3BucketArn")]
     public string? S3BucketArn { get; set; }
 

@@ -383,7 +383,7 @@ public partial class V1beta2ClusterSpecForProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// A valid Amazon Resource Name (ARN) that identifies
+    /// Valid ARN that identifies
     /// an IAM role. At runtime, DAX will assume this role and use the role&apos;s
     /// permissions to access DynamoDB on your behalf
     /// </summary>
@@ -415,7 +415,7 @@ public partial class V1beta2ClusterSpecForProvider
     public string? NodeType { get; set; }
 
     /// <summary>
-    /// An Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// SNS topic to send DAX notifications to. Example:
     /// arn:aws:sns:us-east-1:012345678999:my_sns_topic
     /// </summary>
@@ -815,7 +815,7 @@ public partial class V1beta2ClusterSpecInitProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// A valid Amazon Resource Name (ARN) that identifies
+    /// Valid ARN that identifies
     /// an IAM role. At runtime, DAX will assume this role and use the role&apos;s
     /// permissions to access DynamoDB on your behalf
     /// </summary>
@@ -847,7 +847,7 @@ public partial class V1beta2ClusterSpecInitProvider
     public string? NodeType { get; set; }
 
     /// <summary>
-    /// An Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// SNS topic to send DAX notifications to. Example:
     /// arn:aws:sns:us-east-1:012345678999:my_sns_topic
     /// </summary>
@@ -1150,7 +1150,7 @@ public partial class V1beta2ClusterStatusAtProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// A valid Amazon Resource Name (ARN) that identifies
+    /// Valid ARN that identifies
     /// an IAM role. At runtime, DAX will assume this role and use the role&apos;s
     /// permissions to access DynamoDB on your behalf
     /// </summary>
@@ -1185,7 +1185,7 @@ public partial class V1beta2ClusterStatusAtProvider
     public IList<V1beta2ClusterStatusAtProviderNodes>? Nodes { get; set; }
 
     /// <summary>
-    /// An Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// SNS topic to send DAX notifications to. Example:
     /// arn:aws:sns:us-east-1:012345678999:my_sns_topic
     /// </summary>

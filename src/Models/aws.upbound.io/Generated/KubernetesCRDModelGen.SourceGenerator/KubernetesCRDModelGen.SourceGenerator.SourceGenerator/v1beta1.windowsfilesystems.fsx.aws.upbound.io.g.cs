@@ -1020,6 +1020,10 @@ public partial class V1beta1WindowsFileSystemSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1WindowsFileSystemSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
@@ -2056,6 +2060,10 @@ public partial class V1beta1WindowsFileSystemSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1WindowsFileSystemSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is MULTI_AZ_1.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
@@ -2433,6 +2441,10 @@ public partial class V1beta1WindowsFileSystemStatusAtProvider
     /// <summary>Set of Elastic Network Interface identifiers from which the file system is accessible.</summary>
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
+
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>AWS account identifier that created the file system.</summary>
     [JsonPropertyName("ownerId")]

@@ -634,7 +634,7 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon Virtual Private Cloud identifier (VPC ID) of the cache subnet group.</summary>
+    /// <summary>VPC identifier (VPC ID) of the cache subnet group.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

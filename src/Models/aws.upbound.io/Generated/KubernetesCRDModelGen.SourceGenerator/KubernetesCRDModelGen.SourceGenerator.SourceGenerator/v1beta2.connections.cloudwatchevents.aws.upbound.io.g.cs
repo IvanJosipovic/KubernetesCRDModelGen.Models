@@ -652,7 +652,7 @@ public partial class V1beta2ConnectionSpecForProvider
     [JsonPropertyName("invocationConnectivityParameters")]
     public V1beta2ConnectionSpecForProviderInvocationConnectivityParameters? InvocationConnectivityParameters { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -1281,7 +1281,7 @@ public partial class V1beta2ConnectionSpecInitProvider
     [JsonPropertyName("invocationConnectivityParameters")]
     public V1beta2ConnectionSpecInitProviderInvocationConnectivityParameters? InvocationConnectivityParameters { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -1502,7 +1502,7 @@ public partial class V1beta2ConnectionStatusAtProviderAuthParametersBasic
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderAuthParametersConnectivityParametersResourceParameters
 {
-    /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
+    /// <summary>ARN of the connection.</summary>
     [JsonPropertyName("resourceAssociationArn")]
     public string? ResourceAssociationArn { get; set; }
 
@@ -1698,7 +1698,7 @@ public partial class V1beta2ConnectionStatusAtProviderAuthParameters
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderInvocationConnectivityParametersResourceParameters
 {
-    /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
+    /// <summary>ARN of the connection.</summary>
     [JsonPropertyName("resourceAssociationArn")]
     public string? ResourceAssociationArn { get; set; }
 
@@ -1721,7 +1721,7 @@ public partial class V1beta2ConnectionStatusAtProviderInvocationConnectivityPara
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
+    /// <summary>ARN of the connection.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1744,7 +1744,7 @@ public partial class V1beta2ConnectionStatusAtProvider
     [JsonPropertyName("invocationConnectivityParameters")]
     public V1beta2ConnectionStatusAtProviderInvocationConnectivityParameters? InvocationConnectivityParameters { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this connection. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -1755,7 +1755,7 @@ public partial class V1beta2ConnectionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the secret created from the authorization parameters specified for the connection.</summary>
+    /// <summary>ARN of the secret created from the authorization parameters specified for the connection.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }

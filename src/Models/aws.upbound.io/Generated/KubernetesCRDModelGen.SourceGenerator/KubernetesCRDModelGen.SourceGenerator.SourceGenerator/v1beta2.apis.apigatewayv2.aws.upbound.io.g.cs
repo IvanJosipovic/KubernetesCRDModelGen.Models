@@ -55,7 +55,7 @@ public enum V1beta2APISpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2APISpecForProviderCorsConfiguration
@@ -89,19 +89,15 @@ public partial class V1beta2APISpecForProviderCorsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2APISpecForProvider
 {
-    /// <summary>
-    /// An API key selection expression.
-    /// Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key.
-    /// Applicable for WebSocket APIs.
-    /// </summary>
+    /// <summary>API key selection expression. Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key. Applicable for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeySelectionExpression")]
     public string? ApiKeySelectionExpression { get; set; }
 
-    /// <summary>An OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
+    /// <summary>OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
-    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
     [JsonPropertyName("corsConfiguration")]
     public V1beta2APISpecForProviderCorsConfiguration? CorsConfiguration { get; set; }
 
@@ -113,11 +109,7 @@ public partial class V1beta2APISpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// Whether clients can invoke the API by using the default execute-api endpoint.
-    /// By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint.
-    /// To require that clients use a custom domain name to invoke the API, disable the default endpoint.
-    /// </summary>
+    /// <summary>Whether clients can invoke the API by using the default execute-api endpoint. By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke the API, disable the default endpoint.</summary>
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
@@ -125,7 +117,7 @@ public partial class V1beta2APISpecForProvider
     [JsonPropertyName("failOnWarnings")]
     public bool? FailOnWarnings { get; set; }
 
-    /// <summary>The IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -148,10 +140,7 @@ public partial class V1beta2APISpecForProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>
-    /// The route selection expression for the API.
-    /// Defaults to $request.method $request.path.
-    /// </summary>
+    /// <summary>Route selection expression for the API. Defaults to $request.method $request.path.</summary>
     [JsonPropertyName("routeSelectionExpression")]
     public string? RouteSelectionExpression { get; set; }
 
@@ -159,11 +148,7 @@ public partial class V1beta2APISpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>
-    /// Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
-    /// For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
-    /// The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.
-    /// </summary>
+    /// <summary>Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes. For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN. The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -172,7 +157,7 @@ public partial class V1beta2APISpecForProvider
     public string? Version { get; set; }
 }
 
-/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2APISpecInitProviderCorsConfiguration
@@ -218,19 +203,15 @@ public partial class V1beta2APISpecInitProviderCorsConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2APISpecInitProvider
 {
-    /// <summary>
-    /// An API key selection expression.
-    /// Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key.
-    /// Applicable for WebSocket APIs.
-    /// </summary>
+    /// <summary>API key selection expression. Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key. Applicable for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeySelectionExpression")]
     public string? ApiKeySelectionExpression { get; set; }
 
-    /// <summary>An OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
+    /// <summary>OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
-    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
     [JsonPropertyName("corsConfiguration")]
     public V1beta2APISpecInitProviderCorsConfiguration? CorsConfiguration { get; set; }
 
@@ -242,11 +223,7 @@ public partial class V1beta2APISpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// Whether clients can invoke the API by using the default execute-api endpoint.
-    /// By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint.
-    /// To require that clients use a custom domain name to invoke the API, disable the default endpoint.
-    /// </summary>
+    /// <summary>Whether clients can invoke the API by using the default execute-api endpoint. By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke the API, disable the default endpoint.</summary>
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
@@ -254,7 +231,7 @@ public partial class V1beta2APISpecInitProvider
     [JsonPropertyName("failOnWarnings")]
     public bool? FailOnWarnings { get; set; }
 
-    /// <summary>The IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -270,10 +247,7 @@ public partial class V1beta2APISpecInitProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>
-    /// The route selection expression for the API.
-    /// Defaults to $request.method $request.path.
-    /// </summary>
+    /// <summary>Route selection expression for the API. Defaults to $request.method $request.path.</summary>
     [JsonPropertyName("routeSelectionExpression")]
     public string? RouteSelectionExpression { get; set; }
 
@@ -281,11 +255,7 @@ public partial class V1beta2APISpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>
-    /// Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
-    /// For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
-    /// The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.
-    /// </summary>
+    /// <summary>Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes. For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN. The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -477,7 +447,7 @@ public partial class V1beta2APISpec
     public V1beta2APISpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+/// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2APIStatusAtProviderCorsConfiguration
@@ -515,11 +485,7 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("apiEndpoint")]
     public string? ApiEndpoint { get; set; }
 
-    /// <summary>
-    /// An API key selection expression.
-    /// Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key.
-    /// Applicable for WebSocket APIs.
-    /// </summary>
+    /// <summary>API key selection expression. Valid values: $context.authorizer.usageIdentifierKey, $request.header.x-api-key. Defaults to $request.header.x-api-key. Applicable for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeySelectionExpression")]
     public string? ApiKeySelectionExpression { get; set; }
 
@@ -527,11 +493,11 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>An OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
+    /// <summary>OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
-    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs.</summary>
+    /// <summary>Cross-origin resource sharing (CORS) configuration. Applicable for HTTP APIs. See cors_configuration Block below.</summary>
     [JsonPropertyName("corsConfiguration")]
     public V1beta2APIStatusAtProviderCorsConfiguration? CorsConfiguration { get; set; }
 
@@ -543,19 +509,11 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// Whether clients can invoke the API by using the default execute-api endpoint.
-    /// By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint.
-    /// To require that clients use a custom domain name to invoke the API, disable the default endpoint.
-    /// </summary>
+    /// <summary>Whether clients can invoke the API by using the default execute-api endpoint. By default, clients can invoke the API with the default {api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke the API, disable the default endpoint.</summary>
     [JsonPropertyName("disableExecuteApiEndpoint")]
     public bool? DisableExecuteApiEndpoint { get; set; }
 
-    /// <summary>
-    /// ARN prefix to be used in an aws_lambda_permission&apos;s source_arn attribute
-    /// or in an aws_iam_policy to authorize access to the @connections API.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>ARN prefix to be used in an aws_lambda_permission&apos;s source_arn attribute or in an aws_iam_policy to authorize access to the @connections API. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("executionArn")]
     public string? ExecutionArn { get; set; }
 
@@ -567,7 +525,7 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the API. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your API, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your API. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -590,10 +548,7 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>
-    /// The route selection expression for the API.
-    /// Defaults to $request.method $request.path.
-    /// </summary>
+    /// <summary>Route selection expression for the API. Defaults to $request.method $request.path.</summary>
     [JsonPropertyName("routeSelectionExpression")]
     public string? RouteSelectionExpression { get; set; }
 
@@ -605,11 +560,7 @@ public partial class V1beta2APIStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>
-    /// Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
-    /// For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
-    /// The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.
-    /// </summary>
+    /// <summary>Part of quick create. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes. For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN. The type of the integration will be HTTP_PROXY or AWS_PROXY, respectively. Applicable for HTTP APIs.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 

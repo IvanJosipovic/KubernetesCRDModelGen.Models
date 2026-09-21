@@ -55,7 +55,173 @@ public enum V1beta1APIKeyCredentialProviderSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>API key value. Cannot be used with api_key_wo.</summary>
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfig
+{
+    [JsonPropertyName("jsonKey")]
+    public string? JsonKey { get; set; }
+
+    [JsonPropertyName("secretId")]
+    public string? SecretId { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
+    [JsonPropertyName("secretIdRef")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdRef? SecretIdRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
+    [JsonPropertyName("secretIdSelector")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfigSecretIdSelector? SecretIdSelector { get; set; }
+}
+
+/// <summary>API key value. Conflicts with api_key_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretRef
@@ -73,7 +239,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretR
     public required string Namespace { get; set; }
 }
 
-/// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
+/// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecretRef
@@ -95,15 +261,21 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecre
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecForProvider
 {
-    /// <summary>API key value. Cannot be used with api_key_wo.</summary>
+    [JsonPropertyName("apiKeySecretConfig")]
+    public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
+
+    /// <summary>API key value. Conflicts with api_key_wo.</summary>
     [JsonPropertyName("apiKeySecretRef")]
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeySecretRef? ApiKeySecretRef { get; set; }
 
-    /// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
+    [JsonPropertyName("apiKeySecretSource")]
+    public string? ApiKeySecretSource { get; set; }
+
+    /// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
     [JsonPropertyName("apiKeyWoSecretRef")]
     public V1beta1APIKeyCredentialProviderSpecForProviderApiKeyWoSecretRef? ApiKeyWoSecretRef { get; set; }
 
-    /// <summary>Used together with api_key_wo to trigger an update. Increment this value when an update to api_key_wo is required.</summary>
+    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 
@@ -119,7 +291,173 @@ public partial class V1beta1APIKeyCredentialProviderSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>API key value. Cannot be used with api_key_wo.</summary>
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum>))]
+public enum V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfig
+{
+    [JsonPropertyName("jsonKey")]
+    public string? JsonKey { get; set; }
+
+    [JsonPropertyName("secretId")]
+    public string? SecretId { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate secretId.</summary>
+    [JsonPropertyName("secretIdRef")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdRef? SecretIdRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
+    [JsonPropertyName("secretIdSelector")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfigSecretIdSelector? SecretIdSelector { get; set; }
+}
+
+/// <summary>API key value. Conflicts with api_key_wo.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretRef
@@ -137,7 +475,7 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecret
     public required string Namespace { get; set; }
 }
 
-/// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
+/// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecretRef
@@ -171,15 +509,21 @@ public partial class V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderSpecInitProvider
 {
-    /// <summary>API key value. Cannot be used with api_key_wo.</summary>
+    [JsonPropertyName("apiKeySecretConfig")]
+    public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
+
+    /// <summary>API key value. Conflicts with api_key_wo.</summary>
     [JsonPropertyName("apiKeySecretRef")]
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeySecretRef? ApiKeySecretRef { get; set; }
 
-    /// <summary>Write-only API key value. Cannot be used with api_key. Must be used together with api_key_wo_version.</summary>
+    [JsonPropertyName("apiKeySecretSource")]
+    public string? ApiKeySecretSource { get; set; }
+
+    /// <summary>Write-only API key value. Conflicts with api_key. If set, requires api_key_wo_version to be set.</summary>
     [JsonPropertyName("apiKeyWoSecretRef")]
     public V1beta1APIKeyCredentialProviderSpecInitProviderApiKeyWoSecretRef? ApiKeyWoSecretRef { get; set; }
 
-    /// <summary>Used together with api_key_wo to trigger an update. Increment this value when an update to api_key_wo is required.</summary>
+    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 
@@ -371,6 +715,7 @@ public partial class V1beta1APIKeyCredentialProviderSpec
     public V1beta1APIKeyCredentialProviderSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>ARN of the AWS Secrets Manager secret containing the API key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretArn
@@ -382,13 +727,30 @@ public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecret
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretConfig
+{
+    [JsonPropertyName("jsonKey")]
+    public string? JsonKey { get; set; }
+
+    [JsonPropertyName("secretId")]
+    public string? SecretId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeyCredentialProviderStatusAtProvider
 {
     /// <summary>ARN of the AWS Secrets Manager secret containing the API key.</summary>
     [JsonPropertyName("apiKeySecretArn")]
-    public IList<V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretArn>? ApiKeySecretArn { get; set; }
+    public V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretArn? ApiKeySecretArn { get; set; }
 
-    /// <summary>Used together with api_key_wo to trigger an update. Increment this value when an update to api_key_wo is required.</summary>
+    [JsonPropertyName("apiKeySecretConfig")]
+    public V1beta1APIKeyCredentialProviderStatusAtProviderApiKeySecretConfig? ApiKeySecretConfig { get; set; }
+
+    [JsonPropertyName("apiKeySecretSource")]
+    public string? ApiKeySecretSource { get; set; }
+
+    /// <summary>Required when api_key_wo is set. Changing this value triggers an update to api_key_wo.</summary>
     [JsonPropertyName("apiKeyWoVersion")]
     public double? ApiKeyWoVersion { get; set; }
 

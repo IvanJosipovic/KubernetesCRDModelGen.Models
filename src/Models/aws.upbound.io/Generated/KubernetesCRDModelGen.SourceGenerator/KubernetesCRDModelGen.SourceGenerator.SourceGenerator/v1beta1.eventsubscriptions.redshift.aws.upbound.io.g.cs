@@ -947,7 +947,7 @@ public partial class V1beta1EventSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Redshift event notification subscription</summary>
+    /// <summary>ARN of the Redshift event notification subscription</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

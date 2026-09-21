@@ -665,7 +665,7 @@ public partial class V1beta1ImageVersionStatusAtProvider
     [JsonPropertyName("aliases")]
     public IList<string>? Aliases { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Image Version.</summary>
+    /// <summary>ARN assigned by AWS to this Image Version.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -684,7 +684,7 @@ public partial class V1beta1ImageVersionStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Image Version.</summary>
+    /// <summary>ARN assigned by AWS to this Image Version.</summary>
     [JsonPropertyName("imageArn")]
     public string? ImageArn { get; set; }
 

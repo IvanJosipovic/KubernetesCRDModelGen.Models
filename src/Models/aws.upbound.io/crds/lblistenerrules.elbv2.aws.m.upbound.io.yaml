@@ -412,7 +412,7 @@ spec:
                               items:
                                 properties:
                                   arn:
-                                    description: The Amazon Resource Name (ARN) of the target group.
+                                    description: ARN of the target group.
                                     type: string
                                   arnRef:
                                     description: Reference to a LBTargetGroup in elbv2 to populate arn.
@@ -513,7 +513,7 @@ spec:
                                     description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
                                     type: string
                                   values:
-                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                                     items:
                                       type: string
                                     type: array
@@ -661,7 +661,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -680,7 +680,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -690,7 +690,7 @@ spec:
                           description: Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
                           properties:
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -706,7 +706,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -725,10 +725,13 @@ spec:
                             type: object
                           type: array
                         sourceIp:
-                          description: Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
+                          description: Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.
                           properties:
+                            ipAddressType:
+                              description: IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.
+                              type: string
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1242,7 +1245,7 @@ spec:
                               items:
                                 properties:
                                   arn:
-                                    description: The Amazon Resource Name (ARN) of the target group.
+                                    description: ARN of the target group.
                                     type: string
                                   arnRef:
                                     description: Reference to a LBTargetGroup in elbv2 to populate arn.
@@ -1343,7 +1346,7 @@ spec:
                                     description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
                                     type: string
                                   values:
-                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                                     items:
                                       type: string
                                     type: array
@@ -1491,7 +1494,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -1510,7 +1513,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1520,7 +1523,7 @@ spec:
                           description: Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
                           properties:
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1536,7 +1539,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1555,10 +1558,13 @@ spec:
                             type: object
                           type: array
                         sourceIp:
-                          description: Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
+                          description: Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.
                           properties:
+                            ipAddressType:
+                              description: IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.
+                              type: string
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1869,7 +1875,7 @@ spec:
                               items:
                                 properties:
                                   arn:
-                                    description: The Amazon Resource Name (ARN) of the target group.
+                                    description: ARN of the target group.
                                     type: string
                                   weight:
                                     description: The weight. The range is 0 to 999.
@@ -1891,7 +1897,7 @@ spec:
                                     description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
                                     type: string
                                   values:
-                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                                     items:
                                       type: string
                                     type: array
@@ -1963,7 +1969,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -1982,7 +1988,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -1992,7 +1998,7 @@ spec:
                           description: Contains a single values item which is a list of HTTP request methods or verbs to match. Maximum size is 40 characters. Only allowed characters are A-Z, hyphen (-) and underscore (_). Comparison is case sensitive. Wildcards are not supported. Only one needs to match for the condition to be satisfied. AWS recommends that GET and HEAD requests are routed in the same way because the response to a HEAD request may be cached.
                           properties:
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -2008,7 +2014,7 @@ spec:
                               type: array
                               x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array
@@ -2027,10 +2033,13 @@ spec:
                             type: object
                           type: array
                         sourceIp:
-                          description: Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
+                          description: Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.
                           properties:
+                            ipAddressType:
+                              description: IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.
+                              type: string
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.
                               items:
                                 type: string
                               type: array

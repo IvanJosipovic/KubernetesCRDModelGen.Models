@@ -289,7 +289,7 @@ public partial class V1beta1AMISpecForProvider
     [JsonPropertyName("architecture")]
     public string? Architecture { get; set; }
 
-    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the EC2 User Guide.</summary>
     [JsonPropertyName("bootMode")]
     public string? BootMode { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta1AMISpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the EC2 User Guide.</summary>
     [JsonPropertyName("tpmSupport")]
     public string? TpmSupport { get; set; }
 
@@ -633,7 +633,7 @@ public partial class V1beta1AMISpecInitProvider
     [JsonPropertyName("architecture")]
     public string? Architecture { get; set; }
 
-    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the EC2 User Guide.</summary>
     [JsonPropertyName("bootMode")]
     public string? BootMode { get; set; }
 
@@ -707,7 +707,7 @@ public partial class V1beta1AMISpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the EC2 User Guide.</summary>
     [JsonPropertyName("tpmSupport")]
     public string? TpmSupport { get; set; }
 
@@ -990,7 +990,7 @@ public partial class V1beta1AMIStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>Boot mode of the AMI. For more information, see Boot modes in the EC2 User Guide.</summary>
     [JsonPropertyName("bootMode")]
     public string? BootMode { get; set; }
 
@@ -1118,7 +1118,7 @@ public partial class V1beta1AMIStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.</summary>
+    /// <summary>If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the EC2 User Guide.</summary>
     [JsonPropertyName("tpmSupport")]
     public string? TpmSupport { get; set; }
 

@@ -206,7 +206,7 @@ public partial class V1beta1TagSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Transfer Family resource to tag.</summary>
+    /// <summary>ARN of the Transfer Family resource to tag.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -398,7 +398,7 @@ public partial class V1beta1TagSpecInitProvider
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Transfer Family resource to tag.</summary>
+    /// <summary>ARN of the Transfer Family resource to tag.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -541,7 +541,7 @@ public partial class V1beta1TagStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Transfer Family resource to tag.</summary>
+    /// <summary>ARN of the Transfer Family resource to tag.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 

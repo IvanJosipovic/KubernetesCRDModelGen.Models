@@ -470,7 +470,7 @@ public partial class V1beta1DomainNameSpecForProvider
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
+    /// <summary>TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta1DomainNameSpecInitProvider
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
+    /// <summary>TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 
@@ -1157,7 +1157,7 @@ public partial class V1beta1DomainNameStatusAtProvider
     [JsonPropertyName("routingMode")]
     public string? RoutingMode { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
+    /// <summary>TLS version + cipher suite for this DomainName. Must be configured to perform drift detection. For a list of valid security policies, see DomainName in the Amazon API Gateway API Reference.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 

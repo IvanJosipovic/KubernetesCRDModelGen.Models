@@ -460,7 +460,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -792,7 +792,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -1744,7 +1744,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationConfig
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -2267,7 +2267,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfig
     [JsonPropertyName("defineAuthChallengeSelector")]
     public V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelector? DefineAuthChallengeSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name of Key Management Service Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
+    /// <summary>ARN of KMS Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -3300,7 +3300,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -3632,7 +3632,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -4584,7 +4584,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationConfig
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -5107,7 +5107,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfig
     [JsonPropertyName("defineAuthChallengeSelector")]
     public V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelector? DefineAuthChallengeSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name of Key Management Service Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
+    /// <summary>ARN of KMS Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -5942,7 +5942,7 @@ public partial class V1beta1UserPoolStatusAtProviderEmailMfaConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -5956,7 +5956,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSende
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -5970,7 +5970,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigPreTokenGenerationConfig
 {
-    /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
+    /// <summary>Lambda ARN of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -6004,7 +6004,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfig
     [JsonPropertyName("defineAuthChallenge")]
     public string? DefineAuthChallenge { get; set; }
 
-    /// <summary>The Amazon Resource Name of Key Management Service Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
+    /// <summary>ARN of KMS Customer master keys. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to CustomEmailSender and CustomSMSSender.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

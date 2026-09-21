@@ -211,7 +211,7 @@ public partial class V1beta2StreamSpecForProviderKinesisConfiguration
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the Kinesis Data Streams resource.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -553,7 +553,7 @@ public partial class V1beta2StreamSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -730,7 +730,7 @@ public partial class V1beta2StreamSpecInitProviderKinesisConfiguration
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the Kinesis Data Streams resource.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -1077,7 +1077,7 @@ public partial class V1beta2StreamSpecInitProvider
     [JsonPropertyName("ledgerNameSelector")]
     public V1beta2StreamSpecInitProviderLedgerNameSelector? LedgerNameSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1290,7 +1290,7 @@ public partial class V1beta2StreamStatusAtProviderKinesisConfiguration
     [JsonPropertyName("aggregationEnabled")]
     public bool? AggregationEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the Kinesis Data Streams resource.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 }
@@ -1330,7 +1330,7 @@ public partial class V1beta2StreamStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
+    /// <summary>ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

@@ -1253,7 +1253,7 @@ spec:
                     description: Configuration block for a data location resource. Detailed below.
                     properties:
                       arn:
-                        description: Amazon Resource Name (ARN) that uniquely identifies the data location resource.
+                        description: ARN that uniquely identifies the data location resource.
                         type: string
                       arnRef:
                         description: Reference to a Resource in lakeformation to populate arn.
@@ -1635,7 +1635,7 @@ spec:
                     description: Configuration block for a data location resource. Detailed below.
                     properties:
                       arn:
-                        description: Amazon Resource Name (ARN) that uniquely identifies the data location resource.
+                        description: ARN that uniquely identifies the data location resource.
                         type: string
                       arnRef:
                         description: Reference to a Resource in lakeformation to populate arn.
@@ -2093,7 +2093,7 @@ spec:
                     description: Configuration block for a data location resource. Detailed below.
                     properties:
                       arn:
-                        description: Amazon Resource Name (ARN) that uniquely identifies the data location resource.
+                        description: ARN that uniquely identifies the data location resource.
                         type: string
                       catalogId:
                         description: Identifier for the Data Catalog where the location is registered with Lake Formation. By default, it is the account ID of the caller.

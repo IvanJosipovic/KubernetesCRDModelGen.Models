@@ -40,15 +40,15 @@ public partial class V1beta1ReceiptRuleList : IKubernetesObject<V1ListMeta>, IIt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderAddHeaderAction
 {
-    /// <summary>The name of the header to add</summary>
+    /// <summary>Name of the header to add.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 
-    /// <summary>The value of the header to add</summary>
+    /// <summary>Value of the header to add.</summary>
     [JsonPropertyName("headerValue")]
     public string? HeaderValue { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 }
@@ -57,27 +57,27 @@ public partial class V1beta1ReceiptRuleSpecForProviderAddHeaderAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderBounceAction
 {
-    /// <summary>The message to send</summary>
+    /// <summary>Message to send.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The email address of the sender</summary>
+    /// <summary>Email address of the sender.</summary>
     [JsonPropertyName("sender")]
     public string? Sender { get; set; }
 
-    /// <summary>The RFC 5321 SMTP reply code</summary>
+    /// <summary>RFC 5321 SMTP reply code.</summary>
     [JsonPropertyName("smtpReplyCode")]
     public string? SmtpReplyCode { get; set; }
 
-    /// <summary>The RFC 3463 SMTP enhanced status code</summary>
+    /// <summary>RFC 3463 SMTP enhanced status code.</summary>
     [JsonPropertyName("statusCode")]
     public string? StatusCode { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -86,19 +86,19 @@ public partial class V1beta1ReceiptRuleSpecForProviderBounceAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderLambdaAction
 {
-    /// <summary>The ARN of the Lambda function to invoke</summary>
+    /// <summary>ARN of the Lambda function to invoke.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
-    /// <summary>Event or RequestResponse</summary>
+    /// <summary>Event or RequestResponse.</summary>
     [JsonPropertyName("invocationType")]
     public string? InvocationType { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -107,27 +107,27 @@ public partial class V1beta1ReceiptRuleSpecForProviderLambdaAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderS3Action
 {
-    /// <summary>The name of the S3 bucket</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic</summary>
+    /// <summary>ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
-    /// <summary>The ARN of the KMS key</summary>
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The key prefix of the S3 bucket</summary>
+    /// <summary>Key prefix of the S3 bucket.</summary>
     [JsonPropertyName("objectKeyPrefix")]
     public string? ObjectKeyPrefix { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -136,15 +136,15 @@ public partial class V1beta1ReceiptRuleSpecForProviderS3Action
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderSnsAction
 {
-    /// <summary>The encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
+    /// <summary>Encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -153,15 +153,15 @@ public partial class V1beta1ReceiptRuleSpecForProviderSnsAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderStopAction
 {
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The scope to apply. The only acceptable value is RuleSet.</summary>
+    /// <summary>Scope to apply. The only acceptable value is RuleSet.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -170,15 +170,15 @@ public partial class V1beta1ReceiptRuleSpecForProviderStopAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProviderWorkmailAction
 {
-    /// <summary>The ARN of the WorkMail organization</summary>
+    /// <summary>ARN of the WorkMail organization.</summary>
     [JsonPropertyName("organizationArn")]
     public string? OrganizationArn { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -187,31 +187,31 @@ public partial class V1beta1ReceiptRuleSpecForProviderWorkmailAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecForProvider
 {
-    /// <summary>A list of Add Header Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for adding a header to received emails. Detailed below.</summary>
     [JsonPropertyName("addHeaderAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderAddHeaderAction>? AddHeaderAction { get; set; }
 
-    /// <summary>The name of the rule to place this rule after</summary>
+    /// <summary>Name of the rule to place this rule after.</summary>
     [JsonPropertyName("after")]
     public string? After { get; set; }
 
-    /// <summary>A list of Bounce Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for rejecting received emails. Detailed below.</summary>
     [JsonPropertyName("bounceAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderBounceAction>? BounceAction { get; set; }
 
-    /// <summary>If true, the rule will be enabled</summary>
+    /// <summary>If true, the rule will be enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>A list of Lambda Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling an AWS Lambda function. Detailed below.</summary>
     [JsonPropertyName("lambdaAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderLambdaAction>? LambdaAction { get; set; }
 
-    /// <summary>The name of the rule</summary>
+    /// <summary>Name of the rule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of email addresses</summary>
+    /// <summary>List of email addresses.</summary>
     [JsonPropertyName("recipients")]
     public IList<string>? Recipients { get; set; }
 
@@ -222,31 +222,31 @@ public partial class V1beta1ReceiptRuleSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set.</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 
-    /// <summary>A list of S3 Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for storing received emails in an S3 bucket. Detailed below.</summary>
     [JsonPropertyName("s3Action")]
     public IList<V1beta1ReceiptRuleSpecForProviderS3Action>? S3Action { get; set; }
 
-    /// <summary>If true, incoming emails will be scanned for spam and viruses</summary>
+    /// <summary>If true, incoming emails will be scanned for spam and viruses.</summary>
     [JsonPropertyName("scanEnabled")]
     public bool? ScanEnabled { get; set; }
 
-    /// <summary>A list of SNS Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for publishing to an SNS topic. Detailed below.</summary>
     [JsonPropertyName("snsAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderSnsAction>? SnsAction { get; set; }
 
-    /// <summary>A list of Stop Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for terminating the evaluation of the receipt rule set. Detailed below.</summary>
     [JsonPropertyName("stopAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderStopAction>? StopAction { get; set; }
 
-    /// <summary>Require or Optional</summary>
+    /// <summary>Require or Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 
-    /// <summary>A list of WorkMail Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling Amazon WorkMail. Detailed below.</summary>
     [JsonPropertyName("workmailAction")]
     public IList<V1beta1ReceiptRuleSpecForProviderWorkmailAction>? WorkmailAction { get; set; }
 }
@@ -255,15 +255,15 @@ public partial class V1beta1ReceiptRuleSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderAddHeaderAction
 {
-    /// <summary>The name of the header to add</summary>
+    /// <summary>Name of the header to add.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 
-    /// <summary>The value of the header to add</summary>
+    /// <summary>Value of the header to add.</summary>
     [JsonPropertyName("headerValue")]
     public string? HeaderValue { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 }
@@ -272,27 +272,27 @@ public partial class V1beta1ReceiptRuleSpecInitProviderAddHeaderAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderBounceAction
 {
-    /// <summary>The message to send</summary>
+    /// <summary>Message to send.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The email address of the sender</summary>
+    /// <summary>Email address of the sender.</summary>
     [JsonPropertyName("sender")]
     public string? Sender { get; set; }
 
-    /// <summary>The RFC 5321 SMTP reply code</summary>
+    /// <summary>RFC 5321 SMTP reply code.</summary>
     [JsonPropertyName("smtpReplyCode")]
     public string? SmtpReplyCode { get; set; }
 
-    /// <summary>The RFC 3463 SMTP enhanced status code</summary>
+    /// <summary>RFC 3463 SMTP enhanced status code.</summary>
     [JsonPropertyName("statusCode")]
     public string? StatusCode { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -301,19 +301,19 @@ public partial class V1beta1ReceiptRuleSpecInitProviderBounceAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderLambdaAction
 {
-    /// <summary>The ARN of the Lambda function to invoke</summary>
+    /// <summary>ARN of the Lambda function to invoke.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
-    /// <summary>Event or RequestResponse</summary>
+    /// <summary>Event or RequestResponse.</summary>
     [JsonPropertyName("invocationType")]
     public string? InvocationType { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -322,27 +322,27 @@ public partial class V1beta1ReceiptRuleSpecInitProviderLambdaAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderS3Action
 {
-    /// <summary>The name of the S3 bucket</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic</summary>
+    /// <summary>ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
-    /// <summary>The ARN of the KMS key</summary>
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The key prefix of the S3 bucket</summary>
+    /// <summary>Key prefix of the S3 bucket.</summary>
     [JsonPropertyName("objectKeyPrefix")]
     public string? ObjectKeyPrefix { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -351,15 +351,15 @@ public partial class V1beta1ReceiptRuleSpecInitProviderS3Action
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderSnsAction
 {
-    /// <summary>The encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
+    /// <summary>Encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -368,15 +368,15 @@ public partial class V1beta1ReceiptRuleSpecInitProviderSnsAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderStopAction
 {
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The scope to apply. The only acceptable value is RuleSet.</summary>
+    /// <summary>Scope to apply. The only acceptable value is RuleSet.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -385,15 +385,15 @@ public partial class V1beta1ReceiptRuleSpecInitProviderStopAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProviderWorkmailAction
 {
-    /// <summary>The ARN of the WorkMail organization</summary>
+    /// <summary>ARN of the WorkMail organization.</summary>
     [JsonPropertyName("organizationArn")]
     public string? OrganizationArn { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -414,59 +414,59 @@ public partial class V1beta1ReceiptRuleSpecInitProviderWorkmailAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleSpecInitProvider
 {
-    /// <summary>A list of Add Header Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for adding a header to received emails. Detailed below.</summary>
     [JsonPropertyName("addHeaderAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderAddHeaderAction>? AddHeaderAction { get; set; }
 
-    /// <summary>The name of the rule to place this rule after</summary>
+    /// <summary>Name of the rule to place this rule after.</summary>
     [JsonPropertyName("after")]
     public string? After { get; set; }
 
-    /// <summary>A list of Bounce Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for rejecting received emails. Detailed below.</summary>
     [JsonPropertyName("bounceAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderBounceAction>? BounceAction { get; set; }
 
-    /// <summary>If true, the rule will be enabled</summary>
+    /// <summary>If true, the rule will be enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>A list of Lambda Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling an AWS Lambda function. Detailed below.</summary>
     [JsonPropertyName("lambdaAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderLambdaAction>? LambdaAction { get; set; }
 
-    /// <summary>The name of the rule</summary>
+    /// <summary>Name of the rule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of email addresses</summary>
+    /// <summary>List of email addresses.</summary>
     [JsonPropertyName("recipients")]
     public IList<string>? Recipients { get; set; }
 
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set.</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 
-    /// <summary>A list of S3 Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for storing received emails in an S3 bucket. Detailed below.</summary>
     [JsonPropertyName("s3Action")]
     public IList<V1beta1ReceiptRuleSpecInitProviderS3Action>? S3Action { get; set; }
 
-    /// <summary>If true, incoming emails will be scanned for spam and viruses</summary>
+    /// <summary>If true, incoming emails will be scanned for spam and viruses.</summary>
     [JsonPropertyName("scanEnabled")]
     public bool? ScanEnabled { get; set; }
 
-    /// <summary>A list of SNS Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for publishing to an SNS topic. Detailed below.</summary>
     [JsonPropertyName("snsAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderSnsAction>? SnsAction { get; set; }
 
-    /// <summary>A list of Stop Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for terminating the evaluation of the receipt rule set. Detailed below.</summary>
     [JsonPropertyName("stopAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderStopAction>? StopAction { get; set; }
 
-    /// <summary>Require or Optional</summary>
+    /// <summary>Require or Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 
-    /// <summary>A list of WorkMail Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling Amazon WorkMail. Detailed below.</summary>
     [JsonPropertyName("workmailAction")]
     public IList<V1beta1ReceiptRuleSpecInitProviderWorkmailAction>? WorkmailAction { get; set; }
 }
@@ -582,15 +582,15 @@ public partial class V1beta1ReceiptRuleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderAddHeaderAction
 {
-    /// <summary>The name of the header to add</summary>
+    /// <summary>Name of the header to add.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 
-    /// <summary>The value of the header to add</summary>
+    /// <summary>Value of the header to add.</summary>
     [JsonPropertyName("headerValue")]
     public string? HeaderValue { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 }
@@ -599,27 +599,27 @@ public partial class V1beta1ReceiptRuleStatusAtProviderAddHeaderAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderBounceAction
 {
-    /// <summary>The message to send</summary>
+    /// <summary>Message to send.</summary>
     [JsonPropertyName("message")]
     public string? Message { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The email address of the sender</summary>
+    /// <summary>Email address of the sender.</summary>
     [JsonPropertyName("sender")]
     public string? Sender { get; set; }
 
-    /// <summary>The RFC 5321 SMTP reply code</summary>
+    /// <summary>RFC 5321 SMTP reply code.</summary>
     [JsonPropertyName("smtpReplyCode")]
     public string? SmtpReplyCode { get; set; }
 
-    /// <summary>The RFC 3463 SMTP enhanced status code</summary>
+    /// <summary>RFC 3463 SMTP enhanced status code.</summary>
     [JsonPropertyName("statusCode")]
     public string? StatusCode { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -628,19 +628,19 @@ public partial class V1beta1ReceiptRuleStatusAtProviderBounceAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderLambdaAction
 {
-    /// <summary>The ARN of the Lambda function to invoke</summary>
+    /// <summary>ARN of the Lambda function to invoke.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
-    /// <summary>Event or RequestResponse</summary>
+    /// <summary>Event or RequestResponse.</summary>
     [JsonPropertyName("invocationType")]
     public string? InvocationType { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -649,27 +649,27 @@ public partial class V1beta1ReceiptRuleStatusAtProviderLambdaAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderS3Action
 {
-    /// <summary>The name of the S3 bucket</summary>
+    /// <summary>Name of the S3 bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic</summary>
+    /// <summary>ARN of the IAM role to be used by Amazon Simple Email Service while writing to the Amazon S3 bucket, optionally encrypting your mail via the provided customer managed key, and publishing to the Amazon SNS topic.</summary>
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
-    /// <summary>The ARN of the KMS key</summary>
+    /// <summary>ARN of the KMS key.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The key prefix of the S3 bucket</summary>
+    /// <summary>Key prefix of the S3 bucket.</summary>
     [JsonPropertyName("objectKeyPrefix")]
     public string? ObjectKeyPrefix { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -678,15 +678,15 @@ public partial class V1beta1ReceiptRuleStatusAtProviderS3Action
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderSnsAction
 {
-    /// <summary>The encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
+    /// <summary>Encoding to use for the email within the Amazon SNS notification. Default value is UTF-8.</summary>
     [JsonPropertyName("encoding")]
     public string? Encoding { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -695,15 +695,15 @@ public partial class V1beta1ReceiptRuleStatusAtProviderSnsAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderStopAction
 {
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The scope to apply. The only acceptable value is RuleSet.</summary>
+    /// <summary>Scope to apply. The only acceptable value is RuleSet.</summary>
     [JsonPropertyName("scope")]
     public string? Scope { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -712,15 +712,15 @@ public partial class V1beta1ReceiptRuleStatusAtProviderStopAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProviderWorkmailAction
 {
-    /// <summary>The ARN of the WorkMail organization</summary>
+    /// <summary>ARN of the WorkMail organization.</summary>
     [JsonPropertyName("organizationArn")]
     public string? OrganizationArn { get; set; }
 
-    /// <summary>The position of the action in the receipt rule</summary>
+    /// <summary>Position of the action in the receipt rule.</summary>
     [JsonPropertyName("position")]
     public double? Position { get; set; }
 
-    /// <summary>The ARN of an SNS topic to notify</summary>
+    /// <summary>ARN of an SNS topic to notify.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -729,39 +729,39 @@ public partial class V1beta1ReceiptRuleStatusAtProviderWorkmailAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptRuleStatusAtProvider
 {
-    /// <summary>A list of Add Header Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for adding a header to received emails. Detailed below.</summary>
     [JsonPropertyName("addHeaderAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderAddHeaderAction>? AddHeaderAction { get; set; }
 
-    /// <summary>The name of the rule to place this rule after</summary>
+    /// <summary>Name of the rule to place this rule after.</summary>
     [JsonPropertyName("after")]
     public string? After { get; set; }
 
-    /// <summary>The SES receipt rule ARN.</summary>
+    /// <summary>SES receipt rule ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A list of Bounce Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for rejecting received emails. Detailed below.</summary>
     [JsonPropertyName("bounceAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderBounceAction>? BounceAction { get; set; }
 
-    /// <summary>If true, the rule will be enabled</summary>
+    /// <summary>If true, the rule will be enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The SES receipt rule name.</summary>
+    /// <summary>SES receipt rule name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A list of Lambda Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling an AWS Lambda function. Detailed below.</summary>
     [JsonPropertyName("lambdaAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderLambdaAction>? LambdaAction { get; set; }
 
-    /// <summary>The name of the rule</summary>
+    /// <summary>Name of the rule.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A list of email addresses</summary>
+    /// <summary>List of email addresses.</summary>
     [JsonPropertyName("recipients")]
     public IList<string>? Recipients { get; set; }
 
@@ -772,31 +772,31 @@ public partial class V1beta1ReceiptRuleStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The name of the rule set</summary>
+    /// <summary>Name of the rule set.</summary>
     [JsonPropertyName("ruleSetName")]
     public string? RuleSetName { get; set; }
 
-    /// <summary>A list of S3 Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for storing received emails in an S3 bucket. Detailed below.</summary>
     [JsonPropertyName("s3Action")]
     public IList<V1beta1ReceiptRuleStatusAtProviderS3Action>? S3Action { get; set; }
 
-    /// <summary>If true, incoming emails will be scanned for spam and viruses</summary>
+    /// <summary>If true, incoming emails will be scanned for spam and viruses.</summary>
     [JsonPropertyName("scanEnabled")]
     public bool? ScanEnabled { get; set; }
 
-    /// <summary>A list of SNS Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for publishing to an SNS topic. Detailed below.</summary>
     [JsonPropertyName("snsAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderSnsAction>? SnsAction { get; set; }
 
-    /// <summary>A list of Stop Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for terminating the evaluation of the receipt rule set. Detailed below.</summary>
     [JsonPropertyName("stopAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderStopAction>? StopAction { get; set; }
 
-    /// <summary>Require or Optional</summary>
+    /// <summary>Require or Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 
-    /// <summary>A list of WorkMail Action blocks. Documented below.</summary>
+    /// <summary>Configuration block for calling Amazon WorkMail. Detailed below.</summary>
     [JsonPropertyName("workmailAction")]
     public IList<V1beta1ReceiptRuleStatusAtProviderWorkmailAction>? WorkmailAction { get; set; }
 }

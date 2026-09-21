@@ -1940,7 +1940,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:
@@ -2112,7 +2112,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:
@@ -2461,7 +2461,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:
@@ -2628,7 +2628,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:
@@ -2915,7 +2915,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:
@@ -3014,7 +3014,7 @@ spec:
                               description: Capacity reservation preference. Valid value is capacity-reservations-only. When set to capacity-reservations-only, SageMaker AI launches instances only into an ML capacity reservation; if no capacity is available, the instances fail to launch.
                               type: string
                             mlReservationArn:
-                              description: The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
+                              description: ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.
                               type: string
                           type: object
                         containerStartupHealthCheckTimeoutInSeconds:

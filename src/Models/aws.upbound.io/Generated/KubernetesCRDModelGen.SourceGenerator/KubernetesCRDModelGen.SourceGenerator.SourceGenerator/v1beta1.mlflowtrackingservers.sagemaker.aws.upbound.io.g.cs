@@ -225,7 +225,7 @@ public partial class V1beta1MlflowTrackingServerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
+    /// <summary>ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -425,7 +425,7 @@ public partial class V1beta1MlflowTrackingServerSpecInitProvider
     [JsonPropertyName("mlflowVersion")]
     public string? MlflowVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
+    /// <summary>ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1MlflowTrackingServerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MlflowTrackingServerStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this MLFlow Tracking Server.</summary>
+    /// <summary>ARN assigned by AWS to this MLFlow Tracking Server.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -664,7 +664,7 @@ public partial class V1beta1MlflowTrackingServerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
+    /// <summary>ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

@@ -299,7 +299,7 @@ public partial class V1beta1WorkerConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerConfigurationStatusAtProvider
 {
-    /// <summary>the Amazon Resource Name (ARN) of the worker configuration.</summary>
+    /// <summary>the ARN of the worker configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

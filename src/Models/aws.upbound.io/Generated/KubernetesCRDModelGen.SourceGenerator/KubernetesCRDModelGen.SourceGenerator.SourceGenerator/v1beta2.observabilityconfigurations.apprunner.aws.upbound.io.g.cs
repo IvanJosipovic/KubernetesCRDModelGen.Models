@@ -55,7 +55,7 @@ public enum V1beta2ObservabilityConfigurationSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObservabilityConfigurationSpecForProviderTraceConfiguration
@@ -84,12 +84,12 @@ public partial class V1beta2ObservabilityConfigurationSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
     [JsonPropertyName("traceConfiguration")]
     public V1beta2ObservabilityConfigurationSpecForProviderTraceConfiguration? TraceConfiguration { get; set; }
 }
 
-/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObservabilityConfigurationSpecInitProviderTraceConfiguration
@@ -123,7 +123,7 @@ public partial class V1beta2ObservabilityConfigurationSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
     [JsonPropertyName("traceConfiguration")]
     public V1beta2ObservabilityConfigurationSpecInitProviderTraceConfiguration? TraceConfiguration { get; set; }
 }
@@ -311,7 +311,7 @@ public partial class V1beta2ObservabilityConfigurationSpec
     public V1beta2ObservabilityConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+/// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObservabilityConfigurationStatusAtProviderTraceConfiguration
@@ -340,7 +340,7 @@ public partial class V1beta2ObservabilityConfigurationStatusAtProvider
     [JsonPropertyName("observabilityConfigurationName")]
     public string? ObservabilityConfigurationName { get; set; }
 
-    /// <summary>The revision of this observability configuration.</summary>
+    /// <summary>Revision of this observability configuration.</summary>
     [JsonPropertyName("observabilityConfigurationRevision")]
     public double? ObservabilityConfigurationRevision { get; set; }
 
@@ -363,7 +363,7 @@ public partial class V1beta2ObservabilityConfigurationStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See Trace Configuration below for more details.</summary>
+    /// <summary>Configuration of the tracing feature within this observability configuration. If you don&apos;t specify it, App Runner doesn&apos;t enable tracing. See trace_configuration Block below for more details.</summary>
     [JsonPropertyName("traceConfiguration")]
     public V1beta2ObservabilityConfigurationStatusAtProviderTraceConfiguration? TraceConfiguration { get; set; }
 }

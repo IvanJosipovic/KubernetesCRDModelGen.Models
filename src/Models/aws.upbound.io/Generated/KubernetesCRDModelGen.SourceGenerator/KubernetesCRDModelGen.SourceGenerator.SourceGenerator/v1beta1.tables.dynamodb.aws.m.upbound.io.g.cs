@@ -81,11 +81,11 @@ public partial class V1beta1TableSpecForProviderGlobalSecondaryIndexOnDemandThro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderGlobalSecondaryIndexWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -684,11 +684,11 @@ public partial class V1beta1TableSpecForProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -862,11 +862,11 @@ public partial class V1beta1TableSpecInitProviderGlobalSecondaryIndexOnDemandThr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderGlobalSecondaryIndexWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -1465,11 +1465,11 @@ public partial class V1beta1TableSpecInitProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -1755,11 +1755,11 @@ public partial class V1beta1TableStatusAtProviderGlobalSecondaryIndexOnDemandThr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderGlobalSecondaryIndexWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -2056,11 +2056,11 @@ public partial class V1beta1TableStatusAtProviderTtl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderWarmThroughput
 {
-    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).</summary>
+    /// <summary>Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).</summary>
     [JsonPropertyName("readUnitsPerSecond")]
     public double? ReadUnitsPerSecond { get; set; }
 
-    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).</summary>
+    /// <summary>Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).</summary>
     [JsonPropertyName("writeUnitsPerSecond")]
     public double? WriteUnitsPerSecond { get; set; }
 }
@@ -2097,7 +2097,6 @@ public partial class V1beta1TableStatusAtProvider
     [JsonPropertyName("hashKey")]
     public string? HashKey { get; set; }
 
-    /// <summary>Name of the table</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

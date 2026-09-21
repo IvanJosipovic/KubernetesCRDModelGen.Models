@@ -210,7 +210,7 @@ public partial class V1beta1DomainSpecForProvider
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
+    /// <summary>Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
     [JsonPropertyName("encryptionKey")]
     public string? EncryptionKey { get; set; }
 
@@ -401,7 +401,7 @@ public partial class V1beta1DomainSpecInitProvider
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
+    /// <summary>Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
     [JsonPropertyName("encryptionKey")]
     public string? EncryptionKey { get; set; }
 
@@ -621,7 +621,7 @@ public partial class V1beta1DomainStatusAtProvider
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
+    /// <summary>Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.</summary>
     [JsonPropertyName("encryptionKey")]
     public string? EncryptionKey { get; set; }
 

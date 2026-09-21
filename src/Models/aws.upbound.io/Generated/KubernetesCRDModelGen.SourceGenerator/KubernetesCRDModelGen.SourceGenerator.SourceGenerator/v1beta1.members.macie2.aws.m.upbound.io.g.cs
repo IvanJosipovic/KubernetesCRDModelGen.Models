@@ -240,7 +240,7 @@ public partial class V1beta1MemberStatusAtProvider
     [JsonPropertyName("administratorAccountId")]
     public string? AdministratorAccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the account.</summary>
+    /// <summary>ARN of the account.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

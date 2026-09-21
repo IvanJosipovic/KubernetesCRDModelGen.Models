@@ -76,11 +76,11 @@ public partial class V1beta1CapacityReservationSpecForProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the Outpost on which to create the Capacity Reservation.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster placement group in which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the cluster placement group in which to create the Capacity Reservation.</summary>
     [JsonPropertyName("placementGroupArn")]
     public string? PlacementGroupArn { get; set; }
 
@@ -152,11 +152,11 @@ public partial class V1beta1CapacityReservationSpecInitProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the Outpost on which to create the Capacity Reservation.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster placement group in which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the cluster placement group in which to create the Capacity Reservation.</summary>
     [JsonPropertyName("placementGroupArn")]
     public string? PlacementGroupArn { get; set; }
 
@@ -324,7 +324,7 @@ public partial class V1beta1CapacityReservationStatusAtProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the Outpost on which to create the Capacity Reservation.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -332,7 +332,7 @@ public partial class V1beta1CapacityReservationStatusAtProvider
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the cluster placement group in which to create the Capacity Reservation.</summary>
+    /// <summary>ARN of the cluster placement group in which to create the Capacity Reservation.</summary>
     [JsonPropertyName("placementGroupArn")]
     public string? PlacementGroupArn { get; set; }
 

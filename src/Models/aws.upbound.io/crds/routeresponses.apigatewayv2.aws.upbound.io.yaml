@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   modelSelectionExpression:
-                    description: The model selection expression for the route response.
+                    description: Model selection expression for the route response.
                     type: string
                   region:
                     description: |-
@@ -333,7 +333,7 @@ spec:
                         type: object
                     type: object
                   modelSelectionExpression:
-                    description: The model selection expression for the route response.
+                    description: Model selection expression for the route response.
                     type: string
                   responseModels:
                     additionalProperties:
@@ -522,7 +522,7 @@ spec:
                     description: Route response identifier.
                     type: string
                   modelSelectionExpression:
-                    description: The model selection expression for the route response.
+                    description: Model selection expression for the route response.
                     type: string
                   region:
                     description: |-

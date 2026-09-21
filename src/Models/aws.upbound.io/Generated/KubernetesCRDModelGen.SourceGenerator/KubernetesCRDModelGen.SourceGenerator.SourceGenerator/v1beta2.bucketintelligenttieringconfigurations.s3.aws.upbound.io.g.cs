@@ -202,7 +202,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecForProvider
     public V1beta2BucketIntelligentTieringConfigurationSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketIntelligentTieringConfigurationSpecForProviderFilter
@@ -211,7 +211,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecForProvider
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>All of these tags must exist in the object&apos;s tag set in order for the configuration to apply.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -245,7 +245,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecForProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketIntelligentTieringConfigurationSpecForProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketIntelligentTieringConfigurationSpecForProviderFilter? Filter { get; set; }
 
@@ -260,11 +260,11 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the status of the configuration. Valid values: Enabled, Disabled.</summary>
+    /// <summary>Status of the configuration. Valid values: Enabled, Disabled.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration (documented below).</summary>
+    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.</summary>
     [JsonPropertyName("tiering")]
     public IList<V1beta2BucketIntelligentTieringConfigurationSpecForProviderTiering>? Tiering { get; set; }
 }
@@ -416,7 +416,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecInitProvide
     public V1beta2BucketIntelligentTieringConfigurationSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketIntelligentTieringConfigurationSpecInitProviderFilter
@@ -425,7 +425,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecInitProvide
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>All of these tags must exist in the object&apos;s tag set in order for the configuration to apply.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -471,7 +471,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecInitProvide
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketIntelligentTieringConfigurationSpecInitProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketIntelligentTieringConfigurationSpecInitProviderFilter? Filter { get; set; }
 
@@ -479,11 +479,11 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpecInitProvide
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies the status of the configuration. Valid values: Enabled, Disabled.</summary>
+    /// <summary>Status of the configuration. Valid values: Enabled, Disabled.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration (documented below).</summary>
+    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.</summary>
     [JsonPropertyName("tiering")]
     public IList<V1beta2BucketIntelligentTieringConfigurationSpecInitProviderTiering>? Tiering { get; set; }
 }
@@ -671,7 +671,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationSpec
     public V1beta2BucketIntelligentTieringConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketIntelligentTieringConfigurationStatusAtProviderFilter
@@ -680,7 +680,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationStatusAtProvide
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>All of these tags must exist in the object&apos;s tag set in order for the configuration to apply.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -706,7 +706,7 @@ public partial class V1beta2BucketIntelligentTieringConfigurationStatusAtProvide
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Bucket filter. The configuration only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketIntelligentTieringConfigurationStatusAtProviderFilter? Filter { get; set; }
 
@@ -724,11 +724,11 @@ public partial class V1beta2BucketIntelligentTieringConfigurationStatusAtProvide
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the status of the configuration. Valid values: Enabled, Disabled.</summary>
+    /// <summary>Status of the configuration. Valid values: Enabled, Disabled.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration (documented below).</summary>
+    /// <summary>S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.</summary>
     [JsonPropertyName("tiering")]
     public IList<V1beta2BucketIntelligentTieringConfigurationStatusAtProviderTiering>? Tiering { get; set; }
 }

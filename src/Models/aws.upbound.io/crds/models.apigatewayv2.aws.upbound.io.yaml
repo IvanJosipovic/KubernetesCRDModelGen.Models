@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   contentType:
-                    description: The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
+                    description: Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
                     type: string
                   description:
                     description: Description of the model. Must be between 1 and 128 characters in length.
@@ -257,7 +257,7 @@ spec:
                         type: object
                     type: object
                   contentType:
-                    description: The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
+                    description: Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
                     type: string
                   description:
                     description: Description of the model. Must be between 1 and 128 characters in length.
@@ -371,7 +371,7 @@ spec:
                     description: API identifier.
                     type: string
                   contentType:
-                    description: The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
+                    description: Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.
                     type: string
                   description:
                     description: Description of the model. Must be between 1 and 128 characters in length.

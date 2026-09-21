@@ -211,7 +211,7 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecForProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Set of object tags for filtering.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -388,12 +388,12 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecForProviderStorageCl
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Object prefix for filtering.</summary>
+    /// <summary>Prefix to append to exported analytics data.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+/// <summary>Destination for the exported analytics data (documented below).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationSpecForProviderStorageClassAnalysisDataExportDestination
@@ -408,7 +408,7 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecForProviderStorageCl
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationSpecForProviderStorageClassAnalysisDataExport
 {
-    /// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+    /// <summary>Destination for the exported analytics data (documented below).</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketAnalyticsConfigurationSpecForProviderStorageClassAnalysisDataExportDestination? Destination { get; set; }
 
@@ -619,7 +619,7 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecInitProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Set of object tags for filtering.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -796,12 +796,12 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecInitProviderStorageC
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Object prefix for filtering.</summary>
+    /// <summary>Prefix to append to exported analytics data.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+/// <summary>Destination for the exported analytics data (documented below).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationSpecInitProviderStorageClassAnalysisDataExportDestination
@@ -816,7 +816,7 @@ public partial class V1beta2BucketAnalyticsConfigurationSpecInitProviderStorageC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationSpecInitProviderStorageClassAnalysisDataExport
 {
-    /// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+    /// <summary>Destination for the exported analytics data (documented below).</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketAnalyticsConfigurationSpecInitProviderStorageClassAnalysisDataExportDestination? Destination { get; set; }
 
@@ -1068,7 +1068,7 @@ public partial class V1beta2BucketAnalyticsConfigurationStatusAtProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Set of object tags for filtering.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1090,12 +1090,12 @@ public partial class V1beta2BucketAnalyticsConfigurationStatusAtProviderStorageC
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Object prefix for filtering.</summary>
+    /// <summary>Prefix to append to exported analytics data.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+/// <summary>Destination for the exported analytics data (documented below).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationStatusAtProviderStorageClassAnalysisDataExportDestination
@@ -1110,7 +1110,7 @@ public partial class V1beta2BucketAnalyticsConfigurationStatusAtProviderStorageC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketAnalyticsConfigurationStatusAtProviderStorageClassAnalysisDataExport
 {
-    /// <summary>Specifies the destination for the exported analytics data (documented below).</summary>
+    /// <summary>Destination for the exported analytics data (documented below).</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketAnalyticsConfigurationStatusAtProviderStorageClassAnalysisDataExportDestination? Destination { get; set; }
 

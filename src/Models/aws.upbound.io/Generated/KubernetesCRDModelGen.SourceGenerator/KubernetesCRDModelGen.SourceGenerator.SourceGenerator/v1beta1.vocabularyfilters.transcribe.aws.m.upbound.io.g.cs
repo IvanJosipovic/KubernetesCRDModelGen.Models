@@ -40,7 +40,7 @@ public partial class V1beta1VocabularyFilterList : IKubernetesObject<V1ListMeta>
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VocabularyFilterSpecForProvider
 {
-    /// <summary>The language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
@@ -55,11 +55,11 @@ public partial class V1beta1VocabularyFilterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
     [JsonPropertyName("vocabularyFilterFileUri")]
     public string? VocabularyFilterFileUri { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
     [JsonPropertyName("words")]
     public IList<string>? Words { get; set; }
 }
@@ -80,7 +80,7 @@ public partial class V1beta1VocabularyFilterSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VocabularyFilterSpecInitProvider
 {
-    /// <summary>The language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
@@ -88,11 +88,11 @@ public partial class V1beta1VocabularyFilterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
     [JsonPropertyName("vocabularyFilterFileUri")]
     public string? VocabularyFilterFileUri { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
     [JsonPropertyName("words")]
     public IList<string>? Words { get; set; }
 }
@@ -220,7 +220,7 @@ public partial class V1beta1VocabularyFilterStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your vocabulary filter. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
@@ -238,11 +238,11 @@ public partial class V1beta1VocabularyFilterStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
+    /// <summary>Amazon S3 location (URI) of the text file that contains your custom VocabularyFilter. Conflicts with words argument.</summary>
     [JsonPropertyName("vocabularyFilterFileUri")]
     public string? VocabularyFilterFileUri { get; set; }
 
-    /// <summary>- A list of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
+    /// <summary>List of terms to include in the vocabulary. Conflicts with vocabulary_filter_file_uri argument.</summary>
     [JsonPropertyName("words")]
     public IList<string>? Words { get; set; }
 }

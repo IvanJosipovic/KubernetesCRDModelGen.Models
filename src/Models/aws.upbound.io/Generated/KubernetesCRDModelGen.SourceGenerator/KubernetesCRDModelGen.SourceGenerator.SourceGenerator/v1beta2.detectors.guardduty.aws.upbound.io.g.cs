@@ -676,7 +676,7 @@ public partial class V1beta2DetectorStatusAtProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the GuardDuty detector</summary>
+    /// <summary>ARN of the GuardDuty detector</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

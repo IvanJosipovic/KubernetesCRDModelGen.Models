@@ -512,13 +512,17 @@ public partial class V1beta1PodIdentityAssociationSpecForProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1PodIdentityAssociationSpecForProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS.</summary>
+    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS. Must be set to true when policy is specified.</summary>
     [JsonPropertyName("disableSessionTags")]
     public bool? DisableSessionTags { get; set; }
 
     /// <summary>The name of the Kubernetes namespace inside the cluster to create the association in. The service account and the pods that use the service account must be in this namespace.</summary>
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
+
+    /// <summary>An IAM policy in JSON format (as an escaped string) that applies additional restrictions to this Pod Identity association beyond the IAM policies attached to the IAM role. The effective permissions are the intersection of the role&apos;s policies and this policy, allowing you to enforce least privilege across multiple associations that share the same role. Requires disable_session_tags = true.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -527,7 +531,7 @@ public partial class V1beta1PodIdentityAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -547,7 +551,7 @@ public partial class V1beta1PodIdentityAssociationSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
+    /// <summary>ARN of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 
@@ -1029,7 +1033,7 @@ public partial class V1beta1PodIdentityAssociationSpecInitProvider
     [JsonPropertyName("clusterNameSelector")]
     public V1beta1PodIdentityAssociationSpecInitProviderClusterNameSelector? ClusterNameSelector { get; set; }
 
-    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS.</summary>
+    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS. Must be set to true when policy is specified.</summary>
     [JsonPropertyName("disableSessionTags")]
     public bool? DisableSessionTags { get; set; }
 
@@ -1037,7 +1041,11 @@ public partial class V1beta1PodIdentityAssociationSpecInitProvider
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>An IAM policy in JSON format (as an escaped string) that applies additional restrictions to this Pod Identity association beyond the IAM policies attached to the IAM role. The effective permissions are the intersection of the role&apos;s policies and this policy, allowing you to enforce least privilege across multiple associations that share the same role. Requires disable_session_tags = true.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1057,7 +1065,7 @@ public partial class V1beta1PodIdentityAssociationSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
+    /// <summary>ARN of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 
@@ -1257,7 +1265,7 @@ public partial class V1beta1PodIdentityAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PodIdentityAssociationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the association.</summary>
+    /// <summary>ARN of the association.</summary>
     [JsonPropertyName("associationArn")]
     public string? AssociationArn { get; set; }
 
@@ -1269,7 +1277,7 @@ public partial class V1beta1PodIdentityAssociationStatusAtProvider
     [JsonPropertyName("clusterName")]
     public string? ClusterName { get; set; }
 
-    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS.</summary>
+    /// <summary>Disable the tags that are automatically added to role session by Amazon EKS. Must be set to true when policy is specified.</summary>
     [JsonPropertyName("disableSessionTags")]
     public bool? DisableSessionTags { get; set; }
 
@@ -1284,6 +1292,10 @@ public partial class V1beta1PodIdentityAssociationStatusAtProvider
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
+    /// <summary>An IAM policy in JSON format (as an escaped string) that applies additional restrictions to this Pod Identity association beyond the IAM policies attached to the IAM role. The effective permissions are the intersection of the role&apos;s policies and this policy, allowing you to enforce least privilege across multiple associations that share the same role. Requires disable_session_tags = true.</summary>
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -1291,7 +1303,7 @@ public partial class V1beta1PodIdentityAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1307,7 +1319,7 @@ public partial class V1beta1PodIdentityAssociationStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
+    /// <summary>ARN of the IAM role to be chained to the the IAM role specified as role_arn.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 }

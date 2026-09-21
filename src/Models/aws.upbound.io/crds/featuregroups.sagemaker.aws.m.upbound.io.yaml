@@ -108,7 +108,7 @@ spec:
                         description: The Amazon Simple Storage (Amazon S3) location of OfflineStore. See S3 Storage Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                           resolvedOutputS3Uri:
                             description: The S3 path where offline records are written.
@@ -131,7 +131,7 @@ spec:
                         description: Security config for at-rest encryption of your OnlineStore. See Security Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                         type: object
                       storageType:
@@ -157,7 +157,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
+                    description: The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -320,7 +320,7 @@ spec:
                         description: The Amazon Simple Storage (Amazon S3) location of OfflineStore. See S3 Storage Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                           resolvedOutputS3Uri:
                             description: The S3 path where offline records are written.
@@ -343,7 +343,7 @@ spec:
                         description: Security config for at-rest encryption of your OnlineStore. See Security Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                         type: object
                       storageType:
@@ -364,7 +364,7 @@ spec:
                     description: The name of the Feature whose value uniquely identifies a Record defined in the Feature Store. Only the latest record per identifier value will be stored in the Online Store.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
+                    description: The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -532,7 +532,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) assigned by AWS to this feature_group.
+                    description: ARN assigned by AWS to this feature_group.
                     type: string
                   description:
                     description: A free-form description of a Feature Group.
@@ -587,7 +587,7 @@ spec:
                         description: The Amazon Simple Storage (Amazon S3) location of OfflineStore. See S3 Storage Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                           resolvedOutputS3Uri:
                             description: The S3 path where offline records are written.
@@ -610,7 +610,7 @@ spec:
                         description: Security config for at-rest encryption of your OnlineStore. See Security Config Below.
                         properties:
                           kmsKeyId:
-                            description: The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
+                            description: KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.
                             type: string
                         type: object
                       storageType:
@@ -636,7 +636,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
+                    description: The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.
                     type: string
                   tags:
                     additionalProperties:

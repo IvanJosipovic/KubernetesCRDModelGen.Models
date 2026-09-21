@@ -82,7 +82,7 @@ public partial class V1beta1UserSpecForProviderPasswordsSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. If set, requires passwords_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserSpecForProviderPasswordsWoSecretRef
@@ -119,11 +119,11 @@ public partial class V1beta1UserSpecForProvider
     [JsonPropertyName("passwordsSecretRef")]
     public IList<V1beta1UserSpecForProviderPasswordsSecretRef>? PasswordsSecretRef { get; set; }
 
-    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. If set, requires passwords_wo_version to be set.</summary>
     [JsonPropertyName("passwordsWoSecretRef")]
     public V1beta1UserSpecForProviderPasswordsWoSecretRef? PasswordsWoSecretRef { get; set; }
 
-    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    /// <summary>Required when passwords_wo is set. Changing this value triggers an update to passwords_wo.</summary>
     [JsonPropertyName("passwordsWoVersion")]
     public double? PasswordsWoVersion { get; set; }
 
@@ -156,7 +156,7 @@ public partial class V1beta1UserSpecInitProviderAuthenticationMode
     public string? Type { get; set; }
 }
 
-/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+/// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. If set, requires passwords_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserSpecInitProviderPasswordsWoSecretRef
@@ -204,11 +204,11 @@ public partial class V1beta1UserSpecInitProvider
     [JsonPropertyName("passwordsSecretRef")]
     public IList<string>? PasswordsSecretRef { get; set; }
 
-    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. See Write-Only Arguments for more information.11+.</summary>
+    /// <summary>Write-only password for this user. This argument is not stored in state. Conflicts with passwords and authentication_mode. If set, requires passwords_wo_version to be set.</summary>
     [JsonPropertyName("passwordsWoSecretRef")]
     public V1beta1UserSpecInitProviderPasswordsWoSecretRef? PasswordsWoSecretRef { get; set; }
 
-    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    /// <summary>Required when passwords_wo is set. Changing this value triggers an update to passwords_wo.</summary>
     [JsonPropertyName("passwordsWoVersion")]
     public double? PasswordsWoVersion { get; set; }
 
@@ -368,7 +368,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("noPasswordRequired")]
     public bool? NoPasswordRequired { get; set; }
 
-    /// <summary>Version number for passwords_wo. Increment this value to trigger a password update. Required when using passwords_wo.</summary>
+    /// <summary>Required when passwords_wo is set. Changing this value triggers an update to passwords_wo.</summary>
     [JsonPropertyName("passwordsWoVersion")]
     public double? PasswordsWoVersion { get; set; }
 

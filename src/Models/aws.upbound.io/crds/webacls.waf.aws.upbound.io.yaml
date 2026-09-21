@@ -881,7 +881,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       logDestinationRef:
                         description: Reference to a DeliveryStream in firehose to populate logDestination.
@@ -1116,7 +1116,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       logDestinationRef:
                         description: Reference to a DeliveryStream in firehose to populate logDestination.
@@ -1442,7 +1442,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       redactedFields:
                         description: Configuration block containing parts of the request that you want redacted from the logs. Detailed below.

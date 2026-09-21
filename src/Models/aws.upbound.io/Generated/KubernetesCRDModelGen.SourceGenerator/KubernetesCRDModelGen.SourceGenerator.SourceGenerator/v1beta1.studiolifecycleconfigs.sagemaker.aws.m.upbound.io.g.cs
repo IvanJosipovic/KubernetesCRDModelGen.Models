@@ -200,7 +200,7 @@ public partial class V1beta1StudioLifecycleConfigSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StudioLifecycleConfigStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Studio Lifecycle Config.</summary>
+    /// <summary>The ARN assigned by AWS to this Studio Lifecycle Config.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

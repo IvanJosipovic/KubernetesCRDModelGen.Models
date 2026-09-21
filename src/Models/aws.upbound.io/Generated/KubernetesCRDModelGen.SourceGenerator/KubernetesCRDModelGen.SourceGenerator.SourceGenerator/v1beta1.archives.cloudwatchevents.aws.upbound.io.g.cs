@@ -373,7 +373,7 @@ public partial class V1beta1ArchiveSpecForProvider
     [JsonPropertyName("eventSourceArnSelector")]
     public V1beta1ArchiveSpecForProviderEventSourceArnSelector? EventSourceArnSelector { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -727,7 +727,7 @@ public partial class V1beta1ArchiveSpecInitProvider
     [JsonPropertyName("eventSourceArnSelector")]
     public V1beta1ArchiveSpecInitProviderEventSourceArnSelector? EventSourceArnSelector { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -950,7 +950,7 @@ public partial class V1beta1ArchiveStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key Amazon Resource Name (ARN), KeyId, key alias, or key alias ARN.</summary>
+    /// <summary>Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a customer managed key to encrypt this archive. The identifier can be the key ARN, KeyId, key alias, or key alias ARN.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 

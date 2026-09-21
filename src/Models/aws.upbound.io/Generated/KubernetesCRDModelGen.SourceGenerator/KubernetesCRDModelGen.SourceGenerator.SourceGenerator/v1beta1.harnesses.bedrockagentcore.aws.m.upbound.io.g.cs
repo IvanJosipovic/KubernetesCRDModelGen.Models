@@ -45,12 +45,12 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? Arn { get; set; }
 }
 
-/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
-    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment Block below.</summary>
     [JsonPropertyName("hostingEnvironment")]
     public IList<V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
 
@@ -59,7 +59,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public IList<string>? WorkloadIdentities { get; set; }
 }
 
-/// <summary>Value or values to match for. See claim_match_value below.</summary>
+/// <summary>Value or values to match for. See claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
@@ -73,7 +73,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public IList<string>? MatchValueStringList { get; set; }
 }
 
-/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
@@ -82,7 +82,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     [JsonPropertyName("claimMatchOperator")]
     public string? ClaimMatchOperator { get; set; }
 
-    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    /// <summary>Value or values to match for. See claim_match_value Block below.</summary>
     [JsonPropertyName("claimMatchValue")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
@@ -91,7 +91,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
-    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
     [JsonPropertyName("authorizingClaimMatchValue")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
 
@@ -104,7 +104,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? InboundTokenClaimValueType { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
@@ -134,7 +134,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
@@ -144,21 +144,21 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
@@ -188,7 +188,7 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
@@ -198,16 +198,16 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+/// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -220,12 +220,12 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    /// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
-/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizer
@@ -242,11 +242,11 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     [JsonPropertyName("allowedScopes")]
     public IList<string>? AllowedScopes { get; set; }
 
-    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
     [JsonPropertyName("allowedWorkloadConfiguration")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
 
-    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim Block below.</summary>
     [JsonPropertyName("customClaim")]
     public IList<V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
 
@@ -254,178 +254,23 @@ public partial class V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJ
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
 
-    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides Block below.</summary>
     [JsonPropertyName("privateEndpointOverrides")]
     public IList<V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
-/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderAuthorizerConfiguration
 {
-    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1HarnessSpecForProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum>))]
-public enum V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum>))]
-public enum V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the referenced object</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum>))]
-public enum V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum>))]
-public enum V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Namespace for the selector</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -793,15 +638,15 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -823,10 +668,6 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig
 {
-    /// <summary>Whether to require an S3 endpoint for the service in the VPC.</summary>
-    [JsonPropertyName("requireServiceS3Endpoint")]
-    public bool? RequireServiceS3Endpoint { get; set; }
-
     /// <summary>Security groups for the VPC.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
@@ -844,7 +685,7 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config below.</summary>
+    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -853,48 +694,30 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironment
 {
-    /// <summary>ARN of the AgentCore memory resource.</summary>
-    [JsonPropertyName("agentRuntimeArn")]
-    public string? AgentRuntimeArn { get; set; }
-
-    /// <summary>Reference to a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-    [JsonPropertyName("agentRuntimeArnRef")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRef? AgentRuntimeArnRef { get; set; }
-
-    /// <summary>Selector for a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-    [JsonPropertyName("agentRuntimeArnSelector")]
-    public V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelector? AgentRuntimeArnSelector { get; set; }
-
-    [JsonPropertyName("agentRuntimeId")]
-    public string? AgentRuntimeId { get; set; }
-
-    [JsonPropertyName("agentRuntimeName")]
-    public string? AgentRuntimeName { get; set; }
-
-    /// <summary>Filesystem configurations. See filesystem_configuration below.</summary>
+    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration below.</summary>
+    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration below.</summary>
+    /// <summary>Network configuration. See network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment below.</summary>
+/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessSpecForProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
 
-/// <summary>Container configuration. See container_configuration below.</summary>
+/// <summary>Container configuration. See container_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentArtifactContainerConfiguration
@@ -904,12 +727,12 @@ public partial class V1beta1HarnessSpecForProviderEnvironmentArtifactContainerCo
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+/// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderEnvironmentArtifact
 {
-    /// <summary>Container configuration. See container_configuration below.</summary>
+    /// <summary>Container configuration. See container_configuration Block below.</summary>
     [JsonPropertyName("containerConfiguration")]
     public V1beta1HarnessSpecForProviderEnvironmentArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
@@ -1389,12 +1212,12 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
 {
-    /// <summary>Key for the retrieval configuration map block.</summary>
+    /// <summary>Namespace path template for retrieval settings.</summary>
     [JsonPropertyName("mapBlockKey")]
     public string? MapBlockKey { get; set; }
 
@@ -1419,7 +1242,7 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfiguration
@@ -1444,26 +1267,67 @@ public partial class V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigura
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Memory configuration. See memory below.</summary>
+/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderMemoryDisabled
+{
+}
+
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderMemoryManagedMemoryConfiguration
+{
+    /// <summary>ARN of a customer-managed KMS key used to encrypt the memory. Defaults to an AWS-owned key. Cannot be changed after creation.</summary>
+    [JsonPropertyName("encryptionKeyArn")]
+    public string? EncryptionKeyArn { get; set; }
+
+    /// <summary>Event retention in days. Defaults to 30.</summary>
+    [JsonPropertyName("eventExpiryDuration")]
+    public double? EventExpiryDuration { get; set; }
+
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    [JsonPropertyName("strategies")]
+    public IList<string>? Strategies { get; set; }
+}
+
+/// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderMemory
 {
-    /// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessSpecForProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
+
+    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    [JsonPropertyName("disabled")]
+    public V1beta1HarnessSpecForProviderMemoryDisabled? Disabled { get; set; }
+
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    [JsonPropertyName("managedMemoryConfiguration")]
+    public V1beta1HarnessSpecForProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
 
-/// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+/// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderModelBedrockModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
     /// <summary>Maximum number of tokens in the model response.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
@@ -1636,11 +1500,15 @@ public partial class V1beta1HarnessSpecForProviderModelGeminiModelConfigApiKeyAr
     public V1beta1HarnessSpecForProviderModelGeminiModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+/// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderModelGeminiModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -1668,6 +1536,203 @@ public partial class V1beta1HarnessSpecForProviderModelGeminiModelConfig
     /// <summary>Top-k sampling parameter.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
+
+    /// <summary>Top-p (nucleus) sampling parameter. Must be between 0 and 1.</summary>
+    [JsonPropertyName("topP")]
+    public double? TopP { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate apiKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate apiKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderModelLitellmModelConfig
+{
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>Base URL of the LiteLLM-compatible API endpoint.</summary>
+    [JsonPropertyName("apiBase")]
+    public string? ApiBase { get; set; }
+
+    /// <summary>ARN of the secret containing the API key.</summary>
+    [JsonPropertyName("apiKeyArn")]
+    public string? ApiKeyArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate apiKeyArn.</summary>
+    [JsonPropertyName("apiKeyArnRef")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnRef? ApiKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate apiKeyArn.</summary>
+    [JsonPropertyName("apiKeyArnSelector")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
+
+    /// <summary>Maximum number of tokens in the model response.</summary>
+    [JsonPropertyName("maxTokens")]
+    public double? MaxTokens { get; set; }
+
+    /// <summary>Bedrock model ID (e.g., anthropic.claude-sonnet-4-20250514).</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Temperature for sampling. Must be between 0 and 2.</summary>
+    [JsonPropertyName("temperature")]
+    public double? Temperature { get; set; }
 
     /// <summary>Top-p (nucleus) sampling parameter. Must be between 0 and 1.</summary>
     [JsonPropertyName("topP")]
@@ -1829,11 +1894,19 @@ public partial class V1beta1HarnessSpecForProviderModelOpenaiModelConfigApiKeyAr
     public V1beta1HarnessSpecForProviderModelOpenaiModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+/// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderModelOpenaiModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -1863,31 +1936,99 @@ public partial class V1beta1HarnessSpecForProviderModelOpenaiModelConfig
     public double? TopP { get; set; }
 }
 
-/// <summary>Model configuration for the harness. See model below.</summary>
+/// <summary>Model configuration for the harness. See model Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderModel
 {
-    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
     [JsonPropertyName("bedrockModelConfig")]
     public V1beta1HarnessSpecForProviderModelBedrockModelConfig? BedrockModelConfig { get; set; }
 
-    /// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+    /// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
     [JsonPropertyName("geminiModelConfig")]
     public V1beta1HarnessSpecForProviderModelGeminiModelConfig? GeminiModelConfig { get; set; }
 
-    /// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+    /// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
+    [JsonPropertyName("litellmModelConfig")]
+    public V1beta1HarnessSpecForProviderModelLitellmModelConfig? LitellmModelConfig { get; set; }
+
+    /// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
     [JsonPropertyName("openaiModelConfig")]
     public V1beta1HarnessSpecForProviderModelOpenaiModelConfig? OpenaiModelConfig { get; set; }
+}
+
+/// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderSkillAwsSkills
+{
+    /// <summary>List of glob patterns to filter allowed skills (e.g., [&quot;core-skills/*&quot;]).</summary>
+    [JsonPropertyName("paths")]
+    public IList<string>? Paths { get; set; }
+}
+
+/// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderSkillGitAuth
+{
+    /// <summary>ARN of the credential in AgentCore Identity containing the password or personal access token.</summary>
+    [JsonPropertyName("credentialArn")]
+    public string? CredentialArn { get; set; }
+
+    /// <summary>Username for authentication. Defaults to oauth2 if not specified.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>Git repository source for the skill. See git Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderSkillGit
+{
+    /// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+    [JsonPropertyName("auth")]
+    public V1beta1HarnessSpecForProviderSkillGitAuth? Auth { get; set; }
+
+    /// <summary>Path to the skill.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>URL of the remote MCP server.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>S3 source for the skill. See s3 Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecForProviderSkillS3
+{
+    /// <summary>S3 URI of the skill source. Must begin with s3://.</summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderSkill
 {
+    /// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+    [JsonPropertyName("awsSkills")]
+    public V1beta1HarnessSpecForProviderSkillAwsSkills? AwsSkills { get; set; }
+
+    /// <summary>Git repository source for the skill. See git Block below.</summary>
+    [JsonPropertyName("git")]
+    public V1beta1HarnessSpecForProviderSkillGit? Git { get; set; }
+
     /// <summary>Path to the skill.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    /// <summary>S3 source for the skill. See s3 Block below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1HarnessSpecForProviderSkillS3? S3 { get; set; }
 }
 
 /// <summary>Text content of the system prompt.</summary>
@@ -2067,7 +2208,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreBrowserBrow
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreBrowserBrowserArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+/// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreBrowser
@@ -2240,7 +2381,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreCodeInterpr
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreCodeInterpreterCodeInterpreterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreCodeInterpreter
@@ -2568,7 +2709,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutb
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuthOauthProviderArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>OAuth credential provider configuration. See oauth below.</summary>
+/// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuthOauth
@@ -2602,7 +2743,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutb
     public IList<string>? Scopes { get; set; }
 }
 
-/// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+/// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuth
@@ -2615,12 +2756,12 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutb
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
-    /// <summary>OAuth credential provider configuration. See oauth below.</summary>
+    /// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
     [JsonPropertyName("oauth")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuthOauth? Oauth { get; set; }
 }
 
-/// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+/// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGateway
@@ -2637,7 +2778,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigAgentcoreGateway
     [JsonPropertyName("gatewayArnSelector")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayGatewayArnSelector? GatewayArnSelector { get; set; }
 
-    /// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+    /// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
     [JsonPropertyName("outboundAuth")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreGatewayOutboundAuth? OutboundAuth { get; set; }
 }
@@ -2655,7 +2796,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigInlineFunctionInputS
     public required string Name { get; set; }
 }
 
-/// <summary>Inline function configuration. See inline_function below.</summary>
+/// <summary>Inline function configuration. See inline_function Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigInlineFunction
@@ -2692,7 +2833,7 @@ public partial class V1beta1HarnessSpecForProviderToolConfigRemoteMcpUrlSecretRe
     public required string Name { get; set; }
 }
 
-/// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+/// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfigRemoteMcp
@@ -2711,23 +2852,23 @@ public partial class V1beta1HarnessSpecForProviderToolConfigRemoteMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderToolConfig
 {
-    /// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+    /// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
     [JsonPropertyName("agentcoreBrowser")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreBrowser? AgentcoreBrowser { get; set; }
 
-    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
     [JsonPropertyName("agentcoreCodeInterpreter")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreCodeInterpreter? AgentcoreCodeInterpreter { get; set; }
 
-    /// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+    /// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
     [JsonPropertyName("agentcoreGateway")]
     public V1beta1HarnessSpecForProviderToolConfigAgentcoreGateway? AgentcoreGateway { get; set; }
 
-    /// <summary>Inline function configuration. See inline_function below.</summary>
+    /// <summary>Inline function configuration. See inline_function Block below.</summary>
     [JsonPropertyName("inlineFunction")]
     public V1beta1HarnessSpecForProviderToolConfigInlineFunction? InlineFunction { get; set; }
 
-    /// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+    /// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
     [JsonPropertyName("remoteMcp")]
     public V1beta1HarnessSpecForProviderToolConfigRemoteMcp? RemoteMcp { get; set; }
 }
@@ -2779,16 +2920,16 @@ public partial class V1beta1HarnessSpecForProviderTruncationConfigSummarization
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderTruncationConfig
 {
-    /// <summary>Sliding window truncation configuration. See sliding_window below.</summary>
+    /// <summary>Sliding window truncation configuration. See sliding_window Block below.</summary>
     [JsonPropertyName("slidingWindow")]
     public IList<V1beta1HarnessSpecForProviderTruncationConfigSlidingWindow>? SlidingWindow { get; set; }
 
-    /// <summary>Summarization truncation configuration. See summarization below.</summary>
+    /// <summary>Summarization truncation configuration. See summarization Block below.</summary>
     [JsonPropertyName("summarization")]
     public IList<V1beta1HarnessSpecForProviderTruncationConfigSummarization>? Summarization { get; set; }
 }
 
-/// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+/// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecForProviderTruncation
@@ -2810,15 +2951,15 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("allowedTools")]
     public IList<string>? AllowedTools { get; set; }
 
-    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessSpecForProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment below.</summary>
+    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessSpecForProviderEnvironment? Environment { get; set; }
 
-    /// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+    /// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
     [JsonPropertyName("environmentArtifact")]
     public V1beta1HarnessSpecForProviderEnvironmentArtifact? EnvironmentArtifact { get; set; }
 
@@ -2850,11 +2991,11 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>Memory configuration. See memory below.</summary>
+    /// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
     [JsonPropertyName("memory")]
     public V1beta1HarnessSpecForProviderMemory? Memory { get; set; }
 
-    /// <summary>Model configuration for the harness. See model below.</summary>
+    /// <summary>Model configuration for the harness. See model Block below.</summary>
     [JsonPropertyName("model")]
     public V1beta1HarnessSpecForProviderModel? Model { get; set; }
 
@@ -2865,11 +3006,11 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Skill configurations. See skill below.</summary>
+    /// <summary>Skill configurations. See skill Block below.</summary>
     [JsonPropertyName("skill")]
     public IList<V1beta1HarnessSpecForProviderSkill>? Skill { get; set; }
 
-    /// <summary>System prompt blocks for the harness. See system_prompt below.</summary>
+    /// <summary>System prompt blocks for the harness. See system_prompt Block below.</summary>
     [JsonPropertyName("systemPrompt")]
     public IList<V1beta1HarnessSpecForProviderSystemPrompt>? SystemPrompt { get; set; }
 
@@ -2881,11 +3022,11 @@ public partial class V1beta1HarnessSpecForProvider
     [JsonPropertyName("timeoutSeconds")]
     public double? TimeoutSeconds { get; set; }
 
-    /// <summary>Tool configurations. See tool below.</summary>
+    /// <summary>Tool configurations. See tool Block below.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1HarnessSpecForProviderTool>? Tool { get; set; }
 
-    /// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+    /// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
     [JsonPropertyName("truncation")]
     public V1beta1HarnessSpecForProviderTruncation? Truncation { get; set; }
 }
@@ -2899,12 +3040,12 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? Arn { get; set; }
 }
 
-/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
-    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment Block below.</summary>
     [JsonPropertyName("hostingEnvironment")]
     public IList<V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
 
@@ -2913,7 +3054,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public IList<string>? WorkloadIdentities { get; set; }
 }
 
-/// <summary>Value or values to match for. See claim_match_value below.</summary>
+/// <summary>Value or values to match for. See claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
@@ -2927,7 +3068,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public IList<string>? MatchValueStringList { get; set; }
 }
 
-/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
@@ -2936,7 +3077,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     [JsonPropertyName("claimMatchOperator")]
     public string? ClaimMatchOperator { get; set; }
 
-    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    /// <summary>Value or values to match for. See claim_match_value Block below.</summary>
     [JsonPropertyName("claimMatchValue")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
@@ -2945,7 +3086,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
-    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
     [JsonPropertyName("authorizingClaimMatchValue")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
 
@@ -2958,7 +3099,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? InboundTokenClaimValueType { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
@@ -2988,7 +3129,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
@@ -2998,21 +3139,21 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
@@ -3042,7 +3183,7 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
@@ -3052,16 +3193,16 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+/// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -3074,12 +3215,12 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    /// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
-/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizer
@@ -3096,11 +3237,11 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     [JsonPropertyName("allowedScopes")]
     public IList<string>? AllowedScopes { get; set; }
 
-    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
     [JsonPropertyName("allowedWorkloadConfiguration")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
 
-    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim Block below.</summary>
     [JsonPropertyName("customClaim")]
     public IList<V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
 
@@ -3108,178 +3249,23 @@ public partial class V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustom
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
 
-    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides Block below.</summary>
     [JsonPropertyName("privateEndpointOverrides")]
     public IList<V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
-/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderAuthorizerConfiguration
 {
-    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum>))]
-public enum V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum>))]
-public enum V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Reference to a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRef
-{
-    /// <summary>Name of the referenced object.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the referenced object</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-
-    /// <summary>Policies for referencing.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRefPolicy? Policy { get; set; }
-}
-
-/// <summary>
-/// Resolution specifies whether resolution of this reference is required.
-/// The default is &apos;Required&apos;, which means the reconcile will fail if the
-/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-/// a no-op if it cannot be resolved.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum>))]
-public enum V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum
-{
-    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
-    Required,
-    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
-    Optional
-}
-
-/// <summary>
-/// Resolve specifies when this reference should be resolved. The default
-/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-/// reference on every reconcile.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum>))]
-public enum V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum
-{
-    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
-    Always,
-    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
-    IfNotPresent
-}
-
-/// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicy
-{
-    /// <summary>
-    /// Resolution specifies whether resolution of this reference is required.
-    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
-    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
-    /// a no-op if it cannot be resolved.
-    /// </summary>
-    [JsonPropertyName("resolution")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolutionEnum? Resolution { get; set; }
-
-    /// <summary>
-    /// Resolve specifies when this reference should be resolved. The default
-    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
-    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
-    /// reference on every reconcile.
-    /// </summary>
-    [JsonPropertyName("resolve")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicyResolveEnum? Resolve { get; set; }
-}
-
-/// <summary>Selector for a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelector
-{
-    /// <summary>
-    /// MatchControllerRef ensures an object with the same controller reference
-    /// as the selecting object is selected.
-    /// </summary>
-    [JsonPropertyName("matchControllerRef")]
-    public bool? MatchControllerRef { get; set; }
-
-    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
-    [JsonPropertyName("matchLabels")]
-    public IDictionary<string, string>? MatchLabels { get; set; }
-
-    /// <summary>Namespace for the selector</summary>
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; set; }
-
-    /// <summary>Policies for selection.</summary>
-    [JsonPropertyName("policy")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -3647,15 +3633,15 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -3677,10 +3663,6 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig
 {
-    /// <summary>Whether to require an S3 endpoint for the service in the VPC.</summary>
-    [JsonPropertyName("requireServiceS3Endpoint")]
-    public bool? RequireServiceS3Endpoint { get; set; }
-
     /// <summary>Security groups for the VPC.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
@@ -3698,7 +3680,7 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config below.</summary>
+    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -3707,48 +3689,30 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironment
 {
-    /// <summary>ARN of the AgentCore memory resource.</summary>
-    [JsonPropertyName("agentRuntimeArn")]
-    public string? AgentRuntimeArn { get; set; }
-
-    /// <summary>Reference to a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-    [JsonPropertyName("agentRuntimeArnRef")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnRef? AgentRuntimeArnRef { get; set; }
-
-    /// <summary>Selector for a AgentRuntime in bedrockagentcore to populate agentRuntimeArn.</summary>
-    [JsonPropertyName("agentRuntimeArnSelector")]
-    public V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentAgentRuntimeArnSelector? AgentRuntimeArnSelector { get; set; }
-
-    [JsonPropertyName("agentRuntimeId")]
-    public string? AgentRuntimeId { get; set; }
-
-    [JsonPropertyName("agentRuntimeName")]
-    public string? AgentRuntimeName { get; set; }
-
-    /// <summary>Filesystem configurations. See filesystem_configuration below.</summary>
+    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration below.</summary>
+    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration below.</summary>
+    /// <summary>Network configuration. See network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment below.</summary>
+/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessSpecInitProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
 
-/// <summary>Container configuration. See container_configuration below.</summary>
+/// <summary>Container configuration. See container_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentArtifactContainerConfiguration
@@ -3758,12 +3722,12 @@ public partial class V1beta1HarnessSpecInitProviderEnvironmentArtifactContainerC
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+/// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderEnvironmentArtifact
 {
-    /// <summary>Container configuration. See container_configuration below.</summary>
+    /// <summary>Container configuration. See container_configuration Block below.</summary>
     [JsonPropertyName("containerConfiguration")]
     public V1beta1HarnessSpecInitProviderEnvironmentArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
@@ -4233,12 +4197,12 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfigStrategyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
 {
-    /// <summary>Key for the retrieval configuration map block.</summary>
+    /// <summary>Namespace path template for retrieval settings.</summary>
     [JsonPropertyName("mapBlockKey")]
     public string? MapBlockKey { get; set; }
 
@@ -4263,7 +4227,7 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfiguration
@@ -4288,26 +4252,67 @@ public partial class V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Memory configuration. See memory below.</summary>
+/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderMemoryDisabled
+{
+}
+
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfiguration
+{
+    /// <summary>ARN of a customer-managed KMS key used to encrypt the memory. Defaults to an AWS-owned key. Cannot be changed after creation.</summary>
+    [JsonPropertyName("encryptionKeyArn")]
+    public string? EncryptionKeyArn { get; set; }
+
+    /// <summary>Event retention in days. Defaults to 30.</summary>
+    [JsonPropertyName("eventExpiryDuration")]
+    public double? EventExpiryDuration { get; set; }
+
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    [JsonPropertyName("strategies")]
+    public IList<string>? Strategies { get; set; }
+}
+
+/// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderMemory
 {
-    /// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessSpecInitProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
+
+    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    [JsonPropertyName("disabled")]
+    public V1beta1HarnessSpecInitProviderMemoryDisabled? Disabled { get; set; }
+
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    [JsonPropertyName("managedMemoryConfiguration")]
+    public V1beta1HarnessSpecInitProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
 
-/// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+/// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderModelBedrockModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
     /// <summary>Maximum number of tokens in the model response.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
@@ -4480,11 +4485,15 @@ public partial class V1beta1HarnessSpecInitProviderModelGeminiModelConfigApiKeyA
     public V1beta1HarnessSpecInitProviderModelGeminiModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+/// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderModelGeminiModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -4512,6 +4521,203 @@ public partial class V1beta1HarnessSpecInitProviderModelGeminiModelConfig
     /// <summary>Top-k sampling parameter.</summary>
     [JsonPropertyName("topK")]
     public double? TopK { get; set; }
+
+    /// <summary>Top-p (nucleus) sampling parameter. Must be between 0 and 1.</summary>
+    [JsonPropertyName("topP")]
+    public double? TopP { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum>))]
+public enum V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum>))]
+public enum V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate apiKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum>))]
+public enum V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate apiKeyArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderModelLitellmModelConfig
+{
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>Base URL of the LiteLLM-compatible API endpoint.</summary>
+    [JsonPropertyName("apiBase")]
+    public string? ApiBase { get; set; }
+
+    /// <summary>ARN of the secret containing the API key.</summary>
+    [JsonPropertyName("apiKeyArn")]
+    public string? ApiKeyArn { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate apiKeyArn.</summary>
+    [JsonPropertyName("apiKeyArnRef")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnRef? ApiKeyArnRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate apiKeyArn.</summary>
+    [JsonPropertyName("apiKeyArnSelector")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfigApiKeyArnSelector? ApiKeyArnSelector { get; set; }
+
+    /// <summary>Maximum number of tokens in the model response.</summary>
+    [JsonPropertyName("maxTokens")]
+    public double? MaxTokens { get; set; }
+
+    /// <summary>Bedrock model ID (e.g., anthropic.claude-sonnet-4-20250514).</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Temperature for sampling. Must be between 0 and 2.</summary>
+    [JsonPropertyName("temperature")]
+    public double? Temperature { get; set; }
 
     /// <summary>Top-p (nucleus) sampling parameter. Must be between 0 and 1.</summary>
     [JsonPropertyName("topP")]
@@ -4673,11 +4879,19 @@ public partial class V1beta1HarnessSpecInitProviderModelOpenaiModelConfigApiKeyA
     public V1beta1HarnessSpecInitProviderModelOpenaiModelConfigApiKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+/// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderModelOpenaiModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -4707,31 +4921,99 @@ public partial class V1beta1HarnessSpecInitProviderModelOpenaiModelConfig
     public double? TopP { get; set; }
 }
 
-/// <summary>Model configuration for the harness. See model below.</summary>
+/// <summary>Model configuration for the harness. See model Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderModel
 {
-    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
     [JsonPropertyName("bedrockModelConfig")]
     public V1beta1HarnessSpecInitProviderModelBedrockModelConfig? BedrockModelConfig { get; set; }
 
-    /// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+    /// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
     [JsonPropertyName("geminiModelConfig")]
     public V1beta1HarnessSpecInitProviderModelGeminiModelConfig? GeminiModelConfig { get; set; }
 
-    /// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+    /// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
+    [JsonPropertyName("litellmModelConfig")]
+    public V1beta1HarnessSpecInitProviderModelLitellmModelConfig? LitellmModelConfig { get; set; }
+
+    /// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
     [JsonPropertyName("openaiModelConfig")]
     public V1beta1HarnessSpecInitProviderModelOpenaiModelConfig? OpenaiModelConfig { get; set; }
+}
+
+/// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderSkillAwsSkills
+{
+    /// <summary>List of glob patterns to filter allowed skills (e.g., [&quot;core-skills/*&quot;]).</summary>
+    [JsonPropertyName("paths")]
+    public IList<string>? Paths { get; set; }
+}
+
+/// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderSkillGitAuth
+{
+    /// <summary>ARN of the credential in AgentCore Identity containing the password or personal access token.</summary>
+    [JsonPropertyName("credentialArn")]
+    public string? CredentialArn { get; set; }
+
+    /// <summary>Username for authentication. Defaults to oauth2 if not specified.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>Git repository source for the skill. See git Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderSkillGit
+{
+    /// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+    [JsonPropertyName("auth")]
+    public V1beta1HarnessSpecInitProviderSkillGitAuth? Auth { get; set; }
+
+    /// <summary>Path to the skill.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>URL of the remote MCP server.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>S3 source for the skill. See s3 Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessSpecInitProviderSkillS3
+{
+    /// <summary>S3 URI of the skill source. Must begin with s3://.</summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderSkill
 {
+    /// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+    [JsonPropertyName("awsSkills")]
+    public V1beta1HarnessSpecInitProviderSkillAwsSkills? AwsSkills { get; set; }
+
+    /// <summary>Git repository source for the skill. See git Block below.</summary>
+    [JsonPropertyName("git")]
+    public V1beta1HarnessSpecInitProviderSkillGit? Git { get; set; }
+
     /// <summary>Path to the skill.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    /// <summary>S3 source for the skill. See s3 Block below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1HarnessSpecInitProviderSkillS3? S3 { get; set; }
 }
 
 /// <summary>Text content of the system prompt.</summary>
@@ -4753,7 +5035,7 @@ public partial class V1beta1HarnessSpecInitProviderSystemPrompt
 {
     /// <summary>Text content of the system prompt.</summary>
     [JsonPropertyName("textSecretRef")]
-    public required V1beta1HarnessSpecInitProviderSystemPromptTextSecretRef TextSecretRef { get; set; }
+    public V1beta1HarnessSpecInitProviderSystemPromptTextSecretRef? TextSecretRef { get; set; }
 }
 
 /// <summary>
@@ -4911,7 +5193,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreBrowserBro
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreBrowserBrowserArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+/// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreBrowser
@@ -5084,7 +5366,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreCodeInterp
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreCodeInterpreterCodeInterpreterArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreCodeInterpreter
@@ -5412,7 +5694,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOut
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuthOauthProviderArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>OAuth credential provider configuration. See oauth below.</summary>
+/// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuthOauth
@@ -5446,7 +5728,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOut
     public IList<string>? Scopes { get; set; }
 }
 
-/// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+/// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuth
@@ -5459,12 +5741,12 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOut
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
-    /// <summary>OAuth credential provider configuration. See oauth below.</summary>
+    /// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
     [JsonPropertyName("oauth")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuthOauth? Oauth { get; set; }
 }
 
-/// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+/// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGateway
@@ -5481,7 +5763,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigAgentcoreGateway
     [JsonPropertyName("gatewayArnSelector")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayGatewayArnSelector? GatewayArnSelector { get; set; }
 
-    /// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+    /// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
     [JsonPropertyName("outboundAuth")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreGatewayOutboundAuth? OutboundAuth { get; set; }
 }
@@ -5499,7 +5781,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigInlineFunctionInput
     public required string Name { get; set; }
 }
 
-/// <summary>Inline function configuration. See inline_function below.</summary>
+/// <summary>Inline function configuration. See inline_function Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigInlineFunction
@@ -5526,7 +5808,7 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigRemoteMcpUrlSecretR
     public required string Name { get; set; }
 }
 
-/// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+/// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfigRemoteMcp
@@ -5544,23 +5826,23 @@ public partial class V1beta1HarnessSpecInitProviderToolConfigRemoteMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderToolConfig
 {
-    /// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+    /// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
     [JsonPropertyName("agentcoreBrowser")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreBrowser? AgentcoreBrowser { get; set; }
 
-    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
     [JsonPropertyName("agentcoreCodeInterpreter")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreCodeInterpreter? AgentcoreCodeInterpreter { get; set; }
 
-    /// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+    /// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
     [JsonPropertyName("agentcoreGateway")]
     public V1beta1HarnessSpecInitProviderToolConfigAgentcoreGateway? AgentcoreGateway { get; set; }
 
-    /// <summary>Inline function configuration. See inline_function below.</summary>
+    /// <summary>Inline function configuration. See inline_function Block below.</summary>
     [JsonPropertyName("inlineFunction")]
     public V1beta1HarnessSpecInitProviderToolConfigInlineFunction? InlineFunction { get; set; }
 
-    /// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+    /// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
     [JsonPropertyName("remoteMcp")]
     public V1beta1HarnessSpecInitProviderToolConfigRemoteMcp? RemoteMcp { get; set; }
 }
@@ -5612,16 +5894,16 @@ public partial class V1beta1HarnessSpecInitProviderTruncationConfigSummarization
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderTruncationConfig
 {
-    /// <summary>Sliding window truncation configuration. See sliding_window below.</summary>
+    /// <summary>Sliding window truncation configuration. See sliding_window Block below.</summary>
     [JsonPropertyName("slidingWindow")]
     public IList<V1beta1HarnessSpecInitProviderTruncationConfigSlidingWindow>? SlidingWindow { get; set; }
 
-    /// <summary>Summarization truncation configuration. See summarization below.</summary>
+    /// <summary>Summarization truncation configuration. See summarization Block below.</summary>
     [JsonPropertyName("summarization")]
     public IList<V1beta1HarnessSpecInitProviderTruncationConfigSummarization>? Summarization { get; set; }
 }
 
-/// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+/// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessSpecInitProviderTruncation
@@ -5655,15 +5937,15 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("allowedTools")]
     public IList<string>? AllowedTools { get; set; }
 
-    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessSpecInitProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment below.</summary>
+    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessSpecInitProviderEnvironment? Environment { get; set; }
 
-    /// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+    /// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
     [JsonPropertyName("environmentArtifact")]
     public V1beta1HarnessSpecInitProviderEnvironmentArtifact? EnvironmentArtifact { get; set; }
 
@@ -5694,19 +5976,19 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>Memory configuration. See memory below.</summary>
+    /// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
     [JsonPropertyName("memory")]
     public V1beta1HarnessSpecInitProviderMemory? Memory { get; set; }
 
-    /// <summary>Model configuration for the harness. See model below.</summary>
+    /// <summary>Model configuration for the harness. See model Block below.</summary>
     [JsonPropertyName("model")]
     public V1beta1HarnessSpecInitProviderModel? Model { get; set; }
 
-    /// <summary>Skill configurations. See skill below.</summary>
+    /// <summary>Skill configurations. See skill Block below.</summary>
     [JsonPropertyName("skill")]
     public IList<V1beta1HarnessSpecInitProviderSkill>? Skill { get; set; }
 
-    /// <summary>System prompt blocks for the harness. See system_prompt below.</summary>
+    /// <summary>System prompt blocks for the harness. See system_prompt Block below.</summary>
     [JsonPropertyName("systemPrompt")]
     public IList<V1beta1HarnessSpecInitProviderSystemPrompt>? SystemPrompt { get; set; }
 
@@ -5718,11 +6000,11 @@ public partial class V1beta1HarnessSpecInitProvider
     [JsonPropertyName("timeoutSeconds")]
     public double? TimeoutSeconds { get; set; }
 
-    /// <summary>Tool configurations. See tool below.</summary>
+    /// <summary>Tool configurations. See tool Block below.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1HarnessSpecInitProviderTool>? Tool { get; set; }
 
-    /// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+    /// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
     [JsonPropertyName("truncation")]
     public V1beta1HarnessSpecInitProviderTruncation? Truncation { get; set; }
 }
@@ -5843,12 +6125,12 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? Arn { get; set; }
 }
 
-/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+/// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration
 {
-    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment below.</summary>
+    /// <summary>Hosting environments allowed to use the authorizer. Between 1 and 10 entries. See hosting_environment Block below.</summary>
     [JsonPropertyName("hostingEnvironment")]
     public IList<V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfigurationHostingEnvironment>? HostingEnvironment { get; set; }
 
@@ -5857,7 +6139,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public IList<string>? WorkloadIdentities { get; set; }
 }
 
-/// <summary>Value or values to match for. See claim_match_value below.</summary>
+/// <summary>Value or values to match for. See claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue
@@ -5871,7 +6153,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public IList<string>? MatchValueStringList { get; set; }
 }
 
-/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+/// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue
@@ -5880,7 +6162,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     [JsonPropertyName("claimMatchOperator")]
     public string? ClaimMatchOperator { get; set; }
 
-    /// <summary>Value or values to match for. See claim_match_value below.</summary>
+    /// <summary>Value or values to match for. See claim_match_value Block below.</summary>
     [JsonPropertyName("claimMatchValue")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue? ClaimMatchValue { get; set; }
 }
@@ -5889,7 +6171,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim
 {
-    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value below.</summary>
+    /// <summary>Configuration block to define the value or values to match for and the relationship of the match. See authorizing_claim_match_value Block below.</summary>
     [JsonPropertyName("authorizingClaimMatchValue")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue? AuthorizingClaimMatchValue { get; set; }
 
@@ -5902,7 +6184,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? InboundTokenClaimValueType { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource
@@ -5932,7 +6214,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource
@@ -5942,21 +6224,21 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+/// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
 
-/// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+/// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource
@@ -5986,7 +6268,7 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? VpcIdentifier { get; set; }
 }
 
-/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+/// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource
@@ -5996,16 +6278,16 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     public string? ResourceConfigurationIdentifier { get; set; }
 }
 
-/// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+/// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint
 {
-    /// <summary>Managed VPC resource configuration. See managed_vpc_resource below.</summary>
+    /// <summary>Managed VPC resource configuration. See managed_vpc_resource Block below.</summary>
     [JsonPropertyName("managedVpcResource")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointManagedVpcResource? ManagedVpcResource { get; set; }
 
-    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource below.</summary>
+    /// <summary>Self-managed VPC Lattice resource configuration. See self_managed_lattice_resource Block below.</summary>
     [JsonPropertyName("selfManagedLatticeResource")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpointSelfManagedLatticeResource? SelfManagedLatticeResource { get; set; }
 }
@@ -6018,12 +6300,12 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>Private endpoint configuration. See private_endpoint below.</summary>
+    /// <summary>Private endpoint configuration. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverridesPrivateEndpoint? PrivateEndpoint { get; set; }
 }
 
-/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+/// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizer
@@ -6040,11 +6322,11 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     [JsonPropertyName("allowedScopes")]
     public IList<string>? AllowedScopes { get; set; }
 
-    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration below.</summary>
+    /// <summary>Configuration restricting which workloads may use this authorizer. See allowed_workload_configuration Block below.</summary>
     [JsonPropertyName("allowedWorkloadConfiguration")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerAllowedWorkloadConfiguration? AllowedWorkloadConfiguration { get; set; }
 
-    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim below.</summary>
+    /// <summary>Repeatable block to define a custom claim validation name, value, and operation. See custom_claim Block below.</summary>
     [JsonPropertyName("customClaim")]
     public IList<V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerCustomClaim>? CustomClaim { get; set; }
 
@@ -6052,21 +6334,21 @@ public partial class V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustom
     [JsonPropertyName("discoveryUrl")]
     public string? DiscoveryUrl { get; set; }
 
-    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint below.</summary>
+    /// <summary>Private endpoint used to reach the authorization server. See private_endpoint Block below.</summary>
     [JsonPropertyName("privateEndpoint")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpoint? PrivateEndpoint { get; set; }
 
-    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides below.</summary>
+    /// <summary>Overrides for the private endpoints used to reach the authorization server. See private_endpoint_overrides Block below.</summary>
     [JsonPropertyName("privateEndpointOverrides")]
     public IList<V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizerPrivateEndpointOverrides>? PrivateEndpointOverrides { get; set; }
 }
 
-/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+/// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderAuthorizerConfiguration
 {
-    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer below.</summary>
+    /// <summary>JWT-based authorization configuration block. See custom_jwt_authorizer Block below.</summary>
     [JsonPropertyName("customJwtAuthorizer")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfigurationCustomJwtAuthorizer? CustomJwtAuthorizer { get; set; }
 }
@@ -6110,15 +6392,15 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration
 {
-    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point below.</summary>
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
     [JsonPropertyName("efsAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
 
-    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point below.</summary>
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
     [JsonPropertyName("s3FilesAccessPoint")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
 
-    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage below.</summary>
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
     [JsonPropertyName("sessionStorage")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
 }
@@ -6161,7 +6443,7 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
     [JsonPropertyName("networkMode")]
     public string? NetworkMode { get; set; }
 
-    /// <summary>VPC configuration. See network_mode_config below.</summary>
+    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
     [JsonPropertyName("networkModeConfig")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
 }
@@ -6170,40 +6452,175 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironment
 {
-    /// <summary>ARN of the AgentCore memory resource.</summary>
+    /// <summary>ARN of the agent runtime the service provisions for the harness.</summary>
     [JsonPropertyName("agentRuntimeArn")]
     public string? AgentRuntimeArn { get; set; }
 
+    /// <summary>ID of the agent runtime the service provisions for the harness.</summary>
     [JsonPropertyName("agentRuntimeId")]
     public string? AgentRuntimeId { get; set; }
 
+    /// <summary>Name of the agent runtime the service derives for the harness.</summary>
     [JsonPropertyName("agentRuntimeName")]
     public string? AgentRuntimeName { get; set; }
 
-    /// <summary>Filesystem configurations. See filesystem_configuration below.</summary>
+    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
     [JsonPropertyName("filesystemConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
 
-    /// <summary>Lifecycle configuration. See lifecycle_configuration below.</summary>
+    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
     [JsonPropertyName("lifecycleConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
 
-    /// <summary>Network configuration. See network_configuration below.</summary>
+    /// <summary>Network configuration. See network_configuration Block below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
 }
 
-/// <summary>Compute environment configuration. See environment below.</summary>
+/// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironment
 {
-    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment below.</summary>
+    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
     [JsonPropertyName("agentcoreRuntimeEnvironment")]
     public IList<V1beta1HarnessStatusAtProviderEnvironmentAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
 }
 
-/// <summary>Container configuration. See container_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint
+{
+    /// <summary>ARN of the Amazon S3 Files access point to mount into the agent runtime.</summary>
+    [JsonPropertyName("accessPointArn")]
+    public string? AccessPointArn { get; set; }
+
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage
+{
+    /// <summary>Mount path for the S3 Files access point inside the agent runtime. Must be under /mnt with exactly one subdirectory level (for example, /mnt/data).</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfiguration
+{
+    /// <summary>Amazon EFS access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See efs_access_point Block below.</summary>
+    [JsonPropertyName("efsAccessPoint")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationEfsAccessPoint>? EfsAccessPoint { get; set; }
+
+    /// <summary>Amazon S3 Files access point to mount as shared file storage. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See s3_files_access_point Block below.</summary>
+    [JsonPropertyName("s3FilesAccessPoint")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationS3FilesAccessPoint>? S3FilesAccessPoint { get; set; }
+
+    /// <summary>Session storage filesystem providing persistent storage across agent runtime session invocations. Exactly one of session_storage, s3_files_access_point, or efs_access_point must be specified. See session_storage Block below.</summary>
+    [JsonPropertyName("sessionStorage")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfigurationSessionStorage>? SessionStorage { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentLifecycleConfiguration
+{
+    /// <summary>Timeout in seconds for idle sessions.</summary>
+    [JsonPropertyName("idleRuntimeSessionTimeout")]
+    public double? IdleRuntimeSessionTimeout { get; set; }
+
+    /// <summary>Maximum lifetime of the instance in seconds.</summary>
+    [JsonPropertyName("maxLifetime")]
+    public double? MaxLifetime { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig
+{
+    /// <summary>Whether to require an S3 endpoint for the service in the VPC.</summary>
+    [JsonPropertyName("requireServiceS3Endpoint")]
+    public bool? RequireServiceS3Endpoint { get; set; }
+
+    /// <summary>Security groups for the VPC.</summary>
+    [JsonPropertyName("securityGroups")]
+    public IList<string>? SecurityGroups { get; set; }
+
+    /// <summary>Subnets for the VPC.</summary>
+    [JsonPropertyName("subnets")]
+    public IList<string>? Subnets { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfiguration
+{
+    /// <summary>Network mode. Valid values: PUBLIC, VPC.</summary>
+    [JsonPropertyName("networkMode")]
+    public string? NetworkMode { get; set; }
+
+    /// <summary>VPC configuration. See network_mode_config Block below.</summary>
+    [JsonPropertyName("networkModeConfig")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfigurationNetworkModeConfig>? NetworkModeConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironment
+{
+    /// <summary>ARN of the agent runtime the service provisions for the harness.</summary>
+    [JsonPropertyName("agentRuntimeArn")]
+    public string? AgentRuntimeArn { get; set; }
+
+    /// <summary>ID of the agent runtime the service provisions for the harness.</summary>
+    [JsonPropertyName("agentRuntimeId")]
+    public string? AgentRuntimeId { get; set; }
+
+    /// <summary>Name of the agent runtime the service derives for the harness.</summary>
+    [JsonPropertyName("agentRuntimeName")]
+    public string? AgentRuntimeName { get; set; }
+
+    /// <summary>Filesystem configurations. See filesystem_configuration Block below.</summary>
+    [JsonPropertyName("filesystemConfiguration")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentFilesystemConfiguration>? FilesystemConfiguration { get; set; }
+
+    /// <summary>Lifecycle configuration. See lifecycle_configuration Block below.</summary>
+    [JsonPropertyName("lifecycleConfiguration")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentLifecycleConfiguration>? LifecycleConfiguration { get; set; }
+
+    /// <summary>Network configuration. See network_configuration Block below.</summary>
+    [JsonPropertyName("networkConfiguration")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironmentNetworkConfiguration>? NetworkConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderEnvironmentActual
+{
+    /// <summary>AgentCore runtime environment configuration. See agentcore_runtime_environment Block below.</summary>
+    [JsonPropertyName("agentcoreRuntimeEnvironment")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActualAgentcoreRuntimeEnvironment>? AgentcoreRuntimeEnvironment { get; set; }
+}
+
+/// <summary>Container configuration. See container_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentArtifactContainerConfiguration
@@ -6213,22 +6630,22 @@ public partial class V1beta1HarnessStatusAtProviderEnvironmentArtifactContainerC
     public string? ContainerUri { get; set; }
 }
 
-/// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+/// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderEnvironmentArtifact
 {
-    /// <summary>Container configuration. See container_configuration below.</summary>
+    /// <summary>Container configuration. See container_configuration Block below.</summary>
     [JsonPropertyName("containerConfiguration")]
     public V1beta1HarnessStatusAtProviderEnvironmentArtifactContainerConfiguration? ContainerConfiguration { get; set; }
 }
 
-/// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+/// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig
 {
-    /// <summary>Key for the retrieval configuration map block.</summary>
+    /// <summary>Namespace path template for retrieval settings.</summary>
     [JsonPropertyName("mapBlockKey")]
     public string? MapBlockKey { get; set; }
 
@@ -6245,7 +6662,7 @@ public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigur
     public double? TopK { get; set; }
 }
 
-/// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+/// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfiguration
@@ -6262,26 +6679,157 @@ public partial class V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigur
     [JsonPropertyName("messagesCount")]
     public double? MessagesCount { get; set; }
 
-    /// <summary>Retrieval configuration parameters. See retrieval_config below.</summary>
+    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
     [JsonPropertyName("retrievalConfig")]
     public V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfigurationRetrievalConfig? RetrievalConfig { get; set; }
 }
 
-/// <summary>Memory configuration. See memory below.</summary>
+/// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryDisabled
+{
+}
+
+/// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfiguration
+{
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>ARN of a customer-managed KMS key used to encrypt the memory. Defaults to an AWS-owned key. Cannot be changed after creation.</summary>
+    [JsonPropertyName("encryptionKeyArn")]
+    public string? EncryptionKeyArn { get; set; }
+
+    /// <summary>Event retention in days. Defaults to 30.</summary>
+    [JsonPropertyName("eventExpiryDuration")]
+    public double? EventExpiryDuration { get; set; }
+
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    [JsonPropertyName("strategies")]
+    public IList<string>? Strategies { get; set; }
+}
+
+/// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderMemory
 {
-    /// <summary>AgentCore memory configuration. See agentcore_memory_configuration below.</summary>
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
     [JsonPropertyName("agentcoreMemoryConfiguration")]
     public V1beta1HarnessStatusAtProviderMemoryAgentcoreMemoryConfiguration? AgentcoreMemoryConfiguration { get; set; }
+
+    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    [JsonPropertyName("disabled")]
+    public V1beta1HarnessStatusAtProviderMemoryDisabled? Disabled { get; set; }
+
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    [JsonPropertyName("managedMemoryConfiguration")]
+    public V1beta1HarnessStatusAtProviderMemoryManagedMemoryConfiguration? ManagedMemoryConfiguration { get; set; }
 }
 
-/// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfigurationRetrievalConfig
+{
+    /// <summary>Namespace path template for retrieval settings.</summary>
+    [JsonPropertyName("mapBlockKey")]
+    public string? MapBlockKey { get; set; }
+
+    /// <summary>Relevance score threshold. Valid value is between 0 and 1.</summary>
+    [JsonPropertyName("relevanceScore")]
+    public double? RelevanceScore { get; set; }
+
+    /// <summary>ID of the memory strategy.</summary>
+    [JsonPropertyName("strategyId")]
+    public string? StrategyId { get; set; }
+
+    /// <summary>Top-k sampling parameter.</summary>
+    [JsonPropertyName("topK")]
+    public double? TopK { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfiguration
+{
+    /// <summary>Actor ID for memory sessions.</summary>
+    [JsonPropertyName("actorId")]
+    public string? ActorId { get; set; }
+
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>Number of recent messages to keep in the conversation window.</summary>
+    [JsonPropertyName("messagesCount")]
+    public double? MessagesCount { get; set; }
+
+    /// <summary>Retrieval configuration parameters. See retrieval_config Block below.</summary>
+    [JsonPropertyName("retrievalConfig")]
+    public IList<V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfigurationRetrievalConfig>? RetrievalConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryActualDisabled
+{
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryActualManagedMemoryConfiguration
+{
+    /// <summary>ARN of the hosting environment.</summary>
+    [JsonPropertyName("arn")]
+    public string? Arn { get; set; }
+
+    /// <summary>ARN of a customer-managed KMS key used to encrypt the memory. Defaults to an AWS-owned key. Cannot be changed after creation.</summary>
+    [JsonPropertyName("encryptionKeyArn")]
+    public string? EncryptionKeyArn { get; set; }
+
+    /// <summary>Event retention in days. Defaults to 30.</summary>
+    [JsonPropertyName("eventExpiryDuration")]
+    public double? EventExpiryDuration { get; set; }
+
+    /// <summary>Set of strategy types to enable. Valid values are SEMANTIC, SUMMARIZATION, and USER_PREFERENCE. Defaults to [&quot;SEMANTIC&quot;, &quot;SUMMARIZATION&quot;].</summary>
+    [JsonPropertyName("strategies")]
+    public IList<string>? Strategies { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderMemoryActual
+{
+    /// <summary>AgentCore memory configuration. Use this to connect to an existing AgentCore memory resource. See agentcore_memory_configuration Block below.</summary>
+    [JsonPropertyName("agentcoreMemoryConfiguration")]
+    public IList<V1beta1HarnessStatusAtProviderMemoryActualAgentcoreMemoryConfiguration>? AgentcoreMemoryConfiguration { get; set; }
+
+    /// <summary>Explicitly disable memory for this harness. See disabled Block below.</summary>
+    [JsonPropertyName("disabled")]
+    public IList<V1beta1HarnessStatusAtProviderMemoryActualDisabled>? Disabled { get; set; }
+
+    /// <summary>Managed memory configuration. Creates and manages a memory resource automatically. See managed_memory_configuration Block below.</summary>
+    [JsonPropertyName("managedMemoryConfiguration")]
+    public IList<V1beta1HarnessStatusAtProviderMemoryActualManagedMemoryConfiguration>? ManagedMemoryConfiguration { get; set; }
+}
+
+/// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderModelBedrockModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
     /// <summary>Maximum number of tokens in the model response.</summary>
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
@@ -6299,11 +6847,15 @@ public partial class V1beta1HarnessStatusAtProviderModelBedrockModelConfig
     public double? TopP { get; set; }
 }
 
-/// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+/// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderModelGeminiModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -6329,11 +6881,19 @@ public partial class V1beta1HarnessStatusAtProviderModelGeminiModelConfig
     public double? TopP { get; set; }
 }
 
-/// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+/// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1HarnessStatusAtProviderModelOpenaiModelConfig
+public partial class V1beta1HarnessStatusAtProviderModelLitellmModelConfig
 {
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>Base URL of the LiteLLM-compatible API endpoint.</summary>
+    [JsonPropertyName("apiBase")]
+    public string? ApiBase { get; set; }
+
     /// <summary>ARN of the secret containing the API key.</summary>
     [JsonPropertyName("apiKeyArn")]
     public string? ApiKeyArn { get; set; }
@@ -6355,31 +6915,133 @@ public partial class V1beta1HarnessStatusAtProviderModelOpenaiModelConfig
     public double? TopP { get; set; }
 }
 
-/// <summary>Model configuration for the harness. See model below.</summary>
+/// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderModelOpenaiModelConfig
+{
+    /// <summary>JSON string containing provider-specific parameters to pass through to the Bedrock model provider unchanged.</summary>
+    [JsonPropertyName("additionalParams")]
+    public string? AdditionalParams { get; set; }
+
+    /// <summary>API format for the model. Valid values are converse_stream, responses, and chat_completions.</summary>
+    [JsonPropertyName("apiFormat")]
+    public string? ApiFormat { get; set; }
+
+    /// <summary>ARN of the secret containing the API key.</summary>
+    [JsonPropertyName("apiKeyArn")]
+    public string? ApiKeyArn { get; set; }
+
+    /// <summary>Maximum number of tokens in the model response.</summary>
+    [JsonPropertyName("maxTokens")]
+    public double? MaxTokens { get; set; }
+
+    /// <summary>Bedrock model ID (e.g., anthropic.claude-sonnet-4-20250514).</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Temperature for sampling. Must be between 0 and 2.</summary>
+    [JsonPropertyName("temperature")]
+    public double? Temperature { get; set; }
+
+    /// <summary>Top-p (nucleus) sampling parameter. Must be between 0 and 1.</summary>
+    [JsonPropertyName("topP")]
+    public double? TopP { get; set; }
+}
+
+/// <summary>Model configuration for the harness. See model Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderModel
 {
-    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config below.</summary>
+    /// <summary>Amazon Bedrock model configuration. See bedrock_model_config Block below.</summary>
     [JsonPropertyName("bedrockModelConfig")]
     public V1beta1HarnessStatusAtProviderModelBedrockModelConfig? BedrockModelConfig { get; set; }
 
-    /// <summary>Gemini model configuration. See gemini_model_config below.</summary>
+    /// <summary>Gemini model configuration. See gemini_model_config Block below.</summary>
     [JsonPropertyName("geminiModelConfig")]
     public V1beta1HarnessStatusAtProviderModelGeminiModelConfig? GeminiModelConfig { get; set; }
 
-    /// <summary>OpenAI model configuration. See openai_model_config below.</summary>
+    /// <summary>LiteLLM model configuration. See litellm_model_config Block below.</summary>
+    [JsonPropertyName("litellmModelConfig")]
+    public V1beta1HarnessStatusAtProviderModelLitellmModelConfig? LitellmModelConfig { get; set; }
+
+    /// <summary>OpenAI model configuration. See openai_model_config Block below.</summary>
     [JsonPropertyName("openaiModelConfig")]
     public V1beta1HarnessStatusAtProviderModelOpenaiModelConfig? OpenaiModelConfig { get; set; }
+}
+
+/// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderSkillAwsSkills
+{
+    /// <summary>List of glob patterns to filter allowed skills (e.g., [&quot;core-skills/*&quot;]).</summary>
+    [JsonPropertyName("paths")]
+    public IList<string>? Paths { get; set; }
+}
+
+/// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderSkillGitAuth
+{
+    /// <summary>ARN of the credential in AgentCore Identity containing the password or personal access token.</summary>
+    [JsonPropertyName("credentialArn")]
+    public string? CredentialArn { get; set; }
+
+    /// <summary>Username for authentication. Defaults to oauth2 if not specified.</summary>
+    [JsonPropertyName("username")]
+    public string? Username { get; set; }
+}
+
+/// <summary>Git repository source for the skill. See git Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderSkillGit
+{
+    /// <summary>Authentication configuration for private repositories. See auth Block below.</summary>
+    [JsonPropertyName("auth")]
+    public V1beta1HarnessStatusAtProviderSkillGitAuth? Auth { get; set; }
+
+    /// <summary>Path to the skill.</summary>
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    /// <summary>URL of the remote MCP server.</summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
+}
+
+/// <summary>S3 source for the skill. See s3 Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HarnessStatusAtProviderSkillS3
+{
+    /// <summary>S3 URI of the skill source. Must begin with s3://.</summary>
+    [JsonPropertyName("uri")]
+    public string? Uri { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderSkill
 {
+    /// <summary>AWS Skills baked into the harness&apos;s underlying runtime. See aws_skills Block below.</summary>
+    [JsonPropertyName("awsSkills")]
+    public V1beta1HarnessStatusAtProviderSkillAwsSkills? AwsSkills { get; set; }
+
+    /// <summary>Git repository source for the skill. See git Block below.</summary>
+    [JsonPropertyName("git")]
+    public V1beta1HarnessStatusAtProviderSkillGit? Git { get; set; }
+
     /// <summary>Path to the skill.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    /// <summary>S3 source for the skill. See s3 Block below.</summary>
+    [JsonPropertyName("s3")]
+    public V1beta1HarnessStatusAtProviderSkillS3? S3 { get; set; }
 }
 
 /// <summary>Text content of the system prompt.</summary>
@@ -6404,7 +7066,7 @@ public partial class V1beta1HarnessStatusAtProviderSystemPrompt
     public V1beta1HarnessStatusAtProviderSystemPromptTextSecretRef? TextSecretRef { get; set; }
 }
 
-/// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+/// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreBrowser
@@ -6414,7 +7076,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreBrowser
     public string? BrowserArn { get; set; }
 }
 
-/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+/// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreCodeInterpreter
@@ -6424,7 +7086,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreCodeInterp
     public string? CodeInterpreterArn { get; set; }
 }
 
-/// <summary>OAuth credential provider configuration. See oauth below.</summary>
+/// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOutboundAuthOauth
@@ -6450,7 +7112,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOut
     public IList<string>? Scopes { get; set; }
 }
 
-/// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+/// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOutboundAuth
@@ -6463,12 +7125,12 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOut
     [JsonPropertyName("none")]
     public bool? None { get; set; }
 
-    /// <summary>OAuth credential provider configuration. See oauth below.</summary>
+    /// <summary>OAuth credential provider configuration. See oauth Block below.</summary>
     [JsonPropertyName("oauth")]
     public V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOutboundAuthOauth? Oauth { get; set; }
 }
 
-/// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+/// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGateway
@@ -6477,12 +7139,12 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigAgentcoreGateway
     [JsonPropertyName("gatewayArn")]
     public string? GatewayArn { get; set; }
 
-    /// <summary>Outbound authentication configuration. See outbound_auth below.</summary>
+    /// <summary>Outbound authentication configuration. See outbound_auth Block below.</summary>
     [JsonPropertyName("outboundAuth")]
     public V1beta1HarnessStatusAtProviderToolConfigAgentcoreGatewayOutboundAuth? OutboundAuth { get; set; }
 }
 
-/// <summary>Inline function configuration. See inline_function below.</summary>
+/// <summary>Inline function configuration. See inline_function Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigInlineFunction
@@ -6515,7 +7177,7 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigRemoteMcpUrlSecretR
     public required string Name { get; set; }
 }
 
-/// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+/// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfigRemoteMcp
@@ -6534,23 +7196,23 @@ public partial class V1beta1HarnessStatusAtProviderToolConfigRemoteMcp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderToolConfig
 {
-    /// <summary>AgentCore browser configuration. See agentcore_browser below.</summary>
+    /// <summary>AgentCore browser configuration. See agentcore_browser Block below.</summary>
     [JsonPropertyName("agentcoreBrowser")]
     public V1beta1HarnessStatusAtProviderToolConfigAgentcoreBrowser? AgentcoreBrowser { get; set; }
 
-    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter below.</summary>
+    /// <summary>AgentCore code interpreter configuration. See agentcore_code_interpreter Block below.</summary>
     [JsonPropertyName("agentcoreCodeInterpreter")]
     public V1beta1HarnessStatusAtProviderToolConfigAgentcoreCodeInterpreter? AgentcoreCodeInterpreter { get; set; }
 
-    /// <summary>AgentCore gateway configuration. See agentcore_gateway below.</summary>
+    /// <summary>AgentCore gateway configuration. See agentcore_gateway Block below.</summary>
     [JsonPropertyName("agentcoreGateway")]
     public V1beta1HarnessStatusAtProviderToolConfigAgentcoreGateway? AgentcoreGateway { get; set; }
 
-    /// <summary>Inline function configuration. See inline_function below.</summary>
+    /// <summary>Inline function configuration. See inline_function Block below.</summary>
     [JsonPropertyName("inlineFunction")]
     public V1beta1HarnessStatusAtProviderToolConfigInlineFunction? InlineFunction { get; set; }
 
-    /// <summary>Remote MCP server configuration. See remote_mcp below.</summary>
+    /// <summary>Remote MCP server configuration. See remote_mcp Block below.</summary>
     [JsonPropertyName("remoteMcp")]
     public V1beta1HarnessStatusAtProviderToolConfigRemoteMcp? RemoteMcp { get; set; }
 }
@@ -6602,16 +7264,16 @@ public partial class V1beta1HarnessStatusAtProviderTruncationConfigSummarization
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderTruncationConfig
 {
-    /// <summary>Sliding window truncation configuration. See sliding_window below.</summary>
+    /// <summary>Sliding window truncation configuration. See sliding_window Block below.</summary>
     [JsonPropertyName("slidingWindow")]
     public IList<V1beta1HarnessStatusAtProviderTruncationConfigSlidingWindow>? SlidingWindow { get; set; }
 
-    /// <summary>Summarization truncation configuration. See summarization below.</summary>
+    /// <summary>Summarization truncation configuration. See summarization Block below.</summary>
     [JsonPropertyName("summarization")]
     public IList<V1beta1HarnessStatusAtProviderTruncationConfigSummarization>? Summarization { get; set; }
 }
 
-/// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+/// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HarnessStatusAtProviderTruncation
@@ -6637,15 +7299,19 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration below.</summary>
+    /// <summary>Authorization configuration for authenticating requests. See authorizer_configuration Block below.</summary>
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1HarnessStatusAtProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Compute environment configuration. See environment below.</summary>
+    /// <summary>Compute environment configuration. See environment Block below.If not specified, configured values can be found in environment_actual.</summary>
     [JsonPropertyName("environment")]
     public V1beta1HarnessStatusAtProviderEnvironment? Environment { get; set; }
 
-    /// <summary>Environment artifact configuration. See environment_artifact below.</summary>
+    /// <summary>Actual deployed environment configuration.</summary>
+    [JsonPropertyName("environmentActual")]
+    public IList<V1beta1HarnessStatusAtProviderEnvironmentActual>? EnvironmentActual { get; set; }
+
+    /// <summary>Environment artifact configuration. See environment_artifact Block below.</summary>
     [JsonPropertyName("environmentArtifact")]
     public V1beta1HarnessStatusAtProviderEnvironmentArtifact? EnvironmentArtifact { get; set; }
 
@@ -6672,11 +7338,15 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("maxTokens")]
     public double? MaxTokens { get; set; }
 
-    /// <summary>Memory configuration. See memory below.</summary>
+    /// <summary>Memory configuration. See memory Block below. If not specified, configured values can be found in memory_actual. Clearing this value will reset the memory configuration to default values.</summary>
     [JsonPropertyName("memory")]
     public V1beta1HarnessStatusAtProviderMemory? Memory { get; set; }
 
-    /// <summary>Model configuration for the harness. See model below.</summary>
+    /// <summary>Actual deployed memory configuration.</summary>
+    [JsonPropertyName("memoryActual")]
+    public IList<V1beta1HarnessStatusAtProviderMemoryActual>? MemoryActual { get; set; }
+
+    /// <summary>Model configuration for the harness. See model Block below.</summary>
     [JsonPropertyName("model")]
     public V1beta1HarnessStatusAtProviderModel? Model { get; set; }
 
@@ -6687,11 +7357,11 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Skill configurations. See skill below.</summary>
+    /// <summary>Skill configurations. See skill Block below.</summary>
     [JsonPropertyName("skill")]
     public IList<V1beta1HarnessStatusAtProviderSkill>? Skill { get; set; }
 
-    /// <summary>System prompt blocks for the harness. See system_prompt below.</summary>
+    /// <summary>System prompt blocks for the harness. See system_prompt Block below.</summary>
     [JsonPropertyName("systemPrompt")]
     public IList<V1beta1HarnessStatusAtProviderSystemPrompt>? SystemPrompt { get; set; }
 
@@ -6707,11 +7377,11 @@ public partial class V1beta1HarnessStatusAtProvider
     [JsonPropertyName("timeoutSeconds")]
     public double? TimeoutSeconds { get; set; }
 
-    /// <summary>Tool configurations. See tool below.</summary>
+    /// <summary>Tool configurations. See tool Block below.</summary>
     [JsonPropertyName("tool")]
     public IList<V1beta1HarnessStatusAtProviderTool>? Tool { get; set; }
 
-    /// <summary>Truncation configuration for conversation history. See truncation below.</summary>
+    /// <summary>Truncation configuration for conversation history. See truncation Block below.</summary>
     [JsonPropertyName("truncation")]
     public V1beta1HarnessStatusAtProviderTruncation? Truncation { get; set; }
 }

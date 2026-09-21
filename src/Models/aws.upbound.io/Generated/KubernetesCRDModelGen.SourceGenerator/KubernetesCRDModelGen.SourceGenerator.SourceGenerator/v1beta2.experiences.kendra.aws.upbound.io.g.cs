@@ -426,7 +426,7 @@ public partial class V1beta2ExperienceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -815,7 +815,7 @@ public partial class V1beta2ExperienceSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1109,7 +1109,7 @@ public partial class V1beta2ExperienceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and AWS SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

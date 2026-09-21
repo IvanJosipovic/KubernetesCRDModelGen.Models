@@ -73,7 +73,7 @@ public partial class V1beta1ParameterSpecForProviderValueSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>Value of the parameter. Additionally, write-only values are never stored to state. value_wo_version can be used to trigger an update and is required with this argument.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
+/// <summary>Value of the parameter. Additionally, write-only values are never stored to state. If set, requires value_wo_version.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterSpecForProviderValueWoSecretRef
@@ -103,7 +103,7 @@ public partial class V1beta1ParameterSpecForProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for Amazon Machine Image IDs.</summary>
+    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for AMI IDs.</summary>
     [JsonPropertyName("dataType")]
     public string? DataType { get; set; }
 
@@ -146,11 +146,11 @@ public partial class V1beta1ParameterSpecForProvider
     [JsonPropertyName("valueSecretRef")]
     public V1beta1ParameterSpecForProviderValueSecretRef? ValueSecretRef { get; set; }
 
-    /// <summary>Value of the parameter. Additionally, write-only values are never stored to state. value_wo_version can be used to trigger an update and is required with this argument.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
+    /// <summary>Value of the parameter. Additionally, write-only values are never stored to state. If set, requires value_wo_version.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
     [JsonPropertyName("valueWoSecretRef")]
     public V1beta1ParameterSpecForProviderValueWoSecretRef? ValueWoSecretRef { get; set; }
 
-    /// <summary>Used together with value_wo to trigger an update. Increment this value when an update to the value_wo is required.</summary>
+    /// <summary>Required when value_wo is set. Changing this value triggers an update to value_wo.</summary>
     [JsonPropertyName("valueWoVersion")]
     public double? ValueWoVersion { get; set; }
 }
@@ -173,7 +173,7 @@ public partial class V1beta1ParameterSpecInitProviderValueSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>Value of the parameter. Additionally, write-only values are never stored to state. value_wo_version can be used to trigger an update and is required with this argument.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
+/// <summary>Value of the parameter. Additionally, write-only values are never stored to state. If set, requires value_wo_version.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterSpecInitProviderValueWoSecretRef
@@ -215,7 +215,7 @@ public partial class V1beta1ParameterSpecInitProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for Amazon Machine Image IDs.</summary>
+    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for AMI IDs.</summary>
     [JsonPropertyName("dataType")]
     public string? DataType { get; set; }
 
@@ -251,11 +251,11 @@ public partial class V1beta1ParameterSpecInitProvider
     [JsonPropertyName("valueSecretRef")]
     public V1beta1ParameterSpecInitProviderValueSecretRef? ValueSecretRef { get; set; }
 
-    /// <summary>Value of the parameter. Additionally, write-only values are never stored to state. value_wo_version can be used to trigger an update and is required with this argument.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
+    /// <summary>Value of the parameter. Additionally, write-only values are never stored to state. If set, requires value_wo_version.15 and later, this may require additional configuration handling for certain scenarios.15 Upgrade Guide.</summary>
     [JsonPropertyName("valueWoSecretRef")]
     public V1beta1ParameterSpecInitProviderValueWoSecretRef? ValueWoSecretRef { get; set; }
 
-    /// <summary>Used together with value_wo to trigger an update. Increment this value when an update to the value_wo is required.</summary>
+    /// <summary>Required when value_wo is set. Changing this value triggers an update to value_wo.</summary>
     [JsonPropertyName("valueWoVersion")]
     public double? ValueWoVersion { get; set; }
 }
@@ -455,7 +455,7 @@ public partial class V1beta1ParameterStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for Amazon Machine Image IDs.</summary>
+    /// <summary>Data type of the parameter. Valid values: text, aws:ssm:integration and aws:ec2:image for AMI format, see the Native parameter support for AMI IDs.</summary>
     [JsonPropertyName("dataType")]
     public string? DataType { get; set; }
 
@@ -505,7 +505,7 @@ public partial class V1beta1ParameterStatusAtProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Used together with value_wo to trigger an update. Increment this value when an update to the value_wo is required.</summary>
+    /// <summary>Required when value_wo is set. Changing this value triggers an update to value_wo.</summary>
     [JsonPropertyName("valueWoVersion")]
     public double? ValueWoVersion { get; set; }
 

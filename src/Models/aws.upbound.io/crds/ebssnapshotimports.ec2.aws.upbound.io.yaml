@@ -1104,7 +1104,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the EBS Snapshot.
+                    description: ARN of the EBS Snapshot.
                     type: string
                   clientData:
                     description: The client-specific data. Detailed below.
@@ -1161,7 +1161,7 @@ spec:
                     description: An identifier for the symmetric KMS key to use when creating the encrypted snapshot. This parameter is only required if you want to use a non-default KMS key; if this parameter is not specified, the default KMS key for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.
                     type: string
                   outpostArn:
-                    description: Amazon Resource Name (ARN) of the EBS Snapshot.
+                    description: ARN of the EBS Snapshot.
                     type: string
                   ownerAlias:
                     description: Value from an Amazon-maintained list (amazon, aws-marketplace, microsoft) of snapshot owners.

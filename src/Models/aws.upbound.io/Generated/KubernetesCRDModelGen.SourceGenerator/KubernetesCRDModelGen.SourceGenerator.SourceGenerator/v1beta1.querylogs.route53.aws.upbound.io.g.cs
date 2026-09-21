@@ -900,7 +900,7 @@ public partial class V1beta1QueryLogSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueryLogStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Query Logging Config.</summary>
+    /// <summary>ARN of the Query Logging Config.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

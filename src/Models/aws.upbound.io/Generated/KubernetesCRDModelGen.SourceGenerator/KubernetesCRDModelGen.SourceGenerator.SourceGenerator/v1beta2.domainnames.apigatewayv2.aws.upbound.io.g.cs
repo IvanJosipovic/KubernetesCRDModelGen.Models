@@ -223,7 +223,7 @@ public partial class V1beta2DomainNameSpecForProviderDomainNameConfiguration
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>The IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -231,7 +231,7 @@ public partial class V1beta2DomainNameSpecForProviderDomainNameConfiguration
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
+    /// <summary>TLS version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 }
@@ -446,7 +446,7 @@ public partial class V1beta2DomainNameSpecInitProviderDomainNameConfiguration
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>The IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -454,7 +454,7 @@ public partial class V1beta2DomainNameSpecInitProviderDomainNameConfiguration
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
+    /// <summary>TLS version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 }
@@ -702,11 +702,11 @@ public partial class V1beta2DomainNameStatusAtProviderDomainNameConfiguration
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>(Computed) Amazon Route 53 Hosted Zone ID of the endpoint.</summary>
+    /// <summary>Amazon Route 53 Hosted Zone ID of the endpoint.</summary>
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
-    /// <summary>The IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
+    /// <summary>IP address types that can invoke the domain name. Valid values: ipv4, dualstack. Use ipv4 to allow only IPv4 addresses to invoke your domain name, or use dualstack to allow both IPv4 and IPv6 addresses to invoke your domain name. Defaults to ipv4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
@@ -714,11 +714,11 @@ public partial class V1beta2DomainNameStatusAtProviderDomainNameConfiguration
     [JsonPropertyName("ownershipVerificationCertificateArn")]
     public string? OwnershipVerificationCertificateArn { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
+    /// <summary>TLS version of the security policy for the domain name. Valid values: TLS_1_2.</summary>
     [JsonPropertyName("securityPolicy")]
     public string? SecurityPolicy { get; set; }
 
-    /// <summary>(Computed) Target domain name.</summary>
+    /// <summary>Target domain name.</summary>
     [JsonPropertyName("targetDomainName")]
     public string? TargetDomainName { get; set; }
 }

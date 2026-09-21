@@ -954,7 +954,7 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("environmentClass")]
     public string? EnvironmentClass { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
+    /// <summary>ARN of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -966,7 +966,7 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1EnvironmentSpecForProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
+    /// <summary>ARN of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
@@ -1029,7 +1029,7 @@ public partial class V1beta1EnvironmentSpecForProvider
     [JsonPropertyName("schedulers")]
     public double? Schedulers { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
+    /// <summary>ARN of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
     [JsonPropertyName("sourceBucketArn")]
     public string? SourceBucketArn { get; set; }
 
@@ -1962,7 +1962,7 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("environmentClass")]
     public string? EnvironmentClass { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
+    /// <summary>ARN of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -1974,7 +1974,7 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1EnvironmentSpecInitProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
+    /// <summary>ARN of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
@@ -2030,7 +2030,7 @@ public partial class V1beta1EnvironmentSpecInitProvider
     [JsonPropertyName("schedulers")]
     public double? Schedulers { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
+    /// <summary>ARN of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
     [JsonPropertyName("sourceBucketArn")]
     public string? SourceBucketArn { get; set; }
 
@@ -2439,14 +2439,14 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("environmentClass")]
     public string? EnvironmentClass { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
+    /// <summary>ARN of the task execution role that the Amazon MWAA and its environment can assume. Check the official AWS documentation for the detailed role specification.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
+    /// <summary>ARN of your KMS key that you want to use for encryption. Will be set to the ARN of the managed KMS key aws/airflow by default. Please check the Official Documentation for more information.</summary>
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
@@ -2508,7 +2508,7 @@ public partial class V1beta1EnvironmentStatusAtProvider
     [JsonPropertyName("serviceRoleArn")]
     public string? ServiceRoleArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
+    /// <summary>ARN of your Amazon S3 storage bucket. For example, arn:aws:s3:::airflow-mybucketname.</summary>
     [JsonPropertyName("sourceBucketArn")]
     public string? SourceBucketArn { get; set; }
 

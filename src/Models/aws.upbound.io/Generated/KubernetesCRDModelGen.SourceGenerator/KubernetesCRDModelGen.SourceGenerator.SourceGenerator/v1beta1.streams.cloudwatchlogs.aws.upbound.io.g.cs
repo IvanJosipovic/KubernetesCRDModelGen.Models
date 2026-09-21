@@ -597,7 +597,7 @@ public partial class V1beta1StreamSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the log stream.</summary>
+    /// <summary>ARN specifying the log stream.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

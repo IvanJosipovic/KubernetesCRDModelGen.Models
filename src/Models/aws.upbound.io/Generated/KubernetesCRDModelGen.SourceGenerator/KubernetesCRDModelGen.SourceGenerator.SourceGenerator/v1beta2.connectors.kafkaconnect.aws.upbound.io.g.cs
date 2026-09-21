@@ -1188,7 +1188,7 @@ public partial class V1beta2ConnectorSpecForProviderPluginCustomPluginArnSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorSpecForProviderPluginCustomPlugin
 {
-    /// <summary>The Amazon Resource Name (ARN) of the custom plugin.</summary>
+    /// <summary>ARN of the custom plugin.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1513,7 +1513,7 @@ public partial class V1beta2ConnectorSpecForProviderWorkerConfigurationArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorSpecForProviderWorkerConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the worker configuration.</summary>
+    /// <summary>ARN of the worker configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1581,7 +1581,7 @@ public partial class V1beta2ConnectorSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
+    /// <summary>ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 
@@ -2735,7 +2735,7 @@ public partial class V1beta2ConnectorSpecInitProviderPluginCustomPluginArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorSpecInitProviderPluginCustomPlugin
 {
-    /// <summary>The Amazon Resource Name (ARN) of the custom plugin.</summary>
+    /// <summary>ARN of the custom plugin.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3060,7 +3060,7 @@ public partial class V1beta2ConnectorSpecInitProviderWorkerConfigurationArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorSpecInitProviderWorkerConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the worker configuration.</summary>
+    /// <summary>ARN of the worker configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3129,7 +3129,7 @@ public partial class V1beta2ConnectorSpecInitProvider
     [JsonPropertyName("plugin")]
     public IList<V1beta2ConnectorSpecInitProviderPlugin>? Plugin { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
+    /// <summary>ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 
@@ -3544,7 +3544,7 @@ public partial class V1beta2ConnectorStatusAtProviderLogDelivery
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorStatusAtProviderPluginCustomPlugin
 {
-    /// <summary>The Amazon Resource Name (ARN) of the custom plugin.</summary>
+    /// <summary>ARN of the custom plugin.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3567,7 +3567,7 @@ public partial class V1beta2ConnectorStatusAtProviderPlugin
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorStatusAtProviderWorkerConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the worker configuration.</summary>
+    /// <summary>ARN of the worker configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3580,7 +3580,7 @@ public partial class V1beta2ConnectorStatusAtProviderWorkerConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectorStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the connector.</summary>
+    /// <summary>ARN of the connector.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3634,7 +3634,7 @@ public partial class V1beta2ConnectorStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
+    /// <summary>ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.</summary>
     [JsonPropertyName("serviceExecutionRoleArn")]
     public string? ServiceExecutionRoleArn { get; set; }
 

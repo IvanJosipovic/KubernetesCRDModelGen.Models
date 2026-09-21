@@ -349,7 +349,7 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketBucke
     public V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+/// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseKms
@@ -359,28 +359,28 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncry
     public string? KeyId { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+/// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseS3
 {
 }
 
-/// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+/// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucketEncryption
 {
-    /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+    /// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+    /// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
     [JsonPropertyName("sseS3")]
     public V1beta2BucketInventorySpecForProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+/// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestinationBucket
@@ -401,11 +401,11 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucket
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2BucketInventorySpecForProviderDestinationBucketBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+    /// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
     [JsonPropertyName("encryption")]
     public V1beta2BucketInventorySpecForProviderDestinationBucketEncryption? Encryption { get; set; }
 
-    /// <summary>Specifies the output format of the inventory results. Can be CSV, ORC or Parquet.</summary>
+    /// <summary>Output format of the inventory results. Valid values: CSV, ORC, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
@@ -414,17 +414,17 @@ public partial class V1beta2BucketInventorySpecForProviderDestinationBucket
     public string? Prefix { get; set; }
 }
 
-/// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+/// <summary>Where to publish the inventory results. See destination Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+    /// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
     [JsonPropertyName("bucket")]
     public V1beta2BucketInventorySpecForProviderDestinationBucket? Bucket { get; set; }
 }
 
-/// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderFilter
@@ -434,12 +434,12 @@ public partial class V1beta2BucketInventorySpecForProviderFilter
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+/// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecForProviderSchedule
 {
-    /// <summary>Specifies how frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
+    /// <summary>How frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
 }
@@ -460,15 +460,15 @@ public partial class V1beta2BucketInventorySpecForProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketInventorySpecForProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+    /// <summary>Where to publish the inventory results. See destination Block below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketInventorySpecForProviderDestination? Destination { get; set; }
 
-    /// <summary>Specifies whether the inventory is enabled or disabled.</summary>
+    /// <summary>Whether to enable the inventory.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketInventorySpecForProviderFilter? Filter { get; set; }
 
@@ -491,7 +491,7 @@ public partial class V1beta2BucketInventorySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+    /// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
     [JsonPropertyName("schedule")]
     public V1beta2BucketInventorySpecForProviderSchedule? Schedule { get; set; }
 }
@@ -790,7 +790,7 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketBuck
     public V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+/// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseKms
@@ -800,28 +800,28 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncr
     public string? KeyId { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+/// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseS3
 {
 }
 
-/// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+/// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucketEncryption
 {
-    /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+    /// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+    /// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
     [JsonPropertyName("sseS3")]
     public V1beta2BucketInventorySpecInitProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+/// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestinationBucket
@@ -842,11 +842,11 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucket
     [JsonPropertyName("bucketArnSelector")]
     public V1beta2BucketInventorySpecInitProviderDestinationBucketBucketArnSelector? BucketArnSelector { get; set; }
 
-    /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+    /// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
     [JsonPropertyName("encryption")]
     public V1beta2BucketInventorySpecInitProviderDestinationBucketEncryption? Encryption { get; set; }
 
-    /// <summary>Specifies the output format of the inventory results. Can be CSV, ORC or Parquet.</summary>
+    /// <summary>Output format of the inventory results. Valid values: CSV, ORC, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
@@ -855,17 +855,17 @@ public partial class V1beta2BucketInventorySpecInitProviderDestinationBucket
     public string? Prefix { get; set; }
 }
 
-/// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+/// <summary>Where to publish the inventory results. See destination Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+    /// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
     [JsonPropertyName("bucket")]
     public V1beta2BucketInventorySpecInitProviderDestinationBucket? Bucket { get; set; }
 }
 
-/// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderFilter
@@ -875,12 +875,12 @@ public partial class V1beta2BucketInventorySpecInitProviderFilter
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+/// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventorySpecInitProviderSchedule
 {
-    /// <summary>Specifies how frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
+    /// <summary>How frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
 }
@@ -913,15 +913,15 @@ public partial class V1beta2BucketInventorySpecInitProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketInventorySpecInitProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+    /// <summary>Where to publish the inventory results. See destination Block below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketInventorySpecInitProviderDestination? Destination { get; set; }
 
-    /// <summary>Specifies whether the inventory is enabled or disabled.</summary>
+    /// <summary>Whether to enable the inventory.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketInventorySpecInitProviderFilter? Filter { get; set; }
 
@@ -937,7 +937,7 @@ public partial class V1beta2BucketInventorySpecInitProvider
     [JsonPropertyName("optionalFields")]
     public IList<string>? OptionalFields { get; set; }
 
-    /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+    /// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
     [JsonPropertyName("schedule")]
     public V1beta2BucketInventorySpecInitProviderSchedule? Schedule { get; set; }
 }
@@ -1125,7 +1125,7 @@ public partial class V1beta2BucketInventorySpec
     public V1beta2BucketInventorySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+/// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseKms
@@ -1135,28 +1135,28 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncr
     public string? KeyId { get; set; }
 }
 
-/// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+/// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseS3
 {
 }
 
-/// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+/// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryption
 {
-    /// <summary>Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).</summary>
+    /// <summary>Server-side encryption with AWS KMS-managed keys to encrypt the inventory file. See sse_kms Block below.</summary>
     [JsonPropertyName("sseKms")]
     public V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseKms? SseKms { get; set; }
 
-    /// <summary>Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
+    /// <summary>Server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.</summary>
     [JsonPropertyName("sseS3")]
     public V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryptionSseS3? SseS3 { get; set; }
 }
 
-/// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+/// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucket
@@ -1169,11 +1169,11 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucket
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
-    /// <summary>Contains the type of server-side encryption to use to encrypt the inventory (documented below).</summary>
+    /// <summary>Type of server-side encryption to use to encrypt the inventory. See encryption Block below.</summary>
     [JsonPropertyName("encryption")]
     public V1beta2BucketInventoryStatusAtProviderDestinationBucketEncryption? Encryption { get; set; }
 
-    /// <summary>Specifies the output format of the inventory results. Can be CSV, ORC or Parquet.</summary>
+    /// <summary>Output format of the inventory results. Valid values: CSV, ORC, Parquet.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
@@ -1182,17 +1182,17 @@ public partial class V1beta2BucketInventoryStatusAtProviderDestinationBucket
     public string? Prefix { get; set; }
 }
 
-/// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+/// <summary>Where to publish the inventory results. See destination Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderDestination
 {
-    /// <summary>Name of the source bucket that inventory lists the objects for. Both general purpose and directory buckets are supported.</summary>
+    /// <summary>S3 bucket configuration where inventory results are published. See bucket Block below.</summary>
     [JsonPropertyName("bucket")]
     public V1beta2BucketInventoryStatusAtProviderDestinationBucket? Bucket { get; set; }
 }
 
-/// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+/// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderFilter
@@ -1202,12 +1202,12 @@ public partial class V1beta2BucketInventoryStatusAtProviderFilter
     public string? Prefix { get; set; }
 }
 
-/// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+/// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketInventoryStatusAtProviderSchedule
 {
-    /// <summary>Specifies how frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
+    /// <summary>How frequently inventory results are produced. Valid values: Daily, Weekly.</summary>
     [JsonPropertyName("frequency")]
     public string? Frequency { get; set; }
 }
@@ -1220,15 +1220,15 @@ public partial class V1beta2BucketInventoryStatusAtProvider
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Contains information about where to publish the inventory results (documented below).</summary>
+    /// <summary>Where to publish the inventory results. See destination Block below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketInventoryStatusAtProviderDestination? Destination { get; set; }
 
-    /// <summary>Specifies whether the inventory is enabled or disabled.</summary>
+    /// <summary>Whether to enable the inventory.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies an inventory filter. The inventory only includes objects that meet the filter&apos;s criteria (documented below).</summary>
+    /// <summary>Inventory filter. The inventory only includes objects that meet the filter&apos;s criteria. See filter Block below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketInventoryStatusAtProviderFilter? Filter { get; set; }
 
@@ -1254,7 +1254,7 @@ public partial class V1beta2BucketInventoryStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the schedule for generating inventory results (documented below).</summary>
+    /// <summary>Schedule for generating inventory results. See schedule Block below.</summary>
     [JsonPropertyName("schedule")]
     public V1beta2BucketInventoryStatusAtProviderSchedule? Schedule { get; set; }
 }

@@ -206,7 +206,7 @@ public partial class V1beta1AssessmentTargetSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
+    /// <summary>Inspector Resource Group ARN stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
     [JsonPropertyName("resourceGroupArn")]
     public string? ResourceGroupArn { get; set; }
 
@@ -394,7 +394,7 @@ public partial class V1beta1AssessmentTargetSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
+    /// <summary>Inspector Resource Group ARN stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
     [JsonPropertyName("resourceGroupArn")]
     public string? ResourceGroupArn { get; set; }
 
@@ -536,7 +536,7 @@ public partial class V1beta1AssessmentTargetStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
+    /// <summary>Inspector Resource Group ARN stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.</summary>
     [JsonPropertyName("resourceGroupArn")]
     public string? ResourceGroupArn { get; set; }
 }

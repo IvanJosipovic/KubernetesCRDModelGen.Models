@@ -386,11 +386,11 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public required string InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 
@@ -765,15 +765,15 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermiss
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProvider
 {
-    /// <summary>Permission Set Amazon Resource Name (ARN) and SSO Instance ARN, separated by a comma (,).</summary>
+    /// <summary>Permission Set ARN and SSO Instance ARN, separated by a comma (,).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 

@@ -601,7 +601,7 @@ public partial class V1beta1ClusterSnapshotStatusAtProvider
     [JsonPropertyName("dbClusterIdentifier")]
     public string? DbClusterIdentifier { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB Cluster Snapshot.</summary>
+    /// <summary>ARN for the DB Cluster Snapshot.</summary>
     [JsonPropertyName("dbClusterSnapshotArn")]
     public string? DbClusterSnapshotArn { get; set; }
 
@@ -638,7 +638,7 @@ public partial class V1beta1ClusterSnapshotStatusAtProvider
     [JsonPropertyName("snapshotType")]
     public string? SnapshotType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB Cluster Snapshot.</summary>
+    /// <summary>ARN for the DB Cluster Snapshot.</summary>
     [JsonPropertyName("sourceDbClusterSnapshotArn")]
     public string? SourceDbClusterSnapshotArn { get; set; }
 

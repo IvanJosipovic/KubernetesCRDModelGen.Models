@@ -353,15 +353,15 @@ public partial class V1beta2UsagePlanSpecForProviderApiStagesStageSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecForProviderApiStagesThrottle
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.</summary>
+    /// <summary>Method to apply the throttle settings for. Specify the path and method, for example /test/GET.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -370,7 +370,7 @@ public partial class V1beta2UsagePlanSpecForProviderApiStagesThrottle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecForProviderApiStages
 {
-    /// <summary>API Id of the associated API stage in a usage plan.</summary>
+    /// <summary>API ID of the associated API stage in a usage plan.</summary>
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
@@ -394,12 +394,12 @@ public partial class V1beta2UsagePlanSpecForProviderApiStages
     [JsonPropertyName("stageSelector")]
     public V1beta2UsagePlanSpecForProviderApiStagesStageSelector? StageSelector { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits applied to the API stage. See throttle Block below.</summary>
     [JsonPropertyName("throttle")]
     public IList<V1beta2UsagePlanSpecForProviderApiStagesThrottle>? Throttle { get; set; }
 }
 
-/// <summary>The quota settings of the usage plan.</summary>
+/// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecForProviderQuotaSettings
@@ -412,21 +412,21 @@ public partial class V1beta2UsagePlanSpecForProviderQuotaSettings
     [JsonPropertyName("offset")]
     public double? Offset { get; set; }
 
-    /// <summary>Time period in which the limit applies. Valid values are &quot;DAY&quot;, &quot;WEEK&quot; or &quot;MONTH&quot;.</summary>
+    /// <summary>Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.</summary>
     [JsonPropertyName("period")]
     public string? Period { get; set; }
 }
 
-/// <summary>The throttling limits of the usage plan.</summary>
+/// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecForProviderThrottleSettings
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -435,7 +435,7 @@ public partial class V1beta2UsagePlanSpecForProviderThrottleSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecForProvider
 {
-    /// <summary>Associated API stages of the usage plan.</summary>
+    /// <summary>Associated API stages of the usage plan. See api_stages Block below.</summary>
     [JsonPropertyName("apiStages")]
     public IList<V1beta2UsagePlanSpecForProviderApiStages>? ApiStages { get; set; }
 
@@ -451,7 +451,7 @@ public partial class V1beta2UsagePlanSpecForProvider
     [JsonPropertyName("productCode")]
     public string? ProductCode { get; set; }
 
-    /// <summary>The quota settings of the usage plan.</summary>
+    /// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
     [JsonPropertyName("quotaSettings")]
     public V1beta2UsagePlanSpecForProviderQuotaSettings? QuotaSettings { get; set; }
 
@@ -466,7 +466,7 @@ public partial class V1beta2UsagePlanSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
     [JsonPropertyName("throttleSettings")]
     public V1beta2UsagePlanSpecForProviderThrottleSettings? ThrottleSettings { get; set; }
 }
@@ -769,15 +769,15 @@ public partial class V1beta2UsagePlanSpecInitProviderApiStagesStageSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecInitProviderApiStagesThrottle
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.</summary>
+    /// <summary>Method to apply the throttle settings for. Specify the path and method, for example /test/GET.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -786,7 +786,7 @@ public partial class V1beta2UsagePlanSpecInitProviderApiStagesThrottle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecInitProviderApiStages
 {
-    /// <summary>API Id of the associated API stage in a usage plan.</summary>
+    /// <summary>API ID of the associated API stage in a usage plan.</summary>
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
@@ -810,12 +810,12 @@ public partial class V1beta2UsagePlanSpecInitProviderApiStages
     [JsonPropertyName("stageSelector")]
     public V1beta2UsagePlanSpecInitProviderApiStagesStageSelector? StageSelector { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits applied to the API stage. See throttle Block below.</summary>
     [JsonPropertyName("throttle")]
     public IList<V1beta2UsagePlanSpecInitProviderApiStagesThrottle>? Throttle { get; set; }
 }
 
-/// <summary>The quota settings of the usage plan.</summary>
+/// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecInitProviderQuotaSettings
@@ -828,21 +828,21 @@ public partial class V1beta2UsagePlanSpecInitProviderQuotaSettings
     [JsonPropertyName("offset")]
     public double? Offset { get; set; }
 
-    /// <summary>Time period in which the limit applies. Valid values are &quot;DAY&quot;, &quot;WEEK&quot; or &quot;MONTH&quot;.</summary>
+    /// <summary>Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.</summary>
     [JsonPropertyName("period")]
     public string? Period { get; set; }
 }
 
-/// <summary>The throttling limits of the usage plan.</summary>
+/// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecInitProviderThrottleSettings
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -863,7 +863,7 @@ public partial class V1beta2UsagePlanSpecInitProviderThrottleSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanSpecInitProvider
 {
-    /// <summary>Associated API stages of the usage plan.</summary>
+    /// <summary>Associated API stages of the usage plan. See api_stages Block below.</summary>
     [JsonPropertyName("apiStages")]
     public IList<V1beta2UsagePlanSpecInitProviderApiStages>? ApiStages { get; set; }
 
@@ -879,7 +879,7 @@ public partial class V1beta2UsagePlanSpecInitProvider
     [JsonPropertyName("productCode")]
     public string? ProductCode { get; set; }
 
-    /// <summary>The quota settings of the usage plan.</summary>
+    /// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
     [JsonPropertyName("quotaSettings")]
     public V1beta2UsagePlanSpecInitProviderQuotaSettings? QuotaSettings { get; set; }
 
@@ -887,7 +887,7 @@ public partial class V1beta2UsagePlanSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
     [JsonPropertyName("throttleSettings")]
     public V1beta2UsagePlanSpecInitProviderThrottleSettings? ThrottleSettings { get; set; }
 }
@@ -1079,15 +1079,15 @@ public partial class V1beta2UsagePlanSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanStatusAtProviderApiStagesThrottle
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.</summary>
+    /// <summary>Method to apply the throttle settings for. Specify the path and method, for example /test/GET.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -1096,7 +1096,7 @@ public partial class V1beta2UsagePlanStatusAtProviderApiStagesThrottle
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanStatusAtProviderApiStages
 {
-    /// <summary>API Id of the associated API stage in a usage plan.</summary>
+    /// <summary>API ID of the associated API stage in a usage plan.</summary>
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
@@ -1104,12 +1104,12 @@ public partial class V1beta2UsagePlanStatusAtProviderApiStages
     [JsonPropertyName("stage")]
     public string? Stage { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits applied to the API stage. See throttle Block below.</summary>
     [JsonPropertyName("throttle")]
     public IList<V1beta2UsagePlanStatusAtProviderApiStagesThrottle>? Throttle { get; set; }
 }
 
-/// <summary>The quota settings of the usage plan.</summary>
+/// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanStatusAtProviderQuotaSettings
@@ -1122,21 +1122,21 @@ public partial class V1beta2UsagePlanStatusAtProviderQuotaSettings
     [JsonPropertyName("offset")]
     public double? Offset { get; set; }
 
-    /// <summary>Time period in which the limit applies. Valid values are &quot;DAY&quot;, &quot;WEEK&quot; or &quot;MONTH&quot;.</summary>
+    /// <summary>Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.</summary>
     [JsonPropertyName("period")]
     public string? Period { get; set; }
 }
 
-/// <summary>The throttling limits of the usage plan.</summary>
+/// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanStatusAtProviderThrottleSettings
 {
-    /// <summary>The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
+    /// <summary>API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.</summary>
     [JsonPropertyName("burstLimit")]
     public double? BurstLimit { get; set; }
 
-    /// <summary>The API request steady-state rate limit.</summary>
+    /// <summary>API request steady-state rate limit.</summary>
     [JsonPropertyName("rateLimit")]
     public double? RateLimit { get; set; }
 }
@@ -1145,11 +1145,11 @@ public partial class V1beta2UsagePlanStatusAtProviderThrottleSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UsagePlanStatusAtProvider
 {
-    /// <summary>Associated API stages of the usage plan.</summary>
+    /// <summary>Associated API stages of the usage plan. See api_stages Block below.</summary>
     [JsonPropertyName("apiStages")]
     public IList<V1beta2UsagePlanStatusAtProviderApiStages>? ApiStages { get; set; }
 
-    /// <summary>ARN</summary>
+    /// <summary>ARN of the usage plan.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1157,7 +1157,7 @@ public partial class V1beta2UsagePlanStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>ID of the API resource</summary>
+    /// <summary>ID of the usage plan.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1169,7 +1169,7 @@ public partial class V1beta2UsagePlanStatusAtProvider
     [JsonPropertyName("productCode")]
     public string? ProductCode { get; set; }
 
-    /// <summary>The quota settings of the usage plan.</summary>
+    /// <summary>Quota settings of the usage plan. See quota_settings Block below.</summary>
     [JsonPropertyName("quotaSettings")]
     public V1beta2UsagePlanStatusAtProviderQuotaSettings? QuotaSettings { get; set; }
 
@@ -1188,7 +1188,7 @@ public partial class V1beta2UsagePlanStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The throttling limits of the usage plan.</summary>
+    /// <summary>Throttling limits of the usage plan. See throttle_settings Block below.</summary>
     [JsonPropertyName("throttleSettings")]
     public V1beta2UsagePlanStatusAtProviderThrottleSettings? ThrottleSettings { get; set; }
 }

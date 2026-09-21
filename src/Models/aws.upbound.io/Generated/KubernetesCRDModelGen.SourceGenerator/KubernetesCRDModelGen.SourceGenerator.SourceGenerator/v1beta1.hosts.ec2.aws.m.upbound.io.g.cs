@@ -64,7 +64,7 @@ public partial class V1beta1HostSpecForProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Outpost on which to allocate the Dedicated Host.</summary>
+    /// <summary>ARN of the AWS Outpost on which to allocate the Dedicated Host.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -120,7 +120,7 @@ public partial class V1beta1HostSpecInitProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Outpost on which to allocate the Dedicated Host.</summary>
+    /// <summary>ARN of the AWS Outpost on which to allocate the Dedicated Host.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -272,7 +272,7 @@ public partial class V1beta1HostStatusAtProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Outpost on which to allocate the Dedicated Host.</summary>
+    /// <summary>ARN of the AWS Outpost on which to allocate the Dedicated Host.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 

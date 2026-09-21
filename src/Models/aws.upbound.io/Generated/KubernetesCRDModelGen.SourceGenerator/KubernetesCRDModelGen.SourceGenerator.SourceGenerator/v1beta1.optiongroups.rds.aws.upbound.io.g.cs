@@ -80,7 +80,7 @@ public partial class V1beta1OptionGroupSpecForProviderOption
     [JsonPropertyName("optionName")]
     public string? OptionName { get; set; }
 
-    /// <summary>The option settings to apply. See option_settings Block below for more details.</summary>
+    /// <summary>Option settings to apply. See option_settings Block below for more details.</summary>
     [JsonPropertyName("optionSettings")]
     public IList<V1beta1OptionGroupSpecForProviderOptionOptionSettings>? OptionSettings { get; set; }
 
@@ -101,15 +101,15 @@ public partial class V1beta1OptionGroupSpecForProviderOption
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OptionGroupSpecForProvider
 {
-    /// <summary>Specifies the name of the engine that this option group should be associated with.</summary>
+    /// <summary>Name of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("engineName")]
     public string? EngineName { get; set; }
 
-    /// <summary>Specifies the major version of the engine that this option group should be associated with.</summary>
+    /// <summary>Major version of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
-    /// <summary>The options to apply. See option Block below for more details.</summary>
+    /// <summary>Options to apply. See option Block below for more details.</summary>
     [JsonPropertyName("option")]
     public IList<V1beta1OptionGroupSpecForProviderOption>? Option { get; set; }
 
@@ -157,7 +157,7 @@ public partial class V1beta1OptionGroupSpecInitProviderOption
     [JsonPropertyName("optionName")]
     public string? OptionName { get; set; }
 
-    /// <summary>The option settings to apply. See option_settings Block below for more details.</summary>
+    /// <summary>Option settings to apply. See option_settings Block below for more details.</summary>
     [JsonPropertyName("optionSettings")]
     public IList<V1beta1OptionGroupSpecInitProviderOptionOptionSettings>? OptionSettings { get; set; }
 
@@ -190,15 +190,15 @@ public partial class V1beta1OptionGroupSpecInitProviderOption
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OptionGroupSpecInitProvider
 {
-    /// <summary>Specifies the name of the engine that this option group should be associated with.</summary>
+    /// <summary>Name of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("engineName")]
     public string? EngineName { get; set; }
 
-    /// <summary>Specifies the major version of the engine that this option group should be associated with.</summary>
+    /// <summary>Major version of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
-    /// <summary>The options to apply. See option Block below for more details.</summary>
+    /// <summary>Options to apply. See option Block below for more details.</summary>
     [JsonPropertyName("option")]
     public IList<V1beta1OptionGroupSpecInitProviderOption>? Option { get; set; }
 
@@ -422,7 +422,7 @@ public partial class V1beta1OptionGroupStatusAtProviderOption
     [JsonPropertyName("optionName")]
     public string? OptionName { get; set; }
 
-    /// <summary>The option settings to apply. See option_settings Block below for more details.</summary>
+    /// <summary>Option settings to apply. See option_settings Block below for more details.</summary>
     [JsonPropertyName("optionSettings")]
     public IList<V1beta1OptionGroupStatusAtProviderOptionOptionSettings>? OptionSettings { get; set; }
 
@@ -447,7 +447,7 @@ public partial class V1beta1OptionGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies the name of the engine that this option group should be associated with.</summary>
+    /// <summary>Name of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("engineName")]
     public string? EngineName { get; set; }
 
@@ -455,11 +455,11 @@ public partial class V1beta1OptionGroupStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the major version of the engine that this option group should be associated with.</summary>
+    /// <summary>Major version of the engine that this option group should be associated with.</summary>
     [JsonPropertyName("majorEngineVersion")]
     public string? MajorEngineVersion { get; set; }
 
-    /// <summary>The options to apply. See option Block below for more details.</summary>
+    /// <summary>Options to apply. See option Block below for more details.</summary>
     [JsonPropertyName("option")]
     public IList<V1beta1OptionGroupStatusAtProviderOption>? Option { get; set; }
 

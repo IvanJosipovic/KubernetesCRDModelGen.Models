@@ -131,6 +131,26 @@ public partial class V1beta2AutoscalingGroupSpecForProviderInitialLifecycleHook
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupSpecForProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupSpecForProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public IList<V1beta2AutoscalingGroupSpecForProviderInstanceLifecyclePolicyRetentionTriggers>? RetentionTriggers { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta2AutoscalingGroupSpecForProviderInstanceMaintenancePolicy
 {
     /// <summary>Amount of capacity in the Auto Scaling group that can be in service and healthy, or pending, to support your workload when an instance refresh is in place, as a percentage of the desired capacity of the Auto Scaling group. Values must be between 100 and 200, defaults to 100.</summary>
@@ -1849,6 +1869,10 @@ public partial class V1beta2AutoscalingGroupSpecForProvider
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta2AutoscalingGroupSpecForProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public IList<V1beta2AutoscalingGroupSpecForProviderInstanceLifecyclePolicy>? InstanceLifecyclePolicy { get; set; }
+
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]
     public IList<V1beta2AutoscalingGroupSpecForProviderInstanceMaintenancePolicy>? InstanceMaintenancePolicy { get; set; }
@@ -2068,6 +2092,26 @@ public partial class V1beta2AutoscalingGroupSpecInitProviderInitialLifecycleHook
     /// <summary>ARN for this Auto Scaling Group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupSpecInitProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public IList<V1beta2AutoscalingGroupSpecInitProviderInstanceLifecyclePolicyRetentionTriggers>? RetentionTriggers { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3803,6 +3847,10 @@ public partial class V1beta2AutoscalingGroupSpecInitProvider
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta2AutoscalingGroupSpecInitProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public IList<V1beta2AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy>? InstanceLifecyclePolicy { get; set; }
+
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]
     public IList<V1beta2AutoscalingGroupSpecInitProviderInstanceMaintenancePolicy>? InstanceMaintenancePolicy { get; set; }
@@ -4205,6 +4253,26 @@ public partial class V1beta2AutoscalingGroupStatusAtProviderInitialLifecycleHook
     /// <summary>ARN for this Auto Scaling Group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupStatusAtProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta2AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public IList<V1beta2AutoscalingGroupStatusAtProviderInstanceLifecyclePolicyRetentionTriggers>? RetentionTriggers { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -4826,6 +4894,10 @@ public partial class V1beta2AutoscalingGroupStatusAtProvider
     /// </summary>
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta2AutoscalingGroupStatusAtProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
+
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public IList<V1beta2AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy>? InstanceLifecyclePolicy { get; set; }
 
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]

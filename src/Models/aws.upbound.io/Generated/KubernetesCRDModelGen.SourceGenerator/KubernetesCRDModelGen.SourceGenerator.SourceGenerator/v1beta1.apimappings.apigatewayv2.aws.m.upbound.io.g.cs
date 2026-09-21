@@ -517,7 +517,7 @@ public partial class V1beta1APIMappingSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1APIMappingSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
+    /// <summary>API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
     [JsonPropertyName("apiMappingKey")]
     public string? ApiMappingKey { get; set; }
 
@@ -1046,7 +1046,7 @@ public partial class V1beta1APIMappingSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1APIMappingSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
+    /// <summary>API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
     [JsonPropertyName("apiMappingKey")]
     public string? ApiMappingKey { get; set; }
 
@@ -1190,7 +1190,7 @@ public partial class V1beta1APIMappingStatusAtProvider
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
-    /// <summary>The API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
+    /// <summary>API mapping key. Refer to REST API, HTTP API or WebSocket API.</summary>
     [JsonPropertyName("apiMappingKey")]
     public string? ApiMappingKey { get; set; }
 

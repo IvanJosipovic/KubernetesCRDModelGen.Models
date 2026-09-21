@@ -208,7 +208,7 @@ public partial class V1beta1WorkflowSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of Glue Workflow</summary>
+    /// <summary>ARN of Glue Workflow</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

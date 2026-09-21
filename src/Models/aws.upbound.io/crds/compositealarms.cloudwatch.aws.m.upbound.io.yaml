@@ -64,7 +64,7 @@ spec:
                     description: Actions will be suppressed if the suppressor alarm is in the ALARM state.
                     properties:
                       alarm:
-                        description: Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.
+                        description: Can be an AlarmName or an ARN from an existing alarm.
                         type: string
                       extensionPeriod:
                         description: The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the ALARM state. After this time, the composite alarm performs its actions.
@@ -295,7 +295,7 @@ spec:
                     description: Actions will be suppressed if the suppressor alarm is in the ALARM state.
                     properties:
                       alarm:
-                        description: Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.
+                        description: Can be an AlarmName or an ARN from an existing alarm.
                         type: string
                       extensionPeriod:
                         description: The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the ALARM state. After this time, the composite alarm performs its actions.
@@ -572,7 +572,7 @@ spec:
                     description: Actions will be suppressed if the suppressor alarm is in the ALARM state.
                     properties:
                       alarm:
-                        description: Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.
+                        description: Can be an AlarmName or an ARN from an existing alarm.
                         type: string
                       extensionPeriod:
                         description: The maximum time in seconds that the composite alarm waits after suppressor alarm goes out of the ALARM state. After this time, the composite alarm performs its actions.

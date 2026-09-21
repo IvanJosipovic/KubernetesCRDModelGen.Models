@@ -437,7 +437,7 @@ public partial class V1beta1HealthCheckSpecForProvider
     [JsonPropertyName("resourcePath")]
     public string? ResourcePath { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
+    /// <summary>ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
     [JsonPropertyName("routingControlArn")]
     public string? RoutingControlArn { get; set; }
 
@@ -871,7 +871,7 @@ public partial class V1beta1HealthCheckSpecInitProvider
     [JsonPropertyName("resourcePath")]
     public string? ResourcePath { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
+    /// <summary>ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
     [JsonPropertyName("routingControlArn")]
     public string? RoutingControlArn { get; set; }
 
@@ -1003,7 +1003,7 @@ public partial class V1beta1HealthCheckSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HealthCheckStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Health Check.</summary>
+    /// <summary>ARN of the Health Check.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1082,7 +1082,7 @@ public partial class V1beta1HealthCheckStatusAtProvider
     [JsonPropertyName("resourcePath")]
     public string? ResourcePath { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
+    /// <summary>ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL</summary>
     [JsonPropertyName("routingControlArn")]
     public string? RoutingControlArn { get; set; }
 

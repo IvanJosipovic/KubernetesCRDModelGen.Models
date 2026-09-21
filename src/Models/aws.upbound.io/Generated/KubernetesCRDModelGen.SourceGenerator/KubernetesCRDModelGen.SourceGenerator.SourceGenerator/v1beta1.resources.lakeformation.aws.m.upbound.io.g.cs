@@ -195,7 +195,7 @@ public partial class V1beta1ResourceSpecForProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceSpecForProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the resource.</summary>
+    /// <summary>ARN of the resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -406,7 +406,7 @@ public partial class V1beta1ResourceSpecInitProviderRoleArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceSpecInitProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the resource.</summary>
+    /// <summary>ARN of the resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -550,7 +550,7 @@ public partial class V1beta1ResourceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the resource.</summary>
+    /// <summary>ARN of the resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

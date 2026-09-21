@@ -647,10 +647,7 @@ public partial class V1beta2IntegrationSpecForProviderIntegrationUriSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IntegrationSpecForProviderResponseParameters
 {
-    /// <summary>
-    /// Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("mappings")]
     public IDictionary<string, string>? Mappings { get; set; }
 
@@ -729,17 +726,11 @@ public partial class V1beta2IntegrationSpecForProvider
     [JsonPropertyName("integrationSubtype")]
     public string? IntegrationSubtype { get; set; }
 
-    /// <summary>
-    /// Integration type of an integration.
-    /// Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.
-    /// </summary>
+    /// <summary>Integration type of an integration. Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.</summary>
     [JsonPropertyName("integrationType")]
     public string? IntegrationType { get; set; }
 
-    /// <summary>
-    /// URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY.
-    /// For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
-    /// </summary>
+    /// <summary>URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY. For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.</summary>
     [JsonPropertyName("integrationUri")]
     public string? IntegrationUri { get; set; }
 
@@ -751,14 +742,11 @@ public partial class V1beta2IntegrationSpecForProvider
     [JsonPropertyName("integrationUriSelector")]
     public V1beta2IntegrationSpecForProviderIntegrationUriSelector? IntegrationUriSelector { get; set; }
 
-    /// <summary>
-    /// Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute.
-    /// Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute. Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("passthroughBehavior")]
     public string? PassthroughBehavior { get; set; }
 
-    /// <summary>The format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
+    /// <summary>Format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
     [JsonPropertyName("payloadFormatVersion")]
     public string? PayloadFormatVersion { get; set; }
 
@@ -769,12 +757,7 @@ public partial class V1beta2IntegrationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend.
-    /// For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations.
-    /// For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations. For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -786,14 +769,11 @@ public partial class V1beta2IntegrationSpecForProvider
     [JsonPropertyName("responseParameters")]
     public IList<V1beta2IntegrationSpecForProviderResponseParameters>? ResponseParameters { get; set; }
 
-    /// <summary>The template selection expression for the integration.</summary>
+    /// <summary>Template selection expression for the integration.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 
-    /// <summary>
-    /// Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs.
-    /// The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
-    /// </summary>
+    /// <summary>Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.</summary>
     [JsonPropertyName("timeoutMilliseconds")]
     public double? TimeoutMilliseconds { get; set; }
 
@@ -1394,10 +1374,7 @@ public partial class V1beta2IntegrationSpecInitProviderIntegrationUriSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IntegrationSpecInitProviderResponseParameters
 {
-    /// <summary>
-    /// Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("mappings")]
     public IDictionary<string, string>? Mappings { get; set; }
 
@@ -1488,17 +1465,11 @@ public partial class V1beta2IntegrationSpecInitProvider
     [JsonPropertyName("integrationSubtype")]
     public string? IntegrationSubtype { get; set; }
 
-    /// <summary>
-    /// Integration type of an integration.
-    /// Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.
-    /// </summary>
+    /// <summary>Integration type of an integration. Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.</summary>
     [JsonPropertyName("integrationType")]
     public string? IntegrationType { get; set; }
 
-    /// <summary>
-    /// URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY.
-    /// For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
-    /// </summary>
+    /// <summary>URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY. For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.</summary>
     [JsonPropertyName("integrationUri")]
     public string? IntegrationUri { get; set; }
 
@@ -1510,23 +1481,15 @@ public partial class V1beta2IntegrationSpecInitProvider
     [JsonPropertyName("integrationUriSelector")]
     public V1beta2IntegrationSpecInitProviderIntegrationUriSelector? IntegrationUriSelector { get; set; }
 
-    /// <summary>
-    /// Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute.
-    /// Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute. Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("passthroughBehavior")]
     public string? PassthroughBehavior { get; set; }
 
-    /// <summary>The format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
+    /// <summary>Format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
     [JsonPropertyName("payloadFormatVersion")]
     public string? PayloadFormatVersion { get; set; }
 
-    /// <summary>
-    /// For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend.
-    /// For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations.
-    /// For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations. For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -1538,14 +1501,11 @@ public partial class V1beta2IntegrationSpecInitProvider
     [JsonPropertyName("responseParameters")]
     public IList<V1beta2IntegrationSpecInitProviderResponseParameters>? ResponseParameters { get; set; }
 
-    /// <summary>The template selection expression for the integration.</summary>
+    /// <summary>Template selection expression for the integration.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 
-    /// <summary>
-    /// Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs.
-    /// The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
-    /// </summary>
+    /// <summary>Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.</summary>
     [JsonPropertyName("timeoutMilliseconds")]
     public double? TimeoutMilliseconds { get; set; }
 
@@ -1741,10 +1701,7 @@ public partial class V1beta2IntegrationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2IntegrationStatusAtProviderResponseParameters
 {
-    /// <summary>
-    /// Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>Key-value map. The key of this map identifies the location of the request parameter to change, and how to change it. The corresponding value specifies the new data for the parameter. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("mappings")]
     public IDictionary<string, string>? Mappings { get; set; }
 
@@ -1799,7 +1756,7 @@ public partial class V1beta2IntegrationStatusAtProvider
     [JsonPropertyName("integrationMethod")]
     public string? IntegrationMethod { get; set; }
 
-    /// <summary>The integration response selection expression for the integration.</summary>
+    /// <summary>Integration response selection expression for the integration.</summary>
     [JsonPropertyName("integrationResponseSelectionExpression")]
     public string? IntegrationResponseSelectionExpression { get; set; }
 
@@ -1807,28 +1764,19 @@ public partial class V1beta2IntegrationStatusAtProvider
     [JsonPropertyName("integrationSubtype")]
     public string? IntegrationSubtype { get; set; }
 
-    /// <summary>
-    /// Integration type of an integration.
-    /// Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.
-    /// </summary>
+    /// <summary>Integration type of an integration. Valid values: AWS (supported only for WebSocket APIs), AWS_PROXY, HTTP (supported only for WebSocket APIs), HTTP_PROXY, MOCK (supported only for WebSocket APIs). For an HTTP API private integration, use HTTP_PROXY.</summary>
     [JsonPropertyName("integrationType")]
     public string? IntegrationType { get; set; }
 
-    /// <summary>
-    /// URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY.
-    /// For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.
-    /// </summary>
+    /// <summary>URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY. For an HTTP integration, specify a fully-qualified URL. For an HTTP API private integration, specify the ARN of an Application Load Balancer listener, Network Load Balancer listener, or AWS Cloud Map service.</summary>
     [JsonPropertyName("integrationUri")]
     public string? IntegrationUri { get; set; }
 
-    /// <summary>
-    /// Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute.
-    /// Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the request_templates attribute. Valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER. Default is WHEN_NO_MATCH. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("passthroughBehavior")]
     public string? PassthroughBehavior { get; set; }
 
-    /// <summary>The format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
+    /// <summary>Format of the payload sent to an integration. Valid values: 1.0, 2.0. Default is 1.0.</summary>
     [JsonPropertyName("payloadFormatVersion")]
     public string? PayloadFormatVersion { get; set; }
 
@@ -1839,12 +1787,7 @@ public partial class V1beta2IntegrationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend.
-    /// For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations.
-    /// For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. For HTTP APIs with a specified integration_subtype, a key-value map specifying parameters that are passed to AWS_PROXY integrations. For HTTP APIs without a specified integration_subtype, a key-value map specifying how to transform HTTP requests before sending them to the backend. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("requestParameters")]
     public IDictionary<string, string>? RequestParameters { get; set; }
 
@@ -1856,14 +1799,11 @@ public partial class V1beta2IntegrationStatusAtProvider
     [JsonPropertyName("responseParameters")]
     public IList<V1beta2IntegrationStatusAtProviderResponseParameters>? ResponseParameters { get; set; }
 
-    /// <summary>The template selection expression for the integration.</summary>
+    /// <summary>Template selection expression for the integration.</summary>
     [JsonPropertyName("templateSelectionExpression")]
     public string? TemplateSelectionExpression { get; set; }
 
-    /// <summary>
-    /// Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs.
-    /// The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.
-    /// </summary>
+    /// <summary>Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 milliseconds for HTTP APIs. The default timeout is 29 seconds for WebSocket APIs and 30 seconds for HTTP APIs.</summary>
     [JsonPropertyName("timeoutMilliseconds")]
     public double? TimeoutMilliseconds { get; set; }
 

@@ -85,7 +85,7 @@ public partial class V1beta1InstanceAccessControlAttributesSpecForProvider
     [JsonPropertyName("attribute")]
     public IList<V1beta1InstanceAccessControlAttributesSpecForProviderAttribute>? Attribute { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance.</summary>
+    /// <summary>ARN of the SSO Instance.</summary>
     [JsonPropertyName("instanceArn")]
     public required string InstanceArn { get; set; }
 
@@ -357,7 +357,7 @@ public partial class V1beta1InstanceAccessControlAttributesStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance.</summary>
+    /// <summary>ARN of the SSO Instance.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 

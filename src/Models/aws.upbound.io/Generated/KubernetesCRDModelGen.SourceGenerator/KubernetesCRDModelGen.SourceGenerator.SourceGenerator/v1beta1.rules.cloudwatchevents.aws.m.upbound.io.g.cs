@@ -385,7 +385,7 @@ public partial class V1beta1RuleSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) associated with the role that is used for target invocation.</summary>
+    /// <summary>ARN associated with the role that is used for target invocation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -764,7 +764,7 @@ public partial class V1beta1RuleSpecInitProvider
     [JsonPropertyName("isEnabled")]
     public bool? IsEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) associated with the role that is used for target invocation.</summary>
+    /// <summary>ARN associated with the role that is used for target invocation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -900,7 +900,7 @@ public partial class V1beta1RuleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the rule.</summary>
+    /// <summary>ARN of the rule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -935,7 +935,7 @@ public partial class V1beta1RuleStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) associated with the role that is used for target invocation.</summary>
+    /// <summary>ARN associated with the role that is used for target invocation.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

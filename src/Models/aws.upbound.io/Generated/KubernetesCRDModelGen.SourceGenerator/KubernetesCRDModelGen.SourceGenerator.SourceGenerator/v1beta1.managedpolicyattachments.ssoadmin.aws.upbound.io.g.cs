@@ -206,15 +206,15 @@ public partial class V1beta1ManagedPolicyAttachmentSpecForProviderPermissionSetA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedPolicyAttachmentSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public required string InstanceArn { get; set; }
 
-    /// <summary>The IAM managed policy Amazon Resource Name (ARN) to be attached to the Permission Set.</summary>
+    /// <summary>IAM managed policy ARN to be attached to the Permission Set.</summary>
     [JsonPropertyName("managedPolicyArn")]
     public required string ManagedPolicyArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 
@@ -439,15 +439,15 @@ public partial class V1beta1ManagedPolicyAttachmentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedPolicyAttachmentStatusAtProvider
 {
-    /// <summary>The Amazon Resource Names (ARNs) of the Managed Policy, Permission Set, and SSO Instance, separated by a comma (,).</summary>
+    /// <summary>ARNs of the Managed Policy, Permission Set, and SSO Instance, separated by a comma (,).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
-    /// <summary>The IAM managed policy Amazon Resource Name (ARN) to be attached to the Permission Set.</summary>
+    /// <summary>IAM managed policy ARN to be attached to the Permission Set.</summary>
     [JsonPropertyName("managedPolicyArn")]
     public string? ManagedPolicyArn { get; set; }
 
@@ -455,7 +455,7 @@ public partial class V1beta1ManagedPolicyAttachmentStatusAtProvider
     [JsonPropertyName("managedPolicyName")]
     public string? ManagedPolicyName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 

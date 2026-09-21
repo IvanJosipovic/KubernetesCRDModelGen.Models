@@ -613,7 +613,7 @@ public partial class V1beta1UploadSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UploadStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this upload.</summary>
+    /// <summary>ARN of this upload.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

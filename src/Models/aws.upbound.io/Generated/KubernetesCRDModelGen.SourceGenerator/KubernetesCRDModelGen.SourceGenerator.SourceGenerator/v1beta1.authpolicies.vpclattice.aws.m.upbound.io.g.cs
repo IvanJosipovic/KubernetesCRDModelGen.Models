@@ -195,7 +195,7 @@ public partial class V1beta1AuthPolicySpecForProviderResourceIdentifierSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthPolicySpecForProvider
 {
-    /// <summary>The auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>Auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -206,7 +206,7 @@ public partial class V1beta1AuthPolicySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
@@ -218,7 +218,7 @@ public partial class V1beta1AuthPolicySpecForProvider
     [JsonPropertyName("resourceIdentifierSelector")]
     public V1beta1AuthPolicySpecForProviderResourceIdentifierSelector? ResourceIdentifierSelector { get; set; }
 
-    /// <summary>The state of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
+    /// <summary>State of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -394,11 +394,11 @@ public partial class V1beta1AuthPolicySpecInitProviderResourceIdentifierSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthPolicySpecInitProvider
 {
-    /// <summary>The auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>Auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
@@ -410,7 +410,7 @@ public partial class V1beta1AuthPolicySpecInitProvider
     [JsonPropertyName("resourceIdentifierSelector")]
     public V1beta1AuthPolicySpecInitProviderResourceIdentifierSelector? ResourceIdentifierSelector { get; set; }
 
-    /// <summary>The state of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
+    /// <summary>State of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -526,11 +526,11 @@ public partial class V1beta1AuthPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AuthPolicyStatusAtProvider
 {
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
+    /// <summary>Auth policy. The policy string in JSON must not contain newlines or blank lines.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -541,11 +541,11 @@ public partial class V1beta1AuthPolicyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the service network or service for which the policy is created.</summary>
+    /// <summary>ID or ARN of the service network or service for which the policy is created.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
-    /// <summary>The state of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
+    /// <summary>State of the auth policy. The auth policy is only active when the auth type is set to AWS_IAM. If you provide a policy, then authentication and authorization decisions are made based on this policy and the client&apos;s IAM policy. If the Auth type is NONE, then, any auth policy you provide will remain inactive.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }

@@ -78,7 +78,7 @@ spec:
                     description: The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN). Valid values are from  2147483648 to 4294967295 Conflicts with bgp_asn.
                     type: string
                   certificateArn:
-                    description: The Amazon Resource Name (ARN) for the customer gateway certificate.
+                    description: ARN for the customer gateway certificate.
                     type: string
                   deviceName:
                     description: A name for the customer gateway device.
@@ -125,7 +125,7 @@ spec:
                     description: The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN). Valid values are from  2147483648 to 4294967295 Conflicts with bgp_asn.
                     type: string
                   certificateArn:
-                    description: The Amazon Resource Name (ARN) for the customer gateway certificate.
+                    description: ARN for the customer gateway certificate.
                     type: string
                   deviceName:
                     description: A name for the customer gateway device.
@@ -249,7 +249,7 @@ spec:
                     description: The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN). Valid values are from  2147483648 to 4294967295 Conflicts with bgp_asn.
                     type: string
                   certificateArn:
-                    description: The Amazon Resource Name (ARN) for the customer gateway certificate.
+                    description: ARN for the customer gateway certificate.
                     type: string
                   deviceName:
                     description: A name for the customer gateway device.

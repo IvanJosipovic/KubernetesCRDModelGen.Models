@@ -357,7 +357,7 @@ public partial class V1beta1RouteSpecForProviderRequestParameter
     [JsonPropertyName("requestParameterKey")]
     public string? RequestParameterKey { get; set; }
 
-    /// <summary>Boolean whether or not the parameter is required.</summary>
+    /// <summary>Whether the parameter is required.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -525,7 +525,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1RouteSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>Boolean whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
+    /// <summary>Whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeyRequired")]
     public bool? ApiKeyRequired { get; set; }
 
@@ -533,12 +533,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>
-    /// Authorization type for the route.
-    /// For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// Defaults to NONE.
-    /// </summary>
+    /// <summary>Authorization type for the route. For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. Defaults to NONE.</summary>
     [JsonPropertyName("authorizationType")]
     public string? AuthorizationType { get; set; }
 
@@ -554,7 +549,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("authorizerIdSelector")]
     public V1beta1RouteSpecForProviderAuthorizerIdSelector? AuthorizerIdSelector { get; set; }
 
-    /// <summary>The model selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Model selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 
@@ -573,7 +568,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>Request parameters for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Request parameters for the route. Supported only for WebSocket APIs. See request_parameter Block below.</summary>
     [JsonPropertyName("requestParameter")]
     public IList<V1beta1RouteSpecForProviderRequestParameter>? RequestParameter { get; set; }
 
@@ -581,7 +576,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>The route response selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Route response selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("routeResponseSelectionExpression")]
     public string? RouteResponseSelectionExpression { get; set; }
 
@@ -900,7 +895,7 @@ public partial class V1beta1RouteSpecInitProviderRequestParameter
     [JsonPropertyName("requestParameterKey")]
     public string? RequestParameterKey { get; set; }
 
-    /// <summary>Boolean whether or not the parameter is required.</summary>
+    /// <summary>Whether the parameter is required.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -1080,7 +1075,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1RouteSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>Boolean whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
+    /// <summary>Whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeyRequired")]
     public bool? ApiKeyRequired { get; set; }
 
@@ -1088,12 +1083,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>
-    /// Authorization type for the route.
-    /// For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// Defaults to NONE.
-    /// </summary>
+    /// <summary>Authorization type for the route. For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. Defaults to NONE.</summary>
     [JsonPropertyName("authorizationType")]
     public string? AuthorizationType { get; set; }
 
@@ -1109,7 +1099,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("authorizerIdSelector")]
     public V1beta1RouteSpecInitProviderAuthorizerIdSelector? AuthorizerIdSelector { get; set; }
 
-    /// <summary>The model selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Model selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 
@@ -1121,7 +1111,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>Request parameters for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Request parameters for the route. Supported only for WebSocket APIs. See request_parameter Block below.</summary>
     [JsonPropertyName("requestParameter")]
     public IList<V1beta1RouteSpecInitProviderRequestParameter>? RequestParameter { get; set; }
 
@@ -1129,7 +1119,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>The route response selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Route response selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("routeResponseSelectionExpression")]
     public string? RouteResponseSelectionExpression { get; set; }
 
@@ -1337,7 +1327,7 @@ public partial class V1beta1RouteStatusAtProviderRequestParameter
     [JsonPropertyName("requestParameterKey")]
     public string? RequestParameterKey { get; set; }
 
-    /// <summary>Boolean whether or not the parameter is required.</summary>
+    /// <summary>Whether the parameter is required.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -1350,7 +1340,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
-    /// <summary>Boolean whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
+    /// <summary>Whether an API key is required for the route. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("apiKeyRequired")]
     public bool? ApiKeyRequired { get; set; }
 
@@ -1358,12 +1348,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("authorizationScopes")]
     public IList<string>? AuthorizationScopes { get; set; }
 
-    /// <summary>
-    /// Authorization type for the route.
-    /// For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer.
-    /// Defaults to NONE.
-    /// </summary>
+    /// <summary>Authorization type for the route. For WebSocket APIs, valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. For HTTP APIs, valid values are NONE for open access, JWT for using JSON Web Tokens, AWS_IAM for using AWS IAM permissions, and CUSTOM for using a Lambda authorizer. Defaults to NONE.</summary>
     [JsonPropertyName("authorizationType")]
     public string? AuthorizationType { get; set; }
 
@@ -1375,7 +1360,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The model selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Model selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 
@@ -1394,7 +1379,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("requestModels")]
     public IDictionary<string, string>? RequestModels { get; set; }
 
-    /// <summary>Request parameters for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Request parameters for the route. Supported only for WebSocket APIs. See request_parameter Block below.</summary>
     [JsonPropertyName("requestParameter")]
     public IList<V1beta1RouteStatusAtProviderRequestParameter>? RequestParameter { get; set; }
 
@@ -1402,7 +1387,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("routeKey")]
     public string? RouteKey { get; set; }
 
-    /// <summary>The route response selection expression for the route. Supported only for WebSocket APIs.</summary>
+    /// <summary>Route response selection expression for the route. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("routeResponseSelectionExpression")]
     public string? RouteResponseSelectionExpression { get; set; }
 

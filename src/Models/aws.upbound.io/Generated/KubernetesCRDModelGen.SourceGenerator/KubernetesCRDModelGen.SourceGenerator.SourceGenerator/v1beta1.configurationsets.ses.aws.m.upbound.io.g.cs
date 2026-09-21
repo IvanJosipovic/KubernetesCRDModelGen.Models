@@ -41,7 +41,7 @@ public partial class V1beta1ConfigurationSetList : IKubernetesObject<V1ListMeta>
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConfigurationSetSpecForProviderDeliveryOptions
 {
-    /// <summary>Whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }
@@ -89,7 +89,7 @@ public partial class V1beta1ConfigurationSetSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConfigurationSetSpecInitProviderDeliveryOptions
 {
-    /// <summary>Whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }
@@ -249,7 +249,7 @@ public partial class V1beta1ConfigurationSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConfigurationSetStatusAtProviderDeliveryOptions
 {
-    /// <summary>Whether messages that use the configuration set are required to use Transport Layer Security (TLS). If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
+    /// <summary>Whether messages that use the configuration set are required to use TLS. If the value is Require, messages are only delivered if a TLS connection can be established. If the value is Optional, messages can be delivered in plain text if a TLS connection can&apos;t be established. Valid values: Require or Optional. Defaults to Optional.</summary>
     [JsonPropertyName("tlsPolicy")]
     public string? TlsPolicy { get; set; }
 }

@@ -294,6 +294,7 @@ public partial class V1beta1AccountSettingDefaultStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
+    /// <summary>ARN that identifies the account setting.</summary>
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 

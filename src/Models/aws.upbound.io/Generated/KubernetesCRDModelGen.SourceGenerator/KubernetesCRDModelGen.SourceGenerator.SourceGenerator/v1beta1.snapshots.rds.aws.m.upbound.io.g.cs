@@ -195,7 +195,7 @@ public partial class V1beta1SnapshotSpecForProviderDbInstanceIdentifierSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotSpecForProvider
 {
-    /// <summary>The DB Instance Identifier from which to take the snapshot.</summary>
+    /// <summary>DB instance identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
 
@@ -394,7 +394,7 @@ public partial class V1beta1SnapshotSpecInitProviderDbInstanceIdentifierSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotSpecInitProvider
 {
-    /// <summary>The DB Instance Identifier from which to take the snapshot.</summary>
+    /// <summary>DB instance identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
 
@@ -526,42 +526,42 @@ public partial class V1beta1SnapshotSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotStatusAtProvider
 {
-    /// <summary>Specifies the allocated storage size in gigabytes (GB).</summary>
+    /// <summary>Allocated storage size in gigabytes (GB).</summary>
     [JsonPropertyName("allocatedStorage")]
     public double? AllocatedStorage { get; set; }
 
-    /// <summary>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.</summary>
+    /// <summary>Name of the Availability Zone the DB instance was located in at the time of the DB snapshot.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
-    /// <summary>The DB Instance Identifier from which to take the snapshot.</summary>
+    /// <summary>DB instance identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB snapshot.</summary>
+    /// <summary>ARN for the DB snapshot.</summary>
     [JsonPropertyName("dbSnapshotArn")]
     public string? DbSnapshotArn { get; set; }
 
-    /// <summary>Specifies whether the DB snapshot is encrypted.</summary>
+    /// <summary>Whether the DB snapshot is encrypted.</summary>
     [JsonPropertyName("encrypted")]
     public bool? Encrypted { get; set; }
 
-    /// <summary>Specifies the name of the database engine.</summary>
+    /// <summary>Name of the database engine.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>Specifies the version of the database engine.</summary>
+    /// <summary>Version of the database engine.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.</summary>
+    /// <summary>Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>The ARN for the KMS encryption key.</summary>
+    /// <summary>ARN for the KMS encryption key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -573,6 +573,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("optionGroupName")]
     public string? OptionGroupName { get; set; }
 
+    /// <summary>Port that the DB snapshot listens on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -587,22 +588,23 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("sharedAccounts")]
     public IList<string>? SharedAccounts { get; set; }
 
+    /// <summary>Type of the DB snapshot.</summary>
     [JsonPropertyName("snapshotType")]
     public string? SnapshotType { get; set; }
 
-    /// <summary>The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.</summary>
+    /// <summary>DB snapshot ARN that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.</summary>
     [JsonPropertyName("sourceDbSnapshotIdentifier")]
     public string? SourceDbSnapshotIdentifier { get; set; }
 
-    /// <summary>The region that the DB snapshot was created in or copied from.</summary>
+    /// <summary>Region that the DB snapshot was created in or copied from.</summary>
     [JsonPropertyName("sourceRegion")]
     public string? SourceRegion { get; set; }
 
-    /// <summary>Specifies the status of this DB snapshot.</summary>
+    /// <summary>Status of this DB snapshot.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
-    /// <summary>Specifies the storage type associated with DB snapshot.</summary>
+    /// <summary>Storage type associated with DB snapshot.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -610,7 +612,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

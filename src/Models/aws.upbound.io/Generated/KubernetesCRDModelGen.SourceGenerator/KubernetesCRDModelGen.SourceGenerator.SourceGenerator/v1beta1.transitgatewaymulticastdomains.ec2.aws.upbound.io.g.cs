@@ -621,7 +621,7 @@ public partial class V1beta1TransitGatewayMulticastDomainSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayMulticastDomainStatusAtProvider
 {
-    /// <summary>EC2 Transit Gateway Multicast Domain Amazon Resource Name (ARN).</summary>
+    /// <summary>EC2 Transit Gateway Multicast Domain ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

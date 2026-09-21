@@ -40,7 +40,7 @@ public partial class V1beta1ReceiptFilterList : IKubernetesObject<V1ListMeta>, I
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptFilterSpecForProvider
 {
-    /// <summary>The IP address or address range to filter, in CIDR notation</summary>
+    /// <summary>IP address or address range to filter, in CIDR notation</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
@@ -72,7 +72,7 @@ public partial class V1beta1ReceiptFilterSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptFilterSpecInitProvider
 {
-    /// <summary>The IP address or address range to filter, in CIDR notation</summary>
+    /// <summary>IP address or address range to filter, in CIDR notation</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
@@ -192,15 +192,15 @@ public partial class V1beta1ReceiptFilterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReceiptFilterStatusAtProvider
 {
-    /// <summary>The SES receipt filter ARN.</summary>
+    /// <summary>SES receipt filter ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The IP address or address range to filter, in CIDR notation</summary>
+    /// <summary>IP address or address range to filter, in CIDR notation</summary>
     [JsonPropertyName("cidr")]
     public string? Cidr { get; set; }
 
-    /// <summary>The SES receipt filter name.</summary>
+    /// <summary>SES receipt filter name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

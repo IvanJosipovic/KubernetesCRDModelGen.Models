@@ -526,7 +526,7 @@ public partial class V1beta1RevisionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RevisionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this data set.</summary>
+    /// <summary>ARN of this data set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

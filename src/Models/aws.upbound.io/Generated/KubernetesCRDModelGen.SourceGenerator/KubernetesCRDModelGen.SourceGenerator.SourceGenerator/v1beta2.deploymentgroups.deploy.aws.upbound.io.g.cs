@@ -996,7 +996,7 @@ public partial class V1beta2DeploymentGroupSpecForProviderLoadBalancerInfoTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupSpecForProviderLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 
@@ -1178,7 +1178,7 @@ public partial class V1beta2DeploymentGroupSpecForProviderLoadBalancerInfoTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupSpecForProviderLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 }
@@ -2445,7 +2445,7 @@ public partial class V1beta2DeploymentGroupSpecInitProviderLoadBalancerInfoTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupSpecInitProviderLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 
@@ -2627,7 +2627,7 @@ public partial class V1beta2DeploymentGroupSpecInitProviderLoadBalancerInfoTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupSpecInitProviderLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 }
@@ -3458,7 +3458,7 @@ public partial class V1beta2DeploymentGroupStatusAtProviderLoadBalancerInfoTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupStatusAtProviderLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 }
@@ -3477,7 +3477,7 @@ public partial class V1beta2DeploymentGroupStatusAtProviderLoadBalancerInfoTarge
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeploymentGroupStatusAtProviderLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute
 {
-    /// <summary>List of Amazon Resource Names (ARNs) of the load balancer listeners.</summary>
+    /// <summary>List of ARNs of the load balancer listeners.</summary>
     [JsonPropertyName("listenerArns")]
     public IList<string>? ListenerArns { get; set; }
 }

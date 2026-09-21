@@ -2908,10 +2908,10 @@ spec:
                           description: Port on the container to associate with the load balancer.
                           type: number
                         elbName:
-                          description: Name of the ELB (Classic) to associate with the service.
+                          description: Name of the ELB (Classic) to associate with the service. Required for ELB Classic.
                           type: string
                         targetGroupArn:
-                          description: ARN of the Load Balancer target group to associate with the service.
+                          description: ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.
                           type: string
                         targetGroupArnRef:
                           description: Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.
@@ -3204,10 +3204,10 @@ spec:
                         description: Configuration for Service Connect access logs. See below.
                         properties:
                           format:
-                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            description: 'Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
                             type: string
                           includeQueryParameters:
-                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            description: 'Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
                             type: string
                         type: object
                       enabled:
@@ -3230,7 +3230,7 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Name of the secret.
+                                  description: Name of the volume.
                                   type: string
                                 valueFrom:
                                   description: Secret to expose to the container. The supported values are either the full ARN of the AWS Secrets Manager secret or the full ARN of the parameter in the SSM Parameter Store.
@@ -3252,7 +3252,7 @@ spec:
                                   description: Name that you use in the applications of client tasks to connect to this service.
                                   type: string
                                 port:
-                                  description: Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.
+                                  description: Port value used if your Service Discovery service specified an SRV record.
                                   type: number
                                 testTrafficRules:
                                   description: Configuration block for test traffic routing rules. See below.
@@ -3262,7 +3262,7 @@ spec:
                                         description: Configuration block for header-based routing rules. See below.
                                         properties:
                                           name:
-                                            description: Name of the HTTP header to match.
+                                            description: Name of the volume.
                                             type: string
                                           value:
                                             description: Configuration block for header value matching criteria. See below.
@@ -3282,7 +3282,7 @@ spec:
                               description: Port number for the Service Connect proxy to listen on.
                               type: number
                             portName:
-                              description: Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.
+                              description: Name of the port for a target group associated with the VPC Lattice configuration.
                               type: string
                             timeout:
                               description: Configuration timeouts for Service Connect
@@ -3295,7 +3295,7 @@ spec:
                                   type: number
                               type: object
                             tls:
-                              description: Configuration for enabling Transport Layer Security (TLS)
+                              description: Configuration for enabling TLS
                               properties:
                                 issuerCertAuthority:
                                   description: Details of the certificate authority which will issue the certificate.
@@ -3308,7 +3308,7 @@ spec:
                                   description: KMS key used to encrypt the private key in Secrets Manager.
                                   type: string
                                 roleArn:
-                                  description: ARN of the IAM Role that's associated with the Service Connect TLS.
+                                  description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                                   type: string
                               type: object
                           type: object
@@ -3437,10 +3437,10 @@ spec:
                             description: Number of I/O operations per second (IOPS).
                             type: number
                           kmsKeyId:
-                            description: Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.
+                            description: ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.
                             type: string
                           roleArn:
-                            description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                            description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                             type: string
                           sizeInGb:
                             description: Size of the volume in GiB. You must specify either a size_in_gb or a snapshot_id. You can optionally specify a volume size greater than or equal to the snapshot size.
@@ -3449,14 +3449,14 @@ spec:
                             description: Snapshot that Amazon ECS uses to create the volume. You must specify either a size_in_gb or a snapshot_id.
                             type: string
                           tagSpecifications:
-                            description: The tags to apply to the volume. See below.
+                            description: Tags to apply to the volume. See below.
                             items:
                               properties:
                                 propagateTags:
                                   description: Whether to propagate the tags from the task definition or the service to the tasks. The valid values are SERVICE and TASK_DEFINITION.
                                   type: string
                                 resourceType:
-                                  description: The type of volume resource. Valid values, volume.
+                                  description: Type of volume resource. Valid values, volume.
                                   type: string
                                 tags:
                                   additionalProperties:
@@ -3481,17 +3481,17 @@ spec:
                         type: string
                     type: object
                   vpcLatticeConfigurations:
-                    description: The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
+                    description: VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
                     items:
                       properties:
                         portName:
-                          description: The name of the port for a target group associated with the VPC Lattice configuration.
+                          description: Name of the port for a target group associated with the VPC Lattice configuration.
                           type: string
                         roleArn:
-                          description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                          description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                           type: string
                         targetGroupArn:
-                          description: The full ARN of the target group or groups associated with the VPC Lattice configuration.
+                          description: Full ARN of the target group or groups associated with the VPC Lattice configuration.
                           type: string
                       type: object
                     type: array
@@ -3745,10 +3745,10 @@ spec:
                           description: Port on the container to associate with the load balancer.
                           type: number
                         elbName:
-                          description: Name of the ELB (Classic) to associate with the service.
+                          description: Name of the ELB (Classic) to associate with the service. Required for ELB Classic.
                           type: string
                         targetGroupArn:
-                          description: ARN of the Load Balancer target group to associate with the service.
+                          description: ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.
                           type: string
                         targetGroupArnRef:
                           description: Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.
@@ -4036,10 +4036,10 @@ spec:
                         description: Configuration for Service Connect access logs. See below.
                         properties:
                           format:
-                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            description: 'Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
                             type: string
                           includeQueryParameters:
-                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            description: 'Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
                             type: string
                         type: object
                       enabled:
@@ -4062,7 +4062,7 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Name of the secret.
+                                  description: Name of the volume.
                                   type: string
                                 valueFrom:
                                   description: Secret to expose to the container. The supported values are either the full ARN of the AWS Secrets Manager secret or the full ARN of the parameter in the SSM Parameter Store.
@@ -4084,7 +4084,7 @@ spec:
                                   description: Name that you use in the applications of client tasks to connect to this service.
                                   type: string
                                 port:
-                                  description: Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.
+                                  description: Port value used if your Service Discovery service specified an SRV record.
                                   type: number
                                 testTrafficRules:
                                   description: Configuration block for test traffic routing rules. See below.
@@ -4094,7 +4094,7 @@ spec:
                                         description: Configuration block for header-based routing rules. See below.
                                         properties:
                                           name:
-                                            description: Name of the HTTP header to match.
+                                            description: Name of the volume.
                                             type: string
                                           value:
                                             description: Configuration block for header value matching criteria. See below.
@@ -4114,7 +4114,7 @@ spec:
                               description: Port number for the Service Connect proxy to listen on.
                               type: number
                             portName:
-                              description: Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.
+                              description: Name of the port for a target group associated with the VPC Lattice configuration.
                               type: string
                             timeout:
                               description: Configuration timeouts for Service Connect
@@ -4127,7 +4127,7 @@ spec:
                                   type: number
                               type: object
                             tls:
-                              description: Configuration for enabling Transport Layer Security (TLS)
+                              description: Configuration for enabling TLS
                               properties:
                                 issuerCertAuthority:
                                   description: Details of the certificate authority which will issue the certificate.
@@ -4140,7 +4140,7 @@ spec:
                                   description: KMS key used to encrypt the private key in Secrets Manager.
                                   type: string
                                 roleArn:
-                                  description: ARN of the IAM Role that's associated with the Service Connect TLS.
+                                  description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                                   type: string
                               type: object
                           type: object
@@ -4269,10 +4269,10 @@ spec:
                             description: Number of I/O operations per second (IOPS).
                             type: number
                           kmsKeyId:
-                            description: Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.
+                            description: ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.
                             type: string
                           roleArn:
-                            description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                            description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                             type: string
                           sizeInGb:
                             description: Size of the volume in GiB. You must specify either a size_in_gb or a snapshot_id. You can optionally specify a volume size greater than or equal to the snapshot size.
@@ -4281,14 +4281,14 @@ spec:
                             description: Snapshot that Amazon ECS uses to create the volume. You must specify either a size_in_gb or a snapshot_id.
                             type: string
                           tagSpecifications:
-                            description: The tags to apply to the volume. See below.
+                            description: Tags to apply to the volume. See below.
                             items:
                               properties:
                                 propagateTags:
                                   description: Whether to propagate the tags from the task definition or the service to the tasks. The valid values are SERVICE and TASK_DEFINITION.
                                   type: string
                                 resourceType:
-                                  description: The type of volume resource. Valid values, volume.
+                                  description: Type of volume resource. Valid values, volume.
                                   type: string
                                 tags:
                                   additionalProperties:
@@ -4313,17 +4313,17 @@ spec:
                         type: string
                     type: object
                   vpcLatticeConfigurations:
-                    description: The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
+                    description: VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
                     items:
                       properties:
                         portName:
-                          description: The name of the port for a target group associated with the VPC Lattice configuration.
+                          description: Name of the port for a target group associated with the VPC Lattice configuration.
                           type: string
                         roleArn:
-                          description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                          description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                           type: string
                         targetGroupArn:
-                          description: The full ARN of the target group or groups associated with the VPC Lattice configuration.
+                          description: Full ARN of the target group or groups associated with the VPC Lattice configuration.
                           type: string
                       type: object
                     type: array
@@ -4588,10 +4588,10 @@ spec:
                           description: Port on the container to associate with the load balancer.
                           type: number
                         elbName:
-                          description: Name of the ELB (Classic) to associate with the service.
+                          description: Name of the ELB (Classic) to associate with the service. Required for ELB Classic.
                           type: string
                         targetGroupArn:
-                          description: ARN of the Load Balancer target group to associate with the service.
+                          description: ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.
                           type: string
                       type: object
                     type: array
@@ -4659,10 +4659,10 @@ spec:
                         description: Configuration for Service Connect access logs. See below.
                         properties:
                           format:
-                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            description: 'Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
                             type: string
                           includeQueryParameters:
-                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            description: 'Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
                             type: string
                         type: object
                       enabled:
@@ -4685,7 +4685,7 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Name of the secret.
+                                  description: Name of the volume.
                                   type: string
                                 valueFrom:
                                   description: Secret to expose to the container. The supported values are either the full ARN of the AWS Secrets Manager secret or the full ARN of the parameter in the SSM Parameter Store.
@@ -4707,7 +4707,7 @@ spec:
                                   description: Name that you use in the applications of client tasks to connect to this service.
                                   type: string
                                 port:
-                                  description: Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.
+                                  description: Port value used if your Service Discovery service specified an SRV record.
                                   type: number
                                 testTrafficRules:
                                   description: Configuration block for test traffic routing rules. See below.
@@ -4717,7 +4717,7 @@ spec:
                                         description: Configuration block for header-based routing rules. See below.
                                         properties:
                                           name:
-                                            description: Name of the HTTP header to match.
+                                            description: Name of the volume.
                                             type: string
                                           value:
                                             description: Configuration block for header value matching criteria. See below.
@@ -4737,7 +4737,7 @@ spec:
                               description: Port number for the Service Connect proxy to listen on.
                               type: number
                             portName:
-                              description: Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.
+                              description: Name of the port for a target group associated with the VPC Lattice configuration.
                               type: string
                             timeout:
                               description: Configuration timeouts for Service Connect
@@ -4750,7 +4750,7 @@ spec:
                                   type: number
                               type: object
                             tls:
-                              description: Configuration for enabling Transport Layer Security (TLS)
+                              description: Configuration for enabling TLS
                               properties:
                                 issuerCertAuthority:
                                   description: Details of the certificate authority which will issue the certificate.
@@ -4763,7 +4763,7 @@ spec:
                                   description: KMS key used to encrypt the private key in Secrets Manager.
                                   type: string
                                 roleArn:
-                                  description: ARN of the IAM Role that's associated with the Service Connect TLS.
+                                  description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                                   type: string
                               type: object
                           type: object
@@ -4797,7 +4797,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                   taskDefinition:
@@ -4825,10 +4825,10 @@ spec:
                             description: Number of I/O operations per second (IOPS).
                             type: number
                           kmsKeyId:
-                            description: Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.
+                            description: ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.
                             type: string
                           roleArn:
-                            description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                            description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                             type: string
                           sizeInGb:
                             description: Size of the volume in GiB. You must specify either a size_in_gb or a snapshot_id. You can optionally specify a volume size greater than or equal to the snapshot size.
@@ -4837,14 +4837,14 @@ spec:
                             description: Snapshot that Amazon ECS uses to create the volume. You must specify either a size_in_gb or a snapshot_id.
                             type: string
                           tagSpecifications:
-                            description: The tags to apply to the volume. See below.
+                            description: Tags to apply to the volume. See below.
                             items:
                               properties:
                                 propagateTags:
                                   description: Whether to propagate the tags from the task definition or the service to the tasks. The valid values are SERVICE and TASK_DEFINITION.
                                   type: string
                                 resourceType:
-                                  description: The type of volume resource. Valid values, volume.
+                                  description: Type of volume resource. Valid values, volume.
                                   type: string
                                 tags:
                                   additionalProperties:
@@ -4869,17 +4869,17 @@ spec:
                         type: string
                     type: object
                   vpcLatticeConfigurations:
-                    description: The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
+                    description: VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.
                     items:
                       properties:
                         portName:
-                          description: The name of the port for a target group associated with the VPC Lattice configuration.
+                          description: Name of the port for a target group associated with the VPC Lattice configuration.
                           type: string
                         roleArn:
-                          description: The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
+                          description: ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.
                           type: string
                         targetGroupArn:
-                          description: The full ARN of the target group or groups associated with the VPC Lattice configuration.
+                          description: Full ARN of the target group or groups associated with the VPC Lattice configuration.
                           type: string
                       type: object
                     type: array

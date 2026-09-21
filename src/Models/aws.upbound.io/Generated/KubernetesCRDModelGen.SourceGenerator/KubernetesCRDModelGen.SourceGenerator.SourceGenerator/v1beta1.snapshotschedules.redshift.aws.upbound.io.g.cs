@@ -303,7 +303,7 @@ public partial class V1beta1SnapshotScheduleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotScheduleStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Snapshot Schedule.</summary>
+    /// <summary>ARN of the Redshift Snapshot Schedule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

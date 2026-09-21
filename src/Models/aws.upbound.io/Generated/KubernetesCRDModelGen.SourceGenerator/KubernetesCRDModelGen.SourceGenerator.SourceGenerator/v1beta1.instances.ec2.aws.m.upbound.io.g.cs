@@ -271,7 +271,7 @@ public partial class V1beta1InstanceSpecForProviderEbsBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -972,7 +972,7 @@ public partial class V1beta1InstanceSpecForProviderRootBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1799,7 +1799,7 @@ public partial class V1beta1InstanceSpecInitProviderEbsBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -2500,7 +2500,7 @@ public partial class V1beta1InstanceSpecInitProviderRootBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -3284,7 +3284,7 @@ public partial class V1beta1InstanceStatusAtProviderEbsBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -3508,7 +3508,7 @@ public partial class V1beta1InstanceStatusAtProviderRootBlockDevice
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
+    /// <summary>ARN of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

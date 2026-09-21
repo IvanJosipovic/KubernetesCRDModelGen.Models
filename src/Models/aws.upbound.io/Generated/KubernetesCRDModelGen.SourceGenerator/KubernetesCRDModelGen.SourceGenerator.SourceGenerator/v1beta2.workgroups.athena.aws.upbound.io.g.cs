@@ -466,7 +466,7 @@ public partial class V1beta2WorkgroupSpecForProviderConfiguration
     [JsonPropertyName("queryResultsS3AccessGrantsConfiguration")]
     public V1beta2WorkgroupSpecForProviderConfigurationQueryResultsS3AccessGrantsConfiguration? QueryResultsS3AccessGrantsConfiguration { get; set; }
 
-    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the Amazon Simple Storage Service Developer Guide.</summary>
+    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the S3 Developer Guide.</summary>
     [JsonPropertyName("requesterPaysEnabled")]
     public bool? RequesterPaysEnabled { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta2WorkgroupSpecInitProviderConfiguration
     [JsonPropertyName("queryResultsS3AccessGrantsConfiguration")]
     public V1beta2WorkgroupSpecInitProviderConfigurationQueryResultsS3AccessGrantsConfiguration? QueryResultsS3AccessGrantsConfiguration { get; set; }
 
-    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the Amazon Simple Storage Service Developer Guide.</summary>
+    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the S3 Developer Guide.</summary>
     [JsonPropertyName("requesterPaysEnabled")]
     public bool? RequesterPaysEnabled { get; set; }
 
@@ -1407,7 +1407,7 @@ public partial class V1beta2WorkgroupStatusAtProviderConfiguration
     [JsonPropertyName("queryResultsS3AccessGrantsConfiguration")]
     public V1beta2WorkgroupStatusAtProviderConfigurationQueryResultsS3AccessGrantsConfiguration? QueryResultsS3AccessGrantsConfiguration { get; set; }
 
-    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the Amazon Simple Storage Service Developer Guide.</summary>
+    /// <summary>If set to true , allows members assigned to a workgroup to reference Amazon S3 Requester Pays buckets in queries. If set to false , workgroup members cannot query data from Requester Pays buckets, and queries that retrieve data from Requester Pays buckets cause an error. The default is false . For more information about Requester Pays buckets, see Requester Pays Buckets in the S3 Developer Guide.</summary>
     [JsonPropertyName("requesterPaysEnabled")]
     public bool? RequesterPaysEnabled { get; set; }
 

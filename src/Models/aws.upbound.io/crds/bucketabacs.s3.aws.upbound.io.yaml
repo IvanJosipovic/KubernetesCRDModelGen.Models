@@ -75,10 +75,7 @@ spec:
                     description: ABAC status configuration. See abac_status Block for details.
                     properties:
                       status:
-                        description: |-
-                          ABAC status of the general purpose bucket.
-                          Valid values are Enabled and Disabled.
-                          By default, ABAC is disabled for all Amazon S3 general purpose buckets.
+                        description: ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.
                         type: string
                     type: object
                   bucket:
@@ -185,10 +182,7 @@ spec:
                     description: ABAC status configuration. See abac_status Block for details.
                     properties:
                       status:
-                        description: |-
-                          ABAC status of the general purpose bucket.
-                          Valid values are Enabled and Disabled.
-                          By default, ABAC is disabled for all Amazon S3 general purpose buckets.
+                        description: ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.
                         type: string
                     type: object
                   bucket:
@@ -366,10 +360,7 @@ spec:
                     description: ABAC status configuration. See abac_status Block for details.
                     properties:
                       status:
-                        description: |-
-                          ABAC status of the general purpose bucket.
-                          Valid values are Enabled and Disabled.
-                          By default, ABAC is disabled for all Amazon S3 general purpose buckets.
+                        description: ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.
                         type: string
                     type: object
                   bucket:

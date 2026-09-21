@@ -575,7 +575,7 @@ public partial class V1beta1DeviceStatusAtProvider
     [JsonPropertyName("agentVersion")]
     public string? AgentVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Device.</summary>
+    /// <summary>ARN assigned by AWS to this Device.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

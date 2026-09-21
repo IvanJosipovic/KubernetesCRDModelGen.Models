@@ -1617,7 +1617,7 @@ public partial class V1beta1ProjectSpecForProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting
+    /// KMS customer master key (CMK) to be used for encrypting
     /// the build project&apos;s build output artifacts.
     /// </summary>
     [JsonPropertyName("encryptionKey")]
@@ -1680,7 +1680,7 @@ public partial class V1beta1ProjectSpecForProvider
     public IList<V1beta1ProjectSpecForProviderSecondarySources>? SecondarySources { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that
+    /// ARN of the AWS Identity and Access Management (IAM) role that
     /// enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     /// </summary>
     [JsonPropertyName("serviceRole")]
@@ -3288,7 +3288,7 @@ public partial class V1beta1ProjectSpecInitProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting
+    /// KMS customer master key (CMK) to be used for encrypting
     /// the build project&apos;s build output artifacts.
     /// </summary>
     [JsonPropertyName("encryptionKey")]
@@ -3344,7 +3344,7 @@ public partial class V1beta1ProjectSpecInitProvider
     public IList<V1beta1ProjectSpecInitProviderSecondarySources>? SecondarySources { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that
+    /// ARN of the AWS Identity and Access Management (IAM) role that
     /// enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     /// </summary>
     [JsonPropertyName("serviceRole")]
@@ -4364,7 +4364,7 @@ public partial class V1beta1ProjectStatusAtProvider
     public string? Description { get; set; }
 
     /// <summary>
-    /// AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting
+    /// KMS customer master key (CMK) to be used for encrypting
     /// the build project&apos;s build output artifacts.
     /// </summary>
     [JsonPropertyName("encryptionKey")]
@@ -4434,7 +4434,7 @@ public partial class V1beta1ProjectStatusAtProvider
     public IList<V1beta1ProjectStatusAtProviderSecondarySources>? SecondarySources { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that
+    /// ARN of the AWS Identity and Access Management (IAM) role that
     /// enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     /// </summary>
     [JsonPropertyName("serviceRole")]

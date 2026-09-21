@@ -54,7 +54,7 @@ public partial class V1beta1ExperimentTemplateSpecForProviderActionParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderActionTarget
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Target type. Valid values are AutoScalingGroups (EC2 Auto Scaling groups), Buckets (S3 Buckets), Cluster (EKS Cluster), Clusters (ECS Clusters), DBInstances (RDS DB Instances), Functions (Lambda Functions), Instances (EC2 Instances), KinesisStreams (Kinesis Data Streams), ManagedResources (EKS clusters, Application and Network Load Balancers, and EC2 Auto Scaling groups that are enabled for ARC zonal shift), MultiRegionClusters (MemoryDB Multi-Region clusters), Nodegroups (EKS Node groups), Pods (EKS Pods), ReplicationGroups(ElastiCache Redis Replication Groups), Roles (IAM Roles), SpotInstances (EC2 Spot Instances), Subnets (VPC Subnets), Tables (DynamoDB encrypted global tables), Tasks (ECS Tasks), TransitGateways (Transit gateways), Volumes (EBS Volumes), VPCEndpoints (Amazon VPC endpoints). See the documentation for more details.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -92,16 +92,16 @@ public partial class V1beta1ExperimentTemplateSpecForProviderAction
     public V1beta1ExperimentTemplateSpecForProviderActionTarget? Target { get; set; }
 }
 
-/// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+/// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentOptions
 {
-    /// <summary>Specifies the account targeting setting for experiment options. Supports single-account and multi-account.</summary>
+    /// <summary>Account targeting setting for experiment options. Supports single-account and multi-account.</summary>
     [JsonPropertyName("accountTargeting")]
     public string? AccountTargeting { get; set; }
 
-    /// <summary>Specifies the empty target resolution mode for experiment options. Supports fail and skip.</summary>
+    /// <summary>Empty target resolution mode for experiment options. Supports fail and skip.</summary>
     [JsonPropertyName("emptyTargetResolutionMode")]
     public string? EmptyTargetResolutionMode { get; set; }
 }
@@ -265,7 +265,7 @@ public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard
 {
-    /// <summary>The ARN of the CloudWatch dashboard.</summary>
+    /// <summary>ARN of the CloudWatch dashboard.</summary>
     [JsonPropertyName("dashboardArn")]
     public string? DashboardArn { get; set; }
 
@@ -278,12 +278,12 @@ public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportCon
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationDataSourcesCloudwatchDashboardDashboardArnSelector? DashboardArnSelector { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationDataSources
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("cloudwatchDashboard")]
     public IList<V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard>? CloudwatchDashboard { get; set; }
 }
@@ -443,12 +443,12 @@ public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportCon
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputsS3ConfigurationBucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputsS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -460,81 +460,81 @@ public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportCon
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputsS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The outputs for the experiment report. See below.</summary>
+/// <summary>Outputs for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputs
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputsS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The configuration for experiment reporting. See below.</summary>
+/// <summary>Configuration for experiment reporting. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderExperimentReportConfiguration
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("dataSources")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationDataSources? DataSources { get; set; }
 
-    /// <summary>The outputs for the experiment report. See below.</summary>
+    /// <summary>Outputs for the experiment report. See below.</summary>
     [JsonPropertyName("outputs")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfigurationOutputs? Outputs { get; set; }
 
-    /// <summary>The duration of the post-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the post-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("postExperimentDuration")]
     public string? PostExperimentDuration { get; set; }
 
-    /// <summary>The duration of the pre-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the pre-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("preExperimentDuration")]
     public string? PreExperimentDuration { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderLogConfigurationCloudwatchLogsConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
+    /// <summary>ARN of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderLogConfigurationS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The configuration for experiment logging. See below.</summary>
+/// <summary>Configuration for experiment logging. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderLogConfiguration
 {
-    /// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
     [JsonPropertyName("cloudwatchLogsConfiguration")]
     public V1beta1ExperimentTemplateSpecForProviderLogConfigurationCloudwatchLogsConfiguration? CloudwatchLogsConfiguration { get; set; }
 
-    /// <summary>The schema version. See documentation for the list of schema versions.</summary>
+    /// <summary>Schema version. See documentation for the list of schema versions.</summary>
     [JsonPropertyName("logSchemaVersion")]
     public double? LogSchemaVersion { get; set; }
 
-    /// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateSpecForProviderLogConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -724,11 +724,11 @@ public partial class V1beta1ExperimentTemplateSpecForProviderTargetFilter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecForProviderTargetResourceTag
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Tag value.</summary>
+    /// <summary>Parameter value.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -745,7 +745,7 @@ public partial class V1beta1ExperimentTemplateSpecForProviderTarget
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The resource type parameters.</summary>
+    /// <summary>Resource type parameters.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -778,15 +778,15 @@ public partial class V1beta1ExperimentTemplateSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+    /// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
     [JsonPropertyName("experimentOptions")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentOptions? ExperimentOptions { get; set; }
 
-    /// <summary>The configuration for experiment reporting. See below.</summary>
+    /// <summary>Configuration for experiment reporting. See below.</summary>
     [JsonPropertyName("experimentReportConfiguration")]
     public V1beta1ExperimentTemplateSpecForProviderExperimentReportConfiguration? ExperimentReportConfiguration { get; set; }
 
-    /// <summary>The configuration for experiment logging. See below.</summary>
+    /// <summary>Configuration for experiment logging. See below.</summary>
     [JsonPropertyName("logConfiguration")]
     public V1beta1ExperimentTemplateSpecForProviderLogConfiguration? LogConfiguration { get; set; }
 
@@ -840,7 +840,7 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderActionParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderActionTarget
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Target type. Valid values are AutoScalingGroups (EC2 Auto Scaling groups), Buckets (S3 Buckets), Cluster (EKS Cluster), Clusters (ECS Clusters), DBInstances (RDS DB Instances), Functions (Lambda Functions), Instances (EC2 Instances), KinesisStreams (Kinesis Data Streams), ManagedResources (EKS clusters, Application and Network Load Balancers, and EC2 Auto Scaling groups that are enabled for ARC zonal shift), MultiRegionClusters (MemoryDB Multi-Region clusters), Nodegroups (EKS Node groups), Pods (EKS Pods), ReplicationGroups(ElastiCache Redis Replication Groups), Roles (IAM Roles), SpotInstances (EC2 Spot Instances), Subnets (VPC Subnets), Tables (DynamoDB encrypted global tables), Tasks (ECS Tasks), TransitGateways (Transit gateways), Volumes (EBS Volumes), VPCEndpoints (Amazon VPC endpoints). See the documentation for more details.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -878,16 +878,16 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderAction
     public V1beta1ExperimentTemplateSpecInitProviderActionTarget? Target { get; set; }
 }
 
-/// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+/// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentOptions
 {
-    /// <summary>Specifies the account targeting setting for experiment options. Supports single-account and multi-account.</summary>
+    /// <summary>Account targeting setting for experiment options. Supports single-account and multi-account.</summary>
     [JsonPropertyName("accountTargeting")]
     public string? AccountTargeting { get; set; }
 
-    /// <summary>Specifies the empty target resolution mode for experiment options. Supports fail and skip.</summary>
+    /// <summary>Empty target resolution mode for experiment options. Supports fail and skip.</summary>
     [JsonPropertyName("emptyTargetResolutionMode")]
     public string? EmptyTargetResolutionMode { get; set; }
 }
@@ -1051,7 +1051,7 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard
 {
-    /// <summary>The ARN of the CloudWatch dashboard.</summary>
+    /// <summary>ARN of the CloudWatch dashboard.</summary>
     [JsonPropertyName("dashboardArn")]
     public string? DashboardArn { get; set; }
 
@@ -1064,12 +1064,12 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportCo
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationDataSourcesCloudwatchDashboardDashboardArnSelector? DashboardArnSelector { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationDataSources
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("cloudwatchDashboard")]
     public IList<V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard>? CloudwatchDashboard { get; set; }
 }
@@ -1229,12 +1229,12 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportCo
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputsS3ConfigurationBucketNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputsS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
@@ -1246,81 +1246,81 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportCo
     [JsonPropertyName("bucketNameSelector")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputsS3ConfigurationBucketNameSelector? BucketNameSelector { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The outputs for the experiment report. See below.</summary>
+/// <summary>Outputs for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputs
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputsS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The configuration for experiment reporting. See below.</summary>
+/// <summary>Configuration for experiment reporting. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfiguration
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("dataSources")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationDataSources? DataSources { get; set; }
 
-    /// <summary>The outputs for the experiment report. See below.</summary>
+    /// <summary>Outputs for the experiment report. See below.</summary>
     [JsonPropertyName("outputs")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfigurationOutputs? Outputs { get; set; }
 
-    /// <summary>The duration of the post-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the post-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("postExperimentDuration")]
     public string? PostExperimentDuration { get; set; }
 
-    /// <summary>The duration of the pre-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the pre-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("preExperimentDuration")]
     public string? PreExperimentDuration { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderLogConfigurationCloudwatchLogsConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
+    /// <summary>ARN of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderLogConfigurationS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The configuration for experiment logging. See below.</summary>
+/// <summary>Configuration for experiment logging. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderLogConfiguration
 {
-    /// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
     [JsonPropertyName("cloudwatchLogsConfiguration")]
     public V1beta1ExperimentTemplateSpecInitProviderLogConfigurationCloudwatchLogsConfiguration? CloudwatchLogsConfiguration { get; set; }
 
-    /// <summary>The schema version. See documentation for the list of schema versions.</summary>
+    /// <summary>Schema version. See documentation for the list of schema versions.</summary>
     [JsonPropertyName("logSchemaVersion")]
     public double? LogSchemaVersion { get; set; }
 
-    /// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateSpecInitProviderLogConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -1510,11 +1510,11 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderTargetFilter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateSpecInitProviderTargetResourceTag
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Tag value.</summary>
+    /// <summary>Parameter value.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -1531,7 +1531,7 @@ public partial class V1beta1ExperimentTemplateSpecInitProviderTarget
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The resource type parameters.</summary>
+    /// <summary>Resource type parameters.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -1576,15 +1576,15 @@ public partial class V1beta1ExperimentTemplateSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+    /// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
     [JsonPropertyName("experimentOptions")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentOptions? ExperimentOptions { get; set; }
 
-    /// <summary>The configuration for experiment reporting. See below.</summary>
+    /// <summary>Configuration for experiment reporting. See below.</summary>
     [JsonPropertyName("experimentReportConfiguration")]
     public V1beta1ExperimentTemplateSpecInitProviderExperimentReportConfiguration? ExperimentReportConfiguration { get; set; }
 
-    /// <summary>The configuration for experiment logging. See below.</summary>
+    /// <summary>Configuration for experiment logging. See below.</summary>
     [JsonPropertyName("logConfiguration")]
     public V1beta1ExperimentTemplateSpecInitProviderLogConfiguration? LogConfiguration { get; set; }
 
@@ -1738,7 +1738,7 @@ public partial class V1beta1ExperimentTemplateStatusAtProviderActionParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderActionTarget
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Target type. Valid values are AutoScalingGroups (EC2 Auto Scaling groups), Buckets (S3 Buckets), Cluster (EKS Cluster), Clusters (ECS Clusters), DBInstances (RDS DB Instances), Functions (Lambda Functions), Instances (EC2 Instances), KinesisStreams (Kinesis Data Streams), ManagedResources (EKS clusters, Application and Network Load Balancers, and EC2 Auto Scaling groups that are enabled for ARC zonal shift), MultiRegionClusters (MemoryDB Multi-Region clusters), Nodegroups (EKS Node groups), Pods (EKS Pods), ReplicationGroups(ElastiCache Redis Replication Groups), Roles (IAM Roles), SpotInstances (EC2 Spot Instances), Subnets (VPC Subnets), Tables (DynamoDB encrypted global tables), Tasks (ECS Tasks), TransitGateways (Transit gateways), Volumes (EBS Volumes), VPCEndpoints (Amazon VPC endpoints). See the documentation for more details.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -1776,16 +1776,16 @@ public partial class V1beta1ExperimentTemplateStatusAtProviderAction
     public V1beta1ExperimentTemplateStatusAtProviderActionTarget? Target { get; set; }
 }
 
-/// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+/// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentOptions
 {
-    /// <summary>Specifies the account targeting setting for experiment options. Supports single-account and multi-account.</summary>
+    /// <summary>Account targeting setting for experiment options. Supports single-account and multi-account.</summary>
     [JsonPropertyName("accountTargeting")]
     public string? AccountTargeting { get; set; }
 
-    /// <summary>Specifies the empty target resolution mode for experiment options. Supports fail and skip.</summary>
+    /// <summary>Empty target resolution mode for experiment options. Supports fail and skip.</summary>
     [JsonPropertyName("emptyTargetResolutionMode")]
     public string? EmptyTargetResolutionMode { get; set; }
 }
@@ -1794,105 +1794,105 @@ public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard
 {
-    /// <summary>The ARN of the CloudWatch dashboard.</summary>
+    /// <summary>ARN of the CloudWatch dashboard.</summary>
     [JsonPropertyName("dashboardArn")]
     public string? DashboardArn { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationDataSources
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("cloudwatchDashboard")]
     public IList<V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationDataSourcesCloudwatchDashboard>? CloudwatchDashboard { get; set; }
 }
 
-/// <summary>The data sources for the experiment report. See below.</summary>
+/// <summary>Data sources for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationOutputsS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The outputs for the experiment report. See below.</summary>
+/// <summary>Outputs for the experiment report. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationOutputs
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationOutputsS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The configuration for experiment reporting. See below.</summary>
+/// <summary>Configuration for experiment reporting. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfiguration
 {
-    /// <summary>The data sources for the experiment report. See below.</summary>
+    /// <summary>Data sources for the experiment report. See below.</summary>
     [JsonPropertyName("dataSources")]
     public V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationDataSources? DataSources { get; set; }
 
-    /// <summary>The outputs for the experiment report. See below.</summary>
+    /// <summary>Outputs for the experiment report. See below.</summary>
     [JsonPropertyName("outputs")]
     public V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfigurationOutputs? Outputs { get; set; }
 
-    /// <summary>The duration of the post-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the post-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("postExperimentDuration")]
     public string? PostExperimentDuration { get; set; }
 
-    /// <summary>The duration of the pre-experiment period. Defaults to PT20M.</summary>
+    /// <summary>Duration of the pre-experiment period. Defaults to PT20M.</summary>
     [JsonPropertyName("preExperimentDuration")]
     public string? PreExperimentDuration { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderLogConfigurationCloudwatchLogsConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
+    /// <summary>ARN of the destination Amazon CloudWatch Logs log group. The ARN must end with :*</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 }
 
-/// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+/// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderLogConfigurationS3Configuration
 {
-    /// <summary>The name of the destination bucket.</summary>
+    /// <summary>Name of the destination bucket.</summary>
     [JsonPropertyName("bucketName")]
     public string? BucketName { get; set; }
 
-    /// <summary>The bucket prefix.</summary>
+    /// <summary>Bucket prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>The configuration for experiment logging. See below.</summary>
+/// <summary>Configuration for experiment logging. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderLogConfiguration
 {
-    /// <summary>The configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon CloudWatch Logs. See below.</summary>
     [JsonPropertyName("cloudwatchLogsConfiguration")]
     public V1beta1ExperimentTemplateStatusAtProviderLogConfigurationCloudwatchLogsConfiguration? CloudwatchLogsConfiguration { get; set; }
 
-    /// <summary>The schema version. See documentation for the list of schema versions.</summary>
+    /// <summary>Schema version. See documentation for the list of schema versions.</summary>
     [JsonPropertyName("logSchemaVersion")]
     public double? LogSchemaVersion { get; set; }
 
-    /// <summary>The configuration for experiment logging to Amazon S3. See below.</summary>
+    /// <summary>Configuration for experiment logging to Amazon S3. See below.</summary>
     [JsonPropertyName("s3Configuration")]
     public V1beta1ExperimentTemplateStatusAtProviderLogConfigurationS3Configuration? S3Configuration { get; set; }
 }
@@ -1927,11 +1927,11 @@ public partial class V1beta1ExperimentTemplateStatusAtProviderTargetFilter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExperimentTemplateStatusAtProviderTargetResourceTag
 {
-    /// <summary>Tag key.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Tag value.</summary>
+    /// <summary>Parameter value.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -1948,7 +1948,7 @@ public partial class V1beta1ExperimentTemplateStatusAtProviderTarget
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The resource type parameters.</summary>
+    /// <summary>Resource type parameters.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -1981,11 +1981,11 @@ public partial class V1beta1ExperimentTemplateStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The experiment options for the experiment template. See experiment_options below for more details!</summary>
+    /// <summary>Experiment options for the experiment template. See experiment_options below for more details!</summary>
     [JsonPropertyName("experimentOptions")]
     public V1beta1ExperimentTemplateStatusAtProviderExperimentOptions? ExperimentOptions { get; set; }
 
-    /// <summary>The configuration for experiment reporting. See below.</summary>
+    /// <summary>Configuration for experiment reporting. See below.</summary>
     [JsonPropertyName("experimentReportConfiguration")]
     public V1beta1ExperimentTemplateStatusAtProviderExperimentReportConfiguration? ExperimentReportConfiguration { get; set; }
 
@@ -1993,7 +1993,7 @@ public partial class V1beta1ExperimentTemplateStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The configuration for experiment logging. See below.</summary>
+    /// <summary>Configuration for experiment logging. See below.</summary>
     [JsonPropertyName("logConfiguration")]
     public V1beta1ExperimentTemplateStatusAtProviderLogConfiguration? LogConfiguration { get; set; }
 

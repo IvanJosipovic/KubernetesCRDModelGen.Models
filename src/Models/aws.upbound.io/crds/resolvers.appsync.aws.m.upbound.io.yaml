@@ -140,20 +140,20 @@ spec:
                         type: object
                     type: object
                   cachingConfig:
-                    description: The Caching Config. See Caching Config.
+                    description: Caching Config. See Caching Config.
                     properties:
                       cachingKeys:
-                        description: The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
+                        description: Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
                         items:
                           type: string
                         type: array
                         x-kubernetes-list-type: set
                       ttl:
-                        description: The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
+                        description: TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
                         type: number
                     type: object
                   code:
-                    description: The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
+                    description: Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
                     type: string
                   dataSource:
                     description: Data source name.
@@ -247,10 +247,10 @@ spec:
                     description: Maximum batching size for a resolver. Valid values are between 0 and 2000.
                     type: number
                   pipelineConfig:
-                    description: The caching configuration for the resolver. See Pipeline Config.
+                    description: Caching configuration for the resolver. See Pipeline Config.
                     properties:
                       functions:
-                        description: A list of Function objects.
+                        description: List of Function objects.
                         items:
                           type: string
                         type: array
@@ -349,17 +349,17 @@ spec:
                     description: Response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver. Required for non-Lambda resolvers.
                     type: string
                   runtime:
-                    description: Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
+                    description: Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
                     properties:
                       name:
-                        description: The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
+                        description: Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
                         type: string
                       runtimeVersion:
-                        description: The version of the runtime to use. Currently, the only allowed version is 1.0.0.
+                        description: Version of the runtime to use. Currently, the only allowed version is 1.0.0.
                         type: string
                     type: object
                   syncConfig:
-                    description: Describes a Sync configuration for a resolver. See Sync Config.
+                    description: Sync configuration for a resolver. See Sync Config.
                     properties:
                       conflictDetection:
                         description: Conflict Detection strategy to use. Valid values are NONE and VERSION.
@@ -397,20 +397,20 @@ spec:
                   autoscaler.
                 properties:
                   cachingConfig:
-                    description: The Caching Config. See Caching Config.
+                    description: Caching Config. See Caching Config.
                     properties:
                       cachingKeys:
-                        description: The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
+                        description: Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
                         items:
                           type: string
                         type: array
                         x-kubernetes-list-type: set
                       ttl:
-                        description: The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
+                        description: TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
                         type: number
                     type: object
                   code:
-                    description: The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
+                    description: Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
                     type: string
                   dataSource:
                     description: Data source name.
@@ -501,10 +501,10 @@ spec:
                     description: Maximum batching size for a resolver. Valid values are between 0 and 2000.
                     type: number
                   pipelineConfig:
-                    description: The caching configuration for the resolver. See Pipeline Config.
+                    description: Caching configuration for the resolver. See Pipeline Config.
                     properties:
                       functions:
-                        description: A list of Function objects.
+                        description: List of Function objects.
                         items:
                           type: string
                         type: array
@@ -598,17 +598,17 @@ spec:
                     description: Response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver. Required for non-Lambda resolvers.
                     type: string
                   runtime:
-                    description: Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
+                    description: Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
                     properties:
                       name:
-                        description: The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
+                        description: Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
                         type: string
                       runtimeVersion:
-                        description: The version of the runtime to use. Currently, the only allowed version is 1.0.0.
+                        description: Version of the runtime to use. Currently, the only allowed version is 1.0.0.
                         type: string
                     type: object
                   syncConfig:
-                    description: Describes a Sync configuration for a resolver. See Sync Config.
+                    description: Sync configuration for a resolver. See Sync Config.
                     properties:
                       conflictDetection:
                         description: Conflict Detection strategy to use. Valid values are NONE and VERSION.
@@ -695,20 +695,20 @@ spec:
                     description: ARN
                     type: string
                   cachingConfig:
-                    description: The Caching Config. See Caching Config.
+                    description: Caching Config. See Caching Config.
                     properties:
                       cachingKeys:
-                        description: The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
+                        description: Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
                         items:
                           type: string
                         type: array
                         x-kubernetes-list-type: set
                       ttl:
-                        description: The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
+                        description: TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.
                         type: number
                     type: object
                   code:
-                    description: The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
+                    description: Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
                     type: string
                   dataSource:
                     description: Data source name.
@@ -725,10 +725,10 @@ spec:
                     description: Maximum batching size for a resolver. Valid values are between 0 and 2000.
                     type: number
                   pipelineConfig:
-                    description: The caching configuration for the resolver. See Pipeline Config.
+                    description: Caching configuration for the resolver. See Pipeline Config.
                     properties:
                       functions:
-                        description: A list of Function objects.
+                        description: List of Function objects.
                         items:
                           type: string
                         type: array
@@ -745,17 +745,17 @@ spec:
                     description: Response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver. Required for non-Lambda resolvers.
                     type: string
                   runtime:
-                    description: Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
+                    description: Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.
                     properties:
                       name:
-                        description: The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
+                        description: Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.
                         type: string
                       runtimeVersion:
-                        description: The version of the runtime to use. Currently, the only allowed version is 1.0.0.
+                        description: Version of the runtime to use. Currently, the only allowed version is 1.0.0.
                         type: string
                     type: object
                   syncConfig:
-                    description: Describes a Sync configuration for a resolver. See Sync Config.
+                    description: Sync configuration for a resolver. See Sync Config.
                     properties:
                       conflictDetection:
                         description: Conflict Detection strategy to use. Valid values are NONE and VERSION.

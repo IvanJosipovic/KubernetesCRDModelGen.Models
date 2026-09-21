@@ -280,7 +280,7 @@ spec:
                     description: The AWS account ID of the GuardDuty detector
                     type: string
                   arn:
-                    description: Amazon Resource Name (ARN) of the GuardDuty detector
+                    description: ARN of the GuardDuty detector
                     type: string
                   datasources:
                     description: Describes which data sources will be enabled for the detector. See Data Sources below for more details. Deprecated in favor of aws_guardduty_detector_feature resources.

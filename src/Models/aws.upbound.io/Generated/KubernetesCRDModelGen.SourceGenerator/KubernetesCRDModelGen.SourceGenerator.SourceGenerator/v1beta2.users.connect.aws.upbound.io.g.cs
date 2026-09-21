@@ -1449,7 +1449,7 @@ public partial class V1beta2UserStatusAtProviderPhoneConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the user.</summary>
+    /// <summary>ARN of the user.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

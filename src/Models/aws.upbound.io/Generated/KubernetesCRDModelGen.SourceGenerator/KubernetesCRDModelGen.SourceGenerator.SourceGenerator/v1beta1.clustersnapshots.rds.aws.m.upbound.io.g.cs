@@ -195,7 +195,7 @@ public partial class V1beta1ClusterSnapshotSpecForProviderDbClusterIdentifierSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSnapshotSpecForProvider
 {
-    /// <summary>The DB Cluster Identifier from which to take the snapshot.</summary>
+    /// <summary>DB Cluster Identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbClusterIdentifier")]
     public string? DbClusterIdentifier { get; set; }
 
@@ -207,7 +207,7 @@ public partial class V1beta1ClusterSnapshotSpecForProvider
     [JsonPropertyName("dbClusterIdentifierSelector")]
     public V1beta1ClusterSnapshotSpecForProviderDbClusterIdentifierSelector? DbClusterIdentifierSelector { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("dbClusterSnapshotIdentifier")]
     public string? DbClusterSnapshotIdentifier { get; set; }
 
@@ -398,7 +398,7 @@ public partial class V1beta1ClusterSnapshotSpecInitProviderDbClusterIdentifierSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSnapshotSpecInitProvider
 {
-    /// <summary>The DB Cluster Identifier from which to take the snapshot.</summary>
+    /// <summary>DB Cluster Identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbClusterIdentifier")]
     public string? DbClusterIdentifier { get; set; }
 
@@ -410,7 +410,7 @@ public partial class V1beta1ClusterSnapshotSpecInitProvider
     [JsonPropertyName("dbClusterIdentifierSelector")]
     public V1beta1ClusterSnapshotSpecInitProviderDbClusterIdentifierSelector? DbClusterIdentifierSelector { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("dbClusterSnapshotIdentifier")]
     public string? DbClusterSnapshotIdentifier { get; set; }
 
@@ -542,15 +542,15 @@ public partial class V1beta1ClusterSnapshotStatusAtProvider
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
-    /// <summary>The DB Cluster Identifier from which to take the snapshot.</summary>
+    /// <summary>DB Cluster Identifier from which to take the snapshot.</summary>
     [JsonPropertyName("dbClusterIdentifier")]
     public string? DbClusterIdentifier { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB Cluster Snapshot.</summary>
+    /// <summary>ARN for the DB Cluster Snapshot.</summary>
     [JsonPropertyName("dbClusterSnapshotArn")]
     public string? DbClusterSnapshotArn { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("dbClusterSnapshotIdentifier")]
     public string? DbClusterSnapshotIdentifier { get; set; }
 
@@ -588,14 +588,15 @@ public partial class V1beta1ClusterSnapshotStatusAtProvider
     [JsonPropertyName("sharedAccounts")]
     public IList<string>? SharedAccounts { get; set; }
 
+    /// <summary>Type of the DB cluster snapshot.</summary>
     [JsonPropertyName("snapshotType")]
     public string? SnapshotType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB Cluster Snapshot.</summary>
+    /// <summary>DB Cluster Snapshot ARN that the DB Cluster Snapshot was copied from. It only has value in case of cross customer or cross region copy.</summary>
     [JsonPropertyName("sourceDbClusterSnapshotArn")]
     public string? SourceDbClusterSnapshotArn { get; set; }
 
-    /// <summary>The status of this DB Cluster Snapshot.</summary>
+    /// <summary>Status of this DB Cluster Snapshot.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -607,11 +608,11 @@ public partial class V1beta1ClusterSnapshotStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The VPC ID associated with the DB cluster snapshot.</summary>
+    /// <summary>VPC ID associated with the DB cluster snapshot.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

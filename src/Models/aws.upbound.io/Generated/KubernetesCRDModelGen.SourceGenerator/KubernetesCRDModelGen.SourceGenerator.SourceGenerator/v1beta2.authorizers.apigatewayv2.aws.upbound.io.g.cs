@@ -349,10 +349,7 @@ public partial class V1beta2AuthorizerSpecForProviderAuthorizerUriSelector
     public V1beta2AuthorizerSpecForProviderAuthorizerUriSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-/// Supported only for HTTP APIs.
-/// </summary>
+/// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AuthorizerSpecForProviderJwtConfiguration
@@ -382,41 +379,23 @@ public partial class V1beta2AuthorizerSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta2AuthorizerSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>
-    /// Required credentials as an IAM role for API Gateway to invoke the authorizer.
-    /// Supported only for REQUEST authorizers.
-    /// </summary>
+    /// <summary>Required credentials as an IAM role for API Gateway to invoke the authorizer. Supported only for REQUEST authorizers.</summary>
     [JsonPropertyName("authorizerCredentialsArn")]
     public string? AuthorizerCredentialsArn { get; set; }
 
-    /// <summary>
-    /// Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers.
-    /// Valid values: 1.0, 2.0.
-    /// </summary>
+    /// <summary>Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers. Valid values: 1.0, 2.0.</summary>
     [JsonPropertyName("authorizerPayloadFormatVersion")]
     public string? AuthorizerPayloadFormatVersion { get; set; }
 
-    /// <summary>
-    /// Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled.
-    /// If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300.
-    /// Supported only for HTTP API Lambda authorizers.
-    /// </summary>
+    /// <summary>Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300. Supported only for HTTP API Lambda authorizers.</summary>
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer type. Valid values: JWT, REQUEST.
-    /// Specify REQUEST for a Lambda function using incoming request parameters.
-    /// For HTTP APIs, specify JWT to use JSON Web Tokens.
-    /// </summary>
+    /// <summary>Authorizer type. Valid values: JWT, REQUEST. Specify REQUEST for a Lambda function using incoming request parameters. For HTTP APIs, specify JWT to use JSON Web Tokens.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI).
-    /// For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource.
-    /// Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource. Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 
@@ -428,25 +407,15 @@ public partial class V1beta2AuthorizerSpecForProvider
     [JsonPropertyName("authorizerUriSelector")]
     public V1beta2AuthorizerSpecForProviderAuthorizerUriSelector? AuthorizerUriSelector { get; set; }
 
-    /// <summary>
-    /// Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("enableSimpleResponses")]
     public bool? EnableSimpleResponses { get; set; }
 
-    /// <summary>
-    /// Identity sources for which authorization is requested.
-    /// For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters.
-    /// For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
-    /// </summary>
+    /// <summary>Identity sources for which authorization is requested. For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters. For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.</summary>
     [JsonPropertyName("identitySources")]
     public IList<string>? IdentitySources { get; set; }
 
-    /// <summary>
-    /// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
     [JsonPropertyName("jwtConfiguration")]
     public V1beta2AuthorizerSpecForProviderJwtConfiguration? JwtConfiguration { get; set; }
 
@@ -756,10 +725,7 @@ public partial class V1beta2AuthorizerSpecInitProviderAuthorizerUriSelector
     public V1beta2AuthorizerSpecInitProviderAuthorizerUriSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-/// Supported only for HTTP APIs.
-/// </summary>
+/// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AuthorizerSpecInitProviderJwtConfiguration
@@ -801,41 +767,23 @@ public partial class V1beta2AuthorizerSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta2AuthorizerSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>
-    /// Required credentials as an IAM role for API Gateway to invoke the authorizer.
-    /// Supported only for REQUEST authorizers.
-    /// </summary>
+    /// <summary>Required credentials as an IAM role for API Gateway to invoke the authorizer. Supported only for REQUEST authorizers.</summary>
     [JsonPropertyName("authorizerCredentialsArn")]
     public string? AuthorizerCredentialsArn { get; set; }
 
-    /// <summary>
-    /// Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers.
-    /// Valid values: 1.0, 2.0.
-    /// </summary>
+    /// <summary>Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers. Valid values: 1.0, 2.0.</summary>
     [JsonPropertyName("authorizerPayloadFormatVersion")]
     public string? AuthorizerPayloadFormatVersion { get; set; }
 
-    /// <summary>
-    /// Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled.
-    /// If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300.
-    /// Supported only for HTTP API Lambda authorizers.
-    /// </summary>
+    /// <summary>Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300. Supported only for HTTP API Lambda authorizers.</summary>
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer type. Valid values: JWT, REQUEST.
-    /// Specify REQUEST for a Lambda function using incoming request parameters.
-    /// For HTTP APIs, specify JWT to use JSON Web Tokens.
-    /// </summary>
+    /// <summary>Authorizer type. Valid values: JWT, REQUEST. Specify REQUEST for a Lambda function using incoming request parameters. For HTTP APIs, specify JWT to use JSON Web Tokens.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI).
-    /// For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource.
-    /// Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource. Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 
@@ -847,25 +795,15 @@ public partial class V1beta2AuthorizerSpecInitProvider
     [JsonPropertyName("authorizerUriSelector")]
     public V1beta2AuthorizerSpecInitProviderAuthorizerUriSelector? AuthorizerUriSelector { get; set; }
 
-    /// <summary>
-    /// Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("enableSimpleResponses")]
     public bool? EnableSimpleResponses { get; set; }
 
-    /// <summary>
-    /// Identity sources for which authorization is requested.
-    /// For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters.
-    /// For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
-    /// </summary>
+    /// <summary>Identity sources for which authorization is requested. For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters. For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.</summary>
     [JsonPropertyName("identitySources")]
     public IList<string>? IdentitySources { get; set; }
 
-    /// <summary>
-    /// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
     [JsonPropertyName("jwtConfiguration")]
     public V1beta2AuthorizerSpecInitProviderJwtConfiguration? JwtConfiguration { get; set; }
 
@@ -1057,10 +995,7 @@ public partial class V1beta2AuthorizerSpec
     public V1beta2AuthorizerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-/// Supported only for HTTP APIs.
-/// </summary>
+/// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2AuthorizerStatusAtProviderJwtConfiguration
@@ -1082,48 +1017,27 @@ public partial class V1beta2AuthorizerStatusAtProvider
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
-    /// <summary>
-    /// Required credentials as an IAM role for API Gateway to invoke the authorizer.
-    /// Supported only for REQUEST authorizers.
-    /// </summary>
+    /// <summary>Required credentials as an IAM role for API Gateway to invoke the authorizer. Supported only for REQUEST authorizers.</summary>
     [JsonPropertyName("authorizerCredentialsArn")]
     public string? AuthorizerCredentialsArn { get; set; }
 
-    /// <summary>
-    /// Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers.
-    /// Valid values: 1.0, 2.0.
-    /// </summary>
+    /// <summary>Format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers. Valid values: 1.0, 2.0.</summary>
     [JsonPropertyName("authorizerPayloadFormatVersion")]
     public string? AuthorizerPayloadFormatVersion { get; set; }
 
-    /// <summary>
-    /// Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled.
-    /// If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300.
-    /// Supported only for HTTP API Lambda authorizers.
-    /// </summary>
+    /// <summary>Time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Defaults to 300. Supported only for HTTP API Lambda authorizers.</summary>
     [JsonPropertyName("authorizerResultTtlInSeconds")]
     public double? AuthorizerResultTtlInSeconds { get; set; }
 
-    /// <summary>
-    /// Authorizer type. Valid values: JWT, REQUEST.
-    /// Specify REQUEST for a Lambda function using incoming request parameters.
-    /// For HTTP APIs, specify JWT to use JSON Web Tokens.
-    /// </summary>
+    /// <summary>Authorizer type. Valid values: JWT, REQUEST. Specify REQUEST for a Lambda function using incoming request parameters. For HTTP APIs, specify JWT to use JSON Web Tokens.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 
-    /// <summary>
-    /// Authorizer&apos;s Uniform Resource Identifier (URI).
-    /// For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource.
-    /// Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.
-    /// </summary>
+    /// <summary>Authorizer&apos;s URI. For REQUEST authorizers this must be a well-formed Lambda function URI, such as the invoke_arn attribute of the aws_lambda_function resource. Supported only for REQUEST authorizers. Must be between 1 and 2048 characters in length.</summary>
     [JsonPropertyName("authorizerUri")]
     public string? AuthorizerUri { get; set; }
 
-    /// <summary>
-    /// Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy. Supported only for HTTP APIs.</summary>
     [JsonPropertyName("enableSimpleResponses")]
     public bool? EnableSimpleResponses { get; set; }
 
@@ -1131,18 +1045,11 @@ public partial class V1beta2AuthorizerStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// Identity sources for which authorization is requested.
-    /// For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters.
-    /// For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.
-    /// </summary>
+    /// <summary>Identity sources for which authorization is requested. For REQUEST authorizers the value is a list of one or more mapping expressions of the specified request parameters. For JWT authorizers the single entry specifies where to extract the JSON Web Token (JWT) from inbound requests.</summary>
     [JsonPropertyName("identitySources")]
     public IList<string>? IdentitySources { get; set; }
 
-    /// <summary>
-    /// Configuration of a JWT authorizer. Required for the JWT authorizer type.
-    /// Supported only for HTTP APIs.
-    /// </summary>
+    /// <summary>Configuration of a JWT authorizer. Required for the JWT authorizer type. Supported only for HTTP APIs. See jwt_configuration Block below.</summary>
     [JsonPropertyName("jwtConfiguration")]
     public V1beta2AuthorizerStatusAtProviderJwtConfiguration? JwtConfiguration { get; set; }
 

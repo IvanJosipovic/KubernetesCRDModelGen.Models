@@ -203,7 +203,7 @@ public partial class V1beta1PublicVirtualInterfaceSpecForProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
 
@@ -230,6 +230,10 @@ public partial class V1beta1PublicVirtualInterfaceSpecForProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -430,7 +434,7 @@ public partial class V1beta1PublicVirtualInterfaceSpecInitProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
 
@@ -457,6 +461,10 @@ public partial class V1beta1PublicVirtualInterfaceSpecInitProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>A list of routes to be advertised to the AWS network in this region.</summary>
     [JsonPropertyName("routeFilterPrefixes")]
@@ -601,7 +609,7 @@ public partial class V1beta1PublicVirtualInterfaceStatusAtProvider
     [JsonPropertyName("awsDevice")]
     public string? AwsDevice { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
 
@@ -624,6 +632,10 @@ public partial class V1beta1PublicVirtualInterfaceStatusAtProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

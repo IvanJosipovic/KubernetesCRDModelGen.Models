@@ -501,13 +501,7 @@ public partial class V1beta1ClusterSpecForProviderKmsKeyIdSelector
     public V1beta1ClusterSpecForProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// Password for the master DB user.
-/// Conflicts with manage_master_password and master_password_wo.
-/// One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided.
-/// Note that this may show up in logs, and it will be stored in the state file.
-/// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-/// </summary>
+/// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password_wo. One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided. Note that this will show up in logs, and it will be stored in the state file. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderMasterPasswordSecretRef
@@ -520,13 +514,7 @@ public partial class V1beta1ClusterSpecForProviderMasterPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>
-/// Password for the master DB user.
-/// Conflicts with manage_master_password and master_password.
-/// One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided.
-/// Note that this may show up in logs.
-/// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-/// </summary>
+/// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password. One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided. Note that this may show up in logs. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number. If set, requires master_password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderMasterPasswordWoSecretRef
@@ -730,7 +718,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("clusterParameterGroupName")]
     public string? ClusterParameterGroupName { get; set; }
 
-    /// <summary>The name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside virtual private cloud (VPC).</summary>
+    /// <summary>Name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside VPC.</summary>
     [JsonPropertyName("clusterSubnetGroupName")]
     public string? ClusterSubnetGroupName { get; set; }
 
@@ -752,7 +740,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was created.</summary>
+    /// <summary>ARN for the IAM role that was set as default for the cluster when the cluster was created.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -811,11 +799,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("maintenanceTrackName")]
     public string? MaintenanceTrackName { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretsManager to manage the cluster admin credentials.
-    /// Conflicts with master_password and master_password_wo.
-    /// One of master_password or manage_master_password is required unless snapshot_identifier is provided.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretsManager to manage the cluster admin credentials. Conflicts with master_password and master_password_wo. One of master_password or manage_master_password is required unless snapshot_identifier is provided.</summary>
     [JsonPropertyName("manageMasterPassword")]
     public bool? ManageMasterPassword { get; set; }
 
@@ -827,27 +811,15 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("masterPasswordSecretKmsKeyId")]
     public string? MasterPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user.
-    /// Conflicts with manage_master_password and master_password_wo.
-    /// One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided.
-    /// Note that this may show up in logs, and it will be stored in the state file.
-    /// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-    /// </summary>
+    /// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password_wo. One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided. Note that this will show up in logs, and it will be stored in the state file. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.</summary>
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta1ClusterSpecForProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user.
-    /// Conflicts with manage_master_password and master_password.
-    /// One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided.
-    /// Note that this may show up in logs.
-    /// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-    /// </summary>
+    /// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password. One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided. Note that this may show up in logs. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWoSecretRef")]
     public V1beta1ClusterSpecForProviderMasterPasswordWoSecretRef? MasterPasswordWoSecretRef { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -926,7 +898,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("vpcSecurityGroupIdSelector")]
     public V1beta1ClusterSpecForProviderVpcSecurityGroupIdSelector? VpcSecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.</summary>
+    /// <summary>List of VPC security groups to be associated with the cluster.</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
 }
@@ -1396,13 +1368,7 @@ public partial class V1beta1ClusterSpecInitProviderKmsKeyIdSelector
     public V1beta1ClusterSpecInitProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// Password for the master DB user.
-/// Conflicts with manage_master_password and master_password_wo.
-/// One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided.
-/// Note that this may show up in logs, and it will be stored in the state file.
-/// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-/// </summary>
+/// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password_wo. One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided. Note that this will show up in logs, and it will be stored in the state file. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderMasterPasswordSecretRef
@@ -1415,13 +1381,7 @@ public partial class V1beta1ClusterSpecInitProviderMasterPasswordSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>
-/// Password for the master DB user.
-/// Conflicts with manage_master_password and master_password.
-/// One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided.
-/// Note that this may show up in logs.
-/// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-/// </summary>
+/// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password. One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided. Note that this may show up in logs. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number. If set, requires master_password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderMasterPasswordWoSecretRef
@@ -1637,7 +1597,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("clusterParameterGroupName")]
     public string? ClusterParameterGroupName { get; set; }
 
-    /// <summary>The name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside virtual private cloud (VPC).</summary>
+    /// <summary>Name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside VPC.</summary>
     [JsonPropertyName("clusterSubnetGroupName")]
     public string? ClusterSubnetGroupName { get; set; }
 
@@ -1659,7 +1619,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was created.</summary>
+    /// <summary>ARN for the IAM role that was set as default for the cluster when the cluster was created.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -1718,11 +1678,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("maintenanceTrackName")]
     public string? MaintenanceTrackName { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretsManager to manage the cluster admin credentials.
-    /// Conflicts with master_password and master_password_wo.
-    /// One of master_password or manage_master_password is required unless snapshot_identifier is provided.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretsManager to manage the cluster admin credentials. Conflicts with master_password and master_password_wo. One of master_password or manage_master_password is required unless snapshot_identifier is provided.</summary>
     [JsonPropertyName("manageMasterPassword")]
     public bool? ManageMasterPassword { get; set; }
 
@@ -1734,27 +1690,15 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("masterPasswordSecretKmsKeyId")]
     public string? MasterPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user.
-    /// Conflicts with manage_master_password and master_password_wo.
-    /// One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided.
-    /// Note that this may show up in logs, and it will be stored in the state file.
-    /// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-    /// </summary>
+    /// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password_wo. One of master_password, master_password_wo or manage_master_password is required unless snapshot_identifier is provided. Note that this will show up in logs, and it will be stored in the state file. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.</summary>
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta1ClusterSpecInitProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>
-    /// Password for the master DB user.
-    /// Conflicts with manage_master_password and master_password.
-    /// One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided.
-    /// Note that this may show up in logs.
-    /// Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number.
-    /// </summary>
+    /// <summary>Password for the master DB user. Conflicts with manage_master_password and master_password. One of master_password_wo, master_password or manage_master_password is required unless snapshot_identifier is provided. Note that this may show up in logs. Password must contain at least 8 characters and contain at least one uppercase letter, one lowercase letter, and one number. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWoSecretRef")]
     public V1beta1ClusterSpecInitProviderMasterPasswordWoSecretRef? MasterPasswordWoSecretRef { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -1826,7 +1770,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("vpcSecurityGroupIdSelector")]
     public V1beta1ClusterSpecInitProviderVpcSecurityGroupIdSelector? VpcSecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.</summary>
+    /// <summary>List of VPC security groups to be associated with the cluster.</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
 }
@@ -1975,7 +1919,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("aquaConfigurationStatus")]
     public string? AquaConfigurationStatus { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>ARN of cluster</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1991,7 +1935,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("availabilityZoneRelocationEnabled")]
     public bool? AvailabilityZoneRelocationEnabled { get; set; }
 
-    /// <summary>The namespace Amazon Resource Name (ARN) of the cluster</summary>
+    /// <summary>Namespace ARN of the cluster</summary>
     [JsonPropertyName("clusterNamespaceArn")]
     public string? ClusterNamespaceArn { get; set; }
 
@@ -2011,7 +1955,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("clusterRevisionNumber")]
     public string? ClusterRevisionNumber { get; set; }
 
-    /// <summary>The name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside virtual private cloud (VPC).</summary>
+    /// <summary>Name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside VPC.</summary>
     [JsonPropertyName("clusterSubnetGroupName")]
     public string? ClusterSubnetGroupName { get; set; }
 
@@ -2033,7 +1977,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was created.</summary>
+    /// <summary>ARN for the IAM role that was set as default for the cluster when the cluster was created.</summary>
     [JsonPropertyName("defaultIamRoleArn")]
     public string? DefaultIamRoleArn { get; set; }
 
@@ -2080,11 +2024,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("maintenanceTrackName")]
     public string? MaintenanceTrackName { get; set; }
 
-    /// <summary>
-    /// Whether to use AWS SecretsManager to manage the cluster admin credentials.
-    /// Conflicts with master_password and master_password_wo.
-    /// One of master_password or manage_master_password is required unless snapshot_identifier is provided.
-    /// </summary>
+    /// <summary>Whether to use AWS SecretsManager to manage the cluster admin credentials. Conflicts with master_password and master_password_wo. One of master_password or manage_master_password is required unless snapshot_identifier is provided.</summary>
     [JsonPropertyName("manageMasterPassword")]
     public bool? ManageMasterPassword { get; set; }
 
@@ -2100,7 +2040,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("masterPasswordSecretKmsKeyId")]
     public string? MasterPasswordSecretKmsKeyId { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -2175,7 +2115,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.</summary>
+    /// <summary>List of VPC security groups to be associated with the cluster.</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
 }

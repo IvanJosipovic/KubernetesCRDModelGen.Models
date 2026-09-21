@@ -206,9 +206,13 @@ public partial class V1beta1BGPPeerSpecForProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]
@@ -423,9 +427,13 @@ public partial class V1beta1BGPPeerSpecInitProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]
@@ -577,9 +585,13 @@ public partial class V1beta1BGPPeerStatusAtProvider
     [JsonPropertyName("awsDevice")]
     public string? AwsDevice { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]

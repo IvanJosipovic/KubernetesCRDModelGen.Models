@@ -195,7 +195,7 @@ public partial class V1beta1IdentityPolicySpecForProviderIdentitySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityPolicySpecForProvider
 {
-    /// <summary>Name or Amazon Resource Name (ARN) of the SES Identity.</summary>
+    /// <summary>Name or ARN of the SES Identity.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 
@@ -394,7 +394,7 @@ public partial class V1beta1IdentityPolicySpecInitProviderIdentitySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityPolicySpecInitProvider
 {
-    /// <summary>Name or Amazon Resource Name (ARN) of the SES Identity.</summary>
+    /// <summary>Name or ARN of the SES Identity.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 
@@ -529,7 +529,7 @@ public partial class V1beta1IdentityPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Name or Amazon Resource Name (ARN) of the SES Identity.</summary>
+    /// <summary>Name or ARN of the SES Identity.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 

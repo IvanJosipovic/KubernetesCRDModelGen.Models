@@ -210,7 +210,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     [JsonPropertyName("cloudwatchEncryptionMode")]
     public string? CloudwatchEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -378,7 +378,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     [JsonPropertyName("jobBookmarksEncryptionMode")]
     public string? JobBookmarksEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -543,7 +543,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption
 {
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -747,7 +747,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     [JsonPropertyName("cloudwatchEncryptionMode")]
     public string? CloudwatchEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -915,7 +915,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     [JsonPropertyName("jobBookmarksEncryptionMode")]
     public string? JobBookmarksEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1080,7 +1080,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3Encryption
 {
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -1325,7 +1325,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     [JsonPropertyName("cloudwatchEncryptionMode")]
     public string? CloudwatchEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -1338,7 +1338,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     [JsonPropertyName("jobBookmarksEncryptionMode")]
     public string? JobBookmarksEncryptionMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 }
@@ -1348,7 +1348,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption
 {
-    /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
+    /// <summary>ARN of the KMS key to be used to encrypt the data.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 

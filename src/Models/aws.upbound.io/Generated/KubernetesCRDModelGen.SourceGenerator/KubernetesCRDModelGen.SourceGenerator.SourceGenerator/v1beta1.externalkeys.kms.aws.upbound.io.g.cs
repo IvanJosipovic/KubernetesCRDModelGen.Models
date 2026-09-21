@@ -77,7 +77,7 @@ public partial class V1beta1ExternalKeySpecForProviderKeyMaterialBase64SecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalKeySpecForProvider
 {
-    /// <summary>Specifies whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide. Defaults to false.</summary>
+    /// <summary>Whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the KMS Developer Guide. Defaults to false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
@@ -163,7 +163,7 @@ public partial class V1beta1ExternalKeySpecInitProviderKeyMaterialBase64SecretRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalKeySpecInitProvider
 {
-    /// <summary>Specifies whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide. Defaults to false.</summary>
+    /// <summary>Whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the KMS Developer Guide. Defaults to false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 
@@ -395,11 +395,11 @@ public partial class V1beta1ExternalKeySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalKeyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the key.</summary>
+    /// <summary>ARN of the key.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide. Defaults to false.</summary>
+    /// <summary>Whether to disable the policy lockout check performed when creating or updating the key&apos;s policy. Setting this value to true increases the risk that the key becomes unmanageable. For more information, refer to the scenario in the Default Key Policy section in the KMS Developer Guide. Defaults to false.</summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
     public bool? BypassPolicyLockoutSafetyCheck { get; set; }
 

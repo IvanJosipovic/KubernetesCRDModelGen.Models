@@ -74,7 +74,7 @@ public partial class V1beta2SigningProfileSpecForProviderSignatureValidityPeriod
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SigningProfileSpecForProviderSigningMaterial
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
+    /// <summary>ARN of the certificates that is used to sign your code.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 }
@@ -130,7 +130,7 @@ public partial class V1beta2SigningProfileSpecInitProviderSignatureValidityPerio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SigningProfileSpecInitProviderSigningMaterial
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
+    /// <summary>ARN of the certificates that is used to sign your code.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 }
@@ -391,7 +391,7 @@ public partial class V1beta2SigningProfileStatusAtProviderSignatureValidityPerio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SigningProfileStatusAtProviderSigningMaterial
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
+    /// <summary>ARN of the certificates that is used to sign your code.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 }
@@ -400,7 +400,7 @@ public partial class V1beta2SigningProfileStatusAtProviderSigningMaterial
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SigningProfileStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the signing profile.</summary>
+    /// <summary>ARN for the signing profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

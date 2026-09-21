@@ -605,7 +605,7 @@ public partial class V1beta1VPCIpamScopeSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamScopeStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the scope.</summary>
+    /// <summary>ARN of the scope.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

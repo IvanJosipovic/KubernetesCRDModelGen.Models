@@ -169,7 +169,7 @@ public partial class V1beta2IntentSpecForProviderDialogCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -305,7 +305,7 @@ public partial class V1beta2IntentSpecForProviderFulfillmentActivityCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -702,7 +702,7 @@ public partial class V1beta2IntentSpecInitProviderDialogCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -838,7 +838,7 @@ public partial class V1beta2IntentSpecInitProviderFulfillmentActivityCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -1423,7 +1423,7 @@ public partial class V1beta2IntentStatusAtProviderDialogCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -1559,7 +1559,7 @@ public partial class V1beta2IntentStatusAtProviderFulfillmentActivityCodeHook
     [JsonPropertyName("messageVersion")]
     public string? MessageVersion { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lambda function.</summary>
+    /// <summary>ARN of the Lambda function.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }

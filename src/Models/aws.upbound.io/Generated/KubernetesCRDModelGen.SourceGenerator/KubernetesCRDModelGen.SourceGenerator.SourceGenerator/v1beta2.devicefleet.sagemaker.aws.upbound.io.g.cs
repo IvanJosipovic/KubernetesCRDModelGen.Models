@@ -60,7 +60,7 @@ public enum V1beta2DeviceFleetSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeviceFleetSpecForProviderOutputConfig
 {
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -239,7 +239,7 @@ public partial class V1beta2DeviceFleetSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).</summary>
+    /// <summary>ARN that has access to AWS Internet of Things (IoT).</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -261,7 +261,7 @@ public partial class V1beta2DeviceFleetSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeviceFleetSpecInitProviderOutputConfig
 {
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -445,7 +445,7 @@ public partial class V1beta2DeviceFleetSpecInitProvider
     [JsonPropertyName("outputConfig")]
     public V1beta2DeviceFleetSpecInitProviderOutputConfig? OutputConfig { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).</summary>
+    /// <summary>ARN that has access to AWS Internet of Things (IoT).</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -650,7 +650,7 @@ public partial class V1beta2DeviceFleetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeviceFleetStatusAtProviderOutputConfig
 {
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt data on the storage volume after compilation job. If you don&apos;t provide a KMS key ID, Amazon SageMaker AI uses the default KMS key for Amazon S3 for your role&apos;s account.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -663,7 +663,7 @@ public partial class V1beta2DeviceFleetStatusAtProviderOutputConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DeviceFleetStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Device Fleet.</summary>
+    /// <summary>ARN assigned by AWS to this Device Fleet.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -693,7 +693,7 @@ public partial class V1beta2DeviceFleetStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that has access to AWS Internet of Things (IoT).</summary>
+    /// <summary>ARN that has access to AWS Internet of Things (IoT).</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

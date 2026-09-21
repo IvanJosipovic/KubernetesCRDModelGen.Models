@@ -500,7 +500,7 @@ public partial class V1beta1ClusterEndpointSpecForProviderStaticMembersSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterEndpointSpecForProvider
 {
-    /// <summary>The cluster identifier.</summary>
+    /// <summary>Cluster identifier.</summary>
     [JsonPropertyName("clusterIdentifier")]
     public string? ClusterIdentifier { get; set; }
 
@@ -512,7 +512,7 @@ public partial class V1beta1ClusterEndpointSpecForProvider
     [JsonPropertyName("clusterIdentifierSelector")]
     public V1beta1ClusterEndpointSpecForProviderClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 
-    /// <summary>The type of the endpoint. One of: READER , ANY .</summary>
+    /// <summary>Type of the endpoint. One of: READER , ANY .</summary>
     [JsonPropertyName("customEndpointType")]
     public string? CustomEndpointType { get; set; }
 
@@ -1009,7 +1009,7 @@ public partial class V1beta1ClusterEndpointSpecInitProviderStaticMembersSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterEndpointSpecInitProvider
 {
-    /// <summary>The cluster identifier.</summary>
+    /// <summary>Cluster identifier.</summary>
     [JsonPropertyName("clusterIdentifier")]
     public string? ClusterIdentifier { get; set; }
 
@@ -1021,7 +1021,7 @@ public partial class V1beta1ClusterEndpointSpecInitProvider
     [JsonPropertyName("clusterIdentifierSelector")]
     public V1beta1ClusterEndpointSpecInitProviderClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 
-    /// <summary>The type of the endpoint. One of: READER , ANY .</summary>
+    /// <summary>Type of the endpoint. One of: READER , ANY .</summary>
     [JsonPropertyName("customEndpointType")]
     public string? CustomEndpointType { get; set; }
 
@@ -1241,19 +1241,19 @@ public partial class V1beta1ClusterEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterEndpointStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>ARN of cluster</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The cluster identifier.</summary>
+    /// <summary>Cluster identifier.</summary>
     [JsonPropertyName("clusterIdentifier")]
     public string? ClusterIdentifier { get; set; }
 
-    /// <summary>The type of the endpoint. One of: READER , ANY .</summary>
+    /// <summary>Type of the endpoint. One of: READER , ANY .</summary>
     [JsonPropertyName("customEndpointType")]
     public string? CustomEndpointType { get; set; }
 
-    /// <summary>A custom endpoint for the Aurora cluster</summary>
+    /// <summary>Custom endpoint for the Aurora cluster</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
@@ -1261,7 +1261,7 @@ public partial class V1beta1ClusterEndpointStatusAtProvider
     [JsonPropertyName("excludedMembers")]
     public IList<string>? ExcludedMembers { get; set; }
 
-    /// <summary>The RDS Cluster Endpoint Identifier</summary>
+    /// <summary>RDS Cluster Endpoint Identifier</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1280,7 +1280,7 @@ public partial class V1beta1ClusterEndpointStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

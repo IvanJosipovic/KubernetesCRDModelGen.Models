@@ -364,7 +364,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDestinationAccessControlTranslation
 {
-    /// <summary>Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
+    /// <summary>Replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 }
@@ -668,7 +668,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfiguration
 {
-    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in AWS Key Management Service (KMS) for the destination bucket.</summary>
+    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in KMS for the destination bucket.</summary>
     [JsonPropertyName("replicaKmsKeyId")]
     public string? ReplicaKmsKeyId { get; set; }
 
@@ -729,7 +729,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDes
     public V1beta2BucketReplicationConfigurationSpecForProviderRuleDestinationReplicationTimeTime? Time { get; set; }
 }
 
-/// <summary>Specifies the destination for the rule. See below.</summary>
+/// <summary>Destination for the rule. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDestination
@@ -766,7 +766,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleDes
     [JsonPropertyName("replicationTime")]
     public V1beta2BucketReplicationConfigurationSpecForProviderRuleDestinationReplicationTime? ReplicationTime { get; set; }
 
-    /// <summary>The storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
+    /// <summary>Storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
@@ -847,7 +847,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleSou
     public string? Status { get; set; }
 }
 
-/// <summary>Specifies special object selection criteria. See below.</summary>
+/// <summary>Special object selection criteria. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteria
@@ -869,7 +869,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRule
     [JsonPropertyName("deleteMarkerReplication")]
     public V1beta2BucketReplicationConfigurationSpecForProviderRuleDeleteMarkerReplication? DeleteMarkerReplication { get; set; }
 
-    /// <summary>Specifies the destination for the rule. See below.</summary>
+    /// <summary>Destination for the rule. See below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketReplicationConfigurationSpecForProviderRuleDestination? Destination { get; set; }
 
@@ -893,7 +893,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRule
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>Specifies special object selection criteria. See below.</summary>
+    /// <summary>Special object selection criteria. See below.</summary>
     [JsonPropertyName("sourceSelectionCriteria")]
     public V1beta2BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteria? SourceSelectionCriteria { get; set; }
 
@@ -902,10 +902,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProviderRule
     public string? Status { get; set; }
 }
 
-/// <summary>
-/// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
-/// For more details, see Using S3 Object Lock with replication.
-/// </summary>
+/// <summary>Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;. For more details, see Using S3 Object Lock with replication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecForProviderTokenSecretRef
@@ -962,10 +959,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecForProvider
     [JsonPropertyName("rule")]
     public IList<V1beta2BucketReplicationConfigurationSpecForProviderRule>? Rule { get; set; }
 
-    /// <summary>
-    /// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
-    /// For more details, see Using S3 Object Lock with replication.
-    /// </summary>
+    /// <summary>Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;. For more details, see Using S3 Object Lock with replication.</summary>
     [JsonPropertyName("tokenSecretRef")]
     public V1beta2BucketReplicationConfigurationSpecForProviderTokenSecretRef? TokenSecretRef { get; set; }
 }
@@ -1279,7 +1273,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestinationAccessControlTranslation
 {
-    /// <summary>Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
+    /// <summary>Replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 }
@@ -1583,7 +1577,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfiguration
 {
-    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in AWS Key Management Service (KMS) for the destination bucket.</summary>
+    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in KMS for the destination bucket.</summary>
     [JsonPropertyName("replicaKmsKeyId")]
     public string? ReplicaKmsKeyId { get; set; }
 
@@ -1644,7 +1638,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDe
     public V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestinationReplicationTimeTime? Time { get; set; }
 }
 
-/// <summary>Specifies the destination for the rule. See below.</summary>
+/// <summary>Destination for the rule. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestination
@@ -1681,7 +1675,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleDe
     [JsonPropertyName("replicationTime")]
     public V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestinationReplicationTime? ReplicationTime { get; set; }
 
-    /// <summary>The storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
+    /// <summary>Storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
@@ -1762,7 +1756,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleSo
     public string? Status { get; set; }
 }
 
-/// <summary>Specifies special object selection criteria. See below.</summary>
+/// <summary>Special object selection criteria. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteria
@@ -1784,7 +1778,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRule
     [JsonPropertyName("deleteMarkerReplication")]
     public V1beta2BucketReplicationConfigurationSpecInitProviderRuleDeleteMarkerReplication? DeleteMarkerReplication { get; set; }
 
-    /// <summary>Specifies the destination for the rule. See below.</summary>
+    /// <summary>Destination for the rule. See below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketReplicationConfigurationSpecInitProviderRuleDestination? Destination { get; set; }
 
@@ -1808,7 +1802,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRule
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>Specifies special object selection criteria. See below.</summary>
+    /// <summary>Special object selection criteria. See below.</summary>
     [JsonPropertyName("sourceSelectionCriteria")]
     public V1beta2BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteria? SourceSelectionCriteria { get; set; }
 
@@ -1817,10 +1811,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProviderRule
     public string? Status { get; set; }
 }
 
-/// <summary>
-/// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
-/// For more details, see Using S3 Object Lock with replication.
-/// </summary>
+/// <summary>Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;. For more details, see Using S3 Object Lock with replication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationSpecInitProviderTokenSecretRef
@@ -1882,10 +1873,7 @@ public partial class V1beta2BucketReplicationConfigurationSpecInitProvider
     [JsonPropertyName("rule")]
     public IList<V1beta2BucketReplicationConfigurationSpecInitProviderRule>? Rule { get; set; }
 
-    /// <summary>
-    /// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
-    /// For more details, see Using S3 Object Lock with replication.
-    /// </summary>
+    /// <summary>Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;. For more details, see Using S3 Object Lock with replication.</summary>
     [JsonPropertyName("tokenSecretRef")]
     public V1beta2BucketReplicationConfigurationSpecInitProviderTokenSecretRef? TokenSecretRef { get; set; }
 }
@@ -2088,7 +2076,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestinationAccessControlTranslation
 {
-    /// <summary>Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
+    /// <summary>Replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. Valid values: Destination.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 }
@@ -2098,7 +2086,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestinationEncryptionConfiguration
 {
-    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in AWS Key Management Service (KMS) for the destination bucket.</summary>
+    /// <summary>ID (Key ARN or Alias ARN) of the customer managed AWS KMS key stored in KMS for the destination bucket.</summary>
     [JsonPropertyName("replicaKmsKeyId")]
     public string? ReplicaKmsKeyId { get; set; }
 }
@@ -2151,7 +2139,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDe
     public V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestinationReplicationTimeTime? Time { get; set; }
 }
 
-/// <summary>Specifies the destination for the rule. See below.</summary>
+/// <summary>Destination for the rule. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestination
@@ -2180,7 +2168,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleDe
     [JsonPropertyName("replicationTime")]
     public V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestinationReplicationTime? ReplicationTime { get; set; }
 
-    /// <summary>The storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
+    /// <summary>Storage class used to store the object. By default, Amazon S3 uses the storage class of the source object to create the object replica.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
@@ -2261,7 +2249,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleSo
     public string? Status { get; set; }
 }
 
-/// <summary>Specifies special object selection criteria. See below.</summary>
+/// <summary>Special object selection criteria. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteria
@@ -2283,7 +2271,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRule
     [JsonPropertyName("deleteMarkerReplication")]
     public V1beta2BucketReplicationConfigurationStatusAtProviderRuleDeleteMarkerReplication? DeleteMarkerReplication { get; set; }
 
-    /// <summary>Specifies the destination for the rule. See below.</summary>
+    /// <summary>Destination for the rule. See below.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketReplicationConfigurationStatusAtProviderRuleDestination? Destination { get; set; }
 
@@ -2307,7 +2295,7 @@ public partial class V1beta2BucketReplicationConfigurationStatusAtProviderRule
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>Specifies special object selection criteria. See below.</summary>
+    /// <summary>Special object selection criteria. See below.</summary>
     [JsonPropertyName("sourceSelectionCriteria")]
     public V1beta2BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteria? SourceSelectionCriteria { get; set; }
 

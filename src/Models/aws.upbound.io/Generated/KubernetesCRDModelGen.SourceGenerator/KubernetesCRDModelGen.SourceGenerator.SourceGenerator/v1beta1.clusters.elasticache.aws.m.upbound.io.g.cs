@@ -818,7 +818,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Single-element string list containing an Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
+    /// <summary>Single-element string list containing an ARN of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
@@ -850,7 +850,7 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported only with Memcached versions 1.6.12 and later, running in a VPC. For Redis or Valkey transit encryption, use aws_elasticache_replication_group instead. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }
@@ -1642,7 +1642,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Single-element string list containing an Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
+    /// <summary>Single-element string list containing an ARN of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
@@ -1674,7 +1674,7 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported only with Memcached versions 1.6.12 and later, running in a VPC. For Redis or Valkey transit encryption, use aws_elasticache_replication_group instead. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }
@@ -1970,7 +1970,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Single-element string list containing an Amazon Resource Name (ARN) of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
+    /// <summary>Single-element string list containing an ARN of a Redis RDB snapshot file stored in Amazon S3. The object name cannot contain any commas. Changing snapshot_arns forces a new resource.</summary>
     [JsonPropertyName("snapshotArns")]
     public IList<string>? SnapshotArns { get; set; }
 
@@ -1998,7 +1998,7 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Enable encryption in-transit. Supported with Memcached versions 1.6.12 and later, Redis OSS versions 3.2.6, 4.0.10 and later, running in a VPC. See the ElastiCache in-transit encryption documentation for more details.</summary>
+    /// <summary>Enable encryption in-transit. Supported only with Memcached versions 1.6.12 and later, running in a VPC. For Redis or Valkey transit encryption, use aws_elasticache_replication_group instead. See the ElastiCache in-transit encryption documentation for more details.</summary>
     [JsonPropertyName("transitEncryptionEnabled")]
     public bool? TransitEncryptionEnabled { get; set; }
 }

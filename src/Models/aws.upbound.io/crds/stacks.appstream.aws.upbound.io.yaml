@@ -668,15 +668,11 @@ spec:
               forProvider:
                 properties:
                   accessEndpoints:
-                    description: |-
-                      Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-                      See access_endpoints below.
+                    description: Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.
                     items:
                       properties:
                         endpointType:
-                          description: |-
-                            Type of the interface endpoint.
-                            See the AccessEndpoint AWS API documentation for valid values.
+                          description: Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.
                           type: string
                         vpceId:
                           description: ID of the VPC in which the interface endpoint is used.
@@ -684,18 +680,13 @@ spec:
                       type: object
                     type: array
                   applicationSettings:
-                    description: |-
-                      Settings for application settings persistence.
-                      See application_settings below.
+                    description: Settings for application settings persistence. See application_settings below.
                     properties:
                       enabled:
                         description: Whether application settings should be persisted.
                         type: boolean
                       settingsGroup:
-                        description: |-
-                          Name of the settings group.
-                          Required when enabled is true.
-                          Can be up to 100 characters.
+                        description: Name of the settings group. Required when enabled is true. Can be up to 100 characters.
                         type: string
                     type: object
                   description:
@@ -725,15 +716,11 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   storageConnectors:
-                    description: |-
-                      Configuration block for the storage connectors to enable.
-                      See storage_connectors below.
+                    description: Configuration block for the storage connectors to enable. See storage_connectors below.
                     items:
                       properties:
                         connectorType:
-                          description: |-
-                            Type of storage connector.
-                            Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
+                          description: Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
                           type: string
                         domains:
                           description: Names of the domains for the account.
@@ -746,14 +733,10 @@ spec:
                       type: object
                     type: array
                   streamingExperienceSettings:
-                    description: |-
-                      The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-                      See streaming_experience_settings below.
+                    description: Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.
                     properties:
                       preferredProtocol:
-                        description: |-
-                          The preferred protocol that you want to use while streaming your application.
-                          Valid values are TCP and UDP.
+                        description: Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.
                         type: string
                     type: object
                   tags:
@@ -763,20 +746,14 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   userSettings:
-                    description: |-
-                      Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-                      See user_settings below.
+                    description: Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.
                     items:
                       properties:
                         action:
-                          description: |-
-                            Action that is enabled or disabled.
-                            Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
+                          description: Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
                           type: string
                         permission:
-                          description: |-
-                            Whether the action is enabled or disabled.
-                            Valid values are ENABLED or DISABLED.
+                          description: Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.
                           type: string
                       type: object
                     type: array
@@ -797,15 +774,11 @@ spec:
                   autoscaler.
                 properties:
                   accessEndpoints:
-                    description: |-
-                      Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-                      See access_endpoints below.
+                    description: Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.
                     items:
                       properties:
                         endpointType:
-                          description: |-
-                            Type of the interface endpoint.
-                            See the AccessEndpoint AWS API documentation for valid values.
+                          description: Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.
                           type: string
                         vpceId:
                           description: ID of the VPC in which the interface endpoint is used.
@@ -813,18 +786,13 @@ spec:
                       type: object
                     type: array
                   applicationSettings:
-                    description: |-
-                      Settings for application settings persistence.
-                      See application_settings below.
+                    description: Settings for application settings persistence. See application_settings below.
                     properties:
                       enabled:
                         description: Whether application settings should be persisted.
                         type: boolean
                       settingsGroup:
-                        description: |-
-                          Name of the settings group.
-                          Required when enabled is true.
-                          Can be up to 100 characters.
+                        description: Name of the settings group. Required when enabled is true. Can be up to 100 characters.
                         type: string
                     type: object
                   description:
@@ -849,15 +817,11 @@ spec:
                     description: URL that users are redirected to after their streaming session ends.
                     type: string
                   storageConnectors:
-                    description: |-
-                      Configuration block for the storage connectors to enable.
-                      See storage_connectors below.
+                    description: Configuration block for the storage connectors to enable. See storage_connectors below.
                     items:
                       properties:
                         connectorType:
-                          description: |-
-                            Type of storage connector.
-                            Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
+                          description: Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
                           type: string
                         domains:
                           description: Names of the domains for the account.
@@ -870,14 +834,10 @@ spec:
                       type: object
                     type: array
                   streamingExperienceSettings:
-                    description: |-
-                      The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-                      See streaming_experience_settings below.
+                    description: Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.
                     properties:
                       preferredProtocol:
-                        description: |-
-                          The preferred protocol that you want to use while streaming your application.
-                          Valid values are TCP and UDP.
+                        description: Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.
                         type: string
                     type: object
                   tags:
@@ -887,20 +847,14 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   userSettings:
-                    description: |-
-                      Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-                      See user_settings below.
+                    description: Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.
                     items:
                       properties:
                         action:
-                          description: |-
-                            Action that is enabled or disabled.
-                            Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
+                          description: Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
                           type: string
                         permission:
-                          description: |-
-                            Whether the action is enabled or disabled.
-                            Valid values are ENABLED or DISABLED.
+                          description: Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.
                           type: string
                       type: object
                     type: array
@@ -1000,15 +954,11 @@ spec:
               atProvider:
                 properties:
                   accessEndpoints:
-                    description: |-
-                      Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-                      See access_endpoints below.
+                    description: Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.
                     items:
                       properties:
                         endpointType:
-                          description: |-
-                            Type of the interface endpoint.
-                            See the AccessEndpoint AWS API documentation for valid values.
+                          description: Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.
                           type: string
                         vpceId:
                           description: ID of the VPC in which the interface endpoint is used.
@@ -1016,18 +966,13 @@ spec:
                       type: object
                     type: array
                   applicationSettings:
-                    description: |-
-                      Settings for application settings persistence.
-                      See application_settings below.
+                    description: Settings for application settings persistence. See application_settings below.
                     properties:
                       enabled:
                         description: Whether application settings should be persisted.
                         type: boolean
                       settingsGroup:
-                        description: |-
-                          Name of the settings group.
-                          Required when enabled is true.
-                          Can be up to 100 characters.
+                        description: Name of the settings group. Required when enabled is true. Can be up to 100 characters.
                         type: string
                     type: object
                   arn:
@@ -1066,15 +1011,11 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   storageConnectors:
-                    description: |-
-                      Configuration block for the storage connectors to enable.
-                      See storage_connectors below.
+                    description: Configuration block for the storage connectors to enable. See storage_connectors below.
                     items:
                       properties:
                         connectorType:
-                          description: |-
-                            Type of storage connector.
-                            Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
+                          description: Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
                           type: string
                         domains:
                           description: Names of the domains for the account.
@@ -1087,14 +1028,10 @@ spec:
                       type: object
                     type: array
                   streamingExperienceSettings:
-                    description: |-
-                      The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-                      See streaming_experience_settings below.
+                    description: Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.
                     properties:
                       preferredProtocol:
-                        description: |-
-                          The preferred protocol that you want to use while streaming your application.
-                          Valid values are TCP and UDP.
+                        description: Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.
                         type: string
                     type: object
                   tags:
@@ -1109,20 +1046,14 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   userSettings:
-                    description: |-
-                      Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-                      See user_settings below.
+                    description: Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.
                     items:
                       properties:
                         action:
-                          description: |-
-                            Action that is enabled or disabled.
-                            Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
+                          description: Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
                           type: string
                         permission:
-                          description: |-
-                            Whether the action is enabled or disabled.
-                            Valid values are ENABLED or DISABLED.
+                          description: Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.
                           type: string
                       type: object
                     type: array

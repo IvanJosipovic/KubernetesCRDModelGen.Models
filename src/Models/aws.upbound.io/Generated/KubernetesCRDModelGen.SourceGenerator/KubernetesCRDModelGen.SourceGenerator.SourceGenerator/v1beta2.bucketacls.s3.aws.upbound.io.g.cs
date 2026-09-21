@@ -273,7 +273,7 @@ public partial class V1beta2BucketACLSpecForProvider
     [JsonPropertyName("accessControlPolicy")]
     public V1beta2BucketACLSpecForProviderAccessControlPolicy? AccessControlPolicy { get; set; }
 
-    /// <summary>Specifies the Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
+    /// <summary>Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
@@ -531,7 +531,7 @@ public partial class V1beta2BucketACLSpecInitProvider
     [JsonPropertyName("accessControlPolicy")]
     public V1beta2BucketACLSpecInitProviderAccessControlPolicy? AccessControlPolicy { get; set; }
 
-    /// <summary>Specifies the Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
+    /// <summary>Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
@@ -810,7 +810,7 @@ public partial class V1beta2BucketACLStatusAtProvider
     [JsonPropertyName("accessControlPolicy")]
     public V1beta2BucketACLStatusAtProviderAccessControlPolicy? AccessControlPolicy { get; set; }
 
-    /// <summary>Specifies the Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
+    /// <summary>Canned ACL to apply to the bucket. Valid values: private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, bucket-owner-full-control, log-delivery-write. Full details are available on the AWS documentation.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
@@ -822,7 +822,7 @@ public partial class V1beta2BucketACLStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket, expected_bucket_owner (if configured), and acl (if configured) separated by commas (,).</summary>
+    /// <summary>bucket, expected_bucket_owner (if configured), and acl (if configured) separated by commas (,).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

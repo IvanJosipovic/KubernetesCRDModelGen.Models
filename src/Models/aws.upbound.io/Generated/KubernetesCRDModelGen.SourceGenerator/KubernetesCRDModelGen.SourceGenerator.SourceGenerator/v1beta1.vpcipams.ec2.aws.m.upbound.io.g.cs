@@ -259,7 +259,7 @@ public partial class V1beta1VPCIpamStatusAtProviderOperatingRegions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCIpamStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of IPAM</summary>
+    /// <summary>ARN of IPAM</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

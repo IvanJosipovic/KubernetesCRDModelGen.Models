@@ -185,7 +185,7 @@ public partial class V1beta1RegexPatternSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegexPatternSetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN)</summary>
+    /// <summary>ARN</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

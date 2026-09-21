@@ -758,6 +758,10 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1OntapFileSystemSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>The ID for a subnet. A subnet is a range of IP addresses in your virtual private cloud (VPC).</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
@@ -1540,6 +1544,10 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1OntapFileSystemSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>The ID for a subnet. A subnet is a range of IP addresses in your virtual private cloud (VPC).</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
@@ -1903,6 +1911,10 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     /// <summary>Set of Elastic Network Interface identifiers from which the file system is accessible The first network interface returned is the primary network interface.</summary>
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
+
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
 
     /// <summary>AWS account identifier that created the file system.</summary>
     [JsonPropertyName("ownerId")]

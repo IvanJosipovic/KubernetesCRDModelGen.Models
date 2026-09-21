@@ -589,7 +589,7 @@ public partial class V1beta1AliasSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AliasStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the key alias.</summary>
+    /// <summary>ARN of the key alias.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -603,7 +603,7 @@ public partial class V1beta1AliasStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target key identifier.</summary>
+    /// <summary>ARN of the target key identifier.</summary>
     [JsonPropertyName("targetKeyArn")]
     public string? TargetKeyArn { get; set; }
 

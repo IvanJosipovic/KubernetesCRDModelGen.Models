@@ -1017,14 +1017,12 @@ spec:
                                 description: Number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer. If both days and date are not specified, defaults to 0. Valid values depend on storage_class, see Transition objects using Amazon S3 Lifecycle for more details.
                                 type: number
                               expiredObjectDeleteMarker:
-                                description: Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
+                                description: Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
                                 type: boolean
                             type: object
                           type: array
                         filter:
-                          description: |-
-                            Configuration block used to identify objects that a Lifecycle Rule applies to.
-                            See below.
+                          description: Configuration block used to identify objects that a Lifecycle Rule applies to. See below.
                           items:
                             properties:
                               and:
@@ -1043,10 +1041,7 @@ spec:
                                     tags:
                                       additionalProperties:
                                         type: string
-                                      description: |-
-                                        Key-value map of resource tags.
-                                        All of these tags must exist in the object's tag set in order for the rule to apply.
-                                        If set, must contain at least one key-value pair.
+                                      description: Key-value map of resource tags. All of these tags must exist in the object's tag set in order for the rule to apply. If set, must contain at least one key-value pair.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1105,10 +1100,7 @@ spec:
                             type: object
                           type: array
                         prefix:
-                          description: |-
-                            DEPRECATED Use filter instead.
-                            This has been deprecated by Amazon S3.
-                            Prefix identifying one or more objects to which the rule applies.
+                          description: Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.
                           type: string
                         status:
                           description: 'Whether the rule is currently being applied. Valid values: Enabled or Disabled.'
@@ -1131,7 +1123,7 @@ spec:
                       type: object
                     type: array
                   transitionDefaultMinimumObjectSize:
-                    description: 'The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
+                    description: 'Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
                     type: string
                 required:
                 - region
@@ -1252,14 +1244,12 @@ spec:
                                 description: Number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer. If both days and date are not specified, defaults to 0. Valid values depend on storage_class, see Transition objects using Amazon S3 Lifecycle for more details.
                                 type: number
                               expiredObjectDeleteMarker:
-                                description: Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
+                                description: Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
                                 type: boolean
                             type: object
                           type: array
                         filter:
-                          description: |-
-                            Configuration block used to identify objects that a Lifecycle Rule applies to.
-                            See below.
+                          description: Configuration block used to identify objects that a Lifecycle Rule applies to. See below.
                           items:
                             properties:
                               and:
@@ -1278,10 +1268,7 @@ spec:
                                     tags:
                                       additionalProperties:
                                         type: string
-                                      description: |-
-                                        Key-value map of resource tags.
-                                        All of these tags must exist in the object's tag set in order for the rule to apply.
-                                        If set, must contain at least one key-value pair.
+                                      description: Key-value map of resource tags. All of these tags must exist in the object's tag set in order for the rule to apply. If set, must contain at least one key-value pair.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1340,10 +1327,7 @@ spec:
                             type: object
                           type: array
                         prefix:
-                          description: |-
-                            DEPRECATED Use filter instead.
-                            This has been deprecated by Amazon S3.
-                            Prefix identifying one or more objects to which the rule applies.
+                          description: Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.
                           type: string
                         status:
                           description: 'Whether the rule is currently being applied. Valid values: Enabled or Disabled.'
@@ -1366,7 +1350,7 @@ spec:
                       type: object
                     type: array
                   transitionDefaultMinimumObjectSize:
-                    description: 'The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
+                    description: 'Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
                     type: string
                 type: object
               managementPolicies:
@@ -1498,14 +1482,12 @@ spec:
                                 description: Number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer. If both days and date are not specified, defaults to 0. Valid values depend on storage_class, see Transition objects using Amazon S3 Lifecycle for more details.
                                 type: number
                               expiredObjectDeleteMarker:
-                                description: Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
+                                description: Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.
                                 type: boolean
                             type: object
                           type: array
                         filter:
-                          description: |-
-                            Configuration block used to identify objects that a Lifecycle Rule applies to.
-                            See below.
+                          description: Configuration block used to identify objects that a Lifecycle Rule applies to. See below.
                           items:
                             properties:
                               and:
@@ -1524,10 +1506,7 @@ spec:
                                     tags:
                                       additionalProperties:
                                         type: string
-                                      description: |-
-                                        Key-value map of resource tags.
-                                        All of these tags must exist in the object's tag set in order for the rule to apply.
-                                        If set, must contain at least one key-value pair.
+                                      description: Key-value map of resource tags. All of these tags must exist in the object's tag set in order for the rule to apply. If set, must contain at least one key-value pair.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1586,10 +1565,7 @@ spec:
                             type: object
                           type: array
                         prefix:
-                          description: |-
-                            DEPRECATED Use filter instead.
-                            This has been deprecated by Amazon S3.
-                            Prefix identifying one or more objects to which the rule applies.
+                          description: Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.
                           type: string
                         status:
                           description: 'Whether the rule is currently being applied. Valid values: Enabled or Disabled.'
@@ -1612,7 +1588,7 @@ spec:
                       type: object
                     type: array
                   transitionDefaultMinimumObjectSize:
-                    description: 'The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
+                    description: 'Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.'
                     type: string
                 type: object
               conditions:

@@ -621,7 +621,7 @@ public partial class V1beta1VocabularySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VocabularyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the vocabulary.</summary>
+    /// <summary>ARN of the vocabulary.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -192,7 +192,7 @@ public partial class V1beta1ActionTargetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActionTargetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Security Hub custom action target.</summary>
+    /// <summary>ARN of the Security Hub custom action target.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

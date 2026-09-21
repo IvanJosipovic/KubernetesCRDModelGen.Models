@@ -562,7 +562,7 @@ public partial class V1beta1UsageLimitStatusAtProvider
     [JsonPropertyName("amount")]
     public double? Amount { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Usage Limit.</summary>
+    /// <summary>ARN of the Redshift Usage Limit.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

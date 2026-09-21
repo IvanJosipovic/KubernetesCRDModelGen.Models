@@ -606,7 +606,7 @@ public partial class V1beta1RoleStatusAtProviderInlinePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoleStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) specifying the role.</summary>
+    /// <summary>ARN specifying the role.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

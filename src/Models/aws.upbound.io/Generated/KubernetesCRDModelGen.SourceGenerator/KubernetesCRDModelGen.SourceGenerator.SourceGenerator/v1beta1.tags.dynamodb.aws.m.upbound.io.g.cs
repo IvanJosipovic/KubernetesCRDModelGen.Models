@@ -51,7 +51,7 @@ public partial class V1beta1TagSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the DynamoDB resource to tag.</summary>
+    /// <summary>ARN of the DynamoDB resource to tag.</summary>
     [JsonPropertyName("resourceArn")]
     public required string ResourceArn { get; set; }
 
@@ -207,7 +207,7 @@ public partial class V1beta1TagStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the DynamoDB resource to tag.</summary>
+    /// <summary>ARN of the DynamoDB resource to tag.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 

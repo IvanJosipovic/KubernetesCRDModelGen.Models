@@ -195,7 +195,7 @@ public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionArnResource
 {
-    /// <summary>The ARN of the Resource for this configuration.</summary>
+    /// <summary>ARN of the Resource for this configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -212,11 +212,11 @@ public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionDnsResource
 {
-    /// <summary>The hostname of the Resource for this configuration.</summary>
+    /// <summary>Hostname of the Resource for this configuration.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The IP Address type either IPV4 or IPV6</summary>
+    /// <summary>IP Address type either IPV4 or IPV6</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
@@ -225,7 +225,7 @@ public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecForProviderResourceConfigurationDefinitionIpResource
 {
-    /// <summary>The IP Address of the Resource for this configuration.</summary>
+    /// <summary>IP Address of the Resource for this configuration.</summary>
     [JsonPropertyName("ipAddress")]
     public string? IpAddress { get; set; }
 }
@@ -414,7 +414,7 @@ public partial class V1beta1ResourceConfigurationSpecForProvider
     [JsonPropertyName("customDomainName")]
     public string? CustomDomainName { get; set; }
 
-    /// <summary>The domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
+    /// <summary>Domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
     [JsonPropertyName("domainVerificationId")]
     public string? DomainVerificationId { get; set; }
 
@@ -625,7 +625,7 @@ public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionArnResource
 {
-    /// <summary>The ARN of the Resource for this configuration.</summary>
+    /// <summary>ARN of the Resource for this configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -642,11 +642,11 @@ public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionDnsResource
 {
-    /// <summary>The hostname of the Resource for this configuration.</summary>
+    /// <summary>Hostname of the Resource for this configuration.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The IP Address type either IPV4 or IPV6</summary>
+    /// <summary>IP Address type either IPV4 or IPV6</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
@@ -655,7 +655,7 @@ public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationSpecInitProviderResourceConfigurationDefinitionIpResource
 {
-    /// <summary>The IP Address of the Resource for this configuration.</summary>
+    /// <summary>IP Address of the Resource for this configuration.</summary>
     [JsonPropertyName("ipAddress")]
     public string? IpAddress { get; set; }
 }
@@ -856,7 +856,7 @@ public partial class V1beta1ResourceConfigurationSpecInitProvider
     [JsonPropertyName("customDomainName")]
     public string? CustomDomainName { get; set; }
 
-    /// <summary>The domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
+    /// <summary>Domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
     [JsonPropertyName("domainVerificationId")]
     public string? DomainVerificationId { get; set; }
 
@@ -1012,7 +1012,7 @@ public partial class V1beta1ResourceConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionArnResource
 {
-    /// <summary>The ARN of the Resource for this configuration.</summary>
+    /// <summary>ARN of the Resource for this configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 }
@@ -1021,11 +1021,11 @@ public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionDnsResource
 {
-    /// <summary>The hostname of the Resource for this configuration.</summary>
+    /// <summary>Hostname of the Resource for this configuration.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The IP Address type either IPV4 or IPV6</summary>
+    /// <summary>IP Address type either IPV4 or IPV6</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
@@ -1034,7 +1034,7 @@ public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceConfigurationStatusAtProviderResourceConfigurationDefinitionIpResource
 {
-    /// <summary>The IP Address of the Resource for this configuration.</summary>
+    /// <summary>IP Address of the Resource for this configuration.</summary>
     [JsonPropertyName("ipAddress")]
     public string? IpAddress { get; set; }
 }
@@ -1064,7 +1064,7 @@ public partial class V1beta1ResourceConfigurationStatusAtProvider
     [JsonPropertyName("allowAssociationToShareableServiceNetwork")]
     public bool? AllowAssociationToShareableServiceNetwork { get; set; }
 
-    /// <summary>The ARN of the Resource for this configuration.</summary>
+    /// <summary>ARN of the Resource for this configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1076,7 +1076,7 @@ public partial class V1beta1ResourceConfigurationStatusAtProvider
     [JsonPropertyName("domainVerificationArn")]
     public string? DomainVerificationArn { get; set; }
 
-    /// <summary>The domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
+    /// <summary>Domain verification ID of your verified custom domain name. If you don&apos;t provide an ID, you must configure the DNS settings yourself.</summary>
     [JsonPropertyName("domainVerificationId")]
     public string? DomainVerificationId { get; set; }
 

@@ -237,7 +237,7 @@ public partial class V1beta2LoggingConfigurationSpecForProvider
     [JsonPropertyName("enableMonitoringDashboard")]
     public bool? EnableMonitoringDashboard { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Network Firewall firewall.</summary>
+    /// <summary>ARN of the Network Firewall firewall.</summary>
     [JsonPropertyName("firewallArn")]
     public string? FirewallArn { get; set; }
 
@@ -455,7 +455,7 @@ public partial class V1beta2LoggingConfigurationSpecInitProvider
     [JsonPropertyName("enableMonitoringDashboard")]
     public bool? EnableMonitoringDashboard { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Network Firewall firewall.</summary>
+    /// <summary>ARN of the Network Firewall firewall.</summary>
     [JsonPropertyName("firewallArn")]
     public string? FirewallArn { get; set; }
 
@@ -690,11 +690,11 @@ public partial class V1beta2LoggingConfigurationStatusAtProvider
     [JsonPropertyName("enableMonitoringDashboard")]
     public bool? EnableMonitoringDashboard { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Network Firewall firewall.</summary>
+    /// <summary>ARN of the Network Firewall firewall.</summary>
     [JsonPropertyName("firewallArn")]
     public string? FirewallArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the associated firewall.</summary>
+    /// <summary>ARN of the associated firewall.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

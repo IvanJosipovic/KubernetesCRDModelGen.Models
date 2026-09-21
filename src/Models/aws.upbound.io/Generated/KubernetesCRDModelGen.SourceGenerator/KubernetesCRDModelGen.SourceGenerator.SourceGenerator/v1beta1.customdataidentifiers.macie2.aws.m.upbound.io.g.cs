@@ -232,7 +232,7 @@ public partial class V1beta1CustomDataIdentifierSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomDataIdentifierStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the custom data identifier.</summary>
+    /// <summary>ARN of the custom data identifier.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

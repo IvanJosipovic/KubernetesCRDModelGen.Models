@@ -200,7 +200,7 @@ public partial class V1beta1RouteCalculatorSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouteCalculatorStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the Route calculator resource. Use the ARN when you specify a resource across AWS.</summary>
+    /// <summary>ARN for the Route calculator resource. Use the ARN when you specify a resource across AWS.</summary>
     [JsonPropertyName("calculatorArn")]
     public string? CalculatorArn { get; set; }
 

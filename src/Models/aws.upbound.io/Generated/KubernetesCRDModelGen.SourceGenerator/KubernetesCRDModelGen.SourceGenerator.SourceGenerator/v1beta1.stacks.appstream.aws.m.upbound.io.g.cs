@@ -40,10 +40,7 @@ public partial class V1beta1StackList : IKubernetesObject<V1ListMeta>, IItems<V1
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProviderAccessEndpoints
 {
-    /// <summary>
-    /// Type of the interface endpoint.
-    /// See the AccessEndpoint AWS API documentation for valid values.
-    /// </summary>
+    /// <summary>Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
@@ -52,10 +49,7 @@ public partial class V1beta1StackSpecForProviderAccessEndpoints
     public string? VpceId { get; set; }
 }
 
-/// <summary>
-/// Settings for application settings persistence.
-/// See application_settings below.
-/// </summary>
+/// <summary>Settings for application settings persistence. See application_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProviderApplicationSettings
@@ -64,11 +58,7 @@ public partial class V1beta1StackSpecForProviderApplicationSettings
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>
-    /// Name of the settings group.
-    /// Required when enabled is true.
-    /// Can be up to 100 characters.
-    /// </summary>
+    /// <summary>Name of the settings group. Required when enabled is true. Can be up to 100 characters.</summary>
     [JsonPropertyName("settingsGroup")]
     public string? SettingsGroup { get; set; }
 }
@@ -77,10 +67,7 @@ public partial class V1beta1StackSpecForProviderApplicationSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProviderStorageConnectors
 {
-    /// <summary>
-    /// Type of storage connector.
-    /// Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
-    /// </summary>
+    /// <summary>Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.</summary>
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
@@ -93,18 +80,12 @@ public partial class V1beta1StackSpecForProviderStorageConnectors
     public string? ResourceIdentifier { get; set; }
 }
 
-/// <summary>
-/// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-/// See streaming_experience_settings below.
-/// </summary>
+/// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProviderStreamingExperienceSettings
 {
-    /// <summary>
-    /// The preferred protocol that you want to use while streaming your application.
-    /// Valid values are TCP and UDP.
-    /// </summary>
+    /// <summary>Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.</summary>
     [JsonPropertyName("preferredProtocol")]
     public string? PreferredProtocol { get; set; }
 }
@@ -113,17 +94,11 @@ public partial class V1beta1StackSpecForProviderStreamingExperienceSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProviderUserSettings
 {
-    /// <summary>
-    /// Action that is enabled or disabled.
-    /// Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
-    /// </summary>
+    /// <summary>Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>
-    /// Whether the action is enabled or disabled.
-    /// Valid values are ENABLED or DISABLED.
-    /// </summary>
+    /// <summary>Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.</summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 }
@@ -132,17 +107,11 @@ public partial class V1beta1StackSpecForProviderUserSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecForProvider
 {
-    /// <summary>
-    /// Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-    /// See access_endpoints below.
-    /// </summary>
+    /// <summary>Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.</summary>
     [JsonPropertyName("accessEndpoints")]
     public IList<V1beta1StackSpecForProviderAccessEndpoints>? AccessEndpoints { get; set; }
 
-    /// <summary>
-    /// Settings for application settings persistence.
-    /// See application_settings below.
-    /// </summary>
+    /// <summary>Settings for application settings persistence. See application_settings below.</summary>
     [JsonPropertyName("applicationSettings")]
     public V1beta1StackSpecForProviderApplicationSettings? ApplicationSettings { get; set; }
 
@@ -177,17 +146,11 @@ public partial class V1beta1StackSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// Configuration block for the storage connectors to enable.
-    /// See storage_connectors below.
-    /// </summary>
+    /// <summary>Configuration block for the storage connectors to enable. See storage_connectors below.</summary>
     [JsonPropertyName("storageConnectors")]
     public IList<V1beta1StackSpecForProviderStorageConnectors>? StorageConnectors { get; set; }
 
-    /// <summary>
-    /// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-    /// See streaming_experience_settings below.
-    /// </summary>
+    /// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
     [JsonPropertyName("streamingExperienceSettings")]
     public V1beta1StackSpecForProviderStreamingExperienceSettings? StreamingExperienceSettings { get; set; }
 
@@ -195,10 +158,7 @@ public partial class V1beta1StackSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>
-    /// Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-    /// See user_settings below.
-    /// </summary>
+    /// <summary>Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.</summary>
     [JsonPropertyName("userSettings")]
     public IList<V1beta1StackSpecForProviderUserSettings>? UserSettings { get; set; }
 }
@@ -207,10 +167,7 @@ public partial class V1beta1StackSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProviderAccessEndpoints
 {
-    /// <summary>
-    /// Type of the interface endpoint.
-    /// See the AccessEndpoint AWS API documentation for valid values.
-    /// </summary>
+    /// <summary>Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
@@ -219,10 +176,7 @@ public partial class V1beta1StackSpecInitProviderAccessEndpoints
     public string? VpceId { get; set; }
 }
 
-/// <summary>
-/// Settings for application settings persistence.
-/// See application_settings below.
-/// </summary>
+/// <summary>Settings for application settings persistence. See application_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProviderApplicationSettings
@@ -231,11 +185,7 @@ public partial class V1beta1StackSpecInitProviderApplicationSettings
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>
-    /// Name of the settings group.
-    /// Required when enabled is true.
-    /// Can be up to 100 characters.
-    /// </summary>
+    /// <summary>Name of the settings group. Required when enabled is true. Can be up to 100 characters.</summary>
     [JsonPropertyName("settingsGroup")]
     public string? SettingsGroup { get; set; }
 }
@@ -244,10 +194,7 @@ public partial class V1beta1StackSpecInitProviderApplicationSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProviderStorageConnectors
 {
-    /// <summary>
-    /// Type of storage connector.
-    /// Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
-    /// </summary>
+    /// <summary>Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.</summary>
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
@@ -260,18 +207,12 @@ public partial class V1beta1StackSpecInitProviderStorageConnectors
     public string? ResourceIdentifier { get; set; }
 }
 
-/// <summary>
-/// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-/// See streaming_experience_settings below.
-/// </summary>
+/// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProviderStreamingExperienceSettings
 {
-    /// <summary>
-    /// The preferred protocol that you want to use while streaming your application.
-    /// Valid values are TCP and UDP.
-    /// </summary>
+    /// <summary>Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.</summary>
     [JsonPropertyName("preferredProtocol")]
     public string? PreferredProtocol { get; set; }
 }
@@ -280,17 +221,11 @@ public partial class V1beta1StackSpecInitProviderStreamingExperienceSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProviderUserSettings
 {
-    /// <summary>
-    /// Action that is enabled or disabled.
-    /// Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
-    /// </summary>
+    /// <summary>Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>
-    /// Whether the action is enabled or disabled.
-    /// Valid values are ENABLED or DISABLED.
-    /// </summary>
+    /// <summary>Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.</summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 }
@@ -311,17 +246,11 @@ public partial class V1beta1StackSpecInitProviderUserSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackSpecInitProvider
 {
-    /// <summary>
-    /// Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-    /// See access_endpoints below.
-    /// </summary>
+    /// <summary>Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.</summary>
     [JsonPropertyName("accessEndpoints")]
     public IList<V1beta1StackSpecInitProviderAccessEndpoints>? AccessEndpoints { get; set; }
 
-    /// <summary>
-    /// Settings for application settings persistence.
-    /// See application_settings below.
-    /// </summary>
+    /// <summary>Settings for application settings persistence. See application_settings below.</summary>
     [JsonPropertyName("applicationSettings")]
     public V1beta1StackSpecInitProviderApplicationSettings? ApplicationSettings { get; set; }
 
@@ -349,17 +278,11 @@ public partial class V1beta1StackSpecInitProvider
     [JsonPropertyName("redirectUrl")]
     public string? RedirectUrl { get; set; }
 
-    /// <summary>
-    /// Configuration block for the storage connectors to enable.
-    /// See storage_connectors below.
-    /// </summary>
+    /// <summary>Configuration block for the storage connectors to enable. See storage_connectors below.</summary>
     [JsonPropertyName("storageConnectors")]
     public IList<V1beta1StackSpecInitProviderStorageConnectors>? StorageConnectors { get; set; }
 
-    /// <summary>
-    /// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-    /// See streaming_experience_settings below.
-    /// </summary>
+    /// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
     [JsonPropertyName("streamingExperienceSettings")]
     public V1beta1StackSpecInitProviderStreamingExperienceSettings? StreamingExperienceSettings { get; set; }
 
@@ -367,10 +290,7 @@ public partial class V1beta1StackSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>
-    /// Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-    /// See user_settings below.
-    /// </summary>
+    /// <summary>Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.</summary>
     [JsonPropertyName("userSettings")]
     public IList<V1beta1StackSpecInitProviderUserSettings>? UserSettings { get; set; }
 }
@@ -486,10 +406,7 @@ public partial class V1beta1StackSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProviderAccessEndpoints
 {
-    /// <summary>
-    /// Type of the interface endpoint.
-    /// See the AccessEndpoint AWS API documentation for valid values.
-    /// </summary>
+    /// <summary>Type of the interface endpoint. See the AccessEndpoint AWS API documentation for valid values.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
@@ -498,10 +415,7 @@ public partial class V1beta1StackStatusAtProviderAccessEndpoints
     public string? VpceId { get; set; }
 }
 
-/// <summary>
-/// Settings for application settings persistence.
-/// See application_settings below.
-/// </summary>
+/// <summary>Settings for application settings persistence. See application_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProviderApplicationSettings
@@ -510,11 +424,7 @@ public partial class V1beta1StackStatusAtProviderApplicationSettings
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>
-    /// Name of the settings group.
-    /// Required when enabled is true.
-    /// Can be up to 100 characters.
-    /// </summary>
+    /// <summary>Name of the settings group. Required when enabled is true. Can be up to 100 characters.</summary>
     [JsonPropertyName("settingsGroup")]
     public string? SettingsGroup { get; set; }
 }
@@ -523,10 +433,7 @@ public partial class V1beta1StackStatusAtProviderApplicationSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProviderStorageConnectors
 {
-    /// <summary>
-    /// Type of storage connector.
-    /// Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.
-    /// </summary>
+    /// <summary>Type of storage connector. Valid values are HOMEFOLDERS, GOOGLE_DRIVE, or ONE_DRIVE.</summary>
     [JsonPropertyName("connectorType")]
     public string? ConnectorType { get; set; }
 
@@ -539,18 +446,12 @@ public partial class V1beta1StackStatusAtProviderStorageConnectors
     public string? ResourceIdentifier { get; set; }
 }
 
-/// <summary>
-/// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-/// See streaming_experience_settings below.
-/// </summary>
+/// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProviderStreamingExperienceSettings
 {
-    /// <summary>
-    /// The preferred protocol that you want to use while streaming your application.
-    /// Valid values are TCP and UDP.
-    /// </summary>
+    /// <summary>Preferred protocol that you want to use while streaming your application. Valid values are TCP and UDP.</summary>
     [JsonPropertyName("preferredProtocol")]
     public string? PreferredProtocol { get; set; }
 }
@@ -559,17 +460,11 @@ public partial class V1beta1StackStatusAtProviderStreamingExperienceSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProviderUserSettings
 {
-    /// <summary>
-    /// Action that is enabled or disabled.
-    /// Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.
-    /// </summary>
+    /// <summary>Action that is enabled or disabled. Valid values are AUTO_TIME_ZONE_REDIRECTION, CLIPBOARD_COPY_FROM_LOCAL_DEVICE, CLIPBOARD_COPY_TO_LOCAL_DEVICE, DOMAIN_PASSWORD_SIGNIN, DOMAIN_SMART_CARD_SIGNIN, FILE_UPLOAD, FILE_DOWNLOAD, or PRINTING_TO_LOCAL_DEVICE.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>
-    /// Whether the action is enabled or disabled.
-    /// Valid values are ENABLED or DISABLED.
-    /// </summary>
+    /// <summary>Whether the action is enabled or disabled. Valid values are ENABLED or DISABLED.</summary>
     [JsonPropertyName("permission")]
     public string? Permission { get; set; }
 }
@@ -578,17 +473,11 @@ public partial class V1beta1StackStatusAtProviderUserSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StackStatusAtProvider
 {
-    /// <summary>
-    /// Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints.
-    /// See access_endpoints below.
-    /// </summary>
+    /// <summary>Set of configuration blocks defining the interface VPC endpoints. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. See access_endpoints below.</summary>
     [JsonPropertyName("accessEndpoints")]
     public IList<V1beta1StackStatusAtProviderAccessEndpoints>? AccessEndpoints { get; set; }
 
-    /// <summary>
-    /// Settings for application settings persistence.
-    /// See application_settings below.
-    /// </summary>
+    /// <summary>Settings for application settings persistence. See application_settings below.</summary>
     [JsonPropertyName("applicationSettings")]
     public V1beta1StackStatusAtProviderApplicationSettings? ApplicationSettings { get; set; }
 
@@ -635,17 +524,11 @@ public partial class V1beta1StackStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Configuration block for the storage connectors to enable.
-    /// See storage_connectors below.
-    /// </summary>
+    /// <summary>Configuration block for the storage connectors to enable. See storage_connectors below.</summary>
     [JsonPropertyName("storageConnectors")]
     public IList<V1beta1StackStatusAtProviderStorageConnectors>? StorageConnectors { get; set; }
 
-    /// <summary>
-    /// The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
-    /// See streaming_experience_settings below.
-    /// </summary>
+    /// <summary>Streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client. See streaming_experience_settings below.</summary>
     [JsonPropertyName("streamingExperienceSettings")]
     public V1beta1StackStatusAtProviderStreamingExperienceSettings? StreamingExperienceSettings { get; set; }
 
@@ -656,10 +539,7 @@ public partial class V1beta1StackStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>
-    /// Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS.
-    /// See user_settings below.
-    /// </summary>
+    /// <summary>Configuration block for the actions that are enabled or disabled for users during their streaming sessions. If not provided, these settings are configured automatically by AWS. See user_settings below.</summary>
     [JsonPropertyName("userSettings")]
     public IList<V1beta1StackStatusAtProviderUserSettings>? UserSettings { get; set; }
 }

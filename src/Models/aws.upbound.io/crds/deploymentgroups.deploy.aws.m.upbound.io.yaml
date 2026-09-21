@@ -529,7 +529,7 @@ spec:
                             description: Configuration block for the production traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array
@@ -709,7 +709,7 @@ spec:
                             description: Configuration block for the test traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array
@@ -1334,7 +1334,7 @@ spec:
                             description: Configuration block for the production traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array
@@ -1514,7 +1514,7 @@ spec:
                             description: Configuration block for the test traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array
@@ -1960,7 +1960,7 @@ spec:
                             description: Configuration block for the production traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array
@@ -1979,7 +1979,7 @@ spec:
                             description: Configuration block for the test traffic route (documented below).
                             properties:
                               listenerArns:
-                                description: List of Amazon Resource Names (ARNs) of the load balancer listeners.
+                                description: List of ARNs of the load balancer listeners.
                                 items:
                                   type: string
                                 type: array

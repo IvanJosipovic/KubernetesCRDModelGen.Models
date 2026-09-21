@@ -952,7 +952,7 @@ public partial class V1beta2TargetSpecForProvider
     [JsonPropertyName("appsyncTarget")]
     public V1beta2TargetSpecForProviderAppsyncTarget? AppsyncTarget { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target.</summary>
+    /// <summary>ARN of the target.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1022,7 +1022,7 @@ public partial class V1beta2TargetSpecForProvider
     [JsonPropertyName("retryPolicy")]
     public V1beta2TargetSpecForProviderRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
+    /// <summary>ARN of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1972,7 +1972,7 @@ public partial class V1beta2TargetSpecInitProvider
     [JsonPropertyName("appsyncTarget")]
     public V1beta2TargetSpecInitProviderAppsyncTarget? AppsyncTarget { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target.</summary>
+    /// <summary>ARN of the target.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2035,7 +2035,7 @@ public partial class V1beta2TargetSpecInitProvider
     [JsonPropertyName("retryPolicy")]
     public V1beta2TargetSpecInitProviderRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
+    /// <summary>ARN of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2560,7 +2560,7 @@ public partial class V1beta2TargetStatusAtProvider
     [JsonPropertyName("appsyncTarget")]
     public V1beta2TargetStatusAtProviderAppsyncTarget? AppsyncTarget { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target.</summary>
+    /// <summary>ARN of the target.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2625,7 +2625,7 @@ public partial class V1beta2TargetStatusAtProvider
     [JsonPropertyName("retryPolicy")]
     public V1beta2TargetStatusAtProviderRetryPolicy? RetryPolicy { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
+    /// <summary>ARN of the IAM role to be used for this target when the rule is triggered. Required if ecs_target is used or target in arn is EC2 instance, Kinesis data stream, Step Functions state machine, or Event Bus in different account or region.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

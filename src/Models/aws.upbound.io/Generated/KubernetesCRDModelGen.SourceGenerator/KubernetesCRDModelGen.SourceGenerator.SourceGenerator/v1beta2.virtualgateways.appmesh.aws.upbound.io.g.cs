@@ -55,12 +55,12 @@ public enum V1beta2VirtualGatewaySpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -69,26 +69,26 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -103,7 +103,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
@@ -113,7 +113,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
@@ -123,22 +123,22 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -148,15 +148,15 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -166,7 +166,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -175,12 +175,12 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificate? Certificate { get; set; }
 
@@ -202,7 +202,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicy
 {
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
@@ -282,7 +282,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerHealthCheck
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -464,7 +464,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertific
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcm
@@ -482,12 +482,12 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertific
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelector? CertificateArnSelector { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -496,30 +496,30 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertific
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificate
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -534,7 +534,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidati
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationSubjectAlternativeNames
@@ -544,22 +544,22 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidati
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -569,11 +569,11 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -583,7 +583,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -592,12 +592,12 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidati
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecListenerTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTlsCertificate? Certificate { get; set; }
 
@@ -626,7 +626,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListener
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewaySpecForProviderSpecListenerTls? Tls { get; set; }
 }
@@ -635,39 +635,39 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecListener
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormatJson
 {
-    /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs. See format Block for details.</summary>
+/// <summary>Specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON. See json Block for details.</summary>
+    /// <summary>Logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
-    /// <summary>The logging format for text. Must be between 1 and 1000 characters in length.</summary>
+    /// <summary>Logging format for text. Must be between 1 and 1000 characters in length.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs. See format Block for details.</summary>
+    /// <summary>Specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -677,7 +677,7 @@ public partial class V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFil
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLog
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecForProviderSpecLoggingAccessLogFile? File { get; set; }
 }
@@ -742,12 +742,12 @@ public partial class V1beta2VirtualGatewaySpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -756,26 +756,26 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -790,7 +790,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
@@ -800,7 +800,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
@@ -810,22 +810,22 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -835,15 +835,15 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -853,7 +853,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -862,12 +862,12 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificate? Certificate { get; set; }
 
@@ -889,7 +889,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicy
 {
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
@@ -969,7 +969,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerHealthChec
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -1151,7 +1151,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcm
@@ -1169,12 +1169,12 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelector? CertificateArnSelector { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -1183,30 +1183,30 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificate
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -1221,7 +1221,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidat
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationSubjectAlternativeNames
@@ -1231,22 +1231,22 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidat
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -1256,11 +1256,11 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1270,7 +1270,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -1279,12 +1279,12 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidat
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecListenerTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTlsCertificate? Certificate { get; set; }
 
@@ -1313,7 +1313,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListener
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewaySpecInitProviderSpecListenerTls? Tls { get; set; }
 }
@@ -1322,39 +1322,39 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecListener
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormatJson
 {
-    /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs. See format Block for details.</summary>
+/// <summary>Specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON. See json Block for details.</summary>
+    /// <summary>Logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
-    /// <summary>The logging format for text. Must be between 1 and 1000 characters in length.</summary>
+    /// <summary>Logging format for text. Must be between 1 and 1000 characters in length.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs. See format Block for details.</summary>
+    /// <summary>Specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -1364,7 +1364,7 @@ public partial class V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLog
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewaySpecInitProviderSpecLoggingAccessLogFile? File { get; set; }
 }
@@ -1617,12 +1617,12 @@ public partial class V1beta2VirtualGatewaySpec
     public V1beta2VirtualGatewaySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -1631,26 +1631,26 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds? Sds { get; set; }
 }
@@ -1665,7 +1665,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
@@ -1675,7 +1675,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
@@ -1685,22 +1685,22 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
     public IList<string>? CertificateAuthorityArns { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -1710,15 +1710,15 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1728,7 +1728,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -1737,12 +1737,12 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificate? Certificate { get; set; }
 
@@ -1764,7 +1764,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicy
 {
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTls? Tls { get; set; }
 }
@@ -1844,7 +1844,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerHealthChec
     [JsonPropertyName("intervalMillis")]
     public double? IntervalMillis { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
@@ -1879,7 +1879,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerPortMappin
     public string? Protocol { get; set; }
 }
 
-/// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+/// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateAcm
@@ -1889,12 +1889,12 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
     public string? CertificateArn { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 
@@ -1903,30 +1903,30 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
     public string? PrivateKey { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
 
-/// <summary>Listener&apos;s TLS certificate.</summary>
+/// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificate
 {
-    /// <summary>An AWS Certificate Manager (ACM) certificate.</summary>
+    /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
     [JsonPropertyName("acm")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateAcm? Acm { get; set; }
 
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificateSds? Sds { get; set; }
 }
@@ -1941,7 +1941,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidat
     public IList<string>? Exact { get; set; }
 }
 
-/// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+/// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNames
@@ -1951,22 +1951,22 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidat
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch? Match { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustFile
 {
-    /// <summary>Certificate trust chain for a certificate stored on the file system of the mesh endpoint that the proxy is running on. Must be between 1 and 255 characters in length.</summary>
+    /// <summary>Certificate chain for the certificate.</summary>
     [JsonPropertyName("certificateChain")]
     public string? CertificateChain { get; set; }
 }
 
-/// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+/// <summary>Secret Discovery Service certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustSds
 {
-    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
+    /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing TLS materials like a certificate or certificate chain.</summary>
     [JsonPropertyName("secretName")]
     public string? SecretName { get; set; }
 }
@@ -1976,11 +1976,11 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrust
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustFile? File { get; set; }
 
-    /// <summary>TLS validation context trust for a Secret Discovery Service certificate.</summary>
+    /// <summary>Secret Discovery Service certificate.</summary>
     [JsonPropertyName("sds")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustSds? Sds { get; set; }
 }
@@ -1990,7 +1990,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidation
 {
-    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
+    /// <summary>SANs for a virtual gateway&apos;s listener&apos;s TLS validation context.</summary>
     [JsonPropertyName("subjectAlternativeNames")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNames? SubjectAlternativeNames { get; set; }
 
@@ -1999,12 +1999,12 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidat
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrust? Trust { get; set; }
 }
 
-/// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+/// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecListenerTls
 {
-    /// <summary>Listener&apos;s TLS certificate.</summary>
+    /// <summary>Virtual gateway&apos;s client&apos;s TLS certificate.</summary>
     [JsonPropertyName("certificate")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTlsCertificate? Certificate { get; set; }
 
@@ -2033,7 +2033,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListener
     [JsonPropertyName("portMapping")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerPortMapping? PortMapping { get; set; }
 
-    /// <summary>Transport Layer Security (TLS) properties for the listener. See tls Block for details.</summary>
+    /// <summary>TLS properties for the listener. See spec.listener.tls Block for details.</summary>
     [JsonPropertyName("tls")]
     public V1beta2VirtualGatewayStatusAtProviderSpecListenerTls? Tls { get; set; }
 }
@@ -2042,39 +2042,39 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecListener
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormatJson
 {
-    /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
+    /// <summary>Specified value for the JSON. Must be between 1 and 100 characters in length.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The specified format for the logs. See format Block for details.</summary>
+/// <summary>Specified format for the logs. See format Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormat
 {
-    /// <summary>The logging format for JSON. See json Block for details.</summary>
+    /// <summary>Logging format for JSON. See json Block for details.</summary>
     [JsonPropertyName("json")]
     public IList<V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormatJson>? Json { get; set; }
 
-    /// <summary>The logging format for text. Must be between 1 and 1000 characters in length.</summary>
+    /// <summary>Logging format for text. Must be between 1 and 1000 characters in length.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
 
-/// <summary>TLS validation context trust for a local file certificate.</summary>
+/// <summary>Local file certificate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFile
 {
-    /// <summary>The specified format for the logs. See format Block for details.</summary>
+    /// <summary>Specified format for the logs. See format Block for details.</summary>
     [JsonPropertyName("format")]
     public V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormat? Format { get; set; }
 
-    /// <summary>Destination path for the health check request. This is only required if the specified protocol is http or http2.</summary>
+    /// <summary>File path to write access logs to. You can use /dev/stdout to send access logs to standard out. Must be between 1 and 255 characters in length.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
@@ -2084,7 +2084,7 @@ public partial class V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLog
 {
-    /// <summary>TLS validation context trust for a local file certificate.</summary>
+    /// <summary>Local file certificate.</summary>
     [JsonPropertyName("file")]
     public V1beta2VirtualGatewayStatusAtProviderSpecLoggingAccessLogFile? File { get; set; }
 }

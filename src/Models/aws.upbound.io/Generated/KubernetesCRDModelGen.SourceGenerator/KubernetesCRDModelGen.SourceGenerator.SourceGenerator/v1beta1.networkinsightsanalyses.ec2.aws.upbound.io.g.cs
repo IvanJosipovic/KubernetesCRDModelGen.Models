@@ -613,7 +613,7 @@ public partial class V1beta1NetworkInsightsAnalysisSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInsightsAnalysisStatusAtProviderAlternatePathHints
 {
-    /// <summary>The Amazon Resource Name (ARN) of the component.</summary>
+    /// <summary>ARN of the component.</summary>
     [JsonPropertyName("componentArn")]
     public string? ComponentArn { get; set; }
 

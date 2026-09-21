@@ -354,7 +354,7 @@ public partial class V1beta1DBSnapshotCopySpecForProvider
     [JsonPropertyName("copyTags")]
     public bool? CopyTags { get; set; }
 
-    /// <summary>The Destination region to place snapshot copy.</summary>
+    /// <summary>Destination Region to place snapshot copy.</summary>
     [JsonPropertyName("destinationRegion")]
     public string? DestinationRegion { get; set; }
 
@@ -370,11 +370,11 @@ public partial class V1beta1DBSnapshotCopySpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1DBSnapshotCopySpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The name of an option group to associate with the copy of the snapshot.</summary>
+    /// <summary>Name of an option group to associate with the copy of the snapshot.</summary>
     [JsonPropertyName("optionGroupName")]
     public string? OptionGroupName { get; set; }
 
-    /// <summary>he URL that contains a Signature Version 4 signed request.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request.</summary>
     [JsonPropertyName("presignedUrl")]
     public string? PresignedUrl { get; set; }
 
@@ -405,11 +405,11 @@ public partial class V1beta1DBSnapshotCopySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The external custom Availability Zone.</summary>
+    /// <summary>External custom Availability Zone.</summary>
     [JsonPropertyName("targetCustomAvailabilityZone")]
     public string? TargetCustomAvailabilityZone { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("targetDbSnapshotIdentifier")]
     public string? TargetDbSnapshotIdentifier { get; set; }
 }
@@ -744,7 +744,7 @@ public partial class V1beta1DBSnapshotCopySpecInitProvider
     [JsonPropertyName("copyTags")]
     public bool? CopyTags { get; set; }
 
-    /// <summary>The Destination region to place snapshot copy.</summary>
+    /// <summary>Destination Region to place snapshot copy.</summary>
     [JsonPropertyName("destinationRegion")]
     public string? DestinationRegion { get; set; }
 
@@ -760,11 +760,11 @@ public partial class V1beta1DBSnapshotCopySpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1DBSnapshotCopySpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The name of an option group to associate with the copy of the snapshot.</summary>
+    /// <summary>Name of an option group to associate with the copy of the snapshot.</summary>
     [JsonPropertyName("optionGroupName")]
     public string? OptionGroupName { get; set; }
 
-    /// <summary>he URL that contains a Signature Version 4 signed request.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request.</summary>
     [JsonPropertyName("presignedUrl")]
     public string? PresignedUrl { get; set; }
 
@@ -788,11 +788,11 @@ public partial class V1beta1DBSnapshotCopySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The external custom Availability Zone.</summary>
+    /// <summary>External custom Availability Zone.</summary>
     [JsonPropertyName("targetCustomAvailabilityZone")]
     public string? TargetCustomAvailabilityZone { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("targetDbSnapshotIdentifier")]
     public string? TargetDbSnapshotIdentifier { get; set; }
 }
@@ -908,11 +908,11 @@ public partial class V1beta1DBSnapshotCopySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBSnapshotCopyStatusAtProvider
 {
-    /// <summary>Specifies the allocated storage size in gigabytes (GB).</summary>
+    /// <summary>Allocated storage size in gigabytes (GB).</summary>
     [JsonPropertyName("allocatedStorage")]
     public double? AllocatedStorage { get; set; }
 
-    /// <summary>Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.</summary>
+    /// <summary>Name of the Availability Zone the DB instance was located in at the time of the DB snapshot.</summary>
     [JsonPropertyName("availabilityZone")]
     public string? AvailabilityZone { get; set; }
 
@@ -920,23 +920,23 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("copyTags")]
     public bool? CopyTags { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the DB snapshot.</summary>
+    /// <summary>ARN for the DB snapshot.</summary>
     [JsonPropertyName("dbSnapshotArn")]
     public string? DbSnapshotArn { get; set; }
 
-    /// <summary>The Destination region to place snapshot copy.</summary>
+    /// <summary>Destination Region to place snapshot copy.</summary>
     [JsonPropertyName("destinationRegion")]
     public string? DestinationRegion { get; set; }
 
-    /// <summary>Specifies whether the DB snapshot is encrypted.</summary>
+    /// <summary>Whether the DB snapshot is encrypted.</summary>
     [JsonPropertyName("encrypted")]
     public bool? Encrypted { get; set; }
 
-    /// <summary>Specifies the name of the database engine.</summary>
+    /// <summary>Name of the database engine.</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>Specifies the version of the database engine.</summary>
+    /// <summary>Version of the database engine.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -944,7 +944,7 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.</summary>
+    /// <summary>Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
@@ -956,14 +956,15 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("licenseModel")]
     public string? LicenseModel { get; set; }
 
-    /// <summary>The name of an option group to associate with the copy of the snapshot.</summary>
+    /// <summary>Name of an option group to associate with the copy of the snapshot.</summary>
     [JsonPropertyName("optionGroupName")]
     public string? OptionGroupName { get; set; }
 
+    /// <summary>Port that the database engine is listening on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>he URL that contains a Signature Version 4 signed request.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request.</summary>
     [JsonPropertyName("presignedUrl")]
     public string? PresignedUrl { get; set; }
 
@@ -978,6 +979,7 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("sharedAccounts")]
     public IList<string>? SharedAccounts { get; set; }
 
+    /// <summary>Type of the DB snapshot.</summary>
     [JsonPropertyName("snapshotType")]
     public string? SnapshotType { get; set; }
 
@@ -985,11 +987,11 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("sourceDbSnapshotIdentifier")]
     public string? SourceDbSnapshotIdentifier { get; set; }
 
-    /// <summary>The region that the DB snapshot was created in or copied from.</summary>
+    /// <summary>Region that the DB snapshot was created in or copied from.</summary>
     [JsonPropertyName("sourceRegion")]
     public string? SourceRegion { get; set; }
 
-    /// <summary>Specifies the storage type associated with DB snapshot.</summary>
+    /// <summary>Storage type associated with DB snapshot.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -997,15 +999,15 @@ public partial class V1beta1DBSnapshotCopyStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The external custom Availability Zone.</summary>
+    /// <summary>External custom Availability Zone.</summary>
     [JsonPropertyName("targetCustomAvailabilityZone")]
     public string? TargetCustomAvailabilityZone { get; set; }
 
-    /// <summary>The Identifier for the snapshot.</summary>
+    /// <summary>Identifier for the snapshot.</summary>
     [JsonPropertyName("targetDbSnapshotIdentifier")]
     public string? TargetDbSnapshotIdentifier { get; set; }
 

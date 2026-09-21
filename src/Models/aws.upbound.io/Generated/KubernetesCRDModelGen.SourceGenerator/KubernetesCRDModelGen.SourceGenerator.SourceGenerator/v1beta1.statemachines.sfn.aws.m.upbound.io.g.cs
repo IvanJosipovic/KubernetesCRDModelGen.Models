@@ -230,7 +230,7 @@ public partial class V1beta1StateMachineSpecForProviderLoggingConfiguration
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
+    /// <summary>ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 }
@@ -427,7 +427,7 @@ public partial class V1beta1StateMachineSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to use for this state machine.</summary>
+    /// <summary>ARN of the IAM role to use for this state machine.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -646,7 +646,7 @@ public partial class V1beta1StateMachineSpecInitProviderLoggingConfiguration
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
+    /// <summary>ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 }
@@ -848,7 +848,7 @@ public partial class V1beta1StateMachineSpecInitProvider
     [JsonPropertyName("publish")]
     public bool? Publish { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to use for this state machine.</summary>
+    /// <summary>ARN of the IAM role to use for this state machine.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1011,7 +1011,7 @@ public partial class V1beta1StateMachineStatusAtProviderLoggingConfiguration
     [JsonPropertyName("level")]
     public string? Level { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
+    /// <summary>ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*</summary>
     [JsonPropertyName("logDestination")]
     public string? LogDestination { get; set; }
 }
@@ -1072,7 +1072,7 @@ public partial class V1beta1StateMachineStatusAtProvider
     [JsonPropertyName("revisionId")]
     public string? RevisionId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to use for this state machine.</summary>
+    /// <summary>ARN of the IAM role to use for this state machine.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

@@ -62,6 +62,153 @@ public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecDeletionPolicyEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolutionEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolveEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolveEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolutionEnum
 {
@@ -357,6 +504,22 @@ public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProvider
     [JsonPropertyName("dxGatewayId")]
     public string? DxGatewayId { get; set; }
 
+    /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
+    [JsonPropertyName("dxGatewayIdRef")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdRef? DxGatewayIdRef { get; set; }
+
+    /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
+    [JsonPropertyName("dxGatewayIdSelector")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelector? DxGatewayIdSelector { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -391,6 +554,153 @@ public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProvider
     /// <summary>Selector for a VPNGateway in ec2 to populate vpnGatewayId.</summary>
     [JsonPropertyName("vpnGatewayIdSelector")]
     public V1beta1HostedPrivateVirtualInterfaceAccepterSpecForProviderVpnGatewayIdSelector? VpnGatewayIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolutionEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolveEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum>))]
+public enum V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -707,6 +1017,22 @@ public partial class V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProvide
     [JsonPropertyName("dxGatewayId")]
     public string? DxGatewayId { get; set; }
 
+    /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
+    [JsonPropertyName("dxGatewayIdRef")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRef? DxGatewayIdRef { get; set; }
+
+    /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
+    [JsonPropertyName("dxGatewayIdSelector")]
+    public V1beta1HostedPrivateVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelector? DxGatewayIdSelector { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -934,6 +1260,14 @@ public partial class V1beta1HostedPrivateVirtualInterfaceAccepterStatusAtProvide
     /// <summary>The ID of the virtual interface.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

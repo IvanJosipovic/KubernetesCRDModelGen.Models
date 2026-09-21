@@ -1395,11 +1395,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -1413,19 +1413,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the container. If the name isn't specified, the default name "Default" is used. Each container in a pod must have a unique name.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1439,6 +1441,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -1451,16 +1454,17 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
@@ -1477,12 +1481,12 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Unique identifier.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                               type: object
                             type: array
                           initContainers:
-                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.
+                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.
                             items:
                               properties:
                                 args:
@@ -1496,11 +1500,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -1514,19 +1518,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1540,6 +1546,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -1552,23 +1559,24 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                               type: object
                             type: array
                           metadata:
-                            description: Metadata about the Kubernetes pod.
+                            description: Metadata about the Kubernetes pod. See metadata below.
                             properties:
                               labels:
                                 additionalProperties:
@@ -1581,13 +1589,14 @@ spec:
                             description: Name of the service account that's used to run the pod.
                             type: string
                           shareProcessNamespace:
-                            description: Indicates if the processes in a container are shared, or visible, to other containers in the same pod.
+                            description: Whether the processes in a container are shared, or visible, to other containers in the same pod.
                             type: boolean
                           volumes:
-                            description: Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.
+                            description: Volumes for a job definition that uses Amazon EKS resources. See volumes below.
                             items:
                               properties:
                                 emptyDir:
+                                  description: Empty directory to mount on the pod. See empty_dir below.
                                   properties:
                                     medium:
                                       description: Medium to store the volume. The default value is an empty string, which uses the storage of the node.
@@ -1597,16 +1606,17 @@ spec:
                                       type: string
                                   type: object
                                 hostPath:
-                                  description: Path of the file or directory on the host to mount into containers on the pod.
+                                  description: Path on the host that's mounted to the pod. See host_path below.
                                   properties:
                                     path:
                                       description: Path of the file or directory on the host to mount into containers on the pod.
                                       type: string
                                   type: object
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 secret:
+                                  description: Secret to mount as a volume. See secret below.
                                   properties:
                                     optional:
                                       description: Whether the secret or the secret's keys must be defined.
@@ -1735,11 +1745,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -1753,19 +1763,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the container. If the name isn't specified, the default name "Default" is used. Each container in a pod must have a unique name.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1779,6 +1791,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -1791,16 +1804,17 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
@@ -1817,12 +1831,12 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Unique identifier.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                               type: object
                             type: array
                           initContainers:
-                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.
+                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.
                             items:
                               properties:
                                 args:
@@ -1836,11 +1850,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -1854,19 +1868,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -1880,6 +1896,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -1892,23 +1909,24 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                               type: object
                             type: array
                           metadata:
-                            description: Metadata about the Kubernetes pod.
+                            description: Metadata about the Kubernetes pod. See metadata below.
                             properties:
                               labels:
                                 additionalProperties:
@@ -1921,13 +1939,14 @@ spec:
                             description: Name of the service account that's used to run the pod.
                             type: string
                           shareProcessNamespace:
-                            description: Indicates if the processes in a container are shared, or visible, to other containers in the same pod.
+                            description: Whether the processes in a container are shared, or visible, to other containers in the same pod.
                             type: boolean
                           volumes:
-                            description: Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.
+                            description: Volumes for a job definition that uses Amazon EKS resources. See volumes below.
                             items:
                               properties:
                                 emptyDir:
+                                  description: Empty directory to mount on the pod. See empty_dir below.
                                   properties:
                                     medium:
                                       description: Medium to store the volume. The default value is an empty string, which uses the storage of the node.
@@ -1937,16 +1956,17 @@ spec:
                                       type: string
                                   type: object
                                 hostPath:
-                                  description: Path of the file or directory on the host to mount into containers on the pod.
+                                  description: Path on the host that's mounted to the pod. See host_path below.
                                   properties:
                                     path:
                                       description: Path of the file or directory on the host to mount into containers on the pod.
                                       type: string
                                   type: object
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 secret:
+                                  description: Secret to mount as a volume. See secret below.
                                   properties:
                                     optional:
                                       description: Whether the secret or the secret's keys must be defined.
@@ -2157,11 +2177,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -2175,19 +2195,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the container. If the name isn't specified, the default name "Default" is used. Each container in a pod must have a unique name.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -2201,6 +2223,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -2213,16 +2236,17 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
@@ -2239,12 +2263,12 @@ spec:
                             items:
                               properties:
                                 name:
-                                  description: Unique identifier.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                               type: object
                             type: array
                           initContainers:
-                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See containers below.
+                            description: Containers which run before application containers, always runs to completion, and must complete successfully before the next container starts. These containers are registered with the Amazon EKS Connector agent and persists the registration information in the Kubernetes backend data store. See init_containers below.
                             items:
                               properties:
                                 args:
@@ -2258,11 +2282,11 @@ spec:
                                     type: string
                                   type: array
                                 env:
-                                  description: Environment variables to pass to a container. See EKS Environment below.
+                                  description: Environment variables to pass to a container. See env below.
                                   items:
                                     properties:
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       value:
                                         description: Value of the environment variable.
@@ -2276,19 +2300,21 @@ spec:
                                   description: Image pull policy for the container. Supported values are Always, IfNotPresent, and Never.
                                   type: string
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 resources:
-                                  description: Type and amount of resources to assign to a container. The supported resources include memory, cpu, and nvidia.com/gpu.
+                                  description: Type and amount of resources to assign to a container. See resources below.
                                   properties:
                                     limits:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to reserve for the container. The values vary based on the name that's specified. Limits must be equal to or greater than requests.
                                       type: object
                                       x-kubernetes-map-type: granular
                                     requests:
                                       additionalProperties:
                                         type: string
+                                      description: Type and quantity of the resources to request for the container. The values vary based on the name that's specified.
                                       type: object
                                       x-kubernetes-map-type: granular
                                   type: object
@@ -2302,6 +2328,7 @@ spec:
                                       description: When this parameter is true, the container is given elevated permissions on the host container instance. The level of permissions are similar to the root user permissions. The default value is false.
                                       type: boolean
                                     readOnlyRootFileSystem:
+                                      description: When this parameter is true, the container is given read-only access to its root file system. The default value is false.
                                       type: boolean
                                     runAsGroup:
                                       description: When this parameter is specified, the container is run as the specified group ID (gid). If this parameter isn't specified, the default is the group that's specified in the image metadata.
@@ -2314,23 +2341,24 @@ spec:
                                       type: number
                                   type: object
                                 volumeMounts:
-                                  description: Volume mounts for the container.
+                                  description: Volume mounts for the container. See volume_mounts below.
                                   items:
                                     properties:
                                       mountPath:
-                                        description: Path of the file or directory on the host to mount into containers on the pod.
+                                        description: Path on the container where the volume is mounted.
                                         type: string
                                       name:
-                                        description: Name of the job definition.
+                                        description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                         type: string
                                       readOnly:
+                                        description: Whether the container has read-only access to the volume. The default value is false.
                                         type: boolean
                                     type: object
                                   type: array
                               type: object
                             type: array
                           metadata:
-                            description: Metadata about the Kubernetes pod.
+                            description: Metadata about the Kubernetes pod. See metadata below.
                             properties:
                               labels:
                                 additionalProperties:
@@ -2343,13 +2371,14 @@ spec:
                             description: Name of the service account that's used to run the pod.
                             type: string
                           shareProcessNamespace:
-                            description: Indicates if the processes in a container are shared, or visible, to other containers in the same pod.
+                            description: Whether the processes in a container are shared, or visible, to other containers in the same pod.
                             type: boolean
                           volumes:
-                            description: Volumes for a job definition that uses Amazon EKS resources. AWS Batch supports emptyDir, hostPath, and secret volume types.
+                            description: Volumes for a job definition that uses Amazon EKS resources. See volumes below.
                             items:
                               properties:
                                 emptyDir:
+                                  description: Empty directory to mount on the pod. See empty_dir below.
                                   properties:
                                     medium:
                                       description: Medium to store the volume. The default value is an empty string, which uses the storage of the node.
@@ -2359,16 +2388,17 @@ spec:
                                       type: string
                                   type: object
                                 hostPath:
-                                  description: Path of the file or directory on the host to mount into containers on the pod.
+                                  description: Path on the host that's mounted to the pod. See host_path below.
                                   properties:
                                     path:
                                       description: Path of the file or directory on the host to mount into containers on the pod.
                                       type: string
                                   type: object
                                 name:
-                                  description: Name of the job definition.
+                                  description: Name of the volume. The name must be allowed as a DNS subdomain name.
                                   type: string
                                 secret:
+                                  description: Secret to mount as a volume. See secret below.
                                   properties:
                                     optional:
                                       description: Whether the secret or the secret's keys must be defined.

@@ -40,7 +40,7 @@ public partial class V1beta1EmailIdentityList : IKubernetesObject<V1ListMeta>, I
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecForProvider
 {
-    /// <summary>The email address to assign to SES.</summary>
+    /// <summary>Email address to assign to SES.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 
@@ -68,7 +68,7 @@ public partial class V1beta1EmailIdentitySpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecInitProvider
 {
-    /// <summary>The email address to assign to SES.</summary>
+    /// <summary>Email address to assign to SES.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 }
@@ -184,11 +184,11 @@ public partial class V1beta1EmailIdentitySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityStatusAtProvider
 {
-    /// <summary>The ARN of the email identity.</summary>
+    /// <summary>ARN of the email identity.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The email address to assign to SES.</summary>
+    /// <summary>Email address to assign to SES.</summary>
     [JsonPropertyName("email")]
     public string? Email { get; set; }
 

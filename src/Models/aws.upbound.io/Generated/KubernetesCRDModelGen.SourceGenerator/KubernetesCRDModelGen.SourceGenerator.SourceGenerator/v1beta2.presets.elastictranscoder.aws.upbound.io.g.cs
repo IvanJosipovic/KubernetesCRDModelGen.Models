@@ -916,7 +916,7 @@ public partial class V1beta2PresetStatusAtProviderVideoWatermarks
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2PresetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Elastic Transcoder Preset.</summary>
+    /// <summary>ARN of the Elastic Transcoder Preset.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

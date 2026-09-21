@@ -1784,7 +1784,7 @@ spec:
                                                 type: object
                                               type: array
                                             protocols:
-                                              description: Set of protocols to inspect for, specified using the protocol's assigned internet protocol number (IANA). If not specified, this matches with any protocol.
+                                              description: Set of protocols to inspect for, specified using the protocol's assigned IP number (IANA). If not specified, this matches with any protocol.
                                               items:
                                                 type: number
                                               type: array
@@ -2175,7 +2175,7 @@ spec:
                                                 type: object
                                               type: array
                                             protocols:
-                                              description: Set of protocols to inspect for, specified using the protocol's assigned internet protocol number (IANA). If not specified, this matches with any protocol.
+                                              description: Set of protocols to inspect for, specified using the protocol's assigned IP number (IANA). If not specified, this matches with any protocol.
                                               items:
                                                 type: number
                                               type: array
@@ -2349,7 +2349,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) that identifies the rule group.
+                    description: ARN that identifies the rule group.
                     type: string
                   capacity:
                     description: The maximum number of operating resources that this rule group can use. For a stateless rule group, the capacity required is the sum of the capacity requirements of the individual rules. For a stateful rule group, the minimum capacity required is the number of individual rules.
@@ -2368,7 +2368,7 @@ spec:
                         type: string
                     type: object
                   id:
-                    description: The Amazon Resource Name (ARN) that identifies the rule group.
+                    description: ARN that identifies the rule group.
                     type: string
                   name:
                     description: A friendly name of the rule group.
@@ -2587,7 +2587,7 @@ spec:
                                                 type: object
                                               type: array
                                             protocols:
-                                              description: Set of protocols to inspect for, specified using the protocol's assigned internet protocol number (IANA). If not specified, this matches with any protocol.
+                                              description: Set of protocols to inspect for, specified using the protocol's assigned IP number (IANA). If not specified, this matches with any protocol.
                                               items:
                                                 type: number
                                               type: array

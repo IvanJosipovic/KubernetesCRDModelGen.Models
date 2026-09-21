@@ -621,7 +621,7 @@ public partial class V1beta1SecurityProfileSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityProfileStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Security Profile.</summary>
+    /// <summary>ARN of the Security Profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

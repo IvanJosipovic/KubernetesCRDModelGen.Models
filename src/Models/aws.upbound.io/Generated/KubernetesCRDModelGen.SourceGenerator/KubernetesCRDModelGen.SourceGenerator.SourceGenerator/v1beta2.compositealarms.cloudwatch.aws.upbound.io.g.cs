@@ -60,7 +60,7 @@ public enum V1beta2CompositeAlarmSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CompositeAlarmSpecForProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 
@@ -432,7 +432,7 @@ public partial class V1beta2CompositeAlarmSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CompositeAlarmSpecInitProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 
@@ -992,7 +992,7 @@ public partial class V1beta2CompositeAlarmSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CompositeAlarmStatusAtProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 

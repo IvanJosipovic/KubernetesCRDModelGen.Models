@@ -852,7 +852,7 @@ public partial class V1beta1DestinationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the log destination.</summary>
+    /// <summary>ARN specifying the log destination.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

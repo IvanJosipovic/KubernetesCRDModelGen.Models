@@ -207,7 +207,7 @@ public partial class V1beta2BucketOwnershipControlsSpecForProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketOwnershipControlsSpecForProviderRule
 {
-    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced</summary>
+    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced. BucketOwnerPreferred means objects uploaded to the bucket change ownership to the bucket owner if the objects are uploaded with the bucket-owner-full-control canned ACL. ObjectWriter means the uploading account will own the object if the object is uploaded with the bucket-owner-full-control canned ACL. BucketOwnerEnforced means the bucket owner automatically owns and has full control over every object in the bucket, and ACLs no longer affect permissions to data in the S3 bucket.</summary>
     [JsonPropertyName("objectOwnership")]
     public string? ObjectOwnership { get; set; }
 }
@@ -392,7 +392,7 @@ public partial class V1beta2BucketOwnershipControlsSpecInitProviderBucketSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketOwnershipControlsSpecInitProviderRule
 {
-    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced</summary>
+    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced. BucketOwnerPreferred means objects uploaded to the bucket change ownership to the bucket owner if the objects are uploaded with the bucket-owner-full-control canned ACL. ObjectWriter means the uploading account will own the object if the object is uploaded with the bucket-owner-full-control canned ACL. BucketOwnerEnforced means the bucket owner automatically owns and has full control over every object in the bucket, and ACLs no longer affect permissions to data in the S3 bucket.</summary>
     [JsonPropertyName("objectOwnership")]
     public string? ObjectOwnership { get; set; }
 }
@@ -618,7 +618,7 @@ public partial class V1beta2BucketOwnershipControlsSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketOwnershipControlsStatusAtProviderRule
 {
-    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced</summary>
+    /// <summary>Object ownership. Valid values: BucketOwnerPreferred, ObjectWriter or BucketOwnerEnforced. BucketOwnerPreferred means objects uploaded to the bucket change ownership to the bucket owner if the objects are uploaded with the bucket-owner-full-control canned ACL. ObjectWriter means the uploading account will own the object if the object is uploaded with the bucket-owner-full-control canned ACL. BucketOwnerEnforced means the bucket owner automatically owns and has full control over every object in the bucket, and ACLs no longer affect permissions to data in the S3 bucket.</summary>
     [JsonPropertyName("objectOwnership")]
     public string? ObjectOwnership { get; set; }
 }

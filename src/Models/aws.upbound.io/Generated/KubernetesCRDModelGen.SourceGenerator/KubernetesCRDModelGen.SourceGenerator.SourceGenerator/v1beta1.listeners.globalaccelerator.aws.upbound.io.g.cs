@@ -219,7 +219,7 @@ public partial class V1beta1ListenerSpecForProviderPortRange
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of your accelerator.</summary>
+    /// <summary>ARN of your accelerator.</summary>
     [JsonPropertyName("acceleratorArn")]
     public string? AcceleratorArn { get; set; }
 
@@ -420,7 +420,7 @@ public partial class V1beta1ListenerSpecInitProviderPortRange
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of your accelerator.</summary>
+    /// <summary>ARN of your accelerator.</summary>
     [JsonPropertyName("acceleratorArn")]
     public string? AcceleratorArn { get; set; }
 
@@ -645,11 +645,11 @@ public partial class V1beta1ListenerStatusAtProviderPortRange
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of your accelerator.</summary>
+    /// <summary>ARN of your accelerator.</summary>
     [JsonPropertyName("acceleratorArn")]
     public string? AcceleratorArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ARN of the listener.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -657,7 +657,7 @@ public partial class V1beta1ListenerStatusAtProvider
     [JsonPropertyName("clientAffinity")]
     public string? ClientAffinity { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ARN of the listener.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

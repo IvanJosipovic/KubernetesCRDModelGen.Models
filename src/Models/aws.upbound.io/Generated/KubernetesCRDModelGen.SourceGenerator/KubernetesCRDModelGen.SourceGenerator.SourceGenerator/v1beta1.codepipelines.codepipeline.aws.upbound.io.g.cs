@@ -417,11 +417,29 @@ public partial class V1beta1CodepipelineSpecForProviderRoleArnSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CodepipelineSpecForProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -442,6 +460,14 @@ public partial class V1beta1CodepipelineSpecForProviderStageAction
     /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta1CodepipelineSpecForProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]
@@ -1330,11 +1356,29 @@ public partial class V1beta1CodepipelineSpecInitProviderRoleArnSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CodepipelineSpecInitProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -1355,6 +1399,14 @@ public partial class V1beta1CodepipelineSpecInitProviderStageAction
     /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta1CodepipelineSpecInitProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]
@@ -2108,11 +2160,29 @@ public partial class V1beta1CodepipelineStatusAtProviderArtifactStore
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1CodepipelineStatusAtProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -2133,6 +2203,14 @@ public partial class V1beta1CodepipelineStatusAtProviderStageAction
     /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta1CodepipelineStatusAtProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]

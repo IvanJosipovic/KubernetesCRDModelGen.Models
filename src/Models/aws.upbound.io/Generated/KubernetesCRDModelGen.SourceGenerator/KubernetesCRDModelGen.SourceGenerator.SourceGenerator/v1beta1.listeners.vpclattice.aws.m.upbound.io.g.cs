@@ -36,6 +36,7 @@ public partial class V1beta1ListenerList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1beta1Listener> Items { get; set; }
 }
 
+/// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProviderDefaultActionFixedResponse
@@ -204,7 +205,7 @@ public partial class V1beta1ListenerSpecForProviderDefaultActionForwardTargetGro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProviderDefaultActionForwardTargetGroups
 {
-    /// <summary>ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -216,10 +217,7 @@ public partial class V1beta1ListenerSpecForProviderDefaultActionForwardTargetGro
     [JsonPropertyName("targetGroupIdentifierSelector")]
     public V1beta1ListenerSpecForProviderDefaultActionForwardTargetGroupsTargetGroupIdentifierSelector? TargetGroupIdentifierSelector { get; set; }
 
-    /// <summary>
-    /// Determines how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a
-    /// weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.
-    /// </summary>
+    /// <summary>Weight that controls how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -228,7 +226,7 @@ public partial class V1beta1ListenerSpecForProviderDefaultActionForwardTargetGro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProviderDefaultActionForward
 {
-    /// <summary>One or more target group blocks.</summary>
+    /// <summary>One or more target group blocks. See target_groups Block below.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerSpecForProviderDefaultActionForwardTargetGroups>? TargetGroups { get; set; }
 }
@@ -238,10 +236,11 @@ public partial class V1beta1ListenerSpecForProviderDefaultActionForward
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecForProviderDefaultAction
 {
+    /// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerSpecForProviderDefaultActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>Route requests to one or more target groups. See Forward blocks below.</summary>
+    /// <summary>Route requests to one or more target groups. See forward Block below.</summary>
     [JsonPropertyName("forward")]
     public IList<V1beta1ListenerSpecForProviderDefaultActionForward>? Forward { get; set; }
 }
@@ -428,7 +427,7 @@ public partial class V1beta1ListenerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
+    /// <summary>ARN of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
     [JsonPropertyName("serviceArn")]
     public string? ServiceArn { get; set; }
 
@@ -452,6 +451,7 @@ public partial class V1beta1ListenerSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
+/// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProviderDefaultActionFixedResponse
@@ -620,7 +620,7 @@ public partial class V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGroups
 {
-    /// <summary>ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -632,10 +632,7 @@ public partial class V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGr
     [JsonPropertyName("targetGroupIdentifierSelector")]
     public V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGroupsTargetGroupIdentifierSelector? TargetGroupIdentifierSelector { get; set; }
 
-    /// <summary>
-    /// Determines how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a
-    /// weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.
-    /// </summary>
+    /// <summary>Weight that controls how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -644,7 +641,7 @@ public partial class V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProviderDefaultActionForward
 {
-    /// <summary>One or more target group blocks.</summary>
+    /// <summary>One or more target group blocks. See target_groups Block below.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerSpecInitProviderDefaultActionForwardTargetGroups>? TargetGroups { get; set; }
 }
@@ -654,10 +651,11 @@ public partial class V1beta1ListenerSpecInitProviderDefaultActionForward
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerSpecInitProviderDefaultAction
 {
+    /// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerSpecInitProviderDefaultActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>Route requests to one or more target groups. See Forward blocks below.</summary>
+    /// <summary>Route requests to one or more target groups. See forward Block below.</summary>
     [JsonPropertyName("forward")]
     public IList<V1beta1ListenerSpecInitProviderDefaultActionForward>? Forward { get; set; }
 }
@@ -849,7 +847,7 @@ public partial class V1beta1ListenerSpecInitProvider
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
+    /// <summary>ARN of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
     [JsonPropertyName("serviceArn")]
     public string? ServiceArn { get; set; }
 
@@ -980,6 +978,7 @@ public partial class V1beta1ListenerSpec
     public V1beta1ListenerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProviderDefaultActionFixedResponse
@@ -993,14 +992,11 @@ public partial class V1beta1ListenerStatusAtProviderDefaultActionFixedResponse
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProviderDefaultActionForwardTargetGroups
 {
-    /// <summary>ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
-    /// <summary>
-    /// Determines how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a
-    /// weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.
-    /// </summary>
+    /// <summary>Weight that controls how requests are distributed to the target group. Only required if you specify multiple target groups for a forward action. For example, if you specify two target groups, one with a weight of 10 and the other with a weight of 20, the target group with a weight of 20 receives twice as many requests as the other target group. See Listener rules in the AWS documentation for additional examples. Default: 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -1009,7 +1005,7 @@ public partial class V1beta1ListenerStatusAtProviderDefaultActionForwardTargetGr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProviderDefaultActionForward
 {
-    /// <summary>One or more target group blocks.</summary>
+    /// <summary>One or more target group blocks. See target_groups Block below.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerStatusAtProviderDefaultActionForwardTargetGroups>? TargetGroups { get; set; }
 }
@@ -1019,10 +1015,11 @@ public partial class V1beta1ListenerStatusAtProviderDefaultActionForward
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerStatusAtProviderDefaultAction
 {
+    /// <summary>Configuration block for returning a fixed response. See fixed_response Block below.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerStatusAtProviderDefaultActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>Route requests to one or more target groups. See Forward blocks below.</summary>
+    /// <summary>Route requests to one or more target groups. See forward Block below.</summary>
     [JsonPropertyName("forward")]
     public IList<V1beta1ListenerStatusAtProviderDefaultActionForward>? Forward { get; set; }
 }
@@ -1073,7 +1070,7 @@ public partial class V1beta1ListenerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
+    /// <summary>ARN of the VPC Lattice service. You must include either the service_arn or service_identifier arguments.</summary>
     [JsonPropertyName("serviceArn")]
     public string? ServiceArn { get; set; }
 

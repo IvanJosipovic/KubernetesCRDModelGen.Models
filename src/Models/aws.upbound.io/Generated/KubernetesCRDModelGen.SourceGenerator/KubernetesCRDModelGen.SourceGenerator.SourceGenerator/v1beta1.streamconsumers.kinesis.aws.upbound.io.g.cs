@@ -217,7 +217,7 @@ public partial class V1beta1StreamConsumerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the data stream the consumer is registered with.</summary>
+    /// <summary>ARN of the data stream the consumer is registered with.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -400,7 +400,7 @@ public partial class V1beta1StreamConsumerSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the data stream the consumer is registered with.</summary>
+    /// <summary>ARN of the data stream the consumer is registered with.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -603,7 +603,7 @@ public partial class V1beta1StreamConsumerSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamConsumerStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the stream consumer.</summary>
+    /// <summary>ARN of the stream consumer.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -611,7 +611,7 @@ public partial class V1beta1StreamConsumerStatusAtProvider
     [JsonPropertyName("creationTimestamp")]
     public string? CreationTimestamp { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the stream consumer.</summary>
+    /// <summary>ARN of the stream consumer.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -626,7 +626,7 @@ public partial class V1beta1StreamConsumerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the data stream the consumer is registered with.</summary>
+    /// <summary>ARN of the data stream the consumer is registered with.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 

@@ -143,9 +143,7 @@ spec:
                     description: TTL of cached authorizer results in seconds. Defaults to 300.
                     type: number
                   authorizerUri:
-                    description: |-
-                      Authorizer's Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-                      e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
+                    description: Authorizer's URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
                     type: string
                   authorizerUriRef:
                     description: Reference to a Function in lambda to populate authorizerUri.
@@ -433,9 +431,7 @@ spec:
                     description: TTL of cached authorizer results in seconds. Defaults to 300.
                     type: number
                   authorizerUri:
-                    description: |-
-                      Authorizer's Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-                      e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
+                    description: Authorizer's URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
                     type: string
                   authorizerUriRef:
                     description: Reference to a Function in lambda to populate authorizerUri.
@@ -693,9 +689,7 @@ spec:
                     description: TTL of cached authorizer results in seconds. Defaults to 300.
                     type: number
                   authorizerUri:
-                    description: |-
-                      Authorizer's Uniform Resource Identifier (URI). This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api},
-                      e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
+                    description: Authorizer's URI. This must be a well-formed Lambda function URI in the form of arn:aws:apigateway:{region}:lambda:path/{service_api}, e.g., arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:012345678912:function:my-function/invocations
                     type: string
                   id:
                     description: Authorizer identifier.

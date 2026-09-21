@@ -177,7 +177,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   samlProviderArns:
-                    description: An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
+                    description: An array of ARNs of the SAML provider for your identity.
                     items:
                       type: string
                     type: array
@@ -406,7 +406,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   samlProviderArns:
-                    description: An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
+                    description: An array of ARNs of the SAML provider for your identity.
                     items:
                       type: string
                     type: array
@@ -618,7 +618,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   samlProviderArns:
-                    description: An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
+                    description: An array of ARNs of the SAML provider for your identity.
                     items:
                       type: string
                     type: array

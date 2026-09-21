@@ -227,7 +227,7 @@ public partial class V1beta1WebACLSpecForProviderDataProtectionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -260,7 +260,7 @@ public partial class V1beta1WebACLSpecForProviderDefaultActionAllow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecForProviderDefaultActionBlockCustomResponseResponseHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -584,7 +584,7 @@ public partial class V1beta1WebACLSpecInitProviderDataProtectionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -617,7 +617,7 @@ public partial class V1beta1WebACLSpecInitProviderDefaultActionAllow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLSpecInitProviderDefaultActionBlockCustomResponseResponseHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1053,7 +1053,7 @@ public partial class V1beta1WebACLStatusAtProviderDataProtectionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionAllowCustomRequestHandlingInsertHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1086,7 +1086,7 @@ public partial class V1beta1WebACLStatusAtProviderDefaultActionAllow
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebACLStatusAtProviderDefaultActionBlockCustomResponseResponseHeader
 {
-    /// <summary>Name of the query header to inspect. This setting must be provided as lower case characters.</summary>
+    /// <summary>Name of the query argument to inspect. Maximum length of 30. AWS returns query argument names in lower case, so provide the name as lower case characters to avoid a perpetual diff.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 

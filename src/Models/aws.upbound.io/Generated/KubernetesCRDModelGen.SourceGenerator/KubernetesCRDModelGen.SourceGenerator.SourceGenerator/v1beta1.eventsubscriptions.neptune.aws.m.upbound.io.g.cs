@@ -876,7 +876,7 @@ public partial class V1beta1EventSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the Neptune event notification subscription.</summary>
+    /// <summary>ARN of the Neptune event notification subscription.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

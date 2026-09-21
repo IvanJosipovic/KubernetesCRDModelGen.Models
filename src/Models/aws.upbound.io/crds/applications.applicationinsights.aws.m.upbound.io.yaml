@@ -58,13 +58,13 @@ spec:
               forProvider:
                 properties:
                   autoConfigEnabled:
-                    description: Indicates whether Application Insights automatically configures unmonitored resources in the resource group.
+                    description: Whether to automatically configure unmonitored resources in the resource group.
                     type: boolean
                   autoCreate:
                     description: Configures all of the resources in the resource group by applying the recommended configurations.
                     type: boolean
                   cweMonitorEnabled:
-                    description: Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
+                    description: Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
                     type: boolean
                   groupingType:
                     description: Application Insights can create applications based on a resource group or on an account. To create an account-based application using all of the resources in the account, set this parameter to ACCOUNT_BASED.
@@ -103,13 +103,13 @@ spec:
                   autoscaler.
                 properties:
                   autoConfigEnabled:
-                    description: Indicates whether Application Insights automatically configures unmonitored resources in the resource group.
+                    description: Whether to automatically configure unmonitored resources in the resource group.
                     type: boolean
                   autoCreate:
                     description: Configures all of the resources in the resource group by applying the recommended configurations.
                     type: boolean
                   cweMonitorEnabled:
-                    description: Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
+                    description: Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
                     type: boolean
                   groupingType:
                     description: Application Insights can create applications based on a resource group or on an account. To create an account-based application using all of the resources in the account, set this parameter to ACCOUNT_BASED.
@@ -194,13 +194,13 @@ spec:
                     description: ARN of the Application.
                     type: string
                   autoConfigEnabled:
-                    description: Indicates whether Application Insights automatically configures unmonitored resources in the resource group.
+                    description: Whether to automatically configure unmonitored resources in the resource group.
                     type: boolean
                   autoCreate:
                     description: Configures all of the resources in the resource group by applying the recommended configurations.
                     type: boolean
                   cweMonitorEnabled:
-                    description: Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
+                    description: Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.
                     type: boolean
                   groupingType:
                     description: Application Insights can create applications based on a resource group or on an account. To create an account-based application using all of the resources in the account, set this parameter to ACCOUNT_BASED.

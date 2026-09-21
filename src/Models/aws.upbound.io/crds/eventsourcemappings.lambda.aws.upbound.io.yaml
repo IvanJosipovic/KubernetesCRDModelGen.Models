@@ -1553,7 +1553,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -1571,7 +1571,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:
@@ -1681,7 +1681,7 @@ spec:
                         description: Name of the database to consume within the DocumentDB cluster.
                         type: string
                       fullDocument:
-                        description: 'Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
+                        description: 'DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
                         type: string
                     type: object
                   enabled:
@@ -1786,7 +1786,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   kmsKeyArn:
-                    description: ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function's filter criteria.
+                    description: ARN of the KMS customer managed key that Lambda uses to encrypt your function's filter criteria.
                     type: string
                   kmsKeyArnRef:
                     description: Reference to a Key in kms to populate kmsKeyArn.
@@ -1874,7 +1874,7 @@ spec:
                     description: CloudWatch metrics configuration of the event source. Only available for stream sources (DynamoDB and Kinesis) and SQS queues. See below.
                     properties:
                       metrics:
-                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount.'
+                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.'
                         items:
                           type: string
                         type: array
@@ -1893,7 +1893,7 @@ spec:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
                       pollerGroupName:
-                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        description: Name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
                         type: string
                     type: object
                   queues:
@@ -1933,7 +1933,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -1951,7 +1951,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:
@@ -2023,7 +2023,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -2041,7 +2041,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:
@@ -2151,7 +2151,7 @@ spec:
                         description: Name of the database to consume within the DocumentDB cluster.
                         type: string
                       fullDocument:
-                        description: 'Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
+                        description: 'DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
                         type: string
                     type: object
                   enabled:
@@ -2256,7 +2256,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   kmsKeyArn:
-                    description: ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function's filter criteria.
+                    description: ARN of the KMS customer managed key that Lambda uses to encrypt your function's filter criteria.
                     type: string
                   kmsKeyArnRef:
                     description: Reference to a Key in kms to populate kmsKeyArn.
@@ -2344,7 +2344,7 @@ spec:
                     description: CloudWatch metrics configuration of the event source. Only available for stream sources (DynamoDB and Kinesis) and SQS queues. See below.
                     properties:
                       metrics:
-                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount.'
+                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.'
                         items:
                           type: string
                         type: array
@@ -2363,7 +2363,7 @@ spec:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
                       pollerGroupName:
-                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        description: Name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
                         type: string
                     type: object
                   queues:
@@ -2398,7 +2398,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -2416,7 +2416,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:
@@ -2564,7 +2564,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -2582,7 +2582,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:
@@ -2622,7 +2622,7 @@ spec:
                         description: Name of the database to consume within the DocumentDB cluster.
                         type: string
                       fullDocument:
-                        description: 'Determines what DocumentDB sends to your event stream during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
+                        description: 'DocumentDB behavior during document update operations. If set to UpdateLookup, DocumentDB sends a delta describing the changes, along with a copy of the entire document. Otherwise, DocumentDB sends only a partial document that contains the changes. Valid values: UpdateLookup, Default.'
                         type: string
                     type: object
                   enabled:
@@ -2659,7 +2659,7 @@ spec:
                   id:
                     type: string
                   kmsKeyArn:
-                    description: ARN of the Key Management Service (KMS) customer managed key that Lambda uses to encrypt your function's filter criteria.
+                    description: ARN of the KMS customer managed key that Lambda uses to encrypt your function's filter criteria.
                     type: string
                   lastModified:
                     description: Date this resource was last modified.
@@ -2680,7 +2680,7 @@ spec:
                     description: CloudWatch metrics configuration of the event source. Only available for stream sources (DynamoDB and Kinesis) and SQS queues. See below.
                     properties:
                       metrics:
-                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount.'
+                        description: 'List containing the metrics to be produced by the event source mapping. Valid values: EventCount, ErrorCount, KafkaMetrics.'
                         items:
                           type: string
                         type: array
@@ -2699,7 +2699,7 @@ spec:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
                       pollerGroupName:
-                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        description: Name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
                         type: string
                     type: object
                   queues:
@@ -2739,7 +2739,7 @@ spec:
                         description: Block for a Kafka schema registry setting. See below.
                         properties:
                           accessConfig:
-                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            description: Configuration block for authentication Lambda uses to access the schema registry. See below.
                             items:
                               properties:
                                 type:
@@ -2757,7 +2757,7 @@ spec:
                             description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
                             type: string
                           schemaValidationConfig:
-                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry. See below.
                             items:
                               properties:
                                 attribute:

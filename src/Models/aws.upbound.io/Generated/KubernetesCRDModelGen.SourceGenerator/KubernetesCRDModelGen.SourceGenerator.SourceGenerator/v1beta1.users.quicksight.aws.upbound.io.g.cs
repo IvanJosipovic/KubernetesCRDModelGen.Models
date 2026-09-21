@@ -335,7 +335,7 @@ public partial class V1beta1UserSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) for the user.</summary>
+    /// <summary>ARN for the user.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

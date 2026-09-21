@@ -202,7 +202,7 @@ public partial class V1beta1DNSSECConfigSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID of the virtual private cloud (VPC) that you&apos;re updating the DNSSEC validation status for.</summary>
+    /// <summary>ID of the VPC that you&apos;re updating the DNSSEC validation status for.</summary>
     [JsonPropertyName("resourceId")]
     public string? ResourceId { get; set; }
 
@@ -386,7 +386,7 @@ public partial class V1beta1DNSSECConfigSpecInitProviderResourceIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DNSSECConfigSpecInitProvider
 {
-    /// <summary>The ID of the virtual private cloud (VPC) that you&apos;re updating the DNSSEC validation status for.</summary>
+    /// <summary>ID of the VPC that you&apos;re updating the DNSSEC validation status for.</summary>
     [JsonPropertyName("resourceId")]
     public string? ResourceId { get; set; }
 
@@ -518,7 +518,7 @@ public partial class V1beta1DNSSECConfigStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The owner account ID of the virtual private cloud (VPC) for a configuration for DNSSEC validation.</summary>
+    /// <summary>Owner account ID of the VPC for a configuration for DNSSEC validation.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
@@ -529,7 +529,7 @@ public partial class V1beta1DNSSECConfigStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ID of the virtual private cloud (VPC) that you&apos;re updating the DNSSEC validation status for.</summary>
+    /// <summary>ID of the VPC that you&apos;re updating the DNSSEC validation status for.</summary>
     [JsonPropertyName("resourceId")]
     public string? ResourceId { get; set; }
 

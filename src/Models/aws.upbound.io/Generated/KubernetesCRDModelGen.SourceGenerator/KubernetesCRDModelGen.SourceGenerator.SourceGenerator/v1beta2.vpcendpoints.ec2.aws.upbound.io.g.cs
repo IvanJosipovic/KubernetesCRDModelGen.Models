@@ -2061,7 +2061,7 @@ public partial class V1beta2VPCEndpointStatusAtProviderSubnetConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPCEndpointStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the VPC endpoint.</summary>
+    /// <summary>ARN of the VPC endpoint.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

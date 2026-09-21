@@ -1052,7 +1052,7 @@ public partial class V1beta1WorkspaceStatusAtProvider
     [JsonPropertyName("accountAccessType")]
     public string? AccountAccessType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Grafana workspace.</summary>
+    /// <summary>ARN of the Grafana workspace.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

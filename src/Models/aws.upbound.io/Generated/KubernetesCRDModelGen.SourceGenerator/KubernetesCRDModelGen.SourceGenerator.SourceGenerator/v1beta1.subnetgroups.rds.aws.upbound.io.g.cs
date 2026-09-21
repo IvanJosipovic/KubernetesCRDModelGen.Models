@@ -206,7 +206,7 @@ public partial class V1beta1SubnetGroupSpecForProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupSpecForProvider
 {
-    /// <summary>The description of the DB subnet group.</summary>
+    /// <summary>Description of the DB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -225,7 +225,7 @@ public partial class V1beta1SubnetGroupSpecForProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1SubnetGroupSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of VPC subnet IDs.</summary>
+    /// <summary>List of VPC subnet IDs.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -397,7 +397,7 @@ public partial class V1beta1SubnetGroupSpecInitProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupSpecInitProvider
 {
-    /// <summary>The description of the DB subnet group.</summary>
+    /// <summary>Description of the DB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
@@ -409,7 +409,7 @@ public partial class V1beta1SubnetGroupSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1SubnetGroupSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of VPC subnet IDs.</summary>
+    /// <summary>List of VPC subnet IDs.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -605,15 +605,15 @@ public partial class V1beta1SubnetGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubnetGroupStatusAtProvider
 {
-    /// <summary>The ARN of the db subnet group.</summary>
+    /// <summary>ARN of the db subnet group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The description of the DB subnet group.</summary>
+    /// <summary>Description of the DB subnet group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The db subnet group name.</summary>
+    /// <summary>DB subnet group name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -624,11 +624,11 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A list of VPC subnet IDs.</summary>
+    /// <summary>List of VPC subnet IDs.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The network type of the db subnet group.</summary>
+    /// <summary>Network type of the db subnet group.</summary>
     [JsonPropertyName("supportedNetworkTypes")]
     public IList<string>? SupportedNetworkTypes { get; set; }
 
@@ -636,7 +636,7 @@ public partial class V1beta1SubnetGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
