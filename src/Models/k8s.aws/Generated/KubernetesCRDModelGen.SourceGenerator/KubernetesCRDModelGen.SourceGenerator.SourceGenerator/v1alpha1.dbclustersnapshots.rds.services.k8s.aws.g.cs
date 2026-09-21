@@ -109,7 +109,7 @@ public partial class V1alpha1DBClusterSnapshotSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the identifier of an existing DBCluster.
+    ///    * Must match the identifier of an existing DBCluster.
     /// 
     /// Example: my-cluster1
     /// </summary>
@@ -134,11 +134,11 @@ public partial class V1alpha1DBClusterSnapshotSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must contain from 1 to 63 letters, numbers, or hyphens.
+    ///    * Must contain from 1 to 63 letters, numbers, or hyphens.
     /// 
-    ///   - First character must be a letter.
+    ///    * First character must be a letter.
     /// 
-    ///   - Can&apos;t end with a hyphen or contain two consecutive hyphens.
+    ///    * Can&apos;t end with a hyphen or contain two consecutive hyphens.
     /// 
     /// Example: my-cluster1-snapshot1
     /// </summary>

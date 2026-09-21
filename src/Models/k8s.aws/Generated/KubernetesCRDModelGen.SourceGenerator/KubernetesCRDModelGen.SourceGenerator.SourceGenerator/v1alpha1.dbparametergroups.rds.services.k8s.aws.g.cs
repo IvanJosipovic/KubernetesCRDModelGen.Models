@@ -93,33 +93,33 @@ public partial class V1alpha1DBParameterGroupSpec
     /// 
     /// The following are the valid DB engine values:
     /// 
-    ///   - aurora-mysql
+    ///    * aurora-mysql
     /// 
-    ///   - aurora-postgresql
+    ///    * aurora-postgresql
     /// 
-    ///   - db2-ae
+    ///    * db2-ae
     /// 
-    ///   - db2-se
+    ///    * db2-se
     /// 
-    ///   - mysql
+    ///    * mysql
     /// 
-    ///   - oracle-ee
+    ///    * oracle-ee
     /// 
-    ///   - oracle-ee-cdb
+    ///    * oracle-ee-cdb
     /// 
-    ///   - oracle-se2
+    ///    * oracle-se2
     /// 
-    ///   - oracle-se2-cdb
+    ///    * oracle-se2-cdb
     /// 
-    ///   - postgres
+    ///    * postgres
     /// 
-    ///   - sqlserver-ee
+    ///    * sqlserver-ee
     /// 
-    ///   - sqlserver-se
+    ///    * sqlserver-se
     /// 
-    ///   - sqlserver-ex
+    ///    * sqlserver-ex
     /// 
-    ///   - sqlserver-web
+    ///    * sqlserver-web
     /// </summary>
     [JsonPropertyName("family")]
     public required string Family { get; set; }
@@ -129,11 +129,11 @@ public partial class V1alpha1DBParameterGroupSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be 1 to 255 letters, numbers, or hyphens.
+    ///    * Must be 1 to 255 letters, numbers, or hyphens.
     /// 
-    ///   - First character must be a letter
+    ///    * First character must be a letter
     /// 
-    ///   - Can&apos;t end with a hyphen or contain two consecutive hyphens
+    ///    * Can&apos;t end with a hyphen or contain two consecutive hyphens
     /// 
     /// This value is stored as a lowercase string.
     /// </summary>

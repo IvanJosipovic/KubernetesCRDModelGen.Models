@@ -122,19 +122,19 @@ public partial class V1alpha1DBClusterParameterGroupSpec
     /// and can be applied only to a DB cluster running a database engine and engine
     /// version compatible with that DB cluster parameter group family.
     /// 
-    /// # Aurora MySQL
+    /// Aurora MySQL
     /// 
     /// Example: aurora-mysql5.7, aurora-mysql8.0
     /// 
-    /// # Aurora PostgreSQL
+    /// Aurora PostgreSQL
     /// 
     /// Example: aurora-postgresql14
     /// 
-    /// # RDS for MySQL
+    /// RDS for MySQL
     /// 
     /// Example: mysql8.0
     /// 
-    /// # RDS for PostgreSQL
+    /// RDS for PostgreSQL
     /// 
     /// Example: postgres13
     /// 
@@ -154,13 +154,13 @@ public partial class V1alpha1DBClusterParameterGroupSpec
     /// 
     /// The following are the valid DB engine values:
     /// 
-    ///   - aurora-mysql
+    ///    * aurora-mysql
     /// 
-    ///   - aurora-postgresql
+    ///    * aurora-postgresql
     /// 
-    ///   - mysql
+    ///    * mysql
     /// 
-    ///   - postgres
+    ///    * postgres
     /// </summary>
     [JsonPropertyName("family")]
     public required string Family { get; set; }
@@ -170,7 +170,7 @@ public partial class V1alpha1DBClusterParameterGroupSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must not match the name of an existing DB cluster parameter group.
+    ///    * Must not match the name of an existing DB cluster parameter group.
     /// 
     /// This value is stored as a lowercase string.
     /// </summary>

@@ -151,11 +151,11 @@ public partial class V1alpha1DBClusterSpecKmsKeyRef
 /// 
 /// Constraints:
 /// 
-///   - Must contain from 8 to 41 characters.
+///    * Must contain from 8 to 41 characters.
 /// 
-///   - Can contain any printable ASCII character except &quot;/&quot;, &quot; &quot; &quot;, or &quot;@&quot;.
+///    * Can contain any printable ASCII character except &quot;/&quot;, &quot; &quot; &quot;, or &quot;@&quot;.
 /// 
-///   - Can&apos;t be specified if ManageMasterUserPassword is turned on.
+///    * Can&apos;t be specified if ManageMasterUserPassword is turned on.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -480,7 +480,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t specify more than three AZs.
+    ///    * Can&apos;t specify more than three AZs.
     /// </summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
@@ -495,8 +495,8 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - If specified, this value must be set to a number from 0 to 259,200 (72
-    ///     hours).
+    ///    * If specified, this value must be set to a number from 0 to 259,200 (72
+    ///    hours).
     /// </summary>
     [JsonPropertyName("backtrackWindow")]
     public long? BacktrackWindow { get; set; }
@@ -510,7 +510,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be a value from 1 to 35.
+    ///    * Must be a value from 1 to 35.
     /// </summary>
     [JsonPropertyName("backupRetentionPeriod")]
     public long? BackupRetentionPeriod { get; set; }
@@ -563,12 +563,12 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must contain from 1 to 63 (for Aurora DB clusters) or 1 to 52 (for Multi-AZ
-    ///     DB clusters) letters, numbers, or hyphens.
+    ///    * Must contain from 1 to 63 (for Aurora DB clusters) or 1 to 52 (for Multi-AZ
+    ///    DB clusters) letters, numbers, or hyphens.
     /// 
-    ///   - First character must be a letter.
+    ///    * First character must be a letter.
     /// 
-    ///   - Can&apos;t end with a hyphen or contain two consecutive hyphens.
+    ///    * Can&apos;t end with a hyphen or contain two consecutive hyphens.
     /// 
     /// Example: my-cluster1
     /// </summary>
@@ -600,8 +600,8 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - If supplied, must match the name of an existing DB cluster parameter
-    ///     group.
+    ///    * If supplied, must match the name of an existing DB cluster parameter
+    ///    group.
     /// </summary>
     [JsonPropertyName("dbClusterParameterGroupName")]
     public string? DbClusterParameterGroupName { get; set; }
@@ -627,7 +627,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the name of an existing DB subnet group.
+    ///    * Must match the name of an existing DB subnet group.
     /// 
     /// Example: mydbsubnetgroup
     /// </summary>
@@ -694,13 +694,13 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// The following values are valid for each DB engine:
     /// 
-    ///   - Aurora MySQL - audit | error | general | slowquery
+    ///    * Aurora MySQL - audit | error | general | slowquery
     /// 
-    ///   - Aurora PostgreSQL - postgresql
+    ///    * Aurora PostgreSQL - postgresql
     /// 
-    ///   - RDS for MySQL - error | general | slowquery
+    ///    * RDS for MySQL - error | general | slowquery
     /// 
-    ///   - RDS for PostgreSQL - postgresql | upgrade
+    ///    * RDS for PostgreSQL - postgresql | upgrade
     /// 
     /// For more information about exporting CloudWatch Logs for Amazon RDS, see
     /// Publishing Database Logs to Amazon CloudWatch Logs (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html#USER_LogAccess.Procedural.UploadtoCloudWatch)
@@ -780,16 +780,16 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Valid Values:
     /// 
-    ///   - aurora-mysql
+    ///    * aurora-mysql
     /// 
-    ///   - aurora-postgresql
+    ///    * aurora-postgresql
     /// 
-    ///   - mysql
+    ///    * mysql
     /// 
-    ///   - postgres
+    ///    * postgres
     /// 
-    ///   - neptune - For information about using Amazon Neptune, see the Amazon
-    ///     Neptune User Guide (https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
+    ///    * neptune - For information about using Amazon Neptune, see the Amazon
+    ///    Neptune User Guide (https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
     /// </summary>
     [JsonPropertyName("engine")]
     public required string Engine { get; set; }
@@ -803,9 +803,9 @@ public partial class V1alpha1DBClusterSpec
     /// For information about limitations and requirements for Serverless DB clusters,
     /// see the following sections in the Amazon Aurora User Guide:
     /// 
-    ///   - Limitations of Aurora Serverless v1 (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.limitations)
+    ///    * Limitations of Aurora Serverless v1 (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.limitations)
     /// 
-    ///   - Requirements for Aurora Serverless v2 (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.requirements.html)
+    ///    * Requirements for Aurora Serverless v2 (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.requirements.html)
     /// 
     /// Valid for Cluster Type: Aurora DB clusters only
     /// </summary>
@@ -840,18 +840,18 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// For information about a specific engine, see the following topics:
     /// 
-    ///   - Aurora MySQL - see Database engine updates for Amazon Aurora MySQL (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.html)
-    ///     in the Amazon Aurora User Guide.
+    ///    * Aurora MySQL - see Database engine updates for Amazon Aurora MySQL (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.html)
+    ///    in the Amazon Aurora User Guide.
     /// 
-    ///   - Aurora PostgreSQL - see Amazon Aurora PostgreSQL releases and engine
-    ///     versions (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.20180305.html)
-    ///     in the Amazon Aurora User Guide.
+    ///    * Aurora PostgreSQL - see Amazon Aurora PostgreSQL releases and engine
+    ///    versions (https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.20180305.html)
+    ///    in the Amazon Aurora User Guide.
     /// 
-    ///   - RDS for MySQL - see Amazon RDS for MySQL (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.VersionMgmt)
-    ///     in the Amazon RDS User Guide.
+    ///    * RDS for MySQL - see Amazon RDS for MySQL (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html#MySQL.Concepts.VersionMgmt)
+    ///    in the Amazon RDS User Guide.
     /// 
-    ///   - RDS for PostgreSQL - see Amazon RDS for PostgreSQL (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts)
-    ///     in the Amazon RDS User Guide.
+    ///    * RDS for PostgreSQL - see Amazon RDS for PostgreSQL (https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts)
+    ///    in the Amazon RDS User Guide.
     /// 
     /// Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
     /// </summary>
@@ -880,8 +880,8 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be a multiple between .5 and 50 of the storage amount for the DB
-    ///     cluster.
+    ///    * Must be a multiple between .5 and 50 of the storage amount for the DB
+    ///    cluster.
     /// </summary>
     [JsonPropertyName("iops")]
     public long? Iops { get; set; }
@@ -895,12 +895,12 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// When a KMS key isn&apos;t specified in KmsKeyId:
     /// 
-    ///   - If ReplicationSourceIdentifier identifies an encrypted source, then
-    ///     Amazon RDS uses the KMS key used to encrypt the source. Otherwise, Amazon
-    ///     RDS uses your default KMS key.
+    ///    * If ReplicationSourceIdentifier identifies an encrypted source, then
+    ///    Amazon RDS uses the KMS key used to encrypt the source. Otherwise, Amazon
+    ///    RDS uses your default KMS key.
     /// 
-    ///   - If the StorageEncrypted parameter is enabled and ReplicationSourceIdentifier
-    ///     isn&apos;t specified, then Amazon RDS uses your default KMS key.
+    ///    * If the StorageEncrypted parameter is enabled and ReplicationSourceIdentifier
+    ///    isn&apos;t specified, then Amazon RDS uses your default KMS key.
     /// 
     /// There is a default KMS key for your Amazon Web Services account. Your Amazon
     /// Web Services account has a different default KMS key for each Amazon Web
@@ -942,8 +942,8 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Can&apos;t manage the master user password with Amazon Web Services Secrets
-    ///     Manager if MasterUserPassword is specified.
+    ///    * Can&apos;t manage the master user password with Amazon Web Services Secrets
+    ///    Manager if MasterUserPassword is specified.
     /// </summary>
     [JsonPropertyName("manageMasterUserPassword")]
     public bool? ManageMasterUserPassword { get; set; }
@@ -955,11 +955,11 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must contain from 8 to 41 characters.
+    ///    * Must contain from 8 to 41 characters.
     /// 
-    ///   - Can contain any printable ASCII character except &quot;/&quot;, &quot; &quot; &quot;, or &quot;@&quot;.
+    ///    * Can contain any printable ASCII character except &quot;/&quot;, &quot; &quot; &quot;, or &quot;@&quot;.
     /// 
-    ///   - Can&apos;t be specified if ManageMasterUserPassword is turned on.
+    ///    * Can&apos;t be specified if ManageMasterUserPassword is turned on.
     /// </summary>
     [JsonPropertyName("masterUserPassword")]
     public V1alpha1DBClusterSpecMasterUserPassword? MasterUserPassword { get; set; }
@@ -1008,11 +1008,11 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be 1 to 16 letters or numbers.
+    ///    * Must be 1 to 16 letters or numbers.
     /// 
-    ///   - First character must be a letter.
+    ///    * First character must be a letter.
     /// 
-    ///   - Can&apos;t be a reserved word for the chosen database engine.
+    ///    * Can&apos;t be a reserved word for the chosen database engine.
     /// </summary>
     [JsonPropertyName("masterUsername")]
     public string? MasterUsername { get; set; }
@@ -1122,12 +1122,12 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Valid Values:
     /// 
-    ///   - 7
+    ///    * 7
     /// 
-    ///   - month * 31, where month is a number of months from 1-23. Examples: 93
-    ///     (3 months * 31), 341 (11 months * 31), 589 (19 months * 31)
+    ///    * month * 31, where month is a number of months from 1-23. Examples: 93
+    ///    (3 months * 31), 341 (11 months * 31), 589 (19 months * 31)
     /// 
-    ///   - 731
+    ///    * 731
     /// 
     /// Default: 7 days
     /// 
@@ -1146,9 +1146,9 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Default:
     /// 
-    ///   - RDS for MySQL and Aurora MySQL - 3306
+    ///    * RDS for MySQL and Aurora MySQL - 3306
     /// 
-    ///   - RDS for PostgreSQL and Aurora PostgreSQL - 5432
+    ///    * RDS for PostgreSQL and Aurora PostgreSQL - 5432
     /// </summary>
     [JsonPropertyName("port")]
     public long? Port { get; set; }
@@ -1167,21 +1167,21 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// The presigned URL request must contain the following parameter values:
     /// 
-    ///   - KmsKeyId - The KMS key identifier for the KMS key to use to encrypt
-    ///     the copy of the DB cluster in the destination Amazon Web Services Region.
-    ///     This should refer to the same KMS key for both the CreateDBCluster operation
-    ///     that is called in the destination Amazon Web Services Region, and the
-    ///     operation contained in the presigned URL.
+    ///    * KmsKeyId - The KMS key identifier for the KMS key to use to encrypt
+    ///    the copy of the DB cluster in the destination Amazon Web Services Region.
+    ///    This should refer to the same KMS key for both the CreateDBCluster operation
+    ///    that is called in the destination Amazon Web Services Region, and the
+    ///    operation contained in the presigned URL.
     /// 
-    ///   - DestinationRegion - The name of the Amazon Web Services Region that
-    ///     Aurora read replica will be created in.
+    ///    * DestinationRegion - The name of the Amazon Web Services Region that
+    ///    Aurora read replica will be created in.
     /// 
-    ///   - ReplicationSourceIdentifier - The DB cluster identifier for the encrypted
-    ///     DB cluster to be copied. This identifier must be in the Amazon Resource
-    ///     Name (ARN) format for the source Amazon Web Services Region. For example,
-    ///     if you are copying an encrypted DB cluster from the us-west-2 Amazon Web
-    ///     Services Region, then your ReplicationSourceIdentifier would look like
-    ///     Example: arn:aws:rds:us-west-2:123456789012:cluster:aurora-cluster1.
+    ///    * ReplicationSourceIdentifier - The DB cluster identifier for the encrypted
+    ///    DB cluster to be copied. This identifier must be in the Amazon Resource
+    ///    Name (ARN) format for the source Amazon Web Services Region. For example,
+    ///    if you are copying an encrypted DB cluster from the us-west-2 Amazon Web
+    ///    Services Region, then your ReplicationSourceIdentifier would look like
+    ///    Example: arn:aws:rds:us-west-2:123456789012:cluster:aurora-cluster1.
     /// 
     /// To learn how to generate a Signature Version 4 signed request, see Authenticating
     /// Requests: Using Query Parameters (Amazon Web Services Signature Version 4)
@@ -1212,13 +1212,13 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be in the format hh24:mi-hh24:mi.
+    ///    * Must be in the format hh24:mi-hh24:mi.
     /// 
-    ///   - Must be in Universal Coordinated Time (UTC).
+    ///    * Must be in Universal Coordinated Time (UTC).
     /// 
-    ///   - Must not conflict with the preferred maintenance window.
+    ///    * Must not conflict with the preferred maintenance window.
     /// 
-    ///   - Must be at least 30 minutes.
+    ///    * Must be at least 30 minutes.
     /// </summary>
     [JsonPropertyName("preferredBackupWindow")]
     public string? PreferredBackupWindow { get; set; }
@@ -1236,13 +1236,13 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be in the format ddd:hh24:mi-ddd:hh24:mi.
+    ///    * Must be in the format ddd:hh24:mi-ddd:hh24:mi.
     /// 
-    ///   - Days must be one of Mon | Tue | Wed | Thu | Fri | Sat | Sun.
+    ///    * Days must be one of Mon | Tue | Wed | Thu | Fri | Sat | Sun.
     /// 
-    ///   - Must be in Universal Coordinated Time (UTC).
+    ///    * Must be in Universal Coordinated Time (UTC).
     /// 
-    ///   - Must be at least 30 minutes.
+    ///    * Must be at least 30 minutes.
     /// </summary>
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
@@ -1269,20 +1269,20 @@ public partial class V1alpha1DBClusterSpec
     /// If DBSubnetGroupName isn&apos;t specified, and PubliclyAccessible isn&apos;t specified,
     /// the following applies:
     /// 
-    ///   - If the default VPC in the target Region doesn’t have an internet gateway
-    ///     attached to it, the DB cluster is private.
+    ///    * If the default VPC in the target Region doesn’t have an internet gateway
+    ///    attached to it, the DB cluster is private.
     /// 
-    ///   - If the default VPC in the target Region has an internet gateway attached
-    ///     to it, the DB cluster is public.
+    ///    * If the default VPC in the target Region has an internet gateway attached
+    ///    to it, the DB cluster is public.
     /// 
     /// If DBSubnetGroupName is specified, and PubliclyAccessible isn&apos;t specified,
     /// the following applies:
     /// 
-    ///   - If the subnets are part of a VPC that doesn’t have an internet gateway
-    ///     attached to it, the DB cluster is private.
+    ///    * If the subnets are part of a VPC that doesn’t have an internet gateway
+    ///    attached to it, the DB cluster is private.
     /// 
-    ///   - If the subnets are part of a VPC that has an internet gateway attached
-    ///     to it, the DB cluster is public.
+    ///    * If the subnets are part of a VPC that has an internet gateway attached
+    ///    to it, the DB cluster is public.
     /// </summary>
     [JsonPropertyName("publiclyAccessible")]
     public bool? PubliclyAccessible { get; set; }
@@ -1303,13 +1303,13 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must be before the latest restorable time for the DB instance
+    ///    * Must be before the latest restorable time for the DB instance
     /// 
-    ///   - Must be specified if UseLatestRestorableTime parameter isn&apos;t provided
+    ///    * Must be specified if UseLatestRestorableTime parameter isn&apos;t provided
     /// 
-    ///   - Can&apos;t be specified if the UseLatestRestorableTime parameter is enabled
+    ///    * Can&apos;t be specified if the UseLatestRestorableTime parameter is enabled
     /// 
-    ///   - Can&apos;t be specified if the RestoreType parameter is copy-on-write
+    ///    * Can&apos;t be specified if the RestoreType parameter is copy-on-write
     /// 
     /// Example: 2015-03-07T23:45:00Z
     /// 
@@ -1322,11 +1322,11 @@ public partial class V1alpha1DBClusterSpec
     /// The type of restore to be performed. You can specify one of the following
     /// values:
     /// 
-    ///   - full-copy - The new DB cluster is restored as a full copy of the source
-    ///     DB cluster.
+    ///    * full-copy - The new DB cluster is restored as a full copy of the source
+    ///    DB cluster.
     /// 
-    ///   - copy-on-write - The new DB cluster is restored as a clone of the source
-    ///     DB cluster.
+    ///    * copy-on-write - The new DB cluster is restored as a clone of the source
+    ///    DB cluster.
     /// 
     /// If you don&apos;t specify a RestoreType value, then the new DB cluster is restored
     /// as a full copy of the source DB cluster.
@@ -1363,7 +1363,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the identifier of an existing Snapshot.
+    ///    * Must match the identifier of an existing Snapshot.
     /// 
     /// Valid for: Aurora DB clusters and Multi-AZ DB clusters
     /// </summary>
@@ -1375,7 +1375,7 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Constraints:
     /// 
-    ///   - Must match the identifier of an existing DBCluster.
+    ///    * Must match the identifier of an existing DBCluster.
     /// 
     /// Valid for: Aurora DB clusters and Multi-AZ DB clusters
     /// </summary>
@@ -1427,15 +1427,15 @@ public partial class V1alpha1DBClusterSpec
     /// 
     /// Valid Values:
     /// 
-    ///   - Aurora DB clusters - aurora | aurora-iopt1
+    ///    * Aurora DB clusters - aurora | aurora-iopt1
     /// 
-    ///   - Multi-AZ DB clusters - io1 | io2 | gp3
+    ///    * Multi-AZ DB clusters - io1 | io2 | gp3
     /// 
     /// Default:
     /// 
-    ///   - Aurora DB clusters - aurora
+    ///    * Aurora DB clusters - aurora
     /// 
-    ///   - Multi-AZ DB clusters - io1
+    ///    * Multi-AZ DB clusters - io1
     /// 
     /// When you create an Aurora DB cluster with the storage type set to aurora-iopt1,
     /// the storage type is returned in the response. The storage type isn&apos;t returned
