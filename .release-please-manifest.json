@@ -5,7 +5,7 @@
   "src/Models/argoproj.io": "1.22.0",
   "src/Models/azure.com": "1.19.0",
   "src/Models/cnrm.cloud.google.com": "1.287.0",
-  "src/Models/aws.upbound.io": "1.44.0",
+  "src/Models/aws.upbound.io": "1.45.0",
   "src/Models/azapi.upbound.io": "1.12.0",
   "src/Models/azure.upbound.io": "1.54.0",
   "src/Models/azuread.upbound.io": "1.15.0",
