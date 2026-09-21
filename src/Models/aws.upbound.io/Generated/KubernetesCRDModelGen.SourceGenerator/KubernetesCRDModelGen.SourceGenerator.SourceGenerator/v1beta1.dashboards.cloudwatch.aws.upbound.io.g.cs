@@ -279,7 +279,7 @@ public partial class V1beta1DashboardSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DashboardStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the dashboard.</summary>
+    /// <summary>ARN of the dashboard.</summary>
     [JsonPropertyName("dashboardArn")]
     public string? DashboardArn { get; set; }
 

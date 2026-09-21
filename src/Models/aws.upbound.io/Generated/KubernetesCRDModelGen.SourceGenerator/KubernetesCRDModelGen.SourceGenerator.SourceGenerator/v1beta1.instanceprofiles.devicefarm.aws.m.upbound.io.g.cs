@@ -224,7 +224,7 @@ public partial class V1beta1InstanceProfileSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceProfileStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this instance profile.</summary>
+    /// <summary>ARN of this instance profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

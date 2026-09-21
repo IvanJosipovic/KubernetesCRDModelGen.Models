@@ -104,17 +104,17 @@ public partial class V1beta2ModelSpecForProviderContainerAdditionalModelDataSour
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecForProviderContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecForProviderContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -194,7 +194,7 @@ public partial class V1beta2ModelSpecForProviderContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelSpecForProviderContainerImageConfig? ImageConfig { get; set; }
 
@@ -215,7 +215,7 @@ public partial class V1beta2ModelSpecForProviderContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -432,17 +432,17 @@ public partial class V1beta2ModelSpecForProviderPrimaryContainerAdditionalModelD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecForProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecForProviderPrimaryContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -523,7 +523,7 @@ public partial class V1beta2ModelSpecForProviderPrimaryContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelSpecForProviderPrimaryContainerImageConfig? ImageConfig { get; set; }
 
@@ -544,7 +544,7 @@ public partial class V1beta2ModelSpecForProviderPrimaryContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -666,17 +666,17 @@ public partial class V1beta2ModelSpecInitProviderContainerAdditionalModelDataSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecInitProviderContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecInitProviderContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -756,7 +756,7 @@ public partial class V1beta2ModelSpecInitProviderContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelSpecInitProviderContainerImageConfig? ImageConfig { get; set; }
 
@@ -777,7 +777,7 @@ public partial class V1beta2ModelSpecInitProviderContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -994,17 +994,17 @@ public partial class V1beta2ModelSpecInitProviderPrimaryContainerAdditionalModel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecInitProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelSpecInitProviderPrimaryContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -1085,7 +1085,7 @@ public partial class V1beta2ModelSpecInitProviderPrimaryContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelSpecInitProviderPrimaryContainerImageConfig? ImageConfig { get; set; }
 
@@ -1106,7 +1106,7 @@ public partial class V1beta2ModelSpecInitProviderPrimaryContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -1416,17 +1416,17 @@ public partial class V1beta2ModelStatusAtProviderContainerAdditionalModelDataSou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelStatusAtProviderContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelStatusAtProviderContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -1506,7 +1506,7 @@ public partial class V1beta2ModelStatusAtProviderContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelStatusAtProviderContainerImageConfig? ImageConfig { get; set; }
 
@@ -1527,7 +1527,7 @@ public partial class V1beta2ModelStatusAtProviderContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -1597,17 +1597,17 @@ public partial class V1beta2ModelStatusAtProviderPrimaryContainerAdditionalModel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelStatusAtProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
-    /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
+    /// <summary>ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
     [JsonPropertyName("repositoryCredentialsProviderArn")]
     public string? RepositoryCredentialsProviderArn { get; set; }
 }
 
-/// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+/// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelStatusAtProviderPrimaryContainerImageConfig
 {
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.</summary>
     [JsonPropertyName("repositoryAccessMode")]
     public string? RepositoryAccessMode { get; set; }
 
@@ -1688,7 +1688,7 @@ public partial class V1beta2ModelStatusAtProviderPrimaryContainer
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
+    /// <summary>Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.</summary>
     [JsonPropertyName("imageConfig")]
     public V1beta2ModelStatusAtProviderPrimaryContainerImageConfig? ImageConfig { get; set; }
 
@@ -1709,7 +1709,7 @@ public partial class V1beta2ModelStatusAtProviderPrimaryContainer
     public string? ModelDataUrl { get; set; }
 
     /// <summary>
-    /// Amazon Resource Name (ARN) of the model package to use to create the model.
+    /// ARN of the model package to use to create the model.
     /// A list of key value pairs.
     /// </summary>
     [JsonPropertyName("modelPackageName")]
@@ -1738,7 +1738,7 @@ public partial class V1beta2ModelStatusAtProviderVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ModelStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) assigned by AWS to this model.</summary>
+    /// <summary>ARN assigned by AWS to this model.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

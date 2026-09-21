@@ -206,7 +206,7 @@ public partial class V1beta1AccessPointPolicySpecForProviderAccessPointArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPointPolicySpecForProvider
 {
-    /// <summary>The ARN of the access point that you want to associate with the specified policy.</summary>
+    /// <summary>ARN of the access point that you want to associate with the specified policy.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
@@ -218,7 +218,7 @@ public partial class V1beta1AccessPointPolicySpecForProvider
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1AccessPointPolicySpecForProviderAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>The policy that you want to apply to the specified access point.</summary>
+    /// <summary>Policy that you want to apply to the specified access point.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -393,7 +393,7 @@ public partial class V1beta1AccessPointPolicySpecInitProviderAccessPointArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPointPolicySpecInitProvider
 {
-    /// <summary>The ARN of the access point that you want to associate with the specified policy.</summary>
+    /// <summary>ARN of the access point that you want to associate with the specified policy.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
@@ -405,7 +405,7 @@ public partial class V1beta1AccessPointPolicySpecInitProvider
     [JsonPropertyName("accessPointArnSelector")]
     public V1beta1AccessPointPolicySpecInitProviderAccessPointArnSelector? AccessPointArnSelector { get; set; }
 
-    /// <summary>The policy that you want to apply to the specified access point.</summary>
+    /// <summary>Policy that you want to apply to the specified access point.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -597,19 +597,19 @@ public partial class V1beta1AccessPointPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessPointPolicyStatusAtProvider
 {
-    /// <summary>The ARN of the access point that you want to associate with the specified policy.</summary>
+    /// <summary>ARN of the access point that you want to associate with the specified policy.</summary>
     [JsonPropertyName("accessPointArn")]
     public string? AccessPointArn { get; set; }
 
-    /// <summary>Indicates whether this access point currently has a policy that allows public access.</summary>
+    /// <summary>Whether this access point currently has a policy that allows public access.</summary>
     [JsonPropertyName("hasPublicAccessPolicy")]
     public bool? HasPublicAccessPolicy { get; set; }
 
-    /// <summary>The AWS account ID and access point name separated by a colon (:).</summary>
+    /// <summary>AWS account ID and access point name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The policy that you want to apply to the specified access point.</summary>
+    /// <summary>Policy that you want to apply to the specified access point.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

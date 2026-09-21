@@ -433,7 +433,7 @@ public partial class V1beta1SubnetSpecForProvider
     [JsonPropertyName("mapPublicIpOnLaunch")]
     public bool? MapPublicIpOnLaunch { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -874,7 +874,7 @@ public partial class V1beta1SubnetSpecInitProvider
     [JsonPropertyName("mapPublicIpOnLaunch")]
     public bool? MapPublicIpOnLaunch { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -1097,7 +1097,7 @@ public partial class V1beta1SubnetStatusAtProvider
     [JsonPropertyName("mapPublicIpOnLaunch")]
     public bool? MapPublicIpOnLaunch { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 

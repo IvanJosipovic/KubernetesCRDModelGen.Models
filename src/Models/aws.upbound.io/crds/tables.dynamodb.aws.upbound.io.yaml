@@ -1659,10 +1659,10 @@ spec:
                           description: Sets the number of warm read and write units for this index. See below.
                           properties:
                             readUnitsPerSecond:
-                              description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                              description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                               type: number
                             writeUnitsPerSecond:
-                              description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                              description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                               type: number
                           type: object
                         writeCapacity:
@@ -2024,10 +2024,10 @@ spec:
                     description: Sets the number of warm read and write units for the specified table. See below.
                     properties:
                       readUnitsPerSecond:
-                        description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                        description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                         type: number
                       writeUnitsPerSecond:
-                        description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                        description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                         type: number
                     type: object
                   writeCapacity:
@@ -2118,10 +2118,10 @@ spec:
                           description: Sets the number of warm read and write units for this index. See below.
                           properties:
                             readUnitsPerSecond:
-                              description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                              description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                               type: number
                             writeUnitsPerSecond:
-                              description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                              description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                               type: number
                           type: object
                         writeCapacity:
@@ -2478,10 +2478,10 @@ spec:
                     description: Sets the number of warm read and write units for the specified table. See below.
                     properties:
                       readUnitsPerSecond:
-                        description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                        description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                         type: number
                       writeUnitsPerSecond:
-                        description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                        description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                         type: number
                     type: object
                   writeCapacity:
@@ -2651,10 +2651,10 @@ spec:
                           description: Sets the number of warm read and write units for this index. See below.
                           properties:
                             readUnitsPerSecond:
-                              description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                              description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                               type: number
                             writeUnitsPerSecond:
-                              description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                              description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                               type: number
                           type: object
                         writeCapacity:
@@ -2673,7 +2673,6 @@ spec:
                     description: Attribute to use as the hash (partition) key. Must also be defined as an attribute. See below.
                     type: string
                   id:
-                    description: Name of the table
                     type: string
                   importTable:
                     description: Import Amazon S3 data into a new table. See below.
@@ -2903,10 +2902,10 @@ spec:
                     description: Sets the number of warm read and write units for the specified table. See below.
                     properties:
                       readUnitsPerSecond:
-                        description: Number of read operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 12000 (default).
+                        description: Number of read operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 12000 (default).
                         type: number
                       writeUnitsPerSecond:
-                        description: Number of write operations a table or index can instantaneously support. For the base table, decreasing this value will force a new resource. For a global secondary index, this value can be increased or decreased without recreation. Minimum value of 4000 (default).
+                        description: Number of write operations a table or index can instantaneously support. For the base table, this value cannot be decreased. For a global secondary index, this value can be increased or decreased. Minimum value of 4000 (default).
                         type: number
                     type: object
                   writeCapacity:

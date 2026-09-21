@@ -353,7 +353,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
 {
-    /// <summary>The AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the Amazon Resource Name (ARN) for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
+    /// <summary>AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the ARN for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -365,7 +365,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1DBInstanceAutomatedBackupsReplicationSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>A URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
     [JsonPropertyName("preSignedUrl")]
     public string? PreSignedUrl { get; set; }
 
@@ -376,11 +376,11 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The retention period for the replicated automated backups, defaults to 7.</summary>
+    /// <summary>Retention period for the replicated automated backups, defaults to 7.</summary>
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
+    /// <summary>ARN of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
     [JsonPropertyName("sourceDbInstanceArn")]
     public string? SourceDbInstanceArn { get; set; }
 
@@ -703,7 +703,7 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvider
 {
-    /// <summary>The AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the Amazon Resource Name (ARN) for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
+    /// <summary>AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the ARN for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -715,15 +715,15 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProvide
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1DBInstanceAutomatedBackupsReplicationSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>A URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
     [JsonPropertyName("preSignedUrl")]
     public string? PreSignedUrl { get; set; }
 
-    /// <summary>The retention period for the replicated automated backups, defaults to 7.</summary>
+    /// <summary>Retention period for the replicated automated backups, defaults to 7.</summary>
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
+    /// <summary>ARN of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
     [JsonPropertyName("sourceDbInstanceArn")]
     public string? SourceDbInstanceArn { get; set; }
 
@@ -923,15 +923,15 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the replicated automated backups.</summary>
+    /// <summary>ARN of the replicated automated backups.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the Amazon Resource Name (ARN) for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
+    /// <summary>AWS KMS key identifier for encryption of the replicated automated backups. The KMS key ID is the ARN for the KMS encryption key in the destination AWS Region, for example, arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>A URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
+    /// <summary>URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsReplication action to be called in the AWS Region of the source DB instance.</summary>
     [JsonPropertyName("preSignedUrl")]
     public string? PreSignedUrl { get; set; }
 
@@ -942,11 +942,11 @@ public partial class V1beta1DBInstanceAutomatedBackupsReplicationStatusAtProvide
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The retention period for the replicated automated backups, defaults to 7.</summary>
+    /// <summary>Retention period for the replicated automated backups, defaults to 7.</summary>
     [JsonPropertyName("retentionPeriod")]
     public double? RetentionPeriod { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
+    /// <summary>ARN of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-west-2:123456789012:db:mydatabase.</summary>
     [JsonPropertyName("sourceDbInstanceArn")]
     public string? SourceDbInstanceArn { get; set; }
 }

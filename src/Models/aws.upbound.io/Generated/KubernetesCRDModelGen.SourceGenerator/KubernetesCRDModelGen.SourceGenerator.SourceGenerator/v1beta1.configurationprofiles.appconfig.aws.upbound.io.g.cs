@@ -400,7 +400,7 @@ public partial class V1beta1ConfigurationProfileSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.</summary>
+    /// <summary>Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -439,7 +439,7 @@ public partial class V1beta1ConfigurationProfileSpecForProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.</summary>
+    /// <summary>Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1ConfigurationProfileSpecForProviderValidator>? Validator { get; set; }
 }
@@ -801,7 +801,7 @@ public partial class V1beta1ConfigurationProfileSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.</summary>
+    /// <summary>Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -833,7 +833,7 @@ public partial class V1beta1ConfigurationProfileSpecInitProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.</summary>
+    /// <summary>Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1ConfigurationProfileSpecInitProviderValidator>? Validator { get; set; }
 }
@@ -1042,7 +1042,7 @@ public partial class V1beta1ConfigurationProfileStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The configuration profile ID.</summary>
+    /// <summary>Configuration profile ID.</summary>
     [JsonPropertyName("configurationProfileId")]
     public string? ConfigurationProfileId { get; set; }
 
@@ -1054,7 +1054,7 @@ public partial class V1beta1ConfigurationProfileStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.</summary>
+    /// <summary>Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -1089,7 +1089,7 @@ public partial class V1beta1ConfigurationProfileStatusAtProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.</summary>
+    /// <summary>Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.</summary>
     [JsonPropertyName("validator")]
     public IList<V1beta1ConfigurationProfileStatusAtProviderValidator>? Validator { get; set; }
 }

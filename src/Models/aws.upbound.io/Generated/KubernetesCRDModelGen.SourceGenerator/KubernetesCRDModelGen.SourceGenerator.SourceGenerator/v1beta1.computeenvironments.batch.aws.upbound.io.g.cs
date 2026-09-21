@@ -695,7 +695,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
-    /// <summary>Provides information used to select Amazon Machine Images (AMIs) for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Provides information used to select AMIs for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentSpecForProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
@@ -703,7 +703,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
@@ -759,7 +759,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1ComputeEnvironmentSpecForProviderComputeResourcesSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>ARN of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
@@ -789,7 +789,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProviderComputeResources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecForProviderEksConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EKS cluster.</summary>
+    /// <summary>ARN of the Amazon EKS cluster.</summary>
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
@@ -978,7 +978,7 @@ public partial class V1beta1ComputeEnvironmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
+    /// <summary>Full ARN of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 
@@ -1647,7 +1647,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
-    /// <summary>Provides information used to select Amazon Machine Images (AMIs) for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Provides information used to select AMIs for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
@@ -1655,7 +1655,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
@@ -1711,7 +1711,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
     [JsonPropertyName("securityGroupIdsSelector")]
     public V1beta1ComputeEnvironmentSpecInitProviderComputeResourcesSecurityGroupIdsSelector? SecurityGroupIdsSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>ARN of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
@@ -1741,7 +1741,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProviderComputeResources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentSpecInitProviderEksConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EKS cluster.</summary>
+    /// <summary>ARN of the Amazon EKS cluster.</summary>
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
@@ -1935,7 +1935,7 @@ public partial class V1beta1ComputeEnvironmentSpecInitProvider
     [JsonPropertyName("eksConfiguration")]
     public V1beta1ComputeEnvironmentSpecInitProviderEksConfiguration? EksConfiguration { get; set; }
 
-    /// <summary>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
+    /// <summary>Full ARN of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 
@@ -2199,7 +2199,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("desiredVcpus")]
     public double? DesiredVcpus { get; set; }
 
-    /// <summary>Provides information used to select Amazon Machine Images (AMIs) for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>Provides information used to select AMIs for EC2 instances in the compute environment. If Ec2Configuration isn&apos;t specified, the default is ECS_AL2. This parameter isn&apos;t applicable to jobs that are running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("ec2Configuration")]
     public IList<V1beta1ComputeEnvironmentStatusAtProviderComputeResourcesEc2Configuration>? Ec2Configuration { get; set; }
 
@@ -2207,7 +2207,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("ec2KeyPair")]
     public string? Ec2KeyPair { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
+    /// <summary>AMI ID used for instances launched in the compute environment. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified. (Deprecated, use ec2_configuration image_id_override instead)</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
@@ -2239,7 +2239,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
+    /// <summary>ARN of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. This parameter is required for SPOT compute environments. This parameter isn&apos;t applicable to jobs running on Fargate resources, and shouldn&apos;t be specified.</summary>
     [JsonPropertyName("spotIamFleetRole")]
     public string? SpotIamFleetRole { get; set; }
 
@@ -2261,7 +2261,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderComputeResources
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProviderEksConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon EKS cluster.</summary>
+    /// <summary>ARN of the Amazon EKS cluster.</summary>
     [JsonPropertyName("eksClusterArn")]
     public string? EksClusterArn { get; set; }
 
@@ -2288,7 +2288,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProviderUpdatePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeEnvironmentStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the compute environment.</summary>
+    /// <summary>ARN of the compute environment.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2296,7 +2296,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProvider
     [JsonPropertyName("computeResources")]
     public V1beta1ComputeEnvironmentStatusAtProviderComputeResources? ComputeResources { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.</summary>
+    /// <summary>ARN of the underlying Amazon ECS cluster used by the compute environment.</summary>
     [JsonPropertyName("ecsClusterArn")]
     public string? EcsClusterArn { get; set; }
 
@@ -2314,7 +2314,7 @@ public partial class V1beta1ComputeEnvironmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
+    /// <summary>Full ARN of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.</summary>
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 

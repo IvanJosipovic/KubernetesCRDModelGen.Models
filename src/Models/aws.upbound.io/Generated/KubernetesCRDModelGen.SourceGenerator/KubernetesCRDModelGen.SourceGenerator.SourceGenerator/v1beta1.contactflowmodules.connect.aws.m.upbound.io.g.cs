@@ -558,7 +558,7 @@ public partial class V1beta1ContactFlowModuleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ContactFlowModuleStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Contact Flow Module.</summary>
+    /// <summary>ARN of the Contact Flow Module.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

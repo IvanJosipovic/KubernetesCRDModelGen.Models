@@ -81,8 +81,23 @@ spec:
                     - name
                     type: object
                   authTokenUpdateStrategy:
-                    description: Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.
+                    description: Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.
                     type: string
+                  authTokenWoSecretRef:
+                    description: Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.
+                    properties:
+                      key:
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
+                  authTokenWoVersion:
+                    description: Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.
+                    type: number
                   autoGenerateAuthToken:
                     description: |-
                       Password used to access a password protected server. Can be specified only if transit_encryption_enabled = true.
@@ -92,7 +107,6 @@ spec:
                     description: |-
                       Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
                       Only supported for engine types "redis" and "valkey" and if the engine version is 6 or higher.
-                      Defaults to true.
                     type: string
                   automaticFailoverEnabled:
                     description: Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If enabled, num_cache_clusters must be greater than 1. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to false.
@@ -481,13 +495,13 @@ spec:
                         type: object
                     type: object
                   securityGroupIds:
-                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   securityGroupNames:
-                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array
@@ -654,13 +668,27 @@ spec:
                     - name
                     type: object
                   authTokenUpdateStrategy:
-                    description: Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.
+                    description: Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.
                     type: string
+                  authTokenWoSecretRef:
+                    description: Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.
+                    properties:
+                      key:
+                        type: string
+                      name:
+                        description: Name of the secret.
+                        type: string
+                    required:
+                    - key
+                    - name
+                    type: object
+                  authTokenWoVersion:
+                    description: Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.
+                    type: number
                   autoMinorVersionUpgrade:
                     description: |-
                       Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
                       Only supported for engine types "redis" and "valkey" and if the engine version is 6 or higher.
-                      Defaults to true.
                     type: string
                   automaticFailoverEnabled:
                     description: Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If enabled, num_cache_clusters must be greater than 1. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to false.
@@ -1044,13 +1072,13 @@ spec:
                         type: object
                     type: object
                   securityGroupIds:
-                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   securityGroupNames:
-                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array
@@ -1257,13 +1285,15 @@ spec:
                       When engine is valkey, default is true.
                     type: string
                   authTokenUpdateStrategy:
-                    description: Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.
+                    description: Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.
                     type: string
+                  authTokenWoVersion:
+                    description: Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.
+                    type: number
                   autoMinorVersionUpgrade:
                     description: |-
                       Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
                       Only supported for engine types "redis" and "valkey" and if the engine version is 6 or higher.
-                      Defaults to true.
                     type: string
                   automaticFailoverEnabled:
                     description: Specifies whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails. If enabled, num_cache_clusters must be greater than 1. Must be enabled for Redis (cluster mode enabled) replication groups. Defaults to false.
@@ -1436,13 +1466,13 @@ spec:
                       Can only be set if num_node_groups is set.
                     type: number
                   securityGroupIds:
-                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
                   securityGroupNames:
-                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.
+                    description: Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.
                     items:
                       type: string
                     type: array

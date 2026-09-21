@@ -353,7 +353,7 @@ public partial class V1beta1ExtensionAssociationSpecForProviderResourceArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionAssociationSpecForProvider
 {
-    /// <summary>The ARN of the extension defined in the association.</summary>
+    /// <summary>ARN of the extension defined in the association.</summary>
     [JsonPropertyName("extensionArn")]
     public string? ExtensionArn { get; set; }
 
@@ -365,7 +365,7 @@ public partial class V1beta1ExtensionAssociationSpecForProvider
     [JsonPropertyName("extensionArnSelector")]
     public V1beta1ExtensionAssociationSpecForProviderExtensionArnSelector? ExtensionArnSelector { get; set; }
 
-    /// <summary>The parameter names and values defined for the association.</summary>
+    /// <summary>Parameter names and values defined for the association.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1ExtensionAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the application, configuration profile, or environment to associate with the extension.</summary>
+    /// <summary>ARN of the application, configuration profile, or environment to associate with the extension.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -699,7 +699,7 @@ public partial class V1beta1ExtensionAssociationSpecInitProviderResourceArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionAssociationSpecInitProvider
 {
-    /// <summary>The ARN of the extension defined in the association.</summary>
+    /// <summary>ARN of the extension defined in the association.</summary>
     [JsonPropertyName("extensionArn")]
     public string? ExtensionArn { get; set; }
 
@@ -711,11 +711,11 @@ public partial class V1beta1ExtensionAssociationSpecInitProvider
     [JsonPropertyName("extensionArnSelector")]
     public V1beta1ExtensionAssociationSpecInitProviderExtensionArnSelector? ExtensionArnSelector { get; set; }
 
-    /// <summary>The parameter names and values defined for the association.</summary>
+    /// <summary>Parameter names and values defined for the association.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>The ARN of the application, configuration profile, or environment to associate with the extension.</summary>
+    /// <summary>ARN of the application, configuration profile, or environment to associate with the extension.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -919,11 +919,11 @@ public partial class V1beta1ExtensionAssociationStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The ARN of the extension defined in the association.</summary>
+    /// <summary>ARN of the extension defined in the association.</summary>
     [JsonPropertyName("extensionArn")]
     public string? ExtensionArn { get; set; }
 
-    /// <summary>The version number for the extension defined in the association.</summary>
+    /// <summary>Version number for the extension defined in the association.</summary>
     [JsonPropertyName("extensionVersion")]
     public double? ExtensionVersion { get; set; }
 
@@ -931,7 +931,7 @@ public partial class V1beta1ExtensionAssociationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The parameter names and values defined for the association.</summary>
+    /// <summary>Parameter names and values defined for the association.</summary>
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
@@ -942,7 +942,7 @@ public partial class V1beta1ExtensionAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the application, configuration profile, or environment to associate with the extension.</summary>
+    /// <summary>ARN of the application, configuration profile, or environment to associate with the extension.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }

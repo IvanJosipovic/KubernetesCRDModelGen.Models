@@ -68,7 +68,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       logDestinationRef:
                         description: Reference to a DeliveryStream in firehose to populate logDestination.
@@ -320,7 +320,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       logDestinationRef:
                         description: Reference to a DeliveryStream in firehose to populate logDestination.
@@ -612,7 +612,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the WAF Regional WebACL.
+                    description: ARN of the WAF Regional WebACL.
                     type: string
                   defaultAction:
                     description: The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
@@ -628,7 +628,7 @@ spec:
                     description: Configuration block to enable WAF logging. Detailed below.
                     properties:
                       logDestination:
-                        description: Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
+                        description: ARN of Kinesis Firehose Delivery Stream
                         type: string
                       redactedFields:
                         description: Configuration block containing parts of the request that you want redacted from the logs. Detailed below.

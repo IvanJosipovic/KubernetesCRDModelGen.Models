@@ -1080,7 +1080,7 @@ public partial class V1beta2InfrastructureConfigurationSpecForProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of SNS Topic.</summary>
+    /// <summary>ARN of SNS Topic.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -2143,7 +2143,7 @@ public partial class V1beta2InfrastructureConfigurationSpecInitProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of SNS Topic.</summary>
+    /// <summary>ARN of SNS Topic.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -2423,7 +2423,7 @@ public partial class V1beta2InfrastructureConfigurationStatusAtProviderPlacement
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InfrastructureConfigurationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the configuration.</summary>
+    /// <summary>ARN of the configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2439,7 +2439,7 @@ public partial class V1beta2InfrastructureConfigurationStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the configuration.</summary>
+    /// <summary>ARN of the configuration.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -2486,7 +2486,7 @@ public partial class V1beta2InfrastructureConfigurationStatusAtProvider
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of SNS Topic.</summary>
+    /// <summary>ARN of SNS Topic.</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 

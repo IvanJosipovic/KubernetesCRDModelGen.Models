@@ -182,7 +182,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the Redshift Snapshot Schedule.
+                    description: ARN of the Redshift Snapshot Schedule.
                     type: string
                   definitions:
                     description: The definition of the snapshot schedule. The definition is made up of schedule expressions, for example cron(30 12 *) or rate(12 hours).

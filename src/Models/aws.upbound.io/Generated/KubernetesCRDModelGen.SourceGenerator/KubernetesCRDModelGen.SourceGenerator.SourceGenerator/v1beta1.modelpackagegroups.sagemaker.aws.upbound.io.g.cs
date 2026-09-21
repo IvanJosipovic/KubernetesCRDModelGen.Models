@@ -287,7 +287,7 @@ public partial class V1beta1ModelPackageGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelPackageGroupStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Model Package Group.</summary>
+    /// <summary>ARN assigned by AWS to this Model Package Group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

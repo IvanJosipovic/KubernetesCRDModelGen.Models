@@ -59,7 +59,7 @@ public enum V1beta1InferenceProfileSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecForProviderModelSource
 {
-    /// <summary>The Amazon Resource Name (ARN) of the model.</summary>
+    /// <summary>The ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -96,7 +96,7 @@ public partial class V1beta1InferenceProfileSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileSpecInitProviderModelSource
 {
-    /// <summary>The Amazon Resource Name (ARN) of the model.</summary>
+    /// <summary>The ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -321,7 +321,7 @@ public partial class V1beta1InferenceProfileSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProviderModelSource
 {
-    /// <summary>The Amazon Resource Name (ARN) of the model.</summary>
+    /// <summary>The ARN of the model.</summary>
     [JsonPropertyName("copyFrom")]
     public string? CopyFrom { get; set; }
 }
@@ -330,7 +330,7 @@ public partial class V1beta1InferenceProfileStatusAtProviderModelSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProviderModels
 {
-    /// <summary>The Amazon Resource Name (ARN) of the model.</summary>
+    /// <summary>The ARN of the model.</summary>
     [JsonPropertyName("modelArn")]
     public string? ModelArn { get; set; }
 }
@@ -339,7 +339,7 @@ public partial class V1beta1InferenceProfileStatusAtProviderModels
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InferenceProfileStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the inference profile.</summary>
+    /// <summary>The ARN of the inference profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

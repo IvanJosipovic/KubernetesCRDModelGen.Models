@@ -518,7 +518,7 @@ public partial class V1beta1TransitGatewayRouteTableSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TransitGatewayRouteTableStatusAtProvider
 {
-    /// <summary>EC2 Transit Gateway Route Table Amazon Resource Name (ARN).</summary>
+    /// <summary>EC2 Transit Gateway Route Table ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

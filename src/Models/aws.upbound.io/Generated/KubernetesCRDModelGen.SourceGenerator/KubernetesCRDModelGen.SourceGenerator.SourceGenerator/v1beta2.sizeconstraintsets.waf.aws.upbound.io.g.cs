@@ -394,7 +394,7 @@ public partial class V1beta2SizeConstraintSetStatusAtProviderSizeConstraints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SizeConstraintSetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN).</summary>
+    /// <summary>ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

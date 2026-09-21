@@ -350,7 +350,7 @@ public partial class V1beta1TrackerAssociationSpecForProviderTrackerNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrackerAssociationSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
+    /// <summary>ARN for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
     [JsonPropertyName("consumerArn")]
     public string? ConsumerArn { get; set; }
 
@@ -708,7 +708,7 @@ public partial class V1beta1TrackerAssociationSpecInitProviderTrackerNameSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrackerAssociationSpecInitProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
+    /// <summary>ARN for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
     [JsonPropertyName("consumerArn")]
     public string? ConsumerArn { get; set; }
 
@@ -844,7 +844,7 @@ public partial class V1beta1TrackerAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrackerAssociationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
+    /// <summary>ARN for the geofence collection to be associated to tracker resource. Used when you need to specify a resource across all AWS.</summary>
     [JsonPropertyName("consumerArn")]
     public string? ConsumerArn { get; set; }
 

@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.medialive.aws.m.upbound.io;
-/// <summary>InputSecurityGroup is the Schema for the InputSecurityGroups API.</summary>
+/// <summary>InputSecurityGroup is the Schema for the InputSecurityGroups API. Manages an AWS MediaLive Input Security Group.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -323,7 +323,7 @@ public partial class V1beta1InputSecurityGroupStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InputSecurityGroup is the Schema for the InputSecurityGroups API.</summary>
+/// <summary>InputSecurityGroup is the Schema for the InputSecurityGroups API. Manages an AWS MediaLive Input Security Group.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

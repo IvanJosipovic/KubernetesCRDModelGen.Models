@@ -542,7 +542,7 @@ public partial class V1beta1AccessEntrySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessEntryStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Access Entry.</summary>
+    /// <summary>ARN of the Access Entry.</summary>
     [JsonPropertyName("accessEntryArn")]
     public string? AccessEntryArn { get; set; }
 

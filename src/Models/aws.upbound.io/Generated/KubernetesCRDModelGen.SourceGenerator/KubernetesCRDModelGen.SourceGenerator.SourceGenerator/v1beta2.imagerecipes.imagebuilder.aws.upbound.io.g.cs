@@ -72,7 +72,7 @@ public partial class V1beta2ImageRecipeSpecForProviderBlockDeviceMappingEbs
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key for encryption.</summary>
+    /// <summary>ARN of the KMS Key for encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -278,7 +278,7 @@ public partial class V1beta2ImageRecipeSpecForProviderComponentParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageRecipeSpecForProviderComponent
 {
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Component to associate.</summary>
+    /// <summary>ARN of the Image Builder Component to associate.</summary>
     [JsonPropertyName("componentArn")]
     public string? ComponentArn { get; set; }
 
@@ -378,7 +378,7 @@ public partial class V1beta2ImageRecipeSpecInitProviderBlockDeviceMappingEbs
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key for encryption.</summary>
+    /// <summary>ARN of the KMS Key for encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -584,7 +584,7 @@ public partial class V1beta2ImageRecipeSpecInitProviderComponentParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageRecipeSpecInitProviderComponent
 {
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Component to associate.</summary>
+    /// <summary>ARN of the Image Builder Component to associate.</summary>
     [JsonPropertyName("componentArn")]
     public string? ComponentArn { get; set; }
 
@@ -872,7 +872,7 @@ public partial class V1beta2ImageRecipeStatusAtProviderBlockDeviceMappingEbs
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key for encryption.</summary>
+    /// <summary>ARN of the KMS Key for encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -931,7 +931,7 @@ public partial class V1beta2ImageRecipeStatusAtProviderComponentParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ImageRecipeStatusAtProviderComponent
 {
-    /// <summary>Amazon Resource Name (ARN) of the Image Builder Component to associate.</summary>
+    /// <summary>ARN of the Image Builder Component to associate.</summary>
     [JsonPropertyName("componentArn")]
     public string? ComponentArn { get; set; }
 
@@ -958,7 +958,7 @@ public partial class V1beta2ImageRecipeStatusAtProvider
     [JsonPropertyName("amiTags")]
     public IDictionary<string, string>? AmiTags { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image recipe.</summary>
+    /// <summary>ARN of the image recipe.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -978,7 +978,7 @@ public partial class V1beta2ImageRecipeStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the image recipe.</summary>
+    /// <summary>ARN of the image recipe.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

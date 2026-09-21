@@ -338,7 +338,7 @@ public partial class V1beta1RegexPatternSetStatusAtProviderRegularExpression
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegexPatternSetStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that identifies the cluster.</summary>
+    /// <summary>ARN that identifies the cluster.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

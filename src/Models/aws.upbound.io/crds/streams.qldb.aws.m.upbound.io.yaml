@@ -70,7 +70,7 @@ spec:
                         description: 'Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.'
                         type: boolean
                       streamArn:
-                        description: The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.
+                        description: ARN of the Kinesis Data Streams resource.
                         type: string
                       streamArnRef:
                         description: Reference to a Stream in kinesis to populate streamArn.
@@ -240,7 +240,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
+                    description: ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -359,7 +359,7 @@ spec:
                         description: 'Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.'
                         type: boolean
                       streamArn:
-                        description: The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.
+                        description: ARN of the Kinesis Data Streams resource.
                         type: string
                       streamArnRef:
                         description: Reference to a Stream in kinesis to populate streamArn.
@@ -524,7 +524,7 @@ spec:
                         type: object
                     type: object
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
+                    description: ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -704,7 +704,7 @@ spec:
                         description: 'Enables QLDB to publish multiple data records in a single Kinesis Data Streams record, increasing the number of records sent per API call. Default: true.'
                         type: boolean
                       streamArn:
-                        description: The Amazon Resource Name (ARN) of the Kinesis Data Streams resource.
+                        description: ARN of the Kinesis Data Streams resource.
                         type: string
                     type: object
                   ledgerName:
@@ -716,7 +716,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
+                    description: ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
                     type: string
                   streamName:
                     description: The name that you want to assign to the QLDB journal stream. User-defined names can help identify and indicate the purpose of a stream.  Your stream name must be unique among other active streams for a given ledger. Stream names have the same naming constraints as ledger names, as defined in the Amazon QLDB Developer Guide.

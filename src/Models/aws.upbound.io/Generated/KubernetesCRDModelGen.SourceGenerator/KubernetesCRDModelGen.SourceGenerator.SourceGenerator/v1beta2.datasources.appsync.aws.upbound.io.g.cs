@@ -202,20 +202,20 @@ public partial class V1beta2DatasourceSpecForProviderApiIdSelector
     public V1beta2DatasourceSpecForProviderApiIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+/// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceSpecForProviderDynamodbConfigDeltaSyncConfig
 {
-    /// <summary>The number of minutes that an Item is stored in the data source.</summary>
+    /// <summary>Number of minutes that an Item is stored in the data source.</summary>
     [JsonPropertyName("baseTableTtl")]
     public double? BaseTableTtl { get; set; }
 
-    /// <summary>The table name.</summary>
+    /// <summary>Table name.</summary>
     [JsonPropertyName("deltaSyncTableName")]
     public string? DeltaSyncTableName { get; set; }
 
-    /// <summary>The number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
+    /// <summary>Number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
     [JsonPropertyName("deltaSyncTableTtl")]
     public double? DeltaSyncTableTtl { get; set; }
 }
@@ -372,7 +372,7 @@ public partial class V1beta2DatasourceSpecForProviderDynamodbConfigTableNameSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceSpecForProviderDynamodbConfig
 {
-    /// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+    /// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
     [JsonPropertyName("deltaSyncConfig")]
     public V1beta2DatasourceSpecForProviderDynamodbConfigDeltaSyncConfig? DeltaSyncConfig { get; set; }
 
@@ -750,20 +750,20 @@ public partial class V1beta2DatasourceSpecForProvider
     public string? Type { get; set; }
 }
 
-/// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+/// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceSpecInitProviderDynamodbConfigDeltaSyncConfig
 {
-    /// <summary>The number of minutes that an Item is stored in the data source.</summary>
+    /// <summary>Number of minutes that an Item is stored in the data source.</summary>
     [JsonPropertyName("baseTableTtl")]
     public double? BaseTableTtl { get; set; }
 
-    /// <summary>The table name.</summary>
+    /// <summary>Table name.</summary>
     [JsonPropertyName("deltaSyncTableName")]
     public string? DeltaSyncTableName { get; set; }
 
-    /// <summary>The number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
+    /// <summary>Number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
     [JsonPropertyName("deltaSyncTableTtl")]
     public double? DeltaSyncTableTtl { get; set; }
 }
@@ -920,7 +920,7 @@ public partial class V1beta2DatasourceSpecInitProviderDynamodbConfigTableNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceSpecInitProviderDynamodbConfig
 {
-    /// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+    /// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
     [JsonPropertyName("deltaSyncConfig")]
     public V1beta2DatasourceSpecInitProviderDynamodbConfigDeltaSyncConfig? DeltaSyncConfig { get; set; }
 
@@ -1458,20 +1458,20 @@ public partial class V1beta2DatasourceSpec
     public V1beta2DatasourceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+/// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceStatusAtProviderDynamodbConfigDeltaSyncConfig
 {
-    /// <summary>The number of minutes that an Item is stored in the data source.</summary>
+    /// <summary>Number of minutes that an Item is stored in the data source.</summary>
     [JsonPropertyName("baseTableTtl")]
     public double? BaseTableTtl { get; set; }
 
-    /// <summary>The table name.</summary>
+    /// <summary>Table name.</summary>
     [JsonPropertyName("deltaSyncTableName")]
     public string? DeltaSyncTableName { get; set; }
 
-    /// <summary>The number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
+    /// <summary>Number of minutes that a Delta Sync log entry is stored in the Delta Sync table.</summary>
     [JsonPropertyName("deltaSyncTableTtl")]
     public double? DeltaSyncTableTtl { get; set; }
 }
@@ -1481,7 +1481,7 @@ public partial class V1beta2DatasourceStatusAtProviderDynamodbConfigDeltaSyncCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DatasourceStatusAtProviderDynamodbConfig
 {
-    /// <summary>The DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
+    /// <summary>DeltaSyncConfig for a versioned data source. See delta_sync_config Block for details.</summary>
     [JsonPropertyName("deltaSyncConfig")]
     public V1beta2DatasourceStatusAtProviderDynamodbConfigDeltaSyncConfig? DeltaSyncConfig { get; set; }
 

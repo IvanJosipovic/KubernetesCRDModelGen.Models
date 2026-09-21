@@ -183,7 +183,7 @@ public partial class V1beta1DelegationSetSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DelegationSetStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Delegation Set.</summary>
+    /// <summary>ARN of the Delegation Set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

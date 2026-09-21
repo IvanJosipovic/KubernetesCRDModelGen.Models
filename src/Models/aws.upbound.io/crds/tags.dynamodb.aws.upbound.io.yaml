@@ -80,7 +80,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   resourceArn:
-                    description: Amazon Resource Name (ARN) of the DynamoDB resource to tag.
+                    description: ARN of the DynamoDB resource to tag.
                     type: string
                   value:
                     description: Tag value.
@@ -213,7 +213,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   resourceArn:
-                    description: Amazon Resource Name (ARN) of the DynamoDB resource to tag.
+                    description: ARN of the DynamoDB resource to tag.
                     type: string
                   value:
                     description: Tag value.

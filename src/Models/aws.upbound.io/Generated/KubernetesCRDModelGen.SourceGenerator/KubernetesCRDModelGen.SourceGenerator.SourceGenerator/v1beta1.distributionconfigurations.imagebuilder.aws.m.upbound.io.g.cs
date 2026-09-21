@@ -58,7 +58,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     public IList<string>? UserIds { get; set; }
 }
 
-/// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+/// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfiguration
@@ -71,7 +71,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key to encrypt the distributed AMI.</summary>
+    /// <summary>ARN of the KMS Key to encrypt the distributed AMI.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -233,7 +233,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 {
-    /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+    /// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
     [JsonPropertyName("amiDistributionConfiguration")]
     public V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfiguration? AmiDistributionConfiguration { get; set; }
 
@@ -249,7 +249,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
     [JsonPropertyName("launchTemplateConfiguration")]
     public IList<V1beta1DistributionConfigurationSpecForProviderDistributionLaunchTemplateConfiguration>? LaunchTemplateConfiguration { get; set; }
 
-    /// <summary>Set of Amazon Resource Names (ARNs) of License Manager License Configurations.</summary>
+    /// <summary>Set of ARNs of License Manager License Configurations.</summary>
     [JsonPropertyName("licenseConfigurationArns")]
     public IList<string>? LicenseConfigurationArns { get; set; }
 
@@ -316,7 +316,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     public IList<string>? UserIds { get; set; }
 }
 
-/// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+/// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfiguration
@@ -329,7 +329,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key to encrypt the distributed AMI.</summary>
+    /// <summary>ARN of the KMS Key to encrypt the distributed AMI.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -491,7 +491,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistribution
 {
-    /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+    /// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
     [JsonPropertyName("amiDistributionConfiguration")]
     public V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfiguration? AmiDistributionConfiguration { get; set; }
 
@@ -507,7 +507,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
     [JsonPropertyName("launchTemplateConfiguration")]
     public IList<V1beta1DistributionConfigurationSpecInitProviderDistributionLaunchTemplateConfiguration>? LaunchTemplateConfiguration { get; set; }
 
-    /// <summary>Set of Amazon Resource Names (ARNs) of License Manager License Configurations.</summary>
+    /// <summary>Set of ARNs of License Manager License Configurations.</summary>
     [JsonPropertyName("licenseConfigurationArns")]
     public IList<string>? LicenseConfigurationArns { get; set; }
 
@@ -682,7 +682,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     public IList<string>? UserIds { get; set; }
 }
 
-/// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+/// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfiguration
@@ -695,7 +695,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key to encrypt the distributed AMI.</summary>
+    /// <summary>ARN of the KMS Key to encrypt the distributed AMI.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -857,7 +857,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistribution
 {
-    /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
+    /// <summary>Configuration block with AMI distribution settings. Detailed below.</summary>
     [JsonPropertyName("amiDistributionConfiguration")]
     public V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfiguration? AmiDistributionConfiguration { get; set; }
 
@@ -873,7 +873,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
     [JsonPropertyName("launchTemplateConfiguration")]
     public IList<V1beta1DistributionConfigurationStatusAtProviderDistributionLaunchTemplateConfiguration>? LaunchTemplateConfiguration { get; set; }
 
-    /// <summary>Set of Amazon Resource Names (ARNs) of License Manager License Configurations.</summary>
+    /// <summary>Set of ARNs of License Manager License Configurations.</summary>
     [JsonPropertyName("licenseConfigurationArns")]
     public IList<string>? LicenseConfigurationArns { get; set; }
 
@@ -894,7 +894,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DistributionConfigurationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the distribution configuration.</summary>
+    /// <summary>ARN of the distribution configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -914,7 +914,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProvider
     [JsonPropertyName("distribution")]
     public IList<V1beta1DistributionConfigurationStatusAtProviderDistribution>? Distribution { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the distribution configuration.</summary>
+    /// <summary>ARN of the distribution configuration.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

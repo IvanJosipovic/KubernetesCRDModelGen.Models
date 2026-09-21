@@ -212,7 +212,7 @@ public partial class V1beta1ClientCertificateStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The PEM-encoded public key of the client certificate.</summary>
+    /// <summary>PEM-encoded public key of the client certificate.</summary>
     [JsonPropertyName("pemEncodedCertificate")]
     public string? PemEncodedCertificate { get; set; }
 

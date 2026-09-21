@@ -1331,7 +1331,7 @@ public partial class V1beta2JobStatusAtProviderSourceControlDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2JobStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of Glue Job</summary>
+    /// <summary>ARN of Glue Job</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

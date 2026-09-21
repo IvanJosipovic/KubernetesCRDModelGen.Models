@@ -40,19 +40,15 @@ public partial class V1beta1ParameterGroupList : IKubernetesObject<V1ListMeta>, 
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecForProviderParameter
 {
-    /// <summary>
-    /// &quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some
-    /// engines can&apos;t apply some parameters without a reboot, and you will need to
-    /// specify &quot;pending-reboot&quot; here.
-    /// </summary>
+    /// <summary>&quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some engines can&apos;t apply some parameters without a reboot, and you will need to specify &quot;pending-reboot&quot; here.</summary>
     [JsonPropertyName("applyMethod")]
     public string? ApplyMethod { get; set; }
 
-    /// <summary>The name of the DB parameter.</summary>
+    /// <summary>Name of the DB parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the DB parameter.</summary>
+    /// <summary>Value of the DB parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -61,15 +57,15 @@ public partial class V1beta1ParameterGroupSpecForProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecForProvider
 {
-    /// <summary>The description of the DB parameter group.</summary>
+    /// <summary>Description of the DB parameter group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The family of the DB parameter group.</summary>
+    /// <summary>Family of the DB parameter group.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>The DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
+    /// <summary>DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ParameterGroupSpecForProviderParameter>? Parameter { get; set; }
 
@@ -92,19 +88,15 @@ public partial class V1beta1ParameterGroupSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecInitProviderParameter
 {
-    /// <summary>
-    /// &quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some
-    /// engines can&apos;t apply some parameters without a reboot, and you will need to
-    /// specify &quot;pending-reboot&quot; here.
-    /// </summary>
+    /// <summary>&quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some engines can&apos;t apply some parameters without a reboot, and you will need to specify &quot;pending-reboot&quot; here.</summary>
     [JsonPropertyName("applyMethod")]
     public string? ApplyMethod { get; set; }
 
-    /// <summary>The name of the DB parameter.</summary>
+    /// <summary>Name of the DB parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the DB parameter.</summary>
+    /// <summary>Value of the DB parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -125,15 +117,15 @@ public partial class V1beta1ParameterGroupSpecInitProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupSpecInitProvider
 {
-    /// <summary>The description of the DB parameter group.</summary>
+    /// <summary>Description of the DB parameter group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The family of the DB parameter group.</summary>
+    /// <summary>Family of the DB parameter group.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>The DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
+    /// <summary>DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ParameterGroupSpecInitProviderParameter>? Parameter { get; set; }
 
@@ -256,19 +248,15 @@ public partial class V1beta1ParameterGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProviderParameter
 {
-    /// <summary>
-    /// &quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some
-    /// engines can&apos;t apply some parameters without a reboot, and you will need to
-    /// specify &quot;pending-reboot&quot; here.
-    /// </summary>
+    /// <summary>&quot;immediate&quot; (default), or &quot;pending-reboot&quot;. Some engines can&apos;t apply some parameters without a reboot, and you will need to specify &quot;pending-reboot&quot; here.</summary>
     [JsonPropertyName("applyMethod")]
     public string? ApplyMethod { get; set; }
 
-    /// <summary>The name of the DB parameter.</summary>
+    /// <summary>Name of the DB parameter.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The value of the DB parameter.</summary>
+    /// <summary>Value of the DB parameter.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
@@ -277,23 +265,23 @@ public partial class V1beta1ParameterGroupStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProvider
 {
-    /// <summary>The ARN of the db parameter group.</summary>
+    /// <summary>ARN of the db parameter group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The description of the DB parameter group.</summary>
+    /// <summary>Description of the DB parameter group.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The family of the DB parameter group.</summary>
+    /// <summary>Family of the DB parameter group.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
-    /// <summary>The db parameter group name.</summary>
+    /// <summary>DB parameter group name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
+    /// <summary>DB parameters to apply. See parameter Block below for more details. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via aws rds describe-db-parameters after initial creation of the group.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ParameterGroupStatusAtProviderParameter>? Parameter { get; set; }
 
@@ -311,7 +299,7 @@ public partial class V1beta1ParameterGroupStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

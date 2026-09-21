@@ -49,7 +49,7 @@ public partial class V1beta1HostSpecForProviderVpcConfiguration
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The value of the Transport Layer Security (TLS) certificate associated with the infrastructure where your provider type is installed.</summary>
+    /// <summary>Value of the TLS certificate associated with the infrastructure where your provider type is installed.</summary>
     [JsonPropertyName("tlsCertificate")]
     public string? TlsCertificate { get; set; }
 
@@ -99,7 +99,7 @@ public partial class V1beta1HostSpecInitProviderVpcConfiguration
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The value of the Transport Layer Security (TLS) certificate associated with the infrastructure where your provider type is installed.</summary>
+    /// <summary>Value of the TLS certificate associated with the infrastructure where your provider type is installed.</summary>
     [JsonPropertyName("tlsCertificate")]
     public string? TlsCertificate { get; set; }
 
@@ -261,7 +261,7 @@ public partial class V1beta1HostStatusAtProviderVpcConfiguration
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The value of the Transport Layer Security (TLS) certificate associated with the infrastructure where your provider type is installed.</summary>
+    /// <summary>Value of the TLS certificate associated with the infrastructure where your provider type is installed.</summary>
     [JsonPropertyName("tlsCertificate")]
     public string? TlsCertificate { get; set; }
 

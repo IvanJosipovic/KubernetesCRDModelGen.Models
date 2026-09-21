@@ -353,7 +353,7 @@ public partial class V1beta1ProxyEndpointSpecForProviderVpcSecurityGroupIdSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyEndpointSpecForProvider
 {
-    /// <summary>The name of the DB proxy associated with the DB proxy endpoint that you create.</summary>
+    /// <summary>Name of the DB proxy associated with the DB proxy endpoint that you create.</summary>
     [JsonPropertyName("dbProxyName")]
     public string? DbProxyName { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1ProxyEndpointSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Indicates whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
+    /// <summary>Whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
     [JsonPropertyName("targetRole")]
     public string? TargetRole { get; set; }
 
@@ -564,7 +564,7 @@ public partial class V1beta1ProxyEndpointSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Indicates whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
+    /// <summary>Whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
     [JsonPropertyName("targetRole")]
     public string? TargetRole { get; set; }
 
@@ -772,23 +772,23 @@ public partial class V1beta1ProxyEndpointSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyEndpointStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the proxy endpoint.</summary>
+    /// <summary>ARN for the proxy endpoint.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The name of the DB proxy associated with the DB proxy endpoint that you create.</summary>
+    /// <summary>Name of the DB proxy associated with the DB proxy endpoint that you create.</summary>
     [JsonPropertyName("dbProxyName")]
     public string? DbProxyName { get; set; }
 
-    /// <summary>The endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.</summary>
+    /// <summary>Endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>The name of the proxy and proxy endpoint separated by /, DB-PROXY-NAME/DB-PROXY-ENDPOINT-NAME.</summary>
+    /// <summary>Name of the proxy and proxy endpoint separated by /, DB-PROXY-NAME/DB-PROXY-ENDPOINT-NAME.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Indicates whether this endpoint is the default endpoint for the associated DB proxy.</summary>
+    /// <summary>Whether this endpoint is the default endpoint for the associated DB proxy.</summary>
     [JsonPropertyName("isDefault")]
     public bool? IsDefault { get; set; }
 
@@ -806,11 +806,11 @@ public partial class V1beta1ProxyEndpointStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Indicates whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
+    /// <summary>Whether the DB proxy endpoint can be used for read/write or read-only operations. The default is READ_WRITE. Valid values are READ_WRITE and READ_ONLY.</summary>
     [JsonPropertyName("targetRole")]
     public string? TargetRole { get; set; }
 
-    /// <summary>The VPC ID of the DB proxy endpoint.</summary>
+    /// <summary>VPC ID of the DB proxy endpoint.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 

@@ -351,7 +351,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
+    /// <summary>ARN of the delivery stream.</summary>
     [JsonPropertyName("firehoseArn")]
     public string? FirehoseArn { get; set; }
 
@@ -524,7 +524,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
+    /// <summary>ARN of the data stream.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -1463,7 +1463,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
+    /// <summary>ARN of the delivery stream.</summary>
     [JsonPropertyName("firehoseArn")]
     public string? FirehoseArn { get; set; }
 
@@ -1636,7 +1636,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
+    /// <summary>ARN of the data stream.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -2377,7 +2377,7 @@ public partial class V1beta1InstanceStorageConfigSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisFirehoseConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
+    /// <summary>ARN of the delivery stream.</summary>
     [JsonPropertyName("firehoseArn")]
     public string? FirehoseArn { get; set; }
 }
@@ -2387,7 +2387,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisStreamConfig
 {
-    /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
+    /// <summary>ARN of the data stream.</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 }

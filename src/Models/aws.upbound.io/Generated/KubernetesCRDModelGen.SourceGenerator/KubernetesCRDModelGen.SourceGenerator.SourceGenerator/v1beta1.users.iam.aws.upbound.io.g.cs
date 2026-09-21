@@ -59,12 +59,7 @@ public enum V1beta1UserSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserSpecForProvider
 {
-    /// <summary>
-    /// when destroying this user, destroy even if it
-    /// has non-provider-managed iam access keys, login profile or mfa devices. without force_destroy
-    /// a user with non-provider-managed access keys and login profile will fail to be destroyed.
-    /// delete user even if it has non-provider-managed iam access keys, login profile or mfa devices
-    /// </summary>
+    /// <summary>This only deletes objects when the user is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the user or destroying the user, this flag will not work</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
@@ -97,12 +92,7 @@ public partial class V1beta1UserSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserSpecInitProvider
 {
-    /// <summary>
-    /// when destroying this user, destroy even if it
-    /// has non-provider-managed iam access keys, login profile or mfa devices. without force_destroy
-    /// a user with non-provider-managed access keys and login profile will fail to be destroyed.
-    /// delete user even if it has non-provider-managed iam access keys, login profile or mfa devices
-    /// </summary>
+    /// <summary>This only deletes objects when the user is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the user or destroying the user, this flag will not work</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
@@ -310,12 +300,7 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>
-    /// when destroying this user, destroy even if it
-    /// has non-provider-managed iam access keys, login profile or mfa devices. without force_destroy
-    /// a user with non-provider-managed access keys and login profile will fail to be destroyed.
-    /// delete user even if it has non-provider-managed iam access keys, login profile or mfa devices
-    /// </summary>
+    /// <summary>This only deletes objects when the user is destroyed, not when setting this parameter to true. If setting this field in the same operation that would require replacing the user or destroying the user, this flag will not work</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 

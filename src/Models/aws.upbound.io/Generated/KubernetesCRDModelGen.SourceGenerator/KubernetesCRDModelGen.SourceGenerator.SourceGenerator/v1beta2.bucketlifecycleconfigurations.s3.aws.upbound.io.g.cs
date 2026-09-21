@@ -223,7 +223,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleExpir
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
-    /// <summary>Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
+    /// <summary>Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
     [JsonPropertyName("expiredObjectDeleteMarker")]
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
@@ -244,11 +244,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilte
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>
-    /// Key-value map of resource tags.
-    /// All of these tags must exist in the object&apos;s tag set in order for the rule to apply.
-    /// If set, must contain at least one key-value pair.
-    /// </summary>
+    /// <summary>Key-value map of resource tags. All of these tags must exist in the object&apos;s tag set in order for the rule to apply. If set, must contain at least one key-value pair.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -350,10 +346,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRule
     [JsonPropertyName("expiration")]
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRuleExpiration>? Expiration { get; set; }
 
-    /// <summary>
-    /// Configuration block used to identify objects that a Lifecycle Rule applies to.
-    /// See below.
-    /// </summary>
+    /// <summary>Configuration block used to identify objects that a Lifecycle Rule applies to. See below.</summary>
     [JsonPropertyName("filter")]
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRuleFilter>? Filter { get; set; }
 
@@ -369,11 +362,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProviderRule
     [JsonPropertyName("noncurrentVersionTransition")]
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRuleNoncurrentVersionTransition>? NoncurrentVersionTransition { get; set; }
 
-    /// <summary>
-    /// DEPRECATED Use filter instead.
-    /// This has been deprecated by Amazon S3.
-    /// Prefix identifying one or more objects to which the rule applies.
-    /// </summary>
+    /// <summary>Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -417,7 +406,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecForProvider
     [JsonPropertyName("rule")]
     public IList<V1beta2BucketLifecycleConfigurationSpecForProviderRule>? Rule { get; set; }
 
-    /// <summary>The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
+    /// <summary>Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
     [JsonPropertyName("transitionDefaultMinimumObjectSize")]
     public string? TransitionDefaultMinimumObjectSize { get; set; }
 }
@@ -590,7 +579,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleExpi
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
-    /// <summary>Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
+    /// <summary>Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
     [JsonPropertyName("expiredObjectDeleteMarker")]
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
@@ -611,11 +600,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilt
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>
-    /// Key-value map of resource tags.
-    /// All of these tags must exist in the object&apos;s tag set in order for the rule to apply.
-    /// If set, must contain at least one key-value pair.
-    /// </summary>
+    /// <summary>Key-value map of resource tags. All of these tags must exist in the object&apos;s tag set in order for the rule to apply. If set, must contain at least one key-value pair.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -717,10 +702,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRule
     [JsonPropertyName("expiration")]
     public IList<V1beta2BucketLifecycleConfigurationSpecInitProviderRuleExpiration>? Expiration { get; set; }
 
-    /// <summary>
-    /// Configuration block used to identify objects that a Lifecycle Rule applies to.
-    /// See below.
-    /// </summary>
+    /// <summary>Configuration block used to identify objects that a Lifecycle Rule applies to. See below.</summary>
     [JsonPropertyName("filter")]
     public IList<V1beta2BucketLifecycleConfigurationSpecInitProviderRuleFilter>? Filter { get; set; }
 
@@ -736,11 +718,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProviderRule
     [JsonPropertyName("noncurrentVersionTransition")]
     public IList<V1beta2BucketLifecycleConfigurationSpecInitProviderRuleNoncurrentVersionTransition>? NoncurrentVersionTransition { get; set; }
 
-    /// <summary>
-    /// DEPRECATED Use filter instead.
-    /// This has been deprecated by Amazon S3.
-    /// Prefix identifying one or more objects to which the rule applies.
-    /// </summary>
+    /// <summary>Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -789,7 +767,7 @@ public partial class V1beta2BucketLifecycleConfigurationSpecInitProvider
     [JsonPropertyName("rule")]
     public IList<V1beta2BucketLifecycleConfigurationSpecInitProviderRule>? Rule { get; set; }
 
-    /// <summary>The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
+    /// <summary>Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
     [JsonPropertyName("transitionDefaultMinimumObjectSize")]
     public string? TransitionDefaultMinimumObjectSize { get; set; }
 }
@@ -998,7 +976,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleExpi
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
-    /// <summary>Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
+    /// <summary>Whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action.</summary>
     [JsonPropertyName("expiredObjectDeleteMarker")]
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
@@ -1019,11 +997,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilt
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>
-    /// Key-value map of resource tags.
-    /// All of these tags must exist in the object&apos;s tag set in order for the rule to apply.
-    /// If set, must contain at least one key-value pair.
-    /// </summary>
+    /// <summary>Key-value map of resource tags. All of these tags must exist in the object&apos;s tag set in order for the rule to apply. If set, must contain at least one key-value pair.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1125,10 +1099,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRule
     [JsonPropertyName("expiration")]
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRuleExpiration>? Expiration { get; set; }
 
-    /// <summary>
-    /// Configuration block used to identify objects that a Lifecycle Rule applies to.
-    /// See below.
-    /// </summary>
+    /// <summary>Configuration block used to identify objects that a Lifecycle Rule applies to. See below.</summary>
     [JsonPropertyName("filter")]
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRuleFilter>? Filter { get; set; }
 
@@ -1144,11 +1115,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProviderRule
     [JsonPropertyName("noncurrentVersionTransition")]
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRuleNoncurrentVersionTransition>? NoncurrentVersionTransition { get; set; }
 
-    /// <summary>
-    /// DEPRECATED Use filter instead.
-    /// This has been deprecated by Amazon S3.
-    /// Prefix identifying one or more objects to which the rule applies.
-    /// </summary>
+    /// <summary>Prefix identifying one or more objects to which the rule applies. Use filter instead, as this has been deprecated by Amazon S3.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
@@ -1188,7 +1155,7 @@ public partial class V1beta2BucketLifecycleConfigurationStatusAtProvider
     [JsonPropertyName("rule")]
     public IList<V1beta2BucketLifecycleConfigurationStatusAtProviderRule>? Rule { get; set; }
 
-    /// <summary>The default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
+    /// <summary>Default minimum object size behavior applied to the lifecycle configuration. Valid values: all_storage_classes_128K (default), varies_by_storage_class. To customize the minimum object size for any transition you can add a filter that specifies a custom object_size_greater_than or object_size_less_than value. Custom filters always take precedence over the default transition behavior.</summary>
     [JsonPropertyName("transitionDefaultMinimumObjectSize")]
     public string? TransitionDefaultMinimumObjectSize { get; set; }
 }

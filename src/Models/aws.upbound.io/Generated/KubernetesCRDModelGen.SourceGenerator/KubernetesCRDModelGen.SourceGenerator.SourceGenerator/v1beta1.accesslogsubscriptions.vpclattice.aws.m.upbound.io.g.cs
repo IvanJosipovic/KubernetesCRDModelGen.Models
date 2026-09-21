@@ -43,6 +43,161 @@ public partial class V1beta1AccessLogSubscriptionList : IKubernetesObject<V1List
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolutionEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolveEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate destinationArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate destinationArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecForProviderResourceIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1AccessLogSubscriptionSpecForProviderResourceIdentifierRefPolicyResolutionEnum
 {
@@ -195,9 +350,17 @@ public partial class V1beta1AccessLogSubscriptionSpecForProviderResourceIdentifi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessLogSubscriptionSpecForProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the log destination.</summary>
+    /// <summary>ARN of the log destination.</summary>
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
+
+    /// <summary>Reference to a Bucket in s3 to populate destinationArn.</summary>
+    [JsonPropertyName("destinationArnRef")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnRef? DestinationArnRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate destinationArn.</summary>
+    [JsonPropertyName("destinationArnSelector")]
+    public V1beta1AccessLogSubscriptionSpecForProviderDestinationArnSelector? DestinationArnSelector { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -206,7 +369,7 @@ public partial class V1beta1AccessLogSubscriptionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
@@ -222,8 +385,164 @@ public partial class V1beta1AccessLogSubscriptionSpecForProvider
     [JsonPropertyName("serviceNetworkLogType")]
     public string? ServiceNetworkLogType { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolutionEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolveEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate destinationArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolveEnum>))]
+public enum V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate destinationArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -397,11 +716,19 @@ public partial class V1beta1AccessLogSubscriptionSpecInitProviderResourceIdentif
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessLogSubscriptionSpecInitProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the log destination.</summary>
+    /// <summary>ARN of the log destination.</summary>
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>Reference to a Bucket in s3 to populate destinationArn.</summary>
+    [JsonPropertyName("destinationArnRef")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnRef? DestinationArnRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate destinationArn.</summary>
+    [JsonPropertyName("destinationArnSelector")]
+    public V1beta1AccessLogSubscriptionSpecInitProviderDestinationArnSelector? DestinationArnSelector { get; set; }
+
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
@@ -417,6 +744,7 @@ public partial class V1beta1AccessLogSubscriptionSpecInitProvider
     [JsonPropertyName("serviceNetworkLogType")]
     public string? ServiceNetworkLogType { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -532,11 +860,11 @@ public partial class V1beta1AccessLogSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessLogSubscriptionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the access log subscription.</summary>
+    /// <summary>ARN of the access log subscription.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the log destination.</summary>
+    /// <summary>ARN of the log destination.</summary>
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
 
@@ -551,11 +879,11 @@ public partial class V1beta1AccessLogSubscriptionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the service network or service.</summary>
+    /// <summary>ARN of the service network or service.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network or service. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("resourceIdentifier")]
     public string? ResourceIdentifier { get; set; }
 
@@ -563,6 +891,7 @@ public partial class V1beta1AccessLogSubscriptionStatusAtProvider
     [JsonPropertyName("serviceNetworkLogType")]
     public string? ServiceNetworkLogType { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 

@@ -175,7 +175,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     [JsonPropertyName("replyTo")]
     public string? ReplyTo { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
+    /// <summary>ARN of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
     [JsonPropertyName("sourceArn")]
     public string? SourceArn { get; set; }
 }
@@ -574,7 +574,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     [JsonPropertyName("replyTo")]
     public string? ReplyTo { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
+    /// <summary>ARN of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
     [JsonPropertyName("sourceArn")]
     public string? SourceArn { get; set; }
 }
@@ -1085,7 +1085,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     [JsonPropertyName("replyTo")]
     public string? ReplyTo { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
+    /// <summary>ARN of the identity that is associated with the sending authorization policy. This identity permits Amazon Cognito to send for the email address specified in the From parameter.</summary>
     [JsonPropertyName("sourceArn")]
     public string? SourceArn { get; set; }
 }

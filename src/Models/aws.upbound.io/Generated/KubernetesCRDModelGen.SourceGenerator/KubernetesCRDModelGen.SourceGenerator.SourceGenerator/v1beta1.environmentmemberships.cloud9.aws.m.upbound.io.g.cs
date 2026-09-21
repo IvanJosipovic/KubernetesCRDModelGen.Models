@@ -373,7 +373,7 @@ public partial class V1beta1EnvironmentMembershipSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the environment member you want to add.</summary>
+    /// <summary>ARN of the environment member you want to add.</summary>
     [JsonPropertyName("userArn")]
     public string? UserArn { get; set; }
 
@@ -537,7 +537,7 @@ public partial class V1beta1EnvironmentMembershipStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the environment member you want to add.</summary>
+    /// <summary>ARN of the environment member you want to add.</summary>
     [JsonPropertyName("userArn")]
     public string? UserArn { get; set; }
 

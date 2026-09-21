@@ -280,7 +280,7 @@ spec:
                     description: The path that you want Amazon Route 53 to request when performing health checks.
                     type: string
                   routingControlArn:
-                    description: The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
+                    description: ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
                     type: string
                   searchString:
                     description: String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with HTTP_STR_MATCH and HTTPS_STR_MATCH.
@@ -523,7 +523,7 @@ spec:
                     description: The path that you want Amazon Route 53 to request when performing health checks.
                     type: string
                   routingControlArn:
-                    description: The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
+                    description: ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
                     type: string
                   searchString:
                     description: String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with HTTP_STR_MATCH and HTTPS_STR_MATCH.
@@ -639,7 +639,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) of the Health Check.
+                    description: ARN of the Health Check.
                     type: string
                   childHealthThreshold:
                     description: The minimum number of child health checks that must be healthy for Route 53 to consider the parent health check to be healthy. Valid values are integers between 0 and 256, inclusive
@@ -704,7 +704,7 @@ spec:
                     description: The path that you want Amazon Route 53 to request when performing health checks.
                     type: string
                   routingControlArn:
-                    description: The Amazon Resource Name (ARN) for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
+                    description: ARN for the Route 53 Application Recovery Controller routing control. This is used when health check type is RECOVERY_CONTROL
                     type: string
                   searchString:
                     description: String searched in the first 5120 bytes of the response body for check to be considered healthy. Only valid with HTTP_STR_MATCH and HTTPS_STR_MATCH.

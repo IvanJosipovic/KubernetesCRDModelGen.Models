@@ -306,7 +306,7 @@ public partial class V1beta1AccountStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the service-linked role that allows Macie to monitor and analyze data in AWS resources for the account.</summary>
+    /// <summary>ARN of the service-linked role that allows Macie to monitor and analyze data in AWS resources for the account.</summary>
     [JsonPropertyName("serviceRole")]
     public string? ServiceRole { get; set; }
 

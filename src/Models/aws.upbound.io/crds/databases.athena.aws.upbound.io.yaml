@@ -676,7 +676,7 @@ spec:
                     description: Description of the database.
                     type: string
                   encryptionConfiguration:
-                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.
+                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.
                     properties:
                       encryptionOption:
                         description: Type of key; one of SSE_S3, SSE_KMS, CSE_KMS
@@ -808,7 +808,7 @@ spec:
                     description: Description of the database.
                     type: string
                   encryptionConfiguration:
-                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.
+                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.
                     properties:
                       encryptionOption:
                         description: Type of key; one of SSE_S3, SSE_KMS, CSE_KMS
@@ -938,7 +938,7 @@ spec:
                     description: Description of the database.
                     type: string
                   encryptionConfiguration:
-                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. See Encryption Configuration below.
+                    description: Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key. See Encryption Configuration below.
                     properties:
                       encryptionOption:
                         description: Type of key; one of SSE_S3, SSE_KMS, CSE_KMS

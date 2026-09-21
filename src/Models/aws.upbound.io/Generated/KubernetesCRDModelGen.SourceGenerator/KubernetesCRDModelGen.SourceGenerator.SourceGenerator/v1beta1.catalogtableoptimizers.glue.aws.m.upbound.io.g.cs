@@ -38,6 +38,32 @@ public partial class V1beta1CatalogTableOptimizerList : IKubernetesObject<V1List
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration
+{
+    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    [JsonPropertyName("deleteFileThreshold")]
+    public double? DeleteFileThreshold { get; set; }
+
+    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    [JsonPropertyName("minInputFiles")]
+    public double? MinInputFiles { get; set; }
+
+    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    [JsonPropertyName("strategy")]
+    public string? Strategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfiguration
+{
+    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    [JsonPropertyName("icebergConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
     /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
@@ -96,6 +122,10 @@ public partial class V1beta1CatalogTableOptimizerSpecForProviderConfigurationRet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecForProviderConfiguration
 {
+    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    [JsonPropertyName("compactionConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecForProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
+
     /// <summary>Indicates whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
@@ -310,6 +340,32 @@ public partial class V1beta1CatalogTableOptimizerSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration
+{
+    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    [JsonPropertyName("deleteFileThreshold")]
+    public double? DeleteFileThreshold { get; set; }
+
+    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    [JsonPropertyName("minInputFiles")]
+    public double? MinInputFiles { get; set; }
+
+    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    [JsonPropertyName("strategy")]
+    public string? Strategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfiguration
+{
+    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    [JsonPropertyName("icebergConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
     /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
@@ -368,6 +424,10 @@ public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfigurationRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerSpecInitProviderConfiguration
 {
+    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    [JsonPropertyName("compactionConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerSpecInitProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
+
     /// <summary>Indicates whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
@@ -523,6 +583,32 @@ public partial class V1beta1CatalogTableOptimizerSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration
+{
+    /// <summary>The minimum number of deletes that must be present in a data file to make it eligible for compaction. Defaults to 1.</summary>
+    [JsonPropertyName("deleteFileThreshold")]
+    public double? DeleteFileThreshold { get; set; }
+
+    /// <summary>The minimum number of data files that must be present in a partition before compaction will actually compact files. Defaults to 100.</summary>
+    [JsonPropertyName("minInputFiles")]
+    public double? MinInputFiles { get; set; }
+
+    /// <summary>The strategy to use for compaction. Valid values are binpack, sort and z-order Defaults to binpack.</summary>
+    [JsonPropertyName("strategy")]
+    public string? Strategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfiguration
+{
+    /// <summary>The configuration for an Iceberg orphan file deletion optimizer.</summary>
+    [JsonPropertyName("icebergConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfigurationIcebergConfiguration>? IcebergConfiguration { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationOrphanFileDeletionConfigurationIcebergConfiguration
 {
     /// <summary>Specifies a directory in which to look for files. You may choose a sub-directory rather than the top-level table location. Defaults to the table&apos;s location.</summary>
@@ -581,6 +667,10 @@ public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfigurationRe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogTableOptimizerStatusAtProviderConfiguration
 {
+    /// <summary>The configuration block for a compaction optimizer. See Compaction Configuration for additional details.</summary>
+    [JsonPropertyName("compactionConfiguration")]
+    public IList<V1beta1CatalogTableOptimizerStatusAtProviderConfigurationCompactionConfiguration>? CompactionConfiguration { get; set; }
+
     /// <summary>Indicates whether the table optimizer is enabled.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }

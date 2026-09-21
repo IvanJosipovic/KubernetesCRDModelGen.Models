@@ -379,11 +379,11 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProvider
     [JsonPropertyName("customerManagedPolicyReference")]
     public V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReference? CustomerManagedPolicyReference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public required string InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 
@@ -798,15 +798,15 @@ public partial class V1beta2CustomerManagedPolicyAttachmentStatusAtProvider
     [JsonPropertyName("customerManagedPolicyReference")]
     public V1beta2CustomerManagedPolicyAttachmentStatusAtProviderCustomerManagedPolicyReference? CustomerManagedPolicyReference { get; set; }
 
-    /// <summary>Policy Name, Policy Path, Permission Set Amazon Resource Name (ARN), and SSO Instance ARN, each separated by a comma (,).</summary>
+    /// <summary>Policy Name, Policy Path, Permission Set ARN, and SSO Instance ARN, each separated by a comma (,).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
+    /// <summary>ARN of the SSO Instance under which the operation will be executed.</summary>
     [JsonPropertyName("instanceArn")]
     public string? InstanceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Permission Set.</summary>
+    /// <summary>ARN of the Permission Set.</summary>
     [JsonPropertyName("permissionSetArn")]
     public string? PermissionSetArn { get; set; }
 

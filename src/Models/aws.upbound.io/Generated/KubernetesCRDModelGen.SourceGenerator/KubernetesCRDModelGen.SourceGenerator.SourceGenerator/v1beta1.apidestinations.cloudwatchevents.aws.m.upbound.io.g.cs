@@ -542,7 +542,7 @@ public partial class V1beta1APIDestinationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIDestinationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the event API Destination.</summary>
+    /// <summary>ARN of the event API Destination.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

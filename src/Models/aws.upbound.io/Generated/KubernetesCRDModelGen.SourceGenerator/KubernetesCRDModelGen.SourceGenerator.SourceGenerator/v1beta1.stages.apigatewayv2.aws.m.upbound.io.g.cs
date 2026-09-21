@@ -36,10 +36,7 @@ public partial class V1beta1StageList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Stage> Items { get; set; }
 }
 
-/// <summary>
-/// Settings for logging access in this stage.
-/// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-/// </summary>
+/// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProviderAccessLogSettings
@@ -213,10 +210,7 @@ public partial class V1beta1StageSpecForProviderApiIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProviderDefaultRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -224,10 +218,7 @@ public partial class V1beta1StageSpecForProviderDefaultRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -399,10 +390,7 @@ public partial class V1beta1StageSpecForProviderDeploymentIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProviderRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -410,10 +398,7 @@ public partial class V1beta1StageSpecForProviderRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -434,10 +419,7 @@ public partial class V1beta1StageSpecForProviderRouteSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecForProvider
 {
-    /// <summary>
-    /// Settings for logging access in this stage.
-    /// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-    /// </summary>
+    /// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageSpecForProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -457,10 +439,7 @@ public partial class V1beta1StageSpecForProvider
     [JsonPropertyName("autoDeploy")]
     public bool? AutoDeploy { get; set; }
 
-    /// <summary>
-    /// Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate.
-    /// Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("clientCertificateId")]
     public string? ClientCertificateId { get; set; }
 
@@ -504,10 +483,7 @@ public partial class V1beta1StageSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>
-/// Settings for logging access in this stage.
-/// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-/// </summary>
+/// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProviderAccessLogSettings
@@ -681,10 +657,7 @@ public partial class V1beta1StageSpecInitProviderApiIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProviderDefaultRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -692,10 +665,7 @@ public partial class V1beta1StageSpecInitProviderDefaultRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -867,10 +837,7 @@ public partial class V1beta1StageSpecInitProviderDeploymentIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProviderRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -878,10 +845,7 @@ public partial class V1beta1StageSpecInitProviderRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -914,10 +878,7 @@ public partial class V1beta1StageSpecInitProviderRouteSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageSpecInitProvider
 {
-    /// <summary>
-    /// Settings for logging access in this stage.
-    /// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-    /// </summary>
+    /// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageSpecInitProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -937,10 +898,7 @@ public partial class V1beta1StageSpecInitProvider
     [JsonPropertyName("autoDeploy")]
     public bool? AutoDeploy { get; set; }
 
-    /// <summary>
-    /// Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate.
-    /// Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("clientCertificateId")]
     public string? ClientCertificateId { get; set; }
 
@@ -1084,10 +1042,7 @@ public partial class V1beta1StageSpec
     public V1beta1StageSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// Settings for logging access in this stage.
-/// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-/// </summary>
+/// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProviderAccessLogSettings
@@ -1106,10 +1061,7 @@ public partial class V1beta1StageStatusAtProviderAccessLogSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProviderDefaultRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -1117,10 +1069,7 @@ public partial class V1beta1StageStatusAtProviderDefaultRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -1137,10 +1086,7 @@ public partial class V1beta1StageStatusAtProviderDefaultRouteSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProviderRouteSettings
 {
-    /// <summary>
-    /// Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Defaults to false. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Defaults to false. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("dataTraceEnabled")]
     public bool? DataTraceEnabled { get; set; }
 
@@ -1148,10 +1094,7 @@ public partial class V1beta1StageStatusAtProviderRouteSettings
     [JsonPropertyName("detailedMetricsEnabled")]
     public bool? DetailedMetricsEnabled { get; set; }
 
-    /// <summary>
-    /// Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
-    /// Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs. Valid values: ERROR, INFO, OFF. Defaults to OFF. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("loggingLevel")]
     public string? LoggingLevel { get; set; }
 
@@ -1172,10 +1115,7 @@ public partial class V1beta1StageStatusAtProviderRouteSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StageStatusAtProvider
 {
-    /// <summary>
-    /// Settings for logging access in this stage.
-    /// Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.
-    /// </summary>
+    /// <summary>Settings for logging access in this stage. Use the aws_api_gateway_account resource to configure permissions for CloudWatch Logging.</summary>
     [JsonPropertyName("accessLogSettings")]
     public V1beta1StageStatusAtProviderAccessLogSettings? AccessLogSettings { get; set; }
 
@@ -1191,10 +1131,7 @@ public partial class V1beta1StageStatusAtProvider
     [JsonPropertyName("autoDeploy")]
     public bool? AutoDeploy { get; set; }
 
-    /// <summary>
-    /// Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate.
-    /// Supported only for WebSocket APIs.
-    /// </summary>
+    /// <summary>Identifier of a client certificate for the stage. Use the aws_api_gateway_client_certificate resource to configure a client certificate. Supported only for WebSocket APIs.</summary>
     [JsonPropertyName("clientCertificateId")]
     public string? ClientCertificateId { get; set; }
 
@@ -1210,11 +1147,7 @@ public partial class V1beta1StageStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>
-    /// ARN prefix to be used in an aws_lambda_permission&apos;s source_arn attribute.
-    /// For WebSocket APIs this attribute can additionally be used in an aws_iam_policy to authorize access to the @connections API.
-    /// See the Amazon API Gateway Developer Guide for details.
-    /// </summary>
+    /// <summary>ARN prefix to be used in an aws_lambda_permission&apos;s source_arn attribute. For WebSocket APIs this attribute can additionally be used in an aws_iam_policy to authorize access to the @connections API. See the Amazon API Gateway Developer Guide for details.</summary>
     [JsonPropertyName("executionArn")]
     public string? ExecutionArn { get; set; }
 
@@ -1222,10 +1155,7 @@ public partial class V1beta1StageStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// URL to invoke the API pointing to the stage,
-    /// e.g., wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage, or https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/
-    /// </summary>
+    /// <summary>URL to invoke the API pointing to the stage, e.g., wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage, or https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/</summary>
     [JsonPropertyName("invokeUrl")]
     public string? InvokeUrl { get; set; }
 

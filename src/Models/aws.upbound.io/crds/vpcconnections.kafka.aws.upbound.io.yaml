@@ -250,7 +250,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   targetClusterArn:
-                    description: The Amazon Resource Name (ARN) of the cluster.
+                    description: ARN of the cluster.
                     type: string
                   targetClusterArnRef:
                     description: Reference to a Cluster in kafka to populate targetClusterArn.
@@ -591,7 +591,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   targetClusterArn:
-                    description: The Amazon Resource Name (ARN) of the cluster.
+                    description: ARN of the cluster.
                     type: string
                   targetClusterArnRef:
                     description: Reference to a Cluster in kafka to populate targetClusterArn.
@@ -838,7 +838,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the VPC connection.
+                    description: ARN of the VPC connection.
                     type: string
                   authentication:
                     description: 'The authentication type for the client VPC connection. Specify one of these auth type strings: SASL_IAM, SASL_SCRAM, or TLS.'
@@ -875,7 +875,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   targetClusterArn:
-                    description: The Amazon Resource Name (ARN) of the cluster.
+                    description: ARN of the cluster.
                     type: string
                   vpcId:
                     description: The VPC ID of the remote client.

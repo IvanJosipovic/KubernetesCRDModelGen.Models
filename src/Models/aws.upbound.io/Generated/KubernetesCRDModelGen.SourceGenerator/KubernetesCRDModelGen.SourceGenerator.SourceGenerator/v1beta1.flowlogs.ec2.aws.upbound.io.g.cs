@@ -698,6 +698,20 @@ public partial class V1beta1FlowLogSpecForProviderSubnetIdSelector
     public V1beta1FlowLogSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FlowLogSpecForProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -940,6 +954,10 @@ public partial class V1beta1FlowLogSpecForProvider
     /// <summary>Selector for a Subnet in ec2 to populate subnetId.</summary>
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1FlowLogSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
+
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta1FlowLogSpecForProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
@@ -1608,6 +1626,20 @@ public partial class V1beta1FlowLogSpecInitProviderSubnetIdSelector
     public V1beta1FlowLogSpecInitProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FlowLogSpecInitProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1856,6 +1888,10 @@ public partial class V1beta1FlowLogSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1FlowLogSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta1FlowLogSpecInitProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
@@ -2096,6 +2132,20 @@ public partial class V1beta1FlowLogStatusAtProviderDestinationOptions
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1FlowLogStatusAtProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowLogStatusAtProvider
 {
     /// <summary>ARN of the Flow Log.</summary>
@@ -2156,6 +2206,10 @@ public partial class V1beta1FlowLogStatusAtProvider
     /// <summary>Subnet ID to attach to.</summary>
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
+
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta1FlowLogStatusAtProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]

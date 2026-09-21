@@ -722,7 +722,7 @@ public partial class V1beta2RegexMatchSetStatusAtProviderRegexMatchTuple
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2RegexMatchSetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN)</summary>
+    /// <summary>ARN</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

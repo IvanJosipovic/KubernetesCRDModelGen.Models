@@ -182,10 +182,10 @@ spec:
                     - name
                     type: object
                   privateKeyWo:
-                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.
                     type: string
                   privateKeyWoVersion:
-                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    description: Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.
                     type: number
                   region:
                     description: |-
@@ -360,10 +360,10 @@ spec:
                     - name
                     type: object
                   privateKeyWo:
-                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.
                     type: string
                   privateKeyWoVersion:
-                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    description: Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.
                     type: number
                   subjectAlternativeNames:
                     description: Set of domains that should be SANs in the issued certificate.
@@ -526,10 +526,10 @@ spec:
                     description: true if a Private certificate eligible for managed renewal is within the early_renewal_duration period.
                     type: boolean
                   privateKeyWo:
-                    description: Certificate's PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.
+                    description: Certificate's PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.
                     type: string
                   privateKeyWoVersion:
-                    description: Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.
+                    description: Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.
                     type: number
                   region:
                     description: |-

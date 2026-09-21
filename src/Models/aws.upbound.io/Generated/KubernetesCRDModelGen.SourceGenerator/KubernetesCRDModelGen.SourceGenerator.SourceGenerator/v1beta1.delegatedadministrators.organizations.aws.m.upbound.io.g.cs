@@ -515,7 +515,7 @@ public partial class V1beta1DelegatedAdministratorStatusAtProvider
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the delegated administrator&apos;s account.</summary>
+    /// <summary>ARN of the delegated administrator&apos;s account.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

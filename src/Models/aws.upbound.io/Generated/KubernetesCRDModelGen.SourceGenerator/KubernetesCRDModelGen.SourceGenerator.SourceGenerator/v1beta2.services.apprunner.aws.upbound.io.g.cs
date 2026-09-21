@@ -55,7 +55,7 @@ public enum V1beta2ServiceSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+/// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderEncryptionConfiguration
@@ -65,7 +65,7 @@ public partial class V1beta2ServiceSpecForProviderEncryptionConfiguration
     public string? KmsKey { get; set; }
 }
 
-/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderHealthCheckConfiguration
@@ -95,7 +95,7 @@ public partial class V1beta2ServiceSpecForProviderHealthCheckConfiguration
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+/// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderInstanceConfiguration
@@ -260,16 +260,16 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
     public V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration
 {
-    /// <summary>The type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
+    /// <summary>Type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
     [JsonPropertyName("egressType")]
     public string? EgressType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
+    /// <summary>ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
     [JsonPropertyName("vpcConnectorArn")]
     public string? VpcConnectorArn { get; set; }
 
@@ -282,30 +282,30 @@ public partial class V1beta2ServiceSpecForProviderNetworkConfigurationEgressConf
     public V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelector? VpcConnectorArnSelector { get; set; }
 }
 
-/// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfigurationIngressConfiguration
 {
-    /// <summary>Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.</summary>
+    /// <summary>Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.</summary>
     [JsonPropertyName("isPubliclyAccessible")]
     public bool? IsPubliclyAccessible { get; set; }
 }
 
-/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderNetworkConfiguration
 {
-    /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
     [JsonPropertyName("egressConfiguration")]
     public V1beta2ServiceSpecForProviderNetworkConfigurationEgressConfiguration? EgressConfiguration { get; set; }
 
-    /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
     [JsonPropertyName("ingressConfiguration")]
     public V1beta2ServiceSpecForProviderNetworkConfigurationIngressConfiguration? IngressConfiguration { get; set; }
 
-    /// <summary>App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
+    /// <summary>App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
@@ -457,7 +457,7 @@ public partial class V1beta2ServiceSpecForProviderObservabilityConfigurationObse
     public V1beta2ServiceSpecForProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+/// <summary>Observability configuration of your service. See observability_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderObservabilityConfiguration
@@ -626,7 +626,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
     public V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+/// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfiguration
@@ -648,7 +648,7 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationAuthenticat
     public V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelector? ConnectionArnSelector { get; set; }
 }
 
-/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
@@ -678,21 +678,21 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+/// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
-    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
     [JsonPropertyName("codeConfigurationValues")]
     public V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues? CodeConfigurationValues { get; set; }
 
-    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:</summary>
+    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.</summary>
     [JsonPropertyName("configurationSource")]
     public string? ConfigurationSource { get; set; }
 }
 
-/// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+/// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositorySourceCodeVersion
@@ -706,12 +706,12 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
     public string? Value { get; set; }
 }
 
-/// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+/// <summary>Description of a source code repository. See code_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeRepository
 {
-    /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+    /// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
     [JsonPropertyName("codeConfiguration")]
     public V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositoryCodeConfiguration? CodeConfiguration { get; set; }
 
@@ -719,16 +719,16 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationCodeReposit
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+    /// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
     [JsonPropertyName("sourceCodeVersion")]
     public V1beta2ServiceSpecForProviderSourceConfigurationCodeRepositorySourceCodeVersion? SourceCodeVersion { get; set; }
 
-    /// <summary>The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
+    /// <summary>Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
     [JsonPropertyName("sourceDirectory")]
     public string? SourceDirectory { get; set; }
 }
 
-/// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+/// <summary>Configuration for running the identified image. See image_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageRepositoryImageConfiguration
@@ -750,33 +750,30 @@ public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageReposi
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+/// <summary>Description of a source image repository. See image_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfigurationImageRepository
 {
-    /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+    /// <summary>Configuration for running the identified image. See image_configuration below.</summary>
     [JsonPropertyName("imageConfiguration")]
     public V1beta2ServiceSpecForProviderSourceConfigurationImageRepositoryImageConfiguration? ImageConfiguration { get; set; }
 
-    /// <summary>
-    /// Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-    /// image name format, see Pulling an image in the Amazon ECR User Guide.
-    /// </summary>
+    /// <summary>Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.</summary>
     [JsonPropertyName("imageIdentifier")]
     public string? ImageIdentifier { get; set; }
 
-    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.</summary>
+    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.</summary>
     [JsonPropertyName("imageRepositoryType")]
     public string? ImageRepositoryType { get; set; }
 }
 
-/// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+/// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderSourceConfiguration
 {
-    /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+    /// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta2ServiceSpecForProviderSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
@@ -784,11 +781,11 @@ public partial class V1beta2ServiceSpecForProviderSourceConfiguration
     [JsonPropertyName("autoDeploymentsEnabled")]
     public bool? AutoDeploymentsEnabled { get; set; }
 
-    /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+    /// <summary>Description of a source code repository. See code_repository below.</summary>
     [JsonPropertyName("codeRepository")]
     public V1beta2ServiceSpecForProviderSourceConfigurationCodeRepository? CodeRepository { get; set; }
 
-    /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+    /// <summary>Description of a source image repository. See image_repository below.</summary>
     [JsonPropertyName("imageRepository")]
     public V1beta2ServiceSpecForProviderSourceConfigurationImageRepository? ImageRepository { get; set; }
 }
@@ -801,23 +798,23 @@ public partial class V1beta2ServiceSpecForProvider
     [JsonPropertyName("autoScalingConfigurationArn")]
     public string? AutoScalingConfigurationArn { get; set; }
 
-    /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+    /// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2ServiceSpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
     [JsonPropertyName("healthCheckConfiguration")]
     public V1beta2ServiceSpecForProviderHealthCheckConfiguration? HealthCheckConfiguration { get; set; }
 
-    /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+    /// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
     [JsonPropertyName("instanceConfiguration")]
     public V1beta2ServiceSpecForProviderInstanceConfiguration? InstanceConfiguration { get; set; }
 
-    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta2ServiceSpecForProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+    /// <summary>Observability configuration of your service. See observability_configuration below.</summary>
     [JsonPropertyName("observabilityConfiguration")]
     public V1beta2ServiceSpecForProviderObservabilityConfiguration? ObservabilityConfiguration { get; set; }
 
@@ -828,11 +825,11 @@ public partial class V1beta2ServiceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>(Forces new resource) Name of the service.</summary>
+    /// <summary>Name of the service.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+    /// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta2ServiceSpecForProviderSourceConfiguration? SourceConfiguration { get; set; }
 
@@ -841,7 +838,7 @@ public partial class V1beta2ServiceSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+/// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderEncryptionConfiguration
@@ -851,7 +848,7 @@ public partial class V1beta2ServiceSpecInitProviderEncryptionConfiguration
     public string? KmsKey { get; set; }
 }
 
-/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderHealthCheckConfiguration
@@ -881,7 +878,7 @@ public partial class V1beta2ServiceSpecInitProviderHealthCheckConfiguration
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+/// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderInstanceConfiguration
@@ -1046,16 +1043,16 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
     public V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguration
 {
-    /// <summary>The type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
+    /// <summary>Type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
     [JsonPropertyName("egressType")]
     public string? EgressType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
+    /// <summary>ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
     [JsonPropertyName("vpcConnectorArn")]
     public string? VpcConnectorArn { get; set; }
 
@@ -1068,30 +1065,30 @@ public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationEgressCon
     public V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfigurationVpcConnectorArnSelector? VpcConnectorArnSelector { get; set; }
 }
 
-/// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfigurationIngressConfiguration
 {
-    /// <summary>Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.</summary>
+    /// <summary>Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.</summary>
     [JsonPropertyName("isPubliclyAccessible")]
     public bool? IsPubliclyAccessible { get; set; }
 }
 
-/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderNetworkConfiguration
 {
-    /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
     [JsonPropertyName("egressConfiguration")]
     public V1beta2ServiceSpecInitProviderNetworkConfigurationEgressConfiguration? EgressConfiguration { get; set; }
 
-    /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
     [JsonPropertyName("ingressConfiguration")]
     public V1beta2ServiceSpecInitProviderNetworkConfigurationIngressConfiguration? IngressConfiguration { get; set; }
 
-    /// <summary>App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
+    /// <summary>App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
@@ -1243,7 +1240,7 @@ public partial class V1beta2ServiceSpecInitProviderObservabilityConfigurationObs
     public V1beta2ServiceSpecInitProviderObservabilityConfigurationObservabilityConfigurationArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+/// <summary>Observability configuration of your service. See observability_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderObservabilityConfiguration
@@ -1412,7 +1409,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
     public V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+/// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfiguration
@@ -1434,7 +1431,7 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationAuthentica
     public V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfigurationConnectionArnSelector? ConnectionArnSelector { get; set; }
 }
 
-/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
@@ -1464,21 +1461,21 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+/// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
-    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
     [JsonPropertyName("codeConfigurationValues")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues? CodeConfigurationValues { get; set; }
 
-    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:</summary>
+    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.</summary>
     [JsonPropertyName("configurationSource")]
     public string? ConfigurationSource { get; set; }
 }
 
-/// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+/// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositorySourceCodeVersion
@@ -1492,12 +1489,12 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
     public string? Value { get; set; }
 }
 
-/// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+/// <summary>Description of a source code repository. See code_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepository
 {
-    /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+    /// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
     [JsonPropertyName("codeConfiguration")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositoryCodeConfiguration? CodeConfiguration { get; set; }
 
@@ -1505,16 +1502,16 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationCodeReposi
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+    /// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
     [JsonPropertyName("sourceCodeVersion")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepositorySourceCodeVersion? SourceCodeVersion { get; set; }
 
-    /// <summary>The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
+    /// <summary>Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
     [JsonPropertyName("sourceDirectory")]
     public string? SourceDirectory { get; set; }
 }
 
-/// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+/// <summary>Configuration for running the identified image. See image_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepositoryImageConfiguration
@@ -1536,33 +1533,30 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepos
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+/// <summary>Description of a source image repository. See image_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfigurationImageRepository
 {
-    /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+    /// <summary>Configuration for running the identified image. See image_configuration below.</summary>
     [JsonPropertyName("imageConfiguration")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationImageRepositoryImageConfiguration? ImageConfiguration { get; set; }
 
-    /// <summary>
-    /// Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-    /// image name format, see Pulling an image in the Amazon ECR User Guide.
-    /// </summary>
+    /// <summary>Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.</summary>
     [JsonPropertyName("imageIdentifier")]
     public string? ImageIdentifier { get; set; }
 
-    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.</summary>
+    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.</summary>
     [JsonPropertyName("imageRepositoryType")]
     public string? ImageRepositoryType { get; set; }
 }
 
-/// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+/// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderSourceConfiguration
 {
-    /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+    /// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
@@ -1570,11 +1564,11 @@ public partial class V1beta2ServiceSpecInitProviderSourceConfiguration
     [JsonPropertyName("autoDeploymentsEnabled")]
     public bool? AutoDeploymentsEnabled { get; set; }
 
-    /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+    /// <summary>Description of a source code repository. See code_repository below.</summary>
     [JsonPropertyName("codeRepository")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationCodeRepository? CodeRepository { get; set; }
 
-    /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+    /// <summary>Description of a source image repository. See image_repository below.</summary>
     [JsonPropertyName("imageRepository")]
     public V1beta2ServiceSpecInitProviderSourceConfigurationImageRepository? ImageRepository { get; set; }
 }
@@ -1599,31 +1593,31 @@ public partial class V1beta2ServiceSpecInitProvider
     [JsonPropertyName("autoScalingConfigurationArn")]
     public string? AutoScalingConfigurationArn { get; set; }
 
-    /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+    /// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2ServiceSpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
     [JsonPropertyName("healthCheckConfiguration")]
     public V1beta2ServiceSpecInitProviderHealthCheckConfiguration? HealthCheckConfiguration { get; set; }
 
-    /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+    /// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
     [JsonPropertyName("instanceConfiguration")]
     public V1beta2ServiceSpecInitProviderInstanceConfiguration? InstanceConfiguration { get; set; }
 
-    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta2ServiceSpecInitProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+    /// <summary>Observability configuration of your service. See observability_configuration below.</summary>
     [JsonPropertyName("observabilityConfiguration")]
     public V1beta2ServiceSpecInitProviderObservabilityConfiguration? ObservabilityConfiguration { get; set; }
 
-    /// <summary>(Forces new resource) Name of the service.</summary>
+    /// <summary>Name of the service.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
-    /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+    /// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta2ServiceSpecInitProviderSourceConfiguration? SourceConfiguration { get; set; }
 
@@ -1815,7 +1809,7 @@ public partial class V1beta2ServiceSpec
     public V1beta2ServiceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+/// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderEncryptionConfiguration
@@ -1825,7 +1819,7 @@ public partial class V1beta2ServiceStatusAtProviderEncryptionConfiguration
     public string? KmsKey { get; set; }
 }
 
-/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+/// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderHealthCheckConfiguration
@@ -1855,7 +1849,7 @@ public partial class V1beta2ServiceStatusAtProviderHealthCheckConfiguration
     public double? UnhealthyThreshold { get; set; }
 }
 
-/// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+/// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderInstanceConfiguration
@@ -1873,49 +1867,49 @@ public partial class V1beta2ServiceStatusAtProviderInstanceConfiguration
     public string? Memory { get; set; }
 }
 
-/// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationEgressConfiguration
 {
-    /// <summary>The type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
+    /// <summary>Type of egress configuration. Valid values are: DEFAULT and VPC.</summary>
     [JsonPropertyName("egressType")]
     public string? EgressType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
+    /// <summary>ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.</summary>
     [JsonPropertyName("vpcConnectorArn")]
     public string? VpcConnectorArn { get; set; }
 }
 
-/// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+/// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfigurationIngressConfiguration
 {
-    /// <summary>Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.</summary>
+    /// <summary>Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.</summary>
     [JsonPropertyName("isPubliclyAccessible")]
     public bool? IsPubliclyAccessible { get; set; }
 }
 
-/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+/// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderNetworkConfiguration
 {
-    /// <summary>Network configuration settings for outbound message traffic. See Egress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for outbound message traffic. See egress_configuration below.</summary>
     [JsonPropertyName("egressConfiguration")]
     public V1beta2ServiceStatusAtProviderNetworkConfigurationEgressConfiguration? EgressConfiguration { get; set; }
 
-    /// <summary>Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.</summary>
+    /// <summary>Network configuration settings for inbound network traffic. See ingress_configuration below.</summary>
     [JsonPropertyName("ingressConfiguration")]
     public V1beta2ServiceStatusAtProviderNetworkConfigurationIngressConfiguration? IngressConfiguration { get; set; }
 
-    /// <summary>App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
+    /// <summary>App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 }
 
-/// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+/// <summary>Observability configuration of your service. See observability_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderObservabilityConfiguration
@@ -1929,7 +1923,7 @@ public partial class V1beta2ServiceStatusAtProviderObservabilityConfiguration
     public bool? ObservabilityEnabled { get; set; }
 }
 
-/// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+/// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationAuthenticationConfiguration
@@ -1943,7 +1937,7 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationAuthentica
     public string? ConnectionArn { get; set; }
 }
 
-/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+/// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues
@@ -1973,21 +1967,21 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+/// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfiguration
 {
-    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.</summary>
+    /// <summary>Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.</summary>
     [JsonPropertyName("codeConfigurationValues")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues? CodeConfigurationValues { get; set; }
 
-    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:</summary>
+    /// <summary>Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.</summary>
     [JsonPropertyName("configurationSource")]
     public string? ConfigurationSource { get; set; }
 }
 
-/// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+/// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositorySourceCodeVersion
@@ -2001,12 +1995,12 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
     public string? Value { get; set; }
 }
 
-/// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+/// <summary>Description of a source code repository. See code_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepository
 {
-    /// <summary>Configuration for building and running the service from a source code repository. See Code Configuration below for more details.</summary>
+    /// <summary>Configuration for building and running the service from a source code repository. See code_configuration below.</summary>
     [JsonPropertyName("codeConfiguration")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositoryCodeConfiguration? CodeConfiguration { get; set; }
 
@@ -2014,16 +2008,16 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationCodeReposi
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>Version that should be used within the source code repository. See Source Code Version below for more details.</summary>
+    /// <summary>Version that should be used within the source code repository. See source_code_version below.</summary>
     [JsonPropertyName("sourceCodeVersion")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepositorySourceCodeVersion? SourceCodeVersion { get; set; }
 
-    /// <summary>The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
+    /// <summary>Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.</summary>
     [JsonPropertyName("sourceDirectory")]
     public string? SourceDirectory { get; set; }
 }
 
-/// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+/// <summary>Configuration for running the identified image. See image_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepositoryImageConfiguration
@@ -2045,33 +2039,30 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepos
     public string? StartCommand { get; set; }
 }
 
-/// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+/// <summary>Description of a source image repository. See image_repository below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfigurationImageRepository
 {
-    /// <summary>Configuration for running the identified image. See Image Configuration below for more details.</summary>
+    /// <summary>Configuration for running the identified image. See image_configuration below.</summary>
     [JsonPropertyName("imageConfiguration")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationImageRepositoryImageConfiguration? ImageConfiguration { get; set; }
 
-    /// <summary>
-    /// Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-    /// image name format, see Pulling an image in the Amazon ECR User Guide.
-    /// </summary>
+    /// <summary>Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.</summary>
     [JsonPropertyName("imageIdentifier")]
     public string? ImageIdentifier { get; set; }
 
-    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.</summary>
+    /// <summary>Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.</summary>
     [JsonPropertyName("imageRepositoryType")]
     public string? ImageRepositoryType { get; set; }
 }
 
-/// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+/// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderSourceConfiguration
 {
-    /// <summary>Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.</summary>
+    /// <summary>Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.</summary>
     [JsonPropertyName("authenticationConfiguration")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationAuthenticationConfiguration? AuthenticationConfiguration { get; set; }
 
@@ -2079,11 +2070,11 @@ public partial class V1beta2ServiceStatusAtProviderSourceConfiguration
     [JsonPropertyName("autoDeploymentsEnabled")]
     public bool? AutoDeploymentsEnabled { get; set; }
 
-    /// <summary>Description of a source code repository. See Code Repository below for more details.</summary>
+    /// <summary>Description of a source code repository. See code_repository below.</summary>
     [JsonPropertyName("codeRepository")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationCodeRepository? CodeRepository { get; set; }
 
-    /// <summary>Description of a source image repository. See Image Repository below for more details.</summary>
+    /// <summary>Description of a source image repository. See image_repository below.</summary>
     [JsonPropertyName("imageRepository")]
     public V1beta2ServiceStatusAtProviderSourceConfigurationImageRepository? ImageRepository { get; set; }
 }
@@ -2100,26 +2091,26 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("autoScalingConfigurationArn")]
     public string? AutoScalingConfigurationArn { get; set; }
 
-    /// <summary>(Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.</summary>
+    /// <summary>Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta2ServiceStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.</summary>
+    /// <summary>Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.</summary>
     [JsonPropertyName("healthCheckConfiguration")]
     public V1beta2ServiceStatusAtProviderHealthCheckConfiguration? HealthCheckConfiguration { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.</summary>
+    /// <summary>Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.</summary>
     [JsonPropertyName("instanceConfiguration")]
     public V1beta2ServiceStatusAtProviderInstanceConfiguration? InstanceConfiguration { get; set; }
 
-    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.</summary>
+    /// <summary>Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta2ServiceStatusAtProviderNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The observability configuration of your service. See Observability Configuration below for more details.</summary>
+    /// <summary>Observability configuration of your service. See observability_configuration below.</summary>
     [JsonPropertyName("observabilityConfiguration")]
     public V1beta2ServiceStatusAtProviderObservabilityConfiguration? ObservabilityConfiguration { get; set; }
 
@@ -2130,11 +2121,11 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An alphanumeric ID that App Runner generated for this service. Unique within the AWS Region.</summary>
+    /// <summary>Alphanumeric ID that App Runner generated for this service. Unique within the AWS Region.</summary>
     [JsonPropertyName("serviceId")]
     public string? ServiceId { get; set; }
 
-    /// <summary>(Forces new resource) Name of the service.</summary>
+    /// <summary>Name of the service.</summary>
     [JsonPropertyName("serviceName")]
     public string? ServiceName { get; set; }
 
@@ -2142,7 +2133,7 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("serviceUrl")]
     public string? ServiceUrl { get; set; }
 
-    /// <summary>The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.</summary>
+    /// <summary>Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.</summary>
     [JsonPropertyName("sourceConfiguration")]
     public V1beta2ServiceStatusAtProviderSourceConfiguration? SourceConfiguration { get; set; }
 

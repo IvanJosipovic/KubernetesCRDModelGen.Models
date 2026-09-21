@@ -191,7 +191,7 @@ public partial class V1beta1LanguageModelSpecForProviderInputDataConfigDataAcces
     public V1beta1LanguageModelSpecForProviderInputDataConfigDataAccessRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+/// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LanguageModelSpecForProviderInputDataConfig
@@ -225,11 +225,11 @@ public partial class V1beta1LanguageModelSpecForProvider
     [JsonPropertyName("baseModelName")]
     public string? BaseModelName { get; set; }
 
-    /// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+    /// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
     [JsonPropertyName("inputDataConfig")]
     public V1beta1LanguageModelSpecForProviderInputDataConfig? InputDataConfig { get; set; }
 
-    /// <summary>The language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
@@ -400,7 +400,7 @@ public partial class V1beta1LanguageModelSpecInitProviderInputDataConfigDataAcce
     public V1beta1LanguageModelSpecInitProviderInputDataConfigDataAccessRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+/// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LanguageModelSpecInitProviderInputDataConfig
@@ -446,11 +446,11 @@ public partial class V1beta1LanguageModelSpecInitProvider
     [JsonPropertyName("baseModelName")]
     public string? BaseModelName { get; set; }
 
-    /// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+    /// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
     [JsonPropertyName("inputDataConfig")]
     public V1beta1LanguageModelSpecInitProviderInputDataConfig? InputDataConfig { get; set; }
 
-    /// <summary>The language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 
@@ -566,7 +566,7 @@ public partial class V1beta1LanguageModelSpec
     public V1beta1LanguageModelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+/// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LanguageModelStatusAtProviderInputDataConfig
@@ -600,11 +600,11 @@ public partial class V1beta1LanguageModelStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The input data config for the LanguageModel. See Input Data Config for more details.</summary>
+    /// <summary>Input data configuration for the LanguageModel. See input_data_config Block for details.</summary>
     [JsonPropertyName("inputDataConfig")]
     public V1beta1LanguageModelStatusAtProviderInputDataConfig? InputDataConfig { get; set; }
 
-    /// <summary>The language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
+    /// <summary>Language code you selected for your language model. Refer to the supported languages page for accepted codes.</summary>
     [JsonPropertyName("languageCode")]
     public string? LanguageCode { get; set; }
 

@@ -202,11 +202,11 @@ public partial class V1beta1ResourceAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.</summary>
+    /// <summary>ARN of the resource to associate with the RAM Resource Share.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the RAM Resource Share.</summary>
+    /// <summary>ARN of the RAM Resource Share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 
@@ -390,11 +390,11 @@ public partial class V1beta1ResourceAssociationSpecInitProviderResourceShareArnS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceAssociationSpecInitProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.</summary>
+    /// <summary>ARN of the resource to associate with the RAM Resource Share.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the RAM Resource Share.</summary>
+    /// <summary>ARN of the RAM Resource Share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 
@@ -518,7 +518,7 @@ public partial class V1beta1ResourceAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceAssociationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -529,11 +529,11 @@ public partial class V1beta1ResourceAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.</summary>
+    /// <summary>ARN of the resource to associate with the RAM Resource Share.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the RAM Resource Share.</summary>
+    /// <summary>ARN of the RAM Resource Share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 }

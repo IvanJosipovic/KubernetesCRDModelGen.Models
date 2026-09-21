@@ -388,7 +388,7 @@ public partial class V1beta1AppMonitorStatusAtProvider
     [JsonPropertyName("appMonitorId")]
     public string? AppMonitorId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) specifying the app monitor.</summary>
+    /// <summary>ARN specifying the app monitor.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

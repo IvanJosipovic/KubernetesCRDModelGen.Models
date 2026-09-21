@@ -605,7 +605,7 @@ public partial class V1beta1DiscovererSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DiscovererStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the discoverer.</summary>
+    /// <summary>ARN of the discoverer.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

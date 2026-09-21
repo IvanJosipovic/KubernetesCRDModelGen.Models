@@ -61,14 +61,14 @@ spec:
                     description: ARN of an App Runner automatic scaling configuration resource that you want to associate with your service. If not provided, App Runner associates the latest revision of a default auto scaling configuration.
                     type: string
                   encryptionConfiguration:
-                    description: (Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.
+                    description: Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.
                     properties:
                       kmsKey:
                         description: ARN of the KMS key used for encryption.
                         type: string
                     type: object
                   healthCheckConfiguration:
-                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.
+                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.
                     properties:
                       healthyThreshold:
                         description: Number of consecutive checks that must succeed before App Runner decides that the service is healthy. Defaults to 1. Minimum value of 1. Maximum value of 20.
@@ -90,7 +90,7 @@ spec:
                         type: number
                     type: object
                   instanceConfiguration:
-                    description: The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.
+                    description: Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.
                     properties:
                       cpu:
                         description: 'Number of CPU units reserved for each instance of your App Runner service represented as a String. Defaults to 1024. Valid values: 256|512|1024|2048|4096|(0.25|0.5|1|2|4) vCPU.'
@@ -103,16 +103,16 @@ spec:
                         type: string
                     type: object
                   networkConfiguration:
-                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.
+                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.
                     properties:
                       egressConfiguration:
-                        description: Network configuration settings for outbound message traffic. See Egress Configuration below for more details.
+                        description: Network configuration settings for outbound message traffic. See egress_configuration below.
                         properties:
                           egressType:
-                            description: 'The type of egress configuration. Valid values are: DEFAULT and VPC.'
+                            description: 'Type of egress configuration. Valid values are: DEFAULT and VPC.'
                             type: string
                           vpcConnectorArn:
-                            description: The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
+                            description: ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
                             type: string
                           vpcConnectorArnRef:
                             description: Reference to a VPCConnector in apprunner to populate vpcConnectorArn.
@@ -195,18 +195,18 @@ spec:
                             type: object
                         type: object
                       ingressConfiguration:
-                        description: Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.
+                        description: Network configuration settings for inbound network traffic. See ingress_configuration below.
                         properties:
                           isPubliclyAccessible:
-                            description: Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.
+                            description: Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.
                             type: boolean
                         type: object
                       ipAddressType:
-                        description: 'App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
+                        description: 'App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
                         type: string
                     type: object
                   observabilityConfiguration:
-                    description: The observability configuration of your service. See Observability Configuration below for more details.
+                    description: Observability configuration of your service. See observability_configuration below.
                     properties:
                       observabilityConfigurationArn:
                         description: ARN of the observability configuration that is associated with the service. Specified only when observability_enabled is true.
@@ -300,13 +300,13 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serviceName:
-                    description: (Forces new resource) Name of the service.
+                    description: Name of the service.
                     type: string
                   sourceConfiguration:
-                    description: The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.
+                    description: Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.
                     properties:
                       authenticationConfiguration:
-                        description: Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.
+                        description: Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.
                         properties:
                           accessRoleArn:
                             description: ARN of the IAM role that grants the App Runner service access to a source repository. Required for ECR image repositories (but not for ECR Public)
@@ -398,13 +398,13 @@ spec:
                         description: Whether continuous integration from the source repository is enabled for the App Runner service. If set to true, each repository change (source code commit or new image version) starts a deployment. Defaults to true.
                         type: boolean
                       codeRepository:
-                        description: Description of a source code repository. See Code Repository below for more details.
+                        description: Description of a source code repository. See code_repository below.
                         properties:
                           codeConfiguration:
-                            description: Configuration for building and running the service from a source code repository. See Code Configuration below for more details.
+                            description: Configuration for building and running the service from a source code repository. See code_configuration below.
                             properties:
                               codeConfigurationValues:
-                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.
+                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.
                                 properties:
                                   buildCommand:
                                     description: Command App Runner runs to build your application.
@@ -432,14 +432,14 @@ spec:
                                     type: string
                                 type: object
                               configurationSource:
-                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:'
+                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.'
                                 type: string
                             type: object
                           repositoryUrl:
                             description: Location of the repository that contains the source code.
                             type: string
                           sourceCodeVersion:
-                            description: Version that should be used within the source code repository. See Source Code Version below for more details.
+                            description: Version that should be used within the source code repository. See source_code_version below.
                             properties:
                               type:
                                 description: 'Type of version identifier. For a git-based repository, branches represent versions. Valid values: BRANCH.'
@@ -449,14 +449,14 @@ spec:
                                 type: string
                             type: object
                           sourceDirectory:
-                            description: The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
+                            description: Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
                             type: string
                         type: object
                       imageRepository:
-                        description: Description of a source image repository. See Image Repository below for more details.
+                        description: Description of a source image repository. See image_repository below.
                         properties:
                           imageConfiguration:
-                            description: Configuration for running the identified image. See Image Configuration below for more details.
+                            description: Configuration for running the identified image. See image_configuration below.
                             properties:
                               port:
                                 description: Port that your application listens to in the container. Defaults to "8080".
@@ -478,12 +478,10 @@ spec:
                                 type: string
                             type: object
                           imageIdentifier:
-                            description: |-
-                              Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-                              image name format, see Pulling an image in the Amazon ECR User Guide.
+                            description: Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.
                             type: string
                           imageRepositoryType:
-                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.'
+                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.'
                             type: string
                         type: object
                     type: object
@@ -513,14 +511,14 @@ spec:
                     description: ARN of an App Runner automatic scaling configuration resource that you want to associate with your service. If not provided, App Runner associates the latest revision of a default auto scaling configuration.
                     type: string
                   encryptionConfiguration:
-                    description: (Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.
+                    description: Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.
                     properties:
                       kmsKey:
                         description: ARN of the KMS key used for encryption.
                         type: string
                     type: object
                   healthCheckConfiguration:
-                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.
+                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.
                     properties:
                       healthyThreshold:
                         description: Number of consecutive checks that must succeed before App Runner decides that the service is healthy. Defaults to 1. Minimum value of 1. Maximum value of 20.
@@ -542,7 +540,7 @@ spec:
                         type: number
                     type: object
                   instanceConfiguration:
-                    description: The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.
+                    description: Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.
                     properties:
                       cpu:
                         description: 'Number of CPU units reserved for each instance of your App Runner service represented as a String. Defaults to 1024. Valid values: 256|512|1024|2048|4096|(0.25|0.5|1|2|4) vCPU.'
@@ -555,16 +553,16 @@ spec:
                         type: string
                     type: object
                   networkConfiguration:
-                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.
+                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.
                     properties:
                       egressConfiguration:
-                        description: Network configuration settings for outbound message traffic. See Egress Configuration below for more details.
+                        description: Network configuration settings for outbound message traffic. See egress_configuration below.
                         properties:
                           egressType:
-                            description: 'The type of egress configuration. Valid values are: DEFAULT and VPC.'
+                            description: 'Type of egress configuration. Valid values are: DEFAULT and VPC.'
                             type: string
                           vpcConnectorArn:
-                            description: The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
+                            description: ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
                             type: string
                           vpcConnectorArnRef:
                             description: Reference to a VPCConnector in apprunner to populate vpcConnectorArn.
@@ -647,18 +645,18 @@ spec:
                             type: object
                         type: object
                       ingressConfiguration:
-                        description: Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.
+                        description: Network configuration settings for inbound network traffic. See ingress_configuration below.
                         properties:
                           isPubliclyAccessible:
-                            description: Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.
+                            description: Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.
                             type: boolean
                         type: object
                       ipAddressType:
-                        description: 'App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
+                        description: 'App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
                         type: string
                     type: object
                   observabilityConfiguration:
-                    description: The observability configuration of your service. See Observability Configuration below for more details.
+                    description: Observability configuration of your service. See observability_configuration below.
                     properties:
                       observabilityConfigurationArn:
                         description: ARN of the observability configuration that is associated with the service. Specified only when observability_enabled is true.
@@ -747,13 +745,13 @@ spec:
                         type: boolean
                     type: object
                   serviceName:
-                    description: (Forces new resource) Name of the service.
+                    description: Name of the service.
                     type: string
                   sourceConfiguration:
-                    description: The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.
+                    description: Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.
                     properties:
                       authenticationConfiguration:
-                        description: Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.
+                        description: Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.
                         properties:
                           accessRoleArn:
                             description: ARN of the IAM role that grants the App Runner service access to a source repository. Required for ECR image repositories (but not for ECR Public)
@@ -845,13 +843,13 @@ spec:
                         description: Whether continuous integration from the source repository is enabled for the App Runner service. If set to true, each repository change (source code commit or new image version) starts a deployment. Defaults to true.
                         type: boolean
                       codeRepository:
-                        description: Description of a source code repository. See Code Repository below for more details.
+                        description: Description of a source code repository. See code_repository below.
                         properties:
                           codeConfiguration:
-                            description: Configuration for building and running the service from a source code repository. See Code Configuration below for more details.
+                            description: Configuration for building and running the service from a source code repository. See code_configuration below.
                             properties:
                               codeConfigurationValues:
-                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.
+                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.
                                 properties:
                                   buildCommand:
                                     description: Command App Runner runs to build your application.
@@ -879,14 +877,14 @@ spec:
                                     type: string
                                 type: object
                               configurationSource:
-                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:'
+                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.'
                                 type: string
                             type: object
                           repositoryUrl:
                             description: Location of the repository that contains the source code.
                             type: string
                           sourceCodeVersion:
-                            description: Version that should be used within the source code repository. See Source Code Version below for more details.
+                            description: Version that should be used within the source code repository. See source_code_version below.
                             properties:
                               type:
                                 description: 'Type of version identifier. For a git-based repository, branches represent versions. Valid values: BRANCH.'
@@ -896,14 +894,14 @@ spec:
                                 type: string
                             type: object
                           sourceDirectory:
-                            description: The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
+                            description: Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
                             type: string
                         type: object
                       imageRepository:
-                        description: Description of a source image repository. See Image Repository below for more details.
+                        description: Description of a source image repository. See image_repository below.
                         properties:
                           imageConfiguration:
-                            description: Configuration for running the identified image. See Image Configuration below for more details.
+                            description: Configuration for running the identified image. See image_configuration below.
                             properties:
                               port:
                                 description: Port that your application listens to in the container. Defaults to "8080".
@@ -925,12 +923,10 @@ spec:
                                 type: string
                             type: object
                           imageIdentifier:
-                            description: |-
-                              Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-                              image name format, see Pulling an image in the Amazon ECR User Guide.
+                            description: Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.
                             type: string
                           imageRepositoryType:
-                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.'
+                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.'
                             type: string
                         type: object
                     type: object
@@ -1016,14 +1012,14 @@ spec:
                     description: ARN of an App Runner automatic scaling configuration resource that you want to associate with your service. If not provided, App Runner associates the latest revision of a default auto scaling configuration.
                     type: string
                   encryptionConfiguration:
-                    description: (Forces new resource) An optional custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See Encryption Configuration below for more details.
+                    description: Custom encryption key that App Runner uses to encrypt the copy of your source repository that it maintains and your service logs. By default, App Runner uses an AWS managed CMK. See encryption_configuration below.
                     properties:
                       kmsKey:
                         description: ARN of the KMS key used for encryption.
                         type: string
                     type: object
                   healthCheckConfiguration:
-                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See Health Check Configuration below for more details.
+                    description: Settings of the health check that AWS App Runner performs to monitor the health of your service. See health_check_configuration below.
                     properties:
                       healthyThreshold:
                         description: Number of consecutive checks that must succeed before App Runner decides that the service is healthy. Defaults to 1. Minimum value of 1. Maximum value of 20.
@@ -1047,7 +1043,7 @@ spec:
                   id:
                     type: string
                   instanceConfiguration:
-                    description: The runtime configuration of instances (scaling units) of the App Runner service. See Instance Configuration below for more details.
+                    description: Runtime configuration of instances (scaling units) of the App Runner service. See instance_configuration below.
                     properties:
                       cpu:
                         description: 'Number of CPU units reserved for each instance of your App Runner service represented as a String. Defaults to 1024. Valid values: 256|512|1024|2048|4096|(0.25|0.5|1|2|4) vCPU.'
@@ -1060,31 +1056,31 @@ spec:
                         type: string
                     type: object
                   networkConfiguration:
-                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See Network Configuration below for more details.
+                    description: Configuration settings related to network traffic of the web application that the App Runner service runs. See network_configuration below.
                     properties:
                       egressConfiguration:
-                        description: Network configuration settings for outbound message traffic. See Egress Configuration below for more details.
+                        description: Network configuration settings for outbound message traffic. See egress_configuration below.
                         properties:
                           egressType:
-                            description: 'The type of egress configuration. Valid values are: DEFAULT and VPC.'
+                            description: 'Type of egress configuration. Valid values are: DEFAULT and VPC.'
                             type: string
                           vpcConnectorArn:
-                            description: The Amazon Resource Name (ARN) of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
+                            description: ARN of the App Runner VPC connector that you want to associate with your App Runner service. Only valid when EgressType = VPC.
                             type: string
                         type: object
                       ingressConfiguration:
-                        description: Network configuration settings for inbound network traffic. See Ingress Configuration below for more details.
+                        description: Network configuration settings for inbound network traffic. See ingress_configuration below.
                         properties:
                           isPubliclyAccessible:
-                            description: Specifies whether your App Runner service is publicly accessible. To make the service publicly accessible set it to True. To make the service privately accessible, from only within an Amazon VPC set it to False.
+                            description: Whether your App Runner service is publicly accessible. To make the service publicly accessible set it to true. To make the service privately accessible, from only within an Amazon VPC, set it to false.
                             type: boolean
                         type: object
                       ipAddressType:
-                        description: 'App Runner provides you with the option to choose between Internet Protocol version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
+                        description: 'App Runner provides you with the option to choose between IP version 4 (IPv4) and dual stack (IPv4 and IPv6) for your incoming public network configuration. Valid values: IPV4, DUAL_STACK. Default: IPV4.'
                         type: string
                     type: object
                   observabilityConfiguration:
-                    description: The observability configuration of your service. See Observability Configuration below for more details.
+                    description: Observability configuration of your service. See observability_configuration below.
                     properties:
                       observabilityConfigurationArn:
                         description: ARN of the observability configuration that is associated with the service. Specified only when observability_enabled is true.
@@ -1099,19 +1095,19 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serviceId:
-                    description: An alphanumeric ID that App Runner generated for this service. Unique within the AWS Region.
+                    description: Alphanumeric ID that App Runner generated for this service. Unique within the AWS Region.
                     type: string
                   serviceName:
-                    description: (Forces new resource) Name of the service.
+                    description: Name of the service.
                     type: string
                   serviceUrl:
                     description: Subdomain URL that App Runner generated for this service. You can use this URL to access your service web application.
                     type: string
                   sourceConfiguration:
-                    description: The source to deploy to the App Runner service. Can be a code or an image repository. See Source Configuration below for more details.
+                    description: Source to deploy to the App Runner service. Can be a code or an image repository. See source_configuration below.
                     properties:
                       authenticationConfiguration:
-                        description: Describes resources needed to authenticate access to some source repositories. See Authentication Configuration below for more details.
+                        description: Configuration for resources needed to authenticate access to some source repositories. See authentication_configuration below.
                         properties:
                           accessRoleArn:
                             description: ARN of the IAM role that grants the App Runner service access to a source repository. Required for ECR image repositories (but not for ECR Public)
@@ -1124,13 +1120,13 @@ spec:
                         description: Whether continuous integration from the source repository is enabled for the App Runner service. If set to true, each repository change (source code commit or new image version) starts a deployment. Defaults to true.
                         type: boolean
                       codeRepository:
-                        description: Description of a source code repository. See Code Repository below for more details.
+                        description: Description of a source code repository. See code_repository below.
                         properties:
                           codeConfiguration:
-                            description: Configuration for building and running the service from a source code repository. See Code Configuration below for more details.
+                            description: Configuration for building and running the service from a source code repository. See code_configuration below.
                             properties:
                               codeConfigurationValues:
-                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See Code Configuration Values below for more details.
+                                description: Basic configuration for building and running the App Runner service. Use this parameter to quickly launch an App Runner service without providing an apprunner.yaml file in the source code repository (or ignoring the file if it exists). See code_configuration_values below.
                                 properties:
                                   buildCommand:
                                     description: Command App Runner runs to build your application.
@@ -1158,14 +1154,14 @@ spec:
                                     type: string
                                 type: object
                               configurationSource:
-                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Values are interpreted as follows:'
+                                description: 'Source of the App Runner configuration. Valid values: REPOSITORY, API. Use REPOSITORY to have App Runner read configuration values from the apprunner.yaml file in the source code repository and ignore code_configuration_values. Use API to have App Runner use the configuration values provided in code_configuration_values and ignore the apprunner.yaml file in the source code repository.'
                                 type: string
                             type: object
                           repositoryUrl:
                             description: Location of the repository that contains the source code.
                             type: string
                           sourceCodeVersion:
-                            description: Version that should be used within the source code repository. See Source Code Version below for more details.
+                            description: Version that should be used within the source code repository. See source_code_version below.
                             properties:
                               type:
                                 description: 'Type of version identifier. For a git-based repository, branches represent versions. Valid values: BRANCH.'
@@ -1175,14 +1171,14 @@ spec:
                                 type: string
                             type: object
                           sourceDirectory:
-                            description: The path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
+                            description: Path of the directory that stores source code and configuration files. The build and start commands also execute from here. The path is absolute from root and, if not specified, defaults to the repository root.
                             type: string
                         type: object
                       imageRepository:
-                        description: Description of a source image repository. See Image Repository below for more details.
+                        description: Description of a source image repository. See image_repository below.
                         properties:
                           imageConfiguration:
-                            description: Configuration for running the identified image. See Image Configuration below for more details.
+                            description: Configuration for running the identified image. See image_configuration below.
                             properties:
                               port:
                                 description: Port that your application listens to in the container. Defaults to "8080".
@@ -1204,12 +1200,10 @@ spec:
                                 type: string
                             type: object
                           imageIdentifier:
-                            description: |-
-                              Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the
-                              image name format, see Pulling an image in the Amazon ECR User Guide.
+                            description: Identifier of an image. For an image in Amazon Elastic Container Registry (Amazon ECR), this is an image name. For the image name format, see Pulling an image in the Amazon ECR User Guide.
                             type: string
                           imageRepositoryType:
-                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR , ECR_PUBLIC.'
+                            description: 'Type of the image repository. This reflects the repository provider and whether the repository is private or public. Valid values: ECR, ECR_PUBLIC.'
                             type: string
                         type: object
                     type: object

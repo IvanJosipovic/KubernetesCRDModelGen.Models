@@ -198,7 +198,7 @@ public partial class V1beta1ReplicaKeySpecForProvider
     /// <summary>
     /// A flag to indicate whether to bypass the key policy lockout safety check.
     /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide.
+    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
     /// The default value is false.
     /// </summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
@@ -421,7 +421,7 @@ public partial class V1beta1ReplicaKeySpecInitProvider
     /// <summary>
     /// A flag to indicate whether to bypass the key policy lockout safety check.
     /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide.
+    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
     /// The default value is false.
     /// </summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]
@@ -574,14 +574,14 @@ public partial class V1beta1ReplicaKeySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicaKeyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the replica key. The key ARNs of related multi-Region keys differ only in the Region value.</summary>
+    /// <summary>ARN of the replica key. The key ARNs of related multi-Region keys differ only in the Region value.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
     /// <summary>
     /// A flag to indicate whether to bypass the key policy lockout safety check.
     /// Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
-    /// For more information, refer to the scenario in the Default Key Policy section in the AWS Key Management Service Developer Guide.
+    /// For more information, refer to the scenario in the Default Key Policy section in the AWS KMS Developer Guide.
     /// The default value is false.
     /// </summary>
     [JsonPropertyName("bypassPolicyLockoutSafetyCheck")]

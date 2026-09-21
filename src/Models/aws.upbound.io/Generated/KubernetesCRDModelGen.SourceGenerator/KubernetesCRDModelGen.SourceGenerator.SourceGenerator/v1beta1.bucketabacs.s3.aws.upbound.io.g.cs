@@ -60,11 +60,7 @@ public enum V1beta1BucketAbacSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketAbacSpecForProviderAbacStatus
 {
-    /// <summary>
-    /// ABAC status of the general purpose bucket.
-    /// Valid values are Enabled and Disabled.
-    /// By default, ABAC is disabled for all Amazon S3 general purpose buckets.
-    /// </summary>
+    /// <summary>ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -253,11 +249,7 @@ public partial class V1beta1BucketAbacSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketAbacSpecInitProviderAbacStatus
 {
-    /// <summary>
-    /// ABAC status of the general purpose bucket.
-    /// Valid values are Enabled and Disabled.
-    /// By default, ABAC is disabled for all Amazon S3 general purpose buckets.
-    /// </summary>
+    /// <summary>ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -634,11 +626,7 @@ public partial class V1beta1BucketAbacSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketAbacStatusAtProviderAbacStatus
 {
-    /// <summary>
-    /// ABAC status of the general purpose bucket.
-    /// Valid values are Enabled and Disabled.
-    /// By default, ABAC is disabled for all Amazon S3 general purpose buckets.
-    /// </summary>
+    /// <summary>ABAC status of the general purpose bucket. Valid values are Enabled and Disabled. By default, ABAC is disabled for all Amazon S3 general purpose buckets.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }

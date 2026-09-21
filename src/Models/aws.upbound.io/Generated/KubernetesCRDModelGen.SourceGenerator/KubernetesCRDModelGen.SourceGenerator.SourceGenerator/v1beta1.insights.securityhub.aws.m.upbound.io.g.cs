@@ -1692,7 +1692,7 @@ public partial class V1beta1InsightSpecForProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceIamInstanceProfileArn")]
     public IList<V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn>? ResourceAwsEc2InstanceIamInstanceProfileArn { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID of the instance. See String Filter below for more details.</summary>
+    /// <summary>AMI ID of the instance. See String Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 
@@ -3521,7 +3521,7 @@ public partial class V1beta1InsightSpecInitProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceIamInstanceProfileArn")]
     public IList<V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn>? ResourceAwsEc2InstanceIamInstanceProfileArn { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID of the instance. See String Filter below for more details.</summary>
+    /// <summary>AMI ID of the instance. See String Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 
@@ -5462,7 +5462,7 @@ public partial class V1beta1InsightStatusAtProviderFilters
     [JsonPropertyName("resourceAwsEc2InstanceIamInstanceProfileArn")]
     public IList<V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn>? ResourceAwsEc2InstanceIamInstanceProfileArn { get; set; }
 
-    /// <summary>The Amazon Machine Image (AMI) ID of the instance. See String Filter below for more details.</summary>
+    /// <summary>AMI ID of the instance. See String Filter below for more details.</summary>
     [JsonPropertyName("resourceAwsEc2InstanceImageId")]
     public IList<V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceImageId>? ResourceAwsEc2InstanceImageId { get; set; }
 

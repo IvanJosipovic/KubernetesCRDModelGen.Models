@@ -477,7 +477,7 @@ public partial class V1beta2AppStatusAtProvider
     [JsonPropertyName("applicationId")]
     public string? ApplicationId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the PinPoint Application.</summary>
+    /// <summary>ARN of the PinPoint Application.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

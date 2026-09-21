@@ -760,7 +760,7 @@ public partial class V1beta1PipelineSpecForProviderThumbnailConfigPermissions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecForProvider
 {
-    /// <summary>The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.</summary>
+    /// <summary>KMS key that you want to use with this pipeline.</summary>
     [JsonPropertyName("awsKmsKeyArn")]
     public string? AwsKmsKeyArn { get; set; }
 
@@ -803,7 +803,7 @@ public partial class V1beta1PipelineSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
+    /// <summary>IAM ARN for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -1560,7 +1560,7 @@ public partial class V1beta1PipelineSpecInitProviderThumbnailConfigPermissions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PipelineSpecInitProvider
 {
-    /// <summary>The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.</summary>
+    /// <summary>KMS key that you want to use with this pipeline.</summary>
     [JsonPropertyName("awsKmsKeyArn")]
     public string? AwsKmsKeyArn { get; set; }
 
@@ -1596,7 +1596,7 @@ public partial class V1beta1PipelineSpecInitProvider
     [JsonPropertyName("outputBucket")]
     public string? OutputBucket { get; set; }
 
-    /// <summary>The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
+    /// <summary>IAM ARN for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -1816,7 +1816,7 @@ public partial class V1beta1PipelineStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.</summary>
+    /// <summary>KMS key that you want to use with this pipeline.</summary>
     [JsonPropertyName("awsKmsKeyArn")]
     public string? AwsKmsKeyArn { get; set; }
 
@@ -1855,7 +1855,7 @@ public partial class V1beta1PipelineStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
+    /// <summary>IAM ARN for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 

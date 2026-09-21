@@ -504,7 +504,7 @@ public partial class V1beta1ResourceGatewaySpecForProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
+    /// <summary>Number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
     [JsonPropertyName("ipv4AddressesPerEni")]
     public double? Ipv4AddressesPerEni { get; set; }
 
@@ -519,7 +519,7 @@ public partial class V1beta1ResourceGatewaySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    /// <summary>How DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
     [JsonPropertyName("resourceConfigDnsResolution")]
     public string? ResourceConfigDnsResolution { get; set; }
 
@@ -1025,7 +1025,7 @@ public partial class V1beta1ResourceGatewaySpecInitProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
+    /// <summary>Number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
     [JsonPropertyName("ipv4AddressesPerEni")]
     public double? Ipv4AddressesPerEni { get; set; }
 
@@ -1033,7 +1033,7 @@ public partial class V1beta1ResourceGatewaySpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    /// <summary>How DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
     [JsonPropertyName("resourceConfigDnsResolution")]
     public string? ResourceConfigDnsResolution { get; set; }
 
@@ -1277,7 +1277,7 @@ public partial class V1beta1ResourceGatewayStatusAtProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
+    /// <summary>Number of IPv4 addresses per ENI for your resource. This argument is only applicable to IPV4 and DUALSTACK IP address types. Defaults to 16.</summary>
     [JsonPropertyName("ipv4AddressesPerEni")]
     public double? Ipv4AddressesPerEni { get; set; }
 
@@ -1292,7 +1292,7 @@ public partial class V1beta1ResourceGatewayStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Indicates how DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
+    /// <summary>How DNS is resolved for resource configurations associated to this resource gateway. Valid values are IN_VPC and PUBLIC. Defaults to PUBLIC. Changing this value will trigger a resource replacement.</summary>
     [JsonPropertyName("resourceConfigDnsResolution")]
     public string? ResourceConfigDnsResolution { get; set; }
 

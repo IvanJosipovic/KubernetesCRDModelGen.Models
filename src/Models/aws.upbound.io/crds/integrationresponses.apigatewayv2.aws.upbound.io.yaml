@@ -241,7 +241,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   templateSelectionExpression:
-                    description: The template selection expression for the integration response.
+                    description: Template selection expression for the integration response.
                     type: string
                 required:
                 - region
@@ -424,7 +424,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   templateSelectionExpression:
-                    description: The template selection expression for the integration response.
+                    description: Template selection expression for the integration response.
                     type: string
                 type: object
               managementPolicies:
@@ -548,7 +548,7 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   templateSelectionExpression:
-                    description: The template selection expression for the integration response.
+                    description: Template selection expression for the integration response.
                     type: string
                 type: object
               conditions:

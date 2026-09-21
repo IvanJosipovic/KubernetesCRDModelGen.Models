@@ -159,7 +159,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   snsTopicArn:
-                    description: The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events
+                    description: ARN that specifies the topic for a backup vault’s events
                     type: string
                   snsTopicArnRef:
                     description: Reference to a Topic in sns to populate snsTopicArn.
@@ -333,7 +333,7 @@ spec:
                         type: object
                     type: object
                   snsTopicArn:
-                    description: The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events
+                    description: ARN that specifies the topic for a backup vault’s events
                     type: string
                   snsTopicArnRef:
                     description: Reference to a Topic in sns to populate snsTopicArn.
@@ -524,7 +524,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   snsTopicArn:
-                    description: The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events
+                    description: ARN that specifies the topic for a backup vault’s events
                     type: string
                 type: object
               conditions:

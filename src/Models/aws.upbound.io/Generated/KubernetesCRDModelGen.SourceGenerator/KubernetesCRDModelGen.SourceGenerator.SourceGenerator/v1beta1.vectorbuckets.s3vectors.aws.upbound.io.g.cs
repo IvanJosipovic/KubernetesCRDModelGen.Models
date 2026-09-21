@@ -202,7 +202,7 @@ public partial class V1beta1VectorBucketSpecForProviderEncryptionConfigurationKm
     public V1beta1VectorBucketSpecForProviderEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+/// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketSpecForProviderEncryptionConfiguration
@@ -228,7 +228,7 @@ public partial class V1beta1VectorBucketSpecForProviderEncryptionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketSpecForProvider
 {
-    /// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+    /// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1VectorBucketSpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -399,7 +399,7 @@ public partial class V1beta1VectorBucketSpecInitProviderEncryptionConfigurationK
     public V1beta1VectorBucketSpecInitProviderEncryptionConfigurationKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+/// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketSpecInitProviderEncryptionConfiguration
@@ -437,7 +437,7 @@ public partial class V1beta1VectorBucketSpecInitProviderEncryptionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketSpecInitProvider
 {
-    /// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+    /// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1VectorBucketSpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1VectorBucketSpec
     public V1beta1VectorBucketSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+/// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketStatusAtProviderEncryptionConfiguration
@@ -659,7 +659,7 @@ public partial class V1beta1VectorBucketStatusAtProvider
     [JsonPropertyName("creationTime")]
     public string? CreationTime { get; set; }
 
-    /// <summary>Encryption configuration for the vector bucket. See Encryption Configuration below for more details.</summary>
+    /// <summary>Encryption configuration for the vector bucket. See encryption_configuration below for more details.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1VectorBucketStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -681,7 +681,7 @@ public partial class V1beta1VectorBucketStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

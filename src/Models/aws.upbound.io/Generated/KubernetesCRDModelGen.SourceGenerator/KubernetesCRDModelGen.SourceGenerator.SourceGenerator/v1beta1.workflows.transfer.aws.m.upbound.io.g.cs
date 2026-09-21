@@ -36,84 +36,84 @@ public partial class V1beta1WorkflowList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1beta1Workflow> Items { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -122,84 +122,84 @@ public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsCustomStepDet
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -208,25 +208,25 @@ public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsDeleteStepDet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -239,91 +239,91 @@ public partial class V1beta1WorkflowSpecForProviderOnExceptionStepsTagStepDetail
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderOnExceptionSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowSpecForProviderOnExceptionStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecForProviderStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -483,20 +483,20 @@ public partial class V1beta1WorkflowSpecForProviderStepsCustomStepDetailsTargetS
     public V1beta1WorkflowSpecForProviderStepsCustomStepDetailsTargetSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -513,84 +513,84 @@ public partial class V1beta1WorkflowSpecForProviderStepsCustomStepDetails
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecForProviderStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -599,25 +599,25 @@ public partial class V1beta1WorkflowSpecForProviderStepsDeleteStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -630,27 +630,27 @@ public partial class V1beta1WorkflowSpecForProviderStepsTagStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProviderSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowSpecForProviderStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowSpecForProviderStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowSpecForProviderStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowSpecForProviderStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowSpecForProviderStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -659,11 +659,11 @@ public partial class V1beta1WorkflowSpecForProviderSteps
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecForProvider
 {
-    /// <summary>A textual description for the workflow.</summary>
+    /// <summary>Textual description for the workflow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the steps (actions) to take if errors are encountered during execution of the workflow. See Workflow Steps below.</summary>
+    /// <summary>Steps (actions) to take if errors are encountered during execution of the workflow. See on_exception_steps Block below.</summary>
     [JsonPropertyName("onExceptionSteps")]
     public IList<V1beta1WorkflowSpecForProviderOnExceptionSteps>? OnExceptionSteps { get; set; }
 
@@ -674,7 +674,7 @@ public partial class V1beta1WorkflowSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the details for the steps that are in the specified workflow. See Workflow Steps below.</summary>
+    /// <summary>Details for the steps that are in the specified workflow. See steps Block below.</summary>
     [JsonPropertyName("steps")]
     public IList<V1beta1WorkflowSpecForProviderSteps>? Steps { get; set; }
 
@@ -683,84 +683,84 @@ public partial class V1beta1WorkflowSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -769,84 +769,84 @@ public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsCustomStepDe
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -855,25 +855,25 @@ public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsDeleteStepDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -886,91 +886,91 @@ public partial class V1beta1WorkflowSpecInitProviderOnExceptionStepsTagStepDetai
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderOnExceptionSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowSpecInitProviderOnExceptionStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -1130,20 +1130,20 @@ public partial class V1beta1WorkflowSpecInitProviderStepsCustomStepDetailsTarget
     public V1beta1WorkflowSpecInitProviderStepsCustomStepDetailsTargetSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -1160,84 +1160,84 @@ public partial class V1beta1WorkflowSpecInitProviderStepsCustomStepDetails
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowSpecInitProviderStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -1246,25 +1246,25 @@ public partial class V1beta1WorkflowSpecInitProviderStepsDeleteStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -1277,27 +1277,27 @@ public partial class V1beta1WorkflowSpecInitProviderStepsTagStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProviderSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowSpecInitProviderStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowSpecInitProviderStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowSpecInitProviderStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowSpecInitProviderStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowSpecInitProviderStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1318,15 +1318,15 @@ public partial class V1beta1WorkflowSpecInitProviderSteps
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowSpecInitProvider
 {
-    /// <summary>A textual description for the workflow.</summary>
+    /// <summary>Textual description for the workflow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Specifies the steps (actions) to take if errors are encountered during execution of the workflow. See Workflow Steps below.</summary>
+    /// <summary>Steps (actions) to take if errors are encountered during execution of the workflow. See on_exception_steps Block below.</summary>
     [JsonPropertyName("onExceptionSteps")]
     public IList<V1beta1WorkflowSpecInitProviderOnExceptionSteps>? OnExceptionSteps { get; set; }
 
-    /// <summary>Specifies the details for the steps that are in the specified workflow. See Workflow Steps below.</summary>
+    /// <summary>Details for the steps that are in the specified workflow. See steps Block below.</summary>
     [JsonPropertyName("steps")]
     public IList<V1beta1WorkflowSpecInitProviderSteps>? Steps { get; set; }
 
@@ -1442,84 +1442,84 @@ public partial class V1beta1WorkflowSpec
     public V1beta1WorkflowSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -1528,84 +1528,84 @@ public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsCustomStepDe
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -1614,25 +1614,25 @@ public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsDeleteStepDe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -1645,109 +1645,109 @@ public partial class V1beta1WorkflowStatusAtProviderOnExceptionStepsTagStepDetai
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderOnExceptionSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowStatusAtProviderOnExceptionStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+/// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsCopyStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsCopyStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
 
-/// <summary>Details for a step that invokes a lambda function.</summary>
+/// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsCustomStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>The ARN for the lambda function that is being called.</summary>
+    /// <summary>ARN for the lambda function that is being called.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
@@ -1756,84 +1756,84 @@ public partial class V1beta1WorkflowStatusAtProviderStepsCustomStepDetails
     public double? TimeoutSeconds { get; set; }
 }
 
-/// <summary>Specifies the details for the EFS file being copied.</summary>
+/// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation
 {
-    /// <summary>The ID of the file system, assigned by Amazon EFS.</summary>
+    /// <summary>ID of the file system, assigned by Amazon EFS.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The pathname for the folder being used by a workflow.</summary>
+    /// <summary>Pathname for the folder being used by a workflow.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 }
 
-/// <summary>Specifies the details for the S3 file being copied.</summary>
+/// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation
 {
-    /// <summary>Specifies the S3 bucket for the customer input file.</summary>
+    /// <summary>S3 bucket for the customer input file.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 }
 
-/// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+/// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocation
 {
-    /// <summary>Specifies the details for the EFS file being copied.</summary>
+    /// <summary>Details for the EFS file being copied. See efs_file_location Block below.</summary>
     [JsonPropertyName("efsFileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation? EfsFileLocation { get; set; }
 
-    /// <summary>Specifies the details for the S3 file being copied.</summary>
+    /// <summary>Details for the S3 file being copied. See s3_file_location Block below.</summary>
     [JsonPropertyName("s3FileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocationS3FileLocation? S3FileLocation { get; set; }
 }
 
-/// <summary>Details for a step that decrypts the file.</summary>
+/// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsDecryptStepDetails
 {
-    /// <summary>Specifies the location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username.</summary>
+    /// <summary>Location for the file being copied. Use ${Transfer:username} in this field to parametrize the destination prefix by username. See destination_file_location Block below.</summary>
     [JsonPropertyName("destinationFileLocation")]
     public V1beta1WorkflowStatusAtProviderStepsDecryptStepDetailsDestinationFileLocation? DestinationFileLocation { get; set; }
 
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
+    /// <summary>Flag that indicates whether or not to overwrite an existing file of the same name. The default is FALSE. Valid values are TRUE and FALSE.</summary>
     [JsonPropertyName("overwriteExisting")]
     public string? OverwriteExisting { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Type of encryption used. Currently, this value must be &quot;PGP&quot;.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>Details for a step that deletes the file.</summary>
+/// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsDeleteStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 }
@@ -1842,25 +1842,25 @@ public partial class V1beta1WorkflowStatusAtProviderStepsDeleteStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsTagStepDetailsTags
 {
-    /// <summary>The name assigned to the file when it was created in S3. You use the object key to retrieve the object.</summary>
+    /// <summary>Name assigned to the tag that you create.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>The value that corresponds to the key.</summary>
+    /// <summary>Value that corresponds to the key.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>Details for a step that creates one or more tags.</summary>
+/// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderStepsTagStepDetails
 {
-    /// <summary>The name of the step, used as an identifier.</summary>
+    /// <summary>Name of the step, used as an identifier.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies which file to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
+    /// <summary>File to use as input to the workflow step: either the output from the previous step, or the originally uploaded file for the workflow. Enter ${previous.file} to use the previous file as the input. In this case, this workflow step uses the output file from the previous workflow step as input. This is the default value. Enter ${original.file} to use the originally-uploaded file location as input for this step.</summary>
     [JsonPropertyName("sourceFileLocation")]
     public string? SourceFileLocation { get; set; }
 
@@ -1873,27 +1873,27 @@ public partial class V1beta1WorkflowStatusAtProviderStepsTagStepDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProviderSteps
 {
-    /// <summary>Details for a step that performs a file copy. See Copy Step Details below.</summary>
+    /// <summary>Details for a step that performs a file copy. See copy_step_details Block below.</summary>
     [JsonPropertyName("copyStepDetails")]
     public V1beta1WorkflowStatusAtProviderStepsCopyStepDetails? CopyStepDetails { get; set; }
 
-    /// <summary>Details for a step that invokes a lambda function.</summary>
+    /// <summary>Details for a step that invokes a lambda function. See custom_step_details Block below.</summary>
     [JsonPropertyName("customStepDetails")]
     public V1beta1WorkflowStatusAtProviderStepsCustomStepDetails? CustomStepDetails { get; set; }
 
-    /// <summary>Details for a step that decrypts the file.</summary>
+    /// <summary>Details for a step that decrypts the file. See decrypt_step_details Block below.</summary>
     [JsonPropertyName("decryptStepDetails")]
     public V1beta1WorkflowStatusAtProviderStepsDecryptStepDetails? DecryptStepDetails { get; set; }
 
-    /// <summary>Details for a step that deletes the file.</summary>
+    /// <summary>Details for a step that deletes the file. See delete_step_details Block below.</summary>
     [JsonPropertyName("deleteStepDetails")]
     public V1beta1WorkflowStatusAtProviderStepsDeleteStepDetails? DeleteStepDetails { get; set; }
 
-    /// <summary>Details for a step that creates one or more tags.</summary>
+    /// <summary>Details for a step that creates one or more tags. See tag_step_details Block below.</summary>
     [JsonPropertyName("tagStepDetails")]
     public V1beta1WorkflowStatusAtProviderStepsTagStepDetails? TagStepDetails { get; set; }
 
-    /// <summary>One of the following step types are supported. COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
+    /// <summary>Step type. Valid values are COPY, CUSTOM, DECRYPT, DELETE, and TAG.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -1902,19 +1902,19 @@ public partial class V1beta1WorkflowStatusAtProviderSteps
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowStatusAtProvider
 {
-    /// <summary>The Workflow ARN.</summary>
+    /// <summary>Workflow ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A textual description for the workflow.</summary>
+    /// <summary>Textual description for the workflow.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Workflow id.</summary>
+    /// <summary>Workflow ID.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies the steps (actions) to take if errors are encountered during execution of the workflow. See Workflow Steps below.</summary>
+    /// <summary>Steps (actions) to take if errors are encountered during execution of the workflow. See on_exception_steps Block below.</summary>
     [JsonPropertyName("onExceptionSteps")]
     public IList<V1beta1WorkflowStatusAtProviderOnExceptionSteps>? OnExceptionSteps { get; set; }
 
@@ -1925,7 +1925,7 @@ public partial class V1beta1WorkflowStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the details for the steps that are in the specified workflow. See Workflow Steps below.</summary>
+    /// <summary>Details for the steps that are in the specified workflow. See steps Block below.</summary>
     [JsonPropertyName("steps")]
     public IList<V1beta1WorkflowStatusAtProviderSteps>? Steps { get; set; }
 
@@ -1933,7 +1933,7 @@ public partial class V1beta1WorkflowStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

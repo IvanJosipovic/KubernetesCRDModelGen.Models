@@ -636,7 +636,7 @@ public partial class V1beta1TaskSpecForProviderTaskReportConfigReportOverrides
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskSpecForProviderTaskReportConfigS3Destination
 {
-    /// <summary>Specifies the Amazon Resource Name (ARN) of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
+    /// <summary>ARN of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
     [JsonPropertyName("bucketAccessRoleArn")]
     public string? BucketAccessRoleArn { get; set; }
 
@@ -679,7 +679,7 @@ public partial class V1beta1TaskSpecForProviderTaskReportConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskSpecForProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
+    /// <summary>ARN of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -691,7 +691,7 @@ public partial class V1beta1TaskSpecForProvider
     [JsonPropertyName("cloudwatchLogGroupArnSelector")]
     public V1beta1TaskSpecForProviderCloudwatchLogGroupArnSelector? CloudwatchLogGroupArnSelector { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of destination DataSync Location.</summary>
+    /// <summary>ARN of destination DataSync Location.</summary>
     [JsonPropertyName("destinationLocationArn")]
     public string? DestinationLocationArn { get; set; }
 
@@ -730,7 +730,7 @@ public partial class V1beta1TaskSpecForProvider
     [JsonPropertyName("schedule")]
     public V1beta1TaskSpecForProviderSchedule? Schedule { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of source DataSync Location.</summary>
+    /// <summary>ARN of source DataSync Location.</summary>
     [JsonPropertyName("sourceLocationArn")]
     public string? SourceLocationArn { get; set; }
 
@@ -1355,7 +1355,7 @@ public partial class V1beta1TaskSpecInitProviderTaskReportConfigReportOverrides
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskSpecInitProviderTaskReportConfigS3Destination
 {
-    /// <summary>Specifies the Amazon Resource Name (ARN) of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
+    /// <summary>ARN of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
     [JsonPropertyName("bucketAccessRoleArn")]
     public string? BucketAccessRoleArn { get; set; }
 
@@ -1410,7 +1410,7 @@ public partial class V1beta1TaskSpecInitProviderTaskReportConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskSpecInitProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
+    /// <summary>ARN of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
@@ -1422,7 +1422,7 @@ public partial class V1beta1TaskSpecInitProvider
     [JsonPropertyName("cloudwatchLogGroupArnSelector")]
     public V1beta1TaskSpecInitProviderCloudwatchLogGroupArnSelector? CloudwatchLogGroupArnSelector { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of destination DataSync Location.</summary>
+    /// <summary>ARN of destination DataSync Location.</summary>
     [JsonPropertyName("destinationLocationArn")]
     public string? DestinationLocationArn { get; set; }
 
@@ -1454,7 +1454,7 @@ public partial class V1beta1TaskSpecInitProvider
     [JsonPropertyName("schedule")]
     public V1beta1TaskSpecInitProviderSchedule? Schedule { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of source DataSync Location.</summary>
+    /// <summary>ARN of source DataSync Location.</summary>
     [JsonPropertyName("sourceLocationArn")]
     public string? SourceLocationArn { get; set; }
 
@@ -1721,7 +1721,7 @@ public partial class V1beta1TaskStatusAtProviderTaskReportConfigReportOverrides
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskStatusAtProviderTaskReportConfigS3Destination
 {
-    /// <summary>Specifies the Amazon Resource Name (ARN) of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
+    /// <summary>ARN of the IAM policy that allows DataSync to upload a task report to your S3 bucket.</summary>
     [JsonPropertyName("bucketAccessRoleArn")]
     public string? BucketAccessRoleArn { get; set; }
 
@@ -1764,15 +1764,15 @@ public partial class V1beta1TaskStatusAtProviderTaskReportConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the DataSync Task.</summary>
+    /// <summary>ARN of the DataSync Task.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
+    /// <summary>ARN of the CloudWatch Log Group that is used to monitor and log events in the sync task.</summary>
     [JsonPropertyName("cloudwatchLogGroupArn")]
     public string? CloudwatchLogGroupArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of destination DataSync Location.</summary>
+    /// <summary>ARN of destination DataSync Location.</summary>
     [JsonPropertyName("destinationLocationArn")]
     public string? DestinationLocationArn { get; set; }
 
@@ -1780,7 +1780,7 @@ public partial class V1beta1TaskStatusAtProvider
     [JsonPropertyName("excludes")]
     public V1beta1TaskStatusAtProviderExcludes? Excludes { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the DataSync Task.</summary>
+    /// <summary>ARN of the DataSync Task.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1807,7 +1807,7 @@ public partial class V1beta1TaskStatusAtProvider
     [JsonPropertyName("schedule")]
     public V1beta1TaskStatusAtProviderSchedule? Schedule { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of source DataSync Location.</summary>
+    /// <summary>ARN of source DataSync Location.</summary>
     [JsonPropertyName("sourceLocationArn")]
     public string? SourceLocationArn { get; set; }
 

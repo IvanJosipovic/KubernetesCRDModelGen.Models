@@ -625,7 +625,7 @@ public partial class V1beta1BucketCorsConfigurationStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
+    /// <summary>bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

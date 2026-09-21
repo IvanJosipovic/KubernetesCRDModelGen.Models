@@ -53,7 +53,7 @@ public partial class V1beta1APIKeySpecForProviderValueSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeySpecForProvider
 {
-    /// <summary>An Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
+    /// <summary>Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
     [JsonPropertyName("customerId")]
     public string? CustomerId { get; set; }
 
@@ -114,7 +114,7 @@ public partial class V1beta1APIKeySpecInitProviderValueSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1APIKeySpecInitProvider
 {
-    /// <summary>An Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
+    /// <summary>Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
     [JsonPropertyName("customerId")]
     public string? CustomerId { get; set; }
 
@@ -258,7 +258,7 @@ public partial class V1beta1APIKeyStatusAtProvider
     [JsonPropertyName("createdDate")]
     public string? CreatedDate { get; set; }
 
-    /// <summary>An Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
+    /// <summary>Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Services SaaS Marketplace.</summary>
     [JsonPropertyName("customerId")]
     public string? CustomerId { get; set; }
 

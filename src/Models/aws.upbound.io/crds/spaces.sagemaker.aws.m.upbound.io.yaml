@@ -178,16 +178,16 @@ spec:
                                 type: object
                             type: object
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -234,16 +234,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -266,16 +266,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -285,7 +285,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array
@@ -310,16 +310,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -329,7 +329,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array
@@ -492,16 +492,16 @@ spec:
                                 type: object
                             type: object
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -548,16 +548,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -580,16 +580,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -599,7 +599,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array
@@ -624,16 +624,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -643,7 +643,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array
@@ -742,7 +742,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The space's Amazon Resource Name (ARN).
+                    description: Space's ARN.
                     type: string
                   domainId:
                     description: The ID of the associated Domain.
@@ -751,7 +751,7 @@ spec:
                     description: The ID of the space's profile in the Amazon Elastic File System volume.
                     type: string
                   id:
-                    description: The space's Amazon Resource Name (ARN).
+                    description: Space's ARN.
                     type: string
                   ownershipSettings:
                     description: A collection of ownership settings. Required if space_sharing_settings is set. See ownership_settings Block below.
@@ -792,16 +792,16 @@ spec:
                                 type: object
                             type: object
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -848,16 +848,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -880,16 +880,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -899,7 +899,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array
@@ -924,16 +924,16 @@ spec:
                               type: object
                             type: array
                           defaultResourceSpec:
-                            description: The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. See default_resource_spec Block below.
+                            description: Default instance type and the ARN of the SageMaker AI image created on the instance. See default_resource_spec Block below.
                             properties:
                               instanceType:
                                 description: The instance type.
                                 type: string
                               lifecycleConfigArn:
-                                description: The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.
+                                description: ARN of the Lifecycle Configuration attached to the Resource.
                                 type: string
                               sagemakerImageArn:
-                                description: The Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.
+                                description: ARN of the SageMaker AI image created on the instance.
                                 type: string
                               sagemakerImageVersionAlias:
                                 description: The SageMaker AI Image Version Alias.
@@ -943,7 +943,7 @@ spec:
                                 type: string
                             type: object
                           lifecycleConfigArns:
-                            description: The Amazon Resource Name (ARN) of the Lifecycle Configurations.
+                            description: ARN of the Lifecycle Configurations.
                             items:
                               type: string
                             type: array

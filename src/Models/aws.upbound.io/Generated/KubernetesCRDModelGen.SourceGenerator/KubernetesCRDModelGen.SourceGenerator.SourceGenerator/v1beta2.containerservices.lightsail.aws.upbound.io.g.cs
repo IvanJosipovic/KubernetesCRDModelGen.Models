@@ -484,7 +484,7 @@ public partial class V1beta2ContainerServiceStatusAtProvider
     [JsonPropertyName("principalArn")]
     public string? PrincipalArn { get; set; }
 
-    /// <summary>Private domain name of the container service. The private domain name is accessible only by other resources within the default virtual private cloud (VPC) of your Lightsail account.</summary>
+    /// <summary>Private domain name of the container service. The private domain name is accessible only by other resources within the default VPC of your Lightsail account.</summary>
     [JsonPropertyName("privateDomainName")]
     public string? PrivateDomainName { get; set; }
 

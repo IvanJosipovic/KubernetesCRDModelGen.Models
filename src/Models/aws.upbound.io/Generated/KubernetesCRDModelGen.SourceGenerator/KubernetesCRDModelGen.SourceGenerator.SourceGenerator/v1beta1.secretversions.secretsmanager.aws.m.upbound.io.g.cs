@@ -36,7 +36,7 @@ public partial class V1beta1SecretVersionList : IKubernetesObject<V1ListMeta>, I
     public required IList<V1beta1SecretVersion> Items { get; set; }
 }
 
-/// <summary>Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
+/// <summary>Binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecForProviderSecretBinarySecretRef
@@ -204,7 +204,7 @@ public partial class V1beta1SecretVersionSpecForProviderSecretIdSelector
     public V1beta1SecretVersionSpecForProviderSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
+/// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecForProviderSecretStringSecretRef
@@ -217,7 +217,7 @@ public partial class V1beta1SecretVersionSpecForProviderSecretStringSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set.</summary>
+/// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set. If set, requires secret_string_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecForProviderSecretStringWoSecretRef
@@ -241,11 +241,11 @@ public partial class V1beta1SecretVersionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
+    /// <summary>Binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
     [JsonPropertyName("secretBinarySecretRef")]
     public V1beta1SecretVersionSpecForProviderSecretBinarySecretRef? SecretBinarySecretRef { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -257,24 +257,24 @@ public partial class V1beta1SecretVersionSpecForProvider
     [JsonPropertyName("secretIdSelector")]
     public V1beta1SecretVersionSpecForProviderSecretIdSelector? SecretIdSelector { get; set; }
 
-    /// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
+    /// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
     [JsonPropertyName("secretStringSecretRef")]
     public V1beta1SecretVersionSpecForProviderSecretStringSecretRef? SecretStringSecretRef { get; set; }
 
-    /// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set.</summary>
+    /// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set. If set, requires secret_string_wo_version to be set.</summary>
     [JsonPropertyName("secretStringWoSecretRef")]
     public V1beta1SecretVersionSpecForProviderSecretStringWoSecretRef? SecretStringWoSecretRef { get; set; }
 
-    /// <summary>Used together with secret_string_wo to trigger an update. Increment this value when an update to secret_string_wo is required.</summary>
+    /// <summary>Required when secret_string_wo is set. Changing this value triggers an update to secret_string_wo.</summary>
     [JsonPropertyName("secretStringWoVersion")]
     public double? SecretStringWoVersion { get; set; }
 
-    /// <summary>Specifies a list of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
+    /// <summary>List of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
     [JsonPropertyName("versionStages")]
     public IList<string>? VersionStages { get; set; }
 }
 
-/// <summary>Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
+/// <summary>Binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecInitProviderSecretBinarySecretRef
@@ -442,7 +442,7 @@ public partial class V1beta1SecretVersionSpecInitProviderSecretIdSelector
     public V1beta1SecretVersionSpecInitProviderSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
+/// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecInitProviderSecretStringSecretRef
@@ -455,7 +455,7 @@ public partial class V1beta1SecretVersionSpecInitProviderSecretStringSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set.</summary>
+/// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set. If set, requires secret_string_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecInitProviderSecretStringWoSecretRef
@@ -484,11 +484,11 @@ public partial class V1beta1SecretVersionSpecInitProviderSecretStringWoSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionSpecInitProvider
 {
-    /// <summary>Specifies binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
+    /// <summary>Binary data that you want to encrypt and store in this version of the secret. This is required if secret_string or secret_string_wo is not set. Needs to be encoded to base64.</summary>
     [JsonPropertyName("secretBinarySecretRef")]
     public V1beta1SecretVersionSpecInitProviderSecretBinarySecretRef? SecretBinarySecretRef { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
@@ -500,19 +500,19 @@ public partial class V1beta1SecretVersionSpecInitProvider
     [JsonPropertyName("secretIdSelector")]
     public V1beta1SecretVersionSpecInitProviderSecretIdSelector? SecretIdSelector { get; set; }
 
-    /// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
+    /// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string_wo is not set.</summary>
     [JsonPropertyName("secretStringSecretRef")]
     public V1beta1SecretVersionSpecInitProviderSecretStringSecretRef? SecretStringSecretRef { get; set; }
 
-    /// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set.</summary>
+    /// <summary>Text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set. If set, requires secret_string_wo_version to be set.</summary>
     [JsonPropertyName("secretStringWoSecretRef")]
     public V1beta1SecretVersionSpecInitProviderSecretStringWoSecretRef? SecretStringWoSecretRef { get; set; }
 
-    /// <summary>Used together with secret_string_wo to trigger an update. Increment this value when an update to secret_string_wo is required.</summary>
+    /// <summary>Required when secret_string_wo is set. Changing this value triggers an update to secret_string_wo.</summary>
     [JsonPropertyName("secretStringWoVersion")]
     public double? SecretStringWoVersion { get; set; }
 
-    /// <summary>Specifies a list of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
+    /// <summary>List of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
     [JsonPropertyName("versionStages")]
     public IList<string>? VersionStages { get; set; }
 }
@@ -628,14 +628,11 @@ public partial class V1beta1SecretVersionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecretVersionStatusAtProvider
 {
-    /// <summary>
-    /// (Deprecated) The ARN of the secret.
-    /// Use secret_arn instead.
-    /// </summary>
+    /// <summary>(Deprecated) ARN of the secret. Use secret_arn instead.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Specifies text data that you want to encrypt and store in this version of the secret. This is required if secret_binary or secret_string is not set.</summary>
+    /// <summary>Whether a write-only secret string value is set.</summary>
     [JsonPropertyName("hasSecretStringWo")]
     public bool? HasSecretStringWo { get; set; }
 
@@ -649,23 +646,23 @@ public partial class V1beta1SecretVersionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The ARN of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
-    /// <summary>Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.</summary>
+    /// <summary>Secret to which you want to add a new version. You can specify either the ARN or the friendly name of the secret. The secret must already exist.</summary>
     [JsonPropertyName("secretId")]
     public string? SecretId { get; set; }
 
-    /// <summary>Used together with secret_string_wo to trigger an update. Increment this value when an update to secret_string_wo is required.</summary>
+    /// <summary>Required when secret_string_wo is set. Changing this value triggers an update to secret_string_wo.</summary>
     [JsonPropertyName("secretStringWoVersion")]
     public double? SecretStringWoVersion { get; set; }
 
-    /// <summary>The unique identifier of the version of the secret.</summary>
+    /// <summary>Unique identifier of the version of the secret.</summary>
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 
-    /// <summary>Specifies a list of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
+    /// <summary>List of staging labels that are attached to this version of the secret. A staging label must be unique to a single version of the secret. If you specify a staging label that&apos;s already associated with a different version of the same secret then that staging label is automatically removed from the other version and attached to this version. If you do not specify a value, then AWS Secrets Manager automatically moves the staging label AWSCURRENT to this new version on creation.</summary>
     [JsonPropertyName("versionStages")]
     public IList<string>? VersionStages { get; set; }
 }

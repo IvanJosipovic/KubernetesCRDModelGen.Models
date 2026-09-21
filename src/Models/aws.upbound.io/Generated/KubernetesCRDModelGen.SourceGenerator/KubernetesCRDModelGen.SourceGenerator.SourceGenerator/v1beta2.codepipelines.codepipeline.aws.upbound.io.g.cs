@@ -55,7 +55,7 @@ public enum V1beta2CodepipelineSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+/// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStoreEncryptionKey
@@ -220,7 +220,7 @@ public partial class V1beta2CodepipelineSpecForProviderArtifactStoreLocationSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderArtifactStore
 {
-    /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+    /// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
     [JsonPropertyName("encryptionKey")]
     public V1beta2CodepipelineSpecForProviderArtifactStoreEncryptionKey? EncryptionKey { get; set; }
 
@@ -394,11 +394,28 @@ public partial class V1beta2CodepipelineSpecForProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CodepipelineSpecForProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageAction
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -416,9 +433,17 @@ public partial class V1beta2CodepipelineSpecForProviderStageAction
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
+    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline. If the action is Compute, this argument is ignored.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta2CodepipelineSpecForProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]
@@ -454,7 +479,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -475,7 +500,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryCondition
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntryConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -537,7 +562,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageBeforeEntry
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -558,7 +583,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnFailureConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -638,7 +663,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnFailure
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -659,7 +684,7 @@ public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecForProviderStageOnSuccessConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -916,7 +941,7 @@ public partial class V1beta2CodepipelineSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
+    /// <summary>Service role ARN that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -945,7 +970,7 @@ public partial class V1beta2CodepipelineSpecForProvider
     public IList<V1beta2CodepipelineSpecForProviderVariable>? Variable { get; set; }
 }
 
-/// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+/// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreEncryptionKey
@@ -1110,7 +1135,7 @@ public partial class V1beta2CodepipelineSpecInitProviderArtifactStoreLocationSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderArtifactStore
 {
-    /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+    /// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
     [JsonPropertyName("encryptionKey")]
     public V1beta2CodepipelineSpecInitProviderArtifactStoreEncryptionKey? EncryptionKey { get; set; }
 
@@ -1280,11 +1305,28 @@ public partial class V1beta2CodepipelineSpecInitProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CodepipelineSpecInitProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageAction
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -1302,9 +1344,17 @@ public partial class V1beta2CodepipelineSpecInitProviderStageAction
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
+    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline. If the action is Compute, this argument is ignored.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta2CodepipelineSpecInitProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]
@@ -1336,7 +1386,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -1357,7 +1407,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntryConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -1415,7 +1465,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageBeforeEntry
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -1436,7 +1486,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnFailureConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -1512,7 +1562,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnFailure
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -1533,7 +1583,7 @@ public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineSpecInitProviderStageOnSuccessConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -1791,7 +1841,7 @@ public partial class V1beta2CodepipelineSpecInitProvider
     [JsonPropertyName("pipelineType")]
     public string? PipelineType { get; set; }
 
-    /// <summary>A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
+    /// <summary>Service role ARN that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2003,7 +2053,7 @@ public partial class V1beta2CodepipelineSpec
     public V1beta2CodepipelineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+/// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderArtifactStoreEncryptionKey
@@ -2021,7 +2071,7 @@ public partial class V1beta2CodepipelineStatusAtProviderArtifactStoreEncryptionK
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderArtifactStore
 {
-    /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
+    /// <summary>Encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as a KMS key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for S3. An encryption_key block is documented below.</summary>
     [JsonPropertyName("encryptionKey")]
     public V1beta2CodepipelineStatusAtProviderArtifactStoreEncryptionKey? EncryptionKey { get; set; }
 
@@ -2040,11 +2090,28 @@ public partial class V1beta2CodepipelineStatusAtProviderArtifactStore
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2CodepipelineStatusAtProviderStageActionOutputArtifactsForComputeAction
+{
+    /// <summary>A list of the files to associate with the output artifact that will be exported from the compute action.</summary>
+    [JsonPropertyName("files")]
+    public IList<string>? Files { get; set; }
+
+    /// <summary>The name of a pipeline-level variable.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageAction
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
+
+    /// <summary>A list of shell commands to run with the compute action.</summary>
+    [JsonPropertyName("commands")]
+    public IList<string>? Commands { get; set; }
 
     /// <summary>A map of the action declaration&apos;s configuration. Configurations options for action types and providers can be found in the Pipeline Structure Reference and Action Structure Reference documentation. Note: The DetectChanges parameter  in the configuration section causes CodePipeline to automatically start your pipeline upon new commits. Please refer to AWS Documentation for more details: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CodestarConnectionSource.html#action-reference-CodestarConnectionSource-config.</summary>
     [JsonPropertyName("configuration")]
@@ -2062,9 +2129,17 @@ public partial class V1beta2CodepipelineStatusAtProviderStageAction
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline.</summary>
+    /// <summary>A list of artifact names to output. Output artifact names must be unique within a pipeline. If the action is Compute, this argument is ignored.</summary>
     [JsonPropertyName("outputArtifacts")]
     public IList<string>? OutputArtifacts { get; set; }
+
+    /// <summary>A block of output artifacts for the compute action. If the action is not Compute, this argument is ignored.</summary>
+    [JsonPropertyName("outputArtifactsForComputeAction")]
+    public IList<V1beta2CodepipelineStatusAtProviderStageActionOutputArtifactsForComputeAction>? OutputArtifactsForComputeAction { get; set; }
+
+    /// <summary>A list of variables that are to be exported from the compute action.</summary>
+    [JsonPropertyName("outputVariables")]
+    public IList<string>? OutputVariables { get; set; }
 
     /// <summary>The creator of the action being called. Possible values are AWS, Custom and ThirdParty.</summary>
     [JsonPropertyName("owner")]
@@ -2100,7 +2175,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -2121,7 +2196,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntryConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -2183,7 +2258,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageBeforeEntry
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -2204,7 +2279,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnFailureConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -2284,7 +2359,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnFailure
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionRuleRuleTypeId
 {
-    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
+    /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source, Compute and Test.</summary>
     [JsonPropertyName("category")]
     public string? Category { get; set; }
 
@@ -2305,7 +2380,7 @@ public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CodepipelineStatusAtProviderStageOnSuccessConditionRule
 {
-    /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
+    /// <summary>A list of shell commands to run with the compute action.</summary>
     [JsonPropertyName("commands")]
     public IList<string>? Commands { get; set; }
 
@@ -2699,7 +2774,7 @@ public partial class V1beta2CodepipelineStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
+    /// <summary>Service role ARN that grants AWS CodePipeline permission to make calls to AWS services on your behalf.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

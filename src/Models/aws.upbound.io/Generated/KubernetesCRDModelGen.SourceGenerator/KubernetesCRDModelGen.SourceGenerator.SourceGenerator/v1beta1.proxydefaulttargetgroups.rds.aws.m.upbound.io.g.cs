@@ -36,12 +36,12 @@ public partial class V1beta1ProxyDefaultTargetGroupList : IKubernetesObject<V1Li
     public required IList<V1beta1ProxyDefaultTargetGroup> Items { get; set; }
 }
 
-/// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+/// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupSpecForProviderConnectionPoolConfig
 {
-    /// <summary>The number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
+    /// <summary>Number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
     [JsonPropertyName("connectionBorrowTimeout")]
     public double? ConnectionBorrowTimeout { get; set; }
 
@@ -49,7 +49,7 @@ public partial class V1beta1ProxyDefaultTargetGroupSpecForProviderConnectionPool
     [JsonPropertyName("initQuery")]
     public string? InitQuery { get; set; }
 
-    /// <summary>The maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
+    /// <summary>Maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
     [JsonPropertyName("maxConnectionsPercent")]
     public double? MaxConnectionsPercent { get; set; }
 
@@ -221,7 +221,7 @@ public partial class V1beta1ProxyDefaultTargetGroupSpecForProviderDbProxyNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupSpecForProvider
 {
-    /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+    /// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
     [JsonPropertyName("connectionPoolConfig")]
     public V1beta1ProxyDefaultTargetGroupSpecForProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
 
@@ -245,12 +245,12 @@ public partial class V1beta1ProxyDefaultTargetGroupSpecForProvider
     public required string Region { get; set; }
 }
 
-/// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+/// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupSpecInitProviderConnectionPoolConfig
 {
-    /// <summary>The number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
+    /// <summary>Number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
     [JsonPropertyName("connectionBorrowTimeout")]
     public double? ConnectionBorrowTimeout { get; set; }
 
@@ -258,7 +258,7 @@ public partial class V1beta1ProxyDefaultTargetGroupSpecInitProviderConnectionPoo
     [JsonPropertyName("initQuery")]
     public string? InitQuery { get; set; }
 
-    /// <summary>The maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
+    /// <summary>Maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
     [JsonPropertyName("maxConnectionsPercent")]
     public double? MaxConnectionsPercent { get; set; }
 
@@ -442,7 +442,7 @@ public partial class V1beta1ProxyDefaultTargetGroupSpecInitProviderDbProxyNameSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupSpecInitProvider
 {
-    /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+    /// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
     [JsonPropertyName("connectionPoolConfig")]
     public V1beta1ProxyDefaultTargetGroupSpecInitProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
 
@@ -566,12 +566,12 @@ public partial class V1beta1ProxyDefaultTargetGroupSpec
     public V1beta1ProxyDefaultTargetGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+/// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupStatusAtProviderConnectionPoolConfig
 {
-    /// <summary>The number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
+    /// <summary>Number of seconds for a proxy to wait for a connection to become available in the connection pool. Only applies when the proxy has opened its maximum number of connections and all connections are busy with client sessions.</summary>
     [JsonPropertyName("connectionBorrowTimeout")]
     public double? ConnectionBorrowTimeout { get; set; }
 
@@ -579,7 +579,7 @@ public partial class V1beta1ProxyDefaultTargetGroupStatusAtProviderConnectionPoo
     [JsonPropertyName("initQuery")]
     public string? InitQuery { get; set; }
 
-    /// <summary>The maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
+    /// <summary>Maximum size of the connection pool for each target in a target group. For Aurora MySQL, it is expressed as a percentage of the max_connections setting for the RDS DB instance or Aurora DB cluster used by the target group.</summary>
     [JsonPropertyName("maxConnectionsPercent")]
     public double? MaxConnectionsPercent { get; set; }
 
@@ -596,11 +596,11 @@ public partial class V1beta1ProxyDefaultTargetGroupStatusAtProviderConnectionPoo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyDefaultTargetGroupStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) representing the target group.</summary>
+    /// <summary>ARN representing the target group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The settings that determine the size and behavior of the connection pool for the target group.</summary>
+    /// <summary>Settings that determine the size and behavior of the connection pool for the target group. See connection_pool_config Block for details.</summary>
     [JsonPropertyName("connectionPoolConfig")]
     public V1beta1ProxyDefaultTargetGroupStatusAtProviderConnectionPoolConfig? ConnectionPoolConfig { get; set; }
 
@@ -612,7 +612,7 @@ public partial class V1beta1ProxyDefaultTargetGroupStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the default target group.</summary>
+    /// <summary>Name of the default target group.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 

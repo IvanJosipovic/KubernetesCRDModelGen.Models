@@ -1036,7 +1036,7 @@ public partial class V1beta1RoutingProfileStatusAtProviderQueueConfigs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingProfileStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Routing Profile.</summary>
+    /// <summary>ARN of the Routing Profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

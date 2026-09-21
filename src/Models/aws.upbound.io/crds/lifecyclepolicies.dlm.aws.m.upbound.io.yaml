@@ -159,7 +159,7 @@ spec:
                                   description: The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.
                                   properties:
                                     cmkArn:
-                                      description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                      description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                       type: string
                                     encrypted:
                                       description: To encrypt a copy of an unencrypted snapshot when encryption by default is not enabled, enable encryption using this parameter. Copies of encrypted snapshots are encrypted, even if this parameter is false or when encryption by default is not enabled.
@@ -176,7 +176,7 @@ spec:
                                       type: string
                                   type: object
                                 target:
-                                  description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                  description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                   type: string
                               type: object
                             type: array
@@ -240,6 +240,12 @@ spec:
                           excludeBootVolume:
                             description: Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.
                             type: boolean
+                          excludeDataVolumeTags:
+                            additionalProperties:
+                              type: string
+                            description: Map specifies whether to exclude volumes that have specific tags.
+                            type: object
+                            x-kubernetes-map-type: granular
                           noReboot:
                             description: Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).
                             type: boolean
@@ -344,7 +350,7 @@ spec:
                               items:
                                 properties:
                                   cmkArn:
-                                    description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                    description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                     type: string
                                   cmkArnRef:
                                     description: Reference to a Key in kms to populate cmkArn.
@@ -452,10 +458,10 @@ spec:
                                         type: string
                                     type: object
                                   target:
-                                    description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                   targetRegion:
-                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                 type: object
                               type: array
@@ -676,7 +682,7 @@ spec:
                                   description: The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.
                                   properties:
                                     cmkArn:
-                                      description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                      description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                       type: string
                                     encrypted:
                                       description: To encrypt a copy of an unencrypted snapshot when encryption by default is not enabled, enable encryption using this parameter. Copies of encrypted snapshots are encrypted, even if this parameter is false or when encryption by default is not enabled.
@@ -693,7 +699,7 @@ spec:
                                       type: string
                                   type: object
                                 target:
-                                  description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                  description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                   type: string
                               type: object
                             type: array
@@ -757,6 +763,12 @@ spec:
                           excludeBootVolume:
                             description: Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.
                             type: boolean
+                          excludeDataVolumeTags:
+                            additionalProperties:
+                              type: string
+                            description: Map specifies whether to exclude volumes that have specific tags.
+                            type: object
+                            x-kubernetes-map-type: granular
                           noReboot:
                             description: Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).
                             type: boolean
@@ -861,7 +873,7 @@ spec:
                               items:
                                 properties:
                                   cmkArn:
-                                    description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                    description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                     type: string
                                   cmkArnRef:
                                     description: Reference to a Key in kms to populate cmkArn.
@@ -969,10 +981,10 @@ spec:
                                         type: string
                                     type: object
                                   target:
-                                    description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                   targetRegion:
-                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                 type: object
                               type: array
@@ -1140,7 +1152,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the DLM Lifecycle Policy.
+                    description: ARN of the DLM Lifecycle Policy.
                     type: string
                   defaultPolicy:
                     description: Specify the type of default policy to create. valid values are VOLUME or INSTANCE.
@@ -1168,7 +1180,7 @@ spec:
                                   description: The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.
                                   properties:
                                     cmkArn:
-                                      description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                      description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                       type: string
                                     encrypted:
                                       description: To encrypt a copy of an unencrypted snapshot when encryption by default is not enabled, enable encryption using this parameter. Copies of encrypted snapshots are encrypted, even if this parameter is false or when encryption by default is not enabled.
@@ -1185,7 +1197,7 @@ spec:
                                       type: string
                                   type: object
                                 target:
-                                  description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                  description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                   type: string
                               type: object
                             type: array
@@ -1249,6 +1261,12 @@ spec:
                           excludeBootVolume:
                             description: Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.
                             type: boolean
+                          excludeDataVolumeTags:
+                            additionalProperties:
+                              type: string
+                            description: Map specifies whether to exclude volumes that have specific tags.
+                            type: object
+                            x-kubernetes-map-type: granular
                           noReboot:
                             description: Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).
                             type: boolean
@@ -1353,7 +1371,7 @@ spec:
                               items:
                                 properties:
                                   cmkArn:
-                                    description: The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
+                                    description: ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.
                                     type: string
                                   copyTags:
                                     description: Indicates whether the policy should copy tags from the source resource to the snapshot or AMI. Default value is false.
@@ -1382,10 +1400,10 @@ spec:
                                         type: string
                                     type: object
                                   target:
-                                    description: The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                   targetRegion:
-                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.
+                                    description: Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.
                                     type: string
                                 type: object
                               type: array

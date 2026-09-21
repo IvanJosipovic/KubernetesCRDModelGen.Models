@@ -401,7 +401,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProvider
     [JsonPropertyName("endpoint")]
     public V1beta1RealtimeLogConfigSpecForProviderEndpoint? Endpoint { get; set; }
 
-    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values.</summary>
+    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values. This includes viewer-request-log-data and viewer-response-log-data, which carry the custom data that a CloudFront Function logs with cf.logCustomData().</summary>
     [JsonPropertyName("fields")]
     public IList<string>? Fields { get; set; }
 
@@ -791,7 +791,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProvider
     [JsonPropertyName("endpoint")]
     public V1beta1RealtimeLogConfigSpecInitProviderEndpoint? Endpoint { get; set; }
 
-    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values.</summary>
+    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values. This includes viewer-request-log-data and viewer-response-log-data, which carry the custom data that a CloudFront Function logs with cf.logCustomData().</summary>
     [JsonPropertyName("fields")]
     public IList<string>? Fields { get; set; }
 
@@ -946,7 +946,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpoint
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatusAtProvider
 {
-    /// <summary>The ARN (Amazon Resource Name) of the CloudFront real-time log configuration.</summary>
+    /// <summary>ARN of the CloudFront real-time log configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -954,7 +954,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProvider
     [JsonPropertyName("endpoint")]
     public V1beta1RealtimeLogConfigStatusAtProviderEndpoint? Endpoint { get; set; }
 
-    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values.</summary>
+    /// <summary>The fields that are included in each real-time log record. See the AWS documentation for supported values. This includes viewer-request-log-data and viewer-response-log-data, which carry the custom data that a CloudFront Function logs with cf.logCustomData().</summary>
     [JsonPropertyName("fields")]
     public IList<string>? Fields { get; set; }
 

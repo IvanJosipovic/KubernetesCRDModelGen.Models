@@ -48,7 +48,7 @@ public partial class V1beta1EndpointGroupSpecForProviderEndpointConfiguration
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
-    /// <summary>An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
+    /// <summary>ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the ARN of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
@@ -253,7 +253,7 @@ public partial class V1beta1EndpointGroupSpecForProvider
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ARN of the listener.</summary>
     [JsonPropertyName("listenerArn")]
     public string? ListenerArn { get; set; }
 
@@ -290,7 +290,7 @@ public partial class V1beta1EndpointGroupSpecInitProviderEndpointConfiguration
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
-    /// <summary>An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
+    /// <summary>ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the ARN of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
@@ -507,7 +507,7 @@ public partial class V1beta1EndpointGroupSpecInitProvider
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ARN of the listener.</summary>
     [JsonPropertyName("listenerArn")]
     public string? ListenerArn { get; set; }
 
@@ -651,7 +651,7 @@ public partial class V1beta1EndpointGroupStatusAtProviderEndpointConfiguration
     [JsonPropertyName("clientIpPreservationEnabled")]
     public bool? ClientIpPreservationEnabled { get; set; }
 
-    /// <summary>An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
+    /// <summary>ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the ARN of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.</summary>
     [JsonPropertyName("endpointId")]
     public string? EndpointId { get; set; }
 
@@ -677,7 +677,7 @@ public partial class V1beta1EndpointGroupStatusAtProviderPortOverride
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointGroupStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the endpoint group.</summary>
+    /// <summary>ARN of the endpoint group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -705,11 +705,11 @@ public partial class V1beta1EndpointGroupStatusAtProvider
     [JsonPropertyName("healthCheckProtocol")]
     public string? HealthCheckProtocol { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the endpoint group.</summary>
+    /// <summary>ARN of the endpoint group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ARN of the listener.</summary>
     [JsonPropertyName("listenerArn")]
     public string? ListenerArn { get; set; }
 

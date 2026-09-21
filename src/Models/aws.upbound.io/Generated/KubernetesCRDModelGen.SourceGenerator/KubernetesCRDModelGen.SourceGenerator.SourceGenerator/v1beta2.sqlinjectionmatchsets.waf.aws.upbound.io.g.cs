@@ -403,7 +403,7 @@ public partial class V1beta2SQLInjectionMatchSetStatusAtProviderSqlInjectionMatc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SQLInjectionMatchSetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the SQL injection match set.</summary>
+    /// <summary>ARN of the SQL injection match set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

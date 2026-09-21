@@ -206,7 +206,7 @@ public partial class V1beta1ScraperSpecForProviderDestinationAmpWorkspaceArnSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderDestinationAmp
 {
-    /// <summary>The Amazon Resource Name (ARN) of the prometheus workspace.</summary>
+    /// <summary>ARN of the prometheus workspace.</summary>
     [JsonPropertyName("workspaceArn")]
     public string? WorkspaceArn { get; set; }
 
@@ -221,11 +221,197 @@ public partial class V1beta1ScraperSpecForProviderDestinationAmp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderDestinationCloudwatch
+{
+    /// <summary>ARN of the CloudWatch dataset. Use arn:aws:cloudwatch:{region}:{account}:dataset/default for the default dataset.</summary>
+    [JsonPropertyName("datasetArn")]
+    public string? DatasetArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderDestination
 {
-    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp.</summary>
+    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp Block for details.</summary>
     [JsonPropertyName("amp")]
     public IList<V1beta1ScraperSpecForProviderDestinationAmp>? Amp { get; set; }
+
+    /// <summary>Configuration block for a CloudWatch Metrics destination. See cloudwatch Block for details.</summary>
+    [JsonPropertyName("cloudwatch")]
+    public IList<V1beta1ScraperSpecForProviderDestinationCloudwatch>? Cloudwatch { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporterOpensearch
+{
+    /// <summary>ARN of the OpenSearch domain.</summary>
+    [JsonPropertyName("domainArn")]
+    public string? DomainArn { get; set; }
+
+    /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
+    [JsonPropertyName("domainArnRef")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnRef? DomainArnRef { get; set; }
+
+    /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
+    [JsonPropertyName("domainArnSelector")]
+    public V1beta1ScraperSpecForProviderExporterOpensearchDomainArnSelector? DomainArnSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecForProviderExporter
+{
+    /// <summary>Configuration block for an OpenSearch exporter. See opensearch Block for details.</summary>
+    [JsonPropertyName("opensearch")]
+    public IList<V1beta1ScraperSpecForProviderExporterOpensearch>? Opensearch { get; set; }
 }
 
 /// <summary>
@@ -379,7 +565,7 @@ public partial class V1beta1ScraperSpecForProviderRoleConfigurationSourceRoleArn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderRoleConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the source role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("sourceRoleArn")]
     public string? SourceRoleArn { get; set; }
 
@@ -391,7 +577,7 @@ public partial class V1beta1ScraperSpecForProviderRoleConfiguration
     [JsonPropertyName("sourceRoleArnSelector")]
     public V1beta1ScraperSpecForProviderRoleConfigurationSourceRoleArnSelector? SourceRoleArnSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the target role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 }
@@ -841,7 +1027,7 @@ public partial class V1beta1ScraperSpecForProviderSourceEksSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
+    /// <summary>ARN of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -1205,11 +1391,11 @@ public partial class V1beta1ScraperSpecForProviderSourceVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProviderSource
 {
-    /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
+    /// <summary>Configuration block for an EKS cluster source. See eks Block for details.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperSpecForProviderSourceEks>? Eks { get; set; }
 
-    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    /// <summary>Configuration block for a VPC source. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public IList<V1beta1ScraperSpecForProviderSourceVpc>? Vpc { get; set; }
 }
@@ -1218,13 +1404,17 @@ public partial class V1beta1ScraperSpecForProviderSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecForProvider
 {
-    /// <summary>a name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
+    /// <summary>Name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>Configuration block for the managed scraper to send metrics to. See destination.</summary>
+    /// <summary>Configuration block for the managed scraper to send metrics to. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public IList<V1beta1ScraperSpecForProviderDestination>? Destination { get; set; }
+
+    /// <summary>Configuration block for additional exporters. See exporter Block for details.</summary>
+    [JsonPropertyName("exporter")]
+    public IList<V1beta1ScraperSpecForProviderExporter>? Exporter { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -1233,18 +1423,19 @@ public partial class V1beta1ScraperSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration below.</summary>
+    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration Block for details.</summary>
     [JsonPropertyName("roleConfiguration")]
     public IList<V1beta1ScraperSpecForProviderRoleConfiguration>? RoleConfiguration { get; set; }
 
-    /// <summary>The configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
+    /// <summary>Configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
     [JsonPropertyName("scrapeConfiguration")]
     public string? ScrapeConfiguration { get; set; }
 
-    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source.</summary>
+    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source Block for details.</summary>
     [JsonPropertyName("source")]
     public IList<V1beta1ScraperSpecForProviderSource>? Source { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -1400,7 +1591,7 @@ public partial class V1beta1ScraperSpecInitProviderDestinationAmpWorkspaceArnSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderDestinationAmp
 {
-    /// <summary>The Amazon Resource Name (ARN) of the prometheus workspace.</summary>
+    /// <summary>ARN of the prometheus workspace.</summary>
     [JsonPropertyName("workspaceArn")]
     public string? WorkspaceArn { get; set; }
 
@@ -1415,11 +1606,197 @@ public partial class V1beta1ScraperSpecInitProviderDestinationAmp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderDestinationCloudwatch
+{
+    /// <summary>ARN of the CloudWatch dataset. Use arn:aws:cloudwatch:{region}:{account}:dataset/default for the default dataset.</summary>
+    [JsonPropertyName("datasetArn")]
+    public string? DatasetArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderDestination
 {
-    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp.</summary>
+    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp Block for details.</summary>
     [JsonPropertyName("amp")]
     public IList<V1beta1ScraperSpecInitProviderDestinationAmp>? Amp { get; set; }
+
+    /// <summary>Configuration block for a CloudWatch Metrics destination. See cloudwatch Block for details.</summary>
+    [JsonPropertyName("cloudwatch")]
+    public IList<V1beta1ScraperSpecInitProviderDestinationCloudwatch>? Cloudwatch { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum>))]
+public enum V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporterOpensearch
+{
+    /// <summary>ARN of the OpenSearch domain.</summary>
+    [JsonPropertyName("domainArn")]
+    public string? DomainArn { get; set; }
+
+    /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
+    [JsonPropertyName("domainArnRef")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnRef? DomainArnRef { get; set; }
+
+    /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
+    [JsonPropertyName("domainArnSelector")]
+    public V1beta1ScraperSpecInitProviderExporterOpensearchDomainArnSelector? DomainArnSelector { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperSpecInitProviderExporter
+{
+    /// <summary>Configuration block for an OpenSearch exporter. See opensearch Block for details.</summary>
+    [JsonPropertyName("opensearch")]
+    public IList<V1beta1ScraperSpecInitProviderExporterOpensearch>? Opensearch { get; set; }
 }
 
 /// <summary>
@@ -1573,7 +1950,7 @@ public partial class V1beta1ScraperSpecInitProviderRoleConfigurationSourceRoleAr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderRoleConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the source role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("sourceRoleArn")]
     public string? SourceRoleArn { get; set; }
 
@@ -1585,7 +1962,7 @@ public partial class V1beta1ScraperSpecInitProviderRoleConfiguration
     [JsonPropertyName("sourceRoleArnSelector")]
     public V1beta1ScraperSpecInitProviderRoleConfigurationSourceRoleArnSelector? SourceRoleArnSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the target role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 }
@@ -2035,7 +2412,7 @@ public partial class V1beta1ScraperSpecInitProviderSourceEksSubnetIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
+    /// <summary>ARN of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -2399,11 +2776,11 @@ public partial class V1beta1ScraperSpecInitProviderSourceVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProviderSource
 {
-    /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
+    /// <summary>Configuration block for an EKS cluster source. See eks Block for details.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperSpecInitProviderSourceEks>? Eks { get; set; }
 
-    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    /// <summary>Configuration block for a VPC source. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public IList<V1beta1ScraperSpecInitProviderSourceVpc>? Vpc { get; set; }
 }
@@ -2424,26 +2801,31 @@ public partial class V1beta1ScraperSpecInitProviderSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperSpecInitProvider
 {
-    /// <summary>a name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
+    /// <summary>Name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>Configuration block for the managed scraper to send metrics to. See destination.</summary>
+    /// <summary>Configuration block for the managed scraper to send metrics to. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public IList<V1beta1ScraperSpecInitProviderDestination>? Destination { get; set; }
 
-    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration below.</summary>
+    /// <summary>Configuration block for additional exporters. See exporter Block for details.</summary>
+    [JsonPropertyName("exporter")]
+    public IList<V1beta1ScraperSpecInitProviderExporter>? Exporter { get; set; }
+
+    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration Block for details.</summary>
     [JsonPropertyName("roleConfiguration")]
     public IList<V1beta1ScraperSpecInitProviderRoleConfiguration>? RoleConfiguration { get; set; }
 
-    /// <summary>The configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
+    /// <summary>Configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
     [JsonPropertyName("scrapeConfiguration")]
     public string? ScrapeConfiguration { get; set; }
 
-    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source.</summary>
+    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source Block for details.</summary>
     [JsonPropertyName("source")]
     public IList<V1beta1ScraperSpecInitProviderSource>? Source { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -2635,29 +3017,60 @@ public partial class V1beta1ScraperSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderDestinationAmp
 {
-    /// <summary>The Amazon Resource Name (ARN) of the prometheus workspace.</summary>
+    /// <summary>ARN of the prometheus workspace.</summary>
     [JsonPropertyName("workspaceArn")]
     public string? WorkspaceArn { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperStatusAtProviderDestinationCloudwatch
+{
+    /// <summary>ARN of the CloudWatch dataset. Use arn:aws:cloudwatch:{region}:{account}:dataset/default for the default dataset.</summary>
+    [JsonPropertyName("datasetArn")]
+    public string? DatasetArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderDestination
 {
-    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp.</summary>
+    /// <summary>Configuration block for an Amazon Managed Prometheus workspace destination. See amp Block for details.</summary>
     [JsonPropertyName("amp")]
     public IList<V1beta1ScraperStatusAtProviderDestinationAmp>? Amp { get; set; }
+
+    /// <summary>Configuration block for a CloudWatch Metrics destination. See cloudwatch Block for details.</summary>
+    [JsonPropertyName("cloudwatch")]
+    public IList<V1beta1ScraperStatusAtProviderDestinationCloudwatch>? Cloudwatch { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperStatusAtProviderExporterOpensearch
+{
+    /// <summary>ARN of the OpenSearch domain.</summary>
+    [JsonPropertyName("domainArn")]
+    public string? DomainArn { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ScraperStatusAtProviderExporter
+{
+    /// <summary>Configuration block for an OpenSearch exporter. See opensearch Block for details.</summary>
+    [JsonPropertyName("opensearch")]
+    public IList<V1beta1ScraperStatusAtProviderExporterOpensearch>? Opensearch { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderRoleConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the source role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("sourceRoleArn")]
     public string? SourceRoleArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the target role configuration. Must be an IAM role ARN.</summary>
+    /// <summary>ARN of the target role configuration. Must be an IAM role ARN.</summary>
     [JsonPropertyName("targetRoleArn")]
     public string? TargetRoleArn { get; set; }
 }
@@ -2666,7 +3079,7 @@ public partial class V1beta1ScraperStatusAtProviderRoleConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderSourceEks
 {
-    /// <summary>The Amazon Resource Name (ARN) of the source EKS cluster.</summary>
+    /// <summary>ARN of the source EKS cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -2696,11 +3109,11 @@ public partial class V1beta1ScraperStatusAtProviderSourceVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProviderSource
 {
-    /// <summary>Configuration block for an EKS cluster source. See eks.</summary>
+    /// <summary>Configuration block for an EKS cluster source. See eks Block for details.</summary>
     [JsonPropertyName("eks")]
     public IList<V1beta1ScraperStatusAtProviderSourceEks>? Eks { get; set; }
 
-    /// <summary>Configuration block for a VPC source. See vpc.</summary>
+    /// <summary>Configuration block for a VPC source. See vpc Block for details.</summary>
     [JsonPropertyName("vpc")]
     public IList<V1beta1ScraperStatusAtProviderSourceVpc>? Vpc { get; set; }
 }
@@ -2709,18 +3122,23 @@ public partial class V1beta1ScraperStatusAtProviderSource
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScraperStatusAtProvider
 {
-    /// <summary>a name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
+    /// <summary>Name to associate with the managed scraper. This is for your use, and does not need to be unique.</summary>
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the new scraper.</summary>
+    /// <summary>ARN of the scraper.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Configuration block for the managed scraper to send metrics to. See destination.</summary>
+    /// <summary>Configuration block for the managed scraper to send metrics to. See destination Block for details.</summary>
     [JsonPropertyName("destination")]
     public IList<V1beta1ScraperStatusAtProviderDestination>? Destination { get; set; }
 
+    /// <summary>Configuration block for additional exporters. See exporter Block for details.</summary>
+    [JsonPropertyName("exporter")]
+    public IList<V1beta1ScraperStatusAtProviderExporter>? Exporter { get; set; }
+
+    /// <summary>(String) ID of the scraper.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -2731,25 +3149,27 @@ public partial class V1beta1ScraperStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role that provides permissions for the scraper to discover, collect, and produce metrics</summary>
+    /// <summary>ARN of the IAM role that provides permissions for the scraper to discover, collect, and produce metrics</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration below.</summary>
+    /// <summary>Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a different account. See role_configuration Block for details.</summary>
     [JsonPropertyName("roleConfiguration")]
     public IList<V1beta1ScraperStatusAtProviderRoleConfiguration>? RoleConfiguration { get; set; }
 
-    /// <summary>The configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
+    /// <summary>Configuration file to use in the new scraper. For more information, see Scraper configuration.</summary>
     [JsonPropertyName("scrapeConfiguration")]
     public string? ScrapeConfiguration { get; set; }
 
-    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source.</summary>
+    /// <summary>Configuration block to specify where the managed scraper will collect metrics from. See source Block for details.</summary>
     [JsonPropertyName("source")]
     public IList<V1beta1ScraperStatusAtProviderSource>? Source { get; set; }
 
+    /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

@@ -362,7 +362,7 @@ public partial class V1beta1RouteResponseSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1RouteResponseSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The model selection expression for the route response.</summary>
+    /// <summary>Model selection expression for the route response.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 
@@ -732,7 +732,7 @@ public partial class V1beta1RouteResponseSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1RouteResponseSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The model selection expression for the route response.</summary>
+    /// <summary>Model selection expression for the route response.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 
@@ -876,7 +876,7 @@ public partial class V1beta1RouteResponseStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The model selection expression for the route response.</summary>
+    /// <summary>Model selection expression for the route response.</summary>
     [JsonPropertyName("modelSelectionExpression")]
     public string? ModelSelectionExpression { get; set; }
 

@@ -36,21 +36,21 @@ public partial class V1beta1OntapFileSystemList : IKubernetesObject<V1ListMeta>,
     public required IList<V1beta1OntapFileSystem> Items { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecForProviderDiskIopsConfiguration
 {
-    /// <summary>- The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>- Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
 
-/// <summary>The ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
+/// <summary>ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecForProviderFsxAdminPasswordSecretRef
@@ -687,31 +687,31 @@ public partial class V1beta1OntapFileSystemSpecForProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecForProvider
 {
-    /// <summary>The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
+    /// <summary>Number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>A recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
+    /// <summary>Recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>- The filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
+    /// <summary>Filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta1OntapFileSystemSpecForProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
-    /// <summary>Specifies the IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range.</summary>
+    /// <summary>IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range. Note that the 198.19.* range is also used by AWS services such as WorkSpaces and AppStream 2.0 for their management network interfaces.</summary>
     [JsonPropertyName("endpointIpAddressRange")]
     public string? EndpointIpAddressRange { get; set; }
 
-    /// <summary>The ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
+    /// <summary>ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
     [JsonPropertyName("fsxAdminPasswordSecretRef")]
     public V1beta1OntapFileSystemSpecForProviderFsxAdminPasswordSecretRef? FsxAdminPasswordSecretRef { get; set; }
 
-    /// <summary>- The number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
+    /// <summary>Number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
     [JsonPropertyName("haPairs")]
     public double? HaPairs { get; set; }
 
@@ -727,7 +727,11 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1OntapFileSystemSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The ID for a subnet. A subnet is a range of IP addresses in your virtual private cloud (VPC).</summary>
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
+    /// <summary>ID for a subnet. A subnet is a range of IP addresses in your VPC.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -746,7 +750,7 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
+    /// <summary>VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
     [JsonPropertyName("routeTableIds")]
     public IList<string>? RouteTableIds { get; set; }
 
@@ -758,15 +762,15 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1OntapFileSystemSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>- The filesystem storage type. defaults to SSD.</summary>
+    /// <summary>Filesystem storage type. Defaults to SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -778,7 +782,7 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1OntapFileSystemSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -794,26 +798,26 @@ public partial class V1beta1OntapFileSystemSpecForProvider
     [JsonPropertyName("throughputCapacityPerHaPair")]
     public double? ThroughputCapacityPerHaPair { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecInitProviderDiskIopsConfiguration
 {
-    /// <summary>- The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>- Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
 
-/// <summary>The ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
+/// <summary>ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecInitProviderFsxAdminPasswordSecretRef
@@ -1462,31 +1466,31 @@ public partial class V1beta1OntapFileSystemSpecInitProviderSubnetIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemSpecInitProvider
 {
-    /// <summary>The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
+    /// <summary>Number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>A recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
+    /// <summary>Recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>- The filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
+    /// <summary>Filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta1OntapFileSystemSpecInitProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
-    /// <summary>Specifies the IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range.</summary>
+    /// <summary>IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range. Note that the 198.19.* range is also used by AWS services such as WorkSpaces and AppStream 2.0 for their management network interfaces.</summary>
     [JsonPropertyName("endpointIpAddressRange")]
     public string? EndpointIpAddressRange { get; set; }
 
-    /// <summary>The ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
+    /// <summary>ONTAP administrative password for the fsxadmin user that you can use to administer your file system using the ONTAP CLI and REST API.</summary>
     [JsonPropertyName("fsxAdminPasswordSecretRef")]
     public V1beta1OntapFileSystemSpecInitProviderFsxAdminPasswordSecretRef? FsxAdminPasswordSecretRef { get; set; }
 
-    /// <summary>- The number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
+    /// <summary>Number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
     [JsonPropertyName("haPairs")]
     public double? HaPairs { get; set; }
 
@@ -1502,7 +1506,11 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1OntapFileSystemSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>The ID for a subnet. A subnet is a range of IP addresses in your virtual private cloud (VPC).</summary>
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
+    /// <summary>ID for a subnet. A subnet is a range of IP addresses in your VPC.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -1514,7 +1522,7 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("preferredSubnetIdSelector")]
     public V1beta1OntapFileSystemSpecInitProviderPreferredSubnetIdSelector? PreferredSubnetIdSelector { get; set; }
 
-    /// <summary>Specifies the VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
+    /// <summary>VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
     [JsonPropertyName("routeTableIds")]
     public IList<string>? RouteTableIds { get; set; }
 
@@ -1526,15 +1534,15 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1OntapFileSystemSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>- The filesystem storage type. defaults to SSD.</summary>
+    /// <summary>Filesystem storage type. Defaults to SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
@@ -1546,7 +1554,7 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta1OntapFileSystemSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1562,7 +1570,7 @@ public partial class V1beta1OntapFileSystemSpecInitProvider
     [JsonPropertyName("throughputCapacityPerHaPair")]
     public double? ThroughputCapacityPerHaPair { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }
@@ -1674,16 +1682,16 @@ public partial class V1beta1OntapFileSystemSpec
     public V1beta1OntapFileSystemSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+/// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProviderDiskIopsConfiguration
 {
-    /// <summary>- The total number of SSD IOPS provisioned for the file system.</summary>
+    /// <summary>Total number of SSD IOPS provisioned for the file system.</summary>
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>- Specifies whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
+    /// <summary>Whether the number of IOPS for the file system is using the system. Valid values are AUTOMATIC and USER_PROVISIONED. Default value is AUTOMATIC.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 }
@@ -1718,11 +1726,11 @@ public partial class V1beta1OntapFileSystemStatusAtProviderEndpointsManagement
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProviderEndpoints
 {
-    /// <summary>An endpoint for managing your file system by setting up NetApp SnapMirror with other ONTAP systems. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system by setting up NetApp SnapMirror with other ONTAP systems. See Endpoint.</summary>
     [JsonPropertyName("intercluster")]
     public IList<V1beta1OntapFileSystemStatusAtProviderEndpointsIntercluster>? Intercluster { get; set; }
 
-    /// <summary>An endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
     [JsonPropertyName("management")]
     public IList<V1beta1OntapFileSystemStatusAtProviderEndpointsManagement>? Management { get; set; }
 }
@@ -1731,23 +1739,23 @@ public partial class V1beta1OntapFileSystemStatusAtProviderEndpoints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapFileSystemStatusAtProvider
 {
-    /// <summary>Amazon Resource Name of the file system.</summary>
+    /// <summary>ARN of the file system.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
+    /// <summary>Number of days to retain automatic backups. Setting this to 0 disables automatic backups. You can retain automatic backups for a maximum of 90 days.</summary>
     [JsonPropertyName("automaticBackupRetentionDays")]
     public double? AutomaticBackupRetentionDays { get; set; }
 
-    /// <summary>A recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
+    /// <summary>Recurring daily time, in the format HH:MM. HH is the zero-padded hour of the day (0-23), and MM is the zero-padded minute of the hour. For example, 05:00 specifies 5 AM daily. Requires automatic_backup_retention_days to be set.</summary>
     [JsonPropertyName("dailyAutomaticBackupStartTime")]
     public string? DailyAutomaticBackupStartTime { get; set; }
 
-    /// <summary>- The filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
+    /// <summary>Filesystem deployment type. Supports MULTI_AZ_1, MULTI_AZ_2, SINGLE_AZ_1, and SINGLE_AZ_2.</summary>
     [JsonPropertyName("deploymentType")]
     public string? DeploymentType { get; set; }
 
-    /// <summary>The SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See Disk Iops Configuration below.</summary>
+    /// <summary>SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system. See disk_iops_configuration below.</summary>
     [JsonPropertyName("diskIopsConfiguration")]
     public V1beta1OntapFileSystemStatusAtProviderDiskIopsConfiguration? DiskIopsConfiguration { get; set; }
 
@@ -1755,15 +1763,15 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>Specifies the IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range.</summary>
+    /// <summary>IP address range in which the endpoints to access your file system will be created. By default, Amazon FSx selects an unused IP address range for you from the 198.19.* range. Note that the 198.19.* range is also used by AWS services such as WorkSpaces and AppStream 2.0 for their management network interfaces.</summary>
     [JsonPropertyName("endpointIpAddressRange")]
     public string? EndpointIpAddressRange { get; set; }
 
-    /// <summary>The endpoints that are used to access data or to manage the file system using the NetApp ONTAP CLI, REST API, or NetApp SnapMirror. See Endpoints below.</summary>
+    /// <summary>Endpoints that are used to access data or to manage the file system using the NetApp ONTAP CLI, REST API, or NetApp SnapMirror. See endpoints below.</summary>
     [JsonPropertyName("endpoints")]
     public IList<V1beta1OntapFileSystemStatusAtProviderEndpoints>? Endpoints { get; set; }
 
-    /// <summary>- The number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
+    /// <summary>Number of ha_pairs to deploy for the file system. Valid value is 1 for SINGLE_AZ_1 or MULTI_AZ_1 and MULTI_AZ_2. Valid values are 1 through 12 for SINGLE_AZ_2.</summary>
     [JsonPropertyName("haPairs")]
     public double? HaPairs { get; set; }
 
@@ -1779,11 +1787,15 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     [JsonPropertyName("networkInterfaceIds")]
     public IList<string>? NetworkInterfaceIds { get; set; }
 
+    /// <summary>Network type. Valid values are IPV4 and DUAL. Default value is IPV4.</summary>
+    [JsonPropertyName("networkType")]
+    public string? NetworkType { get; set; }
+
     /// <summary>AWS account identifier that created the file system.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
-    /// <summary>The ID for a subnet. A subnet is a range of IP addresses in your virtual private cloud (VPC).</summary>
+    /// <summary>ID for a subnet. A subnet is a range of IP addresses in your VPC.</summary>
     [JsonPropertyName("preferredSubnetId")]
     public string? PreferredSubnetId { get; set; }
 
@@ -1794,23 +1806,23 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
+    /// <summary>VPC route tables in which your file system&apos;s endpoints will be created. You should specify all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC&apos;s default route table.</summary>
     [JsonPropertyName("routeTableIds")]
     public IList<string>? RouteTableIds { get; set; }
 
-    /// <summary>A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
+    /// <summary>List of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>The storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
+    /// <summary>Storage capacity (GiB) of the file system. Valid values between 1024 and 196608 for file systems with deployment_type SINGLE_AZ_1 and MULTI_AZ_1. Valid values are between 1024 and 524288 for MULTI_AZ_2. Valid values between 1024 (1024 per ha pair) and 1048576 for file systems with deployment_type SINGLE_AZ_2. For SINGLE_AZ_2, the 1048576 (1PB) maximum is only supported when using 2 or more ha_pairs, the maximum is 524288 (512TB) when using 1 ha_pair.</summary>
     [JsonPropertyName("storageCapacity")]
     public double? StorageCapacity { get; set; }
 
-    /// <summary>- The filesystem storage type. defaults to SSD.</summary>
+    /// <summary>Filesystem storage type. Defaults to SSD.</summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
 
-    /// <summary>A list of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
+    /// <summary>List of IDs for the subnets that the file system will be accessible from. Up to 2 subnets can be provided.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -1818,7 +1830,7 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -1830,11 +1842,11 @@ public partial class V1beta1OntapFileSystemStatusAtProvider
     [JsonPropertyName("throughputCapacityPerHaPair")]
     public double? ThroughputCapacityPerHaPair { get; set; }
 
-    /// <summary>Identifier of the Virtual Private Cloud for the file system.</summary>
+    /// <summary>Identifier of the VPC for the file system.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
-    /// <summary>The preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
+    /// <summary>Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.</summary>
     [JsonPropertyName("weeklyMaintenanceStartTime")]
     public string? WeeklyMaintenanceStartTime { get; set; }
 }

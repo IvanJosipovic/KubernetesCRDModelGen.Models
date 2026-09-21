@@ -245,7 +245,7 @@ public partial class V1beta1PolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PolicyStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the policy.</summary>
+    /// <summary>ARN of the policy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

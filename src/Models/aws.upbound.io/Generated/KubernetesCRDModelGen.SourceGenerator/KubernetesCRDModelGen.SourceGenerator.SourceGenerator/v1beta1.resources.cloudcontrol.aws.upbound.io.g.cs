@@ -235,7 +235,7 @@ public partial class V1beta1ResourceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to assume for operations.</summary>
+    /// <summary>ARN of the IAM Role to assume for operations.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -445,7 +445,7 @@ public partial class V1beta1ResourceSpecInitProvider
     [JsonPropertyName("desiredState")]
     public string? DesiredState { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to assume for operations.</summary>
+    /// <summary>ARN of the IAM Role to assume for operations.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -675,7 +675,7 @@ public partial class V1beta1ResourceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to assume for operations.</summary>
+    /// <summary>ARN of the IAM Role to assume for operations.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

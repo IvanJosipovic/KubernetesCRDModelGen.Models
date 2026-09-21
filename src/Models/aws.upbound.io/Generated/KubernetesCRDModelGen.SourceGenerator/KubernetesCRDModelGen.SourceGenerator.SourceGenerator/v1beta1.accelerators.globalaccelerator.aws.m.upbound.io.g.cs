@@ -284,7 +284,7 @@ public partial class V1beta1AcceleratorStatusAtProviderIpSets
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AcceleratorStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the accelerator.</summary>
+    /// <summary>ARN of the accelerator.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -296,7 +296,7 @@ public partial class V1beta1AcceleratorStatusAtProvider
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>The Domain Name System (DNS) name that Global Accelerator creates that points to a dual-stack accelerator&apos;s four static IP addresses: two IPv4 addresses and two IPv6 addresses. For example, a1234567890abcdef.dualstack.awsglobalaccelerator.com.</summary>
+    /// <summary>DNS name that Global Accelerator creates that points to a dual-stack accelerator&apos;s four static IP addresses: two IPv4 addresses and two IPv6 addresses. For example, a1234567890abcdef.dualstack.awsglobalaccelerator.com.</summary>
     [JsonPropertyName("dualStackDnsName")]
     public string? DualStackDnsName { get; set; }
 
@@ -312,7 +312,7 @@ public partial class V1beta1AcceleratorStatusAtProvider
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the accelerator.</summary>
+    /// <summary>ARN of the accelerator.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

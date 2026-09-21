@@ -204,7 +204,7 @@ public partial class V1beta1CodeRepositorySpecForProviderGitConfig
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -405,7 +405,7 @@ public partial class V1beta1CodeRepositorySpecInitProviderGitConfig
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -563,7 +563,7 @@ public partial class V1beta1CodeRepositoryStatusAtProviderGitConfig
     [JsonPropertyName("repositoryUrl")]
     public string? RepositoryUrl { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
+    /// <summary>ARN of the AWS Secrets Manager secret that contains the credentials used to access the git repository. The secret must have a staging label of AWSCURRENT and must be in the following format: {&quot;username&quot;: UserName, &quot;password&quot;: Password}</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 }
@@ -572,7 +572,7 @@ public partial class V1beta1CodeRepositoryStatusAtProviderGitConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CodeRepositoryStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Code Repository.</summary>
+    /// <summary>ARN assigned by AWS to this Code Repository.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

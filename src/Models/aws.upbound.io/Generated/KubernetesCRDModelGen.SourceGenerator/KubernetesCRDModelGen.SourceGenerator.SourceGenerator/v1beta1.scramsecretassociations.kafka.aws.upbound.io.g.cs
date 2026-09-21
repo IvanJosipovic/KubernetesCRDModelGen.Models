@@ -353,7 +353,7 @@ public partial class V1beta1ScramSecretAssociationSpecForProviderSecretArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScramSecretAssociationSpecForProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the MSK cluster.</summary>
+    /// <summary>ARN of the MSK cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -695,7 +695,7 @@ public partial class V1beta1ScramSecretAssociationSpecInitProviderSecretArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScramSecretAssociationSpecInitProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the MSK cluster.</summary>
+    /// <summary>ARN of the MSK cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
@@ -907,11 +907,11 @@ public partial class V1beta1ScramSecretAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ScramSecretAssociationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the MSK cluster.</summary>
+    /// <summary>ARN of the MSK cluster.</summary>
     [JsonPropertyName("clusterArn")]
     public string? ClusterArn { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the MSK cluster.</summary>
+    /// <summary>ARN of the MSK cluster.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

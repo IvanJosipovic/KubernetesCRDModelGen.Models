@@ -357,7 +357,7 @@ public partial class V1beta1BucketObjectSpecForProvider
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
-    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.</summary>
+    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -409,7 +409,7 @@ public partial class V1beta1BucketObjectSpecForProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>Name of the object once it is in the bucket.</summary>
+    /// <summary>Name of the object once it is in the bucket. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -787,7 +787,7 @@ public partial class V1beta1BucketObjectSpecInitProvider
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
-    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.</summary>
+    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -839,7 +839,7 @@ public partial class V1beta1BucketObjectSpecInitProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>Name of the object once it is in the bucket.</summary>
+    /// <summary>Name of the object once it is in the bucket. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
@@ -1091,7 +1091,7 @@ public partial class V1beta1BucketObjectStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.</summary>
+    /// <summary>Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
@@ -1138,7 +1138,7 @@ public partial class V1beta1BucketObjectStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Name of the object once it is in the bucket.</summary>
+    /// <summary>Name of the object once it is in the bucket. Use the aws_s3_object resource instead.</summary>
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 

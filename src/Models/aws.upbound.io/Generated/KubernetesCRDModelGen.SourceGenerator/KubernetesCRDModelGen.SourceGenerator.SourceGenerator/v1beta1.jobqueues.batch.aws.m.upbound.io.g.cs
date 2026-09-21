@@ -195,7 +195,7 @@ public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrderComput
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecForProviderComputeEnvironmentOrder
 {
-    /// <summary>The Amazon Resource Name (ARN) of the compute environment.</summary>
+    /// <summary>ARN of the compute environment.</summary>
     [JsonPropertyName("computeEnvironment")]
     public string? ComputeEnvironment { get; set; }
 
@@ -594,7 +594,7 @@ public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrderCompu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueSpecInitProviderComputeEnvironmentOrder
 {
-    /// <summary>The Amazon Resource Name (ARN) of the compute environment.</summary>
+    /// <summary>ARN of the compute environment.</summary>
     [JsonPropertyName("computeEnvironment")]
     public string? ComputeEnvironment { get; set; }
 
@@ -950,7 +950,7 @@ public partial class V1beta1JobQueueSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProviderComputeEnvironmentOrder
 {
-    /// <summary>The Amazon Resource Name (ARN) of the compute environment.</summary>
+    /// <summary>ARN of the compute environment.</summary>
     [JsonPropertyName("computeEnvironment")]
     public string? ComputeEnvironment { get; set; }
 
@@ -984,7 +984,7 @@ public partial class V1beta1JobQueueStatusAtProviderJobStateTimeLimitAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1JobQueueStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the job queue.</summary>
+    /// <summary>ARN of the job queue.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

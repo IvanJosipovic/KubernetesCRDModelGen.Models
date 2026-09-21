@@ -191,7 +191,7 @@ public partial class V1beta1AppSpecForProviderDomainIdSelector
     public V1beta1AppSpecForProviderDomainIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+/// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecForProviderResourceSpec
@@ -200,7 +200,7 @@ public partial class V1beta1AppSpecForProviderResourceSpec
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -403,7 +403,7 @@ public partial class V1beta1AppSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+    /// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
     [JsonPropertyName("resourceSpec")]
     public V1beta1AppSpecForProviderResourceSpec? ResourceSpec { get; set; }
 
@@ -583,7 +583,7 @@ public partial class V1beta1AppSpecInitProviderDomainIdSelector
     public V1beta1AppSpecInitProviderDomainIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+/// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppSpecInitProviderResourceSpec
@@ -592,7 +592,7 @@ public partial class V1beta1AppSpecInitProviderResourceSpec
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -800,7 +800,7 @@ public partial class V1beta1AppSpecInitProvider
     [JsonPropertyName("domainIdSelector")]
     public V1beta1AppSpecInitProviderDomainIdSelector? DomainIdSelector { get; set; }
 
-    /// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+    /// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
     [JsonPropertyName("resourceSpec")]
     public V1beta1AppSpecInitProviderResourceSpec? ResourceSpec { get; set; }
 
@@ -932,7 +932,7 @@ public partial class V1beta1AppSpec
     public V1beta1AppSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+/// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppStatusAtProviderResourceSpec
@@ -941,7 +941,7 @@ public partial class V1beta1AppStatusAtProviderResourceSpec
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -970,7 +970,7 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("appType")]
     public string? AppType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the app.</summary>
+    /// <summary>ARN of the app.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -978,7 +978,7 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("domainId")]
     public string? DomainId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the app.</summary>
+    /// <summary>ARN of the app.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -989,7 +989,7 @@ public partial class V1beta1AppStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance.See Resource Spec below.</summary>
+    /// <summary>Instance type and the ARN of the SageMaker AI image created on the instance. See Resource Spec below.</summary>
     [JsonPropertyName("resourceSpec")]
     public V1beta1AppStatusAtProviderResourceSpec? ResourceSpec { get; set; }
 

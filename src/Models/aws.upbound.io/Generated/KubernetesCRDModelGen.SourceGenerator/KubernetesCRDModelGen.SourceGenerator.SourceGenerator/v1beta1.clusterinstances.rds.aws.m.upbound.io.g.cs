@@ -815,11 +815,11 @@ public partial class V1beta1ClusterInstanceSpecForProviderPerformanceInsightsKms
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecForProvider
 {
-    /// <summary>Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.</summary>
+    /// <summary>Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
+    /// <summary>Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
@@ -843,7 +843,7 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     [JsonPropertyName("clusterIdentifierSelector")]
     public V1beta1ClusterInstanceSpecForProviderClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 
-    /// <summary>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
+    /// <summary>Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
@@ -863,7 +863,7 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     [JsonPropertyName("dbParameterGroupNameSelector")]
     public V1beta1ClusterInstanceSpecForProviderDbParameterGroupNameSelector? DbParameterGroupNameSelector { get; set; }
 
-    /// <summary>Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
+    /// <summary>DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -875,14 +875,11 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     [JsonPropertyName("dbSubnetGroupNameSelector")]
     public V1beta1ClusterInstanceSpecForProviderDbSubnetGroupNameSelector? DbSubnetGroupNameSelector { get; set; }
 
-    /// <summary>
-    /// Name of the database engine to be used for the RDS cluster instance.
-    /// Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
-    /// </summary>
+    /// <summary>Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.</summary>
+    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -910,7 +907,7 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     [JsonPropertyName("monitoringRoleArnSelector")]
     public V1beta1ClusterInstanceSpecForProviderMonitoringRoleArnSelector? MonitoringRoleArnSelector { get; set; }
 
-    /// <summary>Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
+    /// <summary>Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
@@ -956,6 +953,10 @@ public partial class V1beta1ClusterInstanceSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>
@@ -1749,11 +1750,11 @@ public partial class V1beta1ClusterInstanceSpecInitProviderPerformanceInsightsKm
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceSpecInitProvider
 {
-    /// <summary>Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.</summary>
+    /// <summary>Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
+    /// <summary>Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
@@ -1777,7 +1778,7 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     [JsonPropertyName("clusterIdentifierSelector")]
     public V1beta1ClusterInstanceSpecInitProviderClusterIdentifierSelector? ClusterIdentifierSelector { get; set; }
 
-    /// <summary>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
+    /// <summary>Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
@@ -1797,7 +1798,7 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     [JsonPropertyName("dbParameterGroupNameSelector")]
     public V1beta1ClusterInstanceSpecInitProviderDbParameterGroupNameSelector? DbParameterGroupNameSelector { get; set; }
 
-    /// <summary>Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
+    /// <summary>DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -1809,14 +1810,11 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     [JsonPropertyName("dbSubnetGroupNameSelector")]
     public V1beta1ClusterInstanceSpecInitProviderDbSubnetGroupNameSelector? DbSubnetGroupNameSelector { get; set; }
 
-    /// <summary>
-    /// Name of the database engine to be used for the RDS cluster instance.
-    /// Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
-    /// </summary>
+    /// <summary>Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.</summary>
+    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -1844,7 +1842,7 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     [JsonPropertyName("monitoringRoleArnSelector")]
     public V1beta1ClusterInstanceSpecInitProviderMonitoringRoleArnSelector? MonitoringRoleArnSelector { get; set; }
 
-    /// <summary>Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
+    /// <summary>Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
@@ -1883,6 +1881,10 @@ public partial class V1beta1ClusterInstanceSpecInitProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>
@@ -1996,15 +1998,15 @@ public partial class V1beta1ClusterInstanceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterInstanceStatusAtProvider
 {
-    /// <summary>Specifies whether any database modifications are applied immediately, or during the next maintenance window. Default isfalse.</summary>
+    /// <summary>Whether any database modifications are applied immediately, or during the next maintenance window. Default is false.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of cluster instance</summary>
+    /// <summary>ARN of cluster instance</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
+    /// <summary>Whether minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default true.</summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
@@ -2020,7 +2022,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("clusterIdentifier")]
     public string? ClusterIdentifier { get; set; }
 
-    /// <summary>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
+    /// <summary>Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default false.</summary>
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
@@ -2032,7 +2034,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("dbParameterGroupName")]
     public string? DbParameterGroupName { get; set; }
 
-    /// <summary>Specifies the DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
+    /// <summary>DB subnet group to associate with this DB instance. The default behavior varies depending on whether db_subnet_group_name is specified. Please refer to official AWS documentation to understand how db_subnet_group_name and publicly_accessible parameters affect DB instance behaviour. NOTE: This must match the db_subnet_group_name of the attached aws_rds_cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -2044,14 +2046,11 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>
-    /// Name of the database engine to be used for the RDS cluster instance.
-    /// Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres.(Note that mysql and postgres are Multi-AZ RDS clusters).
-    /// </summary>
+    /// <summary>Name of the database engine to be used for the RDS cluster instance. Valid Values: aurora-mysql, aurora-postgresql, mysql, postgres. (Note that mysql and postgres are Multi-AZ RDS clusters).</summary>
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_cluster_instance will not update the engine_version.</summary>
+    /// <summary>Database engine version. Please note that to upgrade the engine_version of the instance, it must be done on the aws_rds_cluster engine_version. Trying to upgrade in aws_rds_cluster_instance will not update the engine_version.</summary>
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
@@ -2087,7 +2086,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("networkType")]
     public string? NetworkType { get; set; }
 
-    /// <summary>Specifies whether Performance Insights is enabled or not. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
+    /// <summary>Whether Performance Insights is enabled. NOTE: When Performance Insights is configured at the cluster level through aws_rds_cluster, this argument cannot be set to a value that conflicts with the cluster&apos;s configuration.</summary>
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
@@ -2126,7 +2125,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted.</summary>
+    /// <summary>Whether the DB cluster is encrypted.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -2137,6 +2136,10 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 
     /// <summary>Boolean indicating if this instance is writable. False indicates this instance is a read replica.</summary>
     [JsonPropertyName("writer")]

@@ -295,7 +295,7 @@ public partial class V1beta1ProjectSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProjectStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this project</summary>
+    /// <summary>ARN of this project</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -389,7 +389,7 @@ public partial class V1beta2BucketLoggingSpecForProviderTargetGrant
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLoggingSpecForProviderTargetObjectKeyFormatPartitionedPrefix
 {
-    /// <summary>Specifies the partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
+    /// <summary>Partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
     [JsonPropertyName("partitionDateSource")]
     public string? PartitionDateSource { get; set; }
 }
@@ -801,7 +801,7 @@ public partial class V1beta2BucketLoggingSpecInitProviderTargetGrant
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLoggingSpecInitProviderTargetObjectKeyFormatPartitionedPrefix
 {
-    /// <summary>Specifies the partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
+    /// <summary>Partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
     [JsonPropertyName("partitionDateSource")]
     public string? PartitionDateSource { get; set; }
 }
@@ -1110,7 +1110,7 @@ public partial class V1beta2BucketLoggingStatusAtProviderTargetGrant
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketLoggingStatusAtProviderTargetObjectKeyFormatPartitionedPrefix
 {
-    /// <summary>Specifies the partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
+    /// <summary>Partition date source for the partitioned prefix. Valid values: EventTime, DeliveryTime.</summary>
     [JsonPropertyName("partitionDateSource")]
     public string? PartitionDateSource { get; set; }
 }
@@ -1148,7 +1148,7 @@ public partial class V1beta2BucketLoggingStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
+    /// <summary>bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

@@ -36,7 +36,7 @@ public partial class V1beta1MemoryStrategyList : IKubernetesObject<V1ListMeta>, 
     public required IList<V1beta1MemoryStrategy> Items { get; set; }
 }
 
-/// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationConsolidation
@@ -50,34 +50,466 @@ public partial class V1beta1MemoryStrategySpecForProviderConfigurationConsolidat
     public string? ModelId { get; set; }
 }
 
-/// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfigurationExtraction
 {
-    /// <summary>Additional text to append to the model prompt for extraction processing.</summary>
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
     [JsonPropertyName("appendToPrompt")]
     public string? AppendToPrompt { get; set; }
 
-    /// <summary>ID of the foundation model to use for extraction processing.</summary>
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 }
 
-/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+/// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationReflection
+{
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
+    [JsonPropertyName("appendToPrompt")]
+    public string? AppendToPrompt { get; set; }
+
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Topic in sns to populate topicArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Topic in sns to populate topicArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfiguration
+{
+    /// <summary>S3 bucket name for event payload delivery.</summary>
+    [JsonPropertyName("payloadDeliveryBucketName")]
+    public string? PayloadDeliveryBucketName { get; set; }
+
+    /// <summary>Reference to a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+    [JsonPropertyName("payloadDeliveryBucketNameRef")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRef? PayloadDeliveryBucketNameRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+    [JsonPropertyName("payloadDeliveryBucketNameSelector")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelector? PayloadDeliveryBucketNameSelector { get; set; }
+
+    /// <summary>ARN of the SNS topic for job notifications.</summary>
+    [JsonPropertyName("topicArn")]
+    public string? TopicArn { get; set; }
+
+    /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
+    [JsonPropertyName("topicArnRef")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRef? TopicArnRef { get; set; }
+
+    /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
+    [JsonPropertyName("topicArnSelector")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector? TopicArnSelector { get; set; }
+}
+
+/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
+{
+    /// <summary>Number of messages that trigger memory processing. Accepts values from 1 to 50.</summary>
+    [JsonPropertyName("messageCount")]
+    public double? MessageCount { get; set; }
+}
+
+/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
+{
+    /// <summary>Idle session timeout (seconds) that triggers memory processing. Accepts values from 10 to 3000.</summary>
+    [JsonPropertyName("idleSessionTimeout")]
+    public double? IdleSessionTimeout { get; set; }
+}
+
+/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
+{
+    /// <summary>Number of tokens that trigger memory processing. Accepts values from 100 to 500000.</summary>
+    [JsonPropertyName("tokenCount")]
+    public double? TokenCount { get; set; }
+}
+
+/// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditions
+{
+    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    [JsonPropertyName("messageBasedTrigger")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
+
+    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    [JsonPropertyName("timeBasedTrigger")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
+
+    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    [JsonPropertyName("tokenBasedTrigger")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
+}
+
+/// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfiguration
+{
+    /// <summary>Number of historical messages to include in processing context. Valid range: 0 to 50. Defaults to 4.</summary>
+    [JsonPropertyName("historicalContextWindowSize")]
+    public double? HistoricalContextWindowSize { get; set; }
+
+    /// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+    [JsonPropertyName("invocationConfiguration")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationInvocationConfiguration? InvocationConfiguration { get; set; }
+
+    /// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+    [JsonPropertyName("triggerConditions")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfigurationTriggerConditions? TriggerConditions { get; set; }
+}
+
+/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProviderConfiguration
 {
-    /// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("consolidation")]
     public V1beta1MemoryStrategySpecForProviderConfigurationConsolidation? Consolidation { get; set; }
 
-    /// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategySpecForProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    [JsonPropertyName("reflection")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationReflection? Reflection { get; set; }
+
+    /// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+    [JsonPropertyName("selfManagedConfiguration")]
+    public V1beta1MemoryStrategySpecForProviderConfigurationSelfManagedConfiguration? SelfManagedConfiguration { get; set; }
+
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE, SELF_MANAGED. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -392,18 +824,144 @@ public partial class V1beta1MemoryStrategySpecForProviderMemoryIdSelector
     public V1beta1MemoryStrategySpecForProviderMemoryIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation
+{
+    /// <summary>Maximum allowed value.</summary>
+    [JsonPropertyName("maxValue")]
+    public double? MaxValue { get; set; }
+
+    /// <summary>Minimum allowed value.</summary>
+    [JsonPropertyName("minValue")]
+    public double? MinValue { get; set; }
+}
+
+/// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+
+    /// <summary>Maximum number of items in the string list.</summary>
+    [JsonPropertyName("maxItems")]
+    public double? MaxItems { get; set; }
+}
+
+/// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+}
+
+/// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation
+{
+    /// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+    [JsonPropertyName("numberValidation")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation? NumberValidation { get; set; }
+
+    /// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+    [JsonPropertyName("stringListValidation")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation? StringListValidation { get; set; }
+
+    /// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+    [JsonPropertyName("stringValidation")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation? StringValidation { get; set; }
+}
+
+/// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig
+{
+    /// <summary>Description of what this metadata field represents.</summary>
+    [JsonPropertyName("definition")]
+    public string? Definition { get; set; }
+
+    /// <summary>Instructions for extraction. Supports built-in operators like LATEST_VALUE or custom natural-language instructions.</summary>
+    [JsonPropertyName("llmExtractionInstruction")]
+    public string? LlmExtractionInstruction { get; set; }
+
+    /// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+    [JsonPropertyName("validation")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation? Validation { get; set; }
+}
+
+/// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfig
+{
+    /// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+    [JsonPropertyName("llmExtractionConfig")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig? LlmExtractionConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchema
+{
+    /// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+    [JsonPropertyName("extractionConfig")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchemaExtractionConfig? ExtractionConfig { get; set; }
+
+    /// <summary>Whether the metadata value is extracted by the LLM or passed through deterministically from the event. Valid values: LLM_INFERRED, STRICTLY_CONSISTENT.</summary>
+    [JsonPropertyName("extractionType")]
+    public string? ExtractionType { get; set; }
+
+    /// <summary>Metadata field name. Must match an indexed key to be queryable via metadata filters.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value type. Valid values: STRING, STRINGLIST, NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderMemoryRecordSchema
+{
+    /// <summary>List of metadata field definitions for records generated by this strategy. See metadata_schema Block below.</summary>
+    [JsonPropertyName("metadataSchema")]
+    public IList<V1beta1MemoryStrategySpecForProviderMemoryRecordSchemaMetadataSchema>? MetadataSchema { get; set; }
+}
+
+/// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecForProviderReflectionConfiguration
+{
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecForProvider
 {
-    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1MemoryStrategySpecForProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>Description of the memory strategy.</summary>
+    /// <summary>Description of the memory strategy. Once set, a description cannot be removed via update because the service API ignores a null description and retains the previously stored value.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>ARN of the IAM role that the memory service assumes to perform operations.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
 
@@ -427,13 +985,25 @@ public partial class V1beta1MemoryStrategySpecForProvider
     [JsonPropertyName("memoryIdSelector")]
     public V1beta1MemoryStrategySpecForProviderMemoryIdSelector? MemoryIdSelector { get; set; }
 
-    /// <summary>Name of the memory strategy.</summary>
+    /// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+    [JsonPropertyName("memoryRecordSchema")]
+    public V1beta1MemoryStrategySpecForProviderMemoryRecordSchema? MemoryRecordSchema { get; set; }
+
+    /// <summary>Name of the memory strategy. Changing this forces a new resource, because the service API does not support renaming a strategy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Namespaces help organize and scope memory content.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
+
+    /// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+    [JsonPropertyName("reflectionConfiguration")]
+    public V1beta1MemoryStrategySpecForProviderReflectionConfiguration? ReflectionConfiguration { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -447,7 +1017,7 @@ public partial class V1beta1MemoryStrategySpecForProvider
     public string? Type { get; set; }
 }
 
-/// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationConsolidation
@@ -461,34 +1031,466 @@ public partial class V1beta1MemoryStrategySpecInitProviderConfigurationConsolida
     public string? ModelId { get; set; }
 }
 
-/// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfigurationExtraction
 {
-    /// <summary>Additional text to append to the model prompt for extraction processing.</summary>
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
     [JsonPropertyName("appendToPrompt")]
     public string? AppendToPrompt { get; set; }
 
-    /// <summary>ID of the foundation model to use for extraction processing.</summary>
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 }
 
-/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+/// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationReflection
+{
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
+    [JsonPropertyName("appendToPrompt")]
+    public string? AppendToPrompt { get; set; }
+
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Topic in sns to populate topicArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum>))]
+public enum V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Topic in sns to populate topicArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfiguration
+{
+    /// <summary>S3 bucket name for event payload delivery.</summary>
+    [JsonPropertyName("payloadDeliveryBucketName")]
+    public string? PayloadDeliveryBucketName { get; set; }
+
+    /// <summary>Reference to a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+    [JsonPropertyName("payloadDeliveryBucketNameRef")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameRef? PayloadDeliveryBucketNameRef { get; set; }
+
+    /// <summary>Selector for a Bucket in s3 to populate payloadDeliveryBucketName.</summary>
+    [JsonPropertyName("payloadDeliveryBucketNameSelector")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationPayloadDeliveryBucketNameSelector? PayloadDeliveryBucketNameSelector { get; set; }
+
+    /// <summary>ARN of the SNS topic for job notifications.</summary>
+    [JsonPropertyName("topicArn")]
+    public string? TopicArn { get; set; }
+
+    /// <summary>Reference to a Topic in sns to populate topicArn.</summary>
+    [JsonPropertyName("topicArnRef")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnRef? TopicArnRef { get; set; }
+
+    /// <summary>Selector for a Topic in sns to populate topicArn.</summary>
+    [JsonPropertyName("topicArnSelector")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfigurationTopicArnSelector? TopicArnSelector { get; set; }
+}
+
+/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
+{
+    /// <summary>Number of messages that trigger memory processing. Accepts values from 1 to 50.</summary>
+    [JsonPropertyName("messageCount")]
+    public double? MessageCount { get; set; }
+}
+
+/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
+{
+    /// <summary>Idle session timeout (seconds) that triggers memory processing. Accepts values from 10 to 3000.</summary>
+    [JsonPropertyName("idleSessionTimeout")]
+    public double? IdleSessionTimeout { get; set; }
+}
+
+/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
+{
+    /// <summary>Number of tokens that trigger memory processing. Accepts values from 100 to 500000.</summary>
+    [JsonPropertyName("tokenCount")]
+    public double? TokenCount { get; set; }
+}
+
+/// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditions
+{
+    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    [JsonPropertyName("messageBasedTrigger")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
+
+    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    [JsonPropertyName("timeBasedTrigger")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
+
+    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    [JsonPropertyName("tokenBasedTrigger")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
+}
+
+/// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfiguration
+{
+    /// <summary>Number of historical messages to include in processing context. Valid range: 0 to 50. Defaults to 4.</summary>
+    [JsonPropertyName("historicalContextWindowSize")]
+    public double? HistoricalContextWindowSize { get; set; }
+
+    /// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+    [JsonPropertyName("invocationConfiguration")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationInvocationConfiguration? InvocationConfiguration { get; set; }
+
+    /// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+    [JsonPropertyName("triggerConditions")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfigurationTriggerConditions? TriggerConditions { get; set; }
+}
+
+/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProviderConfiguration
 {
-    /// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("consolidation")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationConsolidation? Consolidation { get; set; }
 
-    /// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategySpecInitProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    [JsonPropertyName("reflection")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationReflection? Reflection { get; set; }
+
+    /// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+    [JsonPropertyName("selfManagedConfiguration")]
+    public V1beta1MemoryStrategySpecInitProviderConfigurationSelfManagedConfiguration? SelfManagedConfiguration { get; set; }
+
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE, SELF_MANAGED. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -803,6 +1805,131 @@ public partial class V1beta1MemoryStrategySpecInitProviderMemoryIdSelector
     public V1beta1MemoryStrategySpecInitProviderMemoryIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation
+{
+    /// <summary>Maximum allowed value.</summary>
+    [JsonPropertyName("maxValue")]
+    public double? MaxValue { get; set; }
+
+    /// <summary>Minimum allowed value.</summary>
+    [JsonPropertyName("minValue")]
+    public double? MinValue { get; set; }
+}
+
+/// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+
+    /// <summary>Maximum number of items in the string list.</summary>
+    [JsonPropertyName("maxItems")]
+    public double? MaxItems { get; set; }
+}
+
+/// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+}
+
+/// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation
+{
+    /// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+    [JsonPropertyName("numberValidation")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation? NumberValidation { get; set; }
+
+    /// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+    [JsonPropertyName("stringListValidation")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation? StringListValidation { get; set; }
+
+    /// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+    [JsonPropertyName("stringValidation")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation? StringValidation { get; set; }
+}
+
+/// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig
+{
+    /// <summary>Description of what this metadata field represents.</summary>
+    [JsonPropertyName("definition")]
+    public string? Definition { get; set; }
+
+    /// <summary>Instructions for extraction. Supports built-in operators like LATEST_VALUE or custom natural-language instructions.</summary>
+    [JsonPropertyName("llmExtractionInstruction")]
+    public string? LlmExtractionInstruction { get; set; }
+
+    /// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+    [JsonPropertyName("validation")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation? Validation { get; set; }
+}
+
+/// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfig
+{
+    /// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+    [JsonPropertyName("llmExtractionConfig")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig? LlmExtractionConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchema
+{
+    /// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+    [JsonPropertyName("extractionConfig")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchemaExtractionConfig? ExtractionConfig { get; set; }
+
+    /// <summary>Whether the metadata value is extracted by the LLM or passed through deterministically from the event. Valid values: LLM_INFERRED, STRICTLY_CONSISTENT.</summary>
+    [JsonPropertyName("extractionType")]
+    public string? ExtractionType { get; set; }
+
+    /// <summary>Metadata field name. Must match an indexed key to be queryable via metadata filters.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value type. Valid values: STRING, STRINGLIST, NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderMemoryRecordSchema
+{
+    /// <summary>List of metadata field definitions for records generated by this strategy. See metadata_schema Block below.</summary>
+    [JsonPropertyName("metadataSchema")]
+    public IList<V1beta1MemoryStrategySpecInitProviderMemoryRecordSchemaMetadataSchema>? MetadataSchema { get; set; }
+}
+
+/// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategySpecInitProviderReflectionConfiguration
+{
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -819,14 +1946,15 @@ public partial class V1beta1MemoryStrategySpecInitProviderMemoryIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategySpecInitProvider
 {
-    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1MemoryStrategySpecInitProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>Description of the memory strategy.</summary>
+    /// <summary>Description of the memory strategy. Once set, a description cannot be removed via update because the service API ignores a null description and retains the previously stored value.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>ARN of the IAM role that the memory service assumes to perform operations.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
 
@@ -850,13 +1978,25 @@ public partial class V1beta1MemoryStrategySpecInitProvider
     [JsonPropertyName("memoryIdSelector")]
     public V1beta1MemoryStrategySpecInitProviderMemoryIdSelector? MemoryIdSelector { get; set; }
 
-    /// <summary>Name of the memory strategy.</summary>
+    /// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+    [JsonPropertyName("memoryRecordSchema")]
+    public V1beta1MemoryStrategySpecInitProviderMemoryRecordSchema? MemoryRecordSchema { get; set; }
+
+    /// <summary>Name of the memory strategy. Changing this forces a new resource, because the service API does not support renaming a strategy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Namespaces help organize and scope memory content.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
+
+    /// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+    [JsonPropertyName("reflectionConfiguration")]
+    public V1beta1MemoryStrategySpecInitProviderReflectionConfiguration? ReflectionConfiguration { get; set; }
 
     /// <summary>Type of memory strategy. Valid values: SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC, CUSTOM. Changing this forces a new resource. Note that only one strategy of each built-in type (SEMANTIC, SUMMARIZATION, USER_PREFERENCE, EPISODIC) can exist per memory.</summary>
     [JsonPropertyName("type")]
@@ -970,7 +2110,7 @@ public partial class V1beta1MemoryStrategySpec
     public V1beta1MemoryStrategySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationConsolidation
@@ -984,53 +2124,333 @@ public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationConsolida
     public string? ModelId { get; set; }
 }
 
-/// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+/// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationExtraction
 {
-    /// <summary>Additional text to append to the model prompt for extraction processing.</summary>
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
     [JsonPropertyName("appendToPrompt")]
     public string? AppendToPrompt { get; set; }
 
-    /// <summary>ID of the foundation model to use for extraction processing.</summary>
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
     [JsonPropertyName("modelId")]
     public string? ModelId { get; set; }
 }
 
-/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+/// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationReflection
+{
+    /// <summary>Additional text to append to the model prompt for reflection processing.</summary>
+    [JsonPropertyName("appendToPrompt")]
+    public string? AppendToPrompt { get; set; }
+
+    /// <summary>ID of the foundation model to use for reflection processing.</summary>
+    [JsonPropertyName("modelId")]
+    public string? ModelId { get; set; }
+
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+}
+
+/// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationInvocationConfiguration
+{
+    /// <summary>S3 bucket name for event payload delivery.</summary>
+    [JsonPropertyName("payloadDeliveryBucketName")]
+    public string? PayloadDeliveryBucketName { get; set; }
+
+    /// <summary>ARN of the SNS topic for job notifications.</summary>
+    [JsonPropertyName("topicArn")]
+    public string? TopicArn { get; set; }
+}
+
+/// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger
+{
+    /// <summary>Number of messages that trigger memory processing. Accepts values from 1 to 50.</summary>
+    [JsonPropertyName("messageCount")]
+    public double? MessageCount { get; set; }
+}
+
+/// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger
+{
+    /// <summary>Idle session timeout (seconds) that triggers memory processing. Accepts values from 10 to 3000.</summary>
+    [JsonPropertyName("idleSessionTimeout")]
+    public double? IdleSessionTimeout { get; set; }
+}
+
+/// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger
+{
+    /// <summary>Number of tokens that trigger memory processing. Accepts values from 100 to 500000.</summary>
+    [JsonPropertyName("tokenCount")]
+    public double? TokenCount { get; set; }
+}
+
+/// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditions
+{
+    /// <summary>Message-based condition. See message_based_trigger Block below.</summary>
+    [JsonPropertyName("messageBasedTrigger")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsMessageBasedTrigger? MessageBasedTrigger { get; set; }
+
+    /// <summary>Idle-time condition. See time_based_trigger Block below.</summary>
+    [JsonPropertyName("timeBasedTrigger")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTimeBasedTrigger? TimeBasedTrigger { get; set; }
+
+    /// <summary>Token-based condition. See token_based_trigger Block below.</summary>
+    [JsonPropertyName("tokenBasedTrigger")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsTokenBasedTrigger? TokenBasedTrigger { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualMessageBasedTrigger
+{
+    /// <summary>Number of messages that trigger memory processing.</summary>
+    [JsonPropertyName("messageCount")]
+    public double? MessageCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualTimeBasedTrigger
+{
+    /// <summary>Idle session timeout (seconds) that triggers memory processing.</summary>
+    [JsonPropertyName("idleSessionTimeout")]
+    public double? IdleSessionTimeout { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualTokenBasedTrigger
+{
+    /// <summary>Number of tokens that trigger memory processing.</summary>
+    [JsonPropertyName("tokenCount")]
+    public double? TokenCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActual
+{
+    /// <summary>Message-based condition.</summary>
+    [JsonPropertyName("messageBasedTrigger")]
+    public IList<V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualMessageBasedTrigger>? MessageBasedTrigger { get; set; }
+
+    /// <summary>Idle-time condition.</summary>
+    [JsonPropertyName("timeBasedTrigger")]
+    public IList<V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualTimeBasedTrigger>? TimeBasedTrigger { get; set; }
+
+    /// <summary>Token-based condition.</summary>
+    [JsonPropertyName("tokenBasedTrigger")]
+    public IList<V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActualTokenBasedTrigger>? TokenBasedTrigger { get; set; }
+}
+
+/// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfiguration
+{
+    /// <summary>Number of historical messages to include in processing context. Valid range: 0 to 50. Defaults to 4.</summary>
+    [JsonPropertyName("historicalContextWindowSize")]
+    public double? HistoricalContextWindowSize { get; set; }
+
+    /// <summary>Configuration used to invoke the self-managed memory processing pipeline. See invocation_configuration Block below.</summary>
+    [JsonPropertyName("invocationConfiguration")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationInvocationConfiguration? InvocationConfiguration { get; set; }
+
+    /// <summary>Conditions that trigger memory processing. See trigger_conditions Block below. When omitted, the service supplies the documented defaults for all three trigger types.</summary>
+    [JsonPropertyName("triggerConditions")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditions? TriggerConditions { get; set; }
+
+    /// <summary>Actual deployed trigger conditions.</summary>
+    [JsonPropertyName("triggerConditionsActual")]
+    public IList<V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfigurationTriggerConditionsActual>? TriggerConditionsActual { get; set; }
+}
+
+/// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProviderConfiguration
 {
-    /// <summary>Consolidation configuration for processing and organizing memory content. See consolidation below. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Consolidation configuration for the memory strategy. See consolidation Block below. Cannot be used with type set to SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("consolidation")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationConsolidation? Consolidation { get; set; }
 
-    /// <summary>Extraction configuration for identifying and extracting relevant information. See extraction below. Cannot be used with type set to SUMMARY_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    /// <summary>Extraction configuration for the memory strategy. See extraction Block below. Cannot be used with type set to SUMMARY_OVERRIDE or SELF_MANAGED. Once added, this block cannot be removed without recreating the resource.</summary>
     [JsonPropertyName("extraction")]
     public V1beta1MemoryStrategyStatusAtProviderConfigurationExtraction? Extraction { get; set; }
 
-    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE. Changing this forces a new resource.</summary>
+    /// <summary>Reflection configuration for the memory strategy. See reflection Block below. Can only be used, and is required, with type set to EPISODIC_OVERRIDE. Once added, this block cannot be removed without recreating the resource.</summary>
+    [JsonPropertyName("reflection")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationReflection? Reflection { get; set; }
+
+    /// <summary>Self-managed processing configuration. Required when type is SELF_MANAGED and only valid for that type. See self_managed_configuration Block below.</summary>
+    [JsonPropertyName("selfManagedConfiguration")]
+    public V1beta1MemoryStrategyStatusAtProviderConfigurationSelfManagedConfiguration? SelfManagedConfiguration { get; set; }
+
+    /// <summary>Type of custom override. Valid values: SEMANTIC_OVERRIDE, SUMMARY_OVERRIDE, USER_PREFERENCE_OVERRIDE, EPISODIC_OVERRIDE, SELF_MANAGED. Changing this forces a new resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
+}
+
+/// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation
+{
+    /// <summary>Maximum allowed value.</summary>
+    [JsonPropertyName("maxValue")]
+    public double? MaxValue { get; set; }
+
+    /// <summary>Minimum allowed value.</summary>
+    [JsonPropertyName("minValue")]
+    public double? MinValue { get; set; }
+}
+
+/// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+
+    /// <summary>Maximum number of items in the string list.</summary>
+    [JsonPropertyName("maxItems")]
+    public double? MaxItems { get; set; }
+}
+
+/// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation
+{
+    /// <summary>Allowed values for items in this STRINGLIST field.</summary>
+    [JsonPropertyName("allowedValues")]
+    public IList<string>? AllowedValues { get; set; }
+}
+
+/// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation
+{
+    /// <summary>Validation for NUMBER fields. See number_validation Block below.</summary>
+    [JsonPropertyName("numberValidation")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationNumberValidation? NumberValidation { get; set; }
+
+    /// <summary>Validation for STRINGLIST fields. See string_list_validation Block below.</summary>
+    [JsonPropertyName("stringListValidation")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringListValidation? StringListValidation { get; set; }
+
+    /// <summary>Validation for STRING fields. See string_validation Block below.</summary>
+    [JsonPropertyName("stringValidation")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidationStringValidation? StringValidation { get; set; }
+}
+
+/// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig
+{
+    /// <summary>Description of what this metadata field represents.</summary>
+    [JsonPropertyName("definition")]
+    public string? Definition { get; set; }
+
+    /// <summary>Instructions for extraction. Supports built-in operators like LATEST_VALUE or custom natural-language instructions.</summary>
+    [JsonPropertyName("llmExtractionInstruction")]
+    public string? LlmExtractionInstruction { get; set; }
+
+    /// <summary>Validation rules to constrain extracted values. See validation Block below.</summary>
+    [JsonPropertyName("validation")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfigValidation? Validation { get; set; }
+}
+
+/// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfig
+{
+    /// <summary>Model-based extraction configuration. See llm_extraction_config Block below.</summary>
+    [JsonPropertyName("llmExtractionConfig")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfigLlmExtractionConfig? LlmExtractionConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchema
+{
+    /// <summary>Configuration for extracting this metadata value from conversational content. Applicable only when extraction_type is LLM_INFERRED. See extraction_config Block below.</summary>
+    [JsonPropertyName("extractionConfig")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchemaExtractionConfig? ExtractionConfig { get; set; }
+
+    /// <summary>Whether the metadata value is extracted by the LLM or passed through deterministically from the event. Valid values: LLM_INFERRED, STRICTLY_CONSISTENT.</summary>
+    [JsonPropertyName("extractionType")]
+    public string? ExtractionType { get; set; }
+
+    /// <summary>Metadata field name. Must match an indexed key to be queryable via metadata filters.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value type. Valid values: STRING, STRINGLIST, NUMBER.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchema
+{
+    /// <summary>List of metadata field definitions for records generated by this strategy. See metadata_schema Block below.</summary>
+    [JsonPropertyName("metadataSchema")]
+    public IList<V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchemaMetadataSchema>? MetadataSchema { get; set; }
+}
+
+/// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MemoryStrategyStatusAtProviderReflectionConfiguration
+{
+    /// <summary>Namespace templates over which to create reflections. Can be less nested than episode namespaces.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStrategyStatusAtProvider
 {
-    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration below.</summary>
+    /// <summary>Custom configuration block. Required when type is CUSTOM, must be omitted for other types. See configuration Block below.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1MemoryStrategyStatusAtProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>Description of the memory strategy.</summary>
+    /// <summary>Description of the memory strategy. Once set, a description cannot be removed via update because the service API ignores a null description and retains the previously stored value.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>ARN of the IAM role that the memory service assumes to perform operations.</summary>
     [JsonPropertyName("memoryExecutionRoleArn")]
     public string? MemoryExecutionRoleArn { get; set; }
 
@@ -1038,17 +2458,29 @@ public partial class V1beta1MemoryStrategyStatusAtProvider
     [JsonPropertyName("memoryId")]
     public string? MemoryId { get; set; }
 
+    /// <summary>Schema for metadata fields on records generated by this strategy. Valid for all strategy types. See memory_record_schema Block below.</summary>
+    [JsonPropertyName("memoryRecordSchema")]
+    public V1beta1MemoryStrategyStatusAtProviderMemoryRecordSchema? MemoryRecordSchema { get; set; }
+
     /// <summary>Unique identifier of the Memory Strategy. This corresponds to the service strategyId identifier (AWS API / CloudFormation terminology).</summary>
     [JsonPropertyName("memoryStrategyId")]
     public string? MemoryStrategyId { get; set; }
 
-    /// <summary>Name of the memory strategy.</summary>
+    /// <summary>Name of the memory strategy. Changing this forces a new resource, because the service API does not support renaming a strategy.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Set of namespace identifiers where this strategy applies. Namespaces help organize and scope memory content.</summary>
+    /// <summary>Set containing exactly one namespace template where this strategy applies (for example /strategies/{memoryStrategyId}/actors/{actorId}/sessions/{sessionId}). Namespace templates help organize and scope memory content. Exactly one of namespace_templates or namespaces must be configured for all strategies except CUSTOM strategies using SELF_MANAGED configuration.</summary>
+    [JsonPropertyName("namespaceTemplates")]
+    public IList<string>? NamespaceTemplates { get; set; }
+
+    /// <summary>Set of namespace identifiers where this strategy applies. Exactly one of namespaces or namespace_templates must be configured. The API treats this as a legacy parameter; prefer namespace_templates. Since the API mirrors the two fields, switching an existing configuration from namespaces to namespace_templates with the same value is an in-place no-op.</summary>
     [JsonPropertyName("namespaces")]
     public IList<string>? Namespaces { get; set; }
+
+    /// <summary>Configuration for the reflections created with the episodic memory strategy. Valid when type is EPISODIC, must be omitted for other types. See reflection_configuration Block below.</summary>
+    [JsonPropertyName("reflectionConfiguration")]
+    public V1beta1MemoryStrategyStatusAtProviderReflectionConfiguration? ReflectionConfiguration { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

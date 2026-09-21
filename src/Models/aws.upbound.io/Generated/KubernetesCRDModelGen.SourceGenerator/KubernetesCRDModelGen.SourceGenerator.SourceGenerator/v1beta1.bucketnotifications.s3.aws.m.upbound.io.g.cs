@@ -375,7 +375,7 @@ public partial class V1beta1BucketNotificationSpecForProviderQueueQueueArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketNotificationSpecForProviderQueue
 {
-    /// <summary>Specifies event for which to send notifications.</summary>
+    /// <summary>Event for which to send notifications.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
@@ -612,7 +612,7 @@ public partial class V1beta1BucketNotificationSpecForProvider
     [JsonPropertyName("eventbridge")]
     public bool? Eventbridge { get; set; }
 
-    /// <summary>Used to configure notifications to a Lambda Function. See below.</summary>
+    /// <summary>Notification configuration to a Lambda Function. See below.</summary>
     [JsonPropertyName("lambdaFunction")]
     public IList<V1beta1BucketNotificationSpecForProviderLambdaFunction>? LambdaFunction { get; set; }
 
@@ -971,7 +971,7 @@ public partial class V1beta1BucketNotificationSpecInitProviderQueueQueueArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketNotificationSpecInitProviderQueue
 {
-    /// <summary>Specifies event for which to send notifications.</summary>
+    /// <summary>Event for which to send notifications.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
@@ -1220,7 +1220,7 @@ public partial class V1beta1BucketNotificationSpecInitProvider
     [JsonPropertyName("eventbridge")]
     public bool? Eventbridge { get; set; }
 
-    /// <summary>Used to configure notifications to a Lambda Function. See below.</summary>
+    /// <summary>Notification configuration to a Lambda Function. See below.</summary>
     [JsonPropertyName("lambdaFunction")]
     public IList<V1beta1BucketNotificationSpecInitProviderLambdaFunction>? LambdaFunction { get; set; }
 
@@ -1369,7 +1369,7 @@ public partial class V1beta1BucketNotificationStatusAtProviderLambdaFunction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketNotificationStatusAtProviderQueue
 {
-    /// <summary>Specifies event for which to send notifications.</summary>
+    /// <summary>Event for which to send notifications.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 
@@ -1431,7 +1431,7 @@ public partial class V1beta1BucketNotificationStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Used to configure notifications to a Lambda Function. See below.</summary>
+    /// <summary>Notification configuration to a Lambda Function. See below.</summary>
     [JsonPropertyName("lambdaFunction")]
     public IList<V1beta1BucketNotificationStatusAtProviderLambdaFunction>? LambdaFunction { get; set; }
 

@@ -1598,6 +1598,10 @@ public partial class V1beta1LaunchTemplateSpecForProviderNetworkInterfaces
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
 
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
+
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]
     public IList<V1beta1LaunchTemplateSpecForProviderNetworkInterfacesEnaSrdSpecification>? EnaSrdSpecification { get; set; }
@@ -3852,6 +3856,10 @@ public partial class V1beta1LaunchTemplateSpecInitProviderNetworkInterfaces
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
 
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
+
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]
     public IList<V1beta1LaunchTemplateSpecInitProviderNetworkInterfacesEnaSrdSpecification>? EnaSrdSpecification { get; set; }
@@ -5346,6 +5354,10 @@ public partial class V1beta1LaunchTemplateStatusAtProviderNetworkInterfaces
     /// <summary>The integer index of the network interface attachment.</summary>
     [JsonPropertyName("deviceIndex")]
     public double? DeviceIndex { get; set; }
+
+    /// <summary>The number of ENA queues to be created with the instance. Requires an instance type and operating system that support ENA queue configuration.</summary>
+    [JsonPropertyName("enaQueueCount")]
+    public double? EnaQueueCount { get; set; }
 
     /// <summary>Configuration for Elastic Network Adapter (ENA) Express settings. Applies to network interfaces that use the ena Express feature. See details below.</summary>
     [JsonPropertyName("enaSrdSpecification")]

@@ -1351,7 +1351,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the Routing Profile.
+                    description: ARN of the Routing Profile.
                     type: string
                   defaultOutboundQueueId:
                     description: Specifies the default outbound queue for the Routing Profile.

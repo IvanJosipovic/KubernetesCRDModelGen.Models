@@ -1281,7 +1281,7 @@ public partial class V1beta1SecurityGroupEgressRuleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityGroupEgressRuleStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the security group rule.</summary>
+    /// <summary>ARN of the security group rule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

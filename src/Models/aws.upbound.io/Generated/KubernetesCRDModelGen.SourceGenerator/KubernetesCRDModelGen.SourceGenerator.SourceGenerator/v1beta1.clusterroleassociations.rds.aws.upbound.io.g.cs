@@ -376,7 +376,7 @@ public partial class V1beta1ClusterRoleAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to associate with the DB Cluster.</summary>
+    /// <summary>ARN of the IAM Role to associate with the DB Cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -715,7 +715,7 @@ public partial class V1beta1ClusterRoleAssociationSpecInitProvider
     [JsonPropertyName("featureName")]
     public string? FeatureName { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to associate with the DB Cluster.</summary>
+    /// <summary>ARN of the IAM Role to associate with the DB Cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -934,7 +934,7 @@ public partial class V1beta1ClusterRoleAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role to associate with the DB Cluster.</summary>
+    /// <summary>ARN of the IAM Role to associate with the DB Cluster.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }

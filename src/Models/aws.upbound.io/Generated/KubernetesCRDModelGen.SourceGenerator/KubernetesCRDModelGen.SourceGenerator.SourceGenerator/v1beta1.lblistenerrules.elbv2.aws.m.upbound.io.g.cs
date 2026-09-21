@@ -817,7 +817,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroup
 {
-    /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ARN of the target group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -864,7 +864,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionJwtValidationAddi
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1144,7 +1144,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHostHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.</summary>
+    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1162,7 +1162,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1172,7 +1172,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpHeader
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpRequestMethod
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1186,7 +1186,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionPathPattern
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1204,12 +1204,16 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionQueryString
     public string? Value { get; set; }
 }
 
-/// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+/// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionSourceIp
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -1238,7 +1242,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderCondition
     [JsonPropertyName("queryString")]
     public IList<V1beta1LBListenerRuleSpecForProviderConditionQueryString>? QueryString { get; set; }
 
-    /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+    /// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
     [JsonPropertyName("sourceIp")]
     public V1beta1LBListenerRuleSpecForProviderConditionSourceIp? SourceIp { get; set; }
 }
@@ -2288,7 +2292,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroup
 {
-    /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ARN of the target group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2335,7 +2339,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionJwtValidationAdd
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2615,7 +2619,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHostHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.</summary>
+    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2633,7 +2637,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2643,7 +2647,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpHeader
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpRequestMethod
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2657,7 +2661,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionPathPattern
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2675,12 +2679,16 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionQueryString
     public string? Value { get; set; }
 }
 
-/// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+/// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionSourceIp
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -2709,7 +2717,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderCondition
     [JsonPropertyName("queryString")]
     public IList<V1beta1LBListenerRuleSpecInitProviderConditionQueryString>? QueryString { get; set; }
 
-    /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+    /// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
     [JsonPropertyName("sourceIp")]
     public V1beta1LBListenerRuleSpecInitProviderConditionSourceIp? SourceIp { get; set; }
 }
@@ -3210,7 +3218,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardStickines
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardTargetGroup
 {
-    /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ARN of the target group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -3249,7 +3257,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionJwtValidationAdd
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3366,7 +3374,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHostHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.</summary>
+    /// <summary>List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. To match host headers containing a non-standard port (for example, example.com:8443), use regex_values. Conflicts with regex_values.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3384,7 +3392,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpHeader
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3394,7 +3402,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpHeader
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpRequestMethod
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3408,7 +3416,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionPathPattern
     [JsonPropertyName("regexValues")]
     public IList<string>? RegexValues { get; set; }
 
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3426,12 +3434,16 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionQueryString
     public string? Value { get; set; }
 }
 
-/// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+/// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionSourceIp
 {
-    /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
+    /// <summary>IP address type for Network Load Balancers. Valid values are ipv4 and ipv6.</summary>
+    [JsonPropertyName("ipAddressType")]
+    public string? IpAddressType { get; set; }
+
+    /// <summary>List of source IP addresses in CIDR format for Application Load Balancers. Both IPv4 and IPv6 addresses can be used. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
     [JsonPropertyName("values")]
     public IList<string>? Values { get; set; }
 }
@@ -3460,7 +3472,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderCondition
     [JsonPropertyName("queryString")]
     public IList<V1beta1LBListenerRuleStatusAtProviderConditionQueryString>? QueryString { get; set; }
 
-    /// <summary>Contains a single values item which is a list of source IP CIDR notations to match. You can use both IPv4 and IPv6 addresses. Wildcards are not supported. Condition is satisfied if the source IP address of the request matches one of the CIDR blocks. Condition is not satisfied by the addresses in the X-Forwarded-For header, use http_header condition instead.</summary>
+    /// <summary>Source IP address to match. For ALB, use values to specify CIDR ranges. For NLB, use ip_address_type to match the IP address type (ipv4 or ipv6). Source IP block fields documented below.</summary>
     [JsonPropertyName("sourceIp")]
     public V1beta1LBListenerRuleStatusAtProviderConditionSourceIp? SourceIp { get; set; }
 }

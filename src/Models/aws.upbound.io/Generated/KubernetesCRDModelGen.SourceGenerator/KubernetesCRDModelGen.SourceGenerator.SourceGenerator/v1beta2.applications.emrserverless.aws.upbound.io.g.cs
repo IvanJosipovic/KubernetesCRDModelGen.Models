@@ -197,7 +197,7 @@ public partial class V1beta2ApplicationSpecForProviderMonitoringConfigurationClo
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -223,7 +223,7 @@ public partial class V1beta2ApplicationSpecForProviderMonitoringConfigurationMan
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 }
@@ -243,7 +243,7 @@ public partial class V1beta2ApplicationSpecForProviderMonitoringConfigurationPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderMonitoringConfigurationS3MonitoringConfiguration
 {
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -532,7 +532,7 @@ public partial class V1beta2ApplicationSpecInitProviderMonitoringConfigurationCl
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -558,7 +558,7 @@ public partial class V1beta2ApplicationSpecInitProviderMonitoringConfigurationMa
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 }
@@ -578,7 +578,7 @@ public partial class V1beta2ApplicationSpecInitProviderMonitoringConfigurationPr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderMonitoringConfigurationS3MonitoringConfiguration
 {
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -1055,7 +1055,7 @@ public partial class V1beta2ApplicationStatusAtProviderMonitoringConfigurationCl
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 
@@ -1081,7 +1081,7 @@ public partial class V1beta2ApplicationStatusAtProviderMonitoringConfigurationMa
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 }
@@ -1101,7 +1101,7 @@ public partial class V1beta2ApplicationStatusAtProviderMonitoringConfigurationPr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderMonitoringConfigurationS3MonitoringConfiguration
 {
-    /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
+    /// <summary>KMS key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
     [JsonPropertyName("encryptionKeyArn")]
     public string? EncryptionKeyArn { get; set; }
 

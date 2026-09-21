@@ -40,7 +40,7 @@ public partial class V1beta1ApplicationList : IKubernetesObject<V1ListMeta>, IIt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSpecForProvider
 {
-    /// <summary>Indicates whether Application Insights automatically configures unmonitored resources in the resource group.</summary>
+    /// <summary>Whether to automatically configure unmonitored resources in the resource group.</summary>
     [JsonPropertyName("autoConfigEnabled")]
     public bool? AutoConfigEnabled { get; set; }
 
@@ -48,7 +48,7 @@ public partial class V1beta1ApplicationSpecForProvider
     [JsonPropertyName("autoCreate")]
     public bool? AutoCreate { get; set; }
 
-    /// <summary>Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
+    /// <summary>Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
     [JsonPropertyName("cweMonitorEnabled")]
     public bool? CweMonitorEnabled { get; set; }
 
@@ -92,7 +92,7 @@ public partial class V1beta1ApplicationSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationSpecInitProvider
 {
-    /// <summary>Indicates whether Application Insights automatically configures unmonitored resources in the resource group.</summary>
+    /// <summary>Whether to automatically configure unmonitored resources in the resource group.</summary>
     [JsonPropertyName("autoConfigEnabled")]
     public bool? AutoConfigEnabled { get; set; }
 
@@ -100,7 +100,7 @@ public partial class V1beta1ApplicationSpecInitProvider
     [JsonPropertyName("autoCreate")]
     public bool? AutoCreate { get; set; }
 
-    /// <summary>Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
+    /// <summary>Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
     [JsonPropertyName("cweMonitorEnabled")]
     public bool? CweMonitorEnabled { get; set; }
 
@@ -236,7 +236,7 @@ public partial class V1beta1ApplicationStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Indicates whether Application Insights automatically configures unmonitored resources in the resource group.</summary>
+    /// <summary>Whether to automatically configure unmonitored resources in the resource group.</summary>
     [JsonPropertyName("autoConfigEnabled")]
     public bool? AutoConfigEnabled { get; set; }
 
@@ -244,7 +244,7 @@ public partial class V1beta1ApplicationStatusAtProvider
     [JsonPropertyName("autoCreate")]
     public bool? AutoCreate { get; set; }
 
-    /// <summary>Indicates whether Application Insights can listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
+    /// <summary>Whether to enable Application Insights to listen to CloudWatch events for the application resources, such as instance terminated, failed deployment, and others.</summary>
     [JsonPropertyName("cweMonitorEnabled")]
     public bool? CweMonitorEnabled { get; set; }
 

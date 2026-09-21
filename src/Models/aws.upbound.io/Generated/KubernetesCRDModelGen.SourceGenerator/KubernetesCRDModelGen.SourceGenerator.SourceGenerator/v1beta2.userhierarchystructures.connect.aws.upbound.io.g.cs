@@ -750,7 +750,7 @@ public partial class V1beta2UserHierarchyStructureSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStructureLevelFive
 {
-    /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
+    /// <summary>The ARN of the hierarchy level.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -768,7 +768,7 @@ public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStruc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStructureLevelFour
 {
-    /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
+    /// <summary>The ARN of the hierarchy level.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -786,7 +786,7 @@ public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStruc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStructureLevelOne
 {
-    /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
+    /// <summary>The ARN of the hierarchy level.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -804,7 +804,7 @@ public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStruc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStructureLevelThree
 {
-    /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
+    /// <summary>The ARN of the hierarchy level.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -822,7 +822,7 @@ public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStruc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserHierarchyStructureStatusAtProviderHierarchyStructureLevelTwo
 {
-    /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
+    /// <summary>The ARN of the hierarchy level.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

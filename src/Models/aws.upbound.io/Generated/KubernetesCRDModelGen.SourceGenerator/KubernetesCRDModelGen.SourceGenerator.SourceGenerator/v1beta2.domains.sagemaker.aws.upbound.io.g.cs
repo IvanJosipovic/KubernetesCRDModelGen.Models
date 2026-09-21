@@ -150,7 +150,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabA
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -159,7 +159,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -181,11 +181,11 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -211,7 +211,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabA
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -219,7 +219,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabA
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -233,7 +233,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServ
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -242,7 +242,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServ
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -268,11 +268,11 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServ
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -294,7 +294,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatew
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -303,7 +303,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatew
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -329,11 +329,11 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatew
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -391,7 +391,7 @@ public partial class V1beta2DomainSpecForProviderDefaultSpaceSettings
     [JsonPropertyName("kernelGatewayAppSettings")]
     public V1beta2DomainSpecForProviderDefaultSpaceSettingsKernelGatewayAppSettings? KernelGatewayAppSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the space uses for communication.</summary>
+    /// <summary>Security groups for the VPC that the space uses for communication.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -415,7 +415,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
+    /// <summary>ARN of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -428,7 +428,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Domain.</summary>
+    /// <summary>ARN assigned by AWS to this Domain.</summary>
     [JsonPropertyName("amazonBedrockRoleArn")]
     public string? AmazonBedrockRoleArn { get; set; }
 }
@@ -465,7 +465,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSet
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSettingsModelRegisterSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
+    /// <summary>ARN of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
     [JsonPropertyName("crossAccountModelRegisterRoleArn")]
     public string? CrossAccountModelRegisterRoleArn { get; set; }
 
@@ -497,7 +497,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCanvasAppSet
     [JsonPropertyName("s3ArtifactPath")]
     public string? S3ArtifactPath { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 }
@@ -588,7 +588,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAp
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec
@@ -597,7 +597,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAp
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -631,11 +631,11 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAp
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -882,7 +882,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAp
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -891,7 +891,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAp
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -913,11 +913,11 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -943,7 +943,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAp
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -951,7 +951,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAp
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -965,7 +965,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServe
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -974,7 +974,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServe
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -1000,11 +1000,11 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServe
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -1336,7 +1336,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewa
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -1345,7 +1345,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewa
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -1371,11 +1371,11 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewa
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -1397,7 +1397,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppS
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec
@@ -1406,7 +1406,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppS
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -1432,7 +1432,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppS
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -1460,7 +1460,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsSharingSetti
     [JsonPropertyName("notebookOutputOption")]
     public string? NotebookOutputOption { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 
@@ -1511,7 +1511,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsStudioWebPor
     public IList<string>? HiddenMlTools { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec
@@ -1520,7 +1520,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsTensorBoardA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -1542,7 +1542,7 @@ public partial class V1beta2DomainSpecForProviderDefaultUserSettingsTensorBoardA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDefaultUserSettingsTensorBoardAppSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -1647,7 +1647,7 @@ public partial class V1beta2DomainSpecForProviderDomainSettingsDockerSettings
     public IList<string>? VpcOnlyTrustedAccounts { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec
@@ -1656,7 +1656,7 @@ public partial class V1beta2DomainSpecForProviderDomainSettingsRStudioServerProD
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -1678,7 +1678,7 @@ public partial class V1beta2DomainSpecForProviderDomainSettingsRStudioServerProD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecForProviderDomainSettingsRStudioServerProDomainSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecForProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -1722,7 +1722,7 @@ public partial class V1beta2DomainSpecForProviderDomainSettings
     [JsonPropertyName("rStudioServerProDomainSettings")]
     public V1beta2DomainSpecForProviderDomainSettingsRStudioServerProDomainSettings? RStudioServerProDomainSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the Domain uses for communication between Domain-level apps and user apps.</summary>
+    /// <summary>Security groups for the VPC that the Domain uses for communication between Domain-level apps and user apps.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -2257,7 +2257,7 @@ public partial class V1beta2DomainSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the Amazon Virtual Private Cloud (VPC) that Studio uses for communication.</summary>
+    /// <summary>ID of the VPC that Studio uses for communication.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -2365,7 +2365,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLab
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -2374,7 +2374,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -2396,11 +2396,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLab
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -2426,7 +2426,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -2434,7 +2434,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -2448,7 +2448,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterSer
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -2457,7 +2457,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterSer
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -2483,11 +2483,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterSer
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -2509,7 +2509,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGate
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -2518,7 +2518,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGate
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -2544,11 +2544,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGate
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -2606,7 +2606,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultSpaceSettings
     [JsonPropertyName("kernelGatewayAppSettings")]
     public V1beta2DomainSpecInitProviderDefaultSpaceSettingsKernelGatewayAppSettings? KernelGatewayAppSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the space uses for communication.</summary>
+    /// <summary>Security groups for the VPC that the space uses for communication.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -2630,7 +2630,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
+    /// <summary>ARN of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -2643,7 +2643,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Domain.</summary>
+    /// <summary>ARN assigned by AWS to this Domain.</summary>
     [JsonPropertyName("amazonBedrockRoleArn")]
     public string? AmazonBedrockRoleArn { get; set; }
 }
@@ -2680,7 +2680,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSettingsModelRegisterSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
+    /// <summary>ARN of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
     [JsonPropertyName("crossAccountModelRegisterRoleArn")]
     public string? CrossAccountModelRegisterRoleArn { get; set; }
 
@@ -2712,7 +2712,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCanvasAppSe
     [JsonPropertyName("s3ArtifactPath")]
     public string? S3ArtifactPath { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 }
@@ -2803,7 +2803,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorA
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec
@@ -2812,7 +2812,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -2846,11 +2846,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorA
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -3097,7 +3097,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabA
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -3106,7 +3106,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3128,11 +3128,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -3158,7 +3158,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -3166,7 +3166,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -3180,7 +3180,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServ
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -3189,7 +3189,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServ
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3215,11 +3215,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServ
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -3551,7 +3551,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatew
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -3560,7 +3560,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatew
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3586,11 +3586,11 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatew
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -3612,7 +3612,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionApp
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec
@@ -3621,7 +3621,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionApp
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3647,7 +3647,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionApp
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -3675,7 +3675,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsSharingSett
     [JsonPropertyName("notebookOutputOption")]
     public string? NotebookOutputOption { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 
@@ -3726,7 +3726,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsStudioWebPo
     public IList<string>? HiddenMlTools { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec
@@ -3735,7 +3735,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsTensorBoard
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3757,7 +3757,7 @@ public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsTensorBoard
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDefaultUserSettingsTensorBoardAppSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -3862,7 +3862,7 @@ public partial class V1beta2DomainSpecInitProviderDomainSettingsDockerSettings
     public IList<string>? VpcOnlyTrustedAccounts { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec
@@ -3871,7 +3871,7 @@ public partial class V1beta2DomainSpecInitProviderDomainSettingsRStudioServerPro
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -3893,7 +3893,7 @@ public partial class V1beta2DomainSpecInitProviderDomainSettingsRStudioServerPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainSpecInitProviderDomainSettingsRStudioServerProDomainSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainSpecInitProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -3937,7 +3937,7 @@ public partial class V1beta2DomainSpecInitProviderDomainSettings
     [JsonPropertyName("rStudioServerProDomainSettings")]
     public V1beta2DomainSpecInitProviderDomainSettingsRStudioServerProDomainSettings? RStudioServerProDomainSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the Domain uses for communication between Domain-level apps and user apps.</summary>
+    /// <summary>Security groups for the VPC that the Domain uses for communication between Domain-level apps and user apps.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -4477,7 +4477,7 @@ public partial class V1beta2DomainSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the Amazon Virtual Private Cloud (VPC) that Studio uses for communication.</summary>
+    /// <summary>ID of the VPC that Studio uses for communication.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -4768,7 +4768,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLab
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -4777,7 +4777,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -4799,11 +4799,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLab
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -4829,7 +4829,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -4837,7 +4837,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLab
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -4851,7 +4851,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterSer
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -4860,7 +4860,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterSer
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -4886,11 +4886,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterSer
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -4912,7 +4912,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGate
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -4921,7 +4921,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGate
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -4947,11 +4947,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGate
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -5009,7 +5009,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultSpaceSettings
     [JsonPropertyName("kernelGatewayAppSettings")]
     public V1beta2DomainStatusAtProviderDefaultSpaceSettingsKernelGatewayAppSettings? KernelGatewayAppSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the space uses for communication.</summary>
+    /// <summary>Security groups for the VPC that the space uses for communication.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
@@ -5033,7 +5033,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
+    /// <summary>ARN of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
@@ -5046,7 +5046,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Domain.</summary>
+    /// <summary>ARN assigned by AWS to this Domain.</summary>
     [JsonPropertyName("amazonBedrockRoleArn")]
     public string? AmazonBedrockRoleArn { get; set; }
 }
@@ -5083,7 +5083,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSettingsModelRegisterSettings
 {
-    /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
+    /// <summary>ARN of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
     [JsonPropertyName("crossAccountModelRegisterRoleArn")]
     public string? CrossAccountModelRegisterRoleArn { get; set; }
 
@@ -5115,7 +5115,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCanvasAppSe
     [JsonPropertyName("s3ArtifactPath")]
     public string? S3ArtifactPath { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 }
@@ -5206,7 +5206,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorA
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec
@@ -5215,7 +5215,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5249,11 +5249,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorA
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -5353,7 +5353,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabA
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec
@@ -5362,7 +5362,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5384,11 +5384,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings
 {
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
+    /// <summary>Array of ARNs of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
     [JsonPropertyName("assumableRoleArns")]
     public IList<string>? AssumableRoleArns { get; set; }
 
-    /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
+    /// <summary>Array of ARNs of the IAM roles used by the Amazon EMR cluster instances or job execution environments to access other AWS services and resources needed during the runtime of your Amazon EMR or Amazon EMR Serverless workloads, such as Amazon S3 for data access, Amazon CloudWatch for logging, or other AWS services based on the particular workload requirements.</summary>
     [JsonPropertyName("executionRoleArns")]
     public IList<string>? ExecutionRoleArns { get; set; }
 }
@@ -5414,7 +5414,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -5422,7 +5422,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabA
     [JsonPropertyName("emrSettings")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterLabAppSettingsEmrSettings? EmrSettings { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -5436,7 +5436,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServ
     public string? RepositoryUrl { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec
@@ -5445,7 +5445,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServ
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5471,11 +5471,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServ
     [JsonPropertyName("codeRepository")]
     public IList<V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServerAppSettingsCodeRepository>? CodeRepository { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -5497,7 +5497,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatew
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
@@ -5506,7 +5506,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatew
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5532,11 +5532,11 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatew
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatewayAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configurations.</summary>
+    /// <summary>ARN of the Lifecycle Configurations.</summary>
     [JsonPropertyName("lifecycleConfigArns")]
     public IList<string>? LifecycleConfigArns { get; set; }
 }
@@ -5558,7 +5558,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionApp
     public double? ImageVersionNumber { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec
@@ -5567,7 +5567,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionApp
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5593,7 +5593,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionApp
     [JsonPropertyName("customImage")]
     public IList<V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionAppSettingsCustomImage>? CustomImage { get; set; }
 
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -5621,7 +5621,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsSharingSett
     [JsonPropertyName("notebookOutputOption")]
     public string? NotebookOutputOption { get; set; }
 
-    /// <summary>The Amazon Web Services Key Management Service (KMS) encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
+    /// <summary>KMS encryption key ID that is used to encrypt artifacts generated by Canvas in the Amazon S3 bucket.</summary>
     [JsonPropertyName("s3KmsKeyId")]
     public string? S3KmsKeyId { get; set; }
 
@@ -5672,7 +5672,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsStudioWebPo
     public IList<string>? HiddenMlTools { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec
@@ -5681,7 +5681,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsTensorBoard
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5703,7 +5703,7 @@ public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsTensorBoard
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDefaultUserSettingsTensorBoardAppSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 }
@@ -5800,7 +5800,7 @@ public partial class V1beta2DomainStatusAtProviderDomainSettingsDockerSettings
     public IList<string>? VpcOnlyTrustedAccounts { get; set; }
 }
 
-/// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+/// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec
@@ -5809,7 +5809,7 @@ public partial class V1beta2DomainStatusAtProviderDomainSettingsRStudioServerPro
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Lifecycle Configuration attached to the Resource.</summary>
+    /// <summary>ARN of the Lifecycle Configuration attached to the Resource.</summary>
     [JsonPropertyName("lifecycleConfigArn")]
     public string? LifecycleConfigArn { get; set; }
 
@@ -5831,7 +5831,7 @@ public partial class V1beta2DomainStatusAtProviderDomainSettingsRStudioServerPro
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DomainStatusAtProviderDomainSettingsRStudioServerProDomainSettings
 {
-    /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
+    /// <summary>Default instance type and the ARN of the SageMaker AI image created on the instance. see default_resource_spec Block below.</summary>
     [JsonPropertyName("defaultResourceSpec")]
     public V1beta2DomainStatusAtProviderDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec? DefaultResourceSpec { get; set; }
 
@@ -5875,7 +5875,7 @@ public partial class V1beta2DomainStatusAtProviderDomainSettings
     [JsonPropertyName("rStudioServerProDomainSettings")]
     public V1beta2DomainStatusAtProviderDomainSettingsRStudioServerProDomainSettings? RStudioServerProDomainSettings { get; set; }
 
-    /// <summary>The security groups for the Amazon Virtual Private Cloud that the Domain uses for communication between Domain-level apps and user apps.</summary>
+    /// <summary>Security groups for the VPC that the Domain uses for communication between Domain-level apps and user apps.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
@@ -5906,7 +5906,7 @@ public partial class V1beta2DomainStatusAtProvider
     [JsonPropertyName("appSecurityGroupManagement")]
     public string? AppSecurityGroupManagement { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Domain.</summary>
+    /// <summary>ARN assigned by AWS to this Domain.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -5985,7 +5985,7 @@ public partial class V1beta2DomainStatusAtProvider
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>The ID of the Amazon Virtual Private Cloud (VPC) that Studio uses for communication.</summary>
+    /// <summary>ID of the VPC that Studio uses for communication.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }

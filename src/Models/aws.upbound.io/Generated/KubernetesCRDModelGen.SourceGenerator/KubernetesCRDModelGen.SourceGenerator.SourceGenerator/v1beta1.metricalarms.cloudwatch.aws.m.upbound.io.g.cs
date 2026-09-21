@@ -458,6 +458,20 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelector
     public V1beta1MetricAlarmSpecForProviderOkActionsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecForProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmSpecForProvider
@@ -466,7 +480,7 @@ public partial class V1beta1MetricAlarmSpecForProvider
     [JsonPropertyName("actionsEnabled")]
     public bool? ActionsEnabled { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("alarmActions")]
     public IList<string>? AlarmActions { get; set; }
 
@@ -519,7 +533,7 @@ public partial class V1beta1MetricAlarmSpecForProvider
     [JsonPropertyName("extendedStatistic")]
     public string? ExtendedStatistic { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("insufficientDataActions")]
     public IList<string>? InsufficientDataActions { get; set; }
 
@@ -541,7 +555,7 @@ public partial class V1beta1MetricAlarmSpecForProvider
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("okActions")]
     public IList<string>? OkActions { get; set; }
 
@@ -593,6 +607,10 @@ public partial class V1beta1MetricAlarmSpecForProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public V1beta1MetricAlarmSpecForProviderWarmUpConfiguration? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>
@@ -1017,6 +1035,20 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelector
     public V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -1037,7 +1069,7 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     [JsonPropertyName("actionsEnabled")]
     public bool? ActionsEnabled { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("alarmActions")]
     public IList<string>? AlarmActions { get; set; }
 
@@ -1090,7 +1122,7 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     [JsonPropertyName("extendedStatistic")]
     public string? ExtendedStatistic { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("insufficientDataActions")]
     public IList<string>? InsufficientDataActions { get; set; }
 
@@ -1112,7 +1144,7 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("okActions")]
     public IList<string>? OkActions { get; set; }
 
@@ -1157,6 +1189,10 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>
@@ -1378,6 +1414,20 @@ public partial class V1beta1MetricAlarmStatusAtProviderMetricQuery
     public bool? ReturnData { get; set; }
 }
 
+/// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricAlarmStatusAtProvider
@@ -1386,7 +1436,7 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     [JsonPropertyName("actionsEnabled")]
     public bool? ActionsEnabled { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("alarmActions")]
     public IList<string>? AlarmActions { get; set; }
 
@@ -1439,7 +1489,7 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("insufficientDataActions")]
     public IList<string>? InsufficientDataActions { get; set; }
 
@@ -1461,7 +1511,7 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
-    /// <summary>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).</summary>
+    /// <summary>List of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an ARN.</summary>
     [JsonPropertyName("okActions")]
     public IList<string>? OkActions { get; set; }
 
@@ -1509,6 +1559,10 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

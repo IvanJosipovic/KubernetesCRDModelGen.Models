@@ -213,7 +213,7 @@ public partial class V1beta1ResourceShareAccepterSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ARN of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("shareArn")]
     public string? ShareArn { get; set; }
 
@@ -389,7 +389,7 @@ public partial class V1beta1ResourceShareAccepterSpecInitProviderShareArnSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareAccepterSpecInitProvider
 {
-    /// <summary>The ARN of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("shareArn")]
     public string? ShareArn { get; set; }
 
@@ -592,11 +592,11 @@ public partial class V1beta1ResourceShareAccepterStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the resource share invitation.</summary>
+    /// <summary>ARN of the resource share invitation.</summary>
     [JsonPropertyName("invitationArn")]
     public string? InvitationArn { get; set; }
 
-    /// <summary>The account ID of the receiver account which accepts the invitation.</summary>
+    /// <summary>Account ID of the receiver account which accepts the invitation.</summary>
     [JsonPropertyName("receiverAccountId")]
     public string? ReceiverAccountId { get; set; }
 
@@ -607,27 +607,27 @@ public partial class V1beta1ResourceShareAccepterStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A list of the resource ARNs shared via the resource share.</summary>
+    /// <summary>List of the resource ARNs shared via the resource share.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
-    /// <summary>The account ID of the sender account which submits the invitation.</summary>
+    /// <summary>Account ID of the sender account which submits the invitation.</summary>
     [JsonPropertyName("senderAccountId")]
     public string? SenderAccountId { get; set; }
 
-    /// <summary>The ARN of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("shareArn")]
     public string? ShareArn { get; set; }
 
-    /// <summary>The ID of the resource share as displayed in the console.</summary>
+    /// <summary>ID of the resource share as displayed in the console.</summary>
     [JsonPropertyName("shareId")]
     public string? ShareId { get; set; }
 
-    /// <summary>The name of the resource share.</summary>
+    /// <summary>Name of the resource share.</summary>
     [JsonPropertyName("shareName")]
     public string? ShareName { get; set; }
 
-    /// <summary>The status of the resource share (ACTIVE, PENDING, FAILED, DELETING, DELETED).</summary>
+    /// <summary>Status of the resource share (ACTIVE, PENDING, FAILED, DELETING, DELETED).</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }

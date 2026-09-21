@@ -228,7 +228,7 @@ public partial class V1beta1IPSetStatusAtProvider
     [JsonPropertyName("addresses")]
     public IList<string>? Addresses { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IP set.</summary>
+    /// <summary>ARN of the IP set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

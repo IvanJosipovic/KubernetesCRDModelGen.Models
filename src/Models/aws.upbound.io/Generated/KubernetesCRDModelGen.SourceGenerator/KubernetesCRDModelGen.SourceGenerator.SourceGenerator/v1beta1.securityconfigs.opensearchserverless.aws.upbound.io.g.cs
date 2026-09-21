@@ -55,7 +55,54 @@ public enum V1beta1SecurityConfigSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Configuration block for SAML options.</summary>
+/// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigSpecForProviderIamFederationOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigSpecForProviderIamIdentityCenterOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM Identity Center integration. Valid values are GroupId and GroupName. Defaults to GroupId.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless.
+    /// Instance ARN.
+    /// </summary>
+    [JsonPropertyName("instanceArn")]
+    public string? InstanceArn { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM Identity Center integration. Valid values are UserId, UserName and Email. Defaults to UserId.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityConfigSpecForProviderSamlOptions
@@ -68,7 +115,7 @@ public partial class V1beta1SecurityConfigSpecForProviderSamlOptions
     public string? GroupAttribute { get; set; }
 
     /// <summary>
-    /// The XML IdP metadata file generated from your identity provider.
+    /// XML IdP metadata file generated from your identity provider.
     /// The XML IdP metadata file generated from your identity provider.
     /// </summary>
     [JsonPropertyName("metadata")]
@@ -100,6 +147,14 @@ public partial class V1beta1SecurityConfigSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+    [JsonPropertyName("iamFederationOptions")]
+    public V1beta1SecurityConfigSpecForProviderIamFederationOptions? IamFederationOptions { get; set; }
+
+    /// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+    [JsonPropertyName("iamIdentityCenterOptions")]
+    public V1beta1SecurityConfigSpecForProviderIamIdentityCenterOptions? IamIdentityCenterOptions { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -107,19 +162,66 @@ public partial class V1beta1SecurityConfigSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration block for SAML options.</summary>
+    /// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
     [JsonPropertyName("samlOptions")]
     public V1beta1SecurityConfigSpecForProviderSamlOptions? SamlOptions { get; set; }
 
     /// <summary>
-    /// Type of configuration. Must be saml.
-    /// Type of configuration. Must be `saml`.
+    /// Type of configuration. Valid values are saml, iamidentitycenter and iamfederation.
+    /// Type of configuration. Valid values: `saml`, `iamidentitycenter` or `iamfederation`.
     /// </summary>
     [JsonPropertyName("type")]
     public required string Type { get; set; }
 }
 
-/// <summary>Configuration block for SAML options.</summary>
+/// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigSpecInitProviderIamFederationOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigSpecInitProviderIamIdentityCenterOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM Identity Center integration. Valid values are GroupId and GroupName. Defaults to GroupId.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless.
+    /// Instance ARN.
+    /// </summary>
+    [JsonPropertyName("instanceArn")]
+    public string? InstanceArn { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM Identity Center integration. Valid values are UserId, UserName and Email. Defaults to UserId.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityConfigSpecInitProviderSamlOptions
@@ -132,7 +234,7 @@ public partial class V1beta1SecurityConfigSpecInitProviderSamlOptions
     public string? GroupAttribute { get; set; }
 
     /// <summary>
-    /// The XML IdP metadata file generated from your identity provider.
+    /// XML IdP metadata file generated from your identity provider.
     /// The XML IdP metadata file generated from your identity provider.
     /// </summary>
     [JsonPropertyName("metadata")]
@@ -176,7 +278,15 @@ public partial class V1beta1SecurityConfigSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Configuration block for SAML options.</summary>
+    /// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+    [JsonPropertyName("iamFederationOptions")]
+    public V1beta1SecurityConfigSpecInitProviderIamFederationOptions? IamFederationOptions { get; set; }
+
+    /// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+    [JsonPropertyName("iamIdentityCenterOptions")]
+    public V1beta1SecurityConfigSpecInitProviderIamIdentityCenterOptions? IamIdentityCenterOptions { get; set; }
+
+    /// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
     [JsonPropertyName("samlOptions")]
     public V1beta1SecurityConfigSpecInitProviderSamlOptions? SamlOptions { get; set; }
 }
@@ -364,7 +474,54 @@ public partial class V1beta1SecurityConfigSpec
     public V1beta1SecurityConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block for SAML options.</summary>
+/// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigStatusAtProviderIamFederationOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM federation integration. At least one of group_attribute or user_attribute must be specified.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SecurityConfigStatusAtProviderIamIdentityCenterOptions
+{
+    /// <summary>
+    /// Group attribute for this IAM Identity Center integration. Valid values are GroupId and GroupName. Defaults to GroupId.
+    /// Group attribute.
+    /// </summary>
+    [JsonPropertyName("groupAttribute")]
+    public string? GroupAttribute { get; set; }
+
+    /// <summary>
+    /// ARN of the IAM Identity Center instance used to integrate with OpenSearch Serverless.
+    /// Instance ARN.
+    /// </summary>
+    [JsonPropertyName("instanceArn")]
+    public string? InstanceArn { get; set; }
+
+    /// <summary>
+    /// User attribute for this IAM Identity Center integration. Valid values are UserId, UserName and Email. Defaults to UserId.
+    /// User attribute.
+    /// </summary>
+    [JsonPropertyName("userAttribute")]
+    public string? UserAttribute { get; set; }
+}
+
+/// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SecurityConfigStatusAtProviderSamlOptions
@@ -377,7 +534,7 @@ public partial class V1beta1SecurityConfigStatusAtProviderSamlOptions
     public string? GroupAttribute { get; set; }
 
     /// <summary>
-    /// The XML IdP metadata file generated from your identity provider.
+    /// XML IdP metadata file generated from your identity provider.
     /// The XML IdP metadata file generated from your identity provider.
     /// </summary>
     [JsonPropertyName("metadata")]
@@ -416,6 +573,14 @@ public partial class V1beta1SecurityConfigStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>Configuration block for IAM Federation options. Required if type is set to iamfederation. See iam_federation_options Block below for details.</summary>
+    [JsonPropertyName("iamFederationOptions")]
+    public V1beta1SecurityConfigStatusAtProviderIamFederationOptions? IamFederationOptions { get; set; }
+
+    /// <summary>Configuration block for IAM Identity Center options. Required if type is set to iamidentitycenter. See iam_identity_center_options Block below for details.</summary>
+    [JsonPropertyName("iamIdentityCenterOptions")]
+    public V1beta1SecurityConfigStatusAtProviderIamIdentityCenterOptions? IamIdentityCenterOptions { get; set; }
+
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -426,13 +591,13 @@ public partial class V1beta1SecurityConfigStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Configuration block for SAML options.</summary>
+    /// <summary>Configuration block for SAML options. Required if type is set to saml. See saml_options Block below for details.</summary>
     [JsonPropertyName("samlOptions")]
     public V1beta1SecurityConfigStatusAtProviderSamlOptions? SamlOptions { get; set; }
 
     /// <summary>
-    /// Type of configuration. Must be saml.
-    /// Type of configuration. Must be `saml`.
+    /// Type of configuration. Valid values are saml, iamidentitycenter and iamfederation.
+    /// Type of configuration. Valid values: `saml`, `iamidentitycenter` or `iamfederation`.
     /// </summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }

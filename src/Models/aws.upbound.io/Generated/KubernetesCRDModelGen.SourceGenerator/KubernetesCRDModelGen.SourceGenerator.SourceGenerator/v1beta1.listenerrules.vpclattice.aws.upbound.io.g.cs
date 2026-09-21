@@ -55,15 +55,12 @@ public enum V1beta1ListenerRuleSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>
-/// Describes the rule action that returns a custom HTTP response.
-/// See fixed_response Block for details.
-/// </summary>
+/// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderActionFixedResponse
 {
-    /// <summary>The HTTP response code.</summary>
+    /// <summary>HTTP response code.</summary>
     [JsonPropertyName("statusCode")]
     public double? StatusCode { get; set; }
 }
@@ -219,6 +216,7 @@ public partial class V1beta1ListenerRuleSpecForProviderActionForwardTargetGroups
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderActionForwardTargetGroups
 {
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -230,42 +228,31 @@ public partial class V1beta1ListenerRuleSpecForProviderActionForwardTargetGroups
     [JsonPropertyName("targetGroupIdentifierSelector")]
     public V1beta1ListenerRuleSpecForProviderActionForwardTargetGroupsTargetGroupIdentifierSelector? TargetGroupIdentifierSelector { get; set; }
 
+    /// <summary>Weight assigned to the target group, controlling the prioritization and selection of each target group so that requests are distributed based on their weights. Default is 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
 
-/// <summary>
-/// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-/// See forward Block for details.
-/// </summary>
+/// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderActionForward
 {
-    /// <summary>The target groups. Traffic matching the rule is forwarded to the specified target groups. With forward actions, you can assign a weight that controls the prioritization and selection of each target group. This means that requests are distributed to individual target groups based on their weights. For example, if two target groups have the same weight, each target group receives half of the traffic.</summary>
+    /// <summary>Target groups that traffic matching the rule is forwarded to. See target_groups Block for details.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerRuleSpecForProviderActionForwardTargetGroups>? TargetGroups { get; set; }
 }
 
-/// <summary>
-/// The action for the listener rule.
-/// See action Block for details.
-/// </summary>
+/// <summary>Action for the listener rule. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderAction
 {
-    /// <summary>
-    /// Describes the rule action that returns a custom HTTP response.
-    /// See fixed_response Block for details.
-    /// </summary>
+    /// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerRuleSpecForProviderActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>
-    /// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-    /// See forward Block for details.
-    /// </summary>
+    /// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
     [JsonPropertyName("forward")]
     public V1beta1ListenerRuleSpecForProviderActionForward? Forward { get; set; }
 }
@@ -417,26 +404,20 @@ public partial class V1beta1ListenerRuleSpecForProviderListenerIdentifierSelecto
     public V1beta1ListenerRuleSpecForProviderListenerIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Header Match  for details.
-/// </summary>
+/// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatchHeaderMatchesMatch
 {
-    /// <summary>Specifies a contains type match.</summary>
+    /// <summary>Value that the header must contain to match.</summary>
     [JsonPropertyName("contains")]
     public string? Contains { get; set; }
 
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -445,108 +426,71 @@ public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatchHeaderMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatchHeaderMatches
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Header Match  for details.
-    /// </summary>
+    /// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecForProviderMatchHttpMatchHeaderMatchesMatch? Match { get; set; }
 
-    /// <summary>The name of the header.</summary>
+    /// <summary>Name of the header.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Path Match  for details.
-/// </summary>
+/// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatchPathMatchMatch
 {
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>
-/// The path match.
-/// See path_match Block for details.
-/// </summary>
+/// <summary>Path match. See path_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatchPathMatch
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Path Match  for details.
-    /// </summary>
+    /// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecForProviderMatchHttpMatchPathMatchMatch? Match { get; set; }
 }
 
-/// <summary>
-/// The HTTP criteria that a rule must match.
-/// See http_match Block for details.
-/// </summary>
+/// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatchHttpMatch
 {
-    /// <summary>
-    /// The header matches.
-    /// Matches incoming requests with rule based on request header value before applying rule action.
-    /// See header_matches Block for details.
-    /// </summary>
+    /// <summary>Header matches that match incoming requests based on the request header value before applying the rule action. See header_matches Block for details.</summary>
     [JsonPropertyName("headerMatches")]
     public IList<V1beta1ListenerRuleSpecForProviderMatchHttpMatchHeaderMatches>? HeaderMatches { get; set; }
 
-    /// <summary>The HTTP method type.</summary>
+    /// <summary>HTTP method type.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>
-    /// The path match.
-    /// See path_match Block for details.
-    /// </summary>
+    /// <summary>Path match. See path_match Block for details.</summary>
     [JsonPropertyName("pathMatch")]
     public V1beta1ListenerRuleSpecForProviderMatchHttpMatchPathMatch? PathMatch { get; set; }
 }
 
-/// <summary>
-/// The rule match.
-/// See match Block
-/// </summary>
+/// <summary>Rule match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProviderMatch
 {
-    /// <summary>
-    /// The HTTP criteria that a rule must match.
-    /// See http_match Block for details.
-    /// </summary>
+    /// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
     [JsonPropertyName("httpMatch")]
     public V1beta1ListenerRuleSpecForProviderMatchHttpMatch? HttpMatch { get; set; }
 }
@@ -702,14 +646,11 @@ public partial class V1beta1ListenerRuleSpecForProviderServiceIdentifierSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecForProvider
 {
-    /// <summary>
-    /// The action for the listener rule.
-    /// See action Block for details.
-    /// </summary>
+    /// <summary>Action for the listener rule. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1ListenerRuleSpecForProviderAction? Action { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ID or ARN of the listener.</summary>
     [JsonPropertyName("listenerIdentifier")]
     public string? ListenerIdentifier { get; set; }
 
@@ -721,18 +662,15 @@ public partial class V1beta1ListenerRuleSpecForProvider
     [JsonPropertyName("listenerIdentifierSelector")]
     public V1beta1ListenerRuleSpecForProviderListenerIdentifierSelector? ListenerIdentifierSelector { get; set; }
 
-    /// <summary>
-    /// The rule match.
-    /// See match Block
-    /// </summary>
+    /// <summary>Rule match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecForProviderMatch? Match { get; set; }
 
-    /// <summary>The name of the rule. The name must be unique within the listener. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the rule. Must be unique within the listener. Valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
+    /// <summary>Priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -743,7 +681,7 @@ public partial class V1beta1ListenerRuleSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or ARN of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 
@@ -760,15 +698,12 @@ public partial class V1beta1ListenerRuleSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>
-/// Describes the rule action that returns a custom HTTP response.
-/// See fixed_response Block for details.
-/// </summary>
+/// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderActionFixedResponse
 {
-    /// <summary>The HTTP response code.</summary>
+    /// <summary>HTTP response code.</summary>
     [JsonPropertyName("statusCode")]
     public double? StatusCode { get; set; }
 }
@@ -924,6 +859,7 @@ public partial class V1beta1ListenerRuleSpecInitProviderActionForwardTargetGroup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderActionForwardTargetGroups
 {
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -935,42 +871,31 @@ public partial class V1beta1ListenerRuleSpecInitProviderActionForwardTargetGroup
     [JsonPropertyName("targetGroupIdentifierSelector")]
     public V1beta1ListenerRuleSpecInitProviderActionForwardTargetGroupsTargetGroupIdentifierSelector? TargetGroupIdentifierSelector { get; set; }
 
+    /// <summary>Weight assigned to the target group, controlling the prioritization and selection of each target group so that requests are distributed based on their weights. Default is 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
 
-/// <summary>
-/// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-/// See forward Block for details.
-/// </summary>
+/// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderActionForward
 {
-    /// <summary>The target groups. Traffic matching the rule is forwarded to the specified target groups. With forward actions, you can assign a weight that controls the prioritization and selection of each target group. This means that requests are distributed to individual target groups based on their weights. For example, if two target groups have the same weight, each target group receives half of the traffic.</summary>
+    /// <summary>Target groups that traffic matching the rule is forwarded to. See target_groups Block for details.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerRuleSpecInitProviderActionForwardTargetGroups>? TargetGroups { get; set; }
 }
 
-/// <summary>
-/// The action for the listener rule.
-/// See action Block for details.
-/// </summary>
+/// <summary>Action for the listener rule. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderAction
 {
-    /// <summary>
-    /// Describes the rule action that returns a custom HTTP response.
-    /// See fixed_response Block for details.
-    /// </summary>
+    /// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerRuleSpecInitProviderActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>
-    /// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-    /// See forward Block for details.
-    /// </summary>
+    /// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
     [JsonPropertyName("forward")]
     public V1beta1ListenerRuleSpecInitProviderActionForward? Forward { get; set; }
 }
@@ -1122,26 +1047,20 @@ public partial class V1beta1ListenerRuleSpecInitProviderListenerIdentifierSelect
     public V1beta1ListenerRuleSpecInitProviderListenerIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Header Match  for details.
-/// </summary>
+/// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatchHeaderMatchesMatch
 {
-    /// <summary>Specifies a contains type match.</summary>
+    /// <summary>Value that the header must contain to match.</summary>
     [JsonPropertyName("contains")]
     public string? Contains { get; set; }
 
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -1150,108 +1069,71 @@ public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatchHeaderMatc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatchHeaderMatches
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Header Match  for details.
-    /// </summary>
+    /// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecInitProviderMatchHttpMatchHeaderMatchesMatch? Match { get; set; }
 
-    /// <summary>The name of the header.</summary>
+    /// <summary>Name of the header.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Path Match  for details.
-/// </summary>
+/// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatchPathMatchMatch
 {
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>
-/// The path match.
-/// See path_match Block for details.
-/// </summary>
+/// <summary>Path match. See path_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatchPathMatch
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Path Match  for details.
-    /// </summary>
+    /// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecInitProviderMatchHttpMatchPathMatchMatch? Match { get; set; }
 }
 
-/// <summary>
-/// The HTTP criteria that a rule must match.
-/// See http_match Block for details.
-/// </summary>
+/// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatchHttpMatch
 {
-    /// <summary>
-    /// The header matches.
-    /// Matches incoming requests with rule based on request header value before applying rule action.
-    /// See header_matches Block for details.
-    /// </summary>
+    /// <summary>Header matches that match incoming requests based on the request header value before applying the rule action. See header_matches Block for details.</summary>
     [JsonPropertyName("headerMatches")]
     public IList<V1beta1ListenerRuleSpecInitProviderMatchHttpMatchHeaderMatches>? HeaderMatches { get; set; }
 
-    /// <summary>The HTTP method type.</summary>
+    /// <summary>HTTP method type.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>
-    /// The path match.
-    /// See path_match Block for details.
-    /// </summary>
+    /// <summary>Path match. See path_match Block for details.</summary>
     [JsonPropertyName("pathMatch")]
     public V1beta1ListenerRuleSpecInitProviderMatchHttpMatchPathMatch? PathMatch { get; set; }
 }
 
-/// <summary>
-/// The rule match.
-/// See match Block
-/// </summary>
+/// <summary>Rule match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProviderMatch
 {
-    /// <summary>
-    /// The HTTP criteria that a rule must match.
-    /// See http_match Block for details.
-    /// </summary>
+    /// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
     [JsonPropertyName("httpMatch")]
     public V1beta1ListenerRuleSpecInitProviderMatchHttpMatch? HttpMatch { get; set; }
 }
@@ -1419,14 +1301,11 @@ public partial class V1beta1ListenerRuleSpecInitProviderServiceIdentifierSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleSpecInitProvider
 {
-    /// <summary>
-    /// The action for the listener rule.
-    /// See action Block for details.
-    /// </summary>
+    /// <summary>Action for the listener rule. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1ListenerRuleSpecInitProviderAction? Action { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ID or ARN of the listener.</summary>
     [JsonPropertyName("listenerIdentifier")]
     public string? ListenerIdentifier { get; set; }
 
@@ -1438,22 +1317,19 @@ public partial class V1beta1ListenerRuleSpecInitProvider
     [JsonPropertyName("listenerIdentifierSelector")]
     public V1beta1ListenerRuleSpecInitProviderListenerIdentifierSelector? ListenerIdentifierSelector { get; set; }
 
-    /// <summary>
-    /// The rule match.
-    /// See match Block
-    /// </summary>
+    /// <summary>Rule match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleSpecInitProviderMatch? Match { get; set; }
 
-    /// <summary>The name of the rule. The name must be unique within the listener. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the rule. Must be unique within the listener. Valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
+    /// <summary>Priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or ARN of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 
@@ -1653,15 +1529,12 @@ public partial class V1beta1ListenerRuleSpec
     public V1beta1ListenerRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>
-/// Describes the rule action that returns a custom HTTP response.
-/// See fixed_response Block for details.
-/// </summary>
+/// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderActionFixedResponse
 {
-    /// <summary>The HTTP response code.</summary>
+    /// <summary>HTTP response code.</summary>
     [JsonPropertyName("statusCode")]
     public double? StatusCode { get; set; }
 }
@@ -1670,69 +1543,53 @@ public partial class V1beta1ListenerRuleStatusAtProviderActionFixedResponse
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderActionForwardTargetGroups
 {
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
+    /// <summary>Weight assigned to the target group, controlling the prioritization and selection of each target group so that requests are distributed based on their weights. Default is 100.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
 
-/// <summary>
-/// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-/// See forward Block for details.
-/// </summary>
+/// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderActionForward
 {
-    /// <summary>The target groups. Traffic matching the rule is forwarded to the specified target groups. With forward actions, you can assign a weight that controls the prioritization and selection of each target group. This means that requests are distributed to individual target groups based on their weights. For example, if two target groups have the same weight, each target group receives half of the traffic.</summary>
+    /// <summary>Target groups that traffic matching the rule is forwarded to. See target_groups Block for details.</summary>
     [JsonPropertyName("targetGroups")]
     public IList<V1beta1ListenerRuleStatusAtProviderActionForwardTargetGroups>? TargetGroups { get; set; }
 }
 
-/// <summary>
-/// The action for the listener rule.
-/// See action Block for details.
-/// </summary>
+/// <summary>Action for the listener rule. See action Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderAction
 {
-    /// <summary>
-    /// Describes the rule action that returns a custom HTTP response.
-    /// See fixed_response Block for details.
-    /// </summary>
+    /// <summary>Rule action that returns a custom HTTP response. See fixed_response Block for details.</summary>
     [JsonPropertyName("fixedResponse")]
     public V1beta1ListenerRuleStatusAtProviderActionFixedResponse? FixedResponse { get; set; }
 
-    /// <summary>
-    /// The forward action. Traffic that matches the rule is forwarded to the specified target groups.
-    /// See forward Block for details.
-    /// </summary>
+    /// <summary>Forward action. Traffic that matches the rule is forwarded to the specified target groups. See forward Block for details.</summary>
     [JsonPropertyName("forward")]
     public V1beta1ListenerRuleStatusAtProviderActionForward? Forward { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Header Match  for details.
-/// </summary>
+/// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatchHeaderMatchesMatch
 {
-    /// <summary>Specifies a contains type match.</summary>
+    /// <summary>Value that the header must contain to match.</summary>
     [JsonPropertyName("contains")]
     public string? Contains { get; set; }
 
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
@@ -1741,108 +1598,71 @@ public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatchHeaderMatc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatchHeaderMatches
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Header Match  for details.
-    /// </summary>
+    /// <summary>Header match type. See match.http_match.header_matches.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleStatusAtProviderMatchHttpMatchHeaderMatchesMatch? Match { get; set; }
 
-    /// <summary>The name of the header.</summary>
+    /// <summary>Name of the header.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
 
-/// <summary>
-/// The header match type.
-/// See Path Match  for details.
-/// </summary>
+/// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatchPathMatchMatch
 {
-    /// <summary>Specifies an exact type match.</summary>
+    /// <summary>Exact type match.</summary>
     [JsonPropertyName("exact")]
     public string? Exact { get; set; }
 
-    /// <summary>
-    /// Specifies a prefix type match.
-    /// Matches the value with the prefix.
-    /// </summary>
+    /// <summary>Prefix type match. Matches the value with the prefix.</summary>
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 }
 
-/// <summary>
-/// The path match.
-/// See path_match Block for details.
-/// </summary>
+/// <summary>Path match. See path_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatchPathMatch
 {
-    /// <summary>
-    /// Indicates whether the match is case sensitive.
-    /// Default is false.
-    /// </summary>
+    /// <summary>Whether the match is case sensitive. Default is false.</summary>
     [JsonPropertyName("caseSensitive")]
     public bool? CaseSensitive { get; set; }
 
-    /// <summary>
-    /// The header match type.
-    /// See Path Match  for details.
-    /// </summary>
+    /// <summary>Path match type. See match.http_match.path_match.match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleStatusAtProviderMatchHttpMatchPathMatchMatch? Match { get; set; }
 }
 
-/// <summary>
-/// The HTTP criteria that a rule must match.
-/// See http_match Block for details.
-/// </summary>
+/// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatchHttpMatch
 {
-    /// <summary>
-    /// The header matches.
-    /// Matches incoming requests with rule based on request header value before applying rule action.
-    /// See header_matches Block for details.
-    /// </summary>
+    /// <summary>Header matches that match incoming requests based on the request header value before applying the rule action. See header_matches Block for details.</summary>
     [JsonPropertyName("headerMatches")]
     public IList<V1beta1ListenerRuleStatusAtProviderMatchHttpMatchHeaderMatches>? HeaderMatches { get; set; }
 
-    /// <summary>The HTTP method type.</summary>
+    /// <summary>HTTP method type.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>
-    /// The path match.
-    /// See path_match Block for details.
-    /// </summary>
+    /// <summary>Path match. See path_match Block for details.</summary>
     [JsonPropertyName("pathMatch")]
     public V1beta1ListenerRuleStatusAtProviderMatchHttpMatchPathMatch? PathMatch { get; set; }
 }
 
-/// <summary>
-/// The rule match.
-/// See match Block
-/// </summary>
+/// <summary>Rule match. See match Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProviderMatch
 {
-    /// <summary>
-    /// The HTTP criteria that a rule must match.
-    /// See http_match Block for details.
-    /// </summary>
+    /// <summary>HTTP criteria that a rule must match. See http_match Block for details.</summary>
     [JsonPropertyName("httpMatch")]
     public V1beta1ListenerRuleStatusAtProviderMatchHttpMatch? HttpMatch { get; set; }
 }
@@ -1851,36 +1671,30 @@ public partial class V1beta1ListenerRuleStatusAtProviderMatch
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ListenerRuleStatusAtProvider
 {
-    /// <summary>
-    /// The action for the listener rule.
-    /// See action Block for details.
-    /// </summary>
+    /// <summary>Action for the listener rule. See action Block for details.</summary>
     [JsonPropertyName("action")]
     public V1beta1ListenerRuleStatusAtProviderAction? Action { get; set; }
 
-    /// <summary>The ARN for the listener rule.</summary>
+    /// <summary>ARN for the listener rule.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the listener.</summary>
+    /// <summary>ID or ARN of the listener.</summary>
     [JsonPropertyName("listenerIdentifier")]
     public string? ListenerIdentifier { get; set; }
 
-    /// <summary>
-    /// The rule match.
-    /// See match Block
-    /// </summary>
+    /// <summary>Rule match. See match Block for details.</summary>
     [JsonPropertyName("match")]
     public V1beta1ListenerRuleStatusAtProviderMatch? Match { get; set; }
 
-    /// <summary>The name of the rule. The name must be unique within the listener. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the rule. Must be unique within the listener. Valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
+    /// <summary>Priority assigned to the rule. Each rule for a specific listener must have a unique priority. The lower the priority number the higher the priority.</summary>
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
@@ -1895,7 +1709,7 @@ public partial class V1beta1ListenerRuleStatusAtProvider
     [JsonPropertyName("ruleId")]
     public string? RuleId { get; set; }
 
-    /// <summary>The ID or Amazon Resource Identifier (ARN) of the service.</summary>
+    /// <summary>ID or ARN of the service.</summary>
     [JsonPropertyName("serviceIdentifier")]
     public string? ServiceIdentifier { get; set; }
 

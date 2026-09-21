@@ -991,7 +991,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EndpointStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this endpoint.</summary>
+    /// <summary>ARN assigned by AWS to this endpoint.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

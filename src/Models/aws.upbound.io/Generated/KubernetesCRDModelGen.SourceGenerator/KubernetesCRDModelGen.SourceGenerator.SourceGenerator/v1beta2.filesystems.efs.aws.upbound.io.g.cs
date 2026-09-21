@@ -289,7 +289,7 @@ public partial class V1beta2FileSystemSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Throughput mode for the file system. Defaults to bursting. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
+    /// <summary>Throughput mode for the file system. Defaults to bursting, matching the CreateFileSystem API default. Note that AWS recommends , and elastic is the default in the Amazon EFS console. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 }
@@ -533,7 +533,7 @@ public partial class V1beta2FileSystemSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Throughput mode for the file system. Defaults to bursting. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
+    /// <summary>Throughput mode for the file system. Defaults to bursting, matching the CreateFileSystem API default. Note that AWS recommends , and elastic is the default in the Amazon EFS console. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 }
@@ -769,7 +769,7 @@ public partial class V1beta2FileSystemStatusAtProviderSizeInBytes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FileSystemStatusAtProvider
 {
-    /// <summary>Amazon Resource Name of the file system.</summary>
+    /// <summary>ARN of the file system.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -853,7 +853,7 @@ public partial class V1beta2FileSystemStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Throughput mode for the file system. Defaults to bursting. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
+    /// <summary>Throughput mode for the file system. Defaults to bursting, matching the CreateFileSystem API default. Note that AWS recommends , and elastic is the default in the Amazon EFS console. Valid values: bursting, provisioned, or elastic. When using provisioned, also set provisioned_throughput_in_mibps.</summary>
     [JsonPropertyName("throughputMode")]
     public string? ThroughputMode { get; set; }
 }

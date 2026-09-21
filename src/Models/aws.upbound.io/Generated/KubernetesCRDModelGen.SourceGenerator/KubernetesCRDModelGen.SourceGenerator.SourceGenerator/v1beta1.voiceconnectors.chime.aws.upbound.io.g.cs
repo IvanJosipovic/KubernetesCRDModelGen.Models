@@ -295,7 +295,7 @@ public partial class V1beta1VoiceConnectorSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorStatusAtProvider
 {
-    /// <summary>ARN (Amazon Resource Name) of the Amazon Chime Voice Connector.</summary>
+    /// <summary>ARN of the Amazon Chime Voice Connector.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

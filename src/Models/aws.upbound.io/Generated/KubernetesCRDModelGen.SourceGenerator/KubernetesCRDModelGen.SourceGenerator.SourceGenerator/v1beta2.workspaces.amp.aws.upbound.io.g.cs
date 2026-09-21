@@ -647,7 +647,7 @@ public partial class V1beta2WorkspaceStatusAtProvider
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the workspace.</summary>
+    /// <summary>ARN of the workspace.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

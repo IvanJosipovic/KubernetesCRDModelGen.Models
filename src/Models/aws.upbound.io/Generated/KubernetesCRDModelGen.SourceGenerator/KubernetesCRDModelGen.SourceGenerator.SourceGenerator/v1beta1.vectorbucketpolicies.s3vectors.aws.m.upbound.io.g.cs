@@ -195,7 +195,7 @@ public partial class V1beta1VectorBucketPolicySpecForProviderVectorBucketArnSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketPolicySpecForProvider
 {
-    /// <summary>The policy document.</summary>
+    /// <summary>Policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -390,7 +390,7 @@ public partial class V1beta1VectorBucketPolicySpecInitProviderVectorBucketArnSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VectorBucketPolicySpecInitProvider
 {
-    /// <summary>The policy document.</summary>
+    /// <summary>Policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -521,7 +521,7 @@ public partial class V1beta1VectorBucketPolicyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The policy document.</summary>
+    /// <summary>Policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

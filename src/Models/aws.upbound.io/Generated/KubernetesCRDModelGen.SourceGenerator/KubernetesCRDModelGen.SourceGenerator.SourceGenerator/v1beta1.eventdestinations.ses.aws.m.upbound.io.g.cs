@@ -40,15 +40,15 @@ public partial class V1beta1EventDestinationList : IKubernetesObject<V1ListMeta>
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderCloudwatchDestination
 {
-    /// <summary>The default value for the event</summary>
+    /// <summary>Default value for the event</summary>
     [JsonPropertyName("defaultValue")]
     public string? DefaultValue { get; set; }
 
-    /// <summary>The name for the dimension</summary>
+    /// <summary>Name for the dimension</summary>
     [JsonPropertyName("dimensionName")]
     public string? DimensionName { get; set; }
 
-    /// <summary>The source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
+    /// <summary>Source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
     [JsonPropertyName("valueSource")]
     public string? ValueSource { get; set; }
 }
@@ -523,7 +523,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestinationStr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderKinesisDestination
 {
-    /// <summary>The ARN of the role that has permissions to access the Kinesis Stream</summary>
+    /// <summary>ARN of the role that has permissions to access the Kinesis Stream</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -535,7 +535,7 @@ public partial class V1beta1EventDestinationSpecForProviderKinesisDestination
     [JsonPropertyName("roleArnSelector")]
     public V1beta1EventDestinationSpecForProviderKinesisDestinationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The ARN of the Kinesis Stream</summary>
+    /// <summary>ARN of the Kinesis Stream</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -708,7 +708,7 @@ public partial class V1beta1EventDestinationSpecForProviderSnsDestinationTopicAr
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecForProviderSnsDestination
 {
-    /// <summary>The ARN of the SNS topic</summary>
+    /// <summary>ARN of the SNS topic</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 
@@ -729,7 +729,7 @@ public partial class V1beta1EventDestinationSpecForProvider
     [JsonPropertyName("cloudwatchDestination")]
     public IList<V1beta1EventDestinationSpecForProviderCloudwatchDestination>? CloudwatchDestination { get; set; }
 
-    /// <summary>The name of the configuration set</summary>
+    /// <summary>Name of the configuration set</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
@@ -749,7 +749,7 @@ public partial class V1beta1EventDestinationSpecForProvider
     [JsonPropertyName("kinesisDestination")]
     public V1beta1EventDestinationSpecForProviderKinesisDestination? KinesisDestination { get; set; }
 
-    /// <summary>A list of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
+    /// <summary>List of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
     [JsonPropertyName("matchingTypes")]
     public IList<string>? MatchingTypes { get; set; }
 
@@ -769,15 +769,15 @@ public partial class V1beta1EventDestinationSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderCloudwatchDestination
 {
-    /// <summary>The default value for the event</summary>
+    /// <summary>Default value for the event</summary>
     [JsonPropertyName("defaultValue")]
     public string? DefaultValue { get; set; }
 
-    /// <summary>The name for the dimension</summary>
+    /// <summary>Name for the dimension</summary>
     [JsonPropertyName("dimensionName")]
     public string? DimensionName { get; set; }
 
-    /// <summary>The source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
+    /// <summary>Source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
     [JsonPropertyName("valueSource")]
     public string? ValueSource { get; set; }
 }
@@ -1252,7 +1252,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestinationSt
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderKinesisDestination
 {
-    /// <summary>The ARN of the role that has permissions to access the Kinesis Stream</summary>
+    /// <summary>ARN of the role that has permissions to access the Kinesis Stream</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1264,7 +1264,7 @@ public partial class V1beta1EventDestinationSpecInitProviderKinesisDestination
     [JsonPropertyName("roleArnSelector")]
     public V1beta1EventDestinationSpecInitProviderKinesisDestinationRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The ARN of the Kinesis Stream</summary>
+    /// <summary>ARN of the Kinesis Stream</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 
@@ -1437,7 +1437,7 @@ public partial class V1beta1EventDestinationSpecInitProviderSnsDestinationTopicA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationSpecInitProviderSnsDestination
 {
-    /// <summary>The ARN of the SNS topic</summary>
+    /// <summary>ARN of the SNS topic</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 
@@ -1470,7 +1470,7 @@ public partial class V1beta1EventDestinationSpecInitProvider
     [JsonPropertyName("cloudwatchDestination")]
     public IList<V1beta1EventDestinationSpecInitProviderCloudwatchDestination>? CloudwatchDestination { get; set; }
 
-    /// <summary>The name of the configuration set</summary>
+    /// <summary>Name of the configuration set</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
@@ -1490,7 +1490,7 @@ public partial class V1beta1EventDestinationSpecInitProvider
     [JsonPropertyName("kinesisDestination")]
     public V1beta1EventDestinationSpecInitProviderKinesisDestination? KinesisDestination { get; set; }
 
-    /// <summary>A list of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
+    /// <summary>List of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
     [JsonPropertyName("matchingTypes")]
     public IList<string>? MatchingTypes { get; set; }
 
@@ -1610,15 +1610,15 @@ public partial class V1beta1EventDestinationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderCloudwatchDestination
 {
-    /// <summary>The default value for the event</summary>
+    /// <summary>Default value for the event</summary>
     [JsonPropertyName("defaultValue")]
     public string? DefaultValue { get; set; }
 
-    /// <summary>The name for the dimension</summary>
+    /// <summary>Name for the dimension</summary>
     [JsonPropertyName("dimensionName")]
     public string? DimensionName { get; set; }
 
-    /// <summary>The source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
+    /// <summary>Source for the value. May be any of &quot;messageTag&quot;, &quot;emailHeader&quot; or &quot;linkTag&quot;.</summary>
     [JsonPropertyName("valueSource")]
     public string? ValueSource { get; set; }
 }
@@ -1628,11 +1628,11 @@ public partial class V1beta1EventDestinationStatusAtProviderCloudwatchDestinatio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderKinesisDestination
 {
-    /// <summary>The ARN of the role that has permissions to access the Kinesis Stream</summary>
+    /// <summary>ARN of the role that has permissions to access the Kinesis Stream</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The ARN of the Kinesis Stream</summary>
+    /// <summary>ARN of the Kinesis Stream</summary>
     [JsonPropertyName("streamArn")]
     public string? StreamArn { get; set; }
 }
@@ -1642,7 +1642,7 @@ public partial class V1beta1EventDestinationStatusAtProviderKinesisDestination
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProviderSnsDestination
 {
-    /// <summary>The ARN of the SNS topic</summary>
+    /// <summary>ARN of the SNS topic</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }
@@ -1651,7 +1651,7 @@ public partial class V1beta1EventDestinationStatusAtProviderSnsDestination
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventDestinationStatusAtProvider
 {
-    /// <summary>The SES event destination ARN.</summary>
+    /// <summary>SES event destination ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1659,7 +1659,7 @@ public partial class V1beta1EventDestinationStatusAtProvider
     [JsonPropertyName("cloudwatchDestination")]
     public IList<V1beta1EventDestinationStatusAtProviderCloudwatchDestination>? CloudwatchDestination { get; set; }
 
-    /// <summary>The name of the configuration set</summary>
+    /// <summary>Name of the configuration set</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
@@ -1667,7 +1667,7 @@ public partial class V1beta1EventDestinationStatusAtProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The SES event destination name.</summary>
+    /// <summary>SES event destination name.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1675,7 +1675,7 @@ public partial class V1beta1EventDestinationStatusAtProvider
     [JsonPropertyName("kinesisDestination")]
     public V1beta1EventDestinationStatusAtProviderKinesisDestination? KinesisDestination { get; set; }
 
-    /// <summary>A list of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
+    /// <summary>List of matching types. May be any of &quot;send&quot;, &quot;reject&quot;, &quot;bounce&quot;, &quot;complaint&quot;, &quot;delivery&quot;, &quot;open&quot;, &quot;click&quot;, or &quot;renderingFailure&quot;.</summary>
     [JsonPropertyName("matchingTypes")]
     public IList<string>? MatchingTypes { get; set; }
 

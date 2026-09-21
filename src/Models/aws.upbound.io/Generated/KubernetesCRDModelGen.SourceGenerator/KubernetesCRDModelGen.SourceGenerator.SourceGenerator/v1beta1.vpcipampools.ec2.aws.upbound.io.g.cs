@@ -1421,7 +1421,7 @@ public partial class V1beta1VPCIpamPoolStatusAtProvider
     [JsonPropertyName("allocationResourceTags")]
     public IDictionary<string, string>? AllocationResourceTags { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of IPAM</summary>
+    /// <summary>ARN of IPAM</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

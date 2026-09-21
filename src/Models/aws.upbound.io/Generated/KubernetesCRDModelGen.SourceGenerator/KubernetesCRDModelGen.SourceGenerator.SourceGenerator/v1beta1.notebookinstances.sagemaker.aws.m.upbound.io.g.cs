@@ -701,7 +701,7 @@ public partial class V1beta1NotebookInstanceSpecForProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1446,7 +1446,7 @@ public partial class V1beta1NotebookInstanceSpecInitProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1635,7 +1635,7 @@ public partial class V1beta1NotebookInstanceStatusAtProvider
     [JsonPropertyName("additionalCodeRepositories")]
     public IList<string>? AdditionalCodeRepositories { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this notebook instance.</summary>
+    /// <summary>ARN assigned by AWS to this notebook instance.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1659,7 +1659,7 @@ public partial class V1beta1NotebookInstanceStatusAtProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The AWS Key Management Service (AWS KMS) key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
+    /// <summary>KMS key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

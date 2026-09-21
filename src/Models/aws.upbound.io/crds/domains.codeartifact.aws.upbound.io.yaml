@@ -75,7 +75,7 @@ spec:
                     description: The name of the domain to create. All domain names in an AWS Region that are in the same AWS account must be unique. The domain name is used as the prefix in DNS hostnames. Do not use sensitive information in a domain name because it is publicly discoverable.
                     type: string
                   encryptionKey:
-                    description: The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.
+                    description: Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.
                     type: string
                   encryptionKeyRef:
                     description: Reference to a Key in kms to populate encryptionKey.
@@ -181,7 +181,7 @@ spec:
                     description: The name of the domain to create. All domain names in an AWS Region that are in the same AWS account must be unique. The domain name is used as the prefix in DNS hostnames. Do not use sensitive information in a domain name because it is publicly discoverable.
                     type: string
                   encryptionKey:
-                    description: The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.
+                    description: Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.
                     type: string
                   encryptionKeyRef:
                     description: Reference to a Key in kms to populate encryptionKey.
@@ -370,7 +370,7 @@ spec:
                     description: The name of the domain to create. All domain names in an AWS Region that are in the same AWS account must be unique. The domain name is used as the prefix in DNS hostnames. Do not use sensitive information in a domain name because it is publicly discoverable.
                     type: string
                   encryptionKey:
-                    description: The encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key Amazon Resource Name (ARN). The default aws/codeartifact AWS KMS master key is used if this element is absent.
+                    description: Encryption key for the domain. This is used to encrypt content stored in a domain. The KMS Key ARN. The default aws/codeartifact AWS KMS master key is used if this element is absent.
                     type: string
                   id:
                     description: The ARN of the Domain.

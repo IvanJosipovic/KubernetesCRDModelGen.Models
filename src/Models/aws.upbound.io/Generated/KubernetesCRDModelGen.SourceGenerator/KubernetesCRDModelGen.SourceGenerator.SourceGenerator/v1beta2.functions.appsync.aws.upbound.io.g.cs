@@ -349,16 +349,16 @@ public partial class V1beta2FunctionSpecForProviderDataSourceSelector
     public V1beta2FunctionSpecForProviderDataSourceSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecForProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -373,7 +373,7 @@ public partial class V1beta2FunctionSpecForProviderSyncConfigLambdaConflictHandl
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+/// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecForProviderSyncConfig
@@ -407,7 +407,7 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta2FunctionSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -454,11 +454,11 @@ public partial class V1beta2FunctionSpecForProvider
     [JsonPropertyName("responseMappingTemplate")]
     public string? ResponseMappingTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
     [JsonPropertyName("runtime")]
     public V1beta2FunctionSpecForProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+    /// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta2FunctionSpecForProviderSyncConfig? SyncConfig { get; set; }
 }
@@ -757,16 +757,16 @@ public partial class V1beta2FunctionSpecInitProviderDataSourceSelector
     public V1beta2FunctionSpecInitProviderDataSourceSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecInitProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -781,7 +781,7 @@ public partial class V1beta2FunctionSpecInitProviderSyncConfigLambdaConflictHand
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+/// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionSpecInitProviderSyncConfig
@@ -827,7 +827,7 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta2FunctionSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -867,11 +867,11 @@ public partial class V1beta2FunctionSpecInitProvider
     [JsonPropertyName("responseMappingTemplate")]
     public string? ResponseMappingTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
     [JsonPropertyName("runtime")]
     public V1beta2FunctionSpecInitProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+    /// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta2FunctionSpecInitProviderSyncConfig? SyncConfig { get; set; }
 }
@@ -1059,16 +1059,16 @@ public partial class V1beta2FunctionSpec
     public V1beta2FunctionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionStatusAtProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -1083,7 +1083,7 @@ public partial class V1beta2FunctionStatusAtProviderSyncConfigLambdaConflictHand
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+/// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FunctionStatusAtProviderSyncConfig
@@ -1113,7 +1113,7 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -1160,11 +1160,11 @@ public partial class V1beta2FunctionStatusAtProvider
     [JsonPropertyName("responseMappingTemplate")]
     public string? ResponseMappingTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See runtime Block for details.</summary>
     [JsonPropertyName("runtime")]
     public V1beta2FunctionStatusAtProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See sync_config Block for details.</summary>
+    /// <summary>Sync configuration for a resolver. See sync_config Block for details.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta2FunctionStatusAtProviderSyncConfig? SyncConfig { get; set; }
 }

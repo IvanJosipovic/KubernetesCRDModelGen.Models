@@ -560,7 +560,7 @@ spec:
                     description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
                     type: boolean
                   firewallArn:
-                    description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
+                    description: ARN of the Network Firewall firewall.
                     type: string
                   firewallArnRef:
                     description: Reference to a Firewall in networkfirewall to populate firewallArn.
@@ -682,7 +682,7 @@ spec:
                     description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
                     type: boolean
                   firewallArn:
-                    description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
+                    description: ARN of the Network Firewall firewall.
                     type: string
                   firewallArnRef:
                     description: Reference to a Firewall in networkfirewall to populate firewallArn.
@@ -878,10 +878,10 @@ spec:
                     description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
                     type: boolean
                   firewallArn:
-                    description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
+                    description: ARN of the Network Firewall firewall.
                     type: string
                   id:
-                    description: The Amazon Resource Name (ARN) of the associated firewall.
+                    description: ARN of the associated firewall.
                     type: string
                   loggingConfiguration:
                     description: A configuration block describing how AWS Network Firewall performs logging for a firewall. See Logging Configuration below for details.

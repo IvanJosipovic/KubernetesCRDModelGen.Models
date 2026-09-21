@@ -525,7 +525,7 @@ public partial class V1beta1BasePathMappingSpecForProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The identifier for the domain name resource. Supported only for private custom domain names.</summary>
+    /// <summary>Identifier for the domain name resource. Supported only for private custom domain names.</summary>
     [JsonPropertyName("domainNameId")]
     public string? DomainNameId { get; set; }
 
@@ -1058,7 +1058,7 @@ public partial class V1beta1BasePathMappingSpecInitProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The identifier for the domain name resource. Supported only for private custom domain names.</summary>
+    /// <summary>Identifier for the domain name resource. Supported only for private custom domain names.</summary>
     [JsonPropertyName("domainNameId")]
     public string? DomainNameId { get; set; }
 
@@ -1206,7 +1206,7 @@ public partial class V1beta1BasePathMappingStatusAtProvider
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The identifier for the domain name resource. Supported only for private custom domain names.</summary>
+    /// <summary>Identifier for the domain name resource. Supported only for private custom domain names.</summary>
     [JsonPropertyName("domainNameId")]
     public string? DomainNameId { get; set; }
 

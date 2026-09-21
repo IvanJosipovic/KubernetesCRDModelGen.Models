@@ -222,7 +222,7 @@ public partial class V1beta1GlobalClusterSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 
@@ -430,7 +430,7 @@ public partial class V1beta1GlobalClusterSpecInitProvider
     [JsonPropertyName("globalClusterIdentifier")]
     public string? GlobalClusterIdentifier { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 
@@ -558,7 +558,7 @@ public partial class V1beta1GlobalClusterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalClusterStatusAtProviderGlobalClusterMembers
 {
-    /// <summary>Amazon Resource Name (ARN) of member DB Cluster.</summary>
+    /// <summary>ARN of member DB Cluster.</summary>
     [JsonPropertyName("dbClusterArn")]
     public string? DbClusterArn { get; set; }
 
@@ -571,7 +571,7 @@ public partial class V1beta1GlobalClusterStatusAtProviderGlobalClusterMembers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalClusterStatusAtProvider
 {
-    /// <summary>Global Cluster Amazon Resource Name (ARN)</summary>
+    /// <summary>Global Cluster ARN</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -614,7 +614,7 @@ public partial class V1beta1GlobalClusterStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 

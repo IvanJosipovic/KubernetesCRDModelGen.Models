@@ -86,7 +86,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
+                    description: ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -199,7 +199,7 @@ spec:
                     description: The version of MLflow that the tracking server uses. To see which MLflow versions are available to use, see How it works.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
+                    description: ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -382,7 +382,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) assigned by AWS to this MLFlow Tracking Server.
+                    description: ARN assigned by AWS to this MLFlow Tracking Server.
                     type: string
                   artifactStoreUri:
                     description: The S3 URI for a general purpose bucket to use as the MLflow Tracking Server artifact store.
@@ -402,7 +402,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
+                    description: ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact store in Amazon S3. The role should have AmazonS3FullAccess permissions. For more information on IAM permissions for tracking server creation, see Set up IAM permissions for MLflow.
                     type: string
                   tags:
                     additionalProperties:

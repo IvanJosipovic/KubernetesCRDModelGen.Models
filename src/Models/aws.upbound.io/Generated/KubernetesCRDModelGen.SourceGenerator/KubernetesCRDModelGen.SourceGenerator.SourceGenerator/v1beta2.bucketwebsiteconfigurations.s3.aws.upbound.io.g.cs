@@ -217,11 +217,7 @@ public partial class V1beta2BucketWebsiteConfigurationSpecForProviderErrorDocume
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketWebsiteConfigurationSpecForProviderIndexDocument
 {
-    /// <summary>
-    /// Suffix that is appended to a request that is for a directory on the website endpoint.
-    /// For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.
-    /// The suffix must not be empty and must not include a slash character.
-    /// </summary>
+    /// <summary>Suffix that is appended to a request that is for a directory on the website endpoint. The suffix must not be empty and must not include a slash character. For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.</summary>
     [JsonPropertyName("suffix")]
     public string? Suffix { get; set; }
 }
@@ -336,10 +332,7 @@ public partial class V1beta2BucketWebsiteConfigurationSpecForProvider
     [JsonPropertyName("routingRule")]
     public IList<V1beta2BucketWebsiteConfigurationSpecForProviderRoutingRule>? RoutingRule { get; set; }
 
-    /// <summary>
-    /// JSON array containing routing rules
-    /// describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.
-    /// </summary>
+    /// <summary>JSON array containing routing rules describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.</summary>
     [JsonPropertyName("routingRules")]
     public string? RoutingRules { get; set; }
 }
@@ -506,11 +499,7 @@ public partial class V1beta2BucketWebsiteConfigurationSpecInitProviderErrorDocum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketWebsiteConfigurationSpecInitProviderIndexDocument
 {
-    /// <summary>
-    /// Suffix that is appended to a request that is for a directory on the website endpoint.
-    /// For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.
-    /// The suffix must not be empty and must not include a slash character.
-    /// </summary>
+    /// <summary>Suffix that is appended to a request that is for a directory on the website endpoint. The suffix must not be empty and must not include a slash character. For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.</summary>
     [JsonPropertyName("suffix")]
     public string? Suffix { get; set; }
 }
@@ -630,10 +619,7 @@ public partial class V1beta2BucketWebsiteConfigurationSpecInitProvider
     [JsonPropertyName("routingRule")]
     public IList<V1beta2BucketWebsiteConfigurationSpecInitProviderRoutingRule>? RoutingRule { get; set; }
 
-    /// <summary>
-    /// JSON array containing routing rules
-    /// describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.
-    /// </summary>
+    /// <summary>JSON array containing routing rules describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.</summary>
     [JsonPropertyName("routingRules")]
     public string? RoutingRules { get; set; }
 }
@@ -836,11 +822,7 @@ public partial class V1beta2BucketWebsiteConfigurationStatusAtProviderErrorDocum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketWebsiteConfigurationStatusAtProviderIndexDocument
 {
-    /// <summary>
-    /// Suffix that is appended to a request that is for a directory on the website endpoint.
-    /// For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.
-    /// The suffix must not be empty and must not include a slash character.
-    /// </summary>
+    /// <summary>Suffix that is appended to a request that is for a directory on the website endpoint. The suffix must not be empty and must not include a slash character. For example, if the suffix is index.html and you make a request to samplebucket/images/, the data that is returned will be for the object with the key name images/index.html.</summary>
     [JsonPropertyName("suffix")]
     public string? Suffix { get; set; }
 }
@@ -928,7 +910,7 @@ public partial class V1beta2BucketWebsiteConfigurationStatusAtProvider
     [JsonPropertyName("expectedBucketOwner")]
     public string? ExpectedBucketOwner { get; set; }
 
-    /// <summary>The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
+    /// <summary>bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -951,10 +933,7 @@ public partial class V1beta2BucketWebsiteConfigurationStatusAtProvider
     [JsonPropertyName("routingRule")]
     public IList<V1beta2BucketWebsiteConfigurationStatusAtProviderRoutingRule>? RoutingRule { get; set; }
 
-    /// <summary>
-    /// JSON array containing routing rules
-    /// describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.
-    /// </summary>
+    /// <summary>JSON array containing routing rules describing redirect behavior and when redirects are applied. Use this parameter when your routing rules contain empty String values (&quot; &quot;) as seen in the example above.</summary>
     [JsonPropertyName("routingRules")]
     public string? RoutingRules { get; set; }
 

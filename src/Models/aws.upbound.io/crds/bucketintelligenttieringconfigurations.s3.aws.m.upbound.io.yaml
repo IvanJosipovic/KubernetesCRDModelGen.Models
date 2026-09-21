@@ -140,7 +140,7 @@ spec:
                         type: object
                     type: object
                   filter:
-                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria (documented below).
+                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria. See filter Block below.
                     properties:
                       prefix:
                         description: Object key name prefix that identifies the subset of objects to which the configuration applies.
@@ -148,7 +148,7 @@ spec:
                       tags:
                         additionalProperties:
                           type: string
-                        description: Key-value map of resource tags.
+                        description: All of these tags must exist in the object's tag set in order for the configuration to apply.
                         type: object
                         x-kubernetes-map-type: granular
                     type: object
@@ -161,10 +161,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   status:
-                    description: 'Specifies the status of the configuration. Valid values: Enabled, Disabled.'
+                    description: 'Status of the configuration. Valid values: Enabled, Disabled.'
                     type: string
                   tiering:
-                    description: S3 Intelligent-Tiering storage class tiers of the configuration (documented below).
+                    description: S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.
                     items:
                       properties:
                         accessTier:
@@ -274,7 +274,7 @@ spec:
                         type: object
                     type: object
                   filter:
-                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria (documented below).
+                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria. See filter Block below.
                     properties:
                       prefix:
                         description: Object key name prefix that identifies the subset of objects to which the configuration applies.
@@ -282,7 +282,7 @@ spec:
                       tags:
                         additionalProperties:
                           type: string
-                        description: Key-value map of resource tags.
+                        description: All of these tags must exist in the object's tag set in order for the configuration to apply.
                         type: object
                         x-kubernetes-map-type: granular
                     type: object
@@ -290,10 +290,10 @@ spec:
                     description: Unique name used to identify the S3 Intelligent-Tiering configuration for the bucket.
                     type: string
                   status:
-                    description: 'Specifies the status of the configuration. Valid values: Enabled, Disabled.'
+                    description: 'Status of the configuration. Valid values: Enabled, Disabled.'
                     type: string
                   tiering:
-                    description: S3 Intelligent-Tiering storage class tiers of the configuration (documented below).
+                    description: S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.
                     items:
                       properties:
                         accessTier:
@@ -377,7 +377,7 @@ spec:
                     description: Name of the bucket this intelligent tiering configuration is associated with.
                     type: string
                   filter:
-                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria (documented below).
+                    description: Bucket filter. The configuration only includes objects that meet the filter's criteria. See filter Block below.
                     properties:
                       prefix:
                         description: Object key name prefix that identifies the subset of objects to which the configuration applies.
@@ -385,7 +385,7 @@ spec:
                       tags:
                         additionalProperties:
                           type: string
-                        description: Key-value map of resource tags.
+                        description: All of these tags must exist in the object's tag set in order for the configuration to apply.
                         type: object
                         x-kubernetes-map-type: granular
                     type: object
@@ -400,10 +400,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   status:
-                    description: 'Specifies the status of the configuration. Valid values: Enabled, Disabled.'
+                    description: 'Status of the configuration. Valid values: Enabled, Disabled.'
                     type: string
                   tiering:
-                    description: S3 Intelligent-Tiering storage class tiers of the configuration (documented below).
+                    description: S3 Intelligent-Tiering storage class tiers of the configuration. See tiering Block below.
                     items:
                       properties:
                         accessTier:

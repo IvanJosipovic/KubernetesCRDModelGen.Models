@@ -452,7 +452,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   snsTopicArn:
-                    description: Amazon Resource Name (ARN) of SNS Topic.
+                    description: ARN of SNS Topic.
                     type: string
                   snsTopicArnRef:
                     description: Reference to a Topic in sns to populate snsTopicArn.
@@ -1030,7 +1030,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   snsTopicArn:
-                    description: Amazon Resource Name (ARN) of SNS Topic.
+                    description: ARN of SNS Topic.
                     type: string
                   snsTopicArnRef:
                     description: Reference to a Topic in sns to populate snsTopicArn.
@@ -1270,7 +1270,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the configuration.
+                    description: ARN of the configuration.
                     type: string
                   dateCreated:
                     description: Date when the configuration was created.
@@ -1282,7 +1282,7 @@ spec:
                     description: Description for the configuration.
                     type: string
                   id:
-                    description: Amazon Resource Name (ARN) of the configuration.
+                    description: ARN of the configuration.
                     type: string
                   instanceMetadataOptions:
                     description: Configuration block with instance metadata options for the HTTP requests that pipeline builds use to launch EC2 build and test instances. Detailed below.
@@ -1357,7 +1357,7 @@ spec:
                     type: array
                     x-kubernetes-list-type: set
                   snsTopicArn:
-                    description: Amazon Resource Name (ARN) of SNS Topic.
+                    description: ARN of SNS Topic.
                     type: string
                   subnetId:
                     description: EC2 Subnet identifier. Also requires security_group_ids argument.

@@ -162,7 +162,7 @@ spec:
                         description: 'Defines which category of execution history events are logged. Valid values: ALL, ERROR, FATAL, OFF'
                         type: string
                       logDestination:
-                        description: Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
+                        description: ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
                         type: string
                     type: object
                   publish:
@@ -174,7 +174,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
+                    description: ARN of the IAM role to use for this state machine.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -392,14 +392,14 @@ spec:
                         description: 'Defines which category of execution history events are logged. Valid values: ALL, ERROR, FATAL, OFF'
                         type: string
                       logDestination:
-                        description: Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
+                        description: ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
                         type: string
                     type: object
                   publish:
                     description: 'Set to true to publish a version of the state machine during creation. Default: false.'
                     type: boolean
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
+                    description: ARN of the IAM role to use for this state machine.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -600,7 +600,7 @@ spec:
                         description: 'Defines which category of execution history events are logged. Valid values: ALL, ERROR, FATAL, OFF'
                         type: string
                       logDestination:
-                        description: Amazon Resource Name (ARN) of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
+                        description: ARN of a CloudWatch log group. Make sure the State Machine has the correct IAM policies for logging. The ARN must end with :*
                         type: string
                     type: object
                   publish:
@@ -615,7 +615,7 @@ spec:
                     description: The ARN of the state machine.
                     type: string
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
+                    description: ARN of the IAM role to use for this state machine.
                     type: string
                   stateMachineVersionArn:
                     description: The ARN of the state machine version.

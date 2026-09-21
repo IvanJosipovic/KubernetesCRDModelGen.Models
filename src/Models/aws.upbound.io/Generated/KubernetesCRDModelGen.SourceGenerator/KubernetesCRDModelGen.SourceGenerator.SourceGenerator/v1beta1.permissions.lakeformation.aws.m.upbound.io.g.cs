@@ -218,7 +218,7 @@ public partial class V1beta1PermissionsSpecForProviderDataLocationArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsSpecForProviderDataLocation
 {
-    /// <summary>Amazon Resource Name (ARN) that uniquely identifies the data location resource.</summary>
+    /// <summary>ARN that uniquely identifies the data location resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -918,7 +918,7 @@ public partial class V1beta1PermissionsSpecInitProviderDataLocationArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsSpecInitProviderDataLocation
 {
-    /// <summary>Amazon Resource Name (ARN) that uniquely identifies the data location resource.</summary>
+    /// <summary>ARN that uniquely identifies the data location resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1575,7 +1575,7 @@ public partial class V1beta1PermissionsStatusAtProviderDataCellsFilter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsStatusAtProviderDataLocation
 {
-    /// <summary>Amazon Resource Name (ARN) that uniquely identifies the data location resource.</summary>
+    /// <summary>ARN that uniquely identifies the data location resource.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

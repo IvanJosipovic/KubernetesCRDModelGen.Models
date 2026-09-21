@@ -413,6 +413,10 @@ public partial class V1beta1HostedConfigurationVersionSpecForProvider
     /// </summary>
     [JsonPropertyName("region")]
     public required string Region { get; set; }
+
+    /// <summary>User-defined label for the AppConfig hosted configuration version. This value must contain at least one non-numeric character.</summary>
+    [JsonPropertyName("versionLabel")]
+    public string? VersionLabel { get; set; }
 }
 
 /// <summary>
@@ -778,6 +782,10 @@ public partial class V1beta1HostedConfigurationVersionSpecInitProvider
     /// <summary>Description of the configuration.</summary>
     [JsonPropertyName("description")]
     public string? Description { get; set; }
+
+    /// <summary>User-defined label for the AppConfig hosted configuration version. This value must contain at least one non-numeric character.</summary>
+    [JsonPropertyName("versionLabel")]
+    public string? VersionLabel { get; set; }
 }
 
 /// <summary>
@@ -997,6 +1005,10 @@ public partial class V1beta1HostedConfigurationVersionStatusAtProvider
     /// </summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>User-defined label for the AppConfig hosted configuration version. This value must contain at least one non-numeric character.</summary>
+    [JsonPropertyName("versionLabel")]
+    public string? VersionLabel { get; set; }
 
     /// <summary>Version number of the hosted configuration.</summary>
     [JsonPropertyName("versionNumber")]

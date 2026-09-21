@@ -191,45 +191,45 @@ public partial class V1beta1ConnectorSpecForProviderAccessRoleSelector
     public V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAs2Config
 {
-    /// <summary>Specifies weather AS2 file is compressed. The valud values are ZLIB and  DISABLED.</summary>
+    /// <summary>Whether AS2 file is compressed. The valid values are ZLIB and DISABLED.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>The algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
+    /// <summary>Algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
     [JsonPropertyName("encryptionAlgorithm")]
     public string? EncryptionAlgorithm { get; set; }
 
-    /// <summary>The unique identifier for the AS2 local profile.</summary>
+    /// <summary>Unique identifier for the AS2 local profile.</summary>
     [JsonPropertyName("localProfileId")]
     public string? LocalProfileId { get; set; }
 
-    /// <summary>Used for outbound requests to determine if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
+    /// <summary>Determines, for outbound requests, if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
     [JsonPropertyName("mdnResponse")]
     public string? MdnResponse { get; set; }
 
-    /// <summary>The signing algorithm for the Mdn response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
+    /// <summary>Signing algorithm for the MDN response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
     [JsonPropertyName("mdnSigningAlgorithm")]
     public string? MdnSigningAlgorithm { get; set; }
 
-    /// <summary>Used as the subject HTTP header attribute in AS2 messages that are being sent with the connector.</summary>
+    /// <summary>Subject HTTP header attribute used in AS2 messages that are being sent with the connector.</summary>
     [JsonPropertyName("messageSubject")]
     public string? MessageSubject { get; set; }
 
-    /// <summary>The unique identifier for the AS2 partner profile.</summary>
+    /// <summary>Unique identifier for the AS2 partner profile.</summary>
     [JsonPropertyName("partnerProfileId")]
     public string? PartnerProfileId { get; set; }
 
-    /// <summary>The algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
+    /// <summary>Algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderEgressConfigVpcLattice
@@ -243,12 +243,12 @@ public partial class V1beta1ConnectorSpecForProviderEgressConfigVpcLattice
     public string? ResourceConfigurationArn { get; set; }
 }
 
-/// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+/// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderEgressConfig
 {
-    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
     [JsonPropertyName("vpcLattice")]
     public V1beta1ConnectorSpecForProviderEgressConfigVpcLattice? VpcLattice { get; set; }
 }
@@ -408,16 +408,16 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelect
     public V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfig
 {
-    /// <summary>A list of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
+    /// <summary>List of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
     [JsonPropertyName("trustedHostKeys")]
     public IList<string>? TrustedHostKeys { get; set; }
 
-    /// <summary>The identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the Amazon Resource Name (ARN) or the name of the secret.</summary>
+    /// <summary>Identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the ARN or the name of the secret.</summary>
     [JsonPropertyName("userSecretId")]
     public string? UserSecretId { get; set; }
 
@@ -434,7 +434,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProvider
 {
-    /// <summary>The IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
+    /// <summary>IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
     [JsonPropertyName("accessRole")]
     public string? AccessRole { get; set; }
 
@@ -446,15 +446,15 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("accessRoleSelector")]
     public V1beta1ConnectorSpecForProviderAccessRoleSelector? AccessRoleSelector { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
     [JsonPropertyName("as2Config")]
     public V1beta1ConnectorSpecForProviderAs2Config? As2Config { get; set; }
 
-    /// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+    /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
     [JsonPropertyName("egressConfig")]
     public V1beta1ConnectorSpecForProviderEgressConfig? EgressConfig { get; set; }
 
-    /// <summary>The IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
+    /// <summary>IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
@@ -469,7 +469,7 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
     [JsonPropertyName("sftpConfig")]
     public V1beta1ConnectorSpecForProviderSftpConfig? SftpConfig { get; set; }
 
@@ -477,7 +477,7 @@ public partial class V1beta1ConnectorSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
+    /// <summary>URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -637,45 +637,45 @@ public partial class V1beta1ConnectorSpecInitProviderAccessRoleSelector
     public V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAs2Config
 {
-    /// <summary>Specifies weather AS2 file is compressed. The valud values are ZLIB and  DISABLED.</summary>
+    /// <summary>Whether AS2 file is compressed. The valid values are ZLIB and DISABLED.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>The algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
+    /// <summary>Algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
     [JsonPropertyName("encryptionAlgorithm")]
     public string? EncryptionAlgorithm { get; set; }
 
-    /// <summary>The unique identifier for the AS2 local profile.</summary>
+    /// <summary>Unique identifier for the AS2 local profile.</summary>
     [JsonPropertyName("localProfileId")]
     public string? LocalProfileId { get; set; }
 
-    /// <summary>Used for outbound requests to determine if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
+    /// <summary>Determines, for outbound requests, if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
     [JsonPropertyName("mdnResponse")]
     public string? MdnResponse { get; set; }
 
-    /// <summary>The signing algorithm for the Mdn response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
+    /// <summary>Signing algorithm for the MDN response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
     [JsonPropertyName("mdnSigningAlgorithm")]
     public string? MdnSigningAlgorithm { get; set; }
 
-    /// <summary>Used as the subject HTTP header attribute in AS2 messages that are being sent with the connector.</summary>
+    /// <summary>Subject HTTP header attribute used in AS2 messages that are being sent with the connector.</summary>
     [JsonPropertyName("messageSubject")]
     public string? MessageSubject { get; set; }
 
-    /// <summary>The unique identifier for the AS2 partner profile.</summary>
+    /// <summary>Unique identifier for the AS2 partner profile.</summary>
     [JsonPropertyName("partnerProfileId")]
     public string? PartnerProfileId { get; set; }
 
-    /// <summary>The algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
+    /// <summary>Algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderEgressConfigVpcLattice
@@ -689,12 +689,12 @@ public partial class V1beta1ConnectorSpecInitProviderEgressConfigVpcLattice
     public string? ResourceConfigurationArn { get; set; }
 }
 
-/// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+/// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderEgressConfig
 {
-    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
     [JsonPropertyName("vpcLattice")]
     public V1beta1ConnectorSpecInitProviderEgressConfigVpcLattice? VpcLattice { get; set; }
 }
@@ -854,16 +854,16 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelec
     public V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfig
 {
-    /// <summary>A list of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
+    /// <summary>List of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
     [JsonPropertyName("trustedHostKeys")]
     public IList<string>? TrustedHostKeys { get; set; }
 
-    /// <summary>The identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the Amazon Resource Name (ARN) or the name of the secret.</summary>
+    /// <summary>Identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the ARN or the name of the secret.</summary>
     [JsonPropertyName("userSecretId")]
     public string? UserSecretId { get; set; }
 
@@ -892,7 +892,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProvider
 {
-    /// <summary>The IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
+    /// <summary>IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
     [JsonPropertyName("accessRole")]
     public string? AccessRole { get; set; }
 
@@ -904,15 +904,15 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("accessRoleSelector")]
     public V1beta1ConnectorSpecInitProviderAccessRoleSelector? AccessRoleSelector { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
     [JsonPropertyName("as2Config")]
     public V1beta1ConnectorSpecInitProviderAs2Config? As2Config { get; set; }
 
-    /// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+    /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
     [JsonPropertyName("egressConfig")]
     public V1beta1ConnectorSpecInitProviderEgressConfig? EgressConfig { get; set; }
 
-    /// <summary>The IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
+    /// <summary>IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
@@ -920,7 +920,7 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
     [JsonPropertyName("sftpConfig")]
     public V1beta1ConnectorSpecInitProviderSftpConfig? SftpConfig { get; set; }
 
@@ -928,7 +928,7 @@ public partial class V1beta1ConnectorSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
+    /// <summary>URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }
@@ -1040,45 +1040,45 @@ public partial class V1beta1ConnectorSpec
     public V1beta1ConnectorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderAs2Config
 {
-    /// <summary>Specifies weather AS2 file is compressed. The valud values are ZLIB and  DISABLED.</summary>
+    /// <summary>Whether AS2 file is compressed. The valid values are ZLIB and DISABLED.</summary>
     [JsonPropertyName("compression")]
     public string? Compression { get; set; }
 
-    /// <summary>The algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
+    /// <summary>Algorithm that is used to encrypt the file. The valid values are AES128_CBC | AES192_CBC | AES256_CBC | NONE.</summary>
     [JsonPropertyName("encryptionAlgorithm")]
     public string? EncryptionAlgorithm { get; set; }
 
-    /// <summary>The unique identifier for the AS2 local profile.</summary>
+    /// <summary>Unique identifier for the AS2 local profile.</summary>
     [JsonPropertyName("localProfileId")]
     public string? LocalProfileId { get; set; }
 
-    /// <summary>Used for outbound requests to determine if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
+    /// <summary>Determines, for outbound requests, if a partner response for transfers is synchronous or asynchronous. The valid values are SYNC and NONE.</summary>
     [JsonPropertyName("mdnResponse")]
     public string? MdnResponse { get; set; }
 
-    /// <summary>The signing algorithm for the Mdn response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
+    /// <summary>Signing algorithm for the MDN response. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE | DEFAULT.</summary>
     [JsonPropertyName("mdnSigningAlgorithm")]
     public string? MdnSigningAlgorithm { get; set; }
 
-    /// <summary>Used as the subject HTTP header attribute in AS2 messages that are being sent with the connector.</summary>
+    /// <summary>Subject HTTP header attribute used in AS2 messages that are being sent with the connector.</summary>
     [JsonPropertyName("messageSubject")]
     public string? MessageSubject { get; set; }
 
-    /// <summary>The unique identifier for the AS2 partner profile.</summary>
+    /// <summary>Unique identifier for the AS2 partner profile.</summary>
     [JsonPropertyName("partnerProfileId")]
     public string? PartnerProfileId { get; set; }
 
-    /// <summary>The algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
+    /// <summary>Algorithm that is used to sign AS2 messages sent with the connector. The valid values are SHA256 | SHA384 | SHA512 | SHA1 | NONE .</summary>
     [JsonPropertyName("signingAlgorithm")]
     public string? SigningAlgorithm { get; set; }
 }
 
-/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+/// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderEgressConfigVpcLattice
@@ -1092,26 +1092,26 @@ public partial class V1beta1ConnectorStatusAtProviderEgressConfigVpcLattice
     public string? ResourceConfigurationArn { get; set; }
 }
 
-/// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+/// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderEgressConfig
 {
-    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. Fields documented below.</summary>
+    /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
     [JsonPropertyName("vpcLattice")]
     public V1beta1ConnectorStatusAtProviderEgressConfigVpcLattice? VpcLattice { get; set; }
 }
 
-/// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+/// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderSftpConfig
 {
-    /// <summary>A list of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
+    /// <summary>List of public portion of the host key, or keys, that are used to authenticate the user to the external server to which you are connecting.(https://docs.aws.amazon.com/transfer/latest/userguide/API_SftpConnectorConfig.html)</summary>
     [JsonPropertyName("trustedHostKeys")]
     public IList<string>? TrustedHostKeys { get; set; }
 
-    /// <summary>The identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the Amazon Resource Name (ARN) or the name of the secret.</summary>
+    /// <summary>Identifier for the secret (in AWS Secrets Manager) that contains the SFTP user&apos;s private key, password, or both. The identifier can be either the ARN or the name of the secret.</summary>
     [JsonPropertyName("userSecretId")]
     public string? UserSecretId { get; set; }
 }
@@ -1120,30 +1120,30 @@ public partial class V1beta1ConnectorStatusAtProviderSftpConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProvider
 {
-    /// <summary>The IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
+    /// <summary>IAM Role which provides read and write access to the parent directory of the file location mentioned in the StartFileTransfer request.</summary>
     [JsonPropertyName("accessRole")]
     public string? AccessRole { get; set; }
 
-    /// <summary>The ARN of the connector.</summary>
+    /// <summary>ARN of the connector.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
     [JsonPropertyName("as2Config")]
     public V1beta1ConnectorStatusAtProviderAs2Config? As2Config { get; set; }
 
-    /// <summary>The unique identifier for the AS2 profile or SFTP Profile.</summary>
+    /// <summary>Unique identifier for the AS2 profile or SFTP Profile.</summary>
     [JsonPropertyName("connectorId")]
     public string? ConnectorId { get; set; }
 
-    /// <summary>Specifies the egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. Fields documented below.</summary>
+    /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
     [JsonPropertyName("egressConfig")]
     public V1beta1ConnectorStatusAtProviderEgressConfig? EgressConfig { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
+    /// <summary>IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3 events.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
@@ -1158,7 +1158,7 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
-    /// <summary>Either SFTP or AS2 is configured.The parameters to configure for the connector object. Fields documented below.</summary>
+    /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
     [JsonPropertyName("sftpConfig")]
     public V1beta1ConnectorStatusAtProviderSftpConfig? SftpConfig { get; set; }
 
@@ -1169,7 +1169,7 @@ public partial class V1beta1ConnectorStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
+    /// <summary>URL of the partners AS2 endpoint or SFTP endpoint. Required for AS2 connectors and service-managed SFTP connectors. Must be null when using VPC Lattice egress configuration.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 }

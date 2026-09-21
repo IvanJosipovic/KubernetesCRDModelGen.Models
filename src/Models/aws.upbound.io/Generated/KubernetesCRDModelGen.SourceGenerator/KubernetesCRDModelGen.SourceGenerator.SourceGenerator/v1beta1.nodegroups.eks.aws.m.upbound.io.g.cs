@@ -955,11 +955,33 @@ public partial class V1beta1NodeGroupSpecForProviderVersionSelector
     public V1beta1NodeGroupSpecForProviderVersionSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodeGroupSpecForProviderWarmPoolConfig
+{
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    [JsonPropertyName("maxGroupPreparedCapacity")]
+    public double? MaxGroupPreparedCapacity { get; set; }
+
+    /// <summary>Minimum number of instances to maintain in the warm pool. Defaults to 0.</summary>
+    [JsonPropertyName("minSize")]
+    public double? MinSize { get; set; }
+
+    /// <summary>Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.</summary>
+    [JsonPropertyName("poolState")]
+    public string? PoolState { get; set; }
+
+    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    [JsonPropertyName("reuseOnScaleIn")]
+    public bool? ReuseOnScaleIn { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupSpecForProvider
 {
-    /// <summary>Type of Amazon Machine Image (AMI) associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
+    /// <summary>Type of AMI associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
     [JsonPropertyName("amiType")]
     public string? AmiType { get; set; }
 
@@ -1003,7 +1025,7 @@ public partial class V1beta1NodeGroupSpecForProvider
     [JsonPropertyName("nodeRepairConfig")]
     public V1beta1NodeGroupSpecForProviderNodeRepairConfig? NodeRepairConfig { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Node Group.</summary>
     [JsonPropertyName("nodeRoleArn")]
     public string? NodeRoleArn { get; set; }
 
@@ -1069,6 +1091,10 @@ public partial class V1beta1NodeGroupSpecForProvider
     /// <summary>Selector for a Cluster in eks to populate version.</summary>
     [JsonPropertyName("versionSelector")]
     public V1beta1NodeGroupSpecForProviderVersionSelector? VersionSelector { get; set; }
+
+    /// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+    [JsonPropertyName("warmPoolConfig")]
+    public V1beta1NodeGroupSpecForProviderWarmPoolConfig? WarmPoolConfig { get; set; }
 }
 
 /// <summary>Configuration block with Launch Template settings. See launch_template below for details. Conflicts with remote_access.</summary>
@@ -1835,6 +1861,28 @@ public partial class V1beta1NodeGroupSpecInitProviderVersionSelector
     public V1beta1NodeGroupSpecInitProviderVersionSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodeGroupSpecInitProviderWarmPoolConfig
+{
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    [JsonPropertyName("maxGroupPreparedCapacity")]
+    public double? MaxGroupPreparedCapacity { get; set; }
+
+    /// <summary>Minimum number of instances to maintain in the warm pool. Defaults to 0.</summary>
+    [JsonPropertyName("minSize")]
+    public double? MinSize { get; set; }
+
+    /// <summary>Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.</summary>
+    [JsonPropertyName("poolState")]
+    public string? PoolState { get; set; }
+
+    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    [JsonPropertyName("reuseOnScaleIn")]
+    public bool? ReuseOnScaleIn { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -1851,7 +1899,7 @@ public partial class V1beta1NodeGroupSpecInitProviderVersionSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupSpecInitProvider
 {
-    /// <summary>Type of Amazon Machine Image (AMI) associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
+    /// <summary>Type of AMI associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
     [JsonPropertyName("amiType")]
     public string? AmiType { get; set; }
 
@@ -1883,7 +1931,7 @@ public partial class V1beta1NodeGroupSpecInitProvider
     [JsonPropertyName("nodeRepairConfig")]
     public V1beta1NodeGroupSpecInitProviderNodeRepairConfig? NodeRepairConfig { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Node Group.</summary>
     [JsonPropertyName("nodeRoleArn")]
     public string? NodeRoleArn { get; set; }
 
@@ -1942,6 +1990,10 @@ public partial class V1beta1NodeGroupSpecInitProvider
     /// <summary>Selector for a Cluster in eks to populate version.</summary>
     [JsonPropertyName("versionSelector")]
     public V1beta1NodeGroupSpecInitProviderVersionSelector? VersionSelector { get; set; }
+
+    /// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+    [JsonPropertyName("warmPoolConfig")]
+    public V1beta1NodeGroupSpecInitProviderWarmPoolConfig? WarmPoolConfig { get; set; }
 }
 
 /// <summary>
@@ -2209,15 +2261,37 @@ public partial class V1beta1NodeGroupStatusAtProviderUpdateConfig
     public string? UpdateStrategy { get; set; }
 }
 
+/// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1NodeGroupStatusAtProviderWarmPoolConfig
+{
+    /// <summary>Maximum number of instances that are allowed to be in the warm pool combined with the Auto Scaling Group. Use -1 to specify an unlimited capacity.</summary>
+    [JsonPropertyName("maxGroupPreparedCapacity")]
+    public double? MaxGroupPreparedCapacity { get; set; }
+
+    /// <summary>Minimum number of instances to maintain in the warm pool. Defaults to 0.</summary>
+    [JsonPropertyName("minSize")]
+    public double? MinSize { get; set; }
+
+    /// <summary>Instance state to transition warm pool instances to. Valid values: STOPPED, RUNNING, HIBERNATED. Defaults to STOPPED.</summary>
+    [JsonPropertyName("poolState")]
+    public string? PoolState { get; set; }
+
+    /// <summary>Whether to return instances in the Auto Scaling Group to the warm pool on scale in. Not supported on Bottlerocket. Defaults to false.</summary>
+    [JsonPropertyName("reuseOnScaleIn")]
+    public bool? ReuseOnScaleIn { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NodeGroupStatusAtProvider
 {
-    /// <summary>Type of Amazon Machine Image (AMI) associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
+    /// <summary>Type of AMI associated with the EKS Node Group. See the AWS documentation for valid values.</summary>
     [JsonPropertyName("amiType")]
     public string? AmiType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the EKS Node Group.</summary>
+    /// <summary>ARN of the EKS Node Group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -2257,7 +2331,7 @@ public partial class V1beta1NodeGroupStatusAtProvider
     [JsonPropertyName("nodeRepairConfig")]
     public V1beta1NodeGroupStatusAtProviderNodeRepairConfig? NodeRepairConfig { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.</summary>
+    /// <summary>ARN of the IAM Role that provides permissions for the EKS Node Group.</summary>
     [JsonPropertyName("nodeRoleArn")]
     public string? NodeRoleArn { get; set; }
 
@@ -2311,6 +2385,10 @@ public partial class V1beta1NodeGroupStatusAtProvider
     /// <summary>Kubernetes version. Defaults to EKS Cluster Kubernetes version.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
+
+    /// <summary>Configuration block with EC2 Auto Scaling warm pool settings. Including this block enables the warm pool; removing it disables and removes the warm pool. See warm_pool_config below for details.</summary>
+    [JsonPropertyName("warmPoolConfig")]
+    public V1beta1NodeGroupStatusAtProviderWarmPoolConfig? WarmPoolConfig { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

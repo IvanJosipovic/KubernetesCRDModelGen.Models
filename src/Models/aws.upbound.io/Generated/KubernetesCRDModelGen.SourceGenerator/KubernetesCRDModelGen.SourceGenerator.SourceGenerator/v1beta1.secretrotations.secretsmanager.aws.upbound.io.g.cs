@@ -67,6 +67,338 @@ public enum V1beta1SecretRotationSpecDeletionPolicyEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueRef")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueRef? ValueRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueSelector")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadataValueSelector? ValueSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum>))]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecretRotationSpecForProviderRotationLambdaArnRefPolicyResolutionEnum
@@ -393,6 +725,22 @@ public partial class V1beta1SecretRotationSpecForProviderSecretIdSelector
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecretRotationSpecForProvider
 {
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta1SecretRotationSpecForProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
+    /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnRef")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnRef? ExternalSecretRotationRoleArnRef { get; set; }
+
+    /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnSelector")]
+    public V1beta1SecretRotationSpecForProviderExternalSecretRotationRoleArnSelector? ExternalSecretRotationRoleArnSelector { get; set; }
+
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
     /// Region is the region you&apos;d like your resource to be created in.
@@ -403,6 +751,10 @@ public partial class V1beta1SecretRotationSpecForProvider
     /// <summary>Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
     [JsonPropertyName("rotateImmediately")]
     public bool? RotateImmediately { get; set; }
+
+    /// <summary>Whether automatic rotation is enabled for the secret. Set to false to disable rotation on a secret whose rotation is otherwise managed by AWS (for example, an RDS master user password secret). When false, rotation_rules must be omitted. Defaults to enabled when rotation_rules is configured. Destroying this resource does not re-enable the automatic rotation that AWS configured.</summary>
+    [JsonPropertyName("rotationEnabled")]
+    public bool? RotationEnabled { get; set; }
 
     /// <summary>Specifies the ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
     [JsonPropertyName("rotationLambdaArn")]
@@ -431,6 +783,338 @@ public partial class V1beta1SecretRotationSpecForProvider
     /// <summary>Selector for a Secret in secretsmanager to populate secretId.</summary>
     [JsonPropertyName("secretIdSelector")]
     public V1beta1SecretRotationSpecForProviderSecretIdSelector? SecretIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    /// <summary>Reference to a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueRef")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueRef? ValueRef { get; set; }
+
+    /// <summary>Selector for a Secret in secretsmanager to populate value.</summary>
+    [JsonPropertyName("valueSelector")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadataValueSelector? ValueSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -778,9 +1462,29 @@ public partial class V1beta1SecretRotationSpecInitProviderSecretIdSelector
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecretRotationSpecInitProvider
 {
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta1SecretRotationSpecInitProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
+    /// <summary>Reference to a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnRef")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnRef? ExternalSecretRotationRoleArnRef { get; set; }
+
+    /// <summary>Selector for a Role in iam to populate externalSecretRotationRoleArn.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArnSelector")]
+    public V1beta1SecretRotationSpecInitProviderExternalSecretRotationRoleArnSelector? ExternalSecretRotationRoleArnSelector { get; set; }
+
     /// <summary>Specifies whether to rotate the secret immediately or wait until the next scheduled rotation window. The rotation schedule is defined in rotation_rules. For secrets that use a Lambda rotation function to rotate, if you don&apos;t immediately rotate the secret, Secrets Manager tests the rotation configuration by running the testSecret step (https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotate-secrets_how.html) of the Lambda rotation function. The test creates an AWSPENDING version of the secret and then removes it. Defaults to true.</summary>
     [JsonPropertyName("rotateImmediately")]
     public bool? RotateImmediately { get; set; }
+
+    /// <summary>Whether automatic rotation is enabled for the secret. Set to false to disable rotation on a secret whose rotation is otherwise managed by AWS (for example, an RDS master user password secret). When false, rotation_rules must be omitted. Defaults to enabled when rotation_rules is configured. Destroying this resource does not re-enable the automatic rotation that AWS configured.</summary>
+    [JsonPropertyName("rotationEnabled")]
+    public bool? RotationEnabled { get; set; }
 
     /// <summary>Specifies the ARN of the Lambda function that can rotate the secret. Must be supplied if the secret is not managed by AWS.</summary>
     [JsonPropertyName("rotationLambdaArn")]
@@ -1004,6 +1708,20 @@ public partial class V1beta1SecretRotationSpec
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1SecretRotationStatusAtProviderExternalSecretRotationMetadata
+{
+    /// <summary>Metadata key name. Partner-specific keys are required for each external secret type. See partner documentation for required keys.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>Metadata value for the specified key.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecretRotationStatusAtProviderRotationRules
 {
     /// <summary>Specifies the number of days between automatic scheduled rotations of the secret. Either automatically_after_days or schedule_expression must be specified.</summary>
@@ -1024,6 +1742,14 @@ public partial class V1beta1SecretRotationStatusAtProviderRotationRules
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecretRotationStatusAtProvider
 {
+    /// <summary>Configuration block for metadata required by the external secret partner. Required for managed external secrets. See details below.</summary>
+    [JsonPropertyName("externalSecretRotationMetadata")]
+    public IList<V1beta1SecretRotationStatusAtProviderExternalSecretRotationMetadata>? ExternalSecretRotationMetadata { get; set; }
+
+    /// <summary>ARN of the IAM role that allows Secrets Manager to rotate the secret held by a third-party partner. Required for managed external secrets.</summary>
+    [JsonPropertyName("externalSecretRotationRoleArn")]
+    public string? ExternalSecretRotationRoleArn { get; set; }
+
     /// <summary>Amazon Resource Name (ARN) of the secret.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }

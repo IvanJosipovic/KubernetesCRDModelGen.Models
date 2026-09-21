@@ -1021,7 +1021,7 @@ public partial class V1beta1GatewaySpecForProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1GatewaySpecForProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
+    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM, NONE, AUTHENTICATE_ONLY. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 
@@ -2067,7 +2067,7 @@ public partial class V1beta1GatewaySpecInitProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1GatewaySpecInitProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
+    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM, NONE, AUTHENTICATE_ONLY. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 
@@ -2682,7 +2682,7 @@ public partial class V1beta1GatewayStatusAtProvider
     [JsonPropertyName("authorizerConfiguration")]
     public V1beta1GatewayStatusAtProviderAuthorizerConfiguration? AuthorizerConfiguration { get; set; }
 
-    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
+    /// <summary>Type of authorizer to use. Valid values: CUSTOM_JWT, AWS_IAM, NONE, AUTHENTICATE_ONLY. When set to CUSTOM_JWT, authorizer_configuration block is required.</summary>
     [JsonPropertyName("authorizerType")]
     public string? AuthorizerType { get; set; }
 

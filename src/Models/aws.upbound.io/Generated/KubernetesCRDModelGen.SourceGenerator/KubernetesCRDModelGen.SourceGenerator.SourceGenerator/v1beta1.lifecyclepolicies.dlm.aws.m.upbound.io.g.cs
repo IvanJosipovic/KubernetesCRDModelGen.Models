@@ -196,7 +196,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelect
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -231,7 +231,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCro
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
@@ -308,6 +308,10 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsParameter
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
+
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
 
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]
@@ -599,7 +603,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -627,11 +631,11 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("targetRegion")]
     public string? TargetRegion { get; set; }
 }
@@ -1031,7 +1035,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -1066,7 +1070,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCr
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
@@ -1143,6 +1147,10 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsParamete
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
+
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
 
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]
@@ -1434,7 +1442,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -1462,11 +1470,11 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("targetRegion")]
     public string? TargetRegion { get; set; }
 }
@@ -1823,7 +1831,7 @@ public partial class V1beta1LifecyclePolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -1858,7 +1866,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
@@ -1935,6 +1943,10 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsParamete
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
     [JsonPropertyName("excludeBootVolume")]
     public bool? ExcludeBootVolume { get; set; }
+
+    /// <summary>Map specifies whether to exclude volumes that have specific tags.</summary>
+    [JsonPropertyName("excludeDataVolumeTags")]
+    public IDictionary<string, string>? ExcludeDataVolumeTags { get; set; }
 
     /// <summary>Applies to AMI lifecycle policies only. Indicates whether targeted instances are rebooted when the lifecycle policy runs. true indicates that targeted instances are not rebooted when the policy runs. false indicates that target instances are rebooted when the policy runs. The default is true (instances are not rebooted).</summary>
     [JsonPropertyName("noReboot")]
@@ -2071,7 +2083,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
+    /// <summary>ARN of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
     [JsonPropertyName("cmkArn")]
     public string? CmkArn { get; set; }
 
@@ -2091,11 +2103,11 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
     [JsonPropertyName("retainRule")]
     public V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule? RetainRule { get; set; }
 
-    /// <summary>The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 
-    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the Amazon Resource Name (ARN) of the target Outpost for the snapshot copies.</summary>
+    /// <summary>Use only for DLM policies of policy_type=IMAGE_MANAGEMENT. The target Region or the ARN of the target Outpost for the snapshot copies.</summary>
     [JsonPropertyName("targetRegion")]
     public string? TargetRegion { get; set; }
 }
@@ -2295,7 +2307,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LifecyclePolicyStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the DLM Lifecycle Policy.</summary>
+    /// <summary>ARN of the DLM Lifecycle Policy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

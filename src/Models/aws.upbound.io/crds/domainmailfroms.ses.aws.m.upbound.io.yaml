@@ -58,7 +58,7 @@ spec:
               forProvider:
                 properties:
                   behaviorOnMxFailure:
-                    description: The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
+                    description: Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
                     type: string
                   domain:
                     description: Verified domain name or email identity to generate DKIM tokens for.
@@ -167,7 +167,7 @@ spec:
                   autoscaler.
                 properties:
                   behaviorOnMxFailure:
-                    description: The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
+                    description: Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
                     type: string
                   domain:
                     description: Verified domain name or email identity to generate DKIM tokens for.
@@ -322,13 +322,13 @@ spec:
               atProvider:
                 properties:
                   behaviorOnMxFailure:
-                    description: The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
+                    description: Action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to UseDefaultValue. See the SES API documentation for more information.
                     type: string
                   domain:
                     description: Verified domain name or email identity to generate DKIM tokens for.
                     type: string
                   id:
-                    description: The domain name.
+                    description: Domain name.
                     type: string
                   mailFromDomain:
                     description: Subdomain (of above domain) which is to be used as MAIL FROM address

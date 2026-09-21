@@ -620,7 +620,7 @@ spec:
                     description: Configuration block for the versioning parameters. See below.
                     properties:
                       mfaDelete:
-                        description: 'Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
+                        description: 'Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
                         type: string
                       status:
                         description: 'Versioning state of the bucket. Valid values: Enabled, Suspended, or Disabled. Disabled should only be used when creating or importing resources that correspond to unversioned S3 buckets.'
@@ -728,7 +728,7 @@ spec:
                     description: Configuration block for the versioning parameters. See below.
                     properties:
                       mfaDelete:
-                        description: 'Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
+                        description: 'Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
                         type: string
                       status:
                         description: 'Versioning state of the bucket. Valid values: Enabled, Suspended, or Disabled. Disabled should only be used when creating or importing resources that correspond to unversioned S3 buckets.'
@@ -836,7 +836,7 @@ spec:
                     description: Account ID of the expected bucket owner.
                     type: string
                   id:
-                    description: The bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.
+                    description: bucket or bucket and expected_bucket_owner separated by a comma (,) if the latter is provided.
                     type: string
                   mfa:
                     description: Concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
@@ -850,7 +850,7 @@ spec:
                     description: Configuration block for the versioning parameters. See below.
                     properties:
                       mfaDelete:
-                        description: 'Specifies whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
+                        description: 'Whether MFA delete is enabled in the bucket versioning configuration. Valid values: Enabled or Disabled.'
                         type: string
                       status:
                         description: 'Versioning state of the bucket. Valid values: Enabled, Suspended, or Disabled. Disabled should only be used when creating or importing resources that correspond to unversioned S3 buckets.'

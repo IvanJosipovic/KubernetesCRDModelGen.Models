@@ -36,12 +36,12 @@ public partial class V1beta1IndexList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1beta1Index> Items { get; set; }
 }
 
-/// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+/// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderEncryptionConfiguration
 {
-    /// <summary>AWS Key Management Service (KMS) customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key Amazon Resource Name (ARN).</summary>
+    /// <summary>KMS customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key ARN.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -50,7 +50,7 @@ public partial class V1beta1IndexSpecForProviderEncryptionConfiguration
     public string? SseType { get; set; }
 }
 
-/// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+/// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecForProviderMetadataConfiguration
@@ -231,7 +231,7 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("distanceMetric")]
     public string? DistanceMetric { get; set; }
 
-    /// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+    /// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1IndexSpecForProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -239,7 +239,7 @@ public partial class V1beta1IndexSpecForProvider
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
     [JsonPropertyName("metadataConfiguration")]
     public V1beta1IndexSpecForProviderMetadataConfiguration? MetadataConfiguration { get; set; }
 
@@ -267,12 +267,12 @@ public partial class V1beta1IndexSpecForProvider
     public V1beta1IndexSpecForProviderVectorBucketNameSelector? VectorBucketNameSelector { get; set; }
 }
 
-/// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+/// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderEncryptionConfiguration
 {
-    /// <summary>AWS Key Management Service (KMS) customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key Amazon Resource Name (ARN).</summary>
+    /// <summary>KMS customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key ARN.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -281,7 +281,7 @@ public partial class V1beta1IndexSpecInitProviderEncryptionConfiguration
     public string? SseType { get; set; }
 }
 
-/// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+/// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexSpecInitProviderMetadataConfiguration
@@ -474,7 +474,7 @@ public partial class V1beta1IndexSpecInitProvider
     [JsonPropertyName("distanceMetric")]
     public string? DistanceMetric { get; set; }
 
-    /// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+    /// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1IndexSpecInitProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -482,7 +482,7 @@ public partial class V1beta1IndexSpecInitProvider
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
     [JsonPropertyName("metadataConfiguration")]
     public V1beta1IndexSpecInitProviderMetadataConfiguration? MetadataConfiguration { get; set; }
 
@@ -610,12 +610,12 @@ public partial class V1beta1IndexSpec
     public V1beta1IndexSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+/// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderEncryptionConfiguration
 {
-    /// <summary>AWS Key Management Service (KMS) customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key Amazon Resource Name (ARN).</summary>
+    /// <summary>KMS customer managed key ID to use for the encryption configuration. This parameter is allowed if and only if sse_type is set to aws:kms. To specify the KMS key, you must use the format of the KMS key ARN.</summary>
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
@@ -624,7 +624,7 @@ public partial class V1beta1IndexStatusAtProviderEncryptionConfiguration
     public string? SseType { get; set; }
 }
 
-/// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+/// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProviderMetadataConfiguration
@@ -654,7 +654,7 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("distanceMetric")]
     public string? DistanceMetric { get; set; }
 
-    /// <summary>Block for encryption configuration for the vector index. See encyption_configuration block below.</summary>
+    /// <summary>Block for encryption configuration for the vector index. See encryption_configuration Block below.</summary>
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1IndexStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
@@ -669,7 +669,7 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("indexName")]
     public string? IndexName { get; set; }
 
-    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration block below.</summary>
+    /// <summary>Block for metadata configuration for the vector index. See metadata_configuration Block below.</summary>
     [JsonPropertyName("metadataConfiguration")]
     public V1beta1IndexStatusAtProviderMetadataConfiguration? MetadataConfiguration { get; set; }
 
@@ -684,7 +684,7 @@ public partial class V1beta1IndexStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 

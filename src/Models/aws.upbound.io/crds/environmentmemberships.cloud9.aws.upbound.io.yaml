@@ -156,7 +156,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   userArn:
-                    description: The Amazon Resource Name (ARN) of the environment member you want to add.
+                    description: ARN of the environment member you want to add.
                     type: string
                   userArnRef:
                     description: Reference to a User in iam to populate userArn.
@@ -360,7 +360,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   userArn:
-                    description: The Amazon Resource Name (ARN) of the environment member you want to add.
+                    description: ARN of the environment member you want to add.
                     type: string
                   userId:
                     description: The user ID in AWS Identity and Access Management (AWS IAM) of the environment member.

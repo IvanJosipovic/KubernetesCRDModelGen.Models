@@ -59,11 +59,11 @@ public enum V1beta1EmailIdentityMailFromAttributesSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecForProvider
 {
-    /// <summary>The action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
+    /// <summary>Action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
-    /// <summary>The custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
+    /// <summary>Custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
     [JsonPropertyName("mailFromDomain")]
     public string? MailFromDomain { get; set; }
 
@@ -91,11 +91,11 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesSpecInitProvider
 {
-    /// <summary>The action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
+    /// <summary>Action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
-    /// <summary>The custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
+    /// <summary>Custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
     [JsonPropertyName("mailFromDomain")]
     public string? MailFromDomain { get; set; }
 }
@@ -287,14 +287,14 @@ public partial class V1beta1EmailIdentityMailFromAttributesSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityMailFromAttributesStatusAtProvider
 {
-    /// <summary>The action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
+    /// <summary>Action to take if the required MX record isn&apos;t found when you send an email. Valid values: USE_DEFAULT_VALUE, REJECT_MESSAGE.</summary>
     [JsonPropertyName("behaviorOnMxFailure")]
     public string? BehaviorOnMxFailure { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
+    /// <summary>Custom MAIL FROM domain that you want the verified identity to use. Required if behavior_on_mx_failure is REJECT_MESSAGE.</summary>
     [JsonPropertyName("mailFromDomain")]
     public string? MailFromDomain { get; set; }
 

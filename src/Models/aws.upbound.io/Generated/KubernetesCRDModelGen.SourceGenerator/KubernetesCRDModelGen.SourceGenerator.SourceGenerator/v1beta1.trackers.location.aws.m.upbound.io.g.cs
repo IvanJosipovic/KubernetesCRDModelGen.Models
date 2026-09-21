@@ -568,7 +568,7 @@ public partial class V1beta1TrackerStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify a resource across all AWS.</summary>
+    /// <summary>ARN for the tracker resource. Used when you need to specify a resource across all AWS.</summary>
     [JsonPropertyName("trackerArn")]
     public string? TrackerArn { get; set; }
 

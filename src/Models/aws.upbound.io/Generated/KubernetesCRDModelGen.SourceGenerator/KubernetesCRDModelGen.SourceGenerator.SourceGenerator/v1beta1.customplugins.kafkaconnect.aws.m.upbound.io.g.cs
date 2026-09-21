@@ -351,7 +351,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeySelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3
 {
-    /// <summary>The Amazon Resource Name (ARN) of an S3 bucket.</summary>
+    /// <summary>ARN of an S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -737,7 +737,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3
 {
-    /// <summary>The Amazon Resource Name (ARN) of an S3 bucket.</summary>
+    /// <summary>ARN of an S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -921,7 +921,7 @@ public partial class V1beta1CustomPluginSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusAtProviderLocationS3
 {
-    /// <summary>The Amazon Resource Name (ARN) of an S3 bucket.</summary>
+    /// <summary>ARN of an S3 bucket.</summary>
     [JsonPropertyName("bucketArn")]
     public string? BucketArn { get; set; }
 
@@ -948,7 +948,7 @@ public partial class V1beta1CustomPluginStatusAtProviderLocation
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusAtProvider
 {
-    /// <summary>the Amazon Resource Name (ARN) of the custom plugin.</summary>
+    /// <summary>the ARN of the custom plugin.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

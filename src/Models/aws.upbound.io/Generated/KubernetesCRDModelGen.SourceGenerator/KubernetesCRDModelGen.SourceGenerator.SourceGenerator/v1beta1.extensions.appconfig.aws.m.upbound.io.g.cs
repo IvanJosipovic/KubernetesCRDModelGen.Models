@@ -354,11 +354,11 @@ public partial class V1beta1ExtensionSpecForProviderActionPointAction
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The action name.</summary>
+    /// <summary>Action name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An Amazon Resource Name (ARN) for an Identity and Access Management assume role.</summary>
+    /// <summary>ARN for an Identity and Access Management assume role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta1ExtensionSpecForProviderActionPointAction
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ExtensionSpecForProviderActionPointActionRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The extension URI associated to the action point in the extension definition. The URI can be an Amazon Resource Name (ARN) for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
+    /// <summary>Extension URI associated to the action point in the extension definition. The URI can be an ARN for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
@@ -387,11 +387,11 @@ public partial class V1beta1ExtensionSpecForProviderActionPointAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionSpecForProviderActionPoint
 {
-    /// <summary>An action defines the tasks the extension performs during the AppConfig workflow. Detailed below.</summary>
+    /// <summary>Action the extension performs during the AppConfig workflow. Detailed below.</summary>
     [JsonPropertyName("action")]
     public IList<V1beta1ExtensionSpecForProviderActionPointAction>? Action { get; set; }
 
-    /// <summary>The point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
+    /// <summary>Point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
     [JsonPropertyName("point")]
     public string? Point { get; set; }
 }
@@ -404,11 +404,11 @@ public partial class V1beta1ExtensionSpecForProviderParameter
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The parameter name.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Determines if a parameter value must be specified in the extension association.</summary>
+    /// <summary>Whether a parameter value must be specified in the extension association.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -417,7 +417,7 @@ public partial class V1beta1ExtensionSpecForProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionSpecForProvider
 {
-    /// <summary>The action points defined in the extension. Detailed below.</summary>
+    /// <summary>Action points defined in the extension. Detailed below.</summary>
     [JsonPropertyName("actionPoint")]
     public IList<V1beta1ExtensionSpecForProviderActionPoint>? ActionPoint { get; set; }
 
@@ -425,11 +425,11 @@ public partial class V1beta1ExtensionSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
+    /// <summary>Name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
+    /// <summary>Parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ExtensionSpecForProviderParameter>? Parameter { get; set; }
 
@@ -763,11 +763,11 @@ public partial class V1beta1ExtensionSpecInitProviderActionPointAction
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The action name.</summary>
+    /// <summary>Action name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An Amazon Resource Name (ARN) for an Identity and Access Management assume role.</summary>
+    /// <summary>ARN for an Identity and Access Management assume role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -779,7 +779,7 @@ public partial class V1beta1ExtensionSpecInitProviderActionPointAction
     [JsonPropertyName("roleArnSelector")]
     public V1beta1ExtensionSpecInitProviderActionPointActionRoleArnSelector? RoleArnSelector { get; set; }
 
-    /// <summary>The extension URI associated to the action point in the extension definition. The URI can be an Amazon Resource Name (ARN) for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
+    /// <summary>Extension URI associated to the action point in the extension definition. The URI can be an ARN for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 
@@ -796,11 +796,11 @@ public partial class V1beta1ExtensionSpecInitProviderActionPointAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionSpecInitProviderActionPoint
 {
-    /// <summary>An action defines the tasks the extension performs during the AppConfig workflow. Detailed below.</summary>
+    /// <summary>Action the extension performs during the AppConfig workflow. Detailed below.</summary>
     [JsonPropertyName("action")]
     public IList<V1beta1ExtensionSpecInitProviderActionPointAction>? Action { get; set; }
 
-    /// <summary>The point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
+    /// <summary>Point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
     [JsonPropertyName("point")]
     public string? Point { get; set; }
 }
@@ -813,11 +813,11 @@ public partial class V1beta1ExtensionSpecInitProviderParameter
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The parameter name.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Determines if a parameter value must be specified in the extension association.</summary>
+    /// <summary>Whether a parameter value must be specified in the extension association.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -838,7 +838,7 @@ public partial class V1beta1ExtensionSpecInitProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionSpecInitProvider
 {
-    /// <summary>The action points defined in the extension. Detailed below.</summary>
+    /// <summary>Action points defined in the extension. Detailed below.</summary>
     [JsonPropertyName("actionPoint")]
     public IList<V1beta1ExtensionSpecInitProviderActionPoint>? ActionPoint { get; set; }
 
@@ -846,11 +846,11 @@ public partial class V1beta1ExtensionSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>A name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
+    /// <summary>Name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
+    /// <summary>Parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ExtensionSpecInitProviderParameter>? Parameter { get; set; }
 
@@ -974,15 +974,15 @@ public partial class V1beta1ExtensionStatusAtProviderActionPointAction
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The action name.</summary>
+    /// <summary>Action name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An Amazon Resource Name (ARN) for an Identity and Access Management assume role.</summary>
+    /// <summary>ARN for an Identity and Access Management assume role.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The extension URI associated to the action point in the extension definition. The URI can be an Amazon Resource Name (ARN) for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
+    /// <summary>Extension URI associated to the action point in the extension definition. The URI can be an ARN for one of the following: an Lambda function, an Amazon Simple Queue Service queue, an Amazon Simple Notification Service topic, or the Amazon EventBridge default event bus.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
 }
@@ -991,11 +991,11 @@ public partial class V1beta1ExtensionStatusAtProviderActionPointAction
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionStatusAtProviderActionPoint
 {
-    /// <summary>An action defines the tasks the extension performs during the AppConfig workflow. Detailed below.</summary>
+    /// <summary>Action the extension performs during the AppConfig workflow. Detailed below.</summary>
     [JsonPropertyName("action")]
     public IList<V1beta1ExtensionStatusAtProviderActionPointAction>? Action { get; set; }
 
-    /// <summary>The point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
+    /// <summary>Point at which to perform the defined actions. Valid points are PRE_CREATE_HOSTED_CONFIGURATION_VERSION, PRE_START_DEPLOYMENT, ON_DEPLOYMENT_START, ON_DEPLOYMENT_STEP, ON_DEPLOYMENT_BAKING, ON_DEPLOYMENT_COMPLETE, ON_DEPLOYMENT_ROLLED_BACK.</summary>
     [JsonPropertyName("point")]
     public string? Point { get; set; }
 }
@@ -1008,11 +1008,11 @@ public partial class V1beta1ExtensionStatusAtProviderParameter
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The parameter name.</summary>
+    /// <summary>Parameter name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Determines if a parameter value must be specified in the extension association.</summary>
+    /// <summary>Whether a parameter value must be specified in the extension association.</summary>
     [JsonPropertyName("required")]
     public bool? Required { get; set; }
 }
@@ -1021,7 +1021,7 @@ public partial class V1beta1ExtensionStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExtensionStatusAtProvider
 {
-    /// <summary>The action points defined in the extension. Detailed below.</summary>
+    /// <summary>Action points defined in the extension. Detailed below.</summary>
     [JsonPropertyName("actionPoint")]
     public IList<V1beta1ExtensionStatusAtProviderActionPoint>? ActionPoint { get; set; }
 
@@ -1037,11 +1037,11 @@ public partial class V1beta1ExtensionStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
+    /// <summary>Name for the extension. Each extension name in your account must be unique. Extension versions use the same name.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
+    /// <summary>Parameters accepted by the extension. You specify parameter values when you associate the extension to an AppConfig resource by using the CreateExtensionAssociation API action. For Lambda extension actions, these parameters are included in the Lambda request object. Detailed below.</summary>
     [JsonPropertyName("parameter")]
     public IList<V1beta1ExtensionStatusAtProviderParameter>? Parameter { get; set; }
 
@@ -1059,7 +1059,7 @@ public partial class V1beta1ExtensionStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The version number for the extension.</summary>
+    /// <summary>Version number for the extension.</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
 }

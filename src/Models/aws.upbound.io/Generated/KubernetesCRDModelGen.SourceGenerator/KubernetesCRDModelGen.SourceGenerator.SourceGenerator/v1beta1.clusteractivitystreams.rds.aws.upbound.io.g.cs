@@ -353,11 +353,11 @@ public partial class V1beta1ClusterActivityStreamSpecForProviderResourceArnSelec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterActivityStreamSpecForProvider
 {
-    /// <summary>Specifies whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
+    /// <summary>Whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
     [JsonPropertyName("engineNativeAuditFieldsIncluded")]
     public bool? EngineNativeAuditFieldsIncluded { get; set; }
 
-    /// <summary>The AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
+    /// <summary>AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -369,7 +369,7 @@ public partial class V1beta1ClusterActivityStreamSpecForProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1ClusterActivityStreamSpecForProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
+    /// <summary>Mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
@@ -380,7 +380,7 @@ public partial class V1beta1ClusterActivityStreamSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the DB cluster.</summary>
+    /// <summary>ARN of the DB cluster.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -703,11 +703,11 @@ public partial class V1beta1ClusterActivityStreamSpecInitProviderResourceArnSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterActivityStreamSpecInitProvider
 {
-    /// <summary>Specifies whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
+    /// <summary>Whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
     [JsonPropertyName("engineNativeAuditFieldsIncluded")]
     public bool? EngineNativeAuditFieldsIncluded { get; set; }
 
-    /// <summary>The AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
+    /// <summary>AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -719,11 +719,11 @@ public partial class V1beta1ClusterActivityStreamSpecInitProvider
     [JsonPropertyName("kmsKeyIdSelector")]
     public V1beta1ClusterActivityStreamSpecInitProviderKmsKeyIdSelector? KmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
+    /// <summary>Mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the DB cluster.</summary>
+    /// <summary>ARN of the DB cluster.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -923,23 +923,23 @@ public partial class V1beta1ClusterActivityStreamSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterActivityStreamStatusAtProvider
 {
-    /// <summary>Specifies whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
+    /// <summary>Whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included. Defaults false.</summary>
     [JsonPropertyName("engineNativeAuditFieldsIncluded")]
     public bool? EngineNativeAuditFieldsIncluded { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the DB cluster.</summary>
+    /// <summary>ARN of the DB cluster.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the Amazon Kinesis data stream to be used for the database activity stream.</summary>
+    /// <summary>Name of the Amazon Kinesis data stream to be used for the database activity stream.</summary>
     [JsonPropertyName("kinesisStreamName")]
     public string? KinesisStreamName { get; set; }
 
-    /// <summary>The AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
+    /// <summary>AWS KMS key identifier for encrypting messages in the database activity stream. The AWS KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
+    /// <summary>Mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. One of: sync, async.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
@@ -950,7 +950,7 @@ public partial class V1beta1ClusterActivityStreamStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the DB cluster.</summary>
+    /// <summary>ARN of the DB cluster.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 }

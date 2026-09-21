@@ -530,7 +530,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("adminUsername")]
     public string? AdminUsername { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the snapshot.</summary>
+    /// <summary>ARN of the snapshot.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -542,7 +542,7 @@ public partial class V1beta1SnapshotStatusAtProvider
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the namespace the snapshot was created from.</summary>
+    /// <summary>ARN of the namespace the snapshot was created from.</summary>
     [JsonPropertyName("namespaceArn")]
     public string? NamespaceArn { get; set; }
 

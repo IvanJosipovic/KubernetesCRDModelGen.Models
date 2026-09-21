@@ -206,31 +206,31 @@ public partial class V1beta1VPCSpecForProviderIpv4IpamPoolIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCSpecForProvider
 {
-    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id</summary>
+    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id.</summary>
     [JsonPropertyName("assignGeneratedIpv6CidrBlock")]
     public bool? AssignGeneratedIpv6CidrBlock { get; set; }
 
-    /// <summary>The IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
+    /// <summary>IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
     [JsonPropertyName("cidrBlock")]
     public string? CidrBlock { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.</summary>
+    /// <summary>Whether to enable DNS hostnames in the VPC. Defaults to false.</summary>
     [JsonPropertyName("enableDnsHostnames")]
     public bool? EnableDnsHostnames { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS support in the VPC. Defaults to true.</summary>
+    /// <summary>Whether to enable DNS support in the VPC. Defaults to true.</summary>
     [JsonPropertyName("enableDnsSupport")]
     public bool? EnableDnsSupport { get; set; }
 
-    /// <summary>Indicates whether Network Address Usage metrics are enabled for your VPC. Defaults to false.</summary>
+    /// <summary>Whether to enable Network Address Usage metrics for your VPC. Defaults to false.</summary>
     [JsonPropertyName("enableNetworkAddressUsageMetrics")]
     public bool? EnableNetworkAddressUsageMetrics { get; set; }
 
-    /// <summary>A tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
+    /// <summary>Tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
     [JsonPropertyName("instanceTenancy")]
     public string? InstanceTenancy { get; set; }
 
-    /// <summary>The ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
+    /// <summary>ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
     [JsonPropertyName("ipv4IpamPoolId")]
     public string? Ipv4IpamPoolId { get; set; }
 
@@ -242,7 +242,7 @@ public partial class V1beta1VPCSpecForProvider
     [JsonPropertyName("ipv4IpamPoolIdSelector")]
     public V1beta1VPCSpecForProviderIpv4IpamPoolIdSelector? Ipv4IpamPoolIdSelector { get; set; }
 
-    /// <summary>The netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
+    /// <summary>Netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
     [JsonPropertyName("ipv4NetmaskLength")]
     public double? Ipv4NetmaskLength { get; set; }
 
@@ -437,31 +437,31 @@ public partial class V1beta1VPCSpecInitProviderIpv4IpamPoolIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCSpecInitProvider
 {
-    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id</summary>
+    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id.</summary>
     [JsonPropertyName("assignGeneratedIpv6CidrBlock")]
     public bool? AssignGeneratedIpv6CidrBlock { get; set; }
 
-    /// <summary>The IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
+    /// <summary>IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
     [JsonPropertyName("cidrBlock")]
     public string? CidrBlock { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.</summary>
+    /// <summary>Whether to enable DNS hostnames in the VPC. Defaults to false.</summary>
     [JsonPropertyName("enableDnsHostnames")]
     public bool? EnableDnsHostnames { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS support in the VPC. Defaults to true.</summary>
+    /// <summary>Whether to enable DNS support in the VPC. Defaults to true.</summary>
     [JsonPropertyName("enableDnsSupport")]
     public bool? EnableDnsSupport { get; set; }
 
-    /// <summary>Indicates whether Network Address Usage metrics are enabled for your VPC. Defaults to false.</summary>
+    /// <summary>Whether to enable Network Address Usage metrics for your VPC. Defaults to false.</summary>
     [JsonPropertyName("enableNetworkAddressUsageMetrics")]
     public bool? EnableNetworkAddressUsageMetrics { get; set; }
 
-    /// <summary>A tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
+    /// <summary>Tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
     [JsonPropertyName("instanceTenancy")]
     public string? InstanceTenancy { get; set; }
 
-    /// <summary>The ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
+    /// <summary>ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
     [JsonPropertyName("ipv4IpamPoolId")]
     public string? Ipv4IpamPoolId { get; set; }
 
@@ -473,7 +473,7 @@ public partial class V1beta1VPCSpecInitProvider
     [JsonPropertyName("ipv4IpamPoolIdSelector")]
     public V1beta1VPCSpecInitProviderIpv4IpamPoolIdSelector? Ipv4IpamPoolIdSelector { get; set; }
 
-    /// <summary>The netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
+    /// <summary>Netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
     [JsonPropertyName("ipv4NetmaskLength")]
     public double? Ipv4NetmaskLength { get; set; }
 
@@ -685,27 +685,27 @@ public partial class V1beta1VPCSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of VPC</summary>
+    /// <summary>ARN of VPC.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id</summary>
+    /// <summary>Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block. Default is false. Conflicts with ipv6_ipam_pool_id.</summary>
     [JsonPropertyName("assignGeneratedIpv6CidrBlock")]
     public bool? AssignGeneratedIpv6CidrBlock { get; set; }
 
-    /// <summary>The IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
+    /// <summary>IPv4 CIDR block for the VPC. CIDR can be explicitly set or it can be derived from IPAM using ipv4_netmask_length.</summary>
     [JsonPropertyName("cidrBlock")]
     public string? CidrBlock { get; set; }
 
-    /// <summary>The ID of the network ACL created by default on VPC creation</summary>
+    /// <summary>ID of the network ACL created by default on VPC creation.</summary>
     [JsonPropertyName("defaultNetworkAclId")]
     public string? DefaultNetworkAclId { get; set; }
 
-    /// <summary>The ID of the route table created by default on VPC creation</summary>
+    /// <summary>ID of the route table created by default on VPC creation.</summary>
     [JsonPropertyName("defaultRouteTableId")]
     public string? DefaultRouteTableId { get; set; }
 
-    /// <summary>The ID of the security group created by default on VPC creation</summary>
+    /// <summary>ID of the security group created by default on VPC creation.</summary>
     [JsonPropertyName("defaultSecurityGroupId")]
     public string? DefaultSecurityGroupId { get; set; }
 
@@ -713,35 +713,35 @@ public partial class V1beta1VPCStatusAtProvider
     [JsonPropertyName("dhcpOptionsId")]
     public string? DhcpOptionsId { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.</summary>
+    /// <summary>Whether to enable DNS hostnames in the VPC. Defaults to false.</summary>
     [JsonPropertyName("enableDnsHostnames")]
     public bool? EnableDnsHostnames { get; set; }
 
-    /// <summary>A boolean flag to enable/disable DNS support in the VPC. Defaults to true.</summary>
+    /// <summary>Whether to enable DNS support in the VPC. Defaults to true.</summary>
     [JsonPropertyName("enableDnsSupport")]
     public bool? EnableDnsSupport { get; set; }
 
-    /// <summary>Indicates whether Network Address Usage metrics are enabled for your VPC. Defaults to false.</summary>
+    /// <summary>Whether to enable Network Address Usage metrics for your VPC. Defaults to false.</summary>
     [JsonPropertyName("enableNetworkAddressUsageMetrics")]
     public bool? EnableNetworkAddressUsageMetrics { get; set; }
 
-    /// <summary>The ID of the VPC</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>A tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
+    /// <summary>Tenancy option for instances launched into the VPC. Default is default, which ensures that EC2 instances launched in this VPC use the EC2 instance tenancy attribute specified when the EC2 instance is launched. The only other option is dedicated, which ensures that EC2 instances launched in this VPC are run on dedicated tenancy instances regardless of the tenancy attribute specified at launch. This has a dedicated per region fee of $2 per hour, plus an hourly per instance usage fee.</summary>
     [JsonPropertyName("instanceTenancy")]
     public string? InstanceTenancy { get; set; }
 
-    /// <summary>The ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
+    /// <summary>ID of an IPv4 IPAM pool you want to use for allocating this VPC&apos;s CIDR. IPAM is a VPC feature that you can use to automate your IP address management workflows including assigning, tracking, troubleshooting, and auditing IP addresses across AWS Regions and accounts. Using IPAM you can monitor IP address usage throughout your AWS Organization.</summary>
     [JsonPropertyName("ipv4IpamPoolId")]
     public string? Ipv4IpamPoolId { get; set; }
 
-    /// <summary>The netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
+    /// <summary>Netmask length of the IPv4 CIDR you want to allocate to this VPC. Requires specifying a ipv4_ipam_pool_id.</summary>
     [JsonPropertyName("ipv4NetmaskLength")]
     public double? Ipv4NetmaskLength { get; set; }
 
-    /// <summary>The association ID for the IPv6 CIDR block.</summary>
+    /// <summary>Association ID for the IPv6 CIDR block.</summary>
     [JsonPropertyName("ipv6AssociationId")]
     public string? Ipv6AssociationId { get; set; }
 
@@ -761,15 +761,11 @@ public partial class V1beta1VPCStatusAtProvider
     [JsonPropertyName("ipv6NetmaskLength")]
     public double? Ipv6NetmaskLength { get; set; }
 
-    /// <summary>
-    /// The ID of the main route table associated with
-    /// this VPC. Note that you can change a VPC&apos;s main route table by using an
-    /// aws_main_route_table_association.
-    /// </summary>
+    /// <summary>ID of the main route table associated with this VPC. Note that you can change a VPC&apos;s main route table by using an aws_main_route_table_association.</summary>
     [JsonPropertyName("mainRouteTableId")]
     public string? MainRouteTableId { get; set; }
 
-    /// <summary>The ID of the AWS account that owns the VPC.</summary>
+    /// <summary>ID of the AWS account that owns the VPC.</summary>
     [JsonPropertyName("ownerId")]
     public string? OwnerId { get; set; }
 
@@ -784,7 +780,7 @@ public partial class V1beta1VPCStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

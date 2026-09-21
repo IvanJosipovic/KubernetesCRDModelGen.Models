@@ -651,7 +651,7 @@ public partial class V1beta1ActivityStatusAtProviderEncryptionConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ActivityStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the activity.</summary>
+    /// <summary>ARN of the activity.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -663,7 +663,7 @@ public partial class V1beta1ActivityStatusAtProvider
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1ActivityStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the activity.</summary>
+    /// <summary>ARN of the activity.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

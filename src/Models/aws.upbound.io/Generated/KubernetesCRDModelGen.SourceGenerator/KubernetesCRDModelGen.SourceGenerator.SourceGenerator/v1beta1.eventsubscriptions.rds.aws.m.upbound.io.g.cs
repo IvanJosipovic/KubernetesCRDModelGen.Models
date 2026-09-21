@@ -350,11 +350,11 @@ public partial class V1beta1EventSubscriptionSpecForProviderSourceIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionSpecForProvider
 {
-    /// <summary>A boolean flag to enable/disable the subscription. Defaults to true.</summary>
+    /// <summary>Boolean flag to enable/disable the subscription. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>A list of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
+    /// <summary>List of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
     [JsonPropertyName("eventCategories")]
     public IList<string>? EventCategories { get; set; }
 
@@ -365,7 +365,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The SNS topic to send events to.</summary>
+    /// <summary>SNS topic to send events to.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 
@@ -377,7 +377,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("snsTopicSelector")]
     public V1beta1EventSubscriptionSpecForProviderSnsTopicSelector? SnsTopicSelector { get; set; }
 
-    /// <summary>A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
+    /// <summary>List of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 
@@ -389,7 +389,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("sourceIdsSelector")]
     public V1beta1EventSubscriptionSpecForProviderSourceIdsSelector? SourceIdsSelector { get; set; }
 
-    /// <summary>The type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
+    /// <summary>Type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
     [JsonPropertyName("sourceType")]
     public string? SourceType { get; set; }
 
@@ -724,15 +724,15 @@ public partial class V1beta1EventSubscriptionSpecInitProviderSourceIdsSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionSpecInitProvider
 {
-    /// <summary>A boolean flag to enable/disable the subscription. Defaults to true.</summary>
+    /// <summary>Boolean flag to enable/disable the subscription. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>A list of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
+    /// <summary>List of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
     [JsonPropertyName("eventCategories")]
     public IList<string>? EventCategories { get; set; }
 
-    /// <summary>The SNS topic to send events to.</summary>
+    /// <summary>SNS topic to send events to.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 
@@ -744,7 +744,7 @@ public partial class V1beta1EventSubscriptionSpecInitProvider
     [JsonPropertyName("snsTopicSelector")]
     public V1beta1EventSubscriptionSpecInitProviderSnsTopicSelector? SnsTopicSelector { get; set; }
 
-    /// <summary>A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
+    /// <summary>List of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 
@@ -756,7 +756,7 @@ public partial class V1beta1EventSubscriptionSpecInitProvider
     [JsonPropertyName("sourceIdsSelector")]
     public V1beta1EventSubscriptionSpecInitProviderSourceIdsSelector? SourceIdsSelector { get; set; }
 
-    /// <summary>The type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
+    /// <summary>Type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
     [JsonPropertyName("sourceType")]
     public string? SourceType { get; set; }
 
@@ -876,23 +876,23 @@ public partial class V1beta1EventSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the RDS event notification subscription</summary>
+    /// <summary>ARN of the RDS event notification subscription</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The AWS customer account associated with the RDS event notification subscription</summary>
+    /// <summary>AWS customer account associated with the RDS event notification subscription</summary>
     [JsonPropertyName("customerAwsId")]
     public string? CustomerAwsId { get; set; }
 
-    /// <summary>A boolean flag to enable/disable the subscription. Defaults to true.</summary>
+    /// <summary>Boolean flag to enable/disable the subscription. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>A list of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
+    /// <summary>List of event categories for a SourceType that you want to subscribe to. See http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html or run aws rds describe-event-categories.</summary>
     [JsonPropertyName("eventCategories")]
     public IList<string>? EventCategories { get; set; }
 
-    /// <summary>The name of the RDS event notification subscription</summary>
+    /// <summary>Name of the RDS event notification subscription</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -903,15 +903,15 @@ public partial class V1beta1EventSubscriptionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The SNS topic to send events to.</summary>
+    /// <summary>SNS topic to send events to.</summary>
     [JsonPropertyName("snsTopic")]
     public string? SnsTopic { get; set; }
 
-    /// <summary>A list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
+    /// <summary>List of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. If specified, a source_type must also be specified.</summary>
     [JsonPropertyName("sourceIds")]
     public IList<string>? SourceIds { get; set; }
 
-    /// <summary>The type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
+    /// <summary>Type of source that will be generating the events. Valid options are db-instance, db-parameter-group, db-security-group, db-snapshot, db-cluster, db-cluster-snapshot, custom-engine-version, db-proxy, blue-green-deployment, db-shard-group, and zero-etl. If not set, all sources will be subscribed to.</summary>
     [JsonPropertyName("sourceType")]
     public string? SourceType { get; set; }
 
@@ -919,7 +919,7 @@ public partial class V1beta1EventSubscriptionStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

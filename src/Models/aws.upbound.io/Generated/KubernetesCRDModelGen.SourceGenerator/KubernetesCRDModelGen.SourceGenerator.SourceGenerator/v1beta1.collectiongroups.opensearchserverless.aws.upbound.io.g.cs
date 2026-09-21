@@ -409,7 +409,7 @@ public partial class V1beta1CollectionGroupStatusAtProviderCapacityLimits
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CollectionGroupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the collection group.</summary>
+    /// <summary>ARN of the collection group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

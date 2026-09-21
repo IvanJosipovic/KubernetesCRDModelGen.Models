@@ -526,7 +526,7 @@ public partial class V1beta1GeofenceCollectionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GeofenceCollectionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) for the geofence collection resource. Used when you need to specify a resource across all AWS.</summary>
+    /// <summary>ARN for the geofence collection resource. Used when you need to specify a resource across all AWS.</summary>
     [JsonPropertyName("collectionArn")]
     public string? CollectionArn { get; set; }
 

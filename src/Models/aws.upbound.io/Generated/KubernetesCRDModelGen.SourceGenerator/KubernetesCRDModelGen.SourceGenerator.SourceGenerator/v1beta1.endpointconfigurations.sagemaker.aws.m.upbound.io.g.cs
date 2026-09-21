@@ -472,7 +472,7 @@ public partial class V1beta1EndpointConfigurationSpecForProviderProductionVarian
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }
@@ -777,7 +777,7 @@ public partial class V1beta1EndpointConfigurationSpecForProviderShadowProduction
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }
@@ -1402,7 +1402,7 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderProductionVaria
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }
@@ -1707,7 +1707,7 @@ public partial class V1beta1EndpointConfigurationSpecInitProviderShadowProductio
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }
@@ -2134,7 +2134,7 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderProductionVaria
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }
@@ -2276,7 +2276,7 @@ public partial class V1beta1EndpointConfigurationStatusAtProviderShadowProductio
     [JsonPropertyName("capacityReservationPreference")]
     public string? CapacityReservationPreference { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
+    /// <summary>ARN that uniquely identifies the ML capacity reservation that SageMaker AI applies when it deploys the endpoint.</summary>
     [JsonPropertyName("mlReservationArn")]
     public string? MlReservationArn { get; set; }
 }

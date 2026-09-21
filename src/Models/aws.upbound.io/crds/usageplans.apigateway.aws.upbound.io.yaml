@@ -829,11 +829,11 @@ spec:
               forProvider:
                 properties:
                   apiStages:
-                    description: Associated API stages of the usage plan.
+                    description: Associated API stages of the usage plan. See api_stages Block below.
                     items:
                       properties:
                         apiId:
-                          description: API Id of the associated API stage in a usage plan.
+                          description: API ID of the associated API stage in a usage plan.
                           type: string
                         apiIdRef:
                           description: Reference to a RestAPI in apigateway to populate apiId.
@@ -985,17 +985,17 @@ spec:
                               type: object
                           type: object
                         throttle:
-                          description: The throttling limits of the usage plan.
+                          description: Throttling limits applied to the API stage. See throttle Block below.
                           items:
                             properties:
                               burstLimit:
-                                description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                                description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                                 type: number
                               path:
-                                description: Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.
+                                description: Method to apply the throttle settings for. Specify the path and method, for example /test/GET.
                                 type: string
                               rateLimit:
-                                description: The API request steady-state rate limit.
+                                description: API request steady-state rate limit.
                                 type: number
                             type: object
                           type: array
@@ -1011,7 +1011,7 @@ spec:
                     description: AWS Marketplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
                     type: string
                   quotaSettings:
-                    description: The quota settings of the usage plan.
+                    description: Quota settings of the usage plan. See quota_settings Block below.
                     properties:
                       limit:
                         description: Maximum number of requests that can be made in a given time period.
@@ -1020,7 +1020,7 @@ spec:
                         description: Number of requests subtracted from the given limit in the initial time period.
                         type: number
                       period:
-                        description: Time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
+                        description: Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.
                         type: string
                     type: object
                   region:
@@ -1035,13 +1035,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   throttleSettings:
-                    description: The throttling limits of the usage plan.
+                    description: Throttling limits of the usage plan. See throttle_settings Block below.
                     properties:
                       burstLimit:
-                        description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                        description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                         type: number
                       rateLimit:
-                        description: The API request steady-state rate limit.
+                        description: API request steady-state rate limit.
                         type: number
                     type: object
                 required:
@@ -1061,11 +1061,11 @@ spec:
                   autoscaler.
                 properties:
                   apiStages:
-                    description: Associated API stages of the usage plan.
+                    description: Associated API stages of the usage plan. See api_stages Block below.
                     items:
                       properties:
                         apiId:
-                          description: API Id of the associated API stage in a usage plan.
+                          description: API ID of the associated API stage in a usage plan.
                           type: string
                         apiIdRef:
                           description: Reference to a RestAPI in apigateway to populate apiId.
@@ -1217,17 +1217,17 @@ spec:
                               type: object
                           type: object
                         throttle:
-                          description: The throttling limits of the usage plan.
+                          description: Throttling limits applied to the API stage. See throttle Block below.
                           items:
                             properties:
                               burstLimit:
-                                description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                                description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                                 type: number
                               path:
-                                description: Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.
+                                description: Method to apply the throttle settings for. Specify the path and method, for example /test/GET.
                                 type: string
                               rateLimit:
-                                description: The API request steady-state rate limit.
+                                description: API request steady-state rate limit.
                                 type: number
                             type: object
                           type: array
@@ -1243,7 +1243,7 @@ spec:
                     description: AWS Marketplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
                     type: string
                   quotaSettings:
-                    description: The quota settings of the usage plan.
+                    description: Quota settings of the usage plan. See quota_settings Block below.
                     properties:
                       limit:
                         description: Maximum number of requests that can be made in a given time period.
@@ -1252,7 +1252,7 @@ spec:
                         description: Number of requests subtracted from the given limit in the initial time period.
                         type: number
                       period:
-                        description: Time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
+                        description: Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.
                         type: string
                     type: object
                   tags:
@@ -1262,13 +1262,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   throttleSettings:
-                    description: The throttling limits of the usage plan.
+                    description: Throttling limits of the usage plan. See throttle_settings Block below.
                     properties:
                       burstLimit:
-                        description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                        description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                         type: number
                       rateLimit:
-                        description: The API request steady-state rate limit.
+                        description: API request steady-state rate limit.
                         type: number
                     type: object
                 type: object
@@ -1367,40 +1367,40 @@ spec:
               atProvider:
                 properties:
                   apiStages:
-                    description: Associated API stages of the usage plan.
+                    description: Associated API stages of the usage plan. See api_stages Block below.
                     items:
                       properties:
                         apiId:
-                          description: API Id of the associated API stage in a usage plan.
+                          description: API ID of the associated API stage in a usage plan.
                           type: string
                         stage:
                           description: API stage name of the associated API stage in a usage plan.
                           type: string
                         throttle:
-                          description: The throttling limits of the usage plan.
+                          description: Throttling limits applied to the API stage. See throttle Block below.
                           items:
                             properties:
                               burstLimit:
-                                description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                                description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                                 type: number
                               path:
-                                description: Method to apply the throttle settings for. Specfiy the path and method, for example /test/GET.
+                                description: Method to apply the throttle settings for. Specify the path and method, for example /test/GET.
                                 type: string
                               rateLimit:
-                                description: The API request steady-state rate limit.
+                                description: API request steady-state rate limit.
                                 type: number
                             type: object
                           type: array
                       type: object
                     type: array
                   arn:
-                    description: ARN
+                    description: ARN of the usage plan.
                     type: string
                   description:
                     description: Description of a usage plan.
                     type: string
                   id:
-                    description: ID of the API resource
+                    description: ID of the usage plan.
                     type: string
                   name:
                     description: Name of the usage plan.
@@ -1409,7 +1409,7 @@ spec:
                     description: AWS Marketplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
                     type: string
                   quotaSettings:
-                    description: The quota settings of the usage plan.
+                    description: Quota settings of the usage plan. See quota_settings Block below.
                     properties:
                       limit:
                         description: Maximum number of requests that can be made in a given time period.
@@ -1418,7 +1418,7 @@ spec:
                         description: Number of requests subtracted from the given limit in the initial time period.
                         type: number
                       period:
-                        description: Time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
+                        description: Time period in which the limit applies. Valid values are DAY, WEEK, or MONTH.
                         type: string
                     type: object
                   region:
@@ -1439,13 +1439,13 @@ spec:
                     type: object
                     x-kubernetes-map-type: granular
                   throttleSettings:
-                    description: The throttling limits of the usage plan.
+                    description: Throttling limits of the usage plan. See throttle_settings Block below.
                     properties:
                       burstLimit:
-                        description: The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+                        description: API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
                         type: number
                       rateLimit:
-                        description: The API request steady-state rate limit.
+                        description: API request steady-state rate limit.
                         type: number
                     type: object
                 type: object

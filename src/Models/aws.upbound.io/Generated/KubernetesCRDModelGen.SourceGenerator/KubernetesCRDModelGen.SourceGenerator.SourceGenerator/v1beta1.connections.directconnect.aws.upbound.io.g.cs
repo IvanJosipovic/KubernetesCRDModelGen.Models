@@ -331,6 +331,27 @@ public partial class V1beta1ConnectionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionStatusAtProviderRateLimiterStatus
+{
+    /// <summary>Number of rate limiters currently in use.</summary>
+    [JsonPropertyName("inUse")]
+    public double? InUse { get; set; }
+
+    /// <summary>Maximum number of rate limiters allowed on the connection.</summary>
+    [JsonPropertyName("maxAllowed")]
+    public double? MaxAllowed { get; set; }
+
+    /// <summary>Number of rate limiters remaining (available).</summary>
+    [JsonPropertyName("remaining")]
+    public double? Remaining { get; set; }
+
+    /// <summary>Total bandwidth allocated across all rate limiters.</summary>
+    [JsonPropertyName("totalBandwidth")]
+    public string? TotalBandwidth { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionStatusAtProvider
 {
     /// <summary>The ARN of the connection.</summary>
@@ -385,9 +406,29 @@ public partial class V1beta1ConnectionStatusAtProvider
     [JsonPropertyName("portEncryptionStatus")]
     public string? PortEncryptionStatus { get; set; }
 
+    /// <summary>The total number of inbound IPv4 route prefixes that can be allocated across the virtual interfaces on the connection.</summary>
+    [JsonPropertyName("prefixPoolSizeIpv4")]
+    public double? PrefixPoolSizeIpv4 { get; set; }
+
+    /// <summary>The total number of inbound IPv6 route prefixes that can be allocated across the virtual interfaces on the connection.</summary>
+    [JsonPropertyName("prefixPoolSizeIpv6")]
+    public double? PrefixPoolSizeIpv6 { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes in the connection prefix pool not yet allocated to a virtual interface.</summary>
+    [JsonPropertyName("prefixPoolUnallocatedCountIpv4")]
+    public double? PrefixPoolUnallocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes in the connection prefix pool not yet allocated to a virtual interface.</summary>
+    [JsonPropertyName("prefixPoolUnallocatedCountIpv6")]
+    public double? PrefixPoolUnallocatedCountIpv6 { get; set; }
+
     /// <summary>The name of the service provider associated with the connection.</summary>
     [JsonPropertyName("providerName")]
     public string? ProviderName { get; set; }
+
+    /// <summary>Rate limiter status for the connection. See rate_limiter_status Block below.</summary>
+    [JsonPropertyName("rateLimiterStatus")]
+    public IList<V1beta1ConnectionStatusAtProviderRateLimiterStatus>? RateLimiterStatus { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -402,6 +443,10 @@ public partial class V1beta1ConnectionStatusAtProvider
 
     [JsonPropertyName("skipDestroy")]
     public bool? SkipDestroy { get; set; }
+
+    /// <summary>State of the connection. See CreateConnection for list of possible state values.</summary>
+    [JsonPropertyName("state")]
+    public string? State { get; set; }
 
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]

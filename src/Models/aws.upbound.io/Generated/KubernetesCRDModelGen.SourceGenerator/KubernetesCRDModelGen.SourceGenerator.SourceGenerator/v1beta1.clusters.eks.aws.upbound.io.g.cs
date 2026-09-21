@@ -129,6 +129,116 @@ public partial class V1beta1ClusterSpecForProviderEncryptionConfig
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeApiServerConfigServiceNodePortRange
+{
+    /// <summary>The maximum port number in the range. Valid range: 10260 to 32767. Default is 32767. Must be greater than or equal to min_port.</summary>
+    [JsonPropertyName("maxPort")]
+    public double? MaxPort { get; set; }
+
+    /// <summary>The minimum port number in the range. Valid range: 10260 to 32767. Default is 30000.</summary>
+    [JsonPropertyName("minPort")]
+    public double? MinPort { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeApiServerConfig
+{
+    /// <summary>The duration that Kubernetes events are retained. Must be a single-unit duration (e.g., 30m, 1h). Valid range: 10m to 60m. Default is 1h.</summary>
+    [JsonPropertyName("eventTtl")]
+    public string? EventTtl { get; set; }
+
+    /// <summary>Configuration block for the port range available for NodePort services. Detailed below.</summary>
+    [JsonPropertyName("serviceNodePortRange")]
+    public IList<V1beta1ClusterSpecForProviderKubeApiServerConfigServiceNodePortRange>? ServiceNodePortRange { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+{
+    /// <summary>The interval between each sync of the horizontal pod autoscaler. Must be a single-unit duration (e.g., 10s, 15s). Valid range: 10s to 15s. Default is 15s.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerSyncPeriod")]
+    public string? HorizontalPodAutoscalerSyncPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeControllerManagerConfigPodGcControllerConfig
+{
+    /// <summary>The number of terminated pods that can exist before the pod garbage collector starts deleting them. Valid range: 0 to 12500. Refer to the aws_eks_cluster_versions data source for any version-specific constraints.</summary>
+    [JsonPropertyName("terminatedPodGcThreshold")]
+    public double? TerminatedPodGcThreshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeControllerManagerConfig
+{
+    /// <summary>Configuration block for the horizontal pod autoscaler controller. Detailed below.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerControllerConfig")]
+    public IList<V1beta1ClusterSpecForProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig>? HorizontalPodAutoscalerControllerConfig { get; set; }
+
+    /// <summary>Configuration block for the pod garbage collection controller. Detailed below.</summary>
+    [JsonPropertyName("podGcControllerConfig")]
+    public IList<V1beta1ClusterSpecForProviderKubeControllerManagerConfigPodGcControllerConfig>? PodGcControllerConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource
+{
+    /// <summary>The name of the resource (e.g., cpu, memory, nvidia.com/gpu).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The weight assigned to the resource for scoring. Must be between 1 and 100.</summary>
+    [JsonPropertyName("weight")]
+    public double? Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy
+{
+    /// <summary>List of resource weight configuration blocks for scoring nodes. Detailed below.</summary>
+    [JsonPropertyName("resource")]
+    public IList<V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource>? Resource { get; set; }
+
+    /// <summary>The scoring strategy type. Valid values are LeastAllocated and MostAllocated. Default is LeastAllocated.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFit
+{
+    /// <summary>Configuration block for the scoring strategy used to rank nodes during scheduling. Detailed below.</summary>
+    [JsonPropertyName("scoringStrategy")]
+    public IList<V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy>? ScoringStrategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderKubeSchedulerConfig
+{
+    /// <summary>Configuration block for the NodeResourcesFit scheduler plugin. Detailed below.</summary>
+    [JsonPropertyName("nodeResourcesFit")]
+    public IList<V1beta1ClusterSpecForProviderKubeSchedulerConfigNodeResourcesFit>? NodeResourcesFit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterSpecForProviderKubernetesNetworkConfigElasticLoadBalancing
 {
     /// <summary>Whether zonal shift is enabled for the cluster.</summary>
@@ -832,6 +942,18 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("forceUpdateVersion")]
     public bool? ForceUpdateVersion { get; set; }
 
+    /// <summary>Configuration block for customizing the Kubernetes API server. Detailed below.</summary>
+    [JsonPropertyName("kubeApiServerConfig")]
+    public IList<V1beta1ClusterSpecForProviderKubeApiServerConfig>? KubeApiServerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes controller manager. Detailed below.</summary>
+    [JsonPropertyName("kubeControllerManagerConfig")]
+    public IList<V1beta1ClusterSpecForProviderKubeControllerManagerConfig>? KubeControllerManagerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes scheduler. Detailed below.</summary>
+    [JsonPropertyName("kubeSchedulerConfig")]
+    public IList<V1beta1ClusterSpecForProviderKubeSchedulerConfig>? KubeSchedulerConfig { get; set; }
+
     /// <summary>Configuration block with kubernetes network configuration for the cluster. Detailed below.</summary>
     [JsonPropertyName("kubernetesNetworkConfig")]
     public IList<V1beta1ClusterSpecForProviderKubernetesNetworkConfig>? KubernetesNetworkConfig { get; set; }
@@ -952,6 +1074,116 @@ public partial class V1beta1ClusterSpecInitProviderEncryptionConfig
     /// <summary>List of strings with resources to be encrypted. Valid values: secrets.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeApiServerConfigServiceNodePortRange
+{
+    /// <summary>The maximum port number in the range. Valid range: 10260 to 32767. Default is 32767. Must be greater than or equal to min_port.</summary>
+    [JsonPropertyName("maxPort")]
+    public double? MaxPort { get; set; }
+
+    /// <summary>The minimum port number in the range. Valid range: 10260 to 32767. Default is 30000.</summary>
+    [JsonPropertyName("minPort")]
+    public double? MinPort { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeApiServerConfig
+{
+    /// <summary>The duration that Kubernetes events are retained. Must be a single-unit duration (e.g., 30m, 1h). Valid range: 10m to 60m. Default is 1h.</summary>
+    [JsonPropertyName("eventTtl")]
+    public string? EventTtl { get; set; }
+
+    /// <summary>Configuration block for the port range available for NodePort services. Detailed below.</summary>
+    [JsonPropertyName("serviceNodePortRange")]
+    public IList<V1beta1ClusterSpecInitProviderKubeApiServerConfigServiceNodePortRange>? ServiceNodePortRange { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+{
+    /// <summary>The interval between each sync of the horizontal pod autoscaler. Must be a single-unit duration (e.g., 10s, 15s). Valid range: 10s to 15s. Default is 15s.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerSyncPeriod")]
+    public string? HorizontalPodAutoscalerSyncPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeControllerManagerConfigPodGcControllerConfig
+{
+    /// <summary>The number of terminated pods that can exist before the pod garbage collector starts deleting them. Valid range: 0 to 12500. Refer to the aws_eks_cluster_versions data source for any version-specific constraints.</summary>
+    [JsonPropertyName("terminatedPodGcThreshold")]
+    public double? TerminatedPodGcThreshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeControllerManagerConfig
+{
+    /// <summary>Configuration block for the horizontal pod autoscaler controller. Detailed below.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerControllerConfig")]
+    public IList<V1beta1ClusterSpecInitProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig>? HorizontalPodAutoscalerControllerConfig { get; set; }
+
+    /// <summary>Configuration block for the pod garbage collection controller. Detailed below.</summary>
+    [JsonPropertyName("podGcControllerConfig")]
+    public IList<V1beta1ClusterSpecInitProviderKubeControllerManagerConfigPodGcControllerConfig>? PodGcControllerConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource
+{
+    /// <summary>The name of the resource (e.g., cpu, memory, nvidia.com/gpu).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The weight assigned to the resource for scoring. Must be between 1 and 100.</summary>
+    [JsonPropertyName("weight")]
+    public double? Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy
+{
+    /// <summary>List of resource weight configuration blocks for scoring nodes. Detailed below.</summary>
+    [JsonPropertyName("resource")]
+    public IList<V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource>? Resource { get; set; }
+
+    /// <summary>The scoring strategy type. Valid values are LeastAllocated and MostAllocated. Default is LeastAllocated.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFit
+{
+    /// <summary>Configuration block for the scoring strategy used to rank nodes during scheduling. Detailed below.</summary>
+    [JsonPropertyName("scoringStrategy")]
+    public IList<V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy>? ScoringStrategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderKubeSchedulerConfig
+{
+    /// <summary>Configuration block for the NodeResourcesFit scheduler plugin. Detailed below.</summary>
+    [JsonPropertyName("nodeResourcesFit")]
+    public IList<V1beta1ClusterSpecInitProviderKubeSchedulerConfigNodeResourcesFit>? NodeResourcesFit { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1672,6 +1904,18 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("forceUpdateVersion")]
     public bool? ForceUpdateVersion { get; set; }
 
+    /// <summary>Configuration block for customizing the Kubernetes API server. Detailed below.</summary>
+    [JsonPropertyName("kubeApiServerConfig")]
+    public IList<V1beta1ClusterSpecInitProviderKubeApiServerConfig>? KubeApiServerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes controller manager. Detailed below.</summary>
+    [JsonPropertyName("kubeControllerManagerConfig")]
+    public IList<V1beta1ClusterSpecInitProviderKubeControllerManagerConfig>? KubeControllerManagerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes scheduler. Detailed below.</summary>
+    [JsonPropertyName("kubeSchedulerConfig")]
+    public IList<V1beta1ClusterSpecInitProviderKubeSchedulerConfig>? KubeSchedulerConfig { get; set; }
+
     /// <summary>Configuration block with kubernetes network configuration for the cluster. Detailed below.</summary>
     [JsonPropertyName("kubernetesNetworkConfig")]
     public IList<V1beta1ClusterSpecInitProviderKubernetesNetworkConfig>? KubernetesNetworkConfig { get; set; }
@@ -2010,6 +2254,116 @@ public partial class V1beta1ClusterStatusAtProviderIdentity
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeApiServerConfigServiceNodePortRange
+{
+    /// <summary>The maximum port number in the range. Valid range: 10260 to 32767. Default is 32767. Must be greater than or equal to min_port.</summary>
+    [JsonPropertyName("maxPort")]
+    public double? MaxPort { get; set; }
+
+    /// <summary>The minimum port number in the range. Valid range: 10260 to 32767. Default is 30000.</summary>
+    [JsonPropertyName("minPort")]
+    public double? MinPort { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeApiServerConfig
+{
+    /// <summary>The duration that Kubernetes events are retained. Must be a single-unit duration (e.g., 30m, 1h). Valid range: 10m to 60m. Default is 1h.</summary>
+    [JsonPropertyName("eventTtl")]
+    public string? EventTtl { get; set; }
+
+    /// <summary>Configuration block for the port range available for NodePort services. Detailed below.</summary>
+    [JsonPropertyName("serviceNodePortRange")]
+    public IList<V1beta1ClusterStatusAtProviderKubeApiServerConfigServiceNodePortRange>? ServiceNodePortRange { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig
+{
+    /// <summary>The interval between each sync of the horizontal pod autoscaler. Must be a single-unit duration (e.g., 10s, 15s). Valid range: 10s to 15s. Default is 15s.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerSyncPeriod")]
+    public string? HorizontalPodAutoscalerSyncPeriod { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeControllerManagerConfigPodGcControllerConfig
+{
+    /// <summary>The number of terminated pods that can exist before the pod garbage collector starts deleting them. Valid range: 0 to 12500. Refer to the aws_eks_cluster_versions data source for any version-specific constraints.</summary>
+    [JsonPropertyName("terminatedPodGcThreshold")]
+    public double? TerminatedPodGcThreshold { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeControllerManagerConfig
+{
+    /// <summary>Configuration block for the horizontal pod autoscaler controller. Detailed below.</summary>
+    [JsonPropertyName("horizontalPodAutoscalerControllerConfig")]
+    public IList<V1beta1ClusterStatusAtProviderKubeControllerManagerConfigHorizontalPodAutoscalerControllerConfig>? HorizontalPodAutoscalerControllerConfig { get; set; }
+
+    /// <summary>Configuration block for the pod garbage collection controller. Detailed below.</summary>
+    [JsonPropertyName("podGcControllerConfig")]
+    public IList<V1beta1ClusterStatusAtProviderKubeControllerManagerConfigPodGcControllerConfig>? PodGcControllerConfig { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource
+{
+    /// <summary>The name of the resource (e.g., cpu, memory, nvidia.com/gpu).</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The weight assigned to the resource for scoring. Must be between 1 and 100.</summary>
+    [JsonPropertyName("weight")]
+    public double? Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy
+{
+    /// <summary>List of resource weight configuration blocks for scoring nodes. Detailed below.</summary>
+    [JsonPropertyName("resource")]
+    public IList<V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFitScoringStrategyResource>? Resource { get; set; }
+
+    /// <summary>The scoring strategy type. Valid values are LeastAllocated and MostAllocated. Default is LeastAllocated.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFit
+{
+    /// <summary>Configuration block for the scoring strategy used to rank nodes during scheduling. Detailed below.</summary>
+    [JsonPropertyName("scoringStrategy")]
+    public IList<V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFitScoringStrategy>? ScoringStrategy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderKubeSchedulerConfig
+{
+    /// <summary>Configuration block for the NodeResourcesFit scheduler plugin. Detailed below.</summary>
+    [JsonPropertyName("nodeResourcesFit")]
+    public IList<V1beta1ClusterStatusAtProviderKubeSchedulerConfigNodeResourcesFit>? NodeResourcesFit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterStatusAtProviderKubernetesNetworkConfigElasticLoadBalancing
 {
     /// <summary>Whether zonal shift is enabled for the cluster.</summary>
@@ -2271,6 +2625,18 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>Attribute block containing identity provider information for your cluster. Only available on Kubernetes version 1.13 and 1.14 clusters created or upgraded on or after September 3, 2019. Detailed below.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta1ClusterStatusAtProviderIdentity>? Identity { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes API server. Detailed below.</summary>
+    [JsonPropertyName("kubeApiServerConfig")]
+    public IList<V1beta1ClusterStatusAtProviderKubeApiServerConfig>? KubeApiServerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes controller manager. Detailed below.</summary>
+    [JsonPropertyName("kubeControllerManagerConfig")]
+    public IList<V1beta1ClusterStatusAtProviderKubeControllerManagerConfig>? KubeControllerManagerConfig { get; set; }
+
+    /// <summary>Configuration block for customizing the Kubernetes scheduler. Detailed below.</summary>
+    [JsonPropertyName("kubeSchedulerConfig")]
+    public IList<V1beta1ClusterStatusAtProviderKubeSchedulerConfig>? KubeSchedulerConfig { get; set; }
 
     /// <summary>Configuration block with kubernetes network configuration for the cluster. Detailed below.</summary>
     [JsonPropertyName("kubernetesNetworkConfig")]

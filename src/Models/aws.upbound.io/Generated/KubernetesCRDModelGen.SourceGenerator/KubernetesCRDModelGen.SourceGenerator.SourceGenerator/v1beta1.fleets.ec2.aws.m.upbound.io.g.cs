@@ -570,7 +570,7 @@ public partial class V1beta1FleetSpecForProviderLaunchTemplateConfigOverrideInst
 
     /// <summary>
     /// The CPU manufacturers to include. Default is any manufacturer.
-    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the Amazon Machine Image (AMI) that you specify in your launch template.
+    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the AMI that you specify in your launch template.
     /// </summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }
@@ -1425,7 +1425,7 @@ public partial class V1beta1FleetSpecInitProviderLaunchTemplateConfigOverrideIns
 
     /// <summary>
     /// The CPU manufacturers to include. Default is any manufacturer.
-    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the Amazon Machine Image (AMI) that you specify in your launch template.
+    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the AMI that you specify in your launch template.
     /// </summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }
@@ -2066,7 +2066,7 @@ public partial class V1beta1FleetStatusAtProviderLaunchTemplateConfigOverrideIns
 
     /// <summary>
     /// The CPU manufacturers to include. Default is any manufacturer.
-    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the Amazon Machine Image (AMI) that you specify in your launch template.
+    /// ~&gt; NOTE: Don&apos;t confuse the CPU hardware manufacturer with the CPU hardware architecture. Instances will be launched with a compatible CPU architecture based on the AMI that you specify in your launch template.
     /// </summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }

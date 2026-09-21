@@ -202,7 +202,7 @@ public partial class V1beta2FlowLogSpecForProviderDeliverCrossAccountRoleSelecto
     public V1beta2FlowLogSpecForProviderDeliverCrossAccountRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes the destination options for a flow log. More details below.</summary>
+/// <summary>Destination options for a flow log. More details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowLogSpecForProviderDestinationOptions
@@ -211,11 +211,11 @@ public partial class V1beta2FlowLogSpecForProviderDestinationOptions
     [JsonPropertyName("fileFormat")]
     public string? FileFormat { get; set; }
 
-    /// <summary>Indicates whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
+    /// <summary>Whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
     [JsonPropertyName("hiveCompatiblePartitions")]
     public bool? HiveCompatiblePartitions { get; set; }
 
-    /// <summary>Indicates whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
+    /// <summary>Whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
     [JsonPropertyName("perHourPartition")]
     public bool? PerHourPartition { get; set; }
 }
@@ -661,6 +661,19 @@ public partial class V1beta2FlowLogSpecForProviderSubnetIdSelector
     public V1beta2FlowLogSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlowLogSpecForProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -824,7 +837,7 @@ public partial class V1beta2FlowLogSpecForProvider
     [JsonPropertyName("deliverCrossAccountRoleSelector")]
     public V1beta2FlowLogSpecForProviderDeliverCrossAccountRoleSelector? DeliverCrossAccountRoleSelector { get; set; }
 
-    /// <summary>Describes the destination options for a flow log. More details below.</summary>
+    /// <summary>Destination options for a flow log. More details below.</summary>
     [JsonPropertyName("destinationOptions")]
     public V1beta2FlowLogSpecForProviderDestinationOptions? DestinationOptions { get; set; }
 
@@ -860,15 +873,11 @@ public partial class V1beta2FlowLogSpecForProvider
     [JsonPropertyName("logDestinationType")]
     public string? LogDestinationType { get; set; }
 
-    /// <summary>The fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
+    /// <summary>Fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
     [JsonPropertyName("logFormat")]
     public string? LogFormat { get; set; }
 
-    /// <summary>
-    /// The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record.
-    /// Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600.
-    /// When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).
-    /// </summary>
+    /// <summary>Maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600. When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).</summary>
     [JsonPropertyName("maxAggregationInterval")]
     public double? MaxAggregationInterval { get; set; }
 
@@ -895,11 +904,15 @@ public partial class V1beta2FlowLogSpecForProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta2FlowLogSpecForProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta2FlowLogSpecForProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
+    /// <summary>Type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
     [JsonPropertyName("trafficType")]
     public string? TrafficType { get; set; }
 
@@ -1071,7 +1084,7 @@ public partial class V1beta2FlowLogSpecInitProviderDeliverCrossAccountRoleSelect
     public V1beta2FlowLogSpecInitProviderDeliverCrossAccountRoleSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Describes the destination options for a flow log. More details below.</summary>
+/// <summary>Destination options for a flow log. More details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowLogSpecInitProviderDestinationOptions
@@ -1080,11 +1093,11 @@ public partial class V1beta2FlowLogSpecInitProviderDestinationOptions
     [JsonPropertyName("fileFormat")]
     public string? FileFormat { get; set; }
 
-    /// <summary>Indicates whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
+    /// <summary>Whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
     [JsonPropertyName("hiveCompatiblePartitions")]
     public bool? HiveCompatiblePartitions { get; set; }
 
-    /// <summary>Indicates whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
+    /// <summary>Whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
     [JsonPropertyName("perHourPartition")]
     public bool? PerHourPartition { get; set; }
 }
@@ -1530,6 +1543,19 @@ public partial class V1beta2FlowLogSpecInitProviderSubnetIdSelector
     public V1beta2FlowLogSpecInitProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlowLogSpecInitProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1705,7 +1731,7 @@ public partial class V1beta2FlowLogSpecInitProvider
     [JsonPropertyName("deliverCrossAccountRoleSelector")]
     public V1beta2FlowLogSpecInitProviderDeliverCrossAccountRoleSelector? DeliverCrossAccountRoleSelector { get; set; }
 
-    /// <summary>Describes the destination options for a flow log. More details below.</summary>
+    /// <summary>Destination options for a flow log. More details below.</summary>
     [JsonPropertyName("destinationOptions")]
     public V1beta2FlowLogSpecInitProviderDestinationOptions? DestinationOptions { get; set; }
 
@@ -1741,15 +1767,11 @@ public partial class V1beta2FlowLogSpecInitProvider
     [JsonPropertyName("logDestinationType")]
     public string? LogDestinationType { get; set; }
 
-    /// <summary>The fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
+    /// <summary>Fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
     [JsonPropertyName("logFormat")]
     public string? LogFormat { get; set; }
 
-    /// <summary>
-    /// The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record.
-    /// Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600.
-    /// When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).
-    /// </summary>
+    /// <summary>Maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600. When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).</summary>
     [JsonPropertyName("maxAggregationInterval")]
     public double? MaxAggregationInterval { get; set; }
 
@@ -1769,11 +1791,15 @@ public partial class V1beta2FlowLogSpecInitProvider
     [JsonPropertyName("subnetIdSelector")]
     public V1beta2FlowLogSpecInitProviderSubnetIdSelector? SubnetIdSelector { get; set; }
 
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta2FlowLogSpecInitProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
+    /// <summary>Type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
     [JsonPropertyName("trafficType")]
     public string? TrafficType { get; set; }
 
@@ -1981,7 +2007,7 @@ public partial class V1beta2FlowLogSpec
     public V1beta2FlowLogSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Describes the destination options for a flow log. More details below.</summary>
+/// <summary>Destination options for a flow log. More details below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowLogStatusAtProviderDestinationOptions
@@ -1990,13 +2016,26 @@ public partial class V1beta2FlowLogStatusAtProviderDestinationOptions
     [JsonPropertyName("fileFormat")]
     public string? FileFormat { get; set; }
 
-    /// <summary>Indicates whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
+    /// <summary>Whether to use Hive-compatible prefixes for flow logs stored in Amazon S3. Default value: false.</summary>
     [JsonPropertyName("hiveCompatiblePartitions")]
     public bool? HiveCompatiblePartitions { get; set; }
 
-    /// <summary>Indicates whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
+    /// <summary>Whether to partition the flow log per hour. This reduces the cost and response time for queries. Default value: false.</summary>
     [JsonPropertyName("perHourPartition")]
     public bool? PerHourPartition { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2FlowLogStatusAtProviderTagFieldSpecification
+{
+    /// <summary>Resource type to associate the tag keys with. Valid values: instance, network-interface, auto-scaling-group.</summary>
+    [JsonPropertyName("resourceType")]
+    public string? ResourceType { get; set; }
+
+    /// <summary>Ordered list of tag keys, on resources of resource_type, to display in Flow Log records. The position of each key determines which field it populates in log_format (e.g., the first instance tag key populates $${instance-tag} and the second populates $${instance-tag-2}).</summary>
+    [JsonPropertyName("tagKeys")]
+    public IList<string>? TagKeys { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2011,7 +2050,7 @@ public partial class V1beta2FlowLogStatusAtProvider
     [JsonPropertyName("deliverCrossAccountRole")]
     public string? DeliverCrossAccountRole { get; set; }
 
-    /// <summary>Describes the destination options for a flow log. More details below.</summary>
+    /// <summary>Destination options for a flow log. More details below.</summary>
     [JsonPropertyName("destinationOptions")]
     public V1beta2FlowLogStatusAtProviderDestinationOptions? DestinationOptions { get; set; }
 
@@ -2035,15 +2074,11 @@ public partial class V1beta2FlowLogStatusAtProvider
     [JsonPropertyName("logDestinationType")]
     public string? LogDestinationType { get; set; }
 
-    /// <summary>The fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
+    /// <summary>Fields to include in the flow log record. Accepted format example: &quot;$${interface-id} $${srcaddr} $${dstaddr} $${srcport} $${dstport}&quot;.</summary>
     [JsonPropertyName("logFormat")]
     public string? LogFormat { get; set; }
 
-    /// <summary>
-    /// The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record.
-    /// Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600.
-    /// When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).
-    /// </summary>
+    /// <summary>Maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. Valid Values: 60 seconds (1 minute) or 600 seconds (10 minutes). Default: 600. When transit_gateway_id or transit_gateway_attachment_id is specified, max_aggregation_interval must be 60 seconds (1 minute).</summary>
     [JsonPropertyName("maxAggregationInterval")]
     public double? MaxAggregationInterval { get; set; }
 
@@ -2062,15 +2097,19 @@ public partial class V1beta2FlowLogStatusAtProvider
     [JsonPropertyName("subnetId")]
     public string? SubnetId { get; set; }
 
+    /// <summary>Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., $${instance-tag}) used in log_format. More details below.</summary>
+    [JsonPropertyName("tagFieldSpecification")]
+    public IList<V1beta2FlowLogStatusAtProviderTagFieldSpecification>? TagFieldSpecification { get; set; }
+
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
+    /// <summary>Type of traffic to capture. Valid values: ACCEPT,REJECT, ALL. Required if eni_id, regional_nat_gateway_id, subnet_id, or vpc_id is specified.</summary>
     [JsonPropertyName("trafficType")]
     public string? TrafficType { get; set; }
 

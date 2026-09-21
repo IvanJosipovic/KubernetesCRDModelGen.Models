@@ -1439,7 +1439,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("carrierGatewayId")]
     public string? CarrierGatewayId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a core network.</summary>
+    /// <summary>ARN of a core network.</summary>
     [JsonPropertyName("coreNetworkArn")]
     public string? CoreNetworkArn { get; set; }
 
@@ -1515,7 +1515,7 @@ public partial class V1beta1RouteSpecForProvider
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1RouteSpecForProviderNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    /// <summary>ARN of an ODB network.</summary>
     [JsonPropertyName("odbNetworkArn")]
     public string? OdbNetworkArn { get; set; }
 
@@ -2990,7 +2990,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("carrierGatewayId")]
     public string? CarrierGatewayId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a core network.</summary>
+    /// <summary>ARN of a core network.</summary>
     [JsonPropertyName("coreNetworkArn")]
     public string? CoreNetworkArn { get; set; }
 
@@ -3066,7 +3066,7 @@ public partial class V1beta1RouteSpecInitProvider
     [JsonPropertyName("networkInterfaceIdSelector")]
     public V1beta1RouteSpecInitProviderNetworkInterfaceIdSelector? NetworkInterfaceIdSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    /// <summary>ARN of an ODB network.</summary>
     [JsonPropertyName("odbNetworkArn")]
     public string? OdbNetworkArn { get; set; }
 
@@ -3234,7 +3234,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("carrierGatewayId")]
     public string? CarrierGatewayId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a core network.</summary>
+    /// <summary>ARN of a core network.</summary>
     [JsonPropertyName("coreNetworkArn")]
     public string? CoreNetworkArn { get; set; }
 
@@ -3282,7 +3282,7 @@ public partial class V1beta1RouteStatusAtProvider
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    /// <summary>ARN of an ODB network.</summary>
     [JsonPropertyName("odbNetworkArn")]
     public string? OdbNetworkArn { get; set; }
 

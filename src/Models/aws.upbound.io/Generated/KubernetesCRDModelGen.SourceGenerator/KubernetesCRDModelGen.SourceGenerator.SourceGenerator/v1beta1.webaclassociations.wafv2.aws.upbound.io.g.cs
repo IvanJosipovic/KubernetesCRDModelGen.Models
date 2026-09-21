@@ -360,7 +360,7 @@ public partial class V1beta1WebACLAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
+    /// <summary>ARN of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -372,7 +372,7 @@ public partial class V1beta1WebACLAssociationSpecForProvider
     [JsonPropertyName("resourceArnSelector")]
     public V1beta1WebACLAssociationSpecForProviderResourceArnSelector? ResourceArnSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Web ACL that you want to associate with the resource.</summary>
+    /// <summary>ARN of the Web ACL that you want to associate with the resource.</summary>
     [JsonPropertyName("webAclArn")]
     public string? WebAclArn { get; set; }
 
@@ -600,11 +600,11 @@ public partial class V1beta1WebACLAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
+    /// <summary>ARN of the resource to associate with the web ACL. This must be an ARN of an Application Load Balancer, an Amazon API Gateway stage (REST only, HTTP is unsupported), an Amazon Cognito User Pool, an Amazon AppSync GraphQL API, an Amazon App Runner service, an AWS Amplify application, an Amazon Bedrock AgentCore Gateway, or an Amazon Verified Access instance.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Web ACL that you want to associate with the resource.</summary>
+    /// <summary>ARN of the Web ACL that you want to associate with the resource.</summary>
     [JsonPropertyName("webAclArn")]
     public string? WebAclArn { get; set; }
 }

@@ -72,23 +72,23 @@ spec:
               forProvider:
                 properties:
                   auth:
-                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.
+                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.
                     items:
                       properties:
                         authScheme:
-                          description: The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
+                          description: Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
                           type: string
                         clientPasswordAuthType:
-                          description: The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
+                          description: Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
                           type: string
                         description:
-                          description: A user-specified description about the authentication used by a proxy to log in as a specific database user.
+                          description: User-specified description about the authentication used by a proxy to log in as a specific database user.
                           type: string
                         iamAuth:
                           description: Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy. One of DISABLED, REQUIRED.
                           type: string
                         secretArn:
-                          description: The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
+                          description: ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
                           type: string
                         secretArnRef:
                           description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -164,7 +164,7 @@ spec:
                               type: object
                           type: object
                         username:
-                          description: The name of the database user to which the proxy connects.
+                          description: Name of the database user to which the proxy connects.
                           type: string
                       type: object
                     type: array
@@ -178,10 +178,10 @@ spec:
                     description: Network type of the DB proxy endpoint. Valid values are IPV4, IPV6 and DUAL. Defaults to IPV4. If IPV6 is specified, the subnets associated with the proxy must be IPv6-only, and target_connection_network_type must be IPV6.
                     type: string
                   engineFamily:
-                    description: The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
+                    description: Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
                     type: string
                   idleClientTimeout:
-                    description: The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
+                    description: Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
                     type: number
                   region:
                     description: |-
@@ -189,10 +189,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requireTls:
-                    description: A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.
+                    description: Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.
                     type: boolean
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
+                    description: ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -457,23 +457,23 @@ spec:
                   autoscaler.
                 properties:
                   auth:
-                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.
+                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.
                     items:
                       properties:
                         authScheme:
-                          description: The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
+                          description: Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
                           type: string
                         clientPasswordAuthType:
-                          description: The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
+                          description: Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
                           type: string
                         description:
-                          description: A user-specified description about the authentication used by a proxy to log in as a specific database user.
+                          description: User-specified description about the authentication used by a proxy to log in as a specific database user.
                           type: string
                         iamAuth:
                           description: Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy. One of DISABLED, REQUIRED.
                           type: string
                         secretArn:
-                          description: The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
+                          description: ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
                           type: string
                         secretArnRef:
                           description: Reference to a Secret in secretsmanager to populate secretArn.
@@ -549,7 +549,7 @@ spec:
                               type: object
                           type: object
                         username:
-                          description: The name of the database user to which the proxy connects.
+                          description: Name of the database user to which the proxy connects.
                           type: string
                       type: object
                     type: array
@@ -563,16 +563,16 @@ spec:
                     description: Network type of the DB proxy endpoint. Valid values are IPV4, IPV6 and DUAL. Defaults to IPV4. If IPV6 is specified, the subnets associated with the proxy must be IPv6-only, and target_connection_network_type must be IPV6.
                     type: string
                   engineFamily:
-                    description: The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
+                    description: Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
                     type: string
                   idleClientTimeout:
-                    description: The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
+                    description: Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
                     type: number
                   requireTls:
-                    description: A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.
+                    description: Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.
                     type: boolean
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
+                    description: ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
                     type: string
                   roleArnRef:
                     description: Reference to a Role in iam to populate roleArn.
@@ -916,29 +916,29 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) for the proxy.
+                    description: ARN for the proxy.
                     type: string
                   auth:
-                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. Described below.
+                    description: Configuration block(s) with authorization mechanisms to connect to the associated instances or clusters. Required when default_auth_scheme is NONE or unspecified. See the auth block below.
                     items:
                       properties:
                         authScheme:
-                          description: The type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
+                          description: Type of authentication that the proxy uses for connections from the proxy to the underlying database. One of SECRETS.
                           type: string
                         clientPasswordAuthType:
-                          description: The type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
+                          description: Type of authentication the proxy uses for connections from clients. Valid values are MYSQL_CACHING_SHA2_PASSWORD, MYSQL_NATIVE_PASSWORD, POSTGRES_SCRAM_SHA_256, POSTGRES_MD5, and SQL_SERVER_AUTHENTICATION.
                           type: string
                         description:
-                          description: A user-specified description about the authentication used by a proxy to log in as a specific database user.
+                          description: User-specified description about the authentication used by a proxy to log in as a specific database user.
                           type: string
                         iamAuth:
                           description: Whether to require or disallow AWS Identity and Access Management (IAM) authentication for connections to the proxy. One of DISABLED, REQUIRED.
                           type: string
                         secretArn:
-                          description: The Amazon Resource Name (ARN) representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
+                          description: ARN representing the secret that the proxy uses to authenticate to the RDS DB instance or Aurora DB cluster. These secrets are stored within Amazon Secrets Manager.
                           type: string
                         username:
-                          description: The name of the database user to which the proxy connects.
+                          description: Name of the database user to which the proxy connects.
                           type: string
                       type: object
                     type: array
@@ -949,19 +949,19 @@ spec:
                     description: Default authentication scheme that the proxy uses for client connections to the proxy and connections from the proxy to the underlying database. Valid values are NONE and IAM_AUTH. Defaults to NONE.
                     type: string
                   endpoint:
-                    description: The endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.
+                    description: Endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.
                     type: string
                   endpointNetworkType:
                     description: Network type of the DB proxy endpoint. Valid values are IPV4, IPV6 and DUAL. Defaults to IPV4. If IPV6 is specified, the subnets associated with the proxy must be IPv6-only, and target_connection_network_type must be IPV6.
                     type: string
                   engineFamily:
-                    description: The kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
+                    description: Kinds of databases that the proxy can connect to. This value determines which database network protocol the proxy recognizes when it interprets network traffic to and from the database. For Aurora MySQL, RDS for MariaDB, and RDS for MySQL databases, specify MYSQL. For Aurora PostgreSQL and RDS for PostgreSQL databases, specify POSTGRESQL. For RDS for Microsoft SQL Server, specify SQLSERVER. Valid values are MYSQL, POSTGRESQL, and SQLSERVER.
                     type: string
                   id:
-                    description: The Amazon Resource Name (ARN) for the proxy.
+                    description: ARN for the proxy.
                     type: string
                   idleClientTimeout:
-                    description: The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
+                    description: Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
                     type: number
                   region:
                     description: |-
@@ -969,10 +969,10 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requireTls:
-                    description: A Boolean parameter that specifies whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy.
+                    description: Whether TLS encryption is required for connections to the proxy. Enabling this setting enforces encrypted TLS connections to the proxy.
                     type: boolean
                   roleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
+                    description: ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
                     type: string
                   tags:
                     additionalProperties:
@@ -983,7 +983,7 @@ spec:
                   tagsAll:
                     additionalProperties:
                       type: string
-                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
                   targetConnectionNetworkType:

@@ -216,7 +216,7 @@ public partial class V1beta1AddonSpecForProviderNamespaceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AddonSpecForProviderPodIdentityAssociation
 {
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -434,7 +434,7 @@ public partial class V1beta1AddonSpecForProvider
     public string? ResolveConflictsOnUpdate { get; set; }
 
     /// <summary>
-    /// The Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// existing IAM role to bind to the add-on&apos;s service account. The role must be
     /// assigned the IAM permissions required by the add-on. If you don&apos;t specify
     /// an existing IAM role, then the add-on uses the permissions assigned to the node
@@ -618,7 +618,7 @@ public partial class V1beta1AddonSpecInitProviderNamespaceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AddonSpecInitProviderPodIdentityAssociation
 {
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -841,7 +841,7 @@ public partial class V1beta1AddonSpecInitProvider
     public string? ResolveConflictsOnUpdate { get; set; }
 
     /// <summary>
-    /// The Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// existing IAM role to bind to the add-on&apos;s service account. The role must be
     /// assigned the IAM permissions required by the add-on. If you don&apos;t specify
     /// an existing IAM role, then the add-on uses the permissions assigned to the node
@@ -1061,7 +1061,7 @@ public partial class V1beta1AddonStatusAtProviderNamespaceConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AddonStatusAtProviderPodIdentityAssociation
 {
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
+    /// <summary>ARN of the IAM role to associate with the service account. The EKS Pod Identity agent manages credentials to assume this role for applications in the containers in the pods that use this service account.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1088,7 +1088,7 @@ public partial class V1beta1AddonStatusAtProvider
     [JsonPropertyName("addonVersion")]
     public string? AddonVersion { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the EKS add-on.</summary>
+    /// <summary>ARN of the EKS add-on.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1140,7 +1140,7 @@ public partial class V1beta1AddonStatusAtProvider
     public string? ResolveConflictsOnUpdate { get; set; }
 
     /// <summary>
-    /// The Amazon Resource Name (ARN) of an
+    /// ARN of an
     /// existing IAM role to bind to the add-on&apos;s service account. The role must be
     /// assigned the IAM permissions required by the add-on. If you don&apos;t specify
     /// an existing IAM role, then the add-on uses the permissions assigned to the node

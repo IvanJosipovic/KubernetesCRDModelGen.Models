@@ -67,7 +67,7 @@ public partial class V1beta2BucketSpecForProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>Indicates whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
+    /// <summary>Whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
     [JsonPropertyName("objectLockEnabled")]
     public bool? ObjectLockEnabled { get; set; }
 
@@ -107,7 +107,7 @@ public partial class V1beta2BucketSpecInitProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>Indicates whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
+    /// <summary>Whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
     [JsonPropertyName("objectLockEnabled")]
     public bool? ObjectLockEnabled { get; set; }
 
@@ -319,7 +319,7 @@ public partial class V1beta2BucketStatusAtProviderCorsRule
     [JsonPropertyName("exposeHeaders")]
     public IList<string>? ExposeHeaders { get; set; }
 
-    /// <summary>Specifies time in seconds that browser can cache the response for a preflight request.</summary>
+    /// <summary>Time in seconds that browser can cache the response for a preflight request.</summary>
     [JsonPropertyName("maxAgeSeconds")]
     public double? MaxAgeSeconds { get; set; }
 }
@@ -345,16 +345,16 @@ public partial class V1beta2BucketStatusAtProviderGrant
     public string? Uri { get; set; }
 }
 
-/// <summary>Specifies a period in the object&apos;s expire. See Expiration below for details.</summary>
+/// <summary>Configuration of the object expiration. See expiration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLifecycleRuleExpiration
 {
-    /// <summary>Specifies the date after which you want the corresponding action to take effect.</summary>
+    /// <summary>Date after which you want the corresponding action to take effect.</summary>
     [JsonPropertyName("date")]
     public string? Date { get; set; }
 
-    /// <summary>Specifies the number of days after object creation when the specific rule action takes effect.</summary>
+    /// <summary>Number of days after object creation when the specific rule action takes effect.</summary>
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
@@ -363,12 +363,12 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRuleExpiration
     public bool? ExpiredObjectDeleteMarker { get; set; }
 }
 
-/// <summary>Specifies when noncurrent object versions expire. See Noncurrent Version Expiration below for details.</summary>
+/// <summary>When noncurrent object versions expire. See noncurrent_version_expiration Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersionExpiration
 {
-    /// <summary>Specifies the number of days after object creation when the specific rule action takes effect.</summary>
+    /// <summary>Number of days after object creation when the specific rule action takes effect.</summary>
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 }
@@ -377,11 +377,11 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersion
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersionTransition
 {
-    /// <summary>Specifies the number of days after object creation when the specific rule action takes effect.</summary>
+    /// <summary>Number of days after object creation when the specific rule action takes effect.</summary>
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
-    /// <summary>Specifies the Amazon S3 storage class to which you want the object to transition.</summary>
+    /// <summary>Amazon S3 storage class to which you want the object to transition.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
@@ -390,15 +390,15 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersion
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLifecycleRuleTransition
 {
-    /// <summary>Specifies the date after which you want the corresponding action to take effect.</summary>
+    /// <summary>Date after which you want the corresponding action to take effect.</summary>
     [JsonPropertyName("date")]
     public string? Date { get; set; }
 
-    /// <summary>Specifies the number of days after object creation when the specific rule action takes effect.</summary>
+    /// <summary>Number of days after object creation when the specific rule action takes effect.</summary>
     [JsonPropertyName("days")]
     public double? Days { get; set; }
 
-    /// <summary>Specifies the Amazon S3 storage class to which you want the object to transition.</summary>
+    /// <summary>Amazon S3 storage class to which you want the object to transition.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
@@ -407,15 +407,15 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRuleTransition
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLifecycleRule
 {
-    /// <summary>Specifies the number of days after initiating a multipart upload when the multipart upload must be completed.</summary>
+    /// <summary>Number of days after initiating a multipart upload when the multipart upload must be completed.</summary>
     [JsonPropertyName("abortIncompleteMultipartUploadDays")]
     public double? AbortIncompleteMultipartUploadDays { get; set; }
 
-    /// <summary>Specifies lifecycle rule status.</summary>
+    /// <summary>Lifecycle rule status.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Specifies a period in the object&apos;s expire. See Expiration below for details.</summary>
+    /// <summary>Configuration of the object expiration. See expiration Block below for details.</summary>
     [JsonPropertyName("expiration")]
     public V1beta2BucketStatusAtProviderLifecycleRuleExpiration? Expiration { get; set; }
 
@@ -423,11 +423,11 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRule
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Specifies when noncurrent object versions expire. See Noncurrent Version Expiration below for details.</summary>
+    /// <summary>When noncurrent object versions expire. See noncurrent_version_expiration Block below for details.</summary>
     [JsonPropertyName("noncurrentVersionExpiration")]
     public V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersionExpiration? NoncurrentVersionExpiration { get; set; }
 
-    /// <summary>Specifies when noncurrent object versions transitions. See Noncurrent Version Transition below for details.</summary>
+    /// <summary>When noncurrent object versions transition. See noncurrent_version_transition Block below for details.</summary>
     [JsonPropertyName("noncurrentVersionTransition")]
     public IList<V1beta2BucketStatusAtProviderLifecycleRuleNoncurrentVersionTransition>? NoncurrentVersionTransition { get; set; }
 
@@ -435,19 +435,16 @@ public partial class V1beta2BucketStatusAtProviderLifecycleRule
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Specifies object tags key and value.</summary>
+    /// <summary>Object tags key and value.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies a period in the object&apos;s transitions. See Transition below for details.</summary>
+    /// <summary>Configuration of the object transition. See transition Block below for details.</summary>
     [JsonPropertyName("transition")]
     public IList<V1beta2BucketStatusAtProviderLifecycleRuleTransition>? Transition { get; set; }
 }
 
-/// <summary>
-/// Configuration of S3 bucket logging parameters. See Logging below for details.
-/// Use the resource aws_s3_bucket_logging instead.
-/// </summary>
+/// <summary>Configuration of S3 bucket logging parameters. See logging Block below for details. Use the resource aws_s3_bucket_logging instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderLogging
@@ -461,7 +458,7 @@ public partial class V1beta2BucketStatusAtProviderLogging
     public string? TargetPrefix { get; set; }
 }
 
-/// <summary>Default retention period that you want to apply to new objects placed in this bucket (documented below).</summary>
+/// <summary>Default retention period that you want to apply to new objects placed in this bucket. See default_retention Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderObjectLockConfigurationRuleDefaultRetention
@@ -479,44 +476,41 @@ public partial class V1beta2BucketStatusAtProviderObjectLockConfigurationRuleDef
     public double? Years { get; set; }
 }
 
-/// <summary>Object Lock rule in place for this bucket (documented below).</summary>
+/// <summary>Object Lock rule in place for this bucket. See object_lock_configuration.rule Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderObjectLockConfigurationRule
 {
-    /// <summary>Default retention period that you want to apply to new objects placed in this bucket (documented below).</summary>
+    /// <summary>Default retention period that you want to apply to new objects placed in this bucket. See default_retention Block below for details.</summary>
     [JsonPropertyName("defaultRetention")]
     public V1beta2BucketStatusAtProviderObjectLockConfigurationRuleDefaultRetention? DefaultRetention { get; set; }
 }
 
-/// <summary>
-/// Configuration of S3 object locking. See Object Lock Configuration below for details.
-/// Use the object_lock_enabled parameter and the resource aws_s3_bucket_object_lock_configuration instead.
-/// </summary>
+/// <summary>Configuration of S3 object locking. See object_lock_configuration Block below for details. Use the object_lock_enabled parameter and the resource aws_s3_bucket_object_lock_configuration instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderObjectLockConfiguration
 {
-    /// <summary>Indicates whether this bucket has an Object Lock configuration enabled. Valid value is Enabled. Use the top-level argument object_lock_enabled instead.</summary>
+    /// <summary>Whether this bucket has an Object Lock configuration enabled. Valid value is Enabled. Use the top-level argument object_lock_enabled instead.</summary>
     [JsonPropertyName("objectLockEnabled")]
     public string? ObjectLockEnabled { get; set; }
 
-    /// <summary>Object Lock rule in place for this bucket (documented below).</summary>
+    /// <summary>Object Lock rule in place for this bucket. See object_lock_configuration.rule Block below for details.</summary>
     [JsonPropertyName("rule")]
     public V1beta2BucketStatusAtProviderObjectLockConfigurationRule? Rule { get; set; }
 }
 
-/// <summary>Specifies the overrides to use for object owners on replication (documented below). Must be used in conjunction with account_id owner override configuration.</summary>
+/// <summary>Overrides to use for object owners on replication. See access_control_translation Block below for details. Must be used in conjunction with account_id owner override configuration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationAccessControlTranslation
 {
-    /// <summary>Specifies the replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. The only valid value is Destination.</summary>
+    /// <summary>Replica ownership. For default and valid values, see PUT bucket replication in the Amazon S3 API Reference. The only valid value is Destination.</summary>
     [JsonPropertyName("owner")]
     public string? Owner { get; set; }
 }
 
-/// <summary>Enables replication metrics  (documented below).</summary>
+/// <summary>Enables replication metrics . See metrics Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationMetrics
@@ -530,7 +524,7 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesD
     public string? Status { get; set; }
 }
 
-/// <summary>Enables S3 Replication Time Control (S3 RTC) (documented below).</summary>
+/// <summary>Enables S3 Replication Time Control (S3 RTC). See replication_time Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationReplicationTime
@@ -544,12 +538,12 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesD
     public string? Status { get; set; }
 }
 
-/// <summary>Specifies the destination for the rule (documented below).</summary>
+/// <summary>Destination for the rule. See destination Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestination
 {
-    /// <summary>Specifies the overrides to use for object owners on replication (documented below). Must be used in conjunction with account_id owner override configuration.</summary>
+    /// <summary>Overrides to use for object owners on replication. See access_control_translation Block below for details. Must be used in conjunction with account_id owner override configuration.</summary>
     [JsonPropertyName("accessControlTranslation")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationAccessControlTranslation? AccessControlTranslation { get; set; }
 
@@ -561,27 +555,24 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesD
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Enables replication metrics  (documented below).</summary>
+    /// <summary>Enables replication metrics . See metrics Block below for details.</summary>
     [JsonPropertyName("metrics")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationMetrics? Metrics { get; set; }
 
-    /// <summary>
-    /// Destination KMS encryption key ARN for SSE-KMS replication. Must be used in conjunction with
-    /// sse_kms_encrypted_objects source selection criteria.
-    /// </summary>
+    /// <summary>Destination KMS encryption key ARN for SSE-KMS replication. Must be used in conjunction with sse_kms_encrypted_objects source selection criteria.</summary>
     [JsonPropertyName("replicaKmsKeyId")]
     public string? ReplicaKmsKeyId { get; set; }
 
-    /// <summary>Enables S3 Replication Time Control (S3 RTC) (documented below).</summary>
+    /// <summary>Enables S3 Replication Time Control (S3 RTC). See replication_time Block below for details.</summary>
     [JsonPropertyName("replicationTime")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestinationReplicationTime? ReplicationTime { get; set; }
 
-    /// <summary>Specifies the Amazon S3 storage class to which you want the object to transition.</summary>
+    /// <summary>Amazon S3 storage class to which you want the object to transition.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 }
 
-/// <summary>Filter that identifies subset of objects to which the replication rule applies (documented below).</summary>
+/// <summary>Filter that identifies subset of objects to which the replication rule applies. See filter Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesFilter
@@ -590,18 +581,12 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesF
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>
-    /// A map of tags that identifies subset of objects to which the rule applies.
-    /// The rule applies only to objects having all the tags in its tagset.
-    /// </summary>
+    /// <summary>Map of tags that identifies subset of objects to which the rule applies. The rule applies only to objects having all the tags in its tagset.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>
-/// Match SSE-KMS encrypted objects (documented below). If specified, replica_kms_key_id
-/// in destination must be specified as well.
-/// </summary>
+/// <summary>Match SSE-KMS encrypted objects. See sse_kms_encrypted_objects Block below for details. If specified, replica_kms_key_id in destination must be specified as well.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects
@@ -611,15 +596,12 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesS
     public bool? Enabled { get; set; }
 }
 
-/// <summary>Specifies special object selection criteria (documented below).</summary>
+/// <summary>Special object selection criteria. See source_selection_criteria Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteria
 {
-    /// <summary>
-    /// Match SSE-KMS encrypted objects (documented below). If specified, replica_kms_key_id
-    /// in destination must be specified as well.
-    /// </summary>
+    /// <summary>Match SSE-KMS encrypted objects. See sse_kms_encrypted_objects Block below for details. If specified, replica_kms_key_id in destination must be specified as well.</summary>
     [JsonPropertyName("sseKmsEncryptedObjects")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects? SseKmsEncryptedObjects { get; set; }
 }
@@ -632,11 +614,11 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRules
     [JsonPropertyName("deleteMarkerReplicationStatus")]
     public string? DeleteMarkerReplicationStatus { get; set; }
 
-    /// <summary>Specifies the destination for the rule (documented below).</summary>
+    /// <summary>Destination for the rule. See destination Block below for details.</summary>
     [JsonPropertyName("destination")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesDestination? Destination { get; set; }
 
-    /// <summary>Filter that identifies subset of objects to which the replication rule applies (documented below).</summary>
+    /// <summary>Filter that identifies subset of objects to which the replication rule applies. See filter Block below for details.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesFilter? Filter { get; set; }
 
@@ -652,7 +634,7 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRules
     [JsonPropertyName("priority")]
     public double? Priority { get; set; }
 
-    /// <summary>Specifies special object selection criteria (documented below).</summary>
+    /// <summary>Special object selection criteria. See source_selection_criteria Block below for details.</summary>
     [JsonPropertyName("sourceSelectionCriteria")]
     public V1beta2BucketStatusAtProviderReplicationConfigurationRulesSourceSelectionCriteria? SourceSelectionCriteria { get; set; }
 
@@ -661,10 +643,7 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfigurationRules
     public string? Status { get; set; }
 }
 
-/// <summary>
-/// Configuration of replication configuration. See Replication Configuration below for details.
-/// Use the resource aws_s3_bucket_replication_configuration instead.
-/// </summary>
+/// <summary>Configuration of replication configuration. See replication_configuration Block below for details. Use the resource aws_s3_bucket_replication_configuration instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderReplicationConfiguration
@@ -673,12 +652,12 @@ public partial class V1beta2BucketStatusAtProviderReplicationConfiguration
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>Specifies the rules managing the replication (documented below).</summary>
+    /// <summary>Rules managing the replication. See rules Block below for details.</summary>
     [JsonPropertyName("rules")]
     public IList<V1beta2BucketStatusAtProviderReplicationConfigurationRules>? Rules { get; set; }
 }
 
-/// <summary>Single object for setting server-side encryption by default. (documented below)</summary>
+/// <summary>Single object for setting server-side encryption by default. See apply_server_side_encryption_by_default Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault
@@ -692,12 +671,12 @@ public partial class V1beta2BucketStatusAtProviderServerSideEncryptionConfigurat
     public string? SseAlgorithm { get; set; }
 }
 
-/// <summary>Single object for server-side encryption by default configuration. (documented below)</summary>
+/// <summary>Single object for server-side encryption by default configuration. See server_side_encryption_configuration.rule Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderServerSideEncryptionConfigurationRule
 {
-    /// <summary>Single object for setting server-side encryption by default. (documented below)</summary>
+    /// <summary>Single object for setting server-side encryption by default. See apply_server_side_encryption_by_default Block below for details.</summary>
     [JsonPropertyName("applyServerSideEncryptionByDefault")]
     public V1beta2BucketStatusAtProviderServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault? ApplyServerSideEncryptionByDefault { get; set; }
 
@@ -706,20 +685,17 @@ public partial class V1beta2BucketStatusAtProviderServerSideEncryptionConfigurat
     public bool? BucketKeyEnabled { get; set; }
 }
 
-/// <summary>
-/// Configuration of server-side encryption configuration. See Server Side Encryption Configuration below for details.
-/// Use the resource aws_s3_bucket_server_side_encryption_configuration instead.
-/// </summary>
+/// <summary>Configuration of server-side encryption configuration. See server_side_encryption_configuration Block below for details. Use the resource aws_s3_bucket_server_side_encryption_configuration instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderServerSideEncryptionConfiguration
 {
-    /// <summary>Single object for server-side encryption by default configuration. (documented below)</summary>
+    /// <summary>Single object for server-side encryption by default configuration. See server_side_encryption_configuration.rule Block below for details.</summary>
     [JsonPropertyName("rule")]
     public V1beta2BucketStatusAtProviderServerSideEncryptionConfigurationRule? Rule { get; set; }
 }
 
-/// <summary>Configuration of the S3 bucket versioning state. See Versioning below for details. Use the resource aws_s3_bucket_versioning instead.</summary>
+/// <summary>Configuration of the S3 bucket versioning state. See versioning Block below for details. Use the resource aws_s3_bucket_versioning instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderVersioning
@@ -733,10 +709,7 @@ public partial class V1beta2BucketStatusAtProviderVersioning
     public bool? MfaDelete { get; set; }
 }
 
-/// <summary>
-/// Configuration of the S3 bucket website. See Website below for details.
-/// Use the resource aws_s3_bucket_website_configuration instead.
-/// </summary>
+/// <summary>Configuration of the S3 bucket website. See website Block below for details. Use the resource aws_s3_bucket_website_configuration instead.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProviderWebsite
@@ -753,10 +726,7 @@ public partial class V1beta2BucketStatusAtProviderWebsite
     [JsonPropertyName("redirectAllRequestsTo")]
     public string? RedirectAllRequestsTo { get; set; }
 
-    /// <summary>
-    /// JSON array containing routing rules
-    /// describing redirect behavior and when redirects are applied.
-    /// </summary>
+    /// <summary>JSON array containing routing rules describing redirect behavior and when redirects are applied.</summary>
     [JsonPropertyName("routingRules")]
     public string? RoutingRules { get; set; }
 }
@@ -765,14 +735,11 @@ public partial class V1beta2BucketStatusAtProviderWebsite
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketStatusAtProvider
 {
-    /// <summary>
-    /// Sets the accelerate configuration of an existing bucket. Can be Enabled or Suspended. Cannot be used in cn-north-1 or us-gov-west-1.
-    /// Use the resource aws_s3_bucket_accelerate_configuration instead.
-    /// </summary>
+    /// <summary>Sets the accelerate configuration of an existing bucket. Can be Enabled or Suspended. Cannot be used in cn-north-1 or us-gov-west-1. Use the resource aws_s3_bucket_accelerate_configuration instead.</summary>
     [JsonPropertyName("accelerationStatus")]
     public string? AccelerationStatus { get; set; }
 
-    /// <summary>The canned ACL to apply. Valid values are private, public-read, public-read-write, aws-exec-read, authenticated-read, and log-delivery-write. Defaults to private.  Conflicts with grant. Use the resource aws_s3_bucket_acl instead.</summary>
+    /// <summary>Canned ACL to apply. Valid values are private, public-read, public-read-write, aws-exec-read, authenticated-read, and log-delivery-write. Defaults to private. Conflicts with grant. Use the resource aws_s3_bucket_acl instead.</summary>
     [JsonPropertyName("acl")]
     public string? Acl { get; set; }
 
@@ -792,11 +759,11 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("bucketRegion")]
     public string? BucketRegion { get; set; }
 
-    /// <summary>The bucket region-specific domain name. The bucket domain name including the region name. Please refer to the S3 endpoints reference for format. Note: AWS CloudFront allows specifying an S3 region-specific endpoint when creating an S3 origin. This will prevent redirect issues from CloudFront to the S3 Origin URL. For more information, see the Virtual Hosted-Style Requests for Other Regions section in the AWS S3 User Guide.</summary>
+    /// <summary>Bucket region-specific domain name. The bucket domain name including the region name. Please refer to the S3 endpoints reference for format. Note: AWS CloudFront allows specifying an S3 region-specific endpoint when creating an S3 origin. This will prevent redirect issues from CloudFront to the S3 Origin URL. For more information, see the Virtual Hosted-Style Requests for Other Regions section in the AWS S3 User Guide.</summary>
     [JsonPropertyName("bucketRegionalDomainName")]
     public string? BucketRegionalDomainName { get; set; }
 
-    /// <summary>Rule of Cross-Origin Resource Sharing. See CORS rule below for details. Use the resource aws_s3_bucket_cors_configuration instead.</summary>
+    /// <summary>Rule of Cross-Origin Resource Sharing. See cors_rule Block below for details. Use the resource aws_s3_bucket_cors_configuration instead.</summary>
     [JsonPropertyName("corsRule")]
     public IList<V1beta2BucketStatusAtProviderCorsRule>? CorsRule { get; set; }
 
@@ -804,7 +771,7 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>An ACL policy grant. See Grant below for details. Conflicts with acl. Use the resource aws_s3_bucket_acl instead.</summary>
+    /// <summary>ACL policy grant. See grant Block below for details. Conflicts with acl. Use the resource aws_s3_bucket_acl instead.</summary>
     [JsonPropertyName("grant")]
     public IList<V1beta2BucketStatusAtProviderGrant>? Grant { get; set; }
 
@@ -816,35 +783,23 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// Configuration of object lifecycle management. See Lifecycle Rule below for details.
-    /// Use the resource aws_s3_bucket_lifecycle_configuration instead.
-    /// </summary>
+    /// <summary>Configuration of object lifecycle management. See lifecycle_rule Block below for details. Use the resource aws_s3_bucket_lifecycle_configuration instead.</summary>
     [JsonPropertyName("lifecycleRule")]
     public IList<V1beta2BucketStatusAtProviderLifecycleRule>? LifecycleRule { get; set; }
 
-    /// <summary>
-    /// Configuration of S3 bucket logging parameters. See Logging below for details.
-    /// Use the resource aws_s3_bucket_logging instead.
-    /// </summary>
+    /// <summary>Configuration of S3 bucket logging parameters. See logging Block below for details. Use the resource aws_s3_bucket_logging instead.</summary>
     [JsonPropertyName("logging")]
     public V1beta2BucketStatusAtProviderLogging? Logging { get; set; }
 
-    /// <summary>
-    /// Configuration of S3 object locking. See Object Lock Configuration below for details.
-    /// Use the object_lock_enabled parameter and the resource aws_s3_bucket_object_lock_configuration instead.
-    /// </summary>
+    /// <summary>Configuration of S3 object locking. See object_lock_configuration Block below for details. Use the object_lock_enabled parameter and the resource aws_s3_bucket_object_lock_configuration instead.</summary>
     [JsonPropertyName("objectLockConfiguration")]
     public V1beta2BucketStatusAtProviderObjectLockConfiguration? ObjectLockConfiguration { get; set; }
 
-    /// <summary>Indicates whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
+    /// <summary>Whether this bucket has an Object Lock configuration enabled. Valid values are true or false. This argument is not supported in all regions or partitions.</summary>
     [JsonPropertyName("objectLockEnabled")]
     public bool? ObjectLockEnabled { get; set; }
 
-    /// <summary>
-    /// Valid bucket policy JSON document. In this case, please make sure you use the verbose/specific version of the policy.
-    /// Use the resource aws_s3_bucket_policy instead.
-    /// </summary>
+    /// <summary>Valid bucket policy JSON document. In this case, please make sure you use the verbose/specific version of the policy. Use the resource aws_s3_bucket_policy instead.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -855,26 +810,15 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// Configuration of replication configuration. See Replication Configuration below for details.
-    /// Use the resource aws_s3_bucket_replication_configuration instead.
-    /// </summary>
+    /// <summary>Configuration of replication configuration. See replication_configuration Block below for details. Use the resource aws_s3_bucket_replication_configuration instead.</summary>
     [JsonPropertyName("replicationConfiguration")]
     public V1beta2BucketStatusAtProviderReplicationConfiguration? ReplicationConfiguration { get; set; }
 
-    /// <summary>
-    /// Specifies who should bear the cost of Amazon S3 data transfer.
-    /// Can be either BucketOwner or Requester. By default, the owner of the S3 bucket would incur the costs of any data transfer.
-    /// See Requester Pays Buckets developer guide for more information.
-    /// Use the resource aws_s3_bucket_request_payment_configuration instead.
-    /// </summary>
+    /// <summary>Who should bear the cost of Amazon S3 data transfer. Can be either BucketOwner or Requester. By default, the owner of the S3 bucket would incur the costs of any data transfer. See Requester Pays Buckets developer guide for more information. Use the resource aws_s3_bucket_request_payment_configuration instead.</summary>
     [JsonPropertyName("requestPayer")]
     public string? RequestPayer { get; set; }
 
-    /// <summary>
-    /// Configuration of server-side encryption configuration. See Server Side Encryption Configuration below for details.
-    /// Use the resource aws_s3_bucket_server_side_encryption_configuration instead.
-    /// </summary>
+    /// <summary>Configuration of server-side encryption configuration. See server_side_encryption_configuration Block below for details. Use the resource aws_s3_bucket_server_side_encryption_configuration instead.</summary>
     [JsonPropertyName("serverSideEncryptionConfiguration")]
     public V1beta2BucketStatusAtProviderServerSideEncryptionConfiguration? ServerSideEncryptionConfiguration { get; set; }
 
@@ -886,14 +830,11 @@ public partial class V1beta2BucketStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>Configuration of the S3 bucket versioning state. See Versioning below for details. Use the resource aws_s3_bucket_versioning instead.</summary>
+    /// <summary>Configuration of the S3 bucket versioning state. See versioning Block below for details. Use the resource aws_s3_bucket_versioning instead.</summary>
     [JsonPropertyName("versioning")]
     public V1beta2BucketStatusAtProviderVersioning? Versioning { get; set; }
 
-    /// <summary>
-    /// Configuration of the S3 bucket website. See Website below for details.
-    /// Use the resource aws_s3_bucket_website_configuration instead.
-    /// </summary>
+    /// <summary>Configuration of the S3 bucket website. See website Block below for details. Use the resource aws_s3_bucket_website_configuration instead.</summary>
     [JsonPropertyName("website")]
     public V1beta2BucketStatusAtProviderWebsite? Website { get; set; }
 

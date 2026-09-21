@@ -852,7 +852,7 @@ public partial class V1beta1PipelineStatusAtProvider
     [JsonPropertyName("minUnits")]
     public double? MinUnits { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the pipeline.</summary>
+    /// <summary>ARN of the pipeline.</summary>
     [JsonPropertyName("pipelineArn")]
     public string? PipelineArn { get; set; }
 

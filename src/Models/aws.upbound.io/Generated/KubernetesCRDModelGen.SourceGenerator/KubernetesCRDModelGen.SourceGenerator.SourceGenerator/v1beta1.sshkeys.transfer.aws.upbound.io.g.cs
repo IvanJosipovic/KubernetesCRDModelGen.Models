@@ -353,7 +353,7 @@ public partial class V1beta1SSHKeySpecForProviderUserNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SSHKeySpecForProvider
 {
-    /// <summary>(Requirement) The public key portion of an SSH key pair.</summary>
+    /// <summary>Public key portion of an SSH key pair.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
@@ -364,7 +364,7 @@ public partial class V1beta1SSHKeySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>(Requirement) The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1SSHKeySpecForProvider
     [JsonPropertyName("serverIdSelector")]
     public V1beta1SSHKeySpecForProviderServerIdSelector? ServerIdSelector { get; set; }
 
-    /// <summary>(Requirement) The name of the user account that is assigned to one or more servers.</summary>
+    /// <summary>Name of the user account that is assigned to one or more servers.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 
@@ -699,11 +699,11 @@ public partial class V1beta1SSHKeySpecInitProviderUserNameSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SSHKeySpecInitProvider
 {
-    /// <summary>(Requirement) The public key portion of an SSH key pair.</summary>
+    /// <summary>Public key portion of an SSH key pair.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
-    /// <summary>(Requirement) The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
@@ -715,7 +715,7 @@ public partial class V1beta1SSHKeySpecInitProvider
     [JsonPropertyName("serverIdSelector")]
     public V1beta1SSHKeySpecInitProviderServerIdSelector? ServerIdSelector { get; set; }
 
-    /// <summary>(Requirement) The name of the user account that is assigned to one or more servers.</summary>
+    /// <summary>Name of the user account that is assigned to one or more servers.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 
@@ -915,7 +915,7 @@ public partial class V1beta1SSHKeySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SSHKeyStatusAtProvider
 {
-    /// <summary>(Requirement) The public key portion of an SSH key pair.</summary>
+    /// <summary>Public key portion of an SSH key pair.</summary>
     [JsonPropertyName("body")]
     public string? Body { get; set; }
 
@@ -929,14 +929,15 @@ public partial class V1beta1SSHKeyStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>(Requirement) The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
+    /// <summary>ID of the SSH public key.</summary>
     [JsonPropertyName("sshKeyId")]
     public string? SshKeyId { get; set; }
 
-    /// <summary>(Requirement) The name of the user account that is assigned to one or more servers.</summary>
+    /// <summary>Name of the user account that is assigned to one or more servers.</summary>
     [JsonPropertyName("userName")]
     public string? UserName { get; set; }
 }

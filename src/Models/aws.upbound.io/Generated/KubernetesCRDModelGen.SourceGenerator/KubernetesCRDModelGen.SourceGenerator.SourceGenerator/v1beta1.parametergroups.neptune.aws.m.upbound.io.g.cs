@@ -259,7 +259,7 @@ public partial class V1beta1ParameterGroupStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProvider
 {
-    /// <summary>The Neptune parameter group Amazon Resource Name (ARN).</summary>
+    /// <summary>Neptune parameter group ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

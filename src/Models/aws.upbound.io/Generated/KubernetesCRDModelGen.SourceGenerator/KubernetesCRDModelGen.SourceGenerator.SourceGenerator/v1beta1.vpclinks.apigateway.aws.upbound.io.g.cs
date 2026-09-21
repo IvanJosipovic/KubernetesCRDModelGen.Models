@@ -613,6 +613,7 @@ public partial class V1beta1VPCLinkSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCLinkStatusAtProvider
 {
+    /// <summary>ARN of the VPC link.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -143,7 +143,7 @@ spec:
                     description: Description of the configuration profile. Can be at most 1024 characters.
                     type: string
                   kmsKeyIdentifier:
-                    description: The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.
+                    description: Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.
                     type: string
                   locationUri:
                     description: 'URI to locate the configuration. You can specify the AWS AppConfig hosted configuration store, Systems Manager (SSM) document, an SSM Parameter Store parameter, or an Amazon S3 object. For the hosted configuration store, specify hosted. For an SSM document, specify either the document name in the format ssm-document://<Document_name> or the ARN. For a parameter, specify either the parameter name in the format ssm-parameter://<Parameter_name> or the ARN. For an Amazon S3 object, specify the URI in the following format: s3://<bucket>/<objectKey>.'
@@ -248,7 +248,7 @@ spec:
                     description: 'Type of configurations contained in the profile. Valid values: AWS.AppConfig.FeatureFlags and AWS.Freeform.  Default: AWS.Freeform.'
                     type: string
                   validator:
-                    description: Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.
+                    description: Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.
                     items:
                       properties:
                         contentSecretRef:
@@ -370,7 +370,7 @@ spec:
                     description: Description of the configuration profile. Can be at most 1024 characters.
                     type: string
                   kmsKeyIdentifier:
-                    description: The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.
+                    description: Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.
                     type: string
                   locationUri:
                     description: 'URI to locate the configuration. You can specify the AWS AppConfig hosted configuration store, Systems Manager (SSM) document, an SSM Parameter Store parameter, or an Amazon S3 object. For the hosted configuration store, specify hosted. For an SSM document, specify either the document name in the format ssm-document://<Document_name> or the ARN. For a parameter, specify either the parameter name in the format ssm-parameter://<Parameter_name> or the ARN. For an Amazon S3 object, specify the URI in the following format: s3://<bucket>/<objectKey>.'
@@ -470,7 +470,7 @@ spec:
                     description: 'Type of configurations contained in the profile. Valid values: AWS.AppConfig.FeatureFlags and AWS.Freeform.  Default: AWS.Freeform.'
                     type: string
                   validator:
-                    description: Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.
+                    description: Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.
                     items:
                       properties:
                         contentSecretRef:
@@ -566,7 +566,7 @@ spec:
                     description: ARN of the AppConfig Configuration Profile.
                     type: string
                   configurationProfileId:
-                    description: The configuration profile ID.
+                    description: Configuration profile ID.
                     type: string
                   description:
                     description: Description of the configuration profile. Can be at most 1024 characters.
@@ -575,7 +575,7 @@ spec:
                     description: AppConfig configuration profile ID and application ID separated by a colon (:).
                     type: string
                   kmsKeyIdentifier:
-                    description: The identifier for an Key Management Service key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the Amazon Resource Name (ARN) of the key ID or alias.
+                    description: Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted configuration store. This attribute is only used for hosted configuration types. The identifier can be an KMS key ID, alias, or the ARN of the key ID or alias.
                     type: string
                   locationUri:
                     description: 'URI to locate the configuration. You can specify the AWS AppConfig hosted configuration store, Systems Manager (SSM) document, an SSM Parameter Store parameter, or an Amazon S3 object. For the hosted configuration store, specify hosted. For an SSM document, specify either the document name in the format ssm-document://<Document_name> or the ARN. For a parameter, specify either the parameter name in the format ssm-parameter://<Parameter_name> or the ARN. For an Amazon S3 object, specify the URI in the following format: s3://<bucket>/<objectKey>.'
@@ -607,7 +607,7 @@ spec:
                     description: 'Type of configurations contained in the profile. Valid values: AWS.AppConfig.FeatureFlags and AWS.Freeform.  Default: AWS.Freeform.'
                     type: string
                   validator:
-                    description: Set of methods for validating the configuration. Maximum of 2. See Validator below for more details.
+                    description: Set of methods for validating the configuration. Maximum of 2. See validator Block below for more details.
                     items:
                       properties:
                         type:

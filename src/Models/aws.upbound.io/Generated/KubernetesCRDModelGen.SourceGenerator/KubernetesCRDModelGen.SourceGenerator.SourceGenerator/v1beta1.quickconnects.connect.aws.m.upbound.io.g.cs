@@ -713,7 +713,7 @@ public partial class V1beta1QuickConnectStatusAtProviderQuickConnectConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QuickConnectStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Quick Connect.</summary>
+    /// <summary>ARN of the Quick Connect.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

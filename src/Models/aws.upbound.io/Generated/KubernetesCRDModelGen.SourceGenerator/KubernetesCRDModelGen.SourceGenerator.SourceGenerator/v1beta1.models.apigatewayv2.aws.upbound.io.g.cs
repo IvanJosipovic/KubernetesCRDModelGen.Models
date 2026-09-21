@@ -218,7 +218,7 @@ public partial class V1beta1ModelSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1ModelSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
+    /// <summary>Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
@@ -417,7 +417,7 @@ public partial class V1beta1ModelSpecInitProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1ModelSpecInitProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
+    /// <summary>Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 
@@ -625,7 +625,7 @@ public partial class V1beta1ModelStatusAtProvider
     [JsonPropertyName("apiId")]
     public string? ApiId { get; set; }
 
-    /// <summary>The content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
+    /// <summary>Content-type for the model, for example, application/json. Must be between 1 and 256 characters in length.</summary>
     [JsonPropertyName("contentType")]
     public string? ContentType { get; set; }
 

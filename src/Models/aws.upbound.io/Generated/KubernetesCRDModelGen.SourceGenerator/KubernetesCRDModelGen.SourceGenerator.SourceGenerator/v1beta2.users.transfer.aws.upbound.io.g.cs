@@ -59,29 +59,29 @@ public enum V1beta2UserSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecForProviderHomeDirectoryMappings
 {
-    /// <summary>Represents an entry and a target.</summary>
+    /// <summary>Logical directory entry that appears to your user.</summary>
     [JsonPropertyName("entry")]
     public string? Entry { get; set; }
 
-    /// <summary>Represents the map target.</summary>
+    /// <summary>Map target that maps the entry to an actual S3 path.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
 
-/// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+/// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecForProviderPosixProfile
 {
-    /// <summary>The POSIX group ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX group ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("gid")]
     public double? Gid { get; set; }
 
-    /// <summary>The secondary POSIX group IDs used for all EFS operations by this user.</summary>
+    /// <summary>Secondary POSIX group IDs used for all EFS operations by this user.</summary>
     [JsonPropertyName("secondaryGids")]
     public IList<double>? SecondaryGids { get; set; }
 
-    /// <summary>The POSIX user ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX user ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("uid")]
     public double? Uid { get; set; }
 }
@@ -384,23 +384,23 @@ public partial class V1beta2UserSpecForProviderServerIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecForProvider
 {
-    /// <summary>The landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
+    /// <summary>Landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
     [JsonPropertyName("homeDirectory")]
     public string? HomeDirectory { get; set; }
 
-    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See Home Directory Mappings below.</summary>
+    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See home_directory_mappings Block below.</summary>
     [JsonPropertyName("homeDirectoryMappings")]
     public IList<V1beta2UserSpecForProviderHomeDirectoryMappings>? HomeDirectoryMappings { get; set; }
 
-    /// <summary>The type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
+    /// <summary>Type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
     [JsonPropertyName("homeDirectoryType")]
     public string? HomeDirectoryType { get; set; }
 
-    /// <summary>An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
+    /// <summary>IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+    /// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
     [JsonPropertyName("posixProfile")]
     public V1beta2UserSpecForProviderPosixProfile? PosixProfile { get; set; }
 
@@ -411,7 +411,7 @@ public partial class V1beta2UserSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
+    /// <summary>ARN of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -423,7 +423,7 @@ public partial class V1beta2UserSpecForProvider
     [JsonPropertyName("roleSelector")]
     public V1beta2UserSpecForProviderRoleSelector? RoleSelector { get; set; }
 
-    /// <summary>The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
@@ -444,29 +444,29 @@ public partial class V1beta2UserSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecInitProviderHomeDirectoryMappings
 {
-    /// <summary>Represents an entry and a target.</summary>
+    /// <summary>Logical directory entry that appears to your user.</summary>
     [JsonPropertyName("entry")]
     public string? Entry { get; set; }
 
-    /// <summary>Represents the map target.</summary>
+    /// <summary>Map target that maps the entry to an actual S3 path.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
 
-/// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+/// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecInitProviderPosixProfile
 {
-    /// <summary>The POSIX group ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX group ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("gid")]
     public double? Gid { get; set; }
 
-    /// <summary>The secondary POSIX group IDs used for all EFS operations by this user.</summary>
+    /// <summary>Secondary POSIX group IDs used for all EFS operations by this user.</summary>
     [JsonPropertyName("secondaryGids")]
     public IList<double>? SecondaryGids { get; set; }
 
-    /// <summary>The POSIX user ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX user ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("uid")]
     public double? Uid { get; set; }
 }
@@ -781,27 +781,27 @@ public partial class V1beta2UserSpecInitProviderServerIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserSpecInitProvider
 {
-    /// <summary>The landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
+    /// <summary>Landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
     [JsonPropertyName("homeDirectory")]
     public string? HomeDirectory { get; set; }
 
-    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See Home Directory Mappings below.</summary>
+    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See home_directory_mappings Block below.</summary>
     [JsonPropertyName("homeDirectoryMappings")]
     public IList<V1beta2UserSpecInitProviderHomeDirectoryMappings>? HomeDirectoryMappings { get; set; }
 
-    /// <summary>The type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
+    /// <summary>Type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
     [JsonPropertyName("homeDirectoryType")]
     public string? HomeDirectoryType { get; set; }
 
-    /// <summary>An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
+    /// <summary>IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+    /// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
     [JsonPropertyName("posixProfile")]
     public V1beta2UserSpecInitProviderPosixProfile? PosixProfile { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
+    /// <summary>ARN of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
@@ -813,7 +813,7 @@ public partial class V1beta2UserSpecInitProvider
     [JsonPropertyName("roleSelector")]
     public V1beta2UserSpecInitProviderRoleSelector? RoleSelector { get; set; }
 
-    /// <summary>The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
@@ -1017,29 +1017,29 @@ public partial class V1beta2UserSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserStatusAtProviderHomeDirectoryMappings
 {
-    /// <summary>Represents an entry and a target.</summary>
+    /// <summary>Logical directory entry that appears to your user.</summary>
     [JsonPropertyName("entry")]
     public string? Entry { get; set; }
 
-    /// <summary>Represents the map target.</summary>
+    /// <summary>Map target that maps the entry to an actual S3 path.</summary>
     [JsonPropertyName("target")]
     public string? Target { get; set; }
 }
 
-/// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+/// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserStatusAtProviderPosixProfile
 {
-    /// <summary>The POSIX group ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX group ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("gid")]
     public double? Gid { get; set; }
 
-    /// <summary>The secondary POSIX group IDs used for all EFS operations by this user.</summary>
+    /// <summary>Secondary POSIX group IDs used for all EFS operations by this user.</summary>
     [JsonPropertyName("secondaryGids")]
     public IList<double>? SecondaryGids { get; set; }
 
-    /// <summary>The POSIX user ID used for all EFS operations by this user.</summary>
+    /// <summary>POSIX user ID used for all EFS operations by this user.</summary>
     [JsonPropertyName("uid")]
     public double? Uid { get; set; }
 }
@@ -1048,30 +1048,30 @@ public partial class V1beta2UserStatusAtProviderPosixProfile
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UserStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of Transfer User</summary>
+    /// <summary>ARN of Transfer User</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
+    /// <summary>Landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a /.  The first item in the path is the name of the home bucket (accessible as ${Transfer:HomeBucket} in the policy) and the rest is the home directory (accessible as ${Transfer:HomeDirectory} in the policy). For example, /example-bucket-1234/username would set the home bucket to example-bucket-1234 and the home directory to username.</summary>
     [JsonPropertyName("homeDirectory")]
     public string? HomeDirectory { get; set; }
 
-    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See Home Directory Mappings below.</summary>
+    /// <summary>Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. See home_directory_mappings Block below.</summary>
     [JsonPropertyName("homeDirectoryMappings")]
     public IList<V1beta2UserStatusAtProviderHomeDirectoryMappings>? HomeDirectoryMappings { get; set; }
 
-    /// <summary>The type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
+    /// <summary>Type of landing directory (folder) you mapped for your users&apos; home directory. Valid values are PATH and LOGICAL.</summary>
     [JsonPropertyName("homeDirectoryType")]
     public string? HomeDirectoryType { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
+    /// <summary>IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include ${Transfer:UserName}, ${Transfer:HomeDirectory}, and ${Transfer:HomeBucket}.  These are evaluated on-the-fly when navigating the bucket.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
-    /// <summary>Specifies the full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See Posix Profile below.</summary>
+    /// <summary>Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (SecondaryGids), that controls your users&apos; access to your Amazon EFS file systems. See posix_profile Block below.</summary>
     [JsonPropertyName("posixProfile")]
     public V1beta2UserStatusAtProviderPosixProfile? PosixProfile { get; set; }
 
@@ -1082,11 +1082,11 @@ public partial class V1beta2UserStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
+    /// <summary>ARN of an IAM role that allows the service to control your user’s access to your Amazon S3 bucket.</summary>
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
-    /// <summary>The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("serverId")]
     public string? ServerId { get; set; }
 
@@ -1094,7 +1094,7 @@ public partial class V1beta2UserStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

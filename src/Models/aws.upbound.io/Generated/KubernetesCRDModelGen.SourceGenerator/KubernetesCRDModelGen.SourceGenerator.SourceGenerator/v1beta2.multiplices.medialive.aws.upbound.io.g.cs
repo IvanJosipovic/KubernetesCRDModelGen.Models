@@ -385,6 +385,7 @@ public partial class V1beta2MultiplexStatusAtProvider
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
+    /// <summary>(String) ID of the MediaLive Multiplex.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

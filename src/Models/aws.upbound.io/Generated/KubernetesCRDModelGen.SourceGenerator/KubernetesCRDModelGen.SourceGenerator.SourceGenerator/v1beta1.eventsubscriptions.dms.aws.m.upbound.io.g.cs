@@ -876,7 +876,7 @@ public partial class V1beta1EventSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the DMS Event Subscription.</summary>
+    /// <summary>ARN of the DMS Event Subscription.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

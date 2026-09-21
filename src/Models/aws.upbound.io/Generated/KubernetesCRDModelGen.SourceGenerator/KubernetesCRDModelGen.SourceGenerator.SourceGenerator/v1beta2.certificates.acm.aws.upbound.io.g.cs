@@ -297,11 +297,11 @@ public partial class V1beta2CertificateSpecForProvider
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta2CertificateSpecForProviderPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
-    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.</summary>
     [JsonPropertyName("privateKeyWo")]
     public string? PrivateKeyWo { get; set; }
 
-    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    /// <summary>Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.</summary>
     [JsonPropertyName("privateKeyWoVersion")]
     public double? PrivateKeyWoVersion { get; set; }
 
@@ -583,11 +583,11 @@ public partial class V1beta2CertificateSpecInitProvider
     [JsonPropertyName("privateKeySecretRef")]
     public V1beta2CertificateSpecInitProviderPrivateKeySecretRef? PrivateKeySecretRef { get; set; }
 
-    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.</summary>
     [JsonPropertyName("privateKeyWo")]
     public string? PrivateKeyWo { get; set; }
 
-    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    /// <summary>Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.</summary>
     [JsonPropertyName("privateKeyWoVersion")]
     public double? PrivateKeyWoVersion { get; set; }
 
@@ -921,11 +921,11 @@ public partial class V1beta2CertificateStatusAtProvider
     [JsonPropertyName("pendingRenewal")]
     public bool? PendingRenewal { get; set; }
 
-    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. Must be used together with private_key_wo_version.</summary>
+    /// <summary>Certificate&apos;s PEM-formatted private key. Conflicts with private_key. If set, requires private_key_wo_version to be set.</summary>
     [JsonPropertyName("privateKeyWo")]
     public string? PrivateKeyWo { get; set; }
 
-    /// <summary>Used together with private_key_wo to trigger an update. Increment this value when an update to private_key_wo is required.</summary>
+    /// <summary>Required when private_key_wo is set. Changing this value triggers an update to private_key_wo.</summary>
     [JsonPropertyName("privateKeyWoVersion")]
     public double? PrivateKeyWoVersion { get; set; }
 

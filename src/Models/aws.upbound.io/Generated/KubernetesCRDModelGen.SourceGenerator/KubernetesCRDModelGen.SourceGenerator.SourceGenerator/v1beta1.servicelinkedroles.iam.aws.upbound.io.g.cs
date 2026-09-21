@@ -296,7 +296,7 @@ public partial class V1beta1ServiceLinkedRoleSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceLinkedRoleStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the role.</summary>
+    /// <summary>ARN specifying the role.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -316,7 +316,7 @@ public partial class V1beta1ServiceLinkedRoleStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the role.</summary>
+    /// <summary>ARN of the role.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

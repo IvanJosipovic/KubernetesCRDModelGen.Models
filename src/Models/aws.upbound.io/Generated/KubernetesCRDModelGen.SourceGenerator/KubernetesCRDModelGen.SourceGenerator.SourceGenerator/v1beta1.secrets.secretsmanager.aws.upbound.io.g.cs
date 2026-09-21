@@ -261,6 +261,10 @@ public partial class V1beta1SecretSpecForProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Type of secret for managed external secrets. Valid values are SalesforceClientSecret, BigIDClientSecret, and SnowflakeKeyPairAuthentication. For more information about supported partners and their specific requirements, see Managed external secret partners. This attribute cannot be changed after creation.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>
@@ -470,6 +474,10 @@ public partial class V1beta1SecretSpecInitProvider
     /// <summary>Key-value map of resource tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
+
+    /// <summary>Type of secret for managed external secrets. Valid values are SalesforceClientSecret, BigIDClientSecret, and SnowflakeKeyPairAuthentication. For more information about supported partners and their specific requirements, see Managed external secret partners. This attribute cannot be changed after creation.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>
@@ -734,6 +742,10 @@ public partial class V1beta1SecretStatusAtProvider
     /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
+
+    /// <summary>Type of secret for managed external secrets. Valid values are SalesforceClientSecret, BigIDClientSecret, and SnowflakeKeyPairAuthentication. For more information about supported partners and their specific requirements, see Managed external secret partners. This attribute cannot be changed after creation.</summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

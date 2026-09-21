@@ -36,12 +36,12 @@ public partial class V1beta1AutoscalingGroupList : IKubernetesObject<V1ListMeta>
     public required IList<V1beta1AutoscalingGroup> Items { get; set; }
 }
 
-/// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+/// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderAvailabilityZoneDistribution
 {
-    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only and balanced-best-effort. Default is balanced-best-effort.</summary>
+    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only, balanced-best-effort, and reservations-then-balanced. Default is balanced-best-effort. When reservations-then-balanced is set, you must also specify Capacity Reservations to prioritize through capacity_reservation_specification (or via a launch template) using a Capacity Reservation ID or Capacity Reservation resource group ARN.</summary>
     [JsonPropertyName("capacityDistributionStrategy")]
     public string? CapacityDistributionStrategy { get; set; }
 }
@@ -60,7 +60,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSp
     public IList<string>? CapacityReservationResourceGroupArns { get; set; }
 }
 
-/// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+/// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecification
@@ -101,6 +101,26 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook
     /// <summary>ARN for this Auto Scaling Group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+}
+
+/// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicyRetentionTriggers? RetentionTriggers { get; set; }
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
@@ -505,7 +525,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelec
     public V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+/// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplate
@@ -1186,7 +1206,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
     public IList<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverride>? Override { get; set; }
 }
 
-/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicy
@@ -1534,7 +1554,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderTrafficSource
 {
-    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the Amazon Resource Name (ARN) for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
+    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the ARN for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
     [JsonPropertyName("identifier")]
     public string? Identifier { get; set; }
 
@@ -1746,7 +1766,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderWarmPool
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProvider
 {
-    /// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+    /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
     [JsonPropertyName("availabilityZoneDistribution")]
     public V1beta1AutoscalingGroupSpecForProviderAvailabilityZoneDistribution? AvailabilityZoneDistribution { get; set; }
 
@@ -1758,7 +1778,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("capacityRebalance")]
     public bool? CapacityRebalance { get; set; }
 
-    /// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+    /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
     [JsonPropertyName("capacityReservationSpecification")]
     public V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecification? CapacityReservationSpecification { get; set; }
 
@@ -1827,6 +1847,10 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
+
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]
     public V1beta1AutoscalingGroupSpecForProviderInstanceMaintenancePolicy? InstanceMaintenancePolicy { get; set; }
@@ -1851,7 +1875,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("launchConfigurationSelector")]
     public V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelector? LaunchConfigurationSelector { get; set; }
 
-    /// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+    /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1AutoscalingGroupSpecForProviderLaunchTemplate? LaunchTemplate { get; set; }
 
@@ -1881,7 +1905,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("minSize")]
     public double? MinSize { get; set; }
 
-    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
     [JsonPropertyName("mixedInstancesPolicy")]
     public V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicy? MixedInstancesPolicy { get; set; }
 
@@ -1933,7 +1957,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
 
-    /// <summary>Configuration block(s) containing resource tags. See Tag below for more details.</summary>
+    /// <summary>Configuration block(s) containing resource tags. See tag Block below for more details.</summary>
     [JsonPropertyName("tag")]
     public IList<V1beta1AutoscalingGroupSpecForProviderTag>? Tag { get; set; }
 
@@ -1980,12 +2004,12 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
     public V1beta1AutoscalingGroupSpecForProviderWarmPool? WarmPool { get; set; }
 }
 
-/// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+/// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderAvailabilityZoneDistribution
 {
-    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only and balanced-best-effort. Default is balanced-best-effort.</summary>
+    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only, balanced-best-effort, and reservations-then-balanced. Default is balanced-best-effort. When reservations-then-balanced is set, you must also specify Capacity Reservations to prioritize through capacity_reservation_specification (or via a launch template) using a Capacity Reservation ID or Capacity Reservation resource group ARN.</summary>
     [JsonPropertyName("capacityDistributionStrategy")]
     public string? CapacityDistributionStrategy { get; set; }
 }
@@ -2004,7 +2028,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationS
     public IList<string>? CapacityReservationResourceGroupArns { get; set; }
 }
 
-/// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+/// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecification
@@ -2045,6 +2069,26 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook
     /// <summary>ARN for this Auto Scaling Group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+}
+
+/// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicyRetentionTriggers? RetentionTriggers { get; set; }
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
@@ -2449,7 +2493,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSele
     public V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+/// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplate
@@ -3130,7 +3174,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
     public IList<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverride>? Override { get; set; }
 }
 
-/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
@@ -3478,7 +3522,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderTrafficSource
 {
-    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the Amazon Resource Name (ARN) for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
+    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the ARN for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
     [JsonPropertyName("identifier")]
     public string? Identifier { get; set; }
 
@@ -3702,7 +3746,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPool
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProvider
 {
-    /// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+    /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
     [JsonPropertyName("availabilityZoneDistribution")]
     public V1beta1AutoscalingGroupSpecInitProviderAvailabilityZoneDistribution? AvailabilityZoneDistribution { get; set; }
 
@@ -3714,7 +3758,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("capacityRebalance")]
     public bool? CapacityRebalance { get; set; }
 
-    /// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+    /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
     [JsonPropertyName("capacityReservationSpecification")]
     public V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecification? CapacityReservationSpecification { get; set; }
 
@@ -3783,6 +3827,10 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
+
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]
     public V1beta1AutoscalingGroupSpecInitProviderInstanceMaintenancePolicy? InstanceMaintenancePolicy { get; set; }
@@ -3807,7 +3855,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("launchConfigurationSelector")]
     public V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelector? LaunchConfigurationSelector { get; set; }
 
-    /// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+    /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1AutoscalingGroupSpecInitProviderLaunchTemplate? LaunchTemplate { get; set; }
 
@@ -3837,7 +3885,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("minSize")]
     public double? MinSize { get; set; }
 
-    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
     [JsonPropertyName("mixedInstancesPolicy")]
     public V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy? MixedInstancesPolicy { get; set; }
 
@@ -3882,7 +3930,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
 
-    /// <summary>Configuration block(s) containing resource tags. See Tag below for more details.</summary>
+    /// <summary>Configuration block(s) containing resource tags. See tag Block below for more details.</summary>
     [JsonPropertyName("tag")]
     public IList<V1beta1AutoscalingGroupSpecInitProviderTag>? Tag { get; set; }
 
@@ -4036,12 +4084,12 @@ public partial class V1beta1AutoscalingGroupSpec
     public V1beta1AutoscalingGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+/// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderAvailabilityZoneDistribution
 {
-    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only and balanced-best-effort. Default is balanced-best-effort.</summary>
+    /// <summary>The strategy to use for distributing capacity across the Availability Zones. Valid values are balanced-only, balanced-best-effort, and reservations-then-balanced. Default is balanced-best-effort. When reservations-then-balanced is set, you must also specify Capacity Reservations to prioritize through capacity_reservation_specification (or via a launch template) using a Capacity Reservation ID or Capacity Reservation resource group ARN.</summary>
     [JsonPropertyName("capacityDistributionStrategy")]
     public string? CapacityDistributionStrategy { get; set; }
 }
@@ -4060,7 +4108,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationS
     public IList<string>? CapacityReservationResourceGroupArns { get; set; }
 }
 
-/// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+/// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecification
@@ -4101,6 +4149,26 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook
     /// <summary>ARN for this Auto Scaling Group</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
+}
+
+/// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicyRetentionTriggers
+{
+    /// <summary>Action to take when a termination lifecycle hook is abandoned due to failure, timeout, or explicit abandonment. Valid values are retain and terminate. Set to retain to move instances to a retained state instead of terminating them. Retained instances don&apos;t count toward desired capacity and remain until you terminate them.</summary>
+    [JsonPropertyName("terminateHookAbandon")]
+    public string? TerminateHookAbandon { get; set; }
+}
+
+/// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy
+{
+    /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
+    [JsonPropertyName("retentionTriggers")]
+    public V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicyRetentionTriggers? RetentionTriggers { get; set; }
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
@@ -4195,7 +4263,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefresh
     public IList<string>? Triggers { get; set; }
 }
 
-/// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+/// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderLaunchTemplate
@@ -4542,7 +4610,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
     public IList<V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverride>? Override { get; set; }
 }
 
-/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+/// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
@@ -4580,7 +4648,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderTrafficSource
 {
-    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the Amazon Resource Name (ARN) for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
+    /// <summary>Identifies the traffic source. For Application Load Balancers, Gateway Load Balancers, Network Load Balancers, and VPC Lattice, this will be the ARN for a target group in this account and Region. For Classic Load Balancers, this will be the name of the Classic Load Balancer in this account and Region.</summary>
     [JsonPropertyName("identifier")]
     public string? Identifier { get; set; }
 
@@ -4641,7 +4709,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The instance capacity distribution across Availability Zones. See Availability Zone Distribution below for more details.</summary>
+    /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
     [JsonPropertyName("availabilityZoneDistribution")]
     public V1beta1AutoscalingGroupStatusAtProviderAvailabilityZoneDistribution? AvailabilityZoneDistribution { get; set; }
 
@@ -4653,7 +4721,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("capacityRebalance")]
     public bool? CapacityRebalance { get; set; }
 
-    /// <summary>Demand Capacity Reservations. See Capacity Reservation Specification below for more details.</summary>
+    /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
     [JsonPropertyName("capacityReservationSpecification")]
     public V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecification? CapacityReservationSpecification { get; set; }
 
@@ -4726,6 +4794,10 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("initialLifecycleHook")]
     public IList<V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook>? InitialLifecycleHook { get; set; }
 
+    /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
+    [JsonPropertyName("instanceLifecyclePolicy")]
+    public V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy? InstanceLifecyclePolicy { get; set; }
+
     /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
     [JsonPropertyName("instanceMaintenancePolicy")]
     public V1beta1AutoscalingGroupStatusAtProviderInstanceMaintenancePolicy? InstanceMaintenancePolicy { get; set; }
@@ -4742,7 +4814,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("launchConfiguration")]
     public string? LaunchConfiguration { get; set; }
 
-    /// <summary>Nested argument with Launch template specification to use to launch instances. See Launch Template below for more details.</summary>
+    /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
     [JsonPropertyName("launchTemplate")]
     public V1beta1AutoscalingGroupStatusAtProviderLaunchTemplate? LaunchTemplate { get; set; }
 
@@ -4779,7 +4851,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("minSize")]
     public double? MinSize { get; set; }
 
-    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See Mixed Instances Policy below for more details.</summary>
+    /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
     [JsonPropertyName("mixedInstancesPolicy")]
     public V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy? MixedInstancesPolicy { get; set; }
 
@@ -4819,7 +4891,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
     [JsonPropertyName("suspendedProcesses")]
     public IList<string>? SuspendedProcesses { get; set; }
 
-    /// <summary>Configuration block(s) containing resource tags. See Tag below for more details.</summary>
+    /// <summary>Configuration block(s) containing resource tags. See tag Block below for more details.</summary>
     [JsonPropertyName("tag")]
     public IList<V1beta1AutoscalingGroupStatusAtProviderTag>? Tag { get; set; }
 

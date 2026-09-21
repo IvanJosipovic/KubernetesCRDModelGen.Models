@@ -656,7 +656,7 @@ public partial class V1beta1TopicRuleDestinationSpecForProviderVpcConfigurationV
     public V1beta1TopicRuleDestinationSpecForProviderVpcConfigurationVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+/// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicRuleDestinationSpecForProviderVpcConfiguration
@@ -725,7 +725,7 @@ public partial class V1beta1TopicRuleDestinationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+    /// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1TopicRuleDestinationSpecForProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -1350,7 +1350,7 @@ public partial class V1beta1TopicRuleDestinationSpecInitProviderVpcConfiguration
     public V1beta1TopicRuleDestinationSpecInitProviderVpcConfigurationVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+/// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicRuleDestinationSpecInitProviderVpcConfiguration
@@ -1424,7 +1424,7 @@ public partial class V1beta1TopicRuleDestinationSpecInitProvider
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+    /// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1TopicRuleDestinationSpecInitProviderVpcConfiguration? VpcConfiguration { get; set; }
 }
@@ -1536,7 +1536,7 @@ public partial class V1beta1TopicRuleDestinationSpec
     public V1beta1TopicRuleDestinationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+/// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TopicRuleDestinationStatusAtProviderVpcConfiguration
@@ -1580,7 +1580,7 @@ public partial class V1beta1TopicRuleDestinationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Configuration of the virtual private cloud (VPC) connection. For more info, see the AWS documentation.</summary>
+    /// <summary>Configuration of the VPC connection. For more info, see the AWS documentation.</summary>
     [JsonPropertyName("vpcConfiguration")]
     public V1beta1TopicRuleDestinationStatusAtProviderVpcConfiguration? VpcConfiguration { get; set; }
 }

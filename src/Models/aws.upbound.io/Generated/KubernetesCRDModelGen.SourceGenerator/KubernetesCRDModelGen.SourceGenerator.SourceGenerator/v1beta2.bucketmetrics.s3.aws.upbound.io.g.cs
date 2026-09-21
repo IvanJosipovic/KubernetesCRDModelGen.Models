@@ -349,7 +349,7 @@ public partial class V1beta2BucketMetricSpecForProviderFilterAccessPointSelector
     public V1beta2BucketMetricSpecForProviderFilterAccessPointSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketMetricSpecForProviderFilter
@@ -370,7 +370,7 @@ public partial class V1beta2BucketMetricSpecForProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Object tags for filtering (up to 10). Unsupported for S3 directory buckets.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -391,7 +391,7 @@ public partial class V1beta2BucketMetricSpecForProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketMetricSpecForProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketMetricSpecForProviderFilter? Filter { get; set; }
 
@@ -701,7 +701,7 @@ public partial class V1beta2BucketMetricSpecInitProviderFilterAccessPointSelecto
     public V1beta2BucketMetricSpecInitProviderFilterAccessPointSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketMetricSpecInitProviderFilter
@@ -722,7 +722,7 @@ public partial class V1beta2BucketMetricSpecInitProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Object tags for filtering (up to 10). Unsupported for S3 directory buckets.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -755,7 +755,7 @@ public partial class V1beta2BucketMetricSpecInitProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta2BucketMetricSpecInitProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketMetricSpecInitProviderFilter? Filter { get; set; }
 
@@ -947,7 +947,7 @@ public partial class V1beta2BucketMetricSpec
     public V1beta2BucketMetricSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+/// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2BucketMetricStatusAtProviderFilter
@@ -960,7 +960,7 @@ public partial class V1beta2BucketMetricStatusAtProviderFilter
     [JsonPropertyName("prefix")]
     public string? Prefix { get; set; }
 
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Object tags for filtering (up to 10). Unsupported for S3 directory buckets.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
@@ -973,7 +973,7 @@ public partial class V1beta2BucketMetricStatusAtProvider
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).</summary>
+    /// <summary>Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags. See below.</summary>
     [JsonPropertyName("filter")]
     public V1beta2BucketMetricStatusAtProviderFilter? Filter { get; set; }
 

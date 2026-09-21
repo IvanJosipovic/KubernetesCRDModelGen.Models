@@ -55,16 +55,16 @@ public enum V1beta1TargetGroupAttachmentSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>The target.</summary>
+/// <summary>Target to register with the target group. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecForProviderTarget
 {
-    /// <summary>The ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
+    /// <summary>ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>This port is used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
+    /// <summary>Port used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -227,11 +227,11 @@ public partial class V1beta1TargetGroupAttachmentSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The target.</summary>
+    /// <summary>Target to register with the target group. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1TargetGroupAttachmentSpecForProviderTarget? Target { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -244,16 +244,16 @@ public partial class V1beta1TargetGroupAttachmentSpecForProvider
     public V1beta1TargetGroupAttachmentSpecForProviderTargetGroupIdentifierSelector? TargetGroupIdentifierSelector { get; set; }
 }
 
-/// <summary>The target.</summary>
+/// <summary>Target to register with the target group. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProviderTarget
 {
-    /// <summary>The ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
+    /// <summary>ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>This port is used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
+    /// <summary>Port used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -421,11 +421,11 @@ public partial class V1beta1TargetGroupAttachmentSpecInitProviderTargetGroupIden
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentSpecInitProvider
 {
-    /// <summary>The target.</summary>
+    /// <summary>Target to register with the target group. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1TargetGroupAttachmentSpecInitProviderTarget? Target { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 
@@ -621,16 +621,16 @@ public partial class V1beta1TargetGroupAttachmentSpec
     public V1beta1TargetGroupAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The target.</summary>
+/// <summary>Target to register with the target group. See target Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatusAtProviderTarget
 {
-    /// <summary>The ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
+    /// <summary>ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>This port is used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
+    /// <summary>Port used for routing traffic to the target, and defaults to the target group port. However, you can override the default and specify a custom port.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 }
@@ -639,7 +639,7 @@ public partial class V1beta1TargetGroupAttachmentStatusAtProviderTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupAttachmentStatusAtProvider
 {
-    /// <summary>The ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
+    /// <summary>ID of the target. If the target type of the target group is INSTANCE, this is an instance ID. If the target type is IP , this is an IP address. If the target type is LAMBDA, this is the ARN of the Lambda function. If the target type is ALB, this is the ARN of the Application Load Balancer.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -650,11 +650,11 @@ public partial class V1beta1TargetGroupAttachmentStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The target.</summary>
+    /// <summary>Target to register with the target group. See target Block for details.</summary>
     [JsonPropertyName("target")]
     public V1beta1TargetGroupAttachmentStatusAtProviderTarget? Target { get; set; }
 
-    /// <summary>The ID or Amazon Resource Name (ARN) of the target group.</summary>
+    /// <summary>ID or ARN of the target group.</summary>
     [JsonPropertyName("targetGroupIdentifier")]
     public string? TargetGroupIdentifier { get; set; }
 }

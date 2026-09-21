@@ -770,7 +770,7 @@ public partial class V1beta1SelectionSpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to exclude from a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to exclude from a backup plan.</summary>
     [JsonPropertyName("notResources")]
     public IList<string>? NotResources { get; set; }
 
@@ -801,7 +801,7 @@ public partial class V1beta1SelectionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to assign to a backup plan.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
@@ -1564,7 +1564,7 @@ public partial class V1beta1SelectionSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to exclude from a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to exclude from a backup plan.</summary>
     [JsonPropertyName("notResources")]
     public IList<string>? NotResources { get; set; }
 
@@ -1588,7 +1588,7 @@ public partial class V1beta1SelectionSpecInitProvider
     [JsonPropertyName("planIdSelector")]
     public V1beta1SelectionSpecInitProviderPlanIdSelector? PlanIdSelector { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to assign to a backup plan.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 
@@ -1814,7 +1814,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("iamRoleArn")]
     public string? IamRoleArn { get; set; }
 
-    /// <summary>Backup Selection identifier</summary>
+    /// <summary>Backup Selection identifier.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1822,7 +1822,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to exclude from a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to exclude from a backup plan.</summary>
     [JsonPropertyName("notResources")]
     public IList<string>? NotResources { get; set; }
 
@@ -1837,7 +1837,7 @@ public partial class V1beta1SelectionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan.</summary>
+    /// <summary>Array of strings that either contain ARNs or match patterns of resources to assign to a backup plan.</summary>
     [JsonPropertyName("resources")]
     public IList<string>? Resources { get; set; }
 

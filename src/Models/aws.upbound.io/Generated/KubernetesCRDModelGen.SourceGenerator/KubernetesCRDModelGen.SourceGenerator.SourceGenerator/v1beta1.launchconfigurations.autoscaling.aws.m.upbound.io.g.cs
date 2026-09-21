@@ -643,7 +643,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProviderRootBlockDevice
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LaunchConfigurationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the launch configuration.</summary>
+    /// <summary>ARN of the launch configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

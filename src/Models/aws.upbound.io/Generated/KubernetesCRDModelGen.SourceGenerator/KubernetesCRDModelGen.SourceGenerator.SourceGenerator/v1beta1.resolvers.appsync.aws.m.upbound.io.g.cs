@@ -191,16 +191,16 @@ public partial class V1beta1ResolverSpecForProviderApiIdSelector
     public V1beta1ResolverSpecForProviderApiIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The Caching Config. See Caching Config.</summary>
+/// <summary>Caching Config. See Caching Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecForProviderCachingConfig
 {
-    /// <summary>The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
+    /// <summary>Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
     [JsonPropertyName("cachingKeys")]
     public IList<string>? CachingKeys { get; set; }
 
-    /// <summary>The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
+    /// <summary>TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
     [JsonPropertyName("ttl")]
     public double? Ttl { get; set; }
 }
@@ -515,12 +515,12 @@ public partial class V1beta1ResolverSpecForProviderPipelineConfigFunctionsSelect
     public V1beta1ResolverSpecForProviderPipelineConfigFunctionsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+/// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecForProviderPipelineConfig
 {
-    /// <summary>A list of Function objects.</summary>
+    /// <summary>List of Function objects.</summary>
     [JsonPropertyName("functions")]
     public IList<string>? Functions { get; set; }
 
@@ -533,16 +533,16 @@ public partial class V1beta1ResolverSpecForProviderPipelineConfig
     public V1beta1ResolverSpecForProviderPipelineConfigFunctionsSelector? FunctionsSelector { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecForProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -557,7 +557,7 @@ public partial class V1beta1ResolverSpecForProviderSyncConfigLambdaConflictHandl
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+/// <summary>Sync configuration for a resolver. See Sync Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecForProviderSyncConfig
@@ -591,11 +591,11 @@ public partial class V1beta1ResolverSpecForProvider
     [JsonPropertyName("apiIdSelector")]
     public V1beta1ResolverSpecForProviderApiIdSelector? ApiIdSelector { get; set; }
 
-    /// <summary>The Caching Config. See Caching Config.</summary>
+    /// <summary>Caching Config. See Caching Config.</summary>
     [JsonPropertyName("cachingConfig")]
     public V1beta1ResolverSpecForProviderCachingConfig? CachingConfig { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -623,7 +623,7 @@ public partial class V1beta1ResolverSpecForProvider
     [JsonPropertyName("maxBatchSize")]
     public double? MaxBatchSize { get; set; }
 
-    /// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+    /// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
     [JsonPropertyName("pipelineConfig")]
     public V1beta1ResolverSpecForProviderPipelineConfig? PipelineConfig { get; set; }
 
@@ -642,11 +642,11 @@ public partial class V1beta1ResolverSpecForProvider
     [JsonPropertyName("responseTemplate")]
     public string? ResponseTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
     [JsonPropertyName("runtime")]
     public V1beta1ResolverSpecForProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+    /// <summary>Sync configuration for a resolver. See Sync Config.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta1ResolverSpecForProviderSyncConfig? SyncConfig { get; set; }
 
@@ -655,16 +655,16 @@ public partial class V1beta1ResolverSpecForProvider
     public required string Type { get; set; }
 }
 
-/// <summary>The Caching Config. See Caching Config.</summary>
+/// <summary>Caching Config. See Caching Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecInitProviderCachingConfig
 {
-    /// <summary>The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
+    /// <summary>Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
     [JsonPropertyName("cachingKeys")]
     public IList<string>? CachingKeys { get; set; }
 
-    /// <summary>The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
+    /// <summary>TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
     [JsonPropertyName("ttl")]
     public double? Ttl { get; set; }
 }
@@ -979,12 +979,12 @@ public partial class V1beta1ResolverSpecInitProviderPipelineConfigFunctionsSelec
     public V1beta1ResolverSpecInitProviderPipelineConfigFunctionsSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+/// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecInitProviderPipelineConfig
 {
-    /// <summary>A list of Function objects.</summary>
+    /// <summary>List of Function objects.</summary>
     [JsonPropertyName("functions")]
     public IList<string>? Functions { get; set; }
 
@@ -997,16 +997,16 @@ public partial class V1beta1ResolverSpecInitProviderPipelineConfig
     public V1beta1ResolverSpecInitProviderPipelineConfigFunctionsSelector? FunctionsSelector { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecInitProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -1021,7 +1021,7 @@ public partial class V1beta1ResolverSpecInitProviderSyncConfigLambdaConflictHand
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+/// <summary>Sync configuration for a resolver. See Sync Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecInitProviderSyncConfig
@@ -1055,11 +1055,11 @@ public partial class V1beta1ResolverSpecInitProviderSyncConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverSpecInitProvider
 {
-    /// <summary>The Caching Config. See Caching Config.</summary>
+    /// <summary>Caching Config. See Caching Config.</summary>
     [JsonPropertyName("cachingConfig")]
     public V1beta1ResolverSpecInitProviderCachingConfig? CachingConfig { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -1083,7 +1083,7 @@ public partial class V1beta1ResolverSpecInitProvider
     [JsonPropertyName("maxBatchSize")]
     public double? MaxBatchSize { get; set; }
 
-    /// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+    /// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
     [JsonPropertyName("pipelineConfig")]
     public V1beta1ResolverSpecInitProviderPipelineConfig? PipelineConfig { get; set; }
 
@@ -1095,11 +1095,11 @@ public partial class V1beta1ResolverSpecInitProvider
     [JsonPropertyName("responseTemplate")]
     public string? ResponseTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
     [JsonPropertyName("runtime")]
     public V1beta1ResolverSpecInitProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+    /// <summary>Sync configuration for a resolver. See Sync Config.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta1ResolverSpecInitProviderSyncConfig? SyncConfig { get; set; }
 }
@@ -1211,40 +1211,40 @@ public partial class V1beta1ResolverSpec
     public V1beta1ResolverSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The Caching Config. See Caching Config.</summary>
+/// <summary>Caching Config. See Caching Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverStatusAtProviderCachingConfig
 {
-    /// <summary>The caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
+    /// <summary>Caching keys for a resolver that has caching activated. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.</summary>
     [JsonPropertyName("cachingKeys")]
     public IList<string>? CachingKeys { get; set; }
 
-    /// <summary>The TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
+    /// <summary>TTL in seconds for a resolver that has caching activated. Valid values are between 1 and 3600 seconds.</summary>
     [JsonPropertyName("ttl")]
     public double? Ttl { get; set; }
 }
 
-/// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+/// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverStatusAtProviderPipelineConfig
 {
-    /// <summary>A list of Function objects.</summary>
+    /// <summary>List of Function objects.</summary>
     [JsonPropertyName("functions")]
     public IList<string>? Functions { get; set; }
 }
 
-/// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+/// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverStatusAtProviderRuntime
 {
-    /// <summary>The name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
+    /// <summary>Name of the runtime to use. Currently, the only allowed value is APPSYNC_JS.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
+    /// <summary>Version of the runtime to use. Currently, the only allowed version is 1.0.0.</summary>
     [JsonPropertyName("runtimeVersion")]
     public string? RuntimeVersion { get; set; }
 }
@@ -1259,7 +1259,7 @@ public partial class V1beta1ResolverStatusAtProviderSyncConfigLambdaConflictHand
     public string? LambdaConflictHandlerArn { get; set; }
 }
 
-/// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+/// <summary>Sync configuration for a resolver. See Sync Config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResolverStatusAtProviderSyncConfig
@@ -1289,11 +1289,11 @@ public partial class V1beta1ResolverStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The Caching Config. See Caching Config.</summary>
+    /// <summary>Caching Config. See Caching Config.</summary>
     [JsonPropertyName("cachingConfig")]
     public V1beta1ResolverStatusAtProviderCachingConfig? CachingConfig { get; set; }
 
-    /// <summary>The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
+    /// <summary>Function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.</summary>
     [JsonPropertyName("code")]
     public string? Code { get; set; }
 
@@ -1316,7 +1316,7 @@ public partial class V1beta1ResolverStatusAtProvider
     [JsonPropertyName("maxBatchSize")]
     public double? MaxBatchSize { get; set; }
 
-    /// <summary>The caching configuration for the resolver. See Pipeline Config.</summary>
+    /// <summary>Caching configuration for the resolver. See Pipeline Config.</summary>
     [JsonPropertyName("pipelineConfig")]
     public V1beta1ResolverStatusAtProviderPipelineConfig? PipelineConfig { get; set; }
 
@@ -1335,11 +1335,11 @@ public partial class V1beta1ResolverStatusAtProvider
     [JsonPropertyName("responseTemplate")]
     public string? ResponseTemplate { get; set; }
 
-    /// <summary>Describes a runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
+    /// <summary>Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function. Specifies the name and version of the runtime to use. Note that if a runtime is specified, code must also be specified. See Runtime.</summary>
     [JsonPropertyName("runtime")]
     public V1beta1ResolverStatusAtProviderRuntime? Runtime { get; set; }
 
-    /// <summary>Describes a Sync configuration for a resolver. See Sync Config.</summary>
+    /// <summary>Sync configuration for a resolver. See Sync Config.</summary>
     [JsonPropertyName("syncConfig")]
     public V1beta1ResolverStatusAtProviderSyncConfig? SyncConfig { get; set; }
 

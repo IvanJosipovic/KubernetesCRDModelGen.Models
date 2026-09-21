@@ -208,7 +208,7 @@ public partial class V1beta1GroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GroupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of group</summary>
+    /// <summary>ARN of group</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

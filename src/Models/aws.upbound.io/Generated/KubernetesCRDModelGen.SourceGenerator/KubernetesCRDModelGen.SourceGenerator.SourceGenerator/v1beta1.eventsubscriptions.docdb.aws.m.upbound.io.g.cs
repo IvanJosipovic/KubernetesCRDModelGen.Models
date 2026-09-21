@@ -365,7 +365,7 @@ public partial class V1beta1EventSubscriptionSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name of the DocumentDB event notification subscription</summary>
+    /// <summary>ARN of the DocumentDB event notification subscription</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -732,7 +732,7 @@ public partial class V1beta1EventSubscriptionSpecInitProvider
     [JsonPropertyName("eventCategories")]
     public IList<string>? EventCategories { get; set; }
 
-    /// <summary>The Amazon Resource Name of the DocumentDB event notification subscription</summary>
+    /// <summary>ARN of the DocumentDB event notification subscription</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -876,7 +876,7 @@ public partial class V1beta1EventSubscriptionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EventSubscriptionStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the DocumentDB event notification subscription</summary>
+    /// <summary>ARN of the DocumentDB event notification subscription</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -903,7 +903,7 @@ public partial class V1beta1EventSubscriptionStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name of the DocumentDB event notification subscription</summary>
+    /// <summary>ARN of the DocumentDB event notification subscription</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 

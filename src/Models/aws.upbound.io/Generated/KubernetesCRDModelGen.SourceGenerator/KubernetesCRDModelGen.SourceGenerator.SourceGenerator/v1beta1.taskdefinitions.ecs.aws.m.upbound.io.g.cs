@@ -36,12 +36,12 @@ public partial class V1beta1TaskDefinitionList : IKubernetesObject<V1ListMeta>, 
     public required IList<V1beta1TaskDefinition> Items { get; set; }
 }
 
-/// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+/// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderEphemeralStorage
 {
-    /// <summary>The total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
+    /// <summary>Total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
     [JsonPropertyName("sizeInGib")]
     public double? SizeInGib { get; set; }
 }
@@ -312,16 +312,16 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfigur
     public double? TransitEncryptionPort { get; set; }
 }
 
-/// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+/// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
-    /// <summary>The authorization credential option to use. The authorization credential options can be provided using either the Amazon Resource Name (ARN) of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
+    /// <summary>Authorization credential option to use. The authorization credential options can be provided using either the ARN of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
     [JsonPropertyName("credentialsParameter")]
     public string? CredentialsParameter { get; set; }
 
-    /// <summary>A fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
+    /// <summary>Fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 }
@@ -331,15 +331,15 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileSer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
-    /// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+    /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
     [JsonPropertyName("authorizationConfig")]
     public V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig? AuthorizationConfig { get; set; }
 
-    /// <summary>The Amazon FSx for Windows File Server file system ID to use.</summary>
+    /// <summary>ID of the EFS File System.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The directory within the Amazon FSx for Windows File Server file system to mount as the root directory inside the host.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 }
@@ -357,11 +357,11 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConf
     [JsonPropertyName("fileSystemArn")]
     public string? FileSystemArn { get; set; }
 
-    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 
-    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    /// <summary>Port to use for transit encryption. If you do not specify a transit encryption port, it will use the port selection strategy that the Amazon EFS mount helper uses.</summary>
     [JsonPropertyName("transitEncryptionPort")]
     public double? TransitEncryptionPort { get; set; }
 }
@@ -390,10 +390,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolume
     [JsonPropertyName("hostPath")]
     public string? HostPath { get; set; }
 
-    /// <summary>
-    /// Name of the volume. This name is referenced in the sourceVolume
-    /// parameter of container definition in the mountPoints section.
-    /// </summary>
+    /// <summary>Name of the volume. This name is referenced in the sourceVolume parameter of container definition in the mountPoints section.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -406,7 +403,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolume
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProvider
 {
-    /// <summary>A list of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
+    /// <summary>List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
@@ -418,7 +415,7 @@ public partial class V1beta1TaskDefinitionSpecForProvider
     [JsonPropertyName("enableFaultInjection")]
     public bool? EnableFaultInjection { get; set; }
 
-    /// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+    /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1TaskDefinitionSpecForProviderEphemeralStorage? EphemeralStorage { get; set; }
 
@@ -434,7 +431,7 @@ public partial class V1beta1TaskDefinitionSpecForProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>A unique name for your task definition.</summary>
+    /// <summary>Unique name for your task definition.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
@@ -498,12 +495,12 @@ public partial class V1beta1TaskDefinitionSpecForProvider
     public IList<V1beta1TaskDefinitionSpecForProviderVolume>? Volume { get; set; }
 }
 
-/// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+/// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderEphemeralStorage
 {
-    /// <summary>The total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
+    /// <summary>Total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
     [JsonPropertyName("sizeInGib")]
     public double? SizeInGib { get; set; }
 }
@@ -774,16 +771,16 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfigu
     public double? TransitEncryptionPort { get; set; }
 }
 
-/// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+/// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
-    /// <summary>The authorization credential option to use. The authorization credential options can be provided using either the Amazon Resource Name (ARN) of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
+    /// <summary>Authorization credential option to use. The authorization credential options can be provided using either the ARN of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
     [JsonPropertyName("credentialsParameter")]
     public string? CredentialsParameter { get; set; }
 
-    /// <summary>A fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
+    /// <summary>Fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 }
@@ -793,15 +790,15 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
-    /// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+    /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
     [JsonPropertyName("authorizationConfig")]
     public V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig? AuthorizationConfig { get; set; }
 
-    /// <summary>The Amazon FSx for Windows File Server file system ID to use.</summary>
+    /// <summary>ID of the EFS File System.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The directory within the Amazon FSx for Windows File Server file system to mount as the root directory inside the host.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 }
@@ -819,11 +816,11 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeS3filesVolumeCon
     [JsonPropertyName("fileSystemArn")]
     public string? FileSystemArn { get; set; }
 
-    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 
-    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    /// <summary>Port to use for transit encryption. If you do not specify a transit encryption port, it will use the port selection strategy that the Amazon EFS mount helper uses.</summary>
     [JsonPropertyName("transitEncryptionPort")]
     public double? TransitEncryptionPort { get; set; }
 }
@@ -852,10 +849,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolume
     [JsonPropertyName("hostPath")]
     public string? HostPath { get; set; }
 
-    /// <summary>
-    /// Name of the volume. This name is referenced in the sourceVolume
-    /// parameter of container definition in the mountPoints section.
-    /// </summary>
+    /// <summary>Name of the volume. This name is referenced in the sourceVolume parameter of container definition in the mountPoints section.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -880,7 +874,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolume
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProvider
 {
-    /// <summary>A list of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
+    /// <summary>List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
@@ -892,7 +886,7 @@ public partial class V1beta1TaskDefinitionSpecInitProvider
     [JsonPropertyName("enableFaultInjection")]
     public bool? EnableFaultInjection { get; set; }
 
-    /// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+    /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1TaskDefinitionSpecInitProviderEphemeralStorage? EphemeralStorage { get; set; }
 
@@ -908,7 +902,7 @@ public partial class V1beta1TaskDefinitionSpecInitProvider
     [JsonPropertyName("executionRoleArnSelector")]
     public V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelector? ExecutionRoleArnSelector { get; set; }
 
-    /// <summary>A unique name for your task definition.</summary>
+    /// <summary>Unique name for your task definition.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 
@@ -1072,12 +1066,12 @@ public partial class V1beta1TaskDefinitionSpec
     public V1beta1TaskDefinitionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+/// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderEphemeralStorage
 {
-    /// <summary>The total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
+    /// <summary>Total amount, in GiB, of ephemeral storage to set for the task. The minimum supported value is 21 GiB and the maximum supported value is 200 GiB.</summary>
     [JsonPropertyName("sizeInGib")]
     public double? SizeInGib { get; set; }
 }
@@ -1193,16 +1187,16 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfigu
     public double? TransitEncryptionPort { get; set; }
 }
 
-/// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+/// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
-    /// <summary>The authorization credential option to use. The authorization credential options can be provided using either the Amazon Resource Name (ARN) of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
+    /// <summary>Authorization credential option to use. The authorization credential options can be provided using either the ARN of an AWS Secrets Manager secret or AWS Systems Manager Parameter Store parameter. The ARNs refer to the stored credentials.</summary>
     [JsonPropertyName("credentialsParameter")]
     public string? CredentialsParameter { get; set; }
 
-    /// <summary>A fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
+    /// <summary>Fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted AD on Amazon EC2.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 }
@@ -1212,15 +1206,15 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
-    /// <summary>Configuration block for authorization for the Amazon FSx for Windows File Server file system detailed below.</summary>
+    /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
     [JsonPropertyName("authorizationConfig")]
     public V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig? AuthorizationConfig { get; set; }
 
-    /// <summary>The Amazon FSx for Windows File Server file system ID to use.</summary>
+    /// <summary>ID of the EFS File System.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>The directory within the Amazon FSx for Windows File Server file system to mount as the root directory inside the host.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 }
@@ -1238,11 +1232,11 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeCon
     [JsonPropertyName("fileSystemArn")]
     public string? FileSystemArn { get; set; }
 
-    /// <summary>Directory within the Amazon S3 Files file system to mount as the root directory.</summary>
+    /// <summary>Directory within the Amazon EFS file system to mount as the root directory inside the host. If this parameter is omitted, the root of the Amazon EFS volume will be used. Specifying / will have the same effect as omitting this parameter. This argument is ignored when using authorization_config.</summary>
     [JsonPropertyName("rootDirectory")]
     public string? RootDirectory { get; set; }
 
-    /// <summary>Port to use for sending encrypted data between the ECS host and the S3 Files file system.</summary>
+    /// <summary>Port to use for transit encryption. If you do not specify a transit encryption port, it will use the port selection strategy that the Amazon EFS mount helper uses.</summary>
     [JsonPropertyName("transitEncryptionPort")]
     public double? TransitEncryptionPort { get; set; }
 }
@@ -1271,10 +1265,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolume
     [JsonPropertyName("hostPath")]
     public string? HostPath { get; set; }
 
-    /// <summary>
-    /// Name of the volume. This name is referenced in the sourceVolume
-    /// parameter of container definition in the mountPoints section.
-    /// </summary>
+    /// <summary>Name of the volume. This name is referenced in the sourceVolume parameter of container definition in the mountPoints section.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1295,7 +1286,7 @@ public partial class V1beta1TaskDefinitionStatusAtProvider
     [JsonPropertyName("arnWithoutRevision")]
     public string? ArnWithoutRevision { get; set; }
 
-    /// <summary>A list of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
+    /// <summary>List of valid container definitions provided as a single valid JSON document. Please note that you should only provide values that are part of the container definition document. For a detailed description of what parameters are available, see the Task Definition Parameters section from the official Developer Guide.</summary>
     [JsonPropertyName("containerDefinitions")]
     public string? ContainerDefinitions { get; set; }
 
@@ -1307,7 +1298,7 @@ public partial class V1beta1TaskDefinitionStatusAtProvider
     [JsonPropertyName("enableFaultInjection")]
     public bool? EnableFaultInjection { get; set; }
 
-    /// <summary>The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
+    /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
     [JsonPropertyName("ephemeralStorage")]
     public V1beta1TaskDefinitionStatusAtProviderEphemeralStorage? EphemeralStorage { get; set; }
 
@@ -1315,7 +1306,7 @@ public partial class V1beta1TaskDefinitionStatusAtProvider
     [JsonPropertyName("executionRoleArn")]
     public string? ExecutionRoleArn { get; set; }
 
-    /// <summary>A unique name for your task definition.</summary>
+    /// <summary>Unique name for your task definition.</summary>
     [JsonPropertyName("family")]
     public string? Family { get; set; }
 

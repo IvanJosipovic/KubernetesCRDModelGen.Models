@@ -36,7 +36,7 @@ public partial class V1beta1ObjectCopyList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1ObjectCopy> Items { get; set; }
 }
 
-/// <summary>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
+/// <summary>Customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderCustomerKeySecretRef
@@ -65,7 +65,7 @@ public partial class V1beta1ObjectCopySpecForProviderGrant
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>- Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
+    /// <summary>Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -74,7 +74,7 @@ public partial class V1beta1ObjectCopySpecForProviderGrant
     public string? Uri { get; set; }
 }
 
-/// <summary>Specifies the AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
+/// <summary>AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderKmsEncryptionContextSecretRef
@@ -87,7 +87,7 @@ public partial class V1beta1ObjectCopySpecForProviderKmsEncryptionContextSecretR
     public required string Name { get; set; }
 }
 
-/// <summary>Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
+/// <summary>AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderKmsKeyIdSecretRef
@@ -100,7 +100,7 @@ public partial class V1beta1ObjectCopySpecForProviderKmsKeyIdSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderOverrideProviderDefaultTags
@@ -114,12 +114,12 @@ public partial class V1beta1ObjectCopySpecForProviderOverrideProviderDefaultTags
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta1ObjectCopySpecForProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
 
-/// <summary>Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
+/// <summary>Customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecForProviderSourceCustomerKeySecretRef
@@ -144,22 +144,23 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
+    /// <summary>Whether to use an S3 Bucket Key for object encryption with server-side encryption using KMS (SSE-KMS).</summary>
     [JsonPropertyName("bucketKeyEnabled")]
     public bool? BucketKeyEnabled { get; set; }
 
-    /// <summary>Specifies caching behavior along the request/reply chain Read w3c cache_control for further details.</summary>
+    /// <summary>Caching behavior along the request/reply chain. Read w3c cache_control for further details.</summary>
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
-    /// <summary>Specifies presentational information for the object. Read w3c content_disposition for further information.</summary>
+    /// <summary>Presentational information for the object. Read w3c content_disposition for further information.</summary>
     [JsonPropertyName("contentDisposition")]
     public string? ContentDisposition { get; set; }
 
-    /// <summary>Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
+    /// <summary>Content encodings that have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
     [JsonPropertyName("contentEncoding")]
     public string? ContentEncoding { get; set; }
 
@@ -187,15 +188,15 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("copyIfUnmodifiedSince")]
     public string? CopyIfUnmodifiedSince { get; set; }
 
-    /// <summary>Specifies the algorithm to use to when encrypting the object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when encrypting the object (for example, AES256).</summary>
     [JsonPropertyName("customerAlgorithm")]
     public string? CustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("customerKeyMd5")]
     public string? CustomerKeyMd5 { get; set; }
 
-    /// <summary>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
+    /// <summary>Customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
     [JsonPropertyName("customerKeySecretRef")]
     public V1beta1ObjectCopySpecForProviderCustomerKeySecretRef? CustomerKeySecretRef { get; set; }
 
@@ -223,11 +224,11 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Specifies the AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
+    /// <summary>AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
     [JsonPropertyName("kmsEncryptionContextSecretRef")]
     public V1beta1ObjectCopySpecForProviderKmsEncryptionContextSecretRef? KmsEncryptionContextSecretRef { get; set; }
 
-    /// <summary>Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
+    /// <summary>AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
     [JsonPropertyName("kmsKeyIdSecretRef")]
     public V1beta1ObjectCopySpecForProviderKmsKeyIdSecretRef? KmsKeyIdSecretRef { get; set; }
 
@@ -235,11 +236,11 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
 
-    /// <summary>Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("metadataDirective")]
     public string? MetadataDirective { get; set; }
 
-    /// <summary>The legal hold status that you want to apply to the specified object. Valid values are ON and OFF.</summary>
+    /// <summary>Legal hold status to apply to the specified object. Valid values are ON and OFF.</summary>
     [JsonPropertyName("objectLockLegalHoldStatus")]
     public string? ObjectLockLegalHoldStatus { get; set; }
 
@@ -265,31 +266,31 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("requestPayer")]
     public string? RequestPayer { get; set; }
 
-    /// <summary>Specifies server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
+    /// <summary>Server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
     [JsonPropertyName("serverSideEncryption")]
     public string? ServerSideEncryption { get; set; }
 
-    /// <summary>Specifies the source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
+    /// <summary>Source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Specifies the algorithm to use when decrypting the source object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when decrypting the source object (for example, AES256).</summary>
     [JsonPropertyName("sourceCustomerAlgorithm")]
     public string? SourceCustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("sourceCustomerKeyMd5")]
     public string? SourceCustomerKeyMd5 { get; set; }
 
-    /// <summary>Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
+    /// <summary>Customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
     [JsonPropertyName("sourceCustomerKeySecretRef")]
     public V1beta1ObjectCopySpecForProviderSourceCustomerKeySecretRef? SourceCustomerKeySecretRef { get; set; }
 
-    /// <summary>Specifies the desired storage class for the object. Defaults to STANDARD.</summary>
+    /// <summary>Desired storage class for the object. Defaults to STANDARD.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
-    /// <summary>Specifies whether the object tag-set are copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the object tag-set is copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("taggingDirective")]
     public string? TaggingDirective { get; set; }
 
@@ -297,12 +298,12 @@ public partial class V1beta1ObjectCopySpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies a target URL for website redirect.</summary>
+    /// <summary>Target URL for website redirect.</summary>
     [JsonPropertyName("websiteRedirect")]
     public string? WebsiteRedirect { get; set; }
 }
 
-/// <summary>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
+/// <summary>Customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderCustomerKeySecretRef
@@ -331,7 +332,7 @@ public partial class V1beta1ObjectCopySpecInitProviderGrant
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>- Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
+    /// <summary>Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -340,7 +341,7 @@ public partial class V1beta1ObjectCopySpecInitProviderGrant
     public string? Uri { get; set; }
 }
 
-/// <summary>Specifies the AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
+/// <summary>AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderKmsEncryptionContextSecretRef
@@ -353,7 +354,7 @@ public partial class V1beta1ObjectCopySpecInitProviderKmsEncryptionContextSecret
     public required string Name { get; set; }
 }
 
-/// <summary>Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
+/// <summary>AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderKmsKeyIdSecretRef
@@ -366,7 +367,7 @@ public partial class V1beta1ObjectCopySpecInitProviderKmsKeyIdSecretRef
     public required string Name { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderOverrideProviderDefaultTags
@@ -380,12 +381,12 @@ public partial class V1beta1ObjectCopySpecInitProviderOverrideProviderDefaultTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta1ObjectCopySpecInitProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
 
-/// <summary>Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
+/// <summary>Customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopySpecInitProviderSourceCustomerKeySecretRef
@@ -422,22 +423,23 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
+    /// <summary>Whether to use an S3 Bucket Key for object encryption with server-side encryption using KMS (SSE-KMS).</summary>
     [JsonPropertyName("bucketKeyEnabled")]
     public bool? BucketKeyEnabled { get; set; }
 
-    /// <summary>Specifies caching behavior along the request/reply chain Read w3c cache_control for further details.</summary>
+    /// <summary>Caching behavior along the request/reply chain. Read w3c cache_control for further details.</summary>
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
-    /// <summary>Specifies presentational information for the object. Read w3c content_disposition for further information.</summary>
+    /// <summary>Presentational information for the object. Read w3c content_disposition for further information.</summary>
     [JsonPropertyName("contentDisposition")]
     public string? ContentDisposition { get; set; }
 
-    /// <summary>Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
+    /// <summary>Content encodings that have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
     [JsonPropertyName("contentEncoding")]
     public string? ContentEncoding { get; set; }
 
@@ -465,15 +467,15 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("copyIfUnmodifiedSince")]
     public string? CopyIfUnmodifiedSince { get; set; }
 
-    /// <summary>Specifies the algorithm to use to when encrypting the object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when encrypting the object (for example, AES256).</summary>
     [JsonPropertyName("customerAlgorithm")]
     public string? CustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("customerKeyMd5")]
     public string? CustomerKeyMd5 { get; set; }
 
-    /// <summary>Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
+    /// <summary>Customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.</summary>
     [JsonPropertyName("customerKeySecretRef")]
     public V1beta1ObjectCopySpecInitProviderCustomerKeySecretRef? CustomerKeySecretRef { get; set; }
 
@@ -501,11 +503,11 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("key")]
     public string? Key { get; set; }
 
-    /// <summary>Specifies the AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
+    /// <summary>AWS KMS Encryption Context to use for object encryption. The value is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.</summary>
     [JsonPropertyName("kmsEncryptionContextSecretRef")]
     public V1beta1ObjectCopySpecInitProviderKmsEncryptionContextSecretRef? KmsEncryptionContextSecretRef { get; set; }
 
-    /// <summary>Specifies the AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
+    /// <summary>AWS KMS Key ARN to use for object encryption. This value is a fully qualified ARN of the KMS Key. If using aws_kms_key, use the exported arn attribute: kms_key_id = aws_kms_key.foo.arn</summary>
     [JsonPropertyName("kmsKeyIdSecretRef")]
     public V1beta1ObjectCopySpecInitProviderKmsKeyIdSecretRef? KmsKeyIdSecretRef { get; set; }
 
@@ -513,11 +515,11 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
 
-    /// <summary>Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("metadataDirective")]
     public string? MetadataDirective { get; set; }
 
-    /// <summary>The legal hold status that you want to apply to the specified object. Valid values are ON and OFF.</summary>
+    /// <summary>Legal hold status to apply to the specified object. Valid values are ON and OFF.</summary>
     [JsonPropertyName("objectLockLegalHoldStatus")]
     public string? ObjectLockLegalHoldStatus { get; set; }
 
@@ -536,31 +538,31 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("requestPayer")]
     public string? RequestPayer { get; set; }
 
-    /// <summary>Specifies server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
+    /// <summary>Server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
     [JsonPropertyName("serverSideEncryption")]
     public string? ServerSideEncryption { get; set; }
 
-    /// <summary>Specifies the source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
+    /// <summary>Source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Specifies the algorithm to use when decrypting the source object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when decrypting the source object (for example, AES256).</summary>
     [JsonPropertyName("sourceCustomerAlgorithm")]
     public string? SourceCustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("sourceCustomerKeyMd5")]
     public string? SourceCustomerKeyMd5 { get; set; }
 
-    /// <summary>Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
+    /// <summary>Customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.</summary>
     [JsonPropertyName("sourceCustomerKeySecretRef")]
     public V1beta1ObjectCopySpecInitProviderSourceCustomerKeySecretRef? SourceCustomerKeySecretRef { get; set; }
 
-    /// <summary>Specifies the desired storage class for the object. Defaults to STANDARD.</summary>
+    /// <summary>Desired storage class for the object. Defaults to STANDARD.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
-    /// <summary>Specifies whether the object tag-set are copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the object tag-set is copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("taggingDirective")]
     public string? TaggingDirective { get; set; }
 
@@ -568,7 +570,7 @@ public partial class V1beta1ObjectCopySpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>Specifies a target URL for website redirect.</summary>
+    /// <summary>Target URL for website redirect.</summary>
     [JsonPropertyName("websiteRedirect")]
     public string? WebsiteRedirect { get; set; }
 }
@@ -696,7 +698,7 @@ public partial class V1beta1ObjectCopyStatusAtProviderGrant
     [JsonPropertyName("permissions")]
     public IList<string>? Permissions { get; set; }
 
-    /// <summary>- Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
+    /// <summary>Type of grantee. Valid values are CanonicalUser, Group, and AmazonCustomerByEmail.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -705,7 +707,7 @@ public partial class V1beta1ObjectCopyStatusAtProviderGrant
     public string? Uri { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopyStatusAtProviderOverrideProviderDefaultTags
@@ -719,7 +721,7 @@ public partial class V1beta1ObjectCopyStatusAtProviderOverrideProviderDefaultTag
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectCopyStatusAtProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Configuration block to override the provider default_tags configuration block. See default_tags Block below.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta1ObjectCopyStatusAtProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
@@ -740,42 +742,43 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
+    /// <summary>Whether to use an S3 Bucket Key for object encryption with server-side encryption using KMS (SSE-KMS).</summary>
     [JsonPropertyName("bucketKeyEnabled")]
     public bool? BucketKeyEnabled { get; set; }
 
-    /// <summary>Specifies caching behavior along the request/reply chain Read w3c cache_control for further details.</summary>
+    /// <summary>Caching behavior along the request/reply chain. Read w3c cache_control for further details.</summary>
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
-    /// <summary>The base64-encoded, 32-bit CRC32 checksum of the object.</summary>
+    /// <summary>Base64-encoded, 32-bit CRC32 checksum of the object.</summary>
     [JsonPropertyName("checksumCrc32")]
     public string? ChecksumCrc32 { get; set; }
 
-    /// <summary>The base64-encoded, 32-bit CRC32C checksum of the object.</summary>
+    /// <summary>Base64-encoded, 32-bit CRC32C checksum of the object.</summary>
     [JsonPropertyName("checksumCrc32C")]
     public string? ChecksumCrc32C { get; set; }
 
-    /// <summary>The base64-encoded, 64-bit CRC64NVME checksum of the object.</summary>
+    /// <summary>Base64-encoded, 64-bit CRC64NVME checksum of the object.</summary>
     [JsonPropertyName("checksumCrc64Nvme")]
     public string? ChecksumCrc64Nvme { get; set; }
 
-    /// <summary>The base64-encoded, 160-bit SHA-1 digest of the object.</summary>
+    /// <summary>Base64-encoded, 160-bit SHA-1 digest of the object.</summary>
     [JsonPropertyName("checksumSha1")]
     public string? ChecksumSha1 { get; set; }
 
-    /// <summary>The base64-encoded, 256-bit SHA-256 digest of the object.</summary>
+    /// <summary>Base64-encoded, 256-bit SHA-256 digest of the object.</summary>
     [JsonPropertyName("checksumSha256")]
     public string? ChecksumSha256 { get; set; }
 
-    /// <summary>Specifies presentational information for the object. Read w3c content_disposition for further information.</summary>
+    /// <summary>Presentational information for the object. Read w3c content_disposition for further information.</summary>
     [JsonPropertyName("contentDisposition")]
     public string? ContentDisposition { get; set; }
 
-    /// <summary>Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
+    /// <summary>Content encodings that have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read w3c content encoding for further information.</summary>
     [JsonPropertyName("contentEncoding")]
     public string? ContentEncoding { get; set; }
 
@@ -803,11 +806,11 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("copyIfUnmodifiedSince")]
     public string? CopyIfUnmodifiedSince { get; set; }
 
-    /// <summary>Specifies the algorithm to use to when encrypting the object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when encrypting the object (for example, AES256).</summary>
     [JsonPropertyName("customerAlgorithm")]
     public string? CustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("customerKeyMd5")]
     public string? CustomerKeyMd5 { get; set; }
 
@@ -855,11 +858,11 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("metadata")]
     public IDictionary<string, string>? Metadata { get; set; }
 
-    /// <summary>Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the metadata is copied from the source object or replaced with metadata provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("metadataDirective")]
     public string? MetadataDirective { get; set; }
 
-    /// <summary>The legal hold status that you want to apply to the specified object. Valid values are ON and OFF.</summary>
+    /// <summary>Legal hold status to apply to the specified object. Valid values are ON and OFF.</summary>
     [JsonPropertyName("objectLockLegalHoldStatus")]
     public string? ObjectLockLegalHoldStatus { get; set; }
 
@@ -889,19 +892,19 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("requestPayer")]
     public string? RequestPayer { get; set; }
 
-    /// <summary>Specifies server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
+    /// <summary>Server-side encryption of the object in S3. Valid values are AES256 and aws:kms.</summary>
     [JsonPropertyName("serverSideEncryption")]
     public string? ServerSideEncryption { get; set; }
 
-    /// <summary>Specifies the source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
+    /// <summary>Source object for the copy operation. You specify the value in one of two formats. For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, testbucket/test1.json. For objects accessed through access points, specify the ARN of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, arn:aws:s3:us-west-2:9999912999:accesspoint/my-access-point/object/testbucket/test1.json.</summary>
     [JsonPropertyName("source")]
     public string? Source { get; set; }
 
-    /// <summary>Specifies the algorithm to use when decrypting the source object (for example, AES256).</summary>
+    /// <summary>Algorithm to use when decrypting the source object (for example, AES256).</summary>
     [JsonPropertyName("sourceCustomerAlgorithm")]
     public string? SourceCustomerAlgorithm { get; set; }
 
-    /// <summary>Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
+    /// <summary>128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.</summary>
     [JsonPropertyName("sourceCustomerKeyMd5")]
     public string? SourceCustomerKeyMd5 { get; set; }
 
@@ -909,11 +912,11 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("sourceVersionId")]
     public string? SourceVersionId { get; set; }
 
-    /// <summary>Specifies the desired storage class for the object. Defaults to STANDARD.</summary>
+    /// <summary>Desired storage class for the object. Defaults to STANDARD.</summary>
     [JsonPropertyName("storageClass")]
     public string? StorageClass { get; set; }
 
-    /// <summary>Specifies whether the object tag-set are copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
+    /// <summary>Whether the object tag-set is copied from the source object or replaced with tag-set provided in the request. Valid values are COPY and REPLACE.</summary>
     [JsonPropertyName("taggingDirective")]
     public string? TaggingDirective { get; set; }
 
@@ -929,7 +932,7 @@ public partial class V1beta1ObjectCopyStatusAtProvider
     [JsonPropertyName("versionId")]
     public string? VersionId { get; set; }
 
-    /// <summary>Specifies a target URL for website redirect.</summary>
+    /// <summary>Target URL for website redirect.</summary>
     [JsonPropertyName("websiteRedirect")]
     public string? WebsiteRedirect { get; set; }
 }

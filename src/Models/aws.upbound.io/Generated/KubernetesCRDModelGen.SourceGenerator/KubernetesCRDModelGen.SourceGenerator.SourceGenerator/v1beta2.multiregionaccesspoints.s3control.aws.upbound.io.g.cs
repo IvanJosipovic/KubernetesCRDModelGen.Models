@@ -55,24 +55,24 @@ public enum V1beta2MultiRegionAccessPointSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecForProviderDetailsPublicAccessBlock
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
@@ -228,11 +228,11 @@ public partial class V1beta2MultiRegionAccessPointSpecForProviderDetailsRegionBu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecForProviderDetailsRegion
 {
-    /// <summary>The name of the associated bucket for the Region.</summary>
+    /// <summary>Name of the associated bucket for the Region.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The AWS account ID that owns the Amazon S3 bucket that&apos;s associated with this Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID that owns the Amazon S3 bucket that&apos;s associated with this Multi-Region Access Point.</summary>
     [JsonPropertyName("bucketAccountId")]
     public string? BucketAccountId { get; set; }
 
@@ -245,20 +245,20 @@ public partial class V1beta2MultiRegionAccessPointSpecForProviderDetailsRegion
     public V1beta2MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelector? BucketSelector { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecForProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
     [JsonPropertyName("publicAccessBlock")]
     public V1beta2MultiRegionAccessPointSpecForProviderDetailsPublicAccessBlock? PublicAccessBlock { get; set; }
 
-    /// <summary>The Region configuration block to specify the bucket associated with the Multi-Region Access Point. See Region Configuration below for more details.</summary>
+    /// <summary>Region configuration block to specify the bucket associated with the Multi-Region Access Point. See region Block below.</summary>
     [JsonPropertyName("region")]
     public required IList<V1beta2MultiRegionAccessPointSpecForProviderDetailsRegion> Region { get; set; }
 }
@@ -267,11 +267,11 @@ public partial class V1beta2MultiRegionAccessPointSpecForProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecForProvider
 {
-    /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointSpecForProviderDetails? Details { get; set; }
 
@@ -283,38 +283,38 @@ public partial class V1beta2MultiRegionAccessPointSpecForProvider
     public required string Region { get; set; }
 }
 
-/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecInitProviderDetailsPublicAccessBlock
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecInitProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
     [JsonPropertyName("publicAccessBlock")]
     public V1beta2MultiRegionAccessPointSpecInitProviderDetailsPublicAccessBlock? PublicAccessBlock { get; set; }
 }
@@ -335,11 +335,11 @@ public partial class V1beta2MultiRegionAccessPointSpecInitProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointSpecInitProvider
 {
-    /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointSpecInitProviderDetails? Details { get; set; }
 }
@@ -527,24 +527,24 @@ public partial class V1beta2MultiRegionAccessPointSpec
     public V1beta2MultiRegionAccessPointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+/// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointStatusAtProviderDetailsPublicAccessBlock
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public, PUT Object calls fail if the request includes a public ACL, and PUT Bucket calls fail if the request includes a public ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect existing bucket policies. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores all public ACLs on buckets in this account and any objects that they contain.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for buckets in this account. Defaults to true. Enabling this setting does not affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS Services can access buckets with public policies.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 }
@@ -553,33 +553,33 @@ public partial class V1beta2MultiRegionAccessPointStatusAtProviderDetailsPublicA
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointStatusAtProviderDetailsRegion
 {
-    /// <summary>The name of the associated bucket for the Region.</summary>
+    /// <summary>Name of the associated bucket for the Region.</summary>
     [JsonPropertyName("bucket")]
     public string? Bucket { get; set; }
 
-    /// <summary>The AWS account ID that owns the Amazon S3 bucket that&apos;s associated with this Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID that owns the Amazon S3 bucket that&apos;s associated with this Multi-Region Access Point.</summary>
     [JsonPropertyName("bucketAccountId")]
     public string? BucketAccountId { get; set; }
 
-    /// <summary>Region where this resource will be managed. Defaults to the Region set in the provider configuration.</summary>
+    /// <summary>Name of the Region.</summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointStatusAtProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See Public Access Block Configuration below for more details.</summary>
+    /// <summary>Configuration block to manage the PublicAccessBlock configuration that you want to apply to this Multi-Region Access Point. You can enable the configuration options in any combination. See public_access_block Block below.</summary>
     [JsonPropertyName("publicAccessBlock")]
     public V1beta2MultiRegionAccessPointStatusAtProviderDetailsPublicAccessBlock? PublicAccessBlock { get; set; }
 
-    /// <summary>The Region configuration block to specify the bucket associated with the Multi-Region Access Point. See Region Configuration below for more details.</summary>
+    /// <summary>Region configuration block to specify the bucket associated with the Multi-Region Access Point. See region Block below.</summary>
     [JsonPropertyName("region")]
     public IList<V1beta2MultiRegionAccessPointStatusAtProviderDetailsRegion>? Region { get; set; }
 }
@@ -588,7 +588,7 @@ public partial class V1beta2MultiRegionAccessPointStatusAtProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointStatusAtProvider
 {
-    /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
@@ -596,11 +596,11 @@ public partial class V1beta2MultiRegionAccessPointStatusAtProvider
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Multi-Region Access Point.</summary>
+    /// <summary>ARN of the Multi-Region Access Point.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A configuration block containing details about the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the Multi-Region Access Point. See details Block below.</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointStatusAtProviderDetails? Details { get; set; }
 
@@ -623,7 +623,7 @@ public partial class V1beta2MultiRegionAccessPointStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Region Access Point. One of: READY, INCONSISTENT_ACROSS_REGIONS, CREATING, PARTIALLY_CREATED, PARTIALLY_DELETED, DELETING.</summary>
+    /// <summary>Status of the Multi-Region Access Point. One of: READY, INCONSISTENT_ACROSS_REGIONS, CREATING, PARTIALLY_CREATED, PARTIALLY_DELETED, DELETING.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }

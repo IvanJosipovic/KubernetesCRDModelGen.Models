@@ -456,7 +456,7 @@ public partial class V1beta1FleetSpecForProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
+    /// <summary>Maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
     [JsonPropertyName("maxSessionsPerInstance")]
     public double? MaxSessionsPerInstance { get; set; }
 
@@ -920,7 +920,7 @@ public partial class V1beta1FleetSpecInitProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
+    /// <summary>Maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
     [JsonPropertyName("maxSessionsPerInstance")]
     public double? MaxSessionsPerInstance { get; set; }
 
@@ -1170,7 +1170,7 @@ public partial class V1beta1FleetStatusAtProvider
     [JsonPropertyName("instanceType")]
     public string? InstanceType { get; set; }
 
-    /// <summary>The maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
+    /// <summary>Maximum number of user sessions on an instance. This only applies to multi-session fleets.</summary>
     [JsonPropertyName("maxSessionsPerInstance")]
     public double? MaxSessionsPerInstance { get; set; }
 

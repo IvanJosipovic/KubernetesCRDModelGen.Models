@@ -591,7 +591,7 @@ public partial class V1beta1ReportDefinitionStatusAtProvider
     [JsonPropertyName("additionalSchemaElements")]
     public IList<string>? AdditionalSchemaElements { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) specifying the cur report.</summary>
+    /// <summary>ARN specifying the cur report.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

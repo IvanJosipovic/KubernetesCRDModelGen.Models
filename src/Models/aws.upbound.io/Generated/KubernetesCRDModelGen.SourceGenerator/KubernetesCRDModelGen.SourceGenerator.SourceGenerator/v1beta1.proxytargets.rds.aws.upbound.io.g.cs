@@ -369,7 +369,7 @@ public partial class V1beta1ProxyTargetSpecForProvider
     [JsonPropertyName("dbInstanceIdentifierSelector")]
     public V1beta1ProxyTargetSpecForProviderDbInstanceIdentifierSelector? DbInstanceIdentifierSelector { get; set; }
 
-    /// <summary>The name of the DB proxy.</summary>
+    /// <summary>Name of the DB proxy.</summary>
     [JsonPropertyName("dbProxyName")]
     public string? DbProxyName { get; set; }
 
@@ -388,7 +388,7 @@ public partial class V1beta1ProxyTargetSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The name of the target group.</summary>
+    /// <summary>Name of the target group.</summary>
     [JsonPropertyName("targetGroupName")]
     public string? TargetGroupName { get; set; }
 }
@@ -719,7 +719,7 @@ public partial class V1beta1ProxyTargetSpecInitProvider
     [JsonPropertyName("dbInstanceIdentifierSelector")]
     public V1beta1ProxyTargetSpecInitProviderDbInstanceIdentifierSelector? DbInstanceIdentifierSelector { get; set; }
 
-    /// <summary>The name of the DB proxy.</summary>
+    /// <summary>Name of the DB proxy.</summary>
     [JsonPropertyName("dbProxyName")]
     public string? DbProxyName { get; set; }
 
@@ -731,7 +731,7 @@ public partial class V1beta1ProxyTargetSpecInitProvider
     [JsonPropertyName("dbProxyNameSelector")]
     public V1beta1ProxyTargetSpecInitProviderDbProxyNameSelector? DbProxyNameSelector { get; set; }
 
-    /// <summary>The name of the target group.</summary>
+    /// <summary>Name of the target group.</summary>
     [JsonPropertyName("targetGroupName")]
     public string? TargetGroupName { get; set; }
 }
@@ -931,7 +931,7 @@ public partial class V1beta1ProxyTargetStatusAtProvider
     [JsonPropertyName("dbInstanceIdentifier")]
     public string? DbInstanceIdentifier { get; set; }
 
-    /// <summary>The name of the DB proxy.</summary>
+    /// <summary>Name of the DB proxy.</summary>
     [JsonPropertyName("dbProxyName")]
     public string? DbProxyName { get; set; }
 
@@ -958,11 +958,11 @@ public partial class V1beta1ProxyTargetStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) for the DB instance or DB cluster. Currently not returned by the RDS API.</summary>
+    /// <summary>ARN for the DB instance or DB cluster. Currently not returned by the RDS API.</summary>
     [JsonPropertyName("targetArn")]
     public string? TargetArn { get; set; }
 
-    /// <summary>The name of the target group.</summary>
+    /// <summary>Name of the target group.</summary>
     [JsonPropertyName("targetGroupName")]
     public string? TargetGroupName { get; set; }
 

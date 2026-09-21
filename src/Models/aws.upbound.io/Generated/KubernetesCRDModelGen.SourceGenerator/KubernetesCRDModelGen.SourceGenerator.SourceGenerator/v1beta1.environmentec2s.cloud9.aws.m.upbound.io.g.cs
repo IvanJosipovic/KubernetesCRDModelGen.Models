@@ -207,7 +207,7 @@ public partial class V1beta1EnvironmentEC2SpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier for the Amazon Machine Image (AMI) that&apos;s used to create the EC2 instance. Valid values are</summary>
+    /// <summary>Identifier for the AMI that&apos;s used to create the EC2 instance. Valid values are</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
@@ -430,7 +430,7 @@ public partial class V1beta1EnvironmentEC2SpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The identifier for the Amazon Machine Image (AMI) that&apos;s used to create the EC2 instance. Valid values are</summary>
+    /// <summary>Identifier for the AMI that&apos;s used to create the EC2 instance. Valid values are</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 
@@ -594,7 +594,7 @@ public partial class V1beta1EnvironmentEC2StatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identifier for the Amazon Machine Image (AMI) that&apos;s used to create the EC2 instance. Valid values are</summary>
+    /// <summary>Identifier for the AMI that&apos;s used to create the EC2 instance. Valid values are</summary>
     [JsonPropertyName("imageId")]
     public string? ImageId { get; set; }
 

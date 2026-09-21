@@ -337,7 +337,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: EC2 Transit Gateway Multicast Domain Amazon Resource Name (ARN).
+                    description: EC2 Transit Gateway Multicast Domain ARN.
                     type: string
                   autoAcceptSharedAssociations:
                     description: 'Whether to automatically accept cross-account subnet associations that are associated with the EC2 Transit Gateway Multicast Domain. Valid values: disable, enable. Default value: disable.'

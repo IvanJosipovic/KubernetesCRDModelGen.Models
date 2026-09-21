@@ -372,7 +372,7 @@ public partial class V1beta2SchedulingPolicyStatusAtProviderFairSharePolicy
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SchedulingPolicyStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of the scheduling policy.</summary>
+    /// <summary>ARN of the scheduling policy.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

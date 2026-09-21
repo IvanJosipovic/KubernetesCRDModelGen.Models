@@ -885,6 +885,161 @@ public partial class V1beta1ServerSpecForProviderEndpointDetails
     public V1beta1ServerSpecForProviderEndpointDetailsVpcIdSelector? VpcIdSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecForProviderFunctionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecForProviderFunctionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecForProviderFunctionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecForProviderFunctionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicy? Policy { get; set; }
+}
+
 /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1219,6 +1374,14 @@ public partial class V1beta1ServerSpecForProvider
     /// <summary>The ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
     [JsonPropertyName("function")]
     public string? Function { get; set; }
+
+    /// <summary>Reference to a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionRef")]
+    public V1beta1ServerSpecForProviderFunctionRef? FunctionRef { get; set; }
+
+    /// <summary>Selector for a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionSelector")]
+    public V1beta1ServerSpecForProviderFunctionSelector? FunctionSelector { get; set; }
 
     /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
     [JsonPropertyName("hostKeySecretRef")]
@@ -2128,6 +2291,161 @@ public partial class V1beta1ServerSpecInitProviderEndpointDetails
     public V1beta1ServerSpecInitProviderEndpointDetailsVpcIdSelector? VpcIdSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecInitProviderFunctionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecInitProviderFunctionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public enum V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecInitProviderFunctionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ServerSpecInitProviderFunctionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicy? Policy { get; set; }
+}
+
 /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2474,6 +2792,14 @@ public partial class V1beta1ServerSpecInitProvider
     /// <summary>The ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
     [JsonPropertyName("function")]
     public string? Function { get; set; }
+
+    /// <summary>Reference to a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionRef")]
+    public V1beta1ServerSpecInitProviderFunctionRef? FunctionRef { get; set; }
+
+    /// <summary>Selector for a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionSelector")]
+    public V1beta1ServerSpecInitProviderFunctionSelector? FunctionSelector { get; set; }
 
     /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
     [JsonPropertyName("hostKeySecretRef")]

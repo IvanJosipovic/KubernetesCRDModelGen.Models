@@ -76,6 +76,24 @@ public partial class V1beta2ReplicationGroupSpecForProviderAuthTokenSecretRef
     public required string Namespace { get; set; }
 }
 
+/// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ReplicationGroupSpecForProviderAuthTokenWoSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -741,9 +759,17 @@ public partial class V1beta2ReplicationGroupSpecForProvider
     [JsonPropertyName("authTokenSecretRef")]
     public V1beta2ReplicationGroupSpecForProviderAuthTokenSecretRef? AuthTokenSecretRef { get; set; }
 
-    /// <summary>Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.</summary>
+    /// <summary>Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.</summary>
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
+
+    /// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.</summary>
+    [JsonPropertyName("authTokenWoSecretRef")]
+    public V1beta2ReplicationGroupSpecForProviderAuthTokenWoSecretRef? AuthTokenWoSecretRef { get; set; }
+
+    /// <summary>Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
 
     /// <summary>
     /// Password used to access a password protected server. Can be specified only if transit_encryption_enabled = true.
@@ -755,7 +781,6 @@ public partial class V1beta2ReplicationGroupSpecForProvider
     /// <summary>
     /// Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
     /// Only supported for engine types &quot;redis&quot; and &quot;valkey&quot; and if the engine version is 6 or higher.
-    /// Defaults to true.
     /// </summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public string? AutoMinorVersionUpgrade { get; set; }
@@ -917,11 +942,11 @@ public partial class V1beta2ReplicationGroupSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta2ReplicationGroupSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupNames")]
     public IList<string>? SecurityGroupNames { get; set; }
 
@@ -986,6 +1011,24 @@ public partial class V1beta2ReplicationGroupSpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ReplicationGroupSpecInitProviderAuthTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ReplicationGroupSpecInitProviderAuthTokenWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -1677,14 +1720,21 @@ public partial class V1beta2ReplicationGroupSpecInitProvider
     [JsonPropertyName("authTokenSecretRef")]
     public V1beta2ReplicationGroupSpecInitProviderAuthTokenSecretRef? AuthTokenSecretRef { get; set; }
 
-    /// <summary>Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.</summary>
+    /// <summary>Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.</summary>
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
+
+    /// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. If set, requires auth_token_wo_version to be set.</summary>
+    [JsonPropertyName("authTokenWoSecretRef")]
+    public V1beta2ReplicationGroupSpecInitProviderAuthTokenWoSecretRef? AuthTokenWoSecretRef { get; set; }
+
+    /// <summary>Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
 
     /// <summary>
     /// Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
     /// Only supported for engine types &quot;redis&quot; and &quot;valkey&quot; and if the engine version is 6 or higher.
-    /// Defaults to true.
     /// </summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public string? AutoMinorVersionUpgrade { get; set; }
@@ -1839,11 +1889,11 @@ public partial class V1beta2ReplicationGroupSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta2ReplicationGroupSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupNames")]
     public IList<string>? SecurityGroupNames { get; set; }
 
@@ -2158,14 +2208,17 @@ public partial class V1beta2ReplicationGroupStatusAtProvider
     [JsonPropertyName("atRestEncryptionEnabled")]
     public string? AtRestEncryptionEnabled { get; set; }
 
-    /// <summary>Strategy used when modifying auth_token on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token must be omitted.</summary>
+    /// <summary>Strategy used when modifying auth_token or auth_token_wo on an existing replication group. Not used during initial create. Valid values are SET, ROTATE, and DELETE. If omitted during an auth token change, AWS defaults to ROTATE. If value is DELETE then auth_token and auth_token_wo must be omitted.</summary>
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
+
+    /// <summary>Required when auth_token_wo is set. Changing this value triggers an update to auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
 
     /// <summary>
     /// Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
     /// Only supported for engine types &quot;redis&quot; and &quot;valkey&quot; and if the engine version is 6 or higher.
-    /// Defaults to true.
     /// </summary>
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public string? AutoMinorVersionUpgrade { get; set; }
@@ -2331,11 +2384,11 @@ public partial class V1beta2ReplicationGroupStatusAtProvider
     [JsonPropertyName("replicasPerNodeGroup")]
     public double? ReplicasPerNodeGroup { get; set; }
 
-    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>IDs of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud.</summary>
+    /// <summary>Names of one or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in a VPC.</summary>
     [JsonPropertyName("securityGroupNames")]
     public IList<string>? SecurityGroupNames { get; set; }
 

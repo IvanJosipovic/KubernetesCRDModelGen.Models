@@ -60,11 +60,11 @@ public enum V1beta2DirectoryConfigSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DirectoryConfigSpecForProviderCertificateBasedAuthProperties
 {
-    /// <summary>The ARN of the AWS Certificate Manager Private CA resource.</summary>
+    /// <summary>ARN of the AWS Certificate Manager Private CA resource.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
-    /// <summary>The status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
+    /// <summary>Status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -134,11 +134,11 @@ public partial class V1beta2DirectoryConfigSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DirectoryConfigSpecInitProviderCertificateBasedAuthProperties
 {
-    /// <summary>The ARN of the AWS Certificate Manager Private CA resource.</summary>
+    /// <summary>ARN of the AWS Certificate Manager Private CA resource.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
-    /// <summary>The status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
+    /// <summary>Status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }
@@ -396,11 +396,11 @@ public partial class V1beta2DirectoryConfigSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DirectoryConfigStatusAtProviderCertificateBasedAuthProperties
 {
-    /// <summary>The ARN of the AWS Certificate Manager Private CA resource.</summary>
+    /// <summary>ARN of the AWS Certificate Manager Private CA resource.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
-    /// <summary>The status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
+    /// <summary>Status of the certificate-based authentication properties. Valid values - [&quot;DISABLED&quot;, &quot;ENABLED&quot;, &quot;ENABLED_NO_DIRECTORY_LOGIN_FALLBACK&quot;].</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 }

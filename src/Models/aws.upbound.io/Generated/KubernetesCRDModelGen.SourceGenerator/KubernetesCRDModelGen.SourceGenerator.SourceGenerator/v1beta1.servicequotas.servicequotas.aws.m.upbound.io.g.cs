@@ -242,7 +242,7 @@ public partial class V1beta1ServiceQuotaStatusAtProvider
     [JsonPropertyName("adjustable")]
     public bool? Adjustable { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the service quota.</summary>
+    /// <summary>ARN of the service quota.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

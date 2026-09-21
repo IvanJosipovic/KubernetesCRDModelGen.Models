@@ -685,7 +685,7 @@ public partial class V1beta1HoursOfOperationStatusAtProviderConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HoursOfOperationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Hours of Operation.</summary>
+    /// <summary>ARN of the Hours of Operation.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

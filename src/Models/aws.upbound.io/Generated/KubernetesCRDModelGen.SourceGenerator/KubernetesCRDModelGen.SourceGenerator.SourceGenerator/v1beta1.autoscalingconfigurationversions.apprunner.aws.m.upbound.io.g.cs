@@ -224,16 +224,18 @@ public partial class V1beta1AutoScalingConfigurationVersionStatusAtProvider
     [JsonPropertyName("autoScalingConfigurationName")]
     public string? AutoScalingConfigurationName { get; set; }
 
-    /// <summary>The revision of this auto scaling configuration.</summary>
+    /// <summary>Revision of this auto scaling configuration.</summary>
     [JsonPropertyName("autoScalingConfigurationRevision")]
     public double? AutoScalingConfigurationRevision { get; set; }
 
+    /// <summary>Whether there is an App Runner service associated with this auto scaling configuration.</summary>
     [JsonPropertyName("hasAssociatedService")]
     public bool? HasAssociatedService { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Whether the auto scaling configuration is the default for the AWS account and Region.</summary>
     [JsonPropertyName("isDefault")]
     public bool? IsDefault { get; set; }
 

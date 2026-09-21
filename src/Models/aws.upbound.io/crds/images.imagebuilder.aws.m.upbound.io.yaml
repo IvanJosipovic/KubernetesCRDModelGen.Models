@@ -58,10 +58,10 @@ spec:
               forProvider:
                 properties:
                   containerRecipeArn:
-                    description: '- Amazon Resource Name (ARN) of the container recipe.'
+                    description: '- ARN of the container recipe.'
                     type: string
                   distributionConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.
+                    description: ARN of the Image Builder Distribution Configuration.
                     type: string
                   distributionConfigurationArnRef:
                     description: Reference to a DistributionConfiguration in imagebuilder to populate distributionConfigurationArn.
@@ -146,10 +146,10 @@ spec:
                     description: Whether additional information about the image being created is collected. Defaults to true.
                     type: boolean
                   executionRole:
-                    description: Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.
+                    description: ARN of the service-linked role to be used by Image Builder to execute workflows.
                     type: string
                   imageRecipeArn:
-                    description: Amazon Resource Name (ARN) of the image recipe.
+                    description: ARN of the image recipe.
                     type: string
                   imageRecipeArnRef:
                     description: Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.
@@ -261,7 +261,7 @@ spec:
                         type: number
                     type: object
                   infrastructureConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.
+                    description: ARN of the Image Builder Infrastructure Configuration.
                     type: string
                   infrastructureConfigurationArnRef:
                     description: Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.
@@ -383,7 +383,7 @@ spec:
                             type: object
                           type: array
                         workflowArn:
-                          description: Amazon Resource Name (ARN) of the Image Builder Workflow.
+                          description: ARN of the Image Builder Workflow.
                           type: string
                       type: object
                     type: array
@@ -404,10 +404,10 @@ spec:
                   autoscaler.
                 properties:
                   containerRecipeArn:
-                    description: '- Amazon Resource Name (ARN) of the container recipe.'
+                    description: '- ARN of the container recipe.'
                     type: string
                   distributionConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.
+                    description: ARN of the Image Builder Distribution Configuration.
                     type: string
                   distributionConfigurationArnRef:
                     description: Reference to a DistributionConfiguration in imagebuilder to populate distributionConfigurationArn.
@@ -492,10 +492,10 @@ spec:
                     description: Whether additional information about the image being created is collected. Defaults to true.
                     type: boolean
                   executionRole:
-                    description: Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.
+                    description: ARN of the service-linked role to be used by Image Builder to execute workflows.
                     type: string
                   imageRecipeArn:
-                    description: Amazon Resource Name (ARN) of the image recipe.
+                    description: ARN of the image recipe.
                     type: string
                   imageRecipeArnRef:
                     description: Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.
@@ -607,7 +607,7 @@ spec:
                         type: number
                     type: object
                   infrastructureConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.
+                    description: ARN of the Image Builder Infrastructure Configuration.
                     type: string
                   infrastructureConfigurationArnRef:
                     description: Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.
@@ -724,7 +724,7 @@ spec:
                             type: object
                           type: array
                         workflowArn:
-                          description: Amazon Resource Name (ARN) of the Image Builder Workflow.
+                          description: ARN of the Image Builder Workflow.
                           type: string
                       type: object
                     type: array
@@ -793,28 +793,28 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the image.
+                    description: ARN of the image.
                     type: string
                   containerRecipeArn:
-                    description: '- Amazon Resource Name (ARN) of the container recipe.'
+                    description: '- ARN of the container recipe.'
                     type: string
                   dateCreated:
                     description: Date the image was created.
                     type: string
                   distributionConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Distribution Configuration.
+                    description: ARN of the Image Builder Distribution Configuration.
                     type: string
                   enhancedImageMetadataEnabled:
                     description: Whether additional information about the image being created is collected. Defaults to true.
                     type: boolean
                   executionRole:
-                    description: Amazon Resource Name (ARN) of the service-linked role to be used by Image Builder to execute workflows.
+                    description: ARN of the service-linked role to be used by Image Builder to execute workflows.
                     type: string
                   id:
-                    description: Amazon Resource Name (ARN) of the image.
+                    description: ARN of the image.
                     type: string
                   imageRecipeArn:
-                    description: Amazon Resource Name (ARN) of the image recipe.
+                    description: ARN of the image recipe.
                     type: string
                   imageScanningConfiguration:
                     description: Configuration block with image scanning configuration. Detailed below.
@@ -847,7 +847,7 @@ spec:
                         type: number
                     type: object
                   infrastructureConfigurationArn:
-                    description: Amazon Resource Name (ARN) of the Image Builder Infrastructure Configuration.
+                    description: ARN of the Image Builder Infrastructure Configuration.
                     type: string
                   loggingConfiguration:
                     description: Configuration block with logging configuration. Detailed below.
@@ -867,7 +867,7 @@ spec:
                     items:
                       properties:
                         amis:
-                          description: Set of objects with each Amazon Machine Image (AMI) created.
+                          description: Set of objects with each AMI created.
                           items:
                             properties:
                               accountId:
@@ -950,7 +950,7 @@ spec:
                             type: object
                           type: array
                         workflowArn:
-                          description: Amazon Resource Name (ARN) of the Image Builder Workflow.
+                          description: ARN of the Image Builder Workflow.
                           type: string
                       type: object
                     type: array

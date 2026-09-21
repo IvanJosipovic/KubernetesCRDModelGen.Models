@@ -349,22 +349,22 @@ public partial class V1beta2ObjectSpecForProviderKmsKeyIdSelector
     public V1beta2ObjectSpecForProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectSpecForProviderOverrideProviderDefaultTags
 {
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Map of tags to override the provider-level default_tags. Must be an empty map to suppress all provider-level default_tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+/// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectSpecForProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta2ObjectSpecForProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
@@ -397,7 +397,7 @@ public partial class V1beta2ObjectSpecForProvider
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
@@ -465,7 +465,7 @@ public partial class V1beta2ObjectSpecForProvider
     [JsonPropertyName("objectLockRetainUntilDate")]
     public string? ObjectLockRetainUntilDate { get; set; }
 
-    /// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+    /// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
     [JsonPropertyName("overrideProvider")]
     public V1beta2ObjectSpecForProviderOverrideProvider? OverrideProvider { get; set; }
 
@@ -795,22 +795,22 @@ public partial class V1beta2ObjectSpecInitProviderKmsKeyIdSelector
     public V1beta2ObjectSpecInitProviderKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectSpecInitProviderOverrideProviderDefaultTags
 {
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Map of tags to override the provider-level default_tags. Must be an empty map to suppress all provider-level default_tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+/// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectSpecInitProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta2ObjectSpecInitProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
@@ -855,7 +855,7 @@ public partial class V1beta2ObjectSpecInitProvider
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
@@ -923,7 +923,7 @@ public partial class V1beta2ObjectSpecInitProvider
     [JsonPropertyName("objectLockRetainUntilDate")]
     public string? ObjectLockRetainUntilDate { get; set; }
 
-    /// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+    /// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
     [JsonPropertyName("overrideProvider")]
     public V1beta2ObjectSpecInitProviderOverrideProvider? OverrideProvider { get; set; }
 
@@ -1135,22 +1135,22 @@ public partial class V1beta2ObjectSpec
     public V1beta2ObjectSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Override the provider default_tags configuration block.</summary>
+/// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectStatusAtProviderOverrideProviderDefaultTags
 {
-    /// <summary>Key-value map of resource tags.</summary>
+    /// <summary>Map of tags to override the provider-level default_tags. Must be an empty map to suppress all provider-level default_tags.</summary>
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+/// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ObjectStatusAtProviderOverrideProvider
 {
-    /// <summary>Override the provider default_tags configuration block.</summary>
+    /// <summary>Override the provider default_tags configuration block. See default_tags Block below for more details.</summary>
     [JsonPropertyName("defaultTags")]
     public V1beta2ObjectStatusAtProviderOverrideProviderDefaultTags? DefaultTags { get; set; }
 }
@@ -1179,27 +1179,27 @@ public partial class V1beta2ObjectStatusAtProvider
     [JsonPropertyName("cacheControl")]
     public string? CacheControl { get; set; }
 
-    /// <summary>Indicates the algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
+    /// <summary>Algorithm used to create the checksum for the object. If a value is specified and the object is encrypted with KMS, you must have permission to use the kms:Decrypt action. Valid values: CRC32, CRC32C, CRC64NVME, SHA1, SHA256.</summary>
     [JsonPropertyName("checksumAlgorithm")]
     public string? ChecksumAlgorithm { get; set; }
 
-    /// <summary>The base64-encoded, 32-bit CRC32 checksum of the object.</summary>
+    /// <summary>Base64-encoded, 32-bit CRC32 checksum of the object.</summary>
     [JsonPropertyName("checksumCrc32")]
     public string? ChecksumCrc32 { get; set; }
 
-    /// <summary>The base64-encoded, 32-bit CRC32C checksum of the object.</summary>
+    /// <summary>Base64-encoded, 32-bit CRC32C checksum of the object.</summary>
     [JsonPropertyName("checksumCrc32C")]
     public string? ChecksumCrc32C { get; set; }
 
-    /// <summary>The base64-encoded, 64-bit CRC64NVME checksum of the object.</summary>
+    /// <summary>Base64-encoded, 64-bit CRC64NVME checksum of the object.</summary>
     [JsonPropertyName("checksumCrc64Nvme")]
     public string? ChecksumCrc64Nvme { get; set; }
 
-    /// <summary>The base64-encoded, 160-bit SHA-1 digest of the object.</summary>
+    /// <summary>Base64-encoded, 160-bit SHA-1 digest of the object.</summary>
     [JsonPropertyName("checksumSha1")]
     public string? ChecksumSha1 { get; set; }
 
-    /// <summary>The base64-encoded, 256-bit SHA-256 digest of the object.</summary>
+    /// <summary>Base64-encoded, 256-bit SHA-256 digest of the object.</summary>
     [JsonPropertyName("checksumSha256")]
     public string? ChecksumSha256 { get; set; }
 
@@ -1262,7 +1262,7 @@ public partial class V1beta2ObjectStatusAtProvider
     [JsonPropertyName("objectLockRetainUntilDate")]
     public string? ObjectLockRetainUntilDate { get; set; }
 
-    /// <summary>Override provider-level configuration options. See Override Provider below for more details.</summary>
+    /// <summary>Override provider-level configuration options. See override_provider Block below for more details.</summary>
     [JsonPropertyName("overrideProvider")]
     public V1beta2ObjectStatusAtProviderOverrideProvider? OverrideProvider { get; set; }
 

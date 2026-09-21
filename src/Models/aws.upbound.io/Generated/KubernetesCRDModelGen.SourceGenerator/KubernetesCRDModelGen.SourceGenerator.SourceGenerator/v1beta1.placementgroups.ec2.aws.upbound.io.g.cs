@@ -317,7 +317,7 @@ public partial class V1beta1PlacementGroupSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PlacementGroupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the placement group.</summary>
+    /// <summary>ARN of the placement group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -225,7 +225,7 @@ public partial class V1beta1UsageLimitSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
+    /// <summary>ARN of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -417,7 +417,7 @@ public partial class V1beta1UsageLimitSpecInitProvider
     [JsonPropertyName("period")]
     public string? Period { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
+    /// <summary>ARN of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 
@@ -625,7 +625,7 @@ public partial class V1beta1UsageLimitStatusAtProvider
     [JsonPropertyName("amount")]
     public double? Amount { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Serverless Usage Limit.</summary>
+    /// <summary>ARN of the Redshift Serverless Usage Limit.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -648,7 +648,7 @@ public partial class V1beta1UsageLimitStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
+    /// <summary>ARN of the Amazon Redshift Serverless resource to create the usage limit for.</summary>
     [JsonPropertyName("resourceArn")]
     public string? ResourceArn { get; set; }
 

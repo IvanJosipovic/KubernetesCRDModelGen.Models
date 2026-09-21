@@ -139,7 +139,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                             resourceArnRef:
                               description: Reference to a RuleGroup in networkfirewall to populate resourceArn.
@@ -272,7 +272,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                             resourceArnRef:
                               description: Reference to a RuleGroup in networkfirewall to populate resourceArn.
@@ -468,7 +468,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                             resourceArnRef:
                               description: Reference to a RuleGroup in networkfirewall to populate resourceArn.
@@ -601,7 +601,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                             resourceArnRef:
                               description: Reference to a RuleGroup in networkfirewall to populate resourceArn.
@@ -762,7 +762,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) that identifies the firewall policy.
+                    description: ARN that identifies the firewall policy.
                     type: string
                   description:
                     description: A friendly description of the firewall policy.
@@ -846,7 +846,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                           type: object
                         type: array
@@ -900,7 +900,7 @@ spec:
                               description: An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.
                               type: number
                             resourceArn:
-                              description: The Amazon Resource Name (ARN) of the stateless rule group.
+                              description: ARN of the stateless rule group.
                               type: string
                           type: object
                         type: array
@@ -909,7 +909,7 @@ spec:
                         type: string
                     type: object
                   id:
-                    description: The Amazon Resource Name (ARN) that identifies the firewall policy.
+                    description: ARN that identifies the firewall policy.
                     type: string
                   region:
                     description: |-

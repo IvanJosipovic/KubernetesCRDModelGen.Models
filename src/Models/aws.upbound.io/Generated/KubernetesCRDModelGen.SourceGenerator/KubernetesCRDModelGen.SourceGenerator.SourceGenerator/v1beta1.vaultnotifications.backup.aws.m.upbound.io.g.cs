@@ -373,7 +373,7 @@ public partial class V1beta1VaultNotificationsSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events</summary>
+    /// <summary>ARN that specifies the topic for a backup vault’s events</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -728,7 +728,7 @@ public partial class V1beta1VaultNotificationsSpecInitProvider
     [JsonPropertyName("backupVaultNameSelector")]
     public V1beta1VaultNotificationsSpecInitProviderBackupVaultNameSelector? BackupVaultNameSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events</summary>
+    /// <summary>ARN that specifies the topic for a backup vault’s events</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 
@@ -875,7 +875,7 @@ public partial class V1beta1VaultNotificationsStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that specifies the topic for a backup vault’s events</summary>
+    /// <summary>ARN that specifies the topic for a backup vault’s events</summary>
     [JsonPropertyName("snsTopicArn")]
     public string? SnsTopicArn { get; set; }
 }

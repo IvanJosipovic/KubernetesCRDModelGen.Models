@@ -496,7 +496,7 @@ spec:
                             description: Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
                             properties:
                               notificationArn:
-                                description: An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+                                description: ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
                                 type: string
                               notificationArnRef:
                                 description: Reference to a Topic in sns to populate notificationArn.
@@ -1326,7 +1326,7 @@ spec:
                             description: Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
                             properties:
                               notificationArn:
-                                description: An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+                                description: ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
                                 type: string
                               notificationArnRef:
                                 description: Reference to a Topic in sns to populate notificationArn.
@@ -1884,7 +1884,7 @@ spec:
                             description: Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
                             properties:
                               notificationArn:
-                                description: An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+                                description: ARN for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
                                 type: string
                               notificationEvents:
                                 description: 'The different events for which you can receive notifications. Valid values: All, InProgress, Success, TimedOut, Cancelled, and Failed'

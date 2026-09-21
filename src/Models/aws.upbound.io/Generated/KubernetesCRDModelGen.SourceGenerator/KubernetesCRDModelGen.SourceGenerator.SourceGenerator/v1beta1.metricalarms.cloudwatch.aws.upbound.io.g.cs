@@ -486,6 +486,20 @@ public partial class V1beta1MetricAlarmSpecForProviderOkActionsSelector
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1MetricAlarmSpecForProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricAlarmSpecForProvider
 {
     /// <summary>Indicates whether or not actions should be executed during any changes to the alarm&apos;s state. Defaults to true.</summary>
@@ -619,6 +633,10 @@ public partial class V1beta1MetricAlarmSpecForProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public IList<V1beta1MetricAlarmSpecForProviderWarmUpConfiguration>? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>
@@ -1044,6 +1062,20 @@ public partial class V1beta1MetricAlarmSpecInitProviderOkActionsSelector
     public V1beta1MetricAlarmSpecInitProviderOkActionsSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -1185,6 +1217,10 @@ public partial class V1beta1MetricAlarmSpecInitProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public IList<V1beta1MetricAlarmSpecInitProviderWarmUpConfiguration>? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>
@@ -1493,6 +1529,20 @@ public partial class V1beta1MetricAlarmStatusAtProviderMetricQuery
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration
+{
+    /// <summary>Whether to wait for the full warm-up period before evaluation begins, even if metric data arrives earlier. When false, the warm-up period ends early as soon as the alarm has enough data to fill its evaluation window. Defaults to false.</summary>
+    [JsonPropertyName("onlyStartEvaluatingAfterWarmUpPeriodEnds")]
+    public bool? OnlyStartEvaluatingAfterWarmUpPeriodEnds { get; set; }
+
+    /// <summary>Length of the warm-up period, in minutes. Valid values are 1 to 2880.</summary>
+    [JsonPropertyName("warmUpPeriodDurationInMinutes")]
+    public double? WarmUpPeriodDurationInMinutes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricAlarmStatusAtProvider
 {
     /// <summary>Indicates whether or not actions should be executed during any changes to the alarm&apos;s state. Defaults to true.</summary>
@@ -1622,6 +1672,10 @@ public partial class V1beta1MetricAlarmStatusAtProvider
     /// <summary>The unit for the alarm&apos;s associated metric.</summary>
     [JsonPropertyName("unit")]
     public string? Unit { get; set; }
+
+    /// <summary>Warm-up period that delays alarm evaluation after the alarm is created. During the warm-up period the alarm stays in INSUFFICIENT_DATA and does not perform alarm actions. See warm_up_configuration below.</summary>
+    [JsonPropertyName("warmUpConfiguration")]
+    public IList<V1beta1MetricAlarmStatusAtProviderWarmUpConfiguration>? WarmUpConfiguration { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

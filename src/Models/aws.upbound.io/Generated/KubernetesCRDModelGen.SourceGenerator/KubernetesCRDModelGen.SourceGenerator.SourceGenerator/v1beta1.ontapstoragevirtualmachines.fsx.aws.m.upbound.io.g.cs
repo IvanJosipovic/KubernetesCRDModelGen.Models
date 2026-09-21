@@ -36,7 +36,7 @@ public partial class V1beta1OntapStorageVirtualMachineList : IKubernetesObject<V
     public required IList<V1beta1OntapStorageVirtualMachine> Items { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
@@ -49,32 +49,32 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirec
     public required string Name { get; set; }
 }
 
-/// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+/// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
-    /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
+    /// <summary>List of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef? PasswordSecretRef { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -84,11 +84,11 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfiguration
 {
-    /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
+    /// <summary>NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
     [JsonPropertyName("netbiosName")]
     public string? NetbiosName { get; set; }
 
-    /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+    /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
     [JsonPropertyName("selfManagedActiveDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration? SelfManagedActiveDirectoryConfiguration { get; set; }
 }
@@ -248,7 +248,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemI
     public V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
+/// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderSvmAdminPasswordSecretRef
@@ -269,7 +269,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
     [JsonPropertyName("activeDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfiguration? ActiveDirectoryConfiguration { get; set; }
 
-    /// <summary>The ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
+    /// <summary>ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -281,7 +281,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
     [JsonPropertyName("fileSystemIdSelector")]
     public V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector? FileSystemIdSelector { get; set; }
 
-    /// <summary>The name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
+    /// <summary>Name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -292,11 +292,11 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies the root volume security style, Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
+    /// <summary>Root volume security style. Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
     [JsonPropertyName("rootVolumeSecurityStyle")]
     public string? RootVolumeSecurityStyle { get; set; }
 
-    /// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
+    /// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
     [JsonPropertyName("svmAdminPasswordSecretRef")]
     public V1beta1OntapStorageVirtualMachineSpecForProviderSvmAdminPasswordSecretRef? SvmAdminPasswordSecretRef { get; set; }
 
@@ -305,7 +305,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+/// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
@@ -318,32 +318,32 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDire
     public required string Name { get; set; }
 }
 
-/// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+/// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
-    /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
+    /// <summary>List of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+    /// <summary>Password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
     [JsonPropertyName("passwordSecretRef")]
     public required V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef PasswordSecretRef { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -353,11 +353,11 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDire
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfiguration
 {
-    /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
+    /// <summary>NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
     [JsonPropertyName("netbiosName")]
     public string? NetbiosName { get; set; }
 
-    /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+    /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
     [JsonPropertyName("selfManagedActiveDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration? SelfManagedActiveDirectoryConfiguration { get; set; }
 }
@@ -517,7 +517,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystem
     public V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
+/// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderSvmAdminPasswordSecretRef
@@ -550,7 +550,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProvider
     [JsonPropertyName("activeDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfiguration? ActiveDirectoryConfiguration { get; set; }
 
-    /// <summary>The ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
+    /// <summary>ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -562,15 +562,15 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProvider
     [JsonPropertyName("fileSystemIdSelector")]
     public V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelector? FileSystemIdSelector { get; set; }
 
-    /// <summary>The name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
+    /// <summary>Name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies the root volume security style, Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
+    /// <summary>Root volume security style. Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
     [JsonPropertyName("rootVolumeSecurityStyle")]
     public string? RootVolumeSecurityStyle { get; set; }
 
-    /// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
+    /// <summary>Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
     [JsonPropertyName("svmAdminPasswordSecretRef")]
     public V1beta1OntapStorageVirtualMachineSpecInitProviderSvmAdminPasswordSecretRef? SvmAdminPasswordSecretRef { get; set; }
 
@@ -686,28 +686,28 @@ public partial class V1beta1OntapStorageVirtualMachineSpec
     public V1beta1OntapStorageVirtualMachineSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+/// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
-    /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
+    /// <summary>List of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
     [JsonPropertyName("dnsIps")]
     public IList<string>? DnsIps { get; set; }
 
-    /// <summary>The fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
+    /// <summary>Fully qualified domain name of the self-managed AD directory. For example, corp.example.com.</summary>
     [JsonPropertyName("domainName")]
     public string? DomainName { get; set; }
 
-    /// <summary>The name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
+    /// <summary>Name of the domain group whose members are granted administrative privileges for the SVM. The group that you specify must already exist in your domain. Defaults to Domain Admins.</summary>
     [JsonPropertyName("fileSystemAdministratorsGroup")]
     public string? FileSystemAdministratorsGroup { get; set; }
 
-    /// <summary>The fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
+    /// <summary>Fully qualified distinguished name of the organizational unit within your self-managed AD directory that the Windows File Server instance will join. For example, OU=FSx,DC=yourdomain,DC=corp,DC=com. Only accepts OU as the direct parent of the SVM. If none is provided, the SVM is created in the default location of your self-managed AD directory. To learn more, see RFC 2253.</summary>
     [JsonPropertyName("organizationalUnitDistinguishedName")]
     public string? OrganizationalUnitDistinguishedName { get; set; }
 
-    /// <summary>The user name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
+    /// <summary>User name for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
 }
@@ -717,11 +717,11 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDire
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfiguration
 {
-    /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
+    /// <summary>NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
     [JsonPropertyName("netbiosName")]
     public string? NetbiosName { get; set; }
 
-    /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
+    /// <summary>Configuration block that Amazon FSx uses to join the SVM to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Detailed below.</summary>
     [JsonPropertyName("selfManagedActiveDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration? SelfManagedActiveDirectoryConfiguration { get; set; }
 }
@@ -730,7 +730,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDire
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsIscsi
 {
-    /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
+    /// <summary>Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -743,7 +743,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsI
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsManagement
 {
-    /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
+    /// <summary>Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -756,7 +756,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsM
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsNfs
 {
-    /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
+    /// <summary>Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -769,7 +769,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsN
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsSmb
 {
-    /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
+    /// <summary>Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
@@ -782,19 +782,19 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpoints
 {
-    /// <summary>An endpoint for accessing data on your storage virtual machine via iSCSI protocol. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via iSCSI protocol. See Endpoint.</summary>
     [JsonPropertyName("iscsi")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsIscsi>? Iscsi { get; set; }
 
-    /// <summary>An endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
+    /// <summary>Endpoint for managing your file system using the NetApp ONTAP CLI and NetApp ONTAP API. See Endpoint.</summary>
     [JsonPropertyName("management")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsManagement>? Management { get; set; }
 
-    /// <summary>An endpoint for accessing data on your storage virtual machine via NFS protocol. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via NFS protocol. See Endpoint.</summary>
     [JsonPropertyName("nfs")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsNfs>? Nfs { get; set; }
 
-    /// <summary>An endpoint for accessing data on your storage virtual machine via SMB protocol. This is only set if an active_directory_configuration has been set. See Endpoint.</summary>
+    /// <summary>Endpoint for accessing data on your storage virtual machine via SMB protocol. This is only set if an active_directory_configuration has been set. See Endpoint.</summary>
     [JsonPropertyName("smb")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsSmb>? Smb { get; set; }
 }
@@ -807,15 +807,15 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
     [JsonPropertyName("activeDirectoryConfiguration")]
     public V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfiguration? ActiveDirectoryConfiguration { get; set; }
 
-    /// <summary>Amazon Resource Name of the storage virtual machine.</summary>
+    /// <summary>ARN of the storage virtual machine.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The endpoints that are used to access data or to manage the storage virtual machine using the NetApp ONTAP CLI, REST API, or NetApp SnapMirror. See Endpoints below.</summary>
+    /// <summary>Endpoints that are used to access data or to manage the storage virtual machine using the NetApp ONTAP CLI, REST API, or NetApp SnapMirror. See endpoints below.</summary>
     [JsonPropertyName("endpoints")]
     public IList<V1beta1OntapStorageVirtualMachineStatusAtProviderEndpoints>? Endpoints { get; set; }
 
-    /// <summary>The ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
+    /// <summary>ID of the Amazon FSx ONTAP File System that this SVM will be created on.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -823,7 +823,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
+    /// <summary>Name of the SVM. You can use a maximum of 47 alphanumeric characters, plus the underscore (_) special character.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -834,11 +834,11 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies the root volume security style, Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
+    /// <summary>Root volume security style. Valid values are UNIX, NTFS, and MIXED. All volumes created under this SVM will inherit the root security style unless the security style is specified on the volume. Default value is UNIX.</summary>
     [JsonPropertyName("rootVolumeSecurityStyle")]
     public string? RootVolumeSecurityStyle { get; set; }
 
-    /// <summary>Describes the SVM&apos;s subtype, e.g. DEFAULT</summary>
+    /// <summary>SVM&apos;s subtype, e.g. DEFAULT</summary>
     [JsonPropertyName("subtype")]
     public string? Subtype { get; set; }
 
@@ -846,11 +846,11 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The SVM&apos;s UUID (universally unique identifier).</summary>
+    /// <summary>SVM&apos;s UUID (universally unique identifier).</summary>
     [JsonPropertyName("uuid")]
     public string? Uuid { get; set; }
 }

@@ -350,7 +350,7 @@ public partial class V1beta1IdentityNotificationTopicSpecForProviderTopicArnSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityNotificationTopicSpecForProvider
 {
-    /// <summary>The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).</summary>
+    /// <summary>Identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its ARN.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 
@@ -366,7 +366,7 @@ public partial class V1beta1IdentityNotificationTopicSpecForProvider
     [JsonPropertyName("includeOriginalHeaders")]
     public bool? IncludeOriginalHeaders { get; set; }
 
-    /// <summary>The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
+    /// <summary>Type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -377,7 +377,7 @@ public partial class V1beta1IdentityNotificationTopicSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
+    /// <summary>ARN of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 
@@ -716,7 +716,7 @@ public partial class V1beta1IdentityNotificationTopicSpecInitProviderTopicArnSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IdentityNotificationTopicSpecInitProvider
 {
-    /// <summary>The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).</summary>
+    /// <summary>Identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its ARN.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 
@@ -732,11 +732,11 @@ public partial class V1beta1IdentityNotificationTopicSpecInitProvider
     [JsonPropertyName("includeOriginalHeaders")]
     public bool? IncludeOriginalHeaders { get; set; }
 
-    /// <summary>The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
+    /// <summary>Type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
+    /// <summary>ARN of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 
@@ -863,7 +863,7 @@ public partial class V1beta1IdentityNotificationTopicStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).</summary>
+    /// <summary>Identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its ARN.</summary>
     [JsonPropertyName("identity")]
     public string? Identity { get; set; }
 
@@ -871,7 +871,7 @@ public partial class V1beta1IdentityNotificationTopicStatusAtProvider
     [JsonPropertyName("includeOriginalHeaders")]
     public bool? IncludeOriginalHeaders { get; set; }
 
-    /// <summary>The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
+    /// <summary>Type of notifications that will be published to the specified Amazon SNS topic. Valid Values: Bounce, Complaint or Delivery.</summary>
     [JsonPropertyName("notificationType")]
     public string? NotificationType { get; set; }
 
@@ -882,7 +882,7 @@ public partial class V1beta1IdentityNotificationTopicStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
+    /// <summary>ARN of the Amazon SNS topic. Can be set to &quot; &quot; (an empty string) to disable publishing.</summary>
     [JsonPropertyName("topicArn")]
     public string? TopicArn { get; set; }
 }

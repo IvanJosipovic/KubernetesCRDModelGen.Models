@@ -79,7 +79,7 @@ public partial class V1beta1TableSpecForProviderComment
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecForProviderEncryptionSpecification
 {
-    /// <summary>The Amazon Resource Name (ARN) of the customer managed KMS key.</summary>
+    /// <summary>ARN of the customer managed KMS key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -436,7 +436,7 @@ public partial class V1beta1TableSpecInitProviderComment
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableSpecInitProviderEncryptionSpecification
 {
-    /// <summary>The Amazon Resource Name (ARN) of the customer managed KMS key.</summary>
+    /// <summary>ARN of the customer managed KMS key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -905,7 +905,7 @@ public partial class V1beta1TableStatusAtProviderComment
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TableStatusAtProviderEncryptionSpecification
 {
-    /// <summary>The Amazon Resource Name (ARN) of the customer managed KMS key.</summary>
+    /// <summary>ARN of the customer managed KMS key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 

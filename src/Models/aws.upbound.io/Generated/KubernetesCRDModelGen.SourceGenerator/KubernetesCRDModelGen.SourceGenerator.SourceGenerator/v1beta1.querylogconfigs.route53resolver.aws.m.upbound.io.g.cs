@@ -206,7 +206,7 @@ public partial class V1beta1QueryLogConfigSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueryLogConfigStatusAtProvider
 {
-    /// <summary>The ARN (Amazon Resource Name) of the Route 53 Resolver query logging configuration.</summary>
+    /// <summary>ARN of the Route 53 Resolver query logging configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

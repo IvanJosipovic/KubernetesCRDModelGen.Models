@@ -200,7 +200,7 @@ public partial class V1beta1NotebookInstanceLifecycleConfigurationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotebookInstanceLifecycleConfigurationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this lifecycle configuration.</summary>
+    /// <summary>ARN assigned by AWS to this lifecycle configuration.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -1034,7 +1034,7 @@ public partial class V1beta1DeploymentSpecForProvider
     [JsonPropertyName("environmentIdSelector")]
     public V1beta1DeploymentSpecForProviderEnvironmentIdSelector? EnvironmentIdSelector { get; set; }
 
-    /// <summary>The KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
+    /// <summary>KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -2068,7 +2068,7 @@ public partial class V1beta1DeploymentSpecInitProvider
     [JsonPropertyName("environmentIdSelector")]
     public V1beta1DeploymentSpecInitProviderEnvironmentIdSelector? EnvironmentIdSelector { get; set; }
 
-    /// <summary>The KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
+    /// <summary>KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 
@@ -2236,7 +2236,7 @@ public partial class V1beta1DeploymentStatusAtProvider
     [JsonPropertyName("kmsKeyArn")]
     public string? KmsKeyArn { get; set; }
 
-    /// <summary>The KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
+    /// <summary>KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this to encrypt the configuration data using a customer managed key.</summary>
     [JsonPropertyName("kmsKeyIdentifier")]
     public string? KmsKeyIdentifier { get; set; }
 

@@ -59,7 +59,7 @@ public enum V1beta1ProvisionedConcurrencyConfigSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProvisionedConcurrencyConfigSpecForProvider
 {
-    /// <summary>Name or Amazon Resource Name (ARN) of the Lambda Function.</summary>
+    /// <summary>Name or ARN of the Lambda Function.</summary>
     [JsonPropertyName("functionName")]
     public string? FunctionName { get; set; }
 
@@ -99,7 +99,7 @@ public partial class V1beta1ProvisionedConcurrencyConfigSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProvisionedConcurrencyConfigSpecInitProvider
 {
-    /// <summary>Name or Amazon Resource Name (ARN) of the Lambda Function.</summary>
+    /// <summary>Name or ARN of the Lambda Function.</summary>
     [JsonPropertyName("functionName")]
     public string? FunctionName { get; set; }
 
@@ -303,7 +303,7 @@ public partial class V1beta1ProvisionedConcurrencyConfigSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProvisionedConcurrencyConfigStatusAtProvider
 {
-    /// <summary>Name or Amazon Resource Name (ARN) of the Lambda Function.</summary>
+    /// <summary>Name or ARN of the Lambda Function.</summary>
     [JsonPropertyName("functionName")]
     public string? FunctionName { get; set; }
 

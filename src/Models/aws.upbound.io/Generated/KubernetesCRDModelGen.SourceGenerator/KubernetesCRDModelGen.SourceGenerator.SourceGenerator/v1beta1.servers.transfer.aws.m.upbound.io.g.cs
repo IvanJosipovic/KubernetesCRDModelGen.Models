@@ -811,12 +811,12 @@ public partial class V1beta1ServerSpecForProviderEndpointDetailsVpcIdSelector
     public V1beta1ServerSpecForProviderEndpointDetailsVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+/// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderEndpointDetails
 {
-    /// <summary>A list of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("addressAllocationIds")]
     public IList<string>? AddressAllocationIds { get; set; }
 
@@ -828,11 +828,11 @@ public partial class V1beta1ServerSpecForProviderEndpointDetails
     [JsonPropertyName("addressAllocationIdsSelector")]
     public V1beta1ServerSpecForProviderEndpointDetailsAddressAllocationIdsSelector? AddressAllocationIdsSelector { get; set; }
 
-    /// <summary>A list of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -844,11 +844,11 @@ public partial class V1beta1ServerSpecForProviderEndpointDetails
     [JsonPropertyName("subnetIdsSelector")]
     public V1beta1ServerSpecForProviderEndpointDetailsSubnetIdsSelector? SubnetIdsSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
+    /// <summary>ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The VPC ID of the virtual private cloud in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>VPC ID of the VPC in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -859,6 +859,161 @@ public partial class V1beta1ServerSpecForProviderEndpointDetails
     /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
     [JsonPropertyName("vpcIdSelector")]
     public V1beta1ServerSpecForProviderEndpointDetailsVpcIdSelector? VpcIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum>))]
+public enum V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum>))]
+public enum V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecForProviderFunctionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecForProviderFunctionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecForProviderFunctionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum>))]
+public enum V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum>))]
+public enum V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecForProviderFunctionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecForProviderFunctionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecForProviderFunctionSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
@@ -1055,16 +1210,16 @@ public partial class V1beta1ServerSpecForProviderPreAuthenticationLoginBannerSec
     public required string Name { get; set; }
 }
 
-/// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+/// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderProtocolDetails
 {
-    /// <summary>Indicates the transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
+    /// <summary>Transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
     [JsonPropertyName("as2Transports")]
     public IList<string>? As2Transports { get; set; }
 
-    /// <summary>Indicates passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
+    /// <summary>Passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
     [JsonPropertyName("passiveIp")]
     public string? PassiveIp { get; set; }
 
@@ -1072,22 +1227,22 @@ public partial class V1beta1ServerSpecForProviderProtocolDetails
     [JsonPropertyName("setStatOption")]
     public string? SetStatOption { get; set; }
 
-    /// <summary>A property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
+    /// <summary>Property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
     [JsonPropertyName("tlsSessionResumptionMode")]
     public string? TlsSessionResumptionMode { get; set; }
 }
 
-/// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+/// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderS3StorageOptions
 {
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
     [JsonPropertyName("directoryListingOptimization")]
     public string? DirectoryListingOptimization { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderWorkflowDetailsOnPartialUpload
@@ -1096,12 +1251,12 @@ public partial class V1beta1ServerSpecForProviderWorkflowDetailsOnPartialUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderWorkflowDetailsOnUpload
@@ -1110,21 +1265,21 @@ public partial class V1beta1ServerSpecForProviderWorkflowDetailsOnUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+/// <summary>Workflow details. See workflow_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProviderWorkflowDetails
 {
-    /// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
     [JsonPropertyName("onPartialUpload")]
     public V1beta1ServerSpecForProviderWorkflowDetailsOnPartialUpload? OnPartialUpload { get; set; }
 
-    /// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
     [JsonPropertyName("onUpload")]
     public V1beta1ServerSpecForProviderWorkflowDetailsOnUpload? OnUpload { get; set; }
 }
@@ -1133,7 +1288,7 @@ public partial class V1beta1ServerSpecForProviderWorkflowDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecForProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Certificate Manager (ACM) certificate. This is required when protocols is set to FTPS</summary>
+    /// <summary>ARN of the AWS Certificate Manager (ACM) certificate. Required when protocols is set to FTPS.</summary>
     [JsonPropertyName("certificate")]
     public string? Certificate { get; set; }
 
@@ -1145,7 +1300,7 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("certificateSelector")]
     public V1beta1ServerSpecForProviderCertificateSelector? CertificateSelector { get; set; }
 
-    /// <summary>The directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
+    /// <summary>Directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
     [JsonPropertyName("directoryId")]
     public string? DirectoryId { get; set; }
 
@@ -1157,35 +1312,43 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("directoryIdSelector")]
     public V1beta1ServerSpecForProviderDirectoryIdSelector? DirectoryIdSelector { get; set; }
 
-    /// <summary>The domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
+    /// <summary>Domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+    /// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
     [JsonPropertyName("endpointDetails")]
     public V1beta1ServerSpecForProviderEndpointDetails? EndpointDetails { get; set; }
 
-    /// <summary>The type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC.  Defaults to PUBLIC.</summary>
+    /// <summary>Type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC. Defaults to PUBLIC.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>A boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
+    /// <summary>Boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
+    /// <summary>ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
     [JsonPropertyName("function")]
     public string? Function { get; set; }
+
+    /// <summary>Reference to a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionRef")]
+    public V1beta1ServerSpecForProviderFunctionRef? FunctionRef { get; set; }
+
+    /// <summary>Selector for a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionSelector")]
+    public V1beta1ServerSpecForProviderFunctionSelector? FunctionSelector { get; set; }
 
     /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
     [JsonPropertyName("hostKeySecretRef")]
     public V1beta1ServerSpecForProviderHostKeySecretRef? HostKeySecretRef { get; set; }
 
-    /// <summary>The mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
+    /// <summary>Mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
     [JsonPropertyName("identityProviderType")]
     public string? IdentityProviderType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>ARN of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
@@ -1193,7 +1356,7 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
+    /// <summary>ARN of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
@@ -1213,11 +1376,11 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("preAuthenticationLoginBannerSecretRef")]
     public V1beta1ServerSpecForProviderPreAuthenticationLoginBannerSecretRef? PreAuthenticationLoginBannerSecretRef { get; set; }
 
-    /// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+    /// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
     [JsonPropertyName("protocolDetails")]
     public V1beta1ServerSpecForProviderProtocolDetails? ProtocolDetails { get; set; }
 
-    /// <summary>Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP . The available protocols are:</summary>
+    /// <summary>File transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP. The available protocols are AS2 (file transfer over Applicability Statement 2), SFTP (file transfer over SSH), FTPS (file transfer with TLS encryption), and FTP (unencrypted file transfer).</summary>
     [JsonPropertyName("protocols")]
     public IList<string>? Protocols { get; set; }
 
@@ -1228,11 +1391,11 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
     [JsonPropertyName("s3StorageOptions")]
     public V1beta1ServerSpecForProviderS3StorageOptions? S3StorageOptions { get; set; }
 
-    /// <summary>Specifies the name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are:</summary>
+    /// <summary>Name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are TransferSecurityPolicy-2018-11, TransferSecurityPolicy-2020-06, TransferSecurityPolicy-2022-03, TransferSecurityPolicy-2023-05, TransferSecurityPolicy-2024-01, TransferSecurityPolicy-2025-03, TransferSecurityPolicy-FIPS-2020-06, TransferSecurityPolicy-FIPS-2023-05, TransferSecurityPolicy-FIPS-2024-01, TransferSecurityPolicy-FIPS-2024-05, TransferSecurityPolicy-FIPS-2025-03, TransferSecurityPolicy-PQ-SSH-Experimental-2023-04, TransferSecurityPolicy-PQ-SSH-FIPS-Experimental-2023-04, TransferSecurityPolicy-Restricted-2018-11, TransferSecurityPolicy-Restricted-2020-06, TransferSecurityPolicy-Restricted-2024-06, TransferSecurityPolicy-SshAuditCompliant-2025-02, and TransferSecurityPolicy-AS2Restricted-2025-07. See Security policies for AWS Transfer Family servers for details.</summary>
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
@@ -1241,7 +1404,7 @@ public partial class V1beta1ServerSpecForProvider
     public string? SftpAuthenticationMethods { get; set; }
 
     /// <summary>
-    /// A set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
+    /// Set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
     /// This is a set of arns of destinations that will receive structured logs from the transfer server
     /// </summary>
     [JsonPropertyName("structuredLogDestinations")]
@@ -1251,11 +1414,11 @@ public partial class V1beta1ServerSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>- URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+    /// <summary>Workflow details. See workflow_details Block below for details.</summary>
     [JsonPropertyName("workflowDetails")]
     public V1beta1ServerSpecForProviderWorkflowDetails? WorkflowDetails { get; set; }
 }
@@ -2035,12 +2198,12 @@ public partial class V1beta1ServerSpecInitProviderEndpointDetailsVpcIdSelector
     public V1beta1ServerSpecInitProviderEndpointDetailsVpcIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+/// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderEndpointDetails
 {
-    /// <summary>A list of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("addressAllocationIds")]
     public IList<string>? AddressAllocationIds { get; set; }
 
@@ -2052,11 +2215,11 @@ public partial class V1beta1ServerSpecInitProviderEndpointDetails
     [JsonPropertyName("addressAllocationIdsSelector")]
     public V1beta1ServerSpecInitProviderEndpointDetailsAddressAllocationIdsSelector? AddressAllocationIdsSelector { get; set; }
 
-    /// <summary>A list of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
@@ -2068,11 +2231,11 @@ public partial class V1beta1ServerSpecInitProviderEndpointDetails
     [JsonPropertyName("subnetIdsSelector")]
     public V1beta1ServerSpecInitProviderEndpointDetailsSubnetIdsSelector? SubnetIdsSelector { get; set; }
 
-    /// <summary>The ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
+    /// <summary>ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The VPC ID of the virtual private cloud in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>VPC ID of the VPC in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 
@@ -2083,6 +2246,161 @@ public partial class V1beta1ServerSpecInitProviderEndpointDetails
     /// <summary>Selector for a VPC in ec2 to populate vpcId.</summary>
     [JsonPropertyName("vpcIdSelector")]
     public V1beta1ServerSpecInitProviderEndpointDetailsVpcIdSelector? VpcIdSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum>))]
+public enum V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum>))]
+public enum V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecInitProviderFunctionRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecInitProviderFunctionRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecInitProviderFunctionRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum>))]
+public enum V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum>))]
+public enum V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecInitProviderFunctionSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Function in lambda to populate function.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ServerSpecInitProviderFunctionSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1ServerSpecInitProviderFunctionSelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
@@ -2279,16 +2597,16 @@ public partial class V1beta1ServerSpecInitProviderPreAuthenticationLoginBannerSe
     public required string Name { get; set; }
 }
 
-/// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+/// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderProtocolDetails
 {
-    /// <summary>Indicates the transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
+    /// <summary>Transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
     [JsonPropertyName("as2Transports")]
     public IList<string>? As2Transports { get; set; }
 
-    /// <summary>Indicates passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
+    /// <summary>Passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
     [JsonPropertyName("passiveIp")]
     public string? PassiveIp { get; set; }
 
@@ -2296,22 +2614,22 @@ public partial class V1beta1ServerSpecInitProviderProtocolDetails
     [JsonPropertyName("setStatOption")]
     public string? SetStatOption { get; set; }
 
-    /// <summary>A property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
+    /// <summary>Property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
     [JsonPropertyName("tlsSessionResumptionMode")]
     public string? TlsSessionResumptionMode { get; set; }
 }
 
-/// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+/// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderS3StorageOptions
 {
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
     [JsonPropertyName("directoryListingOptimization")]
     public string? DirectoryListingOptimization { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderWorkflowDetailsOnPartialUpload
@@ -2320,12 +2638,12 @@ public partial class V1beta1ServerSpecInitProviderWorkflowDetailsOnPartialUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderWorkflowDetailsOnUpload
@@ -2334,21 +2652,21 @@ public partial class V1beta1ServerSpecInitProviderWorkflowDetailsOnUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+/// <summary>Workflow details. See workflow_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProviderWorkflowDetails
 {
-    /// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
     [JsonPropertyName("onPartialUpload")]
     public V1beta1ServerSpecInitProviderWorkflowDetailsOnPartialUpload? OnPartialUpload { get; set; }
 
-    /// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
     [JsonPropertyName("onUpload")]
     public V1beta1ServerSpecInitProviderWorkflowDetailsOnUpload? OnUpload { get; set; }
 }
@@ -2369,7 +2687,7 @@ public partial class V1beta1ServerSpecInitProviderWorkflowDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerSpecInitProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Certificate Manager (ACM) certificate. This is required when protocols is set to FTPS</summary>
+    /// <summary>ARN of the AWS Certificate Manager (ACM) certificate. Required when protocols is set to FTPS.</summary>
     [JsonPropertyName("certificate")]
     public string? Certificate { get; set; }
 
@@ -2381,7 +2699,7 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("certificateSelector")]
     public V1beta1ServerSpecInitProviderCertificateSelector? CertificateSelector { get; set; }
 
-    /// <summary>The directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
+    /// <summary>Directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
     [JsonPropertyName("directoryId")]
     public string? DirectoryId { get; set; }
 
@@ -2393,35 +2711,43 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("directoryIdSelector")]
     public V1beta1ServerSpecInitProviderDirectoryIdSelector? DirectoryIdSelector { get; set; }
 
-    /// <summary>The domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
+    /// <summary>Domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+    /// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
     [JsonPropertyName("endpointDetails")]
     public V1beta1ServerSpecInitProviderEndpointDetails? EndpointDetails { get; set; }
 
-    /// <summary>The type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC.  Defaults to PUBLIC.</summary>
+    /// <summary>Type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC. Defaults to PUBLIC.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>A boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
+    /// <summary>Boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
+    /// <summary>ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
     [JsonPropertyName("function")]
     public string? Function { get; set; }
+
+    /// <summary>Reference to a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionRef")]
+    public V1beta1ServerSpecInitProviderFunctionRef? FunctionRef { get; set; }
+
+    /// <summary>Selector for a Function in lambda to populate function.</summary>
+    [JsonPropertyName("functionSelector")]
+    public V1beta1ServerSpecInitProviderFunctionSelector? FunctionSelector { get; set; }
 
     /// <summary>RSA, ECDSA, or ED25519 private key (e.g., as generated by the ssh-keygen -t rsa -b 2048 -N &quot; &quot; -m PEM -f my-new-server-key, ssh-keygen -t ecdsa -b 256 -N &quot; &quot; -m PEM -f my-new-server-key or ssh-keygen -t ed25519 -N &quot; &quot; -f my-new-server-key commands).</summary>
     [JsonPropertyName("hostKeySecretRef")]
     public V1beta1ServerSpecInitProviderHostKeySecretRef? HostKeySecretRef { get; set; }
 
-    /// <summary>The mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
+    /// <summary>Mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
     [JsonPropertyName("identityProviderType")]
     public string? IdentityProviderType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>ARN of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
@@ -2429,7 +2755,7 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
+    /// <summary>ARN of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
@@ -2449,19 +2775,19 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("preAuthenticationLoginBannerSecretRef")]
     public V1beta1ServerSpecInitProviderPreAuthenticationLoginBannerSecretRef? PreAuthenticationLoginBannerSecretRef { get; set; }
 
-    /// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+    /// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
     [JsonPropertyName("protocolDetails")]
     public V1beta1ServerSpecInitProviderProtocolDetails? ProtocolDetails { get; set; }
 
-    /// <summary>Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP . The available protocols are:</summary>
+    /// <summary>File transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP. The available protocols are AS2 (file transfer over Applicability Statement 2), SFTP (file transfer over SSH), FTPS (file transfer with TLS encryption), and FTP (unencrypted file transfer).</summary>
     [JsonPropertyName("protocols")]
     public IList<string>? Protocols { get; set; }
 
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
     [JsonPropertyName("s3StorageOptions")]
     public V1beta1ServerSpecInitProviderS3StorageOptions? S3StorageOptions { get; set; }
 
-    /// <summary>Specifies the name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are:</summary>
+    /// <summary>Name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are TransferSecurityPolicy-2018-11, TransferSecurityPolicy-2020-06, TransferSecurityPolicy-2022-03, TransferSecurityPolicy-2023-05, TransferSecurityPolicy-2024-01, TransferSecurityPolicy-2025-03, TransferSecurityPolicy-FIPS-2020-06, TransferSecurityPolicy-FIPS-2023-05, TransferSecurityPolicy-FIPS-2024-01, TransferSecurityPolicy-FIPS-2024-05, TransferSecurityPolicy-FIPS-2025-03, TransferSecurityPolicy-PQ-SSH-Experimental-2023-04, TransferSecurityPolicy-PQ-SSH-FIPS-Experimental-2023-04, TransferSecurityPolicy-Restricted-2018-11, TransferSecurityPolicy-Restricted-2020-06, TransferSecurityPolicy-Restricted-2024-06, TransferSecurityPolicy-SshAuditCompliant-2025-02, and TransferSecurityPolicy-AS2Restricted-2025-07. See Security policies for AWS Transfer Family servers for details.</summary>
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
@@ -2470,7 +2796,7 @@ public partial class V1beta1ServerSpecInitProvider
     public string? SftpAuthenticationMethods { get; set; }
 
     /// <summary>
-    /// A set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
+    /// Set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
     /// This is a set of arns of destinations that will receive structured logs from the transfer server
     /// </summary>
     [JsonPropertyName("structuredLogDestinations")]
@@ -2480,11 +2806,11 @@ public partial class V1beta1ServerSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>- URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+    /// <summary>Workflow details. See workflow_details Block below for details.</summary>
     [JsonPropertyName("workflowDetails")]
     public V1beta1ServerSpecInitProviderWorkflowDetails? WorkflowDetails { get; set; }
 }
@@ -2596,42 +2922,42 @@ public partial class V1beta1ServerSpec
     public V1beta1ServerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+/// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderEndpointDetails
 {
-    /// <summary>A list of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of address allocation IDs that are required to attach an Elastic IP address to your SFTP server&apos;s endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("addressAllocationIds")]
     public IList<string>? AddressAllocationIds { get; set; }
 
-    /// <summary>A list of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of security groups IDs that are available to attach to your server&apos;s endpoint. If no security groups are specified, the VPC&apos;s default security groups are automatically assigned to your endpoint. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>A list of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>List of subnet IDs that are required to host your SFTP server endpoint in your VPC. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("subnetIds")]
     public IList<string>? SubnetIds { get; set; }
 
-    /// <summary>The ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
+    /// <summary>ID of the VPC endpoint. This property can only be used when endpoint_type is set to VPC_ENDPOINT</summary>
     [JsonPropertyName("vpcEndpointId")]
     public string? VpcEndpointId { get; set; }
 
-    /// <summary>The VPC ID of the virtual private cloud in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
+    /// <summary>VPC ID of the VPC in which the SFTP server&apos;s endpoint will be hosted. This property can only be used when endpoint_type is set to VPC.</summary>
     [JsonPropertyName("vpcId")]
     public string? VpcId { get; set; }
 }
 
-/// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+/// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderProtocolDetails
 {
-    /// <summary>Indicates the transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
+    /// <summary>Transport method for the AS2 messages. Currently, only HTTP is supported.</summary>
     [JsonPropertyName("as2Transports")]
     public IList<string>? As2Transports { get; set; }
 
-    /// <summary>Indicates passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
+    /// <summary>Passive mode, for FTP and FTPS protocols. Enter a single IPv4 address, such as the public IP address of a firewall, router, or load balancer.</summary>
     [JsonPropertyName("passiveIp")]
     public string? PassiveIp { get; set; }
 
@@ -2639,22 +2965,22 @@ public partial class V1beta1ServerStatusAtProviderProtocolDetails
     [JsonPropertyName("setStatOption")]
     public string? SetStatOption { get; set; }
 
-    /// <summary>A property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
+    /// <summary>Property used with Transfer Family servers that use the FTPS protocol. Provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. Valid values: DISABLED, ENABLED, ENFORCED.</summary>
     [JsonPropertyName("tlsSessionResumptionMode")]
     public string? TlsSessionResumptionMode { get; set; }
 }
 
-/// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+/// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderS3StorageOptions
 {
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. Valid values are DISABLED, ENABLED.</summary>
     [JsonPropertyName("directoryListingOptimization")]
     public string? DirectoryListingOptimization { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderWorkflowDetailsOnPartialUpload
@@ -2663,12 +2989,12 @@ public partial class V1beta1ServerStatusAtProviderWorkflowDetailsOnPartialUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+/// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderWorkflowDetailsOnUpload
@@ -2677,21 +3003,21 @@ public partial class V1beta1ServerStatusAtProviderWorkflowDetailsOnUpload
     [JsonPropertyName("executionRole")]
     public string? ExecutionRole { get; set; }
 
-    /// <summary>A unique identifier for the workflow.</summary>
+    /// <summary>Unique identifier for the workflow.</summary>
     [JsonPropertyName("workflowId")]
     public string? WorkflowId { get; set; }
 }
 
-/// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+/// <summary>Workflow details. See workflow_details Block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProviderWorkflowDetails
 {
-    /// <summary>A trigger that starts a workflow if a file is only partially uploaded. See Workflow Detail below. See on_partial_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow if a file is only partially uploaded. See on_partial_upload Block below for details.</summary>
     [JsonPropertyName("onPartialUpload")]
     public V1beta1ServerStatusAtProviderWorkflowDetailsOnPartialUpload? OnPartialUpload { get; set; }
 
-    /// <summary>A trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
+    /// <summary>Trigger that starts a workflow: the workflow begins to execute after a file is uploaded. See on_upload Block below for details.</summary>
     [JsonPropertyName("onUpload")]
     public V1beta1ServerStatusAtProviderWorkflowDetailsOnUpload? OnUpload { get; set; }
 }
@@ -2700,55 +3026,55 @@ public partial class V1beta1ServerStatusAtProviderWorkflowDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServerStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of Transfer Server</summary>
+    /// <summary>ARN of Transfer Server</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Certificate Manager (ACM) certificate. This is required when protocols is set to FTPS</summary>
+    /// <summary>ARN of the AWS Certificate Manager (ACM) certificate. Required when protocols is set to FTPS.</summary>
     [JsonPropertyName("certificate")]
     public string? Certificate { get; set; }
 
-    /// <summary>The directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
+    /// <summary>Directory service ID of the directory service you want to connect to with an identity_provider_type of AWS_DIRECTORY_SERVICE.</summary>
     [JsonPropertyName("directoryId")]
     public string? DirectoryId { get; set; }
 
-    /// <summary>The domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
+    /// <summary>Domain of the storage system that is used for file transfers. Valid values are: S3 and EFS. The default value is S3.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The endpoint of the Transfer Server (e.g., s-12345678.server.transfer.REGION.amazonaws.com)</summary>
+    /// <summary>Endpoint of the Transfer Server (e.g., s-12345678.server.transfer.REGION.amazonaws.com)</summary>
     [JsonPropertyName("endpoint")]
     public string? Endpoint { get; set; }
 
-    /// <summary>The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
+    /// <summary>VPC endpoint settings that you want to configure for your SFTP server. See endpoint_details Block below for details.</summary>
     [JsonPropertyName("endpointDetails")]
     public V1beta1ServerStatusAtProviderEndpointDetails? EndpointDetails { get; set; }
 
-    /// <summary>The type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC.  Defaults to PUBLIC.</summary>
+    /// <summary>Type of endpoint that you want your SFTP server connect to. If you connect to a VPC (or VPC_ENDPOINT), your SFTP server isn&apos;t accessible over the public internet. If you want to connect your SFTP server via public internet, set PUBLIC. Defaults to PUBLIC.</summary>
     [JsonPropertyName("endpointType")]
     public string? EndpointType { get; set; }
 
-    /// <summary>A boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
+    /// <summary>Boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is false. This option only applies to servers configured with a SERVICE_MANAGED identity_provider_type.</summary>
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>The ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
+    /// <summary>ARN for a lambda function to use for the Identity provider with an identity_provider_type of AWS_LAMBDA.</summary>
     [JsonPropertyName("function")]
     public string? Function { get; set; }
 
-    /// <summary>This value contains the message-digest algorithm (MD5) hash of the server&apos;s host key. This value is equivalent to the output of the ssh-keygen -l -E md5 -f my-new-server-key command.</summary>
+    /// <summary>Message-digest algorithm (MD5) hash of the server&apos;s host key. This value is equivalent to the output of the ssh-keygen -l -E md5 -f my-new-server-key command.</summary>
     [JsonPropertyName("hostKeyFingerprint")]
     public string? HostKeyFingerprint { get; set; }
 
-    /// <summary>The Server ID of the Transfer Server (e.g., s-12345678)</summary>
+    /// <summary>Server ID of the Transfer Server (e.g., s-12345678)</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
+    /// <summary>Mode of authentication enabled for this service. The default value is SERVICE_MANAGED, which allows you to store and access SFTP user credentials within the service. API_GATEWAY indicates that user authentication requires a call to an API Gateway endpoint URL provided by you to integrate an identity provider of your choice. Using AWS_DIRECTORY_SERVICE will allow for authentication against AWS Managed Active Directory or Microsoft Active Directory in your on-premises environment, or in AWS using AD Connectors. Use the AWS_LAMBDA value to directly use a Lambda function as your identity provider. If you choose this value, you must specify the ARN for the lambda function in the function argument.</summary>
     [JsonPropertyName("identityProviderType")]
     public string? IdentityProviderType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>ARN of the IAM role used to authenticate the user account with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("invocationRole")]
     public string? InvocationRole { get; set; }
 
@@ -2756,15 +3082,15 @@ public partial class V1beta1ServerStatusAtProvider
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
+    /// <summary>ARN of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.</summary>
     [JsonPropertyName("loggingRole")]
     public string? LoggingRole { get; set; }
 
-    /// <summary>The protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
+    /// <summary>Protocol settings that are configured for your server. See protocol_details Block below for details.</summary>
     [JsonPropertyName("protocolDetails")]
     public V1beta1ServerStatusAtProviderProtocolDetails? ProtocolDetails { get; set; }
 
-    /// <summary>Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP . The available protocols are:</summary>
+    /// <summary>File transfer protocol or protocols over which your file transfer protocol client can connect to your server&apos;s endpoint. This defaults to SFTP. The available protocols are AS2 (file transfer over Applicability Statement 2), SFTP (file transfer over SSH), FTPS (file transfer with TLS encryption), and FTP (unencrypted file transfer).</summary>
     [JsonPropertyName("protocols")]
     public IList<string>? Protocols { get; set; }
 
@@ -2775,11 +3101,11 @@ public partial class V1beta1ServerStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Specifies whether or not performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
+    /// <summary>Whether performance for your Amazon S3 directories is optimized. This is disabled by default. See s3_storage_options Block below for details.</summary>
     [JsonPropertyName("s3StorageOptions")]
     public V1beta1ServerStatusAtProviderS3StorageOptions? S3StorageOptions { get; set; }
 
-    /// <summary>Specifies the name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are:</summary>
+    /// <summary>Name of the security policy that is attached to the server. Default value is: TransferSecurityPolicy-2018-11. The available values are TransferSecurityPolicy-2018-11, TransferSecurityPolicy-2020-06, TransferSecurityPolicy-2022-03, TransferSecurityPolicy-2023-05, TransferSecurityPolicy-2024-01, TransferSecurityPolicy-2025-03, TransferSecurityPolicy-FIPS-2020-06, TransferSecurityPolicy-FIPS-2023-05, TransferSecurityPolicy-FIPS-2024-01, TransferSecurityPolicy-FIPS-2024-05, TransferSecurityPolicy-FIPS-2025-03, TransferSecurityPolicy-PQ-SSH-Experimental-2023-04, TransferSecurityPolicy-PQ-SSH-FIPS-Experimental-2023-04, TransferSecurityPolicy-Restricted-2018-11, TransferSecurityPolicy-Restricted-2020-06, TransferSecurityPolicy-Restricted-2024-06, TransferSecurityPolicy-SshAuditCompliant-2025-02, and TransferSecurityPolicy-AS2Restricted-2025-07. See Security policies for AWS Transfer Family servers for details.</summary>
     [JsonPropertyName("securityPolicyName")]
     public string? SecurityPolicyName { get; set; }
 
@@ -2788,7 +3114,7 @@ public partial class V1beta1ServerStatusAtProvider
     public string? SftpAuthenticationMethods { get; set; }
 
     /// <summary>
-    /// A set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
+    /// Set of ARNs of destinations that will receive structured logs from the transfer server such as CloudWatch Log Group ARNs. If provided this enables the transfer server to emit structured logs to the specified locations.
     /// This is a set of arns of destinations that will receive structured logs from the transfer server
     /// </summary>
     [JsonPropertyName("structuredLogDestinations")]
@@ -2798,15 +3124,15 @@ public partial class V1beta1ServerStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>- URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
+    /// <summary>URL of the service endpoint used to authenticate users with an identity_provider_type of API_GATEWAY.</summary>
     [JsonPropertyName("url")]
     public string? Url { get; set; }
 
-    /// <summary>Specifies the workflow details. See workflow_details Block below for details.</summary>
+    /// <summary>Workflow details. See workflow_details Block below for details.</summary>
     [JsonPropertyName("workflowDetails")]
     public V1beta1ServerStatusAtProviderWorkflowDetails? WorkflowDetails { get; set; }
 }

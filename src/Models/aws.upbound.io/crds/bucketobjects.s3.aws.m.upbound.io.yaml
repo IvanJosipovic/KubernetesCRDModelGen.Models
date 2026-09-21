@@ -61,7 +61,7 @@ spec:
                     description: Canned ACL to apply. Valid values are private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, and bucket-owner-full-control. Defaults to private.
                     type: string
                   bucket:
-                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.
+                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.
                     type: string
                   bucketKeyEnabled:
                     description: Whether or not to use Amazon S3 Bucket Keys for SSE-KMS.
@@ -173,7 +173,7 @@ spec:
                     description: Whether to allow the object to be deleted by removing any legal hold on any object version. Default is false. This value should be set to true only if the bucket has S3 object lock enabled.
                     type: boolean
                   key:
-                    description: Name of the object once it is in the bucket.
+                    description: Name of the object once it is in the bucket. Use the aws_s3_object resource instead.
                     type: string
                   kmsKeyId:
                     description: ARN of the KMS Key to use for object encryption. If the S3 Bucket has server-side encryption enabled, that value will automatically be used. If referencing the aws_kms_key resource, use the arn attribute. If referencing the aws_kms_alias data source or resource, use the target_key_arn attribute.
@@ -318,7 +318,7 @@ spec:
                     description: Canned ACL to apply. Valid values are private, public-read, public-read-write, aws-exec-read, authenticated-read, bucket-owner-read, and bucket-owner-full-control. Defaults to private.
                     type: string
                   bucket:
-                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.
+                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.
                     type: string
                   bucketKeyEnabled:
                     description: Whether or not to use Amazon S3 Bucket Keys for SSE-KMS.
@@ -430,7 +430,7 @@ spec:
                     description: Whether to allow the object to be deleted by removing any legal hold on any object version. Default is false. This value should be set to true only if the bucket has S3 object lock enabled.
                     type: boolean
                   key:
-                    description: Name of the object once it is in the bucket.
+                    description: Name of the object once it is in the bucket. Use the aws_s3_object resource instead.
                     type: string
                   kmsKeyId:
                     description: ARN of the KMS Key to use for object encryption. If the S3 Bucket has server-side encryption enabled, that value will automatically be used. If referencing the aws_kms_key resource, use the arn attribute. If referencing the aws_kms_alias data source or resource, use the target_key_arn attribute.
@@ -624,7 +624,7 @@ spec:
                     description: ARN of the object.
                     type: string
                   bucket:
-                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified.
+                    description: Name of the bucket to put the file in. Alternatively, an S3 access point ARN can be specified. Use the aws_s3_object resource instead.
                     type: string
                   bucketKeyEnabled:
                     description: Whether or not to use Amazon S3 Bucket Keys for SSE-KMS.
@@ -659,7 +659,7 @@ spec:
                   id:
                     type: string
                   key:
-                    description: Name of the object once it is in the bucket.
+                    description: Name of the object once it is in the bucket. Use the aws_s3_object resource instead.
                     type: string
                   kmsKeyId:
                     description: ARN of the KMS Key to use for object encryption. If the S3 Bucket has server-side encryption enabled, that value will automatically be used. If referencing the aws_kms_key resource, use the arn attribute. If referencing the aws_kms_alias data source or resource, use the target_key_arn attribute.

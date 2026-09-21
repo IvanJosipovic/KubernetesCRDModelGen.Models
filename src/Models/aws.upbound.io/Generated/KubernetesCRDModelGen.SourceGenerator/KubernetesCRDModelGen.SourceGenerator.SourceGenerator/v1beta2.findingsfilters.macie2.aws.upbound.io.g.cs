@@ -464,7 +464,7 @@ public partial class V1beta2FindingsFilterStatusAtProvider
     [JsonPropertyName("action")]
     public string? Action { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Findings Filter.</summary>
+    /// <summary>ARN of the Findings Filter.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

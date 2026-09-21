@@ -350,7 +350,7 @@ public partial class V1beta1LambdaFunctionAssociationSpecForProviderInstanceIdSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LambdaFunctionAssociationSpecForProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Lambda Function, omitting any version or alias qualifier.</summary>
+    /// <summary>ARN of the Lambda Function, omitting any version or alias qualifier.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
@@ -511,7 +511,7 @@ public partial class V1beta1LambdaFunctionAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LambdaFunctionAssociationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Lambda Function, omitting any version or alias qualifier.</summary>
+    /// <summary>ARN of the Lambda Function, omitting any version or alias qualifier.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 

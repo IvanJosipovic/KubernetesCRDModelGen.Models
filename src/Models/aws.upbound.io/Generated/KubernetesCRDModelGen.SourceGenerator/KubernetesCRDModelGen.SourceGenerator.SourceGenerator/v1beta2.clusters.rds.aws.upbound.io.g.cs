@@ -664,7 +664,7 @@ public partial class V1beta2ClusterSpecForProviderMasterPasswordSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>Only required unless manage_master_user_password is set to true, a snapshot_identifier, replication_source_identifier, or master_password is provided or unless a global_cluster_identifier is provided when the cluster is the &quot;secondary&quot; cluster of a global database) Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true.</summary>
+/// <summary>Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true. If set, requires master_password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderMasterPasswordWoSecretRef
@@ -1279,10 +1279,7 @@ public partial class V1beta2ClusterSpecForProviderRestoreToPointInTime
     [JsonPropertyName("restoreToTime")]
     public string? RestoreToTime { get; set; }
 
-    /// <summary>
-    /// Type of restore to be performed.
-    /// Valid options are full-copy (default) and copy-on-write.
-    /// </summary>
+    /// <summary>Type of restore to be performed. Valid options are full-copy (default) and copy-on-write.</summary>
     [JsonPropertyName("restoreType")]
     public string? RestoreType { get; set; }
 
@@ -1523,15 +1520,15 @@ public partial class V1beta2ClusterSpecForProviderScalingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderServerlessv2ScalingConfiguration
 {
-    /// <summary>Maximum capacity for an Aurora DB cluster in serverless DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 16.</summary>
+    /// <summary>Maximum capacity for an Aurora DB cluster in provisioned DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>Minimum capacity for an Aurora DB cluster in serverless DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 1.</summary>
+    /// <summary>Minimum capacity for an Aurora DB cluster in provisioned DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("minCapacity")]
     public double? MinCapacity { get; set; }
 
-    /// <summary>Time, in seconds, before an Aurora DB cluster in serverless mode is paused. Valid values are 300 through 86400. Defaults to 300.</summary>
+    /// <summary>Time, in seconds, before an Aurora DB cluster in provisioned DB engine mode is paused. Valid values are 300 through 86400.</summary>
     [JsonPropertyName("secondsUntilAutoPause")]
     public double? SecondsUntilAutoPause { get; set; }
 }
@@ -1687,7 +1684,7 @@ public partial class V1beta2ClusterSpecForProviderVpcSecurityGroupIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProvider
 {
-    /// <summary>The amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
+    /// <summary>Amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
     [JsonPropertyName("allocatedStorage")]
     public double? AllocatedStorage { get; set; }
 
@@ -1695,7 +1692,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("allowMajorVersionUpgrade")]
     public bool? AllowMajorVersionUpgrade { get; set; }
 
-    /// <summary>Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
+    /// <summary>Whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
@@ -1707,12 +1704,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>
-    /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
-    /// We recommend specifying 3 AZs or using the  if necessary.
-    /// A maximum of 3 AZs can be configured.
-    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
-    /// </summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -1724,7 +1716,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("backupRetentionPeriod")]
     public double? BackupRetentionPeriod { get; set; }
 
-    /// <summary>The CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
+    /// <summary>CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
     [JsonPropertyName("caCertificateIdentifier")]
     public string? CaCertificateIdentifier { get; set; }
 
@@ -1732,7 +1724,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("clusterMembers")]
     public IList<string>? ClusterMembers { get; set; }
 
-    /// <summary>Specifies the scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
+    /// <summary>Scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
     [JsonPropertyName("clusterScalabilityType")]
     public string? ClusterScalabilityType { get; set; }
 
@@ -1740,7 +1732,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
-    /// <summary>The mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
+    /// <summary>Mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
@@ -1748,11 +1740,11 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
+    /// <summary>Compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
     [JsonPropertyName("dbClusterInstanceClass")]
     public string? DbClusterInstanceClass { get; set; }
 
-    /// <summary>A cluster parameter group to associate with the cluster.</summary>
+    /// <summary>Cluster parameter group to associate with the cluster.</summary>
     [JsonPropertyName("dbClusterParameterGroupName")]
     public string? DbClusterParameterGroupName { get; set; }
 
@@ -1776,10 +1768,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("dbInstanceParameterGroupNameSelector")]
     public V1beta2ClusterSpecForProviderDbInstanceParameterGroupNameSelector? DbInstanceParameterGroupNameSelector { get; set; }
 
-    /// <summary>
-    /// DB subnet group to associate with this DB cluster.
-    /// NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.
-    /// </summary>
+    /// <summary>DB subnet group to associate with this DB cluster. NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -1795,23 +1784,19 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("dbSystemId")]
     public string? DbSystemId { get; set; }
 
-    /// <summary>Specifies whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
+    /// <summary>Whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
     [JsonPropertyName("deleteAutomatedBackups")]
     public bool? DeleteAutomatedBackups { get; set; }
 
-    /// <summary>
-    /// If the DB cluster should have deletion protection enabled.
-    /// The database can&apos;t be deleted when this value is set to true.
-    /// The default is false.
-    /// </summary>
+    /// <summary>If the DB cluster should have deletion protection enabled. The database can&apos;t be deleted when this value is set to true. The default is false.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The ID of the Directory Service Active Directory domain to create the cluster in.</summary>
+    /// <summary>ID of the Directory Service Active Directory domain to create the cluster in.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The name of the IAM role to be used when making API calls to the Directory Service.</summary>
+    /// <summary>Name of the IAM role to be used when making API calls to the Directory Service.</summary>
     [JsonPropertyName("domainIamRoleName")]
     public string? DomainIamRoleName { get; set; }
 
@@ -1835,7 +1820,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -1855,7 +1840,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("globalClusterIdentifier")]
     public string? GlobalClusterIdentifier { get; set; }
 
-    /// <summary>Specifies whether or not mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
+    /// <summary>Whether mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
     [JsonPropertyName("iamDatabaseAuthenticationEnabled")]
     public bool? IamDatabaseAuthenticationEnabled { get; set; }
 
@@ -1886,11 +1871,11 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta2ClusterSpecForProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>Only required unless manage_master_user_password is set to true, a snapshot_identifier, replication_source_identifier, or master_password is provided or unless a global_cluster_identifier is provided when the cluster is the &quot;secondary&quot; cluster of a global database) Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true.</summary>
+    /// <summary>Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWoSecretRef")]
     public V1beta2ClusterSpecForProviderMasterPasswordWoSecretRef? MasterPasswordWoSecretRef { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -1934,7 +1919,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
-    /// <summary>Specifies the KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
+    /// <summary>KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
     [JsonPropertyName("performanceInsightsKmsKeyId")]
     public string? PerformanceInsightsKmsKeyId { get; set; }
 
@@ -1946,7 +1931,7 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("performanceInsightsKmsKeyIdSelector")]
     public V1beta2ClusterSpecForProviderPerformanceInsightsKmsKeyIdSelector? PerformanceInsightsKmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
+    /// <summary>Amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
     [JsonPropertyName("performanceInsightsRetentionPeriod")]
     public double? PerformanceInsightsRetentionPeriod { get; set; }
 
@@ -1989,19 +1974,19 @@ public partial class V1beta2ClusterSpecForProvider
     [JsonPropertyName("serverlessv2ScalingConfiguration")]
     public V1beta2ClusterSpecForProviderServerlessv2ScalingConfiguration? Serverlessv2ScalingConfiguration { get; set; }
 
-    /// <summary>Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
+    /// <summary>Whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
     [JsonPropertyName("skipFinalSnapshot")]
     public bool? SkipFinalSnapshot { get; set; }
 
-    /// <summary>Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
+    /// <summary>Whether to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
     [JsonPropertyName("snapshotIdentifier")]
     public string? SnapshotIdentifier { get; set; }
 
-    /// <summary>The source region for an encrypted replica DB cluster.</summary>
+    /// <summary>Source region for an encrypted replica DB cluster.</summary>
     [JsonPropertyName("sourceRegion")]
     public string? SourceRegion { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -2024,6 +2009,10 @@ public partial class V1beta2ClusterSpecForProvider
     /// <summary>List of VPC security groups to associate with the Cluster</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>
@@ -2635,7 +2624,7 @@ public partial class V1beta2ClusterSpecInitProviderMasterPasswordSecretRef
     public required string Namespace { get; set; }
 }
 
-/// <summary>Only required unless manage_master_user_password is set to true, a snapshot_identifier, replication_source_identifier, or master_password is provided or unless a global_cluster_identifier is provided when the cluster is the &quot;secondary&quot; cluster of a global database) Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true.</summary>
+/// <summary>Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true. If set, requires master_password_wo_version to be set.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderMasterPasswordWoSecretRef
@@ -3250,10 +3239,7 @@ public partial class V1beta2ClusterSpecInitProviderRestoreToPointInTime
     [JsonPropertyName("restoreToTime")]
     public string? RestoreToTime { get; set; }
 
-    /// <summary>
-    /// Type of restore to be performed.
-    /// Valid options are full-copy (default) and copy-on-write.
-    /// </summary>
+    /// <summary>Type of restore to be performed. Valid options are full-copy (default) and copy-on-write.</summary>
     [JsonPropertyName("restoreType")]
     public string? RestoreType { get; set; }
 
@@ -3494,15 +3480,15 @@ public partial class V1beta2ClusterSpecInitProviderScalingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderServerlessv2ScalingConfiguration
 {
-    /// <summary>Maximum capacity for an Aurora DB cluster in serverless DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 16.</summary>
+    /// <summary>Maximum capacity for an Aurora DB cluster in provisioned DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>Minimum capacity for an Aurora DB cluster in serverless DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 1.</summary>
+    /// <summary>Minimum capacity for an Aurora DB cluster in provisioned DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("minCapacity")]
     public double? MinCapacity { get; set; }
 
-    /// <summary>Time, in seconds, before an Aurora DB cluster in serverless mode is paused. Valid values are 300 through 86400. Defaults to 300.</summary>
+    /// <summary>Time, in seconds, before an Aurora DB cluster in provisioned DB engine mode is paused. Valid values are 300 through 86400.</summary>
     [JsonPropertyName("secondsUntilAutoPause")]
     public double? SecondsUntilAutoPause { get; set; }
 }
@@ -3670,7 +3656,7 @@ public partial class V1beta2ClusterSpecInitProviderVpcSecurityGroupIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProvider
 {
-    /// <summary>The amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
+    /// <summary>Amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
     [JsonPropertyName("allocatedStorage")]
     public double? AllocatedStorage { get; set; }
 
@@ -3678,7 +3664,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("allowMajorVersionUpgrade")]
     public bool? AllowMajorVersionUpgrade { get; set; }
 
-    /// <summary>Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
+    /// <summary>Whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
@@ -3686,12 +3672,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>
-    /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
-    /// We recommend specifying 3 AZs or using the  if necessary.
-    /// A maximum of 3 AZs can be configured.
-    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
-    /// </summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -3703,7 +3684,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("backupRetentionPeriod")]
     public double? BackupRetentionPeriod { get; set; }
 
-    /// <summary>The CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
+    /// <summary>CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
     [JsonPropertyName("caCertificateIdentifier")]
     public string? CaCertificateIdentifier { get; set; }
 
@@ -3711,7 +3692,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("clusterMembers")]
     public IList<string>? ClusterMembers { get; set; }
 
-    /// <summary>Specifies the scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
+    /// <summary>Scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
     [JsonPropertyName("clusterScalabilityType")]
     public string? ClusterScalabilityType { get; set; }
 
@@ -3719,7 +3700,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
-    /// <summary>The mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
+    /// <summary>Mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
@@ -3727,11 +3708,11 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
+    /// <summary>Compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
     [JsonPropertyName("dbClusterInstanceClass")]
     public string? DbClusterInstanceClass { get; set; }
 
-    /// <summary>A cluster parameter group to associate with the cluster.</summary>
+    /// <summary>Cluster parameter group to associate with the cluster.</summary>
     [JsonPropertyName("dbClusterParameterGroupName")]
     public string? DbClusterParameterGroupName { get; set; }
 
@@ -3755,10 +3736,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("dbInstanceParameterGroupNameSelector")]
     public V1beta2ClusterSpecInitProviderDbInstanceParameterGroupNameSelector? DbInstanceParameterGroupNameSelector { get; set; }
 
-    /// <summary>
-    /// DB subnet group to associate with this DB cluster.
-    /// NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.
-    /// </summary>
+    /// <summary>DB subnet group to associate with this DB cluster. NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -3774,23 +3752,19 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("dbSystemId")]
     public string? DbSystemId { get; set; }
 
-    /// <summary>Specifies whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
+    /// <summary>Whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
     [JsonPropertyName("deleteAutomatedBackups")]
     public bool? DeleteAutomatedBackups { get; set; }
 
-    /// <summary>
-    /// If the DB cluster should have deletion protection enabled.
-    /// The database can&apos;t be deleted when this value is set to true.
-    /// The default is false.
-    /// </summary>
+    /// <summary>If the DB cluster should have deletion protection enabled. The database can&apos;t be deleted when this value is set to true. The default is false.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The ID of the Directory Service Active Directory domain to create the cluster in.</summary>
+    /// <summary>ID of the Directory Service Active Directory domain to create the cluster in.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The name of the IAM role to be used when making API calls to the Directory Service.</summary>
+    /// <summary>Name of the IAM role to be used when making API calls to the Directory Service.</summary>
     [JsonPropertyName("domainIamRoleName")]
     public string? DomainIamRoleName { get; set; }
 
@@ -3814,7 +3788,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -3834,7 +3808,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("globalClusterIdentifier")]
     public string? GlobalClusterIdentifier { get; set; }
 
-    /// <summary>Specifies whether or not mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
+    /// <summary>Whether mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
     [JsonPropertyName("iamDatabaseAuthenticationEnabled")]
     public bool? IamDatabaseAuthenticationEnabled { get; set; }
 
@@ -3865,11 +3839,11 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("masterPasswordSecretRef")]
     public V1beta2ClusterSpecInitProviderMasterPasswordSecretRef? MasterPasswordSecretRef { get; set; }
 
-    /// <summary>Only required unless manage_master_user_password is set to true, a snapshot_identifier, replication_source_identifier, or master_password is provided or unless a global_cluster_identifier is provided when the cluster is the &quot;secondary&quot; cluster of a global database) Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true.</summary>
+    /// <summary>Password for the master DB user. Note that this may show up in logs. Please refer to the RDS Naming Constraints. Cannot be set if manage_master_user_password is set to true. If set, requires master_password_wo_version to be set.</summary>
     [JsonPropertyName("masterPasswordWoSecretRef")]
     public V1beta2ClusterSpecInitProviderMasterPasswordWoSecretRef? MasterPasswordWoSecretRef { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -3913,7 +3887,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
-    /// <summary>Specifies the KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
+    /// <summary>KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
     [JsonPropertyName("performanceInsightsKmsKeyId")]
     public string? PerformanceInsightsKmsKeyId { get; set; }
 
@@ -3925,7 +3899,7 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("performanceInsightsKmsKeyIdSelector")]
     public V1beta2ClusterSpecInitProviderPerformanceInsightsKmsKeyIdSelector? PerformanceInsightsKmsKeyIdSelector { get; set; }
 
-    /// <summary>Specifies the amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
+    /// <summary>Amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
     [JsonPropertyName("performanceInsightsRetentionPeriod")]
     public double? PerformanceInsightsRetentionPeriod { get; set; }
 
@@ -3961,19 +3935,19 @@ public partial class V1beta2ClusterSpecInitProvider
     [JsonPropertyName("serverlessv2ScalingConfiguration")]
     public V1beta2ClusterSpecInitProviderServerlessv2ScalingConfiguration? Serverlessv2ScalingConfiguration { get; set; }
 
-    /// <summary>Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
+    /// <summary>Whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
     [JsonPropertyName("skipFinalSnapshot")]
     public bool? SkipFinalSnapshot { get; set; }
 
-    /// <summary>Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
+    /// <summary>Whether to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
     [JsonPropertyName("snapshotIdentifier")]
     public string? SnapshotIdentifier { get; set; }
 
-    /// <summary>The source region for an encrypted replica DB cluster.</summary>
+    /// <summary>Source region for an encrypted replica DB cluster.</summary>
     [JsonPropertyName("sourceRegion")]
     public string? SourceRegion { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -3996,6 +3970,10 @@ public partial class V1beta2ClusterSpecInitProvider
     /// <summary>List of VPC security groups to associate with the Cluster</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>
@@ -4189,7 +4167,7 @@ public partial class V1beta2ClusterStatusAtProviderMasterUserSecret
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("secretArn")]
     public string? SecretArn { get; set; }
 
@@ -4207,10 +4185,7 @@ public partial class V1beta2ClusterStatusAtProviderRestoreToPointInTime
     [JsonPropertyName("restoreToTime")]
     public string? RestoreToTime { get; set; }
 
-    /// <summary>
-    /// Type of restore to be performed.
-    /// Valid options are full-copy (default) and copy-on-write.
-    /// </summary>
+    /// <summary>Type of restore to be performed. Valid options are full-copy (default) and copy-on-write.</summary>
     [JsonPropertyName("restoreType")]
     public string? RestoreType { get; set; }
 
@@ -4288,15 +4263,15 @@ public partial class V1beta2ClusterStatusAtProviderScalingConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProviderServerlessv2ScalingConfiguration
 {
-    /// <summary>Maximum capacity for an Aurora DB cluster in serverless DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 16.</summary>
+    /// <summary>Maximum capacity for an Aurora DB cluster in provisioned DB engine mode. The maximum capacity must be greater than or equal to the minimum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("maxCapacity")]
     public double? MaxCapacity { get; set; }
 
-    /// <summary>Minimum capacity for an Aurora DB cluster in serverless DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid Aurora MySQL capacity values are 1, 2, 4, 8, 16, 32, 64, 128, 256. Valid Aurora PostgreSQL capacity values are (2, 4, 8, 16, 32, 64, 192, and 384). Defaults to 1.</summary>
+    /// <summary>Minimum capacity for an Aurora DB cluster in provisioned DB engine mode. The minimum capacity must be lesser than or equal to the maximum capacity. Valid capacity values are in a range of 0 up to 256 in steps of 0.5.</summary>
     [JsonPropertyName("minCapacity")]
     public double? MinCapacity { get; set; }
 
-    /// <summary>Time, in seconds, before an Aurora DB cluster in serverless mode is paused. Valid values are 300 through 86400. Defaults to 300.</summary>
+    /// <summary>Time, in seconds, before an Aurora DB cluster in provisioned DB engine mode is paused. Valid values are 300 through 86400.</summary>
     [JsonPropertyName("secondsUntilAutoPause")]
     public double? SecondsUntilAutoPause { get; set; }
 }
@@ -4305,7 +4280,7 @@ public partial class V1beta2ClusterStatusAtProviderServerlessv2ScalingConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProvider
 {
-    /// <summary>The amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
+    /// <summary>Amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.</summary>
     [JsonPropertyName("allocatedStorage")]
     public double? AllocatedStorage { get; set; }
 
@@ -4313,11 +4288,11 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("allowMajorVersionUpgrade")]
     public bool? AllowMajorVersionUpgrade { get; set; }
 
-    /// <summary>Specifies whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
+    /// <summary>Whether any cluster modifications are applied immediately, or during the next maintenance window. Default is false. See Amazon RDS Documentation for more information.</summary>
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of cluster</summary>
+    /// <summary>ARN of cluster</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -4325,12 +4300,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("autoMinorVersionUpgrade")]
     public bool? AutoMinorVersionUpgrade { get; set; }
 
-    /// <summary>
-    /// List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
-    /// We recommend specifying 3 AZs or using the  if necessary.
-    /// A maximum of 3 AZs can be configured.
-    /// Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.
-    /// </summary>
+    /// <summary>List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. We recommend specifying 3 AZs or using the  if necessary. A maximum of 3 AZs can be configured. Note: Multi-AZ DB clusters require exactly 3 Availability Zones in the DB subnet group. Aurora DB clusters can operate with fewer AZs, but RDS will still automatically assign 3 AZs as described above.</summary>
     [JsonPropertyName("availabilityZones")]
     public IList<string>? AvailabilityZones { get; set; }
 
@@ -4342,7 +4312,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("backupRetentionPeriod")]
     public double? BackupRetentionPeriod { get; set; }
 
-    /// <summary>The CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
+    /// <summary>CA certificate identifier to use for the DB cluster&apos;s server certificate.</summary>
     [JsonPropertyName("caCertificateIdentifier")]
     public string? CaCertificateIdentifier { get; set; }
 
@@ -4358,7 +4328,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("clusterResourceId")]
     public string? ClusterResourceId { get; set; }
 
-    /// <summary>Specifies the scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
+    /// <summary>Scalability mode of the Aurora DB cluster. When set to limitless, the cluster operates as an Aurora Limitless Database. When set to standard (the default), the cluster uses normal DB instance creation. Valid values: limitless, standard.</summary>
     [JsonPropertyName("clusterScalabilityType")]
     public string? ClusterScalabilityType { get; set; }
 
@@ -4366,7 +4336,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("copyTagsToSnapshot")]
     public bool? CopyTagsToSnapshot { get; set; }
 
-    /// <summary>The mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
+    /// <summary>Mode of Database Insights to enable for the DB cluster. Valid values: standard, advanced.</summary>
     [JsonPropertyName("databaseInsightsMode")]
     public string? DatabaseInsightsMode { get; set; }
 
@@ -4374,11 +4344,11 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("databaseName")]
     public string? DatabaseName { get; set; }
 
-    /// <summary>The compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
+    /// <summary>Compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xlarge. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes and availability for your engine, see DB instance class in the Amazon RDS User Guide.</summary>
     [JsonPropertyName("dbClusterInstanceClass")]
     public string? DbClusterInstanceClass { get; set; }
 
-    /// <summary>A cluster parameter group to associate with the cluster.</summary>
+    /// <summary>Cluster parameter group to associate with the cluster.</summary>
     [JsonPropertyName("dbClusterParameterGroupName")]
     public string? DbClusterParameterGroupName { get; set; }
 
@@ -4386,10 +4356,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("dbInstanceParameterGroupName")]
     public string? DbInstanceParameterGroupName { get; set; }
 
-    /// <summary>
-    /// DB subnet group to associate with this DB cluster.
-    /// NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.
-    /// </summary>
+    /// <summary>DB subnet group to associate with this DB cluster. NOTE: This must match the db_subnet_group_name specified on every aws_rds_cluster_instance in the cluster.</summary>
     [JsonPropertyName("dbSubnetGroupName")]
     public string? DbSubnetGroupName { get; set; }
 
@@ -4397,23 +4364,19 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("dbSystemId")]
     public string? DbSystemId { get; set; }
 
-    /// <summary>Specifies whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
+    /// <summary>Whether to remove automated backups immediately after the DB cluster is deleted. Default is true.</summary>
     [JsonPropertyName("deleteAutomatedBackups")]
     public bool? DeleteAutomatedBackups { get; set; }
 
-    /// <summary>
-    /// If the DB cluster should have deletion protection enabled.
-    /// The database can&apos;t be deleted when this value is set to true.
-    /// The default is false.
-    /// </summary>
+    /// <summary>If the DB cluster should have deletion protection enabled. The database can&apos;t be deleted when this value is set to true. The default is false.</summary>
     [JsonPropertyName("deletionProtection")]
     public bool? DeletionProtection { get; set; }
 
-    /// <summary>The ID of the Directory Service Active Directory domain to create the cluster in.</summary>
+    /// <summary>ID of the Directory Service Active Directory domain to create the cluster in.</summary>
     [JsonPropertyName("domain")]
     public string? Domain { get; set; }
 
-    /// <summary>The name of the IAM role to be used when making API calls to the Directory Service.</summary>
+    /// <summary>Name of the IAM role to be used when making API calls to the Directory Service.</summary>
     [JsonPropertyName("domainIamRoleName")]
     public string? DomainIamRoleName { get; set; }
 
@@ -4441,7 +4404,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting is valid for cluster types Aurora DB clusters and Multi-AZ DB clusters. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -4469,7 +4432,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("hostedZoneId")]
     public string? HostedZoneId { get; set; }
 
-    /// <summary>Specifies whether or not mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
+    /// <summary>Whether mappings of AWS Identity and Access Management (IAM) accounts to database accounts is enabled. Please see AWS Documentation for availability and limitations.</summary>
     [JsonPropertyName("iamDatabaseAuthenticationEnabled")]
     public bool? IamDatabaseAuthenticationEnabled { get; set; }
 
@@ -4493,7 +4456,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("manageMasterUserPassword")]
     public bool? ManageMasterUserPassword { get; set; }
 
-    /// <summary>Used together with master_password_wo to trigger an update. Increment this value when an update to the master_password_wo is required.</summary>
+    /// <summary>Required when master_password_wo is set. Changing this value triggers an update to master_password_wo.</summary>
     [JsonPropertyName("masterPasswordWoVersion")]
     public double? MasterPasswordWoVersion { get; set; }
 
@@ -4525,11 +4488,11 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("performanceInsightsEnabled")]
     public bool? PerformanceInsightsEnabled { get; set; }
 
-    /// <summary>Specifies the KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
+    /// <summary>KMS Key ID to encrypt Performance Insights data. If not specified, the default RDS KMS key will be used (aws/rds).</summary>
     [JsonPropertyName("performanceInsightsKmsKeyId")]
     public string? PerformanceInsightsKmsKeyId { get; set; }
 
-    /// <summary>Specifies the amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
+    /// <summary>Amount of time to retain performance insights data for. Defaults to 7 days if Performance Insights are enabled. Valid values are 7, month * 31 (where month is a number of months from 1-23), and 731. See here for more information on retention periods.</summary>
     [JsonPropertyName("performanceInsightsRetentionPeriod")]
     public double? PerformanceInsightsRetentionPeriod { get; set; }
 
@@ -4545,10 +4508,7 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("preferredMaintenanceWindow")]
     public string? PreferredMaintenanceWindow { get; set; }
 
-    /// <summary>
-    /// Read-only endpoint for the Aurora cluster, automatically
-    /// load-balanced across replicas
-    /// </summary>
+    /// <summary>Read-only endpoint for the Aurora cluster, automatically load-balanced across replicas</summary>
     [JsonPropertyName("readerEndpoint")]
     public string? ReaderEndpoint { get; set; }
 
@@ -4579,19 +4539,19 @@ public partial class V1beta2ClusterStatusAtProvider
     [JsonPropertyName("serverlessv2ScalingConfiguration")]
     public V1beta2ClusterStatusAtProviderServerlessv2ScalingConfiguration? Serverlessv2ScalingConfiguration { get; set; }
 
-    /// <summary>Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
+    /// <summary>Whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from final_snapshot_identifier. Default is false.</summary>
     [JsonPropertyName("skipFinalSnapshot")]
     public bool? SkipFinalSnapshot { get; set; }
 
-    /// <summary>Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
+    /// <summary>Whether to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot. Conflicts with global_cluster_identifier. Clusters cannot be restored from snapshot and joined to an existing global cluster in a single operation. See the AWS documentation or the Global Cluster Restored From Snapshot example for instructions on building a global cluster starting with a snapshot.</summary>
     [JsonPropertyName("snapshotIdentifier")]
     public string? SnapshotIdentifier { get; set; }
 
-    /// <summary>The source region for an encrypted replica DB cluster.</summary>
+    /// <summary>Source region for an encrypted replica DB cluster.</summary>
     [JsonPropertyName("sourceRegion")]
     public string? SourceRegion { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false for provisioned engine_mode and true for serverless engine_mode. When restoring an unencrypted snapshot_identifier, the kms_key_id argument must be provided to encrypt the restored cluster.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -4614,6 +4574,10 @@ public partial class V1beta2ClusterStatusAtProvider
     /// <summary>List of VPC security groups to associate with the Cluster</summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

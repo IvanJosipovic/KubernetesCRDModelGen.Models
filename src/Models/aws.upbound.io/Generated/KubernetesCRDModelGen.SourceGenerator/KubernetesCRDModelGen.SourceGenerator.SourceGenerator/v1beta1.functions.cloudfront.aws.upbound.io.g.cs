@@ -55,7 +55,7 @@ public enum V1beta1FunctionSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>Source code of the function</summary>
+/// <summary>Source code of the function. Must be between 1 and 40960 bytes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecForProviderCodeSecretRef
@@ -77,11 +77,11 @@ public partial class V1beta1FunctionSpecForProviderCodeSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecForProvider
 {
-    /// <summary>Source code of the function</summary>
+    /// <summary>Source code of the function. Must be between 1 and 40960 bytes.</summary>
     [JsonPropertyName("codeSecretRef")]
     public V1beta1FunctionSpecForProviderCodeSecretRef? CodeSecretRef { get; set; }
 
-    /// <summary>Comment.</summary>
+    /// <summary>Comment. Must not exceed 128 characters.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
@@ -102,7 +102,7 @@ public partial class V1beta1FunctionSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>Source code of the function</summary>
+/// <summary>Source code of the function. Must be between 1 and 40960 bytes.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecInitProviderCodeSecretRef
@@ -136,11 +136,11 @@ public partial class V1beta1FunctionSpecInitProviderCodeSecretRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionSpecInitProvider
 {
-    /// <summary>Source code of the function</summary>
+    /// <summary>Source code of the function. Must be between 1 and 40960 bytes.</summary>
     [JsonPropertyName("codeSecretRef")]
     public required V1beta1FunctionSpecInitProviderCodeSecretRef CodeSecretRef { get; set; }
 
-    /// <summary>Comment.</summary>
+    /// <summary>Comment. Must not exceed 128 characters.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 
@@ -348,11 +348,11 @@ public partial class V1beta1FunctionSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FunctionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) identifying your CloudFront Function.</summary>
+    /// <summary>ARN identifying your CloudFront Function.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Comment.</summary>
+    /// <summary>Comment. Must not exceed 128 characters.</summary>
     [JsonPropertyName("comment")]
     public string? Comment { get; set; }
 

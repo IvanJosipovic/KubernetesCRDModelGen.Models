@@ -227,7 +227,7 @@ public partial class V1beta1EBSVolumeSpecForProvider
     [JsonPropertyName("multiAttachEnabled")]
     public bool? MultiAttachEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -466,7 +466,7 @@ public partial class V1beta1EBSVolumeSpecInitProvider
     [JsonPropertyName("multiAttachEnabled")]
     public bool? MultiAttachEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -642,7 +642,7 @@ public partial class V1beta1EBSVolumeStatusAtProvider
     [JsonPropertyName("multiAttachEnabled")]
     public bool? MultiAttachEnabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Outpost.</summary>
+    /// <summary>ARN of the Outpost.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 

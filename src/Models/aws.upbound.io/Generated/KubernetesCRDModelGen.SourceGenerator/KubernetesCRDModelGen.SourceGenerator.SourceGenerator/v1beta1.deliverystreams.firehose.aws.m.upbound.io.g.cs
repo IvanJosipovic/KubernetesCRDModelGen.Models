@@ -4177,7 +4177,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
     public V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+/// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecForProviderKinesisSourceConfiguration
@@ -6399,7 +6399,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -7531,7 +7531,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderServerSideEncryption
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
+    /// <summary>ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
@@ -8870,7 +8870,7 @@ public partial class V1beta1DeliveryStreamSpecForProvider
     [JsonPropertyName("icebergConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderIcebergConfiguration? IcebergConfiguration { get; set; }
 
-    /// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+    /// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamSpecForProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 
@@ -13059,7 +13059,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+/// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfiguration
@@ -15281,7 +15281,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -16413,7 +16413,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderServerSideEncryption
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
+    /// <summary>ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
@@ -17764,7 +17764,7 @@ public partial class V1beta1DeliveryStreamSpecInitProvider
     [JsonPropertyName("icebergConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration? IcebergConfiguration { get; set; }
 
-    /// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+    /// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 
@@ -18946,7 +18946,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
     public V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3Configuration? S3Configuration { get; set; }
 }
 
-/// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+/// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfiguration
@@ -19389,7 +19389,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
     [JsonPropertyName("retryDuration")]
     public double? RetryDuration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
+    /// <summary>ARN of the IAM role to be assumed by Kinesis Data Firehose for calling the Serverless offering for Amazon OpenSearch Service Configuration API and for indexing documents.  The pattern needs to be arn:.*.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -19681,7 +19681,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderServerSideEncryption
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
+    /// <summary>ARN of the encryption key. Required when key_type is CUSTOMER_MANAGED_CMK.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
@@ -20131,7 +20131,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryStreamStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) specifying the Stream</summary>
+    /// <summary>ARN specifying the Stream</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -20161,7 +20161,7 @@ public partial class V1beta1DeliveryStreamStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The stream and role Amazon Resource Names (ARNs) for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
+    /// <summary>Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream. See kinesis_source_configuration block below for details.</summary>
     [JsonPropertyName("kinesisSourceConfiguration")]
     public V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfiguration? KinesisSourceConfiguration { get; set; }
 

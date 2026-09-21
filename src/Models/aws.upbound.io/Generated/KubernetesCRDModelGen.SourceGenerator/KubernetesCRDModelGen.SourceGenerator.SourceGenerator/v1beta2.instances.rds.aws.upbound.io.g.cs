@@ -1898,6 +1898,10 @@ public partial class V1beta2InstanceSpecForProvider
     /// </summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3735,6 +3739,10 @@ public partial class V1beta2InstanceSpecInitProvider
     /// </summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>
@@ -4496,6 +4504,10 @@ public partial class V1beta2InstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("vpcSecurityGroupIds")]
     public IList<string>? VpcSecurityGroupIds { get; set; }
+
+    /// <summary>Set of RDS event categories (for example failure, maintenance) to check for after create and update operations. Has no effect if unset; see DescribeEvents and the aws_rds_events data source for the source of these events. Requires the rds:DescribeEvents IAM permission when set.</summary>
+    [JsonPropertyName("warningEventCategories")]
+    public IList<string>? WarningEventCategories { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

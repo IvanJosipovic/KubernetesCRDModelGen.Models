@@ -954,7 +954,7 @@ public partial class V1beta1QueueStatusAtProviderOutboundCallerConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1QueueStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Queue.</summary>
+    /// <summary>ARN of the Queue.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

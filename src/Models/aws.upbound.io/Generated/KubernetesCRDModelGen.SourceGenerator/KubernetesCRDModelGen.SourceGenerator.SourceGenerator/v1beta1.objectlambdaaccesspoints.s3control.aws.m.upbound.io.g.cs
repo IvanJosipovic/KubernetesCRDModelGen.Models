@@ -346,12 +346,12 @@ public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationT
     public V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfigurationContentTransformationAwsLambdaFunctionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+/// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfigurationContentTransformationAwsLambda
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Lambda function.</summary>
+    /// <summary>ARN of the AWS Lambda function.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
@@ -368,12 +368,12 @@ public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationT
     public string? FunctionPayload { get; set; }
 }
 
-/// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+/// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfigurationContentTransformation
 {
-    /// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+    /// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
     [JsonPropertyName("awsLambda")]
     public V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfigurationContentTransformationAwsLambda? AwsLambda { get; set; }
 }
@@ -382,16 +382,16 @@ public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationT
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfiguration
 {
-    /// <summary>The actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
+    /// <summary>Actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
     [JsonPropertyName("actions")]
     public IList<string>? Actions { get; set; }
 
-    /// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+    /// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
     [JsonPropertyName("contentTransformation")]
     public V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfigurationContentTransformation? ContentTransformation { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+/// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfiguration
@@ -416,7 +416,7 @@ public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfiguration
     [JsonPropertyName("supportingAccessPointSelector")]
     public V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationSupportingAccessPointSelector? SupportingAccessPointSelector { get; set; }
 
-    /// <summary>List of transformation configurations for the Object Lambda Access Point. See Transformation Configuration below for more details.</summary>
+    /// <summary>List of transformation configurations for the Object Lambda Access Point. See transformation_configuration Block below for more details.</summary>
     [JsonPropertyName("transformationConfiguration")]
     public IList<V1beta1ObjectLambdaAccessPointSpecForProviderConfigurationTransformationConfiguration>? TransformationConfiguration { get; set; }
 }
@@ -425,15 +425,15 @@ public partial class V1beta1ObjectLambdaAccessPointSpecForProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecForProvider
 {
-    /// <summary>The AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+    /// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1ObjectLambdaAccessPointSpecForProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>The name for this Object Lambda Access Point.</summary>
+    /// <summary>Name for this Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -755,12 +755,12 @@ public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
     public V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfigurationContentTransformationAwsLambdaFunctionArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+/// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfigurationContentTransformationAwsLambda
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Lambda function.</summary>
+    /// <summary>ARN of the AWS Lambda function.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
@@ -777,12 +777,12 @@ public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
     public string? FunctionPayload { get; set; }
 }
 
-/// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+/// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfigurationContentTransformation
 {
-    /// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+    /// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
     [JsonPropertyName("awsLambda")]
     public V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfigurationContentTransformationAwsLambda? AwsLambda { get; set; }
 }
@@ -791,16 +791,16 @@ public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfiguration
 {
-    /// <summary>The actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
+    /// <summary>Actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
     [JsonPropertyName("actions")]
     public IList<string>? Actions { get; set; }
 
-    /// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+    /// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
     [JsonPropertyName("contentTransformation")]
     public V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfigurationContentTransformation? ContentTransformation { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+/// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
@@ -825,7 +825,7 @@ public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
     [JsonPropertyName("supportingAccessPointSelector")]
     public V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationSupportingAccessPointSelector? SupportingAccessPointSelector { get; set; }
 
-    /// <summary>List of transformation configurations for the Object Lambda Access Point. See Transformation Configuration below for more details.</summary>
+    /// <summary>List of transformation configurations for the Object Lambda Access Point. See transformation_configuration Block below for more details.</summary>
     [JsonPropertyName("transformationConfiguration")]
     public IList<V1beta1ObjectLambdaAccessPointSpecInitProviderConfigurationTransformationConfiguration>? TransformationConfiguration { get; set; }
 }
@@ -846,15 +846,15 @@ public partial class V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointSpecInitProvider
 {
-    /// <summary>The AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+    /// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1ObjectLambdaAccessPointSpecInitProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>The name for this Object Lambda Access Point.</summary>
+    /// <summary>Name for this Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 }
@@ -966,12 +966,12 @@ public partial class V1beta1ObjectLambdaAccessPointSpec
     public V1beta1ObjectLambdaAccessPointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+/// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfigurationContentTransformationAwsLambda
 {
-    /// <summary>The Amazon Resource Name (ARN) of the AWS Lambda function.</summary>
+    /// <summary>ARN of the AWS Lambda function.</summary>
     [JsonPropertyName("functionArn")]
     public string? FunctionArn { get; set; }
 
@@ -980,12 +980,12 @@ public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration
     public string? FunctionPayload { get; set; }
 }
 
-/// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+/// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfigurationContentTransformation
 {
-    /// <summary>Configuration for an AWS Lambda function. See AWS Lambda below for more details.</summary>
+    /// <summary>Configuration for an AWS Lambda function. See aws_lambda Block below for more details.</summary>
     [JsonPropertyName("awsLambda")]
     public V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfigurationContentTransformationAwsLambda? AwsLambda { get; set; }
 }
@@ -994,16 +994,16 @@ public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfiguration
 {
-    /// <summary>The actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
+    /// <summary>Actions of an Object Lambda Access Point configuration. Valid values: GetObject.</summary>
     [JsonPropertyName("actions")]
     public IList<string>? Actions { get; set; }
 
-    /// <summary>The content transformation of an Object Lambda Access Point configuration. See Content Transformation below for more details.</summary>
+    /// <summary>Content transformation of an Object Lambda Access Point configuration. See content_transformation Block below for more details.</summary>
     [JsonPropertyName("contentTransformation")]
     public V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfigurationContentTransformation? ContentTransformation { get; set; }
 }
 
-/// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+/// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration
@@ -1020,7 +1020,7 @@ public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration
     [JsonPropertyName("supportingAccessPoint")]
     public string? SupportingAccessPoint { get; set; }
 
-    /// <summary>List of transformation configurations for the Object Lambda Access Point. See Transformation Configuration below for more details.</summary>
+    /// <summary>List of transformation configurations for the Object Lambda Access Point. See transformation_configuration Block below for more details.</summary>
     [JsonPropertyName("transformationConfiguration")]
     public IList<V1beta1ObjectLambdaAccessPointStatusAtProviderConfigurationTransformationConfiguration>? TransformationConfiguration { get; set; }
 }
@@ -1029,7 +1029,7 @@ public partial class V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointStatusAtProvider
 {
-    /// <summary>The AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
@@ -1037,19 +1037,19 @@ public partial class V1beta1ObjectLambdaAccessPointStatusAtProvider
     [JsonPropertyName("alias")]
     public string? Alias { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Object Lambda Access Point.</summary>
+    /// <summary>ARN of the Object Lambda Access Point.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>A configuration block containing details about the Object Lambda Access Point. See Configuration below for more details.</summary>
+    /// <summary>Configuration block containing details about the Object Lambda Access Point. See configuration Block below for more details.</summary>
     [JsonPropertyName("configuration")]
     public V1beta1ObjectLambdaAccessPointStatusAtProviderConfiguration? Configuration { get; set; }
 
-    /// <summary>The AWS account ID and access point name separated by a colon (:).</summary>
+    /// <summary>AWS account ID and access point name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name for this Object Lambda Access Point.</summary>
+    /// <summary>Name for this Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 

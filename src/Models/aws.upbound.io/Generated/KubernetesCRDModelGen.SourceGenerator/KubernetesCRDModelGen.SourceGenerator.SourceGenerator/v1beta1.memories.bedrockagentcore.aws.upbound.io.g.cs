@@ -362,7 +362,7 @@ public partial class V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelector
     public V1beta1MemorySpecForProviderMemoryExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+/// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
@@ -523,12 +523,12 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+/// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesis
 {
-    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
     [JsonPropertyName("contentConfiguration")]
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
 
@@ -545,22 +545,22 @@ public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector? DataStreamArnSelector { get; set; }
 }
 
-/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+/// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResourcesResource
 {
-    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
     [JsonPropertyName("kinesis")]
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
 }
 
-/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecForProviderStreamDeliveryResources
 {
-    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
     [JsonPropertyName("resource")]
     public V1beta1MemorySpecForProviderStreamDeliveryResourcesResource? Resource { get; set; }
 }
@@ -589,7 +589,7 @@ public partial class V1beta1MemorySpecForProvider
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Additional keys can be added in place; removing or changing an existing key forces a new resource to be created, because previously indexed keys cannot be removed. See indexed_key Block below.</summary>
     [JsonPropertyName("indexedKey")]
     public IList<V1beta1MemorySpecForProviderIndexedKey>? IndexedKey { get; set; }
 
@@ -616,7 +616,7 @@ public partial class V1beta1MemorySpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
     [JsonPropertyName("streamDeliveryResources")]
     public V1beta1MemorySpecForProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
@@ -932,7 +932,7 @@ public partial class V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelector
     public V1beta1MemorySpecInitProviderMemoryExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+/// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
@@ -1093,12 +1093,12 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
     public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+/// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesis
 {
-    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
     [JsonPropertyName("contentConfiguration")]
     public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
 
@@ -1115,22 +1115,22 @@ public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourc
     public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesisDataStreamArnSelector? DataStreamArnSelector { get; set; }
 }
 
-/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+/// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResourcesResource
 {
-    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
     [JsonPropertyName("kinesis")]
     public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
 }
 
-/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemorySpecInitProviderStreamDeliveryResources
 {
-    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
     [JsonPropertyName("resource")]
     public V1beta1MemorySpecInitProviderStreamDeliveryResourcesResource? Resource { get; set; }
 }
@@ -1171,7 +1171,7 @@ public partial class V1beta1MemorySpecInitProvider
     [JsonPropertyName("eventExpiryDuration")]
     public double? EventExpiryDuration { get; set; }
 
-    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Additional keys can be added in place; removing or changing an existing key forces a new resource to be created, because previously indexed keys cannot be removed. See indexed_key Block below.</summary>
     [JsonPropertyName("indexedKey")]
     public IList<V1beta1MemorySpecInitProviderIndexedKey>? IndexedKey { get; set; }
 
@@ -1191,7 +1191,7 @@ public partial class V1beta1MemorySpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
     [JsonPropertyName("streamDeliveryResources")]
     public V1beta1MemorySpecInitProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
@@ -1396,7 +1396,7 @@ public partial class V1beta1MemoryStatusAtProviderIndexedKey
     public string? Type { get; set; }
 }
 
-/// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+/// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesisContentConfiguration
@@ -1410,12 +1410,12 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourc
     public string? Type { get; set; }
 }
 
-/// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+/// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesis
 {
-    /// <summary>Content configurations for stream delivery. See content_configuration below.</summary>
+    /// <summary>Content configurations for stream delivery. See content_configuration Block below.</summary>
     [JsonPropertyName("contentConfiguration")]
     public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesisContentConfiguration? ContentConfiguration { get; set; }
 
@@ -1424,22 +1424,22 @@ public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourc
     public string? DataStreamArn { get; set; }
 }
 
-/// <summary>List of stream delivery resource configurations. See resource below.</summary>
+/// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource
 {
-    /// <summary>Kinesis Data Stream configuration. See kinesis below.</summary>
+    /// <summary>Kinesis Data Stream configuration. See kinesis Block below.</summary>
     [JsonPropertyName("kinesis")]
     public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResourceKinesis? Kinesis { get; set; }
 }
 
-/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+/// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MemoryStatusAtProviderStreamDeliveryResources
 {
-    /// <summary>List of stream delivery resource configurations. See resource below.</summary>
+    /// <summary>List of stream delivery resource configurations. See resource Block below.</summary>
     [JsonPropertyName("resource")]
     public V1beta1MemoryStatusAtProviderStreamDeliveryResourcesResource? Resource { get; set; }
 }
@@ -1468,7 +1468,7 @@ public partial class V1beta1MemoryStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Changing this forces a new resource to be created. See indexed_key below.</summary>
+    /// <summary>Metadata keys to index for filtering. Up to 10 entries. Additional keys can be added in place; removing or changing an existing key forces a new resource to be created, because previously indexed keys cannot be removed. See indexed_key Block below.</summary>
     [JsonPropertyName("indexedKey")]
     public IList<V1beta1MemoryStatusAtProviderIndexedKey>? IndexedKey { get; set; }
 
@@ -1487,7 +1487,7 @@ public partial class V1beta1MemoryStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources below.</summary>
+    /// <summary>Configuration for streaming memory record data to external resources. See stream_delivery_resources Block below.</summary>
     [JsonPropertyName("streamDeliveryResources")]
     public V1beta1MemoryStatusAtProviderStreamDeliveryResources? StreamDeliveryResources { get; set; }
 
@@ -1495,7 +1495,7 @@ public partial class V1beta1MemoryStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

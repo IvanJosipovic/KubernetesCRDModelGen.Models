@@ -590,7 +590,7 @@ public partial class V1beta1InstanceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the instance.</summary>
+    /// <summary>ARN of the instance.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

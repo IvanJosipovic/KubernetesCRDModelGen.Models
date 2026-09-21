@@ -288,7 +288,7 @@ public partial class V1beta1VirtualMfaDeviceSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualMfaDeviceStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN), which is also the serial number, of the virtual MFA device.</summary>
+    /// <summary>ARN, which is also the serial number, of the virtual MFA device.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

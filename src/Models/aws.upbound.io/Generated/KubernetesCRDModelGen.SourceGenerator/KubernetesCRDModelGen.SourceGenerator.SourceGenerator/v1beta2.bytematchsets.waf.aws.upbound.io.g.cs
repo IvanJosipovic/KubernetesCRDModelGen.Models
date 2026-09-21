@@ -465,7 +465,7 @@ public partial class V1beta2ByteMatchSetStatusAtProviderByteMatchTuples
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ByteMatchSetStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the byte match set.</summary>
+    /// <summary>ARN of the byte match set.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

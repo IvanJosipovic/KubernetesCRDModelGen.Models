@@ -2659,7 +2659,7 @@ spec:
                           description: Details about a custom plugin. See custom_plugin Block for details.
                           properties:
                             arn:
-                              description: The Amazon Resource Name (ARN) of the custom plugin.
+                              description: ARN of the custom plugin.
                               type: string
                             arnRef:
                               description: Reference to a CustomPlugin in kafkaconnect to populate arn.
@@ -2746,7 +2746,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serviceExecutionRoleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
+                    description: ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
                     type: string
                   serviceExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate serviceExecutionRoleArn.
@@ -2831,7 +2831,7 @@ spec:
                     description: Specifies which worker configuration to use with the connector. See worker_configuration Block for details.
                     properties:
                       arn:
-                        description: The Amazon Resource Name (ARN) of the worker configuration.
+                        description: ARN of the worker configuration.
                         type: string
                       arnRef:
                         description: Reference to a WorkerConfiguration in kafkaconnect to populate arn.
@@ -3441,7 +3441,7 @@ spec:
                           description: Details about a custom plugin. See custom_plugin Block for details.
                           properties:
                             arn:
-                              description: The Amazon Resource Name (ARN) of the custom plugin.
+                              description: ARN of the custom plugin.
                               type: string
                             arnRef:
                               description: Reference to a CustomPlugin in kafkaconnect to populate arn.
@@ -3523,7 +3523,7 @@ spec:
                       type: object
                     type: array
                   serviceExecutionRoleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
+                    description: ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
                     type: string
                   serviceExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate serviceExecutionRoleArn.
@@ -3608,7 +3608,7 @@ spec:
                     description: Specifies which worker configuration to use with the connector. See worker_configuration Block for details.
                     properties:
                       arn:
-                        description: The Amazon Resource Name (ARN) of the worker configuration.
+                        description: ARN of the worker configuration.
                         type: string
                       arnRef:
                         description: Reference to a WorkerConfiguration in kafkaconnect to populate arn.
@@ -3795,7 +3795,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) of the connector.
+                    description: ARN of the connector.
                     type: string
                   capacity:
                     description: Information about the capacity allocated to the connector. See capacity Block for details.
@@ -3945,7 +3945,7 @@ spec:
                           description: Details about a custom plugin. See custom_plugin Block for details.
                           properties:
                             arn:
-                              description: The Amazon Resource Name (ARN) of the custom plugin.
+                              description: ARN of the custom plugin.
                               type: string
                             revision:
                               description: The revision of the custom plugin.
@@ -3959,7 +3959,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serviceExecutionRoleArn:
-                    description: The Amazon Resource Name (ARN) of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
+                    description: ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs. The types of resources depends on the logic of the connector. For example, a connector that has Amazon S3 as a destination must have permissions that allow it to write to the S3 destination bucket.
                     type: string
                   tags:
                     additionalProperties:
@@ -3980,7 +3980,7 @@ spec:
                     description: Specifies which worker configuration to use with the connector. See worker_configuration Block for details.
                     properties:
                       arn:
-                        description: The Amazon Resource Name (ARN) of the worker configuration.
+                        description: ARN of the worker configuration.
                         type: string
                       revision:
                         description: The revision of the worker configuration.

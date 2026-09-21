@@ -55,12 +55,12 @@ public enum V1beta1ResourceShareSpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+/// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareSpecForProviderResourceShareConfiguration
 {
-    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    /// <summary>Whether consumer account retains access to resource share after leaving AWS organization.</summary>
     [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
     public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
 }
@@ -69,15 +69,15 @@ public partial class V1beta1ResourceShareSpecForProviderResourceShareConfigurati
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareSpecForProvider
 {
-    /// <summary>Indicates whether principals outside your organization can be associated with a resource share.</summary>
+    /// <summary>Whether principals outside your organization can be associated with a resource share.</summary>
     [JsonPropertyName("allowExternalPrincipals")]
     public bool? AllowExternalPrincipals { get; set; }
 
-    /// <summary>The name of the resource share.</summary>
+    /// <summary>Name of the resource share.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
+    /// <summary>ARNs of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
     [JsonPropertyName("permissionArns")]
     public IList<string>? PermissionArns { get; set; }
 
@@ -88,7 +88,7 @@ public partial class V1beta1ResourceShareSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    /// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
     [JsonPropertyName("resourceShareConfiguration")]
     public V1beta1ResourceShareSpecForProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
 
@@ -97,12 +97,12 @@ public partial class V1beta1ResourceShareSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+/// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareSpecInitProviderResourceShareConfiguration
 {
-    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    /// <summary>Whether consumer account retains access to resource share after leaving AWS organization.</summary>
     [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
     public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
 }
@@ -123,19 +123,19 @@ public partial class V1beta1ResourceShareSpecInitProviderResourceShareConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareSpecInitProvider
 {
-    /// <summary>Indicates whether principals outside your organization can be associated with a resource share.</summary>
+    /// <summary>Whether principals outside your organization can be associated with a resource share.</summary>
     [JsonPropertyName("allowExternalPrincipals")]
     public bool? AllowExternalPrincipals { get; set; }
 
-    /// <summary>The name of the resource share.</summary>
+    /// <summary>Name of the resource share.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
+    /// <summary>ARNs of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
     [JsonPropertyName("permissionArns")]
     public IList<string>? PermissionArns { get; set; }
 
-    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    /// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
     [JsonPropertyName("resourceShareConfiguration")]
     public V1beta1ResourceShareSpecInitProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
 
@@ -327,12 +327,12 @@ public partial class V1beta1ResourceShareSpec
     public V1beta1ResourceShareSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+/// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareStatusAtProviderResourceShareConfiguration
 {
-    /// <summary>Specifies whether consumer account retains access to resource share after leaving AWS organization.</summary>
+    /// <summary>Whether consumer account retains access to resource share after leaving AWS organization.</summary>
     [JsonPropertyName("retainSharingOnAccountLeaveOrganization")]
     public bool? RetainSharingOnAccountLeaveOrganization { get; set; }
 }
@@ -341,23 +341,23 @@ public partial class V1beta1ResourceShareStatusAtProviderResourceShareConfigurat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourceShareStatusAtProvider
 {
-    /// <summary>Indicates whether principals outside your organization can be associated with a resource share.</summary>
+    /// <summary>Whether principals outside your organization can be associated with a resource share.</summary>
     [JsonPropertyName("allowExternalPrincipals")]
     public bool? AllowExternalPrincipals { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the resource share.</summary>
+    /// <summary>Name of the resource share.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>Specifies the Amazon Resource Names (ARNs) of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
+    /// <summary>ARNs of the RAM permission to associate with the resource share. If you do not specify an ARN for the permission, RAM automatically attaches the default version of the permission for each resource type. You can associate only one permission with each resource type included in the resource share.</summary>
     [JsonPropertyName("permissionArns")]
     public IList<string>? PermissionArns { get; set; }
 
@@ -368,7 +368,7 @@ public partial class V1beta1ResourceShareStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A block that specifies the configuration of the resource share. See resource_share_configuration Block for details.</summary>
+    /// <summary>Configuration block for the resource share. See resource_share_configuration Block for details.</summary>
     [JsonPropertyName("resourceShareConfiguration")]
     public V1beta1ResourceShareStatusAtProviderResourceShareConfiguration? ResourceShareConfiguration { get; set; }
 
@@ -376,7 +376,7 @@ public partial class V1beta1ResourceShareStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

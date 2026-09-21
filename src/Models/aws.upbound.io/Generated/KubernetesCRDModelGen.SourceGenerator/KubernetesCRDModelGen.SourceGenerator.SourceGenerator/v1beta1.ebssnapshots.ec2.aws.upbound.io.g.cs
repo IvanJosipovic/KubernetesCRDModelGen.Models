@@ -210,7 +210,7 @@ public partial class V1beta1EBSSnapshotSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create a local snapshot.</summary>
+    /// <summary>ARN of the Outpost on which to create a local snapshot.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -417,7 +417,7 @@ public partial class V1beta1EBSSnapshotSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create a local snapshot.</summary>
+    /// <summary>ARN of the Outpost on which to create a local snapshot.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1EBSSnapshotSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the EBS Snapshot.</summary>
+    /// <summary>ARN of the EBS Snapshot.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -661,7 +661,7 @@ public partial class V1beta1EBSSnapshotStatusAtProvider
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the Outpost on which to create a local snapshot.</summary>
+    /// <summary>ARN of the Outpost on which to create a local snapshot.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 

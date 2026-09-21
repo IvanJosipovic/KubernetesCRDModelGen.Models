@@ -64,7 +64,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationExecuteCommandCon
     [JsonPropertyName("cloudWatchEncryptionEnabled")]
     public bool? CloudWatchEncryptionEnabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group to send logs to.</summary>
+    /// <summary>Name of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("cloudWatchLogGroupName")]
     public string? CloudWatchLogGroupName { get; set; }
 
@@ -86,7 +86,7 @@ public partial class V1beta2ClusterSpecForProviderConfigurationExecuteCommandCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderConfigurationExecuteCommandConfiguration
 {
-    /// <summary>AWS Key Management Service key ID to encrypt the data between the local client and the container.</summary>
+    /// <summary>KMS key ID to encrypt the data between the local client and the container.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -104,11 +104,11 @@ public partial class V1beta2ClusterSpecForProviderConfigurationExecuteCommandCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecForProviderConfigurationManagedStorageConfiguration
 {
-    /// <summary>AWS Key Management Service key ARN for the Fargate ephemeral storage.</summary>
+    /// <summary>KMS key ARN for the Fargate ephemeral storage.</summary>
     [JsonPropertyName("fargateEphemeralStorageKmsKeyId")]
     public string? FargateEphemeralStorageKmsKeyId { get; set; }
 
-    /// <summary>AWS Key Management Service key ARN to encrypt the managed storage.</summary>
+    /// <summary>KMS key ARN to encrypt the managed storage.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
@@ -187,7 +187,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationExecuteCommandCo
     [JsonPropertyName("cloudWatchEncryptionEnabled")]
     public bool? CloudWatchEncryptionEnabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group to send logs to.</summary>
+    /// <summary>Name of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("cloudWatchLogGroupName")]
     public string? CloudWatchLogGroupName { get; set; }
 
@@ -209,7 +209,7 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationExecuteCommandCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderConfigurationExecuteCommandConfiguration
 {
-    /// <summary>AWS Key Management Service key ID to encrypt the data between the local client and the container.</summary>
+    /// <summary>KMS key ID to encrypt the data between the local client and the container.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -227,11 +227,11 @@ public partial class V1beta2ClusterSpecInitProviderConfigurationExecuteCommandCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterSpecInitProviderConfigurationManagedStorageConfiguration
 {
-    /// <summary>AWS Key Management Service key ARN for the Fargate ephemeral storage.</summary>
+    /// <summary>KMS key ARN for the Fargate ephemeral storage.</summary>
     [JsonPropertyName("fargateEphemeralStorageKmsKeyId")]
     public string? FargateEphemeralStorageKmsKeyId { get; set; }
 
-    /// <summary>AWS Key Management Service key ARN to encrypt the managed storage.</summary>
+    /// <summary>KMS key ARN to encrypt the managed storage.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
@@ -498,7 +498,7 @@ public partial class V1beta2ClusterStatusAtProviderConfigurationExecuteCommandCo
     [JsonPropertyName("cloudWatchEncryptionEnabled")]
     public bool? CloudWatchEncryptionEnabled { get; set; }
 
-    /// <summary>The name of the CloudWatch log group to send logs to.</summary>
+    /// <summary>Name of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("cloudWatchLogGroupName")]
     public string? CloudWatchLogGroupName { get; set; }
 
@@ -520,7 +520,7 @@ public partial class V1beta2ClusterStatusAtProviderConfigurationExecuteCommandCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProviderConfigurationExecuteCommandConfiguration
 {
-    /// <summary>AWS Key Management Service key ID to encrypt the data between the local client and the container.</summary>
+    /// <summary>KMS key ID to encrypt the data between the local client and the container.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -538,11 +538,11 @@ public partial class V1beta2ClusterStatusAtProviderConfigurationExecuteCommandCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClusterStatusAtProviderConfigurationManagedStorageConfiguration
 {
-    /// <summary>AWS Key Management Service key ARN for the Fargate ephemeral storage.</summary>
+    /// <summary>KMS key ARN for the Fargate ephemeral storage.</summary>
     [JsonPropertyName("fargateEphemeralStorageKmsKeyId")]
     public string? FargateEphemeralStorageKmsKeyId { get; set; }
 
-    /// <summary>AWS Key Management Service key ARN to encrypt the managed storage.</summary>
+    /// <summary>KMS key ARN to encrypt the managed storage.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }

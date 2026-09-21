@@ -1057,7 +1057,7 @@ public partial class V1beta1CollectionStatusAtProviderVectorOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CollectionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the collection.</summary>
+    /// <summary>ARN of the collection.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

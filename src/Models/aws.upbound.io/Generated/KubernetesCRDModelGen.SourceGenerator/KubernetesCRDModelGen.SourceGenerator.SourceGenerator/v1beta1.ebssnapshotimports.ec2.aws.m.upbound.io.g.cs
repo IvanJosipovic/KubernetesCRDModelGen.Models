@@ -756,7 +756,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProviderDiskContainer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSSnapshotImportStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the EBS Snapshot.</summary>
+    /// <summary>ARN of the EBS Snapshot.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -788,7 +788,7 @@ public partial class V1beta1EBSSnapshotImportStatusAtProvider
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the EBS Snapshot.</summary>
+    /// <summary>ARN of the EBS Snapshot.</summary>
     [JsonPropertyName("outpostArn")]
     public string? OutpostArn { get; set; }
 

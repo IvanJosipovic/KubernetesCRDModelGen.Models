@@ -1352,7 +1352,7 @@ public partial class V1beta1ClusterInstanceStatusAtProvider
     [JsonPropertyName("applyImmediately")]
     public bool? ApplyImmediately { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of neptune instance</summary>
+    /// <summary>ARN of neptune instance</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

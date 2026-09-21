@@ -537,14 +537,11 @@ public partial class V1beta1ServiceNetworkVPCAssociationSpecForProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1ServiceNetworkVPCAssociationSpecForProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>The IDs of the security groups.</summary>
+    /// <summary>IDs of the security groups.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>
-    /// The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.
-    /// The following arguments are optional:
-    /// </summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
@@ -560,7 +557,7 @@ public partial class V1beta1ServiceNetworkVPCAssociationSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 
@@ -1060,14 +1057,11 @@ public partial class V1beta1ServiceNetworkVPCAssociationSpecInitProvider
     [JsonPropertyName("securityGroupIdSelector")]
     public V1beta1ServiceNetworkVPCAssociationSpecInitProviderSecurityGroupIdSelector? SecurityGroupIdSelector { get; set; }
 
-    /// <summary>The IDs of the security groups.</summary>
+    /// <summary>IDs of the security groups.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>
-    /// The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.
-    /// The following arguments are optional:
-    /// </summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
@@ -1083,7 +1077,7 @@ public partial class V1beta1ServiceNetworkVPCAssociationSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 
@@ -1297,11 +1291,11 @@ public partial class V1beta1ServiceNetworkVPCAssociationStatusAtProviderDnsOptio
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ServiceNetworkVPCAssociationStatusAtProvider
 {
-    /// <summary>The ARN of the Association.</summary>
+    /// <summary>ARN of the Association.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The account that created the association.</summary>
+    /// <summary>Account that created the association.</summary>
     [JsonPropertyName("createdBy")]
     public string? CreatedBy { get; set; }
 
@@ -1309,7 +1303,7 @@ public partial class V1beta1ServiceNetworkVPCAssociationStatusAtProvider
     [JsonPropertyName("dnsOptions")]
     public V1beta1ServiceNetworkVPCAssociationStatusAtProviderDnsOptions? DnsOptions { get; set; }
 
-    /// <summary>The ID of the association.</summary>
+    /// <summary>ID of the association.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -1324,18 +1318,15 @@ public partial class V1beta1ServiceNetworkVPCAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The IDs of the security groups.</summary>
+    /// <summary>IDs of the security groups.</summary>
     [JsonPropertyName("securityGroupIds")]
     public IList<string>? SecurityGroupIds { get; set; }
 
-    /// <summary>
-    /// The ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.
-    /// The following arguments are optional:
-    /// </summary>
+    /// <summary>ID or Amazon Resource Identifier (ARN) of the service network. You must use the ARN if the resources specified in the operation are in different accounts.</summary>
     [JsonPropertyName("serviceNetworkIdentifier")]
     public string? ServiceNetworkIdentifier { get; set; }
 
-    /// <summary>The operations status. Valid Values are CREATE_IN_PROGRESS | ACTIVE | DELETE_IN_PROGRESS | CREATE_FAILED | DELETE_FAILED</summary>
+    /// <summary>Operations status. Valid Values are CREATE_IN_PROGRESS | ACTIVE | DELETE_IN_PROGRESS | CREATE_FAILED | DELETE_FAILED</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -1347,7 +1338,7 @@ public partial class V1beta1ServiceNetworkVPCAssociationStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 }

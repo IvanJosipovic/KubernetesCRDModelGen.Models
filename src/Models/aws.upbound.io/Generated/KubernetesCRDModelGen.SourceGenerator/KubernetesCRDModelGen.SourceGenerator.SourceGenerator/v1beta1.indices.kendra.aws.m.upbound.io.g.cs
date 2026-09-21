@@ -329,7 +329,7 @@ public partial class V1beta1IndexSpecForProviderUserTokenConfigurationsJwtTokenT
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
@@ -713,7 +713,7 @@ public partial class V1beta1IndexSpecInitProviderUserTokenConfigurationsJwtToken
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
@@ -1089,7 +1089,7 @@ public partial class V1beta1IndexStatusAtProviderUserTokenConfigurationsJwtToken
     [JsonPropertyName("keyLocation")]
     public string? KeyLocation { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the secret.</summary>
+    /// <summary>ARN of the secret.</summary>
     [JsonPropertyName("secretsManagerArn")]
     public string? SecretsManagerArn { get; set; }
 
@@ -1120,7 +1120,7 @@ public partial class V1beta1IndexStatusAtProviderUserTokenConfigurations
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IndexStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Index.</summary>
+    /// <summary>ARN of the Index.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

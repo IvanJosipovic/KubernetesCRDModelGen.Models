@@ -206,7 +206,7 @@ public partial class V1beta1EBSDefaultKMSKeySpecForProviderKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSDefaultKMSKeySpecForProvider
 {
-    /// <summary>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.</summary>
+    /// <summary>ARN of the KMS customer master key (CMK) to use to encrypt the EBS volume.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
@@ -389,7 +389,7 @@ public partial class V1beta1EBSDefaultKMSKeySpecInitProviderKeyArnSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EBSDefaultKMSKeySpecInitProvider
 {
-    /// <summary>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.</summary>
+    /// <summary>ARN of the KMS customer master key (CMK) to use to encrypt the EBS volume.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 
@@ -592,7 +592,7 @@ public partial class V1beta1EBSDefaultKMSKeyStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.</summary>
+    /// <summary>ARN of the KMS customer master key (CMK) to use to encrypt the EBS volume.</summary>
     [JsonPropertyName("keyArn")]
     public string? KeyArn { get; set; }
 

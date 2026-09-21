@@ -388,7 +388,7 @@ public partial class V1beta1WorkgroupSpecForProvider
     [JsonPropertyName("configParameter")]
     public IList<V1beta1WorkgroupSpecForProviderConfigParameter>? ConfigParameter { get; set; }
 
-    /// <summary>The value that specifies whether to turn on enhanced virtual private cloud (VPC) routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
+    /// <summary>Value that specifies whether to turn on enhanced VPC routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
     [JsonPropertyName("enhancedVpcRouting")]
     public bool? EnhancedVpcRouting { get; set; }
 
@@ -797,7 +797,7 @@ public partial class V1beta1WorkgroupSpecInitProvider
     [JsonPropertyName("configParameter")]
     public IList<V1beta1WorkgroupSpecInitProviderConfigParameter>? ConfigParameter { get; set; }
 
-    /// <summary>The value that specifies whether to turn on enhanced virtual private cloud (VPC) routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
+    /// <summary>Value that specifies whether to turn on enhanced VPC routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
     [JsonPropertyName("enhancedVpcRouting")]
     public bool? EnhancedVpcRouting { get; set; }
 
@@ -1123,7 +1123,7 @@ public partial class V1beta1WorkgroupStatusAtProviderPricePerformanceTarget
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkgroupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the Redshift Serverless Workgroup.</summary>
+    /// <summary>ARN of the Redshift Serverless Workgroup.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1139,7 +1139,7 @@ public partial class V1beta1WorkgroupStatusAtProvider
     [JsonPropertyName("endpoint")]
     public IList<V1beta1WorkgroupStatusAtProviderEndpoint>? Endpoint { get; set; }
 
-    /// <summary>The value that specifies whether to turn on enhanced virtual private cloud (VPC) routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
+    /// <summary>Value that specifies whether to turn on enhanced VPC routing, which forces Amazon Redshift Serverless to route traffic through your VPC instead of over the internet.</summary>
     [JsonPropertyName("enhancedVpcRouting")]
     public bool? EnhancedVpcRouting { get; set; }
 

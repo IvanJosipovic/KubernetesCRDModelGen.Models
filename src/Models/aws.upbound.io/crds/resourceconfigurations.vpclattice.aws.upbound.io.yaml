@@ -78,7 +78,7 @@ spec:
                     description: Custom domain name for your resource configuration. Additionally, provide a domain_verification_id to prove your ownership of a domain.
                     type: string
                   domainVerificationId:
-                    description: The domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
+                    description: Domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
                     type: string
                   name:
                     description: Name for the Resource Configuration.
@@ -106,7 +106,7 @@ spec:
                           items:
                             properties:
                               arn:
-                                description: The ARN of the Resource for this configuration.
+                                description: ARN of the Resource for this configuration.
                                 type: string
                               arnRef:
                                 description: Reference to a ClusterInstance in rds to populate arn.
@@ -188,10 +188,10 @@ spec:
                           items:
                             properties:
                               domainName:
-                                description: The hostname of the Resource for this configuration.
+                                description: Hostname of the Resource for this configuration.
                                 type: string
                               ipAddressType:
-                                description: The IP Address type either IPV4 or IPV6
+                                description: IP Address type either IPV4 or IPV6
                                 type: string
                             type: object
                           type: array
@@ -200,7 +200,7 @@ spec:
                           items:
                             properties:
                               ipAddress:
-                                description: The IP Address of the Resource for this configuration.
+                                description: IP Address of the Resource for this configuration.
                                 type: string
                             type: object
                           type: array
@@ -317,7 +317,7 @@ spec:
                     description: Custom domain name for your resource configuration. Additionally, provide a domain_verification_id to prove your ownership of a domain.
                     type: string
                   domainVerificationId:
-                    description: The domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
+                    description: Domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
                     type: string
                   name:
                     description: Name for the Resource Configuration.
@@ -340,7 +340,7 @@ spec:
                           items:
                             properties:
                               arn:
-                                description: The ARN of the Resource for this configuration.
+                                description: ARN of the Resource for this configuration.
                                 type: string
                               arnRef:
                                 description: Reference to a ClusterInstance in rds to populate arn.
@@ -422,10 +422,10 @@ spec:
                           items:
                             properties:
                               domainName:
-                                description: The hostname of the Resource for this configuration.
+                                description: Hostname of the Resource for this configuration.
                                 type: string
                               ipAddressType:
-                                description: The IP Address type either IPV4 or IPV6
+                                description: IP Address type either IPV4 or IPV6
                                 type: string
                             type: object
                           type: array
@@ -434,7 +434,7 @@ spec:
                           items:
                             properties:
                               ipAddress:
-                                description: The IP Address of the Resource for this configuration.
+                                description: IP Address of the Resource for this configuration.
                                 type: string
                             type: object
                           type: array
@@ -627,7 +627,7 @@ spec:
                     description: Allow or Deny the association of this resource to a shareable service network.
                     type: boolean
                   arn:
-                    description: The ARN of the Resource for this configuration.
+                    description: ARN of the Resource for this configuration.
                     type: string
                   customDomainName:
                     description: Custom domain name for your resource configuration. Additionally, provide a domain_verification_id to prove your ownership of a domain.
@@ -636,7 +636,7 @@ spec:
                     description: ARN of the domain verification.
                     type: string
                   domainVerificationId:
-                    description: The domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
+                    description: Domain verification ID of your verified custom domain name. If you don't provide an ID, you must configure the DNS settings yourself.
                     type: string
                   domainVerificationStatus:
                     description: Domain verification status.
@@ -670,7 +670,7 @@ spec:
                           items:
                             properties:
                               arn:
-                                description: The ARN of the Resource for this configuration.
+                                description: ARN of the Resource for this configuration.
                                 type: string
                             type: object
                           type: array
@@ -679,10 +679,10 @@ spec:
                           items:
                             properties:
                               domainName:
-                                description: The hostname of the Resource for this configuration.
+                                description: Hostname of the Resource for this configuration.
                                 type: string
                               ipAddressType:
-                                description: The IP Address type either IPV4 or IPV6
+                                description: IP Address type either IPV4 or IPV6
                                 type: string
                             type: object
                           type: array
@@ -691,7 +691,7 @@ spec:
                           items:
                             properties:
                               ipAddress:
-                                description: The IP Address of the Resource for this configuration.
+                                description: IP Address of the Resource for this configuration.
                                 type: string
                             type: object
                           type: array

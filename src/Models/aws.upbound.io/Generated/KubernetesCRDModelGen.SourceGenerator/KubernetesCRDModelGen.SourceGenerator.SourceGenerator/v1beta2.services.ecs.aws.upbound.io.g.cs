@@ -668,11 +668,11 @@ public partial class V1beta2ServiceSpecForProviderLoadBalancer
     [JsonPropertyName("containerPort")]
     public double? ContainerPort { get; set; }
 
-    /// <summary>Name of the ELB (Classic) to associate with the service.</summary>
+    /// <summary>Name of the ELB (Classic) to associate with the service. Required for ELB Classic.</summary>
     [JsonPropertyName("elbName")]
     public string? ElbName { get; set; }
 
-    /// <summary>ARN of the Load Balancer target group to associate with the service.</summary>
+    /// <summary>ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 
@@ -1044,11 +1044,11 @@ public partial class V1beta2ServiceSpecForProviderPlacementConstraints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationAccessLogConfiguration
 {
-    /// <summary>The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
+    /// <summary>Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
+    /// <summary>Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
     [JsonPropertyName("includeQueryParameters")]
     public string? IncludeQueryParameters { get; set; }
 }
@@ -1057,7 +1057,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationAcc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationLogConfigurationSecretOption
 {
-    /// <summary>Name of the secret.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1099,7 +1099,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader
 {
-    /// <summary>Name of the HTTP header to match.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -1126,7 +1126,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.</summary>
+    /// <summary>Port value used if your Service Discovery service specified an SRV record.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -1159,7 +1159,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
     public string? AwsPcaAuthorityArn { get; set; }
 }
 
-/// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+/// <summary>Configuration for enabling TLS</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationServiceTls
@@ -1172,7 +1172,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
-    /// <summary>ARN of the IAM Role that&apos;s associated with the Service Connect TLS.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -1193,7 +1193,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
     [JsonPropertyName("ingressPortOverride")]
     public double? IngressPortOverride { get; set; }
 
-    /// <summary>Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
@@ -1201,7 +1201,7 @@ public partial class V1beta2ServiceSpecForProviderServiceConnectConfigurationSer
     [JsonPropertyName("timeout")]
     public V1beta2ServiceSpecForProviderServiceConnectConfigurationServiceTimeout? Timeout { get; set; }
 
-    /// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+    /// <summary>Configuration for enabling TLS</summary>
     [JsonPropertyName("tls")]
     public V1beta2ServiceSpecForProviderServiceConnectConfigurationServiceTls? Tls { get; set; }
 }
@@ -1409,7 +1409,7 @@ public partial class V1beta2ServiceSpecForProviderVolumeConfigurationManagedEbsV
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>The type of volume resource. Valid values, volume.</summary>
+    /// <summary>Type of volume resource. Valid values, volume.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
@@ -1435,11 +1435,11 @@ public partial class V1beta2ServiceSpecForProviderVolumeConfigurationManagedEbsV
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.</summary>
+    /// <summary>ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1451,7 +1451,7 @@ public partial class V1beta2ServiceSpecForProviderVolumeConfigurationManagedEbsV
     [JsonPropertyName("snapshotId")]
     public string? SnapshotId { get; set; }
 
-    /// <summary>The tags to apply to the volume. See below.</summary>
+    /// <summary>Tags to apply to the volume. See below.</summary>
     [JsonPropertyName("tagSpecifications")]
     public IList<V1beta2ServiceSpecForProviderVolumeConfigurationManagedEbsVolumeTagSpecifications>? TagSpecifications { get; set; }
 
@@ -1486,15 +1486,15 @@ public partial class V1beta2ServiceSpecForProviderVolumeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecForProviderVpcLatticeConfigurations
 {
-    /// <summary>The name of the port for a target group associated with the VPC Lattice configuration.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
+    /// <summary>Full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 }
@@ -1658,7 +1658,7 @@ public partial class V1beta2ServiceSpecForProvider
     [JsonPropertyName("volumeConfiguration")]
     public V1beta2ServiceSpecForProviderVolumeConfiguration? VolumeConfiguration { get; set; }
 
-    /// <summary>The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
+    /// <summary>VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
     [JsonPropertyName("vpcLatticeConfigurations")]
     public IList<V1beta2ServiceSpecForProviderVpcLatticeConfigurations>? VpcLatticeConfigurations { get; set; }
 
@@ -2133,11 +2133,11 @@ public partial class V1beta2ServiceSpecInitProviderLoadBalancer
     [JsonPropertyName("containerPort")]
     public double? ContainerPort { get; set; }
 
-    /// <summary>Name of the ELB (Classic) to associate with the service.</summary>
+    /// <summary>Name of the ELB (Classic) to associate with the service. Required for ELB Classic.</summary>
     [JsonPropertyName("elbName")]
     public string? ElbName { get; set; }
 
-    /// <summary>ARN of the Load Balancer target group to associate with the service.</summary>
+    /// <summary>ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 
@@ -2509,11 +2509,11 @@ public partial class V1beta2ServiceSpecInitProviderPlacementConstraints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationAccessLogConfiguration
 {
-    /// <summary>The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
+    /// <summary>Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
+    /// <summary>Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
     [JsonPropertyName("includeQueryParameters")]
     public string? IncludeQueryParameters { get; set; }
 }
@@ -2522,7 +2522,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationLogConfigurationSecretOption
 {
-    /// <summary>Name of the secret.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2564,7 +2564,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader
 {
-    /// <summary>Name of the HTTP header to match.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -2591,7 +2591,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.</summary>
+    /// <summary>Port value used if your Service Discovery service specified an SRV record.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -2624,7 +2624,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
     public string? AwsPcaAuthorityArn { get; set; }
 }
 
-/// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+/// <summary>Configuration for enabling TLS</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationServiceTls
@@ -2637,7 +2637,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
-    /// <summary>ARN of the IAM Role that&apos;s associated with the Service Connect TLS.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2658,7 +2658,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
     [JsonPropertyName("ingressPortOverride")]
     public double? IngressPortOverride { get; set; }
 
-    /// <summary>Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
@@ -2666,7 +2666,7 @@ public partial class V1beta2ServiceSpecInitProviderServiceConnectConfigurationSe
     [JsonPropertyName("timeout")]
     public V1beta2ServiceSpecInitProviderServiceConnectConfigurationServiceTimeout? Timeout { get; set; }
 
-    /// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+    /// <summary>Configuration for enabling TLS</summary>
     [JsonPropertyName("tls")]
     public V1beta2ServiceSpecInitProviderServiceConnectConfigurationServiceTls? Tls { get; set; }
 }
@@ -2874,7 +2874,7 @@ public partial class V1beta2ServiceSpecInitProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>The type of volume resource. Valid values, volume.</summary>
+    /// <summary>Type of volume resource. Valid values, volume.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
@@ -2900,11 +2900,11 @@ public partial class V1beta2ServiceSpecInitProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.</summary>
+    /// <summary>ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2916,7 +2916,7 @@ public partial class V1beta2ServiceSpecInitProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("snapshotId")]
     public string? SnapshotId { get; set; }
 
-    /// <summary>The tags to apply to the volume. See below.</summary>
+    /// <summary>Tags to apply to the volume. See below.</summary>
     [JsonPropertyName("tagSpecifications")]
     public IList<V1beta2ServiceSpecInitProviderVolumeConfigurationManagedEbsVolumeTagSpecifications>? TagSpecifications { get; set; }
 
@@ -2951,15 +2951,15 @@ public partial class V1beta2ServiceSpecInitProviderVolumeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceSpecInitProviderVpcLatticeConfigurations
 {
-    /// <summary>The name of the port for a target group associated with the VPC Lattice configuration.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
+    /// <summary>Full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 }
@@ -3116,7 +3116,7 @@ public partial class V1beta2ServiceSpecInitProvider
     [JsonPropertyName("volumeConfiguration")]
     public V1beta2ServiceSpecInitProviderVolumeConfiguration? VolumeConfiguration { get; set; }
 
-    /// <summary>The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
+    /// <summary>VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
     [JsonPropertyName("vpcLatticeConfigurations")]
     public IList<V1beta2ServiceSpecInitProviderVpcLatticeConfigurations>? VpcLatticeConfigurations { get; set; }
 
@@ -3480,11 +3480,11 @@ public partial class V1beta2ServiceStatusAtProviderLoadBalancer
     [JsonPropertyName("containerPort")]
     public double? ContainerPort { get; set; }
 
-    /// <summary>Name of the ELB (Classic) to associate with the service.</summary>
+    /// <summary>Name of the ELB (Classic) to associate with the service. Required for ELB Classic.</summary>
     [JsonPropertyName("elbName")]
     public string? ElbName { get; set; }
 
-    /// <summary>ARN of the Load Balancer target group to associate with the service.</summary>
+    /// <summary>ARN of the Load Balancer target group to associate with the service. Required for ALB/NLB.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 }
@@ -3538,11 +3538,11 @@ public partial class V1beta2ServiceStatusAtProviderPlacementConstraints
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationAccessLogConfiguration
 {
-    /// <summary>The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
+    /// <summary>Format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 
-    /// <summary>Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
+    /// <summary>Whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.</summary>
     [JsonPropertyName("includeQueryParameters")]
     public string? IncludeQueryParameters { get; set; }
 }
@@ -3551,7 +3551,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationAc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationLogConfigurationSecretOption
 {
-    /// <summary>Name of the secret.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -3593,7 +3593,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader
 {
-    /// <summary>Name of the HTTP header to match.</summary>
+    /// <summary>Name of the volume.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -3620,7 +3620,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
     [JsonPropertyName("dnsName")]
     public string? DnsName { get; set; }
 
-    /// <summary>Listening port number for the Service Connect proxy. This port is available inside of all of the tasks within the same namespace.</summary>
+    /// <summary>Port value used if your Service Discovery service specified an SRV record.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
@@ -3653,7 +3653,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
     public string? AwsPcaAuthorityArn { get; set; }
 }
 
-/// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+/// <summary>Configuration for enabling TLS</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationServiceTls
@@ -3666,7 +3666,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
     [JsonPropertyName("kmsKey")]
     public string? KmsKey { get; set; }
 
-    /// <summary>ARN of the IAM Role that&apos;s associated with the Service Connect TLS.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -3687,7 +3687,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
     [JsonPropertyName("ingressPortOverride")]
     public double? IngressPortOverride { get; set; }
 
-    /// <summary>Name of one of the portMappings from all the containers in the task definition of this Amazon ECS service.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
@@ -3695,7 +3695,7 @@ public partial class V1beta2ServiceStatusAtProviderServiceConnectConfigurationSe
     [JsonPropertyName("timeout")]
     public V1beta2ServiceStatusAtProviderServiceConnectConfigurationServiceTimeout? Timeout { get; set; }
 
-    /// <summary>Configuration for enabling Transport Layer Security (TLS)</summary>
+    /// <summary>Configuration for enabling TLS</summary>
     [JsonPropertyName("tls")]
     public V1beta2ServiceStatusAtProviderServiceConnectConfigurationServiceTls? Tls { get; set; }
 }
@@ -3756,7 +3756,7 @@ public partial class V1beta2ServiceStatusAtProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 
-    /// <summary>The type of volume resource. Valid values, volume.</summary>
+    /// <summary>Type of volume resource. Valid values, volume.</summary>
     [JsonPropertyName("resourceType")]
     public string? ResourceType { get; set; }
 
@@ -3782,11 +3782,11 @@ public partial class V1beta2ServiceStatusAtProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("iops")]
     public double? Iops { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) identifier of the Amazon Web Services Key Management Service key to use for Amazon EBS encryption.</summary>
+    /// <summary>ARN identifier of the Amazon Web Services KMS key to use for Amazon EBS encryption.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -3798,7 +3798,7 @@ public partial class V1beta2ServiceStatusAtProviderVolumeConfigurationManagedEbs
     [JsonPropertyName("snapshotId")]
     public string? SnapshotId { get; set; }
 
-    /// <summary>The tags to apply to the volume. See below.</summary>
+    /// <summary>Tags to apply to the volume. See below.</summary>
     [JsonPropertyName("tagSpecifications")]
     public IList<V1beta2ServiceStatusAtProviderVolumeConfigurationManagedEbsVolumeTagSpecifications>? TagSpecifications { get; set; }
 
@@ -3833,15 +3833,15 @@ public partial class V1beta2ServiceStatusAtProviderVolumeConfiguration
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceStatusAtProviderVpcLatticeConfigurations
 {
-    /// <summary>The name of the port for a target group associated with the VPC Lattice configuration.</summary>
+    /// <summary>Name of the port for a target group associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("portName")]
     public string? PortName { get; set; }
 
-    /// <summary>The ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
+    /// <summary>ARN of the IAM role to associate with this volume. This is the Amazon ECS infrastructure IAM role that is used to manage your AWS infrastructure.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
-    /// <summary>The full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
+    /// <summary>Full ARN of the target group or groups associated with the VPC Lattice configuration.</summary>
     [JsonPropertyName("targetGroupArn")]
     public string? TargetGroupArn { get; set; }
 }
@@ -3976,7 +3976,7 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
@@ -3992,7 +3992,7 @@ public partial class V1beta2ServiceStatusAtProvider
     [JsonPropertyName("volumeConfiguration")]
     public V1beta2ServiceStatusAtProviderVolumeConfiguration? VolumeConfiguration { get; set; }
 
-    /// <summary>The VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
+    /// <summary>VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor your service across multiple accounts and VPCs. See below.</summary>
     [JsonPropertyName("vpcLatticeConfigurations")]
     public IList<V1beta2ServiceStatusAtProviderVpcLatticeConfigurations>? VpcLatticeConfigurations { get; set; }
 

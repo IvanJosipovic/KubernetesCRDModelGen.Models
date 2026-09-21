@@ -218,7 +218,7 @@ public partial class V1beta1DirectorySpecForProviderActiveDirectoryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecForProviderCertificateBasedAuthProperties
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
+    /// <summary>ARN of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
@@ -736,11 +736,205 @@ public partial class V1beta1DirectorySpecForProviderSubnetIdSelector
     public V1beta1DirectorySpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum>))]
+public enum V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum>))]
+public enum V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum>))]
+public enum V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints
+{
+    /// <summary>Type of access endpoint. Valid value is STREAMING_WSP.</summary>
+    [JsonPropertyName("accessEndpointType")]
+    public string? AccessEndpointType { get; set; }
+
+    /// <summary>Identifier of the VPC endpoint that the access endpoint uses.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+
+    /// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+    [JsonPropertyName("vpcEndpointIdRef")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRef? VpcEndpointIdRef { get; set; }
+
+    /// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+    [JsonPropertyName("vpcEndpointIdSelector")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelector? VpcEndpointIdSelector { get; set; }
+}
+
+/// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfig
+{
+    /// <summary>Set of access endpoints used to control the network paths that users use to access their WorkSpaces. Defined below.</summary>
+    [JsonPropertyName("accessEndpoints")]
+    public IList<V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints>? AccessEndpoints { get; set; }
+
+    /// <summary>List of protocols that fall back to the public internet when streaming over a VPC endpoint is unavailable. Valid value is PCOIP.</summary>
+    [JsonPropertyName("internetFallbackProtocols")]
+    public IList<string>? InternetFallbackProtocols { get; set; }
+}
+
 /// <summary>Specifies which devices and operating systems users can use to access their WorkSpaces. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecForProviderWorkspaceAccessProperties
 {
+    /// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+    [JsonPropertyName("accessEndpointConfig")]
+    public V1beta1DirectorySpecForProviderWorkspaceAccessPropertiesAccessEndpointConfig? AccessEndpointConfig { get; set; }
+
     /// <summary>Indicates whether users can use Android devices to access their WorkSpaces.</summary>
     [JsonPropertyName("deviceTypeAndroid")]
     public string? DeviceTypeAndroid { get; set; }
@@ -1241,7 +1435,7 @@ public partial class V1beta1DirectorySpecInitProviderActiveDirectoryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecInitProviderCertificateBasedAuthProperties
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
+    /// <summary>ARN of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
@@ -1759,11 +1953,205 @@ public partial class V1beta1DirectorySpecInitProviderSubnetIdSelector
     public V1beta1DirectorySpecInitProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum>))]
+public enum V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum>))]
+public enum V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the referenced object</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum>))]
+public enum V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum>))]
+public enum V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Namespace for the selector</summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelectorPolicy? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints
+{
+    /// <summary>Type of access endpoint. Valid value is STREAMING_WSP.</summary>
+    [JsonPropertyName("accessEndpointType")]
+    public string? AccessEndpointType { get; set; }
+
+    /// <summary>Identifier of the VPC endpoint that the access endpoint uses.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+
+    /// <summary>Reference to a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+    [JsonPropertyName("vpcEndpointIdRef")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdRef? VpcEndpointIdRef { get; set; }
+
+    /// <summary>Selector for a VPCEndpoint in ec2 to populate vpcEndpointId.</summary>
+    [JsonPropertyName("vpcEndpointIdSelector")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpointsVpcEndpointIdSelector? VpcEndpointIdSelector { get; set; }
+}
+
+/// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfig
+{
+    /// <summary>Set of access endpoints used to control the network paths that users use to access their WorkSpaces. Defined below.</summary>
+    [JsonPropertyName("accessEndpoints")]
+    public IList<V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints>? AccessEndpoints { get; set; }
+
+    /// <summary>List of protocols that fall back to the public internet when streaming over a VPC endpoint is unavailable. Valid value is PCOIP.</summary>
+    [JsonPropertyName("internetFallbackProtocols")]
+    public IList<string>? InternetFallbackProtocols { get; set; }
+}
+
 /// <summary>Specifies which devices and operating systems users can use to access their WorkSpaces. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectorySpecInitProviderWorkspaceAccessProperties
 {
+    /// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+    [JsonPropertyName("accessEndpointConfig")]
+    public V1beta1DirectorySpecInitProviderWorkspaceAccessPropertiesAccessEndpointConfig? AccessEndpointConfig { get; set; }
+
     /// <summary>Indicates whether users can use Android devices to access their WorkSpaces.</summary>
     [JsonPropertyName("deviceTypeAndroid")]
     public string? DeviceTypeAndroid { get; set; }
@@ -2213,7 +2601,7 @@ public partial class V1beta1DirectoryStatusAtProviderActiveDirectoryConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectoryStatusAtProviderCertificateBasedAuthProperties
 {
-    /// <summary>The Amazon Resource Name (ARN) of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
+    /// <summary>ARN of the certificate manager private certificate authority (ACM-PCA) that is used for certificate-based authentication.</summary>
     [JsonPropertyName("certificateAuthorityArn")]
     public string? CertificateAuthorityArn { get; set; }
 
@@ -2266,11 +2654,42 @@ public partial class V1beta1DirectoryStatusAtProviderSelfServicePermissions
     public bool? SwitchRunningMode { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectoryStatusAtProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints
+{
+    /// <summary>Type of access endpoint. Valid value is STREAMING_WSP.</summary>
+    [JsonPropertyName("accessEndpointType")]
+    public string? AccessEndpointType { get; set; }
+
+    /// <summary>Identifier of the VPC endpoint that the access endpoint uses.</summary>
+    [JsonPropertyName("vpcEndpointId")]
+    public string? VpcEndpointId { get; set; }
+}
+
+/// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1DirectoryStatusAtProviderWorkspaceAccessPropertiesAccessEndpointConfig
+{
+    /// <summary>Set of access endpoints used to control the network paths that users use to access their WorkSpaces. Defined below.</summary>
+    [JsonPropertyName("accessEndpoints")]
+    public IList<V1beta1DirectoryStatusAtProviderWorkspaceAccessPropertiesAccessEndpointConfigAccessEndpoints>? AccessEndpoints { get; set; }
+
+    /// <summary>List of protocols that fall back to the public internet when streaming over a VPC endpoint is unavailable. Valid value is PCOIP.</summary>
+    [JsonPropertyName("internetFallbackProtocols")]
+    public IList<string>? InternetFallbackProtocols { get; set; }
+}
+
 /// <summary>Specifies which devices and operating systems users can use to access their WorkSpaces. Defined below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DirectoryStatusAtProviderWorkspaceAccessProperties
 {
+    /// <summary>Configuration for accessing WorkSpaces through VPC endpoints instead of the public internet. Defined below.</summary>
+    [JsonPropertyName("accessEndpointConfig")]
+    public V1beta1DirectoryStatusAtProviderWorkspaceAccessPropertiesAccessEndpointConfig? AccessEndpointConfig { get; set; }
+
     /// <summary>Indicates whether users can use Android devices to access their WorkSpaces.</summary>
     [JsonPropertyName("deviceTypeAndroid")]
     public string? DeviceTypeAndroid { get; set; }

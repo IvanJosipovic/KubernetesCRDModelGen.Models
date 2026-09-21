@@ -218,7 +218,7 @@ public partial class V1beta1ComponentSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.</summary>
+    /// <summary>ARN of the KMS Key used to encrypt the component.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -441,7 +441,7 @@ public partial class V1beta1ComponentSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.</summary>
+    /// <summary>ARN of the KMS Key used to encrypt the component.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -669,7 +669,7 @@ public partial class V1beta1ComponentSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComponentStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the component.</summary>
+    /// <summary>ARN of the component.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -693,11 +693,11 @@ public partial class V1beta1ComponentStatusAtProvider
     [JsonPropertyName("encrypted")]
     public bool? Encrypted { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the component.</summary>
+    /// <summary>ARN of the component.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.</summary>
+    /// <summary>ARN of the KMS Key used to encrypt the component.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

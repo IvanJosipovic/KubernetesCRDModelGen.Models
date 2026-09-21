@@ -207,7 +207,7 @@ public partial class V1beta1GlobalClusterSpecForProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -226,7 +226,7 @@ public partial class V1beta1GlobalClusterSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 
@@ -238,7 +238,7 @@ public partial class V1beta1GlobalClusterSpecForProvider
     [JsonPropertyName("sourceDbClusterIdentifierSelector")]
     public V1beta1GlobalClusterSpecForProviderSourceDbClusterIdentifierSelector? SourceDbClusterIdentifierSelector { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -430,7 +430,7 @@ public partial class V1beta1GlobalClusterSpecInitProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -442,7 +442,7 @@ public partial class V1beta1GlobalClusterSpecInitProvider
     [JsonPropertyName("forceDestroy")]
     public bool? ForceDestroy { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 
@@ -454,7 +454,7 @@ public partial class V1beta1GlobalClusterSpecInitProvider
     [JsonPropertyName("sourceDbClusterIdentifierSelector")]
     public V1beta1GlobalClusterSpecInitProviderSourceDbClusterIdentifierSelector? SourceDbClusterIdentifierSelector { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 
@@ -574,7 +574,7 @@ public partial class V1beta1GlobalClusterSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalClusterStatusAtProviderGlobalClusterMembers
 {
-    /// <summary>Amazon Resource Name (ARN) of member DB Cluster.</summary>
+    /// <summary>ARN of member DB Cluster.</summary>
     [JsonPropertyName("dbClusterArn")]
     public string? DbClusterArn { get; set; }
 
@@ -587,7 +587,7 @@ public partial class V1beta1GlobalClusterStatusAtProviderGlobalClusterMembers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GlobalClusterStatusAtProvider
 {
-    /// <summary>RDS Global Cluster Amazon Resource Name (ARN).</summary>
+    /// <summary>RDS Global Cluster ARN.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -607,7 +607,7 @@ public partial class V1beta1GlobalClusterStatusAtProvider
     [JsonPropertyName("engine")]
     public string? Engine { get; set; }
 
-    /// <summary>The life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
+    /// <summary>Life cycle type for this DB instance. This setting applies only to Aurora PostgreSQL-based global databases. Valid values are open-source-rds-extended-support, open-source-rds-extended-support-disabled. Default value is open-source-rds-extended-support. [Using Amazon RDS Extended Support]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html</summary>
     [JsonPropertyName("engineLifecycleSupport")]
     public string? EngineLifecycleSupport { get; set; }
 
@@ -615,6 +615,7 @@ public partial class V1beta1GlobalClusterStatusAtProvider
     [JsonPropertyName("engineVersion")]
     public string? EngineVersion { get; set; }
 
+    /// <summary>Running version of the database engine.</summary>
     [JsonPropertyName("engineVersionActual")]
     public string? EngineVersionActual { get; set; }
 
@@ -641,11 +642,11 @@ public partial class V1beta1GlobalClusterStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
+    /// <summary>ARN to use as the primary DB Cluster of the Global Cluster on creation. NOTE: After initial creation, this argument can be removed and replaced with engine and engine_version. This allows upgrading the engine version of the Global Cluster.</summary>
     [JsonPropertyName("sourceDbClusterIdentifier")]
     public string? SourceDbClusterIdentifier { get; set; }
 
-    /// <summary>Specifies whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
+    /// <summary>Whether the DB cluster is encrypted. The default is false unless source_db_cluster_identifier is specified and encrypted.</summary>
     [JsonPropertyName("storageEncrypted")]
     public bool? StorageEncrypted { get; set; }
 

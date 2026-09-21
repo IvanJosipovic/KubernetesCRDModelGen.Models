@@ -59,7 +59,7 @@ public enum V1beta1TemplateSpecDeletionPolicyEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TemplateSpecForProvider
 {
-    /// <summary>The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("html")]
     public string? Html { get; set; }
 
@@ -70,11 +70,11 @@ public partial class V1beta1TemplateSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The subject line of the email.</summary>
+    /// <summary>Subject line of the email.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
 
-    /// <summary>The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>Email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -95,15 +95,15 @@ public partial class V1beta1TemplateSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TemplateSpecInitProvider
 {
-    /// <summary>The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("html")]
     public string? Html { get; set; }
 
-    /// <summary>The subject line of the email.</summary>
+    /// <summary>Subject line of the email.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
 
-    /// <summary>The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>Email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }
@@ -295,15 +295,15 @@ public partial class V1beta1TemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TemplateStatusAtProvider
 {
-    /// <summary>The ARN of the SES template</summary>
+    /// <summary>ARN of the SES template</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("html")]
     public string? Html { get; set; }
 
-    /// <summary>The name of the SES template</summary>
+    /// <summary>Name of the SES template</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
@@ -314,11 +314,11 @@ public partial class V1beta1TemplateStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The subject line of the email.</summary>
+    /// <summary>Subject line of the email.</summary>
     [JsonPropertyName("subject")]
     public string? Subject { get; set; }
 
-    /// <summary>The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
+    /// <summary>Email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.</summary>
     [JsonPropertyName("text")]
     public string? Text { get; set; }
 }

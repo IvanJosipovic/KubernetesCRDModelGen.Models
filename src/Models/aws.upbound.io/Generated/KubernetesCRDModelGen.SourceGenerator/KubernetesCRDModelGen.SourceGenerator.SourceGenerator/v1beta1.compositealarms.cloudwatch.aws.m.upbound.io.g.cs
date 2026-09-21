@@ -41,7 +41,7 @@ public partial class V1beta1CompositeAlarmList : IKubernetesObject<V1ListMeta>, 
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CompositeAlarmSpecForProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 
@@ -429,7 +429,7 @@ public partial class V1beta1CompositeAlarmSpecForProvider
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CompositeAlarmSpecInitProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 
@@ -929,7 +929,7 @@ public partial class V1beta1CompositeAlarmSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CompositeAlarmStatusAtProviderActionsSuppressor
 {
-    /// <summary>Can be an AlarmName or an Amazon Resource Name (ARN) from an existing alarm.</summary>
+    /// <summary>Can be an AlarmName or an ARN from an existing alarm.</summary>
     [JsonPropertyName("alarm")]
     public string? Alarm { get; set; }
 

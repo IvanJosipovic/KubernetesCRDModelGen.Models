@@ -1150,7 +1150,7 @@ public partial class V1beta1WorkforceStatusAtProviderWorkforceVpcConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkforceStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Workforce.</summary>
+    /// <summary>ARN assigned by AWS to this Workforce.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

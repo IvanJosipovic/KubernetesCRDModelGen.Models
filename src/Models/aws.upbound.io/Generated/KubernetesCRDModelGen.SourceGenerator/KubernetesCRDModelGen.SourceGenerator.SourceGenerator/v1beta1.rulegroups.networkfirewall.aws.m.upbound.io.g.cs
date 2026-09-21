@@ -503,7 +503,7 @@ public partial class V1beta1RuleGroupSpecForProviderRuleGroupRulesSourceStateles
     [JsonPropertyName("destinationPort")]
     public IList<V1beta1RuleGroupSpecForProviderRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort>? DestinationPort { get; set; }
 
-    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned internet protocol number (IANA). If not specified, this matches with any protocol.</summary>
+    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned IP number (IANA). If not specified, this matches with any protocol.</summary>
     [JsonPropertyName("protocols")]
     public IList<double>? Protocols { get; set; }
 
@@ -1126,7 +1126,7 @@ public partial class V1beta1RuleGroupSpecInitProviderRuleGroupRulesSourceStatele
     [JsonPropertyName("destinationPort")]
     public IList<V1beta1RuleGroupSpecInitProviderRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort>? DestinationPort { get; set; }
 
-    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned internet protocol number (IANA). If not specified, this matches with any protocol.</summary>
+    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned IP number (IANA). If not specified, this matches with any protocol.</summary>
     [JsonPropertyName("protocols")]
     public IList<double>? Protocols { get; set; }
 
@@ -1698,7 +1698,7 @@ public partial class V1beta1RuleGroupStatusAtProviderRuleGroupRulesSourceStatele
     [JsonPropertyName("destinationPort")]
     public IList<V1beta1RuleGroupStatusAtProviderRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort>? DestinationPort { get; set; }
 
-    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned internet protocol number (IANA). If not specified, this matches with any protocol.</summary>
+    /// <summary>Set of protocols to inspect for, specified using the protocol&apos;s assigned IP number (IANA). If not specified, this matches with any protocol.</summary>
     [JsonPropertyName("protocols")]
     public IList<double>? Protocols { get; set; }
 
@@ -1814,7 +1814,7 @@ public partial class V1beta1RuleGroupStatusAtProviderRuleGroup
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RuleGroupStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) that identifies the rule group.</summary>
+    /// <summary>ARN that identifies the rule group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1830,7 +1830,7 @@ public partial class V1beta1RuleGroupStatusAtProvider
     [JsonPropertyName("encryptionConfiguration")]
     public V1beta1RuleGroupStatusAtProviderEncryptionConfiguration? EncryptionConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) that identifies the rule group.</summary>
+    /// <summary>ARN that identifies the rule group.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 

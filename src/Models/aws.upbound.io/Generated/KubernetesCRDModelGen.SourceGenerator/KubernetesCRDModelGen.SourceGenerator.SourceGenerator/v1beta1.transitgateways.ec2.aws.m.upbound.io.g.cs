@@ -276,7 +276,7 @@ public partial class V1beta1TransitGatewayStatusAtProvider
     [JsonPropertyName("amazonSideAsn")]
     public double? AmazonSideAsn { get; set; }
 
-    /// <summary>EC2 Transit Gateway Amazon Resource Name (ARN)</summary>
+    /// <summary>EC2 Transit Gateway ARN</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

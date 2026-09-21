@@ -195,7 +195,7 @@ public partial class V1beta1ClusterCapacityProvidersSpecForProviderClusterNameSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterCapacityProvidersSpecForProviderDefaultCapacityProviderStrategy
 {
-    /// <summary>The number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
+    /// <summary>Number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
     [JsonPropertyName("base")]
     public double? Base { get; set; }
 
@@ -203,7 +203,7 @@ public partial class V1beta1ClusterCapacityProvidersSpecForProviderDefaultCapaci
     [JsonPropertyName("capacityProvider")]
     public string? CapacityProvider { get; set; }
 
-    /// <summary>The relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
+    /// <summary>Relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -399,7 +399,7 @@ public partial class V1beta1ClusterCapacityProvidersSpecInitProviderClusterNameS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterCapacityProvidersSpecInitProviderDefaultCapacityProviderStrategy
 {
-    /// <summary>The number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
+    /// <summary>Number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
     [JsonPropertyName("base")]
     public double? Base { get; set; }
 
@@ -407,7 +407,7 @@ public partial class V1beta1ClusterCapacityProvidersSpecInitProviderDefaultCapac
     [JsonPropertyName("capacityProvider")]
     public string? CapacityProvider { get; set; }
 
-    /// <summary>The relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
+    /// <summary>Relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }
@@ -560,7 +560,7 @@ public partial class V1beta1ClusterCapacityProvidersSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterCapacityProvidersStatusAtProviderDefaultCapacityProviderStrategy
 {
-    /// <summary>The number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
+    /// <summary>Number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined. Defaults to 0.</summary>
     [JsonPropertyName("base")]
     public double? Base { get; set; }
 
@@ -568,7 +568,7 @@ public partial class V1beta1ClusterCapacityProvidersStatusAtProviderDefaultCapac
     [JsonPropertyName("capacityProvider")]
     public string? CapacityProvider { get; set; }
 
-    /// <summary>The relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
+    /// <summary>Relative percentage of the total number of launched tasks that should use the specified capacity provider. The weight value is taken into consideration after the base count of tasks has been satisfied. Defaults to 0.</summary>
     [JsonPropertyName("weight")]
     public double? Weight { get; set; }
 }

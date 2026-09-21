@@ -191,7 +191,7 @@ public partial class V1beta1TargetSpecForProviderRoleArnSelector
     public V1beta1TargetSpecForProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+/// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetSpecForProviderSuspendedState
@@ -252,7 +252,7 @@ public partial class V1beta1TargetSpecForProvider
     [JsonPropertyName("serviceNamespace")]
     public string? ServiceNamespace { get; set; }
 
-    /// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+    /// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
     [JsonPropertyName("suspendedState")]
     public V1beta1TargetSpecForProviderSuspendedState? SuspendedState { get; set; }
 
@@ -416,7 +416,7 @@ public partial class V1beta1TargetSpecInitProviderRoleArnSelector
     public V1beta1TargetSpecInitProviderRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+/// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetSpecInitProviderSuspendedState
@@ -482,7 +482,7 @@ public partial class V1beta1TargetSpecInitProvider
     [JsonPropertyName("serviceNamespace")]
     public string? ServiceNamespace { get; set; }
 
-    /// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+    /// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
     [JsonPropertyName("suspendedState")]
     public V1beta1TargetSpecInitProviderSuspendedState? SuspendedState { get; set; }
 
@@ -598,7 +598,7 @@ public partial class V1beta1TargetSpec
     public V1beta1TargetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+/// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetStatusAtProviderSuspendedState
@@ -620,7 +620,7 @@ public partial class V1beta1TargetStatusAtProviderSuspendedState
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetStatusAtProvider
 {
-    /// <summary>The ARN of the scalable target.</summary>
+    /// <summary>ARN of the scalable target.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -658,7 +658,7 @@ public partial class V1beta1TargetStatusAtProvider
     [JsonPropertyName("serviceNamespace")]
     public string? ServiceNamespace { get; set; }
 
-    /// <summary>Specifies whether the scaling activities for a scalable target are in a suspended state.</summary>
+    /// <summary>Whether the scaling activities for a scalable target are in a suspended state.</summary>
     [JsonPropertyName("suspendedState")]
     public V1beta1TargetStatusAtProviderSuspendedState? SuspendedState { get; set; }
 

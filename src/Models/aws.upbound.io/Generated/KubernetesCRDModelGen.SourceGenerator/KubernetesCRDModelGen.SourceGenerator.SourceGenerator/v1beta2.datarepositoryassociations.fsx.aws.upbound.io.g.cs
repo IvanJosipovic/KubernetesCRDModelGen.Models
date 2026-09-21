@@ -202,39 +202,36 @@ public partial class V1beta2DataRepositoryAssociationSpecForProviderFileSystemId
     public V1beta2DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecForProviderS3AutoExportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecForProviderS3AutoImportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>
-/// See the s3 configuration block. Max of 1.
-/// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-/// </summary>
+/// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecForProviderS3
 {
-    /// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
     [JsonPropertyName("autoExportPolicy")]
     public V1beta2DataRepositoryAssociationSpecForProviderS3AutoExportPolicy? AutoExportPolicy { get; set; }
 
-    /// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
     [JsonPropertyName("autoImportPolicy")]
     public V1beta2DataRepositoryAssociationSpecForProviderS3AutoImportPolicy? AutoImportPolicy { get; set; }
 }
@@ -247,7 +244,7 @@ public partial class V1beta2DataRepositoryAssociationSpecForProvider
     [JsonPropertyName("batchImportMetaDataOnCreate")]
     public bool? BatchImportMetaDataOnCreate { get; set; }
 
-    /// <summary>The path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
+    /// <summary>Path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
     [JsonPropertyName("dataRepositoryPath")]
     public string? DataRepositoryPath { get; set; }
 
@@ -255,7 +252,7 @@ public partial class V1beta2DataRepositoryAssociationSpecForProvider
     [JsonPropertyName("deleteDataInFilesystem")]
     public bool? DeleteDataInFilesystem { get; set; }
 
-    /// <summary>The ID of the Amazon FSx file system to on which to create a data repository association.</summary>
+    /// <summary>ID of the Amazon FSx file system to on which to create a data repository association.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -267,7 +264,7 @@ public partial class V1beta2DataRepositoryAssociationSpecForProvider
     [JsonPropertyName("fileSystemIdSelector")]
     public V1beta2DataRepositoryAssociationSpecForProviderFileSystemIdSelector? FileSystemIdSelector { get; set; }
 
-    /// <summary>A path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
+    /// <summary>Path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
     [JsonPropertyName("fileSystemPath")]
     public string? FileSystemPath { get; set; }
 
@@ -282,10 +279,7 @@ public partial class V1beta2DataRepositoryAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>
-    /// See the s3 configuration block. Max of 1.
-    /// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-    /// </summary>
+    /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
     [JsonPropertyName("s3")]
     public V1beta2DataRepositoryAssociationSpecForProviderS3? S3 { get; set; }
 
@@ -441,39 +435,36 @@ public partial class V1beta2DataRepositoryAssociationSpecInitProviderFileSystemI
     public V1beta2DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecInitProviderS3AutoExportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecInitProviderS3AutoImportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>
-/// See the s3 configuration block. Max of 1.
-/// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-/// </summary>
+/// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationSpecInitProviderS3
 {
-    /// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
     [JsonPropertyName("autoExportPolicy")]
     public V1beta2DataRepositoryAssociationSpecInitProviderS3AutoExportPolicy? AutoExportPolicy { get; set; }
 
-    /// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
     [JsonPropertyName("autoImportPolicy")]
     public V1beta2DataRepositoryAssociationSpecInitProviderS3AutoImportPolicy? AutoImportPolicy { get; set; }
 }
@@ -498,7 +489,7 @@ public partial class V1beta2DataRepositoryAssociationSpecInitProvider
     [JsonPropertyName("batchImportMetaDataOnCreate")]
     public bool? BatchImportMetaDataOnCreate { get; set; }
 
-    /// <summary>The path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
+    /// <summary>Path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
     [JsonPropertyName("dataRepositoryPath")]
     public string? DataRepositoryPath { get; set; }
 
@@ -506,7 +497,7 @@ public partial class V1beta2DataRepositoryAssociationSpecInitProvider
     [JsonPropertyName("deleteDataInFilesystem")]
     public bool? DeleteDataInFilesystem { get; set; }
 
-    /// <summary>The ID of the Amazon FSx file system to on which to create a data repository association.</summary>
+    /// <summary>ID of the Amazon FSx file system to on which to create a data repository association.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
@@ -518,7 +509,7 @@ public partial class V1beta2DataRepositoryAssociationSpecInitProvider
     [JsonPropertyName("fileSystemIdSelector")]
     public V1beta2DataRepositoryAssociationSpecInitProviderFileSystemIdSelector? FileSystemIdSelector { get; set; }
 
-    /// <summary>A path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
+    /// <summary>Path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
     [JsonPropertyName("fileSystemPath")]
     public string? FileSystemPath { get; set; }
 
@@ -526,10 +517,7 @@ public partial class V1beta2DataRepositoryAssociationSpecInitProvider
     [JsonPropertyName("importedFileChunkSize")]
     public double? ImportedFileChunkSize { get; set; }
 
-    /// <summary>
-    /// See the s3 configuration block. Max of 1.
-    /// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-    /// </summary>
+    /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
     [JsonPropertyName("s3")]
     public V1beta2DataRepositoryAssociationSpecInitProviderS3? S3 { get; set; }
 
@@ -721,39 +709,36 @@ public partial class V1beta2DataRepositoryAssociationSpec
     public V1beta2DataRepositoryAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationStatusAtProviderS3AutoExportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+/// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationStatusAtProviderS3AutoImportPolicy
 {
-    /// <summary>A list of file event types to automatically export to your linked S3 bucket or import from the linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
+    /// <summary>List of file event types to automatically export to your linked S3 bucket. Valid values are NEW, CHANGED, DELETED. Max of 3.</summary>
     [JsonPropertyName("events")]
     public IList<string>? Events { get; set; }
 }
 
-/// <summary>
-/// See the s3 configuration block. Max of 1.
-/// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-/// </summary>
+/// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationStatusAtProviderS3
 {
-    /// <summary>Specifies the type of updated objects that will be automatically exported from your file system to the linked S3 bucket. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
     [JsonPropertyName("autoExportPolicy")]
     public V1beta2DataRepositoryAssociationStatusAtProviderS3AutoExportPolicy? AutoExportPolicy { get; set; }
 
-    /// <summary>Specifies the type of updated objects that will be automatically imported from the linked S3 bucket to your file system. See the events configuration block.</summary>
+    /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
     [JsonPropertyName("autoImportPolicy")]
     public V1beta2DataRepositoryAssociationStatusAtProviderS3AutoImportPolicy? AutoImportPolicy { get; set; }
 }
@@ -762,11 +747,11 @@ public partial class V1beta2DataRepositoryAssociationStatusAtProviderS3
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2DataRepositoryAssociationStatusAtProvider
 {
-    /// <summary>Amazon Resource Name of the file system.</summary>
+    /// <summary>ARN of the file system.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>Identifier of the data repository association, e.g., dra-12345678</summary>
+    /// <summary>Identifier of the data repository association.</summary>
     [JsonPropertyName("associationId")]
     public string? AssociationId { get; set; }
 
@@ -774,7 +759,7 @@ public partial class V1beta2DataRepositoryAssociationStatusAtProvider
     [JsonPropertyName("batchImportMetaDataOnCreate")]
     public bool? BatchImportMetaDataOnCreate { get; set; }
 
-    /// <summary>The path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
+    /// <summary>Path to the Amazon S3 data repository that will be linked to the file system. The path must be an S3 bucket s3://myBucket/myPrefix/. This path specifies where in the S3 data repository files will be imported from or exported to. The same S3 bucket cannot be linked more than once to the same file system.</summary>
     [JsonPropertyName("dataRepositoryPath")]
     public string? DataRepositoryPath { get; set; }
 
@@ -782,11 +767,11 @@ public partial class V1beta2DataRepositoryAssociationStatusAtProvider
     [JsonPropertyName("deleteDataInFilesystem")]
     public bool? DeleteDataInFilesystem { get; set; }
 
-    /// <summary>The ID of the Amazon FSx file system to on which to create a data repository association.</summary>
+    /// <summary>ID of the Amazon FSx file system to on which to create a data repository association.</summary>
     [JsonPropertyName("fileSystemId")]
     public string? FileSystemId { get; set; }
 
-    /// <summary>A path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
+    /// <summary>Path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with data_repository_path. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.</summary>
     [JsonPropertyName("fileSystemPath")]
     public string? FileSystemPath { get; set; }
 
@@ -805,10 +790,7 @@ public partial class V1beta2DataRepositoryAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>
-    /// See the s3 configuration block. Max of 1.
-    /// The configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. The configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository.
-    /// </summary>
+    /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
     [JsonPropertyName("s3")]
     public V1beta2DataRepositoryAssociationStatusAtProviderS3? S3 { get; set; }
 
@@ -816,7 +798,7 @@ public partial class V1beta2DataRepositoryAssociationStatusAtProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
+    /// <summary>Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.</summary>
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 }

@@ -654,7 +654,7 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     public IList<string>? SiteMaps { get; set; }
 }
 
-/// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+/// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrls
@@ -705,7 +705,7 @@ public partial class V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConf
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
-    /// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+    /// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
     [JsonPropertyName("urls")]
     public V1beta1DataSourceSpecForProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
@@ -871,7 +871,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -928,7 +928,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -954,7 +954,7 @@ public partial class V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentCon
     [JsonPropertyName("preExtractionHookConfiguration")]
     public V1beta1DataSourceSpecForProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration? PreExtractionHookConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -1312,7 +1312,7 @@ public partial class V1beta1DataSourceSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
+    /// <summary>ARN of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1955,7 +1955,7 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     public IList<string>? SiteMaps { get; set; }
 }
 
-/// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+/// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrls
@@ -2006,7 +2006,7 @@ public partial class V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerCon
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
-    /// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+    /// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
     [JsonPropertyName("urls")]
     public V1beta1DataSourceSpecInitProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
@@ -2172,7 +2172,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -2229,7 +2229,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -2255,7 +2255,7 @@ public partial class V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("preExtractionHookConfiguration")]
     public V1beta1DataSourceSpecInitProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration? PreExtractionHookConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -2618,7 +2618,7 @@ public partial class V1beta1DataSourceSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
+    /// <summary>ARN of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -2879,7 +2879,7 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     public IList<string>? SiteMaps { get; set; }
 }
 
-/// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+/// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrls
@@ -2930,7 +2930,7 @@ public partial class V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerCon
     [JsonPropertyName("urlInclusionPatterns")]
     public IList<string>? UrlInclusionPatterns { get; set; }
 
-    /// <summary>A block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
+    /// <summary>Block that specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to 3 sitemap URLs. You can only crawl websites that use the secure communication protocol, HTTPS. If you receive an error when crawling a website, it could be that the website is blocked from crawling. When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. Detailed below.</summary>
     [JsonPropertyName("urls")]
     public V1beta1DataSourceStatusAtProviderConfigurationWebCrawlerConfigurationUrls? Urls { get; set; }
 }
@@ -3096,7 +3096,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -3153,7 +3153,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("invocationCondition")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition? InvocationCondition { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
+    /// <summary>ARN of a Lambda Function that can manipulate your document metadata fields or attributes and content.</summary>
     [JsonPropertyName("lambdaArn")]
     public string? LambdaArn { get; set; }
 
@@ -3179,7 +3179,7 @@ public partial class V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentCo
     [JsonPropertyName("preExtractionHookConfiguration")]
     public V1beta1DataSourceStatusAtProviderCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration? PreExtractionHookConfiguration { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
+    /// <summary>ARN of a role with permission to run pre_extraction_hook_configuration and post_extraction_hook_configuration for altering document metadata and content during the document ingestion process. For more information, see IAM roles for Amazon Kendra.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }
@@ -3239,7 +3239,7 @@ public partial class V1beta1DataSourceStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
+    /// <summary>ARN of a role with permission to access the data source connector. For more information, see IAM roles for Amazon Kendra. You can&apos;t specify the role_arn parameter when the type parameter is set to CUSTOM. The role_arn parameter is required for all other data sources.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

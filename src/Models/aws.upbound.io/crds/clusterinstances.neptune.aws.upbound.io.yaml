@@ -744,7 +744,7 @@ spec:
                       are applied immediately, or during the next maintenance window. Default isfalse.
                     type: boolean
                   arn:
-                    description: Amazon Resource Name (ARN) of neptune instance
+                    description: ARN of neptune instance
                     type: string
                   autoMinorVersionUpgrade:
                     description: Indicates that minor engine upgrades will be applied automatically to the instance during the maintenance window. Default is true.

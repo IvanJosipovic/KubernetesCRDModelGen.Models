@@ -73,6 +73,24 @@ public partial class V1beta1ReplicationGroupSpecForProviderAuthTokenSecretRef
     public required string Namespace { get; set; }
 }
 
+/// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. Requires auth_token_wo_version.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicationGroupSpecForProviderAuthTokenWoSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationGroupSpecForProviderClusterMode
@@ -759,6 +777,14 @@ public partial class V1beta1ReplicationGroupSpecForProvider
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
 
+    /// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. Requires auth_token_wo_version.</summary>
+    [JsonPropertyName("authTokenWoSecretRef")]
+    public V1beta1ReplicationGroupSpecForProviderAuthTokenWoSecretRef? AuthTokenWoSecretRef { get; set; }
+
+    /// <summary>Integer that, when changed, triggers a re-send of auth_token_wo to the replication group. Requires auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
+
     /// <summary>
     /// Password used to access a password protected server. Can be specified only if transit_encryption_enabled = true.
     /// If true, the auth token will be auto-generated and stored in the Secret referenced by the authTokenSecretRef field.
@@ -1003,6 +1029,24 @@ public partial class V1beta1ReplicationGroupSpecForProvider
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationGroupSpecInitProviderAuthTokenSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. Requires auth_token_wo_version.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ReplicationGroupSpecInitProviderAuthTokenWoSecretRef
 {
     /// <summary>The key to select.</summary>
     [JsonPropertyName("key")]
@@ -1718,6 +1762,14 @@ public partial class V1beta1ReplicationGroupSpecInitProvider
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
 
+    /// <summary>Password used to access a password protected server, whose value will not be stored in state. Can be specified only if transit_encryption_enabled = true. Conflicts with auth_token. Requires auth_token_wo_version.</summary>
+    [JsonPropertyName("authTokenWoSecretRef")]
+    public V1beta1ReplicationGroupSpecInitProviderAuthTokenWoSecretRef? AuthTokenWoSecretRef { get; set; }
+
+    /// <summary>Integer that, when changed, triggers a re-send of auth_token_wo to the replication group. Requires auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
+
     /// <summary>
     /// Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.
     /// Only supported for engine type &quot;redis&quot; and if the engine version is 6 or higher.
@@ -2221,6 +2273,10 @@ public partial class V1beta1ReplicationGroupStatusAtProvider
     /// <summary>Strategy to use when updating the auth_token. Valid values are SET, ROTATE, and DELETE. Defaults to ROTATE.</summary>
     [JsonPropertyName("authTokenUpdateStrategy")]
     public string? AuthTokenUpdateStrategy { get; set; }
+
+    /// <summary>Integer that, when changed, triggers a re-send of auth_token_wo to the replication group. Requires auth_token_wo.</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public double? AuthTokenWoVersion { get; set; }
 
     /// <summary>
     /// Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window.

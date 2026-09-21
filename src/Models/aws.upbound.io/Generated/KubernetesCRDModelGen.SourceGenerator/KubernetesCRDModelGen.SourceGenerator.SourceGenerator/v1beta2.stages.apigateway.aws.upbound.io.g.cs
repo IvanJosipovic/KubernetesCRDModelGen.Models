@@ -64,10 +64,7 @@ public partial class V1beta2StageSpecForProviderAccessLogSettings
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
 
-    /// <summary>
-    /// Formatting and values recorded in the logs.
-    /// For more information on configuring the log format rules visit the AWS documentation
-    /// </summary>
+    /// <summary>Formatting and values recorded in the logs. For more information on configuring the log format rules visit the AWS documentation</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 }
@@ -77,7 +74,7 @@ public partial class V1beta2StageSpecForProviderAccessLogSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StageSpecForProviderCanarySettings
 {
-    /// <summary>ID of the deployment that the stage points to</summary>
+    /// <summary>ID of the deployment that the canary points to.</summary>
     [JsonPropertyName("deploymentId")]
     public string? DeploymentId { get; set; }
 
@@ -477,10 +474,7 @@ public partial class V1beta2StageSpecInitProviderAccessLogSettings
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
 
-    /// <summary>
-    /// Formatting and values recorded in the logs.
-    /// For more information on configuring the log format rules visit the AWS documentation
-    /// </summary>
+    /// <summary>Formatting and values recorded in the logs. For more information on configuring the log format rules visit the AWS documentation</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 }
@@ -490,7 +484,7 @@ public partial class V1beta2StageSpecInitProviderAccessLogSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StageSpecInitProviderCanarySettings
 {
-    /// <summary>ID of the deployment that the stage points to</summary>
+    /// <summary>ID of the deployment that the canary points to.</summary>
     [JsonPropertyName("deploymentId")]
     public string? DeploymentId { get; set; }
 
@@ -1078,10 +1072,7 @@ public partial class V1beta2StageStatusAtProviderAccessLogSettings
     [JsonPropertyName("destinationArn")]
     public string? DestinationArn { get; set; }
 
-    /// <summary>
-    /// Formatting and values recorded in the logs.
-    /// For more information on configuring the log format rules visit the AWS documentation
-    /// </summary>
+    /// <summary>Formatting and values recorded in the logs. For more information on configuring the log format rules visit the AWS documentation</summary>
     [JsonPropertyName("format")]
     public string? Format { get; set; }
 }
@@ -1091,7 +1082,7 @@ public partial class V1beta2StageStatusAtProviderAccessLogSettings
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StageStatusAtProviderCanarySettings
 {
-    /// <summary>ID of the deployment that the stage points to</summary>
+    /// <summary>ID of the deployment that the canary points to.</summary>
     [JsonPropertyName("deploymentId")]
     public string? DeploymentId { get; set; }
 
@@ -1148,11 +1139,7 @@ public partial class V1beta2StageStatusAtProvider
     [JsonPropertyName("documentationVersion")]
     public string? DocumentationVersion { get; set; }
 
-    /// <summary>
-    /// Execution ARN to be used in lambda_permission&apos;s source_arn
-    /// when allowing API Gateway to invoke a Lambda function,
-    /// e.g., arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod
-    /// </summary>
+    /// <summary>Execution ARN to be used in lambda_permission&apos;s source_arn when allowing API Gateway to invoke a Lambda function, e.g., arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod</summary>
     [JsonPropertyName("executionArn")]
     public string? ExecutionArn { get; set; }
 
@@ -1160,10 +1147,7 @@ public partial class V1beta2StageStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>
-    /// URL to invoke the API pointing to the stage,
-    /// e.g., https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod
-    /// </summary>
+    /// <summary>URL to invoke the API pointing to the stage, e.g., https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod</summary>
     [JsonPropertyName("invokeUrl")]
     public string? InvokeUrl { get; set; }
 

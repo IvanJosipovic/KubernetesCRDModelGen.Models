@@ -247,276 +247,336 @@ public partial class V1beta1CapacityProviderSpecForProviderAutoScalingGroupProvi
     public string? ManagedTerminationProtection { get; set; }
 }
 
-/// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+/// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+/// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInfrastructureOptimization
 {
-    /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
+    /// <summary>Number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are -1 to disable automatic infrastructure optimization, 0 to 3600 (inclusive) to specify the number of seconds to wait before optimizing instances, or leave unset (null) to use the default optimization behavior.</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
 }
 
-/// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+/// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
+}
+
+/// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+/// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+/// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+/// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+/// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+/// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+/// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+/// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+/// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+/// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
-    /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+    /// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
     [JsonPropertyName("acceleratorCount")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount? AcceleratorCount { get; set; }
 
-    /// <summary>The accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
+    /// <summary>Accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>The specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
+    /// <summary>Specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
-    /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+    /// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
     [JsonPropertyName("acceleratorTotalMemoryMib")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib? AcceleratorTotalMemoryMib { get; set; }
 
-    /// <summary>The accelerator types to include. You can specify gpu for graphics processing units, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
+    /// <summary>Accelerator types to include. You can specify gpu for GPUs, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
     [JsonPropertyName("acceleratorTypes")]
     public IList<string>? AcceleratorTypes { get; set; }
 
-    /// <summary>The instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
+    /// <summary>Instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicates whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
-    /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+    /// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
     [JsonPropertyName("baselineEbsBandwidthMbps")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps? BaselineEbsBandwidthMbps { get; set; }
 
-    /// <summary>Indicates whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("burstablePerformance")]
     public string? BurstablePerformance { get; set; }
 
-    /// <summary>The CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
+    /// <summary>CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }
 
-    /// <summary>The instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
+    /// <summary>Instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
     [JsonPropertyName("excludedInstanceTypes")]
     public IList<string>? ExcludedInstanceTypes { get; set; }
 
-    /// <summary>The instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
+    /// <summary>Instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
     [JsonPropertyName("instanceGenerations")]
     public IList<string>? InstanceGenerations { get; set; }
 
-    /// <summary>Indicates whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("localStorage")]
     public string? LocalStorage { get; set; }
 
-    /// <summary>The local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
+    /// <summary>Local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
     [JsonPropertyName("localStorageTypes")]
     public IList<string>? LocalStorageTypes { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
     [JsonPropertyName("maxSpotPriceAsPercentageOfOptimalOnDemandPrice")]
     public double? MaxSpotPriceAsPercentageOfOptimalOnDemandPrice { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+    /// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
     [JsonPropertyName("memoryGibPerVcpu")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu? MemoryGibPerVcpu { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+    /// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
     [JsonPropertyName("memoryMib")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib? MemoryMib { get; set; }
 
-    /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+    /// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
     [JsonPropertyName("networkBandwidthGbps")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps? NetworkBandwidthGbps { get; set; }
 
-    /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+    /// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
     [JsonPropertyName("networkInterfaceCount")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount? NetworkInterfaceCount { get; set; }
 
-    /// <summary>The price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
+    /// <summary>Price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
     [JsonPropertyName("onDemandMaxPricePercentageOverLowestPrice")]
     public double? OnDemandMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>Indicates whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
+    /// <summary>Whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
     [JsonPropertyName("requireHibernateSupport")]
     public bool? RequireHibernateSupport { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
     [JsonPropertyName("spotMaxPricePercentageOverLowestPrice")]
     public double? SpotMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+    /// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
     [JsonPropertyName("totalLocalStorageGb")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb? TotalLocalStorageGb { get; set; }
 
-    /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+    /// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
     [JsonPropertyName("vcpuCount")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-/// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+/// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+/// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
-    /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
+    /// <summary>List of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>The list of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
+    /// <summary>List of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+/// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
-    /// <summary>The size of the tasks volume in GiB. Must be at least 1.</summary>
+    /// <summary>Size of the tasks volume in GiB. Must be at least 1.</summary>
     [JsonPropertyName("storageSizeGib")]
     public double? StorageSizeGib { get; set; }
 }
 
-/// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+/// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplate
 {
-    /// <summary>The purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand or Spot instances. Valid values are ON_DEMAND and SPOT. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
+    /// <summary>Purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand, Spot, or Capacity Reservation instances. Valid values are ON_DEMAND, SPOT, and RESERVED. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations? CapacityReservations { get; set; }
+
+    /// <summary>ARN of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
 
-    /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+    /// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
     public string? Monitoring { get; set; }
 
-    /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+    /// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+    /// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration? StorageConfiguration { get; set; }
 }
@@ -526,19 +586,23 @@ public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecForProviderManagedInstancesProvider
 {
-    /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderAutoRepairConfiguration? AutoRepairConfiguration { get; set; }
+
+    /// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInfrastructureOptimization? InfrastructureOptimization { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
+    /// <summary>ARN of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("infrastructureRoleArn")]
     public string? InfrastructureRoleArn { get; set; }
 
-    /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+    /// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
     [JsonPropertyName("instanceLaunchTemplate")]
     public V1beta1CapacityProviderSpecForProviderManagedInstancesProviderInstanceLaunchTemplate? InstanceLaunchTemplate { get; set; }
 
-    /// <summary>Specifies whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
+    /// <summary>Whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 }
@@ -782,276 +846,336 @@ public partial class V1beta1CapacityProviderSpecInitProviderAutoScalingGroupProv
     public string? ManagedTerminationProtection { get; set; }
 }
 
-/// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+/// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+/// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInfrastructureOptimization
 {
-    /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
+    /// <summary>Number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are -1 to disable automatic infrastructure optimization, 0 to 3600 (inclusive) to specify the number of seconds to wait before optimizing instances, or leave unset (null) to use the default optimization behavior.</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
 }
 
-/// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+/// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
+}
+
+/// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+/// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+/// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+/// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+/// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+/// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+/// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+/// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+/// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+/// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
-    /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+    /// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
     [JsonPropertyName("acceleratorCount")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount? AcceleratorCount { get; set; }
 
-    /// <summary>The accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
+    /// <summary>Accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>The specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
+    /// <summary>Specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
-    /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+    /// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
     [JsonPropertyName("acceleratorTotalMemoryMib")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib? AcceleratorTotalMemoryMib { get; set; }
 
-    /// <summary>The accelerator types to include. You can specify gpu for graphics processing units, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
+    /// <summary>Accelerator types to include. You can specify gpu for GPUs, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
     [JsonPropertyName("acceleratorTypes")]
     public IList<string>? AcceleratorTypes { get; set; }
 
-    /// <summary>The instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
+    /// <summary>Instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicates whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
-    /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+    /// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
     [JsonPropertyName("baselineEbsBandwidthMbps")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps? BaselineEbsBandwidthMbps { get; set; }
 
-    /// <summary>Indicates whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("burstablePerformance")]
     public string? BurstablePerformance { get; set; }
 
-    /// <summary>The CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
+    /// <summary>CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }
 
-    /// <summary>The instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
+    /// <summary>Instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
     [JsonPropertyName("excludedInstanceTypes")]
     public IList<string>? ExcludedInstanceTypes { get; set; }
 
-    /// <summary>The instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
+    /// <summary>Instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
     [JsonPropertyName("instanceGenerations")]
     public IList<string>? InstanceGenerations { get; set; }
 
-    /// <summary>Indicates whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("localStorage")]
     public string? LocalStorage { get; set; }
 
-    /// <summary>The local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
+    /// <summary>Local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
     [JsonPropertyName("localStorageTypes")]
     public IList<string>? LocalStorageTypes { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
     [JsonPropertyName("maxSpotPriceAsPercentageOfOptimalOnDemandPrice")]
     public double? MaxSpotPriceAsPercentageOfOptimalOnDemandPrice { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+    /// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
     [JsonPropertyName("memoryGibPerVcpu")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu? MemoryGibPerVcpu { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+    /// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
     [JsonPropertyName("memoryMib")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib? MemoryMib { get; set; }
 
-    /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+    /// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
     [JsonPropertyName("networkBandwidthGbps")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps? NetworkBandwidthGbps { get; set; }
 
-    /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+    /// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
     [JsonPropertyName("networkInterfaceCount")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount? NetworkInterfaceCount { get; set; }
 
-    /// <summary>The price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
+    /// <summary>Price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
     [JsonPropertyName("onDemandMaxPricePercentageOverLowestPrice")]
     public double? OnDemandMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>Indicates whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
+    /// <summary>Whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
     [JsonPropertyName("requireHibernateSupport")]
     public bool? RequireHibernateSupport { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
     [JsonPropertyName("spotMaxPricePercentageOverLowestPrice")]
     public double? SpotMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+    /// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
     [JsonPropertyName("totalLocalStorageGb")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb? TotalLocalStorageGb { get; set; }
 
-    /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+    /// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
     [JsonPropertyName("vcpuCount")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-/// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+/// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+/// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
-    /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
+    /// <summary>List of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>The list of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
+    /// <summary>List of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+/// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
-    /// <summary>The size of the tasks volume in GiB. Must be at least 1.</summary>
+    /// <summary>Size of the tasks volume in GiB. Must be at least 1.</summary>
     [JsonPropertyName("storageSizeGib")]
     public double? StorageSizeGib { get; set; }
 }
 
-/// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+/// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplate
 {
-    /// <summary>The purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand or Spot instances. Valid values are ON_DEMAND and SPOT. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
+    /// <summary>Purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand, Spot, or Capacity Reservation instances. Valid values are ON_DEMAND, SPOT, and RESERVED. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations? CapacityReservations { get; set; }
+
+    /// <summary>ARN of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
 
-    /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+    /// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
     public string? Monitoring { get; set; }
 
-    /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+    /// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+    /// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration? StorageConfiguration { get; set; }
 }
@@ -1061,19 +1185,23 @@ public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderSpecInitProviderManagedInstancesProvider
 {
-    /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderAutoRepairConfiguration? AutoRepairConfiguration { get; set; }
+
+    /// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInfrastructureOptimization? InfrastructureOptimization { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
+    /// <summary>ARN of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("infrastructureRoleArn")]
     public string? InfrastructureRoleArn { get; set; }
 
-    /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+    /// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
     [JsonPropertyName("instanceLaunchTemplate")]
     public V1beta1CapacityProviderSpecInitProviderManagedInstancesProviderInstanceLaunchTemplate? InstanceLaunchTemplate { get; set; }
 
-    /// <summary>Specifies whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
+    /// <summary>Whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 }
@@ -1266,276 +1394,336 @@ public partial class V1beta1CapacityProviderStatusAtProviderAutoScalingGroupProv
     public string? ManagedTerminationProtection { get; set; }
 }
 
-/// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+/// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderAutoRepairConfiguration
+{
+    /// <summary>Whether to use Amazon ECS managed auto repair. Valid values are ENABLED and DISABLED.</summary>
+    [JsonPropertyName("actionsStatus")]
+    public string? ActionsStatus { get; set; }
+}
+
+/// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInfrastructureOptimization
 {
-    /// <summary>This parameter defines the number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are:</summary>
+    /// <summary>Number of seconds Amazon ECS Managed Instances waits before optimizing EC2 instances that have become idle or underutilized. A longer delay increases the likelihood of placing new tasks on idle instances, reducing startup time. A shorter delay helps reduce infrastructure costs by optimizing idle instances more quickly. Valid values are -1 to disable automatic infrastructure optimization, 0 to 3600 (inclusive) to specify the number of seconds to wait before optimizing instances, or leave unset (null) to use the default optimization behavior.</summary>
     [JsonPropertyName("scaleInAfter")]
     public double? ScaleInAfter { get; set; }
 }
 
-/// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+/// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations
+{
+    /// <summary>ARN of the Capacity Reservation resource group in which to run instances. Can only be set when reservation_preference is RESERVATIONS_ONLY.</summary>
+    [JsonPropertyName("reservationGroupArn")]
+    public string? ReservationGroupArn { get; set; }
+
+    /// <summary>Preference for when Capacity Reservations should be used. Valid values are RESERVATIONS_ONLY, RESERVATIONS_FIRST, and RESERVATIONS_EXCLUDED. instance_requirements must be provided when set to RESERVATIONS_ONLY or RESERVATIONS_FIRST.</summary>
+    [JsonPropertyName("reservationPreference")]
+    public string? ReservationPreference { get; set; }
+}
+
+/// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+/// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+/// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+/// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+/// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+/// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+/// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+/// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+/// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount
 {
+    /// <summary>Maximum number of accelerators.</summary>
     [JsonPropertyName("max")]
     public double? Max { get; set; }
 
+    /// <summary>Minimum number of accelerators.</summary>
     [JsonPropertyName("min")]
     public double? Min { get; set; }
 }
 
-/// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+/// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements
 {
-    /// <summary>The minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators.</summary>
+    /// <summary>Minimum and maximum number of accelerators for the instance types. This is used when you need instances with specific numbers of GPUs or other accelerators. Detailed below.</summary>
     [JsonPropertyName("acceleratorCount")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorCount? AcceleratorCount { get; set; }
 
-    /// <summary>The accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
+    /// <summary>Accelerator manufacturers to include. You can specify nvidia, amd, amazon-web-services, xilinx, or habana depending on your accelerator requirements. Valid values are amazon-web-services, amd, nvidia, xilinx, habana.</summary>
     [JsonPropertyName("acceleratorManufacturers")]
     public IList<string>? AcceleratorManufacturers { get; set; }
 
-    /// <summary>The specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
+    /// <summary>Specific accelerator names to include. For example, you can specify a100, v100, k80, or other specific accelerator models. Valid values are a100, inferentia, k520, k80, m60, radeon-pro-v520, t4, vu9p, v100, a10g, h100, t4g.</summary>
     [JsonPropertyName("acceleratorNames")]
     public IList<string>? AcceleratorNames { get; set; }
 
-    /// <summary>The minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory.</summary>
+    /// <summary>Minimum and maximum total accelerator memory in mebibytes (MiB). This is important for GPU workloads that require specific amounts of video memory. Detailed below.</summary>
     [JsonPropertyName("acceleratorTotalMemoryMib")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib? AcceleratorTotalMemoryMib { get; set; }
 
-    /// <summary>The accelerator types to include. You can specify gpu for graphics processing units, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
+    /// <summary>Accelerator types to include. You can specify gpu for GPUs, fpga for field programmable gate arrays, or inference for machine learning inference accelerators. Valid values are gpu, fpga, inference.</summary>
     [JsonPropertyName("acceleratorTypes")]
     public IList<string>? AcceleratorTypes { get; set; }
 
-    /// <summary>The instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
+    /// <summary>Instance types to include in the selection. When specified, Amazon ECS only considers these instance types, subject to the other requirements specified. Maximum of 400 instance types. You can specify instance type patterns using wildcards (e.g., m5.*).</summary>
     [JsonPropertyName("allowedInstanceTypes")]
     public IList<string>? AllowedInstanceTypes { get; set; }
 
-    /// <summary>Indicates whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include bare metal instance types. Set to included to allow bare metal instances, excluded to exclude them, or required to use only bare metal instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("bareMetal")]
     public string? BareMetal { get; set; }
 
-    /// <summary>The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements.</summary>
+    /// <summary>Minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps). This is important for workloads with high storage I/O requirements. Detailed below.</summary>
     [JsonPropertyName("baselineEbsBandwidthMbps")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps? BaselineEbsBandwidthMbps { get; set; }
 
-    /// <summary>Indicates whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include burstable performance instance types (T2, T3, T3a, T4g). Set to included to allow burstable instances, excluded to exclude them, or required to use only burstable instances. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("burstablePerformance")]
     public string? BurstablePerformance { get; set; }
 
-    /// <summary>The CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
+    /// <summary>CPU manufacturers to include or exclude. You can specify intel, amd, or amazon-web-services to control which CPU types are used for your workloads. Valid values are intel, amd, amazon-web-services.</summary>
     [JsonPropertyName("cpuManufacturers")]
     public IList<string>? CpuManufacturers { get; set; }
 
-    /// <summary>The instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
+    /// <summary>Instance types to exclude from selection. Use this to prevent Amazon ECS from selecting specific instance types that may not be suitable for your workloads. Maximum of 400 instance types.</summary>
     [JsonPropertyName("excludedInstanceTypes")]
     public IList<string>? ExcludedInstanceTypes { get; set; }
 
-    /// <summary>The instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
+    /// <summary>Instance generations to include. You can specify current to use the latest generation instances, or previous to include previous generation instances for cost optimization. Valid values are current, previous.</summary>
     [JsonPropertyName("instanceGenerations")]
     public IList<string>? InstanceGenerations { get; set; }
 
-    /// <summary>Indicates whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
+    /// <summary>Whether to include instance types with local storage. Set to included to allow local storage, excluded to exclude it, or required to use only instances with local storage. Valid values are included, excluded, required.</summary>
     [JsonPropertyName("localStorage")]
     public string? LocalStorage { get; set; }
 
-    /// <summary>The local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
+    /// <summary>Local storage types to include. You can specify hdd for hard disk drives, ssd for solid state drives, or both. Valid values are hdd, ssd.</summary>
     [JsonPropertyName("localStorageTypes")]
     public IList<string>? LocalStorageTypes { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage of the optimal On-Demand price. This provides more precise cost control for Spot instance selection.</summary>
     [JsonPropertyName("maxSpotPriceAsPercentageOfOptimalOnDemandPrice")]
     public double? MaxSpotPriceAsPercentageOfOptimalOnDemandPrice { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.</summary>
+    /// <summary>Minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads. Detailed below.</summary>
     [JsonPropertyName("memoryGibPerVcpu")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryGibPerVcpu? MemoryGibPerVcpu { get; set; }
 
-    /// <summary>The minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range.</summary>
+    /// <summary>Minimum and maximum amount of memory in mebibytes (MiB) for the instance types. Amazon ECS selects instance types that have memory within this range. Detailed below.</summary>
     [JsonPropertyName("memoryMib")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsMemoryMib? MemoryMib { get; set; }
 
-    /// <summary>The minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput.</summary>
+    /// <summary>Minimum and maximum network bandwidth in gigabits per second (Gbps). This is crucial for network-intensive workloads that require high throughput. Detailed below.</summary>
     [JsonPropertyName("networkBandwidthGbps")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkBandwidthGbps? NetworkBandwidthGbps { get; set; }
 
-    /// <summary>The minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces.</summary>
+    /// <summary>Minimum and maximum number of network interfaces for the instance types. This is useful for workloads that require multiple network interfaces. Detailed below.</summary>
     [JsonPropertyName("networkInterfaceCount")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsNetworkInterfaceCount? NetworkInterfaceCount { get; set; }
 
-    /// <summary>The price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
+    /// <summary>Price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon ECS selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.</summary>
     [JsonPropertyName("onDemandMaxPricePercentageOverLowestPrice")]
     public double? OnDemandMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>Indicates whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
+    /// <summary>Whether the instance types must support hibernation. When set to true, only instance types that support hibernation are selected.</summary>
     [JsonPropertyName("requireHibernateSupport")]
     public bool? RequireHibernateSupport { get; set; }
 
-    /// <summary>The maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
+    /// <summary>Maximum price for Spot instances as a percentage over the lowest priced On-Demand instance. This helps control Spot instance costs while maintaining access to capacity.</summary>
     [JsonPropertyName("spotMaxPricePercentageOverLowestPrice")]
     public double? SpotMaxPricePercentageOverLowestPrice { get; set; }
 
-    /// <summary>The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage.</summary>
+    /// <summary>Minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. Detailed below.</summary>
     [JsonPropertyName("totalLocalStorageGb")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGb? TotalLocalStorageGb { get; set; }
 
-    /// <summary>The minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range.</summary>
+    /// <summary>Minimum and maximum number of vCPUs for the instance types. Amazon ECS selects instance types that have vCPU counts within this range. Detailed below.</summary>
     [JsonPropertyName("vcpuCount")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsVcpuCount? VcpuCount { get; set; }
 }
 
-/// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+/// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration
+{
+    /// <summary>Whether to use the local storage of the instance for Amazon ECS Managed Instances.</summary>
+    [JsonPropertyName("useLocalStorage")]
+    public bool? UseLocalStorage { get; set; }
+}
+
+/// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration
 {
-    /// <summary>The list of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
+    /// <summary>List of security group IDs to apply to Amazon ECS Managed Instances. These security groups control the network traffic allowed to and from the instances.</summary>
     [JsonPropertyName("securityGroups")]
     public IList<string>? SecurityGroups { get; set; }
 
-    /// <summary>The list of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
+    /// <summary>List of subnet IDs where Amazon ECS can launch Amazon ECS Managed Instances. Instances are distributed across the specified subnets for high availability. All subnets must be in the same VPC.</summary>
     [JsonPropertyName("subnets")]
     public IList<string>? Subnets { get; set; }
 }
 
-/// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+/// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration
 {
-    /// <summary>The size of the tasks volume in GiB. Must be at least 1.</summary>
+    /// <summary>Size of the tasks volume in GiB. Must be at least 1.</summary>
     [JsonPropertyName("storageSizeGib")]
     public double? StorageSizeGib { get; set; }
 }
 
-/// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+/// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplate
 {
-    /// <summary>The purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand or Spot instances. Valid values are ON_DEMAND and SPOT. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
+    /// <summary>Purchasing option for the EC2 instances used in the capacity provider. Determines whether to use On-Demand, Spot, or Capacity Reservation instances. Valid values are ON_DEMAND, SPOT, and RESERVED. Defaults to ON_DEMAND when not specified. Changing this value will trigger replacement of the capacity provider. For more information, see Amazon EC2 billing and purchasing options in the Amazon EC2 User Guide.</summary>
     [JsonPropertyName("capacityOptionType")]
     public string? CapacityOptionType { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
+    /// <summary>Capacity Reservation configuration used to launch instances. Required when capacity_option_type is RESERVED. Detailed below.</summary>
+    [JsonPropertyName("capacityReservations")]
+    public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateCapacityReservations? CapacityReservations { get; set; }
+
+    /// <summary>ARN of the instance profile that Amazon ECS applies to Amazon ECS Managed Instances. This instance profile must include the necessary permissions for your tasks to access AWS services and resources. For more information, see Amazon ECS instance profile for Managed Instances in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("ec2InstanceProfileArn")]
     public string? Ec2InstanceProfileArn { get; set; }
 
-    /// <summary>The instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
+    /// <summary>Instance requirements. You can specify the instance types and instance requirements such as vCPU count, memory, network performance, and accelerator specifications. Amazon ECS automatically selects the instances that match the specified criteria. Detailed below.</summary>
     [JsonPropertyName("instanceRequirements")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirements? InstanceRequirements { get; set; }
+
+    /// <summary>Configuration block for the local storage settings applied to Amazon ECS Managed Instances. Detailed below.</summary>
+    [JsonPropertyName("localStorageConfiguration")]
+    public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateLocalStorageConfiguration? LocalStorageConfiguration { get; set; }
 
     /// <summary>CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. By default, your managed instance is configured for basic monitoring. You can optionally enable detailed monitoring to help you more quickly identify and act on operational issues. You can enable or turn off detailed monitoring at launch or when the managed instance is running or stopped. For more information, see Detailed monitoring for Amazon ECS Managed Instances in the Amazon ECS Developer Guide. Valid values are BASIC and DETAILED.</summary>
     [JsonPropertyName("monitoring")]
     public string? Monitoring { get; set; }
 
-    /// <summary>The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
+    /// <summary>Network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity. Detailed below.</summary>
     [JsonPropertyName("networkConfiguration")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateNetworkConfiguration? NetworkConfiguration { get; set; }
 
-    /// <summary>The storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
+    /// <summary>Storage configuration for Amazon ECS Managed Instances. This defines the root volume size and type for the instances. Detailed below.</summary>
     [JsonPropertyName("storageConfiguration")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplateStorageConfiguration? StorageConfiguration { get; set; }
 }
@@ -1545,19 +1733,23 @@ public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CapacityProviderStatusAtProviderManagedInstancesProvider
 {
-    /// <summary>Defines how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider. Configure it to turn on or off the infrastructure optimization in your capacity provider, and to control the idle EC2 instances optimization delay.</summary>
+    /// <summary>Configuration block for the auto repair configuration. Detailed below.</summary>
+    [JsonPropertyName("autoRepairConfiguration")]
+    public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderAutoRepairConfiguration? AutoRepairConfiguration { get; set; }
+
+    /// <summary>Configuration block for how Amazon ECS Managed Instances optimizes the infrastructure in your capacity provider, including whether to turn optimization on or off and how long to delay optimizing idle EC2 instances. Detailed below.</summary>
     [JsonPropertyName("infrastructureOptimization")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInfrastructureOptimization? InfrastructureOptimization { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
+    /// <summary>ARN of the infrastructure role that Amazon ECS uses to manage instances on your behalf. This role must have permissions to launch, terminate, and manage Amazon EC2 instances, as well as access to other AWS services required for Amazon ECS Managed Instances functionality. For more information, see Amazon ECS infrastructure IAM role in the Amazon ECS Developer Guide.</summary>
     [JsonPropertyName("infrastructureRoleArn")]
     public string? InfrastructureRoleArn { get; set; }
 
-    /// <summary>The launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
+    /// <summary>Launch template configuration that specifies how Amazon ECS should launch Amazon EC2 instances. This includes the instance profile, network configuration, storage settings, and instance requirements for attribute-based instance type selection. For more information, see Store instance launch parameters in Amazon EC2 launch templates in the Amazon EC2 User Guide. Detailed below.</summary>
     [JsonPropertyName("instanceLaunchTemplate")]
     public V1beta1CapacityProviderStatusAtProviderManagedInstancesProviderInstanceLaunchTemplate? InstanceLaunchTemplate { get; set; }
 
-    /// <summary>Specifies whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
+    /// <summary>Whether to propagate tags from the capacity provider to the Amazon ECS Managed Instances. When enabled, tags applied to the capacity provider are automatically applied to all instances launched by this provider. Valid values are CAPACITY_PROVIDER and NONE.</summary>
     [JsonPropertyName("propagateTags")]
     public string? PropagateTags { get; set; }
 }

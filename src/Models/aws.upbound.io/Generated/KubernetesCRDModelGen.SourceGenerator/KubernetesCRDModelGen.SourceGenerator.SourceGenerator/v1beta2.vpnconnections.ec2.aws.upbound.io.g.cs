@@ -358,7 +358,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwa
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -370,7 +370,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel1LogOptionsCloudwa
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -416,7 +416,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwa
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -428,7 +428,7 @@ public partial class V1beta2VPNConnectionSpecForProviderTunnel2LogOptionsCloudwa
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -1334,7 +1334,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -1346,7 +1346,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -1392,7 +1392,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -1404,7 +1404,7 @@ public partial class V1beta2VPNConnectionSpecInitProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -2221,7 +2221,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -2233,7 +2233,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel1LogOptionsCloudw
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -2261,7 +2261,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("bgpLogEnabled")]
     public bool? BgpLogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send BGP logs to.</summary>
     [JsonPropertyName("bgpLogGroupArn")]
     public string? BgpLogGroupArn { get; set; }
 
@@ -2273,7 +2273,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderTunnel2LogOptionsCloudw
     [JsonPropertyName("logEnabled")]
     public bool? LogEnabled { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the CloudWatch log group to send logs to.</summary>
+    /// <summary>ARN of the CloudWatch log group to send logs to.</summary>
     [JsonPropertyName("logGroupArn")]
     public string? LogGroupArn { get; set; }
 
@@ -2300,7 +2300,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderVgwTelemetry
     [JsonPropertyName("acceptedRouteCount")]
     public double? AcceptedRouteCount { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the VPN tunnel endpoint certificate.</summary>
+    /// <summary>ARN of the VPN tunnel endpoint certificate.</summary>
     [JsonPropertyName("certificateArn")]
     public string? CertificateArn { get; set; }
 
@@ -2325,7 +2325,7 @@ public partial class V1beta2VPNConnectionStatusAtProviderVgwTelemetry
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VPNConnectionStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of the VPN Connection.</summary>
+    /// <summary>ARN of the VPN Connection.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

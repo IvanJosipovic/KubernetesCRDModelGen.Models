@@ -272,7 +272,7 @@ public partial class V1beta1DomainIdentitySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DomainIdentityStatusAtProvider
 {
-    /// <summary>The ARN of the domain identity.</summary>
+    /// <summary>ARN of the domain identity.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -286,7 +286,7 @@ public partial class V1beta1DomainIdentityStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>A code which when added to the domain as a TXT record will signal to SES that the owner of the domain has authorized SES to act on their behalf. The domain identity will be in state &quot;verification pending&quot; until this is done.  Find out more about verifying domains in Amazon SES in the AWS SES docs.</summary>
+    /// <summary>Code which when added to the domain as a TXT record will signal to SES that the owner of the domain has authorized SES to act on their behalf. The domain identity will be in state &quot;verification pending&quot; until this is done.  Find out more about verifying domains in Amazon SES in the AWS SES docs.</summary>
     [JsonPropertyName("verificationToken")]
     public string? VerificationToken { get; set; }
 }

@@ -148,7 +148,7 @@ spec:
                         type: object
                     type: object
                   podExecutionRoleArn:
-                    description: Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.
+                    description: ARN of the IAM Role that provides permissions for the EKS Fargate Profile.
                     type: string
                   podExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate podExecutionRoleArn.
@@ -424,7 +424,7 @@ spec:
                         type: object
                     type: object
                   podExecutionRoleArn:
-                    description: Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.
+                    description: ARN of the IAM Role that provides permissions for the EKS Fargate Profile.
                     type: string
                   podExecutionRoleArnRef:
                     description: Reference to a Role in iam to populate podExecutionRoleArn.
@@ -698,7 +698,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) of the EKS Fargate Profile.
+                    description: ARN of the EKS Fargate Profile.
                     type: string
                   clusterName:
                     description: Name of the EKS Cluster.
@@ -707,7 +707,7 @@ spec:
                     description: EKS Cluster name and EKS Fargate Profile name separated by a colon (:).
                     type: string
                   podExecutionRoleArn:
-                    description: Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Fargate Profile.
+                    description: ARN of the IAM Role that provides permissions for the EKS Fargate Profile.
                     type: string
                   region:
                     description: |-

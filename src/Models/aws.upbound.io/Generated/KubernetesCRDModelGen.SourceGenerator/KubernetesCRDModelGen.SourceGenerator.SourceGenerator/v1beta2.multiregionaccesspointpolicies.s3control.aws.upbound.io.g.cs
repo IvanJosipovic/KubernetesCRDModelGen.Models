@@ -55,16 +55,16 @@ public enum V1beta2MultiRegionAccessPointPolicySpecDeletionPolicyEnum
     Delete
 }
 
-/// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicySpecForProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
+    /// <summary>Valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -73,11 +73,11 @@ public partial class V1beta2MultiRegionAccessPointPolicySpecForProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicySpecForProvider
 {
-    /// <summary>The AWS account ID for the owner of the Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointPolicySpecForProviderDetails? Details { get; set; }
 
@@ -89,16 +89,16 @@ public partial class V1beta2MultiRegionAccessPointPolicySpecForProvider
     public required string Region { get; set; }
 }
 
-/// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicySpecInitProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
+    /// <summary>Valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -119,11 +119,11 @@ public partial class V1beta2MultiRegionAccessPointPolicySpecInitProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicySpecInitProvider
 {
-    /// <summary>The AWS account ID for the owner of the Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointPolicySpecInitProviderDetails? Details { get; set; }
 }
@@ -311,16 +311,16 @@ public partial class V1beta2MultiRegionAccessPointPolicySpec
     public V1beta2MultiRegionAccessPointPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+/// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicyStatusAtProviderDetails
 {
-    /// <summary>The name of the Multi-Region Access Point.</summary>
+    /// <summary>Name of the Multi-Region Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
+    /// <summary>Valid JSON document that specifies the policy that you want to associate with this Multi-Region Access Point. Once applied, the policy can be edited, but not deleted. For more information, see the documentation on Multi-Region Access Point Permissions.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -329,23 +329,23 @@ public partial class V1beta2MultiRegionAccessPointPolicyStatusAtProviderDetails
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MultiRegionAccessPointPolicyStatusAtProvider
 {
-    /// <summary>The AWS account ID for the owner of the Multi-Region Access Point.</summary>
+    /// <summary>AWS account ID for the owner of the Multi-Region Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>A configuration block containing details about the policy for the Multi-Region Access Point. See Details Configuration Block below for more details</summary>
+    /// <summary>Configuration block containing details about the policy for the Multi-Region Access Point. See details Block below for more details</summary>
     [JsonPropertyName("details")]
     public V1beta2MultiRegionAccessPointPolicyStatusAtProviderDetails? Details { get; set; }
 
-    /// <summary>The last established policy for the Multi-Region Access Point.</summary>
+    /// <summary>Last established policy for the Multi-Region Access Point.</summary>
     [JsonPropertyName("established")]
     public string? Established { get; set; }
 
-    /// <summary>The AWS account ID and access point name separated by a colon (:).</summary>
+    /// <summary>AWS account ID and access point name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The proposed policy for the Multi-Region Access Point.</summary>
+    /// <summary>Proposed policy for the Multi-Region Access Point.</summary>
     [JsonPropertyName("proposed")]
     public string? Proposed { get; set; }
 

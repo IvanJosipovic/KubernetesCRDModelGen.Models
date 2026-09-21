@@ -113,7 +113,7 @@ public partial class V1beta2FeatureGroupSpecForProviderOfflineStoreConfigDataCat
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupSpecForProviderOfflineStoreConfigS3StorageConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -153,7 +153,7 @@ public partial class V1beta2FeatureGroupSpecForProviderOfflineStoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupSpecForProviderOnlineStoreConfigSecurityConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
@@ -390,7 +390,7 @@ public partial class V1beta2FeatureGroupSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
+    /// <summary>The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -468,7 +468,7 @@ public partial class V1beta2FeatureGroupSpecInitProviderOfflineStoreConfigDataCa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupSpecInitProviderOfflineStoreConfigS3StorageConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -508,7 +508,7 @@ public partial class V1beta2FeatureGroupSpecInitProviderOfflineStoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupSpecInitProviderOnlineStoreConfigSecurityConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
@@ -750,7 +750,7 @@ public partial class V1beta2FeatureGroupSpecInitProvider
     [JsonPropertyName("recordIdentifierFeatureName")]
     public string? RecordIdentifierFeatureName { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
+    /// <summary>The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -1011,7 +1011,7 @@ public partial class V1beta2FeatureGroupStatusAtProviderOfflineStoreConfigDataCa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupStatusAtProviderOfflineStoreConfigS3StorageConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -1051,7 +1051,7 @@ public partial class V1beta2FeatureGroupStatusAtProviderOfflineStoreConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupStatusAtProviderOnlineStoreConfigSecurityConfig
 {
-    /// <summary>The AWS Key Management Service (KMS) key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
+    /// <summary>KMS key ID of the key used to encrypt any objects written into the OfflineStore S3 location.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 }
@@ -1110,7 +1110,7 @@ public partial class V1beta2FeatureGroupStatusAtProviderThroughputConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FeatureGroupStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this feature_group.</summary>
+    /// <summary>ARN assigned by AWS to this feature_group.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -1148,7 +1148,7 @@ public partial class V1beta2FeatureGroupStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
+    /// <summary>The ARN of the IAM execution role used to persist data into the Offline Store if an offline_store_config is provided.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 

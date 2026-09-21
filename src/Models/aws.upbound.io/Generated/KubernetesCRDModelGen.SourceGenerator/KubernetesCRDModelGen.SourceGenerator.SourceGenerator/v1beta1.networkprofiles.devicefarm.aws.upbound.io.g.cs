@@ -685,7 +685,7 @@ public partial class V1beta1NetworkProfileSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkProfileStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name of this network profile.</summary>
+    /// <summary>ARN of this network profile.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

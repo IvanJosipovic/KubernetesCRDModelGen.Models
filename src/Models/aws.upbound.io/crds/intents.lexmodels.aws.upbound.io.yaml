@@ -1465,7 +1465,7 @@ spec:
                           Using Lambda Functions. Must be less than or equal to 5 characters in length.
                         type: string
                       uri:
-                        description: The Amazon Resource Name (ARN) of the Lambda function.
+                        description: ARN of the Lambda function.
                         type: string
                     type: object
                   followUpPrompt:
@@ -1560,7 +1560,7 @@ spec:
                               Using Lambda Functions. Must be less than or equal to 5 characters in length.
                             type: string
                           uri:
-                            description: The Amazon Resource Name (ARN) of the Lambda function.
+                            description: ARN of the Lambda function.
                             type: string
                         type: object
                       type:
@@ -1812,7 +1812,7 @@ spec:
                           Using Lambda Functions. Must be less than or equal to 5 characters in length.
                         type: string
                       uri:
-                        description: The Amazon Resource Name (ARN) of the Lambda function.
+                        description: ARN of the Lambda function.
                         type: string
                     type: object
                   followUpPrompt:
@@ -1907,7 +1907,7 @@ spec:
                               Using Lambda Functions. Must be less than or equal to 5 characters in length.
                             type: string
                           uri:
-                            description: The Amazon Resource Name (ARN) of the Lambda function.
+                            description: ARN of the Lambda function.
                             type: string
                         type: object
                       type:
@@ -2244,7 +2244,7 @@ spec:
                           Using Lambda Functions. Must be less than or equal to 5 characters in length.
                         type: string
                       uri:
-                        description: The Amazon Resource Name (ARN) of the Lambda function.
+                        description: ARN of the Lambda function.
                         type: string
                     type: object
                   followUpPrompt:
@@ -2339,7 +2339,7 @@ spec:
                               Using Lambda Functions. Must be less than or equal to 5 characters in length.
                             type: string
                           uri:
-                            description: The Amazon Resource Name (ARN) of the Lambda function.
+                            description: ARN of the Lambda function.
                             type: string
                         type: object
                       type:

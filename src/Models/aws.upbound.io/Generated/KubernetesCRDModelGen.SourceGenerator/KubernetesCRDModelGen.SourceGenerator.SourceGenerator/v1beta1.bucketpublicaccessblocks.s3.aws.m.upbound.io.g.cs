@@ -195,11 +195,11 @@ public partial class V1beta1BucketPublicAccessBlockSpecForProviderBucketSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketPublicAccessBlockSpecForProvider
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes an object ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
@@ -215,7 +215,7 @@ public partial class V1beta1BucketPublicAccessBlockSpecForProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta1BucketPublicAccessBlockSpecForProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores public ACLs on this bucket and any objects that it contains.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
@@ -226,7 +226,7 @@ public partial class V1beta1BucketPublicAccessBlockSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS services can access this bucket if it has a public policy.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 
@@ -406,11 +406,11 @@ public partial class V1beta1BucketPublicAccessBlockSpecInitProviderBucketSelecto
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketPublicAccessBlockSpecInitProvider
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes an object ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
@@ -426,11 +426,11 @@ public partial class V1beta1BucketPublicAccessBlockSpecInitProvider
     [JsonPropertyName("bucketSelector")]
     public V1beta1BucketPublicAccessBlockSpecInitProviderBucketSelector? BucketSelector { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores public ACLs on this bucket and any objects that it contains.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS services can access this bucket if it has a public policy.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 
@@ -550,11 +550,11 @@ public partial class V1beta1BucketPublicAccessBlockSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketPublicAccessBlockStatusAtProvider
 {
-    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
+    /// <summary>Whether Amazon S3 should block public ACLs for this bucket. Defaults to false. Enabling this setting does not affect existing policies or ACLs. When set to true, PUT Bucket ACL and PUT Object ACL calls fail if the specified ACL allows public access, and PUT Object calls fail if the request includes an object ACL.</summary>
     [JsonPropertyName("blockPublicAcls")]
     public bool? BlockPublicAcls { get; set; }
 
-    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should block public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the existing bucket policy. When set to true, Amazon S3 rejects calls to PUT Bucket policy if the specified bucket policy allows public access.</summary>
     [JsonPropertyName("blockPublicPolicy")]
     public bool? BlockPublicPolicy { get; set; }
 
@@ -566,7 +566,7 @@ public partial class V1beta1BucketPublicAccessBlockStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true causes Amazon S3 to:</summary>
+    /// <summary>Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to false. Enabling this setting does not affect the persistence of any existing ACLs and doesn&apos;t prevent new public ACLs from being set. When set to true, Amazon S3 ignores public ACLs on this bucket and any objects that it contains.</summary>
     [JsonPropertyName("ignorePublicAcls")]
     public bool? IgnorePublicAcls { get; set; }
 
@@ -577,7 +577,7 @@ public partial class V1beta1BucketPublicAccessBlockStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true:</summary>
+    /// <summary>Whether Amazon S3 should restrict public bucket policies for this bucket. Defaults to false. Enabling this setting does not affect the previously stored bucket policy, except that public and cross-account access within the public bucket policy, including non-public delegation to specific accounts, is blocked. When set to true, only the bucket owner and AWS services can access this bucket if it has a public policy.</summary>
     [JsonPropertyName("restrictPublicBuckets")]
     public bool? RestrictPublicBuckets { get; set; }
 

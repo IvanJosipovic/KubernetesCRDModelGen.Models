@@ -914,7 +914,7 @@ public partial class V1beta1ZoneStatusAtProviderVpc
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ZoneStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Hosted Zone.</summary>
+    /// <summary>ARN of the Hosted Zone.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

@@ -1206,7 +1206,7 @@ spec:
                         type: string
                     type: object
                   firewallPolicyArn:
-                    description: The Amazon Resource Name (ARN) of the VPC Firewall policy.
+                    description: ARN of the VPC Firewall policy.
                     type: string
                   firewallPolicyArnRef:
                     description: Reference to a FirewallPolicy in networkfirewall to populate firewallPolicyArn.
@@ -1589,7 +1589,7 @@ spec:
                         type: string
                     type: object
                   firewallPolicyArn:
-                    description: The Amazon Resource Name (ARN) of the VPC Firewall policy.
+                    description: ARN of the VPC Firewall policy.
                     type: string
                   firewallPolicyArnRef:
                     description: Reference to a FirewallPolicy in networkfirewall to populate firewallPolicyArn.
@@ -2012,7 +2012,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: The Amazon Resource Name (ARN) that identifies the firewall.
+                    description: ARN that identifies the firewall.
                     type: string
                   availabilityZoneChangeProtection:
                     description: A setting indicating whether the firewall is protected against changes to its Availability Zone configuration. When set to true, you must first disable this protection before adding or removing Availability Zones.
@@ -2049,7 +2049,7 @@ spec:
                         type: string
                     type: object
                   firewallPolicyArn:
-                    description: The Amazon Resource Name (ARN) of the VPC Firewall policy.
+                    description: ARN of the VPC Firewall policy.
                     type: string
                   firewallPolicyChangeProtection:
                     description: A flag indicating whether the firewall is protected against a change to the firewall policy association. Use this setting to protect against accidentally modifying the firewall policy for a firewall that is in use. Defaults to false.
@@ -2091,7 +2091,7 @@ spec:
                       type: object
                     type: array
                   id:
-                    description: The Amazon Resource Name (ARN) that identifies the firewall.
+                    description: ARN that identifies the firewall.
                     type: string
                   name:
                     description: A friendly name of the firewall.

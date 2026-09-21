@@ -206,11 +206,11 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSele
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProvider
 {
-    /// <summary>The AWS account ID for the account that owns the Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the account that owns the Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The name of the Object Lambda Access Point.</summary>
+    /// <summary>Name of the Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -222,7 +222,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecForProvider
     [JsonPropertyName("nameSelector")]
     public V1beta1ObjectLambdaAccessPointPolicySpecForProviderNameSelector? NameSelector { get; set; }
 
-    /// <summary>The Object Lambda Access Point resource policy document.</summary>
+    /// <summary>Object Lambda Access Point resource policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 
@@ -397,11 +397,11 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSel
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProvider
 {
-    /// <summary>The AWS account ID for the account that owns the Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the account that owns the Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>The name of the Object Lambda Access Point.</summary>
+    /// <summary>Name of the Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -413,7 +413,7 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpecInitProvider
     [JsonPropertyName("nameSelector")]
     public V1beta1ObjectLambdaAccessPointPolicySpecInitProviderNameSelector? NameSelector { get; set; }
 
-    /// <summary>The Object Lambda Access Point resource policy document.</summary>
+    /// <summary>Object Lambda Access Point resource policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 }
@@ -605,23 +605,23 @@ public partial class V1beta1ObjectLambdaAccessPointPolicySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ObjectLambdaAccessPointPolicyStatusAtProvider
 {
-    /// <summary>The AWS account ID for the account that owns the Object Lambda Access Point.</summary>
+    /// <summary>AWS account ID for the account that owns the Object Lambda Access Point.</summary>
     [JsonPropertyName("accountId")]
     public string? AccountId { get; set; }
 
-    /// <summary>Indicates whether this access point currently has a policy that allows public access.</summary>
+    /// <summary>Whether this access point currently has a policy that allows public access.</summary>
     [JsonPropertyName("hasPublicAccessPolicy")]
     public bool? HasPublicAccessPolicy { get; set; }
 
-    /// <summary>The AWS account ID and access point name separated by a colon (:).</summary>
+    /// <summary>AWS account ID and access point name separated by a colon (:).</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the Object Lambda Access Point.</summary>
+    /// <summary>Name of the Object Lambda Access Point.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>The Object Lambda Access Point resource policy document.</summary>
+    /// <summary>Object Lambda Access Point resource policy document.</summary>
     [JsonPropertyName("policy")]
     public string? Policy { get; set; }
 

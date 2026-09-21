@@ -285,7 +285,7 @@ public partial class V1beta1ConfigurationRecorderSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
+    /// <summary>ARN of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -552,7 +552,7 @@ public partial class V1beta1ConfigurationRecorderSpecInitProvider
     [JsonPropertyName("recordingMode")]
     public V1beta1ConfigurationRecorderSpecInitProviderRecordingMode? RecordingMode { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
+    /// <summary>ARN of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 
@@ -769,7 +769,7 @@ public partial class V1beta1ConfigurationRecorderStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
+    /// <summary>ARN of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See AWS Docs for more details.</summary>
     [JsonPropertyName("roleArn")]
     public string? RoleArn { get; set; }
 }

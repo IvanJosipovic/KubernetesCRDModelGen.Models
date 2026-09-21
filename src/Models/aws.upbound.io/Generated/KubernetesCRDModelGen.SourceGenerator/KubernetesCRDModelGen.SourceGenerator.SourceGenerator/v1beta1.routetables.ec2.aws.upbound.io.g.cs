@@ -605,7 +605,7 @@ public partial class V1beta1RouteTableStatusAtProviderRoute
     [JsonPropertyName("cidrBlock")]
     public string? CidrBlock { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of a core network.</summary>
+    /// <summary>ARN of a core network.</summary>
     [JsonPropertyName("coreNetworkArn")]
     public string? CoreNetworkArn { get; set; }
 
@@ -637,7 +637,7 @@ public partial class V1beta1RouteTableStatusAtProviderRoute
     [JsonPropertyName("networkInterfaceId")]
     public string? NetworkInterfaceId { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of an ODB network.</summary>
+    /// <summary>ARN of an ODB network.</summary>
     [JsonPropertyName("odbNetworkArn")]
     public string? OdbNetworkArn { get; set; }
 

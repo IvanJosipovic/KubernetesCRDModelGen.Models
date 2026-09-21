@@ -191,7 +191,7 @@ public partial class V1beta1EmailIdentitySpecForProviderConfigurationSetNameSele
     public V1beta1EmailIdentitySpecForProviderConfigurationSetNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>[Bring Your Own DKIM] A private key that&apos;s used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
+/// <summary>[Bring Your Own DKIM] Private key used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecForProviderDkimSigningAttributesDomainSigningPrivateKeySecretRef
@@ -204,20 +204,20 @@ public partial class V1beta1EmailIdentitySpecForProviderDkimSigningAttributesDom
     public required string Name { get; set; }
 }
 
-/// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+/// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecForProviderDkimSigningAttributes
 {
-    /// <summary>[Bring Your Own DKIM] A private key that&apos;s used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
+    /// <summary>[Bring Your Own DKIM] Private key used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
     [JsonPropertyName("domainSigningPrivateKeySecretRef")]
     public V1beta1EmailIdentitySpecForProviderDkimSigningAttributesDomainSigningPrivateKeySecretRef? DomainSigningPrivateKeySecretRef { get; set; }
 
-    /// <summary>[Bring Your Own DKIM] A string that&apos;s used to identify a public key in the DNS configuration for a domain.</summary>
+    /// <summary>[Bring Your Own DKIM] String used to identify a public key in the DNS configuration for a domain.</summary>
     [JsonPropertyName("domainSigningSelector")]
     public string? DomainSigningSelector { get; set; }
 
-    /// <summary>[Easy DKIM] The key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
+    /// <summary>[Easy DKIM] Key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
     [JsonPropertyName("nextSigningKeyLength")]
     public string? NextSigningKeyLength { get; set; }
 }
@@ -226,7 +226,7 @@ public partial class V1beta1EmailIdentitySpecForProviderDkimSigningAttributes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecForProvider
 {
-    /// <summary>The configuration set to use by default when sending from this identity. Note that any configuration set defined in the email sending request takes precedence.</summary>
+    /// <summary>Configuration set to use by default when sending from this identity. Any configuration set defined in the email sending request takes precedence.</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
@@ -238,7 +238,7 @@ public partial class V1beta1EmailIdentitySpecForProvider
     [JsonPropertyName("configurationSetNameSelector")]
     public V1beta1EmailIdentitySpecForProviderConfigurationSetNameSelector? ConfigurationSetNameSelector { get; set; }
 
-    /// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+    /// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
     [JsonPropertyName("dkimSigningAttributes")]
     public V1beta1EmailIdentitySpecForProviderDkimSigningAttributes? DkimSigningAttributes { get; set; }
 
@@ -409,7 +409,7 @@ public partial class V1beta1EmailIdentitySpecInitProviderConfigurationSetNameSel
     public V1beta1EmailIdentitySpecInitProviderConfigurationSetNameSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>[Bring Your Own DKIM] A private key that&apos;s used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
+/// <summary>[Bring Your Own DKIM] Private key used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecInitProviderDkimSigningAttributesDomainSigningPrivateKeySecretRef
@@ -422,20 +422,20 @@ public partial class V1beta1EmailIdentitySpecInitProviderDkimSigningAttributesDo
     public required string Name { get; set; }
 }
 
-/// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+/// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecInitProviderDkimSigningAttributes
 {
-    /// <summary>[Bring Your Own DKIM] A private key that&apos;s used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
+    /// <summary>[Bring Your Own DKIM] Private key used to generate a DKIM signature. The private key must use 1024 or 2048-bit RSA encryption, and must be encoded using base64 encoding.</summary>
     [JsonPropertyName("domainSigningPrivateKeySecretRef")]
     public V1beta1EmailIdentitySpecInitProviderDkimSigningAttributesDomainSigningPrivateKeySecretRef? DomainSigningPrivateKeySecretRef { get; set; }
 
-    /// <summary>[Bring Your Own DKIM] A string that&apos;s used to identify a public key in the DNS configuration for a domain.</summary>
+    /// <summary>[Bring Your Own DKIM] String used to identify a public key in the DNS configuration for a domain.</summary>
     [JsonPropertyName("domainSigningSelector")]
     public string? DomainSigningSelector { get; set; }
 
-    /// <summary>[Easy DKIM] The key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
+    /// <summary>[Easy DKIM] Key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
     [JsonPropertyName("nextSigningKeyLength")]
     public string? NextSigningKeyLength { get; set; }
 }
@@ -456,7 +456,7 @@ public partial class V1beta1EmailIdentitySpecInitProviderDkimSigningAttributes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentitySpecInitProvider
 {
-    /// <summary>The configuration set to use by default when sending from this identity. Note that any configuration set defined in the email sending request takes precedence.</summary>
+    /// <summary>Configuration set to use by default when sending from this identity. Any configuration set defined in the email sending request takes precedence.</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
@@ -468,7 +468,7 @@ public partial class V1beta1EmailIdentitySpecInitProvider
     [JsonPropertyName("configurationSetNameSelector")]
     public V1beta1EmailIdentitySpecInitProviderConfigurationSetNameSelector? ConfigurationSetNameSelector { get; set; }
 
-    /// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+    /// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
     [JsonPropertyName("dkimSigningAttributes")]
     public V1beta1EmailIdentitySpecInitProviderDkimSigningAttributes? DkimSigningAttributes { get; set; }
 
@@ -584,32 +584,32 @@ public partial class V1beta1EmailIdentitySpec
     public V1beta1EmailIdentitySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+/// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EmailIdentityStatusAtProviderDkimSigningAttributes
 {
-    /// <summary>[Easy DKIM] The key length of the DKIM key pair in use.</summary>
+    /// <summary>[Easy DKIM] Key length of the DKIM key pair in use.</summary>
     [JsonPropertyName("currentSigningKeyLength")]
     public string? CurrentSigningKeyLength { get; set; }
 
-    /// <summary>[Bring Your Own DKIM] A string that&apos;s used to identify a public key in the DNS configuration for a domain.</summary>
+    /// <summary>[Bring Your Own DKIM] String used to identify a public key in the DNS configuration for a domain.</summary>
     [JsonPropertyName("domainSigningSelector")]
     public string? DomainSigningSelector { get; set; }
 
-    /// <summary>[Easy DKIM] The last time a key pair was generated for this identity.</summary>
+    /// <summary>[Easy DKIM] Last time a key pair was generated for this identity.</summary>
     [JsonPropertyName("lastKeyGenerationTimestamp")]
     public string? LastKeyGenerationTimestamp { get; set; }
 
-    /// <summary>[Easy DKIM] The key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
+    /// <summary>[Easy DKIM] Key length of the future DKIM key pair to be generated. This can be changed at most once per day. Valid values: RSA_1024_BIT, RSA_2048_BIT.</summary>
     [JsonPropertyName("nextSigningKeyLength")]
     public string? NextSigningKeyLength { get; set; }
 
-    /// <summary>A string that indicates how DKIM was configured for the identity. AWS_SES indicates that DKIM was configured for the identity by using Easy DKIM. EXTERNAL indicates that DKIM was configured for the identity by using Bring Your Own DKIM (BYODKIM).</summary>
+    /// <summary>How DKIM was configured for the identity. AWS_SES indicates that DKIM was configured for the identity by using Easy DKIM. EXTERNAL indicates that DKIM was configured for the identity by using Bring Your Own DKIM (BYODKIM).</summary>
     [JsonPropertyName("signingAttributesOrigin")]
     public string? SigningAttributesOrigin { get; set; }
 
-    /// <summary>Describes whether or not Amazon SES has successfully located the DKIM records in the DNS records for the domain. See the AWS SES API v2 Reference for supported statuses.</summary>
+    /// <summary>Whether Amazon SES has successfully located the DKIM records in the DNS records for the domain. See the AWS SES API v2 Reference for supported statuses.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
 
@@ -626,18 +626,18 @@ public partial class V1beta1EmailIdentityStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The configuration set to use by default when sending from this identity. Note that any configuration set defined in the email sending request takes precedence.</summary>
+    /// <summary>Configuration set to use by default when sending from this identity. Any configuration set defined in the email sending request takes precedence.</summary>
     [JsonPropertyName("configurationSetName")]
     public string? ConfigurationSetName { get; set; }
 
-    /// <summary>The configuration of the DKIM authentication settings for an email domain identity.</summary>
+    /// <summary>Configuration block for the DKIM authentication settings for an email domain identity. See dkim_signing_attributes Block below.</summary>
     [JsonPropertyName("dkimSigningAttributes")]
     public V1beta1EmailIdentityStatusAtProviderDkimSigningAttributes? DkimSigningAttributes { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The email identity type. Valid values: EMAIL_ADDRESS, DOMAIN.</summary>
+    /// <summary>Email identity type. Valid values: EMAIL_ADDRESS, DOMAIN.</summary>
     [JsonPropertyName("identityType")]
     public string? IdentityType { get; set; }
 
@@ -656,11 +656,11 @@ public partial class V1beta1EmailIdentityStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The verification status of the identity. The status can be one of the following: PENDING, SUCCESS, FAILED, TEMPORARY_FAILURE, and NOT_STARTED.</summary>
+    /// <summary>Verification status of the identity. One of PENDING, SUCCESS, FAILED, TEMPORARY_FAILURE, and NOT_STARTED.</summary>
     [JsonPropertyName("verificationStatus")]
     public string? VerificationStatus { get; set; }
 
-    /// <summary>Specifies whether or not the identity is verified.</summary>
+    /// <summary>Whether the identity is verified.</summary>
     [JsonPropertyName("verifiedForSendingStatus")]
     public bool? VerifiedForSendingStatus { get; set; }
 }

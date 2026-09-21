@@ -206,7 +206,7 @@ public partial class V1beta1SnapshotCopyGrantSpecForProviderKmsKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotCopyGrantSpecForProvider
 {
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -397,7 +397,7 @@ public partial class V1beta1SnapshotCopyGrantSpecInitProviderKmsKeyIdSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotCopyGrantSpecInitProvider
 {
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 
@@ -605,14 +605,14 @@ public partial class V1beta1SnapshotCopyGrantSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SnapshotCopyGrantStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of snapshot copy grant</summary>
+    /// <summary>ARN of snapshot copy grant</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
+    /// <summary>Unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the ARN of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.</summary>
     [JsonPropertyName("kmsKeyId")]
     public string? KmsKeyId { get; set; }
 

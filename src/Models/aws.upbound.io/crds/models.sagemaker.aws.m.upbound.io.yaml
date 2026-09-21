@@ -105,16 +105,16 @@ spec:
                           description: Registry path where the inference code image is stored in Amazon ECR.
                           type: string
                         imageConfig:
-                          description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                          description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                           properties:
                             repositoryAccessMode:
-                              description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                              description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                               type: string
                             repositoryAuthConfig:
                               description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                               properties:
                                 repositoryCredentialsProviderArn:
-                                  description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                  description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                   type: string
                               type: object
                           type: object
@@ -155,7 +155,7 @@ spec:
                           type: string
                         modelPackageName:
                           description: |-
-                            Amazon Resource Name (ARN) of the model package to use to create the model.
+                            ARN of the model package to use to create the model.
                             A list of key value pairs.
                           type: string
                         multiModelConfig:
@@ -306,16 +306,16 @@ spec:
                         description: Registry path where the inference code image is stored in Amazon ECR.
                         type: string
                       imageConfig:
-                        description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                        description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                         properties:
                           repositoryAccessMode:
-                            description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                            description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                             type: string
                           repositoryAuthConfig:
                             description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                             properties:
                               repositoryCredentialsProviderArn:
-                                description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                 type: string
                             type: object
                         type: object
@@ -356,7 +356,7 @@ spec:
                         type: string
                       modelPackageName:
                         description: |-
-                          Amazon Resource Name (ARN) of the model package to use to create the model.
+                          ARN of the model package to use to create the model.
                           A list of key value pairs.
                         type: string
                       multiModelConfig:
@@ -458,16 +458,16 @@ spec:
                           description: Registry path where the inference code image is stored in Amazon ECR.
                           type: string
                         imageConfig:
-                          description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                          description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                           properties:
                             repositoryAccessMode:
-                              description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                              description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                               type: string
                             repositoryAuthConfig:
                               description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                               properties:
                                 repositoryCredentialsProviderArn:
-                                  description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                  description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                   type: string
                               type: object
                           type: object
@@ -508,7 +508,7 @@ spec:
                           type: string
                         modelPackageName:
                           description: |-
-                            Amazon Resource Name (ARN) of the model package to use to create the model.
+                            ARN of the model package to use to create the model.
                             A list of key value pairs.
                           type: string
                         multiModelConfig:
@@ -659,16 +659,16 @@ spec:
                         description: Registry path where the inference code image is stored in Amazon ECR.
                         type: string
                       imageConfig:
-                        description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                        description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                         properties:
                           repositoryAccessMode:
-                            description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                            description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                             type: string
                           repositoryAuthConfig:
                             description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                             properties:
                               repositoryCredentialsProviderArn:
-                                description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                 type: string
                             type: object
                         type: object
@@ -709,7 +709,7 @@ spec:
                         type: string
                       modelPackageName:
                         description: |-
-                          Amazon Resource Name (ARN) of the model package to use to create the model.
+                          ARN of the model package to use to create the model.
                           A list of key value pairs.
                         type: string
                       multiModelConfig:
@@ -807,7 +807,7 @@ spec:
               atProvider:
                 properties:
                   arn:
-                    description: Amazon Resource Name (ARN) assigned by AWS to this model.
+                    description: ARN assigned by AWS to this model.
                     type: string
                   container:
                     description: Specifies containers in the inference pipeline. If not specified, the primary_container argument is required. Fields are documented below.
@@ -857,16 +857,16 @@ spec:
                           description: Registry path where the inference code image is stored in Amazon ECR.
                           type: string
                         imageConfig:
-                          description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                          description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                           properties:
                             repositoryAccessMode:
-                              description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                              description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                               type: string
                             repositoryAuthConfig:
                               description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                               properties:
                                 repositoryCredentialsProviderArn:
-                                  description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                  description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                   type: string
                               type: object
                           type: object
@@ -907,7 +907,7 @@ spec:
                           type: string
                         modelPackageName:
                           description: |-
-                            Amazon Resource Name (ARN) of the model package to use to create the model.
+                            ARN of the model package to use to create the model.
                             A list of key value pairs.
                           type: string
                         multiModelConfig:
@@ -981,16 +981,16 @@ spec:
                         description: Registry path where the inference code image is stored in Amazon ECR.
                         type: string
                       imageConfig:
-                        description: Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
+                        description: Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. For more information see Using a Private Docker Registry for Real-Time Inference Containers. see Image Config.
                         properties:
                           repositoryAccessMode:
-                            description: 'Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.'
+                            description: 'Whether the model container is in Amazon ECR or a private Docker registry accessible from your VPC. Allowed values are: Platform and Vpc.'
                             type: string
                           repositoryAuthConfig:
                             description: Specifies an authentication configuration for the private docker registry where your model image is hosted. Specify a value for this property only if you specified Vpc as the value for the RepositoryAccessMode field, and the private Docker registry where the model image is hosted requires authentication. see Repository Auth Config.
                             properties:
                               repositoryCredentialsProviderArn:
-                                description: Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
+                                description: ARN of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.
                                 type: string
                             type: object
                         type: object
@@ -1031,7 +1031,7 @@ spec:
                         type: string
                       modelPackageName:
                         description: |-
-                          Amazon Resource Name (ARN) of the model package to use to create the model.
+                          ARN of the model package to use to create the model.
                           A list of key value pairs.
                         type: string
                       multiModelConfig:

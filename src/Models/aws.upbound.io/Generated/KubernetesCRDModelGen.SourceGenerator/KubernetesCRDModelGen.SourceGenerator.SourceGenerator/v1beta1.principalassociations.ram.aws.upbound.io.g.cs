@@ -353,7 +353,7 @@ public partial class V1beta1PrincipalAssociationSpecForProviderResourceShareArnS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalAssociationSpecForProvider
 {
-    /// <summary>The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
+    /// <summary>Principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
     [JsonPropertyName("principal")]
     public string? Principal { get; set; }
 
@@ -372,7 +372,7 @@ public partial class V1beta1PrincipalAssociationSpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 
@@ -695,7 +695,7 @@ public partial class V1beta1PrincipalAssociationSpecInitProviderResourceShareArn
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalAssociationSpecInitProvider
 {
-    /// <summary>The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
+    /// <summary>Principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
     [JsonPropertyName("principal")]
     public string? Principal { get; set; }
 
@@ -707,7 +707,7 @@ public partial class V1beta1PrincipalAssociationSpecInitProvider
     [JsonPropertyName("principalSelector")]
     public V1beta1PrincipalAssociationSpecInitProviderPrincipalSelector? PrincipalSelector { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 
@@ -907,11 +907,11 @@ public partial class V1beta1PrincipalAssociationSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalAssociationStatusAtProvider
 {
-    /// <summary>The Amazon Resource Name (ARN) of the Resource Share and the principal, separated by a comma.</summary>
+    /// <summary>ARN of the Resource Share and the principal, separated by a comma.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
+    /// <summary>Principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.</summary>
     [JsonPropertyName("principal")]
     public string? Principal { get; set; }
 
@@ -922,7 +922,7 @@ public partial class V1beta1PrincipalAssociationStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the resource share.</summary>
+    /// <summary>ARN of the resource share.</summary>
     [JsonPropertyName("resourceShareArn")]
     public string? ResourceShareArn { get; set; }
 }

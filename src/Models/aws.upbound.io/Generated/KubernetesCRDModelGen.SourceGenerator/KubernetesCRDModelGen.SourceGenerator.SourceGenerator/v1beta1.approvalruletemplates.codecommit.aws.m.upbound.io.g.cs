@@ -215,7 +215,7 @@ public partial class V1beta1ApprovalRuleTemplateStatusAtProvider
     [JsonPropertyName("lastModifiedDate")]
     public string? LastModifiedDate { get; set; }
 
-    /// <summary>The Amazon Resource Name (ARN) of the user who made the most recent changes to the approval rule template.</summary>
+    /// <summary>ARN of the user who made the most recent changes to the approval rule template.</summary>
     [JsonPropertyName("lastModifiedUser")]
     public string? LastModifiedUser { get; set; }
 

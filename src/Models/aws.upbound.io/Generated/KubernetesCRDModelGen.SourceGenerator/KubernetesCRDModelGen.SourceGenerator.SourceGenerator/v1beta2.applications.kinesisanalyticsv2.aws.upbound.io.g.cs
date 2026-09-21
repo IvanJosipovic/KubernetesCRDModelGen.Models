@@ -862,7 +862,7 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
@@ -908,7 +908,7 @@ public partial class V1beta2ApplicationSpecForProviderApplicationConfigurationSq
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationSpecForProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 
@@ -3121,7 +3121,7 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputResourceArnSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
@@ -3167,7 +3167,7 @@ public partial class V1beta2ApplicationSpecInitProviderApplicationConfigurationS
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationSpecInitProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 
@@ -5111,7 +5111,7 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
     public string? ResourceArn { get; set; }
 }
 
-/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+/// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
@@ -5156,7 +5156,7 @@ public partial class V1beta2ApplicationStatusAtProviderApplicationConfigurationS
     [JsonPropertyName("kinesisFirehoseInput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput? KinesisFirehoseInput { get; set; }
 
-    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s Amazon Resource Name (ARN).</summary>
+    /// <summary>If the streaming source is a Kinesis data stream, identifies the stream&apos;s ARN.</summary>
     [JsonPropertyName("kinesisStreamsInput")]
     public V1beta2ApplicationStatusAtProviderApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput? KinesisStreamsInput { get; set; }
 

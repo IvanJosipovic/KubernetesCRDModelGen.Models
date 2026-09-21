@@ -36,57 +36,58 @@ public partial class V1beta1TargetGroupList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1beta1TargetGroup> Items { get; set; }
 }
 
-/// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+/// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecForProviderConfigHealthCheckMatcher
 {
-    /// <summary>The HTTP codes to use when checking for a successful response from a target.</summary>
+    /// <summary>HTTP codes to use when checking for a successful response from a target.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The health check configuration.</summary>
+/// <summary>Health check configuration. See health_check Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecForProviderConfigHealthCheck
 {
-    /// <summary>Indicates whether health checking is enabled. Defaults to true.</summary>
+    /// <summary>Whether health checking is enabled. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
+    /// <summary>Approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
-    /// <summary>The amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
+    /// <summary>Amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
     [JsonPropertyName("healthCheckTimeoutSeconds")]
     public double? HealthCheckTimeoutSeconds { get; set; }
 
+    /// <summary>Number of consecutive successful health checks required before considering an unhealthy target healthy. The range is 2–10. The default is 5.</summary>
     [JsonPropertyName("healthyThresholdCount")]
     public double? HealthyThresholdCount { get; set; }
 
-    /// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+    /// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
     [JsonPropertyName("matcher")]
     public V1beta1TargetGroupSpecForProviderConfigHealthCheckMatcher? Matcher { get; set; }
 
-    /// <summary>The destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
+    /// <summary>Destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port used when performing health checks on targets. The default setting is the port that a target receives traffic on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol used when performing health checks on targets. The possible protocols are HTTP and HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version used when performing health checks on targets. The possible protocol versions are HTTP1 and HTTP2. The default is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
+    /// <summary>Number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
     [JsonPropertyName("unhealthyThresholdCount")]
     public double? UnhealthyThresholdCount { get; set; }
 }
@@ -246,36 +247,36 @@ public partial class V1beta1TargetGroupSpecForProviderConfigVpcIdentifierSelecto
     public V1beta1TargetGroupSpecForProviderConfigVpcIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The target group configuration.</summary>
+/// <summary>Target group configuration. See config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecForProviderConfig
 {
-    /// <summary>The health check configuration.</summary>
+    /// <summary>Health check configuration. See health_check Block below.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta1TargetGroupSpecForProviderConfigHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>The type of IP address used for the target group. Valid values: IPV4 | IPV6.</summary>
+    /// <summary>Type of IP address used for the target group. Valid values: IPV4 or IPV6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid Values are V1 | V2.</summary>
+    /// <summary>Version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid values are V1 or V2.</summary>
     [JsonPropertyName("lambdaEventStructureVersion")]
     public string? LambdaEventStructureVersion { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port on which the targets are listening.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol to use for routing traffic to the targets. Valid values are HTTP or HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version. Valid values are HTTP1, HTTP2, or GRPC. Default value is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 
@@ -292,11 +293,11 @@ public partial class V1beta1TargetGroupSpecForProviderConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecForProvider
 {
-    /// <summary>The target group configuration.</summary>
+    /// <summary>Target group configuration. See config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1TargetGroupSpecForProviderConfig? Config { get; set; }
 
-    /// <summary>The name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -311,62 +312,63 @@ public partial class V1beta1TargetGroupSpecForProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of target group. Valid Values are IP | LAMBDA | INSTANCE | ALB</summary>
+    /// <summary>Type of target group. Valid values are IP, LAMBDA, INSTANCE, or ALB.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
 
-/// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+/// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecInitProviderConfigHealthCheckMatcher
 {
-    /// <summary>The HTTP codes to use when checking for a successful response from a target.</summary>
+    /// <summary>HTTP codes to use when checking for a successful response from a target.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The health check configuration.</summary>
+/// <summary>Health check configuration. See health_check Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecInitProviderConfigHealthCheck
 {
-    /// <summary>Indicates whether health checking is enabled. Defaults to true.</summary>
+    /// <summary>Whether health checking is enabled. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
+    /// <summary>Approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
-    /// <summary>The amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
+    /// <summary>Amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
     [JsonPropertyName("healthCheckTimeoutSeconds")]
     public double? HealthCheckTimeoutSeconds { get; set; }
 
+    /// <summary>Number of consecutive successful health checks required before considering an unhealthy target healthy. The range is 2–10. The default is 5.</summary>
     [JsonPropertyName("healthyThresholdCount")]
     public double? HealthyThresholdCount { get; set; }
 
-    /// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+    /// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
     [JsonPropertyName("matcher")]
     public V1beta1TargetGroupSpecInitProviderConfigHealthCheckMatcher? Matcher { get; set; }
 
-    /// <summary>The destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
+    /// <summary>Destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port used when performing health checks on targets. The default setting is the port that a target receives traffic on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol used when performing health checks on targets. The possible protocols are HTTP and HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version used when performing health checks on targets. The possible protocol versions are HTTP1 and HTTP2. The default is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
+    /// <summary>Number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
     [JsonPropertyName("unhealthyThresholdCount")]
     public double? UnhealthyThresholdCount { get; set; }
 }
@@ -526,36 +528,36 @@ public partial class V1beta1TargetGroupSpecInitProviderConfigVpcIdentifierSelect
     public V1beta1TargetGroupSpecInitProviderConfigVpcIdentifierSelectorPolicy? Policy { get; set; }
 }
 
-/// <summary>The target group configuration.</summary>
+/// <summary>Target group configuration. See config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecInitProviderConfig
 {
-    /// <summary>The health check configuration.</summary>
+    /// <summary>Health check configuration. See health_check Block below.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta1TargetGroupSpecInitProviderConfigHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>The type of IP address used for the target group. Valid values: IPV4 | IPV6.</summary>
+    /// <summary>Type of IP address used for the target group. Valid values: IPV4 or IPV6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid Values are V1 | V2.</summary>
+    /// <summary>Version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid values are V1 or V2.</summary>
     [JsonPropertyName("lambdaEventStructureVersion")]
     public string? LambdaEventStructureVersion { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port on which the targets are listening.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol to use for routing traffic to the targets. Valid values are HTTP or HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version. Valid values are HTTP1, HTTP2, or GRPC. Default value is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 
@@ -584,11 +586,11 @@ public partial class V1beta1TargetGroupSpecInitProviderConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupSpecInitProvider
 {
-    /// <summary>The target group configuration.</summary>
+    /// <summary>Target group configuration. See config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1TargetGroupSpecInitProviderConfig? Config { get; set; }
 
-    /// <summary>The name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -596,7 +598,7 @@ public partial class V1beta1TargetGroupSpecInitProvider
     [JsonPropertyName("tags")]
     public IDictionary<string, string>? Tags { get; set; }
 
-    /// <summary>The type of target group. Valid Values are IP | LAMBDA | INSTANCE | ALB</summary>
+    /// <summary>Type of target group. Valid values are IP, LAMBDA, INSTANCE, or ALB.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -708,91 +710,92 @@ public partial class V1beta1TargetGroupSpec
     public V1beta1TargetGroupSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+/// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupStatusAtProviderConfigHealthCheckMatcher
 {
-    /// <summary>The HTTP codes to use when checking for a successful response from a target.</summary>
+    /// <summary>HTTP codes to use when checking for a successful response from a target.</summary>
     [JsonPropertyName("value")]
     public string? Value { get; set; }
 }
 
-/// <summary>The health check configuration.</summary>
+/// <summary>Health check configuration. See health_check Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupStatusAtProviderConfigHealthCheck
 {
-    /// <summary>Indicates whether health checking is enabled. Defaults to true.</summary>
+    /// <summary>Whether health checking is enabled. Defaults to true.</summary>
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>The approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
+    /// <summary>Approximate amount of time, in seconds, between health checks of an individual target. The range is 5–300 seconds. The default is 30 seconds.</summary>
     [JsonPropertyName("healthCheckIntervalSeconds")]
     public double? HealthCheckIntervalSeconds { get; set; }
 
-    /// <summary>The amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
+    /// <summary>Amount of time, in seconds, to wait before reporting a target as unhealthy. The range is 1–120 seconds. The default is 5 seconds.</summary>
     [JsonPropertyName("healthCheckTimeoutSeconds")]
     public double? HealthCheckTimeoutSeconds { get; set; }
 
+    /// <summary>Number of consecutive successful health checks required before considering an unhealthy target healthy. The range is 2–10. The default is 5.</summary>
     [JsonPropertyName("healthyThresholdCount")]
     public double? HealthyThresholdCount { get; set; }
 
-    /// <summary>The codes to use when checking for a successful response from a target. These are called Success codes in the console.</summary>
+    /// <summary>Codes to use when checking for a successful response from a target. See matcher Block below.</summary>
     [JsonPropertyName("matcher")]
     public V1beta1TargetGroupStatusAtProviderConfigHealthCheckMatcher? Matcher { get; set; }
 
-    /// <summary>The destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
+    /// <summary>Destination for health checks on the targets. If the protocol version is HTTP/1.1 or HTTP/2, specify a valid URI (for example, /path?query). The default path is /. Health checks are not supported if the protocol version is gRPC, however, you can choose HTTP/1.1 or HTTP/2 and specify a valid URI.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port used when performing health checks on targets. The default setting is the port that a target receives traffic on.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol used when performing health checks on targets. The possible protocols are HTTP and HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version used when performing health checks on targets. The possible protocol versions are HTTP1 and HTTP2. The default is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
+    /// <summary>Number of consecutive failed health checks required before considering a target unhealthy. The range is 2–10. The default is 2.</summary>
     [JsonPropertyName("unhealthyThresholdCount")]
     public double? UnhealthyThresholdCount { get; set; }
 }
 
-/// <summary>The target group configuration.</summary>
+/// <summary>Target group configuration. See config Block below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TargetGroupStatusAtProviderConfig
 {
-    /// <summary>The health check configuration.</summary>
+    /// <summary>Health check configuration. See health_check Block below.</summary>
     [JsonPropertyName("healthCheck")]
     public V1beta1TargetGroupStatusAtProviderConfigHealthCheck? HealthCheck { get; set; }
 
-    /// <summary>The type of IP address used for the target group. Valid values: IPV4 | IPV6.</summary>
+    /// <summary>Type of IP address used for the target group. Valid values: IPV4 or IPV6.</summary>
     [JsonPropertyName("ipAddressType")]
     public string? IpAddressType { get; set; }
 
-    /// <summary>The version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid Values are V1 | V2.</summary>
+    /// <summary>Version of the event structure that the Lambda function receives. Supported only if type is LAMBDA. Valid values are V1 or V2.</summary>
     [JsonPropertyName("lambdaEventStructureVersion")]
     public string? LambdaEventStructureVersion { get; set; }
 
-    /// <summary>The port on which the targets are listening.</summary>
+    /// <summary>Port on which the targets are listening.</summary>
     [JsonPropertyName("port")]
     public double? Port { get; set; }
 
-    /// <summary>The protocol to use for routing traffic to the targets. Valid Values are HTTP | HTTPS.</summary>
+    /// <summary>Protocol to use for routing traffic to the targets. Valid values are HTTP or HTTPS.</summary>
     [JsonPropertyName("protocol")]
     public string? Protocol { get; set; }
 
-    /// <summary>The protocol version. Valid Values are HTTP1 | HTTP2 | GRPC. Default value is HTTP1.</summary>
+    /// <summary>Protocol version. Valid values are HTTP1, HTTP2, or GRPC. Default value is HTTP1.</summary>
     [JsonPropertyName("protocolVersion")]
     public string? ProtocolVersion { get; set; }
 
-    /// <summary>The ID of the VPC.</summary>
+    /// <summary>ID of the VPC.</summary>
     [JsonPropertyName("vpcIdentifier")]
     public string? VpcIdentifier { get; set; }
 }
@@ -805,7 +808,7 @@ public partial class V1beta1TargetGroupStatusAtProvider
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
-    /// <summary>The target group configuration.</summary>
+    /// <summary>Target group configuration. See config Block below.</summary>
     [JsonPropertyName("config")]
     public V1beta1TargetGroupStatusAtProviderConfig? Config { get; set; }
 
@@ -813,7 +816,7 @@ public partial class V1beta1TargetGroupStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>The name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
+    /// <summary>Name of the target group. The name must be unique within the account. The valid characters are a-z, 0-9, and hyphens (-). You can&apos;t use a hyphen as the first or last character, or immediately after another hyphen.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -836,7 +839,7 @@ public partial class V1beta1TargetGroupStatusAtProvider
     [JsonPropertyName("tagsAll")]
     public IDictionary<string, string>? TagsAll { get; set; }
 
-    /// <summary>The type of target group. Valid Values are IP | LAMBDA | INSTANCE | ALB</summary>
+    /// <summary>Type of target group. Valid values are IP, LAMBDA, INSTANCE, or ALB.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }

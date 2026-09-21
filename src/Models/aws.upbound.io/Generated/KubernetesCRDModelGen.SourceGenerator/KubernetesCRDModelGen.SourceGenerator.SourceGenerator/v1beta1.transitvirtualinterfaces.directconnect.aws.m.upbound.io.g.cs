@@ -358,9 +358,13 @@ public partial class V1beta1TransitVirtualInterfaceSpecForProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]
@@ -404,6 +408,18 @@ public partial class V1beta1TransitVirtualInterfaceSpecForProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -759,9 +775,13 @@ public partial class V1beta1TransitVirtualInterfaceSpecInitProvider
     [JsonPropertyName("amazonAddress")]
     public string? AmazonAddress { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]
@@ -805,6 +825,18 @@ public partial class V1beta1TransitVirtualInterfaceSpecInitProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>Indicates whether to enable or disable SiteLink.</summary>
     [JsonPropertyName("sitelinkEnabled")]
@@ -949,9 +981,13 @@ public partial class V1beta1TransitVirtualInterfaceStatusAtProvider
     [JsonPropertyName("awsDevice")]
     public string? AwsDevice { get; set; }
 
-    /// <summary>The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.</summary>
+    /// <summary>BGP autonomous system number as an integer between 1 and 2147483646. For larger values, use bgp_asn_long. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
     [JsonPropertyName("bgpAsn")]
     public double? BgpAsn { get; set; }
+
+    /// <summary>BGP autonomous system number as an asplain decimal string between 1 and 4294967294. This argument also accepts values in the bgp_asn range. Exactly one of bgp_asn or bgp_asn_long must be specified.</summary>
+    [JsonPropertyName("bgpAsnLong")]
+    public string? BgpAsnLong { get; set; }
 
     /// <summary>The authentication key for BGP configuration.</summary>
     [JsonPropertyName("bgpAuthKey")]
@@ -987,6 +1023,18 @@ public partial class V1beta1TransitVirtualInterfaceStatusAtProvider
     /// <summary>The name for the virtual interface.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>The number of inbound IPv4 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv4")]
+    public double? PrefixPoolAllocatedCountIpv4 { get; set; }
+
+    /// <summary>The number of inbound IPv6 route prefixes to allocate to the virtual interface. Valid values are 0 to 1000. If not specified, AWS applies the default allocation of 100.</summary>
+    [JsonPropertyName("prefixPoolAllocatedCountIpv6")]
+    public double? PrefixPoolAllocatedCountIpv6 { get; set; }
+
+    /// <summary>Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on the parent connection. Specify a supported bandwidth value without a space (for example, 50Mbps, 1Gbps, or 10Gbps); the value cannot exceed the bandwidth of the parent connection or link aggregation group (LAG), and supported values range up to 1.6Tbps. See the VIF Rate Limiters documentation for the full list of supported values. Rate Limiters are supported only on Direct Connect dedicated connections (including LAGs); they are not supported on hosted connections.</summary>
+    [JsonPropertyName("rateLimit")]
+    public string? RateLimit { get; set; }
 
     /// <summary>
     /// Region where this resource will be managed. Defaults to the Region set in the provider configuration.

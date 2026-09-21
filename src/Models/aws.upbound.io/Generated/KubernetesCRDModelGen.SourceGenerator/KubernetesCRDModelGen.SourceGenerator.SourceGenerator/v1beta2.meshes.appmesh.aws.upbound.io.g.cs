@@ -65,12 +65,12 @@ public partial class V1beta2MeshSpecForProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+/// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MeshSpecForProviderSpecServiceDiscovery
 {
-    /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
+    /// <summary>IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
     [JsonPropertyName("ipPreference")]
     public string? IpPreference { get; set; }
 }
@@ -84,7 +84,7 @@ public partial class V1beta2MeshSpecForProviderSpec
     [JsonPropertyName("egressFilter")]
     public V1beta2MeshSpecForProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+    /// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2MeshSpecForProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -119,12 +119,12 @@ public partial class V1beta2MeshSpecInitProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+/// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MeshSpecInitProviderSpecServiceDiscovery
 {
-    /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
+    /// <summary>IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
     [JsonPropertyName("ipPreference")]
     public string? IpPreference { get; set; }
 }
@@ -138,7 +138,7 @@ public partial class V1beta2MeshSpecInitProviderSpec
     [JsonPropertyName("egressFilter")]
     public V1beta2MeshSpecInitProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+    /// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2MeshSpecInitProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }
@@ -361,12 +361,12 @@ public partial class V1beta2MeshStatusAtProviderSpecEgressFilter
     public string? Type { get; set; }
 }
 
-/// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+/// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MeshStatusAtProviderSpecServiceDiscovery
 {
-    /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
+    /// <summary>IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
     [JsonPropertyName("ipPreference")]
     public string? IpPreference { get; set; }
 }
@@ -380,7 +380,7 @@ public partial class V1beta2MeshStatusAtProviderSpec
     [JsonPropertyName("egressFilter")]
     public V1beta2MeshStatusAtProviderSpecEgressFilter? EgressFilter { get; set; }
 
-    /// <summary>The service discovery information for the service mesh. See service_discovery Block for details.</summary>
+    /// <summary>Service discovery information for the service mesh. See service_discovery Block for details.</summary>
     [JsonPropertyName("serviceDiscovery")]
     public V1beta2MeshStatusAtProviderSpecServiceDiscovery? ServiceDiscovery { get; set; }
 }

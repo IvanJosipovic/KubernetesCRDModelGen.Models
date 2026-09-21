@@ -350,7 +350,7 @@ public partial class V1beta1ParameterGroupStatusAtProviderParameter
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ParameterGroupStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of parameter group</summary>
+    /// <summary>ARN of parameter group</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 

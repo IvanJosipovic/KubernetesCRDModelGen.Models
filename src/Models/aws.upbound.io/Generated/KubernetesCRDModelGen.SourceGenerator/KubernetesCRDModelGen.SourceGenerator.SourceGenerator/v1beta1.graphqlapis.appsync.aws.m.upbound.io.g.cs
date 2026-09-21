@@ -76,7 +76,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
     public string? Issuer { get; set; }
 }
 
-/// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+/// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderUserPoolConfig
@@ -110,7 +110,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+    /// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
     [JsonPropertyName("userPoolConfig")]
     public V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderUserPoolConfig? UserPoolConfig { get; set; }
 }
@@ -311,7 +311,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfig
 {
-    /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
+    /// <summary>ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
     [JsonPropertyName("cloudwatchLogsRoleArn")]
     public string? CloudwatchLogsRoleArn { get; set; }
 
@@ -746,7 +746,7 @@ public partial class V1beta1GraphQLAPISpecForProvider
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPISpecForProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("queryDepthLimit")]
     public double? QueryDepthLimit { get; set; }
 
@@ -757,7 +757,7 @@ public partial class V1beta1GraphQLAPISpecForProvider
     [JsonPropertyName("region")]
     public required string Region { get; set; }
 
-    /// <summary>The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("resolverCountLimit")]
     public double? ResolverCountLimit { get; set; }
 
@@ -822,7 +822,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
     public string? Issuer { get; set; }
 }
 
-/// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+/// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderUserPoolConfig
@@ -856,7 +856,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+    /// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
     [JsonPropertyName("userPoolConfig")]
     public V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderUserPoolConfig? UserPoolConfig { get; set; }
 }
@@ -1057,7 +1057,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfig
 {
-    /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
+    /// <summary>ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
     [JsonPropertyName("cloudwatchLogsRoleArn")]
     public string? CloudwatchLogsRoleArn { get; set; }
 
@@ -1504,11 +1504,11 @@ public partial class V1beta1GraphQLAPISpecInitProvider
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPISpecInitProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("queryDepthLimit")]
     public double? QueryDepthLimit { get; set; }
 
-    /// <summary>The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("resolverCountLimit")]
     public double? ResolverCountLimit { get; set; }
 
@@ -1680,7 +1680,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
     public string? Issuer { get; set; }
 }
 
-/// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+/// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderUserPoolConfig
@@ -1714,7 +1714,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>Amazon Cognito User Pool configuration. See user_pool_config Block for details.</summary>
+    /// <summary>Amazon Cognito User Pool configuration. See additional_authentication_provider.user_pool_config Block for details.</summary>
     [JsonPropertyName("userPoolConfig")]
     public V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderUserPoolConfig? UserPoolConfig { get; set; }
 }
@@ -1760,7 +1760,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderLambdaAuthorizerConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphQLAPIStatusAtProviderLogConfig
 {
-    /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
+    /// <summary>ARN of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
     [JsonPropertyName("cloudwatchLogsRoleArn")]
     public string? CloudwatchLogsRoleArn { get; set; }
 
@@ -1869,7 +1869,7 @@ public partial class V1beta1GraphQLAPIStatusAtProvider
     [JsonPropertyName("openidConnectConfig")]
     public V1beta1GraphQLAPIStatusAtProviderOpenidConnectConfig? OpenidConnectConfig { get; set; }
 
-    /// <summary>The maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum depth a query can have in a single request. Depth refers to the amount of nested levels allowed in the body of query. The default value is 0 (or unspecified), which indicates there&apos;s no depth limit. If you set a limit, it can be between 1 and 75 nested levels. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("queryDepthLimit")]
     public double? QueryDepthLimit { get; set; }
 
@@ -1880,7 +1880,7 @@ public partial class V1beta1GraphQLAPIStatusAtProvider
     [JsonPropertyName("region")]
     public string? Region { get; set; }
 
-    /// <summary>The maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
+    /// <summary>Maximum number of resolvers that can be invoked in a single request. The default value is 0 (or unspecified), which will set the limit to 10000. When specified, the limit value can be between 1 and 10000. This field will produce a limit error if the operation falls out of bounds.</summary>
     [JsonPropertyName("resolverCountLimit")]
     public double? ResolverCountLimit { get; set; }
 

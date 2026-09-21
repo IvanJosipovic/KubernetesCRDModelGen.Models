@@ -192,7 +192,7 @@ public partial class V1beta1RegistrySpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryStatusAtProvider
 {
-    /// <summary>Amazon Resource Name (ARN) of Glue Registry.</summary>
+    /// <summary>ARN of Glue Registry.</summary>
     [JsonPropertyName("arn")]
     public string? Arn { get; set; }
 
@@ -200,7 +200,7 @@ public partial class V1beta1RegistryStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
-    /// <summary>Amazon Resource Name (ARN) of Glue Registry.</summary>
+    /// <summary>ARN of Glue Registry.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
