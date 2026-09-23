@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/postgresql.cnpg.io-v1.12.1...postgresql.cnpg.io-v1.13.0) (2026-09-23)
+
+
+### Features
+
+* Sync ([#151](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/151)) ([5c762ab](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/5c762ab9656c65baead8125c8425a72ca1e652c4))
+
 ## [1.12.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/postgresql.cnpg.io-v1.12.0...postgresql.cnpg.io-v1.12.1) (2026-07-13)
 
 
