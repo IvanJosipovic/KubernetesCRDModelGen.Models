@@ -1368,6 +1368,25 @@ public partial class V1ClusterSpecBackupBarmanObjectStoreData
     /// </summary>
     [JsonPropertyName("jobs")]
     public int? Jobs { get; set; }
+
+    /// <summary>
+    /// Additional arguments that can be appended to the &apos;barman-cloud-restore&apos;
+    /// command-line invocation. These arguments provide flexibility to customize
+    /// the data restore process further, according to specific requirements or
+    /// configurations.
+    /// 
+    /// Example:
+    /// In a scenario where specialized restore options are required, such as setting
+    /// a specific read timeout or defining custom behavior, users can use this field
+    /// to specify additional command arguments.
+    /// 
+    /// Note:
+    /// It&apos;s essential to ensure that the provided arguments are valid and supported
+    /// by the &apos;barman-cloud-restore&apos; command, to avoid potential errors or unintended
+    /// behavior during execution.
+    /// </summary>
+    [JsonPropertyName("restoreAdditionalCommandArgs")]
+    public IList<string>? RestoreAdditionalCommandArgs { get; set; }
 }
 
 /// <summary>
@@ -2147,8 +2166,10 @@ public partial class V1ClusterSpecBootstrapInitdb
     public string? BuiltinLocale { get; set; }
 
     /// <summary>
-    /// Whether the `-k` option should be passed to initdb,
-    /// enabling checksums on data pages (default: `false`)
+    /// Whether data checksums are enabled on data pages, to help detect
+    /// corruption by the I/O system that would otherwise be silent
+    /// (default: `false` before PostgreSQL 18, `true` from PostgreSQL 18 on,
+    /// matching the initdb default in each case).
     /// </summary>
     [JsonPropertyName("dataChecksums")]
     public bool? DataChecksums { get; set; }
@@ -2699,7 +2720,10 @@ public partial class V1ClusterSpecCertificates
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterSpecEnvValueFromConfigMapKeyRef
 {
-    /// <summary>The key to select.</summary>
+    /// <summary>
+    /// The key to select from the ConfigMap&apos;s Data field.
+    /// Keys in the BinaryData field are not currently propagated to container env vars.
+    /// </summary>
     [JsonPropertyName("key")]
     public required string Key { get; set; }
 
@@ -2964,8 +2988,8 @@ public partial class V1ClusterSpecEphemeralVolumeSourceVolumeClaimTemplateMetada
 /// * An existing PVC (PersistentVolumeClaim)
 /// If the provisioner or an external controller can support the specified data source,
 /// it will create a new volume based on the contents of the specified data source.
-/// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-/// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+/// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+/// copied to dataSource when dataSourceRef.namespace is not specified.
 /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3011,7 +3035,6 @@ public partial class V1ClusterSpecEphemeralVolumeSourceVolumeClaimTemplateSpecDa
 ///   specified.
 /// * While dataSource only allows local objects, dataSourceRef allows objects
 ///   in any namespaces.
-/// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3141,8 +3164,8 @@ public partial class V1ClusterSpecEphemeralVolumeSourceVolumeClaimTemplateSpec
     /// * An existing PVC (PersistentVolumeClaim)
     /// If the provisioner or an external controller can support the specified data source,
     /// it will create a new volume based on the contents of the specified data source.
-    /// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-    /// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+    /// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+    /// copied to dataSource when dataSourceRef.namespace is not specified.
     /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
     /// </summary>
     [JsonPropertyName("dataSource")]
@@ -3170,7 +3193,6 @@ public partial class V1ClusterSpecEphemeralVolumeSourceVolumeClaimTemplateSpec
     ///   specified.
     /// * While dataSource only allows local objects, dataSourceRef allows objects
     ///   in any namespaces.
-    /// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
     /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("dataSourceRef")]
@@ -3516,6 +3538,25 @@ public partial class V1ClusterSpecExternalClustersBarmanObjectStoreData
     /// </summary>
     [JsonPropertyName("jobs")]
     public int? Jobs { get; set; }
+
+    /// <summary>
+    /// Additional arguments that can be appended to the &apos;barman-cloud-restore&apos;
+    /// command-line invocation. These arguments provide flexibility to customize
+    /// the data restore process further, according to specific requirements or
+    /// configurations.
+    /// 
+    /// Example:
+    /// In a scenario where specialized restore options are required, such as setting
+    /// a specific read timeout or defining custom behavior, users can use this field
+    /// to specify additional command arguments.
+    /// 
+    /// Note:
+    /// It&apos;s essential to ensure that the provided arguments are valid and supported
+    /// by the &apos;barman-cloud-restore&apos; command, to avoid potential errors or unintended
+    /// behavior during execution.
+    /// </summary>
+    [JsonPropertyName("restoreAdditionalCommandArgs")]
+    public IList<string>? RestoreAdditionalCommandArgs { get; set; }
 }
 
 /// <summary>
@@ -5427,11 +5468,8 @@ public partial class V1ClusterSpecPodSecurityContext
     /// Eligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes
     /// whose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their
     /// CSIDriver instance. Other volumes are always re-labelled recursively.
-    /// &quot;MountOption&quot; value is allowed only when SELinuxMount feature gate is enabled.
     /// 
-    /// If not specified and SELinuxMount feature gate is enabled, &quot;MountOption&quot; is used.
-    /// If not specified and SELinuxMount feature gate is disabled, &quot;MountOption&quot; is used for ReadWriteOncePod volumes
-    /// and &quot;Recursive&quot; for all other volumes.
+    /// If not specified, &quot;MountOption&quot; is used.
     /// 
     /// This field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.
     /// 
@@ -6058,10 +6096,12 @@ public enum V1ClusterSpecPrimaryUpdateStrategyEnum
 
 /// <summary>
 /// Configure the feature that extends the liveness probe for a primary
-/// instance. In addition to the basic checks, this verifies whether the
+/// instance. In addition to the basic checks, this reports whether the
 /// primary is isolated from the Kubernetes API server and from its
-/// replicas, ensuring that it can be safely shut down if network
-/// partition or API unavailability is detected. Enabled by default.
+/// replicas, so the kubelet restarts it through the normal
+/// container-termination path (a smart shutdown, bounded by
+/// `.spec.smartShutdownTimeout`) when a network partition or API
+/// unavailability is detected. Enabled by default.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -6101,10 +6141,12 @@ public partial class V1ClusterSpecProbesLiveness
 
     /// <summary>
     /// Configure the feature that extends the liveness probe for a primary
-    /// instance. In addition to the basic checks, this verifies whether the
+    /// instance. In addition to the basic checks, this reports whether the
     /// primary is isolated from the Kubernetes API server and from its
-    /// replicas, ensuring that it can be safely shut down if network
-    /// partition or API unavailability is detected. Enabled by default.
+    /// replicas, so the kubelet restarts it through the normal
+    /// container-termination path (a smart shutdown, bounded by
+    /// `.spec.smartShutdownTimeout`) when a network partition or API
+    /// unavailability is detected. Enabled by default.
     /// </summary>
     [JsonPropertyName("isolationCheck")]
     public V1ClusterSpecProbesLivenessIsolationCheck? IsolationCheck { get; set; }
@@ -6432,6 +6474,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesClusterTrustBund
     /// </summary>
     [JsonPropertyName("signerName")]
     public string? SignerName { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>Maps a string key to a path within a volume.</summary>
@@ -6462,6 +6512,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesConfigMapItems
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>configMap information about the configMap data to project</summary>
@@ -6561,6 +6619,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesDownwardAPIItems
     /// </summary>
     [JsonPropertyName("resourceFieldRef")]
     public V1ClusterSpecProjectedVolumeTemplateSourcesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>downwardAPI information about the downwardAPI data to project</summary>
@@ -6687,6 +6753,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesPodCertificate
     public required string SignerName { get; set; }
 
     /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
+
+    /// <summary>
     /// userAnnotations allow pod authors to pass additional information to
     /// the signer implementation.  Kubernetes does not restrict or validate this
     /// metadata in any way.
@@ -6733,6 +6807,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesSecretItems
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>secret information about the secret data to project</summary>
@@ -6798,6 +6880,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplateSourcesServiceAccountTo
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>
@@ -6900,6 +6990,14 @@ public partial class V1ClusterSpecProjectedVolumeTemplate
     /// </summary>
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    /// <summary>
+    /// defaultUser is Optional: The owner UID of the created files by default.
+    /// The defaultUser field is only used as a fallback when the item-level user field is unset.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("defaultUser")]
+    public long? DefaultUser { get; set; }
 
     /// <summary>
     /// sources is the list of volume projections. Each entry in this list
@@ -7440,8 +7538,8 @@ public partial class V1ClusterSpecServiceAccountTemplate
 /// * An existing PVC (PersistentVolumeClaim)
 /// If the provisioner or an external controller can support the specified data source,
 /// it will create a new volume based on the contents of the specified data source.
-/// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-/// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+/// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+/// copied to dataSource when dataSourceRef.namespace is not specified.
 /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -7487,7 +7585,6 @@ public partial class V1ClusterSpecStoragePvcTemplateDataSource
 ///   specified.
 /// * While dataSource only allows local objects, dataSourceRef allows objects
 ///   in any namespaces.
-/// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -7612,8 +7709,8 @@ public partial class V1ClusterSpecStoragePvcTemplate
     /// * An existing PVC (PersistentVolumeClaim)
     /// If the provisioner or an external controller can support the specified data source,
     /// it will create a new volume based on the contents of the specified data source.
-    /// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-    /// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+    /// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+    /// copied to dataSource when dataSourceRef.namespace is not specified.
     /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
     /// </summary>
     [JsonPropertyName("dataSource")]
@@ -7641,7 +7738,6 @@ public partial class V1ClusterSpecStoragePvcTemplate
     ///   specified.
     /// * While dataSource only allows local objects, dataSourceRef allows objects
     ///   in any namespaces.
-    /// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
     /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("dataSourceRef")]
@@ -7754,8 +7850,8 @@ public partial class V1ClusterSpecTablespacesOwner
 /// * An existing PVC (PersistentVolumeClaim)
 /// If the provisioner or an external controller can support the specified data source,
 /// it will create a new volume based on the contents of the specified data source.
-/// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-/// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+/// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+/// copied to dataSource when dataSourceRef.namespace is not specified.
 /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -7801,7 +7897,6 @@ public partial class V1ClusterSpecTablespacesStoragePvcTemplateDataSource
 ///   specified.
 /// * While dataSource only allows local objects, dataSourceRef allows objects
 ///   in any namespaces.
-/// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -7926,8 +8021,8 @@ public partial class V1ClusterSpecTablespacesStoragePvcTemplate
     /// * An existing PVC (PersistentVolumeClaim)
     /// If the provisioner or an external controller can support the specified data source,
     /// it will create a new volume based on the contents of the specified data source.
-    /// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-    /// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+    /// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+    /// copied to dataSource when dataSourceRef.namespace is not specified.
     /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
     /// </summary>
     [JsonPropertyName("dataSource")]
@@ -7955,7 +8050,6 @@ public partial class V1ClusterSpecTablespacesStoragePvcTemplate
     ///   specified.
     /// * While dataSource only allows local objects, dataSourceRef allows objects
     ///   in any namespaces.
-    /// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
     /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("dataSourceRef")]
@@ -8263,8 +8357,8 @@ public partial class V1ClusterSpecTopologySpreadConstraints
 /// * An existing PVC (PersistentVolumeClaim)
 /// If the provisioner or an external controller can support the specified data source,
 /// it will create a new volume based on the contents of the specified data source.
-/// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-/// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+/// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+/// copied to dataSource when dataSourceRef.namespace is not specified.
 /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -8310,7 +8404,6 @@ public partial class V1ClusterSpecWalStoragePvcTemplateDataSource
 ///   specified.
 /// * While dataSource only allows local objects, dataSourceRef allows objects
 ///   in any namespaces.
-/// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -8435,8 +8528,8 @@ public partial class V1ClusterSpecWalStoragePvcTemplate
     /// * An existing PVC (PersistentVolumeClaim)
     /// If the provisioner or an external controller can support the specified data source,
     /// it will create a new volume based on the contents of the specified data source.
-    /// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-    /// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+    /// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+    /// copied to dataSource when dataSourceRef.namespace is not specified.
     /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
     /// </summary>
     [JsonPropertyName("dataSource")]
@@ -8464,7 +8557,6 @@ public partial class V1ClusterSpecWalStoragePvcTemplate
     ///   specified.
     /// * While dataSource only allows local objects, dataSourceRef allows objects
     ///   in any namespaces.
-    /// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
     /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("dataSourceRef")]
@@ -9281,6 +9373,13 @@ public partial class V1ClusterStatusPluginStatus
     /// </summary>
     [JsonPropertyName("operatorCapabilities")]
     public IList<string>? OperatorCapabilities { get; set; }
+
+    /// <summary>
+    /// PostgresCapabilities are the list of capabilities of the
+    /// plugin regarding the PostgreSQL configuration
+    /// </summary>
+    [JsonPropertyName("postgresCapabilities")]
+    public IList<string>? PostgresCapabilities { get; set; }
 
     /// <summary>
     /// RestoreJobHookCapabilities are the list of capabilities of the

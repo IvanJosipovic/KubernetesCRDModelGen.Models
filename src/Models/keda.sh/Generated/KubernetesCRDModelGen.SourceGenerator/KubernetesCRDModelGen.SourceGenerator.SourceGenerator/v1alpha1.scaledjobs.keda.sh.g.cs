@@ -2598,7 +2598,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecContainersSecu
     /// procMount denotes the type of proc mount to use for the containers.
     /// The default value is Default which uses the container runtime defaults for
     /// readonly paths and masked paths.
-    /// This requires the ProcMountType feature flag to be enabled.
     /// Note that this field cannot be set when spec.os.name is windows.
     /// </summary>
     [JsonPropertyName("procMount")]
@@ -4528,7 +4527,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecEphemeralConta
     /// procMount denotes the type of proc mount to use for the containers.
     /// The default value is Default which uses the container runtime defaults for
     /// readonly paths and masked paths.
-    /// This requires the ProcMountType feature flag to be enabled.
     /// Note that this field cannot be set when spec.os.name is windows.
     /// </summary>
     [JsonPropertyName("procMount")]
@@ -6412,7 +6410,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecInitContainers
     /// procMount denotes the type of proc mount to use for the containers.
     /// The default value is Default which uses the container runtime defaults for
     /// readonly paths and masked paths.
-    /// This requires the ProcMountType feature flag to be enabled.
     /// Note that this field cannot be set when spec.os.name is windows.
     /// </summary>
     [JsonPropertyName("procMount")]
@@ -7080,6 +7077,14 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecReadinessGates
 /// 
 /// It adds a name to it that uniquely identifies the ResourceClaim inside the Pod.
 /// Containers that need access to the ResourceClaim reference it with this name.
+/// 
+/// When the DRAWorkloadResourceClaims feature gate is enabled and this Pod
+/// belongs to a PodGroup, a PodResourceClaim is matched to a
+/// PodGroupResourceClaim if all of their fields are equal (Name,
+/// ResourceClaimName, and ResourceClaimTemplateName). A matched claim references
+/// a single ResourceClaim shared across all Pods in the PodGroup, reserved for
+/// the PodGroup in ResourceClaimStatus.ReservedFor rather than for individual
+/// Pods.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -7111,6 +7116,16 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecResourceClaims
     /// will also be deleted. The pod name and resource name, along with a
     /// generated component, will be used to form a unique name for the
     /// ResourceClaim, which will be recorded in pod.status.resourceClaimStatuses.
+    /// 
+    /// When the DRAWorkloadResourceClaims feature gate is enabled and the pod
+    /// belongs to a PodGroup that defines a PodGroupResourceClaim with the same
+    /// Name and ResourceClaimTemplateName, this PodResourceClaim resolves to the
+    /// ResourceClaim generated for the PodGroup. All pods in the group that
+    /// define an equivalent PodResourceClaim matching the
+    /// PodGroupResourceClaim&apos;s Name and ResourceClaimTemplateName share the same
+    /// generated ResourceClaim. ResourceClaims generated for a PodGroup are
+    /// owned by the PodGroup and their lifecycles are tied to the PodGroup
+    /// instead of any individual pod.
     /// 
     /// This field is immutable and no changes will be made to the
     /// corresponding ResourceClaim by the control plane after creating the
@@ -7200,6 +7215,33 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecSchedulingGate
     /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+}
+
+/// <summary>
+/// SchedulingGroup provides a reference to the immediate scheduling runtime
+/// grouping object that this Pod belongs to.
+/// This field is used by the scheduler to identify the group and apply the
+/// correct group scheduling policies. The association with a group also
+/// impacts other lifecycle aspects of a Pod that are relevant in a wider context
+/// of scheduling like preemption, resource attachment, etc. If not specified,
+/// the Pod is treated as a single unit in all of these aspects.
+/// The group object referenced by this field may not exist at the time the
+/// Pod is created.
+/// This field is immutable, but a group object with the same name may be
+/// recreated with different policies. Doing this during pod scheduling
+/// may result in the placement not conforming to the expected policies.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecSchedulingGroup
+{
+    /// <summary>
+    /// PodGroupName specifies the name of the standalone PodGroup object
+    /// that represents the runtime instance of this group.
+    /// Must be a DNS subdomain.
+    /// </summary>
+    [JsonPropertyName("podGroupName")]
+    public string? PodGroupName { get; set; }
 }
 
 /// <summary>
@@ -8897,7 +8939,7 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumesHostPat
 /// A failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.
 /// The types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.
 /// The OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.
-/// The volume will be mounted read-only (ro) and non-executable files (noexec).
+/// The volume will be mounted read-only (ro).
 /// Sub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.
 /// The field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.
 /// </summary>
@@ -9097,8 +9139,7 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumesPhotonP
 /// <summary>
 /// portworxVolume represents a portworx volume attached and mounted on kubelets host machine.
 /// Deprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type
-/// are redirected to the pxd.portworx.com CSI driver when the CSIMigrationPortworx feature-gate
-/// is on.
+/// are redirected to the pxd.portworx.com CSI driver.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -10268,7 +10309,7 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumes
     /// A failure to resolve or pull the image during pod startup will block containers from starting and may add significant latency. Failures will be retried using normal volume backoff and will be reported on the pod reason and message.
     /// The types of objects that may be mounted by this volume are defined by the container runtime implementation on a host machine and at minimum must include all valid types supported by the container image field.
     /// The OCI object gets mounted in a single directory (spec.containers[*].volumeMounts.mountPath) by merging the manifest layers in the same way as for container images.
-    /// The volume will be mounted read-only (ro) and non-executable files (noexec).
+    /// The volume will be mounted read-only (ro).
     /// Sub path mounts for containers are not supported (spec.containers[*].volumeMounts.subpath) before 1.33.
     /// The field spec.securityContext.fsGroupChangePolicy has no effect on this volume type.
     /// </summary>
@@ -10316,8 +10357,7 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumes
     /// <summary>
     /// portworxVolume represents a portworx volume attached and mounted on kubelets host machine.
     /// Deprecated: PortworxVolume is deprecated. All operations for the in-tree portworxVolume type
-    /// are redirected to the pxd.portworx.com CSI driver when the CSIMigrationPortworx feature-gate
-    /// is on.
+    /// are redirected to the pxd.portworx.com CSI driver.
     /// </summary>
     [JsonPropertyName("portworxVolume")]
     public V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumesPortworxVolume? PortworxVolume { get; set; }
@@ -10368,48 +10408,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumes
     /// </summary>
     [JsonPropertyName("vsphereVolume")]
     public V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumesVsphereVolume? VsphereVolume { get; set; }
-}
-
-/// <summary>
-/// WorkloadRef provides a reference to the Workload object that this Pod belongs to.
-/// This field is used by the scheduler to identify the PodGroup and apply the
-/// correct group scheduling policies. The Workload object referenced
-/// by this field may not exist at the time the Pod is created.
-/// This field is immutable, but a Workload object with the same name
-/// may be recreated with different policies. Doing this during pod scheduling
-/// may result in the placement not conforming to the expected policies.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpecWorkloadRef
-{
-    /// <summary>
-    /// Name defines the name of the Workload object this Pod belongs to.
-    /// Workload must be in the same namespace as the Pod.
-    /// If it doesn&apos;t match any existing Workload, the Pod will remain unschedulable
-    /// until a Workload object is created and observed by the kube-scheduler.
-    /// It must be a DNS subdomain.
-    /// </summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>
-    /// PodGroup is the name of the PodGroup within the Workload that this Pod
-    /// belongs to. If it doesn&apos;t match any existing PodGroup within the Workload,
-    /// the Pod will remain unschedulable until the Workload object is recreated
-    /// and observed by the kube-scheduler. It must be a DNS label.
-    /// </summary>
-    [JsonPropertyName("podGroup")]
-    public required string PodGroup { get; set; }
-
-    /// <summary>
-    /// PodGroupReplicaKey specifies the replica key of the PodGroup to which this
-    /// Pod belongs. It is used to distinguish pods belonging to different replicas
-    /// of the same pod group. The pod group policy is applied separately to each replica.
-    /// When set, it must be a DNS label.
-    /// </summary>
-    [JsonPropertyName("podGroupReplicaKey")]
-    public string? PodGroupReplicaKey { get; set; }
 }
 
 /// <summary>
@@ -10521,7 +10519,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpec
     /// When set to false, a new userns is created for the pod. Setting false is useful for
     /// mitigating container breakout vulnerabilities even allowing users to run their
     /// containers as root without actually having root privileges on the host.
-    /// This field is alpha-level and is only honored by servers that enable the UserNamespacesSupport feature.
     /// </summary>
     [JsonPropertyName("hostUsers")]
     public bool? HostUsers { get; set; }
@@ -10744,6 +10741,23 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpec
     public IList<V1alpha1ScaledJobSpecJobTargetRefTemplateSpecSchedulingGates>? SchedulingGates { get; set; }
 
     /// <summary>
+    /// SchedulingGroup provides a reference to the immediate scheduling runtime
+    /// grouping object that this Pod belongs to.
+    /// This field is used by the scheduler to identify the group and apply the
+    /// correct group scheduling policies. The association with a group also
+    /// impacts other lifecycle aspects of a Pod that are relevant in a wider context
+    /// of scheduling like preemption, resource attachment, etc. If not specified,
+    /// the Pod is treated as a single unit in all of these aspects.
+    /// The group object referenced by this field may not exist at the time the
+    /// Pod is created.
+    /// This field is immutable, but a group object with the same name may be
+    /// recreated with different policies. Doing this during pod scheduling
+    /// may result in the placement not conforming to the expected policies.
+    /// </summary>
+    [JsonPropertyName("schedulingGroup")]
+    public V1alpha1ScaledJobSpecJobTargetRefTemplateSpecSchedulingGroup? SchedulingGroup { get; set; }
+
+    /// <summary>
     /// SecurityContext holds pod-level security attributes and common container settings.
     /// Optional: Defaults to empty.  See type description for default values of each field.
     /// </summary>
@@ -10822,18 +10836,6 @@ public partial class V1alpha1ScaledJobSpecJobTargetRefTemplateSpec
     /// </summary>
     [JsonPropertyName("volumes")]
     public IList<V1alpha1ScaledJobSpecJobTargetRefTemplateSpecVolumes>? Volumes { get; set; }
-
-    /// <summary>
-    /// WorkloadRef provides a reference to the Workload object that this Pod belongs to.
-    /// This field is used by the scheduler to identify the PodGroup and apply the
-    /// correct group scheduling policies. The Workload object referenced
-    /// by this field may not exist at the time the Pod is created.
-    /// This field is immutable, but a Workload object with the same name
-    /// may be recreated with different policies. Doing this during pod scheduling
-    /// may result in the placement not conforming to the expected policies.
-    /// </summary>
-    [JsonPropertyName("workloadRef")]
-    public V1alpha1ScaledJobSpecJobTargetRefTemplateSpecWorkloadRef? WorkloadRef { get; set; }
 }
 
 /// <summary>
