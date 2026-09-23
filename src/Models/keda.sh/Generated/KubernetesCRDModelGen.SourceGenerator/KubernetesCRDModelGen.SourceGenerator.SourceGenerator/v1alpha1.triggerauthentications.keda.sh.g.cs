@@ -397,6 +397,143 @@ public partial class V1alpha1TriggerAuthenticationSpecAzureKeyVault
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFrom
+{
+    [JsonPropertyName("secretKeyRef")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFromSecretKeyRef SecretKeyRef { get; set; }
+}
+
+/// <summary>
+/// AzureServicePrincipalCredential references credential data stored in a
+/// Kubernetes Secret.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificate
+{
+    [JsonPropertyName("valueFrom")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificateValueFrom ValueFrom { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFrom
+{
+    [JsonPropertyName("secretKeyRef")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFromSecretKeyRef SecretKeyRef { get; set; }
+}
+
+/// <summary>
+/// AzureServicePrincipalCredential references credential data stored in a
+/// Kubernetes Secret.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePassword
+{
+    [JsonPropertyName("valueFrom")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePasswordValueFrom ValueFrom { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFrom
+{
+    [JsonPropertyName("secretKeyRef")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFromSecretKeyRef SecretKeyRef { get; set; }
+}
+
+/// <summary>
+/// AzureServicePrincipalCredential references credential data stored in a
+/// Kubernetes Secret.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecret
+{
+    [JsonPropertyName("valueFrom")]
+    public required V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecretValueFrom ValueFrom { get; set; }
+}
+
+/// <summary>
+/// AzureServicePrincipal defines Microsoft Entra service principal credentials
+/// that can be shared by Azure scalers.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1TriggerAuthenticationSpecAzureServicePrincipal
+{
+    /// <summary>ActiveDirectoryEndpoint is required when cloud is set to Private.</summary>
+    [JsonPropertyName("activeDirectoryEndpoint")]
+    public string? ActiveDirectoryEndpoint { get; set; }
+
+    /// <summary>
+    /// AzureServicePrincipalCredential references credential data stored in a
+    /// Kubernetes Secret.
+    /// </summary>
+    [JsonPropertyName("clientCertificate")]
+    public V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificate? ClientCertificate { get; set; }
+
+    /// <summary>
+    /// AzureServicePrincipalCredential references credential data stored in a
+    /// Kubernetes Secret.
+    /// </summary>
+    [JsonPropertyName("clientCertificatePassword")]
+    public V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientCertificatePassword? ClientCertificatePassword { get; set; }
+
+    [JsonPropertyName("clientId")]
+    public required string ClientId { get; set; }
+
+    /// <summary>
+    /// AzureServicePrincipalCredential references credential data stored in a
+    /// Kubernetes Secret.
+    /// </summary>
+    [JsonPropertyName("clientSecret")]
+    public V1alpha1TriggerAuthenticationSpecAzureServicePrincipalClientSecret? ClientSecret { get; set; }
+
+    /// <summary>Cloud specifies the Azure cloud environment. Defaults to AzurePublicCloud.</summary>
+    [JsonPropertyName("cloud")]
+    public string? Cloud { get; set; }
+
+    [JsonPropertyName("tenantId")]
+    public required string TenantId { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TriggerAuthenticationSpecBoundServiceAccountToken
 {
     [JsonPropertyName("parameter")]
@@ -822,6 +959,13 @@ public partial class V1alpha1TriggerAuthenticationSpec
     /// <summary>AzureKeyVault is used to authenticate using Azure Key Vault</summary>
     [JsonPropertyName("azureKeyVault")]
     public V1alpha1TriggerAuthenticationSpecAzureKeyVault? AzureKeyVault { get; set; }
+
+    /// <summary>
+    /// AzureServicePrincipal defines Microsoft Entra service principal credentials
+    /// that can be shared by Azure scalers.
+    /// </summary>
+    [JsonPropertyName("azureServicePrincipal")]
+    public V1alpha1TriggerAuthenticationSpecAzureServicePrincipal? AzureServicePrincipal { get; set; }
 
     [JsonPropertyName("boundServiceAccountToken")]
     public IList<V1alpha1TriggerAuthenticationSpecBoundServiceAccountToken>? BoundServiceAccountToken { get; set; }

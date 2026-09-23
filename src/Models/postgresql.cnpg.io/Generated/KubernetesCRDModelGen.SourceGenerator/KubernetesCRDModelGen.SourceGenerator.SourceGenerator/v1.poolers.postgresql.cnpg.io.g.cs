@@ -2110,7 +2110,10 @@ public partial class V1PoolerSpecTemplateSpecAffinity
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecContainersEnvValueFromConfigMapKeyRef
 {
-    /// <summary>The key to select.</summary>
+    /// <summary>
+    /// The key to select from the ConfigMap&apos;s Data field.
+    /// Keys in the BinaryData field are not currently propagated to container env vars.
+    /// </summary>
     [JsonPropertyName("key")]
     public required string Key { get; set; }
 
@@ -2420,6 +2423,13 @@ public partial class V1PoolerSpecTemplateSpecContainersLifecyclePostStartHttpGet
     public required IntOrString Port { get; set; }
 
     /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>
     /// Scheme to use for connecting to the host.
     /// Defaults to HTTP.
     /// </summary>
@@ -2550,6 +2560,13 @@ public partial class V1PoolerSpecTemplateSpecContainersLifecyclePreStopHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -2688,6 +2705,15 @@ public partial class V1PoolerSpecTemplateSpecContainersLivenessProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecContainersLivenessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -2746,6 +2772,13 @@ public partial class V1PoolerSpecTemplateSpecContainersLivenessProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -2913,6 +2946,15 @@ public partial class V1PoolerSpecTemplateSpecContainersReadinessProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecContainersReadinessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -2971,6 +3013,13 @@ public partial class V1PoolerSpecTemplateSpecContainersReadinessProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -3489,6 +3538,15 @@ public partial class V1PoolerSpecTemplateSpecContainersStartupProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecContainersStartupProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -3547,6 +3605,13 @@ public partial class V1PoolerSpecTemplateSpecContainersStartupProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -3675,9 +3740,17 @@ public partial class V1PoolerSpecTemplateSpecContainersVolumeDevices
 public partial class V1PoolerSpecTemplateSpecContainersVolumeMounts
 {
     /// <summary>
-    /// Path within the container at which the volume should be mounted.  Must
-    /// not contain &apos;:&apos;.
+    /// bindMountOptions is the list of additional bind mount options to apply when
+    /// mounting this volume into the container. Allowed values are noexec,
+    /// nodev, and nosuid. These are Linux mount options and have no effect on
+    /// Windows nodes.
+    /// This field is not supported with image volumes.
+    /// This is an alpha field and requires enabling the VolumeBindMountOptions feature gate.
     /// </summary>
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
+    /// <summary>Path within the container at which the volume should be mounted.</summary>
     [JsonPropertyName("mountPath")]
     public required string MountPath { get; set; }
 
@@ -4054,7 +4127,10 @@ public partial class V1PoolerSpecTemplateSpecDnsConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecEphemeralContainersEnvValueFromConfigMapKeyRef
 {
-    /// <summary>The key to select.</summary>
+    /// <summary>
+    /// The key to select from the ConfigMap&apos;s Data field.
+    /// Keys in the BinaryData field are not currently propagated to container env vars.
+    /// </summary>
     [JsonPropertyName("key")]
     public required string Key { get; set; }
 
@@ -4364,6 +4440,13 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersLifecyclePostSta
     public required IntOrString Port { get; set; }
 
     /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>
     /// Scheme to use for connecting to the host.
     /// Defaults to HTTP.
     /// </summary>
@@ -4494,6 +4577,13 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersLifecyclePreStop
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -4629,6 +4719,15 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersLivenessProbeExe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecEphemeralContainersLivenessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -4687,6 +4786,13 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersLivenessProbeHtt
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -4849,6 +4955,15 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersReadinessProbeEx
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecEphemeralContainersReadinessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -4907,6 +5022,13 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersReadinessProbeHt
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -5418,6 +5540,15 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersStartupProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecEphemeralContainersStartupProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -5476,6 +5607,13 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersStartupProbeHttp
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -5596,9 +5734,17 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainersVolumeDevices
 public partial class V1PoolerSpecTemplateSpecEphemeralContainersVolumeMounts
 {
     /// <summary>
-    /// Path within the container at which the volume should be mounted.  Must
-    /// not contain &apos;:&apos;.
+    /// bindMountOptions is the list of additional bind mount options to apply when
+    /// mounting this volume into the container. Allowed values are noexec,
+    /// nodev, and nosuid. These are Linux mount options and have no effect on
+    /// Windows nodes.
+    /// This field is not supported with image volumes.
+    /// This is an alpha field and requires enabling the VolumeBindMountOptions feature gate.
     /// </summary>
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
+    /// <summary>Path within the container at which the volume should be mounted.</summary>
     [JsonPropertyName("mountPath")]
     public required string MountPath { get; set; }
 
@@ -5882,6 +6028,44 @@ public partial class V1PoolerSpecTemplateSpecEphemeralContainers
 }
 
 /// <summary>
+/// EvictionResponder allows you to specify the responder reacting to an Eviction.
+/// Responders should observe and communicate through the Eviction Resource API to help with
+/// the graceful eviction of a target (e.g. termination of a pod).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1PoolerSpecTemplateSpecEvictionResponders
+{
+    /// <summary>
+    /// name allows you to identify the responder responding to the Eviction.
+    /// 
+    /// It must be a valid domain-prefixed key (such as &quot;acme.io/foo&quot;).
+    /// Domain names *.k8s.io and *.kubernetes.io are reserved.
+    /// This field must be unique for each responder.
+    /// This field is required.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// priority for this responder. Higher priorities are selected first by the evictionrequest-controller.
+    /// If there are responders with the same priority, the responder whose domain name comes first in the
+    /// alphabetical higher domain order, will be picked. This means that the top domain labels are compared
+    /// alphabetically first, followed by the lower domain labels. The key is compared last.
+    /// 
+    /// The responder that is the managing controller of the pod should set the value of
+    /// this field to 10000 to allow both for preemption or fallback registration by other
+    /// responders.
+    /// 
+    /// The minimum value is 0 and the maximum value is 100000.
+    /// The interval 0-999 is reserved for responders with *.k8s.io suffix.
+    /// This field is required.
+    /// </summary>
+    [JsonPropertyName("priority")]
+    public required int Priority { get; set; }
+}
+
+/// <summary>
 /// HostAlias holds the mapping between IP and hostnames that will be injected as an entry in the
 /// pod&apos;s hosts file.
 /// </summary>
@@ -5922,7 +6106,10 @@ public partial class V1PoolerSpecTemplateSpecImagePullSecrets
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecInitContainersEnvValueFromConfigMapKeyRef
 {
-    /// <summary>The key to select.</summary>
+    /// <summary>
+    /// The key to select from the ConfigMap&apos;s Data field.
+    /// Keys in the BinaryData field are not currently propagated to container env vars.
+    /// </summary>
     [JsonPropertyName("key")]
     public required string Key { get; set; }
 
@@ -6232,6 +6419,13 @@ public partial class V1PoolerSpecTemplateSpecInitContainersLifecyclePostStartHtt
     public required IntOrString Port { get; set; }
 
     /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+
+    /// <summary>
     /// Scheme to use for connecting to the host.
     /// Defaults to HTTP.
     /// </summary>
@@ -6362,6 +6556,13 @@ public partial class V1PoolerSpecTemplateSpecInitContainersLifecyclePreStopHttpG
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -6500,6 +6701,15 @@ public partial class V1PoolerSpecTemplateSpecInitContainersLivenessProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecInitContainersLivenessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -6558,6 +6768,13 @@ public partial class V1PoolerSpecTemplateSpecInitContainersLivenessProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -6725,6 +6942,15 @@ public partial class V1PoolerSpecTemplateSpecInitContainersReadinessProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecInitContainersReadinessProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -6783,6 +7009,13 @@ public partial class V1PoolerSpecTemplateSpecInitContainersReadinessProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -7301,6 +7534,15 @@ public partial class V1PoolerSpecTemplateSpecInitContainersStartupProbeExec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PoolerSpecTemplateSpecInitContainersStartupProbeGrpc
 {
+    /// <summary>
+    /// mode specifies the connection mode for the gRPC health probe.
+    /// Set to &quot;TLS&quot; to use TLS without certificate verification.
+    /// Set to &quot;Plaintext&quot; to use a plaintext (insecure) connection explicitly.
+    /// If not specified, the probe uses a plaintext (insecure) connection.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
     /// <summary>Port number of the gRPC service. Number must be in the range 1 to 65535.</summary>
     [JsonPropertyName("port")]
     public required int Port { get; set; }
@@ -7359,6 +7601,13 @@ public partial class V1PoolerSpecTemplateSpecInitContainersStartupProbeHttpGet
     /// </summary>
     [JsonPropertyName("port")]
     public required IntOrString Port { get; set; }
+
+    /// <summary>
+    /// Protocol selects the wire protocol for the probe connection.
+    /// Nil defaults to HTTP/1.1.
+    /// </summary>
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
 
     /// <summary>
     /// Scheme to use for connecting to the host.
@@ -7487,9 +7736,17 @@ public partial class V1PoolerSpecTemplateSpecInitContainersVolumeDevices
 public partial class V1PoolerSpecTemplateSpecInitContainersVolumeMounts
 {
     /// <summary>
-    /// Path within the container at which the volume should be mounted.  Must
-    /// not contain &apos;:&apos;.
+    /// bindMountOptions is the list of additional bind mount options to apply when
+    /// mounting this volume into the container. Allowed values are noexec,
+    /// nodev, and nosuid. These are Linux mount options and have no effect on
+    /// Windows nodes.
+    /// This field is not supported with image volumes.
+    /// This is an alpha field and requires enabling the VolumeBindMountOptions feature gate.
     /// </summary>
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
+    /// <summary>Path within the container at which the volume should be mounted.</summary>
     [JsonPropertyName("mountPath")]
     public required string MountPath { get; set; }
 
@@ -8271,11 +8528,8 @@ public partial class V1PoolerSpecTemplateSpecSecurityContext
     /// Eligible volumes are in-tree FibreChannel and iSCSI volumes, and all CSI volumes
     /// whose CSI driver announces SELinux support by setting spec.seLinuxMount: true in their
     /// CSIDriver instance. Other volumes are always re-labelled recursively.
-    /// &quot;MountOption&quot; value is allowed only when SELinuxMount feature gate is enabled.
     /// 
-    /// If not specified and SELinuxMount feature gate is enabled, &quot;MountOption&quot; is used.
-    /// If not specified and SELinuxMount feature gate is disabled, &quot;MountOption&quot; is used for ReadWriteOncePod volumes
-    /// and &quot;Recursive&quot; for all other volumes.
+    /// If not specified, &quot;MountOption&quot; is used.
     /// 
     /// This field affects only Pods that have SELinux label set, either in PodSecurityContext or in SecurityContext of all containers.
     /// 
@@ -8848,6 +9102,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesConfigMapItems
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>configMap represents a configMap that should populate this volume</summary>
@@ -8866,6 +9128,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesConfigMap
     /// </summary>
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    /// <summary>
+    /// defaultUser is Optional: The owner UID of the created files by default.
+    /// The defaultUser field is only used as a fallback when the item-level user field is unset.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("defaultUser")]
+    public long? DefaultUser { get; set; }
 
     /// <summary>
     /// items if unspecified, each key-value pair in the Data field of the referenced
@@ -9026,6 +9296,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesDownwardAPIItems
     /// </summary>
     [JsonPropertyName("resourceFieldRef")]
     public V1PoolerSpecTemplateSpecVolumesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>downwardAPI represents downward API about the pod that should populate this volume</summary>
@@ -9045,6 +9323,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesDownwardAPI
     /// </summary>
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    /// <summary>
+    /// defaultUser is Optional: The owner UID of the created files by default.
+    /// The defaultUser field is only used as a fallback when the item-level user field is unset.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("defaultUser")]
+    public long? DefaultUser { get; set; }
 
     /// <summary>Items is a list of downward API volume file</summary>
     [JsonPropertyName("items")]
@@ -9067,6 +9353,19 @@ public partial class V1PoolerSpecTemplateSpecVolumesEmptyDir
     /// </summary>
     [JsonPropertyName("medium")]
     public string? Medium { get; set; }
+
+    /// <summary>
+    /// mode specifies the permission bits for the emptyDir directory, in numeric
+    /// notation (e.g., 0755, 01777). Must be a value between 0000 and 01777.
+    /// If not specified, defaults to 0777.
+    /// This might be in conflict with other options that affect the file
+    /// mode, like fsGroup. If fsGroup is specified, the fsGroup permissions
+    /// will override the mode specified here.
+    /// This field has no effect on Windows.
+    /// This field is alpha and requires EmptyDirVolumeMode featuregate to be enabled.
+    /// </summary>
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
 
     /// <summary>
     /// sizeLimit is the total amount of local storage required for this EmptyDir volume.
@@ -9097,8 +9396,8 @@ public partial class V1PoolerSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate
 /// * An existing PVC (PersistentVolumeClaim)
 /// If the provisioner or an external controller can support the specified data source,
 /// it will create a new volume based on the contents of the specified data source.
-/// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-/// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+/// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+/// copied to dataSource when dataSourceRef.namespace is not specified.
 /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -9144,7 +9443,6 @@ public partial class V1PoolerSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate
 ///   specified.
 /// * While dataSource only allows local objects, dataSourceRef allows objects
 ///   in any namespaces.
-/// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -9274,8 +9572,8 @@ public partial class V1PoolerSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate
     /// * An existing PVC (PersistentVolumeClaim)
     /// If the provisioner or an external controller can support the specified data source,
     /// it will create a new volume based on the contents of the specified data source.
-    /// When the AnyVolumeDataSource feature gate is enabled, dataSource contents will be copied to dataSourceRef,
-    /// and dataSourceRef contents will be copied to dataSource when dataSourceRef.namespace is not specified.
+    /// dataSource contents will be copied to dataSourceRef, and dataSourceRef contents will be
+    /// copied to dataSource when dataSourceRef.namespace is not specified.
     /// If the namespace is specified, then dataSourceRef will not be copied to dataSource.
     /// </summary>
     [JsonPropertyName("dataSource")]
@@ -9303,7 +9601,6 @@ public partial class V1PoolerSpecTemplateSpecVolumesEphemeralVolumeClaimTemplate
     ///   specified.
     /// * While dataSource only allows local objects, dataSourceRef allows objects
     ///   in any namespaces.
-    /// (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
     /// (Alpha) Using the namespace field of dataSourceRef requires the CrossNamespaceVolumeDataSource feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("dataSourceRef")]
@@ -10056,6 +10353,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesClusterTrust
     /// </summary>
     [JsonPropertyName("signerName")]
     public string? SignerName { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>Maps a string key to a path within a volume.</summary>
@@ -10086,6 +10391,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesConfigMapIte
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>configMap information about the configMap data to project</summary>
@@ -10185,6 +10498,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesDownwardAPII
     /// </summary>
     [JsonPropertyName("resourceFieldRef")]
     public V1PoolerSpecTemplateSpecVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>downwardAPI information about the downwardAPI data to project</summary>
@@ -10311,6 +10632,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesPodCertifica
     public required string SignerName { get; set; }
 
     /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
+
+    /// <summary>
     /// userAnnotations allow pod authors to pass additional information to
     /// the signer implementation.  Kubernetes does not restrict or validate this
     /// metadata in any way.
@@ -10357,6 +10686,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesSecretItems
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>secret information about the secret data to project</summary>
@@ -10422,6 +10759,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjectedSourcesServiceAccou
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>
@@ -10521,6 +10866,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesProjected
     /// </summary>
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    /// <summary>
+    /// defaultUser is Optional: The owner UID of the created files by default.
+    /// The defaultUser field is only used as a fallback when the item-level user field is unset.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("defaultUser")]
+    public long? DefaultUser { get; set; }
 
     /// <summary>
     /// sources is the list of volume projections. Each entry in this list
@@ -10786,6 +11139,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesSecretItems
     /// </summary>
     [JsonPropertyName("path")]
     public required string Path { get; set; }
+
+    /// <summary>
+    /// user is Optional: The owner UID of the created file.
+    /// If specified, the item-level user field takes precedence over defaultUser.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("user")]
+    public long? User { get; set; }
 }
 
 /// <summary>
@@ -10807,6 +11168,14 @@ public partial class V1PoolerSpecTemplateSpecVolumesSecret
     /// </summary>
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    /// <summary>
+    /// defaultUser is Optional: The owner UID of the created files by default.
+    /// The defaultUser field is only used as a fallback when the item-level user field is unset.
+    /// (Alpha) This field requires the AtomicWriteVolumeUserFields feature gate to be enabled.
+    /// </summary>
+    [JsonPropertyName("defaultUser")]
+    public long? DefaultUser { get; set; }
 
     /// <summary>
     /// items If unspecified, each key-value pair in the Data field of the referenced
@@ -11263,6 +11632,26 @@ public partial class V1PoolerSpecTemplateSpec
     public IList<V1PoolerSpecTemplateSpecEphemeralContainers>? EphemeralContainers { get; set; }
 
     /// <summary>
+    /// evictionResponders reference responders that react to Evictions based on EvictionRequests.
+    /// Responders should observe and communicate through the Eviction Resource API to help with
+    /// the graceful termination of a pod. The responders are selected sequentially, according to
+    /// their specified priority.
+    /// 
+    /// Responders should periodically report on an eviction progress by updating the
+    /// .status.responders[].heartbeatTime field of the Eviction object. If this field is not updated
+    /// within the heartbeat deadline defined by the Eviction API (currently 20 minutes), the eviction
+    /// is passed over to the next responder with a lower priority. If there is no other responder,
+    /// the last default imperative-eviction.k8s.io/evictor responder with a priority of 100 will
+    /// evict the pod using the imperative Eviction API (pods/&lt;name&gt;/eviction subresource).
+    /// 
+    /// The maximum length of the responders list is 10.
+    /// Responders are not supported when the pod is part of a PodGroup (.spec.schedulingGroup is set).
+    /// This field can only be set on creation and is immutable afterwards.
+    /// </summary>
+    [JsonPropertyName("evictionResponders")]
+    public IList<V1PoolerSpecTemplateSpecEvictionResponders>? EvictionResponders { get; set; }
+
+    /// <summary>
     /// HostAliases is an optional list of hosts and IPs that will be injected into the pod&apos;s hosts
     /// file if specified.
     /// </summary>
@@ -11323,7 +11712,6 @@ public partial class V1PoolerSpecTemplateSpec
     /// - `hostNetwork` must be set to false.
     /// 
     /// This field must be a valid DNS subdomain as defined in RFC 1123 and contain at most 64 characters.
-    /// Requires the HostnameOverride feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("hostnameOverride")]
     public string? HostnameOverride { get; set; }
@@ -11424,6 +11812,8 @@ public partial class V1PoolerSpecTemplateSpec
     /// <summary>
     /// PreemptionPolicy is the Policy for preempting pods with lower priority.
     /// One of Never, PreemptLowerPriority.
+    /// When Priority Admission Controller is enabled, it prevents users from setting
+    /// this field. The admission controller populates this field from PriorityClassName.
     /// Defaults to PreemptLowerPriority if unset.
     /// </summary>
     [JsonPropertyName("preemptionPolicy")]
