@@ -115,14 +115,6 @@ public partial class V1beta1CatalogSpecForProviderProviderConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CatalogSpecForProviderProvisioningInfo
-{
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CatalogSpecForProvider
 {
     [JsonPropertyName("browseOnly")]
@@ -184,9 +176,6 @@ public partial class V1beta1CatalogSpecForProvider
     /// <summary>For Delta Sharing Catalogs: the name of the delta sharing provider. Change forces creation of a new resource.</summary>
     [JsonPropertyName("providerName")]
     public string? ProviderName { get; set; }
-
-    [JsonPropertyName("provisioningInfo")]
-    public V1beta1CatalogSpecForProviderProvisioningInfo? ProvisioningInfo { get; set; }
 
     /// <summary>For Delta Sharing Catalogs: the name of the share under the share provider. Change forces creation of a new resource.</summary>
     [JsonPropertyName("shareName")]
@@ -253,14 +242,6 @@ public partial class V1beta1CatalogSpecInitProviderProviderConfig
     /// <summary>Workspace ID which the resource belongs to. This workspace must be part of the account which the provider is configured with.</summary>
     [JsonPropertyName("workspaceId")]
     public string? WorkspaceId { get; set; }
-}
-
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1CatalogSpecInitProviderProvisioningInfo
-{
-    [JsonPropertyName("state")]
-    public string? State { get; set; }
 }
 
 /// <summary>
@@ -338,9 +319,6 @@ public partial class V1beta1CatalogSpecInitProvider
     /// <summary>For Delta Sharing Catalogs: the name of the delta sharing provider. Change forces creation of a new resource.</summary>
     [JsonPropertyName("providerName")]
     public string? ProviderName { get; set; }
-
-    [JsonPropertyName("provisioningInfo")]
-    public V1beta1CatalogSpecInitProviderProvisioningInfo? ProvisioningInfo { get; set; }
 
     /// <summary>For Delta Sharing Catalogs: the name of the share under the share provider. Change forces creation of a new resource.</summary>
     [JsonPropertyName("shareName")]
