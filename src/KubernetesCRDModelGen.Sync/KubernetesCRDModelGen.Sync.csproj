@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.VisualStudio.SolutionPersistence" Version="1.0.52" />
     <PackageReference Include="NuGet.Protocol" Version="7.9.0" />
     <PackageReference Include="Semver" Version="3.0.0" />
-    <PackageReference Include="Valleysoft.DockerRegistryClient" Version="6.2.0" />
+    <PackageReference Include="Valleysoft.DockerRegistryClient" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
