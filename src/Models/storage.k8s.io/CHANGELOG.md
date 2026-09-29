@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/storage.k8s.io-v1.8.1...storage.k8s.io-v1.9.0) (2026-09-29)
+
+
+### Features
+
+* Sync ([#158](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/158)) ([77e2ade](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/77e2ade5a96f417e23843e70386ae8edac5698df))
+
 ## [1.8.1](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/storage.k8s.io-v1.8.0...storage.k8s.io-v1.8.1) (2026-07-13)
 
 
