@@ -40,6 +40,41 @@ public partial class V1VolumeSnapshotContentList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>
+/// A topology selector requirement is a selector that matches given label.
+/// This is an alpha feature and may change in the future.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeSnapshotContentSpecNodeAffinityMatchLabelExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// An array of string values. One value must match the label to be selected.
+    /// Each entry in Values is ORed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public required IList<string> Values { get; set; }
+}
+
+/// <summary>
+/// A topology selector term represents the result of label queries. A null
+/// or empty topology selector term matches no objects. The requirements of
+/// them are ANDed. It provides a subset of functionality as NodeSelectorTerm.
+/// This is an alpha feature and may change in the future.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeSnapshotContentSpecNodeAffinity
+{
+    /// <summary>A list of topology selector requirements by labels.</summary>
+    [JsonPropertyName("matchLabelExpressions")]
+    public IList<V1VolumeSnapshotContentSpecNodeAffinityMatchLabelExpressions>? MatchLabelExpressions { get; set; }
+}
+
+/// <summary>
 /// deletionPolicy determines whether this VolumeSnapshotContent and its physical snapshot on
 /// the underlying storage system should be deleted when its bound VolumeSnapshot is deleted.
 /// Supported values are &quot;Retain&quot; and &quot;Delete&quot;.
@@ -165,6 +200,26 @@ public partial class V1VolumeSnapshotContentSpecVolumeSnapshotRef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpec
 {
+    /// <summary>
+    /// nodeAffinity defines the node topologies from which a volume can
+    /// be provisioned using this snapshot as a source. It is populated once from
+    /// the CSI driver&apos;s CreateSnapshotResponse, which is expected to report the
+    /// snapshot&apos;s full intended accessibility (including any asynchronously
+    /// replicated targets). For WaitForFirstConsumer volume binding, the scheduler
+    /// plugin compares these terms against node labels to filter candidate nodes.
+    /// For Immediate volume binding, the external-provisioner intersects these
+    /// terms with StorageClass.AllowedTopologies to select a compatible
+    /// provisioning topology.
+    /// This field is mutable so it can be updated out of band (e.g., admin
+    /// corrections, or statically provisioned snapshots); the sidecar does not
+    /// refresh it after creation. Changes only affect future scheduling and
+    /// provisioning.
+    /// This is an alpha field tied to the VolumeSnapshotTopology feature gate
+    /// (KEP-5943).
+    /// </summary>
+    [JsonPropertyName("nodeAffinity")]
+    public IList<V1VolumeSnapshotContentSpecNodeAffinity>? NodeAffinity { get; set; }
+
     /// <summary>
     /// deletionPolicy determines whether this VolumeSnapshotContent and its physical snapshot on
     /// the underlying storage system should be deleted when its bound VolumeSnapshot is deleted.
