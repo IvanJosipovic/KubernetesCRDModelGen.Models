@@ -95,6 +95,14 @@ public partial class V1beta2BackupVolumeStatus
     [JsonPropertyName("lastSyncedAt")]
     public DateTime? LastSyncedAt { get; set; }
 
+    /// <summary>The source snapshot of the backed up volume, set only when it was a linked clone.</summary>
+    [JsonPropertyName("linkedCloneSourceSnapshot")]
+    public string? LinkedCloneSourceSnapshot { get; set; }
+
+    /// <summary>The source volume of the backed up volume, set only when it was a linked clone.</summary>
+    [JsonPropertyName("linkedCloneSourceVolume")]
+    public string? LinkedCloneSourceVolume { get; set; }
+
     /// <summary>The error messages when call longhorn engine on list or inspect backup volumes.</summary>
     [JsonPropertyName("messages")]
     public IDictionary<string, string>? Messages { get; set; }

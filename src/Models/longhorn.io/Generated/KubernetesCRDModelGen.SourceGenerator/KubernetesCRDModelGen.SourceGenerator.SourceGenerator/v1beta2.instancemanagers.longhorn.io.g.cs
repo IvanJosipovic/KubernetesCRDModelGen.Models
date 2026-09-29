@@ -48,6 +48,8 @@ public partial class V1beta2InstanceManagerSpecDataEngineSpecV2
     ///            workqueues away from the SPDK reactor CPUs).
     /// &quot;false&quot; -&gt; do not pass the flags.
     /// &quot; &quot;      -&gt; inherit the global setting value.
+    /// This field is ignored when interrupt mode is enabled, since the SPDK
+    /// reactors no longer busy-poll and CPU isolation is always disabled.
     /// </summary>
     [JsonPropertyName("cpuIsolationEnabled")]
     public string? CpuIsolationEnabled { get; set; }

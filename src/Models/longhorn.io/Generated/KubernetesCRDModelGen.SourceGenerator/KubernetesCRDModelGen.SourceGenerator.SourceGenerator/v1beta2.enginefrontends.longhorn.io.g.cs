@@ -79,6 +79,15 @@ public partial class V1beta2EngineFrontendSpec
     [JsonPropertyName("nodeID")]
     public string? NodeID { get; set; }
 
+    /// <summary>
+    /// nvmeTcpNrIoQueues limits the number of I/O queues the kernel initiator
+    /// creates when connecting the blockdev frontend over NVMe-TCP.
+    /// 0 means inheriting the global setting default-nvme-tcp-nr-io-queues.
+    /// Takes effect on (re)attach.
+    /// </summary>
+    [JsonPropertyName("nvmeTcpNrIoQueues")]
+    public int? NvmeTcpNrIoQueues { get; set; }
+
     [JsonPropertyName("salvageRequested")]
     public bool? SalvageRequested { get; set; }
 

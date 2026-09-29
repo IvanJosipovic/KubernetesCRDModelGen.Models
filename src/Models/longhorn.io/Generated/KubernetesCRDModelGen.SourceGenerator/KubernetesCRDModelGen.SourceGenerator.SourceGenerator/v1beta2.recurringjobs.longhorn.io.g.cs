@@ -37,6 +37,24 @@ public partial class V1beta2RecurringJobList : IKubernetesObject<V1ListMeta>, II
 }
 
 /// <summary>
+/// The retention policy that determines whether the recurring job cleans up
+/// snapshots/backups based on their count or age. Can be &quot;count-based&quot; or
+/// &quot;age-based&quot;. The two policies work independently: &quot;count-based&quot; (the default)
+/// retains the configured number of newest snapshots/backups and ignores
+/// RetainAge, while &quot;age-based&quot; retains snapshots/backups no older than RetainAge
+/// and ignores Retain.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RecurringJobSpecRetentionPolicyEnum>))]
+public enum V1beta2RecurringJobSpecRetentionPolicyEnum
+{
+    [EnumMember(Value = "count-based"), JsonStringEnumMemberName("count-based")]
+    CountBased,
+    [EnumMember(Value = "age-based"), JsonStringEnumMemberName("age-based")]
+    AgeBased
+}
+
+/// <summary>
 /// The recurring job task.
 /// Can be &quot;snapshot&quot;, &quot;snapshot-force-create&quot;, &quot;snapshot-cleanup&quot;, &quot;snapshot-delete&quot;, &quot;backup&quot;, &quot;backup-force-create&quot;, &quot;filesystem-trim&quot; or &quot;system-backup&quot;.
 /// </summary>
@@ -94,9 +112,33 @@ public partial class V1beta2RecurringJobSpec
     [JsonPropertyName("parameters")]
     public IDictionary<string, string>? Parameters { get; set; }
 
-    /// <summary>The retain count of the snapshot/backup.</summary>
+    /// <summary>
+    /// The retain count of the snapshot/backup.
+    /// Retain represents the number of snapshots/backups to retain and only when the retention policy is &quot;count-based&quot;.
+    /// </summary>
     [JsonPropertyName("retain")]
     public int? Retain { get; set; }
+
+    /// <summary>
+    /// The retention age of the snapshot/backup, specified as a Go duration string,
+    /// such as &quot;10m&quot;, &quot;24h&quot;, or &quot;8760h&quot;. Note that Go durations have no day or year unit,
+    /// so a day is &quot;24h&quot;. Snapshots/backups older than this are cleaned up by the recurring job.
+    /// Only takes effect when the retention policy is &quot;age-based&quot;.
+    /// If the retention policy is &quot;age-based&quot;, this value is 0s, the recurring job will not start.
+    /// </summary>
+    [JsonPropertyName("retainAge")]
+    public string? RetainAge { get; set; }
+
+    /// <summary>
+    /// The retention policy that determines whether the recurring job cleans up
+    /// snapshots/backups based on their count or age. Can be &quot;count-based&quot; or
+    /// &quot;age-based&quot;. The two policies work independently: &quot;count-based&quot; (the default)
+    /// retains the configured number of newest snapshots/backups and ignores
+    /// RetainAge, while &quot;age-based&quot; retains snapshots/backups no older than RetainAge
+    /// and ignores Retain.
+    /// </summary>
+    [JsonPropertyName("retentionPolicy")]
+    public V1beta2RecurringJobSpecRetentionPolicyEnum? RetentionPolicy { get; set; }
 
     /// <summary>
     /// The recurring job task.
