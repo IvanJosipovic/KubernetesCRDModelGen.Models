@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/longhorn.io-v1.6.0...longhorn.io-v1.7.0) (2026-09-29)
+
+
+### Features
+
+* Sync ([#156](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/156)) ([9407266](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/940726695b38a86051a3d9f492b7f6001f0ee532))
+
 ## [1.6.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/longhorn.io-v1.5.1...longhorn.io-v1.6.0) (2026-08-14)
 
 

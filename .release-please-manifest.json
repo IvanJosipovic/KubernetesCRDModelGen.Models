@@ -29,7 +29,7 @@
   "src/Models/knative.dev": "1.27.0",
   "src/Models/kubevirt.io": "1.11.0",
   "src/Models/kyverno.io": "1.4.0",
-  "src/Models/longhorn.io": "1.6.0",
+  "src/Models/longhorn.io": "1.7.0",
   "src/Models/postgresql.cnpg.io": "1.13.0",
   "src/Models/projectcalico.org": "1.65.0",
   "src/Models/secrets-store.csi.x-k8s.io": "1.8.0",
