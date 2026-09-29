@@ -42,6 +42,41 @@ public partial class V1VolumeSnapshotClassList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>
+/// A topology selector requirement is a selector that matches given label.
+/// This is an alpha feature and may change in the future.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeSnapshotClassAllowedTopologiesMatchLabelExpressions
+{
+    /// <summary>The label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// An array of string values. One value must match the label to be selected.
+    /// Each entry in Values is ORed.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public required IList<string> Values { get; set; }
+}
+
+/// <summary>
+/// A topology selector term represents the result of label queries. A null
+/// or empty topology selector term matches no objects. The requirements of
+/// them are ANDed. It provides a subset of functionality as NodeSelectorTerm.
+/// This is an alpha feature and may change in the future.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1VolumeSnapshotClassAllowedTopologies
+{
+    /// <summary>A list of topology selector requirements by labels.</summary>
+    [JsonPropertyName("matchLabelExpressions")]
+    public IList<V1VolumeSnapshotClassAllowedTopologiesMatchLabelExpressions>? MatchLabelExpressions { get; set; }
+}
+
+/// <summary>
 /// deletionPolicy determines whether a VolumeSnapshotContent created through
 /// the VolumeSnapshotClass should be deleted when its bound VolumeSnapshot is deleted.
 /// Supported values are &quot;Retain&quot; and &quot;Delete&quot;.
@@ -85,6 +120,20 @@ public partial class V1VolumeSnapshotClass : IKubernetesObject<V1ObjectMeta>
     /// <summary>Standard object&apos;s metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</summary>
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
+
+    /// <summary>
+    /// allowedTopologies restricts the node topologies where snapshots created
+    /// using this class are usable from. A snapshot is usable from a location
+    /// if volumes created from that snapshot are guaranteed to be accessible
+    /// from that location. Each volume plugin defines its own supported
+    /// topology specifications. An empty list means there is no topology
+    /// restriction. This is passed to the CSI driver as
+    /// AccessibilityRequirements in the CreateSnapshotRequest.
+    /// This is an alpha field tied to the VolumeSnapshotTopology feature gate
+    /// (KEP-5943).
+    /// </summary>
+    [JsonPropertyName("allowedTopologies")]
+    public IList<V1VolumeSnapshotClassAllowedTopologies>? AllowedTopologies { get; set; }
 
     /// <summary>
     /// deletionPolicy determines whether a VolumeSnapshotContent created through
