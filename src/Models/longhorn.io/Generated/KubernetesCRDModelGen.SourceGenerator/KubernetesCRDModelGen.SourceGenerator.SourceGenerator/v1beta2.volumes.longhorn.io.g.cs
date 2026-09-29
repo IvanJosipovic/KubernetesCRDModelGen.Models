@@ -246,6 +246,22 @@ public enum V1beta2VolumeSpecSnapshotDataIntegrityEnum
     FastCheck
 }
 
+/// <summary>
+/// VolumeTopologyTerm is one failure domain a volume&apos;s replicas may be
+/// scheduled in. A node satisfies the term when its zone and region match the
+/// non-empty fields.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2VolumeSpecTopologyRequirement
+{
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    [JsonPropertyName("zone")]
+    public string? Zone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum>))]
 public enum V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum
@@ -351,6 +367,15 @@ public partial class V1beta2VolumeSpec
     public int? NumberOfReplicas { get; set; }
 
     /// <summary>
+    /// nvmeTcpNrIoQueues limits the number of I/O queues the kernel initiator
+    /// creates when connecting the blockdev frontend over NVMe-TCP.
+    /// 0 means inheriting the global setting default-nvme-tcp-nr-io-queues.
+    /// Takes effect on (re)attach.
+    /// </summary>
+    [JsonPropertyName("nvmeTcpNrIoQueues")]
+    public int? NvmeTcpNrIoQueues { get; set; }
+
+    /// <summary>
     /// Specifies whether Longhorn should rebuild replicas while the detached volume is degraded.
     /// - ignored: Use the global setting for offline replica rebuilding.
     /// - enabled: Enable offline rebuilding for this volume, regardless of the global setting.
@@ -417,6 +442,15 @@ public partial class V1beta2VolumeSpec
 
     [JsonPropertyName("staleReplicaTimeout")]
     public int? StaleReplicaTimeout { get; set; }
+
+    /// <summary>
+    /// TopologyRequirement lists the failure domains the volume&apos;s replicas must
+    /// be scheduled in, derived from the CSI accessible topology at creation —
+    /// the same failure domains as the PV nodeAffinity terms (a node must match
+    /// at least one term). Empty means unconstrained.
+    /// </summary>
+    [JsonPropertyName("topologyRequirement")]
+    public IList<V1beta2VolumeSpecTopologyRequirement>? TopologyRequirement { get; set; }
 
     /// <summary>ublkNumberOfQueue controls the number of queues for ublk frontend.</summary>
     [JsonPropertyName("ublkNumberOfQueue")]
