@@ -124,6 +124,51 @@ public partial class V1alpha1ProjectStatusStatsStages
 
 /// <summary>
 /// Health contains a summary of the collective health of a Project&apos;s
+/// Targets.
+/// 
+/// Until Target status records health, a Target is counted as healthy when
+/// at least one Stage has promoted to it and the latest promotion to it from
+/// every Stage that did so succeeded. Once Target health is recorded, a
+/// Target is counted as healthy when it is healthy with respect to every
+/// Stage that governs it.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ProjectStatusStatsTargetsHealth
+{
+    /// <summary>Healthy contains the number of resources that are explicitly healthy.</summary>
+    [JsonPropertyName("healthy")]
+    public long? Healthy { get; set; }
+}
+
+/// <summary>
+/// Targets contains a summary of the collective state of the Project&apos;s
+/// Targets. It is absent for a Project with no Targets.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ProjectStatusStatsTargets
+{
+    /// <summary>Count contains the total number of Targets in the Project.</summary>
+    [JsonPropertyName("count")]
+    public long? Count { get; set; }
+
+    /// <summary>
+    /// Health contains a summary of the collective health of a Project&apos;s
+    /// Targets.
+    /// 
+    /// Until Target status records health, a Target is counted as healthy when
+    /// at least one Stage has promoted to it and the latest promotion to it from
+    /// every Stage that did so succeeded. Once Target health is recorded, a
+    /// Target is counted as healthy when it is healthy with respect to every
+    /// Stage that governs it.
+    /// </summary>
+    [JsonPropertyName("health")]
+    public V1alpha1ProjectStatusStatsTargetsHealth? Health { get; set; }
+}
+
+/// <summary>
+/// Health contains a summary of the collective health of a Project&apos;s
 /// Warehouses.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -166,6 +211,13 @@ public partial class V1alpha1ProjectStatusStats
     /// <summary>Stages contains a summary of the collective state of the Project&apos;s Stages.</summary>
     [JsonPropertyName("stages")]
     public V1alpha1ProjectStatusStatsStages? Stages { get; set; }
+
+    /// <summary>
+    /// Targets contains a summary of the collective state of the Project&apos;s
+    /// Targets. It is absent for a Project with no Targets.
+    /// </summary>
+    [JsonPropertyName("targets")]
+    public V1alpha1ProjectStatusStatsTargets? Targets { get; set; }
 
     /// <summary>
     /// Warehouses contains a summary of the collective state of the Project&apos;s

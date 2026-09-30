@@ -218,6 +218,13 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsCharts
     public string? SemverConstraint { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the optional human-readable name of the subscription
+    /// that produced this discovery result.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Versions is a list of versions discovered by the Warehouse for the
     /// ChartSubscription. An empty list indicates that the discovery operation was
     /// successful, but no versions matching the ChartSubscription criteria were
@@ -372,6 +379,13 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsGit
     /// </summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the optional human-readable name of the subscription
+    /// that produced this discovery result.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 }
 
 /// <summary>
@@ -436,6 +450,13 @@ public partial class V1alpha1WarehouseStatusDiscoveredArtifactsImages
     /// </summary>
     [JsonPropertyName("repoURL")]
     public required string RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the optional human-readable name of the subscription
+    /// that produced this discovery result.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 }
 
 /// <summary>ArtifactReference is a reference to a specific version of an artifact.</summary>
