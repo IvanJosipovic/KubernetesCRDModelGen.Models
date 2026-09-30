@@ -310,6 +310,21 @@ public partial class V1alpha1PromotionSpec
     public required IList<V1alpha1PromotionSpecSteps> Steps { get; set; }
 
     /// <summary>
+    /// Target optionally names the Target, within the Promotion&apos;s own Project
+    /// (namespace), that this Promotion promotes Freight to. Targets allow a
+    /// single Stage to govern -- and promote Freight to -- multiple destinations.
+    /// When set, the named Target must be one that the referenced Stage governs,
+    /// i.e. one selected by the Stage&apos;s targets.selectors.
+    /// 
+    /// When empty (the default), the Promotion promotes to the Stage itself. This
+    /// preserves the behavior of Promotions created before Targets existed:
+    /// classic Stages -- those without a targets block -- govern no Targets, so
+    /// their Promotions leave this field empty.
+    /// </summary>
+    [JsonPropertyName("target")]
+    public string? Target { get; set; }
+
+    /// <summary>
     /// Vars is a list of variables that can be referenced by expressions in
     /// promotion steps.
     /// </summary>
@@ -372,6 +387,14 @@ public partial class V1alpha1PromotionStatusFreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -413,6 +436,14 @@ public partial class V1alpha1PromotionStatusFreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -439,6 +470,14 @@ public partial class V1alpha1PromotionStatusFreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -572,6 +611,14 @@ public partial class V1alpha1PromotionStatusFreightCollectionItemsCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -613,6 +660,14 @@ public partial class V1alpha1PromotionStatusFreightCollectionItemsCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -639,6 +694,14 @@ public partial class V1alpha1PromotionStatusFreightCollectionItemsImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified

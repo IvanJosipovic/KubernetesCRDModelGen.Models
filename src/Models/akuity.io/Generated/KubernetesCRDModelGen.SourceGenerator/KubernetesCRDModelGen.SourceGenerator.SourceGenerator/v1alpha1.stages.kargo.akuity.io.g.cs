@@ -447,6 +447,83 @@ public partial class V1alpha1StageSpecRequestedFreight
 }
 
 /// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageSpecTargetsSelectorsMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// A label selector is a label query over a set of resources. The result of matchLabels and
+/// matchExpressions are ANDed. An empty label selector matches all objects. A null
+/// label selector matches no objects.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageSpecTargetsSelectors
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1StageSpecTargetsSelectorsMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+/// <summary>
+/// Targets describes the Targets that this Stage governs and promotes Freight
+/// to. Its presence is what makes a Stage target-aware.
+/// 
+/// When this field is nil (the default), the Stage operates in classic mode:
+/// it governs no Targets and promotes Freight by way of Promotions alone.
+/// This preserves the behavior of Stages authored before Targets existed.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageSpecTargets
+{
+    /// <summary>
+    /// Selectors select the Targets that the Stage governs, matching Targets by
+    /// their labels within the Stage&apos;s own Project. A Target is selected when it
+    /// matches any selector in the list, so several selectors describe a union.
+    /// A Target matching more than one of them is still governed once.
+    /// 
+    /// An empty selector selects every Target in the Project. An empty list
+    /// selects none: the Stage still governs Targets, it just governs none at the
+    /// moment.
+    /// </summary>
+    [JsonPropertyName("selectors")]
+    public required IList<V1alpha1StageSpecTargetsSelectors> Selectors { get; set; }
+}
+
+/// <summary>
 /// ExpressionVariable describes a single variable that may be referenced by
 /// expressions in the context of a ClusterPromotionTask, PromotionTask,
 /// Promotion, AnalysisRun arguments, or other objects that support expressions.
@@ -601,6 +678,17 @@ public partial class V1alpha1StageSpec
     /// </summary>
     [JsonPropertyName("shard")]
     public string? Shard { get; set; }
+
+    /// <summary>
+    /// Targets describes the Targets that this Stage governs and promotes Freight
+    /// to. Its presence is what makes a Stage target-aware.
+    /// 
+    /// When this field is nil (the default), the Stage operates in classic mode:
+    /// it governs no Targets and promotes Freight by way of Promotions alone.
+    /// This preserves the behavior of Stages authored before Targets existed.
+    /// </summary>
+    [JsonPropertyName("targets")]
+    public V1alpha1StageSpecTargets? Targets { get; set; }
 
     /// <summary>
     /// Vars is a list of variables that can be referenced anywhere in the
@@ -805,6 +893,14 @@ public partial class V1alpha1StageStatusCurrentPromotionFreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -846,6 +942,14 @@ public partial class V1alpha1StageStatusCurrentPromotionFreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -872,6 +976,14 @@ public partial class V1alpha1StageStatusCurrentPromotionFreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -1005,6 +1117,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -1046,6 +1166,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -1072,6 +1200,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -1205,6 +1341,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightCollectionI
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -1246,6 +1390,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightCollectionI
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -1272,6 +1424,14 @@ public partial class V1alpha1StageStatusCurrentPromotionStatusFreightCollectionI
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -1619,6 +1779,46 @@ public partial class V1alpha1StageStatusCurrentPromotion
     public V1alpha1StageStatusCurrentPromotionStatus? Status { get; set; }
 }
 
+/// <summary>Freight identifies the Freight being promoted.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusCurrentPromotionRequestFreight
+{
+    /// <summary>Name is the name of the Freight.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// CurrentPromotionRequest is a reference to the PromotionRequest currently
+/// fanning Freight out to this Stage&apos;s Targets. It is absent for a Stage that
+/// governs no Targets.
+/// 
+/// Fanning Freight out to Targets is a Kargo Enterprise-only feature. Kargo
+/// OSS maintains this field all the same, but the PromotionRequest it refers
+/// to never gets further than being marked Errored for that reason.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusCurrentPromotionRequest
+{
+    /// <summary>FinishedAt is the time at which the PromotionRequest completed.</summary>
+    [JsonPropertyName("finishedAt")]
+    public DateTime? FinishedAt { get; set; }
+
+    /// <summary>Freight identifies the Freight being promoted.</summary>
+    [JsonPropertyName("freight")]
+    public V1alpha1StageStatusCurrentPromotionRequestFreight? Freight { get; set; }
+
+    /// <summary>Name is the name of the PromotionRequest.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Phase is a high-level summary of the PromotionRequest&apos;s lifecycle.</summary>
+    [JsonPropertyName("phase")]
+    public string? Phase { get; set; }
+}
+
 /// <summary>
 /// Kind is the kind of resource from which Freight may have originated. At
 /// present, this can only be &quot;Warehouse&quot;.
@@ -1747,6 +1947,14 @@ public partial class V1alpha1StageStatusFreightHistoryItemsCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -1788,6 +1996,14 @@ public partial class V1alpha1StageStatusFreightHistoryItemsCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -1814,6 +2030,14 @@ public partial class V1alpha1StageStatusFreightHistoryItemsImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -2081,6 +2305,14 @@ public partial class V1alpha1StageStatusLastPromotionFreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -2122,6 +2354,14 @@ public partial class V1alpha1StageStatusLastPromotionFreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -2148,6 +2388,14 @@ public partial class V1alpha1StageStatusLastPromotionFreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -2281,6 +2529,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -2322,6 +2578,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -2348,6 +2612,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -2481,6 +2753,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightCollectionItem
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -2522,6 +2802,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightCollectionItem
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -2548,6 +2836,14 @@ public partial class V1alpha1StageStatusLastPromotionStatusFreightCollectionItem
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified
@@ -2895,6 +3191,103 @@ public partial class V1alpha1StageStatusLastPromotion
     public V1alpha1StageStatusLastPromotionStatus? Status { get; set; }
 }
 
+/// <summary>Freight identifies the Freight being promoted.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusLastPromotionRequestFreight
+{
+    /// <summary>Name is the name of the Freight.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// LastPromotionRequest is a reference to the last PromotionRequest to reach a
+/// terminal phase. It is absent for a Stage that governs no Targets, and only
+/// ever moves forward, so it outlives the PromotionRequest it refers to.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusLastPromotionRequest
+{
+    /// <summary>FinishedAt is the time at which the PromotionRequest completed.</summary>
+    [JsonPropertyName("finishedAt")]
+    public DateTime? FinishedAt { get; set; }
+
+    /// <summary>Freight identifies the Freight being promoted.</summary>
+    [JsonPropertyName("freight")]
+    public V1alpha1StageStatusLastPromotionRequestFreight? Freight { get; set; }
+
+    /// <summary>Name is the name of the PromotionRequest.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Phase is a high-level summary of the PromotionRequest&apos;s lifecycle.</summary>
+    [JsonPropertyName("phase")]
+    public string? Phase { get; set; }
+}
+
+/// <summary>
+/// PromotionWindowStatus reports whether promotion windows currently permit
+/// promotion of this Stage, and when that is next expected to change. It is
+/// absent when no window gates the Stage.
+/// 
+/// Kargo Enterprise only: This field is ignored in Kargo OSS.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1StageStatusPromotionWindowStatus
+{
+    /// <summary>
+    /// Closed indicates that the schedule currently forbids promotion of this
+    /// Stage.
+    /// </summary>
+    [JsonPropertyName("closed")]
+    public required bool Closed { get; set; }
+
+    /// <summary>
+    /// NextClose is when promotion is next expected to become forbidden, and is
+    /// meaningful only while Closed is false. It allows a client to give warning of
+    /// an approaching freeze, which NextCloseReason names. Like NextOpen it is optional, and
+    /// absent when no such boundary is known -- a schedule that will never forbid
+    /// promotion again has none.
+    /// </summary>
+    [JsonPropertyName("nextClose")]
+    public DateTime? NextClose { get; set; }
+
+    /// <summary>
+    /// NextCloseReason explains in human-readable terms why promotion will be forbidden
+    /// at NextClose, naming the freeze responsible where there is one.
+    /// It is set whenever NextClose is set.
+    /// </summary>
+    [JsonPropertyName("nextCloseReason")]
+    public string? NextCloseReason { get; set; }
+
+    /// <summary>
+    /// NextOpen is when the schedule is next expected to permit promotions.
+    /// 
+    /// It is optional even while Closed is true, and its absence means only that
+    /// no reopening is known: the schedule may have none (a one-shot Allow window
+    /// that has already elapsed), determining one may be impractical, or the
+    /// closure may be indefinite by design. Clients must therefore render Reason
+    /// and treat a missing NextOpen as &quot;frozen, with no known end&quot; rather than
+    /// assuming a value is present.
+    /// </summary>
+    [JsonPropertyName("nextOpen")]
+    public DateTime? NextOpen { get; set; }
+
+    /// <summary>
+    /// Reason explains in human-readable terms why promotion is forbidden,
+    /// naming the freeze responsible where there is one.
+    /// 
+    /// It is set whenever Closed is true, where it is the only field guaranteed
+    /// to explain the freeze because NextOpen may be absent.
+    /// It carries the same explanation as the corresponding admission rejection.
+    /// </summary>
+    [JsonPropertyName("reason")]
+    public string? Reason { get; set; }
+}
+
 /// <summary>Status describes the Stage&apos;s current and recent Freight, health, and more.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2929,6 +3322,18 @@ public partial class V1alpha1StageStatus
     /// <summary>CurrentPromotion is a reference to the currently Running promotion.</summary>
     [JsonPropertyName("currentPromotion")]
     public V1alpha1StageStatusCurrentPromotion? CurrentPromotion { get; set; }
+
+    /// <summary>
+    /// CurrentPromotionRequest is a reference to the PromotionRequest currently
+    /// fanning Freight out to this Stage&apos;s Targets. It is absent for a Stage that
+    /// governs no Targets.
+    /// 
+    /// Fanning Freight out to Targets is a Kargo Enterprise-only feature. Kargo
+    /// OSS maintains this field all the same, but the PromotionRequest it refers
+    /// to never gets further than being marked Errored for that reason.
+    /// </summary>
+    [JsonPropertyName("currentPromotionRequest")]
+    public V1alpha1StageStatusCurrentPromotionRequest? CurrentPromotionRequest { get; set; }
 
     /// <summary>
     /// EffectiveAutoPromotionHolds is the set of auto-promotion holds in effect
@@ -2980,6 +3385,14 @@ public partial class V1alpha1StageStatus
     public V1alpha1StageStatusLastPromotion? LastPromotion { get; set; }
 
     /// <summary>
+    /// LastPromotionRequest is a reference to the last PromotionRequest to reach a
+    /// terminal phase. It is absent for a Stage that governs no Targets, and only
+    /// ever moves forward, so it outlives the PromotionRequest it refers to.
+    /// </summary>
+    [JsonPropertyName("lastPromotionRequest")]
+    public V1alpha1StageStatusLastPromotionRequest? LastPromotionRequest { get; set; }
+
+    /// <summary>
     /// Metadata is a map of arbitrary metadata associated with the Stage.
     /// This is useful for storing additional information about the Stage
     /// that can be shared across promotions, verifications, or other processes.
@@ -2993,6 +3406,16 @@ public partial class V1alpha1StageStatus
     /// </summary>
     [JsonPropertyName("observedGeneration")]
     public long? ObservedGeneration { get; set; }
+
+    /// <summary>
+    /// PromotionWindowStatus reports whether promotion windows currently permit
+    /// promotion of this Stage, and when that is next expected to change. It is
+    /// absent when no window gates the Stage.
+    /// 
+    /// Kargo Enterprise only: This field is ignored in Kargo OSS.
+    /// </summary>
+    [JsonPropertyName("promotionWindowStatus")]
+    public V1alpha1StageStatusPromotionWindowStatus? PromotionWindowStatus { get; set; }
 }
 
 /// <summary>Stage is the Kargo API&apos;s main type.</summary>

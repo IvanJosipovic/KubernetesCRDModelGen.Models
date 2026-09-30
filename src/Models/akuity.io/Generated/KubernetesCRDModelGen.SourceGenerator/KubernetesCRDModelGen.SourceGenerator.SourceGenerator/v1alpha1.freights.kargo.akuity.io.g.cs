@@ -91,6 +91,14 @@ public partial class V1alpha1FreightCharts
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
 
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// chart. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
     /// <summary>Version specifies a particular version of the chart.</summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
@@ -132,6 +140,14 @@ public partial class V1alpha1FreightCommits
     public string? RepoURL { get; set; }
 
     /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// commit. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
+
+    /// <summary>
     /// Tag denotes a tag in the repository that matched selection criteria and
     /// resolved to this commit.
     /// </summary>
@@ -158,6 +174,14 @@ public partial class V1alpha1FreightImages
     /// <summary>RepoURL describes the repository in which the image can be found.</summary>
     [JsonPropertyName("repoURL")]
     public string? RepoURL { get; set; }
+
+    /// <summary>
+    /// SubscriptionName is the name of the subscription that discovered this
+    /// image. This field is only populated if the subscription was assigned
+    /// a name.
+    /// </summary>
+    [JsonPropertyName("subscriptionName")]
+    public string? SubscriptionName { get; set; }
 
     /// <summary>
     /// Tag identifies a specific version of the image in the repository specified

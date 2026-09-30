@@ -120,6 +120,258 @@ public partial class V1alpha1ClusterConfigSpecGitClient
 }
 
 /// <summary>
+/// Kind indicates whether this window allows or denies promotions while it is
+/// active.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ClusterConfigSpecPromotionWindowsKindEnum>))]
+public enum V1alpha1ClusterConfigSpecPromotionWindowsKindEnum
+{
+    [EnumMember(Value = "Allow"), JsonStringEnumMemberName("Allow")]
+    Allow,
+    [EnumMember(Value = "Deny"), JsonStringEnumMemberName("Deny")]
+    Deny
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecPromotionWindowsProjectSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// ProjectSelector selects the Projects this window applies to. It is only
+/// meaningful on ClusterConfig windows; on ProjectConfig windows the Project
+/// is implicit and this field is rejected. When omitted on a ClusterConfig
+/// window, the window applies to all Projects. It reuses
+/// PromotionPolicySelector, matching Projects by exact name, glob/regex
+/// pattern, or label selector.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecPromotionWindowsProjectSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1ClusterConfigSpecPromotionWindowsProjectSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the resource to which this policy applies.
+    /// 
+    /// It can be an exact name, a regex pattern (with prefix &quot;regex:&quot;), or a
+    /// glob pattern (with prefix &quot;glob:&quot;).
+    /// 
+    /// When both Name and LabelSelector are specified, the Name is ANDed with
+    /// the LabelSelector. I.e., the resource must match both the Name and
+    /// LabelSelector to be selected by this policy.
+    /// 
+    /// NOTE: Using a specific exact name is the most secure option. Pattern
+    /// matching via regex or glob can be exploited by users with permissions to
+    /// match promotion policies that weren&apos;t intended to apply to their
+    /// resources. For example, a user could create a resource with a name
+    /// deliberately crafted to match the pattern, potentially bypassing intended
+    /// promotion controls.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// A label selector requirement is a selector that contains values, a key, and an operator that
+/// relates the key and values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecPromotionWindowsStageSelectorMatchExpressions
+{
+    /// <summary>key is the label key that the selector applies to.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>
+    /// operator represents a key&apos;s relationship to a set of values.
+    /// Valid operators are In, NotIn, Exists and DoesNotExist.
+    /// </summary>
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    /// <summary>
+    /// values is an array of string values. If the operator is In or NotIn,
+    /// the values array must be non-empty. If the operator is Exists or DoesNotExist,
+    /// the values array must be empty. This array is replaced during a strategic
+    /// merge patch.
+    /// </summary>
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+/// <summary>
+/// StageSelector selects the Stages this window applies to. When omitted, the
+/// window applies to all Stages in scope (project-wide on ProjectConfig,
+/// cluster-wide on ClusterConfig). It reuses PromotionPolicySelector, so it
+/// can match by exact name, glob/regex pattern, or label selector.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecPromotionWindowsStageSelector
+{
+    /// <summary>matchExpressions is a list of label selector requirements. The requirements are ANDed.</summary>
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1ClusterConfigSpecPromotionWindowsStageSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    /// <summary>
+    /// matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+    /// map is equivalent to an element of matchExpressions, whose key field is &quot;key&quot;, the
+    /// operator is &quot;In&quot;, and the values array contains only &quot;value&quot;. The requirements are ANDed.
+    /// </summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>
+    /// Name is the name of the resource to which this policy applies.
+    /// 
+    /// It can be an exact name, a regex pattern (with prefix &quot;regex:&quot;), or a
+    /// glob pattern (with prefix &quot;glob:&quot;).
+    /// 
+    /// When both Name and LabelSelector are specified, the Name is ANDed with
+    /// the LabelSelector. I.e., the resource must match both the Name and
+    /// LabelSelector to be selected by this policy.
+    /// 
+    /// NOTE: Using a specific exact name is the most secure option. Pattern
+    /// matching via regex or glob can be exploited by users with permissions to
+    /// match promotion policies that weren&apos;t intended to apply to their
+    /// resources. For example, a user could create a resource with a name
+    /// deliberately crafted to match the pattern, potentially bypassing intended
+    /// promotion controls.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+/// <summary>
+/// PromotionWindow describes a recurring or one-shot time window that gates
+/// promotions for the Stages it matches. Windows may appear on both
+/// ProjectConfig and ClusterConfig; a Stage&apos;s effective schedule is the union of
+/// all matching windows from both. A schedule is open at a given time when no
+/// matching Deny window is active and, if any Allow windows match the Stage, at
+/// least one of them is active. Windows gate all promotions uniformly (auto,
+/// manual, and rollback).
+/// 
+/// Kargo Enterprise only: This type is ignored in Kargo OSS. The schedule is
+/// evaluated and enforced only by Kargo Enterprise; OSS carries the API for
+/// compatibility, as it does for other Enterprise-only fields.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1ClusterConfigSpecPromotionWindows
+{
+    /// <summary>
+    /// Description is a human-readable description of the window.
+    /// May contain reason, author or any clarification for the window.
+    /// </summary>
+    [JsonPropertyName("description")]
+    public string? Description { get; set; }
+
+    /// <summary>
+    /// Disabled controls whether configured windows should be skipped when calculating the stage window status.
+    /// Optional. Default is `false`. Unless set to `true` the window will impact the stages it&apos;s configured for.
+    /// </summary>
+    [JsonPropertyName("disabled")]
+    public bool? Disabled { get; set; }
+
+    /// <summary>
+    /// DTEnd is the window&apos;s end in the same format as DTStart. When combined with
+    /// RRule, DTEnd - DTStart defines the duration of each occurrence. The value
+    /// is parsed and validated by Kargo Enterprise.
+    /// </summary>
+    [JsonPropertyName("dtend")]
+    public string? Dtend { get; set; }
+
+    /// <summary>
+    /// DTStart is the window&apos;s start as an iCal date-time, with an optional
+    /// &quot;TZID=&quot; prefix carrying the time zone (e.g.
+    /// &quot;TZID=America/New_York:20260101T090000&quot;). The value is parsed and validated
+    /// by Kargo Enterprise.
+    /// </summary>
+    [JsonPropertyName("dtstart")]
+    public string? Dtstart { get; set; }
+
+    /// <summary>
+    /// Kind indicates whether this window allows or denies promotions while it is
+    /// active.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public required V1alpha1ClusterConfigSpecPromotionWindowsKindEnum Kind { get; set; }
+
+    /// <summary>
+    /// Name is a symbolic name for the window, unique within its list. It is used
+    /// to identify the window in denial messages and events.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>
+    /// ProjectSelector selects the Projects this window applies to. It is only
+    /// meaningful on ClusterConfig windows; on ProjectConfig windows the Project
+    /// is implicit and this field is rejected. When omitted on a ClusterConfig
+    /// window, the window applies to all Projects. It reuses
+    /// PromotionPolicySelector, matching Projects by exact name, glob/regex
+    /// pattern, or label selector.
+    /// </summary>
+    [JsonPropertyName("projectSelector")]
+    public V1alpha1ClusterConfigSpecPromotionWindowsProjectSelector? ProjectSelector { get; set; }
+
+    /// <summary>
+    /// RRule is an optional RFC 5545 recurrence rule (e.g. &quot;FREQ=DAILY&quot;) that
+    /// makes the window recurring. When omitted, the window is a one-shot interval
+    /// defined by DTStart and DTEnd. The full value is parsed and validated by
+    /// Kargo Enterprise.
+    /// </summary>
+    [JsonPropertyName("rrule")]
+    public string? Rrule { get; set; }
+
+    /// <summary>
+    /// StageSelector selects the Stages this window applies to. When omitted, the
+    /// window applies to all Stages in scope (project-wide on ProjectConfig,
+    /// cluster-wide on ClusterConfig). It reuses PromotionPolicySelector, so it
+    /// can match by exact name, glob/regex pattern, or label selector.
+    /// </summary>
+    [JsonPropertyName("stageSelector")]
+    public V1alpha1ClusterConfigSpecPromotionWindowsStageSelector? StageSelector { get; set; }
+}
+
+/// <summary>
 /// DeepLink defines a configurable external link that is rendered in the UI
 /// when viewing a Freight or Stage resource. The URL is an expression evaluated
 /// against the resource. The optional If field is an expression condition;
@@ -1031,6 +1283,17 @@ public partial class V1alpha1ClusterConfigSpec
     /// </summary>
     [JsonPropertyName("gitClient")]
     public V1alpha1ClusterConfigSpecGitClient? GitClient { get; set; }
+
+    /// <summary>
+    /// PromotionWindows defines time windows that gate promotions across the
+    /// cluster. Each window may narrow its scope with a projectSelector and/or
+    /// stageSelector. A Stage&apos;s effective schedule is the union of matching
+    /// windows defined here and any project-level windows in ProjectConfig.
+    /// 
+    /// Kargo Enterprise only: This field is ignored in Kargo OSS.
+    /// </summary>
+    [JsonPropertyName("promotionWindows")]
+    public IList<V1alpha1ClusterConfigSpecPromotionWindows>? PromotionWindows { get; set; }
 
     /// <summary>
     /// StageLinks defines deep links shown when viewing any Stage resource
