@@ -36,6 +36,4785 @@ public partial class V1alpha1WorkerDeploymentList : IKubernetesObject<V1ListMeta
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentStrategyRollingUpdate
+{
+    [JsonPropertyName("maxSurge")]
+    public IntOrString? MaxSurge { get; set; }
+
+    [JsonPropertyName("maxUnavailable")]
+    public IntOrString? MaxUnavailable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentStrategy
+{
+    [JsonPropertyName("rollingUpdate")]
+    public V1alpha1WorkerDeploymentSpecDeploymentStrategyRollingUpdate? RollingUpdate { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchFields")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields>? MatchFields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("preference")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference Preference { get; set; }
+
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchFields")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields>? MatchFields { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("nodeSelectorTerms")]
+    public required IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms> NodeSelectorTerms { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinity
+{
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinity
+{
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector? NamespaceSelector { get; set; }
+
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("podAffinityTerm")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm PodAffinityTerm { get; set; }
+
+    [JsonPropertyName("weight")]
+    public required int Weight { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    [JsonPropertyName("mismatchLabelKeys")]
+    public IList<string>? MismatchLabelKeys { get; set; }
+
+    [JsonPropertyName("namespaceSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector? NamespaceSelector { get; set; }
+
+    [JsonPropertyName("namespaces")]
+    public IList<string>? Namespaces { get; set; }
+
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinity
+{
+    [JsonPropertyName("preferredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution>? PreferredDuringSchedulingIgnoredDuringExecution { get; set; }
+
+    [JsonPropertyName("requiredDuringSchedulingIgnoredDuringExecution")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution>? RequiredDuringSchedulingIgnoredDuringExecution { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinity
+{
+    [JsonPropertyName("nodeAffinity")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityNodeAffinity? NodeAffinity { get; set; }
+
+    [JsonPropertyName("podAffinity")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAffinity? PodAffinity { get; set; }
+
+    [JsonPropertyName("podAntiAffinity")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromConfigMapKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromFieldRef
+{
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromResourceFieldRef
+{
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFrom
+{
+    [JsonPropertyName("configMapKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
+
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
+
+    [JsonPropertyName("secretKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    [JsonPropertyName("valueFrom")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvValueFrom? ValueFrom { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFromConfigMapRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFromSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFrom
+{
+    [JsonPropertyName("configMapRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFromConfigMapRef? ConfigMapRef { get; set; }
+
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFromSecretRef? SecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStart
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStop
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecycle
+{
+    [JsonPropertyName("postStart")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePostStart? PostStart { get; set; }
+
+    [JsonPropertyName("preStop")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecyclePreStop? PreStop { get; set; }
+
+    [JsonPropertyName("stopSignal")]
+    public string? StopSignal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersPorts
+{
+    [JsonPropertyName("containerPort")]
+    public required int ContainerPort { get; set; }
+
+    [JsonPropertyName("hostIP")]
+    public string? HostIP { get; set; }
+
+    [JsonPropertyName("hostPort")]
+    public int? HostPort { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResizePolicy
+{
+    [JsonPropertyName("resourceName")]
+    public required string ResourceName { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public required string RestartPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextAppArmorProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextCapabilities
+{
+    [JsonPropertyName("add")]
+    public IList<string>? Add { get; set; }
+
+    [JsonPropertyName("drop")]
+    public IList<string>? Drop { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextSeLinuxOptions
+{
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextSeccompProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextWindowsOptions
+{
+    [JsonPropertyName("gmsaCredentialSpec")]
+    public string? GmsaCredentialSpec { get; set; }
+
+    [JsonPropertyName("gmsaCredentialSpecName")]
+    public string? GmsaCredentialSpecName { get; set; }
+
+    [JsonPropertyName("hostProcess")]
+    public bool? HostProcess { get; set; }
+
+    [JsonPropertyName("runAsUserName")]
+    public string? RunAsUserName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContext
+{
+    [JsonPropertyName("allowPrivilegeEscalation")]
+    public bool? AllowPrivilegeEscalation { get; set; }
+
+    [JsonPropertyName("appArmorProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextAppArmorProfile? AppArmorProfile { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextCapabilities? Capabilities { get; set; }
+
+    [JsonPropertyName("privileged")]
+    public bool? Privileged { get; set; }
+
+    [JsonPropertyName("procMount")]
+    public string? ProcMount { get; set; }
+
+    [JsonPropertyName("readOnlyRootFilesystem")]
+    public bool? ReadOnlyRootFilesystem { get; set; }
+
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    [JsonPropertyName("seLinuxOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    [JsonPropertyName("seccompProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    [JsonPropertyName("windowsOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersVolumeDevices
+{
+    [JsonPropertyName("devicePath")]
+    public required string DevicePath { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersVolumeMounts
+{
+    [JsonPropertyName("mountPath")]
+    public required string MountPath { get; set; }
+
+    [JsonPropertyName("mountPropagation")]
+    public string? MountPropagation { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("recursiveReadOnly")]
+    public string? RecursiveReadOnly { get; set; }
+
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+
+    [JsonPropertyName("subPathExpr")]
+    public string? SubPathExpr { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainers
+{
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    [JsonPropertyName("env")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnv>? Env { get; set; }
+
+    [JsonPropertyName("envFrom")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersEnvFrom>? EnvFrom { get; set; }
+
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    [JsonPropertyName("imagePullPolicy")]
+    public string? ImagePullPolicy { get; set; }
+
+    [JsonPropertyName("lifecycle")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLifecycle? Lifecycle { get; set; }
+
+    [JsonPropertyName("livenessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("ports")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersPorts>? Ports { get; set; }
+
+    [JsonPropertyName("readinessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
+
+    [JsonPropertyName("resizePolicy")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResizePolicy>? ResizePolicy { get; set; }
+
+    [JsonPropertyName("resources")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersResources? Resources { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
+
+    [JsonPropertyName("securityContext")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersSecurityContext? SecurityContext { get; set; }
+
+    [JsonPropertyName("startupProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersStartupProbe? StartupProbe { get; set; }
+
+    [JsonPropertyName("stdin")]
+    public bool? Stdin { get; set; }
+
+    [JsonPropertyName("stdinOnce")]
+    public bool? StdinOnce { get; set; }
+
+    [JsonPropertyName("terminationMessagePath")]
+    public string? TerminationMessagePath { get; set; }
+
+    [JsonPropertyName("terminationMessagePolicy")]
+    public string? TerminationMessagePolicy { get; set; }
+
+    [JsonPropertyName("tty")]
+    public bool? Tty { get; set; }
+
+    [JsonPropertyName("volumeDevices")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersVolumeDevices>? VolumeDevices { get; set; }
+
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecDnsConfigOptions
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecDnsConfig
+{
+    [JsonPropertyName("nameservers")]
+    public IList<string>? Nameservers { get; set; }
+
+    [JsonPropertyName("options")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecDnsConfigOptions>? Options { get; set; }
+
+    [JsonPropertyName("searches")]
+    public IList<string>? Searches { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromConfigMapKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromFieldRef
+{
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromResourceFieldRef
+{
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFrom
+{
+    [JsonPropertyName("configMapKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
+
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
+
+    [JsonPropertyName("secretKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    [JsonPropertyName("valueFrom")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvValueFrom? ValueFrom { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFromConfigMapRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFromSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFrom
+{
+    [JsonPropertyName("configMapRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFromConfigMapRef? ConfigMapRef { get; set; }
+
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFromSecretRef? SecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStart
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStop
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecycle
+{
+    [JsonPropertyName("postStart")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePostStart? PostStart { get; set; }
+
+    [JsonPropertyName("preStop")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecyclePreStop? PreStop { get; set; }
+
+    [JsonPropertyName("stopSignal")]
+    public string? StopSignal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersPorts
+{
+    [JsonPropertyName("containerPort")]
+    public required int ContainerPort { get; set; }
+
+    [JsonPropertyName("hostIP")]
+    public string? HostIP { get; set; }
+
+    [JsonPropertyName("hostPort")]
+    public int? HostPort { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResizePolicy
+{
+    [JsonPropertyName("resourceName")]
+    public required string ResourceName { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public required string RestartPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextAppArmorProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextCapabilities
+{
+    [JsonPropertyName("add")]
+    public IList<string>? Add { get; set; }
+
+    [JsonPropertyName("drop")]
+    public IList<string>? Drop { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextSeLinuxOptions
+{
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextSeccompProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextWindowsOptions
+{
+    [JsonPropertyName("gmsaCredentialSpec")]
+    public string? GmsaCredentialSpec { get; set; }
+
+    [JsonPropertyName("gmsaCredentialSpecName")]
+    public string? GmsaCredentialSpecName { get; set; }
+
+    [JsonPropertyName("hostProcess")]
+    public bool? HostProcess { get; set; }
+
+    [JsonPropertyName("runAsUserName")]
+    public string? RunAsUserName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContext
+{
+    [JsonPropertyName("allowPrivilegeEscalation")]
+    public bool? AllowPrivilegeEscalation { get; set; }
+
+    [JsonPropertyName("appArmorProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextAppArmorProfile? AppArmorProfile { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextCapabilities? Capabilities { get; set; }
+
+    [JsonPropertyName("privileged")]
+    public bool? Privileged { get; set; }
+
+    [JsonPropertyName("procMount")]
+    public string? ProcMount { get; set; }
+
+    [JsonPropertyName("readOnlyRootFilesystem")]
+    public bool? ReadOnlyRootFilesystem { get; set; }
+
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    [JsonPropertyName("seLinuxOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    [JsonPropertyName("seccompProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    [JsonPropertyName("windowsOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersVolumeDevices
+{
+    [JsonPropertyName("devicePath")]
+    public required string DevicePath { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersVolumeMounts
+{
+    [JsonPropertyName("mountPath")]
+    public required string MountPath { get; set; }
+
+    [JsonPropertyName("mountPropagation")]
+    public string? MountPropagation { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("recursiveReadOnly")]
+    public string? RecursiveReadOnly { get; set; }
+
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+
+    [JsonPropertyName("subPathExpr")]
+    public string? SubPathExpr { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainers
+{
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    [JsonPropertyName("env")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnv>? Env { get; set; }
+
+    [JsonPropertyName("envFrom")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersEnvFrom>? EnvFrom { get; set; }
+
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    [JsonPropertyName("imagePullPolicy")]
+    public string? ImagePullPolicy { get; set; }
+
+    [JsonPropertyName("lifecycle")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLifecycle? Lifecycle { get; set; }
+
+    [JsonPropertyName("livenessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersLivenessProbe? LivenessProbe { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("ports")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersPorts>? Ports { get; set; }
+
+    [JsonPropertyName("readinessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersReadinessProbe? ReadinessProbe { get; set; }
+
+    [JsonPropertyName("resizePolicy")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResizePolicy>? ResizePolicy { get; set; }
+
+    [JsonPropertyName("resources")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersResources? Resources { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
+
+    [JsonPropertyName("securityContext")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersSecurityContext? SecurityContext { get; set; }
+
+    [JsonPropertyName("startupProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersStartupProbe? StartupProbe { get; set; }
+
+    [JsonPropertyName("stdin")]
+    public bool? Stdin { get; set; }
+
+    [JsonPropertyName("stdinOnce")]
+    public bool? StdinOnce { get; set; }
+
+    [JsonPropertyName("targetContainerName")]
+    public string? TargetContainerName { get; set; }
+
+    [JsonPropertyName("terminationMessagePath")]
+    public string? TerminationMessagePath { get; set; }
+
+    [JsonPropertyName("terminationMessagePolicy")]
+    public string? TerminationMessagePolicy { get; set; }
+
+    [JsonPropertyName("tty")]
+    public bool? Tty { get; set; }
+
+    [JsonPropertyName("volumeDevices")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersVolumeDevices>? VolumeDevices { get; set; }
+
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecHostAliases
+{
+    [JsonPropertyName("hostnames")]
+    public IList<string>? Hostnames { get; set; }
+
+    [JsonPropertyName("ip")]
+    public required string Ip { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecImagePullSecrets
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromConfigMapKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromFieldRef
+{
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromFileKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public required string VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromResourceFieldRef
+{
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromSecretKeyRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFrom
+{
+    [JsonPropertyName("configMapKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromConfigMapKeyRef? ConfigMapKeyRef { get; set; }
+
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("fileKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromFileKeyRef? FileKeyRef { get; set; }
+
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromResourceFieldRef? ResourceFieldRef { get; set; }
+
+    [JsonPropertyName("secretKeyRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFromSecretKeyRef? SecretKeyRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnv
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+
+    [JsonPropertyName("valueFrom")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvValueFrom? ValueFrom { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFromConfigMapRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFromSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFrom
+{
+    [JsonPropertyName("configMapRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFromConfigMapRef? ConfigMapRef { get; set; }
+
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFromSecretRef? SecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStart
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStartTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopSleep
+{
+    [JsonPropertyName("seconds")]
+    public required long Seconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStop
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopExec? Exec { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("sleep")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopSleep? Sleep { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStopTcpSocket? TcpSocket { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecycle
+{
+    [JsonPropertyName("postStart")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePostStart? PostStart { get; set; }
+
+    [JsonPropertyName("preStop")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecyclePreStop? PreStop { get; set; }
+
+    [JsonPropertyName("stopSignal")]
+    public string? StopSignal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersPorts
+{
+    [JsonPropertyName("containerPort")]
+    public required int ContainerPort { get; set; }
+
+    [JsonPropertyName("hostIP")]
+    public string? HostIP { get; set; }
+
+    [JsonPropertyName("hostPort")]
+    public int? HostPort { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("protocol")]
+    public string? Protocol { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResizePolicy
+{
+    [JsonPropertyName("resourceName")]
+    public required string ResourceName { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public required string RestartPolicy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersRestartPolicyRulesExitCodes
+{
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<int>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersRestartPolicyRules
+{
+    [JsonPropertyName("action")]
+    public required string Action { get; set; }
+
+    [JsonPropertyName("exitCodes")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersRestartPolicyRulesExitCodes? ExitCodes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextAppArmorProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextCapabilities
+{
+    [JsonPropertyName("add")]
+    public IList<string>? Add { get; set; }
+
+    [JsonPropertyName("drop")]
+    public IList<string>? Drop { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextSeLinuxOptions
+{
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextSeccompProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextWindowsOptions
+{
+    [JsonPropertyName("gmsaCredentialSpec")]
+    public string? GmsaCredentialSpec { get; set; }
+
+    [JsonPropertyName("gmsaCredentialSpecName")]
+    public string? GmsaCredentialSpecName { get; set; }
+
+    [JsonPropertyName("hostProcess")]
+    public bool? HostProcess { get; set; }
+
+    [JsonPropertyName("runAsUserName")]
+    public string? RunAsUserName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContext
+{
+    [JsonPropertyName("allowPrivilegeEscalation")]
+    public bool? AllowPrivilegeEscalation { get; set; }
+
+    [JsonPropertyName("appArmorProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextAppArmorProfile? AppArmorProfile { get; set; }
+
+    [JsonPropertyName("capabilities")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextCapabilities? Capabilities { get; set; }
+
+    [JsonPropertyName("privileged")]
+    public bool? Privileged { get; set; }
+
+    [JsonPropertyName("procMount")]
+    public string? ProcMount { get; set; }
+
+    [JsonPropertyName("readOnlyRootFilesystem")]
+    public bool? ReadOnlyRootFilesystem { get; set; }
+
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    [JsonPropertyName("seLinuxOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    [JsonPropertyName("seccompProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    [JsonPropertyName("windowsOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContextWindowsOptions? WindowsOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeExec
+{
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeGrpc
+{
+    [JsonPropertyName("port")]
+    public required int Port { get; set; }
+
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeHttpGetHttpHeaders
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeHttpGet
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("httpHeaders")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeHttpGetHttpHeaders>? HttpHeaders { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+
+    [JsonPropertyName("scheme")]
+    public string? Scheme { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeTcpSocket
+{
+    [JsonPropertyName("host")]
+    public string? Host { get; set; }
+
+    [JsonPropertyName("port")]
+    public required IntOrString Port { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbe
+{
+    [JsonPropertyName("exec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeExec? Exec { get; set; }
+
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    [JsonPropertyName("grpc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeGrpc? Grpc { get; set; }
+
+    [JsonPropertyName("httpGet")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeHttpGet? HttpGet { get; set; }
+
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    [JsonPropertyName("successThreshold")]
+    public int? SuccessThreshold { get; set; }
+
+    [JsonPropertyName("tcpSocket")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbeTcpSocket? TcpSocket { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersVolumeDevices
+{
+    [JsonPropertyName("devicePath")]
+    public required string DevicePath { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersVolumeMounts
+{
+    [JsonPropertyName("mountPath")]
+    public required string MountPath { get; set; }
+
+    [JsonPropertyName("mountPropagation")]
+    public string? MountPropagation { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("recursiveReadOnly")]
+    public string? RecursiveReadOnly { get; set; }
+
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+
+    [JsonPropertyName("subPathExpr")]
+    public string? SubPathExpr { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainers
+{
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    [JsonPropertyName("env")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnv>? Env { get; set; }
+
+    [JsonPropertyName("envFrom")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersEnvFrom>? EnvFrom { get; set; }
+
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    [JsonPropertyName("imagePullPolicy")]
+    public string? ImagePullPolicy { get; set; }
+
+    [JsonPropertyName("lifecycle")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLifecycle? Lifecycle { get; set; }
+
+    [JsonPropertyName("livenessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersLivenessProbe? LivenessProbe { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("ports")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersPorts>? Ports { get; set; }
+
+    [JsonPropertyName("readinessProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersReadinessProbe? ReadinessProbe { get; set; }
+
+    [JsonPropertyName("resizePolicy")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResizePolicy>? ResizePolicy { get; set; }
+
+    [JsonPropertyName("resources")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersResources? Resources { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("restartPolicyRules")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersRestartPolicyRules>? RestartPolicyRules { get; set; }
+
+    [JsonPropertyName("securityContext")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersSecurityContext? SecurityContext { get; set; }
+
+    [JsonPropertyName("startupProbe")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersStartupProbe? StartupProbe { get; set; }
+
+    [JsonPropertyName("stdin")]
+    public bool? Stdin { get; set; }
+
+    [JsonPropertyName("stdinOnce")]
+    public bool? StdinOnce { get; set; }
+
+    [JsonPropertyName("terminationMessagePath")]
+    public string? TerminationMessagePath { get; set; }
+
+    [JsonPropertyName("terminationMessagePolicy")]
+    public string? TerminationMessagePolicy { get; set; }
+
+    [JsonPropertyName("tty")]
+    public bool? Tty { get; set; }
+
+    [JsonPropertyName("volumeDevices")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersVolumeDevices>? VolumeDevices { get; set; }
+
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainersVolumeMounts>? VolumeMounts { get; set; }
+
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecOs
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecReadinessGates
+{
+    [JsonPropertyName("conditionType")]
+    public required string ConditionType { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResourceClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("resourceClaimName")]
+    public string? ResourceClaimName { get; set; }
+
+    [JsonPropertyName("resourceClaimTemplateName")]
+    public string? ResourceClaimTemplateName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResourcesClaims
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("request")]
+    public string? Request { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResources
+{
+    [JsonPropertyName("claims")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResourcesClaims>? Claims { get; set; }
+
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSchedulingGates
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSchedulingGroup
+{
+    [JsonPropertyName("podGroupName")]
+    public string? PodGroupName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextAppArmorProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSeLinuxOptions
+{
+    [JsonPropertyName("level")]
+    public string? Level { get; set; }
+
+    [JsonPropertyName("role")]
+    public string? Role { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSeccompProfile
+{
+    [JsonPropertyName("localhostProfile")]
+    public string? LocalhostProfile { get; set; }
+
+    [JsonPropertyName("type")]
+    public required string Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSysctls
+{
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("value")]
+    public required string Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextWindowsOptions
+{
+    [JsonPropertyName("gmsaCredentialSpec")]
+    public string? GmsaCredentialSpec { get; set; }
+
+    [JsonPropertyName("gmsaCredentialSpecName")]
+    public string? GmsaCredentialSpecName { get; set; }
+
+    [JsonPropertyName("hostProcess")]
+    public bool? HostProcess { get; set; }
+
+    [JsonPropertyName("runAsUserName")]
+    public string? RunAsUserName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContext
+{
+    [JsonPropertyName("appArmorProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextAppArmorProfile? AppArmorProfile { get; set; }
+
+    [JsonPropertyName("fsGroup")]
+    public long? FsGroup { get; set; }
+
+    [JsonPropertyName("fsGroupChangePolicy")]
+    public string? FsGroupChangePolicy { get; set; }
+
+    [JsonPropertyName("runAsGroup")]
+    public long? RunAsGroup { get; set; }
+
+    [JsonPropertyName("runAsNonRoot")]
+    public bool? RunAsNonRoot { get; set; }
+
+    [JsonPropertyName("runAsUser")]
+    public long? RunAsUser { get; set; }
+
+    [JsonPropertyName("seLinuxChangePolicy")]
+    public string? SeLinuxChangePolicy { get; set; }
+
+    [JsonPropertyName("seLinuxOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSeLinuxOptions? SeLinuxOptions { get; set; }
+
+    [JsonPropertyName("seccompProfile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSeccompProfile? SeccompProfile { get; set; }
+
+    [JsonPropertyName("supplementalGroups")]
+    public IList<long>? SupplementalGroups { get; set; }
+
+    [JsonPropertyName("supplementalGroupsPolicy")]
+    public string? SupplementalGroupsPolicy { get; set; }
+
+    [JsonPropertyName("sysctls")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextSysctls>? Sysctls { get; set; }
+
+    [JsonPropertyName("windowsOptions")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContextWindowsOptions? WindowsOptions { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTolerations
+{
+    [JsonPropertyName("effect")]
+    public string? Effect { get; set; }
+
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public string? Operator { get; set; }
+
+    [JsonPropertyName("tolerationSeconds")]
+    public long? TolerationSeconds { get; set; }
+
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraintsLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraintsLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraintsLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraints
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraintsLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("matchLabelKeys")]
+    public IList<string>? MatchLabelKeys { get; set; }
+
+    [JsonPropertyName("maxSkew")]
+    public required int MaxSkew { get; set; }
+
+    [JsonPropertyName("minDomains")]
+    public int? MinDomains { get; set; }
+
+    [JsonPropertyName("nodeAffinityPolicy")]
+    public string? NodeAffinityPolicy { get; set; }
+
+    [JsonPropertyName("nodeTaintsPolicy")]
+    public string? NodeTaintsPolicy { get; set; }
+
+    [JsonPropertyName("topologyKey")]
+    public required string TopologyKey { get; set; }
+
+    [JsonPropertyName("whenUnsatisfiable")]
+    public required string WhenUnsatisfiable { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAwsElasticBlockStore
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("partition")]
+    public int? Partition { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("volumeID")]
+    public required string VolumeID { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAzureDisk
+{
+    [JsonPropertyName("cachingMode")]
+    public string? CachingMode { get; set; }
+
+    [JsonPropertyName("diskName")]
+    public required string DiskName { get; set; }
+
+    [JsonPropertyName("diskURI")]
+    public required string DiskURI { get; set; }
+
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("kind")]
+    public string? Kind { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAzureFile
+{
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretName")]
+    public required string SecretName { get; set; }
+
+    [JsonPropertyName("shareName")]
+    public required string ShareName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCephfsSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCephfs
+{
+    [JsonPropertyName("monitors")]
+    public required IList<string> Monitors { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretFile")]
+    public string? SecretFile { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCephfsSecretRef? SecretRef { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCinderSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCinder
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCinderSecretRef? SecretRef { get; set; }
+
+    [JsonPropertyName("volumeID")]
+    public required string VolumeID { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesConfigMapItems
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesConfigMap
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesConfigMapItems>? Items { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCsiNodePublishSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCsi
+{
+    [JsonPropertyName("driver")]
+    public required string Driver { get; set; }
+
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("nodePublishSecretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCsiNodePublishSecretRef? NodePublishSecretRef { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("volumeAttributes")]
+    public IDictionary<string, string>? VolumeAttributes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItemsFieldRef
+{
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItemsResourceFieldRef
+{
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItems
+{
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItemsFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPI
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPIItems>? Items { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEmptyDir
+{
+    [JsonPropertyName("medium")]
+    public string? Medium { get; set; }
+
+    [JsonPropertyName("sizeLimit")]
+    public IntOrString? SizeLimit { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateMetadata
+{
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    [JsonPropertyName("finalizers")]
+    public IList<string>? Finalizers { get; set; }
+
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSource
+{
+    [JsonPropertyName("apiGroup")]
+    public string? ApiGroup { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSourceRef
+{
+    [JsonPropertyName("apiGroup")]
+    public string? ApiGroup { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required string Kind { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecResources
+{
+    [JsonPropertyName("limits")]
+    public IDictionary<string, IntOrString>? Limits { get; set; }
+
+    [JsonPropertyName("requests")]
+    public IDictionary<string, IntOrString>? Requests { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpec
+{
+    [JsonPropertyName("accessModes")]
+    public IList<string>? AccessModes { get; set; }
+
+    [JsonPropertyName("dataSource")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSource? DataSource { get; set; }
+
+    [JsonPropertyName("dataSourceRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecDataSourceRef? DataSourceRef { get; set; }
+
+    [JsonPropertyName("resources")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecResources? Resources { get; set; }
+
+    [JsonPropertyName("selector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpecSelector? Selector { get; set; }
+
+    [JsonPropertyName("storageClassName")]
+    public string? StorageClassName { get; set; }
+
+    [JsonPropertyName("volumeAttributesClassName")]
+    public string? VolumeAttributesClassName { get; set; }
+
+    [JsonPropertyName("volumeMode")]
+    public string? VolumeMode { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplate
+{
+    [JsonPropertyName("metadata")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateMetadata? Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplateSpec Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeral
+{
+    [JsonPropertyName("volumeClaimTemplate")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeralVolumeClaimTemplate? VolumeClaimTemplate { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFc
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("lun")]
+    public int? Lun { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("targetWWNs")]
+    public IList<string>? TargetWWNs { get; set; }
+
+    [JsonPropertyName("wwids")]
+    public IList<string>? Wwids { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlexVolumeSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlexVolume
+{
+    [JsonPropertyName("driver")]
+    public required string Driver { get; set; }
+
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("options")]
+    public IDictionary<string, string>? Options { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlexVolumeSecretRef? SecretRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlocker
+{
+    [JsonPropertyName("datasetName")]
+    public string? DatasetName { get; set; }
+
+    [JsonPropertyName("datasetUUID")]
+    public string? DatasetUUID { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGcePersistentDisk
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("partition")]
+    public int? Partition { get; set; }
+
+    [JsonPropertyName("pdName")]
+    public required string PdName { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGitRepo
+{
+    [JsonPropertyName("directory")]
+    public string? Directory { get; set; }
+
+    [JsonPropertyName("repository")]
+    public required string Repository { get; set; }
+
+    [JsonPropertyName("revision")]
+    public string? Revision { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGlusterfs
+{
+    [JsonPropertyName("endpoints")]
+    public required string Endpoints { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesHostPath
+{
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesImage
+{
+    [JsonPropertyName("pullPolicy")]
+    public string? PullPolicy { get; set; }
+
+    [JsonPropertyName("reference")]
+    public string? Reference { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesIscsiSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesIscsi
+{
+    [JsonPropertyName("chapAuthDiscovery")]
+    public bool? ChapAuthDiscovery { get; set; }
+
+    [JsonPropertyName("chapAuthSession")]
+    public bool? ChapAuthSession { get; set; }
+
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("initiatorName")]
+    public string? InitiatorName { get; set; }
+
+    [JsonPropertyName("iqn")]
+    public required string Iqn { get; set; }
+
+    [JsonPropertyName("iscsiInterface")]
+    public string? IscsiInterface { get; set; }
+
+    [JsonPropertyName("lun")]
+    public required int Lun { get; set; }
+
+    [JsonPropertyName("portals")]
+    public IList<string>? Portals { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesIscsiSecretRef? SecretRef { get; set; }
+
+    [JsonPropertyName("targetPortal")]
+    public required string TargetPortal { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesNfs
+{
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("server")]
+    public required string Server { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPersistentVolumeClaim
+{
+    [JsonPropertyName("claimName")]
+    public required string ClaimName { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPhotonPersistentDisk
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("pdID")]
+    public required string PdID { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPortworxVolume
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("volumeID")]
+    public required string VolumeID { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelectorMatchExpressions
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("values")]
+    public IList<string>? Values { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelector
+{
+    [JsonPropertyName("matchExpressions")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelectorMatchExpressions>? MatchExpressions { get; set; }
+
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundle
+{
+    [JsonPropertyName("labelSelector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundleLabelSelector? LabelSelector { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("signerName")]
+    public string? SignerName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesConfigMapItems
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesConfigMap
+{
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesConfigMapItems>? Items { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItemsFieldRef
+{
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    [JsonPropertyName("fieldPath")]
+    public required string FieldPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef
+{
+    [JsonPropertyName("containerName")]
+    public string? ContainerName { get; set; }
+
+    [JsonPropertyName("divisor")]
+    public IntOrString? Divisor { get; set; }
+
+    [JsonPropertyName("resource")]
+    public required string Resource { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItems
+{
+    [JsonPropertyName("fieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItemsFieldRef? FieldRef { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+
+    [JsonPropertyName("resourceFieldRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItemsResourceFieldRef? ResourceFieldRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPI
+{
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPIItems>? Items { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesPodCertificate
+{
+    [JsonPropertyName("certificateChainPath")]
+    public string? CertificateChainPath { get; set; }
+
+    [JsonPropertyName("credentialBundlePath")]
+    public string? CredentialBundlePath { get; set; }
+
+    [JsonPropertyName("keyPath")]
+    public string? KeyPath { get; set; }
+
+    [JsonPropertyName("keyType")]
+    public required string KeyType { get; set; }
+
+    [JsonPropertyName("maxExpirationSeconds")]
+    public int? MaxExpirationSeconds { get; set; }
+
+    [JsonPropertyName("signerName")]
+    public required string SignerName { get; set; }
+
+    [JsonPropertyName("userAnnotations")]
+    public IDictionary<string, string>? UserAnnotations { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesSecretItems
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesSecret
+{
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesSecretItems>? Items { get; set; }
+
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public long? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSources
+{
+    [JsonPropertyName("clusterTrustBundle")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesClusterTrustBundle? ClusterTrustBundle { get; set; }
+
+    [JsonPropertyName("configMap")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesConfigMap? ConfigMap { get; set; }
+
+    [JsonPropertyName("downwardAPI")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesDownwardAPI? DownwardAPI { get; set; }
+
+    [JsonPropertyName("podCertificate")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesPodCertificate? PodCertificate { get; set; }
+
+    [JsonPropertyName("secret")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesSecret? Secret { get; set; }
+
+    [JsonPropertyName("serviceAccountToken")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjected
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("sources")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjectedSources>? Sources { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesQuobyte
+{
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("registry")]
+    public required string Registry { get; set; }
+
+    [JsonPropertyName("tenant")]
+    public string? Tenant { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+
+    [JsonPropertyName("volume")]
+    public required string Volume { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesRbdSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesRbd
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("image")]
+    public required string Image { get; set; }
+
+    [JsonPropertyName("keyring")]
+    public string? Keyring { get; set; }
+
+    [JsonPropertyName("monitors")]
+    public required IList<string> Monitors { get; set; }
+
+    [JsonPropertyName("pool")]
+    public string? Pool { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesRbdSecretRef? SecretRef { get; set; }
+
+    [JsonPropertyName("user")]
+    public string? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesScaleIOSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesScaleIO
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("gateway")]
+    public required string Gateway { get; set; }
+
+    [JsonPropertyName("protectionDomain")]
+    public string? ProtectionDomain { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesScaleIOSecretRef SecretRef { get; set; }
+
+    [JsonPropertyName("sslEnabled")]
+    public bool? SslEnabled { get; set; }
+
+    [JsonPropertyName("storageMode")]
+    public string? StorageMode { get; set; }
+
+    [JsonPropertyName("storagePool")]
+    public string? StoragePool { get; set; }
+
+    [JsonPropertyName("system")]
+    public required string System { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesSecretItems
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    [JsonPropertyName("mode")]
+    public int? Mode { get; set; }
+
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesSecret
+{
+    [JsonPropertyName("defaultMode")]
+    public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("items")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesSecretItems>? Items { get; set; }
+
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    [JsonPropertyName("secretName")]
+    public string? SecretName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesStorageosSecretRef
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesStorageos
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("readOnly")]
+    public bool? ReadOnly { get; set; }
+
+    [JsonPropertyName("secretRef")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesStorageosSecretRef? SecretRef { get; set; }
+
+    [JsonPropertyName("volumeName")]
+    public string? VolumeName { get; set; }
+
+    [JsonPropertyName("volumeNamespace")]
+    public string? VolumeNamespace { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesVsphereVolume
+{
+    [JsonPropertyName("fsType")]
+    public string? FsType { get; set; }
+
+    [JsonPropertyName("storagePolicyID")]
+    public string? StoragePolicyID { get; set; }
+
+    [JsonPropertyName("storagePolicyName")]
+    public string? StoragePolicyName { get; set; }
+
+    [JsonPropertyName("volumePath")]
+    public required string VolumePath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumes
+{
+    [JsonPropertyName("awsElasticBlockStore")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAwsElasticBlockStore? AwsElasticBlockStore { get; set; }
+
+    [JsonPropertyName("azureDisk")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAzureDisk? AzureDisk { get; set; }
+
+    [JsonPropertyName("azureFile")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesAzureFile? AzureFile { get; set; }
+
+    [JsonPropertyName("cephfs")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCephfs? Cephfs { get; set; }
+
+    [JsonPropertyName("cinder")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCinder? Cinder { get; set; }
+
+    [JsonPropertyName("configMap")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesConfigMap? ConfigMap { get; set; }
+
+    [JsonPropertyName("csi")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesCsi? Csi { get; set; }
+
+    [JsonPropertyName("downwardAPI")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesDownwardAPI? DownwardAPI { get; set; }
+
+    [JsonPropertyName("emptyDir")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEmptyDir? EmptyDir { get; set; }
+
+    [JsonPropertyName("ephemeral")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesEphemeral? Ephemeral { get; set; }
+
+    [JsonPropertyName("fc")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFc? Fc { get; set; }
+
+    [JsonPropertyName("flexVolume")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlexVolume? FlexVolume { get; set; }
+
+    [JsonPropertyName("flocker")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesFlocker? Flocker { get; set; }
+
+    [JsonPropertyName("gcePersistentDisk")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGcePersistentDisk? GcePersistentDisk { get; set; }
+
+    [JsonPropertyName("gitRepo")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGitRepo? GitRepo { get; set; }
+
+    [JsonPropertyName("glusterfs")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesGlusterfs? Glusterfs { get; set; }
+
+    [JsonPropertyName("hostPath")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesHostPath? HostPath { get; set; }
+
+    [JsonPropertyName("image")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesImage? Image { get; set; }
+
+    [JsonPropertyName("iscsi")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesIscsi? Iscsi { get; set; }
+
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    [JsonPropertyName("nfs")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesNfs? Nfs { get; set; }
+
+    [JsonPropertyName("persistentVolumeClaim")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPersistentVolumeClaim? PersistentVolumeClaim { get; set; }
+
+    [JsonPropertyName("photonPersistentDisk")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPhotonPersistentDisk? PhotonPersistentDisk { get; set; }
+
+    [JsonPropertyName("portworxVolume")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesPortworxVolume? PortworxVolume { get; set; }
+
+    [JsonPropertyName("projected")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesProjected? Projected { get; set; }
+
+    [JsonPropertyName("quobyte")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesQuobyte? Quobyte { get; set; }
+
+    [JsonPropertyName("rbd")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesRbd? Rbd { get; set; }
+
+    [JsonPropertyName("scaleIO")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesScaleIO? ScaleIO { get; set; }
+
+    [JsonPropertyName("secret")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesSecret? Secret { get; set; }
+
+    [JsonPropertyName("storageos")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesStorageos? Storageos { get; set; }
+
+    [JsonPropertyName("vsphereVolume")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumesVsphereVolume? VsphereVolume { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplateSpec
+{
+    [JsonPropertyName("activeDeadlineSeconds")]
+    public long? ActiveDeadlineSeconds { get; set; }
+
+    [JsonPropertyName("affinity")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecAffinity? Affinity { get; set; }
+
+    [JsonPropertyName("automountServiceAccountToken")]
+    public bool? AutomountServiceAccountToken { get; set; }
+
+    [JsonPropertyName("containers")]
+    public required IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecContainers> Containers { get; set; }
+
+    [JsonPropertyName("dnsConfig")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecDnsConfig? DnsConfig { get; set; }
+
+    [JsonPropertyName("dnsPolicy")]
+    public string? DnsPolicy { get; set; }
+
+    [JsonPropertyName("enableServiceLinks")]
+    public bool? EnableServiceLinks { get; set; }
+
+    [JsonPropertyName("ephemeralContainers")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecEphemeralContainers>? EphemeralContainers { get; set; }
+
+    [JsonPropertyName("hostAliases")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecHostAliases>? HostAliases { get; set; }
+
+    [JsonPropertyName("hostIPC")]
+    public bool? HostIPC { get; set; }
+
+    [JsonPropertyName("hostNetwork")]
+    public bool? HostNetwork { get; set; }
+
+    [JsonPropertyName("hostPID")]
+    public bool? HostPID { get; set; }
+
+    [JsonPropertyName("hostUsers")]
+    public bool? HostUsers { get; set; }
+
+    [JsonPropertyName("hostname")]
+    public string? Hostname { get; set; }
+
+    [JsonPropertyName("hostnameOverride")]
+    public string? HostnameOverride { get; set; }
+
+    [JsonPropertyName("imagePullSecrets")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecImagePullSecrets>? ImagePullSecrets { get; set; }
+
+    [JsonPropertyName("initContainers")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecInitContainers>? InitContainers { get; set; }
+
+    [JsonPropertyName("nodeName")]
+    public string? NodeName { get; set; }
+
+    [JsonPropertyName("nodeSelector")]
+    public IDictionary<string, string>? NodeSelector { get; set; }
+
+    [JsonPropertyName("os")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecOs? Os { get; set; }
+
+    [JsonPropertyName("overhead")]
+    public IDictionary<string, IntOrString>? Overhead { get; set; }
+
+    [JsonPropertyName("preemptionPolicy")]
+    public string? PreemptionPolicy { get; set; }
+
+    [JsonPropertyName("priority")]
+    public int? Priority { get; set; }
+
+    [JsonPropertyName("priorityClassName")]
+    public string? PriorityClassName { get; set; }
+
+    [JsonPropertyName("readinessGates")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecReadinessGates>? ReadinessGates { get; set; }
+
+    [JsonPropertyName("resourceClaims")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResourceClaims>? ResourceClaims { get; set; }
+
+    [JsonPropertyName("resources")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecResources? Resources { get; set; }
+
+    [JsonPropertyName("restartPolicy")]
+    public string? RestartPolicy { get; set; }
+
+    [JsonPropertyName("runtimeClassName")]
+    public string? RuntimeClassName { get; set; }
+
+    [JsonPropertyName("schedulerName")]
+    public string? SchedulerName { get; set; }
+
+    [JsonPropertyName("schedulingGates")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSchedulingGates>? SchedulingGates { get; set; }
+
+    [JsonPropertyName("schedulingGroup")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSchedulingGroup? SchedulingGroup { get; set; }
+
+    [JsonPropertyName("securityContext")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecSecurityContext? SecurityContext { get; set; }
+
+    [JsonPropertyName("serviceAccount")]
+    public string? ServiceAccount { get; set; }
+
+    [JsonPropertyName("serviceAccountName")]
+    public string? ServiceAccountName { get; set; }
+
+    [JsonPropertyName("setHostnameAsFQDN")]
+    public bool? SetHostnameAsFQDN { get; set; }
+
+    [JsonPropertyName("shareProcessNamespace")]
+    public bool? ShareProcessNamespace { get; set; }
+
+    [JsonPropertyName("subdomain")]
+    public string? Subdomain { get; set; }
+
+    [JsonPropertyName("terminationGracePeriodSeconds")]
+    public long? TerminationGracePeriodSeconds { get; set; }
+
+    [JsonPropertyName("tolerations")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTolerations>? Tolerations { get; set; }
+
+    [JsonPropertyName("topologySpreadConstraints")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecTopologySpreadConstraints>? TopologySpreadConstraints { get; set; }
+
+    [JsonPropertyName("volumes")]
+    public IList<V1alpha1WorkerDeploymentSpecDeploymentTemplateSpecVolumes>? Volumes { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeploymentTemplate
+{
+    [JsonPropertyName("metadata")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateMetadata? Metadata { get; set; }
+
+    [JsonPropertyName("spec")]
+    public V1alpha1WorkerDeploymentSpecDeploymentTemplateSpec? Spec { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1WorkerDeploymentSpecDeployment
+{
+    [JsonPropertyName("minReadySeconds")]
+    public int? MinReadySeconds { get; set; }
+
+    [JsonPropertyName("paused")]
+    public bool? Paused { get; set; }
+
+    [JsonPropertyName("progressDeadlineSeconds")]
+    public int? ProgressDeadlineSeconds { get; set; }
+
+    [JsonPropertyName("replicas")]
+    public int? Replicas { get; set; }
+
+    [JsonPropertyName("revisionHistoryLimit")]
+    public int? RevisionHistoryLimit { get; set; }
+
+    [JsonPropertyName("selector")]
+    public V1alpha1WorkerDeploymentSpecDeploymentSelector? Selector { get; set; }
+
+    [JsonPropertyName("strategy")]
+    public V1alpha1WorkerDeploymentSpecDeploymentStrategy? Strategy { get; set; }
+
+    [JsonPropertyName("template")]
+    public required V1alpha1WorkerDeploymentSpecDeploymentTemplate Template { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum>))]
 public enum V1alpha1WorkerDeploymentSpecRolloutGateEncodingEnum
 {
@@ -4905,6 +9684,9 @@ public partial class V1alpha1WorkerDeploymentSpecWorkerOptions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1WorkerDeploymentSpec
 {
+    [JsonPropertyName("deployment")]
+    public V1alpha1WorkerDeploymentSpecDeployment? Deployment { get; set; }
+
     [JsonPropertyName("minReadySeconds")]
     public int? MinReadySeconds { get; set; }
 
@@ -4921,7 +9703,7 @@ public partial class V1alpha1WorkerDeploymentSpec
     public required V1alpha1WorkerDeploymentSpecSunset Sunset { get; set; }
 
     [JsonPropertyName("template")]
-    public required V1alpha1WorkerDeploymentSpecTemplate Template { get; set; }
+    public V1alpha1WorkerDeploymentSpecTemplate? Template { get; set; }
 
     [JsonPropertyName("workerOptions")]
     public required V1alpha1WorkerDeploymentSpecWorkerOptions WorkerOptions { get; set; }
