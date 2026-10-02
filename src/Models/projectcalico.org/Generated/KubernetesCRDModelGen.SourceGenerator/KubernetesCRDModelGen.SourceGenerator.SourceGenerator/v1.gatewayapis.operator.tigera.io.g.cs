@@ -88,6 +88,61 @@ public partial class V1GatewayAPISpecEnvoyGatewayConfigRef
 }
 
 /// <summary>
+/// State turns the WAF Gateway API add-on on or off.  Default (nil or
+/// &quot;Disabled&quot;) means the operator does not render the WAF surface on
+/// calico-kube-controllers.  Set to &quot;Enabled&quot; to opt in.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1GatewayAPISpecExtensionsWafStateEnum>))]
+public enum V1GatewayAPISpecExtensionsWafStateEnum
+{
+    [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
+    Enabled,
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled
+}
+
+/// <summary>
+/// WAF enables and configures the Tigera Web Application Firewall (Coraza WASM
+/// when WAF.State is nil, and when WAF.State is &quot;Disabled&quot;, the operator does
+/// not render the WAF env vars or RBAC on calico-kube-controllers.  Set
+/// WAF.State = &quot;Enabled&quot; to turn the feature on.  See design
+/// `tigera/designs#25` (PMREQ-384) for the full surface.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecExtensionsWaf
+{
+    /// <summary>
+    /// State turns the WAF Gateway API add-on on or off.  Default (nil or
+    /// &quot;Disabled&quot;) means the operator does not render the WAF surface on
+    /// calico-kube-controllers.  Set to &quot;Enabled&quot; to opt in.
+    /// </summary>
+    [JsonPropertyName("state")]
+    public V1GatewayAPISpecExtensionsWafStateEnum? State { get; set; }
+}
+
+/// <summary>
+/// Extensions enables and configures Tigera-built add-ons that sit on top of the
+/// Gateway API data plane.  Each add-on is opt-in: an unset Extensions, an unset
+/// add-on field, and an empty add-on object all leave the add-on disabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecExtensions
+{
+    /// <summary>
+    /// WAF enables and configures the Tigera Web Application Firewall (Coraza WASM
+    /// when WAF.State is nil, and when WAF.State is &quot;Disabled&quot;, the operator does
+    /// not render the WAF env vars or RBAC on calico-kube-controllers.  Set
+    /// WAF.State = &quot;Enabled&quot; to turn the feature on.  See design
+    /// `tigera/designs#25` (PMREQ-384) for the full surface.
+    /// </summary>
+    [JsonPropertyName("waf")]
+    public V1GatewayAPISpecExtensionsWaf? Waf { get; set; }
+}
+
+/// <summary>
 /// If non-nil, non-clashing labels and annotations from this metadata are added into the
 /// job&apos;s top-level metadata.
 /// </summary>
@@ -1166,12 +1221,74 @@ public partial class V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecAffinity
     public V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersNameEnum>))]
 public enum V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "envoy-gateway-certgen"), JsonStringEnumMemberName("envoy-gateway-certgen")]
     EnvoyGatewayCertgen
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -1239,8 +1356,22 @@ public partial class V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainers
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1GatewayAPISpecGatewayCertgenJobSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// If non-nil, Resources sets the ResourceRequirements of the job&apos;s &quot;envoy-gateway-certgen&quot;
@@ -2446,12 +2577,74 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateS
     public V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersNameEnum>))]
 public enum V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "envoy"), JsonStringEnumMemberName("envoy")]
     Envoy
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -2476,10 +2669,7 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateS
     public string? Request { get; set; }
 }
 
-/// <summary>
-/// If non-nil, Resources sets the ResourceRequirements of the daemonset&apos;s &quot;envoy&quot;
-/// container.
-/// </summary>
+/// <summary>container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersResources
@@ -2519,13 +2709,24 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateS
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
 
     /// <summary>
-    /// If non-nil, Resources sets the ResourceRequirements of the daemonset&apos;s &quot;envoy&quot;
-    /// container.
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
     /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
+
+    /// <summary>container.</summary>
     [JsonPropertyName("resources")]
     public V1GatewayAPISpecGatewayClassesGatewayDaemonSetSpecTemplateSpecContainersResources? Resources { get; set; }
 }
@@ -3936,12 +4137,74 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplate
     public V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "envoy"), JsonStringEnumMemberName("envoy")]
     Envoy
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -4009,8 +4272,22 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1GatewayAPISpecGatewayClassesGatewayDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// If non-nil, Resources sets the ResourceRequirements of the deployment&apos;s &quot;envoy&quot;
@@ -4374,6 +4651,32 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayServiceMetadata
 }
 
 /// <summary>
+/// Patch allows the Service for a gateway to be patched in ways that aren&apos;t more explicitly
+/// supported by the fields above.  For example, the following YAML could be used to set the
+/// Service&apos;s healthCheckNodePort:
+///   patch:
+///     type: StrategicMerge
+///     value:
+///       spec:
+///         healthCheckNodePort: 12345
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayClassesGatewayServiceSpecPatch
+{
+    /// <summary>
+    /// Type is the type of merge operation to perform
+    /// By default, StrategicMerge is used as the patch type.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
+    /// <summary>Object contains the raw configuration for merged object</summary>
+    [JsonPropertyName("value")]
+    public required JsonNode Value { get; set; }
+}
+
+/// <summary>
 /// GatewayServiceSpec allows customization of the services that front gateway deployments.
 /// The LoadBalancer fields allow customization of the corresponding fields in the Kubernetes
 /// ServiceSpec.  These can be used for some cloud-independent control of the external load balancer
@@ -4395,6 +4698,19 @@ public partial class V1GatewayAPISpecGatewayClassesGatewayServiceSpec
 
     [JsonPropertyName("loadBalancerSourceRanges")]
     public IList<string>? LoadBalancerSourceRanges { get; set; }
+
+    /// <summary>
+    /// Patch allows the Service for a gateway to be patched in ways that aren&apos;t more explicitly
+    /// supported by the fields above.  For example, the following YAML could be used to set the
+    /// Service&apos;s healthCheckNodePort:
+    ///   patch:
+    ///     type: StrategicMerge
+    ///     value:
+    ///       spec:
+    ///         healthCheckNodePort: 12345
+    /// </summary>
+    [JsonPropertyName("patch")]
+    public V1GatewayAPISpecGatewayClassesGatewayServiceSpecPatch? Patch { get; set; }
 }
 
 /// <summary>Allows customization of gateway services, for Gateways in this GatewayClass.</summary>
@@ -5554,12 +5870,74 @@ public partial class V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpec
     public V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "envoy-gateway"), JsonStringEnumMemberName("envoy-gateway")]
     EnvoyGateway
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -5627,8 +6005,22 @@ public partial class V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpec
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1GatewayAPISpecGatewayControllerDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// If non-nil, Resources sets the ResourceRequirements of the controller&apos;s &quot;envoy-gateway&quot;
@@ -6008,6 +6400,14 @@ public partial class V1GatewayAPISpec
     /// </summary>
     [JsonPropertyName("envoyGatewayConfigRef")]
     public V1GatewayAPISpecEnvoyGatewayConfigRef? EnvoyGatewayConfigRef { get; set; }
+
+    /// <summary>
+    /// Extensions enables and configures Tigera-built add-ons that sit on top of the
+    /// Gateway API data plane.  Each add-on is opt-in: an unset Extensions, an unset
+    /// add-on field, and an empty add-on object all leave the add-on disabled.
+    /// </summary>
+    [JsonPropertyName("extensions")]
+    public V1GatewayAPISpecExtensions? Extensions { get; set; }
 
     /// <summary>Allows customization of the gateway certgen job.</summary>
     [JsonPropertyName("gatewayCertgenJob")]

@@ -1163,6 +1163,37 @@ public partial class V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecAffinity
     public V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersNameEnum
@@ -1171,6 +1202,37 @@ public enum V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersNameEnum
     Whisker,
     [EnumMember(Value = "whisker-backend"), JsonStringEnumMemberName("whisker-backend")]
     WhiskerBackend
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -1231,8 +1293,22 @@ public partial class V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersRes
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1WhiskerSpecWhiskerDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>ResourceRequirements describes the compute resource requirements.</summary>
     [JsonPropertyName("resources")]

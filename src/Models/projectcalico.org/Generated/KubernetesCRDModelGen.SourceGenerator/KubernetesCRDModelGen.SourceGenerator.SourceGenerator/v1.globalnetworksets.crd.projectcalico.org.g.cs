@@ -9,6 +9,10 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
+/// <summary>
+/// GlobalNetworkSet contains a set of arbitrary IP sub-networks/CIDRs that share labels to
+/// allow rules to refer to them via selectors.  The labels of GlobalNetworkSet are not namespaced.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -35,14 +39,23 @@ public partial class V1GlobalNetworkSetList : IKubernetesObject<V1ListMeta>, IIt
     public required IList<V1GlobalNetworkSet> Items { get; set; }
 }
 
+/// <summary>GlobalNetworkSetSpec contains the specification for a NetworkSet resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GlobalNetworkSetSpec
 {
+    /// <summary>
+    /// The list of IP networks that belong to this set. Each entry must be in CIDR notation,
+    /// e.g. &quot;192.168.1.0/24&quot;. To include a single IP address, use a /32 (IPv4) or /128 (IPv6) mask.
+    /// </summary>
     [JsonPropertyName("nets")]
     public IList<string>? Nets { get; set; }
 }
 
+/// <summary>
+/// GlobalNetworkSet contains a set of arbitrary IP sub-networks/CIDRs that share labels to
+/// allow rules to refer to them via selectors.  The labels of GlobalNetworkSet are not namespaced.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -64,6 +77,7 @@ public partial class V1GlobalNetworkSet : IKubernetesObject<V1ObjectMeta>, ISpec
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>GlobalNetworkSetSpec contains the specification for a NetworkSet resource.</summary>
     [JsonPropertyName("spec")]
     public V1GlobalNetworkSetSpec? Spec { get; set; }
 }

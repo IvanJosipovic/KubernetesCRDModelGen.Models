@@ -1153,6 +1153,37 @@ public partial class V1InstallationSpecCalicoKubeControllersDeploymentSpecTempla
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-kube-controllers Deployment container by name.
 /// Supported values are: calico-kube-controllers, es-calico-kube-controllers
 /// </summary>
@@ -1164,6 +1195,37 @@ public enum V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecCon
     CalicoKubeControllers,
     [EnumMember(Value = "es-calico-kube-controllers"), JsonStringEnumMemberName("es-calico-kube-controllers")]
     EsCalicoKubeControllers
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -1231,11 +1293,25 @@ public partial class V1InstallationSpecCalicoKubeControllersDeploymentSpecTempla
 public partial class V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-kube-controllers Deployment container by name.
     /// Supported values are: calico-kube-controllers, es-calico-kube-controllers
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecCalicoKubeControllersDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -1427,10 +1503,18 @@ public enum V1InstallationSpecCalicoNetworkBpfNetworkBootstrapEnum
 }
 
 /// <summary>
-/// ClusterRoutingMode controls how nodes get a route to a workload on another node,
-/// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ClusterRoutingMode is BIRD,
-/// confd and BIRD program that route. When ClusterRoutingMode is Felix, it is expected that Felix will program that route.
-/// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: BIRD]
+/// ClusterRoutingMode controls which component programs the routes that a node needs in order to reach
+/// workloads on other nodes. It only applies to IP Pools with vxlanMode: Never; the routes for IP Pools
+/// with vxlanMode: Always or vxlanMode: CrossSubnet are always programmed by Felix.
+/// In BIRD mode, confd and BIRD program the routes for both IPIP and unencapsulated IP Pools.
+/// In Felix mode, Felix programs the routes for both IPIP and unencapsulated IP Pools.
+/// In FelixIPIPOnly mode, Felix programs the routes for IPIP IP Pools, and confd and BIRD program them
+/// for unencapsulated IP Pools.
+/// If not specified, the operator writes neither FelixConfiguration.programClusterRoutes nor
+/// BGPConfiguration.programClusterRoutes, so Calico&apos;s own defaults apply; as of Calico v3.33 those
+/// defaults are equivalent to FelixIPIPOnly.
+/// Note that BIRD programming of IPIP routes, which the BIRD mode selects, is deprecated as of
+/// Calico v3.33 and is intended for removal in v3.35.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCalicoNetworkClusterRoutingModeEnum>))]
@@ -1439,7 +1523,9 @@ public enum V1InstallationSpecCalicoNetworkClusterRoutingModeEnum
     [EnumMember(Value = "BIRD"), JsonStringEnumMemberName("BIRD")]
     BIRD,
     [EnumMember(Value = "Felix"), JsonStringEnumMemberName("Felix")]
-    Felix
+    Felix,
+    [EnumMember(Value = "FelixIPIPOnly"), JsonStringEnumMemberName("FelixIPIPOnly")]
+    FelixIPIPOnly
 }
 
 /// <summary>
@@ -1608,6 +1694,27 @@ public enum V1InstallationSpecCalicoNetworkLinuxDataplaneEnum
     VPP,
     [EnumMember(Value = "Nftables"), JsonStringEnumMemberName("Nftables")]
     Nftables
+}
+
+/// <summary>
+/// LinuxPodInterfaceType selects the virtual device type the Calico CNI plugin
+/// creates for each pod&apos;s interface on Linux nodes. When set to Netkit, the CNI
+/// plugin creates a netkit L2 pair on kernels that support it (Linux 6.7+) and
+/// falls back to a veth pair on older kernels. Netkit is recommended for the BPF
+/// dataplane, where it allows BPF programs to attach via BPF_NETKIT_PRIMARY for
+/// improved throughput and tail-latency under contention; for non-BPF dataplanes
+/// it is functionally equivalent to veth. Only valid when using the Calico CNI
+/// plugin.
+/// Default: Veth
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCalicoNetworkLinuxPodInterfaceTypeEnum>))]
+public enum V1InstallationSpecCalicoNetworkLinuxPodInterfaceTypeEnum
+{
+    [EnumMember(Value = "Veth"), JsonStringEnumMemberName("Veth")]
+    Veth,
+    [EnumMember(Value = "Netkit"), JsonStringEnumMemberName("Netkit")]
+    Netkit
 }
 
 /// <summary>
@@ -1796,10 +1903,18 @@ public partial class V1InstallationSpecCalicoNetwork
     public V1InstallationSpecCalicoNetworkBpfNetworkBootstrapEnum? BpfNetworkBootstrap { get; set; }
 
     /// <summary>
-    /// ClusterRoutingMode controls how nodes get a route to a workload on another node,
-    /// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ClusterRoutingMode is BIRD,
-    /// confd and BIRD program that route. When ClusterRoutingMode is Felix, it is expected that Felix will program that route.
-    /// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: BIRD]
+    /// ClusterRoutingMode controls which component programs the routes that a node needs in order to reach
+    /// workloads on other nodes. It only applies to IP Pools with vxlanMode: Never; the routes for IP Pools
+    /// with vxlanMode: Always or vxlanMode: CrossSubnet are always programmed by Felix.
+    /// In BIRD mode, confd and BIRD program the routes for both IPIP and unencapsulated IP Pools.
+    /// In Felix mode, Felix programs the routes for both IPIP and unencapsulated IP Pools.
+    /// In FelixIPIPOnly mode, Felix programs the routes for IPIP IP Pools, and confd and BIRD program them
+    /// for unencapsulated IP Pools.
+    /// If not specified, the operator writes neither FelixConfiguration.programClusterRoutes nor
+    /// BGPConfiguration.programClusterRoutes, so Calico&apos;s own defaults apply; as of Calico v3.33 those
+    /// defaults are equivalent to FelixIPIPOnly.
+    /// Note that BIRD programming of IPIP routes, which the BIRD mode selects, is deprecated as of
+    /// Calico v3.33 and is intended for removal in v3.35.
     /// </summary>
     [JsonPropertyName("clusterRoutingMode")]
     public V1InstallationSpecCalicoNetworkClusterRoutingModeEnum? ClusterRoutingMode { get; set; }
@@ -1844,6 +1959,20 @@ public partial class V1InstallationSpecCalicoNetwork
     /// </summary>
     [JsonPropertyName("linuxDataplane")]
     public V1InstallationSpecCalicoNetworkLinuxDataplaneEnum? LinuxDataplane { get; set; }
+
+    /// <summary>
+    /// LinuxPodInterfaceType selects the virtual device type the Calico CNI plugin
+    /// creates for each pod&apos;s interface on Linux nodes. When set to Netkit, the CNI
+    /// plugin creates a netkit L2 pair on kernels that support it (Linux 6.7+) and
+    /// falls back to a veth pair on older kernels. Netkit is recommended for the BPF
+    /// dataplane, where it allows BPF programs to attach via BPF_NETKIT_PRIMARY for
+    /// improved throughput and tail-latency under contention; for non-BPF dataplanes
+    /// it is functionally equivalent to veth. Only valid when using the Calico CNI
+    /// plugin.
+    /// Default: Veth
+    /// </summary>
+    [JsonPropertyName("linuxPodInterfaceType")]
+    public V1InstallationSpecCalicoNetworkLinuxPodInterfaceTypeEnum? LinuxPodInterfaceType { get; set; }
 
     /// <summary>
     /// LinuxPolicySetupTimeoutSeconds delays new pods from running containers
@@ -2982,6 +3111,37 @@ public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecAffini
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-node DaemonSet container by name.
 /// Supported values are: calico-node
 /// </summary>
@@ -2991,6 +3151,37 @@ public enum V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersNameE
 {
     [EnumMember(Value = "calico-node"), JsonStringEnumMemberName("calico-node")]
     CalicoNode
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -3052,17 +3243,62 @@ public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContai
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
+/// <summary>
+/// StartupProbe allows customization of the startup probe timing parameters.
+/// The probe handler is set by the operator.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersStartupProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 /// <summary>CalicoNodeDaemonSetContainer is a calico-node DaemonSet container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-node DaemonSet container by name.
     /// Supported values are: calico-node
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -3072,6 +3308,13 @@ public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContai
     /// </summary>
     [JsonPropertyName("resources")]
     public V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersResources? Resources { get; set; }
+
+    /// <summary>
+    /// StartupProbe allows customization of the startup probe timing parameters.
+    /// The probe handler is set by the operator.
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecContainersStartupProbe? StartupProbe { get; set; }
 }
 
 /// <summary>PodDNSConfigOption defines DNS resolver options of a pod.</summary>
@@ -3124,7 +3367,7 @@ public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecDnsCon
 
 /// <summary>
 /// Name is an enum which identifies the calico-node DaemonSet init container by name.
-/// Supported values are: install-cni, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
+/// Supported values are: install-cni, cni-plugins, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecInitContainersNameEnum>))]
@@ -3132,6 +3375,8 @@ public enum V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecInitContainersN
 {
     [EnumMember(Value = "install-cni"), JsonStringEnumMemberName("install-cni")]
     InstallCni,
+    [EnumMember(Value = "cni-plugins"), JsonStringEnumMemberName("cni-plugins")]
+    CniPlugins,
     [EnumMember(Value = "hostpath-init"), JsonStringEnumMemberName("hostpath-init")]
     HostpathInit,
     [EnumMember(Value = "flexvol-driver"), JsonStringEnumMemberName("flexvol-driver")]
@@ -3212,7 +3457,7 @@ public partial class V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecInitCo
 {
     /// <summary>
     /// Name is an enum which identifies the calico-node DaemonSet init container by name.
-    /// Supported values are: install-cni, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
+    /// Supported values are: install-cni, cni-plugins, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCalicoNodeDaemonSetSpecTemplateSpecInitContainersNameEnum Name { get; set; }
@@ -4469,6 +4714,37 @@ public partial class V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpe
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-node-windows DaemonSet container by name.
 /// Supported values are: node, felix, confd
 /// calico-node-windows is allowed because it was previously allowed.
@@ -4485,6 +4761,37 @@ public enum V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContaine
     Felix,
     [EnumMember(Value = "confd"), JsonStringEnumMemberName("confd")]
     Confd
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -4552,12 +4859,26 @@ public partial class V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpe
 public partial class V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-node-windows DaemonSet container by name.
     /// Supported values are: node, felix, confd
     /// calico-node-windows is allowed because it was previously allowed.
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -5900,6 +6221,37 @@ public partial class V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplate
     public V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 /// <summary>Name is an enum which identifies the calico-windows-upgrade DaemonSet container by name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersNameEnum>))]
@@ -5907,6 +6259,37 @@ public enum V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecConta
 {
     [EnumMember(Value = "calico-windows-upgrade"), JsonStringEnumMemberName("calico-windows-upgrade")]
     CalicoWindowsUpgrade
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -5972,9 +6355,23 @@ public partial class V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplate
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     /// <summary>Name is an enum which identifies the calico-windows-upgrade DaemonSet container by name.</summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -6166,6 +6563,28 @@ public partial class V1InstallationSpecCertificateManagement
 }
 
 /// <summary>
+/// InstallMode controls which CNI plugin binaries the operator installs onto each node
+/// when CNI.Type is Calico.
+/// * All (default): the operator runs a cni-plugins init container that stages upstream
+///   CNI plugin binaries (host-local, portmap, loopback, tuning, flannel) into a shared
+///   volume, and the install-cni init container copies them onto the host alongside
+///   Calico&apos;s own binaries.
+/// * CalicoOnly: skip the cni-plugins init container. Only Calico&apos;s own binaries are
+///   installed. Use this when the host already provides the upstream plugins (e.g. kind,
+///   certain managed node images).
+/// Default: All
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecCniInstallModeEnum>))]
+public enum V1InstallationSpecCniInstallModeEnum
+{
+    [EnumMember(Value = "All"), JsonStringEnumMemberName("All")]
+    All,
+    [EnumMember(Value = "CalicoOnly"), JsonStringEnumMemberName("CalicoOnly")]
+    CalicoOnly
+}
+
+/// <summary>
 /// Specifies the IPAM plugin that will be used in the Calico or Calico Enterprise installation.
 /// * For CNI Plugin Calico, this field defaults to Calico.
 /// * For CNI Plugin GKE, this field defaults to HostLocal.
@@ -6290,6 +6709,21 @@ public partial class V1InstallationSpecCni
     /// </summary>
     [JsonPropertyName("confDir")]
     public string? ConfDir { get; set; }
+
+    /// <summary>
+    /// InstallMode controls which CNI plugin binaries the operator installs onto each node
+    /// when CNI.Type is Calico.
+    /// * All (default): the operator runs a cni-plugins init container that stages upstream
+    ///   CNI plugin binaries (host-local, portmap, loopback, tuning, flannel) into a shared
+    ///   volume, and the install-cni init container copies them onto the host alongside
+    ///   Calico&apos;s own binaries.
+    /// * CalicoOnly: skip the cni-plugins init container. Only Calico&apos;s own binaries are
+    ///   installed. Use this when the host already provides the upstream plugins (e.g. kind,
+    ///   certain managed node images).
+    /// Default: All
+    /// </summary>
+    [JsonPropertyName("installMode")]
+    public V1InstallationSpecCniInstallModeEnum? InstallMode { get; set; }
 
     /// <summary>
     /// IPAM specifies the pod IP address management that will be used in the Calico or
@@ -7547,6 +7981,37 @@ public partial class V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecAff
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the csi-node-driver DaemonSet container by name.
 /// Supported values are: calico-csi, csi-node-driver-registrar.
 /// </summary>
@@ -7560,6 +8025,37 @@ public enum V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersNa
     CsiNodeDriverRegistrar,
     [EnumMember(Value = "csi-node-driver"), JsonStringEnumMemberName("csi-node-driver")]
     CsiNodeDriver
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -7626,11 +8122,25 @@ public partial class V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecCon
 public partial class V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the csi-node-driver DaemonSet container by name.
     /// Supported values are: calico-csi, csi-node-driver-registrar.
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecCsiNodeDriverDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -7783,9 +8293,8 @@ public partial class V1InstallationSpecCsiNodeDriverDaemonSet
 }
 
 /// <summary>
-/// FIPSMode uses images and features only that are using FIPS 140-2 validated cryptographic modules and standards.
-/// Only supported for Variant=Calico.
-/// Default: Disabled
+/// Deprecated. FIPS mode is no longer supported. Setting fipsMode to Enabled marks the
+/// installation degraded.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecFipsModeEnum>))]
@@ -7795,6 +8304,24 @@ public enum V1InstallationSpecFipsModeEnum
     Enabled,
     [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
     Disabled
+}
+
+/// <summary>
+/// ImagePullPolicy is the pull policy applied to containers in pods rendered by the operator
+/// that do not explicitly set their own pull policy. If unset, defaults to IfNotPresent.
+/// This is useful in air-gapped environments where images are pre-loaded onto nodes and
+/// must not be re-pulled from a remote registry.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecImagePullPolicyEnum>))]
+public enum V1InstallationSpecImagePullPolicyEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent,
+    [EnumMember(Value = "Never"), JsonStringEnumMemberName("Never")]
+    Never
 }
 
 /// <summary>
@@ -7861,6 +8388,40 @@ public partial class V1InstallationSpecLogging
     /// <summary>Customized logging specification for calico-cni plugin</summary>
     [JsonPropertyName("cni")]
     public V1InstallationSpecLoggingCni? Cni { get; set; }
+}
+
+/// <summary>
+/// ManagePolicies controls whether the operator creates and reconciles the NetworkPolicies and
+/// GlobalNetworkPolicies it uses to protect the Calico components it installs. When set to
+/// Disabled, the operator stops creating or updating these policies and deletes any it has
+/// already created, leaving policy management to the user. Defaults to Enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecNetworkPolicyManagePoliciesEnum>))]
+public enum V1InstallationSpecNetworkPolicyManagePoliciesEnum
+{
+    [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
+    Enabled,
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled
+}
+
+/// <summary>
+/// NetworkPolicy configures how the operator manages the NetworkPolicies and GlobalNetworkPolicies
+/// it installs to protect the Calico components it manages.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecNetworkPolicy
+{
+    /// <summary>
+    /// ManagePolicies controls whether the operator creates and reconciles the NetworkPolicies and
+    /// GlobalNetworkPolicies it uses to protect the Calico components it installs. When set to
+    /// Disabled, the operator stops creating or updating these policies and deletes any it has
+    /// already created, leaving policy management to the user. Defaults to Enabled.
+    /// </summary>
+    [JsonPropertyName("managePolicies")]
+    public V1InstallationSpecNetworkPolicyManagePoliciesEnum? ManagePolicies { get; set; }
 }
 
 /// <summary>Rolling update config params. Present only if type = &quot;RollingUpdate&quot;.</summary>
@@ -9378,6 +9939,37 @@ public partial class V1InstallationSpecTyphaDeploymentSpecTemplateSpecAffinity
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the typha Deployment container by name.
 /// Supported values are: calico-typha
 /// </summary>
@@ -9387,6 +9979,37 @@ public enum V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "calico-typha"), JsonStringEnumMemberName("calico-typha")]
     CalicoTypha
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -9454,11 +10077,25 @@ public partial class V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainers
 public partial class V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the typha Deployment container by name.
     /// Supported values are: calico-typha
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationSpecTyphaDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -9924,9 +10561,95 @@ public partial class V1InstallationSpecTyphaDeployment
     public V1InstallationSpecTyphaDeploymentSpec? Spec { get; set; }
 }
 
+/// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the PodDisruptionBudget.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecTyphaPodDisruptionBudgetMetadata
+{
+    /// <summary>
+    /// Annotations is a map of arbitrary non-identifying metadata. Each of these
+    /// key/value pairs are added to the object&apos;s annotations provided the key does not
+    /// already exist in the object&apos;s annotations.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Labels is a map of string keys and values that may match replicaset and
+    /// service selectors. Each of these key/value pairs are added to the
+    /// object&apos;s labels provided the key does not already exist in the object&apos;s labels.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
 /// <summary>
-/// Variant is the product to install - one of Calico or TigeraSecureEnterprise
-/// Default: Calico
+/// UnhealthyPodEvictionPolicy defines when unhealthy pods should be considered
+/// for eviction. Defaults to IfHealthyBudget (the Kubernetes default) when unset.
+/// See https://kubernetes.io/docs/tasks/run-application/configure-pdb/#unhealthy-pod-eviction-policy.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum>))]
+public enum V1InstallationSpecTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum
+{
+    [EnumMember(Value = "IfHealthyBudget"), JsonStringEnumMemberName("IfHealthyBudget")]
+    IfHealthyBudget,
+    [EnumMember(Value = "AlwaysAllow"), JsonStringEnumMemberName("AlwaysAllow")]
+    AlwaysAllow
+}
+
+/// <summary>Spec is the specification of the PodDisruptionBudget.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecTyphaPodDisruptionBudgetSpec
+{
+    /// <summary>
+    /// MaxUnavailable is the maximum number of pods (as an integer or percentage) that
+    /// can be unavailable during a disruption. Mutually exclusive with MinAvailable.
+    /// If neither MinAvailable nor MaxUnavailable is set, the operator applies its
+    /// default (MaxUnavailable=1 for calico-typha).
+    /// </summary>
+    [JsonPropertyName("maxUnavailable")]
+    public IntOrString? MaxUnavailable { get; set; }
+
+    /// <summary>
+    /// MinAvailable is the minimum number of pods (as an integer or percentage) that
+    /// must remain available during a disruption. Mutually exclusive with MaxUnavailable.
+    /// </summary>
+    [JsonPropertyName("minAvailable")]
+    public IntOrString? MinAvailable { get; set; }
+
+    /// <summary>
+    /// UnhealthyPodEvictionPolicy defines when unhealthy pods should be considered
+    /// for eviction. Defaults to IfHealthyBudget (the Kubernetes default) when unset.
+    /// See https://kubernetes.io/docs/tasks/run-application/configure-pdb/#unhealthy-pod-eviction-policy.
+    /// </summary>
+    [JsonPropertyName("unhealthyPodEvictionPolicy")]
+    public V1InstallationSpecTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum? UnhealthyPodEvictionPolicy { get; set; }
+}
+
+/// <summary>
+/// TyphaPodDisruptionBudget configures the PodDisruptionBudget for the calico-typha
+/// Deployment. Fields left unset fall back to the operator&apos;s defaults. The PDB&apos;s
+/// selector is managed by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationSpecTyphaPodDisruptionBudget
+{
+    /// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the PodDisruptionBudget.</summary>
+    [JsonPropertyName("metadata")]
+    public V1InstallationSpecTyphaPodDisruptionBudgetMetadata? Metadata { get; set; }
+
+    /// <summary>Spec is the specification of the PodDisruptionBudget.</summary>
+    [JsonPropertyName("spec")]
+    public V1InstallationSpecTyphaPodDisruptionBudgetSpec? Spec { get; set; }
+}
+
+/// <summary>
+/// Variant is the product to install - one of Calico or CalicoEnterprise.
+/// TigeraSecureEnterprise is also accepted as a deprecated alias for CalicoEnterprise.
+/// If left unset, the operator fills in the variant it is running as.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationSpecVariantEnum>))]
@@ -9934,6 +10657,8 @@ public enum V1InstallationSpecVariantEnum
 {
     [EnumMember(Value = "Calico"), JsonStringEnumMemberName("Calico")]
     Calico,
+    [EnumMember(Value = "CalicoEnterprise"), JsonStringEnumMemberName("CalicoEnterprise")]
+    CalicoEnterprise,
     [EnumMember(Value = "TigeraSecureEnterprise"), JsonStringEnumMemberName("TigeraSecureEnterprise")]
     TigeraSecureEnterprise
 }
@@ -9992,6 +10717,14 @@ public partial class V1InstallationSpec
     [JsonPropertyName("calicoKubeControllersDeployment")]
     public V1InstallationSpecCalicoKubeControllersDeployment? CalicoKubeControllersDeployment { get; set; }
 
+    /// <summary>
+    /// CalicoLibHostPath optionally specifies the host path mounted into calico-node containers at
+    /// /var/lib/calico. Pair this with CalicoRunHostPath when Calico data lives under a non-standard
+    /// host directory (for example microk8s uses /var/snap/microk8s/current/var/lib/calico).
+    /// </summary>
+    [JsonPropertyName("calicoLibHostPath")]
+    public string? CalicoLibHostPath { get; set; }
+
     /// <summary>CalicoNetwork specifies networking configuration options for Calico.</summary>
     [JsonPropertyName("calicoNetwork")]
     public V1InstallationSpecCalicoNetwork? CalicoNetwork { get; set; }
@@ -10006,6 +10739,15 @@ public partial class V1InstallationSpec
     /// <summary>CalicoNodeWindowsDaemonSet configures the calico-node-windows DaemonSet.</summary>
     [JsonPropertyName("calicoNodeWindowsDaemonSet")]
     public V1InstallationSpecCalicoNodeWindowsDaemonSet? CalicoNodeWindowsDaemonSet { get; set; }
+
+    /// <summary>
+    /// CalicoRunHostPath optionally specifies the host path mounted into calico-node containers at
+    /// /var/run/calico. Environments such as microk8s place Calico runtime state under a non-standard
+    /// host directory (for example /var/snap/microk8s/current/var/run/calico); set this field so the
+    /// operator continues using that path after a manifest-to-operator migration.
+    /// </summary>
+    [JsonPropertyName("calicoRunHostPath")]
+    public string? CalicoRunHostPath { get; set; }
 
     /// <summary>
     /// Deprecated. The CalicoWindowsUpgradeDaemonSet is deprecated and will be removed from the API in the future.
@@ -10060,9 +10802,8 @@ public partial class V1InstallationSpec
     public V1InstallationSpecCsiNodeDriverDaemonSet? CsiNodeDriverDaemonSet { get; set; }
 
     /// <summary>
-    /// FIPSMode uses images and features only that are using FIPS 140-2 validated cryptographic modules and standards.
-    /// Only supported for Variant=Calico.
-    /// Default: Disabled
+    /// Deprecated. FIPS mode is no longer supported. Setting fipsMode to Enabled marks the
+    /// installation degraded.
     /// </summary>
     [JsonPropertyName("fipsMode")]
     public V1InstallationSpecFipsModeEnum? FipsMode { get; set; }
@@ -10102,6 +10843,15 @@ public partial class V1InstallationSpec
     public string? ImagePrefix { get; set; }
 
     /// <summary>
+    /// ImagePullPolicy is the pull policy applied to containers in pods rendered by the operator
+    /// that do not explicitly set their own pull policy. If unset, defaults to IfNotPresent.
+    /// This is useful in air-gapped environments where images are pre-loaded onto nodes and
+    /// must not be re-pulled from a remote registry.
+    /// </summary>
+    [JsonPropertyName("imagePullPolicy")]
+    public V1InstallationSpecImagePullPolicyEnum? ImagePullPolicy { get; set; }
+
+    /// <summary>
     /// ImagePullSecrets is an array of references to container registry pull secrets to use. These are
     /// applied to all images to be pulled.
     /// </summary>
@@ -10128,6 +10878,13 @@ public partial class V1InstallationSpec
     /// <summary>Logging Configuration for Components</summary>
     [JsonPropertyName("logging")]
     public V1InstallationSpecLogging? Logging { get; set; }
+
+    /// <summary>
+    /// NetworkPolicy configures how the operator manages the NetworkPolicies and GlobalNetworkPolicies
+    /// it installs to protect the Calico components it manages.
+    /// </summary>
+    [JsonPropertyName("networkPolicy")]
+    public V1InstallationSpecNetworkPolicy? NetworkPolicy { get; set; }
 
     /// <summary>
     /// NodeMetricsPort specifies which port calico/node serves prometheus metrics on. By default, metrics are not enabled.
@@ -10199,8 +10956,17 @@ public partial class V1InstallationSpec
     public int? TyphaMetricsPort { get; set; }
 
     /// <summary>
-    /// Variant is the product to install - one of Calico or TigeraSecureEnterprise
-    /// Default: Calico
+    /// TyphaPodDisruptionBudget configures the PodDisruptionBudget for the calico-typha
+    /// Deployment. Fields left unset fall back to the operator&apos;s defaults. The PDB&apos;s
+    /// selector is managed by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("typhaPodDisruptionBudget")]
+    public V1InstallationSpecTyphaPodDisruptionBudget? TyphaPodDisruptionBudget { get; set; }
+
+    /// <summary>
+    /// Variant is the product to install - one of Calico or CalicoEnterprise.
+    /// TigeraSecureEnterprise is also accepted as a deprecated alias for CalicoEnterprise.
+    /// If left unset, the operator fills in the variant it is running as.
     /// </summary>
     [JsonPropertyName("variant")]
     public V1InstallationSpecVariantEnum? Variant { get; set; }
@@ -11323,6 +12089,37 @@ public partial class V1InstallationStatusComputedCalicoKubeControllersDeployment
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-kube-controllers Deployment container by name.
 /// Supported values are: calico-kube-controllers, es-calico-kube-controllers
 /// </summary>
@@ -11334,6 +12131,37 @@ public enum V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTempl
     CalicoKubeControllers,
     [EnumMember(Value = "es-calico-kube-controllers"), JsonStringEnumMemberName("es-calico-kube-controllers")]
     EsCalicoKubeControllers
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -11401,11 +12229,25 @@ public partial class V1InstallationStatusComputedCalicoKubeControllersDeployment
 public partial class V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-kube-controllers Deployment container by name.
     /// Supported values are: calico-kube-controllers, es-calico-kube-controllers
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedCalicoKubeControllersDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -11597,10 +12439,18 @@ public enum V1InstallationStatusComputedCalicoNetworkBpfNetworkBootstrapEnum
 }
 
 /// <summary>
-/// ClusterRoutingMode controls how nodes get a route to a workload on another node,
-/// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ClusterRoutingMode is BIRD,
-/// confd and BIRD program that route. When ClusterRoutingMode is Felix, it is expected that Felix will program that route.
-/// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: BIRD]
+/// ClusterRoutingMode controls which component programs the routes that a node needs in order to reach
+/// workloads on other nodes. It only applies to IP Pools with vxlanMode: Never; the routes for IP Pools
+/// with vxlanMode: Always or vxlanMode: CrossSubnet are always programmed by Felix.
+/// In BIRD mode, confd and BIRD program the routes for both IPIP and unencapsulated IP Pools.
+/// In Felix mode, Felix programs the routes for both IPIP and unencapsulated IP Pools.
+/// In FelixIPIPOnly mode, Felix programs the routes for IPIP IP Pools, and confd and BIRD program them
+/// for unencapsulated IP Pools.
+/// If not specified, the operator writes neither FelixConfiguration.programClusterRoutes nor
+/// BGPConfiguration.programClusterRoutes, so Calico&apos;s own defaults apply; as of Calico v3.33 those
+/// defaults are equivalent to FelixIPIPOnly.
+/// Note that BIRD programming of IPIP routes, which the BIRD mode selects, is deprecated as of
+/// Calico v3.33 and is intended for removal in v3.35.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCalicoNetworkClusterRoutingModeEnum>))]
@@ -11609,7 +12459,9 @@ public enum V1InstallationStatusComputedCalicoNetworkClusterRoutingModeEnum
     [EnumMember(Value = "BIRD"), JsonStringEnumMemberName("BIRD")]
     BIRD,
     [EnumMember(Value = "Felix"), JsonStringEnumMemberName("Felix")]
-    Felix
+    Felix,
+    [EnumMember(Value = "FelixIPIPOnly"), JsonStringEnumMemberName("FelixIPIPOnly")]
+    FelixIPIPOnly
 }
 
 /// <summary>
@@ -11778,6 +12630,27 @@ public enum V1InstallationStatusComputedCalicoNetworkLinuxDataplaneEnum
     VPP,
     [EnumMember(Value = "Nftables"), JsonStringEnumMemberName("Nftables")]
     Nftables
+}
+
+/// <summary>
+/// LinuxPodInterfaceType selects the virtual device type the Calico CNI plugin
+/// creates for each pod&apos;s interface on Linux nodes. When set to Netkit, the CNI
+/// plugin creates a netkit L2 pair on kernels that support it (Linux 6.7+) and
+/// falls back to a veth pair on older kernels. Netkit is recommended for the BPF
+/// dataplane, where it allows BPF programs to attach via BPF_NETKIT_PRIMARY for
+/// improved throughput and tail-latency under contention; for non-BPF dataplanes
+/// it is functionally equivalent to veth. Only valid when using the Calico CNI
+/// plugin.
+/// Default: Veth
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCalicoNetworkLinuxPodInterfaceTypeEnum>))]
+public enum V1InstallationStatusComputedCalicoNetworkLinuxPodInterfaceTypeEnum
+{
+    [EnumMember(Value = "Veth"), JsonStringEnumMemberName("Veth")]
+    Veth,
+    [EnumMember(Value = "Netkit"), JsonStringEnumMemberName("Netkit")]
+    Netkit
 }
 
 /// <summary>
@@ -11966,10 +12839,18 @@ public partial class V1InstallationStatusComputedCalicoNetwork
     public V1InstallationStatusComputedCalicoNetworkBpfNetworkBootstrapEnum? BpfNetworkBootstrap { get; set; }
 
     /// <summary>
-    /// ClusterRoutingMode controls how nodes get a route to a workload on another node,
-    /// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ClusterRoutingMode is BIRD,
-    /// confd and BIRD program that route. When ClusterRoutingMode is Felix, it is expected that Felix will program that route.
-    /// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: BIRD]
+    /// ClusterRoutingMode controls which component programs the routes that a node needs in order to reach
+    /// workloads on other nodes. It only applies to IP Pools with vxlanMode: Never; the routes for IP Pools
+    /// with vxlanMode: Always or vxlanMode: CrossSubnet are always programmed by Felix.
+    /// In BIRD mode, confd and BIRD program the routes for both IPIP and unencapsulated IP Pools.
+    /// In Felix mode, Felix programs the routes for both IPIP and unencapsulated IP Pools.
+    /// In FelixIPIPOnly mode, Felix programs the routes for IPIP IP Pools, and confd and BIRD program them
+    /// for unencapsulated IP Pools.
+    /// If not specified, the operator writes neither FelixConfiguration.programClusterRoutes nor
+    /// BGPConfiguration.programClusterRoutes, so Calico&apos;s own defaults apply; as of Calico v3.33 those
+    /// defaults are equivalent to FelixIPIPOnly.
+    /// Note that BIRD programming of IPIP routes, which the BIRD mode selects, is deprecated as of
+    /// Calico v3.33 and is intended for removal in v3.35.
     /// </summary>
     [JsonPropertyName("clusterRoutingMode")]
     public V1InstallationStatusComputedCalicoNetworkClusterRoutingModeEnum? ClusterRoutingMode { get; set; }
@@ -12014,6 +12895,20 @@ public partial class V1InstallationStatusComputedCalicoNetwork
     /// </summary>
     [JsonPropertyName("linuxDataplane")]
     public V1InstallationStatusComputedCalicoNetworkLinuxDataplaneEnum? LinuxDataplane { get; set; }
+
+    /// <summary>
+    /// LinuxPodInterfaceType selects the virtual device type the Calico CNI plugin
+    /// creates for each pod&apos;s interface on Linux nodes. When set to Netkit, the CNI
+    /// plugin creates a netkit L2 pair on kernels that support it (Linux 6.7+) and
+    /// falls back to a veth pair on older kernels. Netkit is recommended for the BPF
+    /// dataplane, where it allows BPF programs to attach via BPF_NETKIT_PRIMARY for
+    /// improved throughput and tail-latency under contention; for non-BPF dataplanes
+    /// it is functionally equivalent to veth. Only valid when using the Calico CNI
+    /// plugin.
+    /// Default: Veth
+    /// </summary>
+    [JsonPropertyName("linuxPodInterfaceType")]
+    public V1InstallationStatusComputedCalicoNetworkLinuxPodInterfaceTypeEnum? LinuxPodInterfaceType { get; set; }
 
     /// <summary>
     /// LinuxPolicySetupTimeoutSeconds delays new pods from running containers
@@ -13152,6 +14047,37 @@ public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplate
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-node DaemonSet container by name.
 /// Supported values are: calico-node
 /// </summary>
@@ -13161,6 +14087,37 @@ public enum V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecConta
 {
     [EnumMember(Value = "calico-node"), JsonStringEnumMemberName("calico-node")]
     CalicoNode
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -13222,17 +14179,62 @@ public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplate
     public IDictionary<string, IntOrString>? Requests { get; set; }
 }
 
+/// <summary>
+/// StartupProbe allows customization of the startup probe timing parameters.
+/// The probe handler is set by the operator.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersStartupProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 /// <summary>CalicoNodeDaemonSetContainer is a calico-node DaemonSet container.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-node DaemonSet container by name.
     /// Supported values are: calico-node
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -13242,6 +14244,13 @@ public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplate
     /// </summary>
     [JsonPropertyName("resources")]
     public V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersResources? Resources { get; set; }
+
+    /// <summary>
+    /// StartupProbe allows customization of the startup probe timing parameters.
+    /// The probe handler is set by the operator.
+    /// </summary>
+    [JsonPropertyName("startupProbe")]
+    public V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecContainersStartupProbe? StartupProbe { get; set; }
 }
 
 /// <summary>PodDNSConfigOption defines DNS resolver options of a pod.</summary>
@@ -13294,7 +14303,7 @@ public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplate
 
 /// <summary>
 /// Name is an enum which identifies the calico-node DaemonSet init container by name.
-/// Supported values are: install-cni, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
+/// Supported values are: install-cni, cni-plugins, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecInitContainersNameEnum>))]
@@ -13302,6 +14311,8 @@ public enum V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecInitC
 {
     [EnumMember(Value = "install-cni"), JsonStringEnumMemberName("install-cni")]
     InstallCni,
+    [EnumMember(Value = "cni-plugins"), JsonStringEnumMemberName("cni-plugins")]
+    CniPlugins,
     [EnumMember(Value = "hostpath-init"), JsonStringEnumMemberName("hostpath-init")]
     HostpathInit,
     [EnumMember(Value = "flexvol-driver"), JsonStringEnumMemberName("flexvol-driver")]
@@ -13382,7 +14393,7 @@ public partial class V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplate
 {
     /// <summary>
     /// Name is an enum which identifies the calico-node DaemonSet init container by name.
-    /// Supported values are: install-cni, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
+    /// Supported values are: install-cni, cni-plugins, hostpath-init, flexvol-driver, ebpf-bootstrap, node-certs-key-cert-provisioner, calico-node-prometheus-server-tls-key-cert-provisioner, mount-bpffs (deprecated, replaced by ebpf-bootstrap)
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCalicoNodeDaemonSetSpecTemplateSpecInitContainersNameEnum Name { get; set; }
@@ -14639,6 +15650,37 @@ public partial class V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecT
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-node-windows DaemonSet container by name.
 /// Supported values are: node, felix, confd
 /// calico-node-windows is allowed because it was previously allowed.
@@ -14655,6 +15697,37 @@ public enum V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSp
     Felix,
     [EnumMember(Value = "confd"), JsonStringEnumMemberName("confd")]
     Confd
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -14722,12 +15795,26 @@ public partial class V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecT
 public partial class V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-node-windows DaemonSet container by name.
     /// Supported values are: node, felix, confd
     /// calico-node-windows is allowed because it was previously allowed.
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedCalicoNodeWindowsDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -16070,6 +17157,37 @@ public partial class V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSp
     public V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 /// <summary>Name is an enum which identifies the calico-windows-upgrade DaemonSet container by name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersNameEnum>))]
@@ -16077,6 +17195,37 @@ public enum V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplat
 {
     [EnumMember(Value = "calico-windows-upgrade"), JsonStringEnumMemberName("calico-windows-upgrade")]
     CalicoWindowsUpgrade
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -16142,9 +17291,23 @@ public partial class V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSp
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     /// <summary>Name is an enum which identifies the calico-windows-upgrade DaemonSet container by name.</summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedCalicoWindowsUpgradeDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -16336,6 +17499,28 @@ public partial class V1InstallationStatusComputedCertificateManagement
 }
 
 /// <summary>
+/// InstallMode controls which CNI plugin binaries the operator installs onto each node
+/// when CNI.Type is Calico.
+/// * All (default): the operator runs a cni-plugins init container that stages upstream
+///   CNI plugin binaries (host-local, portmap, loopback, tuning, flannel) into a shared
+///   volume, and the install-cni init container copies them onto the host alongside
+///   Calico&apos;s own binaries.
+/// * CalicoOnly: skip the cni-plugins init container. Only Calico&apos;s own binaries are
+///   installed. Use this when the host already provides the upstream plugins (e.g. kind,
+///   certain managed node images).
+/// Default: All
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedCniInstallModeEnum>))]
+public enum V1InstallationStatusComputedCniInstallModeEnum
+{
+    [EnumMember(Value = "All"), JsonStringEnumMemberName("All")]
+    All,
+    [EnumMember(Value = "CalicoOnly"), JsonStringEnumMemberName("CalicoOnly")]
+    CalicoOnly
+}
+
+/// <summary>
 /// Specifies the IPAM plugin that will be used in the Calico or Calico Enterprise installation.
 /// * For CNI Plugin Calico, this field defaults to Calico.
 /// * For CNI Plugin GKE, this field defaults to HostLocal.
@@ -16460,6 +17645,21 @@ public partial class V1InstallationStatusComputedCni
     /// </summary>
     [JsonPropertyName("confDir")]
     public string? ConfDir { get; set; }
+
+    /// <summary>
+    /// InstallMode controls which CNI plugin binaries the operator installs onto each node
+    /// when CNI.Type is Calico.
+    /// * All (default): the operator runs a cni-plugins init container that stages upstream
+    ///   CNI plugin binaries (host-local, portmap, loopback, tuning, flannel) into a shared
+    ///   volume, and the install-cni init container copies them onto the host alongside
+    ///   Calico&apos;s own binaries.
+    /// * CalicoOnly: skip the cni-plugins init container. Only Calico&apos;s own binaries are
+    ///   installed. Use this when the host already provides the upstream plugins (e.g. kind,
+    ///   certain managed node images).
+    /// Default: All
+    /// </summary>
+    [JsonPropertyName("installMode")]
+    public V1InstallationStatusComputedCniInstallModeEnum? InstallMode { get; set; }
 
     /// <summary>
     /// IPAM specifies the pod IP address management that will be used in the Calico or
@@ -17717,6 +18917,37 @@ public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTempl
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the csi-node-driver DaemonSet container by name.
 /// Supported values are: calico-csi, csi-node-driver-registrar.
 /// </summary>
@@ -17730,6 +18961,37 @@ public enum V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecCo
     CsiNodeDriverRegistrar,
     [EnumMember(Value = "csi-node-driver"), JsonStringEnumMemberName("csi-node-driver")]
     CsiNodeDriver
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -17796,11 +19058,25 @@ public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTempl
 public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the csi-node-driver DaemonSet container by name.
     /// Supported values are: calico-csi, csi-node-driver-registrar.
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedCsiNodeDriverDaemonSetSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -17953,9 +19229,8 @@ public partial class V1InstallationStatusComputedCsiNodeDriverDaemonSet
 }
 
 /// <summary>
-/// FIPSMode uses images and features only that are using FIPS 140-2 validated cryptographic modules and standards.
-/// Only supported for Variant=Calico.
-/// Default: Disabled
+/// Deprecated. FIPS mode is no longer supported. Setting fipsMode to Enabled marks the
+/// installation degraded.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedFipsModeEnum>))]
@@ -17965,6 +19240,24 @@ public enum V1InstallationStatusComputedFipsModeEnum
     Enabled,
     [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
     Disabled
+}
+
+/// <summary>
+/// ImagePullPolicy is the pull policy applied to containers in pods rendered by the operator
+/// that do not explicitly set their own pull policy. If unset, defaults to IfNotPresent.
+/// This is useful in air-gapped environments where images are pre-loaded onto nodes and
+/// must not be re-pulled from a remote registry.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedImagePullPolicyEnum>))]
+public enum V1InstallationStatusComputedImagePullPolicyEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent,
+    [EnumMember(Value = "Never"), JsonStringEnumMemberName("Never")]
+    Never
 }
 
 /// <summary>
@@ -18031,6 +19324,40 @@ public partial class V1InstallationStatusComputedLogging
     /// <summary>Customized logging specification for calico-cni plugin</summary>
     [JsonPropertyName("cni")]
     public V1InstallationStatusComputedLoggingCni? Cni { get; set; }
+}
+
+/// <summary>
+/// ManagePolicies controls whether the operator creates and reconciles the NetworkPolicies and
+/// GlobalNetworkPolicies it uses to protect the Calico components it installs. When set to
+/// Disabled, the operator stops creating or updating these policies and deletes any it has
+/// already created, leaving policy management to the user. Defaults to Enabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedNetworkPolicyManagePoliciesEnum>))]
+public enum V1InstallationStatusComputedNetworkPolicyManagePoliciesEnum
+{
+    [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
+    Enabled,
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled
+}
+
+/// <summary>
+/// NetworkPolicy configures how the operator manages the NetworkPolicies and GlobalNetworkPolicies
+/// it installs to protect the Calico components it manages.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedNetworkPolicy
+{
+    /// <summary>
+    /// ManagePolicies controls whether the operator creates and reconciles the NetworkPolicies and
+    /// GlobalNetworkPolicies it uses to protect the Calico components it installs. When set to
+    /// Disabled, the operator stops creating or updating these policies and deletes any it has
+    /// already created, leaving policy management to the user. Defaults to Enabled.
+    /// </summary>
+    [JsonPropertyName("managePolicies")]
+    public V1InstallationStatusComputedNetworkPolicyManagePoliciesEnum? ManagePolicies { get; set; }
 }
 
 /// <summary>Rolling update config params. Present only if type = &quot;RollingUpdate&quot;.</summary>
@@ -19548,6 +20875,37 @@ public partial class V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpec
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the typha Deployment container by name.
 /// Supported values are: calico-typha
 /// </summary>
@@ -19557,6 +20915,37 @@ public enum V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainer
 {
     [EnumMember(Value = "calico-typha"), JsonStringEnumMemberName("calico-typha")]
     CalicoTypha
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -19624,11 +21013,25 @@ public partial class V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpec
 public partial class V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the typha Deployment container by name.
     /// Supported values are: calico-typha
     /// </summary>
     [JsonPropertyName("name")]
     public required V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1InstallationStatusComputedTyphaDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -20094,9 +21497,95 @@ public partial class V1InstallationStatusComputedTyphaDeployment
     public V1InstallationStatusComputedTyphaDeploymentSpec? Spec { get; set; }
 }
 
+/// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the PodDisruptionBudget.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedTyphaPodDisruptionBudgetMetadata
+{
+    /// <summary>
+    /// Annotations is a map of arbitrary non-identifying metadata. Each of these
+    /// key/value pairs are added to the object&apos;s annotations provided the key does not
+    /// already exist in the object&apos;s annotations.
+    /// </summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>
+    /// Labels is a map of string keys and values that may match replicaset and
+    /// service selectors. Each of these key/value pairs are added to the
+    /// object&apos;s labels provided the key does not already exist in the object&apos;s labels.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+}
+
 /// <summary>
-/// Variant is the product to install - one of Calico or TigeraSecureEnterprise
-/// Default: Calico
+/// UnhealthyPodEvictionPolicy defines when unhealthy pods should be considered
+/// for eviction. Defaults to IfHealthyBudget (the Kubernetes default) when unset.
+/// See https://kubernetes.io/docs/tasks/run-application/configure-pdb/#unhealthy-pod-eviction-policy.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum>))]
+public enum V1InstallationStatusComputedTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum
+{
+    [EnumMember(Value = "IfHealthyBudget"), JsonStringEnumMemberName("IfHealthyBudget")]
+    IfHealthyBudget,
+    [EnumMember(Value = "AlwaysAllow"), JsonStringEnumMemberName("AlwaysAllow")]
+    AlwaysAllow
+}
+
+/// <summary>Spec is the specification of the PodDisruptionBudget.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedTyphaPodDisruptionBudgetSpec
+{
+    /// <summary>
+    /// MaxUnavailable is the maximum number of pods (as an integer or percentage) that
+    /// can be unavailable during a disruption. Mutually exclusive with MinAvailable.
+    /// If neither MinAvailable nor MaxUnavailable is set, the operator applies its
+    /// default (MaxUnavailable=1 for calico-typha).
+    /// </summary>
+    [JsonPropertyName("maxUnavailable")]
+    public IntOrString? MaxUnavailable { get; set; }
+
+    /// <summary>
+    /// MinAvailable is the minimum number of pods (as an integer or percentage) that
+    /// must remain available during a disruption. Mutually exclusive with MaxUnavailable.
+    /// </summary>
+    [JsonPropertyName("minAvailable")]
+    public IntOrString? MinAvailable { get; set; }
+
+    /// <summary>
+    /// UnhealthyPodEvictionPolicy defines when unhealthy pods should be considered
+    /// for eviction. Defaults to IfHealthyBudget (the Kubernetes default) when unset.
+    /// See https://kubernetes.io/docs/tasks/run-application/configure-pdb/#unhealthy-pod-eviction-policy.
+    /// </summary>
+    [JsonPropertyName("unhealthyPodEvictionPolicy")]
+    public V1InstallationStatusComputedTyphaPodDisruptionBudgetSpecUnhealthyPodEvictionPolicyEnum? UnhealthyPodEvictionPolicy { get; set; }
+}
+
+/// <summary>
+/// TyphaPodDisruptionBudget configures the PodDisruptionBudget for the calico-typha
+/// Deployment. Fields left unset fall back to the operator&apos;s defaults. The PDB&apos;s
+/// selector is managed by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1InstallationStatusComputedTyphaPodDisruptionBudget
+{
+    /// <summary>Metadata is a subset of a Kubernetes object&apos;s metadata that is added to the PodDisruptionBudget.</summary>
+    [JsonPropertyName("metadata")]
+    public V1InstallationStatusComputedTyphaPodDisruptionBudgetMetadata? Metadata { get; set; }
+
+    /// <summary>Spec is the specification of the PodDisruptionBudget.</summary>
+    [JsonPropertyName("spec")]
+    public V1InstallationStatusComputedTyphaPodDisruptionBudgetSpec? Spec { get; set; }
+}
+
+/// <summary>
+/// Variant is the product to install - one of Calico or CalicoEnterprise.
+/// TigeraSecureEnterprise is also accepted as a deprecated alias for CalicoEnterprise.
+/// If left unset, the operator fills in the variant it is running as.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusComputedVariantEnum>))]
@@ -20104,6 +21593,8 @@ public enum V1InstallationStatusComputedVariantEnum
 {
     [EnumMember(Value = "Calico"), JsonStringEnumMemberName("Calico")]
     Calico,
+    [EnumMember(Value = "CalicoEnterprise"), JsonStringEnumMemberName("CalicoEnterprise")]
+    CalicoEnterprise,
     [EnumMember(Value = "TigeraSecureEnterprise"), JsonStringEnumMemberName("TigeraSecureEnterprise")]
     TigeraSecureEnterprise
 }
@@ -20162,6 +21653,14 @@ public partial class V1InstallationStatusComputed
     [JsonPropertyName("calicoKubeControllersDeployment")]
     public V1InstallationStatusComputedCalicoKubeControllersDeployment? CalicoKubeControllersDeployment { get; set; }
 
+    /// <summary>
+    /// CalicoLibHostPath optionally specifies the host path mounted into calico-node containers at
+    /// /var/lib/calico. Pair this with CalicoRunHostPath when Calico data lives under a non-standard
+    /// host directory (for example microk8s uses /var/snap/microk8s/current/var/lib/calico).
+    /// </summary>
+    [JsonPropertyName("calicoLibHostPath")]
+    public string? CalicoLibHostPath { get; set; }
+
     /// <summary>CalicoNetwork specifies networking configuration options for Calico.</summary>
     [JsonPropertyName("calicoNetwork")]
     public V1InstallationStatusComputedCalicoNetwork? CalicoNetwork { get; set; }
@@ -20176,6 +21675,15 @@ public partial class V1InstallationStatusComputed
     /// <summary>CalicoNodeWindowsDaemonSet configures the calico-node-windows DaemonSet.</summary>
     [JsonPropertyName("calicoNodeWindowsDaemonSet")]
     public V1InstallationStatusComputedCalicoNodeWindowsDaemonSet? CalicoNodeWindowsDaemonSet { get; set; }
+
+    /// <summary>
+    /// CalicoRunHostPath optionally specifies the host path mounted into calico-node containers at
+    /// /var/run/calico. Environments such as microk8s place Calico runtime state under a non-standard
+    /// host directory (for example /var/snap/microk8s/current/var/run/calico); set this field so the
+    /// operator continues using that path after a manifest-to-operator migration.
+    /// </summary>
+    [JsonPropertyName("calicoRunHostPath")]
+    public string? CalicoRunHostPath { get; set; }
 
     /// <summary>
     /// Deprecated. The CalicoWindowsUpgradeDaemonSet is deprecated and will be removed from the API in the future.
@@ -20230,9 +21738,8 @@ public partial class V1InstallationStatusComputed
     public V1InstallationStatusComputedCsiNodeDriverDaemonSet? CsiNodeDriverDaemonSet { get; set; }
 
     /// <summary>
-    /// FIPSMode uses images and features only that are using FIPS 140-2 validated cryptographic modules and standards.
-    /// Only supported for Variant=Calico.
-    /// Default: Disabled
+    /// Deprecated. FIPS mode is no longer supported. Setting fipsMode to Enabled marks the
+    /// installation degraded.
     /// </summary>
     [JsonPropertyName("fipsMode")]
     public V1InstallationStatusComputedFipsModeEnum? FipsMode { get; set; }
@@ -20272,6 +21779,15 @@ public partial class V1InstallationStatusComputed
     public string? ImagePrefix { get; set; }
 
     /// <summary>
+    /// ImagePullPolicy is the pull policy applied to containers in pods rendered by the operator
+    /// that do not explicitly set their own pull policy. If unset, defaults to IfNotPresent.
+    /// This is useful in air-gapped environments where images are pre-loaded onto nodes and
+    /// must not be re-pulled from a remote registry.
+    /// </summary>
+    [JsonPropertyName("imagePullPolicy")]
+    public V1InstallationStatusComputedImagePullPolicyEnum? ImagePullPolicy { get; set; }
+
+    /// <summary>
     /// ImagePullSecrets is an array of references to container registry pull secrets to use. These are
     /// applied to all images to be pulled.
     /// </summary>
@@ -20298,6 +21814,13 @@ public partial class V1InstallationStatusComputed
     /// <summary>Logging Configuration for Components</summary>
     [JsonPropertyName("logging")]
     public V1InstallationStatusComputedLogging? Logging { get; set; }
+
+    /// <summary>
+    /// NetworkPolicy configures how the operator manages the NetworkPolicies and GlobalNetworkPolicies
+    /// it installs to protect the Calico components it manages.
+    /// </summary>
+    [JsonPropertyName("networkPolicy")]
+    public V1InstallationStatusComputedNetworkPolicy? NetworkPolicy { get; set; }
 
     /// <summary>
     /// NodeMetricsPort specifies which port calico/node serves prometheus metrics on. By default, metrics are not enabled.
@@ -20369,8 +21892,17 @@ public partial class V1InstallationStatusComputed
     public int? TyphaMetricsPort { get; set; }
 
     /// <summary>
-    /// Variant is the product to install - one of Calico or TigeraSecureEnterprise
-    /// Default: Calico
+    /// TyphaPodDisruptionBudget configures the PodDisruptionBudget for the calico-typha
+    /// Deployment. Fields left unset fall back to the operator&apos;s defaults. The PDB&apos;s
+    /// selector is managed by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("typhaPodDisruptionBudget")]
+    public V1InstallationStatusComputedTyphaPodDisruptionBudget? TyphaPodDisruptionBudget { get; set; }
+
+    /// <summary>
+    /// Variant is the product to install - one of Calico or CalicoEnterprise.
+    /// TigeraSecureEnterprise is also accepted as a deprecated alias for CalicoEnterprise.
+    /// If left unset, the operator fills in the variant it is running as.
     /// </summary>
     [JsonPropertyName("variant")]
     public V1InstallationStatusComputedVariantEnum? Variant { get; set; }
@@ -20439,13 +21971,18 @@ public partial class V1InstallationStatusConditions
     public required string Type { get; set; }
 }
 
-/// <summary>Variant is the most recently observed installed variant - one of Calico or TigeraSecureEnterprise</summary>
+/// <summary>
+/// Variant is the most recently observed installed variant - one of Calico or CalicoEnterprise.
+/// TigeraSecureEnterprise is a deprecated alias for CalicoEnterprise.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1InstallationStatusVariantEnum>))]
 public enum V1InstallationStatusVariantEnum
 {
     [EnumMember(Value = "Calico"), JsonStringEnumMemberName("Calico")]
     Calico,
+    [EnumMember(Value = "CalicoEnterprise"), JsonStringEnumMemberName("CalicoEnterprise")]
+    CalicoEnterprise,
     [EnumMember(Value = "TigeraSecureEnterprise"), JsonStringEnumMemberName("TigeraSecureEnterprise")]
     TigeraSecureEnterprise
 }
@@ -20488,7 +22025,10 @@ public partial class V1InstallationStatus
     [JsonPropertyName("mtu")]
     public int? Mtu { get; set; }
 
-    /// <summary>Variant is the most recently observed installed variant - one of Calico or TigeraSecureEnterprise</summary>
+    /// <summary>
+    /// Variant is the most recently observed installed variant - one of Calico or CalicoEnterprise.
+    /// TigeraSecureEnterprise is a deprecated alias for CalicoEnterprise.
+    /// </summary>
     [JsonPropertyName("variant")]
     public V1InstallationStatusVariantEnum? Variant { get; set; }
 }

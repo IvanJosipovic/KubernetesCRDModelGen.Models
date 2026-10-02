@@ -35,6 +35,18 @@ public partial class V1IPAMConfigList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1IPAMConfig> Items { get; set; }
 }
 
+/// <summary>
+/// KubeVirtVMAddressPersistence controls whether KubeVirt VirtualMachine workloads
+/// maintain persistent IP addresses across VM lifecycle events.
+/// When set to VMAddressPersistenceEnabled, Calico automatically ensures that KubeVirt VMs retain their
+/// IP addresses when their underlying pods are recreated during VM operations such as
+/// reboot, live migration, or pod eviction. IP persistency is ensured when the
+/// VirtualMachineInstance (VMI) resource is deleted and recreated by the VM controller.
+/// When set to VMAddressPersistenceDisabled, VMs receive new IP addresses whenever their pods are recreated,
+/// following standard pod IP allocation behavior. Live migration target pods are not allowed
+/// when this is set to VMAddressPersistenceDisabled and will result in an error.
+/// If nil, defaults to VMAddressPersistenceEnabled (IP persistence enabled if not specified).
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum>))]
 public enum V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum
@@ -45,6 +57,7 @@ public enum V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum
     Disabled
 }
 
+/// <summary>IPAMConfigSpec contains the specification for an IPAMConfig resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPAMConfigSpec
@@ -52,9 +65,33 @@ public partial class V1IPAMConfigSpec
     [JsonPropertyName("autoAllocateBlocks")]
     public required bool AutoAllocateBlocks { get; set; }
 
+    /// <summary>
+    /// IPCooldownSeconds is the minimum age of a released IP in a block before it is re-used.
+    /// If set to zero, IPs can be re-used immediately (but are still handled with a FIFO queue to
+    /// minimize immediate reuse).
+    /// </summary>
+    [JsonPropertyName("ipCooldownSeconds")]
+    public int? IpCooldownSeconds { get; set; }
+
+    /// <summary>
+    /// KubeVirtVMAddressPersistence controls whether KubeVirt VirtualMachine workloads
+    /// maintain persistent IP addresses across VM lifecycle events.
+    /// When set to VMAddressPersistenceEnabled, Calico automatically ensures that KubeVirt VMs retain their
+    /// IP addresses when their underlying pods are recreated during VM operations such as
+    /// reboot, live migration, or pod eviction. IP persistency is ensured when the
+    /// VirtualMachineInstance (VMI) resource is deleted and recreated by the VM controller.
+    /// When set to VMAddressPersistenceDisabled, VMs receive new IP addresses whenever their pods are recreated,
+    /// following standard pod IP allocation behavior. Live migration target pods are not allowed
+    /// when this is set to VMAddressPersistenceDisabled and will result in an error.
+    /// If nil, defaults to VMAddressPersistenceEnabled (IP persistence enabled if not specified).
+    /// </summary>
     [JsonPropertyName("kubeVirtVMAddressPersistence")]
     public V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum? KubeVirtVMAddressPersistence { get; set; }
 
+    /// <summary>
+    /// MaxBlocksPerHost, if non-zero, is the max number of blocks that can be
+    /// affine to each host.
+    /// </summary>
     [JsonPropertyName("maxBlocksPerHost")]
     public int? MaxBlocksPerHost { get; set; }
 
@@ -83,6 +120,7 @@ public partial class V1IPAMConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1IPA
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>IPAMConfigSpec contains the specification for an IPAMConfig resource.</summary>
     [JsonPropertyName("spec")]
     public V1IPAMConfigSpec? Spec { get; set; }
 }

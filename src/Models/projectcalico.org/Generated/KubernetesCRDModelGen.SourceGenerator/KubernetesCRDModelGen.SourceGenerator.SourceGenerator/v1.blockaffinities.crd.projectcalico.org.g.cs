@@ -35,6 +35,7 @@ public partial class V1BlockAffinityList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1BlockAffinity> Items { get; set; }
 }
 
+/// <summary>BlockAffinitySpec contains the specification for a BlockAffinity resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BlockAffinitySpec
@@ -42,6 +43,11 @@ public partial class V1BlockAffinitySpec
     [JsonPropertyName("cidr")]
     public required string Cidr { get; set; }
 
+    /// <summary>
+    /// Deleted indicates that this block affinity is being deleted.
+    /// This field is a string for compatibility with older releases that
+    /// mistakenly treat this field as a string.
+    /// </summary>
     [JsonPropertyName("deleted")]
     public required string Deleted { get; set; }
 
@@ -76,6 +82,7 @@ public partial class V1BlockAffinity : IKubernetesObject<V1ObjectMeta>, ISpec<V1
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>BlockAffinitySpec contains the specification for a BlockAffinity resource.</summary>
     [JsonPropertyName("spec")]
     public V1BlockAffinitySpec? Spec { get; set; }
 }

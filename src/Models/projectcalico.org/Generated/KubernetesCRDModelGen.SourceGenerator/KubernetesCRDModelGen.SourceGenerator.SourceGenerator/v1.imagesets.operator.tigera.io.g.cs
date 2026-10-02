@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.@operator.tigera.io;
 /// ImageSet is used to specify image digests for the images that the operator deploys.
 /// The name of the ImageSet is expected to be in the format `&lt;variant&gt;-&lt;release&gt;`.
 /// The `variant` used is `enterprise` if the InstallationSpec Variant is
-/// `TigeraSecureEnterprise` otherwise it is `calico`.
+/// `CalicoEnterprise` or `TigeraSecureEnterprise`, otherwise it is `calico`.
 /// The `release` must match the version of the variant that the operator is built to deploy,
 /// this version can be obtained by passing the `--version` flag to the operator binary.
 /// </summary>
@@ -84,7 +84,7 @@ public partial class V1ImageSetSpec
 /// ImageSet is used to specify image digests for the images that the operator deploys.
 /// The name of the ImageSet is expected to be in the format `&lt;variant&gt;-&lt;release&gt;`.
 /// The `variant` used is `enterprise` if the InstallationSpec Variant is
-/// `TigeraSecureEnterprise` otherwise it is `calico`.
+/// `CalicoEnterprise` or `TigeraSecureEnterprise`, otherwise it is `calico`.
 /// The `release` must match the version of the variant that the operator is built to deploy,
 /// this version can be obtained by passing the `--version` flag to the operator binary.
 /// </summary>

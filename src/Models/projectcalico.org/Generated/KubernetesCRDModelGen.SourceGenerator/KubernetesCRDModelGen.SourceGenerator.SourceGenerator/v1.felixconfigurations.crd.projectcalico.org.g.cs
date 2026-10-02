@@ -56,9 +56,14 @@ public enum V1FelixConfigurationSpecAwsSrcDstCheckEnum
 
 /// <summary>
 /// BPFAttachType controls how are the BPF programs at the network interfaces attached.
-/// By default `TCX` is used where available to enable easier coexistence with 3rd party programs.
-/// `TC` can force the legacy method of attaching via a qdisc. `TCX` falls back to `TC` if `TCX` is not available.
-/// [Default: TCX]
+/// By default `Netkit` is used, which attaches via the netkit API on workload interfaces that are
+/// netkit devices and via `TCX` on every other interface. `TCX` is used where available to enable
+/// easier coexistence with 3rd party programs. `TC` can force the legacy method of attaching via a
+/// qdisc. `TCX` falls back to `TC` if `TCX` is not available.
+/// Setting this to `TCX` or `TC` also makes Felix drive existing netkit devices with that mechanism
+/// instead of the netkit API, which is required before downgrading to a release without netkit
+/// support.
+/// [Default: Netkit]
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfAttachTypeEnum>))]
@@ -67,7 +72,9 @@ public enum V1FelixConfigurationSpecBpfAttachTypeEnum
     [EnumMember(Value = "TC"), JsonStringEnumMemberName("TC")]
     TC,
     [EnumMember(Value = "TCX"), JsonStringEnumMemberName("TCX")]
-    TCX
+    TCX,
+    [EnumMember(Value = "Netkit"), JsonStringEnumMemberName("Netkit")]
+    Netkit
 }
 
 /// <summary>
@@ -224,6 +231,39 @@ public enum V1FelixConfigurationSpecBpfHostNetworkedNATWithoutCTLBEnum
 }
 
 /// <summary>
+/// BPFJITHardening controls BPF JIT hardening. When set to &quot;Auto&quot;, Felix will set JIT hardening to 1
+/// if it detects the current value is 2 (strict mode that hurts performance). When set to &quot;Strict&quot;,
+/// Felix will not modify the JIT hardening setting. [Default: Auto]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfJITHardeningEnum>))]
+public enum V1FelixConfigurationSpecBpfJITHardeningEnum
+{
+    [EnumMember(Value = "Auto"), JsonStringEnumMemberName("Auto")]
+    Auto,
+    [EnumMember(Value = "Strict"), JsonStringEnumMemberName("Strict")]
+    Strict
+}
+
+/// <summary>
+/// BPFOverlayHostSourceIP controls the source IP that Felix uses in BPF mode for host-networked
+/// (node-originated) traffic egressing over an IPIP/VXLAN overlay tunnel.  &quot;TunnelAddress&quot; (the default)
+/// assigns an IP address to the overlay tunnel device and uses it as the source, preserving the behaviour
+/// of clusters upgraded from earlier releases.  &quot;HostAddress&quot; uses the node&apos;s own IP directly and does not
+/// assign a tunnel device IP.  This option has no effect on WireGuard tunnels, which always use a tunnel
+/// device IP.  [Default: TunnelAddress]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecBpfOverlayHostSourceIPEnum>))]
+public enum V1FelixConfigurationSpecBpfOverlayHostSourceIPEnum
+{
+    [EnumMember(Value = "TunnelAddress"), JsonStringEnumMemberName("TunnelAddress")]
+    TunnelAddress,
+    [EnumMember(Value = "HostAddress"), JsonStringEnumMemberName("HostAddress")]
+    HostAddress
+}
+
+/// <summary>
 /// BPFProfiling controls profiling of BPF programs. At the monent, it can be
 /// Disabled or Enabled. [Default: Disabled]
 /// </summary>
@@ -239,7 +279,7 @@ public enum V1FelixConfigurationSpecBpfProfilingEnum
 
 /// <summary>
 /// BPFRedirectToPeer controls whether traffic may be forwarded directly to the peer side of a workload’s device.
-/// Note that the legacy &quot;L2Only&quot; option is now deprecated and if set it is treated like &quot;Enabled.
+/// Note that the legacy &quot;L2Only&quot; option is now deprecated and if set it is treated like &quot;Enabled&quot;.
 /// Setting this option to &quot;Enabled&quot; allows direct redirection (including from L3 host devices such as IPIP tunnels or WireGuard),
 /// which can improve redirection performance but causes the redirected packets to bypass the host‑side ingress path.
 /// As a result, packet‑capture tools on the host side of the workload device (for example, tcpdump) will not see that traffic. [Default: Enabled]
@@ -386,6 +426,49 @@ public enum V1FelixConfigurationSpecIstioAmbientModeEnum
 }
 
 /// <summary>
+/// LocalSubnetL2Reachability controls whether Felix automatically responds to
+/// ARP (IPv4) and NDP (IPv6) requests on host interfaces for local pod IPs and
+/// selected LoadBalancer VIPs that fall within the same subnet as the host
+/// interface. When set to PodsAndLoadBalancers, pods and LB VIPs on the host
+/// subnet are reachable from the local L2 segment without BGP. [Default: Disabled]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum>))]
+public enum V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum
+{
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled,
+    [EnumMember(Value = "PodsAndLoadBalancers"), JsonStringEnumMemberName("PodsAndLoadBalancers")]
+    PodsAndLoadBalancers
+}
+
+/// <summary>
+/// LogConnectionTransitions controls whether Felix emits an additional kernel log recording the
+/// first observed response for each connection that matched a policy rule with a Log action.
+/// When set to FirstResponseAfterLog, each connection whose initial log was emitted gets one
+/// follow-up log, prefixed with LogConnectionTransitionsPrefix plus a suffix identifying the
+/// transition: &quot;-est&quot; when the first reply packet is seen, &quot;-rst&quot; when the response is a TCP
+/// RST (connection refused), or &quot;-icmp-err&quot; when the response is a related ICMP error (e.g.
+/// port unreachable). The log body is the standard kernel packet log of the response packet.
+/// For &quot;-est&quot; and &quot;-rst&quot; its 5-tuple is the original policy Log line&apos;s with source and
+/// destination swapped; for &quot;-icmp-err&quot; the bracketed inner header carries the original
+/// 5-tuple unswapped. A logged connection with no follow-up log never received a response.
+/// Connections whose initial log was suppressed by LogActionRateLimit get no follow-up log
+/// either, so every follow-up log pairs with an initial one. Enabling this consumes one bit
+/// from the Iptables/NftablesMarkMask space. Not supported in eBPF mode.
+/// [Default: Disabled]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecLogConnectionTransitionsEnum>))]
+public enum V1FelixConfigurationSpecLogConnectionTransitionsEnum
+{
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled,
+    [EnumMember(Value = "FirstResponseAfterLog"), JsonStringEnumMemberName("FirstResponseAfterLog")]
+    FirstResponseAfterLog
+}
+
+/// <summary>
 /// When a IP pool setting `natOutgoing` is true, packets sent from Calico networked containers in this IP pool to destinations will be masqueraded.
 /// Configure which type of destinations is excluded from being masqueraded.
 /// - IPPoolsOnly: destinations outside of this IP pool will be masqueraded.
@@ -402,7 +485,27 @@ public enum V1FelixConfigurationSpecNatOutgoingExclusionsEnum
     IPPoolsAndHostIPs
 }
 
-/// <summary>NFTablesMode configures nftables support in Felix. [Default: Auto]</summary>
+/// <summary>
+/// NFTablesFlowTableOffload controls which traffic nftables flowtable offload is enabled for,
+/// for improved forwarding performance. When set to &quot;All&quot;, established connections accepted by
+/// Calico policy are offloaded to the kernel&apos;s flowtable fast path. Only applies when
+/// nftables mode is active. [Default: Disabled]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecNftablesFlowTableOffloadEnum>))]
+public enum V1FelixConfigurationSpecNftablesFlowTableOffloadEnum
+{
+    [EnumMember(Value = "All"), JsonStringEnumMemberName("All")]
+    All,
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled
+}
+
+/// <summary>
+/// NFTablesMode configures nftables support in Felix. In Auto mode, Felix uses the
+/// nftables dataplane if kube-proxy is detected to be running in nftables mode.
+/// [Default: Auto]
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecNftablesModeEnum>))]
 public enum V1FelixConfigurationSpecNftablesModeEnum
@@ -416,10 +519,28 @@ public enum V1FelixConfigurationSpecNftablesModeEnum
 }
 
 /// <summary>
-/// ProgramClusterRoutes controls how a cluster node gets a route to a workload on another node,
-/// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ProgramClusterRoutes is Disabled,
-/// it is expected that confd and BIRD will program that route. When ProgramClusterRoutes is Enabled, Felix program that route.
-/// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: Disabled]
+/// ProgramClusterRoutes controls which &quot;cluster routes&quot; Felix programs, i.e. the routes that
+/// a node needs in order to reach workloads on other nodes.  It only applies to IP Pools
+/// with vxlanMode: Never; Felix always programs the cluster routes for IP Pools with
+/// vxlanMode: Always or vxlanMode: CrossSubnet.  The routes that Felix does not program here
+/// are expected to be programmed by Calico&apos;s BGP stack instead.  Below, an IPIP IP Pool is
+/// one with ipipMode: Always or CrossSubnet, and an unencapsulated one has ipipMode and
+/// vxlanMode both Never.
+/// 
+/// - Disabled: Felix programs no cluster routes.
+/// - EnabledIPIPOnly: Felix programs them for IPIP IP Pools.
+/// - EnabledNoEncapOnly: Felix programs them for unencapsulated IP Pools.
+/// - Enabled: Felix programs them for both.
+/// 
+/// This field must be kept consistent with BGPConfiguration.ProgramClusterRoutes, which
+/// makes the same choice from BIRD&apos;s side.  If both Felix and BIRD are enabled for the same
+/// kind of IP Pool they will fight over the routes; if neither is, there will be no cluster
+/// routes at all.
+/// 
+/// Note: leaving the IPIP cluster routes to BGP, which the Disabled and EnabledNoEncapOnly
+/// values do, is deprecated as of v3.33 and will be removed in v3.35.
+/// 
+/// [Default: EnabledIPIPOnly]
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecProgramClusterRoutesEnum>))]
@@ -428,7 +549,29 @@ public enum V1FelixConfigurationSpecProgramClusterRoutesEnum
     [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
     Enabled,
     [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
-    Disabled
+    Disabled,
+    [EnumMember(Value = "EnabledIPIPOnly"), JsonStringEnumMemberName("EnabledIPIPOnly")]
+    EnabledIPIPOnly,
+    [EnumMember(Value = "EnabledNoEncapOnly"), JsonStringEnumMemberName("EnabledNoEncapOnly")]
+    EnabledNoEncapOnly
+}
+
+/// <summary>
+/// PrometheusMetricsClientAuth specifies the client authentication type for the /metrics endpoint.
+/// This determines how the server validates client certificates. Default is &quot;NoClientCert&quot;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecPrometheusMetricsClientAuthEnum>))]
+public enum V1FelixConfigurationSpecPrometheusMetricsClientAuthEnum
+{
+    [EnumMember(Value = "RequireAndVerifyClientCert"), JsonStringEnumMemberName("RequireAndVerifyClientCert")]
+    RequireAndVerifyClientCert,
+    [EnumMember(Value = "RequireAnyClientCert"), JsonStringEnumMemberName("RequireAnyClientCert")]
+    RequireAnyClientCert,
+    [EnumMember(Value = "VerifyClientCertIfGiven"), JsonStringEnumMemberName("VerifyClientCertIfGiven")]
+    VerifyClientCertIfGiven,
+    [EnumMember(Value = "NoClientCert"), JsonStringEnumMemberName("NoClientCert")]
+    NoClientCert
 }
 
 /// <summary>
@@ -499,9 +642,14 @@ public partial class V1FelixConfigurationSpec
 
     /// <summary>
     /// BPFAttachType controls how are the BPF programs at the network interfaces attached.
-    /// By default `TCX` is used where available to enable easier coexistence with 3rd party programs.
-    /// `TC` can force the legacy method of attaching via a qdisc. `TCX` falls back to `TC` if `TCX` is not available.
-    /// [Default: TCX]
+    /// By default `Netkit` is used, which attaches via the netkit API on workload interfaces that are
+    /// netkit devices and via `TCX` on every other interface. `TCX` is used where available to enable
+    /// easier coexistence with 3rd party programs. `TC` can force the legacy method of attaching via a
+    /// qdisc. `TCX` falls back to `TC` if `TCX` is not available.
+    /// Setting this to `TCX` or `TC` also makes Felix drive existing netkit devices with that mechanism
+    /// instead of the netkit API, which is required before downgrading to a release without netkit
+    /// support.
+    /// [Default: Netkit]
     /// </summary>
     [JsonPropertyName("bpfAttachType")]
     public V1FelixConfigurationSpecBpfAttachTypeEnum? BpfAttachType { get; set; }
@@ -673,12 +821,33 @@ public partial class V1FelixConfigurationSpec
     public V1FelixConfigurationSpecBpfHostNetworkedNATWithoutCTLBEnum? BpfHostNetworkedNATWithoutCTLB { get; set; }
 
     /// <summary>
+    /// BPFIPFragTimeout, in BPF mode, controls the timeout for IP fragment reassembly.
+    /// This is the maximum time that the BPF dataplane will wait for all fragments of a
+    /// fragmented IP packet to arrive before discarding them.  If left unset, the value
+    /// is read from the Linux kernel sysctl net.ipv4.ipfrag_time (which defaults to 30
+    /// seconds).
+    /// [Default: unset - read from net.ipv4.ipfrag_time]
+    /// </summary>
+    [JsonPropertyName("bpfIPFragTimeout")]
+    public string? BpfIPFragTimeout { get; set; }
+
+    /// <summary>
+    /// BPFIPFragmentReassemblyEnabled controls whether Felix loads the BPF program that
+    /// reassembles out-of-order IP fragments from external networks. This program requires
+    /// a kernel newer than 5.10. When enabled (the default) and the program fails to load,
+    /// Felix reports not-ready until the user sets this to false. When false, fragmented
+    /// packets from external sources are dropped. [Default: true]
+    /// </summary>
+    [JsonPropertyName("bpfIPFragmentReassemblyEnabled")]
+    public bool? BpfIPFragmentReassemblyEnabled { get; set; }
+
+    /// <summary>
     /// BPFJITHardening controls BPF JIT hardening. When set to &quot;Auto&quot;, Felix will set JIT hardening to 1
     /// if it detects the current value is 2 (strict mode that hurts performance). When set to &quot;Strict&quot;,
     /// Felix will not modify the JIT hardening setting. [Default: Auto]
     /// </summary>
     [JsonPropertyName("bpfJITHardening")]
-    public string? BpfJITHardening { get; set; }
+    public V1FelixConfigurationSpecBpfJITHardeningEnum? BpfJITHardening { get; set; }
 
     /// <summary>
     /// BPFKubeProxyHealthzPort, in BPF mode, controls the port that Felix&apos;s embedded kube-proxy health check server binds to.
@@ -832,6 +1001,17 @@ public partial class V1FelixConfigurationSpec
     public int? BpfMapSizeRoute { get; set; }
 
     /// <summary>
+    /// BPFOverlayHostSourceIP controls the source IP that Felix uses in BPF mode for host-networked
+    /// (node-originated) traffic egressing over an IPIP/VXLAN overlay tunnel.  &quot;TunnelAddress&quot; (the default)
+    /// assigns an IP address to the overlay tunnel device and uses it as the source, preserving the behaviour
+    /// of clusters upgraded from earlier releases.  &quot;HostAddress&quot; uses the node&apos;s own IP directly and does not
+    /// assign a tunnel device IP.  This option has no effect on WireGuard tunnels, which always use a tunnel
+    /// device IP.  [Default: TunnelAddress]
+    /// </summary>
+    [JsonPropertyName("bpfOverlayHostSourceIP")]
+    public V1FelixConfigurationSpecBpfOverlayHostSourceIPEnum? BpfOverlayHostSourceIP { get; set; }
+
+    /// <summary>
     /// BPFPSNATPorts sets the range from which we randomly pick a port if there is a source port
     /// collision. This should be within the ephemeral range as defined by RFC 6056 (1024–65535) and
     /// preferably outside the  ephemeral ranges used by common operating systems. Linux uses
@@ -858,7 +1038,7 @@ public partial class V1FelixConfigurationSpec
 
     /// <summary>
     /// BPFRedirectToPeer controls whether traffic may be forwarded directly to the peer side of a workload’s device.
-    /// Note that the legacy &quot;L2Only&quot; option is now deprecated and if set it is treated like &quot;Enabled.
+    /// Note that the legacy &quot;L2Only&quot; option is now deprecated and if set it is treated like &quot;Enabled&quot;.
     /// Setting this option to &quot;Enabled&quot; allows direct redirection (including from L3 host devices such as IPIP tunnels or WireGuard),
     /// which can improve redirection performance but causes the redirected packets to bypass the host‑side ingress path.
     /// As a result, packet‑capture tools on the host side of the workload device (for example, tcpdump) will not see that traffic. [Default: Enabled]
@@ -1260,7 +1440,7 @@ public partial class V1FelixConfigurationSpec
     /// [Default: 0xffff0000]
     /// </summary>
     [JsonPropertyName("iptablesMarkMask")]
-    public int? IptablesMarkMask { get; set; }
+    public long? IptablesMarkMask { get; set; }
 
     /// <summary>
     /// This parameter can be used to limit the host interfaces on which Calico will apply SNAT to traffic leaving a
@@ -1360,8 +1540,31 @@ public partial class V1FelixConfigurationSpec
     public string? LiveMigrationRouteConvergenceTime { get; set; }
 
     /// <summary>
+    /// LocalSubnetL2Reachability controls whether Felix automatically responds to
+    /// ARP (IPv4) and NDP (IPv6) requests on host interfaces for local pod IPs and
+    /// selected LoadBalancer VIPs that fall within the same subnet as the host
+    /// interface. When set to PodsAndLoadBalancers, pods and LB VIPs on the host
+    /// subnet are reachable from the local L2 segment without BGP. [Default: Disabled]
+    /// </summary>
+    [JsonPropertyName("localSubnetL2Reachability")]
+    public V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum? LocalSubnetL2Reachability { get; set; }
+
+    /// <summary>
+    /// LocalSubnetL2ReachabilityRefreshInterval controls how often Felix re-announces
+    /// (gratuitous ARP / unsolicited NA) every IP it proxies ARP/NDP for when
+    /// LocalSubnetL2Reachability is enabled, keeping neighbor caches and switch
+    /// forwarding tables warm even when the set of proxied IPs is unchanged. Set to 0
+    /// to disable periodic re-announcement, leaving only the one-shot announce when an
+    /// IP is added. [Default: 120s]
+    /// </summary>
+    [JsonPropertyName("localSubnetL2ReachabilityRefreshInterval")]
+    public string? LocalSubnetL2ReachabilityRefreshInterval { get; set; }
+
+    /// <summary>
     /// LogActionRateLimit sets the rate of hitting a Log action. The value must be in the format &quot;N/unit&quot;,
     /// where N is a number and unit is one of: second, minute, hour, or day. For example: &quot;10/second&quot; or &quot;100/hour&quot;.
+    /// When LogConnectionTransitions is enabled, this also bounds the follow-up logs: a connection whose
+    /// initial log was suppressed by this rate limit gets no follow-up log either.
     /// </summary>
     [JsonPropertyName("logActionRateLimit")]
     public string? LogActionRateLimit { get; set; }
@@ -1369,6 +1572,35 @@ public partial class V1FelixConfigurationSpec
     /// <summary>LogActionRateLimitBurst sets the rate limit burst of hitting a Log action when LogActionRateLimit is enabled.</summary>
     [JsonPropertyName("logActionRateLimitBurst")]
     public int? LogActionRateLimitBurst { get; set; }
+
+    /// <summary>
+    /// LogConnectionTransitions controls whether Felix emits an additional kernel log recording the
+    /// first observed response for each connection that matched a policy rule with a Log action.
+    /// When set to FirstResponseAfterLog, each connection whose initial log was emitted gets one
+    /// follow-up log, prefixed with LogConnectionTransitionsPrefix plus a suffix identifying the
+    /// transition: &quot;-est&quot; when the first reply packet is seen, &quot;-rst&quot; when the response is a TCP
+    /// RST (connection refused), or &quot;-icmp-err&quot; when the response is a related ICMP error (e.g.
+    /// port unreachable). The log body is the standard kernel packet log of the response packet.
+    /// For &quot;-est&quot; and &quot;-rst&quot; its 5-tuple is the original policy Log line&apos;s with source and
+    /// destination swapped; for &quot;-icmp-err&quot; the bracketed inner header carries the original
+    /// 5-tuple unswapped. A logged connection with no follow-up log never received a response.
+    /// Connections whose initial log was suppressed by LogActionRateLimit get no follow-up log
+    /// either, so every follow-up log pairs with an initial one. Enabling this consumes one bit
+    /// from the Iptables/NftablesMarkMask space. Not supported in eBPF mode.
+    /// [Default: Disabled]
+    /// </summary>
+    [JsonPropertyName("logConnectionTransitions")]
+    public V1FelixConfigurationSpecLogConnectionTransitionsEnum? LogConnectionTransitions { get; set; }
+
+    /// <summary>
+    /// LogConnectionTransitionsPrefix is the log prefix used for the logs emitted when
+    /// LogConnectionTransitions is enabled; the transition suffix (&quot;-est&quot;, &quot;-rst&quot; or &quot;-icmp-err&quot;)
+    /// is appended to it. Unlike LogPrefix, it does not support %-specifiers (such as %p): the
+    /// rules that emit these logs are shared by all policies, so per-policy values cannot be
+    /// substituted and any %-specifiers are rendered literally. [Default: calico-response]
+    /// </summary>
+    [JsonPropertyName("logConnectionTransitionsPrefix")]
+    public string? LogConnectionTransitionsPrefix { get; set; }
 
     /// <summary>
     /// LogDebugFilenameRegex controls which source code files have their Debug log output included in the logs.
@@ -1491,6 +1723,25 @@ public partial class V1FelixConfigurationSpec
     public string? NftablesFilterDenyAction { get; set; }
 
     /// <summary>
+    /// NFTablesFlowTableDataIfacePattern is a regular expression that controls which host
+    /// interfaces are added to the nftables flowtable, so that traffic forwarded between those
+    /// interfaces and local workloads is offloaded to the flowtable fast path. Leave empty to
+    /// offload only workload-to-workload traffic. Only takes effect when NFTablesFlowTableOffload
+    /// is not Disabled. [Default: &quot; &quot;]
+    /// </summary>
+    [JsonPropertyName("nftablesFlowTableDataIfacePattern")]
+    public string? NftablesFlowTableDataIfacePattern { get; set; }
+
+    /// <summary>
+    /// NFTablesFlowTableOffload controls which traffic nftables flowtable offload is enabled for,
+    /// for improved forwarding performance. When set to &quot;All&quot;, established connections accepted by
+    /// Calico policy are offloaded to the kernel&apos;s flowtable fast path. Only applies when
+    /// nftables mode is active. [Default: Disabled]
+    /// </summary>
+    [JsonPropertyName("nftablesFlowTableOffload")]
+    public V1FelixConfigurationSpecNftablesFlowTableOffloadEnum? NftablesFlowTableOffload { get; set; }
+
+    /// <summary>
     /// NftablesMangleAllowAction controls the nftables action that Felix uses to represent the &quot;allow&quot; policy verdict
     /// in the mangle table. The default is to `ACCEPT` the traffic, which is a terminal action.  Alternatively,
     /// `RETURN` can be used to return the traffic back to the top-level chain for further processing by your rules.
@@ -1504,9 +1755,13 @@ public partial class V1FelixConfigurationSpec
     /// [Default: 0xffff0000]
     /// </summary>
     [JsonPropertyName("nftablesMarkMask")]
-    public int? NftablesMarkMask { get; set; }
+    public long? NftablesMarkMask { get; set; }
 
-    /// <summary>NFTablesMode configures nftables support in Felix. [Default: Auto]</summary>
+    /// <summary>
+    /// NFTablesMode configures nftables support in Felix. In Auto mode, Felix uses the
+    /// nftables dataplane if kube-proxy is detected to be running in nftables mode.
+    /// [Default: Auto]
+    /// </summary>
     [JsonPropertyName("nftablesMode")]
     public V1FelixConfigurationSpecNftablesModeEnum? NftablesMode { get; set; }
 
@@ -1548,10 +1803,28 @@ public partial class V1FelixConfigurationSpec
     public string? PolicySyncPathPrefix { get; set; }
 
     /// <summary>
-    /// ProgramClusterRoutes controls how a cluster node gets a route to a workload on another node,
-    /// when that workload&apos;s IP comes from an IP Pool with vxlanMode: Never. When ProgramClusterRoutes is Disabled,
-    /// it is expected that confd and BIRD will program that route. When ProgramClusterRoutes is Enabled, Felix program that route.
-    /// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: Disabled]
+    /// ProgramClusterRoutes controls which &quot;cluster routes&quot; Felix programs, i.e. the routes that
+    /// a node needs in order to reach workloads on other nodes.  It only applies to IP Pools
+    /// with vxlanMode: Never; Felix always programs the cluster routes for IP Pools with
+    /// vxlanMode: Always or vxlanMode: CrossSubnet.  The routes that Felix does not program here
+    /// are expected to be programmed by Calico&apos;s BGP stack instead.  Below, an IPIP IP Pool is
+    /// one with ipipMode: Always or CrossSubnet, and an unencapsulated one has ipipMode and
+    /// vxlanMode both Never.
+    /// 
+    /// - Disabled: Felix programs no cluster routes.
+    /// - EnabledIPIPOnly: Felix programs them for IPIP IP Pools.
+    /// - EnabledNoEncapOnly: Felix programs them for unencapsulated IP Pools.
+    /// - Enabled: Felix programs them for both.
+    /// 
+    /// This field must be kept consistent with BGPConfiguration.ProgramClusterRoutes, which
+    /// makes the same choice from BIRD&apos;s side.  If both Felix and BIRD are enabled for the same
+    /// kind of IP Pool they will fight over the routes; if neither is, there will be no cluster
+    /// routes at all.
+    /// 
+    /// Note: leaving the IPIP cluster routes to BGP, which the Disabled and EnabledNoEncapOnly
+    /// values do, is deprecated as of v3.33 and will be removed in v3.35.
+    /// 
+    /// [Default: EnabledIPIPOnly]
     /// </summary>
     [JsonPropertyName("programClusterRoutes")]
     public V1FelixConfigurationSpecProgramClusterRoutesEnum? ProgramClusterRoutes { get; set; }
@@ -1579,10 +1852,10 @@ public partial class V1FelixConfigurationSpec
 
     /// <summary>
     /// PrometheusMetricsClientAuth specifies the client authentication type for the /metrics endpoint.
-    /// This determines how the server validates client certificates. Default is &quot;RequireAndVerifyClientCert&quot;.
+    /// This determines how the server validates client certificates. Default is &quot;NoClientCert&quot;.
     /// </summary>
     [JsonPropertyName("prometheusMetricsClientAuth")]
-    public string? PrometheusMetricsClientAuth { get; set; }
+    public V1FelixConfigurationSpecPrometheusMetricsClientAuthEnum? PrometheusMetricsClientAuth { get; set; }
 
     /// <summary>PrometheusMetricsEnabled enables the Prometheus metrics server in Felix if set to true. [Default: false]</summary>
     [JsonPropertyName("prometheusMetricsEnabled")]

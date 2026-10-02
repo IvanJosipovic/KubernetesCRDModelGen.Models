@@ -2405,6 +2405,24 @@ public partial class V1IstioSpecIstiod
 }
 
 /// <summary>
+/// WaypointLogging controls whether L7 logging is enabled on every Gateway
+/// using the istio-waypoint GatewayClass. When Enabled (the default), the
+/// operator injects an l7-collector sidecar into each waypoint pod via
+/// class-level defaults. When Disabled, no sidecar is injected and the
+/// associated EnvoyFilters are not created. Allowed values are Enabled or
+/// Disabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1IstioSpecWaypointLoggingEnum>))]
+public enum V1IstioSpecWaypointLoggingEnum
+{
+    [EnumMember(Value = "Enabled"), JsonStringEnumMemberName("Enabled")]
+    Enabled,
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled
+}
+
+/// <summary>
 /// A node selector requirement is a selector that contains values, a key, and an operator
 /// that relates the key and values.
 /// </summary>
@@ -3607,6 +3625,17 @@ public partial class V1IstioSpec
     /// <summary>IstiodDeployment defines the resource requirements and node selector for the Istio deployment.</summary>
     [JsonPropertyName("istiod")]
     public V1IstioSpecIstiod? Istiod { get; set; }
+
+    /// <summary>
+    /// WaypointLogging controls whether L7 logging is enabled on every Gateway
+    /// using the istio-waypoint GatewayClass. When Enabled (the default), the
+    /// operator injects an l7-collector sidecar into each waypoint pod via
+    /// class-level defaults. When Disabled, no sidecar is injected and the
+    /// associated EnvoyFilters are not created. Allowed values are Enabled or
+    /// Disabled.
+    /// </summary>
+    [JsonPropertyName("waypointLogging")]
+    public V1IstioSpecWaypointLoggingEnum? WaypointLogging { get; set; }
 
     /// <summary>ZTunnelDaemonset defines the resource requirements for the ZTunnelDaemonset component.</summary>
     [JsonPropertyName("ztunnel")]
