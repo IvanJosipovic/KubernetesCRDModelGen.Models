@@ -9,6 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
+/// <summary>NetworkSet is the Namespaced-equivalent of the GlobalNetworkSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -35,14 +36,20 @@ public partial class V1NetworkSetList : IKubernetesObject<V1ListMeta>, IItems<V1
     public required IList<V1NetworkSet> Items { get; set; }
 }
 
+/// <summary>NetworkSetSpec contains the specification for a NetworkSet resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkSetSpec
 {
+    /// <summary>
+    /// The list of IP networks that belong to this set. Each entry must be in CIDR notation,
+    /// e.g. &quot;192.168.1.0/24&quot;. To include a single IP address, use a /32 (IPv4) or /128 (IPv6) mask.
+    /// </summary>
     [JsonPropertyName("nets")]
     public IList<string>? Nets { get; set; }
 }
 
+/// <summary>NetworkSet is the Namespaced-equivalent of the GlobalNetworkSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -64,6 +71,7 @@ public partial class V1NetworkSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1Net
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>NetworkSetSpec contains the specification for a NetworkSet resource.</summary>
     [JsonPropertyName("spec")]
     public V1NetworkSetSpec? Spec { get; set; }
 }

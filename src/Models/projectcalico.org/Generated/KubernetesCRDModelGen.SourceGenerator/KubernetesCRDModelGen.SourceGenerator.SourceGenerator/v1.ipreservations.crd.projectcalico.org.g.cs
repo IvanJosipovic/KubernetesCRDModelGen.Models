@@ -35,10 +35,15 @@ public partial class V1IPReservationList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1IPReservation> Items { get; set; }
 }
 
+/// <summary>IPReservationSpec contains the specification for an IPReservation resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPReservationSpec
 {
+    /// <summary>
+    /// ReservedCIDRs is a list of CIDRs that Calico IPAM will exclude from new allocations.
+    /// Each entry must be in CIDR notation (e.g., &quot;10.0.0.0/24&quot; or &quot;10.0.0.1/32&quot; for a single IP).
+    /// </summary>
     [JsonPropertyName("reservedCIDRs")]
     public IList<string>? ReservedCIDRs { get; set; }
 }
@@ -64,6 +69,7 @@ public partial class V1IPReservation : IKubernetesObject<V1ObjectMeta>, ISpec<V1
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>IPReservationSpec contains the specification for an IPReservation resource.</summary>
     [JsonPropertyName("spec")]
     public V1IPReservationSpec? Spec { get; set; }
 }

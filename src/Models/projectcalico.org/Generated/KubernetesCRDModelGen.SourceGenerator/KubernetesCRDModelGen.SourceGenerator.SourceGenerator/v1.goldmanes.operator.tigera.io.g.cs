@@ -1163,12 +1163,74 @@ public partial class V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecAffinity
     public V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecAffinityPodAntiAffinity? PodAntiAffinity { get; set; }
 }
 
+/// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersNameEnum>))]
 public enum V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersNameEnum
 {
     [EnumMember(Value = "goldmane"), JsonStringEnumMemberName("goldmane")]
     Goldmane
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -1229,8 +1291,22 @@ public partial class V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersR
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainers
 {
+    /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
     [JsonPropertyName("name")]
     public required V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersNameEnum Name { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1GoldmaneSpecGoldmaneDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>ResourceRequirements describes the compute resource requirements.</summary>
     [JsonPropertyName("resources")]

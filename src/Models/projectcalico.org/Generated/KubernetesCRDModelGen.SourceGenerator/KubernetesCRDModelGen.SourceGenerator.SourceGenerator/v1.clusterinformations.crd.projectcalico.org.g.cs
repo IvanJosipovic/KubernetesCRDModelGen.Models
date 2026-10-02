@@ -9,6 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
+/// <summary>ClusterInformation contains the cluster specific information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -35,26 +36,42 @@ public partial class V1ClusterInformationList : IKubernetesObject<V1ListMeta>, I
     public required IList<V1ClusterInformation> Items { get; set; }
 }
 
+/// <summary>
+/// ClusterInformationSpec contains the values of describing the cluster.
+/// This resource is managed automatically by Calico components and should not be modified manually.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ClusterInformationSpec
 {
+    /// <summary>CalicoVersion is the version of Calico running on the cluster, set automatically by calico/node.</summary>
     [JsonPropertyName("calicoVersion")]
     public string? CalicoVersion { get; set; }
 
+    /// <summary>ClusterGUID is the unique identifier for this cluster, generated automatically at install time.</summary>
     [JsonPropertyName("clusterGUID")]
     public string? ClusterGUID { get; set; }
 
+    /// <summary>
+    /// ClusterType describes the type of the cluster, e.g., &quot;k8s,bgp,kubeadm&quot;.
+    /// Set automatically based on the detected environment.
+    /// </summary>
     [JsonPropertyName("clusterType")]
     public string? ClusterType { get; set; }
 
+    /// <summary>
+    /// DatastoreReady is used during significant datastore migrations to signal to components
+    /// such as Felix that it should wait before accessing the datastore.
+    /// </summary>
     [JsonPropertyName("datastoreReady")]
     public bool? DatastoreReady { get; set; }
 
+    /// <summary>Variant declares which variant of Calico is active.</summary>
     [JsonPropertyName("variant")]
     public string? Variant { get; set; }
 }
 
+/// <summary>ClusterInformation contains the cluster specific information.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -76,6 +93,10 @@ public partial class V1ClusterInformation : IKubernetesObject<V1ObjectMeta>, ISp
     [JsonPropertyName("metadata")]
     public V1ObjectMeta Metadata { get; set; }
 
+    /// <summary>
+    /// ClusterInformationSpec contains the values of describing the cluster.
+    /// This resource is managed automatically by Calico components and should not be modified manually.
+    /// </summary>
     [JsonPropertyName("spec")]
     public V1ClusterInformationSpec? Spec { get; set; }
 }

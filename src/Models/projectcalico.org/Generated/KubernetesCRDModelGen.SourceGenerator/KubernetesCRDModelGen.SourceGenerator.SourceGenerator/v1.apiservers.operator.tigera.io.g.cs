@@ -1121,6 +1121,37 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecAffinity
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the API server Deployment container by name.
 /// Supported values are: calico-apiserver, tigera-queryserver, calico-l7-admission-controller
 /// </summary>
@@ -1169,6 +1200,37 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
     /// </summary>
     [JsonPropertyName("name")]
     public required V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPortsNameEnum Name { get; set; }
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -1236,6 +1298,13 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
 public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the API server Deployment container by name.
     /// Supported values are: calico-apiserver, tigera-queryserver, calico-l7-admission-controller
     /// </summary>
@@ -1249,6 +1318,13 @@ public partial class V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainer
     /// </summary>
     [JsonPropertyName("ports")]
     public IList<V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1APIServerSpecApiServerDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
@@ -2784,6 +2860,37 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecAffi
 }
 
 /// <summary>
+/// LivenessProbe allows customization of the liveness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersLivenessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
+}
+
+/// <summary>
 /// Name is an enum which identifies the calico-webhooks Deployment container by name.
 /// Supported values are: calico-webhooks
 /// </summary>
@@ -2825,6 +2932,37 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
     /// </summary>
     [JsonPropertyName("name")]
     public required V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPortsNameEnum Name { get; set; }
+}
+
+/// <summary>
+/// ReadinessProbe allows customization of the readiness probe timing parameters.
+/// The probe handler is set by the operator and cannot be overridden.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersReadinessProbe
+{
+    /// <summary>
+    /// FailureThreshold is the minimum consecutive failures for the probe
+    /// to be considered failed after having succeeded.
+    /// </summary>
+    [JsonPropertyName("failureThreshold")]
+    public int? FailureThreshold { get; set; }
+
+    /// <summary>
+    /// InitialDelaySeconds is the number of seconds after the container
+    /// starts before the probe is initiated.
+    /// </summary>
+    [JsonPropertyName("initialDelaySeconds")]
+    public int? InitialDelaySeconds { get; set; }
+
+    /// <summary>PeriodSeconds is how often (in seconds) to perform the probe.</summary>
+    [JsonPropertyName("periodSeconds")]
+    public int? PeriodSeconds { get; set; }
+
+    /// <summary>TimeoutSeconds is the number of seconds after which the probe times out.</summary>
+    [JsonPropertyName("timeoutSeconds")]
+    public int? TimeoutSeconds { get; set; }
 }
 
 /// <summary>ResourceClaim references one entry in PodSpec.ResourceClaims.</summary>
@@ -2891,6 +3029,13 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
 public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainers
 {
     /// <summary>
+    /// LivenessProbe allows customization of the liveness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("livenessProbe")]
+    public V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersLivenessProbe? LivenessProbe { get; set; }
+
+    /// <summary>
     /// Name is an enum which identifies the calico-webhooks Deployment container by name.
     /// Supported values are: calico-webhooks
     /// </summary>
@@ -2904,6 +3049,13 @@ public partial class V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecCont
     /// </summary>
     [JsonPropertyName("ports")]
     public IList<V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersPorts>? Ports { get; set; }
+
+    /// <summary>
+    /// ReadinessProbe allows customization of the readiness probe timing parameters.
+    /// The probe handler is set by the operator and cannot be overridden.
+    /// </summary>
+    [JsonPropertyName("readinessProbe")]
+    public V1APIServerSpecCalicoWebhooksDeploymentSpecTemplateSpecContainersReadinessProbe? ReadinessProbe { get; set; }
 
     /// <summary>
     /// Resources allows customization of limits and requests for compute resources such as cpu and memory.
