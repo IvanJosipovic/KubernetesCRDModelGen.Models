@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.66.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/projectcalico.org-v1.65.0...projectcalico.org-v1.66.0) (2026-10-02)
+
+
+### Features
+
+* Sync ([#164](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/164)) ([70869ef](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/70869effd5a9c84e887f4ef6e624df551745599b))
+
 ## [1.65.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/projectcalico.org-v1.64.1...projectcalico.org-v1.65.0) (2026-09-02)
 
 
