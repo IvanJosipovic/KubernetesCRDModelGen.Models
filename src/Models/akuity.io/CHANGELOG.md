@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/akuity.io-v1.5.0...akuity.io-v1.6.0) (2026-10-03)
+
+
+### Features
+
+* Sync ([#167](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/167)) ([897186f](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/897186f05f5aecd232044d6dee6d4035091ecc15))
+
 ## [1.5.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/akuity.io-v1.4.0...akuity.io-v1.5.0) (2026-09-30)
 
 
