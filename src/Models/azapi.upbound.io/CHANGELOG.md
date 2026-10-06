@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azapi.upbound.io-v1.12.0...azapi.upbound.io-v1.13.0) (2026-10-06)
+
+
+### Features
+
+* Sync ([#169](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/169)) ([d6851d6](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/d6851d6e6f8c85f7e3e4164420e85116c1460d66))
+
 ## [1.12.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azapi.upbound.io-v1.11.1...azapi.upbound.io-v1.12.0) (2026-07-13)
 
 
