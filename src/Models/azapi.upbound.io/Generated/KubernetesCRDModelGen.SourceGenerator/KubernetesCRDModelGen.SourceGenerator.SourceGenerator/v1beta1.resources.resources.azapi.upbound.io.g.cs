@@ -787,6 +787,10 @@ public partial class V1beta1ResourceStatusAtProvider
     [JsonPropertyName("identity")]
     public IList<V1beta1ResourceStatusAtProviderIdentity>? Identity { get; set; }
 
+    /// <summary>A list of paths in the resource body whose changes should be ignored.ignore_changes` when possible. Use this argument only when the paths must be derived from variables or other non-static values. Changes to this argument take effect only after an apply because its value is stored in provider-private state. Paths use dot notation, for example `properties.sku.name`. Individual list items cannot be targeted, ignore the entire list property instead. Configuration changes at an ignored path will not be sent to Azure until that path is removed from this list.11 or later.</summary>
+    [JsonPropertyName("ignoreBodyChanges")]
+    public IList<string>? IgnoreBodyChanges { get; set; }
+
     /// <summary>Whether ignore incorrect casing returned in body to suppress plan-diff. Defaults to false.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
@@ -958,6 +962,15 @@ public partial class V1beta1ResourceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResourceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

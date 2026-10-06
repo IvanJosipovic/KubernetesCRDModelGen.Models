@@ -63,7 +63,7 @@ public partial class V1beta2ResourceSpecForProviderIdentity
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>The Type of Identity which should be used for this azure resource. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned,UserAssigned`</summary>
+    /// <summary>The Type of Identity which should be used for this azure resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -76,19 +76,19 @@ public partial class V1beta2ResourceSpecForProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -117,21 +117,19 @@ public partial class V1beta2ResourceSpecForProvider
     [JsonPropertyName("deleteQueryParameters")]
     public IDictionary<string, IList<string>>? DeleteQueryParameters { get; set; }
 
+    /// <summary>The identity of this resource.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta2ResourceSpecForProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
-    /// <summary>
-    /// When set to `true`, the provider will ignore properties whose values are `null` in the `body`.
-    /// These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output. Defaults to `false`.
-    /// </summary>
+    /// <summary>When set to `true`, the provider will ignore properties whose values are `null` in the `body`. These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output.</summary>
     [JsonPropertyName("ignoreNullProperty")]
     public bool? IgnoreNullProperty { get; set; }
 
@@ -151,7 +149,7 @@ public partial class V1beta2ResourceSpecForProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the name of the azure resource. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name of the azure resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -214,11 +212,11 @@ public partial class V1beta2ResourceSpecForProvider
     [JsonPropertyName("retry")]
     public V1beta2ResourceSpecForProviderRetry? Retry { get; set; }
 
-    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema. Defaults to `true`.</summary>
+    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema.</summary>
     [JsonPropertyName("schemaValidationEnabled")]
     public bool? SchemaValidationEnabled { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -251,7 +249,7 @@ public partial class V1beta2ResourceSpecInitProviderIdentity
     [JsonPropertyName("identityIds")]
     public IList<string>? IdentityIds { get; set; }
 
-    /// <summary>The Type of Identity which should be used for this azure resource. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned,UserAssigned`</summary>
+    /// <summary>The Type of Identity which should be used for this azure resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -264,19 +262,19 @@ public partial class V1beta2ResourceSpecInitProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -317,21 +315,19 @@ public partial class V1beta2ResourceSpecInitProvider
     [JsonPropertyName("deleteQueryParameters")]
     public IDictionary<string, IList<string>>? DeleteQueryParameters { get; set; }
 
+    /// <summary>The identity of this resource.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta2ResourceSpecInitProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
-    /// <summary>
-    /// When set to `true`, the provider will ignore properties whose values are `null` in the `body`.
-    /// These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output. Defaults to `false`.
-    /// </summary>
+    /// <summary>When set to `true`, the provider will ignore properties whose values are `null` in the `body`. These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output.</summary>
     [JsonPropertyName("ignoreNullProperty")]
     public bool? IgnoreNullProperty { get; set; }
 
@@ -351,7 +347,7 @@ public partial class V1beta2ResourceSpecInitProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the name of the azure resource. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name of the azure resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -414,11 +410,11 @@ public partial class V1beta2ResourceSpecInitProvider
     [JsonPropertyName("retry")]
     public V1beta2ResourceSpecInitProviderRetry? Retry { get; set; }
 
-    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema. Defaults to `true`.</summary>
+    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema.</summary>
     [JsonPropertyName("schemaValidationEnabled")]
     public bool? SchemaValidationEnabled { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -642,7 +638,7 @@ public partial class V1beta2ResourceStatusAtProviderIdentity
     [JsonPropertyName("tenantId")]
     public string? TenantId { get; set; }
 
-    /// <summary>The Type of Identity which should be used for this azure resource. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned,UserAssigned`</summary>
+    /// <summary>The Type of Identity which should be used for this azure resource.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 }
@@ -655,19 +651,19 @@ public partial class V1beta2ResourceStatusAtProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -699,21 +695,23 @@ public partial class V1beta2ResourceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>The identity of this resource.</summary>
     [JsonPropertyName("identity")]
     public IList<V1beta2ResourceStatusAtProviderIdentity>? Identity { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>A list of paths in the resource body whose changes should be ignored.ignore_changes` when possible. Use this argument only when the paths must be derived from variables or other non-static values. Changes to this argument take effect only after an apply because its value is stored in provider-private state. Paths use dot notation, for example `properties.sku.name`. Individual list items cannot be targeted, ignore the entire list property instead. Configuration changes at an ignored path will not be sent to Azure until that path is removed from this list.11 or later.</summary>
+    [JsonPropertyName("ignoreBodyChanges")]
+    public IList<string>? IgnoreBodyChanges { get; set; }
+
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
-    /// <summary>
-    /// When set to `true`, the provider will ignore properties whose values are `null` in the `body`.
-    /// These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output. Defaults to `false`.
-    /// </summary>
+    /// <summary>When set to `true`, the provider will ignore properties whose values are `null` in the `body`. These properties will not be included in the request body sent to the API, and the difference will not be shown in the plan output.</summary>
     [JsonPropertyName("ignoreNullProperty")]
     public bool? IgnoreNullProperty { get; set; }
 
@@ -733,7 +731,7 @@ public partial class V1beta2ResourceStatusAtProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the name of the azure resource. Changing this forces a new resource to be created.</summary>
+    /// <summary>Specifies the name of the azure resource.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
@@ -811,11 +809,11 @@ public partial class V1beta2ResourceStatusAtProvider
     [JsonPropertyName("retry")]
     public V1beta2ResourceStatusAtProviderRetry? Retry { get; set; }
 
-    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema. Defaults to `true`.</summary>
+    /// <summary>Whether enabled the validation on `type` and `body` with embedded schema.</summary>
     [JsonPropertyName("schemaValidationEnabled")]
     public bool? SchemaValidationEnabled { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -894,6 +892,15 @@ public partial class V1beta2ResourceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2ResourceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

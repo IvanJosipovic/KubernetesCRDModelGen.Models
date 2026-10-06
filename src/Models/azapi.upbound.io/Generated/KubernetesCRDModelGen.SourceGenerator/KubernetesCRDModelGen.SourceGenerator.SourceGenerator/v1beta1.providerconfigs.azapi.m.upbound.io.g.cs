@@ -97,7 +97,9 @@ public enum V1beta1ProviderConfigSpecCredentialsSourceEnum
     [EnumMember(Value = "Environment"), JsonStringEnumMemberName("Environment")]
     Environment,
     [EnumMember(Value = "Filesystem"), JsonStringEnumMemberName("Filesystem")]
-    Filesystem
+    Filesystem,
+    [EnumMember(Value = "OIDCTokenFile"), JsonStringEnumMemberName("OIDCTokenFile")]
+    OIDCTokenFile
 }
 
 /// <summary>Credentials required to authenticate to this provider.</summary>
@@ -136,9 +138,56 @@ public partial class V1beta1ProviderConfigSpecCredentials
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProviderConfigSpec
 {
+    /// <summary>
+    /// ClientID is the client ID of the Azure AD application to use.
+    /// Required if Credentials.Source is OIDCTokenFile.
+    /// </summary>
+    [JsonPropertyName("clientID")]
+    public string? ClientID { get; set; }
+
     /// <summary>Credentials required to authenticate to this provider.</summary>
     [JsonPropertyName("credentials")]
     public required V1beta1ProviderConfigSpecCredentials Credentials { get; set; }
+
+    /// <summary>
+    /// Environment is the Azure Cloud Environment to use. One of &quot;public&quot;,
+    /// &quot;usgovernment&quot;, &quot;china&quot;, &quot;custom&quot;. Defaults to &quot;public&quot;.
+    /// Note: &quot;custom&quot; additionally requires ARM_ACTIVE_DIRECTORY_AUTHORITY_HOST,
+    /// ARM_RESOURCE_MANAGER_ENDPOINT, and ARM_RESOURCE_MANAGER_AUDIENCE
+    /// environment variables on the provider deployment, which this API does
+    /// not expose directly.
+    /// </summary>
+    [JsonPropertyName("environment")]
+    public string? Environment { get; set; }
+
+    /// <summary>
+    /// OidcTokenFilePath is the path to the file containing the OIDC/federated
+    /// identity token, projected into the pod by the Workload Identity
+    /// mutating webhook. Only used if Credentials.Source is OIDCTokenFile.
+    /// If unset, the AZURE_FEDERATED_TOKEN_FILE environment variable is used,
+    /// which the Azure Workload Identity webhook sets to the path it projected
+    /// the token to. If that is also unset, it defaults to
+    /// &quot;/var/run/secrets/azure/tokens/azure-identity-token&quot;.
+    /// </summary>
+    [JsonPropertyName("oidcTokenFilePath")]
+    public string? OidcTokenFilePath { get; set; }
+
+    /// <summary>
+    /// SubscriptionID is the Azure subscription ID to use. If unset, and
+    /// Credentials.Source is Secret/Environment/Filesystem, the subscription ID
+    /// from the extracted credentials is used instead. Required for
+    /// OIDCTokenFile if the underlying resources need it and no default
+    /// subscription can be resolved another way.
+    /// </summary>
+    [JsonPropertyName("subscriptionID")]
+    public string? SubscriptionID { get; set; }
+
+    /// <summary>
+    /// TenantID is the Azure AD tenant ID to use.
+    /// Required if Credentials.Source is OIDCTokenFile.
+    /// </summary>
+    [JsonPropertyName("tenantID")]
+    public string? TenantID { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

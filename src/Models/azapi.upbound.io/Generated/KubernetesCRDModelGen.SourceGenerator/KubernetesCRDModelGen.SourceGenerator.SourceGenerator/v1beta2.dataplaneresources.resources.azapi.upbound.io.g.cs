@@ -63,19 +63,19 @@ public partial class V1beta2DataPlaneResourceSpecForProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -108,7 +108,7 @@ public partial class V1beta2DataPlaneResourceSpecForProvider
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -167,7 +167,7 @@ public partial class V1beta2DataPlaneResourceSpecForProvider
     [JsonPropertyName("retry")]
     public V1beta2DataPlaneResourceSpecForProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -175,7 +175,7 @@ public partial class V1beta2DataPlaneResourceSpecForProvider
     [JsonPropertyName("sensitiveBodyVersion")]
     public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
 
-    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource.</summary>
+    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource. For a list of supported data plane resource types, see the [Available Resources](https://registry.io/providers/Azure/azapi/latest/docs/resources/data_plane_resource#available-resources) documentation.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -196,19 +196,19 @@ public partial class V1beta2DataPlaneResourceSpecInitProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -253,7 +253,7 @@ public partial class V1beta2DataPlaneResourceSpecInitProvider
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -312,7 +312,7 @@ public partial class V1beta2DataPlaneResourceSpecInitProvider
     [JsonPropertyName("retry")]
     public V1beta2DataPlaneResourceSpecInitProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -320,7 +320,7 @@ public partial class V1beta2DataPlaneResourceSpecInitProvider
     [JsonPropertyName("sensitiveBodyVersion")]
     public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
 
-    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource.</summary>
+    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource. For a list of supported data plane resource types, see the [Available Resources](https://registry.io/providers/Azure/azapi/latest/docs/resources/data_plane_resource#available-resources) documentation.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -524,19 +524,19 @@ public partial class V1beta2DataPlaneResourceStatusAtProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -572,7 +572,7 @@ public partial class V1beta2DataPlaneResourceStatusAtProvider
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -646,7 +646,7 @@ public partial class V1beta2DataPlaneResourceStatusAtProvider
     [JsonPropertyName("retry")]
     public V1beta2DataPlaneResourceStatusAtProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -654,7 +654,7 @@ public partial class V1beta2DataPlaneResourceStatusAtProvider
     [JsonPropertyName("sensitiveBodyVersion")]
     public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
 
-    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource.</summary>
+    /// <summary>In a format like `&lt;resource-type&gt;@&lt;api-version&gt;`. `&lt;resource-type&gt;` is the Azure resource type, for example, `Microsoft.Storage/storageAccounts`. `&lt;api-version&gt;` is version of the API used to manage this azure resource. For a list of supported data plane resource types, see the [Available Resources](https://registry.io/providers/Azure/azapi/latest/docs/resources/data_plane_resource#available-resources) documentation.</summary>
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
@@ -721,6 +721,15 @@ public partial class V1beta2DataPlaneResourceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta2DataPlaneResourceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

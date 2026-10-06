@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azapi.upbound.io;
-/// <summary>UpdateResource is the Schema for the UpdateResources API. This resource can manage a subset of any existing Azure resource manager resource&apos;s properties. -&gt; Note This resource is used to add or modify properties on an existing resource. When azapi_update_resource is deleted, no operation will be performed, and these properties will stay unchanged. If you want to restore the modified properties to some values, you must apply the restored properties before deleting.</summary>
+/// <summary>UpdateResource is the Schema for the UpdateResources API. This resource can manage a subset of any existing Azure resource manager resource&apos;s properties.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -57,25 +57,38 @@ public enum V1beta2UpdateResourceSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2UpdateResourceSpecForProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UpdateResourceSpecForProviderRetry
 {
     /// <summary>A list of regular expressions to match against error messages. If any of the regular expressions match, the request will be retried.</summary>
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -88,11 +101,11 @@ public partial class V1beta2UpdateResourceSpecForProvider
     [JsonPropertyName("body")]
     public JsonNode? Body { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -131,6 +144,9 @@ public partial class V1beta2UpdateResourceSpecForProvider
     /// <summary>A mapping of headers to be sent with the read request.</summary>
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
+
+    [JsonPropertyName("readOverride")]
+    public V1beta2UpdateResourceSpecForProviderReadOverride? ReadOverride { get; set; }
 
     /// <summary>A mapping of query parameters to be sent with the read request.</summary>
     [JsonPropertyName("readQueryParameters")]
@@ -175,7 +191,7 @@ public partial class V1beta2UpdateResourceSpecForProvider
     [JsonPropertyName("retry")]
     public V1beta2UpdateResourceSpecForProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -198,25 +214,38 @@ public partial class V1beta2UpdateResourceSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2UpdateResourceSpecInitProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UpdateResourceSpecInitProviderRetry
 {
     /// <summary>A list of regular expressions to match against error messages. If any of the regular expressions match, the request will be retried.</summary>
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -241,11 +270,11 @@ public partial class V1beta2UpdateResourceSpecInitProvider
     [JsonPropertyName("body")]
     public JsonNode? Body { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -284,6 +313,9 @@ public partial class V1beta2UpdateResourceSpecInitProvider
     /// <summary>A mapping of headers to be sent with the read request.</summary>
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
+
+    [JsonPropertyName("readOverride")]
+    public V1beta2UpdateResourceSpecInitProviderReadOverride? ReadOverride { get; set; }
 
     /// <summary>A mapping of query parameters to be sent with the read request.</summary>
     [JsonPropertyName("readQueryParameters")]
@@ -328,7 +360,7 @@ public partial class V1beta2UpdateResourceSpecInitProvider
     [JsonPropertyName("retry")]
     public V1beta2UpdateResourceSpecInitProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -534,25 +566,38 @@ public partial class V1beta2UpdateResourceSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2UpdateResourceStatusAtProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2UpdateResourceStatusAtProviderRetry
 {
     /// <summary>A list of regular expressions to match against error messages. If any of the regular expressions match, the request will be retried.</summary>
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -568,11 +613,11 @@ public partial class V1beta2UpdateResourceStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
-    /// <summary>Whether ignore the casing of the property names in the response body. Defaults to `false`.</summary>
+    /// <summary>Whether ignore the casing of the property names in the response body.</summary>
     [JsonPropertyName("ignoreCasing")]
     public bool? IgnoreCasing { get; set; }
 
-    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. Defaults to `true`. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
+    /// <summary>Whether ignore not returned properties like credentials in `body` to suppress plan-diff. It&apos;s recommend to enable this option when some sensitive properties are not returned in response body, instead of setting them in `lifecycle.ignore_changes` because it will make the sensitive fields unable to update.</summary>
     [JsonPropertyName("ignoreMissingProperty")]
     public bool? IgnoreMissingProperty { get; set; }
 
@@ -627,6 +672,9 @@ public partial class V1beta2UpdateResourceStatusAtProvider
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
 
+    [JsonPropertyName("readOverride")]
+    public V1beta2UpdateResourceStatusAtProviderReadOverride? ReadOverride { get; set; }
+
     /// <summary>A mapping of query parameters to be sent with the read request.</summary>
     [JsonPropertyName("readQueryParameters")]
     public IDictionary<string, IList<string>>? ReadQueryParameters { get; set; }
@@ -670,7 +718,7 @@ public partial class V1beta2UpdateResourceStatusAtProvider
     [JsonPropertyName("retry")]
     public V1beta2UpdateResourceStatusAtProviderRetry? Retry { get; set; }
 
-    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body. If a property is defined in both `body` and `sensitive_body`, the `sensitive_body` value takes precedence.</summary>
     [JsonPropertyName("sensitiveBody")]
     public JsonNode? SensitiveBody { get; set; }
 
@@ -747,6 +795,15 @@ public partial class V1beta2UpdateResourceStatus
     public IList<V1beta2UpdateResourceStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -755,7 +812,7 @@ public partial class V1beta2UpdateResourceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UpdateResource is the Schema for the UpdateResources API. This resource can manage a subset of any existing Azure resource manager resource&apos;s properties. -&gt; Note This resource is used to add or modify properties on an existing resource. When azapi_update_resource is deleted, no operation will be performed, and these properties will stay unchanged. If you want to restore the modified properties to some values, you must apply the restored properties before deleting.</summary>
+/// <summary>UpdateResource is the Schema for the UpdateResources API. This resource can manage a subset of any existing Azure resource manager resource&apos;s properties.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
