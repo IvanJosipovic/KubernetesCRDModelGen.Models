@@ -60,6 +60,20 @@ public enum V1beta1UpdateResourceSpecDeletionPolicyEnum
     Delete
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
+public partial class V1beta1UpdateResourceSpecForProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -146,6 +160,9 @@ public partial class V1beta1UpdateResourceSpecForProvider
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
 
+    [JsonPropertyName("readOverride")]
+    public V1beta1UpdateResourceSpecForProviderReadOverride? ReadOverride { get; set; }
+
     /// <summary>
     /// (Map of List of String) A mapping of query parameters to be sent with the read request.
     /// A mapping of query parameters to be sent with the read request.
@@ -203,6 +220,20 @@ public partial class V1beta1UpdateResourceSpecForProvider
     /// </summary>
     [JsonPropertyName("updateQueryParameters")]
     public IDictionary<string, IList<string>>? UpdateQueryParameters { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
+public partial class V1beta1UpdateResourceSpecInitProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
 }
 
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
@@ -302,6 +333,9 @@ public partial class V1beta1UpdateResourceSpecInitProvider
     /// </summary>
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
+
+    [JsonPropertyName("readOverride")]
+    public V1beta1UpdateResourceSpecInitProviderReadOverride? ReadOverride { get; set; }
 
     /// <summary>
     /// (Map of List of String) A mapping of query parameters to be sent with the read request.
@@ -552,6 +586,20 @@ public partial class V1beta1UpdateResourceSpec
     public V1beta1UpdateResourceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
+public partial class V1beta1UpdateResourceStatusAtProviderReadOverride
+{
+    /// <summary>The name of the action appended to the resource ID, for example `list`.</summary>
+    [JsonPropertyName("action")]
+    public string? Action { get; set; }
+
+    /// <summary>The HTTP method used to read the resource. The only supported value is `POST`.</summary>
+    [JsonPropertyName("method")]
+    public string? Method { get; set; }
+}
+
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -645,6 +693,9 @@ public partial class V1beta1UpdateResourceStatusAtProvider
     /// </summary>
     [JsonPropertyName("readHeaders")]
     public IDictionary<string, string>? ReadHeaders { get; set; }
+
+    [JsonPropertyName("readOverride")]
+    public V1beta1UpdateResourceStatusAtProviderReadOverride? ReadOverride { get; set; }
 
     /// <summary>
     /// (Map of List of String) A mapping of query parameters to be sent with the read request.
@@ -761,6 +812,15 @@ public partial class V1beta1UpdateResourceStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1UpdateResourceStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

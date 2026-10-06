@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azapi.m.upbound.io;
-/// <summary>ResourceAction is the Schema for the ResourceActions API. This resource allows you to perform an action on an existing Azure resource.g., starting or stopping an Azure Virtual Machine.	Please note that when deleting this resource, no action will be performed on the Azure resource unless the when argument is set to destroy.</summary>
+/// <summary>ResourceAction is the Schema for the ResourceActions API. This resource allows you to perform an action on an existing Azure resource.g., starting or stopping an Azure Virtual Machine. Please note that when deleting this resource, no action will be performed on the Azure resource unless the</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -44,19 +44,19 @@ public partial class V1beta1ResourceActionSpecForProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -73,7 +73,7 @@ public partial class V1beta1ResourceActionSpecForProvider
     [JsonPropertyName("body")]
     public JsonNode? Body { get; set; }
 
-    /// <summary>A map of headers to include in the request</summary>
+    /// <summary>A map of headers to include in the request.</summary>
     [JsonPropertyName("headers")]
     public IDictionary<string, string>? Headers { get; set; }
 
@@ -85,11 +85,11 @@ public partial class V1beta1ResourceActionSpecForProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the HTTP method of the azure resource action. Allowed values are `POST`, `PATCH`, `PUT` and `DELETE`. Defaults to `POST`.</summary>
+    /// <summary>Specifies the HTTP method of the azure resource action.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>A map of query parameters to include in the request</summary>
+    /// <summary>A map of query parameters to include in the request.</summary>
     [JsonPropertyName("queryParameters")]
     public IDictionary<string, IList<string>>? QueryParameters { get; set; }
 
@@ -168,7 +168,7 @@ public partial class V1beta1ResourceActionSpecForProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>When to perform the action, value must be one of: `apply`, `destroy`. Default is `apply`.</summary>
+    /// <summary>When to perform the action.</summary>
     [JsonPropertyName("when")]
     public string? When { get; set; }
 }
@@ -181,19 +181,19 @@ public partial class V1beta1ResourceActionSpecInitProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -222,7 +222,7 @@ public partial class V1beta1ResourceActionSpecInitProvider
     [JsonPropertyName("body")]
     public JsonNode? Body { get; set; }
 
-    /// <summary>A map of headers to include in the request</summary>
+    /// <summary>A map of headers to include in the request.</summary>
     [JsonPropertyName("headers")]
     public IDictionary<string, string>? Headers { get; set; }
 
@@ -234,11 +234,11 @@ public partial class V1beta1ResourceActionSpecInitProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the HTTP method of the azure resource action. Allowed values are `POST`, `PATCH`, `PUT` and `DELETE`. Defaults to `POST`.</summary>
+    /// <summary>Specifies the HTTP method of the azure resource action.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
-    /// <summary>A map of query parameters to include in the request</summary>
+    /// <summary>A map of query parameters to include in the request.</summary>
     [JsonPropertyName("queryParameters")]
     public IDictionary<string, IList<string>>? QueryParameters { get; set; }
 
@@ -317,7 +317,7 @@ public partial class V1beta1ResourceActionSpecInitProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>When to perform the action, value must be one of: `apply`, `destroy`. Default is `apply`.</summary>
+    /// <summary>When to perform the action.</summary>
     [JsonPropertyName("when")]
     public string? When { get; set; }
 }
@@ -437,19 +437,19 @@ public partial class V1beta1ResourceActionStatusAtProviderRetry
     [JsonPropertyName("errorMessageRegex")]
     public IList<string>? ErrorMessageRegex { get; set; }
 
-    /// <summary>The base number of seconds to wait between retries. Default is `10`.</summary>
+    /// <summary>The base number of seconds to wait between retries.</summary>
     [JsonPropertyName("intervalSeconds")]
     public double? IntervalSeconds { get; set; }
 
-    /// <summary>The maximum number of seconds to wait between retries. Default is `180`.</summary>
+    /// <summary>The maximum number of seconds to wait between retries.</summary>
     [JsonPropertyName("maxIntervalSeconds")]
     public double? MaxIntervalSeconds { get; set; }
 
-    /// <summary>The multiplier to apply to the interval between retries. Default is `1.5`.</summary>
+    /// <summary>The multiplier to apply to the interval between retries.</summary>
     [JsonPropertyName("multiplier")]
     public double? Multiplier { get; set; }
 
-    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization. Default is `0.5`.</summary>
+    /// <summary>The randomization factor to apply to the interval between retries. The formula for the randomized interval is: `RetryInterval * (random value in range [1 - RandomizationFactor, 1 + RandomizationFactor])`. Therefore set to zero `0.0` for no randomization.</summary>
     [JsonPropertyName("randomizationFactor")]
     public double? RandomizationFactor { get; set; }
 }
@@ -470,7 +470,7 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("exist")]
     public bool? Exist { get; set; }
 
-    /// <summary>A map of headers to include in the request</summary>
+    /// <summary>A map of headers to include in the request.</summary>
     [JsonPropertyName("headers")]
     public IDictionary<string, string>? Headers { get; set; }
 
@@ -485,7 +485,7 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("locks")]
     public IList<string>? Locks { get; set; }
 
-    /// <summary>Specifies the HTTP method of the azure resource action. Allowed values are `POST`, `PATCH`, `PUT` and `DELETE`. Defaults to `POST`.</summary>
+    /// <summary>Specifies the HTTP method of the azure resource action.</summary>
     [JsonPropertyName("method")]
     public string? Method { get; set; }
 
@@ -504,7 +504,7 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("output")]
     public JsonNode? Output { get; set; }
 
-    /// <summary>A map of query parameters to include in the request</summary>
+    /// <summary>A map of query parameters to include in the request.</summary>
     [JsonPropertyName("queryParameters")]
     public IDictionary<string, IList<string>>? QueryParameters { get; set; }
 
@@ -547,6 +547,10 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("retry")]
     public V1beta1ResourceActionStatusAtProviderRetry? Retry { get; set; }
 
+    /// <summary>A map where the key is the path to the property in `sensitive_body` and the value is the version of the property. The key is a string in the format of `path.to.property[index].subproperty`, where `index` is the index of the item in an array. When the version is changed, the property will be included in the request body, otherwise it will be omitted from the request body.</summary>
+    [JsonPropertyName("sensitiveBodyVersion")]
+    public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
+
     /// <summary>
     /// The attribute can accept either a list or a map.
     /// 
@@ -583,7 +587,7 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("type")]
     public string? Type { get; set; }
 
-    /// <summary>When to perform the action, value must be one of: `apply`, `destroy`. Default is `apply`.</summary>
+    /// <summary>When to perform the action.</summary>
     [JsonPropertyName("when")]
     public string? When { get; set; }
 }
@@ -644,6 +648,15 @@ public partial class V1beta1ResourceActionStatus
     public IList<V1beta1ResourceActionStatusConditions>? Conditions { get; set; }
 
     /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
+
+    /// <summary>
     /// ObservedGeneration is the latest metadata.generation
     /// which resulted in either a ready state, or stalled due to error
     /// it can not recover from without human intervention.
@@ -652,7 +665,7 @@ public partial class V1beta1ResourceActionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ResourceAction is the Schema for the ResourceActions API. This resource allows you to perform an action on an existing Azure resource.g., starting or stopping an Azure Virtual Machine.	Please note that when deleting this resource, no action will be performed on the Azure resource unless the when argument is set to destroy.</summary>
+/// <summary>ResourceAction is the Schema for the ResourceActions API. This resource allows you to perform an action on an existing Azure resource.g., starting or stopping an Azure Virtual Machine. Please note that when deleting this resource, no action will be performed on the Azure resource unless the</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

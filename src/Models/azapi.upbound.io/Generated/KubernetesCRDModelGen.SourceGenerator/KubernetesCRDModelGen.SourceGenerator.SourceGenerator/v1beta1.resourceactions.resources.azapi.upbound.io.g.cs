@@ -661,6 +661,10 @@ public partial class V1beta1ResourceActionStatusAtProvider
     [JsonPropertyName("retry")]
     public V1beta1ResourceActionStatusAtProviderRetry? Retry { get; set; }
 
+    /// <summary>A map where the key is the path to the property in `sensitive_body` and the value is the version of the property. The key is a string in the format of `path.to.property[index].subproperty`, where `index` is the index of the item in an array. When the version is changed, the property will be included in the request body, otherwise it will be omitted from the request body.</summary>
+    [JsonPropertyName("sensitiveBodyVersion")]
+    public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
+
     /// <summary>
     /// (Dynamic) The attribute can accept either a list or a map.
     /// The attribute can accept either a list or a map.
@@ -765,6 +769,15 @@ public partial class V1beta1ResourceActionStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1beta1ResourceActionStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
