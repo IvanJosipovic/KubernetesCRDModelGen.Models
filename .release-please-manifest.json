@@ -16,7 +16,7 @@
   "src/Models/github.upbound.io": "1.11.0",
   "src/Models/helm.crossplane.io": "1.18.0",
   "src/Models/http.crossplane.io": "1.13.0",
-  "src/Models/kubernetes.crossplane.io": "1.12.0",
+  "src/Models/kubernetes.crossplane.io": "1.13.0",
   "src/Models/opentofu.upbound.io": "1.8.1",
   "src/Models/tf.upbound.io": "1.9.0",
   "src/Models/upbound.io": "1.8.0",
