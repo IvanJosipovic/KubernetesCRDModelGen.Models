@@ -563,6 +563,33 @@ public partial class V1beta1TemplateSpecForProviderFilterConfig
 }
 
 /// <summary>
+/// Selects the filter version to use for this template. Set exactly one of
+/// &apos;alias&apos; or &apos;version&apos;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TemplateSpecForProviderTemplateMetadataFilterVersionSelector
+{
+    /// <summary>
+    /// A predefined filter version alias. The template automatically follows the
+    /// version this alias points to.
+    /// Possible values:
+    /// FILTER_VERSION_ALIAS_STABLE
+    /// FILTER_VERSION_ALIAS_LATEST
+    /// </summary>
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
+    /// <summary>
+    /// Pins the template to a specific, immutable filter version. Expected
+    /// format is a case-sensitive string such as &apos;v1&apos; or &apos;v2&apos;.
+    /// </summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
 /// Metadata to enable multi language detection via template.
 /// Structure is documented below.
 /// </summary>
@@ -618,6 +645,14 @@ public partial class V1beta1TemplateSpecForProviderTemplateMetadata
     /// </summary>
     [JsonPropertyName("enforcementType")]
     public string? EnforcementType { get; set; }
+
+    /// <summary>
+    /// Selects the filter version to use for this template. Set exactly one of
+    /// &apos;alias&apos; or &apos;version&apos;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("filterVersionSelector")]
+    public V1beta1TemplateSpecForProviderTemplateMetadataFilterVersionSelector? FilterVersionSelector { get; set; }
 
     /// <summary>If true, partial detector failures should be ignored.</summary>
     [JsonPropertyName("ignorePartialInvocationFailures")]
@@ -1204,6 +1239,33 @@ public partial class V1beta1TemplateSpecInitProviderFilterConfig
 }
 
 /// <summary>
+/// Selects the filter version to use for this template. Set exactly one of
+/// &apos;alias&apos; or &apos;version&apos;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TemplateSpecInitProviderTemplateMetadataFilterVersionSelector
+{
+    /// <summary>
+    /// A predefined filter version alias. The template automatically follows the
+    /// version this alias points to.
+    /// Possible values:
+    /// FILTER_VERSION_ALIAS_STABLE
+    /// FILTER_VERSION_ALIAS_LATEST
+    /// </summary>
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
+    /// <summary>
+    /// Pins the template to a specific, immutable filter version. Expected
+    /// format is a case-sensitive string such as &apos;v1&apos; or &apos;v2&apos;.
+    /// </summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
 /// Metadata to enable multi language detection via template.
 /// Structure is documented below.
 /// </summary>
@@ -1259,6 +1321,14 @@ public partial class V1beta1TemplateSpecInitProviderTemplateMetadata
     /// </summary>
     [JsonPropertyName("enforcementType")]
     public string? EnforcementType { get; set; }
+
+    /// <summary>
+    /// Selects the filter version to use for this template. Set exactly one of
+    /// &apos;alias&apos; or &apos;version&apos;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("filterVersionSelector")]
+    public V1beta1TemplateSpecInitProviderTemplateMetadataFilterVersionSelector? FilterVersionSelector { get; set; }
 
     /// <summary>If true, partial detector failures should be ignored.</summary>
     [JsonPropertyName("ignorePartialInvocationFailures")]
@@ -1634,6 +1704,33 @@ public partial class V1beta1TemplateStatusAtProviderFilterConfig
 }
 
 /// <summary>
+/// Selects the filter version to use for this template. Set exactly one of
+/// &apos;alias&apos; or &apos;version&apos;.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1TemplateStatusAtProviderTemplateMetadataFilterVersionSelector
+{
+    /// <summary>
+    /// A predefined filter version alias. The template automatically follows the
+    /// version this alias points to.
+    /// Possible values:
+    /// FILTER_VERSION_ALIAS_STABLE
+    /// FILTER_VERSION_ALIAS_LATEST
+    /// </summary>
+    [JsonPropertyName("alias")]
+    public string? Alias { get; set; }
+
+    /// <summary>
+    /// Pins the template to a specific, immutable filter version. Expected
+    /// format is a case-sensitive string such as &apos;v1&apos; or &apos;v2&apos;.
+    /// </summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+/// <summary>
 /// Metadata to enable multi language detection via template.
 /// Structure is documented below.
 /// </summary>
@@ -1690,6 +1787,14 @@ public partial class V1beta1TemplateStatusAtProviderTemplateMetadata
     [JsonPropertyName("enforcementType")]
     public string? EnforcementType { get; set; }
 
+    /// <summary>
+    /// Selects the filter version to use for this template. Set exactly one of
+    /// &apos;alias&apos; or &apos;version&apos;.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("filterVersionSelector")]
+    public V1beta1TemplateStatusAtProviderTemplateMetadataFilterVersionSelector? FilterVersionSelector { get; set; }
+
     /// <summary>If true, partial detector failures should be ignored.</summary>
     [JsonPropertyName("ignorePartialInvocationFailures")]
     public bool? IgnorePartialInvocationFailures { get; set; }
@@ -1718,6 +1823,10 @@ public partial class V1beta1TemplateStatusAtProvider
     [JsonPropertyName("createTime")]
     public string? CreateTime { get; set; }
 
+    /// <summary>
+    /// Defaults to DELETE.
+    /// When set to &quot;DELETE&quot;, deleting the resource is allowed.
+    /// </summary>
     [JsonPropertyName("deletionPolicy")]
     public string? DeletionPolicy { get; set; }
 

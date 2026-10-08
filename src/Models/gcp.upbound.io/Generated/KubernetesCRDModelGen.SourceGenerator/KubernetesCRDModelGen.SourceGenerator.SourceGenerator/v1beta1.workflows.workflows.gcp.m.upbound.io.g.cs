@@ -277,7 +277,10 @@ public partial class V1beta1WorkflowSpecForProvider
     [JsonPropertyName("serviceAccountSelector")]
     public V1beta1WorkflowSpecForProviderServiceAccountSelector? ServiceAccountSelector { get; set; }
 
-    /// <summary>Workflow code to be executed. The size limit is 128KB.</summary>
+    /// <summary>
+    /// Workflow code to be executed. The size limit is 128KB.
+    /// ~&gt; Warning: This field is currently optional but will become REQUIRED in version 8.0.0 of the provider to align with API constraints.
+    /// </summary>
     [JsonPropertyName("sourceContents")]
     public string? SourceContents { get; set; }
 
@@ -547,7 +550,10 @@ public partial class V1beta1WorkflowSpecInitProvider
     [JsonPropertyName("serviceAccountSelector")]
     public V1beta1WorkflowSpecInitProviderServiceAccountSelector? ServiceAccountSelector { get; set; }
 
-    /// <summary>Workflow code to be executed. The size limit is 128KB.</summary>
+    /// <summary>
+    /// Workflow code to be executed. The size limit is 128KB.
+    /// ~&gt; Warning: This field is currently optional but will become REQUIRED in version 8.0.0 of the provider to align with API constraints.
+    /// </summary>
     [JsonPropertyName("sourceContents")]
     public string? SourceContents { get; set; }
 
@@ -772,7 +778,10 @@ public partial class V1beta1WorkflowStatusAtProvider
     [JsonPropertyName("serviceAccount")]
     public string? ServiceAccount { get; set; }
 
-    /// <summary>Workflow code to be executed. The size limit is 128KB.</summary>
+    /// <summary>
+    /// Workflow code to be executed. The size limit is 128KB.
+    /// ~&gt; Warning: This field is currently optional but will become REQUIRED in version 8.0.0 of the provider to align with API constraints.
+    /// </summary>
     [JsonPropertyName("sourceContents")]
     public string? SourceContents { get; set; }
 

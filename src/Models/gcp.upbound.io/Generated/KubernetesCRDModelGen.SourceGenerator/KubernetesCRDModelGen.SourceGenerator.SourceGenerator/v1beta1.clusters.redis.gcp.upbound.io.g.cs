@@ -795,6 +795,10 @@ public partial class V1beta1ClusterSpecForProviderZoneDistributionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProvider
 {
+    /// <summary>Optional. The name of the ACL policy to attach to the cluster.</summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
     /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
@@ -1706,6 +1710,10 @@ public partial class V1beta1ClusterSpecInitProviderZoneDistributionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProvider
 {
+    /// <summary>Optional. The name of the ACL policy to attach to the cluster.</summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
     /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
@@ -2591,6 +2599,10 @@ public partial class V1beta1ClusterStatusAtProviderZoneDistributionConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProvider
 {
+    /// <summary>Optional. The name of the ACL policy to attach to the cluster.</summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
     /// <summary>
     /// Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster.
     /// Default value is AUTH_MODE_DISABLED.
@@ -2670,6 +2682,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{region}}/clusters/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Optional. Whether the ACL policy is in sync with the cluster.</summary>
+    [JsonPropertyName("isAclPolicyInSync")]
+    public bool? IsAclPolicyInSync { get; set; }
 
     /// <summary>The KMS key used to encrypt the at-rest data of the cluster.</summary>
     [JsonPropertyName("kmsKey")]

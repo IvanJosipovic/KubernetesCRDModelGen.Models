@@ -445,6 +445,9 @@ public partial class V1beta1CertificateSpecForProviderSelfManagedPrivateKeyPemSe
 /// Certificate data for a SelfManaged Certificate.
 /// SelfManaged Certificates are uploaded by the user. Updating such
 /// certificates before they expire remains the user&apos;s responsibility.
+/// The certificate data can be updated in place; changes to pem_certificate
+/// and pem_private_key are applied via the API&apos;s PATCH method instead of
+/// forcing recreation of the certificate.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -535,6 +538,9 @@ public partial class V1beta1CertificateSpecForProvider
     /// Certificate data for a SelfManaged Certificate.
     /// SelfManaged Certificates are uploaded by the user. Updating such
     /// certificates before they expire remains the user&apos;s responsibility.
+    /// The certificate data can be updated in place; changes to pem_certificate
+    /// and pem_private_key are applied via the API&apos;s PATCH method instead of
+    /// forcing recreation of the certificate.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("selfManaged")]
@@ -950,6 +956,9 @@ public partial class V1beta1CertificateSpecInitProviderSelfManagedPrivateKeyPemS
 /// Certificate data for a SelfManaged Certificate.
 /// SelfManaged Certificates are uploaded by the user. Updating such
 /// certificates before they expire remains the user&apos;s responsibility.
+/// The certificate data can be updated in place; changes to pem_certificate
+/// and pem_private_key are applied via the API&apos;s PATCH method instead of
+/// forcing recreation of the certificate.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1048,6 +1057,9 @@ public partial class V1beta1CertificateSpecInitProvider
     /// Certificate data for a SelfManaged Certificate.
     /// SelfManaged Certificates are uploaded by the user. Updating such
     /// certificates before they expire remains the user&apos;s responsibility.
+    /// The certificate data can be updated in place; changes to pem_certificate
+    /// and pem_private_key are applied via the API&apos;s PATCH method instead of
+    /// forcing recreation of the certificate.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("selfManaged")]
@@ -1275,6 +1287,9 @@ public partial class V1beta1CertificateStatusAtProviderManaged
 /// Certificate data for a SelfManaged Certificate.
 /// SelfManaged Certificates are uploaded by the user. Updating such
 /// certificates before they expire remains the user&apos;s responsibility.
+/// The certificate data can be updated in place; changes to pem_certificate
+/// and pem_private_key are applied via the API&apos;s PATCH method instead of
+/// forcing recreation of the certificate.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1361,6 +1376,9 @@ public partial class V1beta1CertificateStatusAtProvider
     /// Certificate data for a SelfManaged Certificate.
     /// SelfManaged Certificates are uploaded by the user. Updating such
     /// certificates before they expire remains the user&apos;s responsibility.
+    /// The certificate data can be updated in place; changes to pem_certificate
+    /// and pem_private_key are applied via the API&apos;s PATCH method instead of
+    /// forcing recreation of the certificate.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("selfManaged")]

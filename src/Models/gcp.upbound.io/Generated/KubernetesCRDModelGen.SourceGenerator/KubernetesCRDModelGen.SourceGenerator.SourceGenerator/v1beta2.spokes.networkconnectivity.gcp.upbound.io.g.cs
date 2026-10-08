@@ -55,6 +55,38 @@ public enum V1beta2SpokeSpecDeletionPolicyEnum
     Delete
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeSpecForProviderGatewayIpRangeReservations
+{
+    /// <summary>A block of IP address ranges used to allocate supporting infrastructure for this gateway—for example, 10.1.2.0/23. The IP address block must be a /23 range. This IP address block must not overlap with subnets in any spoke or peer network that the gateway can communicate with.</summary>
+    [JsonPropertyName("ipRange")]
+    public string? IpRange { get; set; }
+}
+
+/// <summary>
+/// This is a gateway that can apply specialized processing to traffic going through it.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeSpecForProviderGateway
+{
+    /// <summary>
+    /// the capacity of the gateway spoke, in Gbps.
+    /// Possible values are: CAPACITY_1_GBPS, CAPACITY_10_GBPS, CAPACITY_100_GBPS.
+    /// </summary>
+    [JsonPropertyName("capacity")]
+    public string? Capacity { get; set; }
+
+    /// <summary>
+    /// A list of IP ranges that are reserved for this gateway&apos;s internal infrastructure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ipRangeReservations")]
+    public IList<V1beta2SpokeSpecForProviderGatewayIpRangeReservations>? IpRangeReservations { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -1457,6 +1489,13 @@ public partial class V1beta2SpokeSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// This is a gateway that can apply specialized processing to traffic going through it.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gateway")]
+    public V1beta2SpokeSpecForProviderGateway? Gateway { get; set; }
+
     /// <summary>The name of the group that this spoke is associated with.</summary>
     [JsonPropertyName("group")]
     public string? Group { get; set; }
@@ -1538,6 +1577,38 @@ public partial class V1beta2SpokeSpecForProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeSpecInitProviderGatewayIpRangeReservations
+{
+    /// <summary>A block of IP address ranges used to allocate supporting infrastructure for this gateway—for example, 10.1.2.0/23. The IP address block must be a /23 range. This IP address block must not overlap with subnets in any spoke or peer network that the gateway can communicate with.</summary>
+    [JsonPropertyName("ipRange")]
+    public string? IpRange { get; set; }
+}
+
+/// <summary>
+/// This is a gateway that can apply specialized processing to traffic going through it.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeSpecInitProviderGateway
+{
+    /// <summary>
+    /// the capacity of the gateway spoke, in Gbps.
+    /// Possible values are: CAPACITY_1_GBPS, CAPACITY_10_GBPS, CAPACITY_100_GBPS.
+    /// </summary>
+    [JsonPropertyName("capacity")]
+    public string? Capacity { get; set; }
+
+    /// <summary>
+    /// A list of IP ranges that are reserved for this gateway&apos;s internal infrastructure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ipRangeReservations")]
+    public IList<V1beta2SpokeSpecInitProviderGatewayIpRangeReservations>? IpRangeReservations { get; set; }
 }
 
 /// <summary>
@@ -2954,6 +3025,13 @@ public partial class V1beta2SpokeSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>
+    /// This is a gateway that can apply specialized processing to traffic going through it.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gateway")]
+    public V1beta2SpokeSpecInitProviderGateway? Gateway { get; set; }
+
     /// <summary>The name of the group that this spoke is associated with.</summary>
     [JsonPropertyName("group")]
     public string? Group { get; set; }
@@ -3220,6 +3298,45 @@ public partial class V1beta2SpokeSpec
     public V1beta2SpokeSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeStatusAtProviderGatewayIpRangeReservations
+{
+    /// <summary>A block of IP address ranges used to allocate supporting infrastructure for this gateway—for example, 10.1.2.0/23. The IP address block must be a /23 range. This IP address block must not overlap with subnets in any spoke or peer network that the gateway can communicate with.</summary>
+    [JsonPropertyName("ipRange")]
+    public string? IpRange { get; set; }
+}
+
+/// <summary>
+/// This is a gateway that can apply specialized processing to traffic going through it.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2SpokeStatusAtProviderGateway
+{
+    /// <summary>
+    /// the capacity of the gateway spoke, in Gbps.
+    /// Possible values are: CAPACITY_1_GBPS, CAPACITY_10_GBPS, CAPACITY_100_GBPS.
+    /// </summary>
+    [JsonPropertyName("capacity")]
+    public string? Capacity { get; set; }
+
+    /// <summary>
+    /// A list of IP ranges that are reserved for this gateway&apos;s internal infrastructure.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("ipRangeReservations")]
+    public IList<V1beta2SpokeStatusAtProviderGatewayIpRangeReservations>? IpRangeReservations { get; set; }
+
+    /// <summary>
+    /// (Output)
+    /// Set of Cloud Routers that are attached to this NCC-GW
+    /// </summary>
+    [JsonPropertyName("routers")]
+    public IList<string>? Routers { get; set; }
+}
+
 /// <summary>
 /// A collection of VLAN attachment resources. These resources should be redundant attachments that all advertise the same prefixes to Google Cloud. Alternatively, in active/passive configurations, all attachments should be capable of advertising the same prefixes.
 /// Structure is documented below.
@@ -3435,6 +3552,13 @@ public partial class V1beta2SpokeStatusAtProvider
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>
+    /// This is a gateway that can apply specialized processing to traffic going through it.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("gateway")]
+    public V1beta2SpokeStatusAtProviderGateway? Gateway { get; set; }
 
     /// <summary>The name of the group that this spoke is associated with.</summary>
     [JsonPropertyName("group")]

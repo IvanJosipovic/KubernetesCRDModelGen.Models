@@ -38,12 +38,49 @@ public partial class V1beta1RoutineList : IKubernetesObject<V1ListMeta>, IItems<
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineSpecForProviderArgumentsTableTypeColumns
+{
+    /// <summary>The name of the column.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type of the column. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// If argumentKind is FIXED_TABLE, a schema for the table type.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineSpecForProviderArgumentsTableType
+{
+    /// <summary>
+    /// The columns in the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1RoutineSpecForProviderArgumentsTableTypeColumns>? Columns { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecForProviderArguments
 {
     /// <summary>
     /// Defaults to FIXED_TYPE.
     /// Default value is FIXED_TYPE.
-    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE, FIXED_TABLE.
     /// </summary>
     [JsonPropertyName("argumentKind")]
     public string? ArgumentKind { get; set; }
@@ -70,6 +107,13 @@ public partial class V1beta1RoutineSpecForProviderArguments
     /// <summary>The name of this argument. Can be absent for function return argument.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>
+    /// If argumentKind is FIXED_TABLE, a schema for the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tableType")]
+    public V1beta1RoutineSpecForProviderArgumentsTableType? TableType { get; set; }
 }
 
 /// <summary>
@@ -780,12 +824,49 @@ public partial class V1beta1RoutineSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineSpecInitProviderArgumentsTableTypeColumns
+{
+    /// <summary>The name of the column.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type of the column. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// If argumentKind is FIXED_TABLE, a schema for the table type.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineSpecInitProviderArgumentsTableType
+{
+    /// <summary>
+    /// The columns in the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1RoutineSpecInitProviderArgumentsTableTypeColumns>? Columns { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineSpecInitProviderArguments
 {
     /// <summary>
     /// Defaults to FIXED_TYPE.
     /// Default value is FIXED_TYPE.
-    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE, FIXED_TABLE.
     /// </summary>
     [JsonPropertyName("argumentKind")]
     public string? ArgumentKind { get; set; }
@@ -812,6 +893,13 @@ public partial class V1beta1RoutineSpecInitProviderArguments
     /// <summary>The name of this argument. Can be absent for function return argument.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>
+    /// If argumentKind is FIXED_TABLE, a schema for the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tableType")]
+    public V1beta1RoutineSpecInitProviderArgumentsTableType? TableType { get; set; }
 }
 
 /// <summary>
@@ -1474,12 +1562,49 @@ public partial class V1beta1RoutineSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineStatusAtProviderArgumentsTableTypeColumns
+{
+    /// <summary>The name of the column.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// A JSON schema for the data type of the column. Required unless argumentKind = ANY_TYPE.
+    /// ~&gt;NOTE: Because this field expects a JSON string, any changes to the string
+    /// will create a diff, even if the JSON itself hasn&apos;t changed. If the API returns
+    /// a different value for the same schema, e.g. it switched the order of values
+    /// or replaced STRUCT field type with RECORD field type, we currently cannot
+    /// suppress the recurring diff this causes. As a workaround, we recommend using
+    /// the schema as returned by the API.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>
+/// If argumentKind is FIXED_TABLE, a schema for the table type.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RoutineStatusAtProviderArgumentsTableType
+{
+    /// <summary>
+    /// The columns in the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("columns")]
+    public IList<V1beta1RoutineStatusAtProviderArgumentsTableTypeColumns>? Columns { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutineStatusAtProviderArguments
 {
     /// <summary>
     /// Defaults to FIXED_TYPE.
     /// Default value is FIXED_TYPE.
-    /// Possible values are: FIXED_TYPE, ANY_TYPE.
+    /// Possible values are: FIXED_TYPE, ANY_TYPE, FIXED_TABLE.
     /// </summary>
     [JsonPropertyName("argumentKind")]
     public string? ArgumentKind { get; set; }
@@ -1506,6 +1631,13 @@ public partial class V1beta1RoutineStatusAtProviderArguments
     /// <summary>The name of this argument. Can be absent for function return argument.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>
+    /// If argumentKind is FIXED_TABLE, a schema for the table type.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("tableType")]
+    public V1beta1RoutineStatusAtProviderArgumentsTableType? TableType { get; set; }
 }
 
 /// <summary>

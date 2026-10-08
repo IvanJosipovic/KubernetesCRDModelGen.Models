@@ -448,54 +448,6 @@ public partial class V1beta1NotificationChannelSpec
 }
 
 /// <summary>
-/// An authorization token for a notification channel. Channel types that support this field include: slack
-/// Note: This property is sensitive and will not be displayed in the plan.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsAuthTokenSecretRef
-{
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-}
-
-/// <summary>
-/// An password for a notification channel. Channel types that support this field include: webhook_basicauth
-/// Note: This property is sensitive and will not be displayed in the plan.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsPasswordSecretRef
-{
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-}
-
-/// <summary>
-/// An servicekey token for a notification channel. Channel types that support this field include: pagerduty
-/// Note: This property is sensitive and will not be displayed in the plan.
-/// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsServiceKeySecretRef
-{
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-}
-
-/// <summary>
 /// Different notification type behaviors are configured primarily using the the labels field on this
 /// resource. This block contains the labels which contain secrets or passwords so that they can be marked
 /// sensitive and hidden from plan output. The name of the field, eg: password, will be the key
@@ -508,26 +460,17 @@ public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabelsSe
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NotificationChannelStatusAtProviderSensitiveLabels
 {
-    /// <summary>
-    /// An authorization token for a notification channel. Channel types that support this field include: slack
-    /// Note: This property is sensitive and will not be displayed in the plan.
-    /// </summary>
-    [JsonPropertyName("authTokenSecretRef")]
-    public V1beta1NotificationChannelStatusAtProviderSensitiveLabelsAuthTokenSecretRef? AuthTokenSecretRef { get; set; }
+    /// <summary>Triggers update of auth_token_wo write-only. Increment this value when an update to auth_token_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("authTokenWoVersion")]
+    public string? AuthTokenWoVersion { get; set; }
 
-    /// <summary>
-    /// An password for a notification channel. Channel types that support this field include: webhook_basicauth
-    /// Note: This property is sensitive and will not be displayed in the plan.
-    /// </summary>
-    [JsonPropertyName("passwordSecretRef")]
-    public V1beta1NotificationChannelStatusAtProviderSensitiveLabelsPasswordSecretRef? PasswordSecretRef { get; set; }
+    /// <summary>Triggers update of password_wo write-only. Increment this value when an update to password_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("passwordWoVersion")]
+    public string? PasswordWoVersion { get; set; }
 
-    /// <summary>
-    /// An servicekey token for a notification channel. Channel types that support this field include: pagerduty
-    /// Note: This property is sensitive and will not be displayed in the plan.
-    /// </summary>
-    [JsonPropertyName("serviceKeySecretRef")]
-    public V1beta1NotificationChannelStatusAtProviderSensitiveLabelsServiceKeySecretRef? ServiceKeySecretRef { get; set; }
+    /// <summary>Triggers update of service_key_wo write-only. Increment this value when an update to service_key_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("serviceKeyWoVersion")]
+    public string? ServiceKeyWoVersion { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]

@@ -675,6 +675,10 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
     [JsonPropertyName("networkAttachmentUri")]
     public string? NetworkAttachmentUri { get; set; }
 
+    /// <summary>Whether a service connection policy is created for the auto connections configured for the instance.</summary>
+    [JsonPropertyName("pscAutoConnectionPolicyEnabled")]
+    public bool? PscAutoConnectionPolicyEnabled { get; set; }
+
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
     public IList<V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPscConfigPscAutoConnections>? PscAutoConnections { get; set; }
@@ -1038,6 +1042,10 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettings
     [JsonPropertyName("readPoolAutoScaleConfig")]
     public V1beta1DatabaseInstanceSpecForProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
 
+    /// <summary>The acceptable replication lag, in seconds, after which a read replica recreates itself. The lag must persist for at least five minutes before recreation is triggered. This is a replica level field, and must be between 300 (five minutes) and 31536000 (one year).</summary>
+    [JsonPropertyName("replicationLagMaxSeconds")]
+    public double? ReplicationLagMaxSeconds { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -1110,9 +1118,22 @@ public partial class V1beta1DatabaseInstanceSpecForProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>
+    /// Whether to enforce the new SQL network architecture.
+    /// By default, new Cloud SQL instances created in projects created after August 2021 use the new network architecture.
+    /// This follows the gcloud pattern where the flag is an irreversible opt-in.
+    /// See official documentation for more details.
+    /// </summary>
+    [JsonPropertyName("enforceNewSqlNetworkArchitecture")]
+    public bool? EnforceNewSqlNetworkArchitecture { get; set; }
+
     /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
     [JsonPropertyName("finalBackupDescription")]
     public string? FinalBackupDescription { get; set; }
+
+    /// <summary>When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when database_version is updated. This is an input-only field that is not persisted in the API and only takes effect during a major version upgrade.</summary>
+    [JsonPropertyName("includeReplicasForMajorVersionUpgrade")]
+    public bool? IncludeReplicasForMajorVersionUpgrade { get; set; }
 
     /// <summary>The current software version on the instance. This attribute can not be set during creation. Refer to available_maintenance_versions attribute to see what maintenance_version are available for upgrade. When this attribute gets updated, it will cause an instance restart. Setting a maintenance_version value that is older than the current one on the instance will be ignored.</summary>
     [JsonPropertyName("maintenanceVersion")]
@@ -1182,6 +1203,10 @@ public partial class V1beta1DatabaseInstanceSpecForProvider
     /// </summary>
     [JsonPropertyName("settings")]
     public V1beta1DatabaseInstanceSpecForProviderSettings? Settings { get; set; }
+
+    /// <summary>When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows. This is an input-only field that is not persisted in the API.</summary>
+    [JsonPropertyName("switchTransactionLogsToCloudStorageEnabled")]
+    public bool? SwitchTransactionLogsToCloudStorageEnabled { get; set; }
 }
 
 /// <summary>
@@ -1823,6 +1848,10 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
     [JsonPropertyName("networkAttachmentUri")]
     public string? NetworkAttachmentUri { get; set; }
 
+    /// <summary>Whether a service connection policy is created for the auto connections configured for the instance.</summary>
+    [JsonPropertyName("pscAutoConnectionPolicyEnabled")]
+    public bool? PscAutoConnectionPolicyEnabled { get; set; }
+
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
     public IList<V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPscConfigPscAutoConnections>? PscAutoConnections { get; set; }
@@ -2186,6 +2215,10 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettings
     [JsonPropertyName("readPoolAutoScaleConfig")]
     public V1beta1DatabaseInstanceSpecInitProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
 
+    /// <summary>The acceptable replication lag, in seconds, after which a read replica recreates itself. The lag must persist for at least five minutes before recreation is triggered. This is a replica level field, and must be between 300 (five minutes) and 31536000 (one year).</summary>
+    [JsonPropertyName("replicationLagMaxSeconds")]
+    public double? ReplicationLagMaxSeconds { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -2270,9 +2303,22 @@ public partial class V1beta1DatabaseInstanceSpecInitProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>
+    /// Whether to enforce the new SQL network architecture.
+    /// By default, new Cloud SQL instances created in projects created after August 2021 use the new network architecture.
+    /// This follows the gcloud pattern where the flag is an irreversible opt-in.
+    /// See official documentation for more details.
+    /// </summary>
+    [JsonPropertyName("enforceNewSqlNetworkArchitecture")]
+    public bool? EnforceNewSqlNetworkArchitecture { get; set; }
+
     /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
     [JsonPropertyName("finalBackupDescription")]
     public string? FinalBackupDescription { get; set; }
+
+    /// <summary>When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when database_version is updated. This is an input-only field that is not persisted in the API and only takes effect during a major version upgrade.</summary>
+    [JsonPropertyName("includeReplicasForMajorVersionUpgrade")]
+    public bool? IncludeReplicasForMajorVersionUpgrade { get; set; }
 
     /// <summary>The current software version on the instance. This attribute can not be set during creation. Refer to available_maintenance_versions attribute to see what maintenance_version are available for upgrade. When this attribute gets updated, it will cause an instance restart. Setting a maintenance_version value that is older than the current one on the instance will be ignored.</summary>
     [JsonPropertyName("maintenanceVersion")]
@@ -2342,6 +2388,10 @@ public partial class V1beta1DatabaseInstanceSpecInitProvider
     /// </summary>
     [JsonPropertyName("settings")]
     public V1beta1DatabaseInstanceSpecInitProviderSettings? Settings { get; set; }
+
+    /// <summary>When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows. This is an input-only field that is not persisted in the API.</summary>
+    [JsonPropertyName("switchTransactionLogsToCloudStorageEnabled")]
+    public bool? SwitchTransactionLogsToCloudStorageEnabled { get; set; }
 }
 
 /// <summary>
@@ -2941,13 +2991,29 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
     [JsonPropertyName("consumerServiceProjectId")]
     public string? ConsumerServiceProjectId { get; set; }
 
+    /// <summary>(Output) The status of the automated DNS provisioning for the instance.</summary>
+    [JsonPropertyName("instanceAutoDnsStatus")]
+    public string? InstanceAutoDnsStatus { get; set; }
+
     /// <summary>(Output) The IP address of the consumer endpoint.</summary>
     [JsonPropertyName("ipAddress")]
     public string? IpAddress { get; set; }
 
+    /// <summary>(Output) The service connection policy created for the auto connection.</summary>
+    [JsonPropertyName("serviceConnectionPolicy")]
+    public string? ServiceConnectionPolicy { get; set; }
+
+    /// <summary>(Output) The result of the service connection policy creation.</summary>
+    [JsonPropertyName("serviceConnectionPolicyCreationResult")]
+    public string? ServiceConnectionPolicyCreationResult { get; set; }
+
     /// <summary>(Output) The connection status of the consumer endpoint.</summary>
     [JsonPropertyName("status")]
     public string? Status { get; set; }
+
+    /// <summary>(Output) The status of the automated DNS provisioning for the write endpoint.</summary>
+    [JsonPropertyName("writeEndpointAutoDnsStatus")]
+    public string? WriteEndpointAutoDnsStatus { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2961,6 +3027,10 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
     /// <summary>Network Attachment URI in the format projects/project1/regions/region1/networkAttachments/networkAttachment1 to enable outbound connectivity on PSC instance.</summary>
     [JsonPropertyName("networkAttachmentUri")]
     public string? NetworkAttachmentUri { get; set; }
+
+    /// <summary>Whether a service connection policy is created for the auto connections configured for the instance.</summary>
+    [JsonPropertyName("pscAutoConnectionPolicyEnabled")]
+    public bool? PscAutoConnectionPolicyEnabled { get; set; }
 
     /// <summary>A comma-separated list of networks or a comma-separated list of network-project pairs. Each project in this list is represented by a project number (numeric) or by a project ID (alphanumeric). This allows Private Service Connect connections to be created automatically for the specified networks.</summary>
     [JsonPropertyName("pscAutoConnections")]
@@ -3327,6 +3397,10 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettings
     [JsonPropertyName("readPoolAutoScaleConfig")]
     public V1beta1DatabaseInstanceStatusAtProviderSettingsReadPoolAutoScaleConfig? ReadPoolAutoScaleConfig { get; set; }
 
+    /// <summary>The acceptable replication lag, in seconds, after which a read replica recreates itself. The lag must persist for at least five minutes before recreation is triggered. This is a replica level field, and must be between 300 (five minutes) and 31536000 (one year).</summary>
+    [JsonPropertyName("replicationLagMaxSeconds")]
+    public double? ReplicationLagMaxSeconds { get; set; }
+
     /// <summary>When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.</summary>
     [JsonPropertyName("retainBackupsOnDelete")]
     public bool? RetainBackupsOnDelete { get; set; }
@@ -3432,6 +3506,15 @@ public partial class V1beta1DatabaseInstanceStatusAtProvider
     [JsonPropertyName("encryptionKeyName")]
     public string? EncryptionKeyName { get; set; }
 
+    /// <summary>
+    /// Whether to enforce the new SQL network architecture.
+    /// By default, new Cloud SQL instances created in projects created after August 2021 use the new network architecture.
+    /// This follows the gcloud pattern where the flag is an irreversible opt-in.
+    /// See official documentation for more details.
+    /// </summary>
+    [JsonPropertyName("enforceNewSqlNetworkArchitecture")]
+    public bool? EnforceNewSqlNetworkArchitecture { get; set; }
+
     /// <summary>The description of final backup. Only set this field when final_backup_config.enabled is true.</summary>
     [JsonPropertyName("finalBackupDescription")]
     public string? FinalBackupDescription { get; set; }
@@ -3442,6 +3525,10 @@ public partial class V1beta1DatabaseInstanceStatusAtProvider
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>When this parameter is set to true, Cloud SQL instances can perform in-place major version upgrades of read replicas along with the primary instance when database_version is updated. This is an input-only field that is not persisted in the API and only takes effect during a major version upgrade.</summary>
+    [JsonPropertyName("includeReplicasForMajorVersionUpgrade")]
+    public bool? IncludeReplicasForMajorVersionUpgrade { get; set; }
 
     /// <summary>The type of the instance. See API reference for SqlInstanceType for supported values.</summary>
     [JsonPropertyName("instanceType")]
@@ -3538,6 +3625,10 @@ public partial class V1beta1DatabaseInstanceStatusAtProvider
     /// </summary>
     [JsonPropertyName("settings")]
     public V1beta1DatabaseInstanceStatusAtProviderSettings? Settings { get; set; }
+
+    /// <summary>When set to true, Cloud SQL instances can switch storing point-in-time recovery transaction logs from a data disk to Cloud Storage, freeing up data disk space and enabling longer retention windows. This is an input-only field that is not persisted in the API.</summary>
+    [JsonPropertyName("switchTransactionLogsToCloudStorageEnabled")]
+    public bool? SwitchTransactionLogsToCloudStorageEnabled { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

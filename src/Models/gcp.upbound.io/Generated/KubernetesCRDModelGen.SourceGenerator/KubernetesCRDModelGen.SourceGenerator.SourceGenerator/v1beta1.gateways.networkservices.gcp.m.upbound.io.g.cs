@@ -679,6 +679,14 @@ public partial class V1beta1GatewaySpecForProvider
     public bool? AllPorts { get; set; }
 
     /// <summary>
+    /// Optional. If true, the gateway will allow traffic from clients outside
+    /// of the region where the gateway is located.
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allowGlobalAccess")]
+    public bool? AllowGlobalAccess { get; set; }
+
+    /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
     /// This feature only applies to gateways of type &apos;SECURE_WEB_GATEWAY&apos;.
     /// </summary>
@@ -1476,6 +1484,14 @@ public partial class V1beta1GatewaySpecInitProvider
     public bool? AllPorts { get; set; }
 
     /// <summary>
+    /// Optional. If true, the gateway will allow traffic from clients outside
+    /// of the region where the gateway is located.
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allowGlobalAccess")]
+    public bool? AllowGlobalAccess { get; set; }
+
+    /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
     /// This feature only applies to gateways of type &apos;SECURE_WEB_GATEWAY&apos;.
     /// </summary>
@@ -1739,6 +1755,14 @@ public partial class V1beta1GatewayStatusAtProvider
     /// </summary>
     [JsonPropertyName("allPorts")]
     public bool? AllPorts { get; set; }
+
+    /// <summary>
+    /// Optional. If true, the gateway will allow traffic from clients outside
+    /// of the region where the gateway is located.
+    /// This field is configurable only for gateways of type SECURE_WEB_GATEWAY.
+    /// </summary>
+    [JsonPropertyName("allowGlobalAccess")]
+    public bool? AllowGlobalAccess { get; set; }
 
     /// <summary>
     /// A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.

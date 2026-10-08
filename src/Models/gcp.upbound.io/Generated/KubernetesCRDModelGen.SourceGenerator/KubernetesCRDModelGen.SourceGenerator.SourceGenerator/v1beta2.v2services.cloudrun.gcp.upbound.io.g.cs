@@ -781,7 +781,7 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainersVolumeMoun
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
 {
-    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
     [JsonPropertyName("args")]
     public IList<string>? Args { get; set; }
 
@@ -789,7 +789,7 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
     [JsonPropertyName("baseImageUri")]
     public string? BaseImageUri { get; set; }
 
-    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
@@ -798,13 +798,13 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
     public IList<string>? DependsOn { get; set; }
 
     /// <summary>
-    /// List of environment variables to set in the container.
+    /// List of environment variables to set in the sandbox.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("env")]
     public IList<V1beta2V2ServiceSpecForProviderTemplateContainersEnv>? Env { get; set; }
 
-    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
@@ -841,6 +841,10 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateContainers
     [JsonPropertyName("resources")]
     public V1beta2V2ServiceSpecForProviderTemplateContainersResources? Resources { get; set; }
 
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
+
     /// <summary>
     /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     /// Structure is documented below.
@@ -871,6 +875,91 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateNodeSelector
     /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
     [JsonPropertyName("accelerator")]
     public string? Accelerator { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplatesEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplatesVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplates
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the sandbox.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplatesEnv>? Env { get; set; }
+
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplatesVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Configuration for sandboxes.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecForProviderTemplateSandboxes
+{
+    /// <summary>
+    /// Sandbox templates that can be launched through the sandbox CLI.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("templates")]
+    public IList<V1beta2V2ServiceSpecForProviderTemplateSandboxesTemplates>? Templates { get; set; }
 }
 
 /// <summary>
@@ -1545,7 +1634,11 @@ public partial class V1beta2V2ServiceSpecForProviderTemplateVpcAccessNetworkInte
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -1646,6 +1739,13 @@ public partial class V1beta2V2ServiceSpecForProviderTemplate
     /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
     [JsonPropertyName("revision")]
     public string? Revision { get; set; }
+
+    /// <summary>
+    /// Configuration for sandboxes.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sandboxes")]
+    public V1beta2V2ServiceSpecForProviderTemplateSandboxes? Sandboxes { get; set; }
 
     /// <summary>
     /// Scaling settings for this Revision.
@@ -1826,6 +1926,14 @@ public partial class V1beta2V2ServiceSpecForProvider
     /// </summary>
     [JsonPropertyName("scaling")]
     public V1beta2V2ServiceSpecForProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create revisions for this Service.
@@ -2568,7 +2676,7 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainersVolumeMou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
 {
-    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
     [JsonPropertyName("args")]
     public IList<string>? Args { get; set; }
 
@@ -2576,7 +2684,7 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
     [JsonPropertyName("baseImageUri")]
     public string? BaseImageUri { get; set; }
 
-    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
@@ -2585,13 +2693,13 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
     public IList<string>? DependsOn { get; set; }
 
     /// <summary>
-    /// List of environment variables to set in the container.
+    /// List of environment variables to set in the sandbox.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("env")]
     public IList<V1beta2V2ServiceSpecInitProviderTemplateContainersEnv>? Env { get; set; }
 
-    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
@@ -2628,6 +2736,10 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateContainers
     [JsonPropertyName("resources")]
     public V1beta2V2ServiceSpecInitProviderTemplateContainersResources? Resources { get; set; }
 
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
+
     /// <summary>
     /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     /// Structure is documented below.
@@ -2658,6 +2770,91 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateNodeSelector
     /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
     [JsonPropertyName("accelerator")]
     public string? Accelerator { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplatesEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplatesVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplates
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the sandbox.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplatesEnv>? Env { get; set; }
+
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplatesVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Configuration for sandboxes.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceSpecInitProviderTemplateSandboxes
+{
+    /// <summary>
+    /// Sandbox templates that can be launched through the sandbox CLI.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("templates")]
+    public IList<V1beta2V2ServiceSpecInitProviderTemplateSandboxesTemplates>? Templates { get; set; }
 }
 
 /// <summary>
@@ -3332,7 +3529,11 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplateVpcAccessNetworkInt
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -3433,6 +3634,13 @@ public partial class V1beta2V2ServiceSpecInitProviderTemplate
     /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
     [JsonPropertyName("revision")]
     public string? Revision { get; set; }
+
+    /// <summary>
+    /// Configuration for sandboxes.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sandboxes")]
+    public V1beta2V2ServiceSpecInitProviderTemplateSandboxes? Sandboxes { get; set; }
 
     /// <summary>
     /// Scaling settings for this Revision.
@@ -3621,6 +3829,14 @@ public partial class V1beta2V2ServiceSpecInitProvider
     /// </summary>
     [JsonPropertyName("scaling")]
     public V1beta2V2ServiceSpecInitProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create revisions for this Service.
@@ -4486,7 +4702,7 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainersVolumeMou
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
 {
-    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided. Variable references are not supported in Cloud Run.</summary>
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
     [JsonPropertyName("args")]
     public IList<string>? Args { get; set; }
 
@@ -4502,7 +4718,7 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
     [JsonPropertyName("buildInfo")]
     public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersBuildInfo>? BuildInfo { get; set; }
 
-    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container&apos;s environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</summary>
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
     [JsonPropertyName("command")]
     public IList<string>? Command { get; set; }
 
@@ -4511,13 +4727,13 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
     public IList<string>? DependsOn { get; set; }
 
     /// <summary>
-    /// List of environment variables to set in the container.
+    /// List of environment variables to set in the sandbox.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("env")]
     public IList<V1beta2V2ServiceStatusAtProviderTemplateContainersEnv>? Env { get; set; }
 
-    /// <summary>URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images</summary>
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
@@ -4554,6 +4770,10 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateContainers
     [JsonPropertyName("resources")]
     public V1beta2V2ServiceStatusAtProviderTemplateContainersResources? Resources { get; set; }
 
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
+
     /// <summary>
     /// Startup probe of application within the container. All other probes are disabled if a startup probe is provided, until it succeeds. Container will not be added to service endpoints if the probe fails. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
     /// Structure is documented below.
@@ -4584,6 +4804,91 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateNodeSelector
     /// <summary>The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.</summary>
     [JsonPropertyName("accelerator")]
     public string? Accelerator { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplatesEnv
+{
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>The header field value</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplatesVolumeMounts
+{
+    /// <summary>Path within the container at which the volume should be mounted. Must not contain &apos;:&apos;. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run</summary>
+    [JsonPropertyName("mountPath")]
+    public string? MountPath { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Path within the volume from which the container&apos;s volume should be mounted.</summary>
+    [JsonPropertyName("subPath")]
+    public string? SubPath { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplates
+{
+    /// <summary>Arguments to the entrypoint. The docker image&apos;s CMD is used if this is not provided.</summary>
+    [JsonPropertyName("args")]
+    public IList<string>? Args { get; set; }
+
+    /// <summary>Entrypoint array. Not executed within a shell. The docker image&apos;s ENTRYPOINT is used if this is not provided.</summary>
+    [JsonPropertyName("command")]
+    public IList<string>? Command { get; set; }
+
+    /// <summary>
+    /// List of environment variables to set in the sandbox.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("env")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplatesEnv>? Env { get; set; }
+
+    /// <summary>Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.</summary>
+    [JsonPropertyName("image")]
+    public string? Image { get; set; }
+
+    /// <summary>Volume&apos;s name.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Volume to mount into the container&apos;s filesystem.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("volumeMounts")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplatesVolumeMounts>? VolumeMounts { get; set; }
+
+    /// <summary>Container&apos;s working directory. If not specified, the container runtime&apos;s default will be used, which might be configured in the container image.</summary>
+    [JsonPropertyName("workingDir")]
+    public string? WorkingDir { get; set; }
+}
+
+/// <summary>
+/// Configuration for sandboxes.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2V2ServiceStatusAtProviderTemplateSandboxes
+{
+    /// <summary>
+    /// Sandbox templates that can be launched through the sandbox CLI.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("templates")]
+    public IList<V1beta2V2ServiceStatusAtProviderTemplateSandboxesTemplates>? Templates { get; set; }
 }
 
 /// <summary>
@@ -4793,7 +5098,11 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplateVpcAccessNetworkInt
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run service.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -4894,6 +5203,13 @@ public partial class V1beta2V2ServiceStatusAtProviderTemplate
     /// <summary>The unique name for the revision. If this field is omitted, it will be automatically generated based on the Service name.</summary>
     [JsonPropertyName("revision")]
     public string? Revision { get; set; }
+
+    /// <summary>
+    /// Configuration for sandboxes.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("sandboxes")]
+    public V1beta2V2ServiceStatusAtProviderTemplateSandboxes? Sandboxes { get; set; }
 
     /// <summary>
     /// Scaling settings for this Revision.
@@ -5248,6 +5564,14 @@ public partial class V1beta2V2ServiceStatusAtProvider
     /// </summary>
     [JsonPropertyName("scaling")]
     public V1beta2V2ServiceStatusAtProviderScaling? Scaling { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create revisions for this Service.

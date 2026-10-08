@@ -1419,6 +1419,10 @@ public partial class V1beta1InstanceSpecForProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    /// <summary>Specifies the time in seconds for host error detection, the value must be within the range of [90, 330] with the increment of 30, if unset, the default behavior of host error recovery will be used.</summary>
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     /// <summary>Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here</summary>
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
@@ -1466,10 +1470,13 @@ public partial class V1beta1InstanceSpecForProviderScheduling
     public bool? Preemptible { get; set; }
 
     /// <summary>
-    /// Describe the type of preemptible VM. This field accepts the value STANDARD or SPOT. If the value is STANDARD, there will be no discount. If this   is set to SPOT,
+    /// Describe the type of provisioning model for the instance. This field accepts the value STANDARD, SPOT, FLEX_START, or RESERVATION_BOUND. If the value is STANDARD, there will be no discount. If this is set to SPOT,
     /// preemptible should be true and automatic_restart should be
     /// false. For more info about
-    /// SPOT, read here
+    /// SPOT, read here.
+    /// If this is set to FLEX_START, automatic_restart should be false and instance_termination_action should be set to DELETE. A max_run_duration must also be specified. For more info about
+    /// FLEX_START, read here.
+    /// If this is set to RESERVATION_BOUND, the instance is bound to a specific reservation and will only consume capacity from that reservation. A reservation_affinity block with type set to SPECIFIC_RESERVATION should also be configured.
     /// </summary>
     [JsonPropertyName("provisioningModel")]
     public string? ProvisioningModel { get; set; }
@@ -1722,6 +1729,23 @@ public partial class V1beta1InstanceSpecForProviderShieldedInstanceConfig
     public bool? EnableVtpm { get; set; }
 }
 
+/// <summary>
+/// Workload Identity Config. More details about
+/// this configuration option are detailed below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecForProviderWorkloadIdentityConfig
+{
+    /// <summary>Identity SPIFFE id.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>Specifies whether identity certificates are enabled.</summary>
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceSpecForProvider
@@ -1924,6 +1948,13 @@ public partial class V1beta1InstanceSpecForProvider
     /// <summary>A list of network tags to attach to the instance.</summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
+
+    /// <summary>
+    /// Workload Identity Config. More details about
+    /// this configuration option are detailed below.
+    /// </summary>
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceSpecForProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 
     /// <summary>The zone that the machine should be created in. If it is not provided, the provider zone is used.</summary>
     [JsonPropertyName("zone")]
@@ -3313,6 +3344,10 @@ public partial class V1beta1InstanceSpecInitProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    /// <summary>Specifies the time in seconds for host error detection, the value must be within the range of [90, 330] with the increment of 30, if unset, the default behavior of host error recovery will be used.</summary>
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     /// <summary>Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here</summary>
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
@@ -3360,10 +3395,13 @@ public partial class V1beta1InstanceSpecInitProviderScheduling
     public bool? Preemptible { get; set; }
 
     /// <summary>
-    /// Describe the type of preemptible VM. This field accepts the value STANDARD or SPOT. If the value is STANDARD, there will be no discount. If this   is set to SPOT,
+    /// Describe the type of provisioning model for the instance. This field accepts the value STANDARD, SPOT, FLEX_START, or RESERVATION_BOUND. If the value is STANDARD, there will be no discount. If this is set to SPOT,
     /// preemptible should be true and automatic_restart should be
     /// false. For more info about
-    /// SPOT, read here
+    /// SPOT, read here.
+    /// If this is set to FLEX_START, automatic_restart should be false and instance_termination_action should be set to DELETE. A max_run_duration must also be specified. For more info about
+    /// FLEX_START, read here.
+    /// If this is set to RESERVATION_BOUND, the instance is bound to a specific reservation and will only consume capacity from that reservation. A reservation_affinity block with type set to SPECIFIC_RESERVATION should also be configured.
     /// </summary>
     [JsonPropertyName("provisioningModel")]
     public string? ProvisioningModel { get; set; }
@@ -3617,6 +3655,23 @@ public partial class V1beta1InstanceSpecInitProviderShieldedInstanceConfig
 }
 
 /// <summary>
+/// Workload Identity Config. More details about
+/// this configuration option are detailed below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceSpecInitProviderWorkloadIdentityConfig
+{
+    /// <summary>Identity SPIFFE id.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>Specifies whether identity certificates are enabled.</summary>
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
+}
+
+/// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
 /// InitProvider holds the same fields as ForProvider, with the exception
@@ -3830,6 +3885,13 @@ public partial class V1beta1InstanceSpecInitProvider
     /// <summary>A list of network tags to attach to the instance.</summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
+
+    /// <summary>
+    /// Workload Identity Config. More details about
+    /// this configuration option are detailed below.
+    /// </summary>
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceSpecInitProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 }
 
 /// <summary>
@@ -4677,6 +4739,10 @@ public partial class V1beta1InstanceStatusAtProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    /// <summary>Specifies the time in seconds for host error detection, the value must be within the range of [90, 330] with the increment of 30, if unset, the default behavior of host error recovery will be used.</summary>
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     /// <summary>Describe the type of termination action for VM. Can be STOP or DELETE.  Read more on here</summary>
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
@@ -4724,10 +4790,13 @@ public partial class V1beta1InstanceStatusAtProviderScheduling
     public bool? Preemptible { get; set; }
 
     /// <summary>
-    /// Describe the type of preemptible VM. This field accepts the value STANDARD or SPOT. If the value is STANDARD, there will be no discount. If this   is set to SPOT,
+    /// Describe the type of provisioning model for the instance. This field accepts the value STANDARD, SPOT, FLEX_START, or RESERVATION_BOUND. If the value is STANDARD, there will be no discount. If this is set to SPOT,
     /// preemptible should be true and automatic_restart should be
     /// false. For more info about
-    /// SPOT, read here
+    /// SPOT, read here.
+    /// If this is set to FLEX_START, automatic_restart should be false and instance_termination_action should be set to DELETE. A max_run_duration must also be specified. For more info about
+    /// FLEX_START, read here.
+    /// If this is set to RESERVATION_BOUND, the instance is bound to a specific reservation and will only consume capacity from that reservation. A reservation_affinity block with type set to SPECIFIC_RESERVATION should also be configured.
     /// </summary>
     [JsonPropertyName("provisioningModel")]
     public string? ProvisioningModel { get; set; }
@@ -4815,6 +4884,23 @@ public partial class V1beta1InstanceStatusAtProviderShieldedInstanceConfig
     /// </summary>
     [JsonPropertyName("enableVtpm")]
     public bool? EnableVtpm { get; set; }
+}
+
+/// <summary>
+/// Workload Identity Config. More details about
+/// this configuration option are detailed below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceStatusAtProviderWorkloadIdentityConfig
+{
+    /// <summary>Identity SPIFFE id.</summary>
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    /// <summary>Specifies whether identity certificates are enabled.</summary>
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -5069,6 +5155,13 @@ public partial class V1beta1InstanceStatusAtProvider
     /// <summary>The combination of labels configured directly on the resource and default labels configured on the provider.</summary>
     [JsonPropertyName("terraformLabels")]
     public IDictionary<string, string>? TerraformLabels { get; set; }
+
+    /// <summary>
+    /// Workload Identity Config. More details about
+    /// this configuration option are detailed below.
+    /// </summary>
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceStatusAtProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 
     /// <summary>The zone that the machine should be created in. If it is not provided, the provider zone is used.</summary>
     [JsonPropertyName("zone")]

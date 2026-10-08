@@ -77,6 +77,13 @@ public partial class V1beta1ReservationSpecForProvider
     public bool? IgnoreIdleSlots { get; set; }
 
     /// <summary>
+    /// The labels associated with this reservation. You can use these to
+    /// organize and group your reservations.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
     /// The geographic location where the transfer config should reside.
     /// Examples: US, EU, asia-northeast1. The default value is US.
     /// </summary>
@@ -162,6 +169,13 @@ public partial class V1beta1ReservationSpecInitProvider
     /// </summary>
     [JsonPropertyName("ignoreIdleSlots")]
     public bool? IgnoreIdleSlots { get; set; }
+
+    /// <summary>
+    /// The labels associated with this reservation. You can use these to
+    /// organize and group your reservations.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>The reservation group that this reservation belongs to.</summary>
     [JsonPropertyName("reservationGroup")]
@@ -387,6 +401,10 @@ public partial class V1beta1ReservationStatusAtProvider
     [JsonPropertyName("edition")]
     public string? Edition { get; set; }
 
+    /// <summary>for all of the labels present on the resource.</summary>
+    [JsonPropertyName("effectiveLabels")]
+    public IDictionary<string, string>? EffectiveLabels { get; set; }
+
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/reservations/{{name}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -398,6 +416,13 @@ public partial class V1beta1ReservationStatusAtProvider
     /// </summary>
     [JsonPropertyName("ignoreIdleSlots")]
     public bool? IgnoreIdleSlots { get; set; }
+
+    /// <summary>
+    /// The labels associated with this reservation. You can use these to
+    /// organize and group your reservations.
+    /// </summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
 
     /// <summary>
     /// The geographic location where the transfer config should reside.
@@ -459,6 +484,13 @@ public partial class V1beta1ReservationStatusAtProvider
     /// </summary>
     [JsonPropertyName("slotCapacity")]
     public double? SlotCapacity { get; set; }
+
+    /// <summary>
+    /// The combination of labels configured directly on the resource
+    /// and default labels configured on the provider.
+    /// </summary>
+    [JsonPropertyName("terraformLabels")]
+    public IDictionary<string, string>? TerraformLabels { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

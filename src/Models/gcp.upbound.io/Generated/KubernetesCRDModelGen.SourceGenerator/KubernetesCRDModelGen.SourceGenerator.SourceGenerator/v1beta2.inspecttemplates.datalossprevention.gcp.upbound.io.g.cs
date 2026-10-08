@@ -124,9 +124,8 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -230,9 +229,8 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigCustomInf
     public string? ExclusionType { get; set; }
 
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -329,9 +327,8 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMax
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -362,9 +359,8 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMax
 public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -397,6 +393,47 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfigLimits
     /// <summary>Max number of findings that will be returned per request/job. The maximum returned is 2000.</summary>
     [JsonPropertyName("maxFindingsPerRequest")]
     public double? MaxFindingsPerRequest { get; set; }
+}
+
+/// <summary>
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateSpecForProviderInspectConfigMinLikelihoodPerInfoTypeInfoType
+{
+    /// <summary>
+    /// Resource name of the requested StoredInfoType, for example organizations/433245324/storedInfoTypes/432452342
+    /// or projects/project-id/storedInfoTypes/432452342.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Version of the information type to use. By default, the version is set to stable</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateSpecForProviderInspectConfigMinLikelihoodPerInfoType
+{
+    /// <summary>
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("infoType")]
+    public V1beta2InspectTemplateSpecForProviderInspectConfigMinLikelihoodPerInfoTypeInfoType? InfoType { get; set; }
+
+    /// <summary>
+    /// Only returns findings equal or above this threshold. See https://cloud.google.com/dlp/docs/likelihood for more info.
+    /// Possible values are: VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY, VERY_LIKELY.
+    /// </summary>
+    [JsonPropertyName("minLikelihood")]
+    public string? MinLikelihood { get; set; }
 }
 
 /// <summary>
@@ -869,6 +906,15 @@ public partial class V1beta2InspectTemplateSpecForProviderInspectConfig
     public string? MinLikelihood { get; set; }
 
     /// <summary>
+    /// Minimum likelihood per infotype. For each infotype, a user can specify a minimum likelihood.
+    /// The system only returns a finding if its likelihood is above this threshold. If this field
+    /// is not set, the system uses the InspectConfig min_likelihood.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("minLikelihoodPerInfoType")]
+    public IList<V1beta2InspectTemplateSpecForProviderInspectConfigMinLikelihoodPerInfoType>? MinLikelihoodPerInfoType { get; set; }
+
+    /// <summary>
     /// Set of rules to apply to the findings for this InspectConfig. Exclusion rules, contained in the set are executed in the end,
     /// other rules are executed in the order they are specified for each info type.
     /// Structure is documented below.
@@ -985,9 +1031,8 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1091,9 +1136,8 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigCustomIn
     public string? ExclusionType { get; set; }
 
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -1190,9 +1234,8 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMa
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1223,9 +1266,8 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMa
 public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -1258,6 +1300,47 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigLimits
     /// <summary>Max number of findings that will be returned per request/job. The maximum returned is 2000.</summary>
     [JsonPropertyName("maxFindingsPerRequest")]
     public double? MaxFindingsPerRequest { get; set; }
+}
+
+/// <summary>
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigMinLikelihoodPerInfoTypeInfoType
+{
+    /// <summary>
+    /// Resource name of the requested StoredInfoType, for example organizations/433245324/storedInfoTypes/432452342
+    /// or projects/project-id/storedInfoTypes/432452342.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Version of the information type to use. By default, the version is set to stable</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateSpecInitProviderInspectConfigMinLikelihoodPerInfoType
+{
+    /// <summary>
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("infoType")]
+    public V1beta2InspectTemplateSpecInitProviderInspectConfigMinLikelihoodPerInfoTypeInfoType? InfoType { get; set; }
+
+    /// <summary>
+    /// Only returns findings equal or above this threshold. See https://cloud.google.com/dlp/docs/likelihood for more info.
+    /// Possible values are: VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY, VERY_LIKELY.
+    /// </summary>
+    [JsonPropertyName("minLikelihood")]
+    public string? MinLikelihood { get; set; }
 }
 
 /// <summary>
@@ -1730,6 +1813,15 @@ public partial class V1beta2InspectTemplateSpecInitProviderInspectConfig
     public string? MinLikelihood { get; set; }
 
     /// <summary>
+    /// Minimum likelihood per infotype. For each infotype, a user can specify a minimum likelihood.
+    /// The system only returns a finding if its likelihood is above this threshold. If this field
+    /// is not set, the system uses the InspectConfig min_likelihood.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("minLikelihoodPerInfoType")]
+    public IList<V1beta2InspectTemplateSpecInitProviderInspectConfigMinLikelihoodPerInfoType>? MinLikelihoodPerInfoType { get; set; }
+
+    /// <summary>
     /// Set of rules to apply to the findings for this InspectConfig. Exclusion rules, contained in the set are executed in the end,
     /// other rules are executed in the order they are specified for each info type.
     /// Structure is documented below.
@@ -2041,9 +2133,8 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2147,9 +2238,8 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigCustomIn
     public string? ExclusionType { get; set; }
 
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -2246,9 +2336,8 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMa
 }
 
 /// <summary>
-/// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-/// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-/// specified in another InfoTypeLimit.
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
 /// Structure is documented below.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2279,9 +2368,8 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMa
 public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
-    /// Type of information the findings limit applies to. Only one limit per infoType should be provided. If InfoTypeLimit does
-    /// not have an infoType, the DLP API applies the limit against all infoTypes that are found but not
-    /// specified in another InfoTypeLimit.
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
     /// Structure is documented below.
     /// </summary>
     [JsonPropertyName("infoType")]
@@ -2314,6 +2402,47 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigLimits
     /// <summary>Max number of findings that will be returned per request/job. The maximum returned is 2000.</summary>
     [JsonPropertyName("maxFindingsPerRequest")]
     public double? MaxFindingsPerRequest { get; set; }
+}
+
+/// <summary>
+/// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+/// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigMinLikelihoodPerInfoTypeInfoType
+{
+    /// <summary>
+    /// Resource name of the requested StoredInfoType, for example organizations/433245324/storedInfoTypes/432452342
+    /// or projects/project-id/storedInfoTypes/432452342.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    /// <summary>Version of the information type to use. By default, the version is set to stable</summary>
+    [JsonPropertyName("version")]
+    public string? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2InspectTemplateStatusAtProviderInspectConfigMinLikelihoodPerInfoType
+{
+    /// <summary>
+    /// Type of information the likeliness threshold applies to. Only one likelihood per info_type should be provided.
+    /// If InfoTypeLikelihood does not have an info_type, the configuration fails.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("infoType")]
+    public V1beta2InspectTemplateStatusAtProviderInspectConfigMinLikelihoodPerInfoTypeInfoType? InfoType { get; set; }
+
+    /// <summary>
+    /// Only returns findings equal or above this threshold. See https://cloud.google.com/dlp/docs/likelihood for more info.
+    /// Possible values are: VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY, VERY_LIKELY.
+    /// </summary>
+    [JsonPropertyName("minLikelihood")]
+    public string? MinLikelihood { get; set; }
 }
 
 /// <summary>
@@ -2784,6 +2913,15 @@ public partial class V1beta2InspectTemplateStatusAtProviderInspectConfig
     /// </summary>
     [JsonPropertyName("minLikelihood")]
     public string? MinLikelihood { get; set; }
+
+    /// <summary>
+    /// Minimum likelihood per infotype. For each infotype, a user can specify a minimum likelihood.
+    /// The system only returns a finding if its likelihood is above this threshold. If this field
+    /// is not set, the system uses the InspectConfig min_likelihood.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("minLikelihoodPerInfoType")]
+    public IList<V1beta2InspectTemplateStatusAtProviderInspectConfigMinLikelihoodPerInfoType>? MinLikelihoodPerInfoType { get; set; }
 
     /// <summary>
     /// Set of rules to apply to the findings for this InspectConfig. Exclusion rules, contained in the set are executed in the end,

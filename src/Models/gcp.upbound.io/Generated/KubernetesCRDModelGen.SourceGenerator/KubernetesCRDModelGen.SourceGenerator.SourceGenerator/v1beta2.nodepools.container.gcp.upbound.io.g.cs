@@ -248,6 +248,24 @@ public partial class V1beta2NodePoolSpecForProviderClusterSelector
     public V1beta2NodePoolSpecForProviderClusterSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderMaintenancePolicyExclusionUntilEndOfSupport
+{
+    /// <summary>When true, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderMaintenancePolicy
+{
+    /// <summary>When enabled, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date. Structure is documented below.</summary>
+    [JsonPropertyName("exclusionUntilEndOfSupport")]
+    public IList<V1beta2NodePoolSpecForProviderMaintenancePolicyExclusionUntilEndOfSupport>? ExclusionUntilEndOfSupport { get; set; }
+}
+
 /// <summary>
 /// Node management configuration, wherein auto-repair and
 /// auto-upgrade is configured. Structure is documented below.
@@ -647,6 +665,7 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecForProviderNodeConfigHostMaintenancePolicy
@@ -838,6 +857,28 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigAccu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    [JsonPropertyName("initScript")]
+    public V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigHugepagesConfig
 {
     [JsonPropertyName("hugepageSize1G")]
@@ -925,6 +966,9 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfig
 
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
+
+    [JsonPropertyName("customNodeInit")]
+    public V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta2NodePoolSpecForProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -1294,6 +1338,7 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta2NodePoolSpecForProviderNodeConfigGvnic? Gvnic { get; set; }
 
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta2NodePoolSpecForProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -1577,6 +1622,10 @@ public partial class V1beta2NodePoolSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public IList<V1beta2NodePoolSpecForProviderMaintenancePolicy>? MaintenancePolicy { get; set; }
+
     /// <summary>
     /// Node management configuration, wherein auto-repair and
     /// auto-upgrade is configured. Structure is documented below.
@@ -1707,6 +1756,24 @@ public partial class V1beta2NodePoolSpecInitProviderAutoscaling
     /// </summary>
     [JsonPropertyName("totalMinNodeCount")]
     public double? TotalMinNodeCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderMaintenancePolicyExclusionUntilEndOfSupport
+{
+    /// <summary>When true, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderMaintenancePolicy
+{
+    /// <summary>When enabled, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date. Structure is documented below.</summary>
+    [JsonPropertyName("exclusionUntilEndOfSupport")]
+    public IList<V1beta2NodePoolSpecInitProviderMaintenancePolicyExclusionUntilEndOfSupport>? ExclusionUntilEndOfSupport { get; set; }
 }
 
 /// <summary>
@@ -2108,6 +2175,7 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecInitProviderNodeConfigHostMaintenancePolicy
@@ -2299,6 +2367,28 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigAcc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    [JsonPropertyName("initScript")]
+    public V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigHugepagesConfig
 {
     [JsonPropertyName("hugepageSize1G")]
@@ -2386,6 +2476,9 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfig
 
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
+
+    [JsonPropertyName("customNodeInit")]
+    public V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta2NodePoolSpecInitProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -2755,6 +2848,7 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta2NodePoolSpecInitProviderNodeConfigGvnic? Gvnic { get; set; }
 
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta2NodePoolSpecInitProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -3033,6 +3127,10 @@ public partial class V1beta2NodePoolSpecInitProvider
     /// </summary>
     [JsonPropertyName("initialNodeCount")]
     public double? InitialNodeCount { get; set; }
+
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public IList<V1beta2NodePoolSpecInitProviderMaintenancePolicy>? MaintenancePolicy { get; set; }
 
     /// <summary>
     /// Node management configuration, wherein auto-repair and
@@ -3347,6 +3445,32 @@ public partial class V1beta2NodePoolStatusAtProviderAutoscaling
     /// </summary>
     [JsonPropertyName("totalMinNodeCount")]
     public double? TotalMinNodeCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderMaintenancePolicyExclusionUntilEndOfSupport
+{
+    /// <summary>When true, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The time when the maintenance policy is no longer effective, i.e., the node pool version&apos;s end of support date.</summary>
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    /// <summary>The time when the maintenance policy is first created.</summary>
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderMaintenancePolicy
+{
+    /// <summary>When enabled, the node pool will not be automatically upgraded by GKE until the node pool version&apos;s end of support date. Structure is documented below.</summary>
+    [JsonPropertyName("exclusionUntilEndOfSupport")]
+    public IList<V1beta2NodePoolStatusAtProviderMaintenancePolicyExclusionUntilEndOfSupport>? ExclusionUntilEndOfSupport { get; set; }
 }
 
 /// <summary>
@@ -3763,6 +3887,7 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolStatusAtProviderNodeConfigHostMaintenancePolicy
@@ -3954,6 +4079,28 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigAcc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    [JsonPropertyName("initScript")]
+    public V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigHugepagesConfig
 {
     [JsonPropertyName("hugepageSize1G")]
@@ -4041,6 +4188,9 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfig
 
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
+
+    [JsonPropertyName("customNodeInit")]
+    public V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
 
     [JsonPropertyName("hugepagesConfig")]
     public V1beta2NodePoolStatusAtProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -4266,6 +4416,7 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta2NodePoolStatusAtProviderNodeConfigGvnic? Gvnic { get; set; }
 
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta2NodePoolStatusAtProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -4547,6 +4698,10 @@ public partial class V1beta2NodePoolStatusAtProvider
     /// <summary>The location (region or zone) of the cluster.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>The maintenance policy of the pool. Structure is documented below.</summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public IList<V1beta2NodePoolStatusAtProviderMaintenancePolicy>? MaintenancePolicy { get; set; }
 
     /// <summary>List of instance group URLs which have been assigned to this node pool.</summary>
     [JsonPropertyName("managedInstanceGroupUrls")]

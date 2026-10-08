@@ -796,6 +796,10 @@ public partial class V1beta1UserStatusAtProvider
     [JsonPropertyName("passwordPolicy")]
     public V1beta1UserStatusAtProviderPasswordPolicy? PasswordPolicy { get; set; }
 
+    /// <summary>An integer value used to trigger an update for password_wo. This property should be incremented when updating password_wo. For more info see updating write-only arguments.</summary>
+    [JsonPropertyName("passwordWoVersion")]
+    public double? PasswordWoVersion { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs. If it
     /// is not provided, the provider project is used.

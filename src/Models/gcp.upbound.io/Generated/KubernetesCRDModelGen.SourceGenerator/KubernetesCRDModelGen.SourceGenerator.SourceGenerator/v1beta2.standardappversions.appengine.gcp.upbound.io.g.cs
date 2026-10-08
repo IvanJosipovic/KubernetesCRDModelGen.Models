@@ -536,9 +536,20 @@ public partial class V1beta2StandardAppVersionSpecForProviderVpcAccessConnector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StandardAppVersionSpecForProvider
 {
-    /// <summary>Allows App Engine second generation runtimes to access the legacy bundled services.</summary>
+    /// <summary>
+    /// Allows App Engine second generation runtimes to access the legacy bundled services.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// </summary>
     [JsonPropertyName("appEngineApis")]
     public bool? AppEngineApis { get; set; }
+
+    /// <summary>
+    /// A list of legacy bundled services to enable for this version on an App Engine second-generation runtime.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// Each value may be one of: BUNDLED_SERVICE_TYPE_APP_IDENTITY_SERVICE, BUNDLED_SERVICE_TYPE_BLOBSTORE, BUNDLED_SERVICE_TYPE_CAPABILITY_SERVICE, BUNDLED_SERVICE_TYPE_DATASTORE_V3, BUNDLED_SERVICE_TYPE_IMAGES, BUNDLED_SERVICE_TYPE_MAIL, BUNDLED_SERVICE_TYPE_MEMCACHE, BUNDLED_SERVICE_TYPE_MODULES, BUNDLED_SERVICE_TYPE_SEARCH, BUNDLED_SERVICE_TYPE_TASKQUEUES, BUNDLED_SERVICE_TYPE_URLFETCH, BUNDLED_SERVICE_TYPE_USERS.
+    /// </summary>
+    [JsonPropertyName("appEngineBundledServices")]
+    public IList<string>? AppEngineBundledServices { get; set; }
 
     /// <summary>
     /// Automatic scaling is based on request rate, response latencies, and other application metrics.
@@ -1158,9 +1169,20 @@ public partial class V1beta2StandardAppVersionSpecInitProviderVpcAccessConnector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StandardAppVersionSpecInitProvider
 {
-    /// <summary>Allows App Engine second generation runtimes to access the legacy bundled services.</summary>
+    /// <summary>
+    /// Allows App Engine second generation runtimes to access the legacy bundled services.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// </summary>
     [JsonPropertyName("appEngineApis")]
     public bool? AppEngineApis { get; set; }
+
+    /// <summary>
+    /// A list of legacy bundled services to enable for this version on an App Engine second-generation runtime.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// Each value may be one of: BUNDLED_SERVICE_TYPE_APP_IDENTITY_SERVICE, BUNDLED_SERVICE_TYPE_BLOBSTORE, BUNDLED_SERVICE_TYPE_CAPABILITY_SERVICE, BUNDLED_SERVICE_TYPE_DATASTORE_V3, BUNDLED_SERVICE_TYPE_IMAGES, BUNDLED_SERVICE_TYPE_MAIL, BUNDLED_SERVICE_TYPE_MEMCACHE, BUNDLED_SERVICE_TYPE_MODULES, BUNDLED_SERVICE_TYPE_SEARCH, BUNDLED_SERVICE_TYPE_TASKQUEUES, BUNDLED_SERVICE_TYPE_URLFETCH, BUNDLED_SERVICE_TYPE_USERS.
+    /// </summary>
+    [JsonPropertyName("appEngineBundledServices")]
+    public IList<string>? AppEngineBundledServices { get; set; }
 
     /// <summary>
     /// Automatic scaling is based on request rate, response latencies, and other application metrics.
@@ -1800,9 +1822,20 @@ public partial class V1beta2StandardAppVersionStatusAtProviderVpcAccessConnector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2StandardAppVersionStatusAtProvider
 {
-    /// <summary>Allows App Engine second generation runtimes to access the legacy bundled services.</summary>
+    /// <summary>
+    /// Allows App Engine second generation runtimes to access the legacy bundled services.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// </summary>
     [JsonPropertyName("appEngineApis")]
     public bool? AppEngineApis { get; set; }
+
+    /// <summary>
+    /// A list of legacy bundled services to enable for this version on an App Engine second-generation runtime.
+    /// Cannot specify both app_engine_apis and app_engine_bundled_services together.
+    /// Each value may be one of: BUNDLED_SERVICE_TYPE_APP_IDENTITY_SERVICE, BUNDLED_SERVICE_TYPE_BLOBSTORE, BUNDLED_SERVICE_TYPE_CAPABILITY_SERVICE, BUNDLED_SERVICE_TYPE_DATASTORE_V3, BUNDLED_SERVICE_TYPE_IMAGES, BUNDLED_SERVICE_TYPE_MAIL, BUNDLED_SERVICE_TYPE_MEMCACHE, BUNDLED_SERVICE_TYPE_MODULES, BUNDLED_SERVICE_TYPE_SEARCH, BUNDLED_SERVICE_TYPE_TASKQUEUES, BUNDLED_SERVICE_TYPE_URLFETCH, BUNDLED_SERVICE_TYPE_USERS.
+    /// </summary>
+    [JsonPropertyName("appEngineBundledServices")]
+    public IList<string>? AppEngineBundledServices { get; set; }
 
     /// <summary>
     /// Automatic scaling is based on request rate, response latencies, and other application metrics.

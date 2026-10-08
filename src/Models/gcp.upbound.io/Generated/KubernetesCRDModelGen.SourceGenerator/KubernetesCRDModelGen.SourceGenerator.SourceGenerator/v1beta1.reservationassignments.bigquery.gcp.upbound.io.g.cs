@@ -218,6 +218,10 @@ public partial class V1beta1ReservationAssignmentSpecForProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>Optional. Represents the principal for this assignment. If not empty, jobs run by this principal will utilize the associated reservation. Otherwise, jobs will fall back to using the reservation assigned to the project, folder, or organization (in that order). If no reservation is assigned at any of these levels, on-demand capacity will be used. The supported formats are:</summary>
+    [JsonPropertyName("principal")]
+    public string? Principal { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.
@@ -265,6 +269,10 @@ public partial class V1beta1ReservationAssignmentSpecInitProvider
     /// <summary>The location for the resource</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>Optional. Represents the principal for this assignment. If not empty, jobs run by this principal will utilize the associated reservation. Otherwise, jobs will fall back to using the reservation assigned to the project, folder, or organization (in that order). If no reservation is assigned at any of these levels, on-demand capacity will be used. The supported formats are:</summary>
+    [JsonPropertyName("principal")]
+    public string? Principal { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.
@@ -487,6 +495,10 @@ public partial class V1beta1ReservationAssignmentStatusAtProvider
     /// <summary>Output only. The resource name of the assignment.</summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+
+    /// <summary>Optional. Represents the principal for this assignment. If not empty, jobs run by this principal will utilize the associated reservation. Otherwise, jobs will fall back to using the reservation assigned to the project, folder, or organization (in that order). If no reservation is assigned at any of these levels, on-demand capacity will be used. The supported formats are:</summary>
+    [JsonPropertyName("principal")]
+    public string? Principal { get; set; }
 
     /// <summary>
     /// The ID of the project in which the resource belongs.

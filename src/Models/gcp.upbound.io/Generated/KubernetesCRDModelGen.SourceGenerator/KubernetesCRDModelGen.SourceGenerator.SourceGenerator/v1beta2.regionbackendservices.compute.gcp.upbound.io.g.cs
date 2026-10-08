@@ -1352,6 +1352,24 @@ public partial class V1beta2RegionBackendServiceSpecForProviderIap
     public V1beta2RegionBackendServiceSpecForProviderIapOauth2ClientSecretSecretRef? Oauth2ClientSecretSecretRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceSpecForProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceSpecForProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -1376,6 +1394,20 @@ public partial class V1beta2RegionBackendServiceSpecForProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta2RegionBackendServiceSpecForProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta2RegionBackendServiceSpecForProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of
@@ -3562,6 +3594,24 @@ public partial class V1beta2RegionBackendServiceSpecInitProviderIap
     public V1beta2RegionBackendServiceSpecInitProviderIapOauth2ClientSecretSecretRef? Oauth2ClientSecretSecretRef { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceSpecInitProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceSpecInitProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -3586,6 +3636,20 @@ public partial class V1beta2RegionBackendServiceSpecInitProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta2RegionBackendServiceSpecInitProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta2RegionBackendServiceSpecInitProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of
@@ -5320,6 +5384,24 @@ public partial class V1beta2RegionBackendServiceStatusAtProviderIap
     public string? Oauth2ClientId { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceStatusAtProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegionBackendServiceStatusAtProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -5344,6 +5426,20 @@ public partial class V1beta2RegionBackendServiceStatusAtProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta2RegionBackendServiceStatusAtProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta2RegionBackendServiceStatusAtProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of

@@ -2157,6 +2157,10 @@ public partial class V1beta1VPNTunnelStatusAtProvider
     [JsonPropertyName("sharedSecretHash")]
     public string? SharedSecretHash { get; set; }
 
+    /// <summary>Triggers update of shared_secret_wo write-only. Increment this value when an update to shared_secret_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("sharedSecretWoVersion")]
+    public string? SharedSecretWoVersion { get; set; }
+
     /// <summary>
     /// URL of the Target VPN gateway with which this VPN tunnel is
     /// associated.

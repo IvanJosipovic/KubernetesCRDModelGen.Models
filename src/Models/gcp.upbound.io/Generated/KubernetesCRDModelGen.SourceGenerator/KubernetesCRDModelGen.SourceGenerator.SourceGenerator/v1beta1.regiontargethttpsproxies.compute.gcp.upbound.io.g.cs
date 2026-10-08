@@ -62,6 +62,153 @@ public enum V1beta1RegionTargetHTTPSProxySpecDeletionPolicyEnum
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolutionEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolveEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolveEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolutionEnum>))]
 public enum V1beta1RegionTargetHTTPSProxySpecForProviderSslCertificatesRefsPolicyResolutionEnum
 {
@@ -407,6 +554,14 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProvider
     [JsonPropertyName("serverTlsPolicy")]
     public string? ServerTlsPolicy { get; set; }
 
+    /// <summary>Reference to a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+    [JsonPropertyName("serverTlsPolicyRef")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicyRef? ServerTlsPolicyRef { get; set; }
+
+    /// <summary>Selector for a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+    [JsonPropertyName("serverTlsPolicySelector")]
+    public V1beta1RegionTargetHTTPSProxySpecForProviderServerTlsPolicySelector? ServerTlsPolicySelector { get; set; }
+
     /// <summary>
     /// URLs to SslCertificate resources that are used to authenticate connections between users and the load balancer.
     /// At least one SSL certificate must be specified. Currently, you may specify up to 15 SSL certificates.
@@ -445,6 +600,153 @@ public partial class V1beta1RegionTargetHTTPSProxySpecForProvider
     /// <summary>Selector for a RegionURLMap in compute to populate urlMap.</summary>
     [JsonPropertyName("urlMapSelector")]
     public V1beta1RegionTargetHTTPSProxySpecForProviderUrlMapSelector? UrlMapSelector { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolutionEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolveEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolutionEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolveEnum>))]
+public enum V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -803,6 +1105,14 @@ public partial class V1beta1RegionTargetHTTPSProxySpecInitProvider
     /// </summary>
     [JsonPropertyName("serverTlsPolicy")]
     public string? ServerTlsPolicy { get; set; }
+
+    /// <summary>Reference to a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+    [JsonPropertyName("serverTlsPolicyRef")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicyRef? ServerTlsPolicyRef { get; set; }
+
+    /// <summary>Selector for a ServerTLSPolicy in networksecurity to populate serverTlsPolicy.</summary>
+    [JsonPropertyName("serverTlsPolicySelector")]
+    public V1beta1RegionTargetHTTPSProxySpecInitProviderServerTlsPolicySelector? ServerTlsPolicySelector { get; set; }
 
     /// <summary>
     /// URLs to SslCertificate resources that are used to authenticate connections between users and the load balancer.

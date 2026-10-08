@@ -1049,7 +1049,11 @@ public partial class V1beta2V2JobSpecForProviderTemplateTemplateVpcAccessNetwork
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run job.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -1258,6 +1262,28 @@ public partial class V1beta2V2JobSpecForProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully completed.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("runExecutionToken")]
+    public string? RunExecutionToken { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully started.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("startExecutionToken")]
+    public string? StartExecutionToken { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create executions for this Job.
@@ -2261,7 +2287,11 @@ public partial class V1beta2V2JobSpecInitProviderTemplateTemplateVpcAccessNetwor
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run job.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -2478,6 +2508,28 @@ public partial class V1beta2V2JobSpecInitProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully completed.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("runExecutionToken")]
+    public string? RunExecutionToken { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully started.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("startExecutionToken")]
+    public string? StartExecutionToken { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create executions for this Job.
@@ -3289,7 +3341,11 @@ public partial class V1beta2V2JobStatusAtProviderTemplateTemplateVpcAccessNetwor
     [JsonPropertyName("subnetwork")]
     public string? Subnetwork { get; set; }
 
-    /// <summary>Network tags applied to this Cloud Run job.</summary>
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
 }
@@ -3636,6 +3692,28 @@ public partial class V1beta2V2JobStatusAtProvider
     /// </summary>
     [JsonPropertyName("reconciling")]
     public bool? Reconciling { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully completed.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("runExecutionToken")]
+    public string? RunExecutionToken { get; set; }
+
+    /// <summary>
+    /// A unique string used as a suffix creating a new execution upon job create or update. The Job will become ready when the execution is successfully started.
+    /// The sum of job name and token length must be fewer than 63 characters.
+    /// </summary>
+    [JsonPropertyName("startExecutionToken")]
+    public string? StartExecutionToken { get; set; }
+
+    /// <summary>
+    /// A map of resource manager tags.
+    /// Resource manager tag keys and values have the same definition as resource manager tags.
+    /// Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
+    /// </summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 
     /// <summary>
     /// The template used to create executions for this Job.

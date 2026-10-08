@@ -868,9 +868,17 @@ public partial class V1beta1InstanceSpecForProviderZoneDistributionConfig
 public partial class V1beta1InstanceSpecForProvider
 {
     /// <summary>
+    /// The name of the ACL policy to attach to the instance.
+    /// Format: projects/{project}/locations/{location}/aclPolicies/{acl_policy}
+    /// </summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
+    /// <summary>
     /// Optional. Immutable. Authorization mode of the instance. Possible values:
     /// AUTH_DISABLED
-    /// IAM_AUTH
+    /// IAM_AUTH.
+    /// TOKEN_AUTH is also supported, but only available in the google-beta provider.
     /// </summary>
     [JsonPropertyName("authorizationMode")]
     public string? AuthorizationMode { get; set; }
@@ -1886,9 +1894,17 @@ public partial class V1beta1InstanceSpecInitProviderZoneDistributionConfig
 public partial class V1beta1InstanceSpecInitProvider
 {
     /// <summary>
+    /// The name of the ACL policy to attach to the instance.
+    /// Format: projects/{project}/locations/{location}/aclPolicies/{acl_policy}
+    /// </summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
+    /// <summary>
     /// Optional. Immutable. Authorization mode of the instance. Possible values:
     /// AUTH_DISABLED
-    /// IAM_AUTH
+    /// IAM_AUTH.
+    /// TOKEN_AUTH is also supported, but only available in the google-beta provider.
     /// </summary>
     [JsonPropertyName("authorizationMode")]
     public string? AuthorizationMode { get; set; }
@@ -2951,9 +2967,17 @@ public partial class V1beta1InstanceStatusAtProviderZoneDistributionConfig
 public partial class V1beta1InstanceStatusAtProvider
 {
     /// <summary>
+    /// The name of the ACL policy to attach to the instance.
+    /// Format: projects/{project}/locations/{location}/aclPolicies/{acl_policy}
+    /// </summary>
+    [JsonPropertyName("aclPolicy")]
+    public string? AclPolicy { get; set; }
+
+    /// <summary>
     /// Optional. Immutable. Authorization mode of the instance. Possible values:
     /// AUTH_DISABLED
-    /// IAM_AUTH
+    /// IAM_AUTH.
+    /// TOKEN_AUTH is also supported, but only available in the google-beta provider.
     /// </summary>
     [JsonPropertyName("authorizationMode")]
     public string? AuthorizationMode { get; set; }
@@ -3045,6 +3069,10 @@ public partial class V1beta1InstanceStatusAtProvider
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/instances/{{instance_id}}</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Whether the ACL policy is in sync with the cluster.</summary>
+    [JsonPropertyName("isAclPolicyInSync")]
+    public bool? IsAclPolicyInSync { get; set; }
 
     /// <summary>The KMS key used to encrypt the at-rest data of the cluster</summary>
     [JsonPropertyName("kmsKey")]

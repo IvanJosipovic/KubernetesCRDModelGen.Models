@@ -291,6 +291,10 @@ public partial class V1beta1FieldSpecForProvider
     [JsonPropertyName("project")]
     public string? Project { get; set; }
 
+    /// <summary>Whether to skip waiting for the field operation to complete.</summary>
+    [JsonPropertyName("skipWait")]
+    public bool? SkipWait { get; set; }
+
     /// <summary>
     /// The TTL configuration for this Field. If set to an empty (i.e. ttl_config {}) or non-empty block, a TTL policy is configured based on the field. If unset, a TTL policy is not configured (or will be disabled upon updating the resource).
     /// Structure is documented below.
@@ -394,6 +398,10 @@ public partial class V1beta1FieldSpecInitProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>Whether to skip waiting for the field operation to complete.</summary>
+    [JsonPropertyName("skipWait")]
+    public bool? SkipWait { get; set; }
 
     /// <summary>
     /// The TTL configuration for this Field. If set to an empty (i.e. ttl_config {}) or non-empty block, a TTL policy is configured based on the field. If unset, a TTL policy is not configured (or will be disabled upon updating the resource).
@@ -626,6 +634,10 @@ public partial class V1beta1FieldStatusAtProvider
     /// </summary>
     [JsonPropertyName("project")]
     public string? Project { get; set; }
+
+    /// <summary>Whether to skip waiting for the field operation to complete.</summary>
+    [JsonPropertyName("skipWait")]
+    public bool? SkipWait { get; set; }
 
     /// <summary>
     /// The TTL configuration for this Field. If set to an empty (i.e. ttl_config {}) or non-empty block, a TTL policy is configured based on the field. If unset, a TTL policy is not configured (or will be disabled upon updating the resource).
