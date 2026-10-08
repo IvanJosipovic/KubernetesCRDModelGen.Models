@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azuread.upbound.io-v1.15.0...azuread.upbound.io-v1.16.0) (2026-10-08)
+
+
+### Features
+
+* Sync ([#173](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/173)) ([1053f6c](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/1053f6c350d551d6a73694c6994035a9564716dc))
+
 ## [1.15.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azuread.upbound.io-v1.14.1...azuread.upbound.io-v1.15.0) (2026-08-03)
 
 
