@@ -506,6 +506,10 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecForProviderNet
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>
@@ -1734,6 +1738,10 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>
@@ -2821,6 +2829,10 @@ public partial class V1beta2OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 /// <summary>A diff_disk_settings block as defined above. Changing this forces a new resource to be created.</summary>

@@ -112,6 +112,10 @@ public partial class V1beta1OriginRequestPolicySpecForProvider
     [JsonPropertyName("headersConfig")]
     public V1beta1OriginRequestPolicySpecForProviderHeadersConfig? HeadersConfig { get; set; }
 
+    /// <summary>Unique name to identify the origin request policy.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
     /// <summary>Object that determines whether any URL query strings in viewer requests (and if so, which query strings) are included in the origin request key and automatically included in requests that CloudFront sends to the origin. See Query String Config for more information.</summary>
     [JsonPropertyName("queryStringsConfig")]
     public V1beta1OriginRequestPolicySpecForProviderQueryStringsConfig? QueryStringsConfig { get; set; }
@@ -204,6 +208,10 @@ public partial class V1beta1OriginRequestPolicySpecInitProvider
     /// <summary>Object that determines whether any HTTP headers (and if so, which headers) are included in the origin request key and automatically included in requests that CloudFront sends to the origin. See Headers Config for more information.</summary>
     [JsonPropertyName("headersConfig")]
     public V1beta1OriginRequestPolicySpecInitProviderHeadersConfig? HeadersConfig { get; set; }
+
+    /// <summary>Unique name to identify the origin request policy.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Object that determines whether any URL query strings in viewer requests (and if so, which query strings) are included in the origin request key and automatically included in requests that CloudFront sends to the origin. See Query String Config for more information.</summary>
     [JsonPropertyName("queryStringsConfig")]
@@ -404,6 +412,10 @@ public partial class V1beta1OriginRequestPolicyStatusAtProvider
     /// <summary>The identifier for the origin request policy.</summary>
     [JsonPropertyName("id")]
     public string? Id { get; set; }
+
+    /// <summary>Unique name to identify the origin request policy.</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 
     /// <summary>Object that determines whether any URL query strings in viewer requests (and if so, which query strings) are included in the origin request key and automatically included in requests that CloudFront sends to the origin. See Query String Config for more information.</summary>
     [JsonPropertyName("queryStringsConfig")]

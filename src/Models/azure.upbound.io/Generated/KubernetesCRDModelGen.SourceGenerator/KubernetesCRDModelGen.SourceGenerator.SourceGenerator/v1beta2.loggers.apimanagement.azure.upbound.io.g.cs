@@ -247,6 +247,10 @@ public partial class V1beta2LoggerSpecForProviderApplicationInsights
     [JsonPropertyName("connectionStringSecretRef")]
     public V1beta2LoggerSpecForProviderApplicationInsightsConnectionStringSecretRef? ConnectionStringSecretRef { get; set; }
 
+    /// <summary>The Client Id of the User Assigned Identity, or SystemAssigned to use the System Assigned Identity, that has the &quot;Monitoring Metrics Publisher&quot; role on the target Application Insights resource. Requires connection_string to be set. Cannot be used with instrumentation_key.</summary>
+    [JsonPropertyName("identityClientId")]
+    public string? IdentityClientId { get; set; }
+
     /// <summary>The instrumentation key used to push data to Application Insights.</summary>
     [JsonPropertyName("instrumentationKeySecretRef")]
     public V1beta2LoggerSpecForProviderApplicationInsightsInstrumentationKeySecretRef? InstrumentationKeySecretRef { get; set; }
@@ -688,6 +692,10 @@ public partial class V1beta2LoggerSpecInitProviderApplicationInsights
     [JsonPropertyName("connectionStringSecretRef")]
     public V1beta2LoggerSpecInitProviderApplicationInsightsConnectionStringSecretRef? ConnectionStringSecretRef { get; set; }
 
+    /// <summary>The Client Id of the User Assigned Identity, or SystemAssigned to use the System Assigned Identity, that has the &quot;Monitoring Metrics Publisher&quot; role on the target Application Insights resource. Requires connection_string to be set. Cannot be used with instrumentation_key.</summary>
+    [JsonPropertyName("identityClientId")]
+    public string? IdentityClientId { get; set; }
+
     /// <summary>The instrumentation key used to push data to Application Insights.</summary>
     [JsonPropertyName("instrumentationKeySecretRef")]
     public V1beta2LoggerSpecInitProviderApplicationInsightsInstrumentationKeySecretRef? InstrumentationKeySecretRef { get; set; }
@@ -1108,54 +1116,14 @@ public partial class V1beta2LoggerSpec
     public V1beta2LoggerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-/// <summary>The connection string of Application Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2LoggerStatusAtProviderApplicationInsightsConnectionStringSecretRef
-{
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
-}
-
-/// <summary>The instrumentation key used to push data to Application Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public partial class V1beta2LoggerStatusAtProviderApplicationInsightsInstrumentationKeySecretRef
-{
-    /// <summary>The key to select.</summary>
-    [JsonPropertyName("key")]
-    public required string Key { get; set; }
-
-    /// <summary>Name of the secret.</summary>
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
-
-    /// <summary>Namespace of the secret.</summary>
-    [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
-}
-
 /// <summary>An application_insights block as documented below. Changing this forces a new resource to be created.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2LoggerStatusAtProviderApplicationInsights
 {
-    /// <summary>The connection string of Application Insights.</summary>
-    [JsonPropertyName("connectionStringSecretRef")]
-    public V1beta2LoggerStatusAtProviderApplicationInsightsConnectionStringSecretRef? ConnectionStringSecretRef { get; set; }
-
-    /// <summary>The instrumentation key used to push data to Application Insights.</summary>
-    [JsonPropertyName("instrumentationKeySecretRef")]
-    public V1beta2LoggerStatusAtProviderApplicationInsightsInstrumentationKeySecretRef? InstrumentationKeySecretRef { get; set; }
+    /// <summary>The Client Id of the User Assigned Identity, or SystemAssigned to use the System Assigned Identity, that has the &quot;Monitoring Metrics Publisher&quot; role on the target Application Insights resource. Requires connection_string to be set. Cannot be used with instrumentation_key.</summary>
+    [JsonPropertyName("identityClientId")]
+    public string? IdentityClientId { get; set; }
 }
 
 /// <summary>An eventhub block as documented below. Changing this forces a new resource to be created.</summary>

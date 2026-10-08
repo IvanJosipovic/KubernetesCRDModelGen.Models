@@ -354,13 +354,13 @@ public partial class V1beta1CustomDomainSpecForProviderContainerAppIdSelector
 public partial class V1beta1CustomDomainSpecForProvider
 {
     /// <summary>
-    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id.
     /// The Binding type. Possible values include `Disabled` and `SniEnabled`.
     /// </summary>
     [JsonPropertyName("certificateBindingType")]
     public string? CertificateBindingType { get; set; }
 
-    /// <summary>The ID of the Container App Environment Certificate to use. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Container App Environment Certificate to use. Removing this value (switching to an Azure Managed certificate) forces a new resource to be created.</summary>
     [JsonPropertyName("containerAppEnvironmentCertificateId")]
     public string? ContainerAppEnvironmentCertificateId { get; set; }
 
@@ -549,13 +549,13 @@ public partial class V1beta1CustomDomainSpecInitProviderContainerAppEnvironmentC
 public partial class V1beta1CustomDomainSpecInitProvider
 {
     /// <summary>
-    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id.
     /// The Binding type. Possible values include `Disabled` and `SniEnabled`.
     /// </summary>
     [JsonPropertyName("certificateBindingType")]
     public string? CertificateBindingType { get; set; }
 
-    /// <summary>The ID of the Container App Environment Certificate to use. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Container App Environment Certificate to use. Removing this value (switching to an Azure Managed certificate) forces a new resource to be created.</summary>
     [JsonPropertyName("containerAppEnvironmentCertificateId")]
     public string? ContainerAppEnvironmentCertificateId { get; set; }
 
@@ -756,13 +756,13 @@ public partial class V1beta1CustomDomainSpec
 public partial class V1beta1CustomDomainStatusAtProvider
 {
     /// <summary>
-    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id. Changing this forces a new resource to be created.
+    /// The Certificate Binding type. Possible values are Auto, Disabled and SniEnabled. Required with container_app_environment_certificate_id.
     /// The Binding type. Possible values include `Disabled` and `SniEnabled`.
     /// </summary>
     [JsonPropertyName("certificateBindingType")]
     public string? CertificateBindingType { get; set; }
 
-    /// <summary>The ID of the Container App Environment Certificate to use. Changing this forces a new resource to be created.</summary>
+    /// <summary>The ID of the Container App Environment Certificate to use. Removing this value (switching to an Azure Managed certificate) forces a new resource to be created.</summary>
     [JsonPropertyName("containerAppEnvironmentCertificateId")]
     public string? ContainerAppEnvironmentCertificateId { get; set; }
 

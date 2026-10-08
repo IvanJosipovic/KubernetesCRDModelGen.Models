@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.22.0
   name: windowsvirtualmachinescalesets.compute.azure.m.upbound.io
 spec:
   group: compute.azure.m.upbound.io
@@ -161,6 +161,12 @@ spec:
                         diskEncryptionSetId:
                           description: The ID of the Disk Encryption Set which should be used to encrypt this OS Disk. Conflicts with secure_vm_disk_encryption_set_id. Changing this forces a new resource to be created.
                           type: string
+                        diskIopsReadWrite:
+                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
+                        diskMbpsReadWrite:
+                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
                         diskSizeGb:
                           description: The size of the Data Disk which should be created.
                           type: number
@@ -174,10 +180,8 @@ spec:
                           description: The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.
                           type: string
                         ultraSsdDiskIopsReadWrite:
-                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         ultraSsdDiskMbpsReadWrite:
-                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         writeAcceleratorEnabled:
                           description: Should Write Accelerator be Enabled for this OS Disk? Defaults to false.
@@ -911,6 +915,12 @@ spec:
                         diskEncryptionSetId:
                           description: The ID of the Disk Encryption Set which should be used to encrypt this OS Disk. Conflicts with secure_vm_disk_encryption_set_id. Changing this forces a new resource to be created.
                           type: string
+                        diskIopsReadWrite:
+                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
+                        diskMbpsReadWrite:
+                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
                         diskSizeGb:
                           description: The size of the Data Disk which should be created.
                           type: number
@@ -924,10 +934,8 @@ spec:
                           description: The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.
                           type: string
                         ultraSsdDiskIopsReadWrite:
-                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         ultraSsdDiskMbpsReadWrite:
-                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         writeAcceleratorEnabled:
                           description: Should Write Accelerator be Enabled for this OS Disk? Defaults to false.
@@ -1608,6 +1616,12 @@ spec:
                         diskEncryptionSetId:
                           description: The ID of the Disk Encryption Set which should be used to encrypt this OS Disk. Conflicts with secure_vm_disk_encryption_set_id. Changing this forces a new resource to be created.
                           type: string
+                        diskIopsReadWrite:
+                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
+                        diskMbpsReadWrite:
+                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
+                          type: number
                         diskSizeGb:
                           description: The size of the Data Disk which should be created.
                           type: number
@@ -1621,10 +1635,8 @@ spec:
                           description: The Type of Storage Account which should back this Data Disk. Possible values include Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS, Premium_LRS, PremiumV2_LRS, Premium_ZRS and UltraSSD_LRS.
                           type: string
                         ultraSsdDiskIopsReadWrite:
-                          description: Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         ultraSsdDiskMbpsReadWrite:
-                          description: Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.
                           type: number
                         writeAcceleratorEnabled:
                           description: Should Write Accelerator be Enabled for this OS Disk? Defaults to false.

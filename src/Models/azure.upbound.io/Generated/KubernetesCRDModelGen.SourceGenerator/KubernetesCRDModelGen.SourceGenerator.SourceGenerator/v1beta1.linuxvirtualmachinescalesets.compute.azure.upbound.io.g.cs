@@ -181,6 +181,14 @@ public partial class V1beta1LinuxVirtualMachineScaleSetSpecForProviderDataDisk
     [JsonPropertyName("diskEncryptionSetId")]
     public string? DiskEncryptionSetId { get; set; }
 
+    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskIopsReadWrite")]
+    public double? DiskIopsReadWrite { get; set; }
+
+    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskMbpsReadWrite")]
+    public double? DiskMbpsReadWrite { get; set; }
+
     /// <summary>The size of the Data Disk which should be created.</summary>
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
@@ -197,11 +205,9 @@ public partial class V1beta1LinuxVirtualMachineScaleSetSpecForProviderDataDisk
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
-    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskIopsReadWrite")]
     public double? UltraSsdDiskIopsReadWrite { get; set; }
 
-    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskMbpsReadWrite")]
     public double? UltraSsdDiskMbpsReadWrite { get; set; }
 
@@ -1314,6 +1320,14 @@ public partial class V1beta1LinuxVirtualMachineScaleSetSpecInitProviderDataDisk
     [JsonPropertyName("diskEncryptionSetId")]
     public string? DiskEncryptionSetId { get; set; }
 
+    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskIopsReadWrite")]
+    public double? DiskIopsReadWrite { get; set; }
+
+    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskMbpsReadWrite")]
+    public double? DiskMbpsReadWrite { get; set; }
+
     /// <summary>The size of the Data Disk which should be created.</summary>
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
@@ -1330,11 +1344,9 @@ public partial class V1beta1LinuxVirtualMachineScaleSetSpecInitProviderDataDisk
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
-    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskIopsReadWrite")]
     public double? UltraSsdDiskIopsReadWrite { get; set; }
 
-    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskMbpsReadWrite")]
     public double? UltraSsdDiskMbpsReadWrite { get; set; }
 
@@ -2444,6 +2456,14 @@ public partial class V1beta1LinuxVirtualMachineScaleSetStatusAtProviderDataDisk
     [JsonPropertyName("diskEncryptionSetId")]
     public string? DiskEncryptionSetId { get; set; }
 
+    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskIopsReadWrite")]
+    public double? DiskIopsReadWrite { get; set; }
+
+    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
+    [JsonPropertyName("diskMbpsReadWrite")]
+    public double? DiskMbpsReadWrite { get; set; }
+
     /// <summary>The size of the Data Disk which should be created.</summary>
     [JsonPropertyName("diskSizeGb")]
     public double? DiskSizeGb { get; set; }
@@ -2460,11 +2480,9 @@ public partial class V1beta1LinuxVirtualMachineScaleSetStatusAtProviderDataDisk
     [JsonPropertyName("storageAccountType")]
     public string? StorageAccountType { get; set; }
 
-    /// <summary>Specifies the Read-Write IOPS for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskIopsReadWrite")]
     public double? UltraSsdDiskIopsReadWrite { get; set; }
 
-    /// <summary>Specifies the bandwidth in MB per second for this Data Disk. Only settable when storage_account_type is PremiumV2_LRS or UltraSSD_LRS.</summary>
     [JsonPropertyName("ultraSsdDiskMbpsReadWrite")]
     public double? UltraSsdDiskMbpsReadWrite { get; set; }
 

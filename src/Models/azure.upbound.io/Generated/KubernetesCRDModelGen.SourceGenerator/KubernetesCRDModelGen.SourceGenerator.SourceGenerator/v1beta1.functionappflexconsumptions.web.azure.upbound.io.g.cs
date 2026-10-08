@@ -2513,7 +2513,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecForProviderSiteConfig
 
     /// <summary>
     /// The Remote Debugging Version. Possible values include VS2017, VS2019, and VS2022.
-    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022“
+    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``
     /// </summary>
     [JsonPropertyName("remoteDebuggingVersion")]
     public string? RemoteDebuggingVersion { get; set; }
@@ -5696,7 +5696,7 @@ public partial class V1beta1FunctionAppFlexConsumptionSpecInitProviderSiteConfig
 
     /// <summary>
     /// The Remote Debugging Version. Possible values include VS2017, VS2019, and VS2022.
-    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022“
+    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``
     /// </summary>
     [JsonPropertyName("remoteDebuggingVersion")]
     public string? RemoteDebuggingVersion { get; set; }
@@ -7949,7 +7949,7 @@ public partial class V1beta1FunctionAppFlexConsumptionStatusAtProviderSiteConfig
 
     /// <summary>
     /// The Remote Debugging Version. Possible values include VS2017, VS2019, and VS2022.
-    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022“
+    /// The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``
     /// </summary>
     [JsonPropertyName("remoteDebuggingVersion")]
     public string? RemoteDebuggingVersion { get; set; }
