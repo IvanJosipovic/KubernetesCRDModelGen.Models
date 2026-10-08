@@ -632,6 +632,10 @@ public partial class V1beta1RegistrySpecForProvider
     [JsonPropertyName("anonymousPullEnabled")]
     public bool? AnonymousPullEnabled { get; set; }
 
+    /// <summary>Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.</summary>
+    [JsonPropertyName("azureadAuthenticationAsArmPolicyEnabled")]
+    public bool? AzureadAuthenticationAsArmPolicyEnabled { get; set; }
+
     /// <summary>Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.</summary>
     [JsonPropertyName("dataEndpointEnabled")]
     public bool? DataEndpointEnabled { get; set; }
@@ -655,6 +659,10 @@ public partial class V1beta1RegistrySpecForProvider
     /// <summary>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("location")]
     public string? Location { get; set; }
+
+    /// <summary>Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.</summary>
+    [JsonPropertyName("networkRuleBypassForTasksEnabled")]
+    public bool? NetworkRuleBypassForTasksEnabled { get; set; }
 
     /// <summary>Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
@@ -687,6 +695,10 @@ public partial class V1beta1RegistrySpecForProvider
     /// <summary>The number of days to retain and untagged manifest after which it gets purged.</summary>
     [JsonPropertyName("retentionPolicyInDays")]
     public double? RetentionPolicyInDays { get; set; }
+
+    /// <summary>The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.</summary>
+    [JsonPropertyName("roleAssignmentMode")]
+    public string? RoleAssignmentMode { get; set; }
 
     /// <summary>The SKU name of the container registry. Possible values are Basic, Standard and Premium.</summary>
     [JsonPropertyName("sku")]
@@ -1134,6 +1146,10 @@ public partial class V1beta1RegistrySpecInitProvider
     [JsonPropertyName("anonymousPullEnabled")]
     public bool? AnonymousPullEnabled { get; set; }
 
+    /// <summary>Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.</summary>
+    [JsonPropertyName("azureadAuthenticationAsArmPolicyEnabled")]
+    public bool? AzureadAuthenticationAsArmPolicyEnabled { get; set; }
+
     /// <summary>Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.</summary>
     [JsonPropertyName("dataEndpointEnabled")]
     public bool? DataEndpointEnabled { get; set; }
@@ -1158,6 +1174,10 @@ public partial class V1beta1RegistrySpecInitProvider
     [JsonPropertyName("location")]
     public string? Location { get; set; }
 
+    /// <summary>Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.</summary>
+    [JsonPropertyName("networkRuleBypassForTasksEnabled")]
+    public bool? NetworkRuleBypassForTasksEnabled { get; set; }
+
     /// <summary>Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
     public string? NetworkRuleBypassOption { get; set; }
@@ -1177,6 +1197,10 @@ public partial class V1beta1RegistrySpecInitProvider
     /// <summary>The number of days to retain and untagged manifest after which it gets purged.</summary>
     [JsonPropertyName("retentionPolicyInDays")]
     public double? RetentionPolicyInDays { get; set; }
+
+    /// <summary>The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.</summary>
+    [JsonPropertyName("roleAssignmentMode")]
+    public string? RoleAssignmentMode { get; set; }
 
     /// <summary>The SKU name of the container registry. Possible values are Basic, Standard and Premium.</summary>
     [JsonPropertyName("sku")]
@@ -1488,6 +1512,10 @@ public partial class V1beta1RegistryStatusAtProvider
     [JsonPropertyName("anonymousPullEnabled")]
     public bool? AnonymousPullEnabled { get; set; }
 
+    /// <summary>Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.</summary>
+    [JsonPropertyName("azureadAuthenticationAsArmPolicyEnabled")]
+    public bool? AzureadAuthenticationAsArmPolicyEnabled { get; set; }
+
     /// <summary>Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.</summary>
     [JsonPropertyName("dataEndpointEnabled")]
     public bool? DataEndpointEnabled { get; set; }
@@ -1524,6 +1552,10 @@ public partial class V1beta1RegistryStatusAtProvider
     [JsonPropertyName("loginServer")]
     public string? LoginServer { get; set; }
 
+    /// <summary>Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.</summary>
+    [JsonPropertyName("networkRuleBypassForTasksEnabled")]
+    public bool? NetworkRuleBypassForTasksEnabled { get; set; }
+
     /// <summary>Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.</summary>
     [JsonPropertyName("networkRuleBypassOption")]
     public string? NetworkRuleBypassOption { get; set; }
@@ -1547,6 +1579,10 @@ public partial class V1beta1RegistryStatusAtProvider
     /// <summary>The number of days to retain and untagged manifest after which it gets purged.</summary>
     [JsonPropertyName("retentionPolicyInDays")]
     public double? RetentionPolicyInDays { get; set; }
+
+    /// <summary>The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.</summary>
+    [JsonPropertyName("roleAssignmentMode")]
+    public string? RoleAssignmentMode { get; set; }
 
     /// <summary>The SKU name of the container registry. Possible values are Basic, Standard and Premium.</summary>
     [JsonPropertyName("sku")]

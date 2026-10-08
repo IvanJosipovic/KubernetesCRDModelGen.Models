@@ -526,6 +526,10 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetSpecForProviderNet
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1104,7 +1108,6 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetSpecForProviderSku
     [JsonPropertyName("virtualMachineSize")]
     public IList<V1beta1OrchestratedVirtualMachineScaleSetSpecForProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }
@@ -1792,6 +1795,10 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetSpecInitProviderNe
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2215,7 +2222,6 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetSpecInitProviderSk
     [JsonPropertyName("virtualMachineSize")]
     public IList<V1beta1OrchestratedVirtualMachineScaleSetSpecInitProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }
@@ -2907,6 +2913,10 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetStatusAtProviderNe
     /// <summary>Is this the Primary IP Configuration? Possible values are true and false. Defaults to false.</summary>
     [JsonPropertyName("primary")]
     public bool? Primary { get; set; }
+
+    /// <summary>A mapping of tags to assign to the Network Interface created by this Network Interface Configuration.</summary>
+    [JsonPropertyName("tags")]
+    public IDictionary<string, string>? Tags { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3238,7 +3248,6 @@ public partial class V1beta1OrchestratedVirtualMachineScaleSetStatusAtProviderSk
     [JsonPropertyName("virtualMachineSize")]
     public IList<V1beta1OrchestratedVirtualMachineScaleSetStatusAtProviderSkuProfileVirtualMachineSize>? VirtualMachineSize { get; set; }
 
-    /// <summary>Specifies the VM sizes for the virtual machine scale set.</summary>
     [JsonPropertyName("vmSizes")]
     public IList<string>? VmSizes { get; set; }
 }

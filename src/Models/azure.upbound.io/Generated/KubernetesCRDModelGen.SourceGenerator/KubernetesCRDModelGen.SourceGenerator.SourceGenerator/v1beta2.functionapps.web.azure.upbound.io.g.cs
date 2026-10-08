@@ -1415,7 +1415,7 @@ public partial class V1beta2FunctionAppSpecForProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and ``(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
     [JsonPropertyName("osType")]
     public string? OsType { get; set; }
 
@@ -2836,7 +2836,7 @@ public partial class V1beta2FunctionAppSpecInitProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and ``(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
     [JsonPropertyName("osType")]
     public string? OsType { get; set; }
 
@@ -3556,7 +3556,7 @@ public partial class V1beta2FunctionAppStatusAtProvider
     [JsonPropertyName("name")]
     public string? Name { get; set; }
 
-    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and “(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
+    /// <summary>A string indicating the Operating System type for this function app. Possible values are linux and ``(empty string). Changing this forces a new resource to be created. Defaults to &quot; &quot;.</summary>
     [JsonPropertyName("osType")]
     public string? OsType { get; set; }
 

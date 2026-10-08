@@ -277,7 +277,7 @@ public partial class V1beta2VaultSpecForProvider
     [JsonPropertyName("purgeProtectionEnabled")]
     public bool? PurgeProtectionEnabled { get; set; }
 
-    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions.</summary>
+    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions. Defaults to false.</summary>
     [JsonPropertyName("rbacAuthorizationEnabled")]
     public bool? RbacAuthorizationEnabled { get; set; }
 
@@ -397,7 +397,7 @@ public partial class V1beta2VaultSpecInitProvider
     [JsonPropertyName("purgeProtectionEnabled")]
     public bool? PurgeProtectionEnabled { get; set; }
 
-    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions.</summary>
+    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions. Defaults to false.</summary>
     [JsonPropertyName("rbacAuthorizationEnabled")]
     public bool? RbacAuthorizationEnabled { get; set; }
 
@@ -717,7 +717,7 @@ public partial class V1beta2VaultStatusAtProvider
     [JsonPropertyName("purgeProtectionEnabled")]
     public bool? PurgeProtectionEnabled { get; set; }
 
-    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions.</summary>
+    /// <summary>Boolean flag to specify whether Azure Key Vault uses Role Based Access Control (RBAC) for authorization of data actions. Defaults to false.</summary>
     [JsonPropertyName("rbacAuthorizationEnabled")]
     public bool? RbacAuthorizationEnabled { get; set; }
 

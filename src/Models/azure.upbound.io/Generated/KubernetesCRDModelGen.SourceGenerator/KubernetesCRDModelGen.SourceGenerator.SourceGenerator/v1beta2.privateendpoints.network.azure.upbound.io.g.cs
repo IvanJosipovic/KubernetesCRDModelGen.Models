@@ -577,6 +577,10 @@ public partial class V1beta2PrivateEndpointSpecForProvider
     [JsonPropertyName("customNetworkInterfaceName")]
     public string? CustomNetworkInterfaceName { get; set; }
 
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Private Endpoint should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
+
     /// <summary>One or more ip_configuration blocks as defined below. This allows a static IP address to be set for this Private Endpoint, otherwise an address is dynamically allocated from the Subnet.</summary>
     [JsonPropertyName("ipConfiguration")]
     public IList<V1beta2PrivateEndpointSpecForProviderIpConfiguration>? IpConfiguration { get; set; }
@@ -1009,6 +1013,10 @@ public partial class V1beta2PrivateEndpointSpecInitProvider
     [JsonPropertyName("customNetworkInterfaceName")]
     public string? CustomNetworkInterfaceName { get; set; }
 
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Private Endpoint should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
+
     /// <summary>One or more ip_configuration blocks as defined below. This allows a static IP address to be set for this Private Endpoint, otherwise an address is dynamically allocated from the Subnet.</summary>
     [JsonPropertyName("ipConfiguration")]
     public IList<V1beta2PrivateEndpointSpecInitProviderIpConfiguration>? IpConfiguration { get; set; }
@@ -1381,6 +1389,10 @@ public partial class V1beta2PrivateEndpointStatusAtProvider
     /// <summary>The custom name of the network interface attached to the private endpoint. Changing this forces a new resource to be created.</summary>
     [JsonPropertyName("customNetworkInterfaceName")]
     public string? CustomNetworkInterfaceName { get; set; }
+
+    /// <summary>Specifies the Edge Zone within the Azure Region where this Private Endpoint should exist. Changing this forces a new resource to be created.</summary>
+    [JsonPropertyName("edgeZone")]
+    public string? EdgeZone { get; set; }
 
     /// <summary>The ID of the Private Endpoint.</summary>
     [JsonPropertyName("id")]

@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.20.1
+    controller-gen.kubebuilder.io/version: v0.22.0
   name: registries.containerregistry.azure.upbound.io
 spec:
   group: containerregistry.azure.upbound.io
@@ -80,6 +80,9 @@ spec:
                     type: boolean
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
+                    type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
                     type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
@@ -287,6 +290,9 @@ spec:
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -396,6 +402,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
@@ -430,6 +439,9 @@ spec:
                     type: boolean
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
+                    type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
                     type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
@@ -637,6 +649,9 @@ spec:
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -670,6 +685,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
@@ -791,6 +809,9 @@ spec:
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
                     type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
+                    type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
                     type: boolean
@@ -866,6 +887,9 @@ spec:
                   loginServer:
                     description: The URL that can be used to log into the container registry.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -902,6 +926,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
@@ -1044,6 +1071,9 @@ spec:
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
                     type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
+                    type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
                     type: boolean
@@ -1246,6 +1276,9 @@ spec:
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -1353,6 +1386,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
@@ -1387,6 +1423,9 @@ spec:
                     type: boolean
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
+                    type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
                     type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
@@ -1590,6 +1629,9 @@ spec:
                   location:
                     description: Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -1621,6 +1663,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
@@ -1742,6 +1787,9 @@ spec:
                   anonymousPullEnabled:
                     description: Whether to allow anonymous (unauthenticated) pull access to this Container Registry. This is only supported on resources with the Standard or Premium SKU.
                     type: boolean
+                  azureadAuthenticationAsArmPolicyEnabled:
+                    description: Whether to use Azure Resource Manager audience token for this Container Registry? Defaults to true.
+                    type: boolean
                   dataEndpointEnabled:
                     description: Whether to enable dedicated data endpoints for this Container Registry? This is only supported on resources with the Premium SKU.
                     type: boolean
@@ -1813,6 +1861,9 @@ spec:
                   loginServer:
                     description: The URL that can be used to log into the container registry.
                     type: string
+                  networkRuleBypassForTasksEnabled:
+                    description: Whether to allow Container Registry Tasks to access a network-restricted Container Registry? Defaults to false.
+                    type: boolean
                   networkRuleBypassOption:
                     description: Whether to allow trusted Azure services to access a network-restricted Container Registry? Possible values are None and AzureServices. Defaults to AzureServices.
                     type: string
@@ -1847,6 +1898,9 @@ spec:
                   retentionPolicyInDays:
                     description: The number of days to retain and untagged manifest after which it gets purged.
                     type: number
+                  roleAssignmentMode:
+                    description: The role assignment mode of this Container Registry. Possible values are AbacRepositoryPermissions and LegacyRegistryPermissions. Defaults to LegacyRegistryPermissions.
+                    type: string
                   sku:
                     description: The SKU name of the container registry. Possible values are Basic, Standard and Premium.
                     type: string
