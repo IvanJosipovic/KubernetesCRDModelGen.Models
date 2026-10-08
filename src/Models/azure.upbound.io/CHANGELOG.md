@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.55.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azure.upbound.io-v1.54.0...azure.upbound.io-v1.55.0) (2026-10-08)
+
+
+### Features
+
+* Sync ([#175](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/175)) ([1396e03](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/1396e03ca2aee706366d040d64021c7f3d0720d5))
+
 ## [1.54.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azure.upbound.io-v1.53.1...azure.upbound.io-v1.54.0) (2026-08-04)
 
 
