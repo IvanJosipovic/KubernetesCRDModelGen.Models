@@ -149,6 +149,16 @@ public partial class V1beta1ClusterSpecForProviderAddonsConfigGkeBackupAgentConf
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderAddonsConfigHighScaleCheckpointingConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>
 /// The status of the Horizontal Pod Autoscaling
 /// addon, which increases or decreases the number of replica pods a replication controller
@@ -228,6 +238,19 @@ public partial class V1beta1ClusterSpecForProviderAddonsConfigNetworkPolicyConfi
     /// </summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
+}
+
+/// <summary>
+/// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderAddonsConfigNodeReadinessConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
 }
 
 /// <summary>
@@ -411,6 +434,10 @@ public partial class V1beta1ClusterSpecForProviderAddonsConfig
     [JsonPropertyName("gkeBackupAgentConfig")]
     public V1beta1ClusterSpecForProviderAddonsConfigGkeBackupAgentConfig? GkeBackupAgentConfig { get; set; }
 
+    /// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+    [JsonPropertyName("highScaleCheckpointingConfig")]
+    public V1beta1ClusterSpecForProviderAddonsConfigHighScaleCheckpointingConfig? HighScaleCheckpointingConfig { get; set; }
+
     /// <summary>
     /// The status of the Horizontal Pod Autoscaling
     /// addon, which increases or decreases the number of replica pods a replication controller
@@ -450,6 +477,13 @@ public partial class V1beta1ClusterSpecForProviderAddonsConfig
     /// </summary>
     [JsonPropertyName("networkPolicyConfig")]
     public V1beta1ClusterSpecForProviderAddonsConfigNetworkPolicyConfig? NetworkPolicyConfig { get; set; }
+
+    /// <summary>
+    /// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeReadinessConfig")]
+    public V1beta1ClusterSpecForProviderAddonsConfigNodeReadinessConfig? NodeReadinessConfig { get; set; }
 
     /// <summary>
     /// The status of the Parallelstore CSI driver addon,
@@ -1229,6 +1263,64 @@ public partial class V1beta1ClusterSpecForProviderMaintenancePolicyMaintenanceEx
     public string? StartTime { get; set; }
 }
 
+/// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil
+{
+    /// <summary>: The day of the month (integer value between 1 and 31).</summary>
+    [JsonPropertyName("day")]
+    public double? Day { get; set; }
+
+    /// <summary>: The month of the year (integer value between 1 and 12).</summary>
+    [JsonPropertyName("month")]
+    public double? Month { get; set; }
+
+    /// <summary>: The year (integer value).</summary>
+    [JsonPropertyName("year")]
+    public double? Year { get; set; }
+}
+
+/// <summary>: The time of day when each maintenance window instance begins.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime
+{
+    /// <summary>: The hour of the day (integer value between 0 and 23).</summary>
+    [JsonPropertyName("hours")]
+    public double? Hours { get; set; }
+
+    /// <summary>: The minute of the hour (integer value between 0 and 59).</summary>
+    [JsonPropertyName("minutes")]
+    public double? Minutes { get; set; }
+
+    /// <summary>: The second of the minute (integer value between 0 and 59).</summary>
+    [JsonPropertyName("seconds")]
+    public double? Seconds { get; set; }
+}
+
+/// <summary>structure documented below</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindow
+{
+    /// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+    [JsonPropertyName("delayUntil")]
+    public V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil? DelayUntil { get; set; }
+
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>: The length of each maintenance window instance. Specified as a sequence of decimal numbers, each with an optional fraction and a unit suffix, such as &quot;300s&quot;, &quot;1.5m&quot;, and &quot;2h45m&quot;. Valid time units are &quot;ns&quot;, &quot;us&quot; (or &quot;µs&quot;), &quot;ms&quot;, &quot;s&quot;, &quot;m&quot;, &quot;h&quot;. The value must be a positive duration.</summary>
+    [JsonPropertyName("windowDuration")]
+    public string? WindowDuration { get; set; }
+
+    /// <summary>: The time of day when each maintenance window instance begins.</summary>
+    [JsonPropertyName("windowStartTime")]
+    public V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime? WindowStartTime { get; set; }
+}
+
 /// <summary>structure documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -1237,6 +1329,7 @@ public partial class V1beta1ClusterSpecForProviderMaintenancePolicyRecurringWind
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
 
@@ -1263,6 +1356,10 @@ public partial class V1beta1ClusterSpecForProviderMaintenancePolicy
     /// <summary>structure documented below</summary>
     [JsonPropertyName("maintenanceExclusion")]
     public IList<V1beta1ClusterSpecForProviderMaintenancePolicyMaintenanceExclusion>? MaintenanceExclusion { get; set; }
+
+    /// <summary>structure documented below</summary>
+    [JsonPropertyName("recurringMaintenanceWindow")]
+    public V1beta1ClusterSpecForProviderMaintenancePolicyRecurringMaintenanceWindow? RecurringMaintenanceWindow { get; set; }
 
     /// <summary>structure documented below</summary>
     [JsonPropertyName("recurringWindow")]
@@ -1700,6 +1797,7 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigPriv
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -1708,6 +1806,7 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigRegi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -1717,6 +1816,7 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigRegi
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -1934,14 +2034,12 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
-/// <summary>
-/// The maintenance policy to use for the cluster. Structure is
-/// documented below.
-/// </summary>
+/// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodeConfigHostMaintenancePolicy
 {
+    /// <summary>Specifies the frequency of planned maintenance events. Possible values are MAINTENANCE_INTERVAL_UNSPECIFIED, AS_NEEDED, and PERIODIC.</summary>
     [JsonPropertyName("maintenanceInterval")]
     public string? MaintenanceInterval { get; set; }
 }
@@ -2213,6 +2311,34 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigAccur
     public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
+/// <summary>The init script configuration. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    /// <summary>The generation of the init script in Google Cloud Storage. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    /// <summary>The Google Cloud Storage URI for storing the init script. Format: gs://BUCKET_NAME/OBJECT_NAME. The service account on the nodepool must have read access to the object. Conflicts with gcp_secret_manager_secret_uri. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+/// <summary>Custom node init settings. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    /// <summary>The init script configuration. Structure is documented below.</summary>
+    [JsonPropertyName("initScript")]
+    public V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -2330,6 +2456,10 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfig
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
+    /// <summary>Custom node init settings. Structure is documented below.</summary>
+    [JsonPropertyName("customNodeInit")]
+    public V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
+
     /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1ClusterSpecForProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -2383,11 +2513,11 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigLocalNvmeSsdBlockCon
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodeConfigNodeImageConfig
 {
-    /// <summary>The name of the image to use for this node.</summary>
+    /// <summary>The Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The project containing the image to use for this node.</summary>
+    /// <summary>The GCP project storing the Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("imageProject")]
     public string? ImageProject { get; set; }
 }
@@ -2797,10 +2927,7 @@ public partial class V1beta1ClusterSpecForProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta1ClusterSpecForProviderNodeConfigGvnic? Gvnic { get; set; }
 
-    /// <summary>
-    /// The maintenance policy to use for the cluster. Structure is
-    /// documented below.
-    /// </summary>
+    /// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta1ClusterSpecForProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -3126,6 +3253,7 @@ public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -3134,6 +3262,7 @@ public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -3143,6 +3272,7 @@ public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefa
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -3638,6 +3768,16 @@ public partial class V1beta1ClusterSpecForProviderResourceUsageExportConfig
     public bool? EnableResourceConsumptionMetering { get; set; }
 }
 
+/// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderRollbackSafeUpgrade
+{
+    /// <summary>A user-defined period that the cluster remains in the rollbackable state. A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;604800s&quot; for 7 days. Minimum is 6 hours, maximum is 7 days. If omitted, the two-step upgrade is skipped and a standard one-step upgrade is performed.</summary>
+    [JsonPropertyName("controlPlaneSoakDuration")]
+    public string? ControlPlaneSoakDuration { get; set; }
+}
+
 /// <summary>config for secret manager auto rotation. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -4069,6 +4209,10 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>The desired emulated version for the cluster. Used to complete a rollback-safe upgrade after a soak period. Must be in major.minor format (e.g., &quot;1.31&quot;). To complete the upgrade declaratively, set this field to the target minor version. Removing this field from your configuration will not trigger completion.</summary>
+    [JsonPropertyName("desiredEmulatedVersion")]
+    public string? DesiredEmulatedVersion { get; set; }
+
     /// <summary>Disable L4 load balancer VPC firewalls to enable firewall policies.</summary>
     [JsonPropertyName("disableL4LbFirewallReconciliation")]
     public bool? DisableL4LbFirewallReconciliation { get; set; }
@@ -4420,6 +4564,10 @@ public partial class V1beta1ClusterSpecForProvider
     [JsonPropertyName("resourceUsageExportConfig")]
     public V1beta1ClusterSpecForProviderResourceUsageExportConfig? ResourceUsageExportConfig { get; set; }
 
+    /// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+    [JsonPropertyName("rollbackSafeUpgrade")]
+    public V1beta1ClusterSpecForProviderRollbackSafeUpgrade? RollbackSafeUpgrade { get; set; }
+
     /// <summary>
     /// Configuration for the
     /// SecretManagerConfig feature.
@@ -4596,6 +4744,16 @@ public partial class V1beta1ClusterSpecInitProviderAddonsConfigGkeBackupAgentCon
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderAddonsConfigHighScaleCheckpointingConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>
 /// The status of the Horizontal Pod Autoscaling
 /// addon, which increases or decreases the number of replica pods a replication controller
@@ -4675,6 +4833,19 @@ public partial class V1beta1ClusterSpecInitProviderAddonsConfigNetworkPolicyConf
     /// </summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
+}
+
+/// <summary>
+/// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderAddonsConfigNodeReadinessConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
 }
 
 /// <summary>
@@ -4858,6 +5029,10 @@ public partial class V1beta1ClusterSpecInitProviderAddonsConfig
     [JsonPropertyName("gkeBackupAgentConfig")]
     public V1beta1ClusterSpecInitProviderAddonsConfigGkeBackupAgentConfig? GkeBackupAgentConfig { get; set; }
 
+    /// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+    [JsonPropertyName("highScaleCheckpointingConfig")]
+    public V1beta1ClusterSpecInitProviderAddonsConfigHighScaleCheckpointingConfig? HighScaleCheckpointingConfig { get; set; }
+
     /// <summary>
     /// The status of the Horizontal Pod Autoscaling
     /// addon, which increases or decreases the number of replica pods a replication controller
@@ -4897,6 +5072,13 @@ public partial class V1beta1ClusterSpecInitProviderAddonsConfig
     /// </summary>
     [JsonPropertyName("networkPolicyConfig")]
     public V1beta1ClusterSpecInitProviderAddonsConfigNetworkPolicyConfig? NetworkPolicyConfig { get; set; }
+
+    /// <summary>
+    /// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeReadinessConfig")]
+    public V1beta1ClusterSpecInitProviderAddonsConfigNodeReadinessConfig? NodeReadinessConfig { get; set; }
 
     /// <summary>
     /// The status of the Parallelstore CSI driver addon,
@@ -5676,6 +5858,64 @@ public partial class V1beta1ClusterSpecInitProviderMaintenancePolicyMaintenanceE
     public string? StartTime { get; set; }
 }
 
+/// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil
+{
+    /// <summary>: The day of the month (integer value between 1 and 31).</summary>
+    [JsonPropertyName("day")]
+    public double? Day { get; set; }
+
+    /// <summary>: The month of the year (integer value between 1 and 12).</summary>
+    [JsonPropertyName("month")]
+    public double? Month { get; set; }
+
+    /// <summary>: The year (integer value).</summary>
+    [JsonPropertyName("year")]
+    public double? Year { get; set; }
+}
+
+/// <summary>: The time of day when each maintenance window instance begins.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime
+{
+    /// <summary>: The hour of the day (integer value between 0 and 23).</summary>
+    [JsonPropertyName("hours")]
+    public double? Hours { get; set; }
+
+    /// <summary>: The minute of the hour (integer value between 0 and 59).</summary>
+    [JsonPropertyName("minutes")]
+    public double? Minutes { get; set; }
+
+    /// <summary>: The second of the minute (integer value between 0 and 59).</summary>
+    [JsonPropertyName("seconds")]
+    public double? Seconds { get; set; }
+}
+
+/// <summary>structure documented below</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindow
+{
+    /// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+    [JsonPropertyName("delayUntil")]
+    public V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil? DelayUntil { get; set; }
+
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>: The length of each maintenance window instance. Specified as a sequence of decimal numbers, each with an optional fraction and a unit suffix, such as &quot;300s&quot;, &quot;1.5m&quot;, and &quot;2h45m&quot;. Valid time units are &quot;ns&quot;, &quot;us&quot; (or &quot;µs&quot;), &quot;ms&quot;, &quot;s&quot;, &quot;m&quot;, &quot;h&quot;. The value must be a positive duration.</summary>
+    [JsonPropertyName("windowDuration")]
+    public string? WindowDuration { get; set; }
+
+    /// <summary>: The time of day when each maintenance window instance begins.</summary>
+    [JsonPropertyName("windowStartTime")]
+    public V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime? WindowStartTime { get; set; }
+}
+
 /// <summary>structure documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -5684,6 +5924,7 @@ public partial class V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringWin
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
 
@@ -5710,6 +5951,10 @@ public partial class V1beta1ClusterSpecInitProviderMaintenancePolicy
     /// <summary>structure documented below</summary>
     [JsonPropertyName("maintenanceExclusion")]
     public IList<V1beta1ClusterSpecInitProviderMaintenancePolicyMaintenanceExclusion>? MaintenanceExclusion { get; set; }
+
+    /// <summary>structure documented below</summary>
+    [JsonPropertyName("recurringMaintenanceWindow")]
+    public V1beta1ClusterSpecInitProviderMaintenancePolicyRecurringMaintenanceWindow? RecurringMaintenanceWindow { get; set; }
 
     /// <summary>structure documented below</summary>
     [JsonPropertyName("recurringWindow")]
@@ -6147,6 +6392,7 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -6155,6 +6401,7 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigReg
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -6164,6 +6411,7 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigReg
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -6381,14 +6629,12 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
-/// <summary>
-/// The maintenance policy to use for the cluster. Structure is
-/// documented below.
-/// </summary>
+/// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigHostMaintenancePolicy
 {
+    /// <summary>Specifies the frequency of planned maintenance events. Possible values are MAINTENANCE_INTERVAL_UNSPECIFIED, AS_NEEDED, and PERIODIC.</summary>
     [JsonPropertyName("maintenanceInterval")]
     public string? MaintenanceInterval { get; set; }
 }
@@ -6660,6 +6906,34 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigAccu
     public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
+/// <summary>The init script configuration. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    /// <summary>The generation of the init script in Google Cloud Storage. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    /// <summary>The Google Cloud Storage URI for storing the init script. Format: gs://BUCKET_NAME/OBJECT_NAME. The service account on the nodepool must have read access to the object. Conflicts with gcp_secret_manager_secret_uri. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+/// <summary>Custom node init settings. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    /// <summary>The init script configuration. Structure is documented below.</summary>
+    [JsonPropertyName("initScript")]
+    public V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -6777,6 +7051,10 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfig
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
+    /// <summary>Custom node init settings. Structure is documented below.</summary>
+    [JsonPropertyName("customNodeInit")]
+    public V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
+
     /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1ClusterSpecInitProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -6830,11 +7108,11 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigLocalNvmeSsdBlockCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigNodeImageConfig
 {
-    /// <summary>The name of the image to use for this node.</summary>
+    /// <summary>The Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The project containing the image to use for this node.</summary>
+    /// <summary>The GCP project storing the Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("imageProject")]
     public string? ImageProject { get; set; }
 }
@@ -7244,10 +7522,7 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta1ClusterSpecInitProviderNodeConfigGvnic? Gvnic { get; set; }
 
-    /// <summary>
-    /// The maintenance policy to use for the cluster. Structure is
-    /// documented below.
-    /// </summary>
+    /// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta1ClusterSpecInitProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -7573,6 +7848,7 @@ public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -7581,6 +7857,7 @@ public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -7590,6 +7867,7 @@ public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -8085,6 +8363,16 @@ public partial class V1beta1ClusterSpecInitProviderResourceUsageExportConfig
     public bool? EnableResourceConsumptionMetering { get; set; }
 }
 
+/// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderRollbackSafeUpgrade
+{
+    /// <summary>A user-defined period that the cluster remains in the rollbackable state. A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;604800s&quot; for 7 days. Minimum is 6 hours, maximum is 7 days. If omitted, the two-step upgrade is skipped and a standard one-step upgrade is performed.</summary>
+    [JsonPropertyName("controlPlaneSoakDuration")]
+    public string? ControlPlaneSoakDuration { get; set; }
+}
+
 /// <summary>config for secret manager auto rotation. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -8528,6 +8816,10 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>The desired emulated version for the cluster. Used to complete a rollback-safe upgrade after a soak period. Must be in major.minor format (e.g., &quot;1.31&quot;). To complete the upgrade declaratively, set this field to the target minor version. Removing this field from your configuration will not trigger completion.</summary>
+    [JsonPropertyName("desiredEmulatedVersion")]
+    public string? DesiredEmulatedVersion { get; set; }
+
     /// <summary>Disable L4 load balancer VPC firewalls to enable firewall policies.</summary>
     [JsonPropertyName("disableL4LbFirewallReconciliation")]
     public bool? DisableL4LbFirewallReconciliation { get; set; }
@@ -8868,6 +9160,10 @@ public partial class V1beta1ClusterSpecInitProvider
     [JsonPropertyName("resourceUsageExportConfig")]
     public V1beta1ClusterSpecInitProviderResourceUsageExportConfig? ResourceUsageExportConfig { get; set; }
 
+    /// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+    [JsonPropertyName("rollbackSafeUpgrade")]
+    public V1beta1ClusterSpecInitProviderRollbackSafeUpgrade? RollbackSafeUpgrade { get; set; }
+
     /// <summary>
     /// Configuration for the
     /// SecretManagerConfig feature.
@@ -9151,6 +9447,16 @@ public partial class V1beta1ClusterStatusAtProviderAddonsConfigGkeBackupAgentCon
     public bool? Enabled { get; set; }
 }
 
+/// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderAddonsConfigHighScaleCheckpointingConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+}
+
 /// <summary>
 /// The status of the Horizontal Pod Autoscaling
 /// addon, which increases or decreases the number of replica pods a replication controller
@@ -9230,6 +9536,19 @@ public partial class V1beta1ClusterStatusAtProviderAddonsConfigNetworkPolicyConf
     /// </summary>
     [JsonPropertyName("disabled")]
     public bool? Disabled { get; set; }
+}
+
+/// <summary>
+/// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderAddonsConfigNodeReadinessConfig
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
 }
 
 /// <summary>
@@ -9413,6 +9732,10 @@ public partial class V1beta1ClusterStatusAtProviderAddonsConfig
     [JsonPropertyName("gkeBackupAgentConfig")]
     public V1beta1ClusterStatusAtProviderAddonsConfigGkeBackupAgentConfig? GkeBackupAgentConfig { get; set; }
 
+    /// <summary>The status of the High Scale Checkpointing addon, which enables Multi-Tier Checkpointing for Machine Learning workloads. Structure is documented below.</summary>
+    [JsonPropertyName("highScaleCheckpointingConfig")]
+    public V1beta1ClusterStatusAtProviderAddonsConfigHighScaleCheckpointingConfig? HighScaleCheckpointingConfig { get; set; }
+
     /// <summary>
     /// The status of the Horizontal Pod Autoscaling
     /// addon, which increases or decreases the number of replica pods a replication controller
@@ -9452,6 +9775,13 @@ public partial class V1beta1ClusterStatusAtProviderAddonsConfig
     /// </summary>
     [JsonPropertyName("networkPolicyConfig")]
     public V1beta1ClusterStatusAtProviderAddonsConfigNetworkPolicyConfig? NetworkPolicyConfig { get; set; }
+
+    /// <summary>
+    /// The status of the Node Readiness Controller addon. It is disabled by default. Set enabled = true to enable.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nodeReadinessConfig")]
+    public V1beta1ClusterStatusAtProviderAddonsConfigNodeReadinessConfig? NodeReadinessConfig { get; set; }
 
     /// <summary>
     /// The status of the Parallelstore CSI driver addon,
@@ -10282,6 +10612,64 @@ public partial class V1beta1ClusterStatusAtProviderMaintenancePolicyMaintenanceE
     public string? StartTime { get; set; }
 }
 
+/// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil
+{
+    /// <summary>: The day of the month (integer value between 1 and 31).</summary>
+    [JsonPropertyName("day")]
+    public double? Day { get; set; }
+
+    /// <summary>: The month of the year (integer value between 1 and 12).</summary>
+    [JsonPropertyName("month")]
+    public double? Month { get; set; }
+
+    /// <summary>: The year (integer value).</summary>
+    [JsonPropertyName("year")]
+    public double? Year { get; set; }
+}
+
+/// <summary>: The time of day when each maintenance window instance begins.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime
+{
+    /// <summary>: The hour of the day (integer value between 0 and 23).</summary>
+    [JsonPropertyName("hours")]
+    public double? Hours { get; set; }
+
+    /// <summary>: The minute of the hour (integer value between 0 and 59).</summary>
+    [JsonPropertyName("minutes")]
+    public double? Minutes { get; set; }
+
+    /// <summary>: The second of the minute (integer value between 0 and 59).</summary>
+    [JsonPropertyName("seconds")]
+    public double? Seconds { get; set; }
+}
+
+/// <summary>structure documented below</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindow
+{
+    /// <summary>:  Specifies the initial date when the recurring window can start.</summary>
+    [JsonPropertyName("delayUntil")]
+    public V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindowDelayUntil? DelayUntil { get; set; }
+
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
+    [JsonPropertyName("recurrence")]
+    public string? Recurrence { get; set; }
+
+    /// <summary>: The length of each maintenance window instance. Specified as a sequence of decimal numbers, each with an optional fraction and a unit suffix, such as &quot;300s&quot;, &quot;1.5m&quot;, and &quot;2h45m&quot;. Valid time units are &quot;ns&quot;, &quot;us&quot; (or &quot;µs&quot;), &quot;ms&quot;, &quot;s&quot;, &quot;m&quot;, &quot;h&quot;. The value must be a positive duration.</summary>
+    [JsonPropertyName("windowDuration")]
+    public string? WindowDuration { get; set; }
+
+    /// <summary>: The time of day when each maintenance window instance begins.</summary>
+    [JsonPropertyName("windowStartTime")]
+    public V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindowWindowStartTime? WindowStartTime { get; set; }
+}
+
 /// <summary>structure documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -10290,6 +10678,7 @@ public partial class V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringWin
     [JsonPropertyName("endTime")]
     public string? EndTime { get; set; }
 
+    /// <summary>: Defines when the window recurs, using the RFC5545 RRULE format.</summary>
     [JsonPropertyName("recurrence")]
     public string? Recurrence { get; set; }
 
@@ -10316,6 +10705,10 @@ public partial class V1beta1ClusterStatusAtProviderMaintenancePolicy
     /// <summary>structure documented below</summary>
     [JsonPropertyName("maintenanceExclusion")]
     public IList<V1beta1ClusterStatusAtProviderMaintenancePolicyMaintenanceExclusion>? MaintenanceExclusion { get; set; }
+
+    /// <summary>structure documented below</summary>
+    [JsonPropertyName("recurringMaintenanceWindow")]
+    public V1beta1ClusterStatusAtProviderMaintenancePolicyRecurringMaintenanceWindow? RecurringMaintenanceWindow { get; set; }
 
     /// <summary>structure documented below</summary>
     [JsonPropertyName("recurringWindow")]
@@ -10612,6 +11005,7 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigPri
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -10620,6 +11014,7 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigReg
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -10629,6 +11024,7 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigReg
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -10863,14 +11259,12 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
-/// <summary>
-/// The maintenance policy to use for the cluster. Structure is
-/// documented below.
-/// </summary>
+/// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigHostMaintenancePolicy
 {
+    /// <summary>Specifies the frequency of planned maintenance events. Possible values are MAINTENANCE_INTERVAL_UNSPECIFIED, AS_NEEDED, and PERIODIC.</summary>
     [JsonPropertyName("maintenanceInterval")]
     public string? MaintenanceInterval { get; set; }
 }
@@ -11142,6 +11536,34 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigAccu
     public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
+/// <summary>The init script configuration. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    /// <summary>The generation of the init script in Google Cloud Storage. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    /// <summary>The Google Cloud Storage URI for storing the init script. Format: gs://BUCKET_NAME/OBJECT_NAME. The service account on the nodepool must have read access to the object. Conflicts with gcp_secret_manager_secret_uri. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+/// <summary>Custom node init settings. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    /// <summary>The init script configuration. Structure is documented below.</summary>
+    [JsonPropertyName("initScript")]
+    public V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -11259,6 +11681,10 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfig
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
+    /// <summary>Custom node init settings. Structure is documented below.</summary>
+    [JsonPropertyName("customNodeInit")]
+    public V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
+
     /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1ClusterStatusAtProviderNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -11312,11 +11738,11 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigLocalNvmeSsdBlockCo
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigNodeImageConfig
 {
-    /// <summary>The name of the image to use for this node.</summary>
+    /// <summary>The Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The project containing the image to use for this node.</summary>
+    /// <summary>The GCP project storing the Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("imageProject")]
     public string? ImageProject { get; set; }
 }
@@ -11575,10 +12001,7 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta1ClusterStatusAtProviderNodeConfigGvnic? Gvnic { get; set; }
 
-    /// <summary>
-    /// The maintenance policy to use for the cluster. Structure is
-    /// documented below.
-    /// </summary>
+    /// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta1ClusterStatusAtProviderNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -11795,6 +12218,29 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolAutoscaling
 
     [JsonPropertyName("totalMinNodeCount")]
     public double? TotalMinNodeCount { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodePoolMaintenancePolicyExclusionUntilEndOfSupport
+{
+    /// <summary>Whether writable cgroups are enabled.</summary>
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("endTime")]
+    public string? EndTime { get; set; }
+
+    [JsonPropertyName("startTime")]
+    public string? StartTime { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodePoolMaintenancePolicy
+{
+    [JsonPropertyName("exclusionUntilEndOfSupport")]
+    public IList<V1beta1ClusterStatusAtProviderNodePoolMaintenancePolicyExclusionUntilEndOfSupport>? ExclusionUntilEndOfSupport { get; set; }
 }
 
 /// <summary>NodeManagement configuration for this NodePool. Structure is documented below.</summary>
@@ -12020,6 +12466,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -12028,6 +12475,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -12037,6 +12485,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -12264,14 +12713,12 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigGvnic
     public bool? Enabled { get; set; }
 }
 
-/// <summary>
-/// The maintenance policy to use for the cluster. Structure is
-/// documented below.
-/// </summary>
+/// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigHostMaintenancePolicy
 {
+    /// <summary>Specifies the frequency of planned maintenance events. Possible values are MAINTENANCE_INTERVAL_UNSPECIFIED, AS_NEEDED, and PERIODIC.</summary>
     [JsonPropertyName("maintenanceInterval")]
     public string? MaintenanceInterval { get; set; }
 }
@@ -12540,6 +12987,34 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeCo
     public bool? EnablePtpKvmTimeSync { get; set; }
 }
 
+/// <summary>The init script configuration. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript
+{
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
+    [JsonPropertyName("gcpSecretManagerSecretUri")]
+    public string? GcpSecretManagerSecretUri { get; set; }
+
+    /// <summary>The generation of the init script in Google Cloud Storage. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsGeneration")]
+    public double? GcsGeneration { get; set; }
+
+    /// <summary>The Google Cloud Storage URI for storing the init script. Format: gs://BUCKET_NAME/OBJECT_NAME. The service account on the nodepool must have read access to the object. Conflicts with gcp_secret_manager_secret_uri. If gcs_uri is used, gcs_generation is required.</summary>
+    [JsonPropertyName("gcsUri")]
+    public string? GcsUri { get; set; }
+}
+
+/// <summary>Custom node init settings. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeConfigCustomNodeInit
+{
+    /// <summary>The init script configuration. Structure is documented below.</summary>
+    [JsonPropertyName("initScript")]
+    public V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript? InitScript { get; set; }
+}
+
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -12657,6 +13132,10 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeCo
     [JsonPropertyName("cgroupMode")]
     public string? CgroupMode { get; set; }
 
+    /// <summary>Custom node init settings. Structure is documented below.</summary>
+    [JsonPropertyName("customNodeInit")]
+    public V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeConfigCustomNodeInit? CustomNodeInit { get; set; }
+
     /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
     [JsonPropertyName("hugepagesConfig")]
     public V1beta1ClusterStatusAtProviderNodePoolNodeConfigLinuxNodeConfigHugepagesConfig? HugepagesConfig { get; set; }
@@ -12710,11 +13189,11 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigLocalNvmeSs
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigNodeImageConfig
 {
-    /// <summary>The name of the image to use for this node.</summary>
+    /// <summary>The Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("image")]
     public string? Image { get; set; }
 
-    /// <summary>The project containing the image to use for this node.</summary>
+    /// <summary>The GCP project storing the Operating System image for the node pool. This is a private feature, please contact your Google account team for allowlisting this feature.</summary>
     [JsonPropertyName("imageProject")]
     public string? ImageProject { get; set; }
 }
@@ -12966,10 +13445,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfig
     [JsonPropertyName("gvnic")]
     public V1beta1ClusterStatusAtProviderNodePoolNodeConfigGvnic? Gvnic { get; set; }
 
-    /// <summary>
-    /// The maintenance policy to use for the cluster. Structure is
-    /// documented below.
-    /// </summary>
+    /// <summary>The maintenance policy for the hosts on which the GKE VMs run on. Structure is documented below.</summary>
     [JsonPropertyName("hostMaintenancePolicy")]
     public V1beta1ClusterStatusAtProviderNodePoolNodeConfigHostMaintenancePolicy? HostMaintenancePolicy { get; set; }
 
@@ -13276,6 +13752,13 @@ public partial class V1beta1ClusterStatusAtProviderNodePool
     [JsonPropertyName("instanceGroupUrls")]
     public IList<string>? InstanceGroupUrls { get; set; }
 
+    /// <summary>
+    /// The maintenance policy to use for the cluster. Structure is
+    /// documented below.
+    /// </summary>
+    [JsonPropertyName("maintenancePolicy")]
+    public IList<V1beta1ClusterStatusAtProviderNodePoolMaintenancePolicy>? MaintenancePolicy { get; set; }
+
     [JsonPropertyName("managedInstanceGroupUrls")]
     public IList<string>? ManagedInstanceGroupUrls { get; set; }
 
@@ -13451,6 +13934,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCa
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -13459,6 +13943,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -13468,6 +13953,7 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDef
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey
 {
+    /// <summary>The Google Cloud Secret Manager secret version URI for storing the init script. Format: projects/PROJECT_ID/secrets/SECRET_NAME/versions/VERSION. The service account on the nodepool must have access to the secret version. Conflicts with gcs_uri.</summary>
     [JsonPropertyName("gcpSecretManagerSecretUri")]
     public string? GcpSecretManagerSecretUri { get; set; }
 }
@@ -13812,6 +14298,16 @@ public partial class V1beta1ClusterStatusAtProviderResourceUsageExportConfig
     public bool? EnableResourceConsumptionMetering { get; set; }
 }
 
+/// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderRollbackSafeUpgrade
+{
+    /// <summary>A user-defined period that the cluster remains in the rollbackable state. A duration in seconds with up to nine fractional digits, ending with &apos;s&apos;. Example: &quot;604800s&quot; for 7 days. Minimum is 6 hours, maximum is 7 days. If omitted, the two-step upgrade is skipped and a standard one-step upgrade is performed.</summary>
+    [JsonPropertyName("controlPlaneSoakDuration")]
+    public string? ControlPlaneSoakDuration { get; set; }
+}
+
 /// <summary>config for secret manager auto rotation. Structure is documented below</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -14098,6 +14594,10 @@ public partial class V1beta1ClusterStatusAtProvider
     [JsonPropertyName("description")]
     public string? Description { get; set; }
 
+    /// <summary>The desired emulated version for the cluster. Used to complete a rollback-safe upgrade after a soak period. Must be in major.minor format (e.g., &quot;1.31&quot;). To complete the upgrade declaratively, set this field to the target minor version. Removing this field from your configuration will not trigger completion.</summary>
+    [JsonPropertyName("desiredEmulatedVersion")]
+    public string? DesiredEmulatedVersion { get; set; }
+
     /// <summary>Disable L4 load balancer VPC firewalls to enable firewall policies.</summary>
     [JsonPropertyName("disableL4LbFirewallReconciliation")]
     public bool? DisableL4LbFirewallReconciliation { get; set; }
@@ -14108,6 +14608,10 @@ public partial class V1beta1ClusterStatusAtProvider
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>The current emulated Kubernetes version running on the GKE cluster control plane.</summary>
+    [JsonPropertyName("emulatedVersion")]
+    public string? EmulatedVersion { get; set; }
 
     /// <summary>
     /// Enable Autopilot for this cluster. Defaults to false.
@@ -14476,6 +14980,10 @@ public partial class V1beta1ClusterStatusAtProvider
     /// </summary>
     [JsonPropertyName("resourceUsageExportConfig")]
     public V1beta1ClusterStatusAtProviderResourceUsageExportConfig? ResourceUsageExportConfig { get; set; }
+
+    /// <summary>Configuration for rollback-safe (two-step) upgrades. Structure is documented below.</summary>
+    [JsonPropertyName("rollbackSafeUpgrade")]
+    public V1beta1ClusterStatusAtProviderRollbackSafeUpgrade? RollbackSafeUpgrade { get; set; }
 
     /// <summary>
     /// Configuration for the

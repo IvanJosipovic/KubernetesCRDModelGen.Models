@@ -298,9 +298,12 @@ public partial class V1beta2ProjectSinkSpecForProvider
     public string? Project { get; set; }
 
     /// <summary>
-    /// Whether or not to create a unique identity associated with this sink. If false, then the writer_identity used is serviceAccount:cloud-logs@system.gserviceaccount.com. If true (the default),
-    /// then a unique service account is created and used for this sink. If you wish to publish logs across projects or utilize
-    /// bigquery_options, you must set unique_writer_identity to true.
+    /// Whether to use a service agent as the writer_identity for this sink. If false,
+    /// writer_identity is serviceAccount:cloud-logs@system.gserviceaccount.com and the sink&apos;s destination must be in the
+    /// same project as the sink. If true (the default), writer_identity is a service agent shared by sinks with the same
+    /// parent. You must set unique_writer_identity to true to publish logs across projects or use bigquery_options.
+    /// See the projects.sinks.create API documentation
+    /// for more information.
     /// </summary>
     [JsonPropertyName("uniqueWriterIdentity")]
     public bool? UniqueWriterIdentity { get; set; }
@@ -561,9 +564,12 @@ public partial class V1beta2ProjectSinkSpecInitProvider
     public string? Project { get; set; }
 
     /// <summary>
-    /// Whether or not to create a unique identity associated with this sink. If false, then the writer_identity used is serviceAccount:cloud-logs@system.gserviceaccount.com. If true (the default),
-    /// then a unique service account is created and used for this sink. If you wish to publish logs across projects or utilize
-    /// bigquery_options, you must set unique_writer_identity to true.
+    /// Whether to use a service agent as the writer_identity for this sink. If false,
+    /// writer_identity is serviceAccount:cloud-logs@system.gserviceaccount.com and the sink&apos;s destination must be in the
+    /// same project as the sink. If true (the default), writer_identity is a service agent shared by sinks with the same
+    /// parent. You must set unique_writer_identity to true to publish logs across projects or use bigquery_options.
+    /// See the projects.sinks.create API documentation
+    /// for more information.
     /// </summary>
     [JsonPropertyName("uniqueWriterIdentity")]
     public bool? UniqueWriterIdentity { get; set; }
@@ -851,9 +857,12 @@ public partial class V1beta2ProjectSinkStatusAtProvider
     public string? Project { get; set; }
 
     /// <summary>
-    /// Whether or not to create a unique identity associated with this sink. If false, then the writer_identity used is serviceAccount:cloud-logs@system.gserviceaccount.com. If true (the default),
-    /// then a unique service account is created and used for this sink. If you wish to publish logs across projects or utilize
-    /// bigquery_options, you must set unique_writer_identity to true.
+    /// Whether to use a service agent as the writer_identity for this sink. If false,
+    /// writer_identity is serviceAccount:cloud-logs@system.gserviceaccount.com and the sink&apos;s destination must be in the
+    /// same project as the sink. If true (the default), writer_identity is a service agent shared by sinks with the same
+    /// parent. You must set unique_writer_identity to true to publish logs across projects or use bigquery_options.
+    /// See the projects.sinks.create API documentation
+    /// for more information.
     /// </summary>
     [JsonPropertyName("uniqueWriterIdentity")]
     public bool? UniqueWriterIdentity { get; set; }

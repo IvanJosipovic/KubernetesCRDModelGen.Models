@@ -64,7 +64,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public string? AcceleratorType { get; set; }
 }
 
-/// <summary>Disk Config</summary>
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
@@ -120,7 +120,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     [JsonPropertyName("accelerators")]
     public IList<V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators>? Accelerators { get; set; }
 
-    /// <summary>Disk Config</summary>
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
     [JsonPropertyName("diskConfig")]
     public V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig? DiskConfig { get; set; }
 
@@ -235,7 +235,11 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigEndpointConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
-    /// <summary>Defines whether the instance should have confidential compute enabled.</summary>
+    /// <summary>Defines the confidential compute type of the instance. Valid values are &quot;CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED&quot;, &quot;SEV&quot;, &quot;SEV_SNP&quot;, &quot;TDX&quot;.</summary>
+    [JsonPropertyName("confidentialInstanceType")]
+    public string? ConfidentialInstanceType { get; set; }
+
+    /// <summary>Defines whether the instance should have confidential compute enabled. enable_confidential_compute is deprecated and will be removed in a future major release. Use confidential_instance_type instead.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -622,11 +626,108 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigAccel
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -673,6 +774,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecForProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -757,11 +862,108 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -808,6 +1010,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -1066,11 +1272,108 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigAccel
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -1117,6 +1420,10 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskC
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecForProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -1671,7 +1978,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public string? AcceleratorType { get; set; }
 }
 
-/// <summary>Disk Config</summary>
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
@@ -1727,7 +2034,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     [JsonPropertyName("accelerators")]
     public IList<V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators>? Accelerators { get; set; }
 
-    /// <summary>Disk Config</summary>
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
     [JsonPropertyName("diskConfig")]
     public V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig? DiskConfig { get; set; }
 
@@ -1842,7 +2149,11 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigEndpointConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
-    /// <summary>Defines whether the instance should have confidential compute enabled.</summary>
+    /// <summary>Defines the confidential compute type of the instance. Valid values are &quot;CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED&quot;, &quot;SEV&quot;, &quot;SEV_SNP&quot;, &quot;TDX&quot;.</summary>
+    [JsonPropertyName("confidentialInstanceType")]
+    public string? ConfidentialInstanceType { get; set; }
+
+    /// <summary>Defines whether the instance should have confidential compute enabled. enable_confidential_compute is deprecated and will be removed in a future major release. Use confidential_instance_type instead.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -2229,11 +2540,108 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -2280,6 +2688,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecInitProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -2364,11 +2776,108 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -2415,6 +2924,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -2673,11 +3186,108 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -2724,6 +3334,10 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -3397,7 +4011,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public string? AcceleratorType { get; set; }
 }
 
-/// <summary>Disk Config</summary>
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
@@ -3453,7 +4067,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     [JsonPropertyName("accelerators")]
     public IList<V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators>? Accelerators { get; set; }
 
-    /// <summary>Disk Config</summary>
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
     [JsonPropertyName("diskConfig")]
     public V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig? DiskConfig { get; set; }
 
@@ -3589,7 +4203,11 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigEndpointConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
-    /// <summary>Defines whether the instance should have confidential compute enabled.</summary>
+    /// <summary>Defines the confidential compute type of the instance. Valid values are &quot;CONFIDENTIAL_INSTANCE_TYPE_UNSPECIFIED&quot;, &quot;SEV&quot;, &quot;SEV_SNP&quot;, &quot;TDX&quot;.</summary>
+    [JsonPropertyName("confidentialInstanceType")]
+    public string? ConfidentialInstanceType { get; set; }
+
+    /// <summary>Defines whether the instance should have confidential compute enabled. enable_confidential_compute is deprecated and will be removed in a future major release. Use confidential_instance_type instead.</summary>
     [JsonPropertyName("enableConfidentialCompute")]
     public bool? EnableConfidentialCompute { get; set; }
 }
@@ -3820,11 +4438,108 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -3871,6 +4586,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterStatusAtProviderClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -3977,11 +4696,108 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -4028,6 +4844,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }
@@ -4315,11 +5135,108 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
 /// <summary>Disk Config</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDiskConfig
 {
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedIops")]
+    public double? BootDiskProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk. This sets the number of throughput mb per second that the disk can handle.</summary>
+    [JsonPropertyName("bootDiskProvisionedThroughput")]
+    public double? BootDiskProvisionedThroughput { get; set; }
+
+    /// <summary>
+    /// Size of the primary disk attached to each node, specified
+    /// in GB. The primary disk contains the boot volume and system libraries, and the
+    /// smallest allowed disk size is 10GB. GCP will default to a predetermined
+    /// computed value if not set (currently 500GB). Note: If SSDs are not
+    /// attached, it also contains the HDFS data blocks and Hadoop working directories.
+    /// </summary>
+    [JsonPropertyName("bootDiskSizeGb")]
+    public double? BootDiskSizeGb { get; set; }
+
+    /// <summary>
+    /// The disk type of the primary disk attached to each node.
+    /// One of &quot;pd-ssd&quot; or &quot;pd-standard&quot;. Defaults to &quot;pd-standard&quot;.
+    /// </summary>
+    [JsonPropertyName("bootDiskType")]
+    public string? BootDiskType { get; set; }
+
+    /// <summary>
+    /// Optional. Interface type of local SSDs (default is &quot;scsi&quot;).
+    /// Valid values: &quot;scsi&quot; (Small Computer System Interface), &quot;nvme&quot; (Non-Volatile
+    /// Memory Express). See
+    /// local SSD performance.
+    /// </summary>
+    [JsonPropertyName("localSsdInterface")]
+    public string? LocalSsdInterface { get; set; }
+
+    /// <summary>
+    /// The amount of local SSD disks that will be
+    /// attached to each master cluster node. Defaults to 0.
+    /// </summary>
+    [JsonPropertyName("numLocalSsds")]
+    public double? NumLocalSsds { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig
+{
+    /// <summary>Size of the attached disk, specified in GB.</summary>
+    [JsonPropertyName("diskSizeGb")]
+    public double? DiskSizeGb { get; set; }
+
+    /// <summary>The disk type of the attached disk. Such as &quot;pd-ssd&quot; or &quot;pd-standard&quot;.</summary>
+    [JsonPropertyName("diskType")]
+    public string? DiskType { get; set; }
+
+    /// <summary>Indicates how many IOPS to provision for the disk.</summary>
+    [JsonPropertyName("provisionedIops")]
+    public double? ProvisionedIops { get; set; }
+
+    /// <summary>Indicates how much throughput to provision for the disk.</summary>
+    [JsonPropertyName("provisionedThroughput")]
+    public double? ProvisionedThroughput { get; set; }
+}
+
+/// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig
+{
+    /// <summary>Attached disk configuration.</summary>
+    [JsonPropertyName("attachedDiskConfig")]
+    public IList<V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfigAttachedDiskConfig>? AttachedDiskConfig { get; set; }
+
     /// <summary>Indicates how many IOPS to provision for the disk. This sets the number of I/O operations per second that the disk can handle.</summary>
     [JsonPropertyName("bootDiskProvisionedIops")]
     public double? BootDiskProvisionedIops { get; set; }
@@ -4366,6 +5283,10 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDisk
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
+    /// <summary>Disk configuration to apply to the instances in this instance selection.</summary>
+    [JsonPropertyName("diskConfig")]
+    public V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListDiskConfig? DiskConfig { get; set; }
+
     /// <summary>Full machine-type names, e.g. &quot;n1-standard-16&quot;.</summary>
     [JsonPropertyName("machineTypes")]
     public IList<string>? MachineTypes { get; set; }

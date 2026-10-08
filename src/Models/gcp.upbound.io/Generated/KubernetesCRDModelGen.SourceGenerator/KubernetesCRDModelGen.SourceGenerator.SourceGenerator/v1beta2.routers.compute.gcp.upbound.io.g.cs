@@ -170,6 +170,153 @@ public partial class V1beta2RouterSpecForProviderMd5AuthenticationKeys
 /// a no-op if it cannot be resolved.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecForProviderNccGatewayRefPolicyResolutionEnum>))]
+public enum V1beta2RouterSpecForProviderNccGatewayRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecForProviderNccGatewayRefPolicyResolveEnum>))]
+public enum V1beta2RouterSpecForProviderNccGatewayRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecForProviderNccGatewayRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2RouterSpecForProviderNccGatewayRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2RouterSpecForProviderNccGatewayRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Spoke in networkconnectivity to populate nccGateway.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecForProviderNccGatewayRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2RouterSpecForProviderNccGatewayRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolutionEnum>))]
+public enum V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolveEnum>))]
+public enum V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecForProviderNccGatewaySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2RouterSpecForProviderNccGatewaySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Spoke in networkconnectivity to populate nccGateway.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecForProviderNccGatewaySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2RouterSpecForProviderNccGatewaySelectorPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecForProviderNetworkRefPolicyResolutionEnum>))]
 public enum V1beta2RouterSpecForProviderNetworkRefPolicyResolutionEnum
 {
@@ -356,6 +503,18 @@ public partial class V1beta2RouterSpecForProvider
     [JsonPropertyName("md5AuthenticationKeys")]
     public V1beta2RouterSpecForProviderMd5AuthenticationKeys? Md5AuthenticationKeys { get; set; }
 
+    /// <summary>A URI of an NCC Gateway spoke</summary>
+    [JsonPropertyName("nccGateway")]
+    public string? NccGateway { get; set; }
+
+    /// <summary>Reference to a Spoke in networkconnectivity to populate nccGateway.</summary>
+    [JsonPropertyName("nccGatewayRef")]
+    public V1beta2RouterSpecForProviderNccGatewayRef? NccGatewayRef { get; set; }
+
+    /// <summary>Selector for a Spoke in networkconnectivity to populate nccGateway.</summary>
+    [JsonPropertyName("nccGatewaySelector")]
+    public V1beta2RouterSpecForProviderNccGatewaySelector? NccGatewaySelector { get; set; }
+
     /// <summary>A reference to the network to which this router belongs.</summary>
     [JsonPropertyName("network")]
     public string? Network { get; set; }
@@ -493,6 +652,153 @@ public partial class V1beta2RouterSpecInitProviderMd5AuthenticationKeys
     /// </summary>
     [JsonPropertyName("name")]
     public string? Name { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolutionEnum>))]
+public enum V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolveEnum>))]
+public enum V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecInitProviderNccGatewayRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2RouterSpecInitProviderNccGatewayRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a Spoke in networkconnectivity to populate nccGateway.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecInitProviderNccGatewayRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2RouterSpecInitProviderNccGatewayRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolutionEnum>))]
+public enum V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolveEnum>))]
+public enum V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecInitProviderNccGatewaySelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta2RouterSpecInitProviderNccGatewaySelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a Spoke in networkconnectivity to populate nccGateway.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RouterSpecInitProviderNccGatewaySelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta2RouterSpecInitProviderNccGatewaySelectorPolicy? Policy { get; set; }
 }
 
 /// <summary>
@@ -699,6 +1005,18 @@ public partial class V1beta2RouterSpecInitProvider
     /// </summary>
     [JsonPropertyName("md5AuthenticationKeys")]
     public V1beta2RouterSpecInitProviderMd5AuthenticationKeys? Md5AuthenticationKeys { get; set; }
+
+    /// <summary>A URI of an NCC Gateway spoke</summary>
+    [JsonPropertyName("nccGateway")]
+    public string? NccGateway { get; set; }
+
+    /// <summary>Reference to a Spoke in networkconnectivity to populate nccGateway.</summary>
+    [JsonPropertyName("nccGatewayRef")]
+    public V1beta2RouterSpecInitProviderNccGatewayRef? NccGatewayRef { get; set; }
+
+    /// <summary>Selector for a Spoke in networkconnectivity to populate nccGateway.</summary>
+    [JsonPropertyName("nccGatewaySelector")]
+    public V1beta2RouterSpecInitProviderNccGatewaySelector? NccGatewaySelector { get; set; }
 
     /// <summary>A reference to the network to which this router belongs.</summary>
     [JsonPropertyName("network")]
@@ -1078,6 +1396,10 @@ public partial class V1beta2RouterStatusAtProvider
     /// </summary>
     [JsonPropertyName("md5AuthenticationKeys")]
     public V1beta2RouterStatusAtProviderMd5AuthenticationKeys? Md5AuthenticationKeys { get; set; }
+
+    /// <summary>A URI of an NCC Gateway spoke</summary>
+    [JsonPropertyName("nccGateway")]
+    public string? NccGateway { get; set; }
 
     /// <summary>A reference to the network to which this router belongs.</summary>
     [JsonPropertyName("network")]

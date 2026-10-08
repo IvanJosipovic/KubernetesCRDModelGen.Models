@@ -202,6 +202,23 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelec
     public V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSources
@@ -218,6 +235,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -385,6 +410,23 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPolicies
     public string? Title { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSources
@@ -401,6 +443,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -556,6 +606,55 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPolicies
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -564,6 +663,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPolicies
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -577,6 +684,13 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServ
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>
@@ -806,6 +920,23 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSel
     public V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSources
@@ -822,6 +953,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -1136,6 +1275,23 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     public V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSources
@@ -1160,6 +1316,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
     [JsonPropertyName("accessLevelSelector")]
     public V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector? AccessLevelSelector { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -1315,6 +1479,55 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -1323,6 +1536,14 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -1336,6 +1557,13 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleSe
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>
@@ -1649,6 +1877,23 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSele
     public V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSources
@@ -1665,6 +1910,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -1832,6 +2085,23 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPolicies
     public string? Title { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSources
@@ -1848,6 +2118,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -2003,6 +2281,55 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPolicies
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -2011,6 +2338,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPolicies
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -2024,6 +2359,13 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>
@@ -2253,6 +2595,23 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSe
     public V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSources
@@ -2269,6 +2628,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -2583,6 +2950,23 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     public V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSources
@@ -2607,6 +2991,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
     [JsonPropertyName("accessLevelSelector")]
     public V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector? AccessLevelSelector { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -2762,6 +3154,55 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -2770,6 +3211,14 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -2783,6 +3232,13 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleS
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>
@@ -3144,6 +3600,23 @@ public partial class V1beta2ServicePerimeterSpec
     public V1beta2ServicePerimeterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSources
@@ -3160,6 +3633,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -3327,6 +3808,23 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPolicies
     public string? Title { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSources
@@ -3343,6 +3841,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -3498,6 +4004,55 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPolicies
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -3506,6 +4061,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPolicies
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -3519,6 +4082,13 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>
@@ -3593,6 +4163,23 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpec
     public V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServices? VpcAccessibleServices { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSources
@@ -3609,6 +4196,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -3776,6 +4371,23 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     public string? Title { get; set; }
 }
 
+/// <summary>
+/// A Private Service Connect endpoint that is allowed to access the perimeter.
+/// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
+{
+    /// <summary>
+    /// The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint.
+    /// Forwarding rule format: //compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}.
+    /// </summary>
+    [JsonPropertyName("forwardingRule")]
+    public string? ForwardingRule { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSources
@@ -3792,6 +4404,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
     /// </summary>
     [JsonPropertyName("accessLevel")]
     public string? AccessLevel { get; set; }
+
+    /// <summary>
+    /// A Private Service Connect endpoint that is allowed to access the perimeter.
+    /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("pscEndpoint")]
+    public V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint? PscEndpoint { get; set; }
 
     /// <summary>
     /// A Google Cloud resource that is allowed to ingress the perimeter.
@@ -3947,6 +4567,55 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
 }
 
 /// <summary>
+/// Adds additional HTTP request headers.
+/// Structure is documented below.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
+{
+    /// <summary>HTTP header key.</summary>
+    [JsonPropertyName("key")]
+    public string? Key { get; set; }
+
+    /// <summary>HTTP header value.</summary>
+    [JsonPropertyName("value")]
+    public string? Value { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
+{
+    /// <summary>
+    /// Adds additional HTTP request headers.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("addRequestHeader")]
+    public V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatterns
+{
+    /// <summary>
+    /// Modifiers to apply to the requests that match the URL pattern.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("modifiers")]
+    public IList<V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers>? Modifiers { get; set; }
+
+    /// <summary>URL pattern to allow.</summary>
+    [JsonPropertyName("pattern")]
+    public string? Pattern { get; set; }
+
+    /// <summary>Supported service to allow.</summary>
+    [JsonPropertyName("service")]
+    public string? Service { get; set; }
+}
+
+/// <summary>
 /// Specifies how APIs are allowed to communicate within the Service
 /// Perimeter.
 /// Structure is documented below.
@@ -3955,6 +4624,14 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServices
 {
+    /// <summary>
+    /// Specifies which Google services are allowed to be accessed from
+    /// VPC networks in the service perimeter.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("allowedServicePatterns")]
+    public IList<V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatterns>? AllowedServicePatterns { get; set; }
+
     /// <summary>
     /// The list of APIs usable within the Service Perimeter.
     /// Must be empty unless enableRestriction is True.
@@ -3968,6 +4645,13 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleS
     /// </summary>
     [JsonPropertyName("enableRestriction")]
     public bool? EnableRestriction { get; set; }
+
+    /// <summary>
+    /// Defines the enforcement scopes of service patterns.
+    /// Each value may be one of: GOOGLE_APIS_VIA_PRIVATE_PATH.
+    /// </summary>
+    [JsonPropertyName("servicePatternsEnforcementScopes")]
+    public IList<string>? ServicePatternsEnforcementScopes { get; set; }
 }
 
 /// <summary>

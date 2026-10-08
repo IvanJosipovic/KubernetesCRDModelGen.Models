@@ -433,6 +433,10 @@ public partial class V1beta1SSLCertificateStatusAtProvider
     [JsonPropertyName("id")]
     public string? Id { get; set; }
 
+    /// <summary>Triggers update of private_key_wo write-only. Increment this value when an update to private_key_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("privateKeyWoVersion")]
+    public string? PrivateKeyWoVersion { get; set; }
+
     /// <summary>
     /// The ID of the project in which the resource belongs.
     /// If it is not provided, the provider project is used.

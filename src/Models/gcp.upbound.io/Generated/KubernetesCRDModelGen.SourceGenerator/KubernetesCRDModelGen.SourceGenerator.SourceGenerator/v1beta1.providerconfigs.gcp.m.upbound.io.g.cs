@@ -254,6 +254,16 @@ public partial class V1beta1ProviderConfigSpec
     public V1beta1ProviderConfigSpecReconciliationPolicy? ReconciliationPolicy { get; set; }
 
     /// <summary>
+    /// UniverseDomain is the Google Cloud universe to authenticate and issue API
+    /// requests against. Leave this unset to use the default &quot;googleapis.com&quot; universe.
+    /// The Terraform provider rejects a universe mismatch between its configuration and
+    /// the credentials. So when credentials carry a non-default universe, UniverseDomain
+    /// is required and must match the credentials value.
+    /// </summary>
+    [JsonPropertyName("universeDomain")]
+    public string? UniverseDomain { get; set; }
+
+    /// <summary>
     /// UserProjectOverride enables attributing API requests to the project in
     /// billingProject (or, when that is unset, the resource&apos;s project) by
     /// sending the X-Goog-User-Project header, instead of attributing them to

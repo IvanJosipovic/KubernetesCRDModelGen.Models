@@ -1045,6 +1045,10 @@ public partial class V1beta1JobSpecForProviderTransferSpecAzureBlobStorageDataSo
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
+    /// <summary>Service Directory Service to be used as the endpoint for transfers from a customer-managed VPC. Format: projects/{projectId}/locations/{location}/namespaces/{namespace}/services/{service}.</summary>
+    [JsonPropertyName("privateNetworkService")]
+    public string? PrivateNetworkService { get; set; }
+
     /// <summary>The name of the Azure Storage account.</summary>
     [JsonPropertyName("storageAccount")]
     public string? StorageAccount { get; set; }
@@ -2643,6 +2647,10 @@ public partial class V1beta1JobSpecInitProviderTransferSpecAzureBlobStorageDataS
     [JsonPropertyName("path")]
     public string? Path { get; set; }
 
+    /// <summary>Service Directory Service to be used as the endpoint for transfers from a customer-managed VPC. Format: projects/{projectId}/locations/{location}/namespaces/{namespace}/services/{service}.</summary>
+    [JsonPropertyName("privateNetworkService")]
+    public string? PrivateNetworkService { get; set; }
+
     /// <summary>The name of the Azure Storage account.</summary>
     [JsonPropertyName("storageAccount")]
     public string? StorageAccount { get; set; }
@@ -3970,6 +3978,10 @@ public partial class V1beta1JobStatusAtProviderTransferSpecAzureBlobStorageDataS
     /// <summary>Root directory path to the filesystem.</summary>
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    /// <summary>Service Directory Service to be used as the endpoint for transfers from a customer-managed VPC. Format: projects/{projectId}/locations/{location}/namespaces/{namespace}/services/{service}.</summary>
+    [JsonPropertyName("privateNetworkService")]
+    public string? PrivateNetworkService { get; set; }
 
     /// <summary>The name of the Azure Storage account.</summary>
     [JsonPropertyName("storageAccount")]

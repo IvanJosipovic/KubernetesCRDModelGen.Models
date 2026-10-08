@@ -944,6 +944,9 @@ public partial class V1beta1InstanceFromTemplateSpecForProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
@@ -1175,6 +1178,17 @@ public partial class V1beta1InstanceFromTemplateSpecForProviderSourceInstanceTem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceFromTemplateSpecForProviderWorkloadIdentityConfig
+{
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceFromTemplateSpecForProvider
 {
     [JsonPropertyName("advancedMachineFeatures")]
@@ -1294,6 +1308,9 @@ public partial class V1beta1InstanceFromTemplateSpecForProvider
 
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
+
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceFromTemplateSpecForProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 
     /// <summary>
     /// The zone that the machine should be created in. If not
@@ -2211,6 +2228,9 @@ public partial class V1beta1InstanceFromTemplateSpecInitProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
@@ -2440,6 +2460,17 @@ public partial class V1beta1InstanceFromTemplateSpecInitProviderSourceInstanceTe
     public V1beta1InstanceFromTemplateSpecInitProviderSourceInstanceTemplateSelectorPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceFromTemplateSpecInitProviderWorkloadIdentityConfig
+{
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
+}
+
 /// <summary>
 /// THIS IS A BETA FIELD. It will be honored
 /// unless the Management Policies feature flag is disabled.
@@ -2573,6 +2604,9 @@ public partial class V1beta1InstanceFromTemplateSpecInitProvider
 
     [JsonPropertyName("tags")]
     public IList<string>? Tags { get; set; }
+
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceFromTemplateSpecInitProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 
     /// <summary>
     /// The zone that the machine should be created in. If not
@@ -3119,6 +3153,9 @@ public partial class V1beta1InstanceFromTemplateStatusAtProviderScheduling
     [JsonPropertyName("availabilityDomain")]
     public double? AvailabilityDomain { get; set; }
 
+    [JsonPropertyName("hostErrorTimeoutSeconds")]
+    public double? HostErrorTimeoutSeconds { get; set; }
+
     [JsonPropertyName("instanceTerminationAction")]
     public string? InstanceTerminationAction { get; set; }
 
@@ -3191,6 +3228,17 @@ public partial class V1beta1InstanceFromTemplateStatusAtProviderShieldedInstance
 
     [JsonPropertyName("enableVtpm")]
     public bool? EnableVtpm { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1InstanceFromTemplateStatusAtProviderWorkloadIdentityConfig
+{
+    [JsonPropertyName("identity")]
+    public string? Identity { get; set; }
+
+    [JsonPropertyName("identityCertificateEnabled")]
+    public bool? IdentityCertificateEnabled { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -3342,6 +3390,9 @@ public partial class V1beta1InstanceFromTemplateStatusAtProvider
 
     [JsonPropertyName("terraformLabels")]
     public IDictionary<string, string>? TerraformLabels { get; set; }
+
+    [JsonPropertyName("workloadIdentityConfig")]
+    public V1beta1InstanceFromTemplateStatusAtProviderWorkloadIdentityConfig? WorkloadIdentityConfig { get; set; }
 
     /// <summary>
     /// The zone that the machine should be created in. If not

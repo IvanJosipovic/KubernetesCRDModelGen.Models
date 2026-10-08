@@ -456,6 +456,13 @@ public partial class V1beta2RegistryRepositorySpecForProviderRemoteRepositoryCon
     public string? PublicRepository { get; set; }
 }
 
+/// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegistryRepositorySpecForProviderRemoteRepositoryConfigNoCache
+{
+}
+
 /// <summary>
 /// [Deprecated, please use commonRepository instead] Settings for a remote repository with a custom uri.
 /// Structure is documented below.
@@ -802,6 +809,10 @@ public partial class V1beta2RegistryRepositorySpecForProviderRemoteRepositoryCon
     /// </summary>
     [JsonPropertyName("mavenRepository")]
     public V1beta2RegistryRepositorySpecForProviderRemoteRepositoryConfigMavenRepository? MavenRepository { get; set; }
+
+    /// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+    [JsonPropertyName("noCache")]
+    public V1beta2RegistryRepositorySpecForProviderRemoteRepositoryConfigNoCache? NoCache { get; set; }
 
     /// <summary>
     /// Specific settings for an Npm remote repository.
@@ -1558,6 +1569,13 @@ public partial class V1beta2RegistryRepositorySpecInitProviderRemoteRepositoryCo
     public string? PublicRepository { get; set; }
 }
 
+/// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegistryRepositorySpecInitProviderRemoteRepositoryConfigNoCache
+{
+}
+
 /// <summary>
 /// [Deprecated, please use commonRepository instead] Settings for a remote repository with a custom uri.
 /// Structure is documented below.
@@ -1904,6 +1922,10 @@ public partial class V1beta2RegistryRepositorySpecInitProviderRemoteRepositoryCo
     /// </summary>
     [JsonPropertyName("mavenRepository")]
     public V1beta2RegistryRepositorySpecInitProviderRemoteRepositoryConfigMavenRepository? MavenRepository { get; set; }
+
+    /// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+    [JsonPropertyName("noCache")]
+    public V1beta2RegistryRepositorySpecInitProviderRemoteRepositoryConfigNoCache? NoCache { get; set; }
 
     /// <summary>
     /// Specific settings for an Npm remote repository.
@@ -2689,6 +2711,13 @@ public partial class V1beta2RegistryRepositoryStatusAtProviderRemoteRepositoryCo
     public string? PublicRepository { get; set; }
 }
 
+/// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2RegistryRepositoryStatusAtProviderRemoteRepositoryConfigNoCache
+{
+}
+
 /// <summary>
 /// [Deprecated, please use commonRepository instead] Settings for a remote repository with a custom uri.
 /// Structure is documented below.
@@ -2880,6 +2909,10 @@ public partial class V1beta2RegistryRepositoryStatusAtProviderRemoteRepositoryCo
     /// </summary>
     [JsonPropertyName("mavenRepository")]
     public V1beta2RegistryRepositoryStatusAtProviderRemoteRepositoryConfigMavenRepository? MavenRepository { get; set; }
+
+    /// <summary>The repository will act as a non-caching proxy (connector mode).</summary>
+    [JsonPropertyName("noCache")]
+    public V1beta2RegistryRepositoryStatusAtProviderRemoteRepositoryConfigNoCache? NoCache { get; set; }
 
     /// <summary>
     /// Specific settings for an Npm remote repository.

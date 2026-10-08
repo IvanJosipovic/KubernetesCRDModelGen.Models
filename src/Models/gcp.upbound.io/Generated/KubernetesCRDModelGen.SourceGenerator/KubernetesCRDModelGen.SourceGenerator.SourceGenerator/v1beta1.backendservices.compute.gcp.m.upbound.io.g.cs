@@ -362,7 +362,7 @@ public partial class V1beta1BackendServiceSpecForProviderBackend
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendServiceSpecForProviderCdnPolicyBypassCacheOnRequestHeaders
 {
-    /// <summary>The header field name to match on when bypassing cache. Values are case-insensitive.</summary>
+    /// <summary>The header name to match on for logging.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 }
@@ -854,6 +854,22 @@ public partial class V1beta1BackendServiceSpecForProviderHealthChecksSelector
 }
 
 /// <summary>
+/// OAuth2 Client ID for IAP
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecForProviderIapOauth2ClientIdSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// OAuth2 Client Secret for IAP
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
@@ -882,9 +898,16 @@ public partial class V1beta1BackendServiceSpecForProviderIap
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>OAuth2 Client ID for IAP</summary>
-    [JsonPropertyName("oauth2ClientId")]
-    public string? Oauth2ClientId { get; set; }
+    /// <summary>
+    /// OAuth2 Client ID for IAP
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("oauth2ClientIdSecretRef")]
+    public V1beta1BackendServiceSpecForProviderIapOauth2ClientIdSecretRef? Oauth2ClientIdSecretRef { get; set; }
+
+    /// <summary>Triggers update of oauth2_client_id_wo write-only. Increment this value when an update to oauth2_client_id_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientIdWoVersion")]
+    public string? Oauth2ClientIdWoVersion { get; set; }
 
     /// <summary>
     /// OAuth2 Client Secret for IAP
@@ -892,6 +915,10 @@ public partial class V1beta1BackendServiceSpecForProviderIap
     /// </summary>
     [JsonPropertyName("oauth2ClientSecretSecretRef")]
     public V1beta1BackendServiceSpecForProviderIapOauth2ClientSecretSecretRef? Oauth2ClientSecretSecretRef { get; set; }
+
+    /// <summary>Triggers update of oauth2_client_secret_wo write-only. Increment this value when an update to oauth2_client_secret_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientSecretWoVersion")]
+    public string? Oauth2ClientSecretWoVersion { get; set; }
 }
 
 /// <summary>
@@ -948,6 +975,24 @@ public partial class V1beta1BackendServiceSpecForProviderLocalityLbPolicies
     public V1beta1BackendServiceSpecForProviderLocalityLbPoliciesPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecForProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecForProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -977,6 +1022,20 @@ public partial class V1beta1BackendServiceSpecForProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta1BackendServiceSpecForProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta1BackendServiceSpecForProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of
@@ -2004,7 +2063,7 @@ public partial class V1beta1BackendServiceSpecInitProviderBackend
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendServiceSpecInitProviderCdnPolicyBypassCacheOnRequestHeaders
 {
-    /// <summary>The header field name to match on when bypassing cache. Values are case-insensitive.</summary>
+    /// <summary>The header name to match on for logging.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 }
@@ -2496,6 +2555,22 @@ public partial class V1beta1BackendServiceSpecInitProviderHealthChecksSelector
 }
 
 /// <summary>
+/// OAuth2 Client ID for IAP
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecInitProviderIapOauth2ClientIdSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// OAuth2 Client Secret for IAP
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
@@ -2524,9 +2599,16 @@ public partial class V1beta1BackendServiceSpecInitProviderIap
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>OAuth2 Client ID for IAP</summary>
-    [JsonPropertyName("oauth2ClientId")]
-    public string? Oauth2ClientId { get; set; }
+    /// <summary>
+    /// OAuth2 Client ID for IAP
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("oauth2ClientIdSecretRef")]
+    public V1beta1BackendServiceSpecInitProviderIapOauth2ClientIdSecretRef? Oauth2ClientIdSecretRef { get; set; }
+
+    /// <summary>Triggers update of oauth2_client_id_wo write-only. Increment this value when an update to oauth2_client_id_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientIdWoVersion")]
+    public string? Oauth2ClientIdWoVersion { get; set; }
 
     /// <summary>
     /// OAuth2 Client Secret for IAP
@@ -2534,6 +2616,10 @@ public partial class V1beta1BackendServiceSpecInitProviderIap
     /// </summary>
     [JsonPropertyName("oauth2ClientSecretSecretRef")]
     public V1beta1BackendServiceSpecInitProviderIapOauth2ClientSecretSecretRef? Oauth2ClientSecretSecretRef { get; set; }
+
+    /// <summary>Triggers update of oauth2_client_secret_wo write-only. Increment this value when an update to oauth2_client_secret_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientSecretWoVersion")]
+    public string? Oauth2ClientSecretWoVersion { get; set; }
 }
 
 /// <summary>
@@ -2590,6 +2676,24 @@ public partial class V1beta1BackendServiceSpecInitProviderLocalityLbPolicies
     public V1beta1BackendServiceSpecInitProviderLocalityLbPoliciesPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecInitProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceSpecInitProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -2619,6 +2723,20 @@ public partial class V1beta1BackendServiceSpecInitProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta1BackendServiceSpecInitProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta1BackendServiceSpecInitProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of
@@ -3602,7 +3720,7 @@ public partial class V1beta1BackendServiceStatusAtProviderBackend
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendServiceStatusAtProviderCdnPolicyBypassCacheOnRequestHeaders
 {
-    /// <summary>The header field name to match on when bypassing cache. Values are case-insensitive.</summary>
+    /// <summary>The header name to match on for logging.</summary>
     [JsonPropertyName("headerName")]
     public string? HeaderName { get; set; }
 }
@@ -3951,9 +4069,13 @@ public partial class V1beta1BackendServiceStatusAtProviderIap
     [JsonPropertyName("enabled")]
     public bool? Enabled { get; set; }
 
-    /// <summary>OAuth2 Client ID for IAP</summary>
-    [JsonPropertyName("oauth2ClientId")]
-    public string? Oauth2ClientId { get; set; }
+    /// <summary>Triggers update of oauth2_client_id_wo write-only. Increment this value when an update to oauth2_client_id_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientIdWoVersion")]
+    public string? Oauth2ClientIdWoVersion { get; set; }
+
+    /// <summary>Triggers update of oauth2_client_secret_wo write-only. Increment this value when an update to oauth2_client_secret_wo is needed. For more info see updating write-only arguments</summary>
+    [JsonPropertyName("oauth2ClientSecretWoVersion")]
+    public string? Oauth2ClientSecretWoVersion { get; set; }
 }
 
 /// <summary>
@@ -4010,6 +4132,24 @@ public partial class V1beta1BackendServiceStatusAtProviderLocalityLbPolicies
     public V1beta1BackendServiceStatusAtProviderLocalityLbPoliciesPolicy? Policy { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceStatusAtProviderLogConfigRequestHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1BackendServiceStatusAtProviderLogConfigResponseHeaders
+{
+    /// <summary>The header name to match on for logging.</summary>
+    [JsonPropertyName("headerName")]
+    public string? HeaderName { get; set; }
+}
+
 /// <summary>
 /// This field denotes the logging options for the load balancer traffic served by this backend service.
 /// If logging is enabled, logs will be exported to Stackdriver.
@@ -4039,6 +4179,20 @@ public partial class V1beta1BackendServiceStatusAtProviderLogConfig
     /// </summary>
     [JsonPropertyName("optionalMode")]
     public string? OptionalMode { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of request headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("requestHeaders")]
+    public IList<V1beta1BackendServiceStatusAtProviderLogConfigRequestHeaders>? RequestHeaders { get; set; }
+
+    /// <summary>
+    /// This field can only be specified if logging is enabled for this backend service and if the BackendService protocol is one of HTTP, HTTPS, HTTP2 and GRPC. Contains a list of response headers to be logged.
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("responseHeaders")]
+    public IList<V1beta1BackendServiceStatusAtProviderLogConfigResponseHeaders>? ResponseHeaders { get; set; }
 
     /// <summary>
     /// This field can only be specified if logging is enabled for this backend service. The value of

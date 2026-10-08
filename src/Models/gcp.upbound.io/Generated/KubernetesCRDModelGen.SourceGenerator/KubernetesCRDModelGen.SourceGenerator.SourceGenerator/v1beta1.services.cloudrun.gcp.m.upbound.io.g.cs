@@ -1079,6 +1079,10 @@ public partial class V1beta1ServiceSpecForProviderTemplateSpecContainers
     [JsonPropertyName("resources")]
     public V1beta1ServiceSpecForProviderTemplateSpecContainersResources? Resources { get; set; }
 
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
+
     /// <summary>
     /// Startup probe of application within the container.
     /// All other probes are disabled if a startup probe is provided, until it
@@ -2656,6 +2660,10 @@ public partial class V1beta1ServiceSpecInitProviderTemplateSpecContainers
     [JsonPropertyName("resources")]
     public V1beta1ServiceSpecInitProviderTemplateSpecContainersResources? Resources { get; set; }
 
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
+
     /// <summary>
     /// Startup probe of application within the container.
     /// All other probes are disabled if a startup probe is provided, until it
@@ -4228,6 +4236,10 @@ public partial class V1beta1ServiceStatusAtProviderTemplateSpecContainers
     /// </summary>
     [JsonPropertyName("resources")]
     public V1beta1ServiceStatusAtProviderTemplateSpecContainersResources? Resources { get; set; }
+
+    /// <summary>Indicates that this container can act as a sandbox supervisor and launch sandboxes.</summary>
+    [JsonPropertyName("sandboxLauncher")]
+    public bool? SandboxLauncher { get; set; }
 
     /// <summary>
     /// Startup probe of application within the container.

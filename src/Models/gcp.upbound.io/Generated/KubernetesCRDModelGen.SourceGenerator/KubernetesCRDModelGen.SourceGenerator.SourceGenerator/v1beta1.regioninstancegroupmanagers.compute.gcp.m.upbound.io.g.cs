@@ -264,6 +264,16 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderInstanceFle
     public IList<V1beta1RegionInstanceGroupManagerSpecForProviderInstanceFlexibilityPolicyInstanceSelections>? InstanceSelections { get; set; }
 }
 
+/// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecForProviderInstanceLifecyclePolicyOnRepair
+{
+    /// <summary>, Specifies whether the MIG can change a VM&apos;s zone during a repair. If &quot;YES&quot;, MIG can select a different zone for the VM during a repair. Else if &quot;NO&quot;, MIG cannot change a VM&apos;s zone during a repair. The default value of allow_changing_zone is &quot;NO&quot;.</summary>
+    [JsonPropertyName("allowChangingZone")]
+    public string? AllowChangingZone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionInstanceGroupManagerSpecForProviderInstanceLifecyclePolicy
@@ -279,6 +289,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderInstanceLif
     /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
     [JsonPropertyName("onFailedHealthCheck")]
     public string? OnFailedHealthCheck { get; set; }
+
+    /// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+    [JsonPropertyName("onRepair")]
+    public V1beta1RegionInstanceGroupManagerSpecForProviderInstanceLifecyclePolicyOnRepair? OnRepair { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1168,6 +1182,16 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceFl
     public IList<V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceFlexibilityPolicyInstanceSelections>? InstanceSelections { get; set; }
 }
 
+/// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceLifecyclePolicyOnRepair
+{
+    /// <summary>, Specifies whether the MIG can change a VM&apos;s zone during a repair. If &quot;YES&quot;, MIG can select a different zone for the VM during a repair. Else if &quot;NO&quot;, MIG cannot change a VM&apos;s zone during a repair. The default value of allow_changing_zone is &quot;NO&quot;.</summary>
+    [JsonPropertyName("allowChangingZone")]
+    public string? AllowChangingZone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceLifecyclePolicy
@@ -1183,6 +1207,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceLi
     /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
     [JsonPropertyName("onFailedHealthCheck")]
     public string? OnFailedHealthCheck { get; set; }
+
+    /// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+    [JsonPropertyName("onRepair")]
+    public V1beta1RegionInstanceGroupManagerSpecInitProviderInstanceLifecyclePolicyOnRepair? OnRepair { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -2028,6 +2056,16 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceFl
     public IList<V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceFlexibilityPolicyInstanceSelections>? InstanceSelections { get; set; }
 }
 
+/// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceLifecyclePolicyOnRepair
+{
+    /// <summary>, Specifies whether the MIG can change a VM&apos;s zone during a repair. If &quot;YES&quot;, MIG can select a different zone for the VM during a repair. Else if &quot;NO&quot;, MIG cannot change a VM&apos;s zone during a repair. The default value of allow_changing_zone is &quot;NO&quot;.</summary>
+    [JsonPropertyName("allowChangingZone")]
+    public string? AllowChangingZone { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceLifecyclePolicy
@@ -2043,6 +2081,10 @@ public partial class V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceLi
     /// <summary>, Specifies the action that a MIG performs on an unhealthy VM. A VM is marked as unhealthy when the application running on that VM fails a health check. Valid options are: DEFAULT_ACTION, DO_NOTHING, REPAIR. If DEFAULT_ACTION (default), then MIG uses the same action configured for the  default_action_on_failure field. If DO_NOTHING, then MIG does not repair unhealthy VM. If REPAIR, then MIG automatically repairs an unhealthy VM by recreating it. For more information, see about repairing VMs in a MIG.</summary>
     [JsonPropertyName("onFailedHealthCheck")]
     public string? OnFailedHealthCheck { get; set; }
+
+    /// <summary>, Configuration for VM repairs in the MIG. Structure is documented below.</summary>
+    [JsonPropertyName("onRepair")]
+    public V1beta1RegionInstanceGroupManagerStatusAtProviderInstanceLifecyclePolicyOnRepair? OnRepair { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
