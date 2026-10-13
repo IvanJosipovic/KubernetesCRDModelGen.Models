@@ -1208,6 +1208,9 @@ public partial class V1KafkaConnectSpecTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -1217,6 +1220,9 @@ public partial class V1KafkaConnectSpecTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -1240,6 +1246,9 @@ public partial class V1KafkaConnectSpecTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -1249,6 +1258,9 @@ public partial class V1KafkaConnectSpecTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -1336,6 +1348,43 @@ public partial class V1KafkaConnectSpecTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaConnectSpecTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaConnectSpecTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecTemplatePodVolumes
@@ -1367,6 +1416,10 @@ public partial class V1KafkaConnectSpecTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaConnectSpecTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaConnectSpecTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1381,6 +1434,9 @@ public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1390,6 +1446,9 @@ public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
@@ -1413,6 +1472,9 @@ public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1422,6 +1484,9 @@ public partial class V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
@@ -1824,6 +1889,9 @@ public partial class V1KafkaConnectSpecTemplateConnectContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecTemplateConnectContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -2038,6 +2106,9 @@ public partial class V1KafkaConnectSpecTemplateInitContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecTemplateInitContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -2885,6 +2956,9 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -2894,6 +2968,9 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplateBuildPodVolumesSecretItems>? Items { get; set; }
@@ -2917,6 +2994,9 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -2926,6 +3006,9 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaConnectSpecTemplateBuildPodVolumesConfigMapItems>? Items { get; set; }
@@ -3013,6 +3096,43 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplateBuildPodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplateBuildPodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaConnectSpecTemplateBuildPodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaConnectSpecTemplateBuildPodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaConnectSpecTemplateBuildPodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecTemplateBuildPodVolumes
@@ -3044,6 +3164,10 @@ public partial class V1KafkaConnectSpecTemplateBuildPodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaConnectSpecTemplateBuildPodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaConnectSpecTemplateBuildPodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for Kafka Connect Build `Pods`. The build pod is used only on Kubernetes.</summary>
@@ -3290,6 +3414,9 @@ public partial class V1KafkaConnectSpecTemplateBuildContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecTemplateBuildContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -3484,7 +3611,7 @@ public enum V1KafkaConnectSpecBuildOutputTypeEnum
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaConnectSpecBuildOutput
 {
-    /// <summary>Configures additional options to pass to the `build` command of either Kaniko or Buildah (depending on the feature gate setting) when building a new Kafka Connect image. Allowed Kaniko options: --customPlatform, --custom-platform, --insecure, --insecure-pull, --insecure-registry, --log-format, --log-timestamp, --registry-mirror, --reproducible, --single-snapshot, --skip-tls-verify, --skip-tls-verify-pull, --skip-tls-verify-registry, --verbosity, --snapshotMode, --use-new-run, --registry-certificate, --registry-client-cert, --ignore-path. Allowed Buildah `build` options: --authfile, --cert-dir, --creds, --decryption-key, --retry, --retry-delay, --tls-verify. Those options are used only on Kubernetes, where Kaniko and Buildah are available. They are ignored on OpenShift. For more information, see the link:https://github.com/GoogleContainerTools/kaniko[Kaniko GitHub repository^] or the link:https://github.com/containers/buildah/blob/main/docs/buildah-build.1.md[Buildah build document^]. Changing this field does not trigger a rebuild of the Kafka Connect image.</summary>
+    /// <summary>Configures additional options to pass to the `build` command of Buildah when building a new Kafka Connect image. Allowed Buildah `build` options: --authfile, --cert-dir, --creds, --decryption-key, --retry, --retry-delay, --tls-verify. Those options are used only on Kubernetes, where Buildah is available. They are ignored on OpenShift. For more information, see the link:https://github.com/containers/buildah/blob/main/docs/buildah-build.1.md[Buildah build document^]. Changing this field does not trigger a rebuild of the Kafka Connect image.</summary>
     [JsonPropertyName("additionalBuildOptions")]
     public IList<string>? AdditionalBuildOptions { get; set; }
 
@@ -3748,7 +3875,7 @@ public partial class V1KafkaConnectSpec
     [JsonPropertyName("authentication")]
     public V1KafkaConnectSpecAuthentication? Authentication { get; set; }
 
-    /// <summary>The Kafka Connect configuration. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes, prometheus.metrics.reporter. (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols).</summary>
+    /// <summary>The Kafka Connect configuration. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes, prometheus.metrics.reporter. (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, rest.extension.classes).</summary>
     [JsonPropertyName("config")]
     public JsonNode? Config { get; set; }
 

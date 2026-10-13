@@ -155,7 +155,7 @@ spec:
                 - type
                 type: object
               config:
-                description: 'The Kafka Connect configuration. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes, prometheus.metrics.reporter. (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols).'
+                description: 'The Kafka Connect configuration. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes, prometheus.metrics.reporter. (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, rest.extension.classes).'
                 type: object
                 x-kubernetes-preserve-unknown-fields: true
               resources:
@@ -958,26 +958,7 @@ spec:
                               properties:
                                 defaultMode:
                                   type: integer
-                                items:
-                                  type: array
-                                  items:
-                                    type: object
-                                    properties:
-                                      key:
-                                        type: string
-                                      mode:
-                                        type: integer
-                                      path:
-                                        type: string
-                                optional:
-                                  type: boolean
-                                secretName:
-                                  type: string
-                              description: '`Secret` to use to populate the volume.'
-                            configMap:
-                              type: object
-                              properties:
-                                defaultMode:
+                                defaultUser:
                                   type: integer
                                 items:
                                   type: array
@@ -990,6 +971,33 @@ spec:
                                         type: integer
                                       path:
                                         type: string
+                                      user:
+                                        type: integer
+                                optional:
+                                  type: boolean
+                                secretName:
+                                  type: string
+                              description: '`Secret` to use to populate the volume.'
+                            configMap:
+                              type: object
+                              properties:
+                                defaultMode:
+                                  type: integer
+                                defaultUser:
+                                  type: integer
+                                items:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      key:
+                                        type: string
+                                      mode:
+                                        type: integer
+                                      path:
+                                        type: string
+                                      user:
+                                        type: integer
                                 name:
                                   type: string
                                 optional:
@@ -1043,6 +1051,31 @@ spec:
                                 reference:
                                   type: string
                               description: '`ImageVolumeSource` object to use to populate the volume.'
+                            projected:
+                              type: object
+                              properties:
+                                sources:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      serviceAccountToken:
+                                        type: object
+                                        properties:
+                                          audience:
+                                            type: string
+                                          expirationSeconds:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
+                                        description: Information about the serviceAccountToken data to project.
+                                    oneOf:
+                                    - properties:
+                                        serviceAccountToken: {}
+                                  description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                              description: '`ProjectedVolume` object to use volume projection.'
                           oneOf:
                           - properties:
                               secret: {}
@@ -1051,6 +1084,7 @@ spec:
                               persistentVolumeClaim: {}
                               csi: {}
                               image: {}
+                              projected: {}
                         type: array
                       templatedVolumes:
                         description: Additional volumes that can be mounted to the pod. These volumes can use templates to mount different volumes into individual Pods.
@@ -1065,26 +1099,7 @@ spec:
                               properties:
                                 defaultMode:
                                   type: integer
-                                items:
-                                  type: array
-                                  items:
-                                    type: object
-                                    properties:
-                                      key:
-                                        type: string
-                                      mode:
-                                        type: integer
-                                      path:
-                                        type: string
-                                optional:
-                                  type: boolean
-                                secretName:
-                                  type: string
-                              description: '`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.'
-                            configMap:
-                              type: object
-                              properties:
-                                defaultMode:
+                                defaultUser:
                                   type: integer
                                 items:
                                   type: array
@@ -1097,6 +1112,33 @@ spec:
                                         type: integer
                                       path:
                                         type: string
+                                      user:
+                                        type: integer
+                                optional:
+                                  type: boolean
+                                secretName:
+                                  type: string
+                              description: '`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.'
+                            configMap:
+                              type: object
+                              properties:
+                                defaultMode:
+                                  type: integer
+                                defaultUser:
+                                  type: integer
+                                items:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      key:
+                                        type: string
+                                      mode:
+                                        type: integer
+                                      path:
+                                        type: string
+                                      user:
+                                        type: integer
                                 name:
                                   type: string
                                 optional:
@@ -1313,6 +1355,10 @@ spec:
                         items:
                           type: object
                           properties:
+                            bindMountOptions:
+                              type: array
+                              items:
+                                type: string
                             mountPath:
                               type: string
                             mountPropagation:
@@ -1456,6 +1502,10 @@ spec:
                         items:
                           type: object
                           properties:
+                            bindMountOptions:
+                              type: array
+                              items:
+                                type: string
                             mountPath:
                               type: string
                             mountPropagation:
@@ -2080,26 +2130,7 @@ spec:
                               properties:
                                 defaultMode:
                                   type: integer
-                                items:
-                                  type: array
-                                  items:
-                                    type: object
-                                    properties:
-                                      key:
-                                        type: string
-                                      mode:
-                                        type: integer
-                                      path:
-                                        type: string
-                                optional:
-                                  type: boolean
-                                secretName:
-                                  type: string
-                              description: '`Secret` to use to populate the volume.'
-                            configMap:
-                              type: object
-                              properties:
-                                defaultMode:
+                                defaultUser:
                                   type: integer
                                 items:
                                   type: array
@@ -2112,6 +2143,33 @@ spec:
                                         type: integer
                                       path:
                                         type: string
+                                      user:
+                                        type: integer
+                                optional:
+                                  type: boolean
+                                secretName:
+                                  type: string
+                              description: '`Secret` to use to populate the volume.'
+                            configMap:
+                              type: object
+                              properties:
+                                defaultMode:
+                                  type: integer
+                                defaultUser:
+                                  type: integer
+                                items:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      key:
+                                        type: string
+                                      mode:
+                                        type: integer
+                                      path:
+                                        type: string
+                                      user:
+                                        type: integer
                                 name:
                                   type: string
                                 optional:
@@ -2165,6 +2223,31 @@ spec:
                                 reference:
                                   type: string
                               description: '`ImageVolumeSource` object to use to populate the volume.'
+                            projected:
+                              type: object
+                              properties:
+                                sources:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      serviceAccountToken:
+                                        type: object
+                                        properties:
+                                          audience:
+                                            type: string
+                                          expirationSeconds:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
+                                        description: Information about the serviceAccountToken data to project.
+                                    oneOf:
+                                    - properties:
+                                        serviceAccountToken: {}
+                                  description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                              description: '`ProjectedVolume` object to use volume projection.'
                           oneOf:
                           - properties:
                               secret: {}
@@ -2173,6 +2256,7 @@ spec:
                               persistentVolumeClaim: {}
                               csi: {}
                               image: {}
+                              projected: {}
                         type: array
                       hostUsers:
                         description: Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.
@@ -2305,6 +2389,10 @@ spec:
                         items:
                           type: object
                           properties:
+                            bindMountOptions:
+                              type: array
+                              items:
+                                type: string
                             mountPath:
                               type: string
                             mountPropagation:
@@ -2386,7 +2474,7 @@ spec:
                     description: Configures where should the newly built image be stored. Required.
                     properties:
                       additionalBuildOptions:
-                        description: 'Configures additional options to pass to the `build` command of either Kaniko or Buildah (depending on the feature gate setting) when building a new Kafka Connect image. Allowed Kaniko options: --customPlatform, --custom-platform, --insecure, --insecure-pull, --insecure-registry, --log-format, --log-timestamp, --registry-mirror, --reproducible, --single-snapshot, --skip-tls-verify, --skip-tls-verify-pull, --skip-tls-verify-registry, --verbosity, --snapshotMode, --use-new-run, --registry-certificate, --registry-client-cert, --ignore-path. Allowed Buildah `build` options: --authfile, --cert-dir, --creds, --decryption-key, --retry, --retry-delay, --tls-verify. Those options are used only on Kubernetes, where Kaniko and Buildah are available. They are ignored on OpenShift. For more information, see the link:https://github.com/GoogleContainerTools/kaniko[Kaniko GitHub repository^] or the link:https://github.com/containers/buildah/blob/main/docs/buildah-build.1.md[Buildah build document^]. Changing this field does not trigger a rebuild of the Kafka Connect image.'
+                        description: 'Configures additional options to pass to the `build` command of Buildah when building a new Kafka Connect image. Allowed Buildah `build` options: --authfile, --cert-dir, --creds, --decryption-key, --retry, --retry-delay, --tls-verify. Those options are used only on Kubernetes, where Buildah is available. They are ignored on OpenShift. For more information, see the link:https://github.com/containers/buildah/blob/main/docs/buildah-build.1.md[Buildah build document^]. Changing this field does not trigger a rebuild of the Kafka Connect image.'
                         items:
                           type: string
                         type: array

@@ -994,6 +994,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -1003,6 +1006,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaNodePoolSpecTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -1026,6 +1032,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -1035,6 +1044,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaNodePoolSpecTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -1122,6 +1134,43 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaNodePoolSpecTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaNodePoolSpecTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaNodePoolSpecTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaNodePoolSpecTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaNodePoolSpecTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaNodePoolSpecTemplatePodVolumes
@@ -1153,6 +1202,10 @@ public partial class V1KafkaNodePoolSpecTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaNodePoolSpecTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaNodePoolSpecTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1167,6 +1220,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodTemplatedVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1176,6 +1232,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodTemplatedVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaNodePoolSpecTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
@@ -1199,6 +1258,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodTemplatedVolumesConfigMapItem
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1208,6 +1270,9 @@ public partial class V1KafkaNodePoolSpecTemplatePodTemplatedVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaNodePoolSpecTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
@@ -1596,6 +1661,9 @@ public partial class V1KafkaNodePoolSpecTemplateKafkaContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaNodePoolSpecTemplateKafkaContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -1810,6 +1878,9 @@ public partial class V1KafkaNodePoolSpecTemplateInitContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaNodePoolSpecTemplateInitContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 

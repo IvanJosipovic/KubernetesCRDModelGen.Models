@@ -1184,26 +1184,7 @@ spec:
                                   properties:
                                     defaultMode:
                                       type: integer
-                                    items:
-                                      type: array
-                                      items:
-                                        type: object
-                                        properties:
-                                          key:
-                                            type: string
-                                          mode:
-                                            type: integer
-                                          path:
-                                            type: string
-                                    optional:
-                                      type: boolean
-                                    secretName:
-                                      type: string
-                                  description: '`Secret` to use to populate the volume.'
-                                configMap:
-                                  type: object
-                                  properties:
-                                    defaultMode:
+                                    defaultUser:
                                       type: integer
                                     items:
                                       type: array
@@ -1216,6 +1197,33 @@ spec:
                                             type: integer
                                           path:
                                             type: string
+                                          user:
+                                            type: integer
+                                    optional:
+                                      type: boolean
+                                    secretName:
+                                      type: string
+                                  description: '`Secret` to use to populate the volume.'
+                                configMap:
+                                  type: object
+                                  properties:
+                                    defaultMode:
+                                      type: integer
+                                    defaultUser:
+                                      type: integer
+                                    items:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          key:
+                                            type: string
+                                          mode:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
                                     name:
                                       type: string
                                     optional:
@@ -1269,6 +1277,31 @@ spec:
                                     reference:
                                       type: string
                                   description: '`ImageVolumeSource` object to use to populate the volume.'
+                                projected:
+                                  type: object
+                                  properties:
+                                    sources:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          serviceAccountToken:
+                                            type: object
+                                            properties:
+                                              audience:
+                                                type: string
+                                              expirationSeconds:
+                                                type: integer
+                                              path:
+                                                type: string
+                                              user:
+                                                type: integer
+                                            description: Information about the serviceAccountToken data to project.
+                                        oneOf:
+                                        - properties:
+                                            serviceAccountToken: {}
+                                      description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                                  description: '`ProjectedVolume` object to use volume projection.'
                               oneOf:
                               - properties:
                                   secret: {}
@@ -1277,6 +1310,7 @@ spec:
                                   persistentVolumeClaim: {}
                                   csi: {}
                                   image: {}
+                                  projected: {}
                             type: array
                           templatedVolumes:
                             description: Additional volumes that can be mounted to the pod. These volumes can use templates to mount different volumes into individual Pods.
@@ -1291,26 +1325,7 @@ spec:
                                   properties:
                                     defaultMode:
                                       type: integer
-                                    items:
-                                      type: array
-                                      items:
-                                        type: object
-                                        properties:
-                                          key:
-                                            type: string
-                                          mode:
-                                            type: integer
-                                          path:
-                                            type: string
-                                    optional:
-                                      type: boolean
-                                    secretName:
-                                      type: string
-                                  description: '`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.'
-                                configMap:
-                                  type: object
-                                  properties:
-                                    defaultMode:
+                                    defaultUser:
                                       type: integer
                                     items:
                                       type: array
@@ -1323,6 +1338,33 @@ spec:
                                             type: integer
                                           path:
                                             type: string
+                                          user:
+                                            type: integer
+                                    optional:
+                                      type: boolean
+                                    secretName:
+                                      type: string
+                                  description: '`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.'
+                                configMap:
+                                  type: object
+                                  properties:
+                                    defaultMode:
+                                      type: integer
+                                    defaultUser:
+                                      type: integer
+                                    items:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          key:
+                                            type: string
+                                          mode:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
                                     name:
                                       type: string
                                     optional:
@@ -1687,6 +1729,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -1830,6 +1876,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -2923,26 +2973,7 @@ spec:
                                   properties:
                                     defaultMode:
                                       type: integer
-                                    items:
-                                      type: array
-                                      items:
-                                        type: object
-                                        properties:
-                                          key:
-                                            type: string
-                                          mode:
-                                            type: integer
-                                          path:
-                                            type: string
-                                    optional:
-                                      type: boolean
-                                    secretName:
-                                      type: string
-                                  description: '`Secret` to use to populate the volume.'
-                                configMap:
-                                  type: object
-                                  properties:
-                                    defaultMode:
+                                    defaultUser:
                                       type: integer
                                     items:
                                       type: array
@@ -2955,6 +2986,33 @@ spec:
                                             type: integer
                                           path:
                                             type: string
+                                          user:
+                                            type: integer
+                                    optional:
+                                      type: boolean
+                                    secretName:
+                                      type: string
+                                  description: '`Secret` to use to populate the volume.'
+                                configMap:
+                                  type: object
+                                  properties:
+                                    defaultMode:
+                                      type: integer
+                                    defaultUser:
+                                      type: integer
+                                    items:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          key:
+                                            type: string
+                                          mode:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
                                     name:
                                       type: string
                                     optional:
@@ -3008,6 +3066,31 @@ spec:
                                     reference:
                                       type: string
                                   description: '`ImageVolumeSource` object to use to populate the volume.'
+                                projected:
+                                  type: object
+                                  properties:
+                                    sources:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          serviceAccountToken:
+                                            type: object
+                                            properties:
+                                              audience:
+                                                type: string
+                                              expirationSeconds:
+                                                type: integer
+                                              path:
+                                                type: string
+                                              user:
+                                                type: integer
+                                            description: Information about the serviceAccountToken data to project.
+                                        oneOf:
+                                        - properties:
+                                            serviceAccountToken: {}
+                                      description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                                  description: '`ProjectedVolume` object to use volume projection.'
                               oneOf:
                               - properties:
                                   secret: {}
@@ -3016,6 +3099,7 @@ spec:
                                   persistentVolumeClaim: {}
                                   csi: {}
                                   image: {}
+                                  projected: {}
                             type: array
                           hostUsers:
                             description: Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.
@@ -3148,6 +3232,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -3291,6 +3379,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -3409,6 +3501,12 @@ spec:
                   generateCertificateAuthority:
                     description: If true then Certificate Authority certificates will be generated automatically. Otherwise the user will need to provide a Secret with the CA certificate. Default is true.
                     type: boolean
+                  type:
+                    description: The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.
+                    enum:
+                    - strimzi
+                    - cert-manager
+                    type: string
                   generateSecretOwnerReference:
                     description: If `true`, the Cluster and Client CA Secrets are configured with the `ownerReference` set to the `Kafka` resource. If the `Kafka` resource is deleted when `true`, the CA Secrets are also deleted. If `false`, the `ownerReference` is disabled. If the `Kafka` resource is deleted when `false`, the CA Secrets are retained and available for reuse. Default is `true`.
                     type: boolean
@@ -3417,7 +3515,7 @@ spec:
                     minimum: 1.0
                     type: integer
                   renewalDays:
-                    description: The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is true, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.
+                    description: The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is false, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.
                     minimum: 1.0
                     type: integer
                   certificateExpirationPolicy:
@@ -3426,13 +3524,65 @@ spec:
                     - renew-certificate
                     - replace-key
                     type: string
+                  certManager:
+                    description: Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.
+                    properties:
+                      issuerRef:
+                        description: Reference to the cert-manager issuer to use for issuing certificates. Required.
+                        properties:
+                          name:
+                            description: The name of the cert-manager issuer. Required.
+                            type: string
+                          kind:
+                            description: The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.
+                            enum:
+                            - Issuer
+                            - ClusterIssuer
+                            type: string
+                          group:
+                            description: The group of the cert-manager issuer. Default is `cert-manager.io`.
+                            type: string
+                        required:
+                        - name
+                        - kind
+                        type: object
+                      caCertRef:
+                        description: Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.
+                        properties:
+                          secretName:
+                            description: The name of the Secret. Required.
+                            type: string
+                          certificate:
+                            description: The key under which the CA certificate is stored in the Secret. Required.
+                            type: string
+                        required:
+                        - secretName
+                        - certificate
+                        type: object
+                    required:
+                    - issuerRef
+                    - caCertRef
+                    type: object
                 type: object
+                x-kubernetes-validations:
+                - message: "'certManager' cannot be configured with 'type: strimzi'"
+                  rule: (has(self.type) && self.type != 'strimzi') || !has(self.certManager)
+                - message: "'certManager' must be set for 'type: cert-manager'"
+                  rule: "!has(self.type) || self.type != 'cert-manager' || has(self.certManager)"
+                - message: "'generateCertificateAuthority' must be set to false for 'type: cert-manager'"
+                  rule: "!has(self.type) || self.type != 'cert-manager' || (has(self.generateCertificateAuthority) && !self.generateCertificateAuthority)"
               clientsCa:
                 description: Configuration of the clients certificate authority.
                 properties:
                   generateCertificateAuthority:
                     description: If true then Certificate Authority certificates will be generated automatically. Otherwise the user will need to provide a Secret with the CA certificate. Default is true.
                     type: boolean
+                  type:
+                    description: The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.
+                    enum:
+                    - strimzi
+                    - cert-manager
+                    type: string
                   generateSecretOwnerReference:
                     description: If `true`, the Cluster and Client CA Secrets are configured with the `ownerReference` set to the `Kafka` resource. If the `Kafka` resource is deleted when `true`, the CA Secrets are also deleted. If `false`, the `ownerReference` is disabled. If the `Kafka` resource is deleted when `false`, the CA Secrets are retained and available for reuse. Default is `true`.
                     type: boolean
@@ -3441,7 +3591,7 @@ spec:
                     minimum: 1.0
                     type: integer
                   renewalDays:
-                    description: The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is true, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.
+                    description: The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is false, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.
                     minimum: 1.0
                     type: integer
                   certificateExpirationPolicy:
@@ -3450,7 +3600,53 @@ spec:
                     - renew-certificate
                     - replace-key
                     type: string
+                  certManager:
+                    description: Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.
+                    properties:
+                      issuerRef:
+                        description: Reference to the cert-manager issuer to use for issuing certificates. Required.
+                        properties:
+                          name:
+                            description: The name of the cert-manager issuer. Required.
+                            type: string
+                          kind:
+                            description: The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.
+                            enum:
+                            - Issuer
+                            - ClusterIssuer
+                            type: string
+                          group:
+                            description: The group of the cert-manager issuer. Default is `cert-manager.io`.
+                            type: string
+                        required:
+                        - name
+                        - kind
+                        type: object
+                      caCertRef:
+                        description: Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.
+                        properties:
+                          secretName:
+                            description: The name of the Secret. Required.
+                            type: string
+                          certificate:
+                            description: The key under which the CA certificate is stored in the Secret. Required.
+                            type: string
+                        required:
+                        - secretName
+                        - certificate
+                        type: object
+                    required:
+                    - issuerRef
+                    - caCertRef
+                    type: object
                 type: object
+                x-kubernetes-validations:
+                - message: "'certManager' cannot be configured with 'type: strimzi'"
+                  rule: (has(self.type) && self.type != 'strimzi') || !has(self.certManager)
+                - message: "'certManager' must be set for 'type: cert-manager'"
+                  rule: "!has(self.type) || self.type != 'cert-manager' || has(self.certManager)"
+                - message: "'generateCertificateAuthority' must be set to false for 'type: cert-manager'"
+                  rule: "!has(self.type) || self.type != 'cert-manager' || (has(self.generateCertificateAuthority) && !self.generateCertificateAuthority)"
               cruiseControl:
                 description: Configuration for Cruise Control deployment. Deploys a Cruise Control instance when specified.
                 properties:
@@ -4174,26 +4370,7 @@ spec:
                                   properties:
                                     defaultMode:
                                       type: integer
-                                    items:
-                                      type: array
-                                      items:
-                                        type: object
-                                        properties:
-                                          key:
-                                            type: string
-                                          mode:
-                                            type: integer
-                                          path:
-                                            type: string
-                                    optional:
-                                      type: boolean
-                                    secretName:
-                                      type: string
-                                  description: '`Secret` to use to populate the volume.'
-                                configMap:
-                                  type: object
-                                  properties:
-                                    defaultMode:
+                                    defaultUser:
                                       type: integer
                                     items:
                                       type: array
@@ -4206,6 +4383,33 @@ spec:
                                             type: integer
                                           path:
                                             type: string
+                                          user:
+                                            type: integer
+                                    optional:
+                                      type: boolean
+                                    secretName:
+                                      type: string
+                                  description: '`Secret` to use to populate the volume.'
+                                configMap:
+                                  type: object
+                                  properties:
+                                    defaultMode:
+                                      type: integer
+                                    defaultUser:
+                                      type: integer
+                                    items:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          key:
+                                            type: string
+                                          mode:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
                                     name:
                                       type: string
                                     optional:
@@ -4259,6 +4463,31 @@ spec:
                                     reference:
                                       type: string
                                   description: '`ImageVolumeSource` object to use to populate the volume.'
+                                projected:
+                                  type: object
+                                  properties:
+                                    sources:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          serviceAccountToken:
+                                            type: object
+                                            properties:
+                                              audience:
+                                                type: string
+                                              expirationSeconds:
+                                                type: integer
+                                              path:
+                                                type: string
+                                              user:
+                                                type: integer
+                                            description: Information about the serviceAccountToken data to project.
+                                        oneOf:
+                                        - properties:
+                                            serviceAccountToken: {}
+                                      description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                                  description: '`ProjectedVolume` object to use volume projection.'
                               oneOf:
                               - properties:
                                   secret: {}
@@ -4267,6 +4496,7 @@ spec:
                                   persistentVolumeClaim: {}
                                   csi: {}
                                   image: {}
+                                  projected: {}
                             type: array
                           hostUsers:
                             description: Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.
@@ -4454,6 +4684,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -4531,7 +4765,7 @@ spec:
                         type: array
                     type: object
                   config:
-                    description: 'The Cruise Control configuration. For a full list of configuration options refer to https://github.com/linkedin/cruise-control/wiki/Configurations. Note that properties with the following prefixes cannot be set: bootstrap.servers, client.id, zookeeper., network., security., failed.brokers.zk.path,webserver.http., webserver.api.urlprefix, webserver.session.path, webserver.accesslog., two.step., request.reason.required,metric.reporter.sampler.bootstrap.servers, capacity.config.file, self.healing., ssl., kafka.broker.failure.detection.enable, topic.config.provider.class (with the exception of: ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, webserver.http.cors.enabled, webserver.http.cors.origin, webserver.http.cors.exposeheaders, webserver.security.enable, webserver.ssl.enable).'
+                    description: 'The Cruise Control configuration. For a full list of configuration options refer to https://github.com/linkedin/cruise-control/wiki/Configurations. Note that properties with the following prefixes cannot be set: bootstrap.servers, client.id, zookeeper., network., security., failed.brokers.zk.path,webserver.http., webserver.ssl., webserver.api.urlprefix, webserver.session.path, webserver.accesslog., two.step., request.reason.required,metric.reporter.sampler.bootstrap.servers, capacity.config.file, self.healing., ssl., kafka.broker.failure.detection.enable, topic.config.provider.class (with the exception of: ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, webserver.http.cors.enabled, webserver.http.cors.origin, webserver.http.cors.exposeheaders, webserver.security.enable).'
                     type: object
                     x-kubernetes-preserve-unknown-fields: true
                   metricsConfig:
@@ -5304,26 +5538,7 @@ spec:
                                   properties:
                                     defaultMode:
                                       type: integer
-                                    items:
-                                      type: array
-                                      items:
-                                        type: object
-                                        properties:
-                                          key:
-                                            type: string
-                                          mode:
-                                            type: integer
-                                          path:
-                                            type: string
-                                    optional:
-                                      type: boolean
-                                    secretName:
-                                      type: string
-                                  description: '`Secret` to use to populate the volume.'
-                                configMap:
-                                  type: object
-                                  properties:
-                                    defaultMode:
+                                    defaultUser:
                                       type: integer
                                     items:
                                       type: array
@@ -5336,6 +5551,33 @@ spec:
                                             type: integer
                                           path:
                                             type: string
+                                          user:
+                                            type: integer
+                                    optional:
+                                      type: boolean
+                                    secretName:
+                                      type: string
+                                  description: '`Secret` to use to populate the volume.'
+                                configMap:
+                                  type: object
+                                  properties:
+                                    defaultMode:
+                                      type: integer
+                                    defaultUser:
+                                      type: integer
+                                    items:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          key:
+                                            type: string
+                                          mode:
+                                            type: integer
+                                          path:
+                                            type: string
+                                          user:
+                                            type: integer
                                     name:
                                       type: string
                                     optional:
@@ -5389,6 +5631,31 @@ spec:
                                     reference:
                                       type: string
                                   description: '`ImageVolumeSource` object to use to populate the volume.'
+                                projected:
+                                  type: object
+                                  properties:
+                                    sources:
+                                      type: array
+                                      items:
+                                        type: object
+                                        properties:
+                                          serviceAccountToken:
+                                            type: object
+                                            properties:
+                                              audience:
+                                                type: string
+                                              expirationSeconds:
+                                                type: integer
+                                              path:
+                                                type: string
+                                              user:
+                                                type: integer
+                                            description: Information about the serviceAccountToken data to project.
+                                        oneOf:
+                                        - properties:
+                                            serviceAccountToken: {}
+                                      description: List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.
+                                  description: '`ProjectedVolume` object to use volume projection.'
                               oneOf:
                               - properties:
                                   secret: {}
@@ -5397,6 +5664,7 @@ spec:
                                   persistentVolumeClaim: {}
                                   csi: {}
                                   image: {}
+                                  projected: {}
                             type: array
                           hostUsers:
                             description: Use the host user namespace. Optional. Defaults to `true`. When `true` or not set, the pod runs in the host user namespace. This is required when the pod needs features available only in the host namespace, such as loading kernel modules with `CAP_SYS_MODULE`.When set to `false`, the pod runs in a new user namespace. Setting `false` helps mitigate container breakout vulnerabilities and allows containers to run as `root` without granting `root` privileges on the host. This property is alpha-level in Kubernetes and is supported only by Kubernetes clusters that enable the `UserNamespacesSupport` feature.
@@ -5529,6 +5797,10 @@ spec:
                             items:
                               type: object
                               properties:
+                                bindMountOptions:
+                                  type: array
+                                  items:
+                                    type: string
                                 mountPath:
                                   type: string
                                 mountPropagation:
@@ -5720,7 +5992,6 @@ spec:
                 type: object
               clusterSecurity:
                 description: The current security configuration of the Kafka cluster.
-                properties: {}
                 type: object
                 x-kubernetes-preserve-unknown-fields: true
             type: object
