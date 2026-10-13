@@ -178,7 +178,7 @@ public partial class V1KafkaMirrorMaker2SpecTarget
     [JsonPropertyName("authentication")]
     public V1KafkaMirrorMaker2SpecTargetAuthentication? Authentication { get; set; }
 
-    /// <summary>The MirrorMaker 2 cluster config. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols).</summary>
+    /// <summary>The MirrorMaker 2 cluster config. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, rest.extension.classes).</summary>
     [JsonPropertyName("config")]
     public JsonNode? Config { get; set; }
 }
@@ -310,7 +310,7 @@ public partial class V1KafkaMirrorMaker2SpecMirrorsSource
     [JsonPropertyName("authentication")]
     public V1KafkaMirrorMaker2SpecMirrorsSourceAuthentication? Authentication { get; set; }
 
-    /// <summary>The MirrorMaker 2 cluster config. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols).</summary>
+    /// <summary>The MirrorMaker 2 cluster config. Properties with the following prefixes cannot be set: group.id, config.storage.topic, offset.storage.topic, status.storage.topic, ssl., sasl., security., listeners, plugin.path, rest., bootstrap.servers, consumer.interceptor.classes, producer.interceptor.classes (with the exception of: ssl.endpoint.identification.algorithm, ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, rest.extension.classes).</summary>
     [JsonPropertyName("config")]
     public JsonNode? Config { get; set; }
 }
@@ -1613,6 +1613,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -1622,6 +1625,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -1645,6 +1651,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -1654,6 +1663,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -1741,6 +1753,43 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaMirrorMaker2SpecTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaMirrorMaker2SpecTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumes
@@ -1772,6 +1821,10 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaMirrorMaker2SpecTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaMirrorMaker2SpecTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1786,6 +1839,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesSecretIte
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1795,6 +1851,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
@@ -1818,6 +1877,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesConfigMap
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1827,6 +1889,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
@@ -2229,6 +2294,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateConnectContainerSecurityCont
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaMirrorMaker2SpecTemplateConnectContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -2443,6 +2511,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateInitContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaMirrorMaker2SpecTemplateInitContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -3290,6 +3361,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -3299,6 +3373,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesSecretItems>? Items { get; set; }
@@ -3322,6 +3399,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesConfigMapItem
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -3331,6 +3411,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesConfigMapItems>? Items { get; set; }
@@ -3418,6 +3501,43 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumes
@@ -3449,6 +3569,10 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildPodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaMirrorMaker2SpecTemplateBuildPodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for Kafka Connect Build `Pods`. The build pod is used only on Kubernetes.</summary>
@@ -3695,6 +3819,9 @@ public partial class V1KafkaMirrorMaker2SpecTemplateBuildContainerSecurityContex
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaMirrorMaker2SpecTemplateBuildContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 

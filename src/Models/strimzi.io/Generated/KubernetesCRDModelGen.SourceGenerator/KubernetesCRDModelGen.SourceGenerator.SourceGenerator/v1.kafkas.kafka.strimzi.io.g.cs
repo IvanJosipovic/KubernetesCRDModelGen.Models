@@ -1579,6 +1579,9 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -1588,6 +1591,9 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -1611,6 +1617,9 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -1620,6 +1629,9 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -1707,6 +1719,43 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaSpecKafkaTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaSpecKafkaTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecKafkaTemplatePodVolumes
@@ -1738,6 +1787,10 @@ public partial class V1KafkaSpecKafkaTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaSpecKafkaTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaSpecKafkaTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -1752,6 +1805,9 @@ public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume. The name of the Secret and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1761,6 +1817,9 @@ public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaTemplatePodTemplatedVolumesSecretItems>? Items { get; set; }
@@ -1784,6 +1843,9 @@ public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume. The name of the ConfigMap and the items key and path fields can use placeholders that would be replaced for every individual node. Valid placeholders that you can use in the template are `{nodeId}` and `{nodePodName}`.</summary>
@@ -1793,6 +1855,9 @@ public partial class V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaTemplatePodTemplatedVolumesConfigMapItems>? Items { get; set; }
@@ -2391,6 +2456,9 @@ public partial class V1KafkaSpecKafkaTemplateKafkaContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecKafkaTemplateKafkaContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -2605,6 +2673,9 @@ public partial class V1KafkaSpecKafkaTemplateInitContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecKafkaTemplateInitContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -4229,6 +4300,9 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -4238,6 +4312,9 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecEntityOperatorTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -4261,6 +4338,9 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -4270,6 +4350,9 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecEntityOperatorTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -4357,6 +4440,43 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaSpecEntityOperatorTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecEntityOperatorTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaSpecEntityOperatorTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecEntityOperatorTemplatePodVolumes
@@ -4388,6 +4508,10 @@ public partial class V1KafkaSpecEntityOperatorTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaSpecEntityOperatorTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaSpecEntityOperatorTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for Entity Operator `Pods`.</summary>
@@ -4634,6 +4758,9 @@ public partial class V1KafkaSpecEntityOperatorTemplateTopicOperatorContainerSecu
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecEntityOperatorTemplateTopicOperatorContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -4848,6 +4975,9 @@ public partial class V1KafkaSpecEntityOperatorTemplateUserOperatorContainerSecur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecEntityOperatorTemplateUserOperatorContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -5072,6 +5202,17 @@ public partial class V1KafkaSpecEntityOperator
     public V1KafkaSpecEntityOperatorTemplate? Template { get; set; }
 }
 
+/// <summary>The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1KafkaSpecClusterCaTypeEnum>))]
+public enum V1KafkaSpecClusterCaTypeEnum
+{
+    [EnumMember(Value = "strimzi"), JsonStringEnumMemberName("strimzi")]
+    Strimzi,
+    [EnumMember(Value = "cert-manager"), JsonStringEnumMemberName("cert-manager")]
+    CertManager
+}
+
 /// <summary>How should CA certificate expiration be handled when `generateCertificateAuthority=true`. The default is for a new CA certificate to be generated reusing the existing private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KafkaSpecClusterCaCertificateExpirationPolicyEnum>))]
@@ -5083,6 +5224,63 @@ public enum V1KafkaSpecClusterCaCertificateExpirationPolicyEnum
     ReplaceKey
 }
 
+/// <summary>The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1KafkaSpecClusterCaCertManagerIssuerRefKindEnum>))]
+public enum V1KafkaSpecClusterCaCertManagerIssuerRefKindEnum
+{
+    [EnumMember(Value = "Issuer"), JsonStringEnumMemberName("Issuer")]
+    Issuer,
+    [EnumMember(Value = "ClusterIssuer"), JsonStringEnumMemberName("ClusterIssuer")]
+    ClusterIssuer
+}
+
+/// <summary>Reference to the cert-manager issuer to use for issuing certificates. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClusterCaCertManagerIssuerRef
+{
+    /// <summary>The name of the cert-manager issuer. Required.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.</summary>
+    [JsonPropertyName("kind")]
+    public required V1KafkaSpecClusterCaCertManagerIssuerRefKindEnum Kind { get; set; }
+
+    /// <summary>The group of the cert-manager issuer. Default is `cert-manager.io`.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+}
+
+/// <summary>Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClusterCaCertManagerCaCertRef
+{
+    /// <summary>The name of the Secret. Required.</summary>
+    [JsonPropertyName("secretName")]
+    public required string SecretName { get; set; }
+
+    /// <summary>The key under which the CA certificate is stored in the Secret. Required.</summary>
+    [JsonPropertyName("certificate")]
+    public required string Certificate { get; set; }
+}
+
+/// <summary>Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClusterCaCertManager
+{
+    /// <summary>Reference to the cert-manager issuer to use for issuing certificates. Required.</summary>
+    [JsonPropertyName("issuerRef")]
+    public required V1KafkaSpecClusterCaCertManagerIssuerRef IssuerRef { get; set; }
+
+    /// <summary>Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.</summary>
+    [JsonPropertyName("caCertRef")]
+    public required V1KafkaSpecClusterCaCertManagerCaCertRef CaCertRef { get; set; }
+}
+
 /// <summary>Configuration of the cluster certificate authority.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -5092,6 +5290,10 @@ public partial class V1KafkaSpecClusterCa
     [JsonPropertyName("generateCertificateAuthority")]
     public bool? GenerateCertificateAuthority { get; set; }
 
+    /// <summary>The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.</summary>
+    [JsonPropertyName("type")]
+    public V1KafkaSpecClusterCaTypeEnum? Type { get; set; }
+
     /// <summary>If `true`, the Cluster and Client CA Secrets are configured with the `ownerReference` set to the `Kafka` resource. If the `Kafka` resource is deleted when `true`, the CA Secrets are also deleted. If `false`, the `ownerReference` is disabled. If the `Kafka` resource is deleted when `false`, the CA Secrets are retained and available for reuse. Default is `true`.</summary>
     [JsonPropertyName("generateSecretOwnerReference")]
     public bool? GenerateSecretOwnerReference { get; set; }
@@ -5100,13 +5302,28 @@ public partial class V1KafkaSpecClusterCa
     [JsonPropertyName("validityDays")]
     public int? ValidityDays { get; set; }
 
-    /// <summary>The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is true, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.</summary>
+    /// <summary>The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is false, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.</summary>
     [JsonPropertyName("renewalDays")]
     public int? RenewalDays { get; set; }
 
     /// <summary>How should CA certificate expiration be handled when `generateCertificateAuthority=true`. The default is for a new CA certificate to be generated reusing the existing private key.</summary>
     [JsonPropertyName("certificateExpirationPolicy")]
     public V1KafkaSpecClusterCaCertificateExpirationPolicyEnum? CertificateExpirationPolicy { get; set; }
+
+    /// <summary>Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.</summary>
+    [JsonPropertyName("certManager")]
+    public V1KafkaSpecClusterCaCertManager? CertManager { get; set; }
+}
+
+/// <summary>The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1KafkaSpecClientsCaTypeEnum>))]
+public enum V1KafkaSpecClientsCaTypeEnum
+{
+    [EnumMember(Value = "strimzi"), JsonStringEnumMemberName("strimzi")]
+    Strimzi,
+    [EnumMember(Value = "cert-manager"), JsonStringEnumMemberName("cert-manager")]
+    CertManager
 }
 
 /// <summary>How should CA certificate expiration be handled when `generateCertificateAuthority=true`. The default is for a new CA certificate to be generated reusing the existing private key.</summary>
@@ -5120,6 +5337,63 @@ public enum V1KafkaSpecClientsCaCertificateExpirationPolicyEnum
     ReplaceKey
 }
 
+/// <summary>The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1KafkaSpecClientsCaCertManagerIssuerRefKindEnum>))]
+public enum V1KafkaSpecClientsCaCertManagerIssuerRefKindEnum
+{
+    [EnumMember(Value = "Issuer"), JsonStringEnumMemberName("Issuer")]
+    Issuer,
+    [EnumMember(Value = "ClusterIssuer"), JsonStringEnumMemberName("ClusterIssuer")]
+    ClusterIssuer
+}
+
+/// <summary>Reference to the cert-manager issuer to use for issuing certificates. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClientsCaCertManagerIssuerRef
+{
+    /// <summary>The name of the cert-manager issuer. Required.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>The kind of the cert-manager issuer. Must be either `Issuer` or `ClusterIssuer`. Required.</summary>
+    [JsonPropertyName("kind")]
+    public required V1KafkaSpecClientsCaCertManagerIssuerRefKindEnum Kind { get; set; }
+
+    /// <summary>The group of the cert-manager issuer. Default is `cert-manager.io`.</summary>
+    [JsonPropertyName("group")]
+    public string? Group { get; set; }
+}
+
+/// <summary>Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClientsCaCertManagerCaCertRef
+{
+    /// <summary>The name of the Secret. Required.</summary>
+    [JsonPropertyName("secretName")]
+    public required string SecretName { get; set; }
+
+    /// <summary>The key under which the CA certificate is stored in the Secret. Required.</summary>
+    [JsonPropertyName("certificate")]
+    public required string Certificate { get; set; }
+}
+
+/// <summary>Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecClientsCaCertManager
+{
+    /// <summary>Reference to the cert-manager issuer to use for issuing certificates. Required.</summary>
+    [JsonPropertyName("issuerRef")]
+    public required V1KafkaSpecClientsCaCertManagerIssuerRef IssuerRef { get; set; }
+
+    /// <summary>Reference to the Secret containing the CA certificate (public key) that trusts certificates issued by cert-manager. Required.</summary>
+    [JsonPropertyName("caCertRef")]
+    public required V1KafkaSpecClientsCaCertManagerCaCertRef CaCertRef { get; set; }
+}
+
 /// <summary>Configuration of the clients certificate authority.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -5129,6 +5403,10 @@ public partial class V1KafkaSpecClientsCa
     [JsonPropertyName("generateCertificateAuthority")]
     public bool? GenerateCertificateAuthority { get; set; }
 
+    /// <summary>The type of certificate manager. The available types are `strimzi` and `cert-manager`. Default is `strimzi`.</summary>
+    [JsonPropertyName("type")]
+    public V1KafkaSpecClientsCaTypeEnum? Type { get; set; }
+
     /// <summary>If `true`, the Cluster and Client CA Secrets are configured with the `ownerReference` set to the `Kafka` resource. If the `Kafka` resource is deleted when `true`, the CA Secrets are also deleted. If `false`, the `ownerReference` is disabled. If the `Kafka` resource is deleted when `false`, the CA Secrets are retained and available for reuse. Default is `true`.</summary>
     [JsonPropertyName("generateSecretOwnerReference")]
     public bool? GenerateSecretOwnerReference { get; set; }
@@ -5137,13 +5415,17 @@ public partial class V1KafkaSpecClientsCa
     [JsonPropertyName("validityDays")]
     public int? ValidityDays { get; set; }
 
-    /// <summary>The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is true, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.</summary>
+    /// <summary>The number of days in the certificate renewal period. This is the number of days before the a certificate expires during which renewal actions may be performed. When `generateCertificateAuthority` is true, this will cause the generation of a new certificate. When `generateCertificateAuthority` is false, this will cause extra logging at WARN level about the pending certificate expiry. Default is 30.</summary>
     [JsonPropertyName("renewalDays")]
     public int? RenewalDays { get; set; }
 
     /// <summary>How should CA certificate expiration be handled when `generateCertificateAuthority=true`. The default is for a new CA certificate to be generated reusing the existing private key.</summary>
     [JsonPropertyName("certificateExpirationPolicy")]
     public V1KafkaSpecClientsCaCertificateExpirationPolicyEnum? CertificateExpirationPolicy { get; set; }
+
+    /// <summary>Configuration for using cert-manager to issue certificates. This only applies if the CA type is set to `cert-manager`.</summary>
+    [JsonPropertyName("certManager")]
+    public V1KafkaSpecClientsCaCertManager? CertManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
@@ -6087,6 +6369,9 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -6096,6 +6381,9 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecCruiseControlTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -6119,6 +6407,9 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -6128,6 +6419,9 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecCruiseControlTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -6215,6 +6509,43 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecCruiseControlTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecCruiseControlTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaSpecCruiseControlTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecCruiseControlTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaSpecCruiseControlTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecCruiseControlTemplatePodVolumes
@@ -6246,6 +6577,10 @@ public partial class V1KafkaSpecCruiseControlTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaSpecCruiseControlTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaSpecCruiseControlTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for Cruise Control `Pods`.</summary>
@@ -6575,6 +6910,9 @@ public partial class V1KafkaSpecCruiseControlTemplateCruiseControlContainerSecur
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecCruiseControlTemplateCruiseControlContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -6900,7 +7238,7 @@ public partial class V1KafkaSpecCruiseControl
     [JsonPropertyName("brokerCapacity")]
     public V1KafkaSpecCruiseControlBrokerCapacity? BrokerCapacity { get; set; }
 
-    /// <summary>The Cruise Control configuration. For a full list of configuration options refer to https://github.com/linkedin/cruise-control/wiki/Configurations. Note that properties with the following prefixes cannot be set: bootstrap.servers, client.id, zookeeper., network., security., failed.brokers.zk.path,webserver.http., webserver.api.urlprefix, webserver.session.path, webserver.accesslog., two.step., request.reason.required,metric.reporter.sampler.bootstrap.servers, capacity.config.file, self.healing., ssl., kafka.broker.failure.detection.enable, topic.config.provider.class (with the exception of: ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, webserver.http.cors.enabled, webserver.http.cors.origin, webserver.http.cors.exposeheaders, webserver.security.enable, webserver.ssl.enable).</summary>
+    /// <summary>The Cruise Control configuration. For a full list of configuration options refer to https://github.com/linkedin/cruise-control/wiki/Configurations. Note that properties with the following prefixes cannot be set: bootstrap.servers, client.id, zookeeper., network., security., failed.brokers.zk.path,webserver.http., webserver.ssl., webserver.api.urlprefix, webserver.session.path, webserver.accesslog., two.step., request.reason.required,metric.reporter.sampler.bootstrap.servers, capacity.config.file, self.healing., ssl., kafka.broker.failure.detection.enable, topic.config.provider.class (with the exception of: ssl.cipher.suites, ssl.protocol, ssl.enabled.protocols, webserver.http.cors.enabled, webserver.http.cors.origin, webserver.http.cors.exposeheaders, webserver.security.enable).</summary>
     [JsonPropertyName("config")]
     public JsonNode? Config { get; set; }
 
@@ -7765,6 +8103,9 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -7774,6 +8115,9 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaExporterTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -7797,6 +8141,9 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -7806,6 +8153,9 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaSpecKafkaExporterTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -7893,6 +8243,43 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaSpecKafkaExporterTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaSpecKafkaExporterTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaSpecKafkaExporterTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecKafkaExporterTemplatePodVolumes
@@ -7924,6 +8311,10 @@ public partial class V1KafkaSpecKafkaExporterTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaSpecKafkaExporterTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaSpecKafkaExporterTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for Kafka Exporter `Pods`.</summary>
@@ -8170,6 +8561,9 @@ public partial class V1KafkaSpecKafkaExporterTemplateContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaSpecKafkaExporterTemplateContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 

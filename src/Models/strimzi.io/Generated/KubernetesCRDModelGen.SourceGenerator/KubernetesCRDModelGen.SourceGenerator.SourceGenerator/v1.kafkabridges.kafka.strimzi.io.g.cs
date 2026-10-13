@@ -1281,6 +1281,9 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesSecretItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`Secret` to use to populate the volume.</summary>
@@ -1290,6 +1293,9 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesSecret
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaBridgeSpecTemplatePodVolumesSecretItems>? Items { get; set; }
@@ -1313,6 +1319,9 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMapItems
 
     [JsonPropertyName("path")]
     public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
 }
 
 /// <summary>`ConfigMap` to use to populate the volume.</summary>
@@ -1322,6 +1331,9 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesConfigMap
 {
     [JsonPropertyName("defaultMode")]
     public int? DefaultMode { get; set; }
+
+    [JsonPropertyName("defaultUser")]
+    public int? DefaultUser { get; set; }
 
     [JsonPropertyName("items")]
     public IList<V1KafkaBridgeSpecTemplatePodVolumesConfigMapItems>? Items { get; set; }
@@ -1409,6 +1421,43 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumesImage
     public string? Reference { get; set; }
 }
 
+/// <summary>Information about the serviceAccountToken data to project.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaBridgeSpecTemplatePodVolumesProjectedSourcesServiceAccountToken
+{
+    [JsonPropertyName("audience")]
+    public string? Audience { get; set; }
+
+    [JsonPropertyName("expirationSeconds")]
+    public int? ExpirationSeconds { get; set; }
+
+    [JsonPropertyName("path")]
+    public string? Path { get; set; }
+
+    [JsonPropertyName("user")]
+    public int? User { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaBridgeSpecTemplatePodVolumesProjectedSources
+{
+    /// <summary>Information about the serviceAccountToken data to project.</summary>
+    [JsonPropertyName("serviceAccountToken")]
+    public V1KafkaBridgeSpecTemplatePodVolumesProjectedSourcesServiceAccountToken? ServiceAccountToken { get; set; }
+}
+
+/// <summary>`ProjectedVolume` object to use volume projection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1KafkaBridgeSpecTemplatePodVolumesProjected
+{
+    /// <summary>List of projections that are part of this projected volumes. Currently, only Service Account projection is supported.</summary>
+    [JsonPropertyName("sources")]
+    public IList<V1KafkaBridgeSpecTemplatePodVolumesProjectedSources>? Sources { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.10+a22b941414add0bcc94c90de54d985f643c33be0")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplatePodVolumes
@@ -1440,6 +1489,10 @@ public partial class V1KafkaBridgeSpecTemplatePodVolumes
     /// <summary>`ImageVolumeSource` object to use to populate the volume.</summary>
     [JsonPropertyName("image")]
     public V1KafkaBridgeSpecTemplatePodVolumesImage? Image { get; set; }
+
+    /// <summary>`ProjectedVolume` object to use volume projection.</summary>
+    [JsonPropertyName("projected")]
+    public V1KafkaBridgeSpecTemplatePodVolumesProjected? Projected { get; set; }
 }
 
 /// <summary>Template for HTTP Bridge `Pods`.</summary>
@@ -1769,6 +1822,9 @@ public partial class V1KafkaBridgeSpecTemplateBridgeContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateBridgeContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
@@ -2031,6 +2087,9 @@ public partial class V1KafkaBridgeSpecTemplateInitContainerSecurityContext
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KafkaBridgeSpecTemplateInitContainerVolumeMounts
 {
+    [JsonPropertyName("bindMountOptions")]
+    public IList<string>? BindMountOptions { get; set; }
+
     [JsonPropertyName("mountPath")]
     public string? MountPath { get; set; }
 
