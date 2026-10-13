@@ -130,6 +130,9 @@ public partial class V1alpha1WorkerResourceTemplateStatus
     [JsonPropertyName("conditions")]
     public IList<V1alpha1WorkerResourceTemplateStatusConditions>? Conditions { get; set; }
 
+    [JsonPropertyName("observedGeneration")]
+    public long? ObservedGeneration { get; set; }
+
     [JsonPropertyName("versions")]
     public IList<V1alpha1WorkerResourceTemplateStatusVersions>? Versions { get; set; }
 }
