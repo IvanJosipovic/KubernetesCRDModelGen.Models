@@ -88,7 +88,7 @@ class ProjectGenerator
         var csprojContent = $"""
             <Project Sdk="Microsoft.NET.Sdk">
                 <PropertyGroup>
-                    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+                    <TargetFrameworks>net10.0;net11.0</TargetFrameworks>
                     <PackageId>{Namespace}.{projectName}</PackageId>
                     <RepositoryUrl>https://github.com/IvanJosipovic/{Namespace}</RepositoryUrl>
                     <Description>C# models for Kubernetes CRDs in group {projectName}</Description>
@@ -128,8 +128,8 @@ class ProjectGenerator
                     </PackageReference>
                 </ItemGroup>
 
-                <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-                    <PackageReference Include="System.Text.Json" Version="9.0.*"/>
+                <ItemGroup Condition="''$(TargetFramework)' == 'net10.0'">
+                    <PackageReference Include="System.Text.Json" Version="11.0.0-rc.2.26504.105" />
                 </ItemGroup>
             </Project>
             """;
