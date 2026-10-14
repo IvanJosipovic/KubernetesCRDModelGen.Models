@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.14.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azapi.upbound.io-v1.13.0...azapi.upbound.io-v1.14.0) (2026-10-14)
+
+
+### Features
+
+* **deps:** update dependency kubernetesclient to v21 ([#186](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/186)) ([37f88ca](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/37f88ca4d772b0b3ecedd475ceb8e5ac852f8530))
+* Sync ([#190](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/190)) ([162d49d](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/162d49d8088c35872c0904ac810561e7902dff32))
+
+
+### Bug Fixes
+
+* **deps:** update dependency kubernetescrdmodelgen.sourcegenerator to v1.8.3 ([#31](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/31)) ([86a672c](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/86a672c77fe43f06ef865d18cdff89916a794d79))
+
 ## [1.13.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/azapi.upbound.io-v1.12.0...azapi.upbound.io-v1.13.0) (2026-10-06)
 
 
