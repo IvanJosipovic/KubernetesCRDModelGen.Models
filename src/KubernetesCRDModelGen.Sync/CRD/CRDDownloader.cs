@@ -17,6 +17,8 @@ namespace KubernetesCRDModelGen.Sync.CRD;
 
 partial class CRDDownloader
 {
+    private const int MaxYamlParsingEvents = 250_000;
+
     private readonly ILogger<CRDDownloader> _logger;
 
     private readonly IConfiguration configuration;
@@ -272,7 +274,7 @@ partial class CRDDownloader
     {
         using(content)
         {
-            var parser = new MergingParser(new Parser(new StreamReader(content)));
+            var parser = new MergingParser(new Parser(new StreamReader(content)), maxParsingEvents: MaxYamlParsingEvents);
             parser.Consume<StreamStart>();
 
             var results = new List<V1CustomResourceDefinition>();
