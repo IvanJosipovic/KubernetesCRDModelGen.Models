@@ -10,9 +10,14 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.helm.crossplane.io;
-/// <summary>A ProviderConfig configures a Helm &apos;provider&apos;, i.e. a connection to a particular</summary>
+/// <summary>
+/// A ProviderConfig configures a Helm &apos;provider&apos;, i.e. a connection to a particular
+/// 
+/// Deprecated: v1alpha1.ProviderConfig is deprecated in favor of v1beta1.ProviderConfig.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProviderConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ProviderConfig>
 {
@@ -43,6 +48,7 @@ public partial class V1alpha1ProviderConfigList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecCredentialsEnv
 {
     /// <summary>Name is the name of an environment variable.</summary>
@@ -56,6 +62,7 @@ public partial class V1alpha1ProviderConfigSpecCredentialsEnv
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecCredentialsFs
 {
     /// <summary>Path is a filesystem path.</summary>
@@ -69,6 +76,7 @@ public partial class V1alpha1ProviderConfigSpecCredentialsFs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecCredentialsSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -87,6 +95,7 @@ public partial class V1alpha1ProviderConfigSpecCredentialsSecretRef
 /// <summary>Source of the provider credentials.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProviderConfigSpecCredentialsSourceEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ProviderConfigSpecCredentialsSourceEnum
 {
     [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
@@ -107,6 +116,7 @@ public enum V1alpha1ProviderConfigSpecCredentialsSourceEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecCredentials
 {
     /// <summary>
@@ -141,6 +151,7 @@ public partial class V1alpha1ProviderConfigSpecCredentials
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecIdentityEnv
 {
     /// <summary>Name is the name of an environment variable.</summary>
@@ -154,6 +165,7 @@ public partial class V1alpha1ProviderConfigSpecIdentityEnv
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecIdentityFs
 {
     /// <summary>Path is a filesystem path.</summary>
@@ -167,6 +179,7 @@ public partial class V1alpha1ProviderConfigSpecIdentityFs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecIdentitySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -185,6 +198,7 @@ public partial class V1alpha1ProviderConfigSpecIdentitySecretRef
 /// <summary>Source of the provider credentials.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProviderConfigSpecIdentitySourceEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ProviderConfigSpecIdentitySourceEnum
 {
     [EnumMember(Value = "None"), JsonStringEnumMemberName("None")]
@@ -202,6 +216,7 @@ public enum V1alpha1ProviderConfigSpecIdentitySourceEnum
 /// <summary>Type of identity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProviderConfigSpecIdentityTypeEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ProviderConfigSpecIdentityTypeEnum
 {
     [EnumMember(Value = "GoogleApplicationCredentials"), JsonStringEnumMemberName("GoogleApplicationCredentials")]
@@ -215,6 +230,7 @@ public enum V1alpha1ProviderConfigSpecIdentityTypeEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpecIdentity
 {
     /// <summary>
@@ -250,6 +266,7 @@ public partial class V1alpha1ProviderConfigSpecIdentity
 /// <summary>A ProviderConfigSpec defines the desired state of a Provider.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigSpec
 {
     /// <summary>
@@ -271,6 +288,7 @@ public partial class V1alpha1ProviderConfigSpec
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigStatusConditions
 {
     /// <summary>
@@ -314,6 +332,7 @@ public partial class V1alpha1ProviderConfigStatusConditions
 /// <summary>A ProviderConfigStatus defines the status of a Provider.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigStatus
 {
     /// <summary>Conditions of the resource.</summary>
@@ -325,9 +344,14 @@ public partial class V1alpha1ProviderConfigStatus
     public long? Users { get; set; }
 }
 
-/// <summary>A ProviderConfig configures a Helm &apos;provider&apos;, i.e. a connection to a particular</summary>
+/// <summary>
+/// A ProviderConfig configures a Helm &apos;provider&apos;, i.e. a connection to a particular
+/// 
+/// Deprecated: v1alpha1.ProviderConfig is deprecated in favor of v1beta1.ProviderConfig.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProviderConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ProviderConfigSpec>, IStatus<V1alpha1ProviderConfigStatus?>
 {

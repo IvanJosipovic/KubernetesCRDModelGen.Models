@@ -10,9 +10,14 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.helm.crossplane.io;
-/// <summary>A ProviderConfigUsage indicates that a resource is using a ProviderConfig.</summary>
+/// <summary>
+/// A ProviderConfigUsage indicates that a resource is using a ProviderConfig.
+/// 
+/// Deprecated: v1alpha1.ProviderConfigUsage is deprecated in favor of v1beta1.ProviderConfigUsage.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProviderConfigUsageList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ProviderConfigUsage>
 {
@@ -45,6 +50,7 @@ public partial class V1alpha1ProviderConfigUsageList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -61,6 +67,7 @@ public enum V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -72,6 +79,7 @@ public enum V1alpha1ProviderConfigUsageProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigUsageProviderConfigRefPolicy
 {
     /// <summary>
@@ -96,6 +104,7 @@ public partial class V1alpha1ProviderConfigUsageProviderConfigRefPolicy
 /// <summary>ProviderConfigReference to the provider config being used.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigUsageProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -110,6 +119,7 @@ public partial class V1alpha1ProviderConfigUsageProviderConfigRef
 /// <summary>ResourceReference to the managed resource using the provider config.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ProviderConfigUsageResourceRef
 {
     /// <summary>APIVersion of the referenced object.</summary>
@@ -129,9 +139,14 @@ public partial class V1alpha1ProviderConfigUsageResourceRef
     public string? Uid { get; set; }
 }
 
-/// <summary>A ProviderConfigUsage indicates that a resource is using a ProviderConfig.</summary>
+/// <summary>
+/// A ProviderConfigUsage indicates that a resource is using a ProviderConfig.
+/// 
+/// Deprecated: v1alpha1.ProviderConfigUsage is deprecated in favor of v1beta1.ProviderConfigUsage.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ProviderConfigUsage : IKubernetesObject<V1ObjectMeta>
 {
