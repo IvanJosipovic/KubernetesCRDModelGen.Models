@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/helm.crossplane.io-v1.19.0...helm.crossplane.io-v1.20.0) (2026-10-15)
+
+
+### Features
+
+* Sync ([#192](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/192)) ([531dd10](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/531dd10b4bd6dfd037debca5700f9c7561808da8))
+
 ## [1.19.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/helm.crossplane.io-v1.18.0...helm.crossplane.io-v1.19.0) (2026-10-14)
 
 
