@@ -10,9 +10,14 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.helm.crossplane.io;
-/// <summary>A Release is an example API type</summary>
+/// <summary>
+/// A Release is an example API type
+/// 
+/// Deprecated: v1alpha1.Release is deprecated in favor of v1beta1.Release.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ReleaseList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Release>
 {
@@ -48,6 +53,7 @@ public partial class V1alpha1ReleaseList : IKubernetesObject<V1ListMeta>, IItems
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ReleaseSpecDeletionPolicyEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ReleaseSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -59,6 +65,7 @@ public enum V1alpha1ReleaseSpecDeletionPolicyEnum
 /// <summary>A SecretReference is a reference to a secret in an arbitrary namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderChartPullSecretRef
 {
     /// <summary>Name of the secret.</summary>
@@ -73,6 +80,7 @@ public partial class V1alpha1ReleaseSpecForProviderChartPullSecretRef
 /// <summary>A ChartSpec defines the chart spec for a Release</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderChart
 {
     [JsonPropertyName("name")]
@@ -92,6 +100,7 @@ public partial class V1alpha1ReleaseSpecForProviderChart
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderPatchesFromConfigMapKeyRef
 {
     [JsonPropertyName("key")]
@@ -110,6 +119,7 @@ public partial class V1alpha1ReleaseSpecForProviderPatchesFromConfigMapKeyRef
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderPatchesFromSecretKeyRef
 {
     [JsonPropertyName("key")]
@@ -128,6 +138,7 @@ public partial class V1alpha1ReleaseSpecForProviderPatchesFromSecretKeyRef
 /// <summary>ValueFromSource represents source of a value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderPatchesFrom
 {
     /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
@@ -142,6 +153,7 @@ public partial class V1alpha1ReleaseSpecForProviderPatchesFrom
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderSetValueFromConfigMapKeyRef
 {
     [JsonPropertyName("key")]
@@ -160,6 +172,7 @@ public partial class V1alpha1ReleaseSpecForProviderSetValueFromConfigMapKeyRef
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderSetValueFromSecretKeyRef
 {
     [JsonPropertyName("key")]
@@ -178,6 +191,7 @@ public partial class V1alpha1ReleaseSpecForProviderSetValueFromSecretKeyRef
 /// <summary>ValueFromSource represents source of a value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderSetValueFrom
 {
     /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
@@ -192,6 +206,7 @@ public partial class V1alpha1ReleaseSpecForProviderSetValueFrom
 /// <summary>SetVal represents a &quot;set&quot; value override in a Release</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderSet
 {
     [JsonPropertyName("name")]
@@ -208,6 +223,7 @@ public partial class V1alpha1ReleaseSpecForProviderSet
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderValuesFromConfigMapKeyRef
 {
     [JsonPropertyName("key")]
@@ -226,6 +242,7 @@ public partial class V1alpha1ReleaseSpecForProviderValuesFromConfigMapKeyRef
 /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderValuesFromSecretKeyRef
 {
     [JsonPropertyName("key")]
@@ -244,6 +261,7 @@ public partial class V1alpha1ReleaseSpecForProviderValuesFromSecretKeyRef
 /// <summary>ValueFromSource represents source of a value</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProviderValuesFrom
 {
     /// <summary>DataKeySelector defines required spec to access a key of a configmap or secret</summary>
@@ -258,6 +276,7 @@ public partial class V1alpha1ReleaseSpecForProviderValuesFrom
 /// <summary>ReleaseParameters are the configurable fields of a Release.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecForProvider
 {
     /// <summary>A ChartSpec defines the chart spec for a Release</summary>
@@ -289,6 +308,7 @@ public partial class V1alpha1ReleaseSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ReleaseSpecManagementPoliciesEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ReleaseSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -313,6 +333,7 @@ public enum V1alpha1ReleaseSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ReleaseSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ReleaseSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -329,6 +350,7 @@ public enum V1alpha1ReleaseSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1ReleaseSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete]
 public enum V1alpha1ReleaseSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -340,6 +362,7 @@ public enum V1alpha1ReleaseSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -368,6 +391,7 @@ public partial class V1alpha1ReleaseSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -387,6 +411,7 @@ public partial class V1alpha1ReleaseSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -401,6 +426,7 @@ public partial class V1alpha1ReleaseSpecWriteConnectionSecretToRef
 /// <summary>A ReleaseSpec defines the desired state of a Release.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseSpec
 {
     /// <summary>
@@ -459,6 +485,7 @@ public partial class V1alpha1ReleaseSpec
 /// <summary>ReleaseObservation are the observable fields of a Release.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseStatusAtProvider
 {
     [JsonPropertyName("releaseDescription")]
@@ -475,6 +502,7 @@ public partial class V1alpha1ReleaseStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseStatusConditions
 {
     /// <summary>
@@ -518,6 +546,7 @@ public partial class V1alpha1ReleaseStatusConditions
 /// <summary>A ReleaseStatus represents the observed state of a Release.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 public partial class V1alpha1ReleaseStatus
 {
     /// <summary>ReleaseObservation are the observable fields of a Release.</summary>
@@ -555,9 +584,14 @@ public partial class V1alpha1ReleaseStatus
     public bool? Synced { get; set; }
 }
 
-/// <summary>A Release is an example API type</summary>
+/// <summary>
+/// A Release is an example API type
+/// 
+/// Deprecated: v1alpha1.Release is deprecated in favor of v1beta1.Release.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Release : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ReleaseSpec>, IStatus<V1alpha1ReleaseStatus?>
 {
