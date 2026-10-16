@@ -1,5 +1,5 @@
 {
-  "src/Models/k8s.aws": "1.69.0",
+  "src/Models/k8s.aws": "1.70.0",
   "src/Models/aquasecurity.github.io": "1.9.0",
   "src/Models/akuity.io": "1.7.0",
   "src/Models/argoproj.io": "1.24.0",
@@ -23,7 +23,7 @@
   "src/Models/vault.upbound.io": "1.10.0",
   "src/Models/fluxcd.io": "1.16.0",
   "src/Models/gateway.networking.k8s.io": "1.57.0",
-  "src/Models/istio.io": "1.23.0",
+  "src/Models/istio.io": "1.24.0",
   "src/Models/jetstack.io": "1.21.0",
   "src/Models/keda.sh": "1.17.0",
   "src/Models/knative.dev": "1.29.0",
