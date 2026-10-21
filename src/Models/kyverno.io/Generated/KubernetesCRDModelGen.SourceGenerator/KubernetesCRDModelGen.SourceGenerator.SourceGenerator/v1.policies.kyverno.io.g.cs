@@ -1810,6 +1810,19 @@ public partial class V1PolicySpecRulesGenerate
 public partial class V1PolicySpecRulesImageExtractors
 {
     /// <summary>
+    /// Filter is an optional value to match against &apos;key&apos; during wildcard array expansion.
+    /// When set, only array elements where the field named by &apos;key&apos; equals this value
+    /// are extracted as image references. Requires &apos;key&apos; to be set.
+    /// This is useful when a wildcard path expands an array containing both image and
+    /// non-image elements, and only specific elements should be treated as images.
+    /// Filter applies at the terminal wildcard only; intermediate wildcards in nested
+    /// paths are expanded without filtering.
+    /// Filter only applies to wildcard expansion over arrays, not maps.
+    /// </summary>
+    [JsonPropertyName("filter")]
+    public string? Filter { get; set; }
+
+    /// <summary>
     /// JMESPath is an optional JMESPath expression to apply to the image value.
     /// This is useful when the extracted image begins with a prefix like &apos;docker://&apos;.
     /// The &apos;trim_prefix&apos; function may be used to trim the prefix: trim_prefix(@, &apos;docker://&apos;).
@@ -8228,6 +8241,19 @@ public partial class V1PolicyStatusAutogenRulesGenerate
 [global::System.Obsolete("kyverno.io/v1 Policy is deprecated and will be removed in a future release; migrate to NamespacedValidatingPolicy and the other namespaced policy types (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V1PolicyStatusAutogenRulesImageExtractors
 {
+    /// <summary>
+    /// Filter is an optional value to match against &apos;key&apos; during wildcard array expansion.
+    /// When set, only array elements where the field named by &apos;key&apos; equals this value
+    /// are extracted as image references. Requires &apos;key&apos; to be set.
+    /// This is useful when a wildcard path expands an array containing both image and
+    /// non-image elements, and only specific elements should be treated as images.
+    /// Filter applies at the terminal wildcard only; intermediate wildcards in nested
+    /// paths are expanded without filtering.
+    /// Filter only applies to wildcard expansion over arrays, not maps.
+    /// </summary>
+    [JsonPropertyName("filter")]
+    public string? Filter { get; set; }
+
     /// <summary>
     /// JMESPath is an optional JMESPath expression to apply to the image value.
     /// This is useful when the extracted image begins with a prefix like &apos;docker://&apos;.

@@ -43,7 +43,7 @@ public partial class V1alpha1PolicySpecForProvider
 {
     /// <summary>
     /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &quot; &quot;, &quot;platform&quot;, or &quot;seal&quot; (Vault Enterprise only). Requires Vault 1.21+.
-    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: ”, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
+    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &apos; &apos;, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
     /// </summary>
     [JsonPropertyName("entropySource")]
     public string? EntropySource { get; set; }
@@ -91,7 +91,7 @@ public partial class V1alpha1PolicySpecInitProvider
 {
     /// <summary>
     /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &quot; &quot;, &quot;platform&quot;, or &quot;seal&quot; (Vault Enterprise only). Requires Vault 1.21+.
-    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: ”, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
+    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &apos; &apos;, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
     /// </summary>
     [JsonPropertyName("entropySource")]
     public string? EntropySource { get; set; }
@@ -234,7 +234,7 @@ public partial class V1alpha1PolicyStatusAtProvider
 {
     /// <summary>
     /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &quot; &quot;, &quot;platform&quot;, or &quot;seal&quot; (Vault Enterprise only). Requires Vault 1.21+.
-    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: ”, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
+    /// Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: &apos; &apos;, &apos;platform&apos;, or &apos;seal&apos;. Requires Vault 1.21+.
     /// </summary>
     [JsonPropertyName("entropySource")]
     public string? EntropySource { get; set; }
@@ -321,6 +321,15 @@ public partial class V1alpha1PolicyStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1PolicyStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation
