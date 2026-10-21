@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/vault.upbound.io-v1.10.0...vault.upbound.io-v1.11.0) (2026-10-21)
+
+
+### Features
+
+* Sync ([#197](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/197)) ([a3c343b](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/a3c343b08e94f816029c45f063a1446a53cfe72f))
+
 ## [1.10.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/vault.upbound.io-v1.9.1...vault.upbound.io-v1.10.0) (2026-10-14)
 
 
