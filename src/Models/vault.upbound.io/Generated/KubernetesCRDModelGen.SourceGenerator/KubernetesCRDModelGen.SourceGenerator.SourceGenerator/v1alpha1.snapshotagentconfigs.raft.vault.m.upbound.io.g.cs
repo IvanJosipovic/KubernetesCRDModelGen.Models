@@ -37,6 +37,71 @@ public partial class V1alpha1SnapshotAgentConfigList : IKubernetesObject<V1ListM
     public required IList<V1alpha1SnapshotAgentConfig> Items { get; set; }
 }
 
+/// <summary>
+/// AWS secret access key.
+/// AWS secret access key.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSecretAccessKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AWS session token.
+/// AWS session token.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSessionTokenSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
+/// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecForProviderAzureAccountKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Google service account key in JSON format.
+/// The raw value looks like this:
+/// Google service account key in JSON format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecForProviderGoogleServiceAccountKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProvider
@@ -120,22 +185,22 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProvider
     /// AWS secret access key.
     /// AWS secret access key.
     /// </summary>
-    [JsonPropertyName("awsSecretAccessKey")]
-    public string? AwsSecretAccessKey { get; set; }
+    [JsonPropertyName("awsSecretAccessKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecForProviderAwsSecretAccessKeySecretRef? AwsSecretAccessKeySecretRef { get; set; }
 
     /// <summary>
     /// AWS session token.
     /// AWS session token.
     /// </summary>
-    [JsonPropertyName("awsSessionToken")]
-    public string? AwsSessionToken { get; set; }
+    [JsonPropertyName("awsSessionTokenSecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecForProviderAwsSessionTokenSecretRef? AwsSessionTokenSecretRef { get; set; }
 
     /// <summary>
     /// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
     /// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
     /// </summary>
-    [JsonPropertyName("azureAccountKey")]
-    public string? AzureAccountKey { get; set; }
+    [JsonPropertyName("azureAccountKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecForProviderAzureAccountKeySecretRef? AzureAccountKeySecretRef { get; set; }
 
     /// <summary>
     /// Azure account name.
@@ -220,8 +285,8 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProvider
     /// The raw value looks like this:
     /// Google service account key in JSON format.
     /// </summary>
-    [JsonPropertyName("googleServiceAccountKey")]
-    public string? GoogleServiceAccountKey { get; set; }
+    [JsonPropertyName("googleServiceAccountKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecForProviderGoogleServiceAccountKeySecretRef? GoogleServiceAccountKeySecretRef { get; set; }
 
     /// <summary>
     /// Time (in seconds) between snapshots.
@@ -283,6 +348,71 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProvider
     /// </summary>
     [JsonPropertyName("storageType")]
     public string? StorageType { get; set; }
+}
+
+/// <summary>
+/// AWS secret access key.
+/// AWS secret access key.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSecretAccessKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// AWS session token.
+/// AWS session token.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSessionTokenSecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
+/// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAzureAccountKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Google service account key in JSON format.
+/// The raw value looks like this:
+/// Google service account key in JSON format.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1SnapshotAgentConfigSpecInitProviderGoogleServiceAccountKeySecretRef
+{
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>
@@ -380,22 +510,22 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProvider
     /// AWS secret access key.
     /// AWS secret access key.
     /// </summary>
-    [JsonPropertyName("awsSecretAccessKey")]
-    public string? AwsSecretAccessKey { get; set; }
+    [JsonPropertyName("awsSecretAccessKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecInitProviderAwsSecretAccessKeySecretRef? AwsSecretAccessKeySecretRef { get; set; }
 
     /// <summary>
     /// AWS session token.
     /// AWS session token.
     /// </summary>
-    [JsonPropertyName("awsSessionToken")]
-    public string? AwsSessionToken { get; set; }
+    [JsonPropertyName("awsSessionTokenSecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecInitProviderAwsSessionTokenSecretRef? AwsSessionTokenSecretRef { get; set; }
 
     /// <summary>
     /// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
     /// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
     /// </summary>
-    [JsonPropertyName("azureAccountKey")]
-    public string? AzureAccountKey { get; set; }
+    [JsonPropertyName("azureAccountKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecInitProviderAzureAccountKeySecretRef? AzureAccountKeySecretRef { get; set; }
 
     /// <summary>
     /// Azure account name.
@@ -480,8 +610,8 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProvider
     /// The raw value looks like this:
     /// Google service account key in JSON format.
     /// </summary>
-    [JsonPropertyName("googleServiceAccountKey")]
-    public string? GoogleServiceAccountKey { get; set; }
+    [JsonPropertyName("googleServiceAccountKeySecretRef")]
+    public V1alpha1SnapshotAgentConfigSpecInitProviderGoogleServiceAccountKeySecretRef? GoogleServiceAccountKeySecretRef { get; set; }
 
     /// <summary>
     /// Time (in seconds) between snapshots.
@@ -732,27 +862,6 @@ public partial class V1alpha1SnapshotAgentConfigStatusAtProvider
     public bool? AwsS3ServerSideEncryption { get; set; }
 
     /// <summary>
-    /// AWS secret access key.
-    /// AWS secret access key.
-    /// </summary>
-    [JsonPropertyName("awsSecretAccessKey")]
-    public string? AwsSecretAccessKey { get; set; }
-
-    /// <summary>
-    /// AWS session token.
-    /// AWS session token.
-    /// </summary>
-    [JsonPropertyName("awsSessionToken")]
-    public string? AwsSessionToken { get; set; }
-
-    /// <summary>
-    /// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
-    /// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
-    /// </summary>
-    [JsonPropertyName("azureAccountKey")]
-    public string? AzureAccountKey { get; set; }
-
-    /// <summary>
     /// Azure account name.
     /// Azure account name.
     /// </summary>
@@ -829,14 +938,6 @@ public partial class V1alpha1SnapshotAgentConfigStatusAtProvider
     /// </summary>
     [JsonPropertyName("googleGcsBucket")]
     public string? GoogleGcsBucket { get; set; }
-
-    /// <summary>
-    /// Google service account key in JSON format.
-    /// The raw value looks like this:
-    /// Google service account key in JSON format.
-    /// </summary>
-    [JsonPropertyName("googleServiceAccountKey")]
-    public string? GoogleServiceAccountKey { get; set; }
 
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -957,6 +1058,15 @@ public partial class V1alpha1SnapshotAgentConfigStatus
     /// <summary>Conditions of the resource.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1SnapshotAgentConfigStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// LastHandledReconcileAt holds the value of the most recent
+    /// reconcile-requested-at annotation token that the controller has
+    /// processed. Users can compare this to the annotation to determine
+    /// whether a reconcile request has been handled.
+    /// </summary>
+    [JsonPropertyName("lastHandledReconcileAt")]
+    public string? LastHandledReconcileAt { get; set; }
 
     /// <summary>
     /// ObservedGeneration is the latest metadata.generation

@@ -179,7 +179,7 @@ public partial class V1beta1ProviderConfigSpec
     /// If true the environment variable
     /// VAULT_ADDR in the Terraform process environment
     /// will be set to the value of the address argument
-    /// from this provider. By default, this is false.
+    /// from this provider. Defaults to false when left unset.
     /// </summary>
     [JsonPropertyName("add_address_to_env")]
     public bool? AddAddressToEnv { get; set; }
@@ -258,6 +258,15 @@ public partial class V1beta1ProviderConfigSpec
     public string? Role { get; set; }
 
     /// <summary>
+    /// In the case where the Vault token is for a specific
+    /// namespace and the provider namespace is not configured, use the
+    /// token&apos;s namespace as the root namespace for all resources.
+    /// Defaults to true when unset.
+    /// </summary>
+    [JsonPropertyName("set_namespace_from_token")]
+    public bool? SetNamespaceFromToken { get; set; }
+
+    /// <summary>
     /// Set this to true to disable creation of an
     /// intermediate ephemeral Vault token for Terraform to use.
     /// Enabling this is strongly discouraged since it increases
@@ -265,6 +274,8 @@ public partial class V1beta1ProviderConfigSpec
     /// in clear text. Only change this setting when the provided
     /// token cannot be permitted to create child tokens and there
     /// is no risk of exposure from the output of Terraform.
+    /// When left unset, TERRAFORM_VAULT_SKIP_CHILD_TOKEN applies,
+    /// then false.
     /// </summary>
     [JsonPropertyName("skip_child_token")]
     public bool? SkipChildToken { get; set; }
@@ -272,7 +283,7 @@ public partial class V1beta1ProviderConfigSpec
     /// <summary>
     /// Skip the dynamic fetching of the Vault server
     /// version. Set to true when the /sys/seal-status API
-    /// endpoint is not available.
+    /// endpoint is not available. Defaults to false when left unset.
     /// </summary>
     [JsonPropertyName("skip_get_vault_version")]
     public bool? SkipGetVaultVersion { get; set; }
@@ -284,6 +295,7 @@ public partial class V1beta1ProviderConfigSpec
     /// development environments, since it exposes the
     /// possibility that Terraform can be tricked into
     /// writing secrets to a server controlled by an intruder.
+    /// When left unset, VAULT_SKIP_VERIFY applies, then false.
     /// </summary>
     [JsonPropertyName("skip_tls_verify")]
     public bool? SkipTlsVerify { get; set; }
