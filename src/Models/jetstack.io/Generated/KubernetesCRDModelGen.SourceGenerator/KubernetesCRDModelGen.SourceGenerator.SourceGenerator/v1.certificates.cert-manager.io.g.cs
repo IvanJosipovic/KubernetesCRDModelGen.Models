@@ -1038,6 +1038,14 @@ public partial class V1CertificateStatusAcmeAriSuggestedWindow
 public partial class V1CertificateStatusAcmeAri
 {
     /// <summary>
+    /// CertID is the ARI CertID (RFC 9773) of the certificate this renewal information was
+    /// fetched for. This is used to determine if we need to re-fetch the renewal information
+    /// as changed cert id means that ARI fetched before is stale.
+    /// </summary>
+    [JsonPropertyName("certID")]
+    public string? CertID { get; set; }
+
+    /// <summary>
     /// ExplanationURL is a human-readable URL that may explain why the suggested window
     /// has its current value.
     /// </summary>
